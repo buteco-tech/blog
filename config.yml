@@ -1,0 +1,266 @@
+baseurl: https://butecotecnologico.com.br/
+title: Buteco Tecnológico
+languageCode: pt-BR
+languageName: Portuguese
+defaultContentLanguage: pt
+enableInlineShortcodes: true
+summarylength: 10
+enableEmoji: true
+paginate: 10
+theme: iara
+disqusShortname: butecopensource
+disableKinds:
+  - pages
+
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+  podcast: podcasts
+  author: authors
+
+permalinks:
+  posts: /:slug/
+  podcast: /podcast/:slug/
+  categories: /categorias/:slug/
+  tags: /tags/:slug/
+  authors: /autores/:slug/
+
+params:
+  mainSections:
+    - posts
+    - podcast
+    - wordpress
+  title: Buteco Tecnológico
+  description: Um blog feito por, e para pessoas que gostam de compartilhar suas experiências com linux, software livre e tecnologia.
+  images:
+    - logos/logo.png
+  logo: logos/logo-og.png
+  copyright: Buteco Tecnológico
+  builtWith: false
+
+  #
+  # Sidebar
+  #
+  # Sidebar is hidden on small devices (< 576px)
+  sidebar:
+    categories:
+      show: false   # Show categories in sidebar
+      count: true  # Show article count in category
+    tags:
+      show: false   # Show categories in sidebar
+    #
+    # Feature articles
+    #
+    featured:
+      index: true  # Show index number
+      item:
+        - path: posts/2020-06-16-de-que-sao-feitos-containers-linux.md
+        - path: posts/2020-05-15-usando-aws-s3-em-python.md
+        - path: posts/2020-04-24-livros-gratuitos.md
+        - path: posts/2020-05-20-ubuntu-20-04.md
+
+  license:
+    name: CC BY-SA 4.0
+    url: 'https://creativecommons.org/licenses/by-sa/4.0'
+
+  search:
+    enabled: true
+    provider: google
+    google:
+      id: 006529162228150198964:ypsteas3iuv
+
+  social:
+    - icon: fab fa-telegram-plane
+      title: Telegram
+      url: https://t.me/butecopensource
+    - icon: fab fa-twitter
+      title: Twitter
+      url: https://twitter.com/butecopensource
+    - icon: fab fa-linkedin-in
+      title: Linkedin
+      url: https://www.linkedin.com/company/butecopensource
+    - icon: fab fa-facebook-f
+      title: Facebook
+      url: https://www.facebook.com/butecopensource
+    - icon: fab fa-youtube
+      title: YouTube
+      url: https://www.youtube.com/c/ButecoOpenSource
+    - icon: fab fa-instagram
+      title: Instagram
+      url: https://www.instagram.com/buteco.tech/
+    # - icon: fab fa-github-alt
+    #   title: GitHub
+    #   url: https://github.com/ButecoOpenSource
+
+menu:
+  main:
+    - name: Início
+      weight: 1
+      url: /
+      pre: <span class="mr-1"><i class="fas fa-home"></i></span>
+    - name: Podcast
+      weight: 2
+      url: /podcast/
+      pre: <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+    - name: Anuncie
+      weight: 3
+      url: /anuncie-conosco/
+      pre: <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+    - name: Colabore
+      weight: 4
+      url: /envio-de-artigo/
+      pre: <span class="mr-1"><i class="far fa-heart"></i></span>
+    - name: Sobre
+      weight: 5
+      url: /sobre/
+      pre: <span class="mr-1"><i class="far fa-question-circle"></i></span>
+  carousel:
+    - name: Desenvolvimento
+      weight: 1
+      identifier: desenvolvimento
+      url: /categorias/desenvolvimento/
+    - name: Hardware
+      weight: 2
+      identifier: hardware
+      url: /categorias/hardware/
+    - name: DIY
+      weight: 3
+      identifier: DIY
+      url: /categorias/diy/
+    - name: Linux
+      weight: 4
+      identifier: linux
+      url: /categorias/linux/
+    - name: Segurança
+      weight: 5
+      identifier: segurança
+      url: /categorias/segurança/
+
+  terms:
+    - name: Termos de Uso
+      weight: 1
+      identifier: uso
+      url: /termos-de-uso/
+    - name: Privacidade
+      weight: 2
+      identifier: privacidade
+      url: /politica-de-privacidade/
+  # footer1:
+  #   - name: Artificial Inteligence
+  #     weight: 1
+  #     url: '#'
+  #     pre: <b>
+  #     post: </b>
+  #   - name: Machine Learning
+  #     weight: 2
+  #     url: '#'
+  #   - name: Deep Learning
+  #     weight: 2
+  #     url: '#'
+  #   - name: Natural Language Processing
+  #     weight: 3
+  #     url: '#'
+  #     badge: New
+  #   - name: Robotis
+  #     weight: 4
+  #     url: '#'
+  # footer2:
+  #   - name: SBCs
+  #     weight: 1
+  #     url: '#'
+  #     pre: <b>
+  #     post: </b>
+  #   - name: Raspbery Pi
+  #     weight: 2
+  #     url: '#'
+  #     post: <span class="badge badge-pill badge-success">Discount</span>
+  #   - name: BeagleBone
+  #     weight: 3
+  #     url: '#'
+  #   - name: ODROID
+  #     weight: 4
+  #     url: '#'
+  #   - name: Micro Bit
+  #     weight: 5
+  #     url: '#'
+  #   - name: Arduino
+  #     weight: 6
+  #     url: '#'
+  footer2:
+    - name: Anuncie conosco
+      weight: 1
+      url: /anuncie-conosco/
+      pre: <b>
+      post: </b>
+    - name: Envie seu artigo
+      weight: 2
+      url: /envio-de-artigo/
+  footer3:
+    - name: Podcast
+      weight: 1
+      identifier: podcast
+      url: /podcast/
+      pre: <b>
+      post: </b>
+    # - name: Equipe
+    #   weight: 2
+    #   identifier: equipe
+    #   url: /equipe/
+    - name: Autores
+      weight: 3
+      identifier: autores
+      url: /autores/
+    - name: Categorias
+      weight: 4
+      identifier: categorias
+      url: /categorias/
+    - name: Tags
+      weight: 5
+      identifier: tags
+      url: /tags/
+  footer4:
+    - name: Contato
+      weight: 1
+      identifier: contato
+      url: /contato/
+      pre: <b>
+      post: </b>
+    - name: Sobre
+      weight: 2
+      identifier: sobre
+      url: /sobre/
+    - name: Estatísticas
+      weight: 3
+      identifier: stats
+      url: https://stats.buteco.me
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ''
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: false
+    style: github
+    tabWidth: 4

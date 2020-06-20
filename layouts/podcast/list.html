@@ -1,0 +1,28 @@
+{{ define "main" -}}
+<section class="container taxonomy">
+  <div class="my-3">
+    <div class="text-center">
+      <h1>{{ .Params.name }}</h1>
+    </div>
+  </div>
+
+  <article>
+    {{ .Content }}
+  </article>
+
+  <h2>Episódios</h2>
+
+  <ul class="list-unstyled mt-3 mb-5">
+    {{ range .Data.Pages -}}
+    <li class="my-2">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ if eq .Kind "page" }}
+      <span class="float-right">
+        <time class="pull-right post-list" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      </span>
+      {{ end }}
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}

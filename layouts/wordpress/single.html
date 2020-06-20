@@ -1,0 +1,40 @@
+{{ define "main" -}}
+
+{{ partial "single/cover-image.html" . }}
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.tagline }}<h2 class="tagline text-muted mb-4">{{ . }}</h2>{{ end }}
+    {{ if ne .Type "page" -}}
+    {{ partial "single/meta.html" . }}
+    {{- end }}
+  </header>
+
+  {{- if isset .Params "images" -}}
+  {{- with $image := index .Params.images 0 }}
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="{{ . | absURL }}"
+           alt="{{ $.Params.Title }}">
+    </figure>
+  </div>
+  {{ end -}}
+  {{- end -}}
+
+  <article class="mt-3 mb-4">
+  {{ .Content }}
+  </article>
+
+  <footer>
+    {{ partial "single/tags.html" . }}
+
+    {{ partial "single/share.html" . }}
+
+    {{ partial "single/author.html" . }}
+
+    {{ partial "single/comments.html" . }}
+  </footer>
+</section>
+
+{{- end }}

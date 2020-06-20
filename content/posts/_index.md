@@ -1,0 +1,5 @@
+---
+title: Artigos
+aliases:
+  blog
+---

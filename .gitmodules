@@ -1,0 +1,3 @@
+[submodule "themes/iara"]
+	path = themes/iara
+	url = git@github.com:alexandrevicenzi/iara.git
