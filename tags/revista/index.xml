@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>revista on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/revista/</link>
+    <description>Recent content in revista on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 04 Jun 2015 23:03:35 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/revista/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lançado a 70º edição da Revista Espírito Livre</title>
+      <link>https://butecotecnologico.com.br/lancado-a-70o-edicao-da-revista-espirito-livre/</link>
+      <pubDate>Thu, 04 Jun 2015 23:03:35 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lancado-a-70o-edicao-da-revista-espirito-livre/</guid>
+      <description>Vitória recebeu a oitava edição do Fórum Espírito Livre, ocorrido de 12 a 15 de novembro durante a 11º Semana Nacional de Ciência e Tecnologia. O evento aconteceu nas instalações na Universidade Federal do Espírito Santo – UFES. Participaram do evento diversos palestrantes de São Paulo, Rio de Janeiro, Minas Gerais, além de vários parceiros e colaboradores locais, possibilitando uma excelente troca de experiências, em um cenário bastante propício para tais debates.</description>
+    </item>
+    
+    <item>
+      <title>Revista BSD Magazine número 70</title>
+      <link>https://butecotecnologico.com.br/revista-bsd-magazine-numero-70/</link>
+      <pubDate>Mon, 01 Jun 2015 23:28:40 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/revista-bsd-magazine-numero-70/</guid>
+      <description>Edição 70 da revista BSD Magazine, uma revista especializada sobre sistemas operacionais BSD.</description>
+    </item>
+    
+  </channel>
+</rss>

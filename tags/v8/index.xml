@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>v8 on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/v8/</link>
+    <description>Recent content in v8 on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 09 Feb 2015 12:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/v8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Node.js v0.12.0 já está disponível</title>
+      <link>https://butecotecnologico.com.br/node-js-v0-12-0-ja-esta-disponivel/</link>
+      <pubDate>Mon, 09 Feb 2015 12:30:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/node-js-v0-12-0-ja-esta-disponivel/</guid>
+      <description>O Node.js é uma plataforma para desenvolvimento ágil de aplicações Web escaláveis, constuida sobre o V8 (Chrome&amp;rsquo;s JavaScript runtime). O V8 é a uma engine JavaScript de código aberto desenvolvida pelo Google e utilizado no Chrome.
+O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de 2014.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Apache Mesos &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Apache Mesos">
+<meta itemprop="description" content="Nos últimos tempos vem se falando muito em computação na nuvem, computação distribuída, Linux containers, Big Data, etc. Junto com o crescimento dessas tecnologias também se observa o surgimento de inúmeras ferramentas para resolver os problemas encontrados nesta área da computação. Poderíamos citar várias, mas iremos falar brevemente sobre Apache Mesos. Não irei me aprofundar muito pois pretendo fazer mais artigos sobre o assunto detalhando mais em determinados tópicos.
+O Apache Mesos é considerado o kernel de sistemas distribuídos. Ele foi criado com os mesmos princípios do kernel Linux, só que em outro nível de abstração. O Mesos roda em todos os nós de cluster e prove a frameworks como Apache Spark, Hadoop, Cassandra, Kafka, Elastic Search e outros uma API para alocar recursos e rodarem suas tasks através de todo o cluster ou cloud. Em um Mesos cluster, CPU, memória, disco e outros recursos computacionais de todas as máquinas, virtuais ou físicas, são abstraídos em um único pool de recursos. Facilitando a criação e otimizando a utilização de sistemas distribuídos.">
+<meta itemprop="datePublished" content="2016-03-31T23:40:20+00:00" />
+<meta itemprop="dateModified" content="2016-03-31T23:40:20+00:00" />
+<meta itemprop="wordCount" content="708">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/apache_mesos.png">
+
+
+
+<meta itemprop="keywords" content="apache,cloud,cluster,mesos," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/apache_mesos.png"/>
+
+<meta name="twitter:title" content="Apache Mesos"/>
+<meta name="twitter:description" content="Nos últimos tempos vem se falando muito em computação na nuvem, computação distribuída, Linux containers, Big Data, etc. Junto com o crescimento dessas tecnologias também se observa o surgimento de inúmeras ferramentas para resolver os problemas encontrados nesta área da computação. Poderíamos citar várias, mas iremos falar brevemente sobre Apache Mesos. Não irei me aprofundar muito pois pretendo fazer mais artigos sobre o assunto detalhando mais em determinados tópicos.
+O Apache Mesos é considerado o kernel de sistemas distribuídos. Ele foi criado com os mesmos princípios do kernel Linux, só que em outro nível de abstração. O Mesos roda em todos os nós de cluster e prove a frameworks como Apache Spark, Hadoop, Cassandra, Kafka, Elastic Search e outros uma API para alocar recursos e rodarem suas tasks através de todo o cluster ou cloud. Em um Mesos cluster, CPU, memória, disco e outros recursos computacionais de todas as máquinas, virtuais ou físicas, são abstraídos em um único pool de recursos. Facilitando a criação e otimizando a utilização de sistemas distribuídos."/>
+
+
+<meta property="og:title" content="Apache Mesos" />
+<meta property="og:description" content="Nos últimos tempos vem se falando muito em computação na nuvem, computação distribuída, Linux containers, Big Data, etc. Junto com o crescimento dessas tecnologias também se observa o surgimento de inúmeras ferramentas para resolver os problemas encontrados nesta área da computação. Poderíamos citar várias, mas iremos falar brevemente sobre Apache Mesos. Não irei me aprofundar muito pois pretendo fazer mais artigos sobre o assunto detalhando mais em determinados tópicos.
+O Apache Mesos é considerado o kernel de sistemas distribuídos. Ele foi criado com os mesmos princípios do kernel Linux, só que em outro nível de abstração. O Mesos roda em todos os nós de cluster e prove a frameworks como Apache Spark, Hadoop, Cassandra, Kafka, Elastic Search e outros uma API para alocar recursos e rodarem suas tasks através de todo o cluster ou cloud. Em um Mesos cluster, CPU, memória, disco e outros recursos computacionais de todas as máquinas, virtuais ou físicas, são abstraídos em um único pool de recursos. Facilitando a criação e otimizando a utilização de sistemas distribuídos." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/apache-mesos/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/apache_mesos.png" />
+<meta property="article:published_time" content="2016-03-31T23:40:20+00:00" />
+<meta property="article:modified_time" content="2016-03-31T23:40:20+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Apache Mesos</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/jvanz/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://jvanz.com/images/avatar.jpg"
+           alt="José Guilherme Vanz"
+           title="José Guilherme Vanz">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/jvanz/"
+           class="author">José Guilherme Vanz</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2016-03-31T23:40:20Z">Mar 31, 2016</time>
+      &middot; 4 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/apache-mesos/"
+     data-text="Apache Mesos"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/apache-mesos/"
+     data-text="Apache Mesos"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/apache-mesos/"
+     data-text="Apache Mesos"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/apache-mesos/"
+     data-text="Apache Mesos"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/apache_mesos.png"
+           alt="Apache Mesos">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Nos últimos tempos vem se falando muito em computação na nuvem, computação distribuída, Linux containers, Big Data, etc. Junto com o crescimento dessas tecnologias também se observa o surgimento de inúmeras ferramentas para resolver os problemas encontrados nesta área da computação. Poderíamos citar várias, mas iremos falar brevemente sobre Apache Mesos. Não irei me aprofundar muito pois pretendo fazer mais artigos sobre o assunto detalhando mais em determinados tópicos.</p>
+<p>O Apache Mesos é considerado o <em>kernel</em> de sistemas distribuídos. Ele foi criado com os mesmos princípios do <em>kernel</em> Linux, só que em outro nível de abstração. O Mesos roda em todos os nós de <em>cluster</em> e prove a <em>frameworks</em> como Apache Spark, Hadoop, Cassandra, Kafka, Elastic Search e outros uma API para alocar recursos e rodarem suas <em>tasks</em> através de todo o <em>cluster</em> ou cloud. Em um Mesos <em>cluster</em>, CPU, memória, disco e outros recursos computacionais de todas as máquinas, virtuais ou físicas, são abstraídos em um único <em>pool</em> de recursos. Facilitando a criação e otimizando a utilização de sistemas distribuídos.</p>
+<h3><strong>Arquitetura</strong></h3>
+O Mesos tem como objetivo prover um <em>core</em> confiável e escalável para que diversas aplicações consigam compartilhar um mesmo <em>cluster</em>. Para isso, ele fornece uma API mínima que permite compartilhar recursos de forma eficiente entre os <em>frameworks,</em> dando a eles o controle para programarem e executarem suas <em>tasks</em>. Sua arquitetura é composta por três componente principais: Mesos master, Mesos agent e os <em>frameworks</em>.
+<p><em>Frameworks</em> são as aplicações que rodam em um Mesos <em>cluster</em>, cada um delas possui um <em>scheduler </em>e um<em> executor. </em>O <em>scheduler</em> é a aplicação que se registra no <em>master</em> para que então possa alocar recursos e enviar <em>tasks</em> para execução. O <em>executor</em> é o processo executado nos nó dos <em>cluster</em> para executar as tarefas do <em>framework.</em> O Mesos <em>agent</em> é o processo <em>daemon</em> que roda em todos os nós do <em>cluster</em>. Sua responsabilidade é alocar os recursos definidos para cada <em>task</em> enviada pelo Mesos <em>master</em> e executa-la (através do <em>executor</em>). O Mesos <em>master, </em>como o próprio nome diz, é o processo que gerencia todo<em> cluster. A</em>través do seu módulo de alocação é definido quanto de recursos deve ser oferecido para cada <em>framework</em>. É no <em>master</em> também que os <em>agents</em> se registram para reportar o quanto possuem de recursos disponíveis, atualizar o status das <em>tasks</em> em execução e etc.</p>
+<p><a href="/images/wp-content/uploads/2016/03/architecture3.jpg" rel="attachment wp-att-5032"><img class="wp-image-5032 aligncenter" src="/images/wp-content/uploads/2016/03/architecture3-300x202.jpg" alt="architecture3" width="434" height="292" /></a></p>
+<h4>Oferta de recursos</h4>
+Para permitir que o mesmo cluster possa ser utilizado por diversos <em>frameworks</em> e o Mesos continue se mantendo simples e escalável, é utilizado uma abordagem de oferta de recursos. Isso significa que o Mesos <em>master</em>, utilizando o módulo de alocação, define o quanto de recursos devem ser ofertado para cada <em>framework</em> rodando no <em>cluster</em>. Uma vez feita a oferta, o <em>scheduler</em> da cada <em>framework</em> tem a liberdade de aceitar ou recusar os recursos.
+<p><a href="/images/wp-content/uploads/2016/03/mesos_resource_offers.jpg" rel="attachment wp-att-5044"><img class="wp-image-5044 aligncenter" src="/images/wp-content/uploads/2016/03/mesos_resource_offers-300x207.jpg" alt="mesos_resource_offers" width="509" height="351" /></a></p>
+<p>A oferta de recursos começa quando o <em>agent</em> registrado no <em>master</em> reporta o quando de recursos possui disponível para ser utilizado. Uma vez com essas informações, o módulo de alocação do <em>master</em> pode decidir o quando de recurso pode ser ofertado para cada <em>framework</em>. Lembrando que as ofertas podem ser diferentes, isso depende de qual módulo de alocação segue as políticas de alocação de cada organização. Uma vez feita a oferta o <em>scheduler</em> do <em>framework</em> tem a responsabilidade de aceitar ou recusa baseado em suas necessidades. Caso o <em>framework</em> decida aceitar a oferta é retornado ao <em>master</em> uma descrição das tarefas que devem ser executadas e quanto de recursos devem ser alocados para cada uma. O <em>master</em> por sua vez, envia esses dados para o <em>agent</em> que aloca os recursos especificados para o <em>executor</em> do <em>framework</em>, este por sua vez executa as <em>tasks</em> especificadas pelo <em>scheduler</em>. Não vou entrar muito em detalhes de como a oferta de recursos acontece na prática para não estender muito o texto. Pretendo entrar em detalhes em um artigo futuro sobre como implementar um <em>framework.</em></p>
+<h3>Em ação</h3>
+Como a maioria dos projetos Open Source de sucesso, existe uma empresa por trás do projeto que fomenta o desenvolvimento e vende serviços e produtos baseados neste software. No caso do Apache Mesos a empresa por trás é a <a href="https://mesosphere.com/" target="_blank">Mesosphere</a> e produto em questão é o <em>Datacenter Operating System</em> (DCOS) . É possível ver o DCOS em ação neste video:
+<p class="aligncenter"><iframe class="aligncenter" src="https://www.youtube.com/embed/0I6qG9RQUnY" width="420" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h4>Referencias</h4>
+<a href="https://www.cs.berkeley.edu/~alig/papers/mesos.pdf">Mesos paper</a>
+<a href="http://mesos.apache.org/">Apache Mesos site</a>
+<a href="http://mesosphere.com/">Mesosphere</a>
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/apache/" class="tag-link">apache</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/cloud/" class="tag-link">cloud</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/cluster/" class="tag-link">cluster</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/mesos/" class="tag-link">mesos</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/apache-mesos/"
+     data-text="Apache Mesos"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/apache-mesos/"
+     data-text="Apache Mesos"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/apache-mesos/"
+     data-text="Apache Mesos"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/apache-mesos/"
+     data-text="Apache Mesos"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/jvanz/">
+        <img class="author-img"
+             src="https://jvanz.com/images/avatar.jpg"
+             alt="José Guilherme Vanz">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/jvanz/">José Guilherme Vanz</a>
+      </h2>
+      <span class="small text-muted">Software Engineer</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

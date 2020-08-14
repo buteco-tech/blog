@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aws on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/aws/</link>
+    <description>Recent content in aws on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 15 May 2020 12:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS S3 em Python</title>
+      <link>https://butecotecnologico.com.br/python-aws-s3/</link>
+      <pubDate>Fri, 15 May 2020 12:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/python-aws-s3/</guid>
+      <description>Diversas aplicações precisam em algum momento armazenar arquivos, seja para backup, CDN ou outros. Um dos serviços mais utilizados para armazenamento de arquivos é o AWS S3. Veja neste artigo como usar o S3 em suas aplicações Python.</description>
+    </item>
+    
+    <item>
+      <title>Lançamentos Novatec: Apocalipse zumbi com Arduino e Raspberry e AWS em ação</title>
+      <link>https://butecotecnologico.com.br/lancamentos-novatec-apocalipse-zumbi-com-arduino-e-raspberry-e-aws-em-acao/</link>
+      <pubDate>Thu, 07 Jan 2016 08:07:04 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lancamentos-novatec-apocalipse-zumbi-com-arduino-e-raspberry-e-aws-em-acao/</guid>
+      <description>&lt;p style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/capa_ampliada9788575224700.jpg&#34; rel=&#34;attachment wp-att-4453&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-4453&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/capa_ampliada9788575224700-215x300.jpg&#34; alt=&#34;capa_ampliada9788575224700&#34; width=&#34;215&#34; height=&#34;300&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align: center;&#34;&gt;&lt;strong&gt;Guia do maker para o apocalipse zumbi&lt;/strong&gt;&lt;/p&gt;
+Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Cozinhando o animal de estimação da família? Decapitando vizinhos que viraram zumbis?
+&lt;p&gt;Se ler o livro &lt;a href=&#34;http://novatec.com.br/livros/guia-maker-zumbi-arduino-raspberry/&#34; target=&#34;_blank&#34;&gt;Guia do maker para o apocalipse zumbi&lt;/a&gt; você estará construindo fortalezas, criando armadilhas, gerando eletricidade e criando dispositivos eletrônicos essenciais para a sua sobrevivência.&lt;/p&gt;
+&lt;p&gt;Com uma narrativa objetiva e bem-humorada, o livro &lt;a href=&#34;http://novatec.com.br/livros/guia-maker-zumbi-arduino-raspberry/&#34; target=&#34;_blank&#34;&gt;Guia do maker para o apocalipse zumbi&lt;/a&gt;, lançado pela &lt;a href=&#34;http://www.novatec.com.br/&#34;&gt;Novatec Editora&lt;/a&gt;, ensina tudo o que você precisa saber (e fazer) para se preparar para o apocalipse zumbi, e como utilizar Arduino e Raspberry Pi para criar circuitos simples para se defender.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jogos on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/categorias/jogos/</link>
+    <description>Recent content in Jogos on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 07 Sep 2015 20:35:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/categorias/jogos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mais correções no RC3 do Mesa 11.0</title>
+      <link>https://butecotecnologico.com.br/mais-correcoes-no-rc3-do-mesa-11-0/</link>
+      <pubDate>Mon, 07 Sep 2015 20:35:16 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/mais-correcoes-no-rc3-do-mesa-11-0/</guid>
+      <description>&lt;p&gt;O terceiro Release Candidate do Mesa 11.0 está disponível. Esta nova versão traz várias correções para os drivers R600g e RadeonSI, Nouveau NV50, Freedreno, atualizações no driver i965 e uma série de outras coisas.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Finalmente: Mesa ganha suporte a OpenGL 4.0, e está proximo do 4.1 e 4.2</title>
+      <link>https://butecotecnologico.com.br/finalmente-mesa-ganha-suporte-a-opengl-4-0-e-esta-proximo-do-4-1-e-4-2/</link>
+      <pubDate>Thu, 23 Jul 2015 20:57:35 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/finalmente-mesa-ganha-suporte-a-opengl-4-0-e-esta-proximo-do-4-1-e-4-2/</guid>
+      <description>&lt;p&gt;Depois de cinco anos da especificação do OpenGL 4.0 ser introduzido, o projeto open source Mesa 3D finalmente ganhou suporte a todas as extensões necessárias, sendo que existem patches pendentes que estão implementando as extensões das especificações 4.1 e 4.2. O desenvolvedor responsável pelos patches da versão 4.0 do Mesa foi o David Airlie, da Red Hat.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Começa a pré-venda de Steam Controllers e Steam Machines</title>
+      <link>https://butecotecnologico.com.br/comeca-a-pre-venda-de-steam-controllers-e-steam-machines/</link>
+      <pubDate>Thu, 04 Jun 2015 23:16:04 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/comeca-a-pre-venda-de-steam-controllers-e-steam-machines/</guid>
+      <description>Anúncio do início das pre-orders de Steam Machines e Steam Controllers foi dado pela Valve.</description>
+    </item>
+    
+    <item>
+      <title>Super Mario 64 em HD para Navegadores</title>
+      <link>https://butecotecnologico.com.br/super-mario-64-em-hd-para-navegadores/</link>
+      <pubDate>Mon, 30 Mar 2015 20:17:40 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/super-mario-64-em-hd-para-navegadores/</guid>
+      <description>Um dos clássicos da Nintendo, Super Mario 64, após ganhar seu espaço nos consoles N64 e NDS, recebeu uma versão em HD para navegadores. Infelizmente o criador só fez a primeira fase e não pretende continuar a desenvolver o projeto.</description>
+    </item>
+    
+    <item>
+      <title>Unity 5 vem com suporte a WebGL e você pode conferir alguns exemplos</title>
+      <link>https://butecotecnologico.com.br/unity-5-vem-com-suporte-a-webgl-e-voce-pode-conferir-alguns-exemplos/</link>
+      <pubDate>Thu, 05 Mar 2015 00:20:01 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/unity-5-vem-com-suporte-a-webgl-e-voce-pode-conferir-alguns-exemplos/</guid>
+      <description>Esta nova versão da mais popular ferramenta de desenvolvimento de jogos inclui uma prévia do exportador para WebGL. Os desenvolvedores de jogos estão a um passo de publicar os seus jogos para a Web de uma nova forma, tirando proveito do WebGL e do asm.js.</description>
+    </item>
+    
+    <item>
+      <title>Unreal Engine 4.7 inclui exportação para HTML5</title>
+      <link>https://butecotecnologico.com.br/unreal-engine-4-7-inclui-exportacao-para-html5/</link>
+      <pubDate>Sat, 28 Feb 2015 15:37:13 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/unreal-engine-4-7-inclui-exportacao-para-html5/</guid>
+      <description>Com o lançamento da Unreal Engine 4.7 no dia 24/02, a Epic Games adicionou uma nova funcionalidade que permite a exploração para HTML5. Com esta nova funcionalidade, você pode desenvolver seu jogo e exportá-lo imediatamente para a Web, e iniciar o jogo com apenas um clique.
+A versão 4.7 é considerada uma das maiores liberações já feitas desde o lançamento da Unreal Engine. Com isso, uma das maiores engines para desenvolvimento de jogos está cada vez mais perto de criar jogos para a Web.</description>
+    </item>
+    
+    <item>
+      <title>Crie seu próprio console Infanto por menos de 300 reais</title>
+      <link>https://butecotecnologico.com.br/crie-seu-proprio-console-infanto-por-menos-de-300-reais/</link>
+      <pubDate>Wed, 21 Jan 2015 21:00:21 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/crie-seu-proprio-console-infanto-por-menos-de-300-reais/</guid>
+      <description>Há cerca de duas semanas, o assunto da vez na área de jogos no Brasil foi o console chamado de Infanto.</description>
+    </item>
+    
+    <item>
+      <title>Capturando Imagem da Webcam com o PyGame</title>
+      <link>https://butecotecnologico.com.br/capturando-imagem-da-webcam-com-o-pygame/</link>
+      <pubDate>Tue, 09 Sep 2014 00:27:57 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/capturando-imagem-da-webcam-com-o-pygame/</guid>
+      <description>Este é o meu primeiro post no blog e gostaria de falar sobre o PyGame.</description>
+    </item>
+    
+    <item>
+      <title>Problema ao atualizar o jogo Flare no Fedora 20</title>
+      <link>https://butecotecnologico.com.br/problema-ao-atualizar-o-jogo-flare-no-fedora-20/</link>
+      <pubDate>Wed, 03 Sep 2014 02:01:55 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/problema-ao-atualizar-o-jogo-flare-no-fedora-20/</guid>
+      <description>Olá pessoal, como primeiro post deste blog eu gostaria de falar sobre a minha experiência resolvendo um problema que tive hoje mesmo no Fedora 20!</description>
+    </item>
+    
+  </channel>
+</rss>

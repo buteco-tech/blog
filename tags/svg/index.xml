@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>svg on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/svg/</link>
+    <description>Recent content in svg on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 29 Jan 2015 19:20:14 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/svg/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Inkscape 0.91 já está disponível</title>
+      <link>https://butecotecnologico.com.br/inkscape-0-91-ja-esta-disponivel/</link>
+      <pubDate>Thu, 29 Jan 2015 19:20:14 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/inkscape-0-91-ja-esta-disponivel/</guid>
+      <description>O Inkscape é uma ferramenta de código aberto para edição de gráficos vetoriais, muito semelhante ao Adobe Illustrator, Corel Draw, Freehand, ou Xara X</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/git/</link>
+    <description>Recent content in git on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 16 Feb 2016 21:08:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git: commit parcial de arquivos</title>
+      <link>https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/</link>
+      <pubDate>Tue, 16 Feb 2016 21:08:42 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/</guid>
+      <description>&lt;p&gt;Neste post demonstrarei uma das muitas &lt;em&gt;features&lt;/em&gt; bacanas disponíveis no git, o &lt;em&gt;commit&lt;/em&gt; parcial de arquivos. Esta &lt;em&gt;feature&lt;/em&gt; permite ao usuário selecionar quais alterações de determinado arquivo devem ser commitados.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Recuperando dados perdidos do git-stash</title>
+      <link>https://butecotecnologico.com.br/recuperando-dados-perdidos-do-git-stash/</link>
+      <pubDate>Wed, 28 Oct 2015 21:29:14 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/recuperando-dados-perdidos-do-git-stash/</guid>
+      <description>&lt;p&gt;Olá senhores e senhoras! =]&lt;/p&gt;
+&lt;p&gt;Em meu primeiro post no Buteco Open Source vou demonstrar como recuperar dados perdidos do git-stash. Talvez salvando muitas horas de trabalho que poderiam ser perdidas acidentalmente. Na realidade o método demonstrado neste artigo pode ser utilizado para  recuperar qualquer objeto git perdido. Antes de mais nada, enquanto você estiver implementando alguma grande &lt;em&gt;feature&lt;/em&gt;, quebre-a em pequenos pedaços e faça &lt;em&gt;commits&lt;/em&gt; regularmente. Não é uma boa ideia permanecer muito tempo sem &amp;ldquo;comitar&amp;rdquo;. Tenha cuidado.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Criando um git server local</title>
+      <link>https://butecotecnologico.com.br/criando-um-git-server-local/</link>
+      <pubDate>Tue, 15 Sep 2015 00:35:22 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-um-git-server-local/</guid>
+      <description>&lt;p&gt;Algumas vezes queremos ter um ponto comum em uma rede local onde podemos enviar nossos &lt;em&gt;commits&lt;/em&gt;, especialmente quando estamos trabalhando em equipe. Pois bem, a solução é simples.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fazendo squash de commits com git rebase</title>
+      <link>https://butecotecnologico.com.br/fazendo-squash-de-commits-com-git-rebase/</link>
+      <pubDate>Thu, 18 Jun 2015 23:04:10 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/fazendo-squash-de-commits-com-git-rebase/</guid>
+      <description>&lt;p&gt;Eventualmente trabalhamos em algo grande, e acabamos por fazer vários micro commits. Se você gostaria de juntar esses micro commits em um único no fim da implementação e não sabe como, eis a solução. O squash irá unir vários micro commits em um único commit. Sendo assim, se pode juntar uma alteração que tem 10 commits em apenas um único commit.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34; aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/git-squash-rebase.png&#34; alt=&#34;Git Squash Rebase&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Na imagem acima é possível observar que os commits antigos geram um novo commit unindo todas as alterações.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Git 2.2 está chegando com várias mudanças</title>
+      <link>https://butecotecnologico.com.br/git-2-2-esta-chegando-com-varias-mudancas/</link>
+      <pubDate>Mon, 10 Nov 2014 21:43:11 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/git-2-2-esta-chegando-com-varias-mudancas/</guid>
+      <description>O Git 2.2.0 RC 1 já está disponível e nesta última atualização o foco foi a estabilização.</description>
+    </item>
+    
+  </channel>
+</rss>

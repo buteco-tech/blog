@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Compilando o FreeBSD: Parte 1 &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Compilando o FreeBSD: Parte 1">
+<meta itemprop="description" content="Primeiro de tudo, sei que o conteúdo propriamente dito de como baixar e compilar os fontes do sistema operacional do FreeBSD é algo que tem aos montes na Internet. Entretanto acredito que reativar tópicos interessantes ou transformar eles em um registro no feeds das notícias pode animar alguém a fazer estes testes.
+Um aspecto é que, o objetivo deste texto é servir como base para a segunda parte que é compilar o sistema da nova maneira seguindo a proposta no livro de desenvolvimento do FreeBSD.">
+<meta itemprop="datePublished" content="2016-02-01T21:15:54+00:00" />
+<meta itemprop="dateModified" content="2016-02-01T21:15:54+00:00" />
+<meta itemprop="wordCount" content="549">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/freebsd2.png">
+
+
+
+<meta itemprop="keywords" content="distro,freebsd,kernel," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/freebsd2.png"/>
+
+<meta name="twitter:title" content="Compilando o FreeBSD: Parte 1"/>
+<meta name="twitter:description" content="Primeiro de tudo, sei que o conteúdo propriamente dito de como baixar e compilar os fontes do sistema operacional do FreeBSD é algo que tem aos montes na Internet. Entretanto acredito que reativar tópicos interessantes ou transformar eles em um registro no feeds das notícias pode animar alguém a fazer estes testes.
+Um aspecto é que, o objetivo deste texto é servir como base para a segunda parte que é compilar o sistema da nova maneira seguindo a proposta no livro de desenvolvimento do FreeBSD."/>
+
+
+<meta property="og:title" content="Compilando o FreeBSD: Parte 1" />
+<meta property="og:description" content="Primeiro de tudo, sei que o conteúdo propriamente dito de como baixar e compilar os fontes do sistema operacional do FreeBSD é algo que tem aos montes na Internet. Entretanto acredito que reativar tópicos interessantes ou transformar eles em um registro no feeds das notícias pode animar alguém a fazer estes testes.
+Um aspecto é que, o objetivo deste texto é servir como base para a segunda parte que é compilar o sistema da nova maneira seguindo a proposta no livro de desenvolvimento do FreeBSD." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/freebsd2.png" />
+<meta property="article:published_time" content="2016-02-01T21:15:54+00:00" />
+<meta property="article:modified_time" content="2016-02-01T21:15:54+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Compilando o FreeBSD: Parte 1</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/marco-oliveira/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=100&d=robohash"
+           alt="Marco Carvalho de Oliveira"
+           title="Marco Carvalho de Oliveira">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/marco-oliveira/"
+           class="author">Marco Carvalho de Oliveira</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2016-02-01T21:15:54Z">Feb 1, 2016</time>
+      &middot; 3 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/"
+     data-text="Compilando o FreeBSD: Parte 1"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/"
+     data-text="Compilando o FreeBSD: Parte 1"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/"
+     data-text="Compilando o FreeBSD: Parte 1"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/"
+     data-text="Compilando o FreeBSD: Parte 1"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/freebsd2.png"
+           alt="Compilando o FreeBSD: Parte 1">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Primeiro de tudo, sei que o conteúdo propriamente dito de como baixar e compilar os fontes do sistema operacional do FreeBSD é algo que tem aos montes na Internet. Entretanto acredito que reativar tópicos interessantes ou transformar eles em um registro no <em>feeds</em> das notícias pode animar alguém a fazer estes testes.</p>
+<p>Um aspecto é que, o objetivo deste texto é servir como base para a segunda parte que é compilar o sistema da nova maneira seguindo a proposta no livro de desenvolvimento do FreeBSD.</p>
+<p>Menos papo e vamos ao assunto. Um aspecto interessante a se notar é que o código do FreeBSD ele fica localizado em <code>/usr/src</code>, para os mais desavisados e desconhecidos de onde colocar os fontes.</p>
+<p>Primeiramente, vamos obter o código do FreeBSD. Podemos baixar ele por um pacote txz ou pegar ele direto do controle de versão, com SVN ou git.</p>
+<p>Pegar direto do txz tomando como base o FreeBSD 10.2:</p>
+<p><code>fetch <a href="ftp://ftp.freebsd.org/pub/FreeBSD/releases/amd64/amd64/10.2-RELEASE/src.txz">ftp://ftp.freebsd.org/pub/FreeBSD/releases/amd64/amd64/10.2-RELEASE/src.txz</a></code></p>
+<p><code>tar -C / -xvzf src.txz</code></p>
+<p>Uma segunda opção é sincronizar via SVN. Caso não tenha o svn você pode instalar ele via o sistema de pacotes pkg subversion ou compilando <code>cd /usr/ports/devel/subversion &amp;&amp; make install</code>. Vamos ao comando para sincronizar com o SVN do FreeBSD (Nota: espero que tão logo vire GIT no core).</p>
+<p><code>svn checkout <a class="externalLink" href="https://svn0.us-west.FreeBSD.org/base/releng/10.2/" target="_blank"><a href="https://svn0.us-west.FreeBSD.org/base/releng/10.2/">https://svn0.us-west.FreeBSD.org/base/releng/10.2/</a></a> /usr/src</code></p>
+<p><a href="/images/wp-content/uploads/2015/12/svn1.png"><img class="aligncenter size-full wp-image-4240" src="/images/wp-content/uploads/2015/12/svn1.png" alt="svn1" width="1005" height="225" /></a></p>
+<p>Pressione &lsquo;P&rsquo; para aceitar e espere a mágica acontecer ;) .. Muitos minutos depois vamos acessar a pasta dos fontes do kernel e compilar:</p>
+<p><code>cd /usr/src
+make buildworld KERNCONF=MYKERNEL
+make installworld</code></p>
+<p>O <em>buildworld</em> é um prefixo do <em>Makefile</em> de compilação do sistema operacional FreeBSD para construir o código, o único parâmetro exigido é a localização da sua configuração do kernel.
+Senta e espera&hellip; ;)</p>
+<p>Mas pera aí Marco, mas onde está a configuração..? Tá bom vamos descrever como ajustar as configurações. Aos mais desavisados, para lerem o texto antes de sair colando os códigos, joguei essa trap&hellip;</p>
+<p>O arquivo fica em <code>/usr/src/sys/amd64/conf</code>, para arquitetura amd64. Para outras arquiteturas basta mudar a pasta <code>amd64</code> para <code>arm</code> ou <code>i386</code>.</p>
+<p>E como alterar? Claro que com o seu editor predileto.</p>
+<p><code>cd /usr/src/sys/amd64/conf/
+cp GENERIC MYKERNEL
+cd ../../../ ( vai para cd /usr/src/ )
+make buildworld KERNCONF=MYKERNEL &amp;&amp; make installworld</code></p>
+<p>Agora funcionou :D Senta e espera terminar de compilar .. :o</p>
+<p>O arquivo de configuração GENERIC ele é bem detalhado e a parametrização simples, lembrando o par chave e valor. Neste ponto, por exemplo, podemos alterar o nome da build do nosso kernel. Este é o nome que aparece quando rodamos o comando <code>uname -a</code></p>
+<p><code>ident BaconBSD</code></p>
+<p>Podemos incluir dispositivos com o parâmetro device, ou no caso excluir comentando a linha no dispositivo que não precisamos:</p>
+<p><code>device vmx # VMware VMXNET3 Ethernet</code></p>
+<p>Basicamente comente este se você não usa vmware. Se você tiver dúvida sobre algum dispositivo o clássico manual te ajuda:</p>
+<p><code># man vmx</code></p>
+<p>Se mesmo assim os comentários do arquivo de configuração do GENERIC não foram o suficiente você pode expandir e conhecer mais das opções de parâmetros de configuração no arquivo de notas: <code>/usr/src/sys/amd64/conf/NOTES</code></p>
+<p><code># emacs /usr/src/sys/amd64/conf/NOTES</code></p>
+<p>Algo muito interessante ao se compilar o sistema operacional FreeBSD é perceber que programas como o heimdal e o ssh são partes do pacote do sistema. O FreeBSD, diferentemente do Linux, não é apenas um kernel, é um sistema operacional inteiro, tendo programas como tar, xz e outros.</p>
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/distro/" class="tag-link">distro</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/freebsd/" class="tag-link">freebsd</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/kernel/" class="tag-link">kernel</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/"
+     data-text="Compilando o FreeBSD: Parte 1"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/"
+     data-text="Compilando o FreeBSD: Parte 1"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/"
+     data-text="Compilando o FreeBSD: Parte 1"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/"
+     data-text="Compilando o FreeBSD: Parte 1"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/marco-oliveira/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=100&d=robohash"
+             alt="Marco Carvalho de Oliveira">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/marco-oliveira/">Marco Carvalho de Oliveira</a>
+      </h2>
+      <span class="small text-muted">Gerente de TI</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

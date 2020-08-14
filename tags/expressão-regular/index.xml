@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>expressão regular on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/express%C3%A3o-regular/</link>
+    <description>Recent content in expressão regular on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 12 Apr 2016 23:59:33 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/express%C3%A3o-regular/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BASH tips: Expressões regulares no bash</title>
+      <link>https://butecotecnologico.com.br/bash-tips-expressoes-regulares-no-bash/</link>
+      <pubDate>Tue, 12 Apr 2016 23:59:33 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/bash-tips-expressoes-regulares-no-bash/</guid>
+      <description>&lt;p&gt;Como hoje tive de utilizar expressões regulares no bash, pensei em compartilhar com nossos amigos leitores. O buteco já fez um post sobre a utilização de &lt;a href=&#34;https://butecotecnologico.com.br/posix-regular-expression-em-c&#34; target=&#34;_blank&#34;&gt;expressões regulares em C&lt;/a&gt;, e este artigo vem para complementar. Vamos ao exemplo abaixo:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

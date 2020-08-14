@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>smtplib on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/smtplib/</link>
+    <description>Recent content in smtplib on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 15 Jan 2015 06:00:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/smtplib/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Formatando e adicionando anexos a e-mails no Python</title>
+      <link>https://butecotecnologico.com.br/formatando-e-adicionando-anexos-a-e-mails-no-python/</link>
+      <pubDate>Thu, 15 Jan 2015 06:00:19 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/formatando-e-adicionando-anexos-a-e-mails-no-python/</guid>
+      <description>Há algumas semanas, nós mostramos como enviar e-mail pelo Python usando o módulo smtplib.</description>
+    </item>
+    
+  </channel>
+</rss>

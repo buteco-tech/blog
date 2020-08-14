@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Enviando SMS pelo PagueVeloz &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Enviando SMS pelo PagueVeloz">
+<meta itemprop="description" content="É muito comum ver nos sistemas que desenvolvemos envio de e-mail.">
+<meta itemprop="datePublished" content="2014-12-19T01:04:48+00:00" />
+<meta itemprop="dateModified" content="2014-12-19T01:04:48+00:00" />
+<meta itemprop="wordCount" content="562">
+<meta itemprop="image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="sms," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+
+<meta name="twitter:title" content="Enviando SMS pelo PagueVeloz"/>
+<meta name="twitter:description" content="É muito comum ver nos sistemas que desenvolvemos envio de e-mail."/>
+
+
+<meta property="og:title" content="Enviando SMS pelo PagueVeloz" />
+<meta property="og:description" content="É muito comum ver nos sistemas que desenvolvemos envio de e-mail." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+<meta property="article:published_time" content="2014-12-19T01:04:48+00:00" />
+<meta property="article:modified_time" content="2014-12-19T01:04:48+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Enviando SMS pelo PagueVeloz</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           alt="Alexandre Vicenzi"
+           title="Alexandre Vicenzi">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+           class="author">Alexandre Vicenzi</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2014-12-19T01:04:48Z">Dec 19, 2014</time>
+      &middot; 3 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/"
+     data-text="Enviando SMS pelo PagueVeloz"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/"
+     data-text="Enviando SMS pelo PagueVeloz"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/"
+     data-text="Enviando SMS pelo PagueVeloz"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/"
+     data-text="Enviando SMS pelo PagueVeloz"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header><article class="mt-3 mb-4">
+  <p>É muito comum ver nos sistemas que desenvolvemos envio de e-mail. Mas em alguns setores o envio de SMS facilita muito mais que um e-mail.</p>
+<p>Você recebe um e-mail do seu dentista informando que você tem uma consulta na semana que vem? Creio que não. Na maioria desses sistemas é usado envio de SMS e não de e-mail. Enviar um lembrete de um compromisso via SMS é muito mais simples e prático do que um e-mail, afinal, todos estão com seus celulares sempre a mãos.</p>
+<p>Hoje vou mostrar como enviar SMS usando a API do <a href="https://www.pagueveloz.com.br/">PagueVeloz</a>, nosso parceiro.</p>
+<p><img class="aligncenter" src="/images/wp-content/uploads/2014/12/logo-pagueveloz-topo_03.png" alt="PagueVeloz" /></p>
+<p>Bem, se você já ouviu falar em serviço de envio de SMS, provavelmente a primeira opção que veio a sua cabeça foi o <a href="https://www.twilio.com/">Twilio</a>. O Twilio oferece outros serviços além do de envio de SMS.</p>
+<p>Fazendo uma comparação rápida do envio de SMS do PagueVeloz x Twilio:</p>
+<p><strong>Vantagens</strong></p>
+<ul>
+	<li>Preço competitivo</li>
+	<li>Serviço nacional</li>
+	<li>Suporte em Português</li>
+</ul>
+<strong>Desvantagens</strong>
+<ul>
+	<li>Envia apenas para números no Brasil</li>
+</ul>
+<p><strong>Usando a API do PagueVeloz</strong></p>
+<p>Praticamente quase todas os serviços do PagueVeloz necessitam de autenticação. O SMS é um deles.
+Para usar os serviços você deve se cadastrar no PagueVeloz para receber o seu token de acesso a API. Esse token deverá ser semelhante a:</p>
+<p><code>e45c5687-b0ba-45d4-8337-0fdee61abe93</code></p>
+<p>Para todo o <em>Request</em> que necessita autenticação é obrigatório informar o header Authorization.</p>
+<p><code>Authorization: Basic [CHAVE]</code></p>
+<p>[CHAVE] é o BASE64 do email:token do cliente.</p>
+<p>Exemplo de chave:</p>
+<p><code><a href="mailto:seuemail@seudominio.com.br">seuemail@seudominio.com.br</a>:e45c5687-b0ba-45d4-8337-0fdee61abe93</code></p>
+<p>Exemplo após conversão para BASE64:</p>
+<p><code>c2V1ZW1haWxAc2V1ZG9taW5pby5jb20uYnI6ZTQ1YzU2ODctYjBiYS00NWQ0LTgzMzctMGZkZWU2MWFiZTkz</code></p>
+<p>Além desse header o Content-Type é obrigatório para todos os serviços. Vale ressaltar que a API trabalha apenas com o formato JSON.</p>
+<p><code>Content-Type: application/json</code></p>
+<p>Agora que já falamos sobre como se autenticar e enviar o token no <em>Request</em> vamos ver como enviar um SMS.</p>
+<p><strong>Enviando SMS</strong></p>
+<p>O JSON a ser enviado para a API é o seguinte:</p>
+<code>
+{
+    'SeuId': '1234',
+    'TelefoneRemetente': '551199887766',
+    'TelefoneDestino': '551199887766',
+    'Conteudo': 'SMS PagueVeloz',
+    'AgendarPara': '2014-12-18T23:16:17.2174313-02:00',
+    'Id': 0
+}
+</code>
+<p><strong>SeuId</strong> é o identificador da mensagem no seu sistema. Opcional.
+<strong>TelefoneRemetente</strong> é o número que está enviando. Obrigatório. Deve ser no formato 55 + DDD + NÚMERO.
+<strong>TelefoneDestino</strong> é o número que receberá. Obrigatório. Deve ser no formato 55 + DDD + NÚMERO.
+<strong>Conteudo</strong> é a mensagem a ser enviada. Obrigatório. No máximo 150 caracteres, de preferência sem acentuação.
+<strong>AgendarPara</strong> é a data que será enviado. Opcional. Se não informado será enviado na mesma hora da requisição. Deve estar no formato UTC.
+<strong>Id</strong> é o identificador da mensagem no PagueVeloz, sempre zero. Opcional.</p>
+<p>O retorno de sucesso é um número. Este número é o identificador da mensagem no PagueVeloz.
+Caso o retorno seja de erro, será retornada uma mensagem informando qual o erro.</p>
+<p>Veja <a href="https://www.pagueveloz.com.br/help" target="_blank">aqui</a> a documentação completa da API.</p>
+<p>Confira abaixo como enviar SMS em várias linguagens de programação.</p>
+<p><strong>C#</strong></p>
+<p>O primeiro exemplo usa os pacotes padrões HTTP do .Net. Já no segundo exemplo são usados pacotes do <a href="http://www.asp.net/web-api" target="_blank">ASP.NET Web API</a>. O primeiro exemplo é ideal para aplicações Desktop, já o segundo para aplicações Web.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/sms-pagueveloz/csharp/sms-console.cs" type="text/javascript"></script><script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/sms-pagueveloz/csharp/sms-webapi.cs" type="text/javascript"></script>
+<p><strong>C++</strong></p>
+<p>Necessário biblioteca <a href="http://curl.haxx.se/libcurl/" target="_blank">libcURL</a>. Para compilar o arquivo execute o comando:</p>
+<p><code>g++ -o sms.out sms.cpp -lcurl</code></p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/sms-pagueveloz/cpp/sms.cpp" type="text/javascript"></script>
+<p><strong>Java</strong></p>
+<p>Necessário biblioteca <a href="http://hc.apache.org/httpcomponents-client-ga/" target="_blank">httpcomponents</a>.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/sms-pagueveloz/java/sms.java" type="text/javascript"></script>
+<p><strong>Node.JS</strong></p>
+<p>Necessário pacote <a href="http://unirest.io/nodejs.html" target="_blank">unirest</a>. Para instalar execute o comando:</p>
+<p><code>npm install -g unirest</code></p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/sms-pagueveloz/nodejs/sms.js" type="text/javascript"></script>
+<p><strong>Python</strong></p>
+<p>Necessário módulo <a href="http://unirest.io/python.html" target="_blank">unirest</a>. Para instalar execute o comando:</p>
+<p><code>pip install unirest</code></p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/sms-pagueveloz/python/sms.py" type="text/javascript"></script>
+<p><strong>Ruby</strong></p>
+<p>Necessário pacote <a href="http://unirest.io/ruby.html" target="_blank">unirest</a>. Para instalar execute o comando:</p>
+<p><code>gem install unirest</code><script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/sms-pagueveloz/ruby/sms.rb" type="text/javascript"></script></p>
+<p>Faltou a sua linguagem de programação? Deixe um comentário que daremos um jeito de disponibilizá-lo para você.</p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/sms/" class="tag-link">sms</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/"
+     data-text="Enviando SMS pelo PagueVeloz"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/"
+     data-text="Enviando SMS pelo PagueVeloz"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/"
+     data-text="Enviando SMS pelo PagueVeloz"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/"
+     data-text="Enviando SMS pelo PagueVeloz"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             alt="Alexandre Vicenzi">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">Alexandre Vicenzi</a>
+      </h2>
+      <span class="small text-muted">Engenheiro de Software</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

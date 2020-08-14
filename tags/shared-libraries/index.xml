@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shared-libraries on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/shared-libraries/</link>
+    <description>Recent content in shared-libraries on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 01 Oct 2014 00:42:05 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/shared-libraries/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hands On: Shared Libraries no Linux</title>
+      <link>https://butecotecnologico.com.br/hands-on-shared-libraries-no-linux/</link>
+      <pubDate>Wed, 01 Oct 2014 00:42:05 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/hands-on-shared-libraries-no-linux/</guid>
+      <description>Bibliotecas compartilhadas são usadas em qualquer sistema operacional, seja Windows, Linux, Mac OSX ou qualquer *BSD ou *NIX.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Enviando emails com o Python &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Enviando emails com o Python">
+<meta itemprop="description" content="Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo smtplib.">
+<meta itemprop="datePublished" content="2014-12-28T06:00:49+00:00" />
+<meta itemprop="dateModified" content="2014-12-28T06:00:49+00:00" />
+<meta itemprop="wordCount" content="521">
+<meta itemprop="image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="email,python," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+
+<meta name="twitter:title" content="Enviando emails com o Python"/>
+<meta name="twitter:description" content="Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo smtplib."/>
+
+
+<meta property="og:title" content="Enviando emails com o Python" />
+<meta property="og:description" content="Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo smtplib." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/enviando-emails-com-o-python/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+<meta property="article:published_time" content="2014-12-28T06:00:49+00:00" />
+<meta property="article:modified_time" content="2014-12-28T06:00:49+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Enviando emails com o Python</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           alt="Alexandre Vicenzi"
+           title="Alexandre Vicenzi">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+           class="author">Alexandre Vicenzi</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2014-12-28T06:00:49Z">Dec 28, 2014</time>
+      &middot; 3 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/enviando-emails-com-o-python/"
+     data-text="Enviando emails com o Python"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/enviando-emails-com-o-python/"
+     data-text="Enviando emails com o Python"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/enviando-emails-com-o-python/"
+     data-text="Enviando emails com o Python"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/enviando-emails-com-o-python/"
+     data-text="Enviando emails com o Python"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header><article class="mt-3 mb-4">
+  <p>Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo <a href="https://docs.python.org/2.7/library/smtplib.html" target="_blank">smtplib</a>.</p>
+<p>Vale ressaltar que o exemplo é indicado para envio de email mais simples, para enviar email com formatações especiais e anexos é recomendado o uso do módulo <a href="https://docs.python.org/2.7/library/email.html" target="_blank">email</a>. Abordarei este módulo em uma outra publicação.</p>
+<p>O módulo <em>smtplib</em> define um cliente SMTP que pode ser usado para enviar emails tanto via SMTP quanto ESMTP. O <em>smtplib</em> segue os padrões da RFC 821 (SMTP), RFC 1869 (ESMTP), RFC 2554 (Autenticação SMTP) e RFC 2487 (SMTP Seguro via TLS).</p>
+<p>Como este módulo já está incluso nas bibliotecas do Python você não precisará instalar nenhuma biblioteca adicional.</p>
+<p>Agora que já demos uma boa introdução sobre o módulo <em>smtplib</em> vamos ao que interessa.</p>
+<p>Inicialmente vamos importar o módulo:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">smtplib</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Vamos criar a instância do SMTP de acordo com a forma de autenticação:</p>
+<p><strong>TLS</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="mi">587</span><span class="p">)</span>
+<span class="n">smtp</span><span class="o">.</span><span class="n">starttls</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>SSL</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP_SSL</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="mi">465</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Sem autenticação</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Se escolhemos TLS ou SSL devemos fazer a autenticação:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">smtp</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;usuário&#39;</span><span class="p">,</span> <span class="s1">&#39;senha&#39;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Caso seja sem autenticação devemos nos identificar enviando o comando EHLO ou HELO:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="c1"># EHLO</span>
+<span class="n">smtp</span><span class="o">.</span><span class="n">ehlo</span><span class="p">()</span>
+
+<span class="c1"># HELO</span>
+<span class="n">smtp</span><span class="o">.</span><span class="n">helo</span><span class="p">()</span>
+
+<span class="c1"># De forma genérica. Tenta EHLO primeiro.</span>
+<span class="n">smtp</span><span class="o">.</span><span class="n">ehlo_or_helo_if_needed</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Não há necessidade de chamar os métodos <code>ehlo</code> ou <code>helo</code> quando se utiliza SSL ou TLS, pois o método login faz a chamada desses métodos caso seja necessário.</p>
+<p>Enviando um email:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;From: Seu Nome &lt;seuemail@seudominio.com.br&gt;
+</span><span class="s1">To: outroemail@seudominio.com.br
+</span><span class="s1">Subject: Buteco Open Source
+</span><span class="s1">
+</span><span class="s1">Email de teste do Buteco Open Source&#39;&#39;&#39;</span>
+
+<span class="n">smtp</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="s1">&#39;seuemail@seudominio.com.br&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;outroemail@seudominio.com.br&#39;</span><span class="p">],</span> <span class="n">msg</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Note que o segundo parâmetro do método <code>sendmail</code> deve ser uma lista. Mesmo que o destinatário seja apenas um.</p>
+<p>Finalizando a sessão SMTP:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">smtp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Agora que já sabemos quais partes usar, vamos colocar tudo em prática em um exemplo. No exemplo vou utilizar o Gmail como servidor SMTP, mas você pode utilizar outro de sua preferência.</p>
+<p>Abaixo você pode verificar como enviar usando TLS:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">smtplib</span>
+
+<span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s1">&#39;smtp.gmail.com&#39;</span><span class="p">,</span> <span class="mi">587</span><span class="p">)</span>
+<span class="n">smtp</span><span class="o">.</span><span class="n">starttls</span><span class="p">()</span>
+
+<span class="n">smtp</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;seuemail@gmail.com&#39;</span><span class="p">,</span> <span class="s1">&#39;suasenha&#39;</span><span class="p">)</span>
+
+<span class="n">de</span> <span class="o">=</span> <span class="s1">&#39;seuemail@gmail.com&#39;</span>
+<span class="n">para</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;seuemail@gmail.com&#39;</span><span class="p">]</span>
+<span class="n">msg</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;From: </span><span class="si">%s</span><span class="s2">
+</span><span class="s2">To: </span><span class="si">%s</span><span class="s2">
+</span><span class="s2">Subject: Buteco Open Source
+</span><span class="s2">
+</span><span class="s2">Email de teste do Buteco Open Source.&#34;&#34;&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">para</span><span class="p">))</span>
+
+<span class="n">smtp</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="n">para</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
+
+<span class="n">smtp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Já neste outro exemplo você pode verificar como enviar via SSL:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">smtplib</span>
+
+<span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP_SSL</span><span class="p">(</span><span class="s1">&#39;smtp.gmail.com&#39;</span><span class="p">,</span> <span class="mi">465</span><span class="p">)</span>
+
+<span class="n">smtp</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;seuemail@gmail.com&#39;</span><span class="p">,</span> <span class="s1">&#39;suasenha&#39;</span><span class="p">)</span>
+
+<span class="n">de</span> <span class="o">=</span> <span class="s1">&#39;seuemail@gmail.com&#39;</span>
+<span class="n">para</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;seuemail@gmail.com&#39;</span><span class="p">]</span>
+<span class="n">msg</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;From: </span><span class="si">%s</span><span class="s2">
+</span><span class="s2">To: </span><span class="si">%s</span><span class="s2">
+</span><span class="s2">Subject: Buteco Open Source
+</span><span class="s2">
+</span><span class="s2">Email de teste do Buteco Open Source.&#34;&#34;&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">para</span><span class="p">))</span>
+
+<span class="n">smtp</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="n">para</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
+
+<span class="n">smtp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Confira abaixo uma lista dos servidores de email mais comuns e suas configurações.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Nome</th>
+<th align="center">Servidor</th>
+<th align="center">Autenticação</th>
+<th align="center">Porta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Gmail</td>
+<td align="center">smtp.gmail.com</td>
+<td align="center">SSL</td>
+<td align="center">465</td>
+</tr>
+<tr class="even">
+<td align="left">Gmail</td>
+<td align="center">smtp.gmail.com</td>
+<td align="center">StartTLS</td>
+<td align="center">587</td>
+</tr>
+<tr class="odd">
+<td align="left">Hotmail</td>
+<td align="center">smtp.live.com</td>
+<td align="center">SSL</td>
+<td align="center">465</td>
+</tr>
+<tr class="even">
+<td align="left">Mail.com</td>
+<td align="center">smtp.mail.com</td>
+<td align="center">SSL</td>
+<td align="center">465</td>
+</tr>
+<tr class="odd">
+<td align="left">Outlook.com</td>
+<td align="center">smtp.live.com</td>
+<td align="center">StartTLS</td>
+<td align="center">587</td>
+</tr>
+<tr class="even">
+<td align="left">Office365.com</td>
+<td align="center">smtp.office365.com</td>
+<td align="center">StartTLS</td>
+<td align="center">587</td>
+</tr>
+<tr class="odd">
+<td align="left">Yahoo Mail</td>
+<td align="center">smtp.mail.yahoo.com</td>
+<td align="center">SSL</td>
+<td align="center">465</td>
+</tr>
+</tbody>
+</table>
+<p>Espero que você tenha gostado desta publicação.</p>
+<p>Continue acompanhando que faremos uma continuação falando sobre o módulo <a href="https://docs.python.org/2.7/library/email.html" target="_blank">email</a>.</p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/email/" class="tag-link">email</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/python/" class="tag-link">python</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/enviando-emails-com-o-python/"
+     data-text="Enviando emails com o Python"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/enviando-emails-com-o-python/"
+     data-text="Enviando emails com o Python"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/enviando-emails-com-o-python/"
+     data-text="Enviando emails com o Python"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/enviando-emails-com-o-python/"
+     data-text="Enviando emails com o Python"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             alt="Alexandre Vicenzi">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">Alexandre Vicenzi</a>
+      </h2>
+      <span class="small text-muted">Engenheiro de Software</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

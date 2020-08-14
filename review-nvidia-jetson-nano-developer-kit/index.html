@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>NVIDIA Jetson Nano Developer Kit &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="NVIDIA Jetson Nano Developer Kit">
+<meta itemprop="description" content="Uma placa de desenvolvimento focada em visão computacional e deep learning.">
+<meta itemprop="datePublished" content="2020-05-06T08:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-05-06T08:00:00+00:00" />
+<meta itemprop="wordCount" content="695">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/jetson-nano-devkit.png">
+
+
+
+<meta itemprop="keywords" content="nvidia,redes neurais,hardware," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/posts/jetson-nano-devkit.png"/>
+
+<meta name="twitter:title" content="NVIDIA Jetson Nano Developer Kit"/>
+<meta name="twitter:description" content="Uma placa de desenvolvimento focada em visão computacional e deep learning."/>
+
+
+<meta property="og:title" content="NVIDIA Jetson Nano Developer Kit" />
+<meta property="og:description" content="Uma placa de desenvolvimento focada em visão computacional e deep learning." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/posts/jetson-nano-devkit.png" />
+<meta property="article:published_time" content="2020-05-06T08:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-06T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>NVIDIA Jetson Nano Developer Kit</h1>
+    <h2 class="tagline text-muted mb-4">Uma placa de desenvolvimento focada em visão computacional e deep learning</h2>
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           alt="Alexandre Vicenzi"
+           title="Alexandre Vicenzi">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+           class="author">Alexandre Vicenzi</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2020-05-06T08:00:00Z">May 6, 2020</time>
+      &middot; 4 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/"
+     data-text="NVIDIA Jetson Nano Developer Kit"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/"
+     data-text="NVIDIA Jetson Nano Developer Kit"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/"
+     data-text="NVIDIA Jetson Nano Developer Kit"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/"
+     data-text="NVIDIA Jetson Nano Developer Kit"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+
+  <article class="mt-3 mb-4">
+  <figure>
+    <img src="/images/posts/jetson-nano-devkit.png"
+         alt="Jetson Nano"/> 
+</figure>
+
+<p><a href="https://developer.nvidia.com/embedded/jetson-nano-developer-kit"
+   
+   target="_blank">NVIDIA® Jetson Nano™ Developer Kit</a> é um kit de desenvolvimento SoM (system-on-module) que permite que você execute multiplas redes neurais em paralelo, para aplicações como classificação de imagens, detecção de objetos, segmentação e reconhecimento de fala. Tudo em uma plataforma simples de usar e que consome apenas 5W.</p>
+<h2 id="especificações">Especificações</h2>
+<p>|:&mdash;|:&mdash;|
+| CPU           | Quad-core ARM A57 @ 1.43 GHz |
+| GPU           | 128-core Maxwell |
+| Memória       | 4 GB 64-bit LPDDR4 25.6 GB/s |
+| Armazenamento | microSD (não incluso) |
+| Camera        | 2x MIPI CSI-2 |
+| Conectividade | Gigabit Ethernet, M.2 Key E (para adaptadores Wifi/BT) |
+| Vídeo         | HDMI e DisplayPort |
+| USB           | 4x USB 3.0 |
+| Outros        | GPIO, I2C, I2S, SPI, UART |
+| Dimenções     | 69 mm x 45 mm |</p>
+<h2 id="software">Software</h2>
+<p>A imagem oficial é Ubuntu, e conta com suporte de bibliotecas como <a href="https://developer.nvidia.com/embedded/jetpack"
+   
+   target="_blank">JetPack SDK</a>, CUDA Toolkit, cuDNN, TensorRT, TensorFlow, OpenCV, OpenGL, Vulkan, entre outros.</p>
+<h2 id="finalidade">Finalidade</h2>
+<p>A finalidade principal da Jetson Nano é a utilização em aplicações relacionadas a visão computacional e deep learning, onde se faz necessário o uso de GPU, pois ela provê 472 GFLOPS (FP16) de desempenho computacional, tudo isso consumindo apenas 5-10W.</p>
+<p>Alguns dos usos mais comuns são robôs autônomos, dispositivos IoT inteligentes, e sistemas avançados de Inteligência Artificial (IA).</p>
+<h2 id="desempenho">Desempenho</h2>
+<p>Na tabela abaixo é feita uma comparação da Jetson Nano com demais opções disponíveis no mercado, dentre elas:</p>
+<ul>
+<li>Raspbery Pi 3</li>
+<li>Raspbery Pi 3 com a <a href="https://software.intel.com/pt-br/neural-compute-stick"
+   
+   target="_blank">Intel Neural Compute Stick 2</a></li>
+<li><a href="https://coral.ai/products/dev-board/"
+   
+   target="_blank">Google Edge TPU Dev Board</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">Modelo</th>
+<th align="center">Framework</th>
+<th align="center">Jetson Nano</th>
+<th align="center">RPi 3</th>
+<th align="center">RPi 3 + Intel NCS2</th>
+<th align="center">Google Edge TPU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">ResNet-50 (224×224)</td>
+<td align="center">TensorFlow</td>
+<td align="center">36 FPS</td>
+<td align="center">1.4 FPS</td>
+<td align="center">16 FPS</td>
+<td align="center">DNR</td>
+</tr>
+<tr>
+<td align="left">MobileNet-v2 (300×300)</td>
+<td align="center">TensorFlow</td>
+<td align="center">64 FPS</td>
+<td align="center">2.5 FPS</td>
+<td align="center">30 FPS</td>
+<td align="center">130 FPS</td>
+</tr>
+<tr>
+<td align="left">SSD ResNet-18 (960×544)</td>
+<td align="center">TensorFlow</td>
+<td align="center">5 FPS</td>
+<td align="center">DNR</td>
+<td align="center">DNR</td>
+<td align="center">DNR</td>
+</tr>
+<tr>
+<td align="left">SSD ResNet-18 (480×272)</td>
+<td align="center">TensorFlow</td>
+<td align="center">16 FPS</td>
+<td align="center">DNR</td>
+<td align="center">DNR</td>
+<td align="center">DNR</td>
+</tr>
+<tr>
+<td align="left">SSD ResNet-18 (300×300)</td>
+<td align="center">TensorFlow</td>
+<td align="center">18 FPS</td>
+<td align="center">DNR</td>
+<td align="center">DNR</td>
+<td align="center">DNR</td>
+</tr>
+<tr>
+<td align="left">SSD Mobilenet-V2 (960×544)</td>
+<td align="center">TensorFlow</td>
+<td align="center">8 FPS</td>
+<td align="center">DNR</td>
+<td align="center">1.8 FPS</td>
+<td align="center">DNR</td>
+</tr>
+<tr>
+<td align="left">SSD Mobilenet-V2 (480×272)</td>
+<td align="center">TensorFlow</td>
+<td align="center">27 FPS</td>
+<td align="center">DNR</td>
+<td align="center">7 FPS</td>
+<td align="center">DNR</td>
+</tr>
+<tr>
+<td align="left">SSD Mobilenet-V2 (300×300)</td>
+<td align="center">TensorFlow</td>
+<td align="center">39 FPS</td>
+<td align="center">1 FPS</td>
+<td align="center">11 FPS</td>
+<td align="center">48 FPS</td>
+</tr>
+<tr>
+<td align="left">Inception V4 (299×299)</td>
+<td align="center">PyTorch</td>
+<td align="center">11 FPS</td>
+<td align="center">DNR</td>
+<td align="center">DNR</td>
+<td align="center">9 FPS</td>
+</tr>
+<tr>
+<td align="left">Tiny YOLO V3 (416×416)</td>
+<td align="center">Darknet</td>
+<td align="center">25 FPS</td>
+<td align="center">0.5 FPS</td>
+<td align="center">DNR</td>
+<td align="center">DNR</td>
+</tr>
+<tr>
+<td align="left">OpenPose (256×256)</td>
+<td align="center">Caffe</td>
+<td align="center">14 FPS</td>
+<td align="center">DNR</td>
+<td align="center">5 FPS</td>
+<td align="center">DNR</td>
+</tr>
+<tr>
+<td align="left">VGG-19 (224×224)</td>
+<td align="center">MXNet</td>
+<td align="center">10 FPS</td>
+<td align="center">0.5 FPS</td>
+<td align="center">5 FPS</td>
+<td align="center">DNR</td>
+</tr>
+<tr>
+<td align="left">Super Resolution (481×321)</td>
+<td align="center">PyTorch</td>
+<td align="center">15 FPS</td>
+<td align="center">DNR</td>
+<td align="center">0.6 FPS</td>
+<td align="center">DNR</td>
+</tr>
+<tr>
+<td align="left">Unet (1x512x512)</td>
+<td align="center">Caffe</td>
+<td align="center">18 FPS</td>
+<td align="center">DNR</td>
+<td align="center">5 FPS</td>
+<td align="center">DNR</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><em>DNR</em> significa Did Not Run, ou, não foi possível executar.</p>
+</blockquote>
+<p>A Raspbery Pi por si só não é focada em nenhum tipo de aplicação relacionada a inteligência artificial e nem possui capacidade computacional para tal.</p>
+<p>A Intel Neural Compute Stick 2 é uma VPU (unidade de processamento visual), e seu foco principal é visão computacional, porém a NCS2 é um dispositivo USB, ou seja, ela precisa ser utilizada em conjunto com algum outro computador, e é a combinação ideal para a Raspbery Pi.</p>
+<p>A Google Edge também é uma SoM (system-on-module) e conta com uma TPU (unidade de processamento de tensores) capaz de executar 4 trilhões de operações (tera-operations) por segundo (TOPS) e seu foco principal também é visão computacional.</p>
+<p>A Jetson Nano possui uma GPU (unidade de processamento gráfico) Maxwell de 128 núcleos CUDA, ou seja, é a mesma arquitetura da Titan X e GTX 970, porém com cerca de 1/10 dos núcleos CUDA. Sendo uma GPU, ela permite uma variedade maior de aplicações.</p>
+<p>Obviamente a Jetson Nano não é ideal para o treinamento de redes neurais, como uma GPU de Desktop ou Servidor, porém, para a execução, em determinadas aplicações ela supera as demais concorrentes.</p>
+<h2 id="considerações-finais">Considerações finais</h2>
+<p>A Jetson Nano é certamente uma plaquinha interessante, principalmente em usos como robôs autônomos, porém vale resaltar que ela é uma placa de desenvolvimento, ou seja, uso indicado para prototipação.</p>
+<p>Para produção em larga escala ou para uso em algum sistema em produção é aconselhável utilizar outras placas da família Jetson, como por exemplo a Jetson Xavier NX.</p>
+<p>Seu preço oficial é de 99 Dólares, porém achá-la no Brasil e por um preço aceitável é outra questão.</p>
+<p>Fique ligado que falaremos novamente sobre a Jetson Nano em breve.</p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/nvidia/" class="tag-link">nvidia</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/hardware/" class="tag-link">hardware</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/"
+     data-text="NVIDIA Jetson Nano Developer Kit"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/"
+     data-text="NVIDIA Jetson Nano Developer Kit"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/"
+     data-text="NVIDIA Jetson Nano Developer Kit"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/"
+     data-text="NVIDIA Jetson Nano Developer Kit"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             alt="Alexandre Vicenzi">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">Alexandre Vicenzi</a>
+      </h2>
+      <span class="small text-muted">Engenheiro de Software</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

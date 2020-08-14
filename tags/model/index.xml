@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>model on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/model/</link>
+    <description>Recent content in model on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 09 Mar 2015 07:59:57 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/model/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Laravel 5 do começo ao fim [parte 2]</title>
+      <link>https://butecotecnologico.com.br/tutorial-laravel-5-parte-2/</link>
+      <pubDate>Mon, 09 Mar 2015 07:59:57 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tutorial-laravel-5-parte-2/</guid>
+      <description>Esta é a segunda parte do tutorial sobre Laravel 5, caso você não tenha ainda visto, veja a primeira parte dessa série neste link.</description>
+    </item>
+    
+  </channel>
+</rss>

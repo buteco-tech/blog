@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cep on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/cep/</link>
+    <description>Recent content in cep on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 23 Sep 2014 13:30:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/cep/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Informações de localização pelo CEP com PHP</title>
+      <link>https://butecotecnologico.com.br/informacoes-de-localizacao-pelo-cep-com-php/</link>
+      <pubDate>Tue, 23 Sep 2014 13:30:48 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/informacoes-de-localizacao-pelo-cep-com-php/</guid>
+      <description>&lt;p&gt;Tive a necessidade a alguns dias de através do CEP passado retornar algumas informações como logradouro, cidade, estado, bairro, etc&amp;hellip; pesquisando um pouco vi que existem diversos serviços &lt;em&gt;RESTful&lt;/em&gt; que retornam essas informações, porém nada padronizado, além disso nada me garantiria que esses serviços estivessem no ar.&lt;/p&gt;
+&lt;p&gt;Para isto criei um repositório no &lt;em&gt;GIT&lt;/em&gt; com classes que consumam esses web services com efeito cascata, caso um deles não estiver disponível a classe tentará o próximo serviço até conseguir preencher todas as informações para retorno ou acabe a lista de serviços.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/ButecoOpenSource/phpcepinfo&#34; target=&#34;_blank&#34;&gt;Repositório no GITHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;O projeto se resume a duas classes:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Localizacao: &lt;/strong&gt;Faz a busca pelos dados na web&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Network: &lt;/strong&gt;Verifica se o site está disponível&lt;/p&gt;
+&lt;p&gt;Exemplo:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;php&#34;&gt;
+
+$localizacao = Localizacao::getArrayByCep(&#39;89050000&#39;);
+print_r($localizacao);
+//array() = (&#39;cep&#39;,&#39;89050000&#39;,&#39;logradouro&#39;,&#39;Avenida Brasil&#39;, &#39;bairro&#39;,&#39;Ponta Aguda&#39;, &#39;cidade&#39;,&#39;Blumenau&#39;,&#39;uf&#39;,&#39;Santa Catarina&#39;)
+
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

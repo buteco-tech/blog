@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>esptool on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/esptool/</link>
+    <description>Recent content in esptool on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 02 Feb 2016 22:22:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/esptool/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NodeMCU: Lua para o ESP8266</title>
+      <link>https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/</link>
+      <pubDate>Tue, 02 Feb 2016 22:22:16 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://nodemcu.com/index_en.html&#34; target=&#34;_blank&#34;&gt;NodeMCU&lt;/a&gt; é um &lt;em&gt;firmware&lt;/em&gt; e kit de desenvolvimento que permite a programação de protótipos para a Internet das Coisas (IoT). O &lt;em&gt;firmware&lt;/em&gt; utiliza o paradigma &lt;em&gt;event-driven&lt;/em&gt; para facilitar o desenvolvimento de aplicações que necessitem acesso à Internet. Além disso, integra módulos de GPIO, 1-Wire, I2C, SPI, PWM, ADC, entre outros, para facilitar o manuseio de módulos baseados no chip ESP8266.&lt;/p&gt;
+&lt;p&gt;Na verdade, o NodeMCU é mais que um &lt;em&gt;firmware&lt;/em&gt;, é a empresa por trás do NodeMCU Dev Kit, que além do &lt;em&gt;firmware&lt;/em&gt;, disponibiliza uma placa de desenvolvimento baseada no ESP8266.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

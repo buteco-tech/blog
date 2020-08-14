@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Fazendo backup para o Amazon S3 com Python &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Fazendo backup para o Amazon S3 com Python">
+<meta itemprop="description" content="O Amazon Simple Storage Service (Amazon S3) oferece aos desenvolvedores e equipes de TI armazenamento de objetos seguro, durável e altamente escalonável. O Amazon S3 é fácil de usar, com uma interface de serviços da web simples para armazenar e recuperar qualquer quantidade de dados de qualquer parte da web. Com o Amazon S3, você paga apenas pelo armazenamento realmente utilizado. Não há taxa mínima nem custo de configuração.">
+<meta itemprop="datePublished" content="2015-04-23T07:46:32+00:00" />
+<meta itemprop="dateModified" content="2015-04-23T07:46:32+00:00" />
+<meta itemprop="wordCount" content="688">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/amazon_aws-s3.png">
+
+
+
+<meta itemprop="keywords" content="amazon s3,boto,python,yaml," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/amazon_aws-s3.png"/>
+
+<meta name="twitter:title" content="Fazendo backup para o Amazon S3 com Python"/>
+<meta name="twitter:description" content="O Amazon Simple Storage Service (Amazon S3) oferece aos desenvolvedores e equipes de TI armazenamento de objetos seguro, durável e altamente escalonável. O Amazon S3 é fácil de usar, com uma interface de serviços da web simples para armazenar e recuperar qualquer quantidade de dados de qualquer parte da web. Com o Amazon S3, você paga apenas pelo armazenamento realmente utilizado. Não há taxa mínima nem custo de configuração."/>
+
+
+<meta property="og:title" content="Fazendo backup para o Amazon S3 com Python" />
+<meta property="og:description" content="O Amazon Simple Storage Service (Amazon S3) oferece aos desenvolvedores e equipes de TI armazenamento de objetos seguro, durável e altamente escalonável. O Amazon S3 é fácil de usar, com uma interface de serviços da web simples para armazenar e recuperar qualquer quantidade de dados de qualquer parte da web. Com o Amazon S3, você paga apenas pelo armazenamento realmente utilizado. Não há taxa mínima nem custo de configuração." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/amazon_aws-s3.png" />
+<meta property="article:published_time" content="2015-04-23T07:46:32+00:00" />
+<meta property="article:modified_time" content="2015-04-23T07:46:32+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Fazendo backup para o Amazon S3 com Python</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           alt="Alexandre Vicenzi"
+           title="Alexandre Vicenzi">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+           class="author">Alexandre Vicenzi</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2015-04-23T07:46:32Z">Apr 23, 2015</time>
+      &middot; 4 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/"
+     data-text="Fazendo backup para o Amazon S3 com Python"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/"
+     data-text="Fazendo backup para o Amazon S3 com Python"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/"
+     data-text="Fazendo backup para o Amazon S3 com Python"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/"
+     data-text="Fazendo backup para o Amazon S3 com Python"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/amazon_aws-s3.png"
+           alt="Fazendo backup para o Amazon S3 com Python">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Fazer backup é algo muito importante quando se tem um site ou sistemas em produção. Existem várias formas de se fazer um backup. Você pode optar por um software, pago ou não, ou criar a sua própria ferramente ou script dependendo de sua necessidade.</p>
+<p>Pois bem, hoje mostrarei a forma que é feito backup aqui no Buteco.</p>
+<p>Os ingredientes para esta solução são bem simples. Temos um script em Python que faz upload para o Amazon S3.</p>
+<p><strong>Amazon S3</strong></p>
+<p>O <a href="http://aws.amazon.com/pt/s3/" target="_blank">Amazon Simple Storage Service (Amazon S3)</a> oferece aos desenvolvedores e equipes de TI armazenamento de objetos seguro, durável e altamente escalonável. O Amazon S3 é fácil de usar, com uma interface de serviços da web simples para armazenar e recuperar qualquer quantidade de dados de qualquer parte da web. Com o Amazon S3, você paga apenas pelo armazenamento realmente utilizado. Não há taxa mínima nem custo de configuração.</p>
+<p>Optamos pelo Amazon S3, pois é um serviço bem conhecido, seguro e oferece 1 ano gratuito, com uma limitação de armazenamento.</p>
+<p><strong>Ferramenta utilizada</strong></p>
+<p>A ferramente utilizada desenvolvida por mim, é a Norris Backup. :)</p>
+<p>O Norris esta sob licença MIT e você pode fazer o download do script <a href="https://github.com/alexandrevicenzi/norris-backup" target="_blank">aqui</a>.</p>
+<p><strong>Funcionalidades</strong></p>
+<p>O Norris permite fazer o backup de arquivos, pastas e base de dados MySQL/MariaDB. Ele foi projetado para fazer o backup do blog, basicamente Wordpress, mas é possível fazer backup de outros sistemas, tendo em vista que ele não possui nenhuma configuração específica do WP.</p>
+<p>Suas limitações são as definidas para uso. Ele não possui suporte para outras bases de dados ainda, mas conforme a necessidade poderão ser incluídas novas funcionalidades.</p>
+<p>Todo upload feito para os Buckets S3 são zipados. Isso economiza um pouco de espaço e facilita a organização.</p>
+<p><strong>Requisitos</strong></p>
+<p>Para usar o Norris você precisa de Python 2.7 (não testei em outras versões ainda) e as bibliotecas <a href="http://boto.readthedocs.org/en/latest/index.html" target="_blank">boto</a> e <a href="http://pyyaml.org/" target="_blank">PyYAML</a>.</p>
+<p>O boto é uma biblioteca para acessar os serviços oferecidos pela Amazon Web Services. Você pode acessar outros recursos além do S3. Atualmente ele está disponível apenas para Python 2.6 e 2.7, porém já está sendo feito o port para Python 3.</p>
+<p>O PyYAML é uma biblioteca para trabalhar com arquivos YAML, utilizado para a configuração de algumas partes do Norris.</p>
+<p><strong>Usando o boto</strong></p>
+<p>A parte mais simples, com toda certeza, é fazer o upload de um arquivo para um Bucket. Como você pode observar abaixo, não existe mistério algum.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/boto-s3/s3_upload.py" type="text/javascript"></script>
+<p>A classe <em>S3Connection</em> é a responsável por todo o trabalho de upload. O construtor dela pode ser de duas formas:</p>
+<p><code>conn = S3Connection()</code></p>
+<p>Ou:</p>
+<p><code>conn = S3Connection(&lsquo;aws access key&rsquo;, &lsquo;aws secret key&rsquo;)</code></p>
+<p>Ou ainda:</p>
+<p><code>boto.connect_s3()</code></p>
+<p>A primeira e a terceira esperam que as variáveis de ambiente AWS_ACCESS_KEY_ID e AWS_SECRET_ACCESS_KEY possuam a chave e o segredo para acesso. Já a segunda você passa manualmente <em>hard-code</em>. Para obter uma chave de acesso visite <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html" target="_blank">este link</a>.</p>
+<p>Após conectado, devemos escolher um Bucket para fazer o upload. A escolha pode ser de duas formas:</p>
+<p><code>bucket = conn.get_bucket(&lsquo;nome_bucket&rsquo;)</code></p>
+<p>Ou:</p>
+<p><code>bucket = conn.create_bucket(&lsquo;nome_bucket&rsquo;)</code></p>
+<p>A primeira espera que o Bucket já esteja criado. Já a segunda cria um Bucket. A segunda opção lançará uma exceção caso o nome do Bucket já exista.</p>
+<p>Após escolher um Bucket vamos fazer o upload do arquivo. Para isto precisamos criar uma <em>Key</em>, conforme abaixo:</p>
+<p><code>k = Key(bucket)</code></p>
+<p>Toda <em>Key</em> é chave/valor. Ou seja, nome_arquivo/arquivo. Não necessariamente apenas um arquivo, você pode armazenar qualquer coisa que desejar.</p>
+<p>A atribuição de chave/valor funciona da seguinte forma:</p>
+<p><code>k.key = &lsquo;nome_arquivo.txt&rsquo;
+k.set_contents_from_filename(&lsquo;nome_arquivo.txt&rsquo;)</code></p>
+<p>key é a chave única que deve ser atribuída para fazer o upload. set_contents_from_filename faz o trabalho duro do upload. Este método não é recomendado para arquivos muito grandes. Para isto devemos fazer o upload em diversas partes. Conforme abaixo:</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/boto-s3/s3_large_upload.py" type="text/javascript"></script>
+<p>Esta parte do código dispensa comentários adicionais, como você pode observar os comentários estão no fonte acima.</p>
+<p>Se você possui interesse em conhecer os demais métodos para manipulação de um Bucket no S3, confira a <a href="http://boto.readthedocs.org/en/latest/s3_tut.html" target="_blank">documentação introdutória do boto</a> (Inglês).</p>
+<p>Por hoje é isso.</p>
+<p>Nas próximas publicações comentarei sobre o uso do YAMP para criação de arquivos de configurações e darei continuidade aos demais métodos do boto disponíveis para o S3.</p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/boto/" class="tag-link">boto</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/python/" class="tag-link">python</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/yaml/" class="tag-link">yaml</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/"
+     data-text="Fazendo backup para o Amazon S3 com Python"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/"
+     data-text="Fazendo backup para o Amazon S3 com Python"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/"
+     data-text="Fazendo backup para o Amazon S3 com Python"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/"
+     data-text="Fazendo backup para o Amazon S3 com Python"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             alt="Alexandre Vicenzi">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">Alexandre Vicenzi</a>
+      </h2>
+      <span class="small text-muted">Engenheiro de Software</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

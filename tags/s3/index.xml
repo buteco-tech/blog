@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>s3 on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/s3/</link>
+    <description>Recent content in s3 on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 15 May 2020 12:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/s3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS S3 em Python</title>
+      <link>https://butecotecnologico.com.br/python-aws-s3/</link>
+      <pubDate>Fri, 15 May 2020 12:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/python-aws-s3/</guid>
+      <description>Diversas aplicações precisam em algum momento armazenar arquivos, seja para backup, CDN ou outros. Um dos serviços mais utilizados para armazenamento de arquivos é o AWS S3. Veja neste artigo como usar o S3 em suas aplicações Python.</description>
+    </item>
+    
+  </channel>
+</rss>

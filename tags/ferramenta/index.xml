@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ferramenta on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/ferramenta/</link>
+    <description>Recent content in ferramenta on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 13 May 2015 22:48:53 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/ferramenta/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vendo a memória de forma simplificada no FreeBSD ( I have free )</title>
+      <link>https://butecotecnologico.com.br/vendo-a-memoria-de-forma-simplificada-no-freebsd-i-have-free/</link>
+      <pubDate>Wed, 13 May 2015 22:48:53 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/vendo-a-memoria-de-forma-simplificada-no-freebsd-i-have-free/</guid>
+      <description>Como executar o comando free no FreeBSD, da mesma forma que é executado no Linux.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial Nessus Home Parte 2 (Final)</title>
+      <link>https://butecotecnologico.com.br/tutorial-nessus-home-parte-2-final/</link>
+      <pubDate>Wed, 06 May 2015 22:59:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tutorial-nessus-home-parte-2-final/</guid>
+      <description>Nesse artigo irei dar continuação, agora abordando politicas, varreduras e analisa de vulnerabilidades</description>
+    </item>
+    
+    <item>
+      <title>Tutorial Nessus Home Parte 1</title>
+      <link>https://butecotecnologico.com.br/tutorial-nessus-home-parte-1/</link>
+      <pubDate>Mon, 13 Apr 2015 22:41:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tutorial-nessus-home-parte-1/</guid>
+      <description>Breve introdução sobre o Nessus.
+Nessus é um programa de verificação de falhas/vulnerabilidades de segurança. Ele é composto por um cliente e servidor, sendo que o scan propriamente dito é feito pelo servidor. O nessusd (servidor Nessus) faz um port scan ao computador alvo, depois disso vários scripts (escritos em NASL, Nessus Attack Sincripta Language) ligam-se a cada porta aberta para verificar problemas de segurança.
+Ele é ideal para você fazer análise da rede da sua casa, lembrando que para fins comerciais existem outras versões.
+O Nessus é distribuído sob os termos da Licença Pública Geral GNU.</description>
+    </item>
+    
+    <item>
+      <title>Fazendo a internet trabalhar para você com IFTTT</title>
+      <link>https://butecotecnologico.com.br/fazendo-a-internet-trabalhar-para-voce-com-ifttt/</link>
+      <pubDate>Tue, 16 Dec 2014 08:30:27 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/fazendo-a-internet-trabalhar-para-voce-com-ifttt/</guid>
+      <description>Fazendo a internet trabalhar para você com IFTTT, conheça o site que poderá lhe ajudar com tarefas massantes ou corriqueiras.</description>
+    </item>
+    
+  </channel>
+</rss>

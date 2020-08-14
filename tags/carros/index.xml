@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>carros on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/carros/</link>
+    <description>Recent content in carros on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 28 May 2020 08:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/carros/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Entendendo carros autônomos</title>
+      <link>https://butecotecnologico.com.br/entendendo-carros-autonomos/</link>
+      <pubDate>Thu, 28 May 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/entendendo-carros-autonomos/</guid>
+      <description>Carros autônomos estão cada vez mais presentes em nossas vidas, mas o que é um carro autônomo de fato?</description>
+    </item>
+    
+  </channel>
+</rss>

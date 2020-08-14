@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>localization on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/localization/</link>
+    <description>Recent content in localization on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 20 Oct 2014 10:44:49 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/localization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Internacionalizando um site de forma simples</title>
+      <link>https://butecotecnologico.com.br/internacionalizando-um-site-de-forma-simples/</link>
+      <pubDate>Mon, 20 Oct 2014 10:44:49 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/internacionalizando-um-site-de-forma-simples/</guid>
+      <description>A algum tempo que já estava afim de traduzir meu site para o Português, mas nunca tive tempo e nem muito empenho.</description>
+    </item>
+    
+  </channel>
+</rss>

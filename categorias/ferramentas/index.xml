@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ferramentas on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/categorias/ferramentas/</link>
+    <description>Recent content in Ferramentas on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 13 Jun 2016 12:00:05 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/categorias/ferramentas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Extração de dados com Logstash</title>
+      <link>https://butecotecnologico.com.br/logstash/</link>
+      <pubDate>Mon, 13 Jun 2016 12:00:05 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/logstash/</guid>
+      <description>&lt;p&gt;Logstash basicamente é uma ferramenta de extração de dados, seu uso é simples, você determina um entrada (input), extrai informações que atendem a um padrão com filtros (filters) e gera uma saída (output), o famoso &amp;ldquo;entrada -&amp;gt; processo -&amp;gt; saída&amp;rdquo;. Seguindo esse conceito base, para cada etapa, o logstash possuí vários &amp;ldquo;plugins&amp;rdquo; que são pequenos programas que fazem as integrações do logstash, cada etapa possuí seus plugins, o que faz com que você possa fazer a entrada, processo e saída de várias formas diferentes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monitoramento de servidor com Netdata</title>
+      <link>https://butecotecnologico.com.br/monitoramento-de-servidor-com-netdata/</link>
+      <pubDate>Tue, 07 Jun 2016 21:04:13 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/monitoramento-de-servidor-com-netdata/</guid>
+      <description>O Netdada é um projeto criado para exibir o monitoramento em tempo real de servidor com uma variedade de informações.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial GnuPG</title>
+      <link>https://butecotecnologico.com.br/tutorial-gnupg/</link>
+      <pubDate>Tue, 31 May 2016 10:15:33 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tutorial-gnupg/</guid>
+      <description>&lt;h2&gt;Introdução&lt;/h2&gt;
+O &lt;a href=&#34;http://gnupg.org&#34;&gt;GNU&lt;/a&gt; Privacy Guard (GnuPG or GPG) é uma alternativa GPL ao aplicativo PGP (Pretty Good Privacy) de criptografia criado pelo Philip Zimmermann. GnuPG é compatível com a &lt;a href=&#34;https://tools.ietf.org/html/rfc4880&#34;&gt;RFC 4880&lt;/a&gt;, o padrão da &lt;a href=&#34;https://www.ietf.org/&#34;&gt;IETF&lt;/a&gt; (Internet Engineering Task Force), o GnuPG é parte da Free Software Foundation e do projeto de software &lt;a href=&#34;https://www.gnu.org/&#34;&gt;GNU&lt;/a&gt;.
+&lt;p&gt;Nesse tutorial irei falar sobre a instalação, criação de chaves, como criptografar arquivos e descriptografa-los e gerenciamento de chaves.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Efetuando teste de carga com o Locust</title>
+      <link>https://butecotecnologico.com.br/efetuando-teste-de-carga-com-o-locust/</link>
+      <pubDate>Thu, 19 May 2016 00:43:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/efetuando-teste-de-carga-com-o-locust/</guid>
+      <description>&lt;p&gt;Os testes de carga consistem em colocar uma demanda em um sistema de software ou dispositivo e medir a sua resposta. Este tipo de teste é realizado para determinar o comportamento de um sistema sob condições normais e picos de carga. Ela ajuda a identificar a capacidade máxima de operação de uma aplicação, bem como os gargalos e determinar qual elemento está causando lentidão.&lt;/p&gt;
+&lt;p&gt;Uma das ferramentas mais conceituadas nesse tipo de testes é o &lt;a href=&#34;http://jmeter.apache.org/&#34; target=&#34;_blank&#34;&gt;Apache JMeter™&lt;/a&gt;, porém hoje iremos abordar o &lt;a href=&#34;http://locust.io/&#34; target=&#34;_blank&#34;&gt;Locust&lt;/a&gt;, uma ferramenta escrita em Python extremamente simples e poderosa.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Apache Mesos</title>
+      <link>https://butecotecnologico.com.br/apache-mesos/</link>
+      <pubDate>Thu, 31 Mar 2016 23:40:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/apache-mesos/</guid>
+      <description>&lt;p&gt;Nos últimos tempos vem se falando muito em computação na nuvem, computação distribuída, Linux containers, Big Data, etc. Junto com o crescimento dessas tecnologias também se observa o surgimento de inúmeras ferramentas para resolver os problemas encontrados nesta área da computação. Poderíamos citar várias, mas iremos falar brevemente sobre Apache Mesos. Não irei me aprofundar muito pois pretendo fazer mais artigos sobre o assunto detalhando mais em determinados tópicos.&lt;/p&gt;
+&lt;p&gt;O Apache Mesos é considerado o &lt;em&gt;kernel&lt;/em&gt; de sistemas distribuídos. Ele foi criado com os mesmos princípios do &lt;em&gt;kernel&lt;/em&gt; Linux, só que em outro nível de abstração. O Mesos roda em todos os nós de &lt;em&gt;cluster&lt;/em&gt; e prove a &lt;em&gt;frameworks&lt;/em&gt; como Apache Spark, Hadoop, Cassandra, Kafka, Elastic Search e outros uma API para alocar recursos e rodarem suas &lt;em&gt;tasks&lt;/em&gt; através de todo o &lt;em&gt;cluster&lt;/em&gt; ou cloud. Em um Mesos &lt;em&gt;cluster&lt;/em&gt;, CPU, memória, disco e outros recursos computacionais de todas as máquinas, virtuais ou físicas, são abstraídos em um único &lt;em&gt;pool&lt;/em&gt; de recursos. Facilitando a criação e otimizando a utilização de sistemas distribuídos.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configurando VPN site-to-site com OpenVPN</title>
+      <link>https://butecotecnologico.com.br/configurando-vpn-site-to-site-com-openvpn/</link>
+      <pubDate>Mon, 22 Feb 2016 23:24:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/configurando-vpn-site-to-site-com-openvpn/</guid>
+      <description>Resumo
+O OpenVPN é um software livre e open-source para criar redes privadas virtuais do tipo ponto-a-ponto ou server-to-multiclient através de túneis criptografados entre computadores. Ele é capaz de estabelecer conexões diretas entre computadores mesmo que estes estejam atrás de Nat Firewalls sem necessidade de reconfiguração da sua rede. Ele foi escrito por James Yonan e publicado sob licença GNU General Pulic Licence (GPL)</description>
+    </item>
+    
+    <item>
+      <title>Esteganografia com Steghide</title>
+      <link>https://butecotecnologico.com.br/esteganografia-com-steghide/</link>
+      <pubDate>Mon, 19 Oct 2015 21:29:19 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/esteganografia-com-steghide/</guid>
+      <description>&lt;p&gt;Nesse artigo irei falar um pouco sobre esteganografia e mostrar o uso simples do Steghide.&lt;/p&gt;
+&lt;p&gt;Esteganografia (do grego &amp;ldquo;escrita escondida&amp;rdquo;) é o estudo e uso das técnicas para ocultar a existência de uma mensagem dentro de outra, uma forma de segurança por obscurantismo. Em outras palavras, esteganografia é o ramo particular da criptologia que consiste em fazer com que uma forma escrita seja camuflada em outra a fim de mascarar o seu verdadeiro sentido.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker depois do hype, como começar a usá-lo hoje mesmo</title>
+      <link>https://butecotecnologico.com.br/docker-depois-do-hype-como-comecar-a-usa-lo-hoje-mesmo/</link>
+      <pubDate>Sun, 18 Oct 2015 19:53:49 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/docker-depois-do-hype-como-comecar-a-usa-lo-hoje-mesmo/</guid>
+      <description>&lt;p&gt;Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência ou evento da nossa área tem ou terá uma palestra sobre o assunto, é o que vende no momento. Vários cases sendo apresentados, toneladas de ferramentas de gerenciamento e orquestração de &lt;em&gt;containers&lt;/em&gt;, fazem do Docker uma ferramenta muito poderosa e que cresce a cada dia. Porém com tanta informação e soluções distintas faz com que muitos de nós sintam-se desmotivados a entrar nesse mundo, achando que no fim das contas será um grande &lt;em&gt;overkill&lt;/em&gt; para nossos projetos atuais&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OctoPkg – A GUI for pkg-ng</title>
+      <link>https://butecotecnologico.com.br/octopkg-a-gui-for-pkg-ng/</link>
+      <pubDate>Fri, 28 Aug 2015 09:24:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/octopkg-a-gui-for-pkg-ng/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/pacotes.png&#34;&gt;&lt;img class=&#34; size-medium wp-image-2985 aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/pacotes-300x289.png&#34; alt=&#34;pacotes&#34; width=&#34;300&#34; height=&#34;289&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Eu fico feliz quando pela minhas andanças surfando na web, encontro alguns projetos brasileiros envolvidos com FreeBSD e ou com código aberto em geral. O projeto da vez é o &lt;a href=&#34;https://octopkg.wordpress.com/&#34; target=&#34;_blank&#34;&gt;OctoPKG&lt;/a&gt;, criado pelo &lt;a href=&#34;https://twitter.com/aaarnt&#34;&gt;Alexandre A Arnt&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Virsh: criando e gerenciando VMs pelo terminal</title>
+      <link>https://butecotecnologico.com.br/virsh-criando-e-gerenciando-vms-pelo-terminal/</link>
+      <pubDate>Tue, 25 Aug 2015 23:44:58 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/virsh-criando-e-gerenciando-vms-pelo-terminal/</guid>
+      <description>Este artigo apresenta uma introdução a ferramenta virsh, baseada na libvirt, para gerenciar máquinas virtuais no Linux.</description>
+    </item>
+    
+    <item>
+      <title>Projeto open source pretende mapear o mundo para cadeirantes</title>
+      <link>https://butecotecnologico.com.br/projeto-open-source-pretende-mapear-o-mundo-para-cadeirantes/</link>
+      <pubDate>Thu, 23 Jul 2015 00:20:25 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/projeto-open-source-pretende-mapear-o-mundo-para-cadeirantes/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/wheelmap-logo-e1435718201487.png&#34;&gt;&lt;img class=&#34;alignnone size-large wp-image-2929&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/wheelmap-logo-1024x520.png&#34; alt=&#34;wheelmap-logo&#34; width=&#34;648&#34; height=&#34;329&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Encontrar estabelecimentos acessíveis por cadeiras de rodas pode ser trabalhoso, mas um projeto open source quer mudar ao menos um pouco essa história. Chamada de WheelMap, a iniciativa é bem isso: um mapa que indica locais que primam (ou não) pela acessibilidade.&lt;/p&gt;
+&lt;p&gt;Baseado no &lt;a href=&#34;http://www.openstreetmap.org/&#34; target=&#34;_blank&#34;&gt;OpenStreetMap&lt;/a&gt;, o serviço é bastante simples e qualquer um pode colaborar. Lojas, lanchonetes, bancos e outros pontos registrados no sistema são exibidos em seus respectivos locais no mapa, e um clique sobre o ícone permite classificá-los como “acessível por cadeira de rodas”, “parcialmente acessível” ou “inacessível”.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Instalando o Supervisor: Um sistema de controle de processos</title>
+      <link>https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/</link>
+      <pubDate>Wed, 15 Jul 2015 08:38:44 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://supervisord.org/&#34;&gt;Supervisor&lt;/a&gt; é um sistema cliente/servidor que permite que os usuários monitorem e controlem inúmeros processos em sistema operacionais UNIX-like.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34; aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/logo_supervisord.gif&#34; alt=&#34;Supervisord&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Ele possui alguns objetivos de programas similares, como o launchd, daemontools e runit. Mas diferente destes, ele não pretende ser um substituto ao &lt;em&gt;init&lt;/em&gt;, pelo contrário, ele inicia na inicialização do sistema como qualquer outro aplicativo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A – ZFS Parte 1</title>
+      <link>https://butecotecnologico.com.br/a-zfs-parte-1/</link>
+      <pubDate>Wed, 01 Jul 2015 23:01:34 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/a-zfs-parte-1/</guid>
+      <description>&lt;p style=&#34;text-align: center;&#34;&gt;&lt;img class=&#34;aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/278852-300x245.png&#34; alt=&#34;ZFS&#34; width=&#34;300&#34; height=&#34;245&#34; /&gt;
+Imagem retirado de &lt;a href=&#34;http://tweakers.net&#34; target=&#34;_blank&#34;&gt;Tweakers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Por que não começar com a introdução da Wikipedia sobre ele&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ANTES: VOU REPETIR E DESTACAR, E SALIENTAR 2001&lt;/strong&gt; é o ano de origem do &lt;strong&gt;ZFS&lt;/strong&gt;, das ideias e planejamentos qualquer outra coisa que venha depois é mera cópia como produtos chineses !! Ele foi anunciado oficialmente em setembro de 2004, e lançado em novembro de 2005.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ZFS &lt;/strong&gt;é uma combinação de sistema de arquivos e volume de manipulação lógica desenhado pela &lt;strong&gt;Sun Microsystems&lt;/strong&gt;. As propriedades do &lt;strong&gt;ZFS &lt;/strong&gt;incluem proteção contra corrupção de dados, suporte para altas capacidades de armazenamento, eficiente compressão de dados, integração de conceitos de sistemas de arquivos e volumes lógicos, suporte a &lt;em&gt;snapshots &lt;/em&gt;e clones com cópia quando escreve, continua checagem de integração e automática recuperação, &lt;strong&gt;RAID-Z&lt;/strong&gt; e nativo suporte a &lt;strong&gt;ACLs &lt;/strong&gt;em &lt;strong&gt;NFSv4&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hands on: quilt</title>
+      <link>https://butecotecnologico.com.br/hands-on-quilt/</link>
+      <pubDate>Mon, 29 Jun 2015 23:35:56 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/hands-on-quilt/</guid>
+      <description>&lt;p&gt;Quilt é uma ferramenta para criação e manipulação de patches de código fonte. Sua utilização é bem simples e permite criar patches de forma bem prática. Ele foi originalmente criado pelo desenvolvedor Andrew Morton, sendo uma série de scripts para gerenciar patches no Linux. Mas Andreas Grünbacher, um outro desenvolvedor, melhorou os scripts de Andrew para gerar constumizações do kernel para o SuSe Linux.&lt;/p&gt;
+&lt;p&gt;Para um exemplo prático, vejamos a seguinte estrutura de arquivos:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;
+[marcos@puppet pytabs]$ ls
+main.py  new_tab.py  new_tab.pyc  new_tab.ui  window.ui
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para criar um novo patch, execute:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;
+quilt new alteracao1.patch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Após a execução deste comando, será criada uma pasta &amp;ldquo;patches&amp;rdquo;, que conterá todos os patches criados. Por hora esta pasta contém apenas o arquivo series, já que não adicionamos e nem alteramos nenhum arquivo para adicionar ao patch recem criado. O arquivo series mostra a ordem em que os patches criados serão aplicados.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Laravel 5.1 LTS lançado, veja algumas das novidades</title>
+      <link>https://butecotecnologico.com.br/lancamento-laravel-5-1/</link>
+      <pubDate>Thu, 18 Jun 2015 23:18:08 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lancamento-laravel-5-1/</guid>
+      <description>&lt;p&gt;A tão esperada versão 5.1 do Laravel foi finalmente lançada, como não podíamos deixar passar, veja a lista abaixo de algumas das novidades dessa nova versão:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LTS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Long Term Support significa que o framework receberá correções de bugs por 2 anos e correções de problemas de segurança por 3 anos, isso trará uma maior confiabilidade para que as pessoas comecem a investir no framework.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SQL na medida certa</title>
+      <link>https://butecotecnologico.com.br/sql-na-medida-certa/</link>
+      <pubDate>Wed, 10 Jun 2015 23:01:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sql-na-medida-certa/</guid>
+      <description>Resenha do livro Aprendendo SQL da O&amp;rsquo;Reilly.</description>
+    </item>
+    
+    <item>
+      <title>Vendo a memória de forma simplificada no FreeBSD ( I have free )</title>
+      <link>https://butecotecnologico.com.br/vendo-a-memoria-de-forma-simplificada-no-freebsd-i-have-free/</link>
+      <pubDate>Wed, 13 May 2015 22:48:53 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/vendo-a-memoria-de-forma-simplificada-no-freebsd-i-have-free/</guid>
+      <description>Como executar o comando free no FreeBSD, da mesma forma que é executado no Linux.</description>
+    </item>
+    
+    <item>
+      <title>TorChat</title>
+      <link>https://butecotecnologico.com.br/torchat/</link>
+      <pubDate>Mon, 11 May 2015 23:05:53 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/torchat/</guid>
+      <description>Muitos de vocês já devem ter ouvido falar do TorBrowser um serviço bastante conhecimento para quem deseja navegar de forma anônima, o TorChat busca a mesma ideia, envio e recebimento de mensagens de forma segura.
+TorChat é software livre licenciado sob os termos da GNU General Public License(GPL). A primeira versão pública do TorChat foi lançado em novembro de 2007 por Bernd Kreuß e desde então tem sido constantemente desenvolvido, disponível para Linux, Windows e atualmente em Mac.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial Nessus Home Parte 2 (Final)</title>
+      <link>https://butecotecnologico.com.br/tutorial-nessus-home-parte-2-final/</link>
+      <pubDate>Wed, 06 May 2015 22:59:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tutorial-nessus-home-parte-2-final/</guid>
+      <description>Nesse artigo irei dar continuação, agora abordando politicas, varreduras e analisa de vulnerabilidades</description>
+    </item>
+    
+    <item>
+      <title>Fazendo backup para o Amazon S3 com Python</title>
+      <link>https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/</link>
+      <pubDate>Thu, 23 Apr 2015 07:46:32 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/</guid>
+      <description>O Amazon Simple Storage Service (Amazon S3) oferece aos desenvolvedores e equipes de TI armazenamento de objetos seguro, durável e altamente escalonável. O Amazon S3 é fácil de usar, com uma interface de serviços da web simples para armazenar e recuperar qualquer quantidade de dados de qualquer parte da web. Com o Amazon S3, você paga apenas pelo armazenamento realmente utilizado. Não há taxa mínima nem custo de configuração.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial Nessus Home Parte 1</title>
+      <link>https://butecotecnologico.com.br/tutorial-nessus-home-parte-1/</link>
+      <pubDate>Mon, 13 Apr 2015 22:41:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tutorial-nessus-home-parte-1/</guid>
+      <description>Breve introdução sobre o Nessus.
+Nessus é um programa de verificação de falhas/vulnerabilidades de segurança. Ele é composto por um cliente e servidor, sendo que o scan propriamente dito é feito pelo servidor. O nessusd (servidor Nessus) faz um port scan ao computador alvo, depois disso vários scripts (escritos em NASL, Nessus Attack Sincripta Language) ligam-se a cada porta aberta para verificar problemas de segurança.
+Ele é ideal para você fazer análise da rede da sua casa, lembrando que para fins comerciais existem outras versões.
+O Nessus é distribuído sob os termos da Licença Pública Geral GNU.</description>
+    </item>
+    
+    <item>
+      <title>Kodi 14.2 está disponível</title>
+      <link>https://butecotecnologico.com.br/kodi-14-2-esta-disponivel/</link>
+      <pubDate>Tue, 31 Mar 2015 00:38:13 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/kodi-14-2-esta-disponivel/</guid>
+      <description>O Kodi é uma central multimídia livre (GPL) que pode ser instalada no Linux, OSX, Windows, iOS e Android. Permitindo que os usuários vejam e executem vídeos, músicas, Podcasts e outras mídias digitais armazenadas localmente, na rede ou na internet.</description>
+    </item>
+    
+    <item>
+      <title>Acelerando o desenvolvimento com glade</title>
+      <link>https://butecotecnologico.com.br/acelerando-o-desenvolvimento-com-glade/</link>
+      <pubDate>Fri, 20 Mar 2015 08:25:17 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/acelerando-o-desenvolvimento-com-glade/</guid>
+      <description>Glade é a ferramenta de desenvolvimento de interfaces do gnome. Uma ferramenta ágil capaz de minimizar o tempo de desenvolvimento e deixar o design muito mais fácil de se implementar.</description>
+    </item>
+    
+    <item>
+      <title>Kodi 14.1 já está disponível</title>
+      <link>https://butecotecnologico.com.br/kodi-14-1-ja-esta-disponivel/</link>
+      <pubDate>Tue, 03 Feb 2015 13:41:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/kodi-14-1-ja-esta-disponivel/</guid>
+      <description>Kodi é o novo nome do conhecido XBMC. Nesta versão além da correção de vários bugs, o XBMC vem com um novo nome (Kodi), um novo logo e uma variedade de novas funcionalidades.</description>
+    </item>
+    
+    <item>
+      <title>Inkscape 0.91 já está disponível</title>
+      <link>https://butecotecnologico.com.br/inkscape-0-91-ja-esta-disponivel/</link>
+      <pubDate>Thu, 29 Jan 2015 19:20:14 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/inkscape-0-91-ja-esta-disponivel/</guid>
+      <description>O Inkscape é uma ferramenta de código aberto para edição de gráficos vetoriais, muito semelhante ao Adobe Illustrator, Corel Draw, Freehand, ou Xara X</description>
+    </item>
+    
+    <item>
+      <title>Criando um servidor de downloads de torrents com uTorrent Server</title>
+      <link>https://butecotecnologico.com.br/criando-um-servidor-de-downloads-de-torrents-com-utorrent-server/</link>
+      <pubDate>Mon, 19 Jan 2015 07:11:45 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-um-servidor-de-downloads-de-torrents-com-utorrent-server/</guid>
+      <description>Aprenda a criar um servidor de downloads de maneira fácil e rapida com uTorrent Server;</description>
+    </item>
+    
+    <item>
+      <title>Fazendo a internet trabalhar para você com IFTTT</title>
+      <link>https://butecotecnologico.com.br/fazendo-a-internet-trabalhar-para-voce-com-ifttt/</link>
+      <pubDate>Tue, 16 Dec 2014 08:30:27 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/fazendo-a-internet-trabalhar-para-voce-com-ifttt/</guid>
+      <description>Fazendo a internet trabalhar para você com IFTTT, conheça o site que poderá lhe ajudar com tarefas massantes ou corriqueiras.</description>
+    </item>
+    
+    <item>
+      <title>Git 2.2 está chegando com várias mudanças</title>
+      <link>https://butecotecnologico.com.br/git-2-2-esta-chegando-com-varias-mudancas/</link>
+      <pubDate>Mon, 10 Nov 2014 21:43:11 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/git-2-2-esta-chegando-com-varias-mudancas/</guid>
+      <description>O Git 2.2.0 RC 1 já está disponível e nesta última atualização o foco foi a estabilização.</description>
+    </item>
+    
+    <item>
+      <title>Apresentando o Proxygen - Framework HTTP em C&#43;&#43; do Facebook</title>
+      <link>https://butecotecnologico.com.br/apresentando-o-proxygen-framework-http-em-c-do-facebook/</link>
+      <pubDate>Wed, 05 Nov 2014 18:24:52 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/apresentando-o-proxygen-framework-http-em-c-do-facebook/</guid>
+      <description>O Facebook anunciou o Proxygen, uma coleção de bibliotecas HTTP de código aberto para C++, incluindo um servidor HTTP fácil de usar.</description>
+    </item>
+    
+    <item>
+      <title>Hands on: autotools</title>
+      <link>https://butecotecnologico.com.br/hands-on-autotools/</link>
+      <pubDate>Fri, 10 Oct 2014 00:44:22 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/hands-on-autotools/</guid>
+      <description>Olá pessoal, a muito tempo eu queria aprender como funciona o tão famoso autotools.</description>
+    </item>
+    
+    <item>
+      <title>Apigility, Web Service com Zend Framework</title>
+      <link>https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/</link>
+      <pubDate>Thu, 02 Oct 2014 08:33:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/</guid>
+      <description>Com a variedade de clientes que acessam nossas aplicações hoje fica cada vez mais difícil criar algo que atenda a todos.</description>
+    </item>
+    
+    <item>
+      <title>Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket</title>
+      <link>https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/</link>
+      <pubDate>Wed, 24 Sep 2014 15:17:18 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/</guid>
+      <description>Estes dias tive um problema, eu necessitava adicionar um trecho de código do GitHub a uma página, mas este código estava em um repositório e não em um Gist.</description>
+    </item>
+    
+    <item>
+      <title>QEMU/KVM: Habilitar serial console no CentOS/RHEL para acessá-lo pelo virsh console</title>
+      <link>https://butecotecnologico.com.br/qemukvm-habilitar-serial-console-no-centosrhel-para-acessa-lo-pelo-virsh-console/</link>
+      <pubDate>Wed, 17 Sep 2014 12:03:21 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/qemukvm-habilitar-serial-console-no-centosrhel-para-acessa-lo-pelo-virsh-console/</guid>
+      <description>Olá pessoal, a alguns dias atrás eu precisei fazer alguns testes usando o QEMU/KVM, e para isso foi necessário o acesso a uma máquina virtual com CentOS utilizando o virsh console.</description>
+    </item>
+    
+  </channel>
+</rss>

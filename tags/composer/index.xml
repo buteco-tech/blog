@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>composer on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/composer/</link>
+    <description>Recent content in composer on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 28 Oct 2014 16:31:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/composer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Controle de dependência em PHP usando o composer</title>
+      <link>https://butecotecnologico.com.br/controle-de-dependencia-em-php-usando-o-composer/</link>
+      <pubDate>Tue, 28 Oct 2014 16:31:19 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/controle-de-dependencia-em-php-usando-o-composer/</guid>
+      <description>Atualmente existem diversos projetos que fazem a atividade de controle de dependências, no caso do PHP uma das mais usadas é o composer, um programa extremamente simples de ser usado e que pode lhe economizar muito tempo, segue um breve tutorial de como usá-lo.</description>
+    </item>
+    
+  </channel>
+</rss>

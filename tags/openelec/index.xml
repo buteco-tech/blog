@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>openelec on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/openelec/</link>
+    <description>Recent content in openelec on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 20 Aug 2015 22:28:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/openelec/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Criando uma Central de Multimídia com Raspberry Pi</title>
+      <link>https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/</link>
+      <pubDate>Thu, 20 Aug 2015 22:28:06 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/</guid>
+      <description>&lt;p&gt;Usaremos o OpenELEC para criar a central de multimídia, irei instalar no Raspberry Pi 2, porém também está disponível para o Raspberry PI.&lt;/p&gt;
+&lt;p&gt;OpenELEC é uma distribuição Linux criada em torno do programa XBMC – um famoso hub de entretenimento de código aberto – e focada na tarefa de transformar seu equipamento em uma central de mídia.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Instalando o Supervisor: Um sistema de controle de processos &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Instalando o Supervisor: Um sistema de controle de processos">
+<meta itemprop="description" content="O Supervisor é um sistema cliente/servidor que permite que os usuários monitorem e controlem inúmeros processos em sistema operacionais UNIX-like.
+
+Ele possui alguns objetivos de programas similares, como o launchd, daemontools e runit. Mas diferente destes, ele não pretende ser um substituto ao init, pelo contrário, ele inicia na inicialização do sistema como qualquer outro aplicativo.">
+<meta itemprop="datePublished" content="2015-07-15T08:38:44+00:00" />
+<meta itemprop="dateModified" content="2015-07-15T08:38:44+00:00" />
+<meta itemprop="wordCount" content="512">
+<meta itemprop="image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="daemon,gerenciamento,linux,processos,systemd," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+
+<meta name="twitter:title" content="Instalando o Supervisor: Um sistema de controle de processos"/>
+<meta name="twitter:description" content="O Supervisor é um sistema cliente/servidor que permite que os usuários monitorem e controlem inúmeros processos em sistema operacionais UNIX-like.
+
+Ele possui alguns objetivos de programas similares, como o launchd, daemontools e runit. Mas diferente destes, ele não pretende ser um substituto ao init, pelo contrário, ele inicia na inicialização do sistema como qualquer outro aplicativo."/>
+
+
+<meta property="og:title" content="Instalando o Supervisor: Um sistema de controle de processos" />
+<meta property="og:description" content="O Supervisor é um sistema cliente/servidor que permite que os usuários monitorem e controlem inúmeros processos em sistema operacionais UNIX-like.
+
+Ele possui alguns objetivos de programas similares, como o launchd, daemontools e runit. Mas diferente destes, ele não pretende ser um substituto ao init, pelo contrário, ele inicia na inicialização do sistema como qualquer outro aplicativo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+<meta property="article:published_time" content="2015-07-15T08:38:44+00:00" />
+<meta property="article:modified_time" content="2015-07-15T08:38:44+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Instalando o Supervisor: Um sistema de controle de processos</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           alt="Alexandre Vicenzi"
+           title="Alexandre Vicenzi">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+           class="author">Alexandre Vicenzi</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2015-07-15T08:38:44Z">Jul 15, 2015</time>
+      &middot; 3 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/"
+     data-text="Instalando o Supervisor: Um sistema de controle de processos"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/"
+     data-text="Instalando o Supervisor: Um sistema de controle de processos"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/"
+     data-text="Instalando o Supervisor: Um sistema de controle de processos"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/"
+     data-text="Instalando o Supervisor: Um sistema de controle de processos"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header><article class="mt-3 mb-4">
+  <p>O <a href="http://supervisord.org/">Supervisor</a> é um sistema cliente/servidor que permite que os usuários monitorem e controlem inúmeros processos em sistema operacionais UNIX-like.</p>
+<p><img class=" aligncenter" src="/images/wp-content/uploads/2015/07/logo_supervisord.gif" alt="Supervisord" /></p>
+<p>Ele possui alguns objetivos de programas similares, como o launchd, daemontools e runit. Mas diferente destes, ele não pretende ser um substituto ao <em>init</em>, pelo contrário, ele inicia na inicialização do sistema como qualquer outro aplicativo.</p>
+<p>Lembra aquela aplicação Python ou Node.JS que você fez e precisa deixar executando 24 horas por dia e ainda tem que iniciar junto com o boot? Quem nunca fez uma aplicação nesse estilo e tentou fazer um shell para iniciar um daemon.</p>
+<p>Fazer algo assim é perda de tempo na minha opinião e sempre gera algum transtorno. A forma mais simples e segura que encontrei de automatizar esta tarefa é usando o Supervisor.</p>
+<p>Com ele você controla quando iniciar e parar a aplicação, além de uma série de outras configurações.</p>
+<p><strong>Instalação</strong></p>
+<p>Algumas distribuições Linux oferecem a instalação do Supervisor pelo gerenciador de pacotes. Para garantir que instalaremos a versão mais recente, vou utilizar a versão disponível via <em>pip</em>. O <em>pip</em> é o gerenciador de pacotes do Python.</p>
+<p>Antes de instalar, vamos garantir que temos os pacotes necessários para o uso do <em>pip</em>, para isso execute o comando abaixo:</p>
+<p><code>sudo yum install python-setuptools python-pip</code></p>
+<p>Após instalar o <em>pip</em> e suas dependências, vamos a instalação do Supervisor. Para isso execute o comando abaixo:</p>
+<p><code>sudo pip install supervisor</code></p>
+<p>Agora que ele está instalado, necessitamos configurá-lo e criar o arquivo de entrada para o Systemd.</p>
+<p>Para criar o arquivo de configuração padrão execute o comando abaixo:</p>
+<p><code>sudo echo_supervisord_conf &gt; /etc/supervisord.conf</code></p>
+<p>Após, vamos criar a entrada para o Systemd. O arquivo deve ser <em>/usr/lib/systemd/system/supervisord.service</em> e seu conteúdo será o abaixo:</p>
+<pre><code class="bash">
+[Unit]
+Description=Supervisor Daemon
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/supervisord
+ExecStop=/usr/bin/supervisorctl $OPTIONS shutdown
+ExecReload=/usr/bin/supervisorctl $OPTIONS reload
+KillMode=process
+Restart=on-failure
+RestartSec=42s
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<p>Este arquivo foi testado no CentOS com Systemd, caso você deseja utilizar em outra distribuição recomento procurar um script compatível com a sua distro. Você pode encontrar vários arquivos de configuração <a href="https://github.com/Supervisor/initscripts">aqui</a>.</p>
+<p>Agora que está tudo configurado, vamos iniciar o serviço com o comando abaixo:</p>
+<p><code>sudo systemctl start supervisord</code></p>
+<p>Vamos verificar se tudo ocorreu bem, para isto execute o comando abaixo:</p>
+<p><code>sudo supervisorctl status</code></p>
+<p>Para iniciar o Supervisor no boot, basta executar o comando:</p>
+<p><code>sudo systemctl enable supervisord</code></p>
+<p><strong>Adicionado aplicações</strong></p>
+<p>Por fim, para adicionar um programa ao Supervisor é necessário editar o arquivo <em>/etc/supervisord.conf</em>. Procure pela entrada <em>[program:theprogramname]</em> e substitua ela pela aplicação que você deseja.</p>
+<p>No exemplo abaixo você pode observar como eu deixo o <a href="//gistfy-app.herokuapp.com">Gistfy</a> no ar. Este é o comando mais básico e obrigatório. Existem outras configurações, como logs e controles em caso de erros.</p>
+<pre><code class="bash">
+[program:gistfy]
+command=node /home/gistfy/src/gistfy.js --port=5000 --base_url=//gistfy-app.herokuapp.com
+</code></pre>
+<p>Confira <a href="http://supervisord.org/configuration.html#program-x-section-settings">a documentação</a> para entender melhor todos os parâmetros.</p>
+<p>Agora para iniciar nossa aplicação, executamos o seguinte comando:</p>
+<p><code>sudo supervisorctl start gistfy</code></p>
+<p>Com o Supervisor você pode controlar vários aplicativos ao mesmo tempo de uma forma muito simples. Ele também oferece uma interface Web para monitoramento das aplicações, que pode ser habilitada facilmente no arquivo de configurações.</p>
+<p>Espero que este artigo tenha sido útil, não esqueça de deixar o seu comentário.</p>
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/daemon/" class="tag-link">daemon</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/gerenciamento/" class="tag-link">gerenciamento</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/processos/" class="tag-link">processos</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/systemd/" class="tag-link">systemd</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/"
+     data-text="Instalando o Supervisor: Um sistema de controle de processos"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/"
+     data-text="Instalando o Supervisor: Um sistema de controle de processos"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/"
+     data-text="Instalando o Supervisor: Um sistema de controle de processos"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/"
+     data-text="Instalando o Supervisor: Um sistema de controle de processos"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             alt="Alexandre Vicenzi">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">Alexandre Vicenzi</a>
+      </h2>
+      <span class="small text-muted">Engenheiro de Software</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>yast on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/yast/</link>
+    <description>Recent content in yast on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 29 Jan 2015 21:35:09 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/yast/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Corrigindo problemas de conexão do zypper no openSUSE 13.2</title>
+      <link>https://butecotecnologico.com.br/corrigindo-problemas-de-conexao-do-zypper-no-opensuse-13-2/</link>
+      <pubDate>Thu, 29 Jan 2015 21:35:09 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/corrigindo-problemas-de-conexao-do-zypper-no-opensuse-13-2/</guid>
+      <description>Veja como corrigir problemas de conexão do zypper no openSUSE.</description>
+    </item>
+    
+  </channel>
+</rss>

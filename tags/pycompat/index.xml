@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pycompat on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/pycompat/</link>
+    <description>Recent content in pycompat on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 06 Oct 2014 13:20:35 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/pycompat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>pycompat: Verificando a versão do Python e do sistema de uma forma simples</title>
+      <link>https://butecotecnologico.com.br/pycompat-verificando-a-versao-do-python-e-do-sistema-de-uma-forma-simples/</link>
+      <pubDate>Mon, 06 Oct 2014 13:20:35 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pycompat-verificando-a-versao-do-python-e-do-sistema-de-uma-forma-simples/</guid>
+      <description>A algum tempo desenvolvi uma mini biblioteca chamada pycompat para verificar a versão do Python e do sistema de uma simples e funcional.</description>
+    </item>
+    
+  </channel>
+</rss>

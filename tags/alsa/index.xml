@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>alsa on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/alsa/</link>
+    <description>Recent content in alsa on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 24 Sep 2014 23:48:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/alsa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introdução ao ALSA e sua API em C e Python</title>
+      <link>https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/</link>
+      <pubDate>Wed, 24 Sep 2014 23:48:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/</guid>
+      <description>O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio.</description>
+    </item>
+    
+  </channel>
+</rss>

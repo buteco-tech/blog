@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software-livre on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/software-livre/</link>
+    <description>Recent content in software-livre on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 05 Nov 2015 22:39:46 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/software-livre/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LibreOffice Magazine Número 19</title>
+      <link>https://butecotecnologico.com.br/libreoffice-magazine-numero-19/</link>
+      <pubDate>Thu, 05 Nov 2015 22:39:46 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/libreoffice-magazine-numero-19/</guid>
+      <description>&lt;p&gt;Saiu a nova edição da LibreOffice Magazine!&lt;/p&gt;
+&lt;p&gt;Nesta edição o homenageado é o LibreOffice, onde é contado como tudo começou, qual a situação atual do projeto, sobre os cinco anos de desenvolvimento e os três anos da LibreOffice Magazine. Faz também, uma homenagem aos autores dos artigos das dezenove edições, em agradecimento pelo trabalho realizado até aqui.&lt;/p&gt;
+&lt;p&gt;Além destes, os temas abordados foram:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Café com Software Livre - Testemunho</title>
+      <link>https://butecotecnologico.com.br/cafe-com-software-livre-testemunho/</link>
+      <pubDate>Mon, 26 Oct 2015 22:52:25 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/cafe-com-software-livre-testemunho/</guid>
+      <description>&lt;p&gt;Parte da equipe do Buteco Open Source esteve no Café com Software Livre, neste final de semana que passou. Daremos aqui uma visão geral sobre o evento.&lt;/p&gt;
+&lt;p&gt;O propósito do evento é fortalecer o software livre e correlatos, integrando os grupos com este mesmo objetivo no estado de Santa Catarina, mas isto não quer dizer que outros não possam vir ;) . Como este evento é organizado pelo pessoal do &lt;a href=&#34;http://www.blusol.org&#34; target=&#34;_blank&#34;&gt;Blusol&lt;/a&gt;, normalmente acontece em Blumenau ou região, neste ano foi na cidade de Indaial.&lt;/p&gt;
+&lt;p&gt;Cá entre nós, ele também serve para mostrar que não vivemos só da Oktoberfest, só que este evento é regado pela cafeína e frequentado por Nerds :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Projetos interessantes do GSoC 2015</title>
+      <link>https://butecotecnologico.com.br/projetos-interessantes-do-gsoc-2015/</link>
+      <pubDate>Tue, 05 May 2015 00:28:06 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/projetos-interessantes-do-gsoc-2015/</guid>
+      <description>Uma breve lista com alguns dos pricipais projetos do GSoC deste ano.</description>
+    </item>
+    
+  </channel>
+</rss>

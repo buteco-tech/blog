@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi">
+<meta itemprop="description" content="Hoje vou mostrar como instalar o ArchLinux no BananaPi. Escolhi o ArchLinux por ele ser uma distribuição bem enxuta, mas muito poderosa.">
+<meta itemprop="datePublished" content="2014-12-23T08:00:05+00:00" />
+<meta itemprop="dateModified" content="2014-12-23T08:00:05+00:00" />
+<meta itemprop="wordCount" content="705">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/ArchlinuxLogo2.png">
+
+
+
+<meta itemprop="keywords" content="archlinux,banana-pi,lxdm,xfce," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/ArchlinuxLogo2.png"/>
+
+<meta name="twitter:title" content="Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi"/>
+<meta name="twitter:description" content="Hoje vou mostrar como instalar o ArchLinux no BananaPi. Escolhi o ArchLinux por ele ser uma distribuição bem enxuta, mas muito poderosa."/>
+
+
+<meta property="og:title" content="Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi" />
+<meta property="og:description" content="Hoje vou mostrar como instalar o ArchLinux no BananaPi. Escolhi o ArchLinux por ele ser uma distribuição bem enxuta, mas muito poderosa." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/ArchlinuxLogo2.png" />
+<meta property="article:published_time" content="2014-12-23T08:00:05+00:00" />
+<meta property="article:modified_time" content="2014-12-23T08:00:05+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           alt="Alexandre Vicenzi"
+           title="Alexandre Vicenzi">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+           class="author">Alexandre Vicenzi</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2014-12-23T08:00:05Z">Dec 23, 2014</time>
+      &middot; 4 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/"
+     data-text="Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/"
+     data-text="Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/"
+     data-text="Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/"
+     data-text="Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/ArchlinuxLogo2.png"
+           alt="Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Hoje vou mostrar como instalar o <a href="http://www.archlinux-br.org/" target="_blank">ArchLinux</a> no BananaPi. Escolhi o ArchLinux por ele ser uma distribuição bem enxuta, mas muito poderosa. Outro motivo que me leva a usá-lo é o fato de que pretendo fazer testes com o <a href="https://wiki.archlinux.org/index.php/RetroArch" target="_blank">RetroArch</a>.</p>
+<p><strong>Instalando o ArchLinux</strong></p>
+<p>Faça o download da <a href="http://www.lemaker.org/resources/9-96/archlinux_for_bananapi.html" target="_blank">imagem do ArchLinux</a>.</p>
+<p>Para passar a imagem para o SD faça o seguinte:</p>
+<pre><code>sudo dd bs=8M if=sua_imagem.img of=/dev/sdb &amp;&amp; sync</code></pre>
+<p>No meu caso, como estou usando saída HDMI apenas fiz o seguinte ajuste (em negrito) no arquivo <em>uEnv.txt</em>:</p>
+<pre><code>bootargs=console=ttyS0,115200 console=tty0 disp.screen0_output_mode=<strong>3</strong>:<strong>1360x768p50</strong> hdmi.audio=EDID:0 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4</code></pre>
+<p>Caso você possua dúvidas sobre como configurar as saídas de vídeo siga <a href="/primeiros-passos-com-o-banana-pi" target="_blank">este tutorial</a>.</p>
+<p><strong>Acessando o ArchLinux</strong></p>
+<p>Você pode acessar diretamente ou via SSH. Para acessar via SSH basta você conectá-lo a rede. Para conectar no BPi via SSH execute o comando abaixo:</p>
+<pre><code>ssh [usuário]@[ip]</code></pre>
+<p>Exemplo:</p>
+<pre><code>ssh root@10.1.1.6</code></pre>
+<p>Os usuários de acesso padrão são:</p>
+<table>
+    <tbody>
+        <tr>
+            <th>Tipo</th>
+            <th>Login</th>
+            <th>Senha</th>
+        </tr>
+        <tr>
+            <td>Root</td>
+            <td>root</td>
+            <td>bananapi</td>
+        </tr>
+        <tr>
+            <td>Usuário</td>
+            <td>bananapi</td>
+            <td>bananapi</td>
+        </tr>
+    </tbody>
+</table>
+<p><strong>Atualizando o ArchLinux</strong></p>
+<p>Após instalar o ArchLinux vamos verificar se existem novas atualizações. Para isto, execute o comando abaixo:</p>
+<pre><code>pacman -Syu</code></pre>
+<p>Se possuir atualizações, instale-as.</p>
+<p><strong>Instalando as dependências</strong></p>
+<p>Agora que ele está atualizado, vamos instalar todas as dependências necessárias.</p>
+<p>Instalando o driver X.org para o BPi:</p>
+<pre><code>pacman -S xf86-video-fbdev</code></pre>
+<p>Instalando o <a href="https://wiki.archlinux.org/index.php/xfce" target="_blank">XFCE</a> como área de trabalho:</p>
+<pre><code>pacman -S xfce4</code></pre>
+<p>Instalando alguns pacotes adicionais, contendo plugins, para o XFCE (não obrigatório):</p>
+<pre><code>pacman -S xfce4-goodies</code></pre>
+<p>Instalando o <a href="https://wiki.archlinux.org/index.php/LXDM" target="_blank">LXDM</a> como gerenciador de área de trabalho:</p>
+<pre><code>pacman -S lxdm</code></pre>
+<p><strong>Configurando o XFCE e o LXDM</strong></p>
+<p>Agora que temos o XFCE e o LXDM instalados, vamos configurá-los.</p>
+<p>Para que ao iniciar o <em>startx</em> ele inicie o XFCE devemos fazer alguns ajustes.</p>
+<p>Vamos editar o arquivo de configração do <em><a href="https://wiki.archlinux.org/index.php/Xinitrc">xinit</a></em>:</p>
+<pre><code>vim /etc/X11/xinit/xinitrc</code></pre>
+<p>E adicionar a seguinte linha:</p>
+<pre><code>exec startxfce4</code></pre>
+<p>No meu caso o arquivo ficou da seguinte forma:</p>
+<pre><code class="bash">
+#!/bin/sh
+
+userresources=$HOME/.Xresources
+usermodmap=$HOME/.Xmodmap
+sysresources=/etc/X11/xinit/.Xresources
+sysmodmap=/etc/X11/xinit/.Xmodmap
+
+# merge in defaults and keymaps
+
+if [ -f $sysresources ]; then
+    xrdb -merge $sysresources
+fi
+
+if [ -f $sysmodmap ]; then
+    xmodmap $sysmodmap
+fi
+
+if [ -f &quot;$userresources&quot; ]; then
+    xrdb -merge &quot;$userresources&quot;
+fi
+
+if [ -f &quot;$usermodmap&quot; ]; then
+    xmodmap &quot;$usermodmap&quot;
+fi
+
+# start some nice programs
+
+if [ -d /etc/X11/xinit/xinitrc.d ] ; then
+ for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+  [ -x &quot;$f&quot; ] &amp;&amp; . &quot;$f&quot;
+ done
+ unset f
+fi
+
+# twm &amp;
+# xclock -geometry 50x50-1+1 &amp;
+# xterm -geometry 80x50+494+51 &amp;
+# xterm -geometry 80x20+494-0 &amp;
+# exec xterm -geometry 80x66+0+0 -name login
+
+exec startxfce4
+</code></pre>
+<p>Agora já é possível executar o comando <em>startx</em> para iniciar o ambiente gráfico com o XFCE. Porém ainda falta um detalhe, ao iniciar o sistema ele deve ir para o ambiente gráfico. Para isso precisamos configurar o LXDM.</p>
+<p>Vamos editar o arquivo de configuração do LXDM:</p>
+<pre><code>vim /etc/lxdm/lxdm.conf</code></pre>
+<p>Procure pela linha que contenha <em>session</em> e susbtitua por:</p>
+<pre><code>session=/usr/bin/startxfce4</code></pre>
+<p>No meu caso o arquivo ficou da seguinte forma:</p>
+<pre><code class="bash">
+[base]
+## uncomment and set autologin username to enable autologin
+# autologin=dgod
+
+## uncomment and set timeout to enable timeout autologin,
+## the value should &gt;=5
+# timeout=10
+
+## default session or desktop used when no systemwide config
+session=/usr/bin/startxfce4
+
+## uncomment and set to set numlock on your keyboard
+# numlock=0
+
+## set this if you don't want to put xauth file at ~/.Xauthority
+# xauth_path=/tmp
+
+# not ask password for users who have empty password
+# skip_password=1
+
+## greeter used to welcome the user
+greeter=/usr/lib/lxdm/lxdm-greeter-gtk
+
+[server]
+## arg used to start xserver, not fully function
+arg=/usr/bin/X -background vt1
+# uncomment this if you really want xserver listen to tcp
+# tcp_listen=1
+# uncoment this if you want reset the xserver after logou
+# reset=1
+
+[display]
+## gtk theme used by greeter
+gtk_theme=Clearlooks
+
+## background of the greeter
+# bg=/usr/share/backgrounds/default.png
+
+## if show bottom pane
+bottom_pane=1
+
+## if show language select control
+lang=1
+
+## if show keyboard layout select control
+keyboard=0
+
+## the theme of greeter
+theme=Industrial
+
+[input]
+
+[userlist]
+## if disable the user list control at greeter
+disable=0
+
+## whitelist user
+white=
+
+## blacklist user
+black=
+</code></pre>
+<p>Agora que configuramos a sessão padrão do LXDM vamos habilitá-lo:</p>
+<pre><code>systemctl enable lxdm</code></pre>
+<p>Pronto, agora você pode reiniciar o seu BPi que ele iniciará o XFCE + LXDM por padrão. Abaixo você pode conferir algumas imagens.</p>
+<p><a href="/images/wp-content/uploads/2014/12/IMG_20141212_232604702.jpg" target="_blank"><img class="aligncenter" src="/images/wp-content/uploads/2014/12/IMG_20141212_232604702.jpg" alt="lxdm" width="40%" height="40%" /></a></p>
+<p><a href="/images/wp-content/uploads/2014/12/IMG_20141212_223415416.jpg" target="_blank"><img class="aligncenter" src="/images/wp-content/uploads/2014/12/IMG_20141212_223415416.jpg" alt="lxdm" width="40%" height="40%" /></a></p>
+<p>Espero que você tenha gostado. Se ficou alguma dúvida não deixe de comentar.</p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/archlinux/" class="tag-link">archlinux</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/banana-pi/" class="tag-link">banana-pi</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/lxdm/" class="tag-link">lxdm</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/xfce/" class="tag-link">xfce</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/"
+     data-text="Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/"
+     data-text="Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/"
+     data-text="Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/"
+     data-text="Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             alt="Alexandre Vicenzi">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">Alexandre Vicenzi</a>
+      </h2>
+      <span class="small text-muted">Engenheiro de Software</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

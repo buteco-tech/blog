@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Crie seu próprio Instagram com PHP &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Crie seu próprio Instagram com PHP">
+<meta itemprop="description" content="Olá pessoal! Hoje mostrarei como fazer uma edição e tratamento básico de imagens com PHP, para quem não sabe o PHP possui uma extensão dedicada para trabalhar com entidades gráficas, a php_gd2, consequentemente para este tutorial vamos precisar desta extensão habilitada e do PHP na versão 5.">
+<meta itemprop="datePublished" content="2014-11-17T07:47:00+00:00" />
+<meta itemprop="dateModified" content="2014-11-17T07:47:00+00:00" />
+<meta itemprop="wordCount" content="423">
+<meta itemprop="image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="imagem,php,php_gd2," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+
+<meta name="twitter:title" content="Crie seu próprio Instagram com PHP"/>
+<meta name="twitter:description" content="Olá pessoal! Hoje mostrarei como fazer uma edição e tratamento básico de imagens com PHP, para quem não sabe o PHP possui uma extensão dedicada para trabalhar com entidades gráficas, a php_gd2, consequentemente para este tutorial vamos precisar desta extensão habilitada e do PHP na versão 5."/>
+
+
+<meta property="og:title" content="Crie seu próprio Instagram com PHP" />
+<meta property="og:description" content="Olá pessoal! Hoje mostrarei como fazer uma edição e tratamento básico de imagens com PHP, para quem não sabe o PHP possui uma extensão dedicada para trabalhar com entidades gráficas, a php_gd2, consequentemente para este tutorial vamos precisar desta extensão habilitada e do PHP na versão 5." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/crie-seu-proprio-instagram-com-php/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+<meta property="article:published_time" content="2014-11-17T07:47:00+00:00" />
+<meta property="article:modified_time" content="2014-11-17T07:47:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Crie seu próprio Instagram com PHP</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+           alt="Jonathan André Schweder"
+           title="Jonathan André Schweder">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+           class="author">Jonathan André Schweder</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2014-11-17T07:47:00Z">Nov 17, 2014</time>
+      &middot; 2 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/crie-seu-proprio-instagram-com-php/"
+     data-text="Crie seu próprio Instagram com PHP"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/crie-seu-proprio-instagram-com-php/"
+     data-text="Crie seu próprio Instagram com PHP"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/crie-seu-proprio-instagram-com-php/"
+     data-text="Crie seu próprio Instagram com PHP"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/crie-seu-proprio-instagram-com-php/"
+     data-text="Crie seu próprio Instagram com PHP"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header><article class="mt-3 mb-4">
+  <div class="separator" style="clear: both; text-align: left;">Olá pessoal! Hoje mostrarei como fazer uma edição e tratamento básico de imagens com PHP, para quem não sabe o PHP possui uma extensão dedicada para trabalhar com entidades gráficas, a <strong>php_gd2</strong>, consequentemente para este tutorial vamos precisar desta extensão habilitada e do PHP na versão 5.5 ou superior.</div>
+<div class="separator" style="clear: both; text-align: left;"></div>
+<div class="separator" style="clear: both; text-align: left;">Para começar então precisamos carregar a imagem, isto é algo extremamente fácil de fazer usando a extensão do php_gd2 e existe métodos prontos para isso:</div>
+<pre><code>$imagem = imagecreatefromjpeg($caminho_para_imagem);</code></pre>
+<p>Ou se preferir usar outras extensões de imagens utilize a tabela abaixo:</p>
+<pre>(JPEG)$imagem = imagecreatefromjpeg('caminhoparaimagem');
+(PNG) $imagem = imagecreatefrompng('caminhoparaimagem');
+(GIF) $imagem = imagecreatefromgif('caminhoparaimagem');
+(WEBP)$imagem = imagecreatefromwebp('caminhoparaimagem');</pre>
+<p>Isso carrega nossa imagem na variável &ldquo;$imagem&rdquo;, para teste você pode jogar a imagem no navegador da seguinte forma:</p>
+<pre>header('Content-type: image/jpeg');
+imagejpeg($imagem);
+</pre>
+<p>IMPORTANTE! É necessário colocar o &ldquo;Content-type&rdquo; pois do contrário o navegador não interpretará corretamente o conteúdo e ele pode ou não ser mostrado como deve, além disso deve corresponder ao tipo de imagem usada.</p>
+<p>Obs.: Você pode salvar a imagem gerada passando um segundo parâmetro para o método imagejpeg() com o caminho e nome da imagem. Ex.: imagepng($imagem,&lsquo;imagem2.jpg&rsquo;);</p>
+<p>Para este tutorial usarei uma imagem de um elePHPant que achei no google :)</p>
+<p>Com isso ao acessar a página pelo navegador a imagem deve aparecer, mas agora vamos tornar as coisas mais interessantes, aplicando filtros às imagens com o método <b><a href="http://php.net/manual/en/function.imagefilter.php">imagefilter</a></b>, veja abaixo alguns filtros:</p>
+<p> </p>
+<table class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="https://1.bp.blogspot.com/-RkFLv7jTiXM/VGOqKp9gcII/AAAAAAAADxg/EASFlgaAMyE/s1600/imagem_negativo.jpg"><img src="https://1.bp.blogspot.com/-RkFLv7jTiXM/VGOqKp9gcII/AAAAAAAADxg/EASFlgaAMyE/s200/imagem_negativo.jpg" alt="" width="200" height="131" border="0" /></a></td>
+</tr>
+<tr>
+<td class="tr-caption" style="text-align: center;">imagefilter($imagem, IMG_FILTER_NEGATE);</td>
+</tr>
+</tbody>
+</table>
+<table class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="https://1.bp.blogspot.com/-D_LlzEaSj5Y/VGOp5Kaz6qI/AAAAAAAADww/vCqmvYAAM_Q/s1600/imagem_brightness.JPG"><img src="https://1.bp.blogspot.com/-D_LlzEaSj5Y/VGOp5Kaz6qI/AAAAAAAADww/vCqmvYAAM_Q/s200/imagem_brightness.JPG" alt="" width="200" height="129" border="0" /></a></td>
+</tr>
+<tr>
+<td class="tr-caption" style="text-align: center;">imagefilter($imagem, IMG_FILTER_BRIGHTNESS, 150);</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<table class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="https://3.bp.blogspot.com/-K6v3_z-Lx5U/VGOp5JKyWKI/AAAAAAAADw4/EJ_uJ6Djcz4/s1600/imagem_colorize.JPG"><img src="https://3.bp.blogspot.com/-K6v3_z-Lx5U/VGOp5JKyWKI/AAAAAAAADw4/EJ_uJ6Djcz4/s200/imagem_colorize.JPG" alt="" width="200" height="132" border="0" /></a></td>
+</tr>
+<tr>
+<td class="tr-caption" style="text-align: center;">imagefilter($imagem, IMG_FILTER_COLORIZE, 255,0,0);</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<table class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="https://4.bp.blogspot.com/-fn97DcVAWmQ/VGOp6O0WvuI/AAAAAAAADw8/uWVqYayY1zM/s1600/imagem_contrast.JPG"><img src="https://4.bp.blogspot.com/-fn97DcVAWmQ/VGOp6O0WvuI/AAAAAAAADw8/uWVqYayY1zM/s200/imagem_contrast.JPG" alt="" width="200" height="130" border="0" /></a></td>
+</tr>
+<tr>
+<td class="tr-caption" style="text-align: center;">imagefilter($imagem, IMG_FILTER_CONTRAST, -255);</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<table class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="https://2.bp.blogspot.com/-A8B0u6gtm-U/VGOp6AK1PBI/AAAAAAAADxI/B2FtuhUQv30/s1600/imagem_grayscale.JPG"><img src="https://2.bp.blogspot.com/-A8B0u6gtm-U/VGOp6AK1PBI/AAAAAAAADxI/B2FtuhUQv30/s200/imagem_grayscale.JPG" alt="" width="200" height="129" border="0" /></a></td>
+</tr>
+<tr>
+<td class="tr-caption" style="text-align: center;">imagefilter($imagem, IMG_FILTER_GRAYSCALE);</td>
+</tr>
+</tbody>
+</table>
+Obs.: Os filtros podem ser acumulados chamando um ou mais. Também podemos recuperar o tamanho da imagem com "imagesx()" para largura e "imagesy()" para altura, para mostrar esse exemplo mostrarei junto com o método <a href="http://php.net/imagecrop">imagecrop()</a> que retorna uma nova imagem com os parâmetros passados, segue:
+<pre>$imagem = imagecrop($imagem, array('x'=((imagesx($imagem)/2)-150),'y'=((imagesy($imagem)/2)-100),'width'=150,'height'=150));</pre>
+&nbsp;
+<table class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="https://4.bp.blogspot.com/-cIFjfQeaD2o/VGOp6fAYHVI/AAAAAAAADxE/yHrDBx2Pd6A/s1600/imagem_recorte.jpg"><img src="//4.bp.blogspot.com/-cIFjfQeaD2o/VGOp6fAYHVI/AAAAAAAADxE/yHrDBx2Pd6A/s1600/imagem_recorte.jpg" alt="" border="0" /></a></td>
+</tr>
+<tr>
+<td class="tr-caption" style="text-align: center;">resultado do imgcrop()</td>
+</tr>
+</tbody>
+</table>
+Além disso, o PHP possui o método <a href="http://php.net/imagecrop">imagecropauto</a> que também faz o recorte da imagem porém de forma mais inteligente, como por exemplo você pode recortar retirando todo o fundo que for da cor branca ou preta, da seguinte forma:
+<pre>imagefilter($imagem, IMG_FILTER_CONTRAST, -255);
+$imagem = imagecropauto($imagem,IMG_CROP_WHITE);
+</pre>
+Para demostrar utilizei a imagem do nosso amigo elePHPant aumentando o contraste da imagem para que o fundo que é cinza na imagem original vire branco e assim posso usar o método para filtrar a área que possua algo na imagem, no caso nosso elePHPant.
+<table class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="https://3.bp.blogspot.com/-6b2yF0H1DbU/VGOsk3-hPQI/AAAAAAAADx4/W_iZyzjFSDQ/s1600/imagem2.jpg"><img src="https://3.bp.blogspot.com/-6b2yF0H1DbU/VGOsk3-hPQI/AAAAAAAADx4/W_iZyzjFSDQ/s320/imagem2.jpg" alt="" width="320" height="292" border="0" /></a></td>
+</tr>
+<tr>
+<td class="tr-caption" style="text-align: center;">resulta de imagecropauto()</td>
+</tr>
+</tbody>
+</table>
+Uma aplicação prática da utilização desses métodos seria o tratamento de imagens para leitura com OCR (Optical Character Read), assim você pode melhorar a qualidade e precisão da leitura do algoritmo.
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/imagem/" class="tag-link">imagem</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/php/" class="tag-link">php</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/php_gd2/" class="tag-link">php_gd2</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/crie-seu-proprio-instagram-com-php/"
+     data-text="Crie seu próprio Instagram com PHP"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/crie-seu-proprio-instagram-com-php/"
+     data-text="Crie seu próprio Instagram com PHP"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/crie-seu-proprio-instagram-com-php/"
+     data-text="Crie seu próprio Instagram com PHP"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/crie-seu-proprio-instagram-com-php/"
+     data-text="Crie seu próprio Instagram com PHP"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/jaswdr/">
+        <img class="author-img"
+             src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+             alt="Jonathan André Schweder">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/jaswdr/">Jonathan André Schweder</a>
+      </h2>
+      <span class="small text-muted">System Developer Engineer at Amazon Web Services</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

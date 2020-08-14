@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Guia completo de Debug em Python &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Guia completo de Debug em Python">
+<meta itemprop="description" content="Uma das atividades que mais realizamos durante o desenvolvendo é o debug para analisar algum erro ou até mesmo saber se o código esta executando da forma que gostaríamos.">
+<meta itemprop="datePublished" content="2020-07-08T08:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-07-08T08:00:00+00:00" />
+<meta itemprop="wordCount" content="2146">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/python-logo.png">
+
+
+
+<meta itemprop="keywords" content="python,debug,pdb," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/posts/python-logo.png"/>
+
+<meta name="twitter:title" content="Guia completo de Debug em Python"/>
+<meta name="twitter:description" content="Uma das atividades que mais realizamos durante o desenvolvendo é o debug para analisar algum erro ou até mesmo saber se o código esta executando da forma que gostaríamos."/>
+
+
+<meta property="og:title" content="Guia completo de Debug em Python" />
+<meta property="og:description" content="Uma das atividades que mais realizamos durante o desenvolvendo é o debug para analisar algum erro ou até mesmo saber se o código esta executando da forma que gostaríamos." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/posts/python-logo.png" />
+<meta property="article:published_time" content="2020-07-08T08:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-08T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Guia completo de Debug em Python</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+           alt="Jonathan André Schweder"
+           title="Jonathan André Schweder">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+           class="author">Jonathan André Schweder</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2020-07-08T08:00:00Z">Jul 8, 2020</time>
+      &middot; 11 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
+     data-text="Guia completo de Debug em Python"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
+     data-text="Guia completo de Debug em Python"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
+     data-text="Guia completo de Debug em Python"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
+     data-text="Guia completo de Debug em Python"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+
+  <article class="mt-3 mb-4">
+  <figure>
+    <img src="/images/posts/python-logo.png"
+         alt="Python"/> 
+</figure>
+
+<p>Uma das atividades que mais realizamos durante o desenvolvendo é o debug para analisar algum erro ou até mesmo saber se o código esta executando da forma que gostaríamos. Existem diversas técnicas e ferramentas no mundo Python para ajudar nessa tarefa e hoje iremos discutir algumas delas para facilitar sua vida.</p>
+<h3 id="pdb">PDB</h3>
+<p>A primeira ferramenta que você pode usar é o <code>pdb</code>, ou &ldquo;Python Debugger&rdquo;, esta biblioteca já vem com o Python e permite que você faça coisas como, execução passo-a-passo, inspeção de variáveis e muito mais.</p>
+<p>Para usá-lo você pode executar o comando abaixo:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python -m pdb script.py</span> 
+&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
+-&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
+<span class="o">(</span>Pdb<span class="o">)</span> _
+
+</code></pre></td></tr></table>
+</div>
+</div><p>Ao executar o comando acima em qualquer arquivo o pdb irá carregá-lo e pausar a execução na primeira linha, nesse exemplo o arquivo está no diretório <code>/app</code> e a primeira linha do arquivo, como podemos ver, tem a declaração de uma função de soma chamada <code>add(x,y)</code>.</p>
+<p>Perceba que também existe um prompt de comando na linha <code>(Pdb) _</code>, sendo <code>_</code> o local onde seu cursor está, o pdb permite o uso de diversos comandos, cada um com alguma funcionalidade que te ajuda na hora do debug, vamos listar todos os comandos disponíveis digitando o comando <code>help</code> e apertando a tecla <code>Enter</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python -m pdb script.py</span> 
+&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
+-&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
+<span class="o">(</span>Pdb<span class="o">)</span> <span class="nb">help</span>
+
+Documented commands <span class="o">(</span><span class="nb">type</span> <span class="nb">help</span> &lt;topic&gt;<span class="o">)</span>:
+<span class="o">========================================</span>
+EOF    c          d        h         list      q        rv       undisplay
+a      cl         debug    <span class="nb">help</span>      ll        quit     s        unt      
+<span class="nb">alias</span>  clear      disable  ignore    longlist  r        <span class="nb">source</span>   <span class="k">until</span>    
+args   commands   display  interact  n         restart  step     up       
+b      condition  down     j         next      <span class="k">return</span>   tbreak   w        
+<span class="nb">break</span>  cont       <span class="nb">enable</span>   jump      p         retval   u        whatis   
+bt     <span class="k">continue</span>   <span class="nb">exit</span>     l         pp        run      <span class="nb">unalias</span>  where    
+
+Miscellaneous <span class="nb">help</span> topics:
+<span class="o">==========================</span>
+<span class="nb">exec</span>  pdb
+
+<span class="o">(</span>Pdb<span class="o">)</span> _
+</code></pre></td></tr></table>
+</div>
+</div><p>O pdb executa o comando e imediatamente retorna ao prompt para podermos executar novos comandos, além disso, o comando <code>help</code> imprimiu toda a lista de comandos disponíveis no pdb. Veremos alguns a seguir mas caso você queira saber mais, você pode acessar a página de documentação do pdb pelo link <a href="https://docs.python.org/3/library/pdb.html">https://docs.python.org/3/library/pdb.html</a>.</p>
+<p>Continuando nosso exemplo, vamos imprimir a linha atual em que estamos, para isso use o comando <code>list</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> list
+  <span class="m">1</span>  -&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
+  <span class="m">2</span>         <span class="k">return</span> x + y
+  <span class="m">3</span>     
+  <span class="m">4</span>     
+  <span class="m">5</span>     <span class="k">if</span> <span class="nv">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span>:
+  <span class="m">6</span>         print<span class="o">(</span>add<span class="o">(</span>2, 3<span class="o">))</span>
+<span class="o">[</span>EOF<span class="o">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Podemos ver em nosso exemplo que foi listado a função <code>add</code> que mencionei anteriormente, assim como o resto do arquivo. Agora que sabemos onde estamos, podemos realizar uma execução passo-a-passo, para isso utilize o comando <code>next</code> ou sua abreviação <code>n</code> e aperte <code>Enter</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> next
+&gt; /app/script.py<span class="o">(</span>5<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
+-&gt; <span class="k">if</span> <span class="nv">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span>:
+<span class="o">(</span>Pdb<span class="o">)</span> _
+</code></pre></td></tr></table>
+</div>
+</div><p>Neste exemplo o PDB parou na próxima linha a ser executada, nesta linha temos um <code>if</code> verificando a variável <code>__name__</code>, vamos continuar a execução com o comando <code>next</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> next
+&gt; /app/script.py<span class="o">(</span>6<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
+-&gt; print<span class="o">(</span>add<span class="o">(</span>2, 3<span class="o">))</span>
+<span class="o">(</span>Pdb<span class="o">)</span> _
+</code></pre></td></tr></table>
+</div>
+</div><p>Dessa vez o cursor parou na linha de chamada da função <code>add</code>, estando nessa linha podemos &ldquo;entrar&rdquo; na função usando o comando <code>step</code> ou sua abreviação <code>s</code>, este comando irá colocar o cursor na primeira linha da função <code>add</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> step
+--Call--
+&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>add<span class="o">()</span>
+-&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
+<span class="o">(</span>Pdb<span class="o">)</span> _ 
+</code></pre></td></tr></table>
+</div>
+</div><p>Agora que estamos dentro da função <code>add</code>, podemos analisar quais foram os argumentos passados, para isso usamos o comando <code>args</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> args
+<span class="nv">x</span> <span class="o">=</span> <span class="m">2</span>
+<span class="nv">y</span> <span class="o">=</span> <span class="m">3</span>
+<span class="o">(</span>Pdb<span class="o">)</span> _
+</code></pre></td></tr></table>
+</div>
+</div><p>Como esperado, podemos ver que foram passado os valores que vimos anteriormente. Para saber o valor de uma variável podemos usar o comando <code>p</code> ou <code>pp</code> para imprimir o valor formatado.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> p x
+<span class="m">2</span>
+<span class="o">(</span>Pdb<span class="o">)</span> _
+</code></pre></td></tr></table>
+</div>
+</div><p>Enquanto estamos fazendo o debug, podemos alterar os valores das variáveis da mesma forma que escrevemos código Python.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> <span class="nv">x</span> <span class="o">=</span> <span class="m">5</span>
+<span class="o">(</span>Pdb<span class="o">)</span> p x
+<span class="m">5</span>
+<span class="o">(</span>Pdb<span class="o">)</span> _ 
+</code></pre></td></tr></table>
+</div>
+</div><p>É claro que qualquer alteração feita irá refletir na sessão atual, por fim continuaremos a execução até o término do programa com o comando <code>continue</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> <span class="k">continue</span>
+<span class="m">8</span>
+The program finished and will be restarted
+&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
+-&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
+<span class="o">(</span>Pdb<span class="o">)</span> _
+</code></pre></td></tr></table>
+</div>
+</div><p>Por ter alterado o valor da variável <code>x</code> o código imprimiu o valor 8 ao em vez do valor esperado 5.</p>
+<p>Porém, vão existir momentos que você não sabe exatamente a ordem em que tudo irá executar, ou até mesmo essa ordem não importa e você quer ir direto para o ponto do código de interesse, nesses casos você pode importar o módulo do pdb e chamar a função <code>set_trace()</code> que irá parar a execução naquele ponto e disponibilizar o prompt do pdb para você, veja o exemplo.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="kn">import</span> <span class="nn">pdb</span><span class="p">;</span> <span class="n">pdb</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Executando o arquivo.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python script.py</span>
+&gt; /app/script.py<span class="o">(</span>3<span class="o">)</span>add<span class="o">()</span>
+-&gt; <span class="k">return</span> x + y
+<span class="o">(</span>Pdb<span class="o">)</span> _
+</code></pre></td></tr></table>
+</div>
+</div><p>Nesse ponto você tem todos os comandos do PDB disponível para debugar o código. Se quiser sair você tambêm pode usar o comando <code>quit</code> ou sua abreviação <code>q</code>.</p>
+<p>Veja estes e outros comandos disponíveis no modulo PDB na <a href="https://docs.python.org/3/library/pdb.html"
+   
+   target="_blank">documentação oficial</a>.</p>
+<h3 id="trace">Trace</h3>
+<p>Outra biblioteca que pode te ajudar a entender o que está acontecendo em uma execução é o módulo <code>trace</code>. Este módulo permite que você rastreie chamadas de uma maneira mais simples, podendo verificar, por exemplo, qual ou quais arquivos e funções são chamados, a sequência em que essas funções são chamadas e outros detalhes.</p>
+<p>Para exemplificar vamos usar o seguinte código e salvar em um arquivo <code>script.py</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Agora vamos verificar a sequência de chamadas com o módulo trace e a opção <code>--trace</code>.</p>
+<pre><code># python -m trace --trace script.py 
+ --- modulename: script, funcname: &lt;module&gt;
+script.py(1): def factorial(x):
+script.py(7): if __name__ == &quot;__main__&quot;:
+script.py(8):     print(factorial(5))
+ --- modulename: script, funcname: factorial
+script.py(2):     if x &lt;= 1:
+script.py(4):     return x * factorial(x - 1)
+ --- modulename: script, funcname: factorial
+script.py(2):     if x &lt;= 1:
+script.py(4):     return x * factorial(x - 1)
+ --- modulename: script, funcname: factorial
+script.py(2):     if x &lt;= 1:
+script.py(4):     return x * factorial(x - 1)
+ --- modulename: script, funcname: factorial
+script.py(2):     if x &lt;= 1:
+script.py(4):     return x * factorial(x - 1)
+ --- modulename: script, funcname: factorial
+script.py(2):     if x &lt;= 1:
+script.py(3):         return 1
+120
+</code></pre><p>O comando acima mostrou a sequência da execução, podemos ver que houve um total de 4 chamadas a função <code>factorial</code> e um <code>return</code>. Com isso já conseguimos entender totalmente como o programa chegou no resultado esperado.</p>
+<p>Outra forma de obter um resultado mais simplificado é usar a opção <code>--count</code>, vejamos o que acontece se executarmos em nosso script.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python -m trace --count script.py</span>
+<span class="m">120</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Aparentemente nada de mais, porém se olharmos no diretório podemos ver que foi criado um arquivo <code>script.cover</code>, este arquivo possuí (neste caso) o seguinte conteúdo.</p>
+<pre><code>    1: def factorial(x):
+    5:     if x &lt;= 1:
+    1:         return 1
+    4:     return x * factorial(x - 1)
+       
+       
+    1: if __name__ == &quot;__main__&quot;:
+    1:     print(factorial(5))
+</code></pre><p>O conteúdo do arquivo mostra algo parecido com o que vimos antes, porém de uma forma mais simplificada, mostrando quantidade de execuções que houveram linha a linha. Perceba por exemplo que a linha <code>if x &lt;= 1:</code> foi executada 5 vezes, a linha <code>return 1</code> foi executada somente uma, o que é esperado pois é o ponto de parada da função e por fim a linha <code>return x * factorial(x - 1)</code> foi executada 4 vezes.</p>
+<p>Veja mais detalhes sobre o módulo <code>trace</code> na <a href="https://docs.python.org/3/library/trace.html#command-line-usage"
+   
+   target="_blank">documentação oficial</a>.</p>
+<h3 id="timeit">Timeit</h3>
+<p>Em alguns momentos pode ser que seja necessário verificar o tempo de execução de alguma função, para isso que a biblioteca <code>timeit</code> existe.</p>
+<p>O timeit permite você mensurar quanto tempo a execução de uma função demorou, para entender melhor vamos usar o seguinte código de exemplo:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">timeit</span>
+<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
+
+
+<span class="k">def</span> <span class="nf">func1</span><span class="p">():</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;func1 done&#34;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">func2</span><span class="p">():</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;func2 done&#34;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Time of func1: {}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="n">func1</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="mi">1</span><span class="p">)))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Time of func2: {}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="n">func2</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="mi">1</span><span class="p">)))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Perceba que neste código existem 2 funções, <code>func1</code> e <code>func2</code>, apesar de serem apenas exemplos você pode considerar que essas funções representam qualquer função do seu código que realizam tarefas diferentes.</p>
+<p>Nas últimas 2 linhas estamos usando a função <code>timeit</code> da biblioteca <code>timeit</code>, essa função recebe como parâmetro a função a ser executada, e neste exemplo estamos declarando o número de vezes que a função será executada, nesse caso 1, para determinar o tempo médio de execução. É importante você ter em mente pois muitas vezes haverá situações em que o código executará de forma mais rápida ou lenta, isso acontece por uma série de fatores, alguns deles não temos total controle, como a forma como que o sistema operacional agenda os processos, entre outros detalhes. Também é importante considerar o tempo médio das execuções ou até mesmo uma porcentagem como 99% ou 95% para excluir as exceções que tiveram uma demora anormal em relação ao restante das execuções.</p>
+<p>Executando o código acima temos o seguinte resultado.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python script.py</span> 
+func1 <span class="k">done</span>
+Time of func1: 5.008903064999686
+func2 <span class="k">done</span>
+Time of func2: 3.008447170999716
+</code></pre></td></tr></table>
+</div>
+</div><p>A função <code>timeit</code> como podemos ver, está retornando o tempo em segundos, apesar de ser um exemplo bastante óbvio, no dia a dia esse tempo é imprevisível e muitas vezes é difícil identificar qual parte do projeto ou do código esta interferindo mais no desempenho. Com o <code>timeit</code> você pode analisar o tempo e realizar testes locais para verificar se sua alteração tem melhor ou pior desempenho em relação à versão anterior do código.</p>
+<p>Veja mais sobre o timeit na <a href="https://docs.python.org/3/library/timeit.html"
+   
+   target="_blank">documentação oficial</a>.</p>
+<h3 id="tracemalloc">Tracemalloc</h3>
+<p>A último biblioteca que vamos aprender a usar é o <code>tracemalloc</code>, este módulo tem o objetivo de fazer o rastreio da alocação de mémoria, com ele você consegue saber quanto de memória o programa esta usando, e não só isso, saber quanto cada linha esta alocando.</p>
+<p>Como de costume vamos usar o seguinte código como base.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">tracemalloc</span>
+
+
+<span class="k">class</span> <span class="nc">Foo</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">foo</span> <span class="o">=</span> <span class="s2">&#34;foo&#34;</span>
+
+
+<span class="k">def</span> <span class="nf">func1</span><span class="p">():</span>
+    <span class="n">foo</span> <span class="o">=</span> <span class="n">Foo</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;func1 done&#34;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">func2</span><span class="p">():</span>
+    <span class="n">foo</span> <span class="o">=</span> <span class="s2">&#34;foo&#34;</span>
+    <span class="n">bar</span> <span class="o">=</span> <span class="s2">&#34;bar&#34;</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;func2 done&#34;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+    <span class="n">tracemalloc</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+    <span class="n">before</span> <span class="o">=</span> <span class="n">tracemalloc</span><span class="o">.</span><span class="n">take_snapshot</span><span class="p">()</span>
+    <span class="n">func1</span><span class="p">()</span>
+    <span class="n">func2</span><span class="p">()</span>
+    <span class="n">after</span> <span class="o">=</span> <span class="n">tracemalloc</span><span class="o">.</span><span class="n">take_snapshot</span><span class="p">()</span>
+    <span class="n">top_stats</span> <span class="o">=</span> <span class="n">after</span><span class="o">.</span><span class="n">compare_to</span><span class="p">(</span><span class="n">before</span><span class="p">,</span> <span class="s1">&#39;lineno&#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;(Malloc)&#34;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">stat</span> <span class="ow">in</span> <span class="n">top_stats</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">stat</span><span class="p">)</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p>O código acima declara duas funções, <code>func1</code> está declarando uma nova instância da classe <code>Foo</code>, enquanto <code>func2</code> esta declarando uma variável do tipo string <code>bar</code>. Nas últimas linhas estamos utilizando o módulo <code>tracemalloc</code> para rastrear justamente o quanto de memória cada função esta alocando, além de estarmos criando snapshots usando a função <code>take_snapshot</code>, essa função irá criar algo como uma &ldquo;fotografia&rdquo; da memória no momento que o método for chamado, nesse caso estamos criando um snapshot no início e no fim, se executarmos o código podemos ver o seguinte.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python script.py</span> 
+func1 <span class="k">done</span>
+func2 <span class="k">done</span>
+<span class="o">(</span>Malloc<span class="o">)</span>
+script.py:24: <span class="nv">size</span><span class="o">=</span><span class="m">416</span> B <span class="o">(</span>+416 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">416</span> B
+script.py:10: <span class="nv">size</span><span class="o">=</span><span class="m">408</span> B <span class="o">(</span>+408 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">408</span> B
+/usr/local/lib/python3.8/tracemalloc.py:397: <span class="nv">size</span><span class="o">=</span><span class="m">88</span> B <span class="o">(</span>+88 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">2</span> <span class="o">(</span>+2<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">44</span> B
+/usr/local/lib/python3.8/tracemalloc.py:534: <span class="nv">size</span><span class="o">=</span><span class="m">48</span> B <span class="o">(</span>+48 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">48</span> B
+/usr/local/lib/python3.8/tracemalloc.py:291: <span class="nv">size</span><span class="o">=</span><span class="m">40</span> B <span class="o">(</span>+40 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">40</span> B
+</code></pre></td></tr></table>
+</div>
+</div><p>O resultado irá mostrar as linhas que mais alocaram memória, como este exemplo é simples, não irá ter muita alocação de memória, porém vale algumas observações. Primeiro as 3 últimas linhas são do proprio tracemalloc. Segundo podemos ver que as linhas 24 e 10 são as que alocaram mais memória, se olharmos o código da linha 24 é chamada a função <code>func2</code> que até aquele momento havia alocado 416 bytes, e a linha 10 é a linha onde estamos declarando nossa instância da classe <code>Foo</code> e até aquele momento foi alocado 408 bytes, é importante entender que a função <code>func2</code> não alocou os 416 bytes, pela <code>func2</code> ser chamada após a <code>func1</code> a quantidade de 408 bytes já havia sido alocado e a <code>func2</code> alocou apenas mais 8 bytes. Com isso conseguimos fazer o rastreio do uso de memória.</p>
+<h3 id="conclusão">Conclusão</h3>
+<p>Verificamos como você pode usar uma série de bibliotecas do Python para poder fazer o debug dos seus programas, rastreando tempo de execução e alocação de memória. Já conhecia ou usa no dia a dia alguns deles? Comente ou deixe sua opinião.</p>
+<p>Até a próxima</p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/python/" class="tag-link">python</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/debug/" class="tag-link">debug</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/pdb/" class="tag-link">pdb</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
+     data-text="Guia completo de Debug em Python"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
+     data-text="Guia completo de Debug em Python"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
+     data-text="Guia completo de Debug em Python"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
+     data-text="Guia completo de Debug em Python"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/jaswdr/">
+        <img class="author-img"
+             src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+             alt="Jonathan André Schweder">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/jaswdr/">Jonathan André Schweder</a>
+      </h2>
+      <span class="small text-muted">System Developer Engineer at Amazon Web Services</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

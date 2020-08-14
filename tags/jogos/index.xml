@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jogos on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/jogos/</link>
+    <description>Recent content in jogos on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 07 Apr 2016 13:04:15 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/jogos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mesa muito próximo do OpenGL 4.2 e 4.3</title>
+      <link>https://butecotecnologico.com.br/mesa-muito-proximo-do-opengl-4-2-e-4-3/</link>
+      <pubDate>Thu, 07 Apr 2016 13:04:15 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/mesa-muito-proximo-do-opengl-4-2-e-4-3/</guid>
+      <description>&lt;p&gt;Há muito tempo que esperamos ter um bom suporte a jogos no Linux, e em partes isso já é realidade com a Steam e com os muitos jogos que já foram portados. Ainda assim, muito dos jogos AAA ainda precisam de um driver proprietário para poderem ser executados, mas isto pode mudar em breve.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mais correções no RC3 do Mesa 11.0</title>
+      <link>https://butecotecnologico.com.br/mais-correcoes-no-rc3-do-mesa-11-0/</link>
+      <pubDate>Mon, 07 Sep 2015 20:35:16 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/mais-correcoes-no-rc3-do-mesa-11-0/</guid>
+      <description>&lt;p&gt;O terceiro Release Candidate do Mesa 11.0 está disponível. Esta nova versão traz várias correções para os drivers R600g e RadeonSI, Nouveau NV50, Freedreno, atualizações no driver i965 e uma série de outras coisas.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Finalmente: Mesa ganha suporte a OpenGL 4.0, e está proximo do 4.1 e 4.2</title>
+      <link>https://butecotecnologico.com.br/finalmente-mesa-ganha-suporte-a-opengl-4-0-e-esta-proximo-do-4-1-e-4-2/</link>
+      <pubDate>Thu, 23 Jul 2015 20:57:35 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/finalmente-mesa-ganha-suporte-a-opengl-4-0-e-esta-proximo-do-4-1-e-4-2/</guid>
+      <description>&lt;p&gt;Depois de cinco anos da especificação do OpenGL 4.0 ser introduzido, o projeto open source Mesa 3D finalmente ganhou suporte a todas as extensões necessárias, sendo que existem patches pendentes que estão implementando as extensões das especificações 4.1 e 4.2. O desenvolvedor responsável pelos patches da versão 4.0 do Mesa foi o David Airlie, da Red Hat.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rumores sobre a Microsoft comprar a AMD</title>
+      <link>https://butecotecnologico.com.br/rumores-sobre-a-microsoft-comprar-a-amd/</link>
+      <pubDate>Mon, 29 Jun 2015 23:33:30 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/rumores-sobre-a-microsoft-comprar-a-amd/</guid>
+      <description>&lt;p&gt;Na sequência de um relatório recente sobre a AMD ser dividida ou potencialmente vender suas unidades de negócio, existe um novo rumor sobre a Microsoft estar de olho na AMD.&lt;/p&gt;
+&lt;p&gt;De acordo com &lt;a href=&#34;http://www.kitguru.net/components/anton-shilov/microsoft-is-interested-to-buy-advanced-micro-devices-source/&#34; target=&#34;_blank&#34;&gt;relatório de hoje do KitGuru&lt;/a&gt;, um site aparentemente confiável focado em Windows, a Microsoft tem interesse em comprar a AMD. O interesse primário da Microsoft é sobre os chips do Xbox e divisão de games, mas também é possível que eles possam utilizar os chips da AMD para futuros tablets Surface, em Smartphones e outros.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Wine 1.7.43 traz melhorias na arquitetura ARM64</title>
+      <link>https://butecotecnologico.com.br/wine-1-7-43-traz-melhorias-na-arquitetura-arm64/</link>
+      <pubDate>Fri, 15 May 2015 23:58:39 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/wine-1-7-43-traz-melhorias-na-arquitetura-arm64/</guid>
+      <description>O Wine (acrônimo de &amp;ldquo;Wine Is Not an Emulator&amp;rdquo;) é um camada de compatibilidade que permite a execução de aplicativos Windows em vários sistemas operacionais POSIX-compliant, incluindo Linux, Mac OS X e BSD. Ao invés de simular a lógica interna do Windows, como um emulador normal, o Wine faz a tradução das chamadas de API do Windows em chamadas POSIX. Isto melhora o desempenho da aplicação e permite a integração de aplicação Windows com a sua área de trabalho.</description>
+    </item>
+    
+    <item>
+      <title>QtGamepad: Adicionando suporte a Gamepad no Qt</title>
+      <link>https://butecotecnologico.com.br/qtgamepad-adicionando-suporte-a-gamepad-no-qt/</link>
+      <pubDate>Thu, 14 May 2015 23:08:42 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/qtgamepad-adicionando-suporte-a-gamepad-no-qt/</guid>
+      <description>Um dos mais novos módulos adicionados ao Qt Labs é o QtGamepad, um módulo inspirado na API Gamepad do HTML5. Apesar de inspirado no Gamepad HTML, ele segue o estilo de desenvolvimento do Qt.</description>
+    </item>
+    
+    <item>
+      <title>Valve disponibiliza o OpenVR SDK</title>
+      <link>https://butecotecnologico.com.br/valve-disponibiliza-o-openvr-sdk/</link>
+      <pubDate>Mon, 04 May 2015 09:06:02 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/valve-disponibiliza-o-openvr-sdk/</guid>
+      <description>O OpenVR SDK é basicamente uma camada de abstração para os desenvolvedores de jogos e aplicativos para acessar esses hardwares de forma fácil, que por sua vez possui suporte para o HTC Vive Developer Edition, SteamVR controlador e Lighthouse.</description>
+    </item>
+    
+  </channel>
+</rss>

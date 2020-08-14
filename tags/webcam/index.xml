@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>webcam on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/webcam/</link>
+    <description>Recent content in webcam on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 09 Sep 2014 00:27:57 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/webcam/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Capturando Imagem da Webcam com o PyGame</title>
+      <link>https://butecotecnologico.com.br/capturando-imagem-da-webcam-com-o-pygame/</link>
+      <pubDate>Tue, 09 Sep 2014 00:27:57 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/capturando-imagem-da-webcam-com-o-pygame/</guid>
+      <description>Este é o meu primeiro post no blog e gostaria de falar sobre o PyGame.</description>
+    </item>
+    
+  </channel>
+</rss>

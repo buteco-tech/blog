@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chat on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/chat/</link>
+    <description>Recent content in chat on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 11 May 2015 08:34:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/chat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Usando o hangouts-chat via terminal</title>
+      <link>https://butecotecnologico.com.br/usando-o-hangouts-chat-via-terminal/</link>
+      <pubDate>Mon, 11 May 2015 08:34:48 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/usando-o-hangouts-chat-via-terminal/</guid>
+      <description>Mcabber é um simples cliente console XMPP(Jabber) que inclui suporte a SASL/SSL/TLS, Historico de mensagens, Encriptação OpenPGP entre outros..
+Mcabber roda sobre a GNU GPL, e tem suporte a GNU/LINUX. Ele é bastante utilizado para fazer conexões com chat via XMPP.</description>
+    </item>
+    
+  </channel>
+</rss>

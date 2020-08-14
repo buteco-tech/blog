@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fedora on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/fedora/</link>
+    <description>Recent content in fedora on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 19 Jun 2020 08:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Distribuições Linux</title>
+      <link>https://butecotecnologico.com.br/podcast/distribuicoes-linux/</link>
+      <pubDate>Fri, 19 Jun 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/podcast/distribuicoes-linux/</guid>
+      <description>Você sabe o que é uma distribuição Linux? Neste episódio do nosso podcast discutimos sobre o assunto, abordando alguns dos principais projetos envolvidos, como tudo começou, o cenário atual e por fim falamos sobre a posição do Brasil nessa história.</description>
+    </item>
+    
+    <item>
+      <title>Visão geral do Dandified Yum</title>
+      <link>https://butecotecnologico.com.br/visao-geral-do-dandified-yum/</link>
+      <pubDate>Mon, 24 Aug 2015 14:07:37 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/visao-geral-do-dandified-yum/</guid>
+      <description>&lt;p&gt;Olá pessoal! Neste artigo procurarei descrever sobre alguns dos principais comandos do &lt;em&gt;Dandified Yum&lt;/em&gt;, carinhosamente apelidado de DNF, espero ser útil àqueles que encontraram alguma dificuldade, não tiveram a oportunidade ou necessidade em usá-lo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fedup vai ser substituído no Fedora 23</title>
+      <link>https://butecotecnologico.com.br/fedup-vai-ser-substituido-no-fedora-23-2/</link>
+      <pubDate>Thu, 28 May 2015 23:56:19 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/fedup-vai-ser-substituido-no-fedora-23-2/</guid>
+      <description>Artigo sobre nova abordagem da Red Hat sobre o atualizador Fedup, utilizado no Fedora</description>
+    </item>
+    
+    <item>
+      <title>Fedora 23 irá trocar o X.Org Server pelo Wayland</title>
+      <link>https://butecotecnologico.com.br/fedora-23-ira-trocar-o-x-org-server-pelo-wayland/</link>
+      <pubDate>Thu, 29 Jan 2015 06:24:08 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/fedora-23-ira-trocar-o-x-org-server-pelo-wayland/</guid>
+      <description>Enquanto muito se falava em trocar o X.Org Sever pelo Wayland como sendo algo distante, parece que o Fedora 23 irá fazer acontecer.</description>
+    </item>
+    
+    <item>
+      <title>Problema ao atualizar o jogo Flare no Fedora 20</title>
+      <link>https://butecotecnologico.com.br/problema-ao-atualizar-o-jogo-flare-no-fedora-20/</link>
+      <pubDate>Wed, 03 Sep 2014 02:01:55 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/problema-ao-atualizar-o-jogo-flare-no-fedora-20/</guid>
+      <description>Olá pessoal, como primeiro post deste blog eu gostaria de falar sobre a minha experiência resolvendo um problema que tive hoje mesmo no Fedora 20!</description>
+    </item>
+    
+  </channel>
+</rss>

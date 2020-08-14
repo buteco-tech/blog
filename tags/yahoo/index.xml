@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>yahoo on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/yahoo/</link>
+    <description>Recent content in yahoo on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 23 Mar 2015 22:41:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/yahoo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>redislite: Redis sem necessidade de servidor para Python</title>
+      <link>https://butecotecnologico.com.br/redislite-redis-sem-necessidade-de-servidor-para-python/</link>
+      <pubDate>Mon, 23 Mar 2015 22:41:06 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/redislite-redis-sem-necessidade-de-servidor-para-python/</guid>
+      <description>O time de desenvolvedores do Yahoo anunciou uma implementação do Redis para Python sem a necessidade de instalar e configurar um servidor Redis. A grande vantagem é a remoção de uma dependência do seu código, quando o quesito é testes.
+O Redis é um banco de dados de código aberto, sob a licença BSD, para persistência de dados no modelo Chave/Valor e é escrito em C.</description>
+    </item>
+    
+  </channel>
+</rss>

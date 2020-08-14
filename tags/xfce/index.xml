@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xfce on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/xfce/</link>
+    <description>Recent content in xfce on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 23 Dec 2014 08:00:05 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/xfce/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi</title>
+      <link>https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/</link>
+      <pubDate>Tue, 23 Dec 2014 08:00:05 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/</guid>
+      <description>Hoje vou mostrar como instalar o ArchLinux no BananaPi. Escolhi o ArchLinux por ele ser uma distribuição bem enxuta, mas muito poderosa.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mate on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/mate/</link>
+    <description>Recent content in mate on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 14 Jul 2015 23:03:39 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/mate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Instalando o Ubuntu MATE 15.04 no Raspberry PI 2</title>
+      <link>https://butecotecnologico.com.br/instalando-o-ubuntu-mate-15-04-no-raspberry-pi-2/</link>
+      <pubDate>Tue, 14 Jul 2015 23:03:39 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-o-ubuntu-mate-15-04-no-raspberry-pi-2/</guid>
+      <description>&lt;p&gt;Uma das distribuições Linux mais conhecidas também está disponível para Raspberry PI 2.&lt;/p&gt;
+&lt;p&gt;Nesse artigo irei mostrar a instalação do Ubuntu MATE 15.04 no Raspberry PI 2.&lt;/p&gt;
+&lt;p&gt;O Raspberry PI 2 foi cedido pela Loja Mundi e você pode olhar esse e outros produtos clicando &lt;a href=&#34;http://www.lojamundi.com.br/embarcados-raspberry-cubieboard-beagleboneblack.html/?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;O Ubuntu MATE teve algumas atualizações em relação a versão anterior, Ubuntu MATE 14.10.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

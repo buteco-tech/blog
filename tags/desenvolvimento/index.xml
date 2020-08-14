@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>desenvolvimento on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/desenvolvimento/</link>
+    <description>Recent content in desenvolvimento on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 01 Apr 2015 12:10:10 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/desenvolvimento/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Construindo a interface de login do spotify com PyGTK e CSS</title>
+      <link>https://butecotecnologico.com.br/construindo-a-interface-de-login-do-spotify-com-pygtk-e-css/</link>
+      <pubDate>Wed, 01 Apr 2015 12:10:10 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/construindo-a-interface-de-login-do-spotify-com-pygtk-e-css/</guid>
+      <description>Desenvolva aplicativos mais facilmente fazendo o uso do CSS linguagem de estilo da web agora aplicada a interfaces com Python e Gtk.</description>
+    </item>
+    
+    <item>
+      <title>Laravel 5 do começo ao fim [parte 3]</title>
+      <link>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-3/</link>
+      <pubDate>Tue, 24 Mar 2015 20:43:06 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-3/</guid>
+      <description>Este artigo apresenta a terceira parte de um tutorial sobre o framework PHP Laravel 5, apresentando como usar a parte de criação de model e view do framework</description>
+    </item>
+    
+    <item>
+      <title>Acelerando o desenvolvimento com glade</title>
+      <link>https://butecotecnologico.com.br/acelerando-o-desenvolvimento-com-glade/</link>
+      <pubDate>Fri, 20 Mar 2015 08:25:17 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/acelerando-o-desenvolvimento-com-glade/</guid>
+      <description>Glade é a ferramenta de desenvolvimento de interfaces do gnome. Uma ferramenta ágil capaz de minimizar o tempo de desenvolvimento e deixar o design muito mais fácil de se implementar.</description>
+    </item>
+    
+  </channel>
+</rss>

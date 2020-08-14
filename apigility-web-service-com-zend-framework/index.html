@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Apigility, Web Service com Zend Framework &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Apigility, Web Service com Zend Framework">
+<meta itemprop="description" content="Com a variedade de clientes que acessam nossas aplicações hoje fica cada vez mais difícil criar algo que atenda a todos.">
+<meta itemprop="datePublished" content="2014-10-02T08:33:20+00:00" />
+<meta itemprop="dateModified" content="2014-10-02T08:33:20+00:00" />
+<meta itemprop="wordCount" content="329">
+<meta itemprop="image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="apigility,php,zend," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+
+<meta name="twitter:title" content="Apigility, Web Service com Zend Framework"/>
+<meta name="twitter:description" content="Com a variedade de clientes que acessam nossas aplicações hoje fica cada vez mais difícil criar algo que atenda a todos."/>
+
+
+<meta property="og:title" content="Apigility, Web Service com Zend Framework" />
+<meta property="og:description" content="Com a variedade de clientes que acessam nossas aplicações hoje fica cada vez mais difícil criar algo que atenda a todos." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+<meta property="article:published_time" content="2014-10-02T08:33:20+00:00" />
+<meta property="article:modified_time" content="2014-10-02T08:33:20+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Apigility, Web Service com Zend Framework</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+           alt="Jonathan André Schweder"
+           title="Jonathan André Schweder">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+           class="author">Jonathan André Schweder</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2014-10-02T08:33:20Z">Oct 2, 2014</time>
+      &middot; 2 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/"
+     data-text="Apigility, Web Service com Zend Framework"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/"
+     data-text="Apigility, Web Service com Zend Framework"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/"
+     data-text="Apigility, Web Service com Zend Framework"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/"
+     data-text="Apigility, Web Service com Zend Framework"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header><article class="mt-3 mb-4">
+  <p>Com a variedade de clientes que acessam nossas aplicações hoje fica cada vez mais difícil criar algo que atenda a todos. Pensando nisso a Zend, a mesma criadora do Zend Framework, (sério!?!) e do PHP, criou o Apigility, uma ferramenta para você criar serviços de maneira fácil e com qualidade. Vamos a instalação!</p>
+<p>1 - Faça o <a href="https://apigility.org/img/download_zip.png">Download</a> dos arquivos</p>
+<p>2 - Descompacte</p>
+<p>3 - Execute o comando</p>
+<pre><code class="bash">php -S 0.0.0.0:8888 -t public public/index.php
+</code></pre>
+<p>Pronto! agora acesse <a href="http://localhost:8888">http://localhost:8888</a></p>
+<p>Você deve ver algo como a imagem abaixo:
+<a href="http://imageshack.com/f/iqaT2jKnp" target="_blank"><img src="http://imagizer.imageshack.us/v2/280x200q90/674/aT2jKn.png" alt="" border="0" /></a></p>
+<p>Como exemplo vamos criar um simples serviço de helloWorld:</p>
+<p>1 -  Vá para &ldquo;Get Started&rdquo; =&gt; &ldquo;Apis&rdquo; =&gt; &ldquo;Create New API&rdquo;</p>
+<p>2 - Vamos colocar o nome de &ldquo;HelloWorld&rdquo;</p>
+<p>3 - Clique no link da API que criamos, nesse caso &ldquo;HelloWorld&rdquo;</p>
+<p>4 - Vá para &ldquo;RPC Services&rdquo; =&gt; &ldquo;Create New RPC Service&rdquo;</p>
+<p>5 - Service name = &ldquo;hello&rdquo; e Route = &ldquo;/hello&rdquo;</p>
+<p>6 - Aguarde o Apigility executar e clique em &ldquo;Fields&rdquo;</p>
+<p>7 - Coloque o mouse sobre a barra azul e clique no botão editar</p>
+<p>8 - No campo &ldquo;Field Name&rdquo; digite &ldquo;message&rdquo; e clique em &ldquo;Save changes&rdquo;</p>
+<p>9 -  Vá na aba &ldquo;Documentation&rdquo; e em &ldquo;Description&rdquo; coloque &ldquo;HelloWorld message sample service&rdquo;</p>
+<p>10 - Clique em &ldquo;Generate from configuration&rdquo;</p>
+<p>11 - Vá para a aba &ldquo;Source Code&rdquo;</p>
+<p>12 - Clique no link &ldquo;HelloWorldV1RpcHelloHelloController&rdquo; e abrirá um modal com alguns dados</p>
+<p>Esse é o arquivo gerado pelo Apigility, vá para o diretório em que você descompactou os arquivos anteriormente e vá para o caminho &ldquo;moduleHelloWorldsrcHelloWorldV1RpcHello&rdquo; e abra o arquivo &ldquo;HelloController.php&rdquo;</p>
+<p>Este é o arquivo que fará o retorno para o cliente, ele deve estar aparecendo como:</p>
+<pre><code class="php">
+namespace HelloWorldV1RpcHello;
+use ZendMvcControllerAbstractActionController;
+class HelloController extends AbstractActionController
+{
+  public function helloAction()
+  {
+  }
+}
+</code></pre>
+<p>Dentro do método &ldquo;helloAction&rdquo; coloque o seguinte código para retorno:</p>
+<pre><code class="php">
+  return array('message', 'Hello World from Apigility!');
+</code></pre>
+<p>Agora acesse http://localhost:8888/hello e PRONTO!!! o texto abaixo deve aparecer:</p>
+<p>{&ldquo;message&rdquo;:&ldquo;Hello World from Apigility!&quot;}</p>
+<p><a href="https://apigility.org/">Site oficial do Apigility</a></p>
+<p>Acesse nosso <a href="https://github.com/ButecoOpenSource/">Git</a></p>
+<p>Não esqueça de comentar! :)</p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/apigility/" class="tag-link">apigility</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/php/" class="tag-link">php</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/zend/" class="tag-link">zend</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/"
+     data-text="Apigility, Web Service com Zend Framework"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/"
+     data-text="Apigility, Web Service com Zend Framework"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/"
+     data-text="Apigility, Web Service com Zend Framework"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/"
+     data-text="Apigility, Web Service com Zend Framework"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/jaswdr/">
+        <img class="author-img"
+             src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+             alt="Jonathan André Schweder">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/jaswdr/">Jonathan André Schweder</a>
+      </h2>
+      <span class="small text-muted">System Developer Engineer at Amazon Web Services</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

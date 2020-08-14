@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eventials on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/eventials/</link>
+    <description>Recent content in eventials on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 05 May 2015 08:33:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/eventials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vaga para desenvolvedor Front-end em Blumenau</title>
+      <link>https://butecotecnologico.com.br/vaga-para-desenvolvedor-front-end-em-blumenau/</link>
+      <pubDate>Tue, 05 May 2015 08:33:38 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/vaga-para-desenvolvedor-front-end-em-blumenau/</guid>
+      <description>A Eventials é uma startup fundada em 2011, composta por equipe de empreendedores, designers e hackers. A empresa faz parte do grupo Locaweb, sendo a divisão responsável pelo desenvolvimento de soluções para streaming de vídeo. Junto com a Locaweb recebeu em 2014 os prêmios Great Place to Work e Melhores Empresas para Você Trabalhar.</description>
+    </item>
+    
+  </channel>
+</rss>

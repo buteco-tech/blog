@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Livro on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/categorias/livro/</link>
+    <description>Recent content in Livro on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 13 Jun 2016 20:54:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/categorias/livro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Review do livro &#34;Implantação de Help Desk e Service Desk&#34; - Roberto Cohen</title>
+      <link>https://butecotecnologico.com.br/review-livro/</link>
+      <pubDate>Mon, 13 Jun 2016 20:54:16 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/review-livro/</guid>
+      <description>Resenha e sugestão de livro sobre Help Desk - &amp;ldquo;Implatnação de Help Desk e Service Desk&amp;rdquo; - Roberto Cohen</description>
+    </item>
+    
+  </channel>
+</rss>

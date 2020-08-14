@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c&#43;&#43; on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/c-/</link>
+    <description>Recent content in c&#43;&#43; on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 28 Mar 2016 13:14:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/c-/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vaga para programador Linux/C em Blumenau</title>
+      <link>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau-2/</link>
+      <pubDate>Mon, 28 Mar 2016 13:14:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau-2/</guid>
+      <description>Desenvolvedor de Software – Linux e C 
+Responsabilidades
+Esta posição é responsável por desenhar e implementar aplicativos em SW para sistema operacional em Linux, incluindo desenvolvimento de novos aplicativos, melhorias e correções em aplicativos existentes, instalação de pacotes de aplicativos de código aberto.</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-36/</link>
+      <pubDate>Fri, 19 Feb 2016 17:01:27 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-36/</guid>
+      <description>Para quem está tentando aprender C++ e acha que é difícil :P</description>
+    </item>
+    
+    <item>
+      <title>Apresentando o Proxygen - Framework HTTP em C&#43;&#43; do Facebook</title>
+      <link>https://butecotecnologico.com.br/apresentando-o-proxygen-framework-http-em-c-do-facebook/</link>
+      <pubDate>Wed, 05 Nov 2014 18:24:52 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/apresentando-o-proxygen-framework-http-em-c-do-facebook/</guid>
+      <description>O Facebook anunciou o Proxygen, uma coleção de bibliotecas HTTP de código aberto para C++, incluindo um servidor HTTP fácil de usar.</description>
+    </item>
+    
+  </channel>
+</rss>

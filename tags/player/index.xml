@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>player on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/player/</link>
+    <description>Recent content in player on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 14 Dec 2015 23:48:03 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/player/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conheça o Clappr</title>
+      <link>https://butecotecnologico.com.br/conheca-o-clappr/</link>
+      <pubDate>Mon, 14 Dec 2015 23:48:03 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conheca-o-clappr/</guid>
+      <description>&lt;p&gt;Você já ouviu falar do Clappr? Talvez não, mas é bem provável que você já tenha passado por ele e nem se quer notado. Agora você deve estar se perguntando o que é, certo?&lt;/p&gt;
+&lt;p&gt;O &lt;a href=&#34;http://clappr.io/&#34;&gt;Clappr&lt;/a&gt; é um player extensível focado na web. Ou seja, é um player que você pode customizar a vontade, e o melhor, de graça. Sim, isso mesmo, e o projeto possui código aberto.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

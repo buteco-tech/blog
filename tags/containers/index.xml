@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>containers on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/containers/</link>
+    <description>Recent content in containers on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 13 Aug 2020 08:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/containers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kubernetes explicado</title>
+      <link>https://butecotecnologico.com.br/kubernetes-explicado/</link>
+      <pubDate>Thu, 13 Aug 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/kubernetes-explicado/</guid>
+      <description>O Kubernetes (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers e foi criado pelo Google.</description>
+    </item>
+    
+    <item>
+      <title>De que são feitos containers Linux?</title>
+      <link>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</link>
+      <pubDate>Tue, 16 Jun 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</guid>
+      <description>Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema.</description>
+    </item>
+    
+  </channel>
+</rss>

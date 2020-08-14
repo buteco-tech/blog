@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>NodeMCU: Lua para o ESP8266 &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="NodeMCU: Lua para o ESP8266">
+<meta itemprop="description" content="O NodeMCU é um firmware e kit de desenvolvimento que permite a programação de protótipos para a Internet das Coisas (IoT). O firmware utiliza o paradigma event-driven para facilitar o desenvolvimento de aplicações que necessitem acesso à Internet. Além disso, integra módulos de GPIO, 1-Wire, I2C, SPI, PWM, ADC, entre outros, para facilitar o manuseio de módulos baseados no chip ESP8266.
+Na verdade, o NodeMCU é mais que um firmware, é a empresa por trás do NodeMCU Dev Kit, que além do firmware, disponibiliza uma placa de desenvolvimento baseada no ESP8266.">
+<meta itemprop="datePublished" content="2016-02-02T22:22:16+00:00" />
+<meta itemprop="dateModified" content="2016-02-02T22:22:16+00:00" />
+<meta itemprop="wordCount" content="719">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/nodeMCU-logo-300x300-e1454377964183.png">
+
+
+
+<meta itemprop="keywords" content="esp8266,esptool,hardware,iot,lua,nodemcu,nodemcu flasher," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/nodeMCU-logo-300x300-e1454377964183.png"/>
+
+<meta name="twitter:title" content="NodeMCU: Lua para o ESP8266"/>
+<meta name="twitter:description" content="O NodeMCU é um firmware e kit de desenvolvimento que permite a programação de protótipos para a Internet das Coisas (IoT). O firmware utiliza o paradigma event-driven para facilitar o desenvolvimento de aplicações que necessitem acesso à Internet. Além disso, integra módulos de GPIO, 1-Wire, I2C, SPI, PWM, ADC, entre outros, para facilitar o manuseio de módulos baseados no chip ESP8266.
+Na verdade, o NodeMCU é mais que um firmware, é a empresa por trás do NodeMCU Dev Kit, que além do firmware, disponibiliza uma placa de desenvolvimento baseada no ESP8266."/>
+
+
+<meta property="og:title" content="NodeMCU: Lua para o ESP8266" />
+<meta property="og:description" content="O NodeMCU é um firmware e kit de desenvolvimento que permite a programação de protótipos para a Internet das Coisas (IoT). O firmware utiliza o paradigma event-driven para facilitar o desenvolvimento de aplicações que necessitem acesso à Internet. Além disso, integra módulos de GPIO, 1-Wire, I2C, SPI, PWM, ADC, entre outros, para facilitar o manuseio de módulos baseados no chip ESP8266.
+Na verdade, o NodeMCU é mais que um firmware, é a empresa por trás do NodeMCU Dev Kit, que além do firmware, disponibiliza uma placa de desenvolvimento baseada no ESP8266." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/nodeMCU-logo-300x300-e1454377964183.png" />
+<meta property="article:published_time" content="2016-02-02T22:22:16+00:00" />
+<meta property="article:modified_time" content="2016-02-02T22:22:16+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>NodeMCU: Lua para o ESP8266</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           alt="Alexandre Vicenzi"
+           title="Alexandre Vicenzi">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+           class="author">Alexandre Vicenzi</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2016-02-02T22:22:16Z">Feb 2, 2016</time>
+      &middot; 4 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/"
+     data-text="NodeMCU: Lua para o ESP8266"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/"
+     data-text="NodeMCU: Lua para o ESP8266"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/"
+     data-text="NodeMCU: Lua para o ESP8266"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/"
+     data-text="NodeMCU: Lua para o ESP8266"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/nodeMCU-logo-300x300-e1454377964183.png"
+           alt="NodeMCU: Lua para o ESP8266">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>O <a href="http://nodemcu.com/index_en.html" target="_blank">NodeMCU</a> é um <em>firmware</em> e kit de desenvolvimento que permite a programação de protótipos para a Internet das Coisas (IoT). O <em>firmware</em> utiliza o paradigma <em>event-driven</em> para facilitar o desenvolvimento de aplicações que necessitem acesso à Internet. Além disso, integra módulos de GPIO, 1-Wire, I2C, SPI, PWM, ADC, entre outros, para facilitar o manuseio de módulos baseados no chip ESP8266.</p>
+<p>Na verdade, o NodeMCU é mais que um <em>firmware</em>, é a empresa por trás do NodeMCU Dev Kit, que além do <em>firmware</em>, disponibiliza uma placa de desenvolvimento baseada no ESP8266.</p>
+<p>O <a href="https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_orientada_a_eventos" target="_blank">paradigma event-driven (ou programação assíncrona)</a> consiste em um estilo de programação em que o fluxo de execução é determinado por eventos disparados por <em>callbacks</em>. Uma <em>callback</em> é uma função que é invocada quando algo acontece. Por exemplo, ao pressionar um botão um evento é disparado e a <em>callback</em> efetuará uma ação para esse evento. Se você já utilizou Javascript ou Node.JS você está bem habituado em usar. Abaixo é possível observar um exemplo de código de um servidor HTTP simples para o NodeMCU no estilo <em>event-driven</em>.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/nodemcu/simple_http.lua?branch=master" type="text/javascript"></script>
+<p>O NodeMCU é baseado no <a href="http://www.eluaproject.net/" target="_blank">eLua</a>, uma versão do Lua 5.1 para sistemas embarcados e seu sistema de arquivos é o <a href="https://github.com/pellepl/spiffs" target="_blank">SPI Flash File System (SPIFFS)</a>. O firmware substituiu algumas bibliotecas padrões do Lua por versões específicas para o ESP8266. Além dessas mudanças, algumas bibliotecas, como math e debug, foram completamente removidas para diminuir o consumo de memória do dispositivo.</p>
+<p><strong>Fazendo Flash do seu ESP8266</strong></p>
+<p>Inicialmente vamos fazer o <a href="https://github.com/nodemcu/nodemcu-firmware/releases" target="_blank">download do firmware</a>. O NodeMCU pode ser encontrado nas versões <em>Float</em> e <em>Integer</em> (menor consumo de memória). Se você preferir, também pode compilar a sua própria versão, apenas com os módulos que necessita, através de <a href="http://nodemcu-build.com/" target="_blank">builds customizadas</a>.</p>
+<p>Tendo o <em>.bin</em> em mãos, vamos baixar a ferramenta que fará o upload. Existem duas bem populares, o <a href="https://github.com/nodemcu/nodemcu-flasher">NodeMCU Flasher</a>, para Windows, e o <a href="https://github.com/themadinventor/esptool">esptool</a>, multiplataforma. Se você possui o Python e o Pip instalado em sua máquina basta executar <code>pip install esptool</code> para baixar o pacote e instalá-lo, este é o método mais aconselhado de instalação.</p>
+<p>Para fazer o flash do ESP8266, é necessário colocá-lo em modo de programação. Isto varia de modelo para modelo, sendo assim eu sugiro a leitura do artigo <a href="/primeiros-passos-com-o-esp8266">Primeiros passos com o ESP8266</a> para um melhor entendimento.</p>
+<p><strong>NodeMCU Flasher</strong></p>
+<p>Telinhas são sempre agradáveis aos usuários finais, e o NodeMCU Flasher não é diferente. Você deve se preocupar com duas abas apenas, a <em>Operation</em> e a <em>Config</em>.</p>
+<p><img class="aligncenter" src="/images/wp-content/uploads/2016/02/nodemcu_flasher.png" alt="" /></p>
+<p>Escolha a porta COM onde está seu ESP. Em seguida na aba <em>Config</em> escolha o <em>.bin</em> que acabamos de baixar. O firmware sempre fica no offset 0x00000.</p>
+<p><img class="aligncenter" src="/images/wp-content/uploads/2016/02/nodemcu_firmware_config.png" alt="" /></p>
+<p>Volte para a aba <em>Operation</em> e aperte <em>Flash</em>.</p>
+<p><img class="aligncenter" src="/images/wp-content/uploads/2016/02/nodemcu_flash_underway.png" alt="" /></p>
+<p>Se tudo ocorrer bem, a barra de progresso irá andar com o passar dos segundos, além de aparecer os endereço MAC do dispositivo. Se não funcionar, os possíveis problemas são: O ESP não está em modo de programação ou falta os drivers de comunicação do seu controlador UART.</p>
+<p><strong>esptool</strong></p>
+<p>O esptool é um programa que executa em linha de comando, que é do universo unix-like (Linux, BSD, etc), já está habituado com isto. Sendo assim, vamos executar o comando:</p>
+<p><code>./esptool.py write_flash 0x00000 nodemcu-firmware.bin </code></p>
+<p>Se tudo ocorrer bem, você verá uma mensagem dizendo que N bytes foram gravados no endereço 0x00000. Se não funcionar, os possíveis problemas são: O ESP não está em modo de programação, você pode precisar de permissão root para acessar a porta serial ou falta os drivers de comunicação do seu controlador UART.</p>
+<p><strong>Considerações finais</strong></p>
+<p>Tudo funcionou perfeitamente, mas você está se perguntado, o que faço agora? Bem, eu recomendo a instalação do <a href="http://esp8266.ru/esplorer/" target="_blank">ESPlorer</a>, uma mini IDE para desenvolvedores que usam o ESP8266.</p>
+<p><a href="/images/wp-content/uploads/2016/02/ide_esplorer.png" rel="attachment wp-att-4707"><img class="size-medium wp-image-4707 aligncenter" src="/images/wp-content/uploads/2016/02/ide_esplorer-300x161.png" alt="ide_esplorer" width="300" height="161" /></a></p>
+<p>Como o ESPlorer você pode programar em LUA, executar comandos diretamente no seu ESP, ou ainda gravar arquivos no sistema de arquivos dele. É uma mão na roda, e o melhor, multiplataforma. :)</p>
+<p>Se você ainda está procurando onde comprar seu ESP, eu recomendo a <a href="http://www.filipeflop.com/?utm_medium=Post&utm_campaign=ButecoOpenSource" target="_blank">FILIPEFLOP</a>. Na FILIPEFLOP você pode encontrar vários modelos de ESP, como o <a href="http://www.filipeflop.com/pd-1f55ad-modulo-wifi-esp8266-esp-01.html?utm_medium=Post&utm_campaign=ButecoOpenSource">ESP-01</a>, o <a href="http://www.filipeflop.com/pd-2c1464-modulo-wifi-esp8266-esp-07.html?utm_medium=Post&utm_campaign=ButecoOpenSource" target="_blank">ESP-07</a>, o <a href="http://www.filipeflop.com/pd-2c1441-modulo-wifi-esp8266-esp-12e.html?utm_medium=Post&utm_campaign=ButecoOpenSource" target="_blank">ESP-12</a>, o <a href="http://www.filipeflop.com/pd-2c1419-modulo-wifi-esp8266-esp-201.html?utm_medium=Post&utm_campaign=ButecoOpenSource" target="_blank">ESP201</a> e o <a href="http://www.filipeflop.com/pd-2c140d-modulo-wifi-esp8266-nodemcu-esp-12e.html?utm_medium=Post&utm_campaign=ButecoOpenSource" target="_blank">NodeMCU Dev Kit</a>.</p>
+<p>Espero que vocês tenham gostado. Nos próximos artigos mostrarei como programar o ESP usando o firmware NodeMCU.</p>
+<p><em>Este artigo é uma adaptação da monografia BUSTRACKER: Sistema de rastreamento para transporte coletivo de Alexandre Vicenzi e o texto na íntegra pode ser encontrado <a href="https://raw.githubusercontent.com/alexandrevicenzi/tcc/master/monografia/tcc_bcc_2015_2_avicenzi_AlexandreVicenzi-VF.pdf" target="_blank">aqui</a>.</em></p>
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/esp8266/" class="tag-link">esp8266</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/esptool/" class="tag-link">esptool</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/hardware/" class="tag-link">hardware</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/iot/" class="tag-link">iot</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/lua/" class="tag-link">lua</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/nodemcu/" class="tag-link">nodemcu</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/"
+     data-text="NodeMCU: Lua para o ESP8266"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/"
+     data-text="NodeMCU: Lua para o ESP8266"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/"
+     data-text="NodeMCU: Lua para o ESP8266"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/"
+     data-text="NodeMCU: Lua para o ESP8266"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             alt="Alexandre Vicenzi">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">Alexandre Vicenzi</a>
+      </h2>
+      <span class="small text-muted">Engenheiro de Software</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

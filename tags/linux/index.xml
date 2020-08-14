@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/linux/</link>
+    <description>Recent content in linux on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 13 Aug 2020 08:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kubernetes explicado</title>
+      <link>https://butecotecnologico.com.br/kubernetes-explicado/</link>
+      <pubDate>Thu, 13 Aug 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/kubernetes-explicado/</guid>
+      <description>O Kubernetes (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers e foi criado pelo Google.</description>
+    </item>
+    
+    <item>
+      <title>Conhecendo o Btrfs</title>
+      <link>https://butecotecnologico.com.br/conhecendo-o-btrfs/</link>
+      <pubDate>Fri, 31 Jul 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conhecendo-o-btrfs/</guid>
+      <description>O sistema de arquivos Btrfs foi criando em 2007, por engenheiros que trabalhavam na Oracle e FusionIO.</description>
+    </item>
+    
+    <item>
+      <title>Distribuições Linux</title>
+      <link>https://butecotecnologico.com.br/podcast/distribuicoes-linux/</link>
+      <pubDate>Fri, 19 Jun 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/podcast/distribuicoes-linux/</guid>
+      <description>Você sabe o que é uma distribuição Linux? Neste episódio do nosso podcast discutimos sobre o assunto, abordando alguns dos principais projetos envolvidos, como tudo começou, o cenário atual e por fim falamos sobre a posição do Brasil nessa história.</description>
+    </item>
+    
+    <item>
+      <title>De que são feitos containers Linux?</title>
+      <link>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</link>
+      <pubDate>Tue, 16 Jun 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</guid>
+      <description>Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema.</description>
+    </item>
+    
+    <item>
+      <title>libssl e libcrypto: Visualizando certificados online em C</title>
+      <link>https://butecotecnologico.com.br/libssl-libcrypto-visualizando-certificados-online-em-c/</link>
+      <pubDate>Mon, 23 May 2016 23:34:46 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/libssl-libcrypto-visualizando-certificados-online-em-c/</guid>
+      <description>&lt;p&gt;Muito se fala do OpenSSL para geração e manutenção de certificados digitais, além disso, o OpenSSL pode criptografar arquivos, gerar números randômicos, e etc. Este artigo vem mostrar como utilizar a libssl para visualizar certificado utilizando a linguagem C.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Review Raspberry Pi 3</title>
+      <link>https://butecotecnologico.com.br/review-raspberry-pi-3/</link>
+      <pubDate>Tue, 10 May 2016 12:57:34 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/review-raspberry-pi-3/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://www.filipeflop.com/pd-31a472-raspberry-pi-3-model-b.html?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;Raspberry Pi 3&lt;/a&gt; acabou de chegar na &lt;a href=&#34;http://www.filipeflop.com/?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;FILIPEFLOP&lt;/a&gt; e esta nova versão traz novidades em relação a versão anterior. As maiores novidades são o WiFi e Bluetooth integrado.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dispositivos USB não são reconhecidos pelo VirtualBox (host Linux)</title>
+      <link>https://butecotecnologico.com.br/dispositivos-usb-nao-sao-reconhecidos-pelo-virtualbox-host-linux/</link>
+      <pubDate>Tue, 03 May 2016 22:36:32 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/dispositivos-usb-nao-sao-reconhecidos-pelo-virtualbox-host-linux/</guid>
+      <description>O VirtualBox é uma das mais bem conceituadas opções para emulação de sistemas operacionais em máquinas virtuais, com suporte a x86 e AMD64/Intel64. Atualmente o VirtualBox possui versões para hosts Windows, Linux, OS X, Solaris e FreeBSD.
+Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e leitores SD Card do host no sistema guest não funciona. Esse problema é geralmente causado por falta de permissão no seu usuário no momento da execução do VirtualBox.</description>
+    </item>
+    
+    <item>
+      <title>GNOME: Removendo ícone do legacy tray</title>
+      <link>https://butecotecnologico.com.br/gnome-removendo-icone-do-legacy-tray/</link>
+      <pubDate>Wed, 20 Apr 2016 23:16:52 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gnome-removendo-icone-do-legacy-tray/</guid>
+      <description>&lt;p&gt;No GNOME 3.16 foi introduzido &lt;a href=&#34;https://help.gnome.org/misc/release-notes/3.16/&#34; target=&#34;_blank&#34;&gt;um novo sistema de notificação&lt;/a&gt;, muito melhor que o antigo por sinal, porém com ele também veio um problema. O &amp;ldquo;legacy tray&amp;rdquo;, que permite que aplicativos que ainda utilizam o sistema de notificações antigo do GNOME é extremamente irritante.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mesa muito próximo do OpenGL 4.2 e 4.3</title>
+      <link>https://butecotecnologico.com.br/mesa-muito-proximo-do-opengl-4-2-e-4-3/</link>
+      <pubDate>Thu, 07 Apr 2016 13:04:15 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/mesa-muito-proximo-do-opengl-4-2-e-4-3/</guid>
+      <description>&lt;p&gt;Há muito tempo que esperamos ter um bom suporte a jogos no Linux, e em partes isso já é realidade com a Steam e com os muitos jogos que já foram portados. Ainda assim, muito dos jogos AAA ainda precisam de um driver proprietário para poderem ser executados, mas isto pode mudar em breve.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lançamentos Novatec: Sass e Compass e Docker</title>
+      <link>https://butecotecnologico.com.br/lancamentos-novatec-sass-e-compass-e-docker/</link>
+      <pubDate>Fri, 01 Apr 2016 21:50:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lancamentos-novatec-sass-e-compass-e-docker/</guid>
+      <description>Fundamentos de Sass e Compass Título é indicado para estudantes, designers e desenvolvedores que querem aprender os conceitos fundamentais de Sass e Compass</description>
+    </item>
+    
+    <item>
+      <title>Vaga para programador Linux/C em Blumenau</title>
+      <link>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau-2/</link>
+      <pubDate>Mon, 28 Mar 2016 13:14:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau-2/</guid>
+      <description>Desenvolvedor de Software – Linux e C 
+Responsabilidades
+Esta posição é responsável por desenhar e implementar aplicativos em SW para sistema operacional em Linux, incluindo desenvolvimento de novos aplicativos, melhorias e correções em aplicativos existentes, instalação de pacotes de aplicativos de código aberto.</description>
+    </item>
+    
+    <item>
+      <title>POSIX Regular Expression em C</title>
+      <link>https://butecotecnologico.com.br/posix-regular-expression-em-c/</link>
+      <pubDate>Thu, 17 Mar 2016 09:35:57 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/posix-regular-expression-em-c/</guid>
+      <description>&lt;p&gt;Expressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares &lt;em&gt;built-in&lt;/em&gt;, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a &lt;em&gt;POSIX RegEx&lt;/em&gt; na linguagem C na plataforma Linux.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configurações do OpenSSH que podem fazer toda a diferença</title>
+      <link>https://butecotecnologico.com.br/configuracoes-do-openssh-que-podem-fazer-toda-a-diferenca/</link>
+      <pubDate>Wed, 09 Mar 2016 23:57:19 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/configuracoes-do-openssh-que-podem-fazer-toda-a-diferenca/</guid>
+      <description>&lt;p&gt;Para quem possui algum servidor, ou até para em seu computador pessoal, algumas configurações padrão do servidor SSH são extremamente permissivas, vulneráveis a ataques, e quem sabe até invasão com técnicas de &lt;a href=&#34;https://en.wikipedia.org/wiki/Brute-force_attack&#34; target=&#34;_blank&#34;&gt;força bruta&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Entre algumas dicas mais simples para aumentar a segurança estão configurar o seu firewall corretamente ou até desabilitar o acesso SSH. Para servidores, esta última opção não é válida. Sendo assim vamos conferir algumas configurações que podem fazer toda a diferença na hora de algum espertinho tentar invadir seu servidor.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-34/</link>
+      <pubDate>Fri, 29 Jan 2016 14:30:38 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-34/</guid>
+      <description>Via 9gag</description>
+    </item>
+    
+    <item>
+      <title>Linux API: pthreads - Parte 1</title>
+      <link>https://butecotecnologico.com.br/linux-api-pthreads-parte-1/</link>
+      <pubDate>Tue, 19 Jan 2016 11:45:24 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/linux-api-pthreads-parte-1/</guid>
+      <description>&lt;p&gt;Processadores de múltiplos núcleos já são uma realidade nos computadores da grande maioria dos usuários comuns. Em meio a esse avanço podemos escrever programas que executam várias linhas de processamento em paralelo, podendo fazer com que esses programas tenham um tempo de resposta menor.&lt;/p&gt;
+&lt;p&gt;Para tal, este post mostrará como utilizar POSIX threads na linguagem C.&lt;/p&gt;
+&lt;h4&gt;O que são threads?&lt;/h4&gt;
+&lt;em&gt;Threads&lt;/em&gt; são linhas de execução para processos. Ao iniciar um processo, uma &lt;em&gt;thread&lt;/em&gt; principal é iniciada, um processo então pode criar outras &lt;em&gt;threads&lt;/em&gt; para que estas executem tarefas específicas e de forma paralela. Quando temos uma CPU com um único núcleo, dizemos que as &lt;em&gt;threads&lt;/em&gt; executam de forma &lt;em&gt;concorrente&lt;/em&gt;, uma vez que a CPU só pode executar uma thread por vez, mas há mais que uma para ser executada ao &#34;mesmo tempo&#34;. Já quando temos uma CPU com vários núcleos, as &lt;em&gt;threads&lt;/em&gt; podem ser executadas tanto de forma &lt;em&gt;concorrente&lt;/em&gt; como em &lt;em&gt;paralelo&lt;/em&gt;, pois o &lt;a href=&#34;https://pt.wikipedia.org/wiki/Escalonamento_de_processos&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;scheduler&lt;/em&gt;&lt;/a&gt; pode priorizar outros programas do computador além do seu.</description>
+    </item>
+    
+    <item>
+      <title>Como utilizar o getaddrinfo para evitar a falha GHOST</title>
+      <link>https://butecotecnologico.com.br/como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost/</link>
+      <pubDate>Tue, 05 Jan 2016 23:09:47 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost/</guid>
+      <description>&lt;p&gt;Em janeiro de 2015 se ouviu falar de uma falha de segurança na glibc chamada GHOST. Esta falha poderia ser explorada por um programa malicioso utilizando as funções &lt;code&gt;gethostbyname()&lt;/code&gt; e &lt;code&gt;gethostbyname2()&lt;/code&gt; da glibc. O ataque acontece por um &lt;em&gt;buffer overflow&lt;/em&gt; dentro destas funções quando um endereço inválido é passando como parâmetro. Ao explorar esta falha, o atacante consegue executar códigos arbitrários com as permissões do usuários executando o processo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>É difícil imaginar um mundo sem Linux</title>
+      <link>https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-5/</link>
+      <pubDate>Tue, 22 Dec 2015 11:59:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-5/</guid>
+      <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
+&lt;p&gt;Já apresentamos aqui no Buteco Open Source o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;primeiro&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2&#34; target=&#34;_blank&#34;&gt;segundo&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-3&#34; target=&#34;_blank&#34;&gt;terceiro&lt;/a&gt; e &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-4&#34; target=&#34;_blank&#34;&gt;quarto&lt;/a&gt; episódios da série.&lt;/p&gt;
+&lt;p&gt;Neste vídeo da série &lt;em&gt;World Without Linux Episode #&lt;/em&gt;&lt;em&gt;5&lt;/em&gt;&lt;em&gt;: &lt;/em&gt;&lt;em&gt;Space Exploration&lt;/em&gt; (Mundo Sem Linux Episódio #5: Exploração Espacial), tenta demonstrar a importância do Linux na exploração espacial.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-30/</link>
+      <pubDate>Fri, 18 Dec 2015 08:53:04 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-30/</guid>
+      <description>A todos os backend developers :)</description>
+    </item>
+    
+    <item>
+      <title>Bash: Reverse Search</title>
+      <link>https://butecotecnologico.com.br/bash-reverse-search/</link>
+      <pubDate>Wed, 16 Dec 2015 21:22:36 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/bash-reverse-search/</guid>
+      <description>&lt;p&gt;No Bash, é comum reexecutarmos comandos o tempo inteiro, especialmente quando precisamos compilar um programa ou mover um arquivo. O que se faz geralmente é ir apertando a tecla &amp;ldquo;para cima&amp;rdquo; e encontrar o comando desejado. Essa tarefa pode ser um pouco custosa, uma vez que o comando pode ter sido executado há horas e então, ficar voltando enumeros comandos não deve ser muito interessante.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Implemente seu malloc/free. Just4fun!</title>
+      <link>https://butecotecnologico.com.br/implemente-seu-mallocfree-just4fun/</link>
+      <pubDate>Thu, 03 Dec 2015 13:18:40 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/implemente-seu-mallocfree-just4fun/</guid>
+      <description>&lt;p&gt;Algum tempo atrás comprei o livro The Linux Programming Interface, um dos melhores livros que já adquiri. Um dos primeiros capítulos que li foi sobre alocação de memória. No final do capítulo, o autor oferece alguns exercícios. Entre eles existe um mais desafiador. Que é implementar funções equivalentes ao &lt;code&gt;malloc&lt;/code&gt; e &lt;code&gt;free&lt;/code&gt;. The challenge has been accepted!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VIM Tips: Trabalhando com abas</title>
+      <link>https://butecotecnologico.com.br/vim-tips-trabalhando-com-abas/</link>
+      <pubDate>Thu, 26 Nov 2015 21:24:08 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/vim-tips-trabalhando-com-abas/</guid>
+      <description>&lt;p&gt;O VIM, como todos sabem, tem muitas ferramentas por padrão que são pouco mostradas, ou até mesmo não são exploradas com todo o seu potencial. Essa série de artigos tem como foco mostrar algumas funcionalidades interessantes e as vezes pouco exploradas.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>É difícil imaginar um mundo sem Linux</title>
+      <link>https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-4/</link>
+      <pubDate>Mon, 23 Nov 2015 22:01:39 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-4/</guid>
+      <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
+&lt;p&gt;Já apresentamos aqui no Buteco Open Source o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;primeiro&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2&#34; target=&#34;_blank&#34;&gt;segundo&lt;/a&gt; e &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-3&#34; target=&#34;_blank&#34;&gt;terceiro&lt;/a&gt; episódios da série. Este vídeo, &lt;em&gt;World Without Linux Episode 4: Avatar Reimagined&lt;/em&gt; (Mundo Sem Linux Episódio 4: Avatar Reimaginado), tenta demonstrar a importância do Linux aos filmes.&lt;/p&gt;
+&lt;p&gt;Lembrem cada episódio tem &lt;em&gt;Easter Eggs&lt;/em&gt; novos para serem descobertos.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>É difícil imaginar um mundo sem Linux</title>
+      <link>https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-3/</link>
+      <pubDate>Thu, 12 Nov 2015 22:39:25 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-3/</guid>
+      <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
+&lt;p&gt;Já apresentamos aqui no Buteco Open Source o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;primeiro&lt;/a&gt; e o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2&#34; target=&#34;_blank&#34;&gt;segundo&lt;/a&gt; episódios da série.&lt;/p&gt;
+&lt;p&gt;Este terceiro vídeo da série, &lt;em&gt;World Without Linux &lt;/em&gt;&lt;em&gt;Episode 3: Can I Follow You?&lt;/em&gt; (Mundo Sem Linux Episódio 3: Posso Te Seguir?), tenta demonstrar a importância do Linux para as redes sociais.&lt;/p&gt;
+&lt;p&gt;Lembrem-se que cada episódio possui novos &lt;em&gt;Easter Eggs&lt;/em&gt; para serem descobertos.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gerando backtrace em C/C&#43;&#43; no Linux</title>
+      <link>https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/</link>
+      <pubDate>Mon, 02 Nov 2015 19:56:42 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/</guid>
+      <description>&lt;p&gt;Olá pessoal, creio que muitos aqui já se depararam com algum &lt;em&gt;crash&lt;/em&gt; em seus programas em C/C++, e gostariam de poder ver a pilha de chamadas, ou &lt;em&gt;stacktrace/backtrace&lt;/em&gt;, ao menos no ambiente de testes. Pois bem, a boa notícia é que no Linux existe a possibilidade de mostrar qual o ultimo método chamado antes de receber um &lt;em&gt;crash&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Utilizando a API REST do Docker com Python</title>
+      <link>https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/</link>
+      <pubDate>Tue, 27 Oct 2015 08:31:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/</guid>
+      <description>&lt;p&gt;O Docker é uma plataforma para construir e executar aplicações distribuídas. Com ele é possível executar um &lt;em&gt;bash&lt;/em&gt; em um ambiente Debian mesmo estando dentro um Fedora, por exemplo. Seu funcionamento se assemelha ao de uma máquina virtual, mas as aplicações executadas no Docker estão de fato sendo executados no sistema &lt;em&gt;host&lt;/em&gt;, ou seja, não existe a camada de emulação.&lt;/p&gt;
+&lt;p&gt;Isso se deve à utilização de &lt;em&gt;templates&lt;/em&gt; de imagens do Debian (existem imagens de sistemas inteiros, como Debian, Ubuntu, e também de aplicações, como Apache, MySQL e etc). Para mais informações sobre o Docker, basta verificar a &lt;a href=&#34;https://www.docker.com/&#34; target=&#34;_blank&#34;&gt;página&lt;/a&gt; do projeto.&lt;/p&gt;
+&lt;p&gt;Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifique como instalá-lo em sua distribuição. Após instalado, você precisará iniciá-lo através do &lt;em&gt;docker daemon&lt;/em&gt; para receber requisições HTTP, além das requisições por &lt;em&gt;socket&lt;/em&gt; (este é utilizado pelo &lt;em&gt;docker client&lt;/em&gt;). Antes de iniciá-lo com estas opções, você precisará ter certeza que o mesmo não esteja executando. Para tal, basta executar:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>É difícil imaginar um mundo sem Linux</title>
+      <link>https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2/</link>
+      <pubDate>Thu, 22 Oct 2015 21:50:50 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2/</guid>
+      <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
+&lt;p&gt;Já apresentamos &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; no Buteco Open Source o primeiro episódio da série, &lt;em&gt;What&amp;rsquo;s the Name of that Song?&lt;/em&gt; (Qual o Nome Daquela Música?), que fez uma brincadeira para demonstrar os sistemas de busca.&lt;/p&gt;
+&lt;p&gt;Neste segundo vídeo da série, &lt;em&gt;World Without Linux Episode 2: Are We There Yet?&lt;/em&gt; (Mundo Sem Linux Episódio 2: Já chegamos?), tenta demonstrar a importância do Linux para os GPSs, que não está em todos (os aparelhos), mas sem ele teríamos poucas opções no mercado.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Confira algumas novidades do kernel Linux 4.3</title>
+      <link>https://butecotecnologico.com.br/confira-algumas-novidades-do-kernel-linux-4-3/</link>
+      <pubDate>Thu, 22 Oct 2015 21:49:26 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/confira-algumas-novidades-do-kernel-linux-4-3/</guid>
+      <description>&lt;p&gt;Como de costume, sempre tentamos mostrar aqui algumas novidades das &lt;em&gt;releases&lt;/em&gt; do &lt;em&gt;kernel&lt;/em&gt; Linux. Segue uma lista abaixo do que será encontrado na versão 4.3, que já se encontra no rc6 e que em breve será lançado:&lt;/p&gt;
+&lt;p&gt;DRM (&lt;em&gt;Direct Rendering Manager&lt;/em&gt;)/Gráficos&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Intel Skylake &#34;Gen9&#34; agora é suportado por padrão e não mais é necessário ativa-lo utilizando uma opção do kernel command-line&lt;/li&gt;
+	&lt;li&gt;Suporte inicial para  AMD R9 Fury &#39;Fiji&#39;, mas sem gerenciamento de energia ou re-cloking (o que mantém a performance baixa até então).&lt;/li&gt;
+	&lt;li&gt;Um grande retrabalho foi feito no Nouveau, afim de facilitar futuras melhorias no &lt;em&gt;driver&lt;/em&gt;, além de ter algumas melhorias no re-cloking de algumas GPUs da Nvidia. Embora tenham acontecido estas melhorias, a performance até agora é a mesma.&lt;/li&gt;
+	&lt;li&gt;Suporte a OpenGL 3.3 para o VMware. Este suporte se faz necessário quando o Linux é executado como &lt;em&gt;guest&lt;/em&gt; VM no VMware workstation 12 e a utilização do &lt;em&gt;driver&lt;/em&gt; VMWgfx no &lt;em&gt;guest&lt;/em&gt;, em conjunto com o novo Mesa 11.0.&lt;/li&gt;
+	&lt;li&gt;Melhorias mínimas em &lt;em&gt;drivers&lt;/em&gt; de &lt;em&gt;framebuffer&lt;/em&gt;&lt;/li&gt;
+	&lt;li&gt;Várias mudanças para gráficos Intel e diversas melhorias em &lt;em&gt;drivers&lt;/em&gt; DRM&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>NVIDIA anuncia driver 358 (beta) para Linux, Solaris e FreeBSD</title>
+      <link>https://butecotecnologico.com.br/nvidia-anuncia-driver-358-beta-para-linux-solaris-e-freebsd/</link>
+      <pubDate>Tue, 13 Oct 2015 20:30:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/nvidia-anuncia-driver-358-beta-para-linux-solaris-e-freebsd/</guid>
+      <description>&lt;p&gt;A NVIDIA disponibilizou a primeira versão pública beta do &lt;em&gt;driver&lt;/em&gt; 358 (358.09) para Linux, FreeBSD e Solaris. Construído sobre o driver 355, a série 358 acrescenta mais peças ao quebra-cabeças da interface com DRM/KMS (&lt;em&gt;Direct Rendering Manager/Kernel Mode Setting&lt;/em&gt;) e continua melhorando o suporte ao Mir/Wayland.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>É difícil imaginar um mundo sem Linux</title>
+      <link>https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux/</link>
+      <pubDate>Tue, 06 Oct 2015 22:41:05 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux/</guid>
+      <description>&lt;p&gt;Este é o tema de uma série de vídeos lançada pela The Linux Foundation.&lt;/p&gt;
+&lt;p&gt;De acordo com a descrição da organização,&lt;/p&gt;
+&lt;blockquote&gt;Linux é o maior projeto de colaboração do mundo na história da computação. Ele roda a maior parte da infraestrutura de tecnologia do mundo e é apoiado por mais desenvolvedores e empresas do que qualquer outra plataforma. Está literalmente em toda parte - desde seu telefone até seu carro e escritório. Ele também alimenta a Internet, a nuvem, bolsas de valores do mundo, os supercomputadores, sistemas embarcados e muito mais.
+&lt;p&gt;Um mundo sem Linux é uma série que trará uma realidade confusa para ilustrar de forma divertida quão difundido o Linux é hoje. Este mundo fictício é uma ideia tão absurda que os cenários retratados na série vão nos ajudar a entender quanto o Linux é faz parte da nossa vida cotidiana e nos permite agradecer aos desenvolvedores e empresas que apoiam o Linux.&lt;/blockquote&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Otto: O sucessor do Vagrant</title>
+      <link>https://butecotecnologico.com.br/otto-o-sucessor-do-vagrant/</link>
+      <pubDate>Tue, 29 Sep 2015 08:59:41 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/otto-o-sucessor-do-vagrant/</guid>
+      <description>&lt;p&gt;Foi anunciado ontem o Otto, sucessor do Vagrant. Sendo criado pela mesma equipe, este projeto é focado em desenvolvimento e &lt;em&gt;deploy&lt;/em&gt; de aplicações de uma maneira simplificada, sendo a ferramenta mais poderosa já desenvolvida por eles.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Novidades do GNOME 3.18</title>
+      <link>https://butecotecnologico.com.br/novidades-do-gnome-3-18/</link>
+      <pubDate>Wed, 23 Sep 2015 23:51:43 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/novidades-do-gnome-3-18/</guid>
+      <description>&lt;p&gt;O novo GNOME 3.18 foi lançado hoje, com muitas novidades e melhorias. Segue abaixo algumas delas:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;O suporte a HiDPI (famosa tela Retina dos Macs) ainda tem alguns problemas, mas a versão 3.18 finalmente resolveu o problema de redimensionamento de cursor&lt;/li&gt;
+	&lt;li&gt;Um bug de longa data da NVIDIA foi corrigido&lt;/li&gt;
+	&lt;li&gt;Integração com o Google Drive&lt;/li&gt;
+	&lt;li&gt;&lt;em&gt;Browser Epiphany&lt;/em&gt; bloqueia propaganda por padrão e habilita o DNT (&lt;em&gt;Do not Track&lt;/em&gt;)&lt;/li&gt;
+	&lt;li&gt;Melhorias no &lt;em&gt;File Chooser&lt;/em&gt; (seletor de arquivos)&lt;/li&gt;
+	&lt;li&gt;Trabalhado o suporte a atualização de firmware UEFI através do GNOME Software&lt;/li&gt;
+	&lt;li&gt;Melhorias no &lt;em&gt;Calendar&lt;/em&gt; e Nautilus&lt;/li&gt;
+	&lt;li&gt;Removido o suporte ao Window XP no GTK+&lt;/li&gt;
+	&lt;li&gt;Muitas outras melhorias e correções de bugs&lt;/li&gt;
+&lt;/ul&gt;
+Como de praxe, a GNOME foundation também libera um vídeo mostrando as melhorias desta nova versão:</description>
+    </item>
+    
+    <item>
+      <title>Parece que o jogo Alien: Isolation está chegando ao Linux</title>
+      <link>https://butecotecnologico.com.br/parece-que-o-jogo-alien-isolation-esta-chegando-ao-linux/</link>
+      <pubDate>Fri, 18 Sep 2015 00:11:55 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/parece-que-o-jogo-alien-isolation-esta-chegando-ao-linux/</guid>
+      <description>&lt;p&gt;Com a nova versão do Catalyst 15.9 para Linux, foi mencionada uma correção para o jogo Alien: Isolation, mas esse jogo ainda não está disponível para Linux.&lt;/p&gt;
+&lt;p&gt;Isso não seria uma grande surpresa visto que o game já consta na SteamDB a alguns meses. Fique ligado, pois o Alien: Isolation poderá ser lançado em breve! O game foi lançado para Windows em 2015, e este jogo de ação/aventura utiliza uma nova engine desenvolvida pela Creative Assembly.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Criando um git server local</title>
+      <link>https://butecotecnologico.com.br/criando-um-git-server-local/</link>
+      <pubDate>Tue, 15 Sep 2015 00:35:22 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-um-git-server-local/</guid>
+      <description>&lt;p&gt;Algumas vezes queremos ter um ponto comum em uma rede local onde podemos enviar nossos &lt;em&gt;commits&lt;/em&gt;, especialmente quando estamos trabalhando em equipe. Pois bem, a solução é simples.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mais correções no RC3 do Mesa 11.0</title>
+      <link>https://butecotecnologico.com.br/mais-correcoes-no-rc3-do-mesa-11-0/</link>
+      <pubDate>Mon, 07 Sep 2015 20:35:16 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/mais-correcoes-no-rc3-do-mesa-11-0/</guid>
+      <description>&lt;p&gt;O terceiro Release Candidate do Mesa 11.0 está disponível. Esta nova versão traz várias correções para os drivers R600g e RadeonSI, Nouveau NV50, Freedreno, atualizações no driver i965 e uma série de outras coisas.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Utilizando Shared Objects no Python</title>
+      <link>https://butecotecnologico.com.br/utilizando-shared-objects-no-python/</link>
+      <pubDate>Mon, 31 Aug 2015 12:25:26 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-shared-objects-no-python/</guid>
+      <description>&lt;p&gt;Python é realmente uma linguagem muito versátil, tendo a mão quase sempre tudo o que se precisa fazer. Então, a algum tempo atrás eu precisava verificar a possibilidade de carregar um Shared Object com o Python, e eis que encontrei. A documentação do Python é realmente muito útil, com exemplos de utilização de módulos, inclusive do módulo em questão.&lt;/p&gt;
+&lt;p&gt;Para poder carregar a lib, eu utilizei o módulo &lt;strong&gt;ctypes&lt;/strong&gt;. Este módulo provê tipos de dados compatíveis com o C e permite chamar bibliotecas, como DDLs e shared objects. Para iniciar o exemplo, eu criei uma lib, na verdade um shared object, a seguir:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Virsh: criando e gerenciando VMs pelo terminal</title>
+      <link>https://butecotecnologico.com.br/virsh-criando-e-gerenciando-vms-pelo-terminal/</link>
+      <pubDate>Tue, 25 Aug 2015 23:44:58 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/virsh-criando-e-gerenciando-vms-pelo-terminal/</guid>
+      <description>Este artigo apresenta uma introdução a ferramenta virsh, baseada na libvirt, para gerenciar máquinas virtuais no Linux.</description>
+    </item>
+    
+    <item>
+      <title>Kali Linux 2.0 já tem data para o lançamento</title>
+      <link>https://butecotecnologico.com.br/kali-linux-2-0-ja-tem-data-para-o-lancamento/</link>
+      <pubDate>Thu, 06 Aug 2015 10:05:46 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/kali-linux-2-0-ja-tem-data-para-o-lancamento/</guid>
+      <description>&lt;p&gt;A &lt;a href=&#34;https://www.offensive-security.com/&#34; target=&#34;_blank&#34;&gt;Offensive Security&lt;/a&gt;, criadora e mantenedora do Kali Linux, divulgou um vídeo de pré-lançamento da nova versão do Kali Linux; com lançamento oficial previsto para 11 de agosto de 2015. A equipe, nos últimos meses, tem trabalhado ferozmente nessa próxima versão – que promete muita coisa nova. No vídeo divulgado, a empresa mostra toda a cronologia de desenvolvimento da ferramenta, desde da época do BackTrack, e por fim as novidades da nova versão, confira.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Finalmente: Mesa ganha suporte a OpenGL 4.0, e está proximo do 4.1 e 4.2</title>
+      <link>https://butecotecnologico.com.br/finalmente-mesa-ganha-suporte-a-opengl-4-0-e-esta-proximo-do-4-1-e-4-2/</link>
+      <pubDate>Thu, 23 Jul 2015 20:57:35 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/finalmente-mesa-ganha-suporte-a-opengl-4-0-e-esta-proximo-do-4-1-e-4-2/</guid>
+      <description>&lt;p&gt;Depois de cinco anos da especificação do OpenGL 4.0 ser introduzido, o projeto open source Mesa 3D finalmente ganhou suporte a todas as extensões necessárias, sendo que existem patches pendentes que estão implementando as extensões das especificações 4.1 e 4.2. O desenvolvedor responsável pelos patches da versão 4.0 do Mesa foi o David Airlie, da Red Hat.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-16/</link>
+      <pubDate>Fri, 17 Jul 2015 14:06:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-16/</guid>
+      <description>
+ Via Vida de Programador
+ </description>
+    </item>
+    
+    <item>
+      <title>Instalando o Supervisor: Um sistema de controle de processos</title>
+      <link>https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/</link>
+      <pubDate>Wed, 15 Jul 2015 08:38:44 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://supervisord.org/&#34;&gt;Supervisor&lt;/a&gt; é um sistema cliente/servidor que permite que os usuários monitorem e controlem inúmeros processos em sistema operacionais UNIX-like.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34; aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/logo_supervisord.gif&#34; alt=&#34;Supervisord&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Ele possui alguns objetivos de programas similares, como o launchd, daemontools e runit. Mas diferente destes, ele não pretende ser um substituto ao &lt;em&gt;init&lt;/em&gt;, pelo contrário, ele inicia na inicialização do sistema como qualquer outro aplicativo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Instalando o Ubuntu MATE 15.04 no Raspberry PI 2</title>
+      <link>https://butecotecnologico.com.br/instalando-o-ubuntu-mate-15-04-no-raspberry-pi-2/</link>
+      <pubDate>Tue, 14 Jul 2015 23:03:39 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-o-ubuntu-mate-15-04-no-raspberry-pi-2/</guid>
+      <description>&lt;p&gt;Uma das distribuições Linux mais conhecidas também está disponível para Raspberry PI 2.&lt;/p&gt;
+&lt;p&gt;Nesse artigo irei mostrar a instalação do Ubuntu MATE 15.04 no Raspberry PI 2.&lt;/p&gt;
+&lt;p&gt;O Raspberry PI 2 foi cedido pela Loja Mundi e você pode olhar esse e outros produtos clicando &lt;a href=&#34;http://www.lojamundi.com.br/embarcados-raspberry-cubieboard-beagleboneblack.html/?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;O Ubuntu MATE teve algumas atualizações em relação a versão anterior, Ubuntu MATE 14.10.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vaga para programador Linux/C em Blumenau</title>
+      <link>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau/</link>
+      <pubDate>Mon, 13 Jul 2015 21:51:56 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau/</guid>
+      <description>&lt;p&gt;O profissional trabalhará para empresa com sede em Blumenau-SC, que por sua vez foi contratada  para prestar serviços a uma empresa com Sede nos Estados Unidos (&lt;a class=&#34;moz-txt-link-abbreviated&#34; href=&#34;http://www.zpesystems.com&#34;&gt;&lt;a href=&#34;http://www.zpesystems.com&#34;&gt;www.zpesystems.com&lt;/a&gt;&lt;/a&gt;) , no desenvolvimento de Software.&lt;/p&gt;
+&lt;p&gt;Desenvolvedor de Software para ambiente Linux e C&lt;/p&gt;
+&lt;p&gt;Responsabilidades: Esta posição é responsável por desenhar e
+implementar aplicativos em SW para sistema operacional em Linux,
+incluindo desenvolvimento de novos aplicativos, melhorias e correções
+em aplicativos existentes, instalação de pacotes de aplicativos de
+código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-15/</link>
+      <pubDate>Fri, 10 Jul 2015 14:29:41 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-15/</guid>
+      <description>Via Vida de Suporte</description>
+    </item>
+    
+    <item>
+      <title>Veja o que virá de novo no Linux 4.2</title>
+      <link>https://butecotecnologico.com.br/veja-o-que-vira-de-novo-no-linux-4-2/</link>
+      <pubDate>Thu, 09 Jul 2015 10:11:08 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/veja-o-que-vira-de-novo-no-linux-4-2/</guid>
+      <description>&lt;p&gt;No último dia 5 Linus fechou a &amp;ldquo;merge window&amp;rdquo;, período para inclusão de alterações para uma nova versão do Linux, e criou o primeiro Release Candidate do Linux 4.2. Ainda podem ser adicionada alguma &amp;ldquo;late feature&amp;rdquo; no kernel, mas as features abaixo são as que tem destaque nesta nova versão:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Firefox 39 traz melhorias de segurança</title>
+      <link>https://butecotecnologico.com.br/firefox-39-traz-melhorias-de-seguranca/</link>
+      <pubDate>Fri, 03 Jul 2015 12:40:21 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/firefox-39-traz-melhorias-de-seguranca/</guid>
+      <description>&lt;p&gt;O Firefox 39.0 já está disponível e vem com melhorias de desempenho e correções de segurança. &lt;a href=&#34;https://www.mozilla.org/en-US/firefox/new/&#34; target=&#34;_blank&#34;&gt;Clique aqui&lt;/a&gt; caso queira fazer o download.&lt;/p&gt;
+&lt;p&gt;Dentre as novidades estão:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Inscrições abertas para o 11º Fórum Espírito Livre</title>
+      <link>https://butecotecnologico.com.br/inscricoes-abertas-para-o-11o-forum-espirito-livre/</link>
+      <pubDate>Wed, 01 Jul 2015 21:44:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/inscricoes-abertas-para-o-11o-forum-espirito-livre/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/inscricoes.jpg&#34;&gt;&lt;img class=&#34;alignnone size-large wp-image-2940&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/inscricoes-1024x356.jpg&#34; alt=&#34;inscricoes&#34; width=&#34;648&#34; height=&#34;225&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Já estão abertas as inscrições para o 11º Fórum Espírito Livre, que ocorrerá nos dias 24 e 25 de setembro de 2015, nas instalações do &lt;a href=&#34;http://st.ifes.edu.br/&#34; target=&#34;_blank&#34;&gt;IFES Santa Teresa&lt;/a&gt;, em Santa Teresa/ES&lt;/p&gt;
+&lt;p&gt;Este ano a Rede Espírito Livre comemora 6 anos de existência. O coletivo foi criado com o propósito de que atuar na mobilização de atividades relacionadas ao software livre e código aberto dentro e fora do ES. No ano de 2014 conseguimos bater a meta de levar o evento para fora do estado e ao final do ano, tínhamos conseguido realizar 10 edições do evento. Esta definitivamente não é uma simples marca! A Rede Espírito Livre tem se fortalecido em suas ações com o lançamento da Revista Espírito Livre, a TV Espírito Livre e o Fórum Espírito Livre.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hands on: quilt</title>
+      <link>https://butecotecnologico.com.br/hands-on-quilt/</link>
+      <pubDate>Mon, 29 Jun 2015 23:35:56 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/hands-on-quilt/</guid>
+      <description>&lt;p&gt;Quilt é uma ferramenta para criação e manipulação de patches de código fonte. Sua utilização é bem simples e permite criar patches de forma bem prática. Ele foi originalmente criado pelo desenvolvedor Andrew Morton, sendo uma série de scripts para gerenciar patches no Linux. Mas Andreas Grünbacher, um outro desenvolvedor, melhorou os scripts de Andrew para gerar constumizações do kernel para o SuSe Linux.&lt;/p&gt;
+&lt;p&gt;Para um exemplo prático, vejamos a seguinte estrutura de arquivos:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;
+[marcos@puppet pytabs]$ ls
+main.py  new_tab.py  new_tab.pyc  new_tab.ui  window.ui
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para criar um novo patch, execute:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;
+quilt new alteracao1.patch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Após a execução deste comando, será criada uma pasta &amp;ldquo;patches&amp;rdquo;, que conterá todos os patches criados. Por hora esta pasta contém apenas o arquivo series, já que não adicionamos e nem alteramos nenhum arquivo para adicionar ao patch recem criado. O arquivo series mostra a ordem em que os patches criados serão aplicados.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux Mint 17.2 &#34;Rafaela&#34; RC já está disponível</title>
+      <link>https://butecotecnologico.com.br/linux-mint-17-2-rafaela-ja-esta-disponivel/</link>
+      <pubDate>Wed, 24 Jun 2015 12:57:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/linux-mint-17-2-rafaela-ja-esta-disponivel/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;color: #333333;&#34;&gt;&lt;span style=&#34;font-family: Arial, sans-serif;&#34;&gt;&lt;span style=&#34;font-size: medium;&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;Essa semana foi lançado a nova versão do Linux Mint: 17.2 “Rafaela”, para Cinnamon e Mate. Esta versão é LTS (Long Term Support) com suporte até 2019. O Kernel padrão é 3.16, utiliza-se da base de pacotes do Ubuntu 14.04 e traz novas funcionalidades para deixar sua área de trabalho mais confortável.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dica - Resetando senha do root Centos 7</title>
+      <link>https://butecotecnologico.com.br/dica-resetando-senha-do-root-centos-7/</link>
+      <pubDate>Mon, 15 Jun 2015 23:13:07 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/dica-resetando-senha-do-root-centos-7/</guid>
+      <description>Resetar senha de root em Red Hat Likes.</description>
+    </item>
+    
+    <item>
+      <title>Começa a pré-venda de Steam Controllers e Steam Machines</title>
+      <link>https://butecotecnologico.com.br/comeca-a-pre-venda-de-steam-controllers-e-steam-machines/</link>
+      <pubDate>Thu, 04 Jun 2015 23:16:04 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/comeca-a-pre-venda-de-steam-controllers-e-steam-machines/</guid>
+      <description>Anúncio do início das pre-orders de Steam Machines e Steam Controllers foi dado pela Valve.</description>
+    </item>
+    
+    <item>
+      <title>Fedup vai ser substituído no Fedora 23</title>
+      <link>https://butecotecnologico.com.br/fedup-vai-ser-substituido-no-fedora-23-2/</link>
+      <pubDate>Thu, 28 May 2015 23:56:19 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/fedup-vai-ser-substituido-no-fedora-23-2/</guid>
+      <description>Artigo sobre nova abordagem da Red Hat sobre o atualizador Fedup, utilizado no Fedora</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-10/</link>
+      <pubDate>Fri, 22 May 2015 13:52:58 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-10/</guid>
+      <description>Via o Vida de Suporte</description>
+    </item>
+    
+    <item>
+      <title>Interagindo com a câmera do Raspberry Pi</title>
+      <link>https://butecotecnologico.com.br/interagindo-com-a-camera-do-raspberry-pi/</link>
+      <pubDate>Thu, 21 May 2015 23:33:25 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/interagindo-com-a-camera-do-raspberry-pi/</guid>
+      <description>Este artigo traz uma introdução de como pode ser feita a integração do Raspberry Pi com seu módulo de câmera chamado picamera.</description>
+    </item>
+    
+    <item>
+      <title>Wine 1.7.43 traz melhorias na arquitetura ARM64</title>
+      <link>https://butecotecnologico.com.br/wine-1-7-43-traz-melhorias-na-arquitetura-arm64/</link>
+      <pubDate>Fri, 15 May 2015 23:58:39 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/wine-1-7-43-traz-melhorias-na-arquitetura-arm64/</guid>
+      <description>O Wine (acrônimo de &amp;ldquo;Wine Is Not an Emulator&amp;rdquo;) é um camada de compatibilidade que permite a execução de aplicativos Windows em vários sistemas operacionais POSIX-compliant, incluindo Linux, Mac OS X e BSD. Ao invés de simular a lógica interna do Windows, como um emulador normal, o Wine faz a tradução das chamadas de API do Windows em chamadas POSIX. Isto melhora o desempenho da aplicação e permite a integração de aplicação Windows com a sua área de trabalho.</description>
+    </item>
+    
+    <item>
+      <title>Enviando e-mails via o terminal ( sendEmail != sendmail )</title>
+      <link>https://butecotecnologico.com.br/enviando-e-mails-via-o-terminal-sendemail-sendmail/</link>
+      <pubDate>Mon, 11 May 2015 22:54:26 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/enviando-e-mails-via-o-terminal-sendemail-sendmail/</guid>
+      <description>Tutorial sobre como utilizar o sendEmail pelo terminal para enviar emails</description>
+    </item>
+    
+    <item>
+      <title>Projetos interessantes do GSoC 2015</title>
+      <link>https://butecotecnologico.com.br/projetos-interessantes-do-gsoc-2015/</link>
+      <pubDate>Tue, 05 May 2015 00:28:06 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/projetos-interessantes-do-gsoc-2015/</guid>
+      <description>Uma breve lista com alguns dos pricipais projetos do GSoC deste ano.</description>
+    </item>
+    
+    <item>
+      <title>Novidades que virão no Linux 4.1</title>
+      <link>https://butecotecnologico.com.br/novidades-que-virao-no-linux-4-1/</link>
+      <pubDate>Wed, 29 Apr 2015 09:47:34 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/novidades-que-virao-no-linux-4-1/</guid>
+      <description>Algumas novidades que virão com o kernel 4.1 do Linux, listando as principais melhorias desta nova versão.</description>
+    </item>
+    
+    <item>
+      <title>EXT4 com suporte a criptografia nativa</title>
+      <link>https://butecotecnologico.com.br/ext4-com-suporte-a-criptografia-nativa/</link>
+      <pubDate>Mon, 20 Apr 2015 17:26:16 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/ext4-com-suporte-a-criptografia-nativa/</guid>
+      <description>EXT4 é a evolução do sistema de arquivos EXT3. De muitas maneiras, EXT4 é uma profunda melhoria sobre o  EXT3, sendo o EXT3, uma melhoria do EXT2.</description>
+    </item>
+    
+    <item>
+      <title>GNOME 3.16.1 já está disponível</title>
+      <link>https://butecotecnologico.com.br/gnome-3-16-1-ja-esta-disponivel/</link>
+      <pubDate>Thu, 16 Apr 2015 13:54:50 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gnome-3-16-1-ja-esta-disponivel/</guid>
+      <description>O GNOME 3.16.1 foi disponibilizado hoje para download. Esta versão contempla atualizações sobre 3.16, liberada mês passado, e traz correções de BUGs, melhorias no próprio GNOME, atualização da documentação e traduções.</description>
+    </item>
+    
+    <item>
+      <title>Criando módulo Python em C/C&#43;&#43;</title>
+      <link>https://butecotecnologico.com.br/criando-modulo-python-em-cc/</link>
+      <pubDate>Mon, 13 Apr 2015 11:32:48 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-modulo-python-em-cc/</guid>
+      <description>Primeiros passos na criação de um módulo C/C++ para ser utilizado dentro do Python</description>
+    </item>
+    
+    <item>
+      <title>Novidades do kernel 4.0</title>
+      <link>https://butecotecnologico.com.br/novidades-do-kernel-4-0/</link>
+      <pubDate>Wed, 08 Apr 2015 23:12:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/novidades-do-kernel-4-0/</guid>
+      <description>Resumo das novas feature que serão vistas na versão 4.0 do kernel Linux</description>
+    </item>
+    
+    <item>
+      <title>GNOME 3.16 foi lançado</title>
+      <link>https://butecotecnologico.com.br/gnome-3-16-foi-lancado/</link>
+      <pubDate>Thu, 26 Mar 2015 21:48:19 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gnome-3-16-foi-lancado/</guid>
+      <description>Notas de lançamento da versão GNOME 3.16, com imagem e vídeo sobre as novas features.</description>
+    </item>
+    
+    <item>
+      <title>LPIC: por onde começar</title>
+      <link>https://butecotecnologico.com.br/lpic-por-onde-comecar/</link>
+      <pubDate>Tue, 24 Mar 2015 00:28:50 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lpic-por-onde-comecar/</guid>
+      <description>Primeiro, pare tudo, você está para fazer uma prova de certificação ou tem interesse, se sim .</description>
+    </item>
+    
+    <item>
+      <title>Builder IDE - Nova IDE para criação de aplicações GNOME no Linux</title>
+      <link>https://butecotecnologico.com.br/builder-ide-nova-ide-para-criacao-de-aplicacoes-gnome-no-linux/</link>
+      <pubDate>Thu, 19 Mar 2015 07:12:23 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/builder-ide-nova-ide-para-criacao-de-aplicacoes-gnome-no-linux/</guid>
+      <description>Este post destaca as principais features da nova IDE Builder que esta sendo desenvolvida.</description>
+    </item>
+    
+    <item>
+      <title>Instalando o Alien no openSUSE</title>
+      <link>https://butecotecnologico.com.br/instalando-o-alien-no-opensuse/</link>
+      <pubDate>Tue, 17 Mar 2015 00:53:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-o-alien-no-opensuse/</guid>
+      <description>O Alien é um aplicativo para conversão de arquivos de instalação de pacotes. Ou seja, ele converte, por exemplo, um arquivo de instalação do Debian para um arquivo de instalação do openSUSE.</description>
+    </item>
+    
+    <item>
+      <title>Conhecendo Pipe e FIFO (parte final)</title>
+      <link>https://butecotecnologico.com.br/conhecendo-pipe-e-fifo-parte-final/</link>
+      <pubDate>Mon, 16 Mar 2015 07:40:21 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conhecendo-pipe-e-fifo-parte-final/</guid>
+      <description>Última parte da sequencia de artigos sobre pipes e fifos. Nesta parte, serão explicados como funcionam os fifos e como se diferenciam dos pipes.</description>
+    </item>
+    
+    <item>
+      <title>Geração de MD5 utilizando C com OpenSSL e Python</title>
+      <link>https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/</link>
+      <pubDate>Tue, 10 Mar 2015 21:19:49 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/</guid>
+      <description>Esta postagem mostra como gerar MD5 via código C (utilizando a biblioteca OpenSSL) e com Python (utilizando a biblioteca hashlib).</description>
+    </item>
+    
+    <item>
+      <title>Conheça o Elementary OS</title>
+      <link>https://butecotecnologico.com.br/conheca-o-elementary-os/</link>
+      <pubDate>Tue, 03 Mar 2015 23:45:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conheca-o-elementary-os/</guid>
+      <description>Estando no beta 2, o Elementary Freya tem tudo para substituir a última versão desta distro, chamada de Luna, e surpreender ainda mais no quesito design e rapidez.</description>
+    </item>
+    
+    <item>
+      <title>Conhecendo o modinfo</title>
+      <link>https://butecotecnologico.com.br/conhecendo-o-modinfo/</link>
+      <pubDate>Wed, 25 Feb 2015 23:54:31 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conhecendo-o-modinfo/</guid>
+      <description>Este artigo explica o funcionamento básico do comando kmod, e para que qual finalidade existe o comando. Ainda neste artigo, é mostrado exemplos de execução do comando e quais informações este pode extrair dos módulos do kernel.</description>
+    </item>
+    
+    <item>
+      <title>Instalando driver NVIDIA Bumblebee no openSUSE</title>
+      <link>https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/</link>
+      <pubDate>Mon, 23 Feb 2015 00:59:15 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/</guid>
+      <description>A tecnologia Optimus da NVIDIA otimiza o seu notebook de forma inteligente, oferecendo o desempenho gráfico impressionante que você precisa, quando você precisa, e sempre aumentando o tempo de vida da bateria para que você aproveite por mais tempo.</description>
+    </item>
+    
+    <item>
+      <title>Instalando o VMware Player no Linux</title>
+      <link>https://butecotecnologico.com.br/instalando-o-vmware-player-no-linux/</link>
+      <pubDate>Fri, 20 Feb 2015 14:09:32 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-o-vmware-player-no-linux/</guid>
+      <description>O VMware é um software/máquina virtual que permite a instalação e utilização de um sistema operacional dentro de outro, dando suporte real a software de outros sistemas.
+Se você, assim como eu, acha que instalar o VMware no Linux é algo complicado, você verá neste tutorial que é algo bem simples de ser feito.</description>
+    </item>
+    
+    <item>
+      <title>Entendendo Pipe e FIFO (parte 2)</title>
+      <link>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-2/</link>
+      <pubDate>Tue, 17 Feb 2015 20:50:57 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-2/</guid>
+      <description>Esta é a segunda parte da postagem sobre Pipes e Fifos aqui do blog.</description>
+    </item>
+    
+    <item>
+      <title>GnuPG 2.1.2 já está disponível</title>
+      <link>https://butecotecnologico.com.br/gnupg-2-1-2-ja-esta-disponivel/</link>
+      <pubDate>Mon, 16 Feb 2015 12:22:27 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gnupg-2-1-2-ja-esta-disponivel/</guid>
+      <description>O GnuPG, também conhecido como GPG, permite criptografar e assinar dados e comunicação, possui um sistema de gerenciamento de chaves versátil, bem como módulos de acesso para os diretórios de chave pública. O GnuPG é uma ferramenta de linha de comando com recursos para uma fácil integração com outros aplicativos.</description>
+    </item>
+    
+    <item>
+      <title>Instalando o MariaDB no CentOS 7</title>
+      <link>https://butecotecnologico.com.br/instalando-o-mariadb-no-centos-7/</link>
+      <pubDate>Wed, 11 Feb 2015 19:30:29 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-o-mariadb-no-centos-7/</guid>
+      <description>O MariaDB é um servidor de banco de dados que oferece as mesmas funcionalidades do MySQL. Na verdade ele é um fork do MySQL, feito após a sua compra pela Oracle. O MariaDB é desenvolvido pela comunidade de software livre e por alguns dos autores originais do MySQL.</description>
+    </item>
+    
+    <item>
+      <title>Utilizando atexit com C e Python</title>
+      <link>https://butecotecnologico.com.br/utilizando-atexit-com-c-e-python/</link>
+      <pubDate>Sun, 08 Feb 2015 18:00:09 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-atexit-com-c-e-python/</guid>
+      <description>Em muitos casos, quando escrevemos programas se faz necessário liberar os recursos que o programa requisitou do sistema operacional.</description>
+    </item>
+    
+    <item>
+      <title>Instalando o VLC no openSUSE</title>
+      <link>https://butecotecnologico.com.br/instalando-o-vlc-no-opensuse/</link>
+      <pubDate>Sat, 07 Feb 2015 15:00:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-o-vlc-no-opensuse/</guid>
+      <description>O VLC é um reprodutor multimídia livre, de código aberto, multi-plataforma, que reproduz a maioria dos arquivos de mídia, bem como DVD, CD de áudio, VCD entre outros.</description>
+    </item>
+    
+    <item>
+      <title>glibc 2.21 já está disponível</title>
+      <link>https://butecotecnologico.com.br/glibc-2-21-ja-esta-disponivel/</link>
+      <pubDate>Fri, 06 Feb 2015 18:09:23 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/glibc-2-21-ja-esta-disponivel/</guid>
+      <description>A GNU C Library (glibc) é a biblioteca C padrão no sistema GNU e na maioria dos sistemas com Kernel Linux. A versão 2.21 vem com várias correções de bugs algumas funcionalidades novas.</description>
+    </item>
+    
+    <item>
+      <title>Fedora 23 irá trocar o X.Org Server pelo Wayland</title>
+      <link>https://butecotecnologico.com.br/fedora-23-ira-trocar-o-x-org-server-pelo-wayland/</link>
+      <pubDate>Thu, 29 Jan 2015 06:24:08 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/fedora-23-ira-trocar-o-x-org-server-pelo-wayland/</guid>
+      <description>Enquanto muito se falava em trocar o X.Org Sever pelo Wayland como sendo algo distante, parece que o Fedora 23 irá fazer acontecer.</description>
+    </item>
+    
+    <item>
+      <title>Entendendo Pipe e FIFO (parte 1)</title>
+      <link>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-1/</link>
+      <pubDate>Thu, 22 Jan 2015 22:20:52 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-1/</guid>
+      <description>Pipes e FIFOs são muito utilizados no mundo Linux como um método de IPC (inter process communication), ou comunicação entre processos.</description>
+    </item>
+    
+    <item>
+      <title>MediaFire libera toolkit para desenvolvedores Linux</title>
+      <link>https://butecotecnologico.com.br/mediafire-libera-toolkit-para-desenvolvedores-linux/</link>
+      <pubDate>Wed, 21 Jan 2015 15:02:01 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/mediafire-libera-toolkit-para-desenvolvedores-linux/</guid>
+      <description>O MediaFire, um serviço de backup e hospedagem de arquivos, liberou um toolkit Open-Source para desenvolvedores que usam Linux.</description>
+    </item>
+    
+    <item>
+      <title>Carregamento de hardware/driver assíncrono no kernel Linux</title>
+      <link>https://butecotecnologico.com.br/carregamento-de-hardwaredriver-assincrono-no-kernel-linux/</link>
+      <pubDate>Tue, 20 Jan 2015 18:33:36 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/carregamento-de-hardwaredriver-assincrono-no-kernel-linux/</guid>
+      <description>Enquanto o Chrome OS já tem o suporte ao carregamento de dispositivos/drivers assíncrono, o kernel linux ainda não.</description>
+    </item>
+    
+    <item>
+      <title>Hands on: Sockets em Python</title>
+      <link>https://butecotecnologico.com.br/hands-on-sockets-em-python/</link>
+      <pubDate>Wed, 14 Jan 2015 00:05:04 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/hands-on-sockets-em-python/</guid>
+      <description>Muitos são os usos dos sockets atualmente e vários exemplos existem através de toda a internet em várias linguagens de programação diferentes.</description>
+    </item>
+    
+    <item>
+      <title>Conhecendo o virt-manager</title>
+      <link>https://butecotecnologico.com.br/conhecendo-o-virt-manager/</link>
+      <pubDate>Mon, 05 Jan 2015 08:00:45 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conhecendo-o-virt-manager/</guid>
+      <description>O virt-manager é uma ferramenta desenvolvida pela RedHat para gerenciar máquinas virtuais.</description>
+    </item>
+    
+    <item>
+      <title>Nós somos Linux</title>
+      <link>https://butecotecnologico.com.br/nos-somos-linux/</link>
+      <pubDate>Sat, 20 Dec 2014 06:00:24 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/nos-somos-linux/</guid>
+      <description>Nós somos Linux, e você? Se você ainda está em dúvida, confira o DistroWatch e escolha uma distribuição.</description>
+    </item>
+    
+    <item>
+      <title>LibreOffice e os compiladores</title>
+      <link>https://butecotecnologico.com.br/libreoffice-e-os-compiladores/</link>
+      <pubDate>Mon, 03 Nov 2014 22:44:49 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/libreoffice-e-os-compiladores/</guid>
+      <description>Olá pessoal, está semana foram liberados os vídeos da LibreOffice Conference 2014.</description>
+    </item>
+    
+    <item>
+      <title>Conheça o que está por vir no openSUSE 13.2</title>
+      <link>https://butecotecnologico.com.br/conheca-o-que-esta-por-vir-no-opensuse-13-2/</link>
+      <pubDate>Thu, 23 Oct 2014 11:36:23 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conheca-o-que-esta-por-vir-no-opensuse-13-2/</guid>
+      <description>Faltam apenas 12 dias para o lançamento oficial do openSUSE 13.</description>
+    </item>
+    
+    <item>
+      <title>openSUSE 13.2: Chegou a hora de testar</title>
+      <link>https://butecotecnologico.com.br/opensuse-13-2-chegou-a-hora-de-testar/</link>
+      <pubDate>Thu, 16 Oct 2014 15:03:13 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/opensuse-13-2-chegou-a-hora-de-testar/</guid>
+      <description>Menos de três semanas se passaram desde o lançamento da primeira versão release candidate e já podemos sentir que estamos quase lá.</description>
+    </item>
+    
+    <item>
+      <title>Hands on: autotools</title>
+      <link>https://butecotecnologico.com.br/hands-on-autotools/</link>
+      <pubDate>Fri, 10 Oct 2014 00:44:22 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/hands-on-autotools/</guid>
+      <description>Olá pessoal, a muito tempo eu queria aprender como funciona o tão famoso autotools.</description>
+    </item>
+    
+    <item>
+      <title>Cupom de desconto para certificação Linux</title>
+      <link>https://butecotecnologico.com.br/cupom-de-desconto-para-certificacao-linux/</link>
+      <pubDate>Wed, 08 Oct 2014 15:05:30 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/cupom-de-desconto-para-certificacao-linux/</guid>
+      <description>Você já deve ter ouvido sobre os programas de certificação recentemente lançado pela Linux Fundation.</description>
+    </item>
+    
+    <item>
+      <title>Tcl/Expect: Automatização de comandos interativos no Linux</title>
+      <link>https://butecotecnologico.com.br/tclexpect-automatizacao-de-comandos-interativos-no-linux/</link>
+      <pubDate>Tue, 07 Oct 2014 00:23:49 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tclexpect-automatizacao-de-comandos-interativos-no-linux/</guid>
+      <description>Olá pessoal, neste artigo será abordado a automatização de comandos com o Tcl/expect.</description>
+    </item>
+    
+    <item>
+      <title>Hands On: Shared Libraries no Linux</title>
+      <link>https://butecotecnologico.com.br/hands-on-shared-libraries-no-linux/</link>
+      <pubDate>Wed, 01 Oct 2014 00:42:05 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/hands-on-shared-libraries-no-linux/</guid>
+      <description>Bibliotecas compartilhadas são usadas em qualquer sistema operacional, seja Windows, Linux, Mac OSX ou qualquer *BSD ou *NIX.</description>
+    </item>
+    
+    <item>
+      <title>QEMU/KVM: Habilitar serial console no CentOS/RHEL para acessá-lo pelo virsh console</title>
+      <link>https://butecotecnologico.com.br/qemukvm-habilitar-serial-console-no-centosrhel-para-acessa-lo-pelo-virsh-console/</link>
+      <pubDate>Wed, 17 Sep 2014 12:03:21 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/qemukvm-habilitar-serial-console-no-centosrhel-para-acessa-lo-pelo-virsh-console/</guid>
+      <description>Olá pessoal, a alguns dias atrás eu precisei fazer alguns testes usando o QEMU/KVM, e para isso foi necessário o acesso a uma máquina virtual com CentOS utilizando o virsh console.</description>
+    </item>
+    
+    <item>
+      <title>Recortar arquivo de áudio no Linux pela linha de comando</title>
+      <link>https://butecotecnologico.com.br/recortar-arquivo-de-audio-no-linux-pela-linha-de-comando/</link>
+      <pubDate>Tue, 09 Sep 2014 23:01:02 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/recortar-arquivo-de-audio-no-linux-pela-linha-de-comando/</guid>
+      <description>Olá pessoa, segue uma dica para um problema que talvez alguns já tiveram.</description>
+    </item>
+    
+    <item>
+      <title>Problema ao atualizar o jogo Flare no Fedora 20</title>
+      <link>https://butecotecnologico.com.br/problema-ao-atualizar-o-jogo-flare-no-fedora-20/</link>
+      <pubDate>Wed, 03 Sep 2014 02:01:55 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/problema-ao-atualizar-o-jogo-flare-no-fedora-20/</guid>
+      <description>Olá pessoal, como primeiro post deste blog eu gostaria de falar sobre a minha experiência resolvendo um problema que tive hoje mesmo no Fedora 20!</description>
+    </item>
+    
+  </channel>
+</rss>

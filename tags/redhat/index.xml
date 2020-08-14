@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redhat on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/redhat/</link>
+    <description>Recent content in redhat on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 08 Apr 2015 23:12:54 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/redhat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Novidades do kernel 4.0</title>
+      <link>https://butecotecnologico.com.br/novidades-do-kernel-4-0/</link>
+      <pubDate>Wed, 08 Apr 2015 23:12:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/novidades-do-kernel-4-0/</guid>
+      <description>Resumo das novas feature que serão vistas na versão 4.0 do kernel Linux</description>
+    </item>
+    
+  </channel>
+</rss>

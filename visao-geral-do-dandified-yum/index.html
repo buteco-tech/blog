@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Visão geral do Dandified Yum &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Visão geral do Dandified Yum">
+<meta itemprop="description" content="Olá pessoal! Neste artigo procurarei descrever sobre alguns dos principais comandos do Dandified Yum, carinhosamente apelidado de DNF, espero ser útil àqueles que encontraram alguma dificuldade, não tiveram a oportunidade ou necessidade em usá-lo.">
+<meta itemprop="datePublished" content="2015-08-24T14:07:37+00:00" />
+<meta itemprop="dateModified" content="2015-08-24T14:07:37+00:00" />
+<meta itemprop="wordCount" content="1012">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/infinity-logo_400x400.png">
+
+
+
+<meta itemprop="keywords" content="distros,dnf,fedora,rpm,yum," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/infinity-logo_400x400.png"/>
+
+<meta name="twitter:title" content="Visão geral do Dandified Yum"/>
+<meta name="twitter:description" content="Olá pessoal! Neste artigo procurarei descrever sobre alguns dos principais comandos do Dandified Yum, carinhosamente apelidado de DNF, espero ser útil àqueles que encontraram alguma dificuldade, não tiveram a oportunidade ou necessidade em usá-lo."/>
+
+
+<meta property="og:title" content="Visão geral do Dandified Yum" />
+<meta property="og:description" content="Olá pessoal! Neste artigo procurarei descrever sobre alguns dos principais comandos do Dandified Yum, carinhosamente apelidado de DNF, espero ser útil àqueles que encontraram alguma dificuldade, não tiveram a oportunidade ou necessidade em usá-lo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/visao-geral-do-dandified-yum/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/infinity-logo_400x400.png" />
+<meta property="article:published_time" content="2015-08-24T14:07:37+00:00" />
+<meta property="article:modified_time" content="2015-08-24T14:07:37+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Visão geral do Dandified Yum</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           alt="Alexandre Vicenzi"
+           title="Alexandre Vicenzi">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+           class="author">Alexandre Vicenzi</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2015-08-24T14:07:37Z">Aug 24, 2015</time>
+      &middot; 5 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/visao-geral-do-dandified-yum/"
+     data-text="Visão geral do Dandified Yum"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/visao-geral-do-dandified-yum/"
+     data-text="Visão geral do Dandified Yum"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/visao-geral-do-dandified-yum/"
+     data-text="Visão geral do Dandified Yum"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/visao-geral-do-dandified-yum/"
+     data-text="Visão geral do Dandified Yum"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/infinity-logo_400x400.png"
+           alt="Visão geral do Dandified Yum">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Olá pessoal! Neste artigo procurarei descrever sobre alguns dos principais comandos do <em>Dandified Yum</em>, carinhosamente apelidado de DNF, espero ser útil àqueles que encontraram alguma dificuldade, não tiveram a oportunidade ou necessidade em usá-lo.</p>
+<p>O DNF é um gerenciador de pacotes direcionado aos pacotes RPM e, à partir da versão 22 da distribuição do Fedora, passou a ser o gerenciador de pacotes oficial em substituição ao Yum. O DNF é um <em>fork</em> do Yum, que visa corrigir problemas sérios com a API, alguns algoritmos com mal funcionamento e falta de documentação. De acordo com o site oficial do projeto, isto era inevitável, o Yum não sobreviveria ao python 3 como padrão na distribuição, visto que o DNF deve ser compatível com python 2 e 3. Dentre as melhorias que o DNF trás estão, performance, uso de memória, resolução de dependência e velocidade.</p>
+<p>Para que a transição do Yum ao DNF não fosse abrupta, causando demasiados problemas à distribuição e para a comunidade, os comandos que chamam o Yum serão automaticamente redirecionados para o DNF, pois o mesmo mantém compatibilidade em linha de comando, para continuar a lógica semântica do Yum. Atualmente a equipe de desenvolvimento se esforça para converter as APIs populares do Yum para o DNF, melhorar a experiência de usuário e o <em>plugin migrate</em> que ajuda na conversão dos pacotes.</p>
+<p>Então, o Yum é um projeto considerado oficialmente morto, e caso esteja interessado em conhecer detalhes sobre o DNF, o fim do Yum e/ou as diferenças entre ambos, visite <a href="http://dnf.baseurl.org"><a href="http://dnf.baseurl.org">http://dnf.baseurl.org</a></a>, onde há muita informação. Realmente capricharam, tudo está documentado.</p>
+<p>Em minha opinião, a <em>manpage</em> mais organizada e enxuta é um dos sinais de que a documentação foi melhorada no DNF, muito do que vou dizer aqui é facilmente encontrado lá. Se você não é acostumado a ler uma <em>manpage</em>, após a leitura deste artigo, certamente ficará mais compreensível.</p>
+<p>Para iniciarmos a parte dos comandos, a sintaxe geral do DNF é <strong>dnf [opções] [&hellip;]</strong>, lembrando que, os comandos que alteram o sistema devem ser acompanhados pelo sudo ou serem executados através do usuário root.</p>
+<p>Pensando numa lógica de uso, um dos comandos que tem uma boa chance de ser necessário é o repolist, que apresenta a lista de repositórios instalados, podendo ser habilitados, desabilitados ou ambos. Em caso de omissão do argumento, serão listados somente os repositórios habilitados.</p>
+<p>Exemplos:</p>
+<p>$ dnf repolist enabled</p>
+<p>$ dnf repolist disabled</p>
+<p>$ dnf repolist all</p>
+<p>O próximo comando é o <em>list</em>, que nos ajuda a verificar a existência de pacotes disponíveis em algum repositório conhecido pelo sistema (<em>available</em>) ou pacotes instalados no sistema (<em>installed</em>).</p>
+<p>Exemplo:</p>
+<p>$ dnf list</p>
+<p>Nesta forma apresentada acima, listará todos os pacotes, tanto os instalados como os dos repositórios conhecidos pelo sistema. Pode ser filtrado com a especificação do nome de um pacote, que é <em>case sensitive</em> e aceita hífen, assim como caracteres coringas.</p>
+<p>Exemplo:</p>
+<p>$ dnf list nan?</p>
+<p>Abaixo, seguem outras variantes interessantes, onde todas podem receber filtros:</p>
+<p>$ dnf list installed</p>
+<p>Lista os pacotes instalados.</p>
+<p>$ dnf list available</p>
+<p>Lista os pacotes disponíveis nos repositórios conhecidos pelo sistema.</p>
+<p>$ dnf list obsoletes</p>
+<p>Lista pacotes instalados no sistema que estão obsoletos em relação aos pacotes de qualquer repositório conhecido.</p>
+<p>$ dnf list recent</p>
+<p>Lista os pacotes recentemente adicionados aos repositórios conhecidos.</p>
+<p>$ dnf list upgrades</p>
+<p>Lista atualizações disponíveis aos pacotes instalados no sistema.</p>
+<p>O terceiro comando que irei falar é o <em>search</em>, que serve para pesquisar metadados de pacotes através de palavras-chave. Palavras-chave são <em>case</em> <em>insensitive</em> e aceitam caracteres coringas. Por padrão, o comando busca primeiro os nomes de pacotes e resumos, na sua falta (ou sempre que tudo foi dado como um argumento) ele irá procurar nas descrições dos pacotes e URLs. O resultado é classificado a partir da relevância dos resultados (do maior para o menor).</p>
+<p>Exemplo:</p>
+<p>$ dnf search kmail</p>
+<p>É possível também especificar em qual repositório será feita a busca com a opção &ndash;enablerepo (&ndash;enablerepo=).</p>
+<p>Exemplo:</p>
+<p>$ dnf &ndash;enablerepo=<em>fedora search nan</em></p>
+<p>Nosso quarto item da lista de comandos é o <em>install</em>, sua sintaxe geral é <strong>dnf [opções] install </strong>, onde pode ser o nome do pacote, o endereço de um pacote RPM local, ou URL de um pacote RPM remoto. Este comando não resolve dependências.</p>
+<p>Exemplo:</p>
+<p>$ sudo dnf install cowsay.noarch</p>
+<p>Algumas opções interessantes para se utilizar juntamente com o comando <em>install</em> são: &ndash;enablerepo, para escolher o repositório de onde virá a instalação (se não for local ou URL); -q ou &ndash;quiet, que executará sem retornos (silenciosamente); -v ou &ndash;verbose, para ver todos os detalhes disponíveis durante a instalação; e -y ou &ndash;assumeyes, para responder sim automaticamente para todas as opções que esperam uma confirmação (s/n).</p>
+<p>Certamente em algum momento também será necessário remover alguns pacotes instalados no sistema, para isto utiliza-se o comando <em>remove</em>. Este comando, faz a remoção dos pacotes especificados, juntamente com quaisquer pacotes dependentes dos pacotes que estão sendo removidos e, por padrão (com clean_requirements_on_remove habilitado) também removerá todas as dependências que não serão mais necessárias ao sistema.</p>
+<p>Sua sintaxe geral é <strong>dnf [opções] remove </strong>, onde, pode ser o nome exato de um pacote ou parcial acompanhado de caracteres coringas para especificar um grupo de pacotes.</p>
+<p>Exemplos:</p>
+<p>$ sudo dnf remove kontact</p>
+<p>ou</p>
+<p>$ sudo dnf remove kmail*</p>
+<p>Em alguns artigos você pode encontrar também o comando <em>erase</em>, porém, este é um alias para o <em>remove</em>, e já está marcado como <em>deprecated</em>, isto significa que está disponível apenas para compatibilidade com Yum mas será removido em uma das próximas versões, por isto não é aconselhável o seu uso, principalmente em <em>scripts</em> que você queira usar a longo prazo.</p>
+<p>Acredito que estes sejam os comandos indispensáveis para se ter uma visão geral do DNF e que, abordei os tipos de filtros que serão vistos em outros comandos deste gerenciador, se você der uma olhadinha na <em>manpage</em>. Para instigar a sua curiosidade, vou deixar registrado aqui que não falei ainda sobre: busca de pacote por arquivo (<em>provides</em>), <em>repository-packages</em>, reinstalação, manutenção e limpeza de cache, <em>distro-sync</em>, <em>upgrade</em> e <em>downgrade</em>, grupos de pacotes, dentre outros.</p>
+<p><em>That&rsquo;s all folks!</em></p>
+<p>Este artigo foi enviado por Douglas Santos.</p>
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/distros/" class="tag-link">distros</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/dnf/" class="tag-link">dnf</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/fedora/" class="tag-link">fedora</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/rpm/" class="tag-link">rpm</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/yum/" class="tag-link">yum</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/visao-geral-do-dandified-yum/"
+     data-text="Visão geral do Dandified Yum"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/visao-geral-do-dandified-yum/"
+     data-text="Visão geral do Dandified Yum"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/visao-geral-do-dandified-yum/"
+     data-text="Visão geral do Dandified Yum"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/visao-geral-do-dandified-yum/"
+     data-text="Visão geral do Dandified Yum"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             alt="Alexandre Vicenzi">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">Alexandre Vicenzi</a>
+      </h2>
+      <span class="small text-muted">Engenheiro de Software</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

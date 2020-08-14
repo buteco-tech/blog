@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>raspberrypi on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/raspberrypi/</link>
+    <description>Recent content in raspberrypi on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 29 Feb 2016 23:50:31 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lançado Raspberry PI 3 Modelo B</title>
+      <link>https://butecotecnologico.com.br/lancado-raspberry-pi-3-modelo-b/</link>
+      <pubDate>Mon, 29 Feb 2016 23:50:31 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lancado-raspberry-pi-3-modelo-b/</guid>
+      <description>&lt;p&gt;Em celebração ao quarto ano da The Raspberry PI Foundation, foi anunciado hoje no blog &lt;a href=&#34;http://rasbperry.org&#34; target=&#34;_blank&#34;&gt;rasbperry.org&lt;/a&gt; o novo Raspberry PI 3 Modelo B.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;aligncenter size-full wp-image-4905&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/RPI05B3.jpg&#34; alt=&#34;RPI05B3&#34; width=&#34;938&#34; height=&#34;525&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GPS Parte 3: Localizador GPS com a BeagleBone Green</title>
+      <link>https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/</link>
+      <pubDate>Wed, 20 Jan 2016 21:11:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/</guid>
+      <description>Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona.</description>
+    </item>
+    
+    <item>
+      <title>Lançamentos Novatec: Apocalipse zumbi com Arduino e Raspberry e AWS em ação</title>
+      <link>https://butecotecnologico.com.br/lancamentos-novatec-apocalipse-zumbi-com-arduino-e-raspberry-e-aws-em-acao/</link>
+      <pubDate>Thu, 07 Jan 2016 08:07:04 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lancamentos-novatec-apocalipse-zumbi-com-arduino-e-raspberry-e-aws-em-acao/</guid>
+      <description>&lt;p style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/capa_ampliada9788575224700.jpg&#34; rel=&#34;attachment wp-att-4453&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-4453&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/capa_ampliada9788575224700-215x300.jpg&#34; alt=&#34;capa_ampliada9788575224700&#34; width=&#34;215&#34; height=&#34;300&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align: center;&#34;&gt;&lt;strong&gt;Guia do maker para o apocalipse zumbi&lt;/strong&gt;&lt;/p&gt;
+Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Cozinhando o animal de estimação da família? Decapitando vizinhos que viraram zumbis?
+&lt;p&gt;Se ler o livro &lt;a href=&#34;http://novatec.com.br/livros/guia-maker-zumbi-arduino-raspberry/&#34; target=&#34;_blank&#34;&gt;Guia do maker para o apocalipse zumbi&lt;/a&gt; você estará construindo fortalezas, criando armadilhas, gerando eletricidade e criando dispositivos eletrônicos essenciais para a sua sobrevivência.&lt;/p&gt;
+&lt;p&gt;Com uma narrativa objetiva e bem-humorada, o livro &lt;a href=&#34;http://novatec.com.br/livros/guia-maker-zumbi-arduino-raspberry/&#34; target=&#34;_blank&#34;&gt;Guia do maker para o apocalipse zumbi&lt;/a&gt;, lançado pela &lt;a href=&#34;http://www.novatec.com.br/&#34;&gt;Novatec Editora&lt;/a&gt;, ensina tudo o que você precisa saber (e fazer) para se preparar para o apocalipse zumbi, e como utilizar Arduino e Raspberry Pi para criar circuitos simples para se defender.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Black Friday de Componentes Eletrônicos é na FILIPEFLOP</title>
+      <link>https://butecotecnologico.com.br/black-friday-de-componentes-eletronicos-e-na-filipeflop/</link>
+      <pubDate>Wed, 18 Nov 2015 22:54:30 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/black-friday-de-componentes-eletronicos-e-na-filipeflop/</guid>
+      <description>Black Friday é o nome dado ao dia seguinte ao &amp;ldquo;Dia de Ação de Graças&amp;rdquo; dos EUA, uma importante data comemorativa para o varejo americano, quando são praticados descontos altíssimos.</description>
+    </item>
+    
+    <item>
+      <title>Review da tela 3.5 TFT no Raspberry Pi!</title>
+      <link>https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/</link>
+      <pubDate>Wed, 11 Nov 2015 12:43:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/</guid>
+      <description>&lt;p&gt;Olá pessoal, neste artigo iremos mostrar como instalar a tela TFT 3.5&amp;rdquo;, com suporte a caneta, no Raspberry Pi. Utilizaremos a distro Raspbian Wheezy, baseada no Debian e indicada pela Raspberry Foundation, e um Raspberry Pi modelo B. Se você deseja instalar a tela em outra distribuição, basta verificar quais arquivos de configuração se equiparam aos utilizados no Raspbian.&lt;/p&gt;
+&lt;p&gt;Após instalação da tela, será feito um review falando de sua qualidade e se de fato vale comprar tal acessório.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Conheça arkOS: Distro para hospedagem particular</title>
+      <link>https://butecotecnologico.com.br/conheca-arkos-distro-para-hospedagem-particular/</link>
+      <pubDate>Tue, 27 Oct 2015 21:09:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conheca-arkos-distro-para-hospedagem-particular/</guid>
+      <description>&lt;p&gt;O arkOS é uma distribuição Linux baseada no &lt;a href=&#34;http://archlinuxarm.org&#34; target=&#34;_blank&#34;&gt;Arch Linux ARM&lt;/a&gt;, que funciona em dispositivos embarcados e servidores dedicados. Este contém um pacote de software completo para gerenciamento de  hospedagem particular (&lt;em&gt;self-hosting&lt;/em&gt;) de forma intuitiva e inteligente. Também permite executar sites, contas de e-mail, banco de dados e muito mais, tudo através de sua interface gráfica, que é fácil de usar.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lançada tela capacitiva oficial para Raspberry Pi</title>
+      <link>https://butecotecnologico.com.br/lancada-tela-capacitiva-oficial-para-raspberry-pi/</link>
+      <pubDate>Thu, 10 Sep 2015 22:44:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lancada-tela-capacitiva-oficial-para-raspberry-pi/</guid>
+      <description>&lt;p&gt;A Raspberry Pi Foundation anunicou recentemente uma tela touchscreen capacitiva para o Raspberry Pi. O acessório possui display de 7 polegadas, resolução de 800x480 pixels a 60fps, ângulo de visualização de 70 graus além de suportar até 10 toques simultâneos.&lt;/p&gt;
+&lt;p style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/art-rasp1.jpg&#34;&gt;&lt;img class=&#34;alignnone wp-image-3319 size-large&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/art-rasp1-1024x747.jpg&#34; alt=&#34;art rasp1&#34; width=&#34;648&#34; height=&#34;473&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Criando uma Central de Multimídia com Raspberry Pi</title>
+      <link>https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/</link>
+      <pubDate>Thu, 20 Aug 2015 22:28:06 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/</guid>
+      <description>&lt;p&gt;Usaremos o OpenELEC para criar a central de multimídia, irei instalar no Raspberry Pi 2, porém também está disponível para o Raspberry PI.&lt;/p&gt;
+&lt;p&gt;OpenELEC é uma distribuição Linux criada em torno do programa XBMC – um famoso hub de entretenimento de código aberto – e focada na tarefa de transformar seu equipamento em uma central de mídia.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Instalando o Ubuntu MATE 15.04 no Raspberry PI 2</title>
+      <link>https://butecotecnologico.com.br/instalando-o-ubuntu-mate-15-04-no-raspberry-pi-2/</link>
+      <pubDate>Tue, 14 Jul 2015 23:03:39 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-o-ubuntu-mate-15-04-no-raspberry-pi-2/</guid>
+      <description>&lt;p&gt;Uma das distribuições Linux mais conhecidas também está disponível para Raspberry PI 2.&lt;/p&gt;
+&lt;p&gt;Nesse artigo irei mostrar a instalação do Ubuntu MATE 15.04 no Raspberry PI 2.&lt;/p&gt;
+&lt;p&gt;O Raspberry PI 2 foi cedido pela Loja Mundi e você pode olhar esse e outros produtos clicando &lt;a href=&#34;http://www.lojamundi.com.br/embarcados-raspberry-cubieboard-beagleboneblack.html/?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;O Ubuntu MATE teve algumas atualizações em relação a versão anterior, Ubuntu MATE 14.10.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Interagindo com a câmera do Raspberry Pi</title>
+      <link>https://butecotecnologico.com.br/interagindo-com-a-camera-do-raspberry-pi/</link>
+      <pubDate>Thu, 21 May 2015 23:33:25 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/interagindo-com-a-camera-do-raspberry-pi/</guid>
+      <description>Este artigo traz uma introdução de como pode ser feita a integração do Raspberry Pi com seu módulo de câmera chamado picamera.</description>
+    </item>
+    
+  </channel>
+</rss>

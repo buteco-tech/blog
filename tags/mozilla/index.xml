@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mozilla on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/mozilla/</link>
+    <description>Recent content in mozilla on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 22 Sep 2015 09:06:05 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/mozilla/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rust 1.3 já está disponível</title>
+      <link>https://butecotecnologico.com.br/rust-1-3-ja-esta-disponivel/</link>
+      <pubDate>Tue, 22 Sep 2015 09:06:05 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/rust-1-3-ja-esta-disponivel/</guid>
+      <description>Rust 1.3 é a mais nova versão stable disponível da linguagem de programação desenvolvida pela Mozilla.</description>
+    </item>
+    
+    <item>
+      <title>Firefox 39 traz melhorias de segurança</title>
+      <link>https://butecotecnologico.com.br/firefox-39-traz-melhorias-de-seguranca/</link>
+      <pubDate>Fri, 03 Jul 2015 12:40:21 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/firefox-39-traz-melhorias-de-seguranca/</guid>
+      <description>&lt;p&gt;O Firefox 39.0 já está disponível e vem com melhorias de desempenho e correções de segurança. &lt;a href=&#34;https://www.mozilla.org/en-US/firefox/new/&#34; target=&#34;_blank&#34;&gt;Clique aqui&lt;/a&gt; caso queira fazer o download.&lt;/p&gt;
+&lt;p&gt;Dentre as novidades estão:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rust 1.0 já está disponível</title>
+      <link>https://butecotecnologico.com.br/rust-1-0-ja-esta-disponivel/</link>
+      <pubDate>Fri, 15 May 2015 23:58:35 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/rust-1-0-ja-esta-disponivel/</guid>
+      <description>Rust é uma nova linguagem de programação com o objetivo de tornar simples a construção de sistemas eficientes e confiáveis. Rust combina o controle de baixo nível sobre o desempenho com comodidade e segurança de alto nível.</description>
+    </item>
+    
+    <item>
+      <title>Firefox 38 adiciona suporte a imagens responsivas e Ruby annotations</title>
+      <link>https://butecotecnologico.com.br/firefox-38-adiciona-suporte-a-imagens-responsivas-e-ruby-annotations/</link>
+      <pubDate>Tue, 12 May 2015 23:20:47 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/firefox-38-adiciona-suporte-a-imagens-responsivas-e-ruby-annotations/</guid>
+      <description>Post com algumas novas funcionalidades do Firefox 38, que está sendo liberado hoje (12/05),</description>
+    </item>
+    
+    <item>
+      <title>Unity 5 vem com suporte a WebGL e você pode conferir alguns exemplos</title>
+      <link>https://butecotecnologico.com.br/unity-5-vem-com-suporte-a-webgl-e-voce-pode-conferir-alguns-exemplos/</link>
+      <pubDate>Thu, 05 Mar 2015 00:20:01 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/unity-5-vem-com-suporte-a-webgl-e-voce-pode-conferir-alguns-exemplos/</guid>
+      <description>Esta nova versão da mais popular ferramenta de desenvolvimento de jogos inclui uma prévia do exportador para WebGL. Os desenvolvedores de jogos estão a um passo de publicar os seus jogos para a Web de uma nova forma, tirando proveito do WebGL e do asm.js.</description>
+    </item>
+    
+    <item>
+      <title>Rust 1.0 Alpha já está disponível</title>
+      <link>https://butecotecnologico.com.br/rust-1-0-alpha-ja-esta-disponivel/</link>
+      <pubDate>Fri, 09 Jan 2015 20:00:40 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/rust-1-0-alpha-ja-esta-disponivel/</guid>
+      <description>Rust 1.0 Alpha foi lançado hoje.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>arm on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/arm/</link>
+    <description>Recent content in arm on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 11 May 2016 21:28:51 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/arm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Concorra a um Raspberry Pi 3</title>
+      <link>https://butecotecnologico.com.br/concorra-um-raspberry-pi-3/</link>
+      <pubDate>Wed, 11 May 2016 21:28:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/concorra-um-raspberry-pi-3/</guid>
+      <description>&lt;p&gt;A &lt;a href=&#34;http://www.filipeflop.com/?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;FILIPEFLOP&lt;/a&gt;, nossa parceira, esta realizando o sorteio de um Raspberry Pi 3. O Raspberry Pi 3 recém chegou na FILIPEFLOP e há alguns dias atras &lt;a href=&#34;https://butecotecnologico.com.br/review-raspberry-pi-3&#34; target=&#34;_blank&#34;&gt;fizemos uma review&lt;/a&gt; comentando as diferenças em relação ao seu antecessor.&lt;/p&gt;
+&lt;p&gt;O novo Raspberry Pi 3 vem agora com muito mais poder de processamento, tudo isso graças ao processador Broadcom Quad Core BCM2837 de 64 bits e clock de 1.2GHz. Além disso foi integrado WiFi 802.11n que permite conexões a internet sem cabo e Bluetooth 4.1 para uma conexão mais fácil ao RPi.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Review Raspberry Pi 3</title>
+      <link>https://butecotecnologico.com.br/review-raspberry-pi-3/</link>
+      <pubDate>Tue, 10 May 2016 12:57:34 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/review-raspberry-pi-3/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://www.filipeflop.com/pd-31a472-raspberry-pi-3-model-b.html?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;Raspberry Pi 3&lt;/a&gt; acabou de chegar na &lt;a href=&#34;http://www.filipeflop.com/?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;FILIPEFLOP&lt;/a&gt; e esta nova versão traz novidades em relação a versão anterior. As maiores novidades são o WiFi e Bluetooth integrado.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Conheça a BeagleBone Green</title>
+      <link>https://butecotecnologico.com.br/conheca-a-beaglebone-green/</link>
+      <pubDate>Tue, 24 Nov 2015 10:24:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conheca-a-beaglebone-green/</guid>
+      <description>&lt;p&gt;Recentemente recebemos da &lt;a href=&#34;http://www.filipeflop.com/?utm_medium=PostBBG&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;FilipeFlop&lt;/a&gt; a &lt;a href=&#34;http://www.seeed.cc/beaglebone_green/&#34; target=&#34;_blank&#34;&gt;BeagleBone Green&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A BeagleBone Green, ou BBG para os mais íntimos, é produzida pela SeeedStudio e é baseada no hardware da BeagleBone Black. As maiores diferenças são a adição de dois conectores &lt;em&gt;Grove&lt;/em&gt; e a remoção do HDMI &lt;em&gt;on-board&lt;/em&gt;. Apesar de não possuir HDMI, é possível utilizar uma placa de expansão para obter esta funcionalidade.&lt;/p&gt;
+&lt;p&gt;A BBG é poderosa, ela vem com processador AM335x 1GHz ARM© Cortex-A8, memória de 512MB DDR3, 4GB eMMC de armazenamento interno (isso mesmo, não é necessário SD) e aceleração gráfica 3D.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Conheça arkOS: Distro para hospedagem particular</title>
+      <link>https://butecotecnologico.com.br/conheca-arkos-distro-para-hospedagem-particular/</link>
+      <pubDate>Tue, 27 Oct 2015 21:09:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conheca-arkos-distro-para-hospedagem-particular/</guid>
+      <description>&lt;p&gt;O arkOS é uma distribuição Linux baseada no &lt;a href=&#34;http://archlinuxarm.org&#34; target=&#34;_blank&#34;&gt;Arch Linux ARM&lt;/a&gt;, que funciona em dispositivos embarcados e servidores dedicados. Este contém um pacote de software completo para gerenciamento de  hospedagem particular (&lt;em&gt;self-hosting&lt;/em&gt;) de forma intuitiva e inteligente. Também permite executar sites, contas de e-mail, banco de dados e muito mais, tudo através de sua interface gráfica, que é fácil de usar.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Samsung anuncia entrada na família Arduino</title>
+      <link>https://butecotecnologico.com.br/samsung-anuncia-entrada-na-familia-arduino/</link>
+      <pubDate>Wed, 13 May 2015 09:17:43 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/samsung-anuncia-entrada-na-familia-arduino/</guid>
+      <description>A plataforma ARTIK está na categoria dos dispositivos compatíveis com Arduino, e seu foco é a Internet das Coisas. No momento existem três placas: ARTIK 1, ARTIK 5 e ARTIK 10. Todas as placas possuem processador ARM multi-core e Bluetooth Low Energy (BLE). As placas ARTIK 5 e ARTIK 10 contam também com Wi-Fi, BT, Zigbee e conexões Wirelles Multi-Thread</description>
+    </item>
+    
+  </channel>
+</rss>

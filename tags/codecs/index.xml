@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>codecs on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/codecs/</link>
+    <description>Recent content in codecs on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Sat, 07 Feb 2015 15:00:12 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/codecs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Instalando o VLC no openSUSE</title>
+      <link>https://butecotecnologico.com.br/instalando-o-vlc-no-opensuse/</link>
+      <pubDate>Sat, 07 Feb 2015 15:00:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-o-vlc-no-opensuse/</guid>
+      <description>O VLC é um reprodutor multimídia livre, de código aberto, multi-plataforma, que reproduz a maioria dos arquivos de mídia, bem como DVD, CD de áudio, VCD entre outros.</description>
+    </item>
+    
+  </channel>
+</rss>

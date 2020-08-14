@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>steganografia on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/steganografia/</link>
+    <description>Recent content in steganografia on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 19 Oct 2015 21:29:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/steganografia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Esteganografia com Steghide</title>
+      <link>https://butecotecnologico.com.br/esteganografia-com-steghide/</link>
+      <pubDate>Mon, 19 Oct 2015 21:29:19 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/esteganografia-com-steghide/</guid>
+      <description>&lt;p&gt;Nesse artigo irei falar um pouco sobre esteganografia e mostrar o uso simples do Steghide.&lt;/p&gt;
+&lt;p&gt;Esteganografia (do grego &amp;ldquo;escrita escondida&amp;rdquo;) é o estudo e uso das técnicas para ocultar a existência de uma mensagem dentro de outra, uma forma de segurança por obscurantismo. Em outras palavras, esteganografia é o ramo particular da criptologia que consiste em fazer com que uma forma escrita seja camuflada em outra a fim de mascarar o seu verdadeiro sentido.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

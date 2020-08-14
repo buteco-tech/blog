@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wheelmap on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/wheelmap/</link>
+    <description>Recent content in wheelmap on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 23 Jul 2015 00:20:25 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/wheelmap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Projeto open source pretende mapear o mundo para cadeirantes</title>
+      <link>https://butecotecnologico.com.br/projeto-open-source-pretende-mapear-o-mundo-para-cadeirantes/</link>
+      <pubDate>Thu, 23 Jul 2015 00:20:25 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/projeto-open-source-pretende-mapear-o-mundo-para-cadeirantes/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/wheelmap-logo-e1435718201487.png&#34;&gt;&lt;img class=&#34;alignnone size-large wp-image-2929&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/wheelmap-logo-1024x520.png&#34; alt=&#34;wheelmap-logo&#34; width=&#34;648&#34; height=&#34;329&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Encontrar estabelecimentos acessíveis por cadeiras de rodas pode ser trabalhoso, mas um projeto open source quer mudar ao menos um pouco essa história. Chamada de WheelMap, a iniciativa é bem isso: um mapa que indica locais que primam (ou não) pela acessibilidade.&lt;/p&gt;
+&lt;p&gt;Baseado no &lt;a href=&#34;http://www.openstreetmap.org/&#34; target=&#34;_blank&#34;&gt;OpenStreetMap&lt;/a&gt;, o serviço é bastante simples e qualquer um pode colaborar. Lojas, lanchonetes, bancos e outros pontos registrados no sistema são exibidos em seus respectivos locais no mapa, e um clique sobre o ícone permite classificá-los como “acessível por cadeira de rodas”, “parcialmente acessível” ou “inacessível”.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

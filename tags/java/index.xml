@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/java/</link>
+    <description>Recent content in java on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 03 Jul 2015 12:47:11 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-14/</link>
+      <pubDate>Fri, 03 Jul 2015 12:47:11 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-14/</guid>
+      <description>Mais uma tirinha para alegrar sua sexta-feira :)</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-7/</link>
+      <pubDate>Fri, 01 May 2015 20:19:15 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-7/</guid>
+      <description>Esta tirinha é uma homenagem ao nosso colaborador Pedro :)</description>
+    </item>
+    
+  </channel>
+</rss>

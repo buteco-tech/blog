@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>google-analytics on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/google-analytics/</link>
+    <description>Recent content in google-analytics on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 23 Apr 2015 23:18:51 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/google-analytics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Usando a API do Google Analytics no Python</title>
+      <link>https://butecotecnologico.com.br/usando-a-api-do-google-analytics-no-python/</link>
+      <pubDate>Thu, 23 Apr 2015 23:18:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/usando-a-api-do-google-analytics-no-python/</guid>
+      <description>O Google Analytics permite que você avalie seu ROI de publicidade, bem como acompanhar seus sites e aplicativos em Flash, vídeo e redes sociais. É uma ferramente indispensável para aqueles que gostam de monitorar seus sites e saber informações relacionadas aos acessos. Claro que existem outras ferramentas similares, mas hoje mostrarei como buscar dados desta.</description>
+    </item>
+    
+  </channel>
+</rss>

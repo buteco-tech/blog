@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>samsung on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/samsung/</link>
+    <description>Recent content in samsung on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 13 May 2015 09:17:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/samsung/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Samsung anuncia entrada na família Arduino</title>
+      <link>https://butecotecnologico.com.br/samsung-anuncia-entrada-na-familia-arduino/</link>
+      <pubDate>Wed, 13 May 2015 09:17:43 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/samsung-anuncia-entrada-na-familia-arduino/</guid>
+      <description>A plataforma ARTIK está na categoria dos dispositivos compatíveis com Arduino, e seu foco é a Internet das Coisas. No momento existem três placas: ARTIK 1, ARTIK 5 e ARTIK 10. Todas as placas possuem processador ARM multi-core e Bluetooth Low Energy (BLE). As placas ARTIK 5 e ARTIK 10 contam também com Wi-Fi, BT, Zigbee e conexões Wirelles Multi-Thread</description>
+    </item>
+    
+  </channel>
+</rss>

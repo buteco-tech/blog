@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>certificação on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/certifica%C3%A7%C3%A3o/</link>
+    <description>Recent content in certificação on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 24 Mar 2015 00:28:50 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/certifica%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LPIC: por onde começar</title>
+      <link>https://butecotecnologico.com.br/lpic-por-onde-comecar/</link>
+      <pubDate>Tue, 24 Mar 2015 00:28:50 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lpic-por-onde-comecar/</guid>
+      <description>Primeiro, pare tudo, você está para fazer uma prova de certificação ou tem interesse, se sim .</description>
+    </item>
+    
+    <item>
+      <title>Ganhe uma Second Shot em seu exame Microsoft MCP</title>
+      <link>https://butecotecnologico.com.br/ganhe-uma-second-shot-em-seu-exame-microsoft-mcp/</link>
+      <pubDate>Wed, 07 Jan 2015 20:48:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/ganhe-uma-second-shot-em-seu-exame-microsoft-mcp/</guid>
+      <description>A Microsoft esta disponibilizando gratuitamente uma Second Shot para qualquer exame MCP (Microsoft Certified Professional) efetuado entre 5 de janeiro de 2015 e 31 de maio de 2015.</description>
+    </item>
+    
+    <item>
+      <title>Cupom de desconto para certificação Linux</title>
+      <link>https://butecotecnologico.com.br/cupom-de-desconto-para-certificacao-linux/</link>
+      <pubDate>Wed, 08 Oct 2014 15:05:30 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/cupom-de-desconto-para-certificacao-linux/</guid>
+      <description>Você já deve ter ouvido sobre os programas de certificação recentemente lançado pela Linux Fundation.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>curl on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/curl/</link>
+    <description>Recent content in curl on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 08 Jan 2015 18:21:55 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/curl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>cURL 7.40 disponível e agora com suporte ao protocolo SMB/CIFS</title>
+      <link>https://butecotecnologico.com.br/curl-7-40-disponivel-e-agora-com-suporte-ao-protocolo-smbcifs/</link>
+      <pubDate>Thu, 08 Jan 2015 18:21:55 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/curl-7-40-disponivel-e-agora-com-suporte-ao-protocolo-smbcifs/</guid>
+      <description>O cURL 7.40 foi disponibilizado hoje (08/01) com várias novidades e correções de bugs.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>steam on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/steam/</link>
+    <description>Recent content in steam on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 04 Jun 2015 23:16:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/steam/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Começa a pré-venda de Steam Controllers e Steam Machines</title>
+      <link>https://butecotecnologico.com.br/comeca-a-pre-venda-de-steam-controllers-e-steam-machines/</link>
+      <pubDate>Thu, 04 Jun 2015 23:16:04 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/comeca-a-pre-venda-de-steam-controllers-e-steam-machines/</guid>
+      <description>Anúncio do início das pre-orders de Steam Machines e Steam Controllers foi dado pela Valve.</description>
+    </item>
+    
+    <item>
+      <title>Valve disponibiliza o OpenVR SDK</title>
+      <link>https://butecotecnologico.com.br/valve-disponibiliza-o-openvr-sdk/</link>
+      <pubDate>Mon, 04 May 2015 09:06:02 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/valve-disponibiliza-o-openvr-sdk/</guid>
+      <description>O OpenVR SDK é basicamente uma camada de abstração para os desenvolvedores de jogos e aplicativos para acessar esses hardwares de forma fácil, que por sua vez possui suporte para o HTC Vive Developer Edition, SteamVR controlador e Lighthouse.</description>
+    </item>
+    
+  </channel>
+</rss>

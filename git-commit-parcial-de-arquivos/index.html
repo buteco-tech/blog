@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Git: commit parcial de arquivos &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Git: commit parcial de arquivos">
+<meta itemprop="description" content="Neste post demonstrarei uma das muitas features bacanas disponíveis no git, o commit parcial de arquivos. Esta feature permite ao usuário selecionar quais alterações de determinado arquivo devem ser commitados.">
+<meta itemprop="datePublished" content="2016-02-16T21:08:42+00:00" />
+<meta itemprop="dateModified" content="2016-02-16T21:08:42+00:00" />
+<meta itemprop="wordCount" content="582">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/Git-Logo-Black.png">
+
+
+
+<meta itemprop="keywords" content="git,git-add,git-commit," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/Git-Logo-Black.png"/>
+
+<meta name="twitter:title" content="Git: commit parcial de arquivos"/>
+<meta name="twitter:description" content="Neste post demonstrarei uma das muitas features bacanas disponíveis no git, o commit parcial de arquivos. Esta feature permite ao usuário selecionar quais alterações de determinado arquivo devem ser commitados."/>
+
+
+<meta property="og:title" content="Git: commit parcial de arquivos" />
+<meta property="og:description" content="Neste post demonstrarei uma das muitas features bacanas disponíveis no git, o commit parcial de arquivos. Esta feature permite ao usuário selecionar quais alterações de determinado arquivo devem ser commitados." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/Git-Logo-Black.png" />
+<meta property="article:published_time" content="2016-02-16T21:08:42+00:00" />
+<meta property="article:modified_time" content="2016-02-16T21:08:42+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Git: commit parcial de arquivos</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/jvanz/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://jvanz.com/images/avatar.jpg"
+           alt="José Guilherme Vanz"
+           title="José Guilherme Vanz">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/jvanz/"
+           class="author">José Guilherme Vanz</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2016-02-16T21:08:42Z">Feb 16, 2016</time>
+      &middot; 3 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/"
+     data-text="Git: commit parcial de arquivos"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/"
+     data-text="Git: commit parcial de arquivos"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/"
+     data-text="Git: commit parcial de arquivos"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/"
+     data-text="Git: commit parcial de arquivos"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/Git-Logo-Black.png"
+           alt="Git: commit parcial de arquivos">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Neste post demonstrarei uma das muitas <em>features</em> bacanas disponíveis no git, o <em>commit</em> parcial de arquivos. Esta <em>feature</em> permite ao usuário selecionar quais alterações de determinado arquivo devem ser commitados.</p>
+<p>Vamos supor que existe o seguinte arquivo em um projeto:</p>
+<script type="text/javascript" src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_c/git_sample.c"></script>
+<p>Neste novo repositório existe um único commit:</p>
+<p><a href="/images/wp-content/uploads/2016/02/partial_commit_1.png"><img class="aligncenter wp-image-4771" src="/images/wp-content/uploads/2016/02/partial_commit_1.png" alt="partial_commit_1"/></a></p>
+<p>A primeira alteração é feita:</p>
+<p><a href="/images/wp-content/uploads/2016/02/partial_commit_2.png"><img class="aligncenter wp-image-4770" src="/images/wp-content/uploads/2016/02/partial_commit_2.png" alt="partial_commit_2"/></a></p>
+<p>Suponha que um colega solicita outra alteração no mesmo arquivo. Ele/Ela pede para alterar o nome da função <code>foo()</code> para <code>xpto()</code>.
+Depois de ambas mudanças o <em>diff</em> é:</p>
+<p><a href="/images/wp-content/uploads/2016/02/partial_commit_3.png"><img class="aligncenter wp-image-4769" src="/images/wp-content/uploads/2016/02/partial_commit_3.png" alt="partial_commit_3"/></a></p>
+<p>Agora é hora de commitar as alterações. Entretanto, é necessário que cada alteração seja submetida em diferentes <em>commits</em>. Felizmente o git possui uma <em>feature</em> que nos ajuda em situações como essa. Os comandos <code>git add</code> e <code>git commit</code> permitem ao usuário selecionar quais partes do arquivos devem ser adicionadas. Isso é feito passando a opção <code>-p, &ndash;patch</code>. Em nosso exemplo, será utilizado <code>git commit</code>.</p>
+<p><a href="/images/wp-content/uploads/2016/02/partial_commit_4.png"><img class="aligncenter wp-image-4768" src="/images/wp-content/uploads/2016/02/partial_commit_4.png" alt="partial_commit_4"/></a></p>
+<p>Como pode ser visto, git mostra cada alteração realizada e pergunta ao usuário o que deve ser feita com ela. As opções são: [y,n,q,a,d,/,s,e,?].
+Para visualizar o texto de ajuda digite <code>?</code>. O seguinte texto devera ser exibido:</p>
+<samp>
+y - stage this hunk
+n - do not stage this hunk
+q - quit; do not stage this hunk or any of the remaining ones
+a - stage this hunk and all later hunks in the file
+d - do not stage this hunk or any of the later hunks in the file
+g - select a hunk to go to
+/ - search for a hunk matching the given regex
+j - leave this hunk undecided, see next undecided hunk
+J - leave this hunk undecided, see next hunk
+k - leave this hunk undecided, see previous undecided hunk
+K - leave this hunk undecided, see previous hunk
+s - split the current hunk into smaller hunks
+e - manually edit the current hunk
+? - print help
+</samp>
+<p>No exemplo, é mostrado o primeiro <em>hunk</em> de alteração do arquivo. Em nosso primeiro <em>commit</em> queremos apenas as alteração realizadas na função <code>bar()</code>, então o primeiro <em>hunk</em> deve ser ignorado. Assim, a opção <code>n</code> é a escolha certa.</p>
+<p><a href="/images/wp-content/uploads/2016/02/partial_commit_5.png"><img class="aligncenter wp-image-4767" src="/images/wp-content/uploads/2016/02/partial_commit_5.png" alt="partial_commit_5"/></a></p>
+<p>Depois disso o git mostra todas as demais alterações como se fosse um único <em>hunk,</em> então é necessário quebra-las em alterações menores. Para isso existem duas opções: <code>s</code> e <code>e</code>. A primeira faz com que o git quebre o <em>hunk</em> em partes menores. A segunda, por sua vez, permite que o usuário escolha manualmente quais linhas alteradas devem ser inclusas. Para este pequeno tutorial iremos utilizar a opção <code>s</code>. Git devera mostrar algo semelhante a isso:</p>
+<p><a href="/images/wp-content/uploads/2016/02/partial_commit_6.png"><img class="aligncenter wp-image-4766" src="/images/wp-content/uploads/2016/02/partial_commit_6.png" alt="partial_commit_6"/></a></p>
+<p>O <em>hunk</em> anterior foi quebrado em 3 partes. Então será iterado sobre todos eles perguntado ao usuário qual ação deve ser executada para cada um deles. O primeiro <em>hunk</em> criado também deve ser ignorado. O segundo <em>hunk </em>é a primeira alteração relacionada a função <code>bar()</code> e deve ser adicionado, para isso é necessário escolher a ação <code>y</code>.</p>
+<p><a href="/images/wp-content/uploads/2016/02/partial_commit_7.png"><img class="aligncenter wp-image-4765" src="/images/wp-content/uploads/2016/02/partial_commit_7.png" alt="partial_commit_7"/></a></p>
+<p>O terceiro também deve ser adicionado ao <em>commit</em>&hellip;</p>
+<p><a href="/images/wp-content/uploads/2016/02/partial_commit_8.png"><img class="aligncenter wp-image-4764" src="/images/wp-content/uploads/2016/02/partial_commit_8.png" alt="partial_commit_8"/></a></p>
+<p>Quando não existir mais <em>hunks</em> a serem selecionados, como estamos utilizando o comando <code>git commit</code>, será aberto o editor para o usuário escrever a mensagem de <em>commit</em>. Após isso, está feito:</p>
+<p><a href="/images/wp-content/uploads/2016/02/partial_commit_9.png"><img class="aligncenter wp-image-4763" src="/images/wp-content/uploads/2016/02/partial_commit_9.png" alt="partial_commit_9"/></a></p>
+<p>Agora que o primeiro <em>commit</em> contem apenas as alterações referentes a função <code>bar()</code>, as demais mudanças podem ser comitadas em um segundo commit:</p>
+<p><a href="/images/wp-content/uploads/2016/02/partial_commit_10.png"><img class="aligncenter wp-image-4762" src="/images/wp-content/uploads/2016/02/partial_commit_10.png" alt="partial_commit_10"/></a></p>
+<p>Espero que vocês tenham gostado desta dica simples. Considero escrever um <em>post</em> cobrindo todas as demais opções não citadas neste texto (e.g. seleção manual de <em>hunk</em>, entre outras). Encorajo ao leitor brincar com as demais opção disponibilizadas.</p>
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/git/" class="tag-link">git</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/git-add/" class="tag-link">git-add</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/git-commit/" class="tag-link">git-commit</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/"
+     data-text="Git: commit parcial de arquivos"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/"
+     data-text="Git: commit parcial de arquivos"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/"
+     data-text="Git: commit parcial de arquivos"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/"
+     data-text="Git: commit parcial de arquivos"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/jvanz/">
+        <img class="author-img"
+             src="https://jvanz.com/images/avatar.jpg"
+             alt="José Guilherme Vanz">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/jvanz/">José Guilherme Vanz</a>
+      </h2>
+      <span class="small text-muted">Software Engineer</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

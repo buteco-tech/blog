@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bbswitch on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/bbswitch/</link>
+    <description>Recent content in bbswitch on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 23 Feb 2015 00:59:15 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/bbswitch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Instalando driver NVIDIA Bumblebee no openSUSE</title>
+      <link>https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/</link>
+      <pubDate>Mon, 23 Feb 2015 00:59:15 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/</guid>
+      <description>A tecnologia Optimus da NVIDIA otimiza o seu notebook de forma inteligente, oferecendo o desempenho gráfico impressionante que você precisa, quando você precisa, e sempre aumentando o tempo de vida da bateria para que você aproveite por mais tempo.</description>
+    </item>
+    
+  </channel>
+</rss>

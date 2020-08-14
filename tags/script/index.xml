@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>script on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/script/</link>
+    <description>Recent content in script on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 14 Jan 2015 00:05:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/script/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hands on: Sockets em Python</title>
+      <link>https://butecotecnologico.com.br/hands-on-sockets-em-python/</link>
+      <pubDate>Wed, 14 Jan 2015 00:05:04 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/hands-on-sockets-em-python/</guid>
+      <description>Muitos são os usos dos sockets atualmente e vários exemplos existem através de toda a internet em várias linguagens de programação diferentes.</description>
+    </item>
+    
+    <item>
+      <title>Tcl/Expect: Automatização de comandos interativos no Linux</title>
+      <link>https://butecotecnologico.com.br/tclexpect-automatizacao-de-comandos-interativos-no-linux/</link>
+      <pubDate>Tue, 07 Oct 2014 00:23:49 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tclexpect-automatizacao-de-comandos-interativos-no-linux/</guid>
+      <description>Olá pessoal, neste artigo será abordado a automatização de comandos com o Tcl/expect.</description>
+    </item>
+    
+  </channel>
+</rss>

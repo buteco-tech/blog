@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cakephp on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/cakephp/</link>
+    <description>Recent content in cakephp on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Sun, 12 Oct 2014 18:49:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/cakephp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gerador de sistemas em PHP usando apenas SQL</title>
+      <link>https://butecotecnologico.com.br/gerador-de-sistemas-em-php-usando-apenas-sql/</link>
+      <pubDate>Sun, 12 Oct 2014 18:49:38 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gerador-de-sistemas-em-php-usando-apenas-sql/</guid>
+      <description>Fala pessoal, a alguns dias achei um site muito interessante que gostaria de compartilhar, o Rizer, ele é um projeto gratuito que a partir do SQL dump do banco gera o projeto final do sistema, achei uma ferramenta muito boa para quem está começando no PHP, ele suporta 3 frameworks, o CodeIgniter, Laravel e CakePHP.</description>
+    </item>
+    
+  </channel>
+</rss>

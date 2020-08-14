@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NAS on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/nas/</link>
+    <description>Recent content in NAS on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 04 Jun 2020 08:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/nas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>E se você perdesse acesso a suas contas?</title>
+      <link>https://butecotecnologico.com.br/e-se-voce-perdesse-acesso-a-suas-contas/</link>
+      <pubDate>Thu, 04 Jun 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/e-se-voce-perdesse-acesso-a-suas-contas/</guid>
+      <description>O que você faria se perdesse acesso a sua conta de e-mail?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>opengl on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/opengl/</link>
+    <description>Recent content in opengl on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 07 Apr 2016 13:04:15 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/opengl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mesa muito próximo do OpenGL 4.2 e 4.3</title>
+      <link>https://butecotecnologico.com.br/mesa-muito-proximo-do-opengl-4-2-e-4-3/</link>
+      <pubDate>Thu, 07 Apr 2016 13:04:15 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/mesa-muito-proximo-do-opengl-4-2-e-4-3/</guid>
+      <description>&lt;p&gt;Há muito tempo que esperamos ter um bom suporte a jogos no Linux, e em partes isso já é realidade com a Steam e com os muitos jogos que já foram portados. Ainda assim, muito dos jogos AAA ainda precisam de um driver proprietário para poderem ser executados, mas isto pode mudar em breve.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mais correções no RC3 do Mesa 11.0</title>
+      <link>https://butecotecnologico.com.br/mais-correcoes-no-rc3-do-mesa-11-0/</link>
+      <pubDate>Mon, 07 Sep 2015 20:35:16 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/mais-correcoes-no-rc3-do-mesa-11-0/</guid>
+      <description>&lt;p&gt;O terceiro Release Candidate do Mesa 11.0 está disponível. Esta nova versão traz várias correções para os drivers R600g e RadeonSI, Nouveau NV50, Freedreno, atualizações no driver i965 e uma série de outras coisas.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Finalmente: Mesa ganha suporte a OpenGL 4.0, e está proximo do 4.1 e 4.2</title>
+      <link>https://butecotecnologico.com.br/finalmente-mesa-ganha-suporte-a-opengl-4-0-e-esta-proximo-do-4-1-e-4-2/</link>
+      <pubDate>Thu, 23 Jul 2015 20:57:35 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/finalmente-mesa-ganha-suporte-a-opengl-4-0-e-esta-proximo-do-4-1-e-4-2/</guid>
+      <description>&lt;p&gt;Depois de cinco anos da especificação do OpenGL 4.0 ser introduzido, o projeto open source Mesa 3D finalmente ganhou suporte a todas as extensões necessárias, sendo que existem patches pendentes que estão implementando as extensões das especificações 4.1 e 4.2. O desenvolvedor responsável pelos patches da versão 4.0 do Mesa foi o David Airlie, da Red Hat.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>led on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/led/</link>
+    <description>Recent content in led on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 13 Jan 2015 08:00:35 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/led/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Controlando um LED pelo Arduino</title>
+      <link>https://butecotecnologico.com.br/controlando-um-led-pelo-arduino/</link>
+      <pubDate>Tue, 13 Jan 2015 08:00:35 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/controlando-um-led-pelo-arduino/</guid>
+      <description>Veja como controlar um LED pelo Arduino. Iremos fazer duas operações básicas, fazer o LED piscar e alterar sua intensidade.</description>
+    </item>
+    
+  </channel>
+</rss>

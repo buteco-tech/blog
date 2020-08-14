@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>termin on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/termin/</link>
+    <description>Recent content in termin on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 17 Feb 2015 20:50:57 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/termin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Entendendo Pipe e FIFO (parte 2)</title>
+      <link>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-2/</link>
+      <pubDate>Tue, 17 Feb 2015 20:50:57 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-2/</guid>
+      <description>Esta é a segunda parte da postagem sobre Pipes e Fifos aqui do blog.</description>
+    </item>
+    
+  </channel>
+</rss>

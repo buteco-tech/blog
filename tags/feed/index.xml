@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>feed on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/feed/</link>
+    <description>Recent content in feed on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 01 Jul 2015 22:55:51 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/feed/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Siga nosso canal no Pushbullet</title>
+      <link>https://butecotecnologico.com.br/siga-nosso-canal-no-pushbullet/</link>
+      <pubDate>Wed, 01 Jul 2015 22:55:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/siga-nosso-canal-no-pushbullet/</guid>
+      <description>Se você possui o Pushbullet, convidamos você a seguir o nosso canal (@buteco) e ficar por dentro de todos os nossos novos artigos.</description>
+    </item>
+    
+  </channel>
+</rss>

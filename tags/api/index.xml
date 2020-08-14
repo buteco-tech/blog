@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>api on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/api/</link>
+    <description>Recent content in api on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 02 Nov 2015 19:56:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gerando backtrace em C/C&#43;&#43; no Linux</title>
+      <link>https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/</link>
+      <pubDate>Mon, 02 Nov 2015 19:56:42 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/</guid>
+      <description>&lt;p&gt;Olá pessoal, creio que muitos aqui já se depararam com algum &lt;em&gt;crash&lt;/em&gt; em seus programas em C/C++, e gostariam de poder ver a pilha de chamadas, ou &lt;em&gt;stacktrace/backtrace&lt;/em&gt;, ao menos no ambiente de testes. Pois bem, a boa notícia é que no Linux existe a possibilidade de mostrar qual o ultimo método chamado antes de receber um &lt;em&gt;crash&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Utilizando a API REST do Docker com Python</title>
+      <link>https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/</link>
+      <pubDate>Tue, 27 Oct 2015 08:31:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/</guid>
+      <description>&lt;p&gt;O Docker é uma plataforma para construir e executar aplicações distribuídas. Com ele é possível executar um &lt;em&gt;bash&lt;/em&gt; em um ambiente Debian mesmo estando dentro um Fedora, por exemplo. Seu funcionamento se assemelha ao de uma máquina virtual, mas as aplicações executadas no Docker estão de fato sendo executados no sistema &lt;em&gt;host&lt;/em&gt;, ou seja, não existe a camada de emulação.&lt;/p&gt;
+&lt;p&gt;Isso se deve à utilização de &lt;em&gt;templates&lt;/em&gt; de imagens do Debian (existem imagens de sistemas inteiros, como Debian, Ubuntu, e também de aplicações, como Apache, MySQL e etc). Para mais informações sobre o Docker, basta verificar a &lt;a href=&#34;https://www.docker.com/&#34; target=&#34;_blank&#34;&gt;página&lt;/a&gt; do projeto.&lt;/p&gt;
+&lt;p&gt;Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifique como instalá-lo em sua distribuição. Após instalado, você precisará iniciá-lo através do &lt;em&gt;docker daemon&lt;/em&gt; para receber requisições HTTP, além das requisições por &lt;em&gt;socket&lt;/em&gt; (este é utilizado pelo &lt;em&gt;docker client&lt;/em&gt;). Antes de iniciá-lo com estas opções, você precisará ter certeza que o mesmo não esteja executando. Para tal, basta executar:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Usando a API do Google Analytics no Python</title>
+      <link>https://butecotecnologico.com.br/usando-a-api-do-google-analytics-no-python/</link>
+      <pubDate>Thu, 23 Apr 2015 23:18:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/usando-a-api-do-google-analytics-no-python/</guid>
+      <description>O Google Analytics permite que você avalie seu ROI de publicidade, bem como acompanhar seus sites e aplicativos em Flash, vídeo e redes sociais. É uma ferramente indispensável para aqueles que gostam de monitorar seus sites e saber informações relacionadas aos acessos. Claro que existem outras ferramentas similares, mas hoje mostrarei como buscar dados desta.</description>
+    </item>
+    
+    <item>
+      <title>Conhecendo Pipe e FIFO (parte final)</title>
+      <link>https://butecotecnologico.com.br/conhecendo-pipe-e-fifo-parte-final/</link>
+      <pubDate>Mon, 16 Mar 2015 07:40:21 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conhecendo-pipe-e-fifo-parte-final/</guid>
+      <description>Última parte da sequencia de artigos sobre pipes e fifos. Nesta parte, serão explicados como funcionam os fifos e como se diferenciam dos pipes.</description>
+    </item>
+    
+    <item>
+      <title>Node.js v0.12.0 já está disponível</title>
+      <link>https://butecotecnologico.com.br/node-js-v0-12-0-ja-esta-disponivel/</link>
+      <pubDate>Mon, 09 Feb 2015 12:30:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/node-js-v0-12-0-ja-esta-disponivel/</guid>
+      <description>O Node.js é uma plataforma para desenvolvimento ágil de aplicações Web escaláveis, constuida sobre o V8 (Chrome&amp;rsquo;s JavaScript runtime). O V8 é a uma engine JavaScript de código aberto desenvolvida pelo Google e utilizado no Chrome.
+O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de 2014.</description>
+    </item>
+    
+    <item>
+      <title>Introdução a API do Youtube com jQuery</title>
+      <link>https://butecotecnologico.com.br/introducao-a-api-do-youtube-com-jquery/</link>
+      <pubDate>Mon, 26 Jan 2015 08:00:48 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/introducao-a-api-do-youtube-com-jquery/</guid>
+      <description>Veremos basicamente neste artigo como utilizar a API do Youtube, caso você não saiba, API quer dizer Aplication Programm Interface, ou interface de programação de aplicações, em outras palavras é uma camada de abstração que permite ao programador fazer chamadas a serviços.</description>
+    </item>
+    
+  </channel>
+</rss>

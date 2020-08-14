@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Geração de MD5 utilizando C com OpenSSL e Python &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Geração de MD5 utilizando C com OpenSSL e Python">
+<meta itemprop="description" content="Esta postagem mostra como gerar MD5 via código C (utilizando a biblioteca OpenSSL) e com Python (utilizando a biblioteca hashlib).">
+<meta itemprop="datePublished" content="2015-03-10T21:19:49+00:00" />
+<meta itemprop="dateModified" content="2015-03-10T21:19:49+00:00" />
+<meta itemprop="wordCount" content="585">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/Sem-t%C3%ADtulo-1.png">
+
+
+
+<meta itemprop="keywords" content="c,linux,python," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/Sem-t%C3%ADtulo-1.png"/>
+
+<meta name="twitter:title" content="Geração de MD5 utilizando C com OpenSSL e Python"/>
+<meta name="twitter:description" content="Esta postagem mostra como gerar MD5 via código C (utilizando a biblioteca OpenSSL) e com Python (utilizando a biblioteca hashlib)."/>
+
+
+<meta property="og:title" content="Geração de MD5 utilizando C com OpenSSL e Python" />
+<meta property="og:description" content="Esta postagem mostra como gerar MD5 via código C (utilizando a biblioteca OpenSSL) e com Python (utilizando a biblioteca hashlib)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/Sem-t%C3%ADtulo-1.png" />
+<meta property="article:published_time" content="2015-03-10T21:19:49+00:00" />
+<meta property="article:modified_time" content="2015-03-10T21:19:49+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Geração de MD5 utilizando C com OpenSSL e Python</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+           alt="Marcos Paulo de Souza"
+           title="Marcos Paulo de Souza">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+           class="author">Marcos Paulo de Souza</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2015-03-10T21:19:49Z">Mar 10, 2015</time>
+      &middot; 3 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/"
+     data-text="Geração de MD5 utilizando C com OpenSSL e Python"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/"
+     data-text="Geração de MD5 utilizando C com OpenSSL e Python"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/"
+     data-text="Geração de MD5 utilizando C com OpenSSL e Python"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/"
+     data-text="Geração de MD5 utilizando C com OpenSSL e Python"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/Sem-t%C3%ADtulo-1.png"
+           alt="Geração de MD5 utilizando C com OpenSSL e Python">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Atualmente o MD5 é utilizado para muitas finalidades, sendo uma delas a verificação da integridade de arquivos. Para tal é possível utilizar o binário md5sum, presente no pacote coreutils. Mas algumas vezes é necessário fazer esta verificação dentro de um programa, podendo é claro chamar o md5sum de dentro do programa, mas este problema pode ser melhor resolvido utilizando a biblioteca OpenSSL, que contém funções para geração de MD5. Segue abaixo um exemplo utilizando a linguagem C:</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_c/md5/md5_generator.c" type="text/javascript"></script>
+<p>Segue agora uma explicação sobre o código acima:</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_c/md5/md5_generator.c?slice=8:18&amp;lang=C" type="text/javascript"></script>
+<p>Verificação de parâmetros. É necessário passar um parâmetro para o programa, sendo que este parâmetro precisa ser o caminho para um arquivo. Após checar o parâmetro, o arquivo é aberto para leitura.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_c/md5/md5_generator.c?slice=20:21&amp;lang=C" type="text/javascript"></script>
+<p>O código cria uma variável de &ldquo;contexto de MD5&rdquo; e o inicia. Esta variável irá conter todo o conteúdo do arquivo passado como parâmetro para então poder gerar o MD5.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_c/md5/md5_generator.c?slice=23:29&amp;lang=C" type="text/javascript"></script>
+<p>Nesta parte do código o arquivo então é lido, e a cada 1024 bytes lidos o contexto é atualizado com o conteúdo do arquivo. A chamada <em>fread</em> é quem faz esta leitura, e a cada leitura a variável buf recebe os 1024 bytes, e é com a variável que o contexto é atualizado.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_c/md5/md5_generator.c?slice=31:33&amp;lang=C" type="text/javascript"></script>
+<p>Após ler todo o conteúdo do arquivo, nós então podemos fechá-lo. A chamada MD5_Final recebe um contexto e gera o MD5. Este MD5 gerado então é colocando na variável <em>digest</em>.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_c/md5/md5_generator.c?slice=36:40&amp;lang=C" type="text/javascript"></script>
+<p>Nesta parte nós convertemos o <em>digest</em>, que é um <em>unsigned char</em> para um &ldquo;signed char&rdquo;. Para tal, precisamos pegar a forma hexadecimal de cada byte do <em>digest</em> e alocar dentro de <em>converted</em>. Como a representação de cada bytes em hexadecimal tem o tamanho de dois bytes, reservar dois bytes do &ldquo;converted&rdquo; para cada bytes lido do &ldquo;digest&rdquo;. E após este, o MD5 gerado é impresso.</p>
+<p>Antes de compilarmos o pacote, é necessário ter o pacote com a biblioteca do OpenSSL. Para instalar em distribuições derivadas do Red Hat, execute:
+<em>sudo yum install openssl-devel</em></p>
+<p>Já para instalar em distribuições derivadas do Debian, execute:
+<em>sudo apt-get install libssl-dev</em></p>
+<p>Tendo instalado o pacote, vamos compilar o programa com o GCC e linkar com a biblioteca crypto do OpenSSL:
+<strong>gcc md5_generator.c -o md5_generator -lcrypto</strong></p>
+<p>Após compilador, vamos fazer um teste utilizando o programa compilador e comprar a saída do programa md5sum:
+<strong>[marcos@localhost md5]$ ./md5_generator md5_generator.c
+354218ad04939339944ce5994504d6ad md5_generator.c
+[marcos@localhost md5]$ md5sum md5_generator.c
+354218ad04939339944ce5994504d6ad md5_generator.c
+</strong></p>
+<p>Após executar o programa compilado e o md5sum no arquivo fonte do programa, verificamos que ambos mostram o mesmo valor.</p>
+<p>Agora vejamos como fazer o MD5 com o Python:</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/md5/md5_generator.py" type="text/javascript"></script>
+<p>Como já era esperado, o código em python parece mais simples do que a versão em C. Vejamos agora uma breve explicação sobre este código:</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/md5/md5_generator.py?slice=1:13" type="text/javascript"></script>
+<p>Esta parte do código importa o módulo hashlib (necessário para gerar o MD5), valida o parâmetro do programa, e abre o arquivo. Estas mesmas verificações são feitas no código em C.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/md5/md5_generator.py?slice=15:18" type="text/javascript"></script>
+<p>Aqui é então criada um objeto md5, que seria equivalente ao MD5_Context do C, e então o arquivo do parâmetro vai sendo lido e o md5 é atualizado.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/md5/md5_generator.py?slice=20:21" type="text/javascript"></script>
+<p>O arquivo é então fechado e o &ldquo;digest&rdquo; é então impressora já na forma em hexadecimal.</p>
+<p>Podemos testar novamente este programa fazendo o MD5 do próprio script em python:
+<strong>[marcos@localhost md5]$ python md5_generator.py md5_generator.py
+3c7a3dc1955f630924c555d5f5331528 md5_generator.py
+[marcos@localhost md5]$ md5sum md5_generator.py
+3c7a3dc1955f630924c555d5f5331528 md5_generator.py</strong></p>
+<p>Espero que tenham gostado do artigo, e que ele seja útil se acaso precisarem deste tipo de recurso. Não se esqueça de se inscrever nas redes sociais e no nosso feed para saber quando um novo artigo é postado. Até mais!</p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/c/" class="tag-link">c</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/python/" class="tag-link">python</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/"
+     data-text="Geração de MD5 utilizando C com OpenSSL e Python"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/"
+     data-text="Geração de MD5 utilizando C com OpenSSL e Python"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/"
+     data-text="Geração de MD5 utilizando C com OpenSSL e Python"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/"
+     data-text="Geração de MD5 utilizando C com OpenSSL e Python"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/mpdesouza/">
+        <img class="author-img"
+             src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+             alt="Marcos Paulo de Souza">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/">Marcos Paulo de Souza</a>
+      </h2>
+      <span class="small text-muted">Software Engineer</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>amd on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/amd/</link>
+    <description>Recent content in amd on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 29 Jun 2015 23:33:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/amd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rumores sobre a Microsoft comprar a AMD</title>
+      <link>https://butecotecnologico.com.br/rumores-sobre-a-microsoft-comprar-a-amd/</link>
+      <pubDate>Mon, 29 Jun 2015 23:33:30 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/rumores-sobre-a-microsoft-comprar-a-amd/</guid>
+      <description>&lt;p&gt;Na sequência de um relatório recente sobre a AMD ser dividida ou potencialmente vender suas unidades de negócio, existe um novo rumor sobre a Microsoft estar de olho na AMD.&lt;/p&gt;
+&lt;p&gt;De acordo com &lt;a href=&#34;http://www.kitguru.net/components/anton-shilov/microsoft-is-interested-to-buy-advanced-micro-devices-source/&#34; target=&#34;_blank&#34;&gt;relatório de hoje do KitGuru&lt;/a&gt;, um site aparentemente confiável focado em Windows, a Microsoft tem interesse em comprar a AMD. O interesse primário da Microsoft é sobre os chips do Xbox e divisão de games, mas também é possível que eles possam utilizar os chips da AMD para futuros tablets Surface, em Smartphones e outros.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

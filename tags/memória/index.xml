@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>memória on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/mem%C3%B3ria/</link>
+    <description>Recent content in memória on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 23 Jul 2015 08:39:33 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/mem%C3%B3ria/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adicionando Swap ao CentOS, Ubuntu e derivados</title>
+      <link>https://butecotecnologico.com.br/adicionando-swap-ao-centos-ubuntu-e-derivados/</link>
+      <pubDate>Thu, 23 Jul 2015 08:39:33 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/adicionando-swap-ao-centos-ubuntu-e-derivados/</guid>
+      <description>&lt;p&gt;Para você que acabou de criar a sua primeira VM no Digital Ocean e pegou logo de cara a de 512 de RAM, você vai se ver no aperto dependendo da aplicação que colocar para executar nela. Para solucionar possíveis problemas de falta de memória vamos adicionar Swap a esta máquina tão simplória.&lt;/p&gt;
+&lt;p&gt;Aplicações simples como o MySQL e o Jenkins rodando nessas máquinas poder gerar alguma dor de cabeça caso você não identifique que o problema é falta de memória. Por exemplo, no meu caso o Jenkins parava a execução dos testes no meio, pois recebia um SIGKILL de alguém, provavelmente do S.O. O mais estranho é que o Jenkins continuava executando, apenas parava o Job que estava em execução. A solução foi bem simples, adicionar uma Swap, já que não queríamos aumentar os valores com VMs do DO.&lt;/p&gt;
+&lt;p&gt;O tutorial de hoje é baseado no CentOS e no Ubuntu. Fiz a mesma configuração em duas VMs distintas. A maioria das distros suportam os comandos e sistemas de arquivos aqui mencionados.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

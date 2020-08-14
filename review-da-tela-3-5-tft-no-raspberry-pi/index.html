@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Review da tela 3.5 TFT no Raspberry Pi! &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Review da tela 3.5 TFT no Raspberry Pi!">
+<meta itemprop="description" content="Olá pessoal, neste artigo iremos mostrar como instalar a tela TFT 3.5&rdquo;, com suporte a caneta, no Raspberry Pi. Utilizaremos a distro Raspbian Wheezy, baseada no Debian e indicada pela Raspberry Foundation, e um Raspberry Pi modelo B. Se você deseja instalar a tela em outra distribuição, basta verificar quais arquivos de configuração se equiparam aos utilizados no Raspbian.
+Após instalação da tela, será feito um review falando de sua qualidade e se de fato vale comprar tal acessório.">
+<meta itemprop="datePublished" content="2015-11-11T12:43:20+00:00" />
+<meta itemprop="dateModified" content="2015-11-11T12:43:20+00:00" />
+<meta itemprop="wordCount" content="865">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/index.png">
+
+
+
+<meta itemprop="keywords" content="display,hardware,raspberrypi,tft," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/index.png"/>
+
+<meta name="twitter:title" content="Review da tela 3.5 TFT no Raspberry Pi!"/>
+<meta name="twitter:description" content="Olá pessoal, neste artigo iremos mostrar como instalar a tela TFT 3.5&rdquo;, com suporte a caneta, no Raspberry Pi. Utilizaremos a distro Raspbian Wheezy, baseada no Debian e indicada pela Raspberry Foundation, e um Raspberry Pi modelo B. Se você deseja instalar a tela em outra distribuição, basta verificar quais arquivos de configuração se equiparam aos utilizados no Raspbian.
+Após instalação da tela, será feito um review falando de sua qualidade e se de fato vale comprar tal acessório."/>
+
+
+<meta property="og:title" content="Review da tela 3.5 TFT no Raspberry Pi!" />
+<meta property="og:description" content="Olá pessoal, neste artigo iremos mostrar como instalar a tela TFT 3.5&rdquo;, com suporte a caneta, no Raspberry Pi. Utilizaremos a distro Raspbian Wheezy, baseada no Debian e indicada pela Raspberry Foundation, e um Raspberry Pi modelo B. Se você deseja instalar a tela em outra distribuição, basta verificar quais arquivos de configuração se equiparam aos utilizados no Raspbian.
+Após instalação da tela, será feito um review falando de sua qualidade e se de fato vale comprar tal acessório." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/index.png" />
+<meta property="article:published_time" content="2015-11-11T12:43:20+00:00" />
+<meta property="article:modified_time" content="2015-11-11T12:43:20+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Review da tela 3.5 TFT no Raspberry Pi!</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+           alt="Marcos Paulo de Souza"
+           title="Marcos Paulo de Souza">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+           class="author">Marcos Paulo de Souza</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2015-11-11T12:43:20Z">Nov 11, 2015</time>
+      &middot; 5 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/"
+     data-text="Review da tela 3.5 TFT no Raspberry Pi!"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/"
+     data-text="Review da tela 3.5 TFT no Raspberry Pi!"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/"
+     data-text="Review da tela 3.5 TFT no Raspberry Pi!"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/"
+     data-text="Review da tela 3.5 TFT no Raspberry Pi!"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/index.png"
+           alt="Review da tela 3.5 TFT no Raspberry Pi!">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Olá pessoal, neste artigo iremos mostrar como instalar a tela TFT 3.5&rdquo;, com suporte a caneta, no Raspberry Pi. Utilizaremos a distro Raspbian Wheezy, baseada no Debian e indicada pela Raspberry Foundation, e um Raspberry Pi modelo B. Se você deseja instalar a tela em outra distribuição, basta verificar quais arquivos de configuração se equiparam aos utilizados no Raspbian.</p>
+<p>Após instalação da tela, será feito um review falando de sua qualidade e se de fato vale comprar tal acessório.</p>
+<p>O Display LCD TFT Touch 3.5&rdquo; do Raspberry Pi foi fornecido pela <a href="http://www.filipeflop.com/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoOpenSource" target="_blank">FilipeFlop</a> e você pode <a href="http://www.filipeflop.com/pd-24ca21-display-lcd-tft-touch-3-5-raspberry-pi.html?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoOpenSource" target="_blank">comprá-lo aqui</a>.</p>
+<p>A imagem abaixo mostra um Raspberry Pi B com a tela já instalada, porém não configurada:</p>
+<p><a href="/images/wp-content/uploads/2015/10/20151030_073103.jpg"><img class="alignnone size-full wp-image-3941" src="/images/wp-content/uploads/2015/10/20151030_073103.jpg" alt="20151030_073103" width="2560" height="1920" /></a></p>
+<p>Para configurar o dispositivo teremos de instalar alguns pacotes, e configurar alguns arquivos, mas nada complicado. Para a configuração destes arquivos no Raspberry, utilizarei o nano, pois já vem pré instalado no Raspbian, mas se você tem mais intimidade com o VIM, pode utilizá-lo sem problemas, após instalar.</p>
+<p>Para iniciar o tutorial, você pode utilizar o cabo HDMI em uma TV e utilizar a interface gráfica do Raspbian, ou então acessar o dispositivo por SSH, se este tiver um cabo de rede plugado nele. Para descobrir o IP do seu Raspberry, basta executar o comando <code>arp-scan</code> de uma máquina que está na mesma rede:</p>
+<pre><code class="bash">
+sudo arp-scan --localnet
+</code></pre>
+<p>Uma informação semelhante a esta deverá ser mostrada:</p>
+<pre><code class="bash">
+192.168.1.18	b8:27:eb:fc:bd:c3	Raspberry Pi Foundation
+</code></pre>
+<p>Então basta conectar no IP com SSH, sendo o que o usuário é <strong>pi</strong> e a senha é <strong>raspberry</strong>:</p>
+<pre><code class="bash">
+ssh pi@&amp;amp;amp;lt;ip do seu rasp&amp;amp;amp;gt;
+</code></pre>
+<p>Antes de começar, encaixe a tela nos pinos GPIO do Raspberry da seguinte forma:
+<a href="/images/wp-content/uploads/2015/10/20151030_200533.jpg"><img class="alignnone size-full wp-image-3955" src="/images/wp-content/uploads/2015/10/20151030_200533.jpg" alt="20151030_200533" width="2560" height="1920" /></a></p>
+<p>Primeiramente, vamos atualizar o Raspbian:</p>
+<pre><code class="bash">
+sudo apt-get update; sudo apt-get upgrade -y
+</code></pre>
+<p>Após o fim do comando, reinicie o dispositivo:</p>
+<pre><code class="bash">
+sudo reboot
+</code></pre>
+<p>Depois do reboot, edite o arquivo /boot/config.txt:</p>
+<pre><code class="bash">
+sudo nano /boot/config.txt
+</code></pre>
+<p>e então adicionar a seguinte linha no fim do arquivo:</p>
+<pre><code class="bash">
+dtoverlay=piscreen,speed=16000000,rotate=90
+</code></pre>
+<p>O próximo passo será redirecionar o <em>framebuffer</em>, responsável por mostrar a imagem na tela do dispositivo, e fazer a calibração da tela para utilização da caneta. Primeiro, vamos editar o arquivo para desabilitar o <em>framebuffer</em> do HDMI:</p>
+<pre><code class="bash">
+sudo nano /usr/share/X11/xorg.conf.d/99-fbturbo.conf
+</code></pre>
+<p>Dentro do arquivo encontre a linha <strong>Option “fbdev” “/dev/fb0″</strong> e comente o comando colocando um <strong>#</strong> no inicio da linha, que deverá ficar assim: <strong>#Option “fbdev” “/dev/fb0″</strong></p>
+<p>Antes de compilar/instalar o calibrador, precisamos primeiro baixar as suas dependências. Para fazer o download das dependências dos repositórios do Raspbian, basta executar o comando abaixo:</p>
+<pre><code class="bash">
+sudo apt-get install libtool libx11-dev xinput autoconf libx11-dev libxi-dev x11proto-input-dev -y
+</code></pre>
+<p>Com as dependências instaladas, podemos então baixar o código do calibrador com o git, compilar e instala-lo:</p>
+<pre><code class="bash">
+cd
+git clone https://github.com/tias/xinput_calibrator
+cd xinput_calibrator/
+./autogen.sh
+make
+sudo make install
+</code></pre>
+<p>Com o software instalado, vamos agora ao <em>script</em> de calibração:</p>
+<pre><code class="bash">
+cd
+wget http://ozzmaker.com/piscreen/xinput_calibrator_pointercal.sh
+sudo mv ~/xinput_calibrator_pointercal.sh /etc/X11/Xsession.d/xinput_calibrator_pointercal.sh
+</code></pre>
+<p>Os comandos acima irão baixar o <em>script</em> de calibração e copiá-lo para o diretório onde será chamado pelo <em>autostart</em> do Raspbian. Para alterar o <em>autostart</em>, edite o arquivo:</p>
+<pre><code class="bash">
+sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+</code></pre>
+<p>e adicione a linha abaixo no final do arquivo:</p>
+<pre><code class="bash">
+sudo /bin/sh /etc/X11/Xsession.d/xinput_calibrator_pointercal.sh
+</code></pre>
+<p>Neste ponto, você já pode testar o <em>display</em> com o comando abaixo:</p>
+<pre><code class="bash">
+FRAMEBUFFER=/dev/fb1 startx
+</code></pre>
+<p>O comando acima reinicia o <em>Window Manager</em>, mas agora trocando o <em>framebuffer</em> para o <em>display</em>. Após alguns segundos a imagem que estava no seu HDMI agora aparece no <em>display</em>:
+<a href="/images/wp-content/uploads/2015/10/20151030_200332.jpg"><img class="alignnone size-full wp-image-3967" src="/images/wp-content/uploads/2015/10/20151030_200332.jpg" alt="20151030_200332" width="2560" height="1920" /></a></p>
+<p>Para fazer com que o <em>display</em> seja carregado ao ligar o Raspberry são necessários algumas outras alterações. Primeiro vamos alterar o inittab:</p>
+<pre><code class="bash">
+sudo nano /etc/inittab
+</code></pre>
+<p>Comente a linha <strong>1:2345:respawn:/sbin/getty &ndash;noclear 38400 tty1</strong>, adicionando um <strong>#</strong> na frente da linha, e adicione outra linha, conforme abaixo:</p>
+<pre><code class="bash">
+#1:2345:respawn:/sbin/getty --noclear 38400 tty1
+1:2345:respawn:/bin/login -f pi tty1 /dev/tty1 2&amp;amp;amp;gt;&amp;amp;amp;amp;1
+</code></pre>
+<p>Agora vamos editar o arquivo <strong>/etc/rc.local</strong> e adicionar a linha que inicia o <em>startx</em> com o <em>framebuffer</em> do <em>display</em>. O arquivo ficará como abaixo:</p>
+<pre><code class="bash">
+#
+# By default this script does nothing.
+
+# Print the IP address
+_IP=$(hostname -I) || true
+if [ &quot;$_IP&quot; ]; then
+  printf &quot;My IP address is %sn&quot; &quot;$_IP&quot;
+fi
+su -l pi -c “env FRAMEBUFFER=/dev/fb1 startx &amp;amp;amp;amp;”
+exit 0
+</code></pre>
+<p>Agora basta reiniciar o dispositivo novamente com o comando:</p>
+<pre><code class="bash">
+sudo reboot
+</code></pre>
+<p>Após reiniciado, você verá a tela de calibração. Estando calibrado, ele abre a tela do Raspbian na tela:
+<a href="/images/wp-content/uploads/2015/10/20151110_000803.jpg"><img class="alignnone size-full wp-image-4046" src="/images/wp-content/uploads/2015/10/20151110_000803.jpg" alt="20151110_000803" width="2560" height="1920" /></a></p>
+<p>Para utilizar o seu Raspbian com a caneta, você pode instalar um teclado virtual:</p>
+<pre><code class="bash">
+sudo apt-get install matchbox-keyboard
+</code></pre>
+<p>E para acessar o teclado, basta ir em Menu/Acessórios/Keyboard.</p>
+<p> </p>
+<p><strong>Review</strong></p>
+<p>Após fazer a calibragem inicial, pode-se notar que a tela funciona muito bem. Não é preciso muita força no &ldquo;clique&rdquo; para acessar os menus do Raspbian por exemplo. A tela funciona tanto com o dedo como com a caneta que vem com ela. Se você deseja fazer algum produto com o Raspberry, ou apenas gosta, não precisa de uma TV nele, esta tela é uma boa pedida. Mas, se você só usa o Raspberry para jogar emuladores, ou até como um desktop, então a tela não será muito uso para você.</p>
+<p>Espero que todos tenham gostado! Esse tipo de <em>gadget</em> é bem interessante, pois nos permite ver aplicações diferentes de placas do estilo da Raspberry e aplicações diferentes daquelas que estamos acostumados. Não esqueça de se inscrever nas nossas redes sociais para ficar por dentro dos próximos posts!</p>
+<p>Até mais!</p>
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/display/" class="tag-link">display</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/hardware/" class="tag-link">hardware</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/raspberrypi/" class="tag-link">raspberrypi</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/tft/" class="tag-link">tft</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/"
+     data-text="Review da tela 3.5 TFT no Raspberry Pi!"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/"
+     data-text="Review da tela 3.5 TFT no Raspberry Pi!"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/"
+     data-text="Review da tela 3.5 TFT no Raspberry Pi!"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/"
+     data-text="Review da tela 3.5 TFT no Raspberry Pi!"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/mpdesouza/">
+        <img class="author-img"
+             src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+             alt="Marcos Paulo de Souza">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/">Marcos Paulo de Souza</a>
+      </h2>
+      <span class="small text-muted">Software Engineer</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

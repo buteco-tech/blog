@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>testes on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/testes/</link>
+    <description>Recent content in testes on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 19 May 2016 00:43:51 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/testes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Efetuando teste de carga com o Locust</title>
+      <link>https://butecotecnologico.com.br/efetuando-teste-de-carga-com-o-locust/</link>
+      <pubDate>Thu, 19 May 2016 00:43:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/efetuando-teste-de-carga-com-o-locust/</guid>
+      <description>&lt;p&gt;Os testes de carga consistem em colocar uma demanda em um sistema de software ou dispositivo e medir a sua resposta. Este tipo de teste é realizado para determinar o comportamento de um sistema sob condições normais e picos de carga. Ela ajuda a identificar a capacidade máxima de operação de uma aplicação, bem como os gargalos e determinar qual elemento está causando lentidão.&lt;/p&gt;
+&lt;p&gt;Uma das ferramentas mais conceituadas nesse tipo de testes é o &lt;a href=&#34;http://jmeter.apache.org/&#34; target=&#34;_blank&#34;&gt;Apache JMeter™&lt;/a&gt;, porém hoje iremos abordar o &lt;a href=&#34;http://locust.io/&#34; target=&#34;_blank&#34;&gt;Locust&lt;/a&gt;, uma ferramenta escrita em Python extremamente simples e poderosa.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Codeception, testes de interface</title>
+      <link>https://butecotecnologico.com.br/codeception-testes-de-interface/</link>
+      <pubDate>Mon, 16 Nov 2015 22:48:05 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/codeception-testes-de-interface/</guid>
+      <description>&lt;p&gt;Fala galera,&lt;/p&gt;
+&lt;p&gt;Mais uma vez falando sobre o &lt;a href=&#34;http://codeception.com/&#34; target=&#34;_blank&#34;&gt;Codeception&lt;/a&gt;, no post passado mostrei como fazer o setup inicial e como começar a usá lo com testes unitários. Clique &lt;a href=&#34;https://butecotecnologico.com.br/?p=3182&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; para ver o post anterior.&lt;/p&gt;
+&lt;p&gt;Testes unitários são provavelmente o primeiro tipo de teste que você vai ver em qualquer tutorial, são os testes mais simples de serem feitos e provavelmente, os mais importantes. São os testes unitários que vão testar as suas funções, as suas classes, as suas regras de negócio e sua integração com o banco. Para este último, apesar de na prática não há diferença, existe uma especialização dos testes unitários, que são os testes de integração. A diferença entre um teste unitário e de integração é basicamente que o teste de integração faz acesso a um recurso externo, seja ele um banco de dados, uma API, ou qualquer outra coisa. Não irei abordar esse tipo de teste aqui, pois na prática os testes de integração são testes unitários.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Codeception, testes em PHP para todos</title>
+      <link>https://butecotecnologico.com.br/codeception-testes-em-php-para-todos/</link>
+      <pubDate>Wed, 14 Oct 2015 22:51:45 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/codeception-testes-em-php-para-todos/</guid>
+      <description>&lt;p&gt;Olá galera, tudo certo ?&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;message_content&#34;&gt;Hoje veremos como utilizar o framework de teste chamado Codeception. Eu acabei esbarrando com essa ferramenta por acaso enquanto estava pesquisando ferramentas mais completas do que o PHPUnit para criar testes no PHP. Vamos lá então?
+&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Laravel 5 do começo ao fim [parte 4]</title>
+      <link>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-4/</link>
+      <pubDate>Thu, 16 Apr 2015 22:54:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-4/</guid>
+      <description>Nesta quarta parte do tutorial veremos um pouco da parte de testes do Laravel 5, uma boa pratica que todos deveriam adotar mas que muitas vezes é simplesmente ignorada.</description>
+    </item>
+    
+    <item>
+      <title>Fedora 23 irá trocar o X.Org Server pelo Wayland</title>
+      <link>https://butecotecnologico.com.br/fedora-23-ira-trocar-o-x-org-server-pelo-wayland/</link>
+      <pubDate>Thu, 29 Jan 2015 06:24:08 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/fedora-23-ira-trocar-o-x-org-server-pelo-wayland/</guid>
+      <description>Enquanto muito se falava em trocar o X.Org Sever pelo Wayland como sendo algo distante, parece que o Fedora 23 irá fazer acontecer.</description>
+    </item>
+    
+    <item>
+      <title>openSUSE 13.2: Chegou a hora de testar</title>
+      <link>https://butecotecnologico.com.br/opensuse-13-2-chegou-a-hora-de-testar/</link>
+      <pubDate>Thu, 16 Oct 2014 15:03:13 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/opensuse-13-2-chegou-a-hora-de-testar/</guid>
+      <description>Menos de três semanas se passaram desde o lançamento da primeira versão release candidate e já podemos sentir que estamos quase lá.</description>
+    </item>
+    
+  </channel>
+</rss>

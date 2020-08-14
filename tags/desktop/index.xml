@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>desktop on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/desktop/</link>
+    <description>Recent content in desktop on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 23 Sep 2015 23:51:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/desktop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Novidades do GNOME 3.18</title>
+      <link>https://butecotecnologico.com.br/novidades-do-gnome-3-18/</link>
+      <pubDate>Wed, 23 Sep 2015 23:51:43 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/novidades-do-gnome-3-18/</guid>
+      <description>&lt;p&gt;O novo GNOME 3.18 foi lançado hoje, com muitas novidades e melhorias. Segue abaixo algumas delas:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;O suporte a HiDPI (famosa tela Retina dos Macs) ainda tem alguns problemas, mas a versão 3.18 finalmente resolveu o problema de redimensionamento de cursor&lt;/li&gt;
+	&lt;li&gt;Um bug de longa data da NVIDIA foi corrigido&lt;/li&gt;
+	&lt;li&gt;Integração com o Google Drive&lt;/li&gt;
+	&lt;li&gt;&lt;em&gt;Browser Epiphany&lt;/em&gt; bloqueia propaganda por padrão e habilita o DNT (&lt;em&gt;Do not Track&lt;/em&gt;)&lt;/li&gt;
+	&lt;li&gt;Melhorias no &lt;em&gt;File Chooser&lt;/em&gt; (seletor de arquivos)&lt;/li&gt;
+	&lt;li&gt;Trabalhado o suporte a atualização de firmware UEFI através do GNOME Software&lt;/li&gt;
+	&lt;li&gt;Melhorias no &lt;em&gt;Calendar&lt;/em&gt; e Nautilus&lt;/li&gt;
+	&lt;li&gt;Removido o suporte ao Window XP no GTK+&lt;/li&gt;
+	&lt;li&gt;Muitas outras melhorias e correções de bugs&lt;/li&gt;
+&lt;/ul&gt;
+Como de praxe, a GNOME foundation também libera um vídeo mostrando as melhorias desta nova versão:</description>
+    </item>
+    
+  </channel>
+</rss>

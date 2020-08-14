@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>noticias on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/noticias/</link>
+    <description>Recent content in noticias on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 05 Nov 2015 22:39:46 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/noticias/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LibreOffice Magazine Número 19</title>
+      <link>https://butecotecnologico.com.br/libreoffice-magazine-numero-19/</link>
+      <pubDate>Thu, 05 Nov 2015 22:39:46 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/libreoffice-magazine-numero-19/</guid>
+      <description>&lt;p&gt;Saiu a nova edição da LibreOffice Magazine!&lt;/p&gt;
+&lt;p&gt;Nesta edição o homenageado é o LibreOffice, onde é contado como tudo começou, qual a situação atual do projeto, sobre os cinco anos de desenvolvimento e os três anos da LibreOffice Magazine. Faz também, uma homenagem aos autores dos artigos das dezenove edições, em agradecimento pelo trabalho realizado até aqui.&lt;/p&gt;
+&lt;p&gt;Além destes, os temas abordados foram:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nova versão do Lumina</title>
+      <link>https://butecotecnologico.com.br/nova-versao-do-lumina/</link>
+      <pubDate>Tue, 03 Nov 2015 21:48:24 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/nova-versao-do-lumina/</guid>
+      <description>&lt;p&gt;Você já ouviu falar ou leu sobre o Lumina?&lt;/p&gt;
+&lt;p&gt;Pois bem, nem só de KDE, Gnome, console, vive o FreeBSD :P, agora ele tem o Lumina. O Lumina  é um projeto de WM (&lt;em&gt;Window Manager&lt;/em&gt;) da XSystem desenhado para FreeBSD, desenvolvido de uma maneira para ser portável, funcionando em várias distribuições Linux. A solução vem sendo projetada em conjunto com o PC-BSD, o qual disponibiliza versões com Lumina atualizado.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

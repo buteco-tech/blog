@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>logstash on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/logstash/</link>
+    <description>Recent content in logstash on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 13 Jun 2016 12:00:05 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/logstash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Extração de dados com Logstash</title>
+      <link>https://butecotecnologico.com.br/logstash/</link>
+      <pubDate>Mon, 13 Jun 2016 12:00:05 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/logstash/</guid>
+      <description>&lt;p&gt;Logstash basicamente é uma ferramenta de extração de dados, seu uso é simples, você determina um entrada (input), extrai informações que atendem a um padrão com filtros (filters) e gera uma saída (output), o famoso &amp;ldquo;entrada -&amp;gt; processo -&amp;gt; saída&amp;rdquo;. Seguindo esse conceito base, para cada etapa, o logstash possuí vários &amp;ldquo;plugins&amp;rdquo; que são pequenos programas que fazem as integrações do logstash, cada etapa possuí seus plugins, o que faz com que você possa fazer a entrada, processo e saída de várias formas diferentes.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

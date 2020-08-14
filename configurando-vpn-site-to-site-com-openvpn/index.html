@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Configurando VPN site-to-site com OpenVPN &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Configurando VPN site-to-site com OpenVPN">
+<meta itemprop="description" content="Resumo
+O OpenVPN é um software livre e open-source para criar redes privadas virtuais do tipo ponto-a-ponto ou server-to-multiclient através de túneis criptografados entre computadores. Ele é capaz de estabelecer conexões diretas entre computadores mesmo que estes estejam atrás de Nat Firewalls sem necessidade de reconfiguração da sua rede. Ele foi escrito por James Yonan e publicado sob licença GNU General Pulic Licence (GPL)">
+<meta itemprop="datePublished" content="2016-02-22T23:24:51+00:00" />
+<meta itemprop="dateModified" content="2016-02-22T23:24:51+00:00" />
+<meta itemprop="wordCount" content="2054">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/openvpn-logo.png">
+
+
+
+<meta itemprop="keywords" content="openvpn,redes,vpn," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/openvpn-logo.png"/>
+
+<meta name="twitter:title" content="Configurando VPN site-to-site com OpenVPN"/>
+<meta name="twitter:description" content="Resumo
+O OpenVPN é um software livre e open-source para criar redes privadas virtuais do tipo ponto-a-ponto ou server-to-multiclient através de túneis criptografados entre computadores. Ele é capaz de estabelecer conexões diretas entre computadores mesmo que estes estejam atrás de Nat Firewalls sem necessidade de reconfiguração da sua rede. Ele foi escrito por James Yonan e publicado sob licença GNU General Pulic Licence (GPL)"/>
+
+
+<meta property="og:title" content="Configurando VPN site-to-site com OpenVPN" />
+<meta property="og:description" content="Resumo
+O OpenVPN é um software livre e open-source para criar redes privadas virtuais do tipo ponto-a-ponto ou server-to-multiclient através de túneis criptografados entre computadores. Ele é capaz de estabelecer conexões diretas entre computadores mesmo que estes estejam atrás de Nat Firewalls sem necessidade de reconfiguração da sua rede. Ele foi escrito por James Yonan e publicado sob licença GNU General Pulic Licence (GPL)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/configurando-vpn-site-to-site-com-openvpn/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/openvpn-logo.png" />
+<meta property="article:published_time" content="2016-02-22T23:24:51+00:00" />
+<meta property="article:modified_time" content="2016-02-22T23:24:51+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Configurando VPN site-to-site com OpenVPN</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/daniel-magevski/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=100&d=robohash"
+           alt="Daniel Magevski"
+           title="Daniel Magevski">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/daniel-magevski/"
+           class="author">Daniel Magevski</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2016-02-22T23:24:51Z">Feb 22, 2016</time>
+      &middot; 10 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/configurando-vpn-site-to-site-com-openvpn/"
+     data-text="Configurando VPN site-to-site com OpenVPN"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/configurando-vpn-site-to-site-com-openvpn/"
+     data-text="Configurando VPN site-to-site com OpenVPN"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/configurando-vpn-site-to-site-com-openvpn/"
+     data-text="Configurando VPN site-to-site com OpenVPN"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/configurando-vpn-site-to-site-com-openvpn/"
+     data-text="Configurando VPN site-to-site com OpenVPN"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/openvpn-logo.png"
+           alt="Configurando VPN site-to-site com OpenVPN">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Irei mostrar uma configuração básica de uma VPN Site-to-Site com o <a href="https://openvpn.net/" target="_blank">OpenVPN</a></p>
+<p>Iremos seguir esse esquema de rede que fiz no<a href="https://www.gns3.com/" target="_blank"> GNS3</a></p>
+<p><a href="/images/wp-content/uploads/2016/01/screenshot.png" rel="attachment wp-att-4433"><img class="alignnone wp-image-4433" src="/images/wp-content/uploads/2016/01/screenshot.png" alt="screenshot" width="687" height="416" /></a></p>
+<p>Estou utilizando um <a href="https://pt.wikipedia.org/wiki/Servidor_virtual_privado" target="_blank">SVP</a> - Servidor Virtual Privado (VPS - <em>Virtual Private Server</em>) para demonstrar a instalação e configuração, meu ambiente de instalação é um Debian 8.2.</p>
+<p><em>Distributor ID: Debian</em>
+<em> Description: Debian GNU/Linux 8.2 (jessie)</em>
+<em> Release: 8.2</em>
+<em> Codename: jessie</em></p>
+<p><strong>Resumo</strong></p>
+<p>O OpenVPN é um software livre e open-source para criar redes privadas virtuais do tipo ponto-a-ponto ou server-to-multiclient através de túneis criptografados entre computadores. Ele é capaz de estabelecer conexões diretas entre computadores mesmo que estes estejam atrás de Nat Firewalls sem necessidade de reconfiguração da sua rede. Ele foi escrito por James Yonan e publicado sob licença GNU General Pulic Licence (<a href="https://pt.wikipedia.org/wiki/GNU_General_Public_License" target="_blank">GPL</a>)</p>
+<p><strong>Instale o OpenVPN e também o easy-rsa</strong></p>
+<p><code>apt-get install openvpn easy-rsa</code></p>
+<p>Agora entramos no diretório do OpenVPN, utilizamos o comando make-cadir (disponibilizado pelo pacote easy-rsa) para criar um diretório chamado <code>easy-rsa</code> que conterá vários <em>scripts</em> úteis. Entramos no diretório <code>easy-rsa</code> e editamos o arquivos chamado vars.</p>
+<p><code>root@wolf:~# cd /etc/openvpn/
+root@wolf:/etc/openvpn# make-cadir easy-rsa
+root@wolf:/etc/openvpn# cd easy-rsa/
+root@wolf:/etc/openvpn/easy-rsa# nano vars</code></p>
+<p><strong>Agora vá ate o final e edite os seguintes valores</strong></p>
+<pre># These are the default values for fields
+# which will be placed in the certificate.
+# Don't leave any of these fields blank.
+export KEY_COUNTRY="BR"
+export KEY_PROVINCE="Espirito-Santo"
+export KEY_CITY="Vila-Velha"
+export KEY_ORG="Butecopensource"
+export KEY_EMAIL="daniel@butecopensource.org"
+export KEY_OU="butecopensource.org"
+</pre>
+<p>Após editar o arquivo use:</p>
+<p><code>source vars</code></p>
+<p>e depois</p>
+<p><code>./clean-all</code></p>
+<p><strong>Criando os certificados</strong></p>
+<p>Durante esse processo você será perguntado dos valores para alguns campos, os quais definimos no arquivo <code>vars</code> que ficarao entre colchetes, quando for o Common Name utilize o nome da máquina.</p>
+<p><strong>Gerando o certificado da sua unidade certificadora</strong></p>
+<p><code>root@wolf:/etc/openvpn/easy-rsa# ./build-ca</code></p>
+<pre>Generating a 2048 bit RSA private key
+.+++
+...+++
+writing new private key to 'ca.key'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [BR]:
+State or Province Name (full name) [Espirito-Santo]:
+Locality Name (eg, city) [Vila-Velha]:
+Organization Name (eg, company) [Butecopensource]:
+Organizational Unit Name (eg, section) [butecopensource.org]:
+Common Name (eg, your name or your server's hostname) [Butecopensource CA]:
+Name [EasyRSA]:
+Email Address [daniel@butecopensource.org]:
+root@wolf:/etc/openvpn/easy-rsa#
+</pre>
+<p><strong>Gerando chave para o Servidor</strong></p>
+<p>Gerando a chave para o servidor. Utilize o comando <code>build-key-server</code> seguido do nome do servidor (<em>hostname</em>).</p>
+<p><code>root@wolf:/etc/openvpn/easy-rsa# ./build-key-server server</code></p>
+<pre>Generating a 2048 bit RSA private key
+..................................+++
+................................................................+++
+writing new private key to 'server.key'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [BR]:
+State or Province Name (full name) [Espirito-Santo]:
+Locality Name (eg, city) [Vila-Velha]:
+Organization Name (eg, company) [Butecopensource]:
+Organizational Unit Name (eg, section) [butecopensource.org]:
+Common Name (eg, your name or your server's hostname) [server]:
+Name [EasyRSA]:
+Email Address [daniel@butecopensource.org]:
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:
+An optional company name []:
+Using configuration from /etc/openvpn/easy-rsa/openssl-1.0.0.cnf
+Check that the request matches the signature
+Signature ok
+The Subject's Distinguished Name is as follows
+countryName :PRINTABLE:'BR'
+stateOrProvinceName :PRINTABLE:'Espirito-Santo'
+localityName :PRINTABLE:'Vila-Velha'
+organizationName :PRINTABLE:'Butecopensource'
+organizationalUnitName:PRINTABLE:'butecopensource.org'
+commonName :PRINTABLE:'server'
+name :PRINTABLE:'EasyRSA'
+emailAddress :IA5STRING:'daniel@butecopensource.org'
+Certificate is to be certified until Jan 2 22:29:18 2026 GMT (3650 days)
+Sign the certificate? [y/n]:y
+1 out of 1 certificate requests certified, commit? [y/n]y
+Write out database with 1 new entries
+Data Base Updated
+root@wolf:/etc/openvpn/easy-rsa#
+</pre>
+<p>Agora vamos gerar uma chave <a href="https://pt.wikipedia.org/wiki/Diffie-Hellman" target="_blank">Diffie-Hellman</a> e que será utilizada pelo cliente e servidor durante a troca de chave, pode demorar um certo tempo.
+Obs: Não gere chave com valor igual o menor que 1024 bits, por padrão esse <em>script</em> gera em 2048 bits</p>
+<p><code>root@wolf:/etc/openvpn/easy-rsa# ./build-dh</code></p>
+<pre>Generating DH parameters, 2048 bit long safe prime, generator 2
+This is going to take a long time
+............................+++
+</pre>
+<p><strong>Gerando chave para o cliente</strong></p>
+<p>Nesse tutorial iremos gerar somente uma chave, para a filial, porém dependendo de como você irá implementar sua VPN você pode criar mais.</p>
+<p><code>root@wolf:/etc/openvpn/easy-rsa# ./build-key filial</code></p>
+<pre>Generating a 2048 bit RSA private key
+..............................................................................................................+++
+......................+++
+writing new private key to 'filial.key'
+-----
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:
+An optional company name []:
+Using configuration from /etc/openvpn/easy-rsa/openssl-1.0.0.cnf
+Check that the request matches the signature
+Signature ok
+The Subject's Distinguished Name is as follows/code&gt;
+countryName :PRINTABLE:'BR'
+stateOrProvinceName :PRINTABLE:'Espirito-Santo'
+localityName :PRINTABLE:'Vila-Velha'
+organizationName :PRINTABLE:'Butecopensource'
+organizationalUnitName:PRINTABLE:'butecopensource.org'
+commonName :PRINTABLE:'filial'
+name :PRINTABLE:'EasyRSA'
+emailAddress :IA5STRING:'daniel@butecopensource.org'
+Certificate is to be certified until Jan 2 23:13:45 2026 GMT (3650 days)
+Sign the certificate? [y/n]:y
+1 out of 1 certificate requests certified, commit? [y/n]y
+Write out database with 1 new entries
+Data Base Updated
+root@wolf:/etc/openvpn/easy-rsa#
+</pre>
+<p><strong>Excluar os arquivos desnecessários</strong></p>
+<p><code>rm keys/*.csr</code></p>
+<p>Pronto, agora precisamos pegar os arquivos no servidor e passar cliente,</p>
+<p><code>root@wolf:/etc/openvpn/easy-rsa# cd keys</code>
+<code>root@wolf:/etc/openvpn/easy-rsa/keys# ls</code></p>
+<pre>01.pem ca.key filial.key index.txt.attr.old serial.old
+02.pem dh2048.pem index.txt index.txt.old server.crt
+ca.crt filial.crt index.txt.attr serial server.key
+</pre>
+<p>Iremos precisar dos arquivos, <strong>filial.crt,  filial.key, dh2048.pem</strong></p>
+<p>Vocẽ pode copiar esses arquivos com softwares como <a href="https://filezilla-project.org/" target="_blank">FileZilla</a> (Linux e Windows) ou <a href="https://winscp.net/eng/download.php" target="_blank">WinSCP</a> (Windows).</p>
+<p><strong>Configuração do OpenVPN para o servidor</strong></p>
+<p><code> Crie o arquivo /etc/openvpn/server.conf </code></p>
+<p>Caso você cria o nome do servidor direrente de &ldquo;server&rdquo;, lembre de mudar o nome do <strong>&quot;crt&quot;</strong> e <strong>&quot;key&quot;</strong></p>
+<p>Veja o arquivo de configuração.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1">##############################</span>
+<span class="c1">####### OpenVPN Server #######</span>
+<span class="c1">####### Site-to-Site##########</span>
+<span class="c1">##############################</span>
+<span class="c1">####### DANIEL MAGEVSKI ######</span>
+<span class="c1">##############################</span>
+
+
+<span class="c1"># Para testar os arquivos de configuracao:</span>
+<span class="c1"># openvpn --config /etc/openvpn/arquivo.conf</span>
+
+<span class="c1"># Para fazer NAT, execute:</span>
+<span class="c1"># sysctl -w net.ipv4.ip_forward=1</span>
+<span class="c1"># iptables -t nat -s $IP_REDE/$MASCARA_REDE -A POSTROUTING -o $PORTA_INTERNET -j MASQUERADE</span>
+
+
+<span class="c1">##############################</span>
+<span class="c1">#     Dados da conexão</span>
+<span class="c1">##############################</span>
+
+
+<span class="c1"># Interface da VPN</span>
+dev tun0
+<span class="c1"># Endereço IP servidor/filial</span>
+ifconfig  <span class="nv">$Ip</span>-Servidor <span class="nv">$IpFilial</span>
+
+<span class="c1"># Protocolo</span>
+proto udp
+
+<span class="c1"># Porta VPN</span>
+port <span class="m">1194</span>
+
+<span class="c1"># Parametro necessario para utilizar conexão com certificados X509</span>
+tls-server
+
+<span class="c1"># Caminho para o arquivo contendo parametros Diffie Hellman</span>
+dh /etc/openvpn/easy-rsa/keys/dh2048.pem
+
+<span class="c1"># Local do arquivo de certificado (.crt) da unidade certificadora</span>
+ca /etc/openvpn/easy-rsa/keys/ca.crt
+
+<span class="c1"># Local do arquivo de certificado (.crt) do servidor</span>
+cert /etc/openvpn/easy-rsa/keys/<span class="nv">$server</span>.crt
+
+<span class="c1"># Local da chave (.key) do servidor. Este arquivo deve ser mantido secreto</span>
+key /etc/openvpn/easy-rsa/keys/<span class="nv">$server</span>.key
+
+<span class="c1">##############################</span>
+<span class="c1">#   Qualidade da conexão</span>
+<span class="c1">##############################</span>
+
+
+<span class="c1"># Pinga o host remoto a cada $x segundos sem atividade na rede, se ele</span>
+<span class="c1"># nao responder por $z segundos a conexão é reiniciada.</span>
+<span class="c1"># Quando a conexão é interrompida o cliente tenta restabelece-la  periodicamente</span>
+<span class="c1"># Uso: keepalive $x $z</span>
+keepalive <span class="m">10</span> <span class="m">120</span>
+
+<span class="c1"># Compacta os dados da conexão utilizando o pacote lzo (deve estar</span>
+<span class="c1"># instalado no host)</span>
+<span class="c1"># Se estiver habilitado no servidor, o cliente também deve habilitar</span>
+comp-lzo
+
+<span class="c1"># mantem as chaves carregadas mesmo durante o reinicio do serviço.</span>
+persist-key
+
+<span class="c1"># mantem o tunel aberto mesmo durante o reinicio do serviço.</span>
+persist-tun
+
+<span class="c1"># Fica tentando, indefinidamente, resolver o nome do host do servidor. Útil</span>
+<span class="c1"># em hosts que não estão permanentemente conectados à internet.</span>
+resolv-retry infinite
+
+<span class="c1"># Mantem o tunel aberto mesmo se o ip do outro host mudar</span>
+float
+
+<span class="c1"># É uma boa prática diminuir os privilégios do OpenVPN após a inicialização.</span>
+user nobody 
+group nogroup
+
+<span class="c1"># Define o quão verboso será o log.</span>
+<span class="c1"># 0 é silencioso, exceto por erros fatais</span>
+<span class="c1"># 4 é rasoável para o uso geral</span>
+<span class="c1"># 5 e 6 podem ajudá-lo a debugar problemas de conexão</span>
+<span class="c1"># 9 é extremamente verboso</span>
+verb <span class="m">3</span>
+
+
+<span class="c1"># Informações de status da conexão</span>
+status /var/log/openvpn/matriz-staus.log
+<span class="c1"># Arquivo de log</span>
+log-append /var/log/openvpn/matriz.log
+
+<span class="c1">##############################</span>
+<span class="c1">####    Referências   ########</span>
+<span class="c1">##############################</span>
+
+<span class="c1"># http://tobias.ws/blog/acesso-seguro-a-internet-atraves-do-openvpn/</span>
+<span class="c1"># http://openvpn.net/howto.html#mitm</span>
+<span class="c1"># http://www.hardware.com.br/tutoriais/openvpn_2/</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Agora vamos adicionar a rota, criando um arquivo dentro do diretório /etc/init.d:
+<code>echo &ldquo;route add -net 192.168.1.0 netmask 255.255.255.0 gw 10.8.0.1 dev tun0&rdquo; &gt; /etc/init.d/rota &amp;&amp; chmod +x rota &amp;&amp; update-rc.d rota defaults</code></p>
+<p>Após criada a rota, será iniciado o serviço:
+<code>service openvpn start</code></p>
+<p>Precisamos compartilhar a internet do servidor, execute:
+<code>sysctl -w net.ipv4.ip_forward=1</code></p>
+<p><code>iptables -t nat -s 10.8.0.0/24 -A POSTROUTING -o eth0 -j MASQUERADE</code></p>
+<p>10.8.0.0/24 é a rede da VPN e eth0 é a interface do servidor que está conectada com a internet.</p>
+<p><strong>Configuração no cliente</strong></p>
+<p>Crie o arquivo client.ovpn e lembre de substituir e $Cliente nos parâmentos cert e key, $Servidor no remote.</p>
+<p>Veja o arquivo de configuração.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1">##############################</span>
+<span class="c1">####### OpenVPN Server #######</span>
+<span class="c1">####### Site-to-Site##########</span>
+<span class="c1">##############################</span>
+<span class="c1">####### DANIEL MAGEVSKI ######</span>
+<span class="c1">##############################</span>
+
+<span class="c1">##############################</span>
+<span class="c1">##### Dados da conexão  ######</span>
+<span class="c1">##############################</span>
+
+
+<span class="c1"># Define que esta máquina é um cliente</span>
+client
+
+<span class="c1"># Endereço do servidor</span>
+remote  <span class="nv">$Servidor</span> <span class="m">1194</span> <span class="c1">#Por padrão a porta é 1194</span>
+
+<span class="c1"># Interface da VPN</span>
+dev tun0
+
+<span class="c1"># Endereço IP filial/servidor</span>
+ifconfig <span class="nv">$IpFilial</span> <span class="nv">$Ip</span>-Servidor 
+
+<span class="c1"># Protocolo</span>
+proto udp
+
+nobind
+
+<span class="c1"># Se você está conetando à internet através de um proxy HTTP, defina o parâmetro</span>
+<span class="c1"># http-proxy.</span>
+<span class="c1"># http-proxy-retry faz com que uma nova tentativa seja feita em casa de falha</span>
+<span class="c1"># de conexão</span>
+<span class="p">;</span>http-proxy-retry
+<span class="p">;</span>http-proxy <span class="nv">$ip</span> <span class="nv">$porta</span>
+
+
+<span class="c1">##############################</span>
+<span class="c1">#      Certificados X509</span>
+<span class="c1">##############################</span>
+
+<span class="c1"># Local do arquivo dh.pem</span>
+dh dh2048.pem
+
+<span class="c1"># Local do arquivo de certificado (.crt) da unidade certificadora</span>
+ca ca.crt
+
+<span class="c1"># Local do arquivo de certificado (.crt) do cliente</span>
+cert filial.crt
+
+<span class="c1"># Local da chave (.key) do cliente. Este arquivo deve ser mantido secreto</span>
+key filial.key
+
+
+<span class="c1">##############################</span>
+<span class="c1">#   Qualidade da conexão</span>
+<span class="c1">##############################</span>
+
+<span class="c1"># Pinga o host remoto a cada $x segundos sem atividade na rede, se ele</span>
+<span class="c1"># nao responder por $z segundos a conexão é reiniciada.</span>
+<span class="c1"># Quando a conexão é interrompida o cliente tenta restabelece-la  periodicamente</span>
+<span class="c1"># Uso: keepalive $x $z</span>
+keepalive <span class="m">10</span> <span class="m">120</span>
+
+<span class="c1"># Compacta os dados da conexão utilizando o pacote lzo (deve estar</span>
+<span class="c1"># instalado no host)</span>
+<span class="c1"># Se estiver habilitado no servidor, o cliente também deve habilitar</span>
+comp-lzo
+
+<span class="c1"># mantem as chaves carregadas mesmo durante o reinicio do serviço.</span>
+persist-key
+
+<span class="c1"># mantem o tunel aberto mesmo durante o reinicio do serviço.</span>
+persist-tun
+
+<span class="c1"># Fica tentando, indefinidamente, resolver o nome do host do servidor. Útil</span>
+<span class="c1"># em hosts que não estão permanentemente conectados à internet.</span>
+resolv-retry infinite
+
+<span class="c1"># mantem o tunel aberto mesmo se o ip do outro host mudar</span>
+float
+
+<span class="c1">##############################</span>
+<span class="c1">#           Outros</span>
+<span class="c1">##############################</span>
+
+<span class="c1"># Define o quão verboso será o log.</span>
+<span class="c1"># 0 é silencioso, exceto por erros fatais</span>
+<span class="c1"># 4 é rasoável para o uso geral</span>
+<span class="c1"># 5 e 6 podem ajudá-lo a debugar problemas de conexão</span>
+<span class="c1"># 9 é extremamente verboso</span>
+verb <span class="m">3</span>
+
+<span class="c1"># Informações de status da conexão</span>
+status openvpn-status.log
+<span class="c1">#status /var/log/openvpn/matriz-staus.log</span>
+<span class="c1"># Arquivo de log</span>
+<span class="p">;</span>log         openvpn.log
+<span class="p">;</span>log-append  openvpn.log
+
+
+<span class="c1">##############################</span>
+<span class="c1">####    Referências   ########</span>
+<span class="c1">##############################</span>
+
+<span class="c1"># http://tobias.ws/blog/acesso-seguro-a-internet-atraves-do-openvpn/</span>
+<span class="c1"># http://openvpn.net/howto.html#mitm</span>
+<span class="c1"># http://www.hardware.com.br/tutoriais/openvpn_2/</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Agora vamos adicionar a rota crie um arquivo rota</p>
+<p><code> echo &ldquo;route add -net 192.168.0.0 netmask 255.255.255.0 gw 10.8.0.2 dev tun0&rdquo; &gt; /etc/init.d/rota &amp;&amp; chmod +x rota &amp;&amp; update-rc.d rota defaults </code></p>
+<p>Agora vamos acessa-la, entra dentro do diretório onde está as chaves e digite,
+<code>openvpn client.ovpn </code></p>
+<p>Ele irá imprimir na tela os dados na conexão, se tudo ocorreu bem aparecerá, <strong>Initialization Sequence Completed</strong></p>
+<p>Qualquer dúvida escreva nos comentários.</p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/openvpn/" class="tag-link">openvpn</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/redes/" class="tag-link">redes</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/vpn/" class="tag-link">vpn</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/configurando-vpn-site-to-site-com-openvpn/"
+     data-text="Configurando VPN site-to-site com OpenVPN"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/configurando-vpn-site-to-site-com-openvpn/"
+     data-text="Configurando VPN site-to-site com OpenVPN"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/configurando-vpn-site-to-site-com-openvpn/"
+     data-text="Configurando VPN site-to-site com OpenVPN"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/configurando-vpn-site-to-site-com-openvpn/"
+     data-text="Configurando VPN site-to-site com OpenVPN"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/daniel-magevski/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=100&d=robohash"
+             alt="Daniel Magevski">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/daniel-magevski/">Daniel Magevski</a>
+      </h2>
+      <span class="small text-muted"></span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

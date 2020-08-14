@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web-components on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/web-components/</link>
+    <description>Recent content in web-components on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 01 May 2015 10:30:13 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/web-components/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Confira os novos livros da Novatec</title>
+      <link>https://butecotecnologico.com.br/confira-os-novos-livros-da-novatec/</link>
+      <pubDate>Fri, 01 May 2015 10:30:13 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/confira-os-novos-livros-da-novatec/</guid>
+      <description>A Novatec, nossa parceira, acabou de lançar alguns novos títulos voltados a quem gosta de Web.
+Confira o que estes títulos abordam.</description>
+    </item>
+    
+  </channel>
+</rss>

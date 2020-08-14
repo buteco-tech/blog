@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>LPIC: por onde começar &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="LPIC: por onde começar">
+<meta itemprop="description" content="Primeiro, pare tudo, você está para fazer uma prova de certificação ou tem interesse, se sim .">
+<meta itemprop="datePublished" content="2015-03-24T00:28:50+00:00" />
+<meta itemprop="dateModified" content="2015-03-24T00:28:50+00:00" />
+<meta itemprop="wordCount" content="604">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/lpic-logos.png">
+
+
+
+<meta itemprop="keywords" content="certificação,linux,lpic," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/lpic-logos.png"/>
+
+<meta name="twitter:title" content="LPIC: por onde começar"/>
+<meta name="twitter:description" content="Primeiro, pare tudo, você está para fazer uma prova de certificação ou tem interesse, se sim ."/>
+
+
+<meta property="og:title" content="LPIC: por onde começar" />
+<meta property="og:description" content="Primeiro, pare tudo, você está para fazer uma prova de certificação ou tem interesse, se sim ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/lpic-por-onde-comecar/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/lpic-logos.png" />
+<meta property="article:published_time" content="2015-03-24T00:28:50+00:00" />
+<meta property="article:modified_time" content="2015-03-24T00:28:50+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>LPIC: por onde começar</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+           alt="Marcos Paulo de Souza"
+           title="Marcos Paulo de Souza">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+           class="author">Marcos Paulo de Souza</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2015-03-24T00:28:50Z">Mar 24, 2015</time>
+      &middot; 3 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/lpic-por-onde-comecar/"
+     data-text="LPIC: por onde começar"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/lpic-por-onde-comecar/"
+     data-text="LPIC: por onde começar"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/lpic-por-onde-comecar/"
+     data-text="LPIC: por onde começar"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/lpic-por-onde-comecar/"
+     data-text="LPIC: por onde começar"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/lpic-logos.png"
+           alt="LPIC: por onde começar">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Primeiro, pare tudo, você está para fazer uma prova de certificação ou tem
+interesse, se sim .. o primeiro lugar que você deve ir é o site da empresa
+ou organização que elabora o teste. No caso da <em>LPIC</em> é o <a title="lpi" href="http://www.lpi.org/" target="_blank">lpi.org</a>. E ler toda a documentação e detalhes de como funciona a prova, a descrição detalhada dos temas que vão cair.</p>
+<p>Ohhh !! o_o óbvio, parece que sim , nem sempre porque é óbvio lermos o manual do rádio para utilizar ele .. mas fazemos isto :D ???</p>
+<p>Certo, e então para os que estão procurando fazer o primeiro exame da <em>LPIC</em>, tem que lembrar que o exame 1 foi alterado em fevereiro de 2015. <em>Qual o impacto disto O_O?</em></p>
+<p>Não se tem material pronto específico para estudar para a prova.. Os materiais atuais vão ter conteúdo não mais utilizados, …. Se você for aquele estudante que está decorando o conteúdo para fazer o teste, em vez de aprender o conteúdo. Sinto lhe informar que você está com um grande
+problema…</p>
+<p>Se você está se baseando somente em simulados, para saber se está qualificado para o teste. Adivinha, eles não refletem mais a realidade, sem contar que na internet muitos destes simulados e testes são as vezes de duas ou três versões atrás de alteração do exame atual.</p>
+<p>Lá vem o desânimo, a vou esperar sair os materiais prontos, novos simulados, …. o mundo mudar para fazer a prova ..</p>
+<p><em>Não !!!</em> Arrume as mangas, pegue mais um café, compre um energético e vá a luta ler no manual dos programas específicos, testes os programas, procure na internet em blogs, fóruns pessoas usando os novos conteúdos do exame ..</p>
+<p>Aaaa mas isto de ler no manual do programa, e sair testando sem uma referência vai prolongar o tempo para eu fazer o teste…. Sim isto é uma realidade, mas não temos culpa porque tecnologia evolui tão rápido .. se não gostas de estudar :P .. vá estudar matemática .. te garanto que vai
+demorar muito para mudar o conteúdo depois de aprendido… Se você só quer decorar, ou ter um papel de certificado, me desculpe você está se enganando, que só o título te dará o retorno que espera.</p>
+<p>Sabendo destes fatos da alteração da prova, resolvi que vou fazer alguns textos ajudando alguns amigos para estudarem para o exame, e de bônus reviso o conteúdo e vou postando aqui e ajudando outras pessoas…</p>
+<p>Primeiro de tudo leia, o texto do seguinte <a href="https://www.lpi.org/certification/get-certified-lpi/lpic-1-linux-server-professional/" target="_blank">link</a> e depois leia os detalhes do exame da versão 4 da prova <a href="http://wiki.lpi.org/wiki/LPIC-1_Objectives_V4" target="_blank">aqui</a></p>
+<p>Depois leia as mudanças que tiveram da versão 3 para a 4 do teste do exame 1 <a href="http://wiki.lpi.org/wiki/LPIC1SummaryVersion3To4" target="_blank">aqui</a></p>
+<p>Procure saber o que é a PearsonVUE, onde tem a mais próxima e onde e como fazer o teste .. O_O tem tantos textos por aí e o próprio site da PersonVUE para procurar que nem vou me prolongar muito sobre este assunto, vou deixar apenas um <a href="http://www.pearsonvue.com/lpi/locate/" target="_blank">link</a> para procurar uma unidade de testes próxima do seu ~ .</p>
+<p><em>SE ORGANIZE SE DEDIQUE !!! O_O A PROVA NÃO CAI DO CÉU .. VOCÊ TEM QUE ESTUDAR E PRATICAR … O_O</em> Como aquele pessoal que faz musculação .. e vão duas vezes por semana … vai ser chato .. mas um momento você se acostuma…. ( Vou sempre postar estas frases magníficas de incentivo hauhau XD )</p>
+<p>Fiz uma palestra a algum tempo atrás sobre <a href="http://pt.slideshare.net/demoncyber/lpi-autodidata-flisol-florianopolis" target="_blank">como tirar a LPI de forma autodidata</a>, vou colocar o link aqui :P só para complementar o assunto.</p>
+<p><em>THE END .. por hora é isto :)</em></p>
+<p>Artigo enviado por: Marco Carvalho de Oliveira
+Blog: <a href="http://demoncyber.wordpress.com/" target="_blank"><a href="http://demoncyber.wordpress.com/">http://demoncyber.wordpress.com/</a></a></p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/certifica%C3%A7%C3%A3o/" class="tag-link">certificação</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/lpic/" class="tag-link">lpic</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/lpic-por-onde-comecar/"
+     data-text="LPIC: por onde começar"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/lpic-por-onde-comecar/"
+     data-text="LPIC: por onde começar"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/lpic-por-onde-comecar/"
+     data-text="LPIC: por onde começar"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/lpic-por-onde-comecar/"
+     data-text="LPIC: por onde começar"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/mpdesouza/">
+        <img class="author-img"
+             src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+             alt="Marcos Paulo de Souza">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/">Marcos Paulo de Souza</a>
+      </h2>
+      <span class="small text-muted">Software Engineer</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

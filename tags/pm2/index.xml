@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pm2 on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/pm2/</link>
+    <description>Recent content in pm2 on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 27 Jan 2016 12:12:29 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/pm2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PM2 - Gerenciador de aplicações Node.js em ambientes de produção</title>
+      <link>https://butecotecnologico.com.br/pm2/</link>
+      <pubDate>Wed, 27 Jan 2016 12:12:29 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pm2/</guid>
+      <description>&lt;p&gt;O Node.js, famoso interpretador javascript do lado servidor, trouxe uma nova gama de possibilidades para a linguagem javascript. Entre suas maiores vantagens posso citar o uso da mesma linguagem de programação no lado cliente e servidor e usar programação assíncrona por padrão. Contudo em algum momento da vida de seu projeto ou da sua aplicação, este deve ser publicado, e é neste ponto que o PM2 aparece.&lt;/p&gt;
+&lt;p&gt;O PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cluster para alta disponibilidade com balanceamento de carga, logs, recarregar a aplicação automaticamente quando há alterações nos arquivos ou reinicio do servidor, entre diversas outras atividades que a principio podem parecer simples, porém tenha em mente que o PM2 foi projetado para gerenciar diversas aplicações rodando de uma só vez, em um único console.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

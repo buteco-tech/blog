@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fisl16 on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/fisl16/</link>
+    <description>Recent content in fisl16 on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 18 May 2015 22:53:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/fisl16/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FISL 16</title>
+      <link>https://butecotecnologico.com.br/fisl-16/</link>
+      <pubDate>Mon, 18 May 2015 22:53:48 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/fisl-16/</guid>
+      <description>O FISL sempre conta com grandes personalidades nacionais e internacionais do Sofware Livre e está na sua 16º edição, o evento acontecerá na cidade de Porto Alegre no período 8 a 11 de Julho.</description>
+    </item>
+    
+  </channel>
+</rss>

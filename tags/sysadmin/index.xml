@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sysadmin on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/sysadmin/</link>
+    <description>Recent content in sysadmin on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 06 Nov 2015 12:32:09 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/sysadmin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-26/</link>
+      <pubDate>Fri, 06 Nov 2015 12:32:09 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-26/</guid>
+      <description>E a guerra santa está por ai, em cada empresa ou grupo de amigos!</description>
+    </item>
+    
+  </channel>
+</rss>

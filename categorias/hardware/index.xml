@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/categorias/hardware/</link>
+    <description>Recent content in Hardware on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 28 May 2020 08:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/categorias/hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Entendendo carros autônomos</title>
+      <link>https://butecotecnologico.com.br/entendendo-carros-autonomos/</link>
+      <pubDate>Thu, 28 May 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/entendendo-carros-autonomos/</guid>
+      <description>Carros autônomos estão cada vez mais presentes em nossas vidas, mas o que é um carro autônomo de fato?</description>
+    </item>
+    
+    <item>
+      <title>NVIDIA Jetson Nano Developer Kit</title>
+      <link>https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/</link>
+      <pubDate>Wed, 06 May 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/</guid>
+      <description>Uma placa de desenvolvimento focada em visão computacional e deep learning.</description>
+    </item>
+    
+    <item>
+      <title>Utilizando display OLED I2C no ESP8266</title>
+      <link>https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/</link>
+      <pubDate>Mon, 11 Apr 2016 18:52:21 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/</guid>
+      <description>&lt;p&gt;Displays são sempre úteis em projetos relacionados a Internet das Coisas (IoT). Por exemplo, supondo que estamos desenvolvendo alguma forma de monitoramento de temperatura com o ESP8266, qual a forma mais simples de ficar sabendo a temperatura atual? Creio que seja exibindo-a em um display, certo?&lt;/p&gt;
+&lt;p&gt;Sendo assim, o tutorial de hoje irá mostrar como utilizar um display OLED I2C de 0.96 polegadas, pode parecer pequeno, mas acredite, é possível inserir bastante informação nele.&lt;/p&gt;
+&lt;p&gt;O display que estou utilizando é o &lt;a&gt;OLED com controlador SSD1306&lt;/a&gt; com tamanho de 128x64 pixels, que utiliza barramento I2C, suportado pelos ESP-07, ESP-12, entre outros. O I2C é suportado pelo ESP8266, porém placas como a ESP-01 não disponibilizam este pino.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Conhecendo os módulos do NodeMCU</title>
+      <link>https://butecotecnologico.com.br/conhecendo-os-modulos-do-nodemcu/</link>
+      <pubDate>Tue, 05 Apr 2016 16:37:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conhecendo-os-modulos-do-nodemcu/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://nodemcu.com/index_en.html&#34; target=&#34;_blank&#34;&gt;NodeMCU&lt;/a&gt; é um firmware baseado no &lt;a href=&#34;http://www.eluaproject.net/&#34; target=&#34;_blank&#34;&gt;eLua&lt;/a&gt; para os dispositivos ESP8266. Se você deseja saber mais sobre o firmware recomendo a leitura do artigo &lt;a href=&#34;https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266&#34;&gt;NodeMCU: Lua para o ESP8266&lt;/a&gt; que publiquei recentemente. Neste artigo o foco foi a apresentação do firmware e como fazer o flash do seu dispositivo.&lt;/p&gt;
+&lt;p&gt;Com o decorrer dos projetos que fazem uso do ESP8266 e NodeMCU, eventualmente será necessário criar um firmware com módulos que não fazem parte da distribuição padrão. Sendo assim, o artigo de hoje visa explicar brevemente o que é cada um dos módulos disponíveis. Builds customizadas podem ser feitas através do site &lt;a href=&#34;http://nodemcu-build.com/&#34; target=&#34;_blank&#34;&gt;NodeMCU custom builds&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Comunicação serial RS232 com Leitura/Escrita da EEPROM no PIC16F628A</title>
+      <link>https://butecotecnologico.com.br/comunicacao-serial-rs232-com-leituraescrita-da-eeprom-no-pic16f628a/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/comunicacao-serial-rs232-com-leituraescrita-da-eeprom-no-pic16f628a/</guid>
+      <description>&lt;p&gt;Muitos cursos de eletrônica fazem uma breve introdução ao mundo dos microcontroladores, mostrando superficialmente como utilizar seus recursos. Pensando nisso, este artigo tem como objetivo mostrar como utilizar dois recursos muito úteis no PIC 16F628A, comunicação serial e armazenamento de dados na memória EEPROM interna do PIC.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gerando melodia com o Arduino</title>
+      <link>https://butecotecnologico.com.br/gerando-melodia-com-o-arduino/</link>
+      <pubDate>Wed, 02 Mar 2016 23:51:38 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gerando-melodia-com-o-arduino/</guid>
+      <description>&lt;p&gt;Com a função &lt;strong&gt;&lt;em&gt;tone&lt;/em&gt;&lt;/strong&gt; do Arduino, é possível reproduzir qualquer melodia que desejar. Esta função tem como princípio gerar um sinal &lt;em&gt;PWM&lt;/em&gt; no pino definido no chamado desta função.&lt;/p&gt;
+&lt;p&gt;A função &lt;strong&gt;&lt;em&gt;tone&lt;/em&gt;&lt;/strong&gt; recebe os seguintes parâmetros: &lt;code&gt;tone(pino, frequência, duração);&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Quando chamada, esta função irá gerar um sinal &lt;em&gt;PWM&lt;/em&gt; na frequência e pelo tempo definido nos parâmetros passados. A frequência é definida em hertz e o tempo em milissegundos.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NodeMCU: Lua para o ESP8266</title>
+      <link>https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/</link>
+      <pubDate>Tue, 02 Feb 2016 22:22:16 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://nodemcu.com/index_en.html&#34; target=&#34;_blank&#34;&gt;NodeMCU&lt;/a&gt; é um &lt;em&gt;firmware&lt;/em&gt; e kit de desenvolvimento que permite a programação de protótipos para a Internet das Coisas (IoT). O &lt;em&gt;firmware&lt;/em&gt; utiliza o paradigma &lt;em&gt;event-driven&lt;/em&gt; para facilitar o desenvolvimento de aplicações que necessitem acesso à Internet. Além disso, integra módulos de GPIO, 1-Wire, I2C, SPI, PWM, ADC, entre outros, para facilitar o manuseio de módulos baseados no chip ESP8266.&lt;/p&gt;
+&lt;p&gt;Na verdade, o NodeMCU é mais que um &lt;em&gt;firmware&lt;/em&gt;, é a empresa por trás do NodeMCU Dev Kit, que além do &lt;em&gt;firmware&lt;/em&gt;, disponibiliza uma placa de desenvolvimento baseada no ESP8266.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Servo motor com Raspberry Pi</title>
+      <link>https://butecotecnologico.com.br/servo-motor-com-raspberry-pi/</link>
+      <pubDate>Wed, 13 Jan 2016 11:05:44 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/servo-motor-com-raspberry-pi/</guid>
+      <description>&lt;p&gt;Fala galera!
+Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI usando a linguagem Python.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Iluminação Natalina com Arduino, Temporizador e LDR</title>
+      <link>https://butecotecnologico.com.br/iluminacao-natalina-com-arduino-temporizador-e-ldr/</link>
+      <pubDate>Fri, 08 Jan 2016 10:26:04 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/iluminacao-natalina-com-arduino-temporizador-e-ldr/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-weight: 400;&#34;&gt;Neste projeto, irei apresentar a vocês como controlar uma carga de 110 ou 220 volts com um Arduíno e um relé. Utilizaremos também um LDR para medição de intensidade de luz, para poder fazer com que a carga seja ligada apenas quando for escuro, e além disso, com a opção de temporizar o tempo que a carga ficará ligada. Um exemplo de aplicação é a iluminação Natalina, fazendo ela ligar somente quando escurecer, e caso quiser, pode-se também programar essa para desligar após algumas horas, ou ainda, deixar com que ela se apague novamente quando o dia clarear.&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi Zero, 5$ em uma placa que roda Linux</title>
+      <link>https://butecotecnologico.com.br/raspberry-pi-zero-5-em-uma-placa-que-roda-linux/</link>
+      <pubDate>Mon, 30 Nov 2015 22:53:32 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/raspberry-pi-zero-5-em-uma-placa-que-roda-linux/</guid>
+      <description>&lt;p&gt;A Raspberry Pi Foundation acaba de anunciar seu novo Raspberry Pi de baixo custo, chamado &lt;strong&gt;Zero&lt;/strong&gt;. O valor estipulado pela empresa da nova placa é de 5$, isso mesmo, com &lt;strong&gt;CINCO FUCKING DÓLARES&lt;/strong&gt; você compra uma das mais novas placas que rodam o sistema operacional GNU/Linux.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Conheça a BeagleBone Green</title>
+      <link>https://butecotecnologico.com.br/conheca-a-beaglebone-green/</link>
+      <pubDate>Tue, 24 Nov 2015 10:24:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conheca-a-beaglebone-green/</guid>
+      <description>&lt;p&gt;Recentemente recebemos da &lt;a href=&#34;http://www.filipeflop.com/?utm_medium=PostBBG&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;FilipeFlop&lt;/a&gt; a &lt;a href=&#34;http://www.seeed.cc/beaglebone_green/&#34; target=&#34;_blank&#34;&gt;BeagleBone Green&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A BeagleBone Green, ou BBG para os mais íntimos, é produzida pela SeeedStudio e é baseada no hardware da BeagleBone Black. As maiores diferenças são a adição de dois conectores &lt;em&gt;Grove&lt;/em&gt; e a remoção do HDMI &lt;em&gt;on-board&lt;/em&gt;. Apesar de não possuir HDMI, é possível utilizar uma placa de expansão para obter esta funcionalidade.&lt;/p&gt;
+&lt;p&gt;A BBG é poderosa, ela vem com processador AM335x 1GHz ARM© Cortex-A8, memória de 512MB DDR3, 4GB eMMC de armazenamento interno (isso mesmo, não é necessário SD) e aceleração gráfica 3D.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Review da tela 3.5 TFT no Raspberry Pi!</title>
+      <link>https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/</link>
+      <pubDate>Wed, 11 Nov 2015 12:43:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/</guid>
+      <description>&lt;p&gt;Olá pessoal, neste artigo iremos mostrar como instalar a tela TFT 3.5&amp;rdquo;, com suporte a caneta, no Raspberry Pi. Utilizaremos a distro Raspbian Wheezy, baseada no Debian e indicada pela Raspberry Foundation, e um Raspberry Pi modelo B. Se você deseja instalar a tela em outra distribuição, basta verificar quais arquivos de configuração se equiparam aos utilizados no Raspbian.&lt;/p&gt;
+&lt;p&gt;Após instalação da tela, será feito um review falando de sua qualidade e se de fato vale comprar tal acessório.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lançada tela capacitiva oficial para Raspberry Pi</title>
+      <link>https://butecotecnologico.com.br/lancada-tela-capacitiva-oficial-para-raspberry-pi/</link>
+      <pubDate>Thu, 10 Sep 2015 22:44:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lancada-tela-capacitiva-oficial-para-raspberry-pi/</guid>
+      <description>&lt;p&gt;A Raspberry Pi Foundation anunicou recentemente uma tela touchscreen capacitiva para o Raspberry Pi. O acessório possui display de 7 polegadas, resolução de 800x480 pixels a 60fps, ângulo de visualização de 70 graus além de suportar até 10 toques simultâneos.&lt;/p&gt;
+&lt;p style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/art-rasp1.jpg&#34;&gt;&lt;img class=&#34;alignnone wp-image-3319 size-large&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/art-rasp1-1024x747.jpg&#34; alt=&#34;art rasp1&#34; width=&#34;648&#34; height=&#34;473&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sensor de temperatura gráfico com Arduino e LCD 16x2</title>
+      <link>https://butecotecnologico.com.br/sensor-de-temperatura-grafico-com-arduino-e-lcd-16x2/</link>
+      <pubDate>Mon, 20 Jul 2015 22:31:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sensor-de-temperatura-grafico-com-arduino-e-lcd-16x2/</guid>
+      <description>&lt;p&gt;Dando continuidade ao artigo &lt;a href=&#34;https://butecotecnologico.com.br/sensor-de-temperatura-e-umidade-no-arduino&#34; target=&#34;_blank&#34;&gt;Sensor de temperatura e umidade no Arduino&lt;/a&gt;, hoje vamos ver como utilizar um LCD 16x2 para exibir a temperatura e a umidade capturada pelo sensor DHT11.&lt;/p&gt;
+&lt;p&gt;A grande diferença entre o artigo anterior e este é o uso do LCD, sendo assim, não há necessidade de conectar o Arduino ao PC só para saber a temperatura.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sensor de temperatura e umidade no Arduino</title>
+      <link>https://butecotecnologico.com.br/sensor-de-temperatura-e-umidade-no-arduino/</link>
+      <pubDate>Thu, 09 Jul 2015 21:29:14 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sensor-de-temperatura-e-umidade-no-arduino/</guid>
+      <description>&lt;p&gt;Já faz algum tempo que não falo do Arduino, pois bem, hoje irei mostrar um exemplo simples. Vamos utilizar um sensor para saber temperatura.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Material utilizado&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Arduino Uno, que pode ser comprado &lt;a href=&#34;http://www.filipeflop.com/pd-6b58d-arduino-uno-r3-cabo-usb.html?utm_source=BlogButeco&amp;utm_medium=Banner&amp;utm_campaign=ButecoOpenSource&#34;&gt;aqui&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Sensor de Umidade e Temperatura DHT11, que pode ser comprado &lt;a href=&#34;http://www.filipeflop.com/pd-6b8f7-sensor-de-umidade-e-temperatura-dht11.html?utm_source=BlogButeco&amp;utm_medium=Banner&amp;utm_campaign=ButecoOpenSource&#34;&gt;aqui&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Resistor 10K&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Utilizando um teclado matricial no Arduino</title>
+      <link>https://butecotecnologico.com.br/utilizando-um-teclado-matricial-no-arduino/</link>
+      <pubDate>Tue, 19 May 2015 23:07:47 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-um-teclado-matricial-no-arduino/</guid>
+      <description>Já faz algum tempo que não falo do Arduino, porém hoje vou mostrar como utilizar um teclado matricial.
+O teclado que estou utilizando é um teclado matricial de membrana com 16 teclas e conector de 8 vias.</description>
+    </item>
+    
+    <item>
+      <title>Pesquisa sobre Cursos Presenciais de Microcontroladores</title>
+      <link>https://butecotecnologico.com.br/pesquisa-sobre-cursos-presenciais-de-microcontroladores/</link>
+      <pubDate>Tue, 05 May 2015 23:58:17 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pesquisa-sobre-cursos-presenciais-de-microcontroladores/</guid>
+      <description>O Embarcados está fazendo uma pesquisa sobre cursos presenciais de microcontroladores e ele conta com a sua opinião.</description>
+    </item>
+    
+    <item>
+      <title>Primeiros passos com o ESP8266</title>
+      <link>https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/</link>
+      <pubDate>Thu, 30 Apr 2015 08:53:10 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/</guid>
+      <description>Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.
+O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo.</description>
+    </item>
+    
+    <item>
+      <title>Conheça o ESP8266: Um módulo WiFi por menos de 5 dólares</title>
+      <link>https://butecotecnologico.com.br/conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares/</link>
+      <pubDate>Tue, 07 Apr 2015 01:49:31 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares/</guid>
+      <description>O ESP8266 é uma solução para a Internet das Coisas (IoT). Ele não é apenas um módulo WiFi que pode ser conectado ao Arduino, mas sim um System-on-a-chip (SoC). Ou seja, ele é uma solução completa para quem deseja criar um dispositivo que necessite conexão WiFi.</description>
+    </item>
+    
+    <item>
+      <title>Carregamento de hardware/driver assíncrono no kernel Linux</title>
+      <link>https://butecotecnologico.com.br/carregamento-de-hardwaredriver-assincrono-no-kernel-linux/</link>
+      <pubDate>Tue, 20 Jan 2015 18:33:36 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/carregamento-de-hardwaredriver-assincrono-no-kernel-linux/</guid>
+      <description>Enquanto o Chrome OS já tem o suporte ao carregamento de dispositivos/drivers assíncrono, o kernel linux ainda não.</description>
+    </item>
+    
+    <item>
+      <title>Controlando um LED pelo Arduino</title>
+      <link>https://butecotecnologico.com.br/controlando-um-led-pelo-arduino/</link>
+      <pubDate>Tue, 13 Jan 2015 08:00:35 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/controlando-um-led-pelo-arduino/</guid>
+      <description>Veja como controlar um LED pelo Arduino. Iremos fazer duas operações básicas, fazer o LED piscar e alterar sua intensidade.</description>
+    </item>
+    
+    <item>
+      <title>Conectando um display de 7 segmentos no Arduino</title>
+      <link>https://butecotecnologico.com.br/conectando-um-display-de-7-segmentos-no-arduino/</link>
+      <pubDate>Tue, 06 Jan 2015 20:00:01 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conectando-um-display-de-7-segmentos-no-arduino/</guid>
+      <description>Confira como utilizar um display de 7 segmentos no Arduino.</description>
+    </item>
+    
+    <item>
+      <title>Primeiros passos com o Banana Pi</title>
+      <link>https://butecotecnologico.com.br/primeiros-passos-com-o-banana-pi/</link>
+      <pubDate>Wed, 10 Dec 2014 22:35:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/primeiros-passos-com-o-banana-pi/</guid>
+      <description>Na primeira postagem sobre o Banana Pi eu comentei sobre o hardware e se seria uma boa opção de compra.</description>
+    </item>
+    
+    <item>
+      <title>Rodando Linux em uma Banana</title>
+      <link>https://butecotecnologico.com.br/rodando-linux-em-uma-banana/</link>
+      <pubDate>Tue, 09 Dec 2014 12:46:36 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/rodando-linux-em-uma-banana/</guid>
+      <description>Você já deve ter ouvido falar no Raspberry Pi, um computador single-board do tamanho de um cartão de crédito.</description>
+    </item>
+    
+  </channel>
+</rss>

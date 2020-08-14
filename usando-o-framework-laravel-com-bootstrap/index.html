@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Usando o framework Laravel com Bootstrap &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Usando o framework Laravel com Bootstrap">
+<meta itemprop="description" content="Este post tem o objetivo de mostrar de maneira fácil e rápida como utilizar o poder do artisan do laravel para geração de telas de cadastros apenas com linha de comando.">
+<meta itemprop="datePublished" content="2014-10-23T07:09:48+00:00" />
+<meta itemprop="dateModified" content="2014-10-23T07:09:48+00:00" />
+<meta itemprop="wordCount" content="720">
+<meta itemprop="image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="laravel,php," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+
+<meta name="twitter:title" content="Usando o framework Laravel com Bootstrap"/>
+<meta name="twitter:description" content="Este post tem o objetivo de mostrar de maneira fácil e rápida como utilizar o poder do artisan do laravel para geração de telas de cadastros apenas com linha de comando."/>
+
+
+<meta property="og:title" content="Usando o framework Laravel com Bootstrap" />
+<meta property="og:description" content="Este post tem o objetivo de mostrar de maneira fácil e rápida como utilizar o poder do artisan do laravel para geração de telas de cadastros apenas com linha de comando." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/usando-o-framework-laravel-com-bootstrap/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+<meta property="article:published_time" content="2014-10-23T07:09:48+00:00" />
+<meta property="article:modified_time" content="2014-10-23T07:09:48+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Usando o framework Laravel com Bootstrap</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+           alt="Jonathan André Schweder"
+           title="Jonathan André Schweder">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+           class="author">Jonathan André Schweder</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2014-10-23T07:09:48Z">Oct 23, 2014</time>
+      &middot; 4 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/usando-o-framework-laravel-com-bootstrap/"
+     data-text="Usando o framework Laravel com Bootstrap"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/usando-o-framework-laravel-com-bootstrap/"
+     data-text="Usando o framework Laravel com Bootstrap"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/usando-o-framework-laravel-com-bootstrap/"
+     data-text="Usando o framework Laravel com Bootstrap"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/usando-o-framework-laravel-com-bootstrap/"
+     data-text="Usando o framework Laravel com Bootstrap"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header><article class="mt-3 mb-4">
+  <p class="separator"><a href="http://3.bp.blogspot.com/-eLybhJqsUiE/VEfRGrzDOvI/AAAAAAAADrg/e09RPLXGsk8/s1600/logo.png"><img class="aligncenter" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2F3.bp.blogspot.com%2F-eLybhJqsUiE%2FVEfRGrzDOvI%2FAAAAAAAADrg%2Fe09RPLXGsk8%2Fs1600%2Flogo.png&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" alt="" border="0" data-orig-src="http://3.bp.blogspot.com/-eLybhJqsUiE/VEfRGrzDOvI/AAAAAAAADrg/e09RPLXGsk8/s1600/logo.png" /></a></p>
+<div>
+<p>Este post tem o objetivo de mostrar de maneira fácil e rápida como utilizar o poder do artisan do laravel para geração de telas de cadastros apenas com linha de comando.</p>
+<p> </p>
+<p><span style="font-family: Arial, Helvetica, sans-serif;"><i>Observação: para este tutorial usarei o <b>php 5.4</b>, <b>mysql</b>, <b>git </b>e <b>composer</b>,</i></span><i style="font-family: Arial, Helvetica, sans-serif;">considerarei que você já os possui instalados, porém, qualquer dúvida na </i><i>instalação dos mesmos escreva nos comentário que iremos ajuda-lo :)</i></p>
+</div>
+<div></div>
+<div>
+<h4><span style="font-family: Arial, Helvetica, sans-serif;">1º - Instalação do Framework e suas dependências</span></h4>
+</div>
+<div>
+<p><span style="font-family: Arial, Helvetica, sans-serif;">Para começar abra o prompt ou terminal e navegue até uma pasta e dentro desta execute o seguinte comando do git:</span></p>
+</div>
+<div></div>
+<div>  git clone https://github.com/laravel/laravel</div>
+<div>
+<p> </p>
+<p><span style="font-family: Arial, Helvetica, sans-serif;">O git irá baixar um esqueleto para sua aplicação, você poderia usar apenas o framework porém essa estrutura já possui diversos diretórios para organizar seus arquivos.</span></p>
+</div>
+<div>Após o termino do download, vamos adicionar algumas dependências ao projeto, uma delas é uma extensão para o <b>artisan</b>, o programa que faz a geração de código no laravel, mas antes abra o arquivo <b>composer.json</b>, você verá algo como o que segue:</div>
+<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td><a href="http://2.bp.blogspot.com/-IHUhMM9duUY/VEeb8UFkkYI/AAAAAAAADqE/mOi4sbZgtnc/s1600/arquivo_composer.png"><span style="font-family: Arial, Helvetica, sans-serif;"><img src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2F2.bp.blogspot.com%2F-IHUhMM9duUY%2FVEeb8UFkkYI%2FAAAAAAAADqE%2FmOi4sbZgtnc%2Fs1600%2Farquivo_composer.png&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" alt="" width="177" height="320" border="0" data-orig-src="http://2.bp.blogspot.com/-IHUhMM9duUY/VEeb8UFkkYI/AAAAAAAADqE/mOi4sbZgtnc/s1600/arquivo_composer.png" /></span></a></td>
+</tr>
+<tr>
+<td class="tr-caption"><span style="font-family: Arial, Helvetica, sans-serif;">Arquivo composer.json</span></td>
+</tr>
+</tbody>
+</table>
+<p class="separator"><span style="font-family: Arial, Helvetica, sans-serif;">Como podemos ver esse arquivo nada mais é que uma matriz, array de array's, para adicionar um dependência, basicamente precisamos adicioná-la na posição "require", para este tutorial usarei uma extensão que é um fork, ou uma cópia para fazer melhorias e criar sua própria versão para contribuir para o repositório original, de outro projeto, o repositório da extensão que usarei está neste <a href="https://github.com/wdollar/Laravel-4-Generators-Bootstrap-3">link</a>, mas sem muita enrolação adicione as linhas no arquivo composer.json:</span></p>
+<table class="tr-caption-container" style="height: 380px;" width="529" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td><a href="http://2.bp.blogspot.com/-hBcDt2vHZ_4/VEepTGQgG-I/AAAAAAAADqs/CSUcYQKeuEE/s1600/arquivo_composer_atualizado.png"><span style="font-family: Arial, Helvetica, sans-serif;"><img class="aligncenter" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2F2.bp.blogspot.com%2F-hBcDt2vHZ_4%2FVEepTGQgG-I%2FAAAAAAAADqs%2FCSUcYQKeuEE%2Fs1600%2Farquivo_composer_atualizado.png&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" alt="" width="185" height="320" border="0" data-orig-src="http://2.bp.blogspot.com/-hBcDt2vHZ_4/VEepTGQgG-I/AAAAAAAADqs/CSUcYQKeuEE/s1600/arquivo_composer_atualizado.png" /></span></a></td>
+</tr>
+<tr>
+<td class="tr-caption"><span style="font-family: Arial, Helvetica, sans-serif;">Arquivo composer.json atualizado, observe as alterações feitas nas tag "require" e "minimum-stability"</span></td>
+</tr>
+</tbody>
+</table>
+<div>
+<p><span style="font-family: Arial, Helvetica, sans-serif;">Agora vá para o terminal e execute o seguinte comando:</span></p>
+<pre data-blogger-escaped-nbsp=""><code><span style="font-family: Arial, Helvetica, sans-serif;"> composer install</span></code></pre>
+</div>
+<span style="font-family: Arial, Helvetica, sans-serif;">
+</span><span style="font-family: Arial, Helvetica, sans-serif;">Isso instalará o projeto e suas dependências, caso tenha esquecido de algo ou precisa reinstalar tudo depois de já ter executado o comando acima, use o comando <b>"composer update"</b>.</span>
+<h4><span style="font-family: Arial, Helvetica, sans-serif;">2º - Configuração</span></h4>
+<span style="font-family: Arial, Helvetica, sans-serif;">Após ter feito a instalação do framework e suas dependências, precisamos configurar a conexão com o banco para que o artisan funcione corretamente e faça a geração das tabelas, então vamos lá.</span>
+<div></div>
+<div>
+<p><span style="font-family: Arial, Helvetica, sans-serif;">Na pasta raiz aonde foi feito a instalação do laravel, abra o arquivo <b>&quot;appconfigdatabase.php&quot;</b>, este arquivo também não é nenhum segredo, novamente uma matriz, conforme dito usarei o mysql nesse tutorial porém o laravel possui nativamente suporte para SQLite, PostgreSQL e SQL Server além do MySQL, para qualquer um deles você precisa apenas alterar as configurações, segue imagem de exemplo:</span></p>
+</div>
+<div></div>
+<table class="tr-caption-container" style="height: 344px;" width="381" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td><a href="http://2.bp.blogspot.com/-RnOTwEPrHpg/VEejyym-YWI/AAAAAAAADqc/Y2udef20W9s/s1600/arquivo_config_database.png"><span style="font-family: Arial, Helvetica, sans-serif;"><img class="aligncenter" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2F2.bp.blogspot.com%2F-RnOTwEPrHpg%2FVEejyym-YWI%2FAAAAAAAADqc%2FY2udef20W9s%2Fs1600%2Farquivo_config_database.png&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" alt="" width="229" height="320" border="0" data-orig-src="http://2.bp.blogspot.com/-RnOTwEPrHpg/VEejyym-YWI/AAAAAAAADqc/Y2udef20W9s/s1600/arquivo_config_database.png" /></span></a></td>
+</tr>
+<tr>
+<td class="tr-caption"><span style="font-family: Arial, Helvetica, sans-serif;">Altere as configurações conforme as do seu banco</span></td>
+</tr>
+</tbody>
+</table>
+<div>
+<p><span style="font-family: Arial, Helvetica, sans-serif;">Uma vez configurado a conexão abra o terminal, vá para a pasta raiz do projeto e execute o seguinte comando:</span></p>
+<pre data-blogger-escaped-nbsp=""><code><span style="font-family: Arial, Helvetica, sans-serif;"> php artisan migrate:install</span></code></pre>
+</div>
+<div>
+<span style="font-family: Arial, Helvetica, sans-serif;">
+</span><span style="font-family: Arial, Helvetica, sans-serif;">A mensagem <b>"Migration table created successfully."</b> deverá aparecer, assim você saberá que sua conexão está corretamente configurada.</span>
+</div>
+<div>
+<p><span style="font-family: Arial, Helvetica, sans-serif;">Por ultimo precisamos habilitar a extensão do artisan, para isso abra o arquivo <b>&quot;appconfigapp.php</b><b>&rdquo; </b>e em <b>&quot;providers&quot;</b> adicione o texto <b>&quot;</b><b>'DollarGeneratorsGeneratorsServiceProvider'</b><b>&rdquo; </b>ao final do array conforme imagem a seguir:</span></p>
+</div>
+<div></div>
+<table class="tr-caption-container" style="height: 292px;" width="452" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td><a href="http://2.bp.blogspot.com/-vsN-JJauJoE/VEeqjcjDEaI/AAAAAAAADq4/AQBD7azYimY/s1600/arquivo_app_atualizado.png"><span style="font-family: Arial, Helvetica, sans-serif;"><img class="aligncenter" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2F2.bp.blogspot.com%2F-vsN-JJauJoE%2FVEeqjcjDEaI%2FAAAAAAAADq4%2FAQBD7azYimY%2Fs1600%2Farquivo_app_atualizado.png&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" alt="" width="320" height="268" border="0" data-orig-src="http://2.bp.blogspot.com/-vsN-JJauJoE/VEeqjcjDEaI/AAAAAAAADq4/AQBD7azYimY/s1600/arquivo_app_atualizado.png" /></span></a></td>
+</tr>
+<tr>
+<td class="tr-caption"><span style="font-family: Arial, Helvetica, sans-serif;">Arquivo app.php atualizado, observe em destaque a linha adicionada</span></td>
+</tr>
+</tbody>
+</table>
+<div>
+<p><span style="font-family: Arial, Helvetica, sans-serif;">Para ter certeza de que tudo está funcionando execute novamente o seguinte comando no terminal na raiz do projeto:</span></p>
+<pre data-blogger-escaped-nbsp=""><code><span style="font-family: Arial, Helvetica, sans-serif;"> php artisan</span></code></pre>
+</div>
+<div>
+<span style="font-family: Arial, Helvetica, sans-serif;">
+</span><span style="font-family: Arial, Helvetica, sans-serif;">O artisan imprimirá na tela diversos comandos, deve ser impresso algo como a imagem abaixo:</span>
+</div>
+<div></div>
+<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td><a href="http://1.bp.blogspot.com/-qYspBDgX9Gk/VEerx1JFRfI/AAAAAAAADrE/9k8WAGeEb8M/s1600/php_artisan_apos_instalacao.png"><span style="font-family: Arial, Helvetica, sans-serif;"><img class="aligncenter" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2F1.bp.blogspot.com%2F-qYspBDgX9Gk%2FVEerx1JFRfI%2FAAAAAAAADrE%2F9k8WAGeEb8M%2Fs1600%2Fphp_artisan_apos_instalacao.png&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" alt="" width="207" height="320" border="0" data-orig-src="http://1.bp.blogspot.com/-qYspBDgX9Gk/VEerx1JFRfI/AAAAAAAADrE/9k8WAGeEb8M/s1600/php_artisan_apos_instalacao.png" /></span></a></td>
+</tr>
+<tr>
+<td class="tr-caption"><span style="font-family: Arial, Helvetica, sans-serif;">Impressão do artisan, observe que no comando "generate" apareceram novos parâmetros</span></td>
+</tr>
+</tbody>
+</table>
+<h4><span style="font-family: Arial, Helvetica, sans-serif;">3º - Usando o Artisan</span></h4>
+<div>
+<p><span style="font-family: Arial, Helvetica, sans-serif;">Depois de tudo feito podemos finalmente criar um cadastro como exemplo, execute o seguinte comando no terminal:</span></p>
+</div>
+<div>
+<pre data-blogger-escaped-nbsp=""><span style="color: #333333; font-family: Arial, Helvetica, sans-serif;"><code> php artisan generate:scaffold post --fields="autor:string, corpo:text"</code></span></pre>
+</div>
+<span style="font-family: Arial, Helvetica, sans-serif;">
+</span><span style="font-family: Arial, Helvetica, sans-serif;">O artisan irá criar diversos arquivos para criar um simples cadastro de scaffold, que nada mais é que um cadastrar, alterar, excluir e consultar sem validação alguma.</span>
+<span style="font-family: Arial, Helvetica, sans-serif;">
+Após criar os arquivos precisamos criar as tabelas no banco, o artisan possui um comando para "migrar" a estrutura do banco que você configurou, para isso execute no terminal o seguinte comando:</span>
+<pre data-blogger-escaped-nbsp=""><span style="font-family: Arial, Helvetica, sans-serif;"><code> php artisan migrate</code></span></pre>
+<span style="font-family: Arial, Helvetica, sans-serif;">
+</span><span style="font-family: Arial, Helvetica, sans-serif;">Esse comando executará as migrações ou comandos sql's de criação e atualização das tabelas.</span>
+<span style="font-family: Arial, Helvetica, sans-serif;">
+Por último vamos usar um atalho do artisan para levantar um servidor web, execute o seguinte comando:</span>
+<pre data-blogger-escaped-nbsp=""><span style="font-family: Arial, Helvetica, sans-serif;"><code> php artisan serve</code></span></pre>
+<div>
+<span style="font-family: Arial, Helvetica, sans-serif;">
+</span><span style="font-family: Arial, Helvetica, sans-serif;">Acesse agora no browse a url <b>"http://localhost:8000"</b>, irá aparecer a logo do laravel com a mensagem "You are arrived." antes de me xingar e dizer que tudo foi feito para nada tente acessar a URL <b>"http://localhost:8000/posts"</b> e VOILÀ!!! cadastrar, alterar, excluir e listagem criadas.</span>
+</div>
+<div></div>
+<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td><a href="http://2.bp.blogspot.com/-uQb6KmKPNWg/VEevlkvycDI/AAAAAAAADrQ/_5PpGFi5hUU/s1600/tela_cadastros_posts.png"><span style="font-family: Arial, Helvetica, sans-serif;"><img src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2F2.bp.blogspot.com%2F-uQb6KmKPNWg%2FVEevlkvycDI%2FAAAAAAAADrQ%2F_5PpGFi5hUU%2Fs1600%2Ftela_cadastros_posts.png&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" alt="" width="320" height="60" border="0" data-orig-src="http://2.bp.blogspot.com/-uQb6KmKPNWg/VEevlkvycDI/AAAAAAAADrQ/_5PpGFi5hUU/s1600/tela_cadastros_posts.png" /></span></a></td>
+</tr>
+<tr>
+<td class="tr-caption"><span style="font-family: Arial, Helvetica, sans-serif;">Imagem do cadastro gerado com bootstrap</span></td>
+</tr>
+</tbody>
+</table>
+<div>
+<p><span style="font-family: Arial, Helvetica, sans-serif;">Os arquivos deste projetos estão disponíveis no meu git, acesse por este <a href="https://github.com/jaschweder/tutorial-laravel">link</a>, no mais agradeço pela leitura, comentem dúvidas, criticas ou sugestões, até a próxima pessoal!</span></p>
+</div>
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/laravel/" class="tag-link">laravel</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/php/" class="tag-link">php</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/usando-o-framework-laravel-com-bootstrap/"
+     data-text="Usando o framework Laravel com Bootstrap"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/usando-o-framework-laravel-com-bootstrap/"
+     data-text="Usando o framework Laravel com Bootstrap"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/usando-o-framework-laravel-com-bootstrap/"
+     data-text="Usando o framework Laravel com Bootstrap"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/usando-o-framework-laravel-com-bootstrap/"
+     data-text="Usando o framework Laravel com Bootstrap"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/jaswdr/">
+        <img class="author-img"
+             src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+             alt="Jonathan André Schweder">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/jaswdr/">Jonathan André Schweder</a>
+      </h2>
+      <span class="small text-muted">System Developer Engineer at Amazon Web Services</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

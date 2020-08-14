@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Linux API: pthreads - Parte 1 &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Linux API: pthreads - Parte 1">
+<meta itemprop="description" content="Processadores de múltiplos núcleos já são uma realidade nos computadores da grande maioria dos usuários comuns. Em meio a esse avanço podemos escrever programas que executam várias linhas de processamento em paralelo, podendo fazer com que esses programas tenham um tempo de resposta menor.
+Para tal, este post mostrará como utilizar POSIX threads na linguagem C.
+O que são threads?
+Threads são linhas de execução para processos. Ao iniciar um processo, uma thread principal é iniciada, um processo então pode criar outras threads para que estas executem tarefas específicas e de forma paralela. Quando temos uma CPU com um único núcleo, dizemos que as threads executam de forma concorrente, uma vez que a CPU só pode executar uma thread por vez, mas há mais que uma para ser executada ao &#34;mesmo tempo&#34;. Já quando temos uma CPU com vários núcleos, as threads podem ser executadas tanto de forma concorrente como em paralelo, pois o scheduler pode priorizar outros programas do computador além do seu.">
+<meta itemprop="datePublished" content="2016-01-19T11:45:24+00:00" />
+<meta itemprop="dateModified" content="2016-01-19T11:45:24+00:00" />
+<meta itemprop="wordCount" content="931">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/pthreads1.png">
+
+
+
+<meta itemprop="keywords" content="c,linux,posix,threads," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/pthreads1.png"/>
+
+<meta name="twitter:title" content="Linux API: pthreads - Parte 1"/>
+<meta name="twitter:description" content="Processadores de múltiplos núcleos já são uma realidade nos computadores da grande maioria dos usuários comuns. Em meio a esse avanço podemos escrever programas que executam várias linhas de processamento em paralelo, podendo fazer com que esses programas tenham um tempo de resposta menor.
+Para tal, este post mostrará como utilizar POSIX threads na linguagem C.
+O que são threads?
+Threads são linhas de execução para processos. Ao iniciar um processo, uma thread principal é iniciada, um processo então pode criar outras threads para que estas executem tarefas específicas e de forma paralela. Quando temos uma CPU com um único núcleo, dizemos que as threads executam de forma concorrente, uma vez que a CPU só pode executar uma thread por vez, mas há mais que uma para ser executada ao &#34;mesmo tempo&#34;. Já quando temos uma CPU com vários núcleos, as threads podem ser executadas tanto de forma concorrente como em paralelo, pois o scheduler pode priorizar outros programas do computador além do seu."/>
+
+
+<meta property="og:title" content="Linux API: pthreads - Parte 1" />
+<meta property="og:description" content="Processadores de múltiplos núcleos já são uma realidade nos computadores da grande maioria dos usuários comuns. Em meio a esse avanço podemos escrever programas que executam várias linhas de processamento em paralelo, podendo fazer com que esses programas tenham um tempo de resposta menor.
+Para tal, este post mostrará como utilizar POSIX threads na linguagem C.
+O que são threads?
+Threads são linhas de execução para processos. Ao iniciar um processo, uma thread principal é iniciada, um processo então pode criar outras threads para que estas executem tarefas específicas e de forma paralela. Quando temos uma CPU com um único núcleo, dizemos que as threads executam de forma concorrente, uma vez que a CPU só pode executar uma thread por vez, mas há mais que uma para ser executada ao &#34;mesmo tempo&#34;. Já quando temos uma CPU com vários núcleos, as threads podem ser executadas tanto de forma concorrente como em paralelo, pois o scheduler pode priorizar outros programas do computador além do seu." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/linux-api-pthreads-parte-1/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/pthreads1.png" />
+<meta property="article:published_time" content="2016-01-19T11:45:24+00:00" />
+<meta property="article:modified_time" content="2016-01-19T11:45:24+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Linux API: pthreads - Parte 1</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+           alt="Marcos Paulo de Souza"
+           title="Marcos Paulo de Souza">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+           class="author">Marcos Paulo de Souza</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2016-01-19T11:45:24Z">Jan 19, 2016</time>
+      &middot; 5 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/linux-api-pthreads-parte-1/"
+     data-text="Linux API: pthreads - Parte 1"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/linux-api-pthreads-parte-1/"
+     data-text="Linux API: pthreads - Parte 1"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/linux-api-pthreads-parte-1/"
+     data-text="Linux API: pthreads - Parte 1"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/linux-api-pthreads-parte-1/"
+     data-text="Linux API: pthreads - Parte 1"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/pthreads1.png"
+           alt="Linux API: pthreads - Parte 1">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Processadores de múltiplos núcleos já são uma realidade nos computadores da grande maioria dos usuários comuns. Em meio a esse avanço podemos escrever programas que executam várias linhas de processamento em paralelo, podendo fazer com que esses programas tenham um tempo de resposta menor.</p>
+<p>Para tal, este post mostrará como utilizar POSIX threads na linguagem C.</p>
+<h4>O que são threads?</h4>
+<em>Threads</em> são linhas de execução para processos. Ao iniciar um processo, uma <em>thread</em> principal é iniciada, um processo então pode criar outras <em>threads</em> para que estas executem tarefas específicas e de forma paralela. Quando temos uma CPU com um único núcleo, dizemos que as <em>threads</em> executam de forma <em>concorrente</em>, uma vez que a CPU só pode executar uma thread por vez, mas há mais que uma para ser executada ao "mesmo tempo". Já quando temos uma CPU com vários núcleos, as <em>threads</em> podem ser executadas tanto de forma <em>concorrente</em> como em <em>paralelo</em>, pois o <a href="https://pt.wikipedia.org/wiki/Escalonamento_de_processos" target="_blank"><em>scheduler</em></a> pode priorizar outros programas do computador além do seu.
+<h4>Para que são utilizadas?</h4>
+Como dito anteriormente, as threads são utilizadas para fazerem tarefas de forma simultânea dentro do mesmo processo. Para exemplificar, imagine um servidor de <em>chat</em>. Você poderia fazer tudo rodar na mesma thread: identificar novos usuários conectados, receber mensagens destes usuários e enviar estas mensagens para os usuários online, identificar usuários que deixam o sistema, e etc. Nesse exemplo, podemos ver que este processo se torna custoso para uma única <em>thread</em> (<em>thread principal</em> nesse caso). Para tornar este processo mais otimizado, podemos criar uma <em>thread</em> para tratar as conexões ativas (usuários conectando e desconectando do servidor), e outra <em>thread</em> somente para receber as mensagens.
+<h4>Porque o nome pthreads?</h4>
+<em>POSIX threads</em>, aka <em>pthreads</em>, é um padrão definido para sistemas *NIX, tais qual BSD e Linux. Outros sistemas operacionais, como o Windows, tem sua própria API de <em>threads</em>.
+<h4>Exemplo</h4>
+Segue abaixo um exemplo simples da utilização de <em>pthreads</em> em código C. Podemos ver duas <em>threads</em> sendo criadas, fazendo somas, e no final a <em>thread</em> principal pegando o retorno destas <em>threads</em> e somando os dois resultados:
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_c/pthreads/pthread1.c" type="text/javascript"></script>
+<p>Para compilar o código acima é necessário fazer o <em>link</em> com a <em>libpthread</em>:
+<code>gcc pthread1.c -o pthread1 -lpthread</code></p>
+<p>Vamos ao código:
+<code>pthread_t</code> é o identificador da <em>thread</em>, ou seja, é necessário utilizar este identificador para executar outras ações na <em>thread</em>, como o <em>join</em>(ver abaixo). Neste exemplo, criamos um <em>array</em> de <em>pthreads</em> com duas posições, pois teremos duas <em>threads</em>. Poderíamos ter criado duas variáveis ao invés do <em>array</em>, mas isto não muda o resultado final.</p>
+<p><code>pthread_create</code> é a função onde é criada uma nova <em>thread</em> de fato. Esta função recebe:</p>
+<ul>
+<li><code>pthread_id</code>, que é o identificador da <em>thread</em> a ser criada</li>
+<li><code>pthread_attr_t</code>, que é uma variável onde podemos setar alguns atributos para alterar o comportamento padrão da <em>thread</em>. Na maioria das vezes esse valor pode ser omitido, como no exemplo. Este assunto será abordado na parte dois do artigo.</li>
+<li><code>void *(*start_routine) (void *)</code>, que é um ponteiro de função que será executada pela <em>thread</em>. A definição do parâmetro no <em>man page</em> parece ser meio confusa, mas é bem simples: É esperado um nome de função, mas esta função deve retornar um ponteiro <code>void</code>, e deve receber um ponteiro <code>void</code> como parâmetro. No nosso exemplo, criamos a função <code>func</code> que atende os requisitos acima. Como já descrito, a função só pode receber um único parâmetro, e se você deseja passar mais de um valor, basta criar uma <code>struct</code> e utilizar este como parâmetro.</li>
+<li><code>void *arg</code>, que é o parâmetro que será passado a função. Como este parâmetro é um ponteiro <code>void</code>, ele pode ser qualquer coisa. Basta passar o valor e fazer um <em>cast</em> para <code>void *</code> e o valor será passado para a função quando ela iniciar.</li>
+</ul>
+<p>Tudo isso parece um pouco complicado de início, mas vamos a um resumo disso tudo acima:
+<code>pthread_create</code> vai criar uma nova <em>thread</em>, que irá executar uma função que retorna um ponteiro <code>void</code> (pode retornar qualquer tipo de valor, sendo <code>int</code>, ou até mesmo uma <code>struct</code>), e que recebe como parâmetro um ponteiro <code>void</code> (que pode ser um <code>int</code> ou até uma <code>struct</code>). Acredito que tenha ficado mais claro agora!</p>
+<p>A chamada <code>pthread_create</code> retorna zero em caso de sucesso. Qualquer valor diferente de zero significa que houve um erro.</p>
+<p>No exemplo criamos duas <em>threads</em>, passando valores diferentes para cada uma delas, e assim esperamos que cada uma delas retorne um valor diferente. As duas <em>threads</em> irão executar a função <code>func</code>, que soma 100 vezes o valor passado como parâmetro. Podemos ver aqui como um <code>int</code> sofre um <em>cast</em> para <code>void *</code> na chamada <code>pthread_create</code>, e novamente sofre outro <em>cast</em> dentro da função <code>func</code> para <code>int</code> novamente. Desta forma a função <code>pthread_create</code> pode receber qualquer tipo de dado como parâmetro.</p>
+<p>Após a criação das duas <em>threads</em>, a <em>thread principal</em> continua seu fluxo. A fim de &ldquo;esperar&rdquo; que as duas <em>threads</em> iniciadas terminem, a chamada <code>pthread_join</code> é necessária.</p>
+<p><code>pthread_join</code> é responsável por &ldquo;esperar&rdquo; por uma <em>thread</em> acabar, ou se ela já acabou, a chamada retorna imediatamente. Os parâmetros são:</p>
+<ul>
+<li><code>pthread_t</code>, que é o identificador da <em>thread</em></li>
+<li><code>void **retval</code>, que pede um endereço para um ponteiro void. Esse parâmetro recebe o retorno da <em>thread</em> em questão, nesse caso o valor do cálculo.</li>
+</ul>
+<p>Da mesma forma que <code>pthread_create</code>, <code>pthread_join</code> também retorna zero em caso de sucesso, e outro valor em caso de erro.</p>
+<p>Ao executar o programa do exemplo, a saída a seguir pode ser vista:</p>
+<pre>[marcos@localhost pthreads]$ ./pthread1
+Resultado: 1100</pre>
+<p>Espero que tenham gostado desta primeira parte! Não esqueça de comentar, até mais!</p>
+<p>Referências:
+<a href="https://pt.wikipedia.org/wiki/Thread_(ci%C3%AAncia_da_computa%C3%A7%C3%A3o)" target="_blank">Wikipédia (BR) - Threads</a>
+<a href="http://www.thegeekstuff.com/2012/03/linux-threads-intro/" target="_blank">The Gekk Stuff - Linux Threads Introduction</a>
+<a href="http://man7.org/linux/man-pages/man7/pthreads.7.html" target="_blank">man pthreads</a>
+<a href="http://man7.org/linux/man-pages/man3/pthread_create.3.html" target="_blank">pthread_create</a>
+<a href="http://linux.die.net/man/3/pthread_join" target="_blank">man pthread_join</a></p>
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/c/" class="tag-link">c</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/posix/" class="tag-link">posix</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/threads/" class="tag-link">threads</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/linux-api-pthreads-parte-1/"
+     data-text="Linux API: pthreads - Parte 1"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/linux-api-pthreads-parte-1/"
+     data-text="Linux API: pthreads - Parte 1"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/linux-api-pthreads-parte-1/"
+     data-text="Linux API: pthreads - Parte 1"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/linux-api-pthreads-parte-1/"
+     data-text="Linux API: pthreads - Parte 1"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/mpdesouza/">
+        <img class="author-img"
+             src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+             alt="Marcos Paulo de Souza">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/">Marcos Paulo de Souza</a>
+      </h2>
+      <span class="small text-muted">Software Engineer</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

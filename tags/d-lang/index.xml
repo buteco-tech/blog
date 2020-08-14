@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>d lang on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/d-lang/</link>
+    <description>Recent content in d lang on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 17 Apr 2015 09:22:10 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/d-lang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-5/</link>
+      <pubDate>Fri, 17 Apr 2015 09:22:10 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-5/</guid>
+      <description>Não conhece a linguagem de programação D? Então veja este link.</description>
+    </item>
+    
+  </channel>
+</rss>

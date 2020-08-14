@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lançamento on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/lan%C3%A7amento/</link>
+    <description>Recent content in lançamento on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 06 Aug 2015 10:05:46 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/lan%C3%A7amento/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kali Linux 2.0 já tem data para o lançamento</title>
+      <link>https://butecotecnologico.com.br/kali-linux-2-0-ja-tem-data-para-o-lancamento/</link>
+      <pubDate>Thu, 06 Aug 2015 10:05:46 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/kali-linux-2-0-ja-tem-data-para-o-lancamento/</guid>
+      <description>&lt;p&gt;A &lt;a href=&#34;https://www.offensive-security.com/&#34; target=&#34;_blank&#34;&gt;Offensive Security&lt;/a&gt;, criadora e mantenedora do Kali Linux, divulgou um vídeo de pré-lançamento da nova versão do Kali Linux; com lançamento oficial previsto para 11 de agosto de 2015. A equipe, nos últimos meses, tem trabalhado ferozmente nessa próxima versão – que promete muita coisa nova. No vídeo divulgado, a empresa mostra toda a cronologia de desenvolvimento da ferramenta, desde da época do BackTrack, e por fim as novidades da nova versão, confira.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

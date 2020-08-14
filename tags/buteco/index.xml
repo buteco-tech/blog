@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>buteco on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/buteco/</link>
+    <description>Recent content in buteco on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 03 Sep 2015 22:44:59 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/buteco/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aniversário do Buteco!</title>
+      <link>https://butecotecnologico.com.br/aniversario-do-buteco/</link>
+      <pubDate>Thu, 03 Sep 2015 22:44:59 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/aniversario-do-buteco/</guid>
+      <description>Aniversário do Buteco!</description>
+    </item>
+    
+  </channel>
+</rss>

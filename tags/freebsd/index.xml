@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>freebsd on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/freebsd/</link>
+    <description>Recent content in freebsd on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 01 Feb 2016 21:15:54 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/freebsd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compilando o FreeBSD: Parte 1</title>
+      <link>https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/</link>
+      <pubDate>Mon, 01 Feb 2016 21:15:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/</guid>
+      <description>&lt;p&gt;Primeiro de tudo, sei que o conteúdo propriamente dito de como baixar e compilar os fontes do sistema operacional do FreeBSD é algo que tem aos montes na Internet. Entretanto acredito que reativar tópicos interessantes ou transformar eles em um registro no &lt;em&gt;feeds&lt;/em&gt; das notícias pode animar alguém a fazer estes testes.&lt;/p&gt;
+&lt;p&gt;Um aspecto é que, o objetivo deste texto é servir como base para a segunda parte que é compilar o sistema da nova maneira seguindo a proposta no livro de desenvolvimento do FreeBSD.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nova versão do Lumina</title>
+      <link>https://butecotecnologico.com.br/nova-versao-do-lumina/</link>
+      <pubDate>Tue, 03 Nov 2015 21:48:24 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/nova-versao-do-lumina/</guid>
+      <description>&lt;p&gt;Você já ouviu falar ou leu sobre o Lumina?&lt;/p&gt;
+&lt;p&gt;Pois bem, nem só de KDE, Gnome, console, vive o FreeBSD :P, agora ele tem o Lumina. O Lumina  é um projeto de WM (&lt;em&gt;Window Manager&lt;/em&gt;) da XSystem desenhado para FreeBSD, desenvolvido de uma maneira para ser portável, funcionando em várias distribuições Linux. A solução vem sendo projetada em conjunto com o PC-BSD, o qual disponibiliza versões com Lumina atualizado.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NVIDIA anuncia driver 358 (beta) para Linux, Solaris e FreeBSD</title>
+      <link>https://butecotecnologico.com.br/nvidia-anuncia-driver-358-beta-para-linux-solaris-e-freebsd/</link>
+      <pubDate>Tue, 13 Oct 2015 20:30:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/nvidia-anuncia-driver-358-beta-para-linux-solaris-e-freebsd/</guid>
+      <description>&lt;p&gt;A NVIDIA disponibilizou a primeira versão pública beta do &lt;em&gt;driver&lt;/em&gt; 358 (358.09) para Linux, FreeBSD e Solaris. Construído sobre o driver 355, a série 358 acrescenta mais peças ao quebra-cabeças da interface com DRM/KMS (&lt;em&gt;Direct Rendering Manager/Kernel Mode Setting&lt;/em&gt;) e continua melhorando o suporte ao Mir/Wayland.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FreeBSD - pkg 1.6 chegando</title>
+      <link>https://butecotecnologico.com.br/freebsd-pkg-1-6-chegando/</link>
+      <pubDate>Wed, 30 Sep 2015 23:04:13 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/freebsd-pkg-1-6-chegando/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/pkg.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-3427&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/pkg.jpg&#34; alt=&#34;pkg&#34; width=&#34;638&#34; height=&#34;479&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para os mais desavidos, desde que o FreeBSD mudou para sua versão 9, ele mudou o seu sistema de pacotes padrão para o pkg, uma grande evolução, e para nossa e vossa alegria o seu ciclo de desenvolvimento e melhorias ficou muito mais rápido, tanto que logo estamos chegando na versão 1.6. Foi lançado no dia 26/09, e com elo todo um conjunto de pacotes.
+No entanto, cuidado com atualizações via pacotes pois as vezes tendem a ter alguns &lt;em&gt;brokens&lt;/em&gt;, e como sabem, é sempre uma boa ideia utilizar em ambiente de teste antes de levar para a produção.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Os primeiros passos com o demônio - FreeBSD</title>
+      <link>https://butecotecnologico.com.br/os-primeiros-passos-com-o-demonio-freebsd/</link>
+      <pubDate>Wed, 02 Sep 2015 23:12:01 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/os-primeiros-passos-com-o-demonio-freebsd/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/freebsd.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-medium wp-image-3261&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/freebsd-212x300.jpg&#34; alt=&#34;freebsd&#34; width=&#34;212&#34; height=&#34;300&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Você se decidiu .. se rendeu, vai experimentar este demônio que o pessoal tanto comenta, fala, testa, que a Neflix usa, que o Groupon migrou os servidores, que o Whatsap utiliza, que a Juniper utilizar ..&lt;/p&gt;
+&lt;p&gt;Ok, mas por onde começar o_O ?&lt;/p&gt;
+&lt;p&gt;Óbvio pela bíblia do demônio :P &lt;a href=&#34;https://www.freebsd.org/doc/handbook/&#34; target=&#34;_blank&#34;&gt;&amp;quot;Freebsd Hadbook&amp;quot;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Marco lá não tem as dicas maneiras para arrumar o meu desktop demonizado &amp;hellip;.. calma gente que um outro ótimo texto de referência: &lt;a href=&#34;https://cooltrainer.org/a-freebsd-desktop-howto/&#34; target=&#34;_blank&#34;&gt;A FreeBSD 10 Desktop How-to&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OctoPkg – A GUI for pkg-ng</title>
+      <link>https://butecotecnologico.com.br/octopkg-a-gui-for-pkg-ng/</link>
+      <pubDate>Fri, 28 Aug 2015 09:24:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/octopkg-a-gui-for-pkg-ng/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/pacotes.png&#34;&gt;&lt;img class=&#34; size-medium wp-image-2985 aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/pacotes-300x289.png&#34; alt=&#34;pacotes&#34; width=&#34;300&#34; height=&#34;289&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Eu fico feliz quando pela minhas andanças surfando na web, encontro alguns projetos brasileiros envolvidos com FreeBSD e ou com código aberto em geral. O projeto da vez é o &lt;a href=&#34;https://octopkg.wordpress.com/&#34; target=&#34;_blank&#34;&gt;OctoPKG&lt;/a&gt;, criado pelo &lt;a href=&#34;https://twitter.com/aaarnt&#34;&gt;Alexandre A Arnt&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A – ZFS Parte 1</title>
+      <link>https://butecotecnologico.com.br/a-zfs-parte-1/</link>
+      <pubDate>Wed, 01 Jul 2015 23:01:34 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/a-zfs-parte-1/</guid>
+      <description>&lt;p style=&#34;text-align: center;&#34;&gt;&lt;img class=&#34;aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/278852-300x245.png&#34; alt=&#34;ZFS&#34; width=&#34;300&#34; height=&#34;245&#34; /&gt;
+Imagem retirado de &lt;a href=&#34;http://tweakers.net&#34; target=&#34;_blank&#34;&gt;Tweakers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Por que não começar com a introdução da Wikipedia sobre ele&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ANTES: VOU REPETIR E DESTACAR, E SALIENTAR 2001&lt;/strong&gt; é o ano de origem do &lt;strong&gt;ZFS&lt;/strong&gt;, das ideias e planejamentos qualquer outra coisa que venha depois é mera cópia como produtos chineses !! Ele foi anunciado oficialmente em setembro de 2004, e lançado em novembro de 2005.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ZFS &lt;/strong&gt;é uma combinação de sistema de arquivos e volume de manipulação lógica desenhado pela &lt;strong&gt;Sun Microsystems&lt;/strong&gt;. As propriedades do &lt;strong&gt;ZFS &lt;/strong&gt;incluem proteção contra corrupção de dados, suporte para altas capacidades de armazenamento, eficiente compressão de dados, integração de conceitos de sistemas de arquivos e volumes lógicos, suporte a &lt;em&gt;snapshots &lt;/em&gt;e clones com cópia quando escreve, continua checagem de integração e automática recuperação, &lt;strong&gt;RAID-Z&lt;/strong&gt; e nativo suporte a &lt;strong&gt;ACLs &lt;/strong&gt;em &lt;strong&gt;NFSv4&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Revista BSD Magazine número 70</title>
+      <link>https://butecotecnologico.com.br/revista-bsd-magazine-numero-70/</link>
+      <pubDate>Mon, 01 Jun 2015 23:28:40 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/revista-bsd-magazine-numero-70/</guid>
+      <description>Edição 70 da revista BSD Magazine, uma revista especializada sobre sistemas operacionais BSD.</description>
+    </item>
+    
+    <item>
+      <title>Vendo a memória de forma simplificada no FreeBSD ( I have free )</title>
+      <link>https://butecotecnologico.com.br/vendo-a-memoria-de-forma-simplificada-no-freebsd-i-have-free/</link>
+      <pubDate>Wed, 13 May 2015 22:48:53 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/vendo-a-memoria-de-forma-simplificada-no-freebsd-i-have-free/</guid>
+      <description>Como executar o comando free no FreeBSD, da mesma forma que é executado no Linux.</description>
+    </item>
+    
+  </channel>
+</rss>

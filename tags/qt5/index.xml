@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>qt5 on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/qt5/</link>
+    <description>Recent content in qt5 on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 14 May 2015 23:08:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/qt5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>QtGamepad: Adicionando suporte a Gamepad no Qt</title>
+      <link>https://butecotecnologico.com.br/qtgamepad-adicionando-suporte-a-gamepad-no-qt/</link>
+      <pubDate>Thu, 14 May 2015 23:08:42 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/qtgamepad-adicionando-suporte-a-gamepad-no-qt/</guid>
+      <description>Um dos mais novos módulos adicionados ao Qt Labs é o QtGamepad, um módulo inspirado na API Gamepad do HTML5. Apesar de inspirado no Gamepad HTML, ele segue o estilo de desenvolvimento do Qt.</description>
+    </item>
+    
+  </channel>
+</rss>

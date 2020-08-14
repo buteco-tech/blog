@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Criando uma Central de Multimídia com Raspberry Pi &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Criando uma Central de Multimídia com Raspberry Pi">
+<meta itemprop="description" content="Usaremos o OpenELEC para criar a central de multimídia, irei instalar no Raspberry Pi 2, porém também está disponível para o Raspberry PI.
+OpenELEC é uma distribuição Linux criada em torno do programa XBMC – um famoso hub de entretenimento de código aberto – e focada na tarefa de transformar seu equipamento em uma central de mídia.">
+<meta itemprop="datePublished" content="2015-08-20T22:28:06+00:00" />
+<meta itemprop="dateModified" content="2015-08-20T22:28:06+00:00" />
+<meta itemprop="wordCount" content="434">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/openelec.jpg">
+
+
+
+<meta itemprop="keywords" content="openelec,raspberrypi," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/openelec.jpg"/>
+
+<meta name="twitter:title" content="Criando uma Central de Multimídia com Raspberry Pi"/>
+<meta name="twitter:description" content="Usaremos o OpenELEC para criar a central de multimídia, irei instalar no Raspberry Pi 2, porém também está disponível para o Raspberry PI.
+OpenELEC é uma distribuição Linux criada em torno do programa XBMC – um famoso hub de entretenimento de código aberto – e focada na tarefa de transformar seu equipamento em uma central de mídia."/>
+
+
+<meta property="og:title" content="Criando uma Central de Multimídia com Raspberry Pi" />
+<meta property="og:description" content="Usaremos o OpenELEC para criar a central de multimídia, irei instalar no Raspberry Pi 2, porém também está disponível para o Raspberry PI.
+OpenELEC é uma distribuição Linux criada em torno do programa XBMC – um famoso hub de entretenimento de código aberto – e focada na tarefa de transformar seu equipamento em uma central de mídia." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/openelec.jpg" />
+<meta property="article:published_time" content="2015-08-20T22:28:06+00:00" />
+<meta property="article:modified_time" content="2015-08-20T22:28:06+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Criando uma Central de Multimídia com Raspberry Pi</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/daniel-magevski/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=100&d=robohash"
+           alt="Daniel Magevski"
+           title="Daniel Magevski">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/daniel-magevski/"
+           class="author">Daniel Magevski</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2015-08-20T22:28:06Z">Aug 20, 2015</time>
+      &middot; 3 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/"
+     data-text="Criando uma Central de Multimídia com Raspberry Pi"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/"
+     data-text="Criando uma Central de Multimídia com Raspberry Pi"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/"
+     data-text="Criando uma Central de Multimídia com Raspberry Pi"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/"
+     data-text="Criando uma Central de Multimídia com Raspberry Pi"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/openelec.jpg"
+           alt="Criando uma Central de Multimídia com Raspberry Pi">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Usaremos o OpenELEC para criar a central de multimídia, irei instalar no Raspberry Pi 2, porém também está disponível para o Raspberry PI.</p>
+<p>OpenELEC é uma distribuição Linux criada em torno do programa XBMC – um famoso hub de entretenimento de código aberto – e focada na tarefa de transformar seu equipamento em uma central de mídia.</p>
+<p><strong>Características do OpenELEC.</strong></p>
+<p><em>Com o seu design compacto, OpenELEC também é ideal para pequenos sistemas baseados em processadores Atom. O sistema tem muitas versões disponíveis, incluindo uma compilação que pode ser executada em praticamente qualquer PC com processador x86 Pentium 4 ou superior. Ele também tem compilações otimizadas para algumas plataformas, que são NVIDIA ION e ION2, Intel GMA HD chipsets, AMD Fusion, Apple TV de primeira geração e o mini-PC Raspberry Pi. Tudo isso para que você não tenha que usar um computador inteiro apenas para colocar em sua sala de estar.</em></p>
+<p><em>Enquanto outros sistemas operacionais são projetados para ser multiuso, OpenELEC é construído a partir do zero especificamente para uma tarefa, executar o XBMC e executá-lo da melhor maneira possível e com isso ser a melhor opção de gerenciamento de mídia para sua sala de estar.</em></p>
+<p><em>Para completar, OpenELEC foi projetado para ser gerenciado como um aparelho: ele pode automaticamente atualizar-se e pode ser gerenciado inteiramente a partir da interface gráfica. E mesmo ele sendo uma variante do Linux, você nunca precisará ver um console de gerenciamento, terminal de comando ou ter conhecimento de Linux para usá-lo.</em></p>
+<p><em>Via <a href="http://www.techtudo.com.br/tudo-sobre/openelec.html" target="_blank">Tech Tudo</a></em></p>
+<p>Você pode adquirir um Raspberry Pi 2 ou outros produtos com a <a href="http://www.lojamundi.com.br/embarcados-raspberry-cubieboard-beagleboneblack.html/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoOpenSource" target="_blank">Loja Mundi</a>.</p>
+<!--more-->
+<p>Primeiro baixe a &ldquo;<strong>Diskimage</strong>&rdquo; de acordo com seu Raspberry PI clickando <a href="http://openelec.tv/get-openelec" target="_blank">aqui</a>.</p>
+<p>Após feito o download iremos descompactar o arquivo.</p>
+<p>Nesse caso fiz o download para Raspberry Pi 2.</p>
+<p><code>gunzip OpenELEC-RPi2.arm-5.0.8.img.gz</code></p>
+<p>Agora pesquise pelo seu cartão micro SD, utilizando o comando.</p>
+<p><code>lsblk</code></p>
+<p>Irá te mostrar os dispositivos, após localizado iremos adicionar a imagem no micro SD com o comando dd, preencha a parte <strong>&rdquo;/mmcblk0&quot;</strong> com o dispositivo localizado, no meu caso foi assim.</p>
+<p><code>sudo dd if=OpenELEC-RPi2.arm-5.0.8.img of=/dev/mmcblk0</code></p>
+<p>Após feito isso coloquei o micro SD no seu Raspberry Pi ligue-o.</p>
+<p>Irá aparece essa tela onde você seleciona o idioma.</p>
+<p><a href="/images/wp-content/uploads/2015/07/OpenElec1.png"><img class="alignnone wp-image-3155" src="/images/wp-content/uploads/2015/07/OpenElec1.png" alt="OpenElec1" width="649" height="365" /></a></p>
+<p>O OpenELEC já vem o servidor <strong>Samba</strong> e o <strong>SSH</strong> configurado, precisa somente ativa-lo.</p>
+<p><a href="/images/wp-content/uploads/2015/07/OpenElec2.png"><img class="alignnone wp-image-3156" src="/images/wp-content/uploads/2015/07/OpenElec2.png" alt="OpenElec2" width="647" height="364" /></a></p>
+<p>Informações sobre o vídeo, repare que está rodando com resolução 1920x1080 com 60HZ.</p>
+<p><a href="/images/wp-content/uploads/2015/07/OpenElec3.png"><img class="alignnone wp-image-3157" src="/images/wp-content/uploads/2015/07/OpenElec3.png" alt="OpenElec3" width="644" height="362" /></a></p>
+<p>Aqui os compartilhamentos que o OpenELEC aceita, NFS,Samba, etc&hellip;</p>
+<p><a href="/images/wp-content/uploads/2015/07/OpenElec5.png"><img class="alignnone wp-image-3159" src="/images/wp-content/uploads/2015/07/OpenElec5.png" alt="OpenElec5" width="649" height="365" /></a></p>
+<p>Escolha os addons de sua preferência para ver séries, assistir filmes, ouvir músicas e etc&hellip;</p>
+<p>Confira o vídeo abaixo o funcionamento dele.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=-U7kZF14tDQ" frameborder="0" allowfullscreen></iframe>
+<p>Baixe o aplicativo para <a href="https://play.google.com/store/apps/details?id=org.xbmc.kore" target="_blank">android</a>, com ele você pode controlar pelo celular, ou para <a href="https://itunes.apple.com/us/app/unofficial-official-xbmc-remote/id520480364?ls=1&amp;mt=8" target="_blank">IOS</a>.</p>
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/openelec/" class="tag-link">openelec</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/raspberrypi/" class="tag-link">raspberrypi</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/"
+     data-text="Criando uma Central de Multimídia com Raspberry Pi"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/"
+     data-text="Criando uma Central de Multimídia com Raspberry Pi"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/"
+     data-text="Criando uma Central de Multimídia com Raspberry Pi"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/"
+     data-text="Criando uma Central de Multimídia com Raspberry Pi"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/daniel-magevski/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=100&d=robohash"
+             alt="Daniel Magevski">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/daniel-magevski/">Daniel Magevski</a>
+      </h2>
+      <span class="small text-muted"></span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

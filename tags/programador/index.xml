@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programador on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/programador/</link>
+    <description>Recent content in programador on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 20 Nov 2015 11:07:22 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/programador/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-28/</link>
+      <pubDate>Fri, 20 Nov 2015 11:07:22 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-28/</guid>
+      <description>Via 9gag</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-9/</link>
+      <pubDate>Fri, 15 May 2015 08:18:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-9/</guid>
+      <description>Via TI da Depressão</description>
+    </item>
+    
+  </channel>
+</rss>

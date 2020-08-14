@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim-config on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/vim-config/</link>
+    <description>Recent content in vim-config on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 28 Apr 2016 00:31:09 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/vim-config/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VIM tips: Mudando cor de destaque da busca</title>
+      <link>https://butecotecnologico.com.br/vim-tips-mudando-cor-de-destaque-da-busca/</link>
+      <pubDate>Thu, 28 Apr 2016 00:31:09 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/vim-tips-mudando-cor-de-destaque-da-busca/</guid>
+      <description>&lt;p&gt;O VIM realmente é um canivete suíço dos editores de texto, sendo possível customizar praticamente todos as suas configurações, desde histórico de comandos até as cores de destaque ao fazer uma busca em um arquivo de texto.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

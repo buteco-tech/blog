@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>qemu on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/qemu/</link>
+    <description>Recent content in qemu on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 25 Aug 2015 23:44:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/qemu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Virsh: criando e gerenciando VMs pelo terminal</title>
+      <link>https://butecotecnologico.com.br/virsh-criando-e-gerenciando-vms-pelo-terminal/</link>
+      <pubDate>Tue, 25 Aug 2015 23:44:58 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/virsh-criando-e-gerenciando-vms-pelo-terminal/</guid>
+      <description>Este artigo apresenta uma introdução a ferramenta virsh, baseada na libvirt, para gerenciar máquinas virtuais no Linux.</description>
+    </item>
+    
+    <item>
+      <title>QEMU 2.3 trará suporte a CPU Ivy Bridge</title>
+      <link>https://butecotecnologico.com.br/qemu-2-3-trara-suporte-a-cpu-ivy-bridge/</link>
+      <pubDate>Fri, 16 Jan 2015 20:03:31 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/qemu-2-3-trara-suporte-a-cpu-ivy-bridge/</guid>
+      <description>O QEMU é um emulador e virtualizador de máquinas e é totalmente Open Source. A versão 2.2 foi lançada há pouco mais de um mês (09/12), e para a versão 2.3 a lista de novidades já é grande.</description>
+    </item>
+    
+    <item>
+      <title>QEMU/KVM: Habilitar serial console no CentOS/RHEL para acessá-lo pelo virsh console</title>
+      <link>https://butecotecnologico.com.br/qemukvm-habilitar-serial-console-no-centosrhel-para-acessa-lo-pelo-virsh-console/</link>
+      <pubDate>Wed, 17 Sep 2014 12:03:21 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/qemukvm-habilitar-serial-console-no-centosrhel-para-acessa-lo-pelo-virsh-console/</guid>
+      <description>Olá pessoal, a alguns dias atrás eu precisei fazer alguns testes usando o QEMU/KVM, e para isso foi necessário o acesso a uma máquina virtual com CentOS utilizando o virsh console.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Como usar o MongoDB com PHP &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Como usar o MongoDB com PHP">
+<meta itemprop="description" content="Dentre os bancos de dados NoSQL da atualidade um dos mais usados é o MongoDB, seja pela sua eficiência em trabalhar com enormes volumes de dados ou pela sua flexibilidade, algo comum em bancos NoSQL. Abordaremos neste artigo como trabalhar com ele no PHP.">
+<meta itemprop="datePublished" content="2016-04-19T08:41:55+00:00" />
+<meta itemprop="dateModified" content="2016-04-19T08:41:55+00:00" />
+<meta itemprop="wordCount" content="649">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/04/mongodb-logo.jpg">
+
+
+
+<meta itemprop="keywords" content="mongodb,php," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/04/mongodb-logo.jpg"/>
+
+<meta name="twitter:title" content="Como usar o MongoDB com PHP"/>
+<meta name="twitter:description" content="Dentre os bancos de dados NoSQL da atualidade um dos mais usados é o MongoDB, seja pela sua eficiência em trabalhar com enormes volumes de dados ou pela sua flexibilidade, algo comum em bancos NoSQL. Abordaremos neste artigo como trabalhar com ele no PHP."/>
+
+
+<meta property="og:title" content="Como usar o MongoDB com PHP" />
+<meta property="og:description" content="Dentre os bancos de dados NoSQL da atualidade um dos mais usados é o MongoDB, seja pela sua eficiência em trabalhar com enormes volumes de dados ou pela sua flexibilidade, algo comum em bancos NoSQL. Abordaremos neste artigo como trabalhar com ele no PHP." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/como-usar-o-mongodb-com-php/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/04/mongodb-logo.jpg" />
+<meta property="article:published_time" content="2016-04-19T08:41:55+00:00" />
+<meta property="article:modified_time" content="2016-04-19T08:41:55+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Como usar o MongoDB com PHP</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+           alt="Jonathan André Schweder"
+           title="Jonathan André Schweder">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+           class="author">Jonathan André Schweder</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2016-04-19T08:41:55Z">Apr 19, 2016</time>
+      &middot; 4 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/como-usar-o-mongodb-com-php/"
+     data-text="Como usar o MongoDB com PHP"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/como-usar-o-mongodb-com-php/"
+     data-text="Como usar o MongoDB com PHP"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/como-usar-o-mongodb-com-php/"
+     data-text="Como usar o MongoDB com PHP"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/como-usar-o-mongodb-com-php/"
+     data-text="Como usar o MongoDB com PHP"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2016/04/mongodb-logo.jpg"
+           alt="Como usar o MongoDB com PHP">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Dentre os bancos de dados NoSQL da atualidade um dos mais usados é o MongoDB, seja pela sua eficiência em trabalhar com enormes volumes de dados ou pela sua flexibilidade, algo comum em bancos NoSQL. Abordaremos neste artigo como trabalhar com ele no PHP.</p>
+<h2>Conceito</h2>
+Antes iniciar você deve ter em mente algumas diferenças básicas entre bancos SQL e NoSQL. Primeiro de tudo, um não veio para substituir o outro, cada um resolve um ou um conjunto de problemas comuns para armazenar e utilizar seus registros com maior eficiência. Segundo, os bancos de dados NoSQL estão estáveis e sendo usados largamente em produção. Terceiro e último, não existe exatamente um padrão de modelo utilizado por todos os bancos NoSQL, de
+<p>pendendo do banco você executará <em>queries</em> de diferentes formas, pois o próprio banco armazena seus registros de diferentes formas. O MongoDB por exemplo utiliza o conceito de “documento”, sendo que cada documento é equivalente a um registro ou uma linha em bancos de dados relacionais.</p>
+<h2><a id="instalacao"></a>Instalação</h2>
+Algo trivial, porém deve ser citado você pode instalar o MongoDB pelo seu gerenciador de pacotes, segue abaixo como instalar no Debian e derivados:
+<pre><code class="bash">
+sudo apt-get install mongodb
+</code></pre>
+<p>Os arquivos de instalação para Windows, Mac e outras distribuições Linux você pode encontrar no <a href="https://www.mongodb.org">site oficial</a>.</p>
+<h2><a id="iniciando_o_banco_de_dados"></a>Iniciando o banco de dados</h2>
+Antes de podermos rodar alguns comandos precisamos inicializar nosso banco, para isso você pode rodar no terminal/prompt o comando “mongo”. No Linux caso você tenha algum problema, tente rodar como “sudo mongo”, no caso do Windows, se você não tiver acesso ao comando você precisará adicionar a pasta do MongoDB a variável “PATH” do sistema operacional, um outro erro comum é não ter a pasta “C:data” criada, ou outra pasta que aparecer no erro do prompt, simplesmente crie a pasta e tente rodar o comando novamente.
+<h2><a id="instalando_dependencias"></a>Instalando as dependências</h2>
+Para começar a utilizar com o PHP você básicamente precisará instalar a extensão "php-mongodb", observe bem o "mongodb", pois existe uma extensão descontinuada chamada "php-mongo", evite usá-la. Caso você tenha instalado o PECL, pode-se instalar rodando o seguinte comando:
+<pre><code class="bash">
+pecl install mongodb
+</code></pre>
+<p>Para mais informações de como instalar na sua distro ou no Windows, veja no <a href="https://github.com/mongodb/mongo-php-driver">repositório do github</a>.</p>
+<h2><a id="criando_projeto"></a>Criando um projeto</h2>
+Para criar um projeto e utilizar o MongoDB no caso do PHP podemos usar o Composer, caso tenha dúvidas de como instá-lo você pode ver <a href="/controle-de-dependencia-em-php-usando-o-composer">aqui</a> mais detalhes. Crie um pasta em um diretório qualquer e rode o comando abaixo para instalar o cliente do MongoDB para PHP.
+<pre><code class="bash">
+composer require mongodb/mongodb
+</code></pre>
+<h2><a id="primeiros_comandos"></a>Primeiros comandos</h2>
+Vamos criar um exemplo bem básico realizando operações de CRUD (Create, Read, Update, Delete), para isso crie um arquivo “index.php” e dentro dele você usar o código abaixo como exemplo:
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_php/mongodb/index.php?branch=master&amp;lang=php&amp;style=github" type="text/javascript"></script>
+<p>O código acima está devidamento comentádo, a saída espera rodando esse script com &ldquo;php index.php&rdquo; é:</p>
+<p><img class="aligncenter wp-image-5168 size-full" src="/images/wp-content/uploads/2016/04/Captura-de-tela-de-2016-04-18-20-56-17.png" alt="Resultado da execução do script" width="686" height="148" /></p>
+<h2><a id="consideracoes_finais"></a>Considerações finais</h2>
+Um ponto importante aqui é que todo documento possui um atributo “_id”, esse atributo representa a referência única do documento, seria algo equivalente as primary keys dos bancos relacionais, lembro também que os bancos NoSQL não relacionais como o MongoDB não garantem a integridade referencial, isso quer dizer que você não consegue fazer bloqueios como nas <em>foreign keys</em> dos bancos relacionais, onde, por exemplo, não podemos excluir um registro de uma tabela de “usuário” se esse usuário tiver registros na tabela “pedidos”.
+<p>Contudo, sabemos que existem mais de uma forma de resolver um problema, no caso dos bancos não relacionais isso pode ser resolvido simplesmente fazendo com que o usuário tenha como um dos atributos seus pedidos, isso é possível pois no caso do MongoDB você pode pensar no documento como um objeto JSON do Javascript, você pode ter atributos com tipos primitivos como texto, inteiros, boleanos e também pode ter o Array por exemplo, o que faz isso possível, sendo tudo questão de modelagem.</p>
+<p>Bom galera, espero ter esclarecido um pouco como trabalhar com MongoDB no PHP, até a próxima.</p>
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/mongodb/" class="tag-link">mongodb</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/php/" class="tag-link">php</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/como-usar-o-mongodb-com-php/"
+     data-text="Como usar o MongoDB com PHP"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/como-usar-o-mongodb-com-php/"
+     data-text="Como usar o MongoDB com PHP"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/como-usar-o-mongodb-com-php/"
+     data-text="Como usar o MongoDB com PHP"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/como-usar-o-mongodb-com-php/"
+     data-text="Como usar o MongoDB com PHP"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/jaswdr/">
+        <img class="author-img"
+             src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+             alt="Jonathan André Schweder">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/jaswdr/">Jonathan André Schweder</a>
+      </h2>
+      <span class="small text-muted">System Developer Engineer at Amazon Web Services</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

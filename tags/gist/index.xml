@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gist on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/gist/</link>
+    <description>Recent content in gist on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 24 Sep 2014 15:17:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/gist/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket</title>
+      <link>https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/</link>
+      <pubDate>Wed, 24 Sep 2014 15:17:18 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/</guid>
+      <description>Estes dias tive um problema, eu necessitava adicionar um trecho de código do GitHub a uma página, mas este código estava em um repositório e não em um Gist.</description>
+    </item>
+    
+  </channel>
+</rss>

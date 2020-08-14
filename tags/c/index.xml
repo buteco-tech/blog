@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/c/</link>
+    <description>Recent content in c on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 23 May 2016 23:34:46 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>libssl e libcrypto: Visualizando certificados online em C</title>
+      <link>https://butecotecnologico.com.br/libssl-libcrypto-visualizando-certificados-online-em-c/</link>
+      <pubDate>Mon, 23 May 2016 23:34:46 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/libssl-libcrypto-visualizando-certificados-online-em-c/</guid>
+      <description>&lt;p&gt;Muito se fala do OpenSSL para geração e manutenção de certificados digitais, além disso, o OpenSSL pode criptografar arquivos, gerar números randômicos, e etc. Este artigo vem mostrar como utilizar a libssl para visualizar certificado utilizando a linguagem C.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vaga para programador Linux/C em Blumenau</title>
+      <link>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau-2/</link>
+      <pubDate>Mon, 28 Mar 2016 13:14:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau-2/</guid>
+      <description>Desenvolvedor de Software – Linux e C 
+Responsabilidades
+Esta posição é responsável por desenhar e implementar aplicativos em SW para sistema operacional em Linux, incluindo desenvolvimento de novos aplicativos, melhorias e correções em aplicativos existentes, instalação de pacotes de aplicativos de código aberto.</description>
+    </item>
+    
+    <item>
+      <title>POSIX Regular Expression em C</title>
+      <link>https://butecotecnologico.com.br/posix-regular-expression-em-c/</link>
+      <pubDate>Thu, 17 Mar 2016 09:35:57 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/posix-regular-expression-em-c/</guid>
+      <description>&lt;p&gt;Expressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares &lt;em&gt;built-in&lt;/em&gt;, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a &lt;em&gt;POSIX RegEx&lt;/em&gt; na linguagem C na plataforma Linux.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-36/</link>
+      <pubDate>Fri, 19 Feb 2016 17:01:27 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-36/</guid>
+      <description>Para quem está tentando aprender C++ e acha que é difícil :P</description>
+    </item>
+    
+    <item>
+      <title>Linux API: pthreads - Parte 1</title>
+      <link>https://butecotecnologico.com.br/linux-api-pthreads-parte-1/</link>
+      <pubDate>Tue, 19 Jan 2016 11:45:24 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/linux-api-pthreads-parte-1/</guid>
+      <description>&lt;p&gt;Processadores de múltiplos núcleos já são uma realidade nos computadores da grande maioria dos usuários comuns. Em meio a esse avanço podemos escrever programas que executam várias linhas de processamento em paralelo, podendo fazer com que esses programas tenham um tempo de resposta menor.&lt;/p&gt;
+&lt;p&gt;Para tal, este post mostrará como utilizar POSIX threads na linguagem C.&lt;/p&gt;
+&lt;h4&gt;O que são threads?&lt;/h4&gt;
+&lt;em&gt;Threads&lt;/em&gt; são linhas de execução para processos. Ao iniciar um processo, uma &lt;em&gt;thread&lt;/em&gt; principal é iniciada, um processo então pode criar outras &lt;em&gt;threads&lt;/em&gt; para que estas executem tarefas específicas e de forma paralela. Quando temos uma CPU com um único núcleo, dizemos que as &lt;em&gt;threads&lt;/em&gt; executam de forma &lt;em&gt;concorrente&lt;/em&gt;, uma vez que a CPU só pode executar uma thread por vez, mas há mais que uma para ser executada ao &#34;mesmo tempo&#34;. Já quando temos uma CPU com vários núcleos, as &lt;em&gt;threads&lt;/em&gt; podem ser executadas tanto de forma &lt;em&gt;concorrente&lt;/em&gt; como em &lt;em&gt;paralelo&lt;/em&gt;, pois o &lt;a href=&#34;https://pt.wikipedia.org/wiki/Escalonamento_de_processos&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;scheduler&lt;/em&gt;&lt;/a&gt; pode priorizar outros programas do computador além do seu.</description>
+    </item>
+    
+    <item>
+      <title>Iluminação Natalina com Arduino, Temporizador e LDR</title>
+      <link>https://butecotecnologico.com.br/iluminacao-natalina-com-arduino-temporizador-e-ldr/</link>
+      <pubDate>Fri, 08 Jan 2016 10:26:04 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/iluminacao-natalina-com-arduino-temporizador-e-ldr/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-weight: 400;&#34;&gt;Neste projeto, irei apresentar a vocês como controlar uma carga de 110 ou 220 volts com um Arduíno e um relé. Utilizaremos também um LDR para medição de intensidade de luz, para poder fazer com que a carga seja ligada apenas quando for escuro, e além disso, com a opção de temporizar o tempo que a carga ficará ligada. Um exemplo de aplicação é a iluminação Natalina, fazendo ela ligar somente quando escurecer, e caso quiser, pode-se também programar essa para desligar após algumas horas, ou ainda, deixar com que ela se apague novamente quando o dia clarear.&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Como utilizar o getaddrinfo para evitar a falha GHOST</title>
+      <link>https://butecotecnologico.com.br/como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost/</link>
+      <pubDate>Tue, 05 Jan 2016 23:09:47 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost/</guid>
+      <description>&lt;p&gt;Em janeiro de 2015 se ouviu falar de uma falha de segurança na glibc chamada GHOST. Esta falha poderia ser explorada por um programa malicioso utilizando as funções &lt;code&gt;gethostbyname()&lt;/code&gt; e &lt;code&gt;gethostbyname2()&lt;/code&gt; da glibc. O ataque acontece por um &lt;em&gt;buffer overflow&lt;/em&gt; dentro destas funções quando um endereço inválido é passando como parâmetro. Ao explorar esta falha, o atacante consegue executar códigos arbitrários com as permissões do usuários executando o processo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Implemente seu malloc/free. Just4fun!</title>
+      <link>https://butecotecnologico.com.br/implemente-seu-mallocfree-just4fun/</link>
+      <pubDate>Thu, 03 Dec 2015 13:18:40 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/implemente-seu-mallocfree-just4fun/</guid>
+      <description>&lt;p&gt;Algum tempo atrás comprei o livro The Linux Programming Interface, um dos melhores livros que já adquiri. Um dos primeiros capítulos que li foi sobre alocação de memória. No final do capítulo, o autor oferece alguns exercícios. Entre eles existe um mais desafiador. Que é implementar funções equivalentes ao &lt;code&gt;malloc&lt;/code&gt; e &lt;code&gt;free&lt;/code&gt;. The challenge has been accepted!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gerando backtrace em C/C&#43;&#43; no Linux</title>
+      <link>https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/</link>
+      <pubDate>Mon, 02 Nov 2015 19:56:42 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/</guid>
+      <description>&lt;p&gt;Olá pessoal, creio que muitos aqui já se depararam com algum &lt;em&gt;crash&lt;/em&gt; em seus programas em C/C++, e gostariam de poder ver a pilha de chamadas, ou &lt;em&gt;stacktrace/backtrace&lt;/em&gt;, ao menos no ambiente de testes. Pois bem, a boa notícia é que no Linux existe a possibilidade de mostrar qual o ultimo método chamado antes de receber um &lt;em&gt;crash&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Utilizando Shared Objects no Python</title>
+      <link>https://butecotecnologico.com.br/utilizando-shared-objects-no-python/</link>
+      <pubDate>Mon, 31 Aug 2015 12:25:26 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-shared-objects-no-python/</guid>
+      <description>&lt;p&gt;Python é realmente uma linguagem muito versátil, tendo a mão quase sempre tudo o que se precisa fazer. Então, a algum tempo atrás eu precisava verificar a possibilidade de carregar um Shared Object com o Python, e eis que encontrei. A documentação do Python é realmente muito útil, com exemplos de utilização de módulos, inclusive do módulo em questão.&lt;/p&gt;
+&lt;p&gt;Para poder carregar a lib, eu utilizei o módulo &lt;strong&gt;ctypes&lt;/strong&gt;. Este módulo provê tipos de dados compatíveis com o C e permite chamar bibliotecas, como DDLs e shared objects. Para iniciar o exemplo, eu criei uma lib, na verdade um shared object, a seguir:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vaga para programador Linux/C em Blumenau</title>
+      <link>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau/</link>
+      <pubDate>Mon, 13 Jul 2015 21:51:56 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau/</guid>
+      <description>&lt;p&gt;O profissional trabalhará para empresa com sede em Blumenau-SC, que por sua vez foi contratada  para prestar serviços a uma empresa com Sede nos Estados Unidos (&lt;a class=&#34;moz-txt-link-abbreviated&#34; href=&#34;http://www.zpesystems.com&#34;&gt;&lt;a href=&#34;http://www.zpesystems.com&#34;&gt;www.zpesystems.com&lt;/a&gt;&lt;/a&gt;) , no desenvolvimento de Software.&lt;/p&gt;
+&lt;p&gt;Desenvolvedor de Software para ambiente Linux e C&lt;/p&gt;
+&lt;p&gt;Responsabilidades: Esta posição é responsável por desenhar e
+implementar aplicativos em SW para sistema operacional em Linux,
+incluindo desenvolvimento de novos aplicativos, melhorias e correções
+em aplicativos existentes, instalação de pacotes de aplicativos de
+código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-14/</link>
+      <pubDate>Fri, 03 Jul 2015 12:47:11 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-14/</guid>
+      <description>Mais uma tirinha para alegrar sua sexta-feira :)</description>
+    </item>
+    
+    <item>
+      <title>Cliente / Server com Boost.Asio</title>
+      <link>https://butecotecnologico.com.br/cliente-server-com-boost-asio/</link>
+      <pubDate>Mon, 27 Apr 2015 16:23:46 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/cliente-server-com-boost-asio/</guid>
+      <description>Artigo que mostra um exemplo da utilização da biblioteca boost com asio.</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-5/</link>
+      <pubDate>Fri, 17 Apr 2015 09:22:10 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-5/</guid>
+      <description>Não conhece a linguagem de programação D? Então veja este link.</description>
+    </item>
+    
+    <item>
+      <title>Criando módulo Python em C/C&#43;&#43;</title>
+      <link>https://butecotecnologico.com.br/criando-modulo-python-em-cc/</link>
+      <pubDate>Mon, 13 Apr 2015 11:32:48 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-modulo-python-em-cc/</guid>
+      <description>Primeiros passos na criação de um módulo C/C++ para ser utilizado dentro do Python</description>
+    </item>
+    
+    <item>
+      <title>Builder IDE - Nova IDE para criação de aplicações GNOME no Linux</title>
+      <link>https://butecotecnologico.com.br/builder-ide-nova-ide-para-criacao-de-aplicacoes-gnome-no-linux/</link>
+      <pubDate>Thu, 19 Mar 2015 07:12:23 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/builder-ide-nova-ide-para-criacao-de-aplicacoes-gnome-no-linux/</guid>
+      <description>Este post destaca as principais features da nova IDE Builder que esta sendo desenvolvida.</description>
+    </item>
+    
+    <item>
+      <title>Conhecendo Pipe e FIFO (parte final)</title>
+      <link>https://butecotecnologico.com.br/conhecendo-pipe-e-fifo-parte-final/</link>
+      <pubDate>Mon, 16 Mar 2015 07:40:21 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conhecendo-pipe-e-fifo-parte-final/</guid>
+      <description>Última parte da sequencia de artigos sobre pipes e fifos. Nesta parte, serão explicados como funcionam os fifos e como se diferenciam dos pipes.</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha/</link>
+      <pubDate>Fri, 13 Mar 2015 15:19:33 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geração de MD5 utilizando C com OpenSSL e Python</title>
+      <link>https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/</link>
+      <pubDate>Tue, 10 Mar 2015 21:19:49 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/</guid>
+      <description>Esta postagem mostra como gerar MD5 via código C (utilizando a biblioteca OpenSSL) e com Python (utilizando a biblioteca hashlib).</description>
+    </item>
+    
+    <item>
+      <title>Entendendo Pipe e FIFO (parte 2)</title>
+      <link>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-2/</link>
+      <pubDate>Tue, 17 Feb 2015 20:50:57 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-2/</guid>
+      <description>Esta é a segunda parte da postagem sobre Pipes e Fifos aqui do blog.</description>
+    </item>
+    
+    <item>
+      <title>Utilizando atexit com C e Python</title>
+      <link>https://butecotecnologico.com.br/utilizando-atexit-com-c-e-python/</link>
+      <pubDate>Sun, 08 Feb 2015 18:00:09 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-atexit-com-c-e-python/</guid>
+      <description>Em muitos casos, quando escrevemos programas se faz necessário liberar os recursos que o programa requisitou do sistema operacional.</description>
+    </item>
+    
+    <item>
+      <title>glibc 2.21 já está disponível</title>
+      <link>https://butecotecnologico.com.br/glibc-2-21-ja-esta-disponivel/</link>
+      <pubDate>Fri, 06 Feb 2015 18:09:23 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/glibc-2-21-ja-esta-disponivel/</guid>
+      <description>A GNU C Library (glibc) é a biblioteca C padrão no sistema GNU e na maioria dos sistemas com Kernel Linux. A versão 2.21 vem com várias correções de bugs algumas funcionalidades novas.</description>
+    </item>
+    
+    <item>
+      <title>Entendendo Pipe e FIFO (parte 1)</title>
+      <link>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-1/</link>
+      <pubDate>Thu, 22 Jan 2015 22:20:52 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-1/</guid>
+      <description>Pipes e FIFOs são muito utilizados no mundo Linux como um método de IPC (inter process communication), ou comunicação entre processos.</description>
+    </item>
+    
+    <item>
+      <title>Hands On: Shared Libraries no Linux</title>
+      <link>https://butecotecnologico.com.br/hands-on-shared-libraries-no-linux/</link>
+      <pubDate>Wed, 01 Oct 2014 00:42:05 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/hands-on-shared-libraries-no-linux/</guid>
+      <description>Bibliotecas compartilhadas são usadas em qualquer sistema operacional, seja Windows, Linux, Mac OSX ou qualquer *BSD ou *NIX.</description>
+    </item>
+    
+    <item>
+      <title>Introdução ao ALSA e sua API em C e Python</title>
+      <link>https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/</link>
+      <pubDate>Wed, 24 Sep 2014 23:48:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/</guid>
+      <description>O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio.</description>
+    </item>
+    
+  </channel>
+</rss>

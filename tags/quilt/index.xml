@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>quilt on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/quilt/</link>
+    <description>Recent content in quilt on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 29 Jun 2015 23:35:56 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/quilt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hands on: quilt</title>
+      <link>https://butecotecnologico.com.br/hands-on-quilt/</link>
+      <pubDate>Mon, 29 Jun 2015 23:35:56 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/hands-on-quilt/</guid>
+      <description>&lt;p&gt;Quilt é uma ferramenta para criação e manipulação de patches de código fonte. Sua utilização é bem simples e permite criar patches de forma bem prática. Ele foi originalmente criado pelo desenvolvedor Andrew Morton, sendo uma série de scripts para gerenciar patches no Linux. Mas Andreas Grünbacher, um outro desenvolvedor, melhorou os scripts de Andrew para gerar constumizações do kernel para o SuSe Linux.&lt;/p&gt;
+&lt;p&gt;Para um exemplo prático, vejamos a seguinte estrutura de arquivos:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;
+[marcos@puppet pytabs]$ ls
+main.py  new_tab.py  new_tab.pyc  new_tab.ui  window.ui
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para criar um novo patch, execute:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;
+quilt new alteracao1.patch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Após a execução deste comando, será criada uma pasta &amp;ldquo;patches&amp;rdquo;, que conterá todos os patches criados. Por hora esta pasta contém apenas o arquivo series, já que não adicionamos e nem alteramos nenhum arquivo para adicionar ao patch recem criado. O arquivo series mostra a ordem em que os patches criados serão aplicados.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distros on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/categorias/distros/</link>
+    <description>Recent content in Distros on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 01 Feb 2016 21:15:54 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/categorias/distros/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compilando o FreeBSD: Parte 1</title>
+      <link>https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/</link>
+      <pubDate>Mon, 01 Feb 2016 21:15:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/</guid>
+      <description>&lt;p&gt;Primeiro de tudo, sei que o conteúdo propriamente dito de como baixar e compilar os fontes do sistema operacional do FreeBSD é algo que tem aos montes na Internet. Entretanto acredito que reativar tópicos interessantes ou transformar eles em um registro no &lt;em&gt;feeds&lt;/em&gt; das notícias pode animar alguém a fazer estes testes.&lt;/p&gt;
+&lt;p&gt;Um aspecto é que, o objetivo deste texto é servir como base para a segunda parte que é compilar o sistema da nova maneira seguindo a proposta no livro de desenvolvimento do FreeBSD.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nova versão do Lumina</title>
+      <link>https://butecotecnologico.com.br/nova-versao-do-lumina/</link>
+      <pubDate>Tue, 03 Nov 2015 21:48:24 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/nova-versao-do-lumina/</guid>
+      <description>&lt;p&gt;Você já ouviu falar ou leu sobre o Lumina?&lt;/p&gt;
+&lt;p&gt;Pois bem, nem só de KDE, Gnome, console, vive o FreeBSD :P, agora ele tem o Lumina. O Lumina  é um projeto de WM (&lt;em&gt;Window Manager&lt;/em&gt;) da XSystem desenhado para FreeBSD, desenvolvido de uma maneira para ser portável, funcionando em várias distribuições Linux. A solução vem sendo projetada em conjunto com o PC-BSD, o qual disponibiliza versões com Lumina atualizado.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Conheça arkOS: Distro para hospedagem particular</title>
+      <link>https://butecotecnologico.com.br/conheca-arkos-distro-para-hospedagem-particular/</link>
+      <pubDate>Tue, 27 Oct 2015 21:09:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conheca-arkos-distro-para-hospedagem-particular/</guid>
+      <description>&lt;p&gt;O arkOS é uma distribuição Linux baseada no &lt;a href=&#34;http://archlinuxarm.org&#34; target=&#34;_blank&#34;&gt;Arch Linux ARM&lt;/a&gt;, que funciona em dispositivos embarcados e servidores dedicados. Este contém um pacote de software completo para gerenciamento de  hospedagem particular (&lt;em&gt;self-hosting&lt;/em&gt;) de forma intuitiva e inteligente. Também permite executar sites, contas de e-mail, banco de dados e muito mais, tudo através de sua interface gráfica, que é fácil de usar.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FreeBSD - pkg 1.6 chegando</title>
+      <link>https://butecotecnologico.com.br/freebsd-pkg-1-6-chegando/</link>
+      <pubDate>Wed, 30 Sep 2015 23:04:13 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/freebsd-pkg-1-6-chegando/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/pkg.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-3427&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/pkg.jpg&#34; alt=&#34;pkg&#34; width=&#34;638&#34; height=&#34;479&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para os mais desavidos, desde que o FreeBSD mudou para sua versão 9, ele mudou o seu sistema de pacotes padrão para o pkg, uma grande evolução, e para nossa e vossa alegria o seu ciclo de desenvolvimento e melhorias ficou muito mais rápido, tanto que logo estamos chegando na versão 1.6. Foi lançado no dia 26/09, e com elo todo um conjunto de pacotes.
+No entanto, cuidado com atualizações via pacotes pois as vezes tendem a ter alguns &lt;em&gt;brokens&lt;/em&gt;, e como sabem, é sempre uma boa ideia utilizar em ambiente de teste antes de levar para a produção.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Os primeiros passos com o demônio - FreeBSD</title>
+      <link>https://butecotecnologico.com.br/os-primeiros-passos-com-o-demonio-freebsd/</link>
+      <pubDate>Wed, 02 Sep 2015 23:12:01 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/os-primeiros-passos-com-o-demonio-freebsd/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/freebsd.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-medium wp-image-3261&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/freebsd-212x300.jpg&#34; alt=&#34;freebsd&#34; width=&#34;212&#34; height=&#34;300&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Você se decidiu .. se rendeu, vai experimentar este demônio que o pessoal tanto comenta, fala, testa, que a Neflix usa, que o Groupon migrou os servidores, que o Whatsap utiliza, que a Juniper utilizar ..&lt;/p&gt;
+&lt;p&gt;Ok, mas por onde começar o_O ?&lt;/p&gt;
+&lt;p&gt;Óbvio pela bíblia do demônio :P &lt;a href=&#34;https://www.freebsd.org/doc/handbook/&#34; target=&#34;_blank&#34;&gt;&amp;quot;Freebsd Hadbook&amp;quot;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Marco lá não tem as dicas maneiras para arrumar o meu desktop demonizado &amp;hellip;.. calma gente que um outro ótimo texto de referência: &lt;a href=&#34;https://cooltrainer.org/a-freebsd-desktop-howto/&#34; target=&#34;_blank&#34;&gt;A FreeBSD 10 Desktop How-to&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Criando uma Central de Multimídia com Raspberry Pi</title>
+      <link>https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/</link>
+      <pubDate>Thu, 20 Aug 2015 22:28:06 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/</guid>
+      <description>&lt;p&gt;Usaremos o OpenELEC para criar a central de multimídia, irei instalar no Raspberry Pi 2, porém também está disponível para o Raspberry PI.&lt;/p&gt;
+&lt;p&gt;OpenELEC é uma distribuição Linux criada em torno do programa XBMC – um famoso hub de entretenimento de código aberto – e focada na tarefa de transformar seu equipamento em uma central de mídia.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kali Linux 2.0 já tem data para o lançamento</title>
+      <link>https://butecotecnologico.com.br/kali-linux-2-0-ja-tem-data-para-o-lancamento/</link>
+      <pubDate>Thu, 06 Aug 2015 10:05:46 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/kali-linux-2-0-ja-tem-data-para-o-lancamento/</guid>
+      <description>&lt;p&gt;A &lt;a href=&#34;https://www.offensive-security.com/&#34; target=&#34;_blank&#34;&gt;Offensive Security&lt;/a&gt;, criadora e mantenedora do Kali Linux, divulgou um vídeo de pré-lançamento da nova versão do Kali Linux; com lançamento oficial previsto para 11 de agosto de 2015. A equipe, nos últimos meses, tem trabalhado ferozmente nessa próxima versão – que promete muita coisa nova. No vídeo divulgado, a empresa mostra toda a cronologia de desenvolvimento da ferramenta, desde da época do BackTrack, e por fim as novidades da nova versão, confira.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Instalando o Ubuntu MATE 15.04 no Raspberry PI 2</title>
+      <link>https://butecotecnologico.com.br/instalando-o-ubuntu-mate-15-04-no-raspberry-pi-2/</link>
+      <pubDate>Tue, 14 Jul 2015 23:03:39 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-o-ubuntu-mate-15-04-no-raspberry-pi-2/</guid>
+      <description>&lt;p&gt;Uma das distribuições Linux mais conhecidas também está disponível para Raspberry PI 2.&lt;/p&gt;
+&lt;p&gt;Nesse artigo irei mostrar a instalação do Ubuntu MATE 15.04 no Raspberry PI 2.&lt;/p&gt;
+&lt;p&gt;O Raspberry PI 2 foi cedido pela Loja Mundi e você pode olhar esse e outros produtos clicando &lt;a href=&#34;http://www.lojamundi.com.br/embarcados-raspberry-cubieboard-beagleboneblack.html/?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;O Ubuntu MATE teve algumas atualizações em relação a versão anterior, Ubuntu MATE 14.10.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Conheça o Elementary OS</title>
+      <link>https://butecotecnologico.com.br/conheca-o-elementary-os/</link>
+      <pubDate>Tue, 03 Mar 2015 23:45:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conheca-o-elementary-os/</guid>
+      <description>Estando no beta 2, o Elementary Freya tem tudo para substituir a última versão desta distro, chamada de Luna, e surpreender ainda mais no quesito design e rapidez.</description>
+    </item>
+    
+  </channel>
+</rss>

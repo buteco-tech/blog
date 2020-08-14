@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>minecraft on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/minecraft/</link>
+    <description>Recent content in minecraft on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 09 May 2016 22:55:41 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/minecraft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lançamentos Novatec: Linguagem SQL e Minecraft</title>
+      <link>https://butecotecnologico.com.br/lancamentos-novatec-linguagem-sql-e-minecraft/</link>
+      <pubDate>Mon, 09 May 2016 22:55:41 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lancamentos-novatec-linguagem-sql-e-minecraft/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;&lt;img class=&#34;aligncenter wp-image-5388 size-medium&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/05/introcucao-sql-209x300.jpg&#34; alt=&#34;introcucao-sql&#34; width=&#34;209&#34; height=&#34;300&#34; /&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;strong&gt;Introdução à Linguagem SQL&lt;/strong&gt;&lt;/p&gt;
+Se você trabalha em uma empresa ou é profissional de TI, vai se beneficiar da leitura de &lt;a href=&#34;http://www.novatec.com.br/livros/introducao-sql&#34; target=&#34;_blank&#34;&gt;Introdução à Linguagem SQL&lt;/a&gt;, um guia prático introdutório que ensina a obter e transformar dados com o SQL de maneira significativa. Rapidamente, dominará os aspectos básicos do SQL e aprenderá como criar seus próprios bancos de dados.
+&lt;p&gt;O livro contém exercícios que vão ajudar o leitor a praticar suas recém descobertas aptidões no uso do SQL sem precisar empregar um ambiente de servidor de banco de dados. Aprenderá também  a usar instruções-chave do SQL para encontrar e manipular seus dados, e descobrirá como projetar e gerenciar eficientemente bancos de dados que atendam às suas necessidades.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

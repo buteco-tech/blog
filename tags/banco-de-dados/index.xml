@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>banco de dados on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/banco-de-dados/</link>
+    <description>Recent content in banco de dados on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 26 Feb 2016 15:33:23 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/banco-de-dados/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-37/</link>
+      <pubDate>Fri, 26 Feb 2016 15:33:23 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-37/</guid>
+      <description>O povo do SQL vai a loucura :)
+
+ Via Vida de Programador</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-23/</link>
+      <pubDate>Fri, 16 Oct 2015 09:28:03 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-23/</guid>
+      <description>Está é uma regra de ouro ao trabalhar com Banco de Dados.</description>
+    </item>
+    
+    <item>
+      <title>SQL na medida certa</title>
+      <link>https://butecotecnologico.com.br/sql-na-medida-certa/</link>
+      <pubDate>Wed, 10 Jun 2015 23:01:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sql-na-medida-certa/</guid>
+      <description>Resenha do livro Aprendendo SQL da O&amp;rsquo;Reilly.</description>
+    </item>
+    
+    <item>
+      <title>Novatec lança livro SQL e Teoria Relacional</title>
+      <link>https://butecotecnologico.com.br/novatec-lanca-livro-sql-e-teoria-relacional/</link>
+      <pubDate>Fri, 29 May 2015 10:05:59 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/novatec-lanca-livro-sql-e-teoria-relacional/</guid>
+      <description>A linguagem de programação SQL pode ter diversas dificuldades e armadilhas para os mais descuidados. Mas este é um problema que pode ser solucionado caso o desenvolvedor compreenda e saiba colocar em prática a teoria relacional.</description>
+    </item>
+    
+  </channel>
+</rss>

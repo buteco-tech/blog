@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bottle on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/bottle/</link>
+    <description>Recent content in bottle on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 20 Jan 2016 21:11:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/bottle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GPS Parte 3: Localizador GPS com a BeagleBone Green</title>
+      <link>https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/</link>
+      <pubDate>Wed, 20 Jan 2016 21:11:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/</guid>
+      <description>Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona.</description>
+    </item>
+    
+  </channel>
+</rss>

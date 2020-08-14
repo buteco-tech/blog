@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rhc on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/rhc/</link>
+    <description>Recent content in rhc on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 27 Oct 2014 14:12:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/rhc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Utilizando o OpenShift para hospedar uma aplicação Flask/Python</title>
+      <link>https://butecotecnologico.com.br/utilizando-o-openshift-para-hospedar-uma-aplicacao-flaskpython/</link>
+      <pubDate>Mon, 27 Oct 2014 14:12:38 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-o-openshift-para-hospedar-uma-aplicacao-flaskpython/</guid>
+      <description>O que é OpenShift?
+OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações em nuvem disponibilizada pela Red Hat.</description>
+    </item>
+    
+  </channel>
+</rss>

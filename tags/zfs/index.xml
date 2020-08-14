@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>zfs on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/zfs/</link>
+    <description>Recent content in zfs on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 01 Jul 2015 23:01:34 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/zfs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A – ZFS Parte 1</title>
+      <link>https://butecotecnologico.com.br/a-zfs-parte-1/</link>
+      <pubDate>Wed, 01 Jul 2015 23:01:34 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/a-zfs-parte-1/</guid>
+      <description>&lt;p style=&#34;text-align: center;&#34;&gt;&lt;img class=&#34;aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/278852-300x245.png&#34; alt=&#34;ZFS&#34; width=&#34;300&#34; height=&#34;245&#34; /&gt;
+Imagem retirado de &lt;a href=&#34;http://tweakers.net&#34; target=&#34;_blank&#34;&gt;Tweakers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Por que não começar com a introdução da Wikipedia sobre ele&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ANTES: VOU REPETIR E DESTACAR, E SALIENTAR 2001&lt;/strong&gt; é o ano de origem do &lt;strong&gt;ZFS&lt;/strong&gt;, das ideias e planejamentos qualquer outra coisa que venha depois é mera cópia como produtos chineses !! Ele foi anunciado oficialmente em setembro de 2004, e lançado em novembro de 2005.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ZFS &lt;/strong&gt;é uma combinação de sistema de arquivos e volume de manipulação lógica desenhado pela &lt;strong&gt;Sun Microsystems&lt;/strong&gt;. As propriedades do &lt;strong&gt;ZFS &lt;/strong&gt;incluem proteção contra corrupção de dados, suporte para altas capacidades de armazenamento, eficiente compressão de dados, integração de conceitos de sistemas de arquivos e volumes lógicos, suporte a &lt;em&gt;snapshots &lt;/em&gt;e clones com cópia quando escreve, continua checagem de integração e automática recuperação, &lt;strong&gt;RAID-Z&lt;/strong&gt; e nativo suporte a &lt;strong&gt;ACLs &lt;/strong&gt;em &lt;strong&gt;NFSv4&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

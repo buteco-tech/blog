@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Conhecendo o Btrfs &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Conhecendo o Btrfs">
+<meta itemprop="description" content="O sistema de arquivos Btrfs foi criando em 2007, por engenheiros que trabalhavam na Oracle e FusionIO.">
+<meta itemprop="datePublished" content="2020-07-31T08:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-07-31T08:00:00+00:00" />
+<meta itemprop="wordCount" content="1301">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/btrfs-logo.png">
+
+
+
+<meta itemprop="keywords" content="sistemas de arquivos,fs,ext,xfs,btrfs,linux," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/posts/btrfs-logo.png"/>
+
+<meta name="twitter:title" content="Conhecendo o Btrfs"/>
+<meta name="twitter:description" content="O sistema de arquivos Btrfs foi criando em 2007, por engenheiros que trabalhavam na Oracle e FusionIO."/>
+
+
+<meta property="og:title" content="Conhecendo o Btrfs" />
+<meta property="og:description" content="O sistema de arquivos Btrfs foi criando em 2007, por engenheiros que trabalhavam na Oracle e FusionIO." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/conhecendo-o-btrfs/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/posts/btrfs-logo.png" />
+<meta property="article:published_time" content="2020-07-31T08:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-31T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Conhecendo o Btrfs</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+           alt="Marcos Paulo de Souza"
+           title="Marcos Paulo de Souza">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+           class="author">Marcos Paulo de Souza</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2020-07-31T08:00:00Z">Jul 31, 2020</time>
+      &middot; 7 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-btrfs/"
+     data-text="Conhecendo o Btrfs"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-btrfs/"
+     data-text="Conhecendo o Btrfs"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-btrfs/"
+     data-text="Conhecendo o Btrfs"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-btrfs/"
+     data-text="Conhecendo o Btrfs"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+
+  <article class="mt-3 mb-4">
+  <figure>
+    <img src="/images/posts/btrfs-logo.png"
+         alt="btrfs"/> 
+</figure>
+
+<p>O sistema de arquivos Btrfs foi criando em 2007, por engenheiros que trabalhavam na Oracle e FusionIO. Ele foi concebido com a ideia de ter um sistema de arquivos que provesse funcionalidades semelhantes ao o que o ZFS já oferecia no Solaris e variantes do BSD.</p>
+<p>Este artigo tem como foco mostrar algumas funcionalidades que tornam o Btrfs um sistema de arquivos tão interessante para usuários avançados de Linux, e está em vias de se tornar o próximo sistema de arquivos padrão em distribuições Linux. Para não deixar o artigo longo demais, referências serão adicionadas no final detalhando os assuntos aqui tratados. Enfim, vamos às funcionalidades.</p>
+<h2 id="copy-on-write">Copy-on-write</h2>
+<p>Sistemas de arquivo como o Ext4 e XFS utilizam o que se chama de &ldquo;atualização in place&rdquo;, ou seja, gravam alterações de dados no local do disco em que o dado se encontrava antes de ter sido alterado.</p>
+<p>Btrfs utiliza o recurso <em>Copy-on-Write</em> (cópia em gravação), desta forma ao gravar uma alteração em um arquivo, o Btrfs escolhe um local diferente do que o usado atualmente, e após a gravação ser concluída ele atualiza as referências do sistema de arquivos para este novo local.</p>
+<p>A utilização desta estratégia visa evitar problemas de dados parcialmente escritos quando  acontecer um crash no sistema ou uma falta de energia. No pior dos casos, somente os dados que não foram atualizados para o novo local são perdidos, não corrompendo o sistema. Por padrão, o Btrfs escreve os dados em memória no disco a cada 30 segundos, ou se houver um grande número de alterações acumuladas em memória.</p>
+<h2 id="subvolumes">Subvolumes</h2>
+<p>Imagine um subvolume como se fosse uma partição de disco, mas totalmente gerenciado pelo mesmo sistema de arquivos, contendo sistemas de arquivos independentes e podendo até mesmo utilizar quota para definir limites de uso.</p>
+<p>Para o usuário do sistema, os subvolumes são como diretórios comuns, podendo inclusive conter subvolumes dentro de outro subvolumes.</p>
+<p>Como um sistema de arquivos pode ter muitos subvolumes, existe uma opção para montar utilizando um subvolume específico. A fim de simplificar este uso, o Btrfs permite configurar um subvolume como padrão, para que quando o disco for montado sem especificar nenhum subvolume, o definido como padrão será utilizado.</p>
+<p>Distribuições Linux como o openSUSE se utilizam deste recurso para criar um subvolume na raiz do sistema, ou <code>/</code>, e dentro deste criar outros subvolumes para diretórios importantes como <code>/var</code>, <code>/home</code>, <code>/root</code>, <code>/opt</code>, entre outros. O subvolume do <code>/</code> é colocado como padrão neste método de instalação.</p>
+<h2 id="snapshots">Snapshots</h2>
+<p>Um snapshot não passa de um subvolume com um conteúdo inicial, ao contrário de um subvolume comum que não tem nenhum conteúdo após sua criação. Um Snapshot é utilizado para criar uma imagem, um ponto no tempo de vida de um subvolume. Este é um recurso interessante para criação de pontos de restauração, ou seja, pode-se criar um snapshot antes de atualizar o sistema, e se algo não ocorrer como desejado pode-se voltar para uma versão anterior.</p>
+<p>O openSUSE utiliza snapshots para gerenciar as atualizações de sistema. Cada vez que o Zypper (gerenciador de pacotes) é executado para atualizar pacotes, um snapshot é criado antes e depois da atualização, permitindo que o usuário reinicie o sistema a partir de um ponto antes da atualização, caso seja necessário.</p>
+<p>Ao utilizar recursos de Copy-On-Write, snapshots não consomem muito espaço adicional de disco, somente incrementando o número de referências para o mesmo bloco de dados. Quando partes de um arquivo são alterados em um snapshot, este sendo diferentes do arquivo original do subvolume, novos blocos de dados serão alocados para este arquivo em particular.</p>
+<p>Snapshots podem ser criados em modo leitura e leitura/escrita, podendo inclusive aninhar snapshots dentro de outros snapshots e misturando estes modos conforme necessário (criar um snapshot leitura a partir de um snapshot leitura/escrita).</p>
+<h2 id="compressão">Compressão</h2>
+<p>O Btrfs suporta compressão dos dados de forma transparente para o usuário. Atualmente suporta os seguintes algoritmos de compressão: LZO, zlib e Zstd. No caso do zlib e Zstd ainda pode-se dizer o nível de compressão, sendo o zlib de 1 até 9, enquanto o Zstd tem valores de 1 até 15. Ao utilizar um valor mais alto implica em uma melhor taxa de compressão, mas também no aumento do uso de memória.</p>
+<h2 id="gerenciamento-de-discos">Gerenciamento de discos</h2>
+<p>Outros sistemas de arquivo do Linux como Ext4, XFS ou fat trabalham em cima de um único disco. Se o usuário desejar utilizar recursos como RAID 10, este deve recorrer ao <em>md</em> (multi device) para criar um disco virtual contendo dois discos, e só então montar o seu sistema de arquivos sobre este disco virtual.</p>
+<p>O Btrfs possui um gerenciador de discos embutido no sistema, permitindo o usuário adicionar e substituir discos com o sistema sendo utilizado e até trocar entre perfis de RAID.</p>
+<p>Por padrão, Btrfs utiliza RAID 1 para metadados, mesmo que o sistema estiver utilizando somente um disco. Desta forma se por acaso uma cópia do metadata sendo acessado estiver corrompida, o Btrfs pode tentar a segunda cópia.</p>
+<h2 id="checksum">Checksum</h2>
+<p>Um checksum (ou soma de verificação) é uma técnica utilizada para verificar integridade de dados. Por padrão, o Btrfs faz checksum de dados e metadados no momento da escrita no disco. Se o sistema de arquivos detectar um checksum inválido ao tentar ler um arquivo (se o dado estiver corrompido), ele automaticamente procura por outra cópia do mesmo dado em outro disco. Se encontrar, ele automaticamente corrige o local onde encontrou o problema, reescrevendo o dado na posição onde ele estava corrompido.</p>
+<p>Vale ressaltar que o Btrfs armazena mais de uma cópia do arquivos somente se estiver utilizando uma configuração de RAID.</p>
+<h2 id="send-e-receive">Send e Receive</h2>
+<p>O rsync é uma ferramenta conhecida por sincronizar dados entre diferentes máquinas. Esta ferramenta checa diferenças entre versões de arquivos e se por acaso os mesmos tiverem quais diferenças uma nova cópia do arquivo é enviada.</p>
+<p>A funcionalidade send to Btrfs cria um arquivo de operações a serem aplicadas em um sistema de arquivos, transmitindo somente o que foi alterado. Por exemplo, se um arquivo tipo ISO tiver o owner alterado, o rsync enviará o arquivo novamente pela rede. Se a ferramenta send for utilizada, ela criará um arquivo contendo somente um comando chown que será aplicado no lado remoto utilizando a ferramenta receive. Para mais informações sobre esta funcionalidade verifique a seção de referências.</p>
+<h2 id="superblock">Superblock</h2>
+<p>Todo sistema de arquivos contém um superblock. Este é responsável por guardar informações do sistema de arquivos como um todo, como espaço utilizado, tamanho do bloco de dados utilizado, e outras informações específicas para cada sistema de arquivos. Se por acaso o superblock for danificado ou corrompido, existe uma grande chance dos seus dados terem sido perdidos.</p>
+<p>A fim de evitar que isso aconteça, um sistema Btrfs guarda três cópias do superblock em locais diferentes do disco: 64k, 256Mb e 256Gb. Estes valores são relacionados a posição física do disco.</p>
+<h2 id="converter-um-sistema-de-arquivos-para-btrfs">Converter um sistema de arquivos para Btrfs</h2>
+<p>É possível converter sistemas Ext2/Ext3/Ext4 e reiserfs para Btrfs utilizando a ferramenta Btrfs-convert. A ferramenta opera diretamente no disco, salvando o conteúdo original de um subvolume com o nome <code>&lt;sistema_de_arquivos&gt;_saved</code>. Para mais informações sobre este recurso acesse <a href="https://btrfs.wiki.kernel.org/index.php/Conversion_from_Ext3"
+   
+   target="_blank">esta página</a> da wiki do Btrfs.</p>
+<h2 id="conclusão">Conclusão</h2>
+<p>Como podemos ver, o Btrfs tem muitos recursos interessantes se o compararmos com outros sistemas de arquivo mais utilizados atualmente. Vale salientar ainda que existem muitos outros recursos que não foram mencionados neste artigo. Para os mais interessados, vale a pena dar uma olhada na <a href="https://btrfs.wiki.kernel.org/index.php/Main_Page"
+   
+   target="_blank">wiki do Btrfs</a> e nas referências abaixo.</p>
+<h2 id="referencias">Referencias</h2>
+<ul>
+<li><a href="https://pt.wikipedia.org/wiki/C%C3%B3pia_em_grava%C3%A7%C3%A3o"
+   
+   target="_blank">Copia em gravacao</a></li>
+<li><a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-subvolume"
+   
+   target="_blank">Manual do comando para gerenciar subvolumes e snapshots</a></li>
+<li><a href="https://doc.opensuse.org/documentation/leap/archive/15.0/reference/html/book.opensuse.reference/cha.snapper.html"
+   
+   target="_blank">Manual do openSUSE sobre gerenciamento de snapshots</a></li>
+<li><a href="https://btrfs.wiki.kernel.org/index.php/Using_Btrfs_with_Multiple_Devices"
+   
+   target="_blank">Manual do Btrfs sobre como criar um sistema de arquivos com multiplos discos</a></li>
+<li><a href="https://mpdesouza.com/2020/05/14/btrfs-making-send-more-capable/"
+   
+   target="_blank">Exemplo de uso de send/receive</a></li>
+<li><a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-convert"
+   
+   target="_blank">Manual da ferramenta Btrfs-convert</a></li>
+<li><a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-convert"
+   
+   target="_blank">Link descrevendo localização das cópias de superblock</a></li>
+<li><a href="https://btrfs.wiki.kernel.org/index.php/Compression"
+   
+   target="_blank">Página da wiki do Btrfs sobre compressão e suas configurações</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Soma_de_verifica%C3%A7%C3%A3o"
+   
+   target="_blank">Checksum, ou soma de verificação</a></li>
+</ul>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/fs/" class="tag-link">fs</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/ext/" class="tag-link">ext</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/xfs/" class="tag-link">xfs</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/btrfs/" class="tag-link">btrfs</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-btrfs/"
+     data-text="Conhecendo o Btrfs"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-btrfs/"
+     data-text="Conhecendo o Btrfs"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-btrfs/"
+     data-text="Conhecendo o Btrfs"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-btrfs/"
+     data-text="Conhecendo o Btrfs"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/mpdesouza/">
+        <img class="author-img"
+             src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+             alt="Marcos Paulo de Souza">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/">Marcos Paulo de Souza</a>
+      </h2>
+      <span class="small text-muted">Software Engineer</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

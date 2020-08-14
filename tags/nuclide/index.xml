@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nuclide on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/nuclide/</link>
+    <description>Recent content in nuclide on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Sun, 29 Mar 2015 21:23:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/nuclide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nuclide: IDE do Facebook baseada no Atom</title>
+      <link>https://butecotecnologico.com.br/nuclide-ide-do-facebook-baseada-no-atom/</link>
+      <pubDate>Sun, 29 Mar 2015 21:23:58 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/nuclide-ide-do-facebook-baseada-no-atom/</guid>
+      <description>Recentemente o Facebook lançou a sua IDE designada ao desenvolvimento da linguagem Hack. A Nuclide é uma IDE unificada que traz suporte a React, Flow dentre outras ferramentas do Facebook.</description>
+    </item>
+    
+  </channel>
+</rss>

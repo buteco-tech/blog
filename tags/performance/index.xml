@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>performance on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/performance/</link>
+    <description>Recent content in performance on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 28 Apr 2016 12:30:31 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PHP e Performance, parte 1</title>
+      <link>https://butecotecnologico.com.br/performance-com-php-parte-1/</link>
+      <pubDate>Thu, 28 Apr 2016 12:30:31 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/performance-com-php-parte-1/</guid>
+      <description>&lt;p style=&#34;text-align: left;&#34;&gt;Algo que alguns criticam no PHP é questão de performance, sempre digo que PHP é uma linguagem performática para o que ele se propõe a fazer. Contudo, performance não é algo simples, existem centenas de milhares de fatores que podem interferir, começando pelo hardware usado até a alocação desnecessária de variáveis.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

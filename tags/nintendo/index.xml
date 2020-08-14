@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nintendo on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/nintendo/</link>
+    <description>Recent content in nintendo on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 30 Mar 2015 20:17:40 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/nintendo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Super Mario 64 em HD para Navegadores</title>
+      <link>https://butecotecnologico.com.br/super-mario-64-em-hd-para-navegadores/</link>
+      <pubDate>Mon, 30 Mar 2015 20:17:40 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/super-mario-64-em-hd-para-navegadores/</guid>
+      <description>Um dos clássicos da Nintendo, Super Mario 64, após ganhar seu espaço nos consoles N64 e NDS, recebeu uma versão em HD para navegadores. Infelizmente o criador só fez a primeira fase e não pretende continuar a desenvolver o projeto.</description>
+    </item>
+    
+  </channel>
+</rss>

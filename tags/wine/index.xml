@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wine on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/wine/</link>
+    <description>Recent content in wine on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 15 May 2015 23:58:39 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/wine/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Wine 1.7.43 traz melhorias na arquitetura ARM64</title>
+      <link>https://butecotecnologico.com.br/wine-1-7-43-traz-melhorias-na-arquitetura-arm64/</link>
+      <pubDate>Fri, 15 May 2015 23:58:39 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/wine-1-7-43-traz-melhorias-na-arquitetura-arm64/</guid>
+      <description>O Wine (acrônimo de &amp;ldquo;Wine Is Not an Emulator&amp;rdquo;) é um camada de compatibilidade que permite a execução de aplicativos Windows em vários sistemas operacionais POSIX-compliant, incluindo Linux, Mac OS X e BSD. Ao invés de simular a lógica interna do Windows, como um emulador normal, o Wine faz a tradução das chamadas de API do Windows em chamadas POSIX. Isto melhora o desempenho da aplicação e permite a integração de aplicação Windows com a sua área de trabalho.</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-3/</link>
+      <pubDate>Fri, 03 Apr 2015 13:41:43 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-3/</guid>
+      <description>Se você quiser abrir o DOS no Linux, podes utilizar o Wine.</description>
+    </item>
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-2/</link>
+      <pubDate>Fri, 27 Mar 2015 13:30:30 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-2/</guid>
+      <description>Saiba mais sobre o Wine aqui.
+Conheça o blog Vida de Programador.</description>
+    </item>
+    
+  </channel>
+</rss>

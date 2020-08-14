@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>libs on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/libs/</link>
+    <description>Recent content in libs on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 07 Oct 2015 23:40:15 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/libs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Criando gráficos com matplot</title>
+      <link>https://butecotecnologico.com.br/criando-graficos-com-matplot/</link>
+      <pubDate>Wed, 07 Oct 2015 23:40:15 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-graficos-com-matplot/</guid>
+      <description>&lt;p&gt;Criado por &lt;a href=&#34;https://en.wikipedia.org/wiki/John_D._Hunter&#34; target=&#34;_blank&#34;&gt;John Hunter (1968-2012)&lt;/a&gt; , &lt;a href=&#34;http://matplotlib.org/index.html&#34; target=&#34;_blank&#34;&gt;matplot&lt;/a&gt; é usada para criação de &lt;em&gt;plots&lt;/em&gt;, histogramas, espectrogramas, gráficos (&lt;em&gt;charts&lt;/em&gt;) simples e 3D e etc. Para ter uma ideia da diversidade dessa ferramenta, você pode visitar a &lt;a href=&#34;http://matplotlib.org/gallery.html&#34; target=&#34;_blank&#34;&gt;galeria de exemplos&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Neste artigo, vou fazer uma demonstração bem simples, onde apresentarei como criar um gráfico de barras (&lt;em&gt;barchart&lt;/em&gt;) em python. Para isso, você deve fazer a instalação de algumas bibliotecas. No meu caso, estou usando um &lt;em&gt;Debian-like&lt;/em&gt;, então substitua o gerenciador de pacotes de acordo com sua distro.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Utilizando Shared Objects no Python</title>
+      <link>https://butecotecnologico.com.br/utilizando-shared-objects-no-python/</link>
+      <pubDate>Mon, 31 Aug 2015 12:25:26 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-shared-objects-no-python/</guid>
+      <description>&lt;p&gt;Python é realmente uma linguagem muito versátil, tendo a mão quase sempre tudo o que se precisa fazer. Então, a algum tempo atrás eu precisava verificar a possibilidade de carregar um Shared Object com o Python, e eis que encontrei. A documentação do Python é realmente muito útil, com exemplos de utilização de módulos, inclusive do módulo em questão.&lt;/p&gt;
+&lt;p&gt;Para poder carregar a lib, eu utilizei o módulo &lt;strong&gt;ctypes&lt;/strong&gt;. Este módulo provê tipos de dados compatíveis com o C e permite chamar bibliotecas, como DDLs e shared objects. Para iniciar o exemplo, eu criei uma lib, na verdade um shared object, a seguir:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

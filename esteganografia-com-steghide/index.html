@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Esteganografia com Steghide &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Esteganografia com Steghide">
+<meta itemprop="description" content="Nesse artigo irei falar um pouco sobre esteganografia e mostrar o uso simples do Steghide.
+Esteganografia (do grego &ldquo;escrita escondida&rdquo;) é o estudo e uso das técnicas para ocultar a existência de uma mensagem dentro de outra, uma forma de segurança por obscurantismo. Em outras palavras, esteganografia é o ramo particular da criptologia que consiste em fazer com que uma forma escrita seja camuflada em outra a fim de mascarar o seu verdadeiro sentido.">
+<meta itemprop="datePublished" content="2015-10-19T21:29:19+00:00" />
+<meta itemprop="dateModified" content="2015-10-19T21:29:19+00:00" />
+<meta itemprop="wordCount" content="773">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/steg-logo.jpg">
+
+
+
+<meta itemprop="keywords" content="segurança,steganografia,steghide," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/steg-logo.jpg"/>
+
+<meta name="twitter:title" content="Esteganografia com Steghide"/>
+<meta name="twitter:description" content="Nesse artigo irei falar um pouco sobre esteganografia e mostrar o uso simples do Steghide.
+Esteganografia (do grego &ldquo;escrita escondida&rdquo;) é o estudo e uso das técnicas para ocultar a existência de uma mensagem dentro de outra, uma forma de segurança por obscurantismo. Em outras palavras, esteganografia é o ramo particular da criptologia que consiste em fazer com que uma forma escrita seja camuflada em outra a fim de mascarar o seu verdadeiro sentido."/>
+
+
+<meta property="og:title" content="Esteganografia com Steghide" />
+<meta property="og:description" content="Nesse artigo irei falar um pouco sobre esteganografia e mostrar o uso simples do Steghide.
+Esteganografia (do grego &ldquo;escrita escondida&rdquo;) é o estudo e uso das técnicas para ocultar a existência de uma mensagem dentro de outra, uma forma de segurança por obscurantismo. Em outras palavras, esteganografia é o ramo particular da criptologia que consiste em fazer com que uma forma escrita seja camuflada em outra a fim de mascarar o seu verdadeiro sentido." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/esteganografia-com-steghide/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/steg-logo.jpg" />
+<meta property="article:published_time" content="2015-10-19T21:29:19+00:00" />
+<meta property="article:modified_time" content="2015-10-19T21:29:19+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Esteganografia com Steghide</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/daniel-magevski/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=100&d=robohash"
+           alt="Daniel Magevski"
+           title="Daniel Magevski">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/daniel-magevski/"
+           class="author">Daniel Magevski</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2015-10-19T21:29:19Z">Oct 19, 2015</time>
+      &middot; 4 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/esteganografia-com-steghide/"
+     data-text="Esteganografia com Steghide"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/esteganografia-com-steghide/"
+     data-text="Esteganografia com Steghide"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/esteganografia-com-steghide/"
+     data-text="Esteganografia com Steghide"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/esteganografia-com-steghide/"
+     data-text="Esteganografia com Steghide"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/steg-logo.jpg"
+           alt="Esteganografia com Steghide">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Nesse artigo irei falar um pouco sobre esteganografia e mostrar o uso simples do Steghide.</p>
+<p>Esteganografia (do grego &ldquo;escrita escondida&rdquo;) é o estudo e uso das técnicas para ocultar a existência de uma mensagem dentro de outra, uma forma de segurança por obscurantismo. Em outras palavras, esteganografia é o ramo particular da criptologia que consiste em fazer com que uma forma escrita seja camuflada em outra a fim de mascarar o seu verdadeiro sentido.</p>
+<p>É importante frisar a diferença entre criptografia e esteganografia. Enquanto a primeira oculta o significado da mensagem, a segunda oculta a existência da mensagem.</p>
+<p>Um exemplo básico de técnica moderna de esteganografia é a alteração do bit menos significativo de cada pixel de uma imagem colorida de forma a que ele corresponda a um bit da mensagem.</p>
+<p>As imagens digitais podem ser classificadas em duas categorias:</p>
+<ul>
+	<li><strong>Vetoriais:</strong> Constituídas por descrições geométricas em um sistema de coordenadas cartesianas. Sua principal característica é o redimensionamento sem perda de qualidade. O formato mais popular de imagem vetorial é o SVG.</li>
+	<li><strong>Bitmap:</strong> Definidas a partir de uma matriz de pontos finitos denominados pixels (a menor unidade que compõe este tipo de imagem). Quanto mais pixels são utilizados para representar uma imagem, melhor é a sua qualidade. Exemplos de formatos de imagem bitmap são PNG, JPEG e GIF. A técnica de esteganografia que será descrita no presente artigo manipula os bits dos tons de cor de cada pixel da imagem, portanto, o tipo de imagem utilizado será o bitmap.</li>
+</ul>
+Em imagens bitmap, a representação das cores tipicamente se dá no padrão RGB (<em>Red</em>, <em>Green</em>, <em>Blue</em>), sistema de cor que, como o próprio nome indica, utiliza combinações em diferentes níveis destas três cores (vermelho, verde e azul) para compor a gama cores que um pixel pode possuir.
+<p>Cada um dos três tons de cor que compõe um pixel é representado por um inteiro de 8 bits, o que proporciona 2 ^ 24 cores possíveis (algo em torno de 16 milhões de cores), com 24 bits por pixel. Alguns formatos de imagem como o PNG e o GIF permitem que se adicione transparência às imagens. Também chamada de camada alfa, no formato PNG a transparência é definida em cada pixel, sendo também representada por 8 bits. Neste caso, o pixel possuirá 32 bits.</p>
+<p>Dentre os bits que compõem cada pixel, alguns são modificados durante o processo de esteganografia da imagem, para que passem a armazenar alguns bits do dado embutido. O bit menos significativo, do inglês LSB (<em>Least Significant Bit</em>), é aquele que se encontra mais à direita da cadeia binária, já que quando invertido, o valor inteiro por ele representado sofre a alteração de apenas uma unidade. Este é o bit mais conveniente para o emprego da esteganografia, pois quando modificado produz alterações mínimas nas cores da imagem, praticamente imperceptíveis à visão humana.</p>
+<p>A esteganografia LSB consiste em se ocultar os bits da informação a ser embutida nos bits menos significativos de cada um dos três tons que compõe a cor dos pixels. Assim, cada pixel da imagem comporta 3 bits de informação, de onde se calcula a capacidade de &ldquo;armazenamento&rdquo; de informação da imagem como 3 vezes o número de pixels que ela possui.</p>
+<p>Entretanto, quanto mais bits forem modificados, maiores as chances da técnica ser descoberta, visto que as alterações se tornarão mais perceptíveis aos olhos humanos.</p>
+<p>Como os arquivos digitais são representados sob a forma de bits, é possível ocultar qualquer arquivo (documentos de texto, outras imagens, áudio, etc.) em uma imagem utilizando a técnica LSB, desde que respeitada a proporção entre os tamanhos da informação a ser embutida e da imagem.</p>
+<p>Vamos testar, para começar instale o Steghide, via <a href="http://steghide.sourceforge.net/download.php" target="_blank">download</a> ou como no meu caso, via gerenciador de pacote, <code>apt-get install steghide</code>, depois disto, verifique os algoritmos de encriptação <code>steghide encinfo</code>.</p>
+<p>Principais opções:</p>
+<p><strong>Para encriptar:</strong></p>
+<ul>
+	<li>-ef = especifica o nome do arquivo cuja mensagem será inserida.</li>
+	<li>-cf = O nome do arquivo que será usado para esconder os dados.</li>
+	<li>-sf = O nome para o arquivo esteganografado que será criado. Se não for passado as modificações serão feitas diretamente no arquivo original.</li>
+</ul>
+<code>steghide embed -ef mensagem.txt -cf imagem.jpg -sf imagem-modificada.jpg</code>
+<p><em>O Steghide permite colocar senha na hora de inserir uma mensagem na imagem.</em></p>
+<p><strong>Para extrair dados:</strong></p>
+<ul>
+	<li>-sf = especifica o arquivo que contém dados escondidos.</li>
+	<li>-xf = cria um arquivo com o nome que foi passado e escreve os dados escondidos nele.</li>
+</ul>
+<code>steghide extract -sf imagem-modificada.jpg -xf mensagem-extraida.txt</code>
+<p>A ideia nesse artigo foi mostrar um pouco de esteganografia com Steghide, porém existem diversos programa que fazem isso também.</p>
+<p>Fontes:</p>
+<p><a href="http://www.vivaolinux.com.br/artigo/Esteganografia-e-Esteganalise-transmissao-e-deteccao-de-informacoes-ocultas-em-imagens-digitais" target="_blank">Viva o Linux</a>.</p>
+<p>Site oficial do <a href="http://steghide.sourceforge.net/" target="_blank">Steghide</a></p>
+<p>Site que peguei a <a href="http://www.hackersonlineclub.com/" target="_blank">Imagem</a></p>
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/seguran%C3%A7a/" class="tag-link">segurança</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/steganografia/" class="tag-link">steganografia</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/steghide/" class="tag-link">steghide</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/esteganografia-com-steghide/"
+     data-text="Esteganografia com Steghide"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/esteganografia-com-steghide/"
+     data-text="Esteganografia com Steghide"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/esteganografia-com-steghide/"
+     data-text="Esteganografia com Steghide"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/esteganografia-com-steghide/"
+     data-text="Esteganografia com Steghide"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/daniel-magevski/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=100&d=robohash"
+             alt="Daniel Magevski">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/daniel-magevski/">Daniel Magevski</a>
+      </h2>
+      <span class="small text-muted"></span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

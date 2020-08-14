@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pkg on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/pkg/</link>
+    <description>Recent content in pkg on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 30 Sep 2015 23:04:13 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/pkg/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FreeBSD - pkg 1.6 chegando</title>
+      <link>https://butecotecnologico.com.br/freebsd-pkg-1-6-chegando/</link>
+      <pubDate>Wed, 30 Sep 2015 23:04:13 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/freebsd-pkg-1-6-chegando/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/pkg.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-3427&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/pkg.jpg&#34; alt=&#34;pkg&#34; width=&#34;638&#34; height=&#34;479&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para os mais desavidos, desde que o FreeBSD mudou para sua versão 9, ele mudou o seu sistema de pacotes padrão para o pkg, uma grande evolução, e para nossa e vossa alegria o seu ciclo de desenvolvimento e melhorias ficou muito mais rápido, tanto que logo estamos chegando na versão 1.6. Foi lançado no dia 26/09, e com elo todo um conjunto de pacotes.
+No entanto, cuidado com atualizações via pacotes pois as vezes tendem a ter alguns &lt;em&gt;brokens&lt;/em&gt;, e como sabem, é sempre uma boa ideia utilizar em ambiente de teste antes de levar para a produção.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

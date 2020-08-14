@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Kubernetes explicado &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Kubernetes explicado">
+<meta itemprop="description" content="O Kubernetes (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers e foi criado pelo Google.">
+<meta itemprop="datePublished" content="2020-08-13T08:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-08-13T08:00:00+00:00" />
+<meta itemprop="wordCount" content="937">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/k8s-logo.png">
+
+
+
+<meta itemprop="keywords" content="containers,linux,docker,kubernetes,paas," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/posts/k8s-logo.png"/>
+
+<meta name="twitter:title" content="Kubernetes explicado"/>
+<meta name="twitter:description" content="O Kubernetes (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers e foi criado pelo Google."/>
+
+
+<meta property="og:title" content="Kubernetes explicado" />
+<meta property="og:description" content="O Kubernetes (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers e foi criado pelo Google." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/kubernetes-explicado/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/posts/k8s-logo.png" />
+<meta property="article:published_time" content="2020-08-13T08:00:00+00:00" />
+<meta property="article:modified_time" content="2020-08-13T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Kubernetes explicado</h1>
+    <h2 class="tagline text-muted mb-4">Kubernetes explicado</h2>
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           alt="Alexandre Vicenzi"
+           title="Alexandre Vicenzi">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+           class="author">Alexandre Vicenzi</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2020-08-13T08:00:00Z">Aug 13, 2020</time>
+      &middot; 5 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/kubernetes-explicado/"
+     data-text="Kubernetes explicado"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/kubernetes-explicado/"
+     data-text="Kubernetes explicado"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/kubernetes-explicado/"
+     data-text="Kubernetes explicado"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/kubernetes-explicado/"
+     data-text="Kubernetes explicado"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+
+  <article class="mt-3 mb-4">
+  <figure>
+    <img src="/images/posts/k8s-logo.png"
+         alt="K8s"/> 
+</figure>
+
+<p>O <a href="https://kubernetes.io/"
+   
+   target="_blank">Kubernetes</a> (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers. A Google criou o projeto inicialmente para uso interno, e tornou-o software livre em 2014.</p>
+<p>Com o Kubernetes é possível:</p>
+<ul>
+<li>Escalar aplicações horizontalmente e verticalmente</li>
+<li>Fazer balanceamento de carga</li>
+<li>Fazer descoberta de serviços</li>
+<li>Orquestrar armazenamento</li>
+<li>Executar <em>rollouts</em> e <em>rollbacks</em> de forma automatizada</li>
+<li>Gerenciar configurações e chaves</li>
+<li>E muito mais</li>
+</ul>
+<p>O Kubernetes não é um PaaS (Platform as a Service), porém ele provê algumas das funcionalidades, como gerenciamento de <em>deploys</em>, balanceamento de carga, log e monitoração.</p>
+<h2 id="conceitos">Conceitos</h2>
+<p><img src="/images/posts/components-of-kubernetes.png" alt="Componentes do Kubernetes"></p>
+<h3 id="cluster">Cluster</h3>
+<p>Quando você instala Kubernetes você tem um cluster.</p>
+<p>Um cluster geralmente contém múltiplas máquinas. Para o Control Plane o ideal é alta disponibilidade, e para isso é necessário possuir pelo menos dois <em>master node</em>. Para a execução de suas aplicações, irá depender do tamanho do seu projeto, mas o ideal também é dois <em>worker node</em>, totalizando quatro máquinas.</p>
+<p>Em casos mais específicos é possível criar um cluster Kubernetes com apenas uma máquina, ou até mesmo utilizando um Raspberry Pi.</p>
+<h3 id="pod">Pod</h3>
+<p>Um <a href="https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/"
+   
+   target="_blank">Pod</a>, em resumo, é uma instância da sua aplicação no cluster.</p>
+<p><a href="https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/"
+   
+   target="_blank">Pod</a> é o menor objeto no modelo de objetos do Kubernetes. Ele encapsula um ou mais containers, armazenamento, redes e tudo o que for necessário para executar uma aplicação.</p>
+<h3 id="control-plane">Control Plane</h3>
+<p>Kubernetes Control Plane garante que o estado atual do cluster é o estado desejado e definido. Para tal, ele executa uma variedade de tarefas automaticamente, inspecionado o cluster e corrigindo qualquer não conformidade.</p>
+<p>O Control Plane consiste em um ou mais Kubernetes Master.</p>
+<h3 id="kubernetes-master">Kubernetes Master</h3>
+<p>Kubernetes Master, também referido como Master Node, é responsável por manter o cluster no estado desejado, garantindo que todas as aplicações tenham os recursos necessários para sua execução.</p>
+<p>No master temos os seguintes componentes:</p>
+<ul>
+<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/"
+   
+   target="_blank">kube-scheduler</a> — Responsável por gerenciar os Pods</li>
+<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/"
+   
+   target="_blank">kube-apiserver</a> — Responsável por expor a API do Kubernetes</li>
+<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/"
+   
+   target="_blank">kube-controller-manager</a> — Responsáveis pelo controle de nodes, replicação, e outros itens</li>
+<li><a href="https://kubernetes.io/docs/concepts/architecture/cloud-controller/"
+   
+   target="_blank">cloud-controller-manager</a> — Responsável por integrar com provedores cloud (AWS, GCP, Azure)</li>
+<li><a href="https://etcd.io/"
+   
+   target="_blank">etcd</a> — Banco de dados <em>key value</em> que armazena todas as informações do cluster</li>
+</ul>
+<h3 id="kubernetes-node">Kubernetes Node</h3>
+<p>Kubernetes Node, também referido como Worker Node e Compute Machine, é responsável por executar os Pods e prover todo o ambiente necessário para tal.</p>
+<p>No node temos os seguintes componentes:</p>
+<ul>
+<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/"
+   
+   target="_blank">kubelet</a> — Agente que está presente em todo <em>worker node</em> e é responsável por gerenciar os Pods estão rodando, além de se comunicar com o <em>master node</em></li>
+<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/"
+   
+   target="_blank">kube-proxy</a> — Proxy de rede que mantém regras e permite a comunicação com Pods dentro e fora da rede</li>
+<li>Container runtime — Software responsável por executar os containers, alguns suportados pelo Kubernetes são o <a href="https://docs.docker.com/engine/"
+   
+   target="_blank">Docker</a>, <a href="https://containerd.io/docs/"
+   
+   target="_blank">containerd</a> e o <a href="https://cri-o.io/#what-is-cri-o"
+   
+   target="_blank">CRI-O</a></li>
+</ul>
+<h3 id="objetos">Objetos</h3>
+<p>No Kubernetes existe uma série de abstrações que representam o estado de todo o sistema. Os objetos são responsáveis por especificar como as aplicações, serviços, volumes de armazenamento, redes, permissões e outros itens irão se comportar no seu cluster.</p>
+<p>Alguns exemplos de objetos comumente usados são:</p>
+<ul>
+<li><a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+   
+   target="_blank">Namespace</a> — Separação lógica de aplicações por ambientes</li>
+<li><a href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
+   
+   target="_blank">Deployment</a> — Define o estado desejado de um Pod, quantidade de réplicas, e mais</li>
+<li><a href="https://kubernetes.io/docs/concepts/services-networking/service/"
+   
+   target="_blank">Service</a> — Expõe sua aplicação como um serviço na rede</li>
+<li><a href="https://kubernetes.io/docs/concepts/services-networking/ingress/"
+   
+   target="_blank">Ingress</a> — Expões sua aplicação para acesso externo, define rotas, balanceamento de carga e mais</li>
+<li><a href="https://kubernetes.io/docs/concepts/storage/volumes/"
+   
+   target="_blank">Volumes</a> — Abstração do armazenamento de dados da sua aplicação</li>
+</ul>
+<p>Esses são só alguns dos objetos, existem vários outros, e alguns possuem várias classes, é impossível cobrir todos nesse artigo.</p>
+<h3 id="kubernetes-api">Kubernetes API</h3>
+<p>Serviço que disponibiliza as funcionalidades do Kubernetes através de uma API RESTful. É possível interagir diretamente com a API, porém o meio mais comum é através de ferramentas como o <em>kubectl</em>.</p>
+<h3 id="kubectl">kubectl</h3>
+<p>Ferramenta de linha de comando (CLI) que permite interagir com a API do Kubernetes. É possível usar o <em>kubectl</em> para criar, editar, inspecionar e deletar objetos.</p>
+<h2 id="distribuições">Distribuições</h2>
+<p>Existem várias distribuições do Kubernetes, cada uma possui algo em particular que talvez se adéque mais a determinados usos.</p>
+<p>Para ser considerada uma distribuição compatível com os padrões da <a href="https://www.cncf.io/"
+   
+   target="_blank">CNCF</a> (Cloud Native Computing Foundation), as distribuições devem passar por uma série de critérios para se tornar uma versão certificada. É possível obter uma lista das distribuições certificadas <a href="https://landscape.cncf.io/category=certified-kubernetes-distribution,certified-kubernetes-hosted,certified-kubernetes-installer&amp;format=card-mode&amp;grouping=category"
+   
+   target="_blank">aqui</a>.</p>
+<p>Podemos classificar as distribuições em 4 classes para entender um pouco melhor os diferentes tipos de distribuições.</p>
+<h3 id="puras">Puras</h3>
+<p>São as distribuições que não modificam ou que deixam para o usuário a definição de vários aspectos da instalação e configuração.</p>
+<p>O <a href="https://kubernetes.io/"
+   
+   target="_blank">Kubernetes da CNCF</a> é o oficial, mas a Canonical também gera suas próprias compilações sem modificações.</p>
+<h3 id="customizadas">Customizadas</h3>
+<p>São distribuições baseadas na oficial, geralmente entregando uma versão mais fácil de gerenciar ou com funcionalidade não disponível nas versões puras.</p>
+<p>A distribuição customizada mais popular é o <a href="https://www.okd.io/"
+   
+   target="_blank">OpenShift / OKD</a>.</p>
+<h3 id="limitadas">Limitadas</h3>
+<p>São as distribuições que possuem uso limitado e específico, geralmente são versões que removem algumas funcionalidades da versão oficial para permitir o uso em certos dispositivos, alguns exemplos são:</p>
+<ul>
+<li><a href="https://minikube.sigs.k8s.io/docs/"
+   
+   target="_blank">minikube</a> — Kubernetes local</li>
+<li><a href="https://microk8s.io/"
+   
+   target="_blank">MicroK8s</a> — Kubernetes mais leve e de fácil instalação</li>
+<li><a href="https://k3s.io/"
+   
+   target="_blank">K3s</a> — Kubernetes para IoT e embarcados</li>
+</ul>
+<h3 id="kubernetes-as-a-service">Kubernetes as a Service</h3>
+<p>São as distribuições que são fornecidas por diferentes provedores, geralmente elas integram facilmente com outros produtos e serviços, alguns exemplos são:</p>
+<ul>
+<li><a href="https://azure.microsoft.com/en-us/services/kubernetes-service/"
+   
+   target="_blank">Azure AKS</a></li>
+<li><a href="https://aws.amazon.com/eks"
+   
+   target="_blank">Amazon EKS</a></li>
+<li><a href="https://cloud.google.com/kubernetes-engine/"
+   
+   target="_blank">Google GKE</a></li>
+</ul>
+<h2 id="conclusão">Conclusão</h2>
+<p>Kubernetes é um assunto extenso, porém é relativamente fácil entender o seu funcionamento. Eu diria que se você já é familiarizado com containers, Docker, Docker Swarm e afins, a curva de aprendizado é relativamente moderada.</p>
+<p>Minha recomendação de leitura são os livros <a href="http://shop.oreilly.com/product/0636920175131.do"
+   
+   target="_blank">Cloud Native DevOps With Kubernetes</a> e <a href="http://shop.oreilly.com/product/0636920223788.do"
+   
+   target="_blank">Kubernetes Up and Running</a>. Confira como conseguir esses livros gratuitamente <a href="https://www.butecopensource.com.br/livros-gratuitos-abril-2020"
+   
+   target="_blank">aqui</a>.</p>
+<p>Iremos trazer mais conteúdo relacionado a Kubernetes, então fique ligado em nosso blog.</p>
+<p>Gostou? Ficou alguma dúvida? Deixe um comentário.</p>
+<p><strong>Referências</strong></p>
+<p><a href="https://kubernetes.io/docs/home/"
+   
+   target="_blank">Documentação do Kubernetes</a></p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/containers/" class="tag-link">containers</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/docker/" class="tag-link">docker</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/kubernetes/" class="tag-link">kubernetes</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/paas/" class="tag-link">paas</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/kubernetes-explicado/"
+     data-text="Kubernetes explicado"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/kubernetes-explicado/"
+     data-text="Kubernetes explicado"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/kubernetes-explicado/"
+     data-text="Kubernetes explicado"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/kubernetes-explicado/"
+     data-text="Kubernetes explicado"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             alt="Alexandre Vicenzi">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">Alexandre Vicenzi</a>
+      </h2>
+      <span class="small text-muted">Engenheiro de Software</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

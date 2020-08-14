@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/python/</link>
+    <description>Recent content in python on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 08 Jul 2020 08:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Guia completo de Debug em Python</title>
+      <link>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</link>
+      <pubDate>Wed, 08 Jul 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</guid>
+      <description>Uma das atividades que mais realizamos durante o desenvolvendo é o debug para analisar algum erro ou até mesmo saber se o código esta executando da forma que gostaríamos.</description>
+    </item>
+    
+    <item>
+      <title>Sorteio Novatec - Python Levado a Sério</title>
+      <link>https://butecotecnologico.com.br/sorteio-novatec-python-levado-a-serio/</link>
+      <pubDate>Mon, 01 Jun 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sorteio-novatec-python-levado-a-serio/</guid>
+      <description>Aperfeiçoe suas habilidades com o livro Python Levado a Sério.</description>
+    </item>
+    
+    <item>
+      <title>AWS S3 em Python</title>
+      <link>https://butecotecnologico.com.br/python-aws-s3/</link>
+      <pubDate>Fri, 15 May 2020 12:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/python-aws-s3/</guid>
+      <description>Diversas aplicações precisam em algum momento armazenar arquivos, seja para backup, CDN ou outros. Um dos serviços mais utilizados para armazenamento de arquivos é o AWS S3. Veja neste artigo como usar o S3 em suas aplicações Python.</description>
+    </item>
+    
+    <item>
+      <title>Efetuando teste de carga com o Locust</title>
+      <link>https://butecotecnologico.com.br/efetuando-teste-de-carga-com-o-locust/</link>
+      <pubDate>Thu, 19 May 2016 00:43:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/efetuando-teste-de-carga-com-o-locust/</guid>
+      <description>&lt;p&gt;Os testes de carga consistem em colocar uma demanda em um sistema de software ou dispositivo e medir a sua resposta. Este tipo de teste é realizado para determinar o comportamento de um sistema sob condições normais e picos de carga. Ela ajuda a identificar a capacidade máxima de operação de uma aplicação, bem como os gargalos e determinar qual elemento está causando lentidão.&lt;/p&gt;
+&lt;p&gt;Uma das ferramentas mais conceituadas nesse tipo de testes é o &lt;a href=&#34;http://jmeter.apache.org/&#34; target=&#34;_blank&#34;&gt;Apache JMeter™&lt;/a&gt;, porém hoje iremos abordar o &lt;a href=&#34;http://locust.io/&#34; target=&#34;_blank&#34;&gt;Locust&lt;/a&gt;, uma ferramenta escrita em Python extremamente simples e poderosa.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Acompanhe o TDC Floripa sem sair de casa</title>
+      <link>https://butecotecnologico.com.br/acompanhe-o-tdc-floripa-sem-sair-de-casa/</link>
+      <pubDate>Wed, 11 May 2016 20:10:22 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/acompanhe-o-tdc-floripa-sem-sair-de-casa/</guid>
+      <description>Acompanhe o TDC Floripa direto da sua casa, e de graça!</description>
+    </item>
+    
+    <item>
+      <title>Lançamentos Novatec: Linguagem SQL e Minecraft</title>
+      <link>https://butecotecnologico.com.br/lancamentos-novatec-linguagem-sql-e-minecraft/</link>
+      <pubDate>Mon, 09 May 2016 22:55:41 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lancamentos-novatec-linguagem-sql-e-minecraft/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;&lt;img class=&#34;aligncenter wp-image-5388 size-medium&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/05/introcucao-sql-209x300.jpg&#34; alt=&#34;introcucao-sql&#34; width=&#34;209&#34; height=&#34;300&#34; /&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;strong&gt;Introdução à Linguagem SQL&lt;/strong&gt;&lt;/p&gt;
+Se você trabalha em uma empresa ou é profissional de TI, vai se beneficiar da leitura de &lt;a href=&#34;http://www.novatec.com.br/livros/introducao-sql&#34; target=&#34;_blank&#34;&gt;Introdução à Linguagem SQL&lt;/a&gt;, um guia prático introdutório que ensina a obter e transformar dados com o SQL de maneira significativa. Rapidamente, dominará os aspectos básicos do SQL e aprenderá como criar seus próprios bancos de dados.
+&lt;p&gt;O livro contém exercícios que vão ajudar o leitor a praticar suas recém descobertas aptidões no uso do SQL sem precisar empregar um ambiente de servidor de banco de dados. Aprenderá também  a usar instruções-chave do SQL para encontrar e manipular seus dados, e descobrirá como projetar e gerenciar eficientemente bancos de dados que atendam às suas necessidades.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MQTT Parte 2: Enviando e recebendo mensagens</title>
+      <link>https://butecotecnologico.com.br/mqtt-parte-2-enviando-e-recebendo-mensagens/</link>
+      <pubDate>Thu, 10 Mar 2016 23:43:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/mqtt-parte-2-enviando-e-recebendo-mensagens/</guid>
+      <description>&lt;p&gt;Na &lt;a href=&#34;https://butecotecnologico.com.br/mqtt-parte-1-o-que-e-mqtt&#34;&gt;primeira parte&lt;/a&gt; sobre o protocolo MQTT (&lt;em&gt;Message Queue Telemetry Transport&lt;/em&gt;) demos uma breve introdução ao assunto, explicando o seu funcionamento, &lt;em&gt;brokers&lt;/em&gt; e &lt;em&gt;clients&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Hoje o artigo é mais prático que teórico. Inicialmente vamos instalar/configurar o &lt;em&gt;broker&lt;/em&gt; e após vamos criar em cliente MQTT que irá ser conectar ao &lt;em&gt;broker&lt;/em&gt; para enviar ou receber mensagens.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Deploy com um clique no Heroku</title>
+      <link>https://butecotecnologico.com.br/deploy-com-um-clique-no-heroku/</link>
+      <pubDate>Tue, 23 Feb 2016 20:45:39 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/deploy-com-um-clique-no-heroku/</guid>
+      <description>&lt;p&gt;Hoje vamos ver algo um pouco diferente, mas um tanto quanto comum em alguns projetos de código aberto, o botão de deploy do &lt;a href=&#34;https://www.heroku.com/home&#34; target=&#34;_blank&#34;&gt;Heroku&lt;/a&gt;. O Heroku é uma plataforma cloud PaaS, que suporta várias linguagens de programação e você pode fazer o deploy de uma aplicação com apenas um clique em um botão. :D&lt;/p&gt;
+&lt;p&gt;É mágica? Não! Mas o processo de criar um botão de deploy é simples, mas irá variar de acordo com o seu projeto. Nem todos projetos são possíveis de fazer deploy com apenas um clique. O artigo de hoje irá descrever como fazer um deploy de uma aplicação simples, sem necessidade de &lt;a href=&#34;https://elements.heroku.com/addons&#34; target=&#34;_blank&#34;&gt;add-ons&lt;/a&gt; do Heroku.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gerando bitlink atravéz da API do Bitly</title>
+      <link>https://butecotecnologico.com.br/gerando-bitlink-atravez-da-api-do-bitly/</link>
+      <pubDate>Fri, 19 Feb 2016 16:52:31 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gerando-bitlink-atravez-da-api-do-bitly/</guid>
+      <description>&lt;p&gt;Gerar link curto é uma tarefa um tanto quanto rotineira em determinados casos. Por exemplo, nós do blog usamos links curtos para compartilhar nossas publicações nas rede sociais.&lt;/p&gt;
+&lt;p&gt;Bem, mas como fazer para gerar um link curto do &lt;a href=&#34;https://bitly.com/&#34; target=&#34;_blank&#34;&gt;Bitly&lt;/a&gt; via API e com um domínio customizado? Se você não reparou ainda, nossos links curtos são sempre com o domínio &lt;em&gt;buteco.me&lt;/em&gt;, ao invéz do tão popular &lt;em&gt;bit.ly&lt;/em&gt;. Se você se pergunta o porque de usar um outro domínio, bem a resposta é simples, isso ajuda na identidade visual de sua marca ou produto.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GPS Parte 3: Localizador GPS com a BeagleBone Green</title>
+      <link>https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/</link>
+      <pubDate>Wed, 20 Jan 2016 21:11:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/</guid>
+      <description>Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona.</description>
+    </item>
+    
+    <item>
+      <title>Servo motor com Raspberry Pi</title>
+      <link>https://butecotecnologico.com.br/servo-motor-com-raspberry-pi/</link>
+      <pubDate>Wed, 13 Jan 2016 11:05:44 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/servo-motor-com-raspberry-pi/</guid>
+      <description>&lt;p&gt;Fala galera!
+Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI usando a linguagem Python.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GPS Parte 2: Decodificando uma sentença NMEA</title>
+      <link>https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/</link>
+      <pubDate>Mon, 11 Jan 2016 21:38:15 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/</guid>
+      <description>Na primeira parte sobre GPS vimos como este sistema de rastreamento por satélite funciona.</description>
+    </item>
+    
+    <item>
+      <title>PyPy 4.0 já está disponível</title>
+      <link>https://butecotecnologico.com.br/pypy-4-0-ja-esta-disponivel/</link>
+      <pubDate>Fri, 30 Oct 2015 06:48:26 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pypy-4-0-ja-esta-disponivel/</guid>
+      <description>&lt;p&gt;O PyPy 4.0 foi liberado nesta quinta (29/10) e vem com várias novidades em relação as versões anteriores.&lt;/p&gt;
+&lt;p&gt;O PyPy é uma alternativa a outros interpretadores como CPython, Jython e IronPython, e de acordo com os &lt;a href=&#34;http://speed.pypy.org/&#34; target=&#34;_blank&#34;&gt;diversos benchmarks&lt;/a&gt; publicados, o mais rápido entre eles.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Utilizando a API REST do Docker com Python</title>
+      <link>https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/</link>
+      <pubDate>Tue, 27 Oct 2015 08:31:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/</guid>
+      <description>&lt;p&gt;O Docker é uma plataforma para construir e executar aplicações distribuídas. Com ele é possível executar um &lt;em&gt;bash&lt;/em&gt; em um ambiente Debian mesmo estando dentro um Fedora, por exemplo. Seu funcionamento se assemelha ao de uma máquina virtual, mas as aplicações executadas no Docker estão de fato sendo executados no sistema &lt;em&gt;host&lt;/em&gt;, ou seja, não existe a camada de emulação.&lt;/p&gt;
+&lt;p&gt;Isso se deve à utilização de &lt;em&gt;templates&lt;/em&gt; de imagens do Debian (existem imagens de sistemas inteiros, como Debian, Ubuntu, e também de aplicações, como Apache, MySQL e etc). Para mais informações sobre o Docker, basta verificar a &lt;a href=&#34;https://www.docker.com/&#34; target=&#34;_blank&#34;&gt;página&lt;/a&gt; do projeto.&lt;/p&gt;
+&lt;p&gt;Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifique como instalá-lo em sua distribuição. Após instalado, você precisará iniciá-lo através do &lt;em&gt;docker daemon&lt;/em&gt; para receber requisições HTTP, além das requisições por &lt;em&gt;socket&lt;/em&gt; (este é utilizado pelo &lt;em&gt;docker client&lt;/em&gt;). Antes de iniciá-lo com estas opções, você precisará ter certeza que o mesmo não esteja executando. Para tal, basta executar:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker depois do hype, como começar a usá-lo hoje mesmo</title>
+      <link>https://butecotecnologico.com.br/docker-depois-do-hype-como-comecar-a-usa-lo-hoje-mesmo/</link>
+      <pubDate>Sun, 18 Oct 2015 19:53:49 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/docker-depois-do-hype-como-comecar-a-usa-lo-hoje-mesmo/</guid>
+      <description>&lt;p&gt;Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência ou evento da nossa área tem ou terá uma palestra sobre o assunto, é o que vende no momento. Vários cases sendo apresentados, toneladas de ferramentas de gerenciamento e orquestração de &lt;em&gt;containers&lt;/em&gt;, fazem do Docker uma ferramenta muito poderosa e que cresce a cada dia. Porém com tanta informação e soluções distintas faz com que muitos de nós sintam-se desmotivados a entrar nesse mundo, achando que no fim das contas será um grande &lt;em&gt;overkill&lt;/em&gt; para nossos projetos atuais&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Criando gráficos com matplot</title>
+      <link>https://butecotecnologico.com.br/criando-graficos-com-matplot/</link>
+      <pubDate>Wed, 07 Oct 2015 23:40:15 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-graficos-com-matplot/</guid>
+      <description>&lt;p&gt;Criado por &lt;a href=&#34;https://en.wikipedia.org/wiki/John_D._Hunter&#34; target=&#34;_blank&#34;&gt;John Hunter (1968-2012)&lt;/a&gt; , &lt;a href=&#34;http://matplotlib.org/index.html&#34; target=&#34;_blank&#34;&gt;matplot&lt;/a&gt; é usada para criação de &lt;em&gt;plots&lt;/em&gt;, histogramas, espectrogramas, gráficos (&lt;em&gt;charts&lt;/em&gt;) simples e 3D e etc. Para ter uma ideia da diversidade dessa ferramenta, você pode visitar a &lt;a href=&#34;http://matplotlib.org/gallery.html&#34; target=&#34;_blank&#34;&gt;galeria de exemplos&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Neste artigo, vou fazer uma demonstração bem simples, onde apresentarei como criar um gráfico de barras (&lt;em&gt;barchart&lt;/em&gt;) em python. Para isso, você deve fazer a instalação de algumas bibliotecas. No meu caso, estou usando um &lt;em&gt;Debian-like&lt;/em&gt;, então substitua o gerenciador de pacotes de acordo com sua distro.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Novatec lança livro para pais e crianças aprenderem programação juntos</title>
+      <link>https://butecotecnologico.com.br/novatec-lanca-livro-para-pais-e-criancas-aprenderem-programacao-juntos/</link>
+      <pubDate>Fri, 18 Sep 2015 09:06:50 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/novatec-lanca-livro-para-pais-e-criancas-aprenderem-programacao-juntos/</guid>
+      <description>&lt;p&gt;&lt;em&gt;“Ensine seus filhos a programar” tem explicações passo a passo na linguagem Python&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Os tempos mudaram e as crianças dessa geração não querem mais apenas jogar jogos que alguém criou ou usar programas que outra pessoa produziu. Elas querem fazer parte do processo, entender o que há por trás de tudo e usar a imaginação e o conhecimento para criarem seus próprios aplicativos, jogos, sites e animações.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Novatec lança livro que ensina a criar jogos em Python com PyGame</title>
+      <link>https://butecotecnologico.com.br/novatec-lanca-livro-que-ensina-a-criar-jogos-em-python-com-pygame/</link>
+      <pubDate>Tue, 15 Sep 2015 20:20:02 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/novatec-lanca-livro-que-ensina-a-criar-jogos-em-python-com-pygame/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Título ensina técnicas, dicas e truques dos maiores desenvolvedores de jogos do mundo &lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Desenvolvedores Python interessados em aprender a criar seus primeiros jogos têm agora um material completo com as melhores práticas, técnicas e truques para criar jogos atraentes usando a biblioteca PyGame.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Utilizando Shared Objects no Python</title>
+      <link>https://butecotecnologico.com.br/utilizando-shared-objects-no-python/</link>
+      <pubDate>Mon, 31 Aug 2015 12:25:26 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-shared-objects-no-python/</guid>
+      <description>&lt;p&gt;Python é realmente uma linguagem muito versátil, tendo a mão quase sempre tudo o que se precisa fazer. Então, a algum tempo atrás eu precisava verificar a possibilidade de carregar um Shared Object com o Python, e eis que encontrei. A documentação do Python é realmente muito útil, com exemplos de utilização de módulos, inclusive do módulo em questão.&lt;/p&gt;
+&lt;p&gt;Para poder carregar a lib, eu utilizei o módulo &lt;strong&gt;ctypes&lt;/strong&gt;. Este módulo provê tipos de dados compatíveis com o C e permite chamar bibliotecas, como DDLs e shared objects. Para iniciar o exemplo, eu criei uma lib, na verdade um shared object, a seguir:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Novatec lança livro “Automatize tarefas maçantes com Python”</title>
+      <link>https://butecotecnologico.com.br/novatec-lanca-livro-automatize-tarefas-macantes-com-python/</link>
+      <pubDate>Tue, 18 Aug 2015 23:29:34 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/novatec-lanca-livro-automatize-tarefas-macantes-com-python/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;&lt;i&gt;Título ensina a criar programas que fazem em minutos o que exigiria horas para ser feito manualmente&lt;/i&gt;&lt;/p&gt;
+Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gastam uma boa quantidade de tempo dos desenvolvedores. Seria excelente se o computador pudesse executar estas tarefas sozinho enquanto o tempo do profissional é aproveitado para fazer coisas mais importantes.</description>
+    </item>
+    
+    <item>
+      <title>PyPy 2.6 já está disponível e 7x mais rápido que o CPython</title>
+      <link>https://butecotecnologico.com.br/pypy-2-6-ja-esta-disponivel-e-7x-mais-rapido-que-o-cpython/</link>
+      <pubDate>Wed, 03 Jun 2015 21:29:01 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pypy-2-6-ja-esta-disponivel-e-7x-mais-rapido-que-o-cpython/</guid>
+      <description>A versão 2.6 do PyPy foi liberada nesta segunda (01/06) e vem com uma série de melhorias em relação a versão 2.5, além de uma melhor compatibilidade com o Python e Numpy.
+Quando se trata de desempenho com PyPy 2.6, há uma melhora significativa obtida com a refatoração e limpeza de código para melhorar o desempenho JIT, além de ter resultado em uma melhora de desempenho de I/O para os módulos zlib e bz2.</description>
+    </item>
+    
+    <item>
+      <title>Interagindo com a câmera do Raspberry Pi</title>
+      <link>https://butecotecnologico.com.br/interagindo-com-a-camera-do-raspberry-pi/</link>
+      <pubDate>Thu, 21 May 2015 23:33:25 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/interagindo-com-a-camera-do-raspberry-pi/</guid>
+      <description>Este artigo traz uma introdução de como pode ser feita a integração do Raspberry Pi com seu módulo de câmera chamado picamera.</description>
+    </item>
+    
+    <item>
+      <title>Usando a API do Google Analytics no Python</title>
+      <link>https://butecotecnologico.com.br/usando-a-api-do-google-analytics-no-python/</link>
+      <pubDate>Thu, 23 Apr 2015 23:18:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/usando-a-api-do-google-analytics-no-python/</guid>
+      <description>O Google Analytics permite que você avalie seu ROI de publicidade, bem como acompanhar seus sites e aplicativos em Flash, vídeo e redes sociais. É uma ferramente indispensável para aqueles que gostam de monitorar seus sites e saber informações relacionadas aos acessos. Claro que existem outras ferramentas similares, mas hoje mostrarei como buscar dados desta.</description>
+    </item>
+    
+    <item>
+      <title>Fazendo backup para o Amazon S3 com Python</title>
+      <link>https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/</link>
+      <pubDate>Thu, 23 Apr 2015 07:46:32 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/</guid>
+      <description>O Amazon Simple Storage Service (Amazon S3) oferece aos desenvolvedores e equipes de TI armazenamento de objetos seguro, durável e altamente escalonável. O Amazon S3 é fácil de usar, com uma interface de serviços da web simples para armazenar e recuperar qualquer quantidade de dados de qualquer parte da web. Com o Amazon S3, você paga apenas pelo armazenamento realmente utilizado. Não há taxa mínima nem custo de configuração.</description>
+    </item>
+    
+    <item>
+      <title>Criando módulo Python em C/C&#43;&#43;</title>
+      <link>https://butecotecnologico.com.br/criando-modulo-python-em-cc/</link>
+      <pubDate>Mon, 13 Apr 2015 11:32:48 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-modulo-python-em-cc/</guid>
+      <description>Primeiros passos na criação de um módulo C/C++ para ser utilizado dentro do Python</description>
+    </item>
+    
+    <item>
+      <title>Construindo a interface de login do spotify com PyGTK e CSS</title>
+      <link>https://butecotecnologico.com.br/construindo-a-interface-de-login-do-spotify-com-pygtk-e-css/</link>
+      <pubDate>Wed, 01 Apr 2015 12:10:10 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/construindo-a-interface-de-login-do-spotify-com-pygtk-e-css/</guid>
+      <description>Desenvolva aplicativos mais facilmente fazendo o uso do CSS linguagem de estilo da web agora aplicada a interfaces com Python e Gtk.</description>
+    </item>
+    
+    <item>
+      <title>PyPy 2.5.1 já está disponível</title>
+      <link>https://butecotecnologico.com.br/pypy-2-5-1-ja-esta-disponivel/</link>
+      <pubDate>Thu, 26 Mar 2015 23:06:52 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pypy-2-5-1-ja-esta-disponivel/</guid>
+      <description>Esta nova versão vem com suporte a arquitetura x86, para os sistemas operacionais Linux 32/64, Mac OS X 64, Windows e OpenBSD, e arquitetura ARM (ARMv6 ou ARMv7 com VFPv3), para o sistema operacional Linux.</description>
+    </item>
+    
+    <item>
+      <title>redislite: Redis sem necessidade de servidor para Python</title>
+      <link>https://butecotecnologico.com.br/redislite-redis-sem-necessidade-de-servidor-para-python/</link>
+      <pubDate>Mon, 23 Mar 2015 22:41:06 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/redislite-redis-sem-necessidade-de-servidor-para-python/</guid>
+      <description>O time de desenvolvedores do Yahoo anunciou uma implementação do Redis para Python sem a necessidade de instalar e configurar um servidor Redis. A grande vantagem é a remoção de uma dependência do seu código, quando o quesito é testes.
+O Redis é um banco de dados de código aberto, sob a licença BSD, para persistência de dados no modelo Chave/Valor e é escrito em C.</description>
+    </item>
+    
+    <item>
+      <title>Acelerando o desenvolvimento com glade</title>
+      <link>https://butecotecnologico.com.br/acelerando-o-desenvolvimento-com-glade/</link>
+      <pubDate>Fri, 20 Mar 2015 08:25:17 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/acelerando-o-desenvolvimento-com-glade/</guid>
+      <description>Glade é a ferramenta de desenvolvimento de interfaces do gnome. Uma ferramenta ágil capaz de minimizar o tempo de desenvolvimento e deixar o design muito mais fácil de se implementar.</description>
+    </item>
+    
+    <item>
+      <title>Builder IDE - Nova IDE para criação de aplicações GNOME no Linux</title>
+      <link>https://butecotecnologico.com.br/builder-ide-nova-ide-para-criacao-de-aplicacoes-gnome-no-linux/</link>
+      <pubDate>Thu, 19 Mar 2015 07:12:23 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/builder-ide-nova-ide-para-criacao-de-aplicacoes-gnome-no-linux/</guid>
+      <description>Este post destaca as principais features da nova IDE Builder que esta sendo desenvolvida.</description>
+    </item>
+    
+    <item>
+      <title>Geração de MD5 utilizando C com OpenSSL e Python</title>
+      <link>https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/</link>
+      <pubDate>Tue, 10 Mar 2015 21:19:49 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/</guid>
+      <description>Esta postagem mostra como gerar MD5 via código C (utilizando a biblioteca OpenSSL) e com Python (utilizando a biblioteca hashlib).</description>
+    </item>
+    
+    <item>
+      <title>Python 3.5.0a2 já está disponível</title>
+      <link>https://butecotecnologico.com.br/python-3-5-0a2-ja-esta-disponivel/</link>
+      <pubDate>Tue, 10 Mar 2015 21:14:07 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/python-3-5-0a2-ja-esta-disponivel/</guid>
+      <description>O Python 3.5.0a2 foi liberado nesta segunda (09/03) e vem com algumas novidades em relação a versão 3.4.
+O Python 3.5 ainda está em desenvolvimento e esta versão é a segunda &lt;em&gt;alpha release&lt;/em&gt;. Varias alterações para esta versão ainda estão em faze de desenvolvimento.</description>
+    </item>
+    
+    <item>
+      <title>Criando formulários com Python e PyGTK3</title>
+      <link>https://butecotecnologico.com.br/criando-formularios-com-python-e-pygtk3/</link>
+      <pubDate>Mon, 09 Mar 2015 22:29:05 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-formularios-com-python-e-pygtk3/</guid>
+      <description>Python e Gtk uma combinação simples e prática para criação de interfaces. Nesse artigo você encontra o básico para poder implementar suas próprias interfaces, contendo  botões, caixas de entrada, título, caixa de seleção e muito mais.</description>
+    </item>
+    
+    <item>
+      <title>Pyston 0.3 já está disponível</title>
+      <link>https://butecotecnologico.com.br/pyston-0-3-ja-esta-disponivel/</link>
+      <pubDate>Fri, 27 Feb 2015 19:10:49 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pyston-0-3-ja-esta-disponivel/</guid>
+      <description>A versão 0.3 do Pyston foi liberada nesta terça-feira (24/02). O Pyston é uma proposta de uma implementação do Python com alto desempenho.
+Esta é liberação muito importante, pois em relação as versões anteriores, esta versão além de uma maior compatibilidade com o Python, também melhorou o seu desempenho na execução de scripts.</description>
+    </item>
+    
+    <item>
+      <title>Python 3.4.3 já está disponível</title>
+      <link>https://butecotecnologico.com.br/python-3-4-3-ja-esta-disponivel/</link>
+      <pubDate>Fri, 27 Feb 2015 00:36:18 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/python-3-4-3-ja-esta-disponivel/</guid>
+      <description>Foi liberado ontem (25/02) a nova versão do Python, a 3.4.3 (final). Esta versão vem com várias correções de bugs e melhorias em relação a 3.4.2.</description>
+    </item>
+    
+    <item>
+      <title>Python 3.4.3 e 3.5 já estão a caminho</title>
+      <link>https://butecotecnologico.com.br/python-3-4-3-e-3-5-ja-estao-a-caminho/</link>
+      <pubDate>Mon, 09 Feb 2015 14:06:08 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/python-3-4-3-e-3-5-ja-estao-a-caminho/</guid>
+      <description>Ontem (08/02) foi liberado o Python 3.4.3rc1 e o 3.5.0a1. A versão 3.4.3 está prevista para dia 22/02 e a 3.5 para 13/09.
+A versão 3.4.3rc1 vem com várias correções de bugs e pequenas melhorias em relação a 3.4.2. Já a versão 3.5 ainda está em desenvolvimento, e a 3.5.0a1 é a primeira liberação desta nova versão. Várias alterações ainda estão sendo planejadas para a 3.5.</description>
+    </item>
+    
+    <item>
+      <title>Utilizando atexit com C e Python</title>
+      <link>https://butecotecnologico.com.br/utilizando-atexit-com-c-e-python/</link>
+      <pubDate>Sun, 08 Feb 2015 18:00:09 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-atexit-com-c-e-python/</guid>
+      <description>Em muitos casos, quando escrevemos programas se faz necessário liberar os recursos que o programa requisitou do sistema operacional.</description>
+    </item>
+    
+    <item>
+      <title>PyPy 2.5.0 já está disponível</title>
+      <link>https://butecotecnologico.com.br/pypy-2-5-0-ja-esta-disponivel/</link>
+      <pubDate>Wed, 04 Feb 2015 14:23:06 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pypy-2-5-0-ja-esta-disponivel/</guid>
+      <description>O PyPy é uma alternativa a outros interpretadores como CPython (o padrão), Jython e IronPython, e de acordo com os diversos benchmarks publicados, o mais rápido entre eles.</description>
+    </item>
+    
+    <item>
+      <title>Formatando e adicionando anexos a e-mails no Python</title>
+      <link>https://butecotecnologico.com.br/formatando-e-adicionando-anexos-a-e-mails-no-python/</link>
+      <pubDate>Thu, 15 Jan 2015 06:00:19 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/formatando-e-adicionando-anexos-a-e-mails-no-python/</guid>
+      <description>Há algumas semanas, nós mostramos como enviar e-mail pelo Python usando o módulo smtplib.</description>
+    </item>
+    
+    <item>
+      <title>Hands on: Sockets em Python</title>
+      <link>https://butecotecnologico.com.br/hands-on-sockets-em-python/</link>
+      <pubDate>Wed, 14 Jan 2015 00:05:04 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/hands-on-sockets-em-python/</guid>
+      <description>Muitos são os usos dos sockets atualmente e vários exemplos existem através de toda a internet em várias linguagens de programação diferentes.</description>
+    </item>
+    
+    <item>
+      <title>Enviando emails com o Python</title>
+      <link>https://butecotecnologico.com.br/enviando-emails-com-o-python/</link>
+      <pubDate>Sun, 28 Dec 2014 06:00:49 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/enviando-emails-com-o-python/</guid>
+      <description>Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo smtplib.</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7.9 já está disponível</title>
+      <link>https://butecotecnologico.com.br/python-2-7-9-ja-esta-disponivel/</link>
+      <pubDate>Thu, 11 Dec 2014 14:18:37 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/python-2-7-9-ja-esta-disponivel/</guid>
+      <description>A nova versão do Python, a 2.7.9, é uma versão que traz correções de bugs para a versão 2.</description>
+    </item>
+    
+    <item>
+      <title>Utilizando o OpenShift para hospedar uma aplicação Flask/Python</title>
+      <link>https://butecotecnologico.com.br/utilizando-o-openshift-para-hospedar-uma-aplicacao-flaskpython/</link>
+      <pubDate>Mon, 27 Oct 2014 14:12:38 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-o-openshift-para-hospedar-uma-aplicacao-flaskpython/</guid>
+      <description>O que é OpenShift?
+OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações em nuvem disponibilizada pela Red Hat.</description>
+    </item>
+    
+    <item>
+      <title>Pexpect: Integração entre Python e expect para automatização de tarefas</title>
+      <link>https://butecotecnologico.com.br/pexpect-integracao-entre-python-e-expect-para-automatizacao-de-tarefas/</link>
+      <pubDate>Sat, 18 Oct 2014 10:03:28 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pexpect-integracao-entre-python-e-expect-para-automatizacao-de-tarefas/</guid>
+      <description>Olá pessoa, este post é uma continuação do post sobre tcl/expect escrito previamente no blog.</description>
+    </item>
+    
+    <item>
+      <title>pycompat: Verificando a versão do Python e do sistema de uma forma simples</title>
+      <link>https://butecotecnologico.com.br/pycompat-verificando-a-versao-do-python-e-do-sistema-de-uma-forma-simples/</link>
+      <pubDate>Mon, 06 Oct 2014 13:20:35 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pycompat-verificando-a-versao-do-python-e-do-sistema-de-uma-forma-simples/</guid>
+      <description>A algum tempo desenvolvi uma mini biblioteca chamada pycompat para verificar a versão do Python e do sistema de uma simples e funcional.</description>
+    </item>
+    
+    <item>
+      <title>Harry speaks Python</title>
+      <link>https://butecotecnologico.com.br/harry-speaks-python/</link>
+      <pubDate>Tue, 30 Sep 2014 08:21:15 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/harry-speaks-python/</guid>
+      <description>Via Reddit</description>
+    </item>
+    
+    <item>
+      <title>Introdução ao ALSA e sua API em C e Python</title>
+      <link>https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/</link>
+      <pubDate>Wed, 24 Sep 2014 23:48:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/</guid>
+      <description>O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio.</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://butecotecnologico.com.br/python/</link>
+      <pubDate>Mon, 22 Sep 2014 17:08:36 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/python/</guid>
+      <description>Apenas para descontrair :P
+Via XKCD</description>
+    </item>
+    
+    <item>
+      <title>Pyston 0.2 já está disponível</title>
+      <link>https://butecotecnologico.com.br/pyston-0-2-ja-esta-disponivel/</link>
+      <pubDate>Fri, 12 Sep 2014 15:17:24 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pyston-0-2-ja-esta-disponivel/</guid>
+      <description>O Pyston 0.2 foi anunciado ontem (11/09) e contém várias melhorias se comparado a versão inicial.</description>
+    </item>
+    
+    <item>
+      <title>Capturando Imagem da Webcam com o PyGame</title>
+      <link>https://butecotecnologico.com.br/capturando-imagem-da-webcam-com-o-pygame/</link>
+      <pubDate>Tue, 09 Sep 2014 00:27:57 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/capturando-imagem-da-webcam-com-o-pygame/</guid>
+      <description>Este é o meu primeiro post no blog e gostaria de falar sobre o PyGame.</description>
+    </item>
+    
+  </channel>
+</rss>

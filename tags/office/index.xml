@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>office on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/office/</link>
+    <description>Recent content in office on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 14 Aug 2020 08:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/office/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LibreOffice: A suite office livre</title>
+      <link>https://butecotecnologico.com.br/podcast/libreoffice/</link>
+      <pubDate>Fri, 14 Aug 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/podcast/libreoffice/</guid>
+      <description>O LibreOffice é uma poderosa suíte de produtividade de escritório com planilha, editor de texto, editor de apresentação e muito mais.</description>
+    </item>
+    
+  </channel>
+</rss>

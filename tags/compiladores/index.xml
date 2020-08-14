@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>compiladores on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/compiladores/</link>
+    <description>Recent content in compiladores on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 03 Nov 2014 22:44:49 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/compiladores/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LibreOffice e os compiladores</title>
+      <link>https://butecotecnologico.com.br/libreoffice-e-os-compiladores/</link>
+      <pubDate>Mon, 03 Nov 2014 22:44:49 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/libreoffice-e-os-compiladores/</guid>
+      <description>Olá pessoal, está semana foram liberados os vídeos da LibreOffice Conference 2014.</description>
+    </item>
+    
+  </channel>
+</rss>

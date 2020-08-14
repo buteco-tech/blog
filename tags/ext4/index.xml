@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ext4 on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/ext4/</link>
+    <description>Recent content in ext4 on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 20 Apr 2015 17:26:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/ext4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>EXT4 com suporte a criptografia nativa</title>
+      <link>https://butecotecnologico.com.br/ext4-com-suporte-a-criptografia-nativa/</link>
+      <pubDate>Mon, 20 Apr 2015 17:26:16 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/ext4-com-suporte-a-criptografia-nativa/</guid>
+      <description>EXT4 é a evolução do sistema de arquivos EXT3. De muitas maneiras, EXT4 é uma profunda melhoria sobre o  EXT3, sendo o EXT3, uma melhoria do EXT2.</description>
+    </item>
+    
+  </channel>
+</rss>

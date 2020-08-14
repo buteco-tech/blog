@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>doctrine orm on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/doctrine-orm/</link>
+    <description>Recent content in doctrine orm on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 28 May 2015 14:53:31 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/doctrine-orm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integrando o Doctrine ORM e Laravel 5 [parte-1]</title>
+      <link>https://butecotecnologico.com.br/integrando-o-doctrine-orm-e-laravel-5-parte-1/</link>
+      <pubDate>Thu, 28 May 2015 14:53:31 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/integrando-o-doctrine-orm-e-laravel-5-parte-1/</guid>
+      <description>Veja este que é a primeira parte de um série sobre a integração do Doctrine ORM, uma biblioteca para se trabalhar com banco de dados e mapeamento, com o Laravel 5 o framework mais popular atualmente para PHP</description>
+    </item>
+    
+  </channel>
+</rss>

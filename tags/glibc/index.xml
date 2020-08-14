@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>glibc on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/glibc/</link>
+    <description>Recent content in glibc on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 05 Jan 2016 23:09:47 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/glibc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Como utilizar o getaddrinfo para evitar a falha GHOST</title>
+      <link>https://butecotecnologico.com.br/como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost/</link>
+      <pubDate>Tue, 05 Jan 2016 23:09:47 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost/</guid>
+      <description>&lt;p&gt;Em janeiro de 2015 se ouviu falar de uma falha de segurança na glibc chamada GHOST. Esta falha poderia ser explorada por um programa malicioso utilizando as funções &lt;code&gt;gethostbyname()&lt;/code&gt; e &lt;code&gt;gethostbyname2()&lt;/code&gt; da glibc. O ataque acontece por um &lt;em&gt;buffer overflow&lt;/em&gt; dentro destas funções quando um endereço inválido é passando como parâmetro. Ao explorar esta falha, o atacante consegue executar códigos arbitrários com as permissões do usuários executando o processo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Implemente seu malloc/free. Just4fun!</title>
+      <link>https://butecotecnologico.com.br/implemente-seu-mallocfree-just4fun/</link>
+      <pubDate>Thu, 03 Dec 2015 13:18:40 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/implemente-seu-mallocfree-just4fun/</guid>
+      <description>&lt;p&gt;Algum tempo atrás comprei o livro The Linux Programming Interface, um dos melhores livros que já adquiri. Um dos primeiros capítulos que li foi sobre alocação de memória. No final do capítulo, o autor oferece alguns exercícios. Entre eles existe um mais desafiador. Que é implementar funções equivalentes ao &lt;code&gt;malloc&lt;/code&gt; e &lt;code&gt;free&lt;/code&gt;. The challenge has been accepted!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>glibc 2.21 já está disponível</title>
+      <link>https://butecotecnologico.com.br/glibc-2-21-ja-esta-disponivel/</link>
+      <pubDate>Fri, 06 Feb 2015 18:09:23 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/glibc-2-21-ja-esta-disponivel/</guid>
+      <description>A GNU C Library (glibc) é a biblioteca C padrão no sistema GNU e na maioria dos sistemas com Kernel Linux. A versão 2.21 vem com várias correções de bugs algumas funcionalidades novas.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Criando formulários com Python e PyGTK3 &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Criando formulários com Python e PyGTK3">
+<meta itemprop="description" content="Python e Gtk uma combinação simples e prática para criação de interfaces. Nesse artigo você encontra o básico para poder implementar suas próprias interfaces, contendo  botões, caixas de entrada, título, caixa de seleção e muito mais.">
+<meta itemprop="datePublished" content="2015-03-09T22:29:05+00:00" />
+<meta itemprop="dateModified" content="2015-03-09T22:29:05+00:00" />
+<meta itemprop="wordCount" content="1629">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/pythonzz2.png">
+
+
+
+<meta itemprop="keywords" content="form,gtk3,python," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/pythonzz2.png"/>
+
+<meta name="twitter:title" content="Criando formulários com Python e PyGTK3"/>
+<meta name="twitter:description" content="Python e Gtk uma combinação simples e prática para criação de interfaces. Nesse artigo você encontra o básico para poder implementar suas próprias interfaces, contendo  botões, caixas de entrada, título, caixa de seleção e muito mais."/>
+
+
+<meta property="og:title" content="Criando formulários com Python e PyGTK3" />
+<meta property="og:description" content="Python e Gtk uma combinação simples e prática para criação de interfaces. Nesse artigo você encontra o básico para poder implementar suas próprias interfaces, contendo  botões, caixas de entrada, título, caixa de seleção e muito mais." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/criando-formularios-com-python-e-pygtk3/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/pythonzz2.png" />
+<meta property="article:published_time" content="2015-03-09T22:29:05+00:00" />
+<meta property="article:modified_time" content="2015-03-09T22:29:05+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Criando formulários com Python e PyGTK3</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/pedro-jefferson/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=100&d=robohash"
+           alt="Pedro Jefferson"
+           title="Pedro Jefferson">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/pedro-jefferson/"
+           class="author">Pedro Jefferson</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2015-03-09T22:29:05Z">Mar 9, 2015</time>
+      &middot; 8 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/criando-formularios-com-python-e-pygtk3/"
+     data-text="Criando formulários com Python e PyGTK3"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/criando-formularios-com-python-e-pygtk3/"
+     data-text="Criando formulários com Python e PyGTK3"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/criando-formularios-com-python-e-pygtk3/"
+     data-text="Criando formulários com Python e PyGTK3"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/criando-formularios-com-python-e-pygtk3/"
+     data-text="Criando formulários com Python e PyGTK3"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/pythonzz2.png"
+           alt="Criando formulários com Python e PyGTK3">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p><strong>Introdução</strong></p>
+<p>Pygtk é uma camada Python construída sobre o Gtk. Gtk nada mais é que o <em>Gimp Toolkit</em>, biblioteca utilizada pelo GNOME na criação de interfaces.</p>
+<p>Esse tutorial foi construído com base no <a title="Manual de referencia GTK" href="https://developer.gnome.org/gtk3/stable/" target="_blank">Manual de Referencia do Gtk3</a> e no <a title="The Python GTK+ 3 Tutorial" href="http://python-gtk-3-tutorial.readthedocs.org/en/latest/index.html" target="_blank"> Python GTK+ 3 Tutorial</a>.</p>
+<p><strong>Requisitos</strong></p>
+<ul>
+	<li>Python 2.7.6 padrão (no Linux), em breve a versão 3 o substituirá.</li>
+	<li>Gtk3</li>
+	<li>Gdk</li>
+	<li>Sqlite3</li>
+</ul>
+<strong>Python</strong>
+<p>A maioria das distribuições Linux já contam com o Python e o Gtk instalados por padrão.
+Para verificar se sua distribuição conta com os pacotes necessários abra o <strong>terminal</strong> e digite:</p>
+<p><code>python &ndash;version</code></p>
+<p><strong>Gtk</strong></p>
+<p>Para verificar se há bibliotecas Gtk instaladas em uma distribuição derivada do <em>Debian</em>, digite:</p>
+<p><code> dpkg -l libgtk2.0-0 libgtk-3-0 </code></p>
+<p>Deve retornar algo do tipo:
+<code>
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Nome Versão Arquitectura Descrição
++++-===============================-====================-====================-=======
+ii libgtk-3-0:amd64 3.14.8-0ubuntu1~14.0 amd64 GTK+ graphical user interface library
+rc libgtk-3-0:i386 3.14.8-0ubuntu1~14.0 i386 GTK+ graphical user interface library
+ii libgtk2.0-0:amd64 2.24.23-0ubuntu1.1 amd64 GTK+ graphical user interface library
+ii libgtk2.0-0:i386 2.24.23-0ubuntu1.1 i386 GTK+ graphical user interface library
+</code></p>
+<p>Se você estiver utilizando uma distribuição derivada do <em>Red Hat</em>, digite:</p>
+<p><code>yum list installed gtk3-devel gtk2-devel </code></p>
+<p>O retorno a seguir mostra que os pacotes estão corretamente instalados:</p>
+<p><code>Plugins carregados: auto-update-debuginfo, langpacks
+Pacotes instalados
+gtk2-devel.x86_64 2.24.26-1.fc21 installed
+gtk3-devel.x86_64 3.14.8-2.fc21 installed
+</code></p>
+<p>Usuários de Mac OSX podem conferir este <a title="Gtk+ Mac osx" href="http://www.gtk.org/download/macos.php" target="_blank">post.</a></p>
+<p>Usuários Windows precisam baixar o interpretador Python <a title="Python Download" href="https://www.python.org/downloads/" target="_blank">aqui</a> e o utilitário de instalação do PyGTK <a title="PyGobjectWin32" href="http://sourceforge.net/projects/pygobjectwin32/files/" target="_blank">aqui</a>.</p>
+<p>Daqui em diante será mostrando o exemplo utilizando PyGtk. Logo abaixo é possível ver a importação das bibliotecas necessárias para construir a aplicação. Estas são as mesmas bibliotecas que foram verificadas anteriormente:</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/pygtk/pygtk-form.py?slice=10:12" type="text/javascript"></script>
+<p><strong>Conhecendo Gtk.Window</strong></p>
+<p>A princípio criei uma classe Janela que herda de <strong>Gtk.Window</strong>, essa será a janela principal. Logo em seguida, define-se o método construtor e todos os atributos da janela principal, como o título da janela, o tamanho padrão, se a tela vai ser redimensionada ou não, cor de fundo e etc. Veja no código a seguir.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/pygtk/pygtk-form.py?slice=15:21" type="text/javascript"></script>
+<p>No código acima, é instanciada a classe Gtk.Window e configurado os seus atributos, sendo eles o título da janela, tamanho da janela em pixels (600x600), configuração para não redimensionar a janela, e a cor de fundo da janela. O método <strong>modify_bg</strong>, que altera a cor da janela, recebe dois argumentos: um tipo de estado do gtk (StateType) e o <em>color_parse</em> com uma cor em Hexadecimal. Os estados possíveis que o modify_bg pode receber são: <strong>NORMAL</strong>, <strong>FOCUSED</strong>, <strong>ACTIVE</strong>, <strong>INCONSISTENT</strong>, <strong>INSENSITIVE</strong>, <strong>PRELIGHT</strong> e <strong>SELECTED</strong>, lembre-se, todos em maiúsculos. O que cada um estado representa? <a title="Gtk StateTypes" href="https://people.gnome.org/~gcampagna/docs/Gtk-3.0/Gtk.StateType.html" target="_blank">veja aqui</a>.</p>
+<p>Atenção, objetos do tipo Window só aceitam um objeto por vez. Para poder utilizar múltiplos objetos por vez é necessário utilizar objetos containers dentro da janela. Começaremos com um container <em>grid</em>, que agrupará outros widgets.</p>
+<p><strong>Gtk.Grid</strong></p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/pygtk/pygtk-form.py?slice=22:25" type="text/javascript"></script>
+<p>A <strong>Grid</strong> é um elemento do tipo <strong>container</strong> que contempla vários widgets como entradas de texto, labels, botões e toda parte que se pode interagir com a aplicação. Você deve imaginar uma grid exatamente como uma tabela. Aqui são adicionadas duas grids. Dentro de uma grid, vai um elemento box1 que é um <strong>Gtk.Box</strong> que também é um objeto container. É completamente necessário adicionar a nova box de fato na grid utilizando o grid.attach. O grid.attach recebe 5 parâmetros, sendo a referência do objeto a ser adicionado (self), <strong>left</strong>, <strong>top</strong>, <strong>width</strong> e <strong>height</strong>.</p>
+<script src="h//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/pygtk/pygtk-form.py?slice=26:34" type="text/javascript"></script>
+<p><strong>Label</strong></p>
+<p>Labelinit é um objeto do tipo Label que é utilizado para textos, e que será o título da aplicação. Um dos mais interessantes métodos da classe label é o <strong>set_markup</strong>, pois ele recebe como argumento uma string formatada em pango markup language. Quer conhecer mais? Então <a title="Pango markup language" href="https://developer.gnome.org/pango/stable/PangoMarkupFormat.html" target="_blank">clique aqui</a>.</p>
+<p>Mas lembre-se, apesar de ter uma sintaxe muito parecida, <strong>Pango não é HTML</strong>, portanto, nem todas as tags que você por funcionarão.</p>
+<p><strong>Box</strong></p>
+<p>A inserção de qualquer objeto em um elemento do tipo Box, se dá por dois comandos:
+<strong>Box.pack_start</strong> para adicionar objetos no início da box e <strong>Box.pack_end</strong> que obviamente adiciona objetos no fim da box. Os parâmetros informam se ele será expansível ou não, se terá preenchimento e espaço entre os objetos. Por fim, crio um novo objeto do tipo <strong>Grid</strong>, chamada de grid2 e passo a quantidade de espaço entre duas colunas consecutivas, espaço da coluna e espaço da linha. Confira Linha 34 do código anterior.</p>
+<p>Com toda a estrutura da janela criada, vamos aos objetos!</p>
+<p><strong>Widgets</strong></p>
+<script src="h//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/pygtk/pygtk-form.py?slice=35:44" type="text/javascript"></script>
+<p>Widgets são objetos comuns de uma interface, como campo de entrada, textos, botões, caixa de seleção e etc. Eles obrigatoriamente devem ficar contidos em objetos containers, como Grids ou Box. O primeiro objeto é o label do nome, o <strong>set_halign</strong> representa o alinhamento horizontal do objeto em relação a grid ou box em que esse objeto está, da mesma forma temos <strong>set_valign</strong> para o alinhamento vertical. Eles recebem como parâmetro um objeto do tipo <strong>Gtk.Align,</strong> e os tipos são: <strong>BASELINE</strong>, <strong>CENTER</strong>, <strong>FILL</strong>, <strong>START</strong>. Dúvidas sobre os tipos? <a title="Gtk Align Types" href="http://www.roojs.com/seed/gir-1.2-gtk-3.0/gjs/Gtk.Align.html" target="_blank">Veja mais aqui</a>.</p>
+<p>Em seguida, adicionamos na grid1 com <strong>left=0</strong>, <strong>top=1</strong>, <strong>width=1</strong> e <strong>height=1</strong>. Objetos do tipo <strong>Gtk.Entry</strong> (Linha 39) são altamente configuráveis, no exemplo fi configurado o max_length para 150, que é o maior quantidade de caracteres que o campo pode receber, e o tamanho do campo <strong>width_chars</strong> em caracteres(30), note que um é completamente diferente do outro. Por fim, adicionei o objeto na grid2 e criei uma conexão.</p>
+<p><strong>Conexões</strong></p>
+<p>Conexão é, a grosso modo, a ligação do estado do objeto com um método. No exemplo, é criado uma conexão do estado <strong>“changed”</strong> com um método chamado <strong>“on_entry_nome_changed” </strong>, até então não criado ainda. Mas o que ela faz? Ela é chamada toda vez que o estado da <strong>entry_nome</strong> for mudada.</p>
+<p>O que se segue agora é a repetição do código acima com apenas algumas modificações. Vamos criar um label e um entry para cada entrada que o usuário tiver que digitar. Note que, o objeto label é o texto que fica ao lado da área para o usuário digitar. E o objeto entry é justamente o campo.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/pygtk/pygtk-form.py?slice=45:64" type="text/javascript"></script>
+<p>A única diferença está no objeto entry_tel que chama o set_text para demonstrar como deve ser a entrada do telefone, e logo abaixo é configurada a cor cinza claro via Gdk._color_parse. (Linhas 63 e 64)</p>
+<p>O mesmo acontece com as próximas entradas Email e Data de Nascimento.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/pygtk/pygtk-form.py?slice=65:83" type="text/javascript"></script>
+<p><strong>Gtk.ComboBoxText</strong></p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/pygtk/pygtk-form.py?slice=84:108" type="text/javascript"></script>
+<p>O <strong>Gtk.ComboBoxText</strong> é um meio de entrada de dados que utiliza uma lista já criada e recebe três parâmetros, um inteiro informando a ordem, um id e o texto.</p>
+<p><strong>Gtk.Button</strong></p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/pygtk/pygtk-form.py?slice=109:114" type="text/javascript"></script>
+<p>Criei um objeto chamado commit do tipo <strong>Gtk.Button</strong> (Linha 110). Este objeto recebe como parâmetros: um label, um alinhamento, o posicionamento na grid, o tamanho do botão, e uma conexão usando o sinal “<strong>clicked</strong>”(com outro método que não está criado ainda).</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/pygtk/pygtk-form.py?slice=115:118" type="text/javascript"></script>
+<p><strong>Adicionando objetos containers no container principal</strong></p>
+<p>Por fim, vamos pegar todas as grids e box que criamos no meio do caminho e vamos amarrá-las à grid principal chamada grid_total (Linhas 121 e 122 do código abaixo).</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/pygtk/pygtk-form.py?slice=119:123" type="text/javascript"></script>
+<p><strong>Métodos</strong></p>
+<p>Vamos fazer dois métodos para o funcionamento do formulário. O primeiro método será <strong>on_entry_nome_changed</strong> para auxiliar na entrada do nome do usuário. A utilização deste  método se deve ao fato dele colocar o nome em maiúsculo em tempo de execução. Funciona da seguinte maneira: O usuário coloca o nome e em tempo de execução, o método transforma os caracteres para maiúsculo, por isso é usado o sinal &ldquo;changed&rdquo;, pois a cada carácter novo o método precisa torná-lo maiúsculo. Então ele pega o texto via get_text e faz o upper, que torna-o maiúsculo e devolve o texto por outra função set_text. Confira no código abaixo.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/pygtk/pygtk-form.py?slice=125:129" type="text/javascript"></script>
+<p>O segundo método é o do botão de cadastro. Este é o momento de salvar os dados no banco.</p>
+<p>Ele pega todos as entradas de todos os campos via <strong>get_text</strong> ou via <strong>get_active_text</strong> (para objetos <strong>ComboBoxText</strong>). Se não forem nulos, ele os envia para a função que de fato faz commit no banco de dados. Se todas as entradas forem informadas, o método commit_dados é chamado. Caso um dos campos for nulo ele executa o comando pass e não envia nada ao sqlite (Linhas 141 à 144 do código abaixo).</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/pygtk/pygtk-form.py?slice=131:144" type="text/javascript"></script>
+<p>A função &ldquo;commit_dados&rdquo; recebe os parâmetros, cria uma conexão sqlite3 com um arquivo de banco de dados. A segunda linha do código é necessária para o sqlite possa processar texto do tipo 8-bits. É preciso também criar um cursor, pois é nele que vamos executar os comandos sql.</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_python/pygtk/pygtk-form.py?slice=146:154" type="text/javascript"></script>
+<p>Passo todos os parâmetros em apenas dois comandos sql (Linhas 151 e 152), sendo que o primeiro verifica se o banco de dados já existe. Se não existir, ele cria o banco e o modelo, setando os tipos de dados e os nomes dos campos. O segundo insere os dados nos campos. Os dados são pegos pelos argumentos da função principal <strong><em>args</strong> e são passados como símbolos(?) para cada campo inserido. Lembre-se que a quantidade de &ldquo;?&rdquo; tem que ser a mesma quantidade de parâmetros contido em <strong></em>args</strong>. No final, executo uma função da conexão chamada commit que salva os dados no banco.</p>
+<p>Cuidado para não confundir a função commit_dados do botão com a função do sqlite commit.</p>
+<p><strong>A última coisa a fazer é iniciar a aplicação…</strong></p>
+<p>Crio um objeto do tipo Janela(), que é a nossa janela principal. Utilizo o <strong>connect</strong> para criar uma conexão entre a janela principal e o sinal “<strong>delete-event</strong>” (que é o sinal de fechar a janela). O comando <strong>show_all</strong> exibe todos os widgets ligados a janela, seja grid, box, entry, comboboxtext, entre outros.</p>
+<p>E por fim <strong>Gtk.main()</strong> inicia o gtk executando tudo.</p>
+<p>Se você seguiu passo a passo a criação da aplicação essa deve ser a aparência final.</p>
+<p><a href="/images/wp-content/uploads/2015/03/screen.png"><img src="/images/wp-content/uploads/2015/03/screen.png" alt="screen" width="706" height="510" class="aligncenter size-full wp-image-1536" /></a></p>
+<p>Espero que você tenha gostado do mini-tutorial, e principalmente tenha aprendido algo, pois a intenção é justamente passar o conhecimento para frente! O código completo da aplicação você pode acessar <a href="https://github.com/ButecoOpenSource/exemplos/blob/master/exemplos_python/pygtk/pygtk-form.py" target="_blank">clicando aqui</a>.</p>
+<p>No caso de dúvidas atendo pelos comentários desse post, pelo <a href="mailto:pedrojefferson.developer@gmail.com">e-mail</a> ou pelo <a href="https://twitter.com/_pedrojefferson" target="_blank">Twitter</a>.</p>
+<p>Obrigado, e até mais!</p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/form/" class="tag-link">form</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/gtk3/" class="tag-link">gtk3</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/python/" class="tag-link">python</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/criando-formularios-com-python-e-pygtk3/"
+     data-text="Criando formulários com Python e PyGTK3"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/criando-formularios-com-python-e-pygtk3/"
+     data-text="Criando formulários com Python e PyGTK3"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/criando-formularios-com-python-e-pygtk3/"
+     data-text="Criando formulários com Python e PyGTK3"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/criando-formularios-com-python-e-pygtk3/"
+     data-text="Criando formulários com Python e PyGTK3"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/pedro-jefferson/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=100&d=robohash"
+             alt="Pedro Jefferson">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/pedro-jefferson/">Pedro Jefferson</a>
+      </h2>
+      <span class="small text-muted"></span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

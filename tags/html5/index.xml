@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>html5 on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/html5/</link>
+    <description>Recent content in html5 on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 01 May 2015 10:30:13 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/html5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Confira os novos livros da Novatec</title>
+      <link>https://butecotecnologico.com.br/confira-os-novos-livros-da-novatec/</link>
+      <pubDate>Fri, 01 May 2015 10:30:13 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/confira-os-novos-livros-da-novatec/</guid>
+      <description>A Novatec, nossa parceira, acabou de lançar alguns novos títulos voltados a quem gosta de Web.
+Confira o que estes títulos abordam.</description>
+    </item>
+    
+    <item>
+      <title>Unreal Engine 4.7 inclui exportação para HTML5</title>
+      <link>https://butecotecnologico.com.br/unreal-engine-4-7-inclui-exportacao-para-html5/</link>
+      <pubDate>Sat, 28 Feb 2015 15:37:13 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/unreal-engine-4-7-inclui-exportacao-para-html5/</guid>
+      <description>Com o lançamento da Unreal Engine 4.7 no dia 24/02, a Epic Games adicionou uma nova funcionalidade que permite a exploração para HTML5. Com esta nova funcionalidade, você pode desenvolver seu jogo e exportá-lo imediatamente para a Web, e iniciar o jogo com apenas um clique.
+A versão 4.7 é considerada uma das maiores liberações já feitas desde o lançamento da Unreal Engine. Com isso, uma das maiores engines para desenvolvimento de jogos está cada vez mais perto de criar jogos para a Web.</description>
+    </item>
+    
+  </channel>
+</rss>

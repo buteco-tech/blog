@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jit on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/jit/</link>
+    <description>Recent content in jit on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 30 Oct 2015 06:48:26 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/jit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PyPy 4.0 já está disponível</title>
+      <link>https://butecotecnologico.com.br/pypy-4-0-ja-esta-disponivel/</link>
+      <pubDate>Fri, 30 Oct 2015 06:48:26 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pypy-4-0-ja-esta-disponivel/</guid>
+      <description>&lt;p&gt;O PyPy 4.0 foi liberado nesta quinta (29/10) e vem com várias novidades em relação as versões anteriores.&lt;/p&gt;
+&lt;p&gt;O PyPy é uma alternativa a outros interpretadores como CPython, Jython e IronPython, e de acordo com os &lt;a href=&#34;http://speed.pypy.org/&#34; target=&#34;_blank&#34;&gt;diversos benchmarks&lt;/a&gt; publicados, o mais rápido entre eles.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PyPy 2.6 já está disponível e 7x mais rápido que o CPython</title>
+      <link>https://butecotecnologico.com.br/pypy-2-6-ja-esta-disponivel-e-7x-mais-rapido-que-o-cpython/</link>
+      <pubDate>Wed, 03 Jun 2015 21:29:01 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pypy-2-6-ja-esta-disponivel-e-7x-mais-rapido-que-o-cpython/</guid>
+      <description>A versão 2.6 do PyPy foi liberada nesta segunda (01/06) e vem com uma série de melhorias em relação a versão 2.5, além de uma melhor compatibilidade com o Python e Numpy.
+Quando se trata de desempenho com PyPy 2.6, há uma melhora significativa obtida com a refatoração e limpeza de código para melhorar o desempenho JIT, além de ter resultado em uma melhora de desempenho de I/O para os módulos zlib e bz2.</description>
+    </item>
+    
+    <item>
+      <title>Pyston 0.3 já está disponível</title>
+      <link>https://butecotecnologico.com.br/pyston-0-3-ja-esta-disponivel/</link>
+      <pubDate>Fri, 27 Feb 2015 19:10:49 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pyston-0-3-ja-esta-disponivel/</guid>
+      <description>A versão 0.3 do Pyston foi liberada nesta terça-feira (24/02). O Pyston é uma proposta de uma implementação do Python com alto desempenho.
+Esta é liberação muito importante, pois em relação as versões anteriores, esta versão além de uma maior compatibilidade com o Python, também melhorou o seu desempenho na execução de scripts.</description>
+    </item>
+    
+  </channel>
+</rss>

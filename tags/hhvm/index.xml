@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hhvm on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/hhvm/</link>
+    <description>Recent content in hhvm on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 02 Jul 2015 21:25:59 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/hhvm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HHVM está rodando mais rápido que o próprio PHP 7</title>
+      <link>https://butecotecnologico.com.br/hhvm-esta-rodando-mais-rapido-que-o-proprio-php-7/</link>
+      <pubDate>Thu, 02 Jul 2015 21:25:59 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/hhvm-esta-rodando-mais-rapido-que-o-proprio-php-7/</guid>
+      <description>&lt;p&gt;&lt;span id=&#34;spelling-correction&#34; class=&#34;gt-spell-correct-message&#34;&gt;A&lt;/span&gt; &lt;span class=&#34;hps&#34;&gt;equipe do Facebook&lt;/span&gt; &lt;span class=&#34;hps&#34;&gt;que está trabalhando no projeto&lt;/span&gt; &lt;span class=&#34;hps&#34;&gt;HHVM (aka HipHop Virtual Machine) ,&lt;/span&gt; que é um interpretador &lt;span class=&#34;hps&#34;&gt;otimizado&lt;/span&gt; para o &lt;span class=&#34;hps&#34;&gt;PHP&lt;/span&gt; &lt;span class=&#34;hps&#34;&gt;usando sua linguagem &lt;strong&gt;Hack&lt;/strong&gt;, declararam seus resultados após algumas semanas de concentração para obter melhorias de performance em projetos de código aberto.&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

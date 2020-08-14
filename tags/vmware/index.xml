@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vmware on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/vmware/</link>
+    <description>Recent content in vmware on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 20 Feb 2015 14:09:32 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/vmware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Instalando o VMware Player no Linux</title>
+      <link>https://butecotecnologico.com.br/instalando-o-vmware-player-no-linux/</link>
+      <pubDate>Fri, 20 Feb 2015 14:09:32 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-o-vmware-player-no-linux/</guid>
+      <description>O VMware é um software/máquina virtual que permite a instalação e utilização de um sistema operacional dentro de outro, dando suporte real a software de outros sistemas.
+Se você, assim como eu, acha que instalar o VMware no Linux é algo complicado, você verá neste tutorial que é algo bem simples de ser feito.</description>
+    </item>
+    
+  </channel>
+</rss>

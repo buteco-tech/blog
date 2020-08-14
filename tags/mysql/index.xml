@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mysql on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/mysql/</link>
+    <description>Recent content in mysql on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 11 Feb 2015 19:30:29 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Instalando o MariaDB no CentOS 7</title>
+      <link>https://butecotecnologico.com.br/instalando-o-mariadb-no-centos-7/</link>
+      <pubDate>Wed, 11 Feb 2015 19:30:29 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/instalando-o-mariadb-no-centos-7/</guid>
+      <description>O MariaDB é um servidor de banco de dados que oferece as mesmas funcionalidades do MySQL. Na verdade ele é um fork do MySQL, feito após a sua compra pela Oracle. O MariaDB é desenvolvido pela comunidade de software livre e por alguns dos autores originais do MySQL.</description>
+    </item>
+    
+  </channel>
+</rss>

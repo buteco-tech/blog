@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linuxmint on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/linuxmint/</link>
+    <description>Recent content in linuxmint on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 24 Jun 2015 12:57:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/linuxmint/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux Mint 17.2 &#34;Rafaela&#34; RC já está disponível</title>
+      <link>https://butecotecnologico.com.br/linux-mint-17-2-rafaela-ja-esta-disponivel/</link>
+      <pubDate>Wed, 24 Jun 2015 12:57:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/linux-mint-17-2-rafaela-ja-esta-disponivel/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;color: #333333;&#34;&gt;&lt;span style=&#34;font-family: Arial, sans-serif;&#34;&gt;&lt;span style=&#34;font-size: medium;&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;Essa semana foi lançado a nova versão do Linux Mint: 17.2 “Rafaela”, para Cinnamon e Mate. Esta versão é LTS (Long Term Support) com suporte até 2019. O Kernel padrão é 3.16, utiliza-se da base de pacotes do Ubuntu 14.04 e traz novas funcionalidades para deixar sua área de trabalho mais confortável.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

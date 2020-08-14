@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>laravel on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/laravel/</link>
+    <description>Recent content in laravel on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 23 Dec 2015 07:59:34 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Laravel 5.2 lançado, veja as novidades</title>
+      <link>https://butecotecnologico.com.br/laravel-5-2-lancado-veja-as-novidades/</link>
+      <pubDate>Wed, 23 Dec 2015 07:59:34 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/laravel-5-2-lancado-veja-as-novidades/</guid>
+      <description>&lt;p&gt;A mais nova versão do Laravel foi  lançada finalmente. Nessa versão 5.2 tivemos diversas melhorias e algumas novidades, veja abaixo algumas delas:&lt;/p&gt;
+&lt;p style=&#34;text-align: center;&#34;&gt;&lt;strong&gt;Drivers múltiplos para autenticação&lt;/strong&gt;&lt;/p&gt;
+Nas versões anteriores do Laravel, somente era possível ter um único model para autenticação do usuário. Agora é possível ter mais de um, é possível ter tabelas diferentes para perfis diferentes como admin e usuário por exemplo.</description>
+    </item>
+    
+    <item>
+      <title>Laravel 5.1 do começo ao fim, parte 2</title>
+      <link>https://butecotecnologico.com.br/laravel-5-1-do-comeco-ao-fim-parte-2/</link>
+      <pubDate>Mon, 03 Aug 2015 12:00:41 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/laravel-5-1-do-comeco-ao-fim-parte-2/</guid>
+      <description>Segundo vídeo da série que fala sobre a versão 5.1 do framework PHP Laravel</description>
+    </item>
+    
+    <item>
+      <title>Laravel 5.1 do começo ao fim (em vídeo)</title>
+      <link>https://butecotecnologico.com.br/laravel-5-1-do-comeco-ao-fim-video/</link>
+      <pubDate>Mon, 27 Jul 2015 20:10:47 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/laravel-5-1-do-comeco-ao-fim-video/</guid>
+      <description>Primeiro vídeo da série falando sobre o laravel 5.1</description>
+    </item>
+    
+    <item>
+      <title>Laravel 5.1 LTS lançado, veja algumas das novidades</title>
+      <link>https://butecotecnologico.com.br/lancamento-laravel-5-1/</link>
+      <pubDate>Thu, 18 Jun 2015 23:18:08 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lancamento-laravel-5-1/</guid>
+      <description>&lt;p&gt;A tão esperada versão 5.1 do Laravel foi finalmente lançada, como não podíamos deixar passar, veja a lista abaixo de algumas das novidades dessa nova versão:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LTS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Long Term Support significa que o framework receberá correções de bugs por 2 anos e correções de problemas de segurança por 3 anos, isso trará uma maior confiabilidade para que as pessoas comecem a investir no framework.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Integrando o Doctrine ORM e Laravel 5 [parte-1]</title>
+      <link>https://butecotecnologico.com.br/integrando-o-doctrine-orm-e-laravel-5-parte-1/</link>
+      <pubDate>Thu, 28 May 2015 14:53:31 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/integrando-o-doctrine-orm-e-laravel-5-parte-1/</guid>
+      <description>Veja este que é a primeira parte de um série sobre a integração do Doctrine ORM, uma biblioteca para se trabalhar com banco de dados e mapeamento, com o Laravel 5 o framework mais popular atualmente para PHP</description>
+    </item>
+    
+    <item>
+      <title>Laravel 5 do começo ao fim [parte 4]</title>
+      <link>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-4/</link>
+      <pubDate>Thu, 16 Apr 2015 22:54:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-4/</guid>
+      <description>Nesta quarta parte do tutorial veremos um pouco da parte de testes do Laravel 5, uma boa pratica que todos deveriam adotar mas que muitas vezes é simplesmente ignorada.</description>
+    </item>
+    
+    <item>
+      <title>Lumen um micro-framework baseado no Laravel</title>
+      <link>https://butecotecnologico.com.br/lumen-um-micro-framework-baseado-no-laravel/</link>
+      <pubDate>Tue, 14 Apr 2015 11:37:46 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lumen-um-micro-framework-baseado-no-laravel/</guid>
+      <description>O tão esperado Lumen foi finalmente lançado, um projeto baseado no Laravel 5 e que segue a mesma linha dos micro-frameworks Silex e Slim, porém, segundo alguns benchmarks, com desempenho superior. Veja como começar seu projeto usando o recem lançado Lumen!</description>
+    </item>
+    
+    <item>
+      <title>Laravel 5 do começo ao fim [parte 3]</title>
+      <link>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-3/</link>
+      <pubDate>Tue, 24 Mar 2015 20:43:06 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-3/</guid>
+      <description>Este artigo apresenta a terceira parte de um tutorial sobre o framework PHP Laravel 5, apresentando como usar a parte de criação de model e view do framework</description>
+    </item>
+    
+    <item>
+      <title>Laravel 5 do começo ao fim [parte 2]</title>
+      <link>https://butecotecnologico.com.br/tutorial-laravel-5-parte-2/</link>
+      <pubDate>Mon, 09 Mar 2015 07:59:57 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tutorial-laravel-5-parte-2/</guid>
+      <description>Esta é a segunda parte do tutorial sobre Laravel 5, caso você não tenha ainda visto, veja a primeira parte dessa série neste link.</description>
+    </item>
+    
+    <item>
+      <title>Laravel 5 do começo ao fim [parte 1]</title>
+      <link>https://butecotecnologico.com.br/tutorial-laravel-5/</link>
+      <pubDate>Wed, 18 Feb 2015 19:28:23 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tutorial-laravel-5/</guid>
+      <description>Mostrarei a seguir um breve tutorial sobre o Laravel, um dos frameworks mais usados atualmente para PHP, com o lançamento do Laravel 5 houve algumas mudanças, e algumas delas você verá a seguir.</description>
+    </item>
+    
+    <item>
+      <title>Laravel 5 é finalmente lançado!</title>
+      <link>https://butecotecnologico.com.br/laravel-5-e-finalmente-lancado/</link>
+      <pubDate>Fri, 13 Feb 2015 06:00:24 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/laravel-5-e-finalmente-lancado/</guid>
+      <description>Novidades com Laravel 5</description>
+    </item>
+    
+    <item>
+      <title>Usando o framework Laravel com Bootstrap</title>
+      <link>https://butecotecnologico.com.br/usando-o-framework-laravel-com-bootstrap/</link>
+      <pubDate>Thu, 23 Oct 2014 07:09:48 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/usando-o-framework-laravel-com-bootstrap/</guid>
+      <description>Este post tem o objetivo de mostrar de maneira fácil e rápida como utilizar o poder do artisan do laravel para geração de telas de cadastros apenas com linha de comando.</description>
+    </item>
+    
+    <item>
+      <title>Gerador de sistemas em PHP usando apenas SQL</title>
+      <link>https://butecotecnologico.com.br/gerador-de-sistemas-em-php-usando-apenas-sql/</link>
+      <pubDate>Sun, 12 Oct 2014 18:49:38 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gerador-de-sistemas-em-php-usando-apenas-sql/</guid>
+      <description>Fala pessoal, a alguns dias achei um site muito interessante que gostaria de compartilhar, o Rizer, ele é um projeto gratuito que a partir do SQL dump do banco gera o projeto final do sistema, achei uma ferramenta muito boa para quem está começando no PHP, ele suporta 3 frameworks, o CodeIgniter, Laravel e CakePHP.</description>
+    </item>
+    
+    <item>
+      <title>Laravel uma verdadeira caixa de ferramentas para PHP</title>
+      <link>https://butecotecnologico.com.br/laravel-uma-verdadeira-caixa-de-ferramentas-para-php/</link>
+      <pubDate>Fri, 19 Sep 2014 16:53:01 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/laravel-uma-verdadeira-caixa-de-ferramentas-para-php/</guid>
+      <description>Laravel é sem dúvida um dos frameworks de desenvolvimento mais promissores da atualidade para PHP, conforme podemos ver no gráfico abaixo, ele segue disparado na frente.</description>
+    </item>
+    
+  </channel>
+</rss>

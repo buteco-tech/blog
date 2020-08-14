@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Instalando driver NVIDIA Bumblebee no openSUSE &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Instalando driver NVIDIA Bumblebee no openSUSE">
+<meta itemprop="description" content="A tecnologia Optimus da NVIDIA otimiza o seu notebook de forma inteligente, oferecendo o desempenho gráfico impressionante que você precisa, quando você precisa, e sempre aumentando o tempo de vida da bateria para que você aproveite por mais tempo.">
+<meta itemprop="datePublished" content="2015-02-23T00:59:15+00:00" />
+<meta itemprop="dateModified" content="2015-02-23T00:59:15+00:00" />
+<meta itemprop="wordCount" content="1305">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/bumblebee_250.png">
+
+
+
+<meta itemprop="keywords" content="bbswitch,bumblebee,linux,nouveau,nvidia,optimus," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/bumblebee_250.png"/>
+
+<meta name="twitter:title" content="Instalando driver NVIDIA Bumblebee no openSUSE"/>
+<meta name="twitter:description" content="A tecnologia Optimus da NVIDIA otimiza o seu notebook de forma inteligente, oferecendo o desempenho gráfico impressionante que você precisa, quando você precisa, e sempre aumentando o tempo de vida da bateria para que você aproveite por mais tempo."/>
+
+
+<meta property="og:title" content="Instalando driver NVIDIA Bumblebee no openSUSE" />
+<meta property="og:description" content="A tecnologia Optimus da NVIDIA otimiza o seu notebook de forma inteligente, oferecendo o desempenho gráfico impressionante que você precisa, quando você precisa, e sempre aumentando o tempo de vida da bateria para que você aproveite por mais tempo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/bumblebee_250.png" />
+<meta property="article:published_time" content="2015-02-23T00:59:15+00:00" />
+<meta property="article:modified_time" content="2015-02-23T00:59:15+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Instalando driver NVIDIA Bumblebee no openSUSE</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           alt="Alexandre Vicenzi"
+           title="Alexandre Vicenzi">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+           class="author">Alexandre Vicenzi</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2015-02-23T00:59:15Z">Feb 23, 2015</time>
+      &middot; 7 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/"
+     data-text="Instalando driver NVIDIA Bumblebee no openSUSE"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/"
+     data-text="Instalando driver NVIDIA Bumblebee no openSUSE"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/"
+     data-text="Instalando driver NVIDIA Bumblebee no openSUSE"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/"
+     data-text="Instalando driver NVIDIA Bumblebee no openSUSE"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/bumblebee_250.png"
+           alt="Instalando driver NVIDIA Bumblebee no openSUSE">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Eu, como muitos de vocês, gosto de jogar um pouquinho as vezes. E porque não tirar todo o potencial da sua placa de vídeo no Linux?</p>
+<p>Pois bem, hoje vou mostrar como resolver um problema em particular com as placas de vídeo da NVIDIA que possuem a tecnologia Optimus.</p>
+<p><strong>Para quem este tutorial é indicado?</strong></p>
+<p>Para todos usuários do openSUSE ou semelhante que possuam um notebook com tecnologia <a href="http://www.nvidia.com.br/object/optimus_technology_br.html" target="_blank">NVIDIA Optimus</a>.</p>
+<p><img class=" aligncenter" src="/images/wp-content/uploads/2015/02/optimus_technology_badge.jpg" alt="Optimus Technology Badge" /></p>
+<p><strong>O que é NVIDIA Optimus?</strong></p>
+<p>A tecnologia Optimus da NVIDIA otimiza o seu notebook de forma inteligente, oferecendo o desempenho gráfico impressionante que você precisa, quando você precisa, e sempre aumentando o tempo de vida da bateria para que você aproveite por mais tempo.</p>
+<p><img class=" aligncenter" src="/images/wp-content/uploads/2015/02/optimus-chart.jpg" alt="Optimus Chart" /></p>
+<p>Resumidamente, a tecnologia NVIDIA Optimus escolhe qual a melhor placa gráfica para executar determinada aplicação. Para processos de pouco uso gráfico, será escolhido a Intel Graphics e para processos de alto desempenho, como jogos por exemplo, será escolhida a NVIDIA GeForce.</p>
+<p><strong>Qual a necessidade do Bumblebee?</strong></p>
+<p>Com o driver oficial da NVIDIA no Windows 7 ou superior, a troca entre as placas de vídeo é automática, porém o driver oficial da NVIDIA para Linux não funciona corretamente com a tecnologia Optimus. Sendo assim, é necessário o uso do Bumblebee para fazer essa troca.</p>
+<p><strong>O que é o Projeto Bumblebee?</strong></p>
+<p>O <a href="http://bumblebee-project.org/" target="_blank">Projeto Bumblebee</a> é uma coleção de ferramentas para dar suporte a tecnologia Optimus no Linux, sendo responsável pelo gerenciamento das placas de vídeo.</p>
+<p><strong>O que é o bbswitch?</strong></p>
+<p>O bbswitch é responsável por fazer o &ldquo;Liga/Desliga&rdquo; das placas de vídeo.</p>
+<p>Agora que conhecemos um pouco sobre a história do Bumblebee, vamos ver como instalá-lo e configurá-lo.</p>
+<p><strong>Preparação</strong></p>
+<p>Todos os passos da instalação foram obtidos na <a href="https://en.opensuse.org/SDB:NVIDIA_Bumblebee" target="_blank">Wiki</a> do openSUSE.</p>
+<p>Primeiramente criaremos um Snapshot do sistema, para que seja possível restaurar o sistema caso de algum problema. Para isto execute o comando abaixo:</p>
+<p><code>snapper create -d BeforeBB</code></p>
+<p>Isto só vale para quem possui sistema de arquivos BtrFS ou Ext4.</p>
+<p>Antes de baixar os drivers necessários é preciso adicionar o repositório do Bumblebee. Para isto execute o comando abaixo:</p>
+<p><code>zypper ar -f <a href="http://download.opensuse.org/repositories/X11:/Bumblebee/openSUSE_13.2/">http://download.opensuse.org/repositories/X11:/Bumblebee/openSUSE_13.2/</a> Bumblebee</code></p>
+<p>Lembre-se de substituir o <strong>13.2</strong> pela sua versão.</p>
+<p><strong>Instalação</strong></p>
+<p>Para instalar o Bumblebee execute o comando abaixo:</p>
+<p><code>zypper in bumblebee</code></p>
+<p>Adicione seu usuário ao grupo do Bumblebee com o seguinte comando:</p>
+<p><code>usermod -G video,bumblebee seu_usuário</code></p>
+<p>Habilite o bbswitch e o dkms com o comando abaixo:</p>
+<p><code>systemctl enable bumblebeed</code></p>
+<p>Edite o arquivo <em>/etc/modprobe.d/50-blacklist.conf</em> e verifique se consta a seguinte linha:</p>
+<p><code># NVIDIA Bumblebee
+blacklist nouveau
+</code></p>
+<p>Caso não, adicione-a.</p>
+<p>Execute o comando abaixo para recriar o <em>initrd</em> com as novas informações adicionadas:</p>
+<p><code>mkinitrd</code></p>
+<p>Para usar todos os recursos da sua placa NVIDIA é necessário instalar o driver da NVIDIA. Para isto execute:</p>
+<p><code>zypper in nvidia-bumblebee</code></p>
+<p>Habilite o dkms com o seguinte comando:</p>
+<p><code>systemctl enable dkms</code></p>
+<p>Caso você esteja em um sistema 64 bits, é necessário instalar o driver 32 bits para execução de aplicações 32 bits. Para isto execute o seguinte comando:</p>
+<p><code>zypper in nvidia-bumblebee-32bit</code></p>
+<p>Após tudo instalado reinicie o computador.</p>
+<p><strong>Teste</strong></p>
+<p>Após reiniciar você pode testar a sua placa NVIDIA para verificar se tudo ocorreu bem. Para isto execute o comando abaixo:</p>
+<p><code>optirun &ndash;status</code></p>
+<p>O resultado deverá ser:</p>
+<p><code>Bumblebee status: Ready (3.2.1). X inactive. Discrete video card is off.</code></p>
+<p><strong>Executando aplicações</strong></p>
+<p>Para executar uma aplicação utilizando a placa NVIDIA é necessário iniciar esta aplicação pela linha de comando com o comando <em>optirun</em> ou <em>primusrun</em>.</p>
+<p>Como por exemplo:</p>
+<p><code>optirun glxspheres</code></p>
+<p>Se você ver o resultado abaixo significa que tudo está funcionado.</p>
+<p><img class=" aligncenter" src="/images/wp-content/uploads/2015/02/glx.png" alt="glxspheres" /></p>
+<p>Sendo assim, quando você deseja usar a sua placa NVIDIA basta executar os programas pelo <em>optirun</em> ou <em>primusrun</em>.</p>
+<p>Agora se você, assim como eu, teve o problema abaixo, é necessário alguns passos adicionais para colocar o Bumblebee para funcionar.</p>
+<p><code>[ 141.907657] [ERROR]Cannot access secondary GPU - error: Could not load GPU driver
+[ 141.907718] [ERROR]Aborting because fallback start is disabled.</code></p>
+<p>Se você executar o comando abaixo você conseguirá ver um log mais detalhado:</p>
+<p><code>optirun -vvv glxspheres</code></p>
+<p>O resultado deverá ser algo semelhante:</p>
+<p><code>[ 632.489659] [DEBUG]Reading file: /etc/bumblebee/bumblebee.conf
+[ 632.490367] [DEBUG]optirun version 3.2.1 starting&hellip;
+[ 632.490384] [DEBUG]Active configuration:
+[ 632.490389] [DEBUG] bumblebeed config file: /etc/bumblebee/bumblebee.conf
+[ 632.490394] [DEBUG] X display: :8
+[ 632.490398] [DEBUG] LD_LIBRARY_PATH: /usr/lib64/nvidia:/usr/lib/nvidia
+[ 632.490402] [DEBUG] Socket path: /var/run/bumblebee.socket
+[ 632.490406] [DEBUG] Accel/display bridge: auto
+[ 632.490411] [DEBUG] VGL Compression: proxy
+[ 632.490415] [DEBUG] VGLrun extra options:
+[ 632.490419] [DEBUG] Primus LD Path: /usr/lib64/primus:/usr/lib/primus
+[ 632.490459] [DEBUG]Using auto-detected bridge virtualgl
+[ 632.535663] [INFO]Response: No - error: Could not load GPU driver</code></p>
+<p>[ 632.535686] [ERROR]Cannot access secondary GPU - error: Could not load GPU driver</p>
+<p>[ 632.535694] [DEBUG]Socket closed.
+[ 632.535713] [ERROR]Aborting because fallback start is disabled.
+[ 632.535721] [DEBUG]Killing all remaining processes.</p>
+<p>Resumidamente este erro indica que o Bumblebee não conseguiu trocar para a placa NVIDIA.</p>
+<p><strong>Resolução de problemas</strong></p>
+<p>Primeiro vamos alterar o arquivo <em>/etc/bumblebee/bumblebee.conf</em>.</p>
+<p>Altera apenas as linhas <em>Driver</em> e <em>KernelDriver</em> para ficar como abaixo:</p>
+<pre><code class="bash">
+# Configuration file for Bumblebee. Values should **not** be put between quotes
+
+## Server options. Any change made in this section will need a server restart
+# to take effect.
+[bumblebeed]
+# The secondary Xorg server DISPLAY number
+VirtualDisplay=:8
+# Should the unused Xorg server be kept running? Set this to true if waiting
+# for X to be ready is too long and don't need power management at all.
+KeepUnusedXServer=false
+# The name of the Bumbleblee server group name (GID name)
+ServerGroup=bumblebee
+# Card power state at exit. Set to false if the card shoud be ON when Bumblebee
+# server exits.
+TurnCardOffAtExit=false
+# The default behavior of '-f' option on optirun. If set to &quot;true&quot;, '-f' will
+# be ignored.
+NoEcoModeOverride=false
+# The Driver used by Bumblebee server. If this value is not set (or empty),
+# auto-detection is performed. The available drivers are nvidia and nouveau
+# (See also the driver-specific sections below)
+Driver=nvidia
+# Directory with a dummy config file to pass as a -configdir to secondary X
+XorgConfDir=/etc/bumblebee/xorg.conf.d
+
+## Client options. Will take effect on the next optirun executed.
+[optirun]
+# Acceleration/ rendering bridge, possible values are auto, virtualgl and
+# primus.
+Bridge=auto
+# The method used for VirtualGL to transport frames between X servers.
+# Possible values are proxy, jpeg, rgb, xv and yuv.
+VGLTransport=proxy
+# List of paths which are searched for the primus libGL.so.1 when using
+# the primus bridge
+PrimusLibraryPath=/usr/lib64/primus:/usr/lib/primus
+# Should the program run under optirun even if Bumblebee server or nvidia card
+# is not available?
+AllowFallbackToIGC=false
+
+# Driver-specific settings are grouped under [driver-NAME]. The sections are
+# parsed if the Driver setting in [bumblebeed] is set to NAME (or if auto-
+# detection resolves to NAME).
+# PMMethod: method to use for saving power by disabling the nvidia card, valid
+# values are: auto - automatically detect which PM method to use
+#         bbswitch - new in BB 3, recommended if available
+#       switcheroo - vga_switcheroo method, use at your own risk
+#             none - disable PM completely
+# https://github.com/Bumblebee-Project/Bumblebee/wiki/Comparison-of-PM-methods
+
+## Section with nvidia driver specific options, only parsed if Driver=nvidia
+[driver-nvidia]
+# Module name to load, defaults to Driver if empty or unset
+KernelDriver=nvidia
+PMMethod=auto
+# colon-separated path to the nvidia libraries
+LibraryPath=/usr/lib64/nvidia:/usr/lib/nvidia:/lib/modules/3.16.7-7-desktop/updates/:/usr/lib64/
+# comma-separated path of the directory containing nvidia_drv.so and the
+# default Xorg modules path
+XorgModulePath=/usr/lib64/nvidia/xorg/,/usr/lib64/xorg/modules,/usr/lib64/xorg/modules/drivers/
+XorgConfFile=/etc/bumblebee/xorg.conf.nvidia
+
+## Section with nouveau driver specific options, only parsed if Driver=nouveau
+[driver-nouveau]
+KernelDriver=nouveau
+PMMethod=auto
+XorgConfFile=/etc/bumblebee/xorg.conf.nouveau
+</code></pre>
+<p>Altere o arquivo <em>/etc/modprobe.d/50-bbswitch.conf</em> para ficar igual o abaixo:</p>
+<p><code>options bbswitch load_state=1 unload_state=1</code></p>
+<p>Mudando o <em>load_state</em> para 1, estamos dizendo que o driver sempre será carregado no boot.</p>
+<p>Execute o comando abaixo para recriar o <em>initrd</em> com as novas informações adicionadas:</p>
+<p><code>mkinitrd</code></p>
+<p>Reinicie o computador novamente.</p>
+<p>Faça o teste com o <em>glxspheres</em> como mencionado anteriormente e verifique se o resultado foi positivo.</p>
+<p>É isso ai. Espero que este tutorial possa ajudar outras pessoas. Foram alguns dias tentando solucionar este problema. Eu não teria conseguido se não fosse <a href="https://forums.opensuse.org/showthread.php/504717-Two-mouse-pointers-on-screen/page4" target="_blank">pela ajuda do pessoal do fórum do openSUSE</a>.</p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/bbswitch/" class="tag-link">bbswitch</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/bumblebee/" class="tag-link">bumblebee</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/nouveau/" class="tag-link">nouveau</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/nvidia/" class="tag-link">nvidia</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/optimus/" class="tag-link">optimus</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/"
+     data-text="Instalando driver NVIDIA Bumblebee no openSUSE"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/"
+     data-text="Instalando driver NVIDIA Bumblebee no openSUSE"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/"
+     data-text="Instalando driver NVIDIA Bumblebee no openSUSE"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/"
+     data-text="Instalando driver NVIDIA Bumblebee no openSUSE"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             alt="Alexandre Vicenzi">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">Alexandre Vicenzi</a>
+      </h2>
+      <span class="small text-muted">Engenheiro de Software</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

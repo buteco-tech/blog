@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wifi on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/wifi/</link>
+    <description>Recent content in wifi on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 11 May 2016 21:28:51 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/wifi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Concorra a um Raspberry Pi 3</title>
+      <link>https://butecotecnologico.com.br/concorra-um-raspberry-pi-3/</link>
+      <pubDate>Wed, 11 May 2016 21:28:51 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/concorra-um-raspberry-pi-3/</guid>
+      <description>&lt;p&gt;A &lt;a href=&#34;http://www.filipeflop.com/?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;FILIPEFLOP&lt;/a&gt;, nossa parceira, esta realizando o sorteio de um Raspberry Pi 3. O Raspberry Pi 3 recém chegou na FILIPEFLOP e há alguns dias atras &lt;a href=&#34;https://butecotecnologico.com.br/review-raspberry-pi-3&#34; target=&#34;_blank&#34;&gt;fizemos uma review&lt;/a&gt; comentando as diferenças em relação ao seu antecessor.&lt;/p&gt;
+&lt;p&gt;O novo Raspberry Pi 3 vem agora com muito mais poder de processamento, tudo isso graças ao processador Broadcom Quad Core BCM2837 de 64 bits e clock de 1.2GHz. Além disso foi integrado WiFi 802.11n que permite conexões a internet sem cabo e Bluetooth 4.1 para uma conexão mais fácil ao RPi.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

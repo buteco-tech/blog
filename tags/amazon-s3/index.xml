@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>amazon s3 on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/amazon-s3/</link>
+    <description>Recent content in amazon s3 on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 23 Apr 2015 07:46:32 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/amazon-s3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fazendo backup para o Amazon S3 com Python</title>
+      <link>https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/</link>
+      <pubDate>Thu, 23 Apr 2015 07:46:32 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/</guid>
+      <description>O Amazon Simple Storage Service (Amazon S3) oferece aos desenvolvedores e equipes de TI armazenamento de objetos seguro, durável e altamente escalonável. O Amazon S3 é fácil de usar, com uma interface de serviços da web simples para armazenar e recuperar qualquer quantidade de dados de qualquer parte da web. Com o Amazon S3, você paga apenas pelo armazenamento realmente utilizado. Não há taxa mínima nem custo de configuração.</description>
+    </item>
+    
+  </channel>
+</rss>

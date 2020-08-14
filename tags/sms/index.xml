@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sms on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/sms/</link>
+    <description>Recent content in sms on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 19 Dec 2014 01:04:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/sms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Enviando SMS pelo PagueVeloz</title>
+      <link>https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/</link>
+      <pubDate>Fri, 19 Dec 2014 01:04:48 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/</guid>
+      <description>É muito comum ver nos sistemas que desenvolvemos envio de e-mail.</description>
+    </item>
+    
+  </channel>
+</rss>

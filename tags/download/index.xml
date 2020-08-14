@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>download on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/download/</link>
+    <description>Recent content in download on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 19 Jan 2015 07:11:45 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/download/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Criando um servidor de downloads de torrents com uTorrent Server</title>
+      <link>https://butecotecnologico.com.br/criando-um-servidor-de-downloads-de-torrents-com-utorrent-server/</link>
+      <pubDate>Mon, 19 Jan 2015 07:11:45 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-um-servidor-de-downloads-de-torrents-com-utorrent-server/</guid>
+      <description>Aprenda a criar um servidor de downloads de maneira fácil e rapida com uTorrent Server;</description>
+    </item>
+    
+  </channel>
+</rss>

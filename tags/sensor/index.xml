@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sensor on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/sensor/</link>
+    <description>Recent content in sensor on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 20 Jul 2015 22:31:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/sensor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sensor de temperatura gráfico com Arduino e LCD 16x2</title>
+      <link>https://butecotecnologico.com.br/sensor-de-temperatura-grafico-com-arduino-e-lcd-16x2/</link>
+      <pubDate>Mon, 20 Jul 2015 22:31:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sensor-de-temperatura-grafico-com-arduino-e-lcd-16x2/</guid>
+      <description>&lt;p&gt;Dando continuidade ao artigo &lt;a href=&#34;https://butecotecnologico.com.br/sensor-de-temperatura-e-umidade-no-arduino&#34; target=&#34;_blank&#34;&gt;Sensor de temperatura e umidade no Arduino&lt;/a&gt;, hoje vamos ver como utilizar um LCD 16x2 para exibir a temperatura e a umidade capturada pelo sensor DHT11.&lt;/p&gt;
+&lt;p&gt;A grande diferença entre o artigo anterior e este é o uso do LCD, sendo assim, não há necessidade de conectar o Arduino ao PC só para saber a temperatura.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

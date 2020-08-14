@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Gerando backtrace em C/C&#43;&#43; no Linux &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Gerando backtrace em C/C&#43;&#43; no Linux">
+<meta itemprop="description" content="Olá pessoal, creio que muitos aqui já se depararam com algum crash em seus programas em C/C&#43;&#43;, e gostariam de poder ver a pilha de chamadas, ou stacktrace/backtrace, ao menos no ambiente de testes. Pois bem, a boa notícia é que no Linux existe a possibilidade de mostrar qual o ultimo método chamado antes de receber um crash.">
+<meta itemprop="datePublished" content="2015-11-02T19:56:42+00:00" />
+<meta itemprop="dateModified" content="2015-11-02T19:56:42+00:00" />
+<meta itemprop="wordCount" content="744">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/588396621.jpg">
+
+
+
+<meta itemprop="keywords" content="api,c,linux,terminal," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/588396621.jpg"/>
+
+<meta name="twitter:title" content="Gerando backtrace em C/C&#43;&#43; no Linux"/>
+<meta name="twitter:description" content="Olá pessoal, creio que muitos aqui já se depararam com algum crash em seus programas em C/C&#43;&#43;, e gostariam de poder ver a pilha de chamadas, ou stacktrace/backtrace, ao menos no ambiente de testes. Pois bem, a boa notícia é que no Linux existe a possibilidade de mostrar qual o ultimo método chamado antes de receber um crash."/>
+
+
+<meta property="og:title" content="Gerando backtrace em C/C&#43;&#43; no Linux" />
+<meta property="og:description" content="Olá pessoal, creio que muitos aqui já se depararam com algum crash em seus programas em C/C&#43;&#43;, e gostariam de poder ver a pilha de chamadas, ou stacktrace/backtrace, ao menos no ambiente de testes. Pois bem, a boa notícia é que no Linux existe a possibilidade de mostrar qual o ultimo método chamado antes de receber um crash." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/588396621.jpg" />
+<meta property="article:published_time" content="2015-11-02T19:56:42+00:00" />
+<meta property="article:modified_time" content="2015-11-02T19:56:42+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Gerando backtrace em C/C&#43;&#43; no Linux</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+           alt="Marcos Paulo de Souza"
+           title="Marcos Paulo de Souza">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+           class="author">Marcos Paulo de Souza</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2015-11-02T19:56:42Z">Nov 2, 2015</time>
+      &middot; 4 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/"
+     data-text="Gerando backtrace em C/C&#43;&#43; no Linux"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/"
+     data-text="Gerando backtrace em C/C&#43;&#43; no Linux"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/"
+     data-text="Gerando backtrace em C/C&#43;&#43; no Linux"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/"
+     data-text="Gerando backtrace em C/C&#43;&#43; no Linux"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/588396621.jpg"
+           alt="Gerando backtrace em C/C&#43;&#43; no Linux">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Olá pessoal, creio que muitos aqui já se depararam com algum <em>crash</em> em seus programas em C/C++, e gostariam de poder ver a pilha de chamadas, ou <em>stacktrace/backtrace</em>, ao menos no ambiente de testes. Pois bem, a boa notícia é que no Linux existe a possibilidade de mostrar qual o ultimo método chamado antes de receber um <em>crash</em>.</p>
+<p>Chega de falar, vamos ao exemplo abaixo:</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_c/backtrace/backtrace.c" type="text/javascript"></script>Para começar, vamos falar da função <em>main</em>. Logo no início nós "sinalizamos" ao programa que, no caso de um SIGINT ou de um SIGSEGV, ele deve chamar a função <em>handler</em>. Em termos simples, um SIGINT acontece quando um programa recebe um <em>kill -2</em>, ou aquele famoso <em>Ctrl-C</em> que você pressiona quando algum programa está executando no terminal e você deseja pará-lo de alguma forma. Este geralmente acontece por ação do usuário. Já o SIGSEGV acontece quando um ponteiro inválido é acessado. Para programadores Java, o SIGSEGV seria a leitura de um objeto não inicializado. Nestes casos, o Java por exemplo, mostra o <em>backtrace</em> e diz que ocorreu um "Null Pointer Reference", ou seja, uma referencia para um ponteiro nulo. Um caso simples de explicar um SIGSEGV no C pode ser exemplificado com o código abaixo, onde o programa tenta ler o conteúdo de um ponteiro que indica a posição -1, ou seja, inválido:<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_c/backtrace/sigsegv.c" type="text/javascript"></script>
+<p>Voltando ao programa inicial, após as chamadas de <em>signal</em>, a função <em>func1</em> é chamada. Esta aguarda por 20 segundos, então é chamada a função <em>func2</em>. Esse tempo foi introduzido para poder exemplificar o SIGINT, pois o usuário pode executar um <em>kill -2 </em> e ver o <em>backtrace</em> gerado pelo SIGINT. Caso o usuário espere os 20 segundos, a <em>func2</em> será chamada, executando um SIGSEGV em si mesmo, para fim de exemplo. Ao ser executado o SIGSEGV, você verá o <em>backtrace</em> mostrando que a <em>func1</em> e a <em>func2</em> foram chamadas e que então o programa terminou na função <em>handler</em>.</p>
+<p>A função <em>handler</em> por sua vez faz a chamada da função <em>backtrace</em>, que retorna um <em>array</em> de endereços de cada função chamada. O tamanho do <em>array</em> depende o segundo parâmetro. Se o <em>backtrace</em> for maior do que o parâmetro passado, então somente as N mais recentes funções serão retornadas. Como esta chamada retorna endereços, fica ruim distinguir qual foram as funções chamada somente olhando os endereços em hexadecimal, então utilizamos a função backtrace_symbols_fd, que pega os endereços em hexa e traduz em strings com os nomes da respetivas funções. Além disso, a chamada backtrace_symbols_fd também escreve, uma função por linha, no <em>file descriptor</em> especificado pelo terceiro parâmetro. Como exemplo, nós escrevemos direto na saída de erro do programa. No final da função <em>handler</em> é executado um exit(1), que termina o programa com erro.</p>
+<p>Após toda essa explicação, vamos agora verificar a saída desse programa. Para compilar o código acima, basta chamar o <em>make</em> com Makefile abaixo:</p>
+<script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/exemplos_c/backtrace/Makefile" type="text/javascript"></script>
+<p>Ao executar o programa e logo efetuar um <em>kill -2 </em> nele:</p>
+<pre><code class="bash">
+[marcos@xfiles backtrace]$ ./backtrace &amp;
+[1] 17292
+[marcos@xfiles backtrace]$ kill -2 17292
+Signal: 2
+backtrace returned 8 entries
+./backtrace(handler+0x25)[0x400a7b]
+/lib64/libc.so.6(+0x34a50)[0x7f92edbdfa50]
+/lib64/libc.so.6(nanosleep+0x10)[0x7f92edc73a40]
+/lib64/libc.so.6(sleep+0xd4)[0x7f92edc738f4]
+./backtrace(func1+0xe)[0x400b02]
+./backtrace(main+0x2c)[0x400b3b]
+/lib64/libc.so.6(__libc_start_main+0xf0)[0x7f92edbcb700]
+./backtrace(_start+0x29)[0x400989]
+[1]+  Fim da execução com status 1      ./backtrace
+</code></pre>
+<p>Na execução acima, podemos verificar que a função <em>main</em> e a func1 foram chamadas, e depois verificamos a função <em>sleep</em> ser chamada, e logo mais vemos a função <em>handler</em> como sendo a ultima do programa.</p>
+<p>E ao esperar os 20 segundos:</p>
+<pre><code class="bash">
+[marcos@xfiles backtrace]$ ./backtrace &amp;amp;
+[1] 17305
+[marcos@xfiles backtrace]$ Signal: 11
+backtrace returned 8 entries
+./backtrace(handler+0x25)[0x400a7b]
+/lib64/libc.so.6(+0x34a50)[0x7fd6c8137a50]
+/lib64/libc.so.6(kill+0x7)[0x7fd6c8137d07]
+./backtrace(func2+0x15)[0x400af1]
+./backtrace(func1+0x18)[0x400b0c]
+./backtrace(main+0x2c)[0x400b3b]
+/lib64/libc.so.6(__libc_start_main+0xf0)[0x7fd6c8123700]
+./backtrace(_start+0x29)[0x400989]
+[1]+ Fim da execução com status 1 ./backtrace
+</code></pre>
+<p>Agora nesta execução, podemos verificar que além das funções <em>main</em> e func1, a função <em>func2</em> foi chamada, e então vemos <em>kill</em> ser executada e logo mais vemos a função <em>handler</em> sendo a última do programa.</p>
+<p>Observações: No Makefile podemos verificar a opção -rdynamic. Ela é necessária para que o GCC mostre os nomes das funções. Podemos ver abaixo um exemplo de saída do programa sem essa opção especificada:</p>
+<pre><code class="bash">
+[marcos@xfiles backtrace]$ ./backtrace &amp;
+[1] 18323
+[marcos@xfiles backtrace]$ kill -2 18323
+Signal: 2
+backtrace returned 8 entries
+./backtrace[0x4007ab]
+/lib64/libc.so.6(+0x34a50)[0x7f5c2b398a50]
+/lib64/libc.so.6(nanosleep+0x10)[0x7f5c2b42ca40]
+/lib64/libc.so.6(sleep+0xd4)[0x7f5c2b42c8f4]
+./backtrace[0x400832]
+./backtrace[0x40086b]
+/lib64/libc.so.6(__libc_start_main+0xf0)[0x7f5c2b384700]
+./backtrace[0x4006b9]
+[1]+  Fim da execução com status 1      ./backtrace
+</code></pre>
+<p>Como podemos ver, todas as referências ao binário <em>backtrace</em> agora não mostram mais o nome das funções, somente seu endereço em memória. Se uma função for <em>static inline</em>, está também não irá aparecer na pilha de chamadas.</p>
+<p>Espero que tenham gostado! Não se esqueçam de se inscrever nas nossas redes sociais! Até a próxima!</p>
+<p>Referências:
+<a href="http://man7.org/linux/man-pages/man3/backtrace.3.html" target="_blank">man backtrace</a></p>
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/api/" class="tag-link">api</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/c/" class="tag-link">c</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/terminal/" class="tag-link">terminal</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/"
+     data-text="Gerando backtrace em C/C&#43;&#43; no Linux"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/"
+     data-text="Gerando backtrace em C/C&#43;&#43; no Linux"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/"
+     data-text="Gerando backtrace em C/C&#43;&#43; no Linux"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/"
+     data-text="Gerando backtrace em C/C&#43;&#43; no Linux"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/mpdesouza/">
+        <img class="author-img"
+             src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+             alt="Marcos Paulo de Souza">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/">Marcos Paulo de Souza</a>
+      </h2>
+      <span class="small text-muted">Software Engineer</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

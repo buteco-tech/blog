@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kernel on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/kernel/</link>
+    <description>Recent content in kernel on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 19 Jun 2020 08:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Distribuições Linux</title>
+      <link>https://butecotecnologico.com.br/podcast/distribuicoes-linux/</link>
+      <pubDate>Fri, 19 Jun 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/podcast/distribuicoes-linux/</guid>
+      <description>Você sabe o que é uma distribuição Linux? Neste episódio do nosso podcast discutimos sobre o assunto, abordando alguns dos principais projetos envolvidos, como tudo começou, o cenário atual e por fim falamos sobre a posição do Brasil nessa história.</description>
+    </item>
+    
+    <item>
+      <title>Compilando o FreeBSD: Parte 1</title>
+      <link>https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/</link>
+      <pubDate>Mon, 01 Feb 2016 21:15:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/</guid>
+      <description>&lt;p&gt;Primeiro de tudo, sei que o conteúdo propriamente dito de como baixar e compilar os fontes do sistema operacional do FreeBSD é algo que tem aos montes na Internet. Entretanto acredito que reativar tópicos interessantes ou transformar eles em um registro no &lt;em&gt;feeds&lt;/em&gt; das notícias pode animar alguém a fazer estes testes.&lt;/p&gt;
+&lt;p&gt;Um aspecto é que, o objetivo deste texto é servir como base para a segunda parte que é compilar o sistema da nova maneira seguindo a proposta no livro de desenvolvimento do FreeBSD.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Confira algumas novidades do kernel Linux 4.3</title>
+      <link>https://butecotecnologico.com.br/confira-algumas-novidades-do-kernel-linux-4-3/</link>
+      <pubDate>Thu, 22 Oct 2015 21:49:26 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/confira-algumas-novidades-do-kernel-linux-4-3/</guid>
+      <description>&lt;p&gt;Como de costume, sempre tentamos mostrar aqui algumas novidades das &lt;em&gt;releases&lt;/em&gt; do &lt;em&gt;kernel&lt;/em&gt; Linux. Segue uma lista abaixo do que será encontrado na versão 4.3, que já se encontra no rc6 e que em breve será lançado:&lt;/p&gt;
+&lt;p&gt;DRM (&lt;em&gt;Direct Rendering Manager&lt;/em&gt;)/Gráficos&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Intel Skylake &#34;Gen9&#34; agora é suportado por padrão e não mais é necessário ativa-lo utilizando uma opção do kernel command-line&lt;/li&gt;
+	&lt;li&gt;Suporte inicial para  AMD R9 Fury &#39;Fiji&#39;, mas sem gerenciamento de energia ou re-cloking (o que mantém a performance baixa até então).&lt;/li&gt;
+	&lt;li&gt;Um grande retrabalho foi feito no Nouveau, afim de facilitar futuras melhorias no &lt;em&gt;driver&lt;/em&gt;, além de ter algumas melhorias no re-cloking de algumas GPUs da Nvidia. Embora tenham acontecido estas melhorias, a performance até agora é a mesma.&lt;/li&gt;
+	&lt;li&gt;Suporte a OpenGL 3.3 para o VMware. Este suporte se faz necessário quando o Linux é executado como &lt;em&gt;guest&lt;/em&gt; VM no VMware workstation 12 e a utilização do &lt;em&gt;driver&lt;/em&gt; VMWgfx no &lt;em&gt;guest&lt;/em&gt;, em conjunto com o novo Mesa 11.0.&lt;/li&gt;
+	&lt;li&gt;Melhorias mínimas em &lt;em&gt;drivers&lt;/em&gt; de &lt;em&gt;framebuffer&lt;/em&gt;&lt;/li&gt;
+	&lt;li&gt;Várias mudanças para gráficos Intel e diversas melhorias em &lt;em&gt;drivers&lt;/em&gt; DRM&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>NVIDIA anuncia driver 358 (beta) para Linux, Solaris e FreeBSD</title>
+      <link>https://butecotecnologico.com.br/nvidia-anuncia-driver-358-beta-para-linux-solaris-e-freebsd/</link>
+      <pubDate>Tue, 13 Oct 2015 20:30:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/nvidia-anuncia-driver-358-beta-para-linux-solaris-e-freebsd/</guid>
+      <description>&lt;p&gt;A NVIDIA disponibilizou a primeira versão pública beta do &lt;em&gt;driver&lt;/em&gt; 358 (358.09) para Linux, FreeBSD e Solaris. Construído sobre o driver 355, a série 358 acrescenta mais peças ao quebra-cabeças da interface com DRM/KMS (&lt;em&gt;Direct Rendering Manager/Kernel Mode Setting&lt;/em&gt;) e continua melhorando o suporte ao Mir/Wayland.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Finalmente: Mesa ganha suporte a OpenGL 4.0, e está proximo do 4.1 e 4.2</title>
+      <link>https://butecotecnologico.com.br/finalmente-mesa-ganha-suporte-a-opengl-4-0-e-esta-proximo-do-4-1-e-4-2/</link>
+      <pubDate>Thu, 23 Jul 2015 20:57:35 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/finalmente-mesa-ganha-suporte-a-opengl-4-0-e-esta-proximo-do-4-1-e-4-2/</guid>
+      <description>&lt;p&gt;Depois de cinco anos da especificação do OpenGL 4.0 ser introduzido, o projeto open source Mesa 3D finalmente ganhou suporte a todas as extensões necessárias, sendo que existem patches pendentes que estão implementando as extensões das especificações 4.1 e 4.2. O desenvolvedor responsável pelos patches da versão 4.0 do Mesa foi o David Airlie, da Red Hat.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vaga para programador Linux/C em Blumenau</title>
+      <link>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau/</link>
+      <pubDate>Mon, 13 Jul 2015 21:51:56 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau/</guid>
+      <description>&lt;p&gt;O profissional trabalhará para empresa com sede em Blumenau-SC, que por sua vez foi contratada  para prestar serviços a uma empresa com Sede nos Estados Unidos (&lt;a class=&#34;moz-txt-link-abbreviated&#34; href=&#34;http://www.zpesystems.com&#34;&gt;&lt;a href=&#34;http://www.zpesystems.com&#34;&gt;www.zpesystems.com&lt;/a&gt;&lt;/a&gt;) , no desenvolvimento de Software.&lt;/p&gt;
+&lt;p&gt;Desenvolvedor de Software para ambiente Linux e C&lt;/p&gt;
+&lt;p&gt;Responsabilidades: Esta posição é responsável por desenhar e
+implementar aplicativos em SW para sistema operacional em Linux,
+incluindo desenvolvimento de novos aplicativos, melhorias e correções
+em aplicativos existentes, instalação de pacotes de aplicativos de
+código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Veja o que virá de novo no Linux 4.2</title>
+      <link>https://butecotecnologico.com.br/veja-o-que-vira-de-novo-no-linux-4-2/</link>
+      <pubDate>Thu, 09 Jul 2015 10:11:08 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/veja-o-que-vira-de-novo-no-linux-4-2/</guid>
+      <description>&lt;p&gt;No último dia 5 Linus fechou a &amp;ldquo;merge window&amp;rdquo;, período para inclusão de alterações para uma nova versão do Linux, e criou o primeiro Release Candidate do Linux 4.2. Ainda podem ser adicionada alguma &amp;ldquo;late feature&amp;rdquo; no kernel, mas as features abaixo são as que tem destaque nesta nova versão:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Novidades que virão no Linux 4.1</title>
+      <link>https://butecotecnologico.com.br/novidades-que-virao-no-linux-4-1/</link>
+      <pubDate>Wed, 29 Apr 2015 09:47:34 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/novidades-que-virao-no-linux-4-1/</guid>
+      <description>Algumas novidades que virão com o kernel 4.1 do Linux, listando as principais melhorias desta nova versão.</description>
+    </item>
+    
+    <item>
+      <title>Novidades do kernel 4.0</title>
+      <link>https://butecotecnologico.com.br/novidades-do-kernel-4-0/</link>
+      <pubDate>Wed, 08 Apr 2015 23:12:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/novidades-do-kernel-4-0/</guid>
+      <description>Resumo das novas feature que serão vistas na versão 4.0 do kernel Linux</description>
+    </item>
+    
+    <item>
+      <title>Conhecendo o modinfo</title>
+      <link>https://butecotecnologico.com.br/conhecendo-o-modinfo/</link>
+      <pubDate>Wed, 25 Feb 2015 23:54:31 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conhecendo-o-modinfo/</guid>
+      <description>Este artigo explica o funcionamento básico do comando kmod, e para que qual finalidade existe o comando. Ainda neste artigo, é mostrado exemplos de execução do comando e quais informações este pode extrair dos módulos do kernel.</description>
+    </item>
+    
+    <item>
+      <title>Carregamento de hardware/driver assíncrono no kernel Linux</title>
+      <link>https://butecotecnologico.com.br/carregamento-de-hardwaredriver-assincrono-no-kernel-linux/</link>
+      <pubDate>Tue, 20 Jan 2015 18:33:36 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/carregamento-de-hardwaredriver-assincrono-no-kernel-linux/</guid>
+      <description>Enquanto o Chrome OS já tem o suporte ao carregamento de dispositivos/drivers assíncrono, o kernel linux ainda não.</description>
+    </item>
+    
+  </channel>
+</rss>

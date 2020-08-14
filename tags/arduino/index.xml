@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>arduino on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/arduino/</link>
+    <description>Recent content in arduino on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 02 Mar 2016 23:51:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gerando melodia com o Arduino</title>
+      <link>https://butecotecnologico.com.br/gerando-melodia-com-o-arduino/</link>
+      <pubDate>Wed, 02 Mar 2016 23:51:38 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gerando-melodia-com-o-arduino/</guid>
+      <description>&lt;p&gt;Com a função &lt;strong&gt;&lt;em&gt;tone&lt;/em&gt;&lt;/strong&gt; do Arduino, é possível reproduzir qualquer melodia que desejar. Esta função tem como princípio gerar um sinal &lt;em&gt;PWM&lt;/em&gt; no pino definido no chamado desta função.&lt;/p&gt;
+&lt;p&gt;A função &lt;strong&gt;&lt;em&gt;tone&lt;/em&gt;&lt;/strong&gt; recebe os seguintes parâmetros: &lt;code&gt;tone(pino, frequência, duração);&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Quando chamada, esta função irá gerar um sinal &lt;em&gt;PWM&lt;/em&gt; na frequência e pelo tempo definido nos parâmetros passados. A frequência é definida em hertz e o tempo em milissegundos.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Iluminação Natalina com Arduino, Temporizador e LDR</title>
+      <link>https://butecotecnologico.com.br/iluminacao-natalina-com-arduino-temporizador-e-ldr/</link>
+      <pubDate>Fri, 08 Jan 2016 10:26:04 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/iluminacao-natalina-com-arduino-temporizador-e-ldr/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-weight: 400;&#34;&gt;Neste projeto, irei apresentar a vocês como controlar uma carga de 110 ou 220 volts com um Arduíno e um relé. Utilizaremos também um LDR para medição de intensidade de luz, para poder fazer com que a carga seja ligada apenas quando for escuro, e além disso, com a opção de temporizar o tempo que a carga ficará ligada. Um exemplo de aplicação é a iluminação Natalina, fazendo ela ligar somente quando escurecer, e caso quiser, pode-se também programar essa para desligar após algumas horas, ou ainda, deixar com que ela se apague novamente quando o dia clarear.&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lançamentos Novatec: Apocalipse zumbi com Arduino e Raspberry e AWS em ação</title>
+      <link>https://butecotecnologico.com.br/lancamentos-novatec-apocalipse-zumbi-com-arduino-e-raspberry-e-aws-em-acao/</link>
+      <pubDate>Thu, 07 Jan 2016 08:07:04 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/lancamentos-novatec-apocalipse-zumbi-com-arduino-e-raspberry-e-aws-em-acao/</guid>
+      <description>&lt;p style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/capa_ampliada9788575224700.jpg&#34; rel=&#34;attachment wp-att-4453&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-4453&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/capa_ampliada9788575224700-215x300.jpg&#34; alt=&#34;capa_ampliada9788575224700&#34; width=&#34;215&#34; height=&#34;300&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align: center;&#34;&gt;&lt;strong&gt;Guia do maker para o apocalipse zumbi&lt;/strong&gt;&lt;/p&gt;
+Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Cozinhando o animal de estimação da família? Decapitando vizinhos que viraram zumbis?
+&lt;p&gt;Se ler o livro &lt;a href=&#34;http://novatec.com.br/livros/guia-maker-zumbi-arduino-raspberry/&#34; target=&#34;_blank&#34;&gt;Guia do maker para o apocalipse zumbi&lt;/a&gt; você estará construindo fortalezas, criando armadilhas, gerando eletricidade e criando dispositivos eletrônicos essenciais para a sua sobrevivência.&lt;/p&gt;
+&lt;p&gt;Com uma narrativa objetiva e bem-humorada, o livro &lt;a href=&#34;http://novatec.com.br/livros/guia-maker-zumbi-arduino-raspberry/&#34; target=&#34;_blank&#34;&gt;Guia do maker para o apocalipse zumbi&lt;/a&gt;, lançado pela &lt;a href=&#34;http://www.novatec.com.br/&#34;&gt;Novatec Editora&lt;/a&gt;, ensina tudo o que você precisa saber (e fazer) para se preparar para o apocalipse zumbi, e como utilizar Arduino e Raspberry Pi para criar circuitos simples para se defender.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kit Arduino Start - O sortudo da vez</title>
+      <link>https://butecotecnologico.com.br/kit-arduino-start-o-sortudo-da-vez/</link>
+      <pubDate>Mon, 04 Jan 2016 19:30:56 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/kit-arduino-start-o-sortudo-da-vez/</guid>
+      <description>Olá caros leitores,
+Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Arduino Start: O nome dele é Bruno Naibert de Canoas/RS, Parabéns!</description>
+    </item>
+    
+    <item>
+      <title>Sorteio de um Kit Arduino Start</title>
+      <link>https://butecotecnologico.com.br/sorteio-de-um-kit-arduino-start/</link>
+      <pubDate>Tue, 15 Dec 2015 23:04:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sorteio-de-um-kit-arduino-start/</guid>
+      <description>&lt;p&gt;Ho! Ho! Ho!&lt;/p&gt;
+&lt;p&gt;Natal está chegando, e claro, não poderíamos deixar esta data passar. Sendo assim, em parceria com a &lt;a href=&#34;http://www.filipeflop.com&#34; target=&#34;_blank&#34;&gt;FILIPEFLOP&lt;/a&gt; vamos sortear um &lt;a href=&#34;http://www.filipeflop.com/pd-6b5b2-kit-arduino-start.html&#34; target=&#34;_blank&#34;&gt;Kit Arduino Start&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;O sorteio encerra no dia 23/12, então corra e não deixe para a última hora. O resultado sairá após o dia 28/12.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Black Friday de Componentes Eletrônicos é na FILIPEFLOP</title>
+      <link>https://butecotecnologico.com.br/black-friday-de-componentes-eletronicos-e-na-filipeflop/</link>
+      <pubDate>Wed, 18 Nov 2015 22:54:30 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/black-friday-de-componentes-eletronicos-e-na-filipeflop/</guid>
+      <description>Black Friday é o nome dado ao dia seguinte ao &amp;ldquo;Dia de Ação de Graças&amp;rdquo; dos EUA, uma importante data comemorativa para o varejo americano, quando são praticados descontos altíssimos.</description>
+    </item>
+    
+    <item>
+      <title>Sensor de temperatura gráfico com Arduino e LCD 16x2</title>
+      <link>https://butecotecnologico.com.br/sensor-de-temperatura-grafico-com-arduino-e-lcd-16x2/</link>
+      <pubDate>Mon, 20 Jul 2015 22:31:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sensor-de-temperatura-grafico-com-arduino-e-lcd-16x2/</guid>
+      <description>&lt;p&gt;Dando continuidade ao artigo &lt;a href=&#34;https://butecotecnologico.com.br/sensor-de-temperatura-e-umidade-no-arduino&#34; target=&#34;_blank&#34;&gt;Sensor de temperatura e umidade no Arduino&lt;/a&gt;, hoje vamos ver como utilizar um LCD 16x2 para exibir a temperatura e a umidade capturada pelo sensor DHT11.&lt;/p&gt;
+&lt;p&gt;A grande diferença entre o artigo anterior e este é o uso do LCD, sendo assim, não há necessidade de conectar o Arduino ao PC só para saber a temperatura.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sensor de temperatura e umidade no Arduino</title>
+      <link>https://butecotecnologico.com.br/sensor-de-temperatura-e-umidade-no-arduino/</link>
+      <pubDate>Thu, 09 Jul 2015 21:29:14 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sensor-de-temperatura-e-umidade-no-arduino/</guid>
+      <description>&lt;p&gt;Já faz algum tempo que não falo do Arduino, pois bem, hoje irei mostrar um exemplo simples. Vamos utilizar um sensor para saber temperatura.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Material utilizado&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Arduino Uno, que pode ser comprado &lt;a href=&#34;http://www.filipeflop.com/pd-6b58d-arduino-uno-r3-cabo-usb.html?utm_source=BlogButeco&amp;utm_medium=Banner&amp;utm_campaign=ButecoOpenSource&#34;&gt;aqui&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Sensor de Umidade e Temperatura DHT11, que pode ser comprado &lt;a href=&#34;http://www.filipeflop.com/pd-6b8f7-sensor-de-umidade-e-temperatura-dht11.html?utm_source=BlogButeco&amp;utm_medium=Banner&amp;utm_campaign=ButecoOpenSource&#34;&gt;aqui&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Resistor 10K&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Utilizando um teclado matricial no Arduino</title>
+      <link>https://butecotecnologico.com.br/utilizando-um-teclado-matricial-no-arduino/</link>
+      <pubDate>Tue, 19 May 2015 23:07:47 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/utilizando-um-teclado-matricial-no-arduino/</guid>
+      <description>Já faz algum tempo que não falo do Arduino, porém hoje vou mostrar como utilizar um teclado matricial.
+O teclado que estou utilizando é um teclado matricial de membrana com 16 teclas e conector de 8 vias.</description>
+    </item>
+    
+    <item>
+      <title>Samsung anuncia entrada na família Arduino</title>
+      <link>https://butecotecnologico.com.br/samsung-anuncia-entrada-na-familia-arduino/</link>
+      <pubDate>Wed, 13 May 2015 09:17:43 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/samsung-anuncia-entrada-na-familia-arduino/</guid>
+      <description>A plataforma ARTIK está na categoria dos dispositivos compatíveis com Arduino, e seu foco é a Internet das Coisas. No momento existem três placas: ARTIK 1, ARTIK 5 e ARTIK 10. Todas as placas possuem processador ARM multi-core e Bluetooth Low Energy (BLE). As placas ARTIK 5 e ARTIK 10 contam também com Wi-Fi, BT, Zigbee e conexões Wirelles Multi-Thread</description>
+    </item>
+    
+    <item>
+      <title>Pesquisa sobre Cursos Presenciais de Microcontroladores</title>
+      <link>https://butecotecnologico.com.br/pesquisa-sobre-cursos-presenciais-de-microcontroladores/</link>
+      <pubDate>Tue, 05 May 2015 23:58:17 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/pesquisa-sobre-cursos-presenciais-de-microcontroladores/</guid>
+      <description>O Embarcados está fazendo uma pesquisa sobre cursos presenciais de microcontroladores e ele conta com a sua opinião.</description>
+    </item>
+    
+    <item>
+      <title>Primeiros passos com o ESP8266</title>
+      <link>https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/</link>
+      <pubDate>Thu, 30 Apr 2015 08:53:10 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/</guid>
+      <description>Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.
+O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo.</description>
+    </item>
+    
+    <item>
+      <title>Conheça o ESP8266: Um módulo WiFi por menos de 5 dólares</title>
+      <link>https://butecotecnologico.com.br/conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares/</link>
+      <pubDate>Tue, 07 Apr 2015 01:49:31 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares/</guid>
+      <description>O ESP8266 é uma solução para a Internet das Coisas (IoT). Ele não é apenas um módulo WiFi que pode ser conectado ao Arduino, mas sim um System-on-a-chip (SoC). Ou seja, ele é uma solução completa para quem deseja criar um dispositivo que necessite conexão WiFi.</description>
+    </item>
+    
+    <item>
+      <title>Controlando um LED pelo Arduino</title>
+      <link>https://butecotecnologico.com.br/controlando-um-led-pelo-arduino/</link>
+      <pubDate>Tue, 13 Jan 2015 08:00:35 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/controlando-um-led-pelo-arduino/</guid>
+      <description>Veja como controlar um LED pelo Arduino. Iremos fazer duas operações básicas, fazer o LED piscar e alterar sua intensidade.</description>
+    </item>
+    
+    <item>
+      <title>Conectando um display de 7 segmentos no Arduino</title>
+      <link>https://butecotecnologico.com.br/conectando-um-display-de-7-segmentos-no-arduino/</link>
+      <pubDate>Tue, 06 Jan 2015 20:00:01 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conectando-um-display-de-7-segmentos-no-arduino/</guid>
+      <description>Confira como utilizar um display de 7 segmentos no Arduino.</description>
+    </item>
+    
+  </channel>
+</rss>

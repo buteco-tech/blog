@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>beaglebone green on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/beaglebone-green/</link>
+    <description>Recent content in beaglebone green on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 20 Jan 2016 21:11:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/beaglebone-green/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GPS Parte 3: Localizador GPS com a BeagleBone Green</title>
+      <link>https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/</link>
+      <pubDate>Wed, 20 Jan 2016 21:11:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/</guid>
+      <description>Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona.</description>
+    </item>
+    
+    <item>
+      <title>Conheça a BeagleBone Green</title>
+      <link>https://butecotecnologico.com.br/conheca-a-beaglebone-green/</link>
+      <pubDate>Tue, 24 Nov 2015 10:24:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conheca-a-beaglebone-green/</guid>
+      <description>&lt;p&gt;Recentemente recebemos da &lt;a href=&#34;http://www.filipeflop.com/?utm_medium=PostBBG&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;FilipeFlop&lt;/a&gt; a &lt;a href=&#34;http://www.seeed.cc/beaglebone_green/&#34; target=&#34;_blank&#34;&gt;BeagleBone Green&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A BeagleBone Green, ou BBG para os mais íntimos, é produzida pela SeeedStudio e é baseada no hardware da BeagleBone Black. As maiores diferenças são a adição de dois conectores &lt;em&gt;Grove&lt;/em&gt; e a remoção do HDMI &lt;em&gt;on-board&lt;/em&gt;. Apesar de não possuir HDMI, é possível utilizar uma placa de expansão para obter esta funcionalidade.&lt;/p&gt;
+&lt;p&gt;A BBG é poderosa, ela vem com processador AM335x 1GHz ARM© Cortex-A8, memória de 512MB DDR3, 4GB eMMC de armazenamento interno (isso mesmo, não é necessário SD) e aceleração gráfica 3D.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kubernetes on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/kubernetes/</link>
+    <description>Recent content in kubernetes on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 13 Aug 2020 08:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kubernetes explicado</title>
+      <link>https://butecotecnologico.com.br/kubernetes-explicado/</link>
+      <pubDate>Thu, 13 Aug 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/kubernetes-explicado/</guid>
+      <description>O Kubernetes (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers e foi criado pelo Google.</description>
+    </item>
+    
+    <item>
+      <title>Livros gratuitos</title>
+      <link>https://butecotecnologico.com.br/livros-gratuitos-abril-2020/</link>
+      <pubDate>Fri, 24 Apr 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/livros-gratuitos-abril-2020/</guid>
+      <description>Aproveite o tempo em casa para ler alguns livros que estão de graça.</description>
+    </item>
+    
+  </channel>
+</rss>

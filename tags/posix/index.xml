@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>posix on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/posix/</link>
+    <description>Recent content in posix on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 17 Mar 2016 09:35:57 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/posix/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>POSIX Regular Expression em C</title>
+      <link>https://butecotecnologico.com.br/posix-regular-expression-em-c/</link>
+      <pubDate>Thu, 17 Mar 2016 09:35:57 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/posix-regular-expression-em-c/</guid>
+      <description>&lt;p&gt;Expressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares &lt;em&gt;built-in&lt;/em&gt;, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a &lt;em&gt;POSIX RegEx&lt;/em&gt; na linguagem C na plataforma Linux.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux API: pthreads - Parte 1</title>
+      <link>https://butecotecnologico.com.br/linux-api-pthreads-parte-1/</link>
+      <pubDate>Tue, 19 Jan 2016 11:45:24 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/linux-api-pthreads-parte-1/</guid>
+      <description>&lt;p&gt;Processadores de múltiplos núcleos já são uma realidade nos computadores da grande maioria dos usuários comuns. Em meio a esse avanço podemos escrever programas que executam várias linhas de processamento em paralelo, podendo fazer com que esses programas tenham um tempo de resposta menor.&lt;/p&gt;
+&lt;p&gt;Para tal, este post mostrará como utilizar POSIX threads na linguagem C.&lt;/p&gt;
+&lt;h4&gt;O que são threads?&lt;/h4&gt;
+&lt;em&gt;Threads&lt;/em&gt; são linhas de execução para processos. Ao iniciar um processo, uma &lt;em&gt;thread&lt;/em&gt; principal é iniciada, um processo então pode criar outras &lt;em&gt;threads&lt;/em&gt; para que estas executem tarefas específicas e de forma paralela. Quando temos uma CPU com um único núcleo, dizemos que as &lt;em&gt;threads&lt;/em&gt; executam de forma &lt;em&gt;concorrente&lt;/em&gt;, uma vez que a CPU só pode executar uma thread por vez, mas há mais que uma para ser executada ao &#34;mesmo tempo&#34;. Já quando temos uma CPU com vários núcleos, as &lt;em&gt;threads&lt;/em&gt; podem ser executadas tanto de forma &lt;em&gt;concorrente&lt;/em&gt; como em &lt;em&gt;paralelo&lt;/em&gt;, pois o &lt;a href=&#34;https://pt.wikipedia.org/wiki/Escalonamento_de_processos&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;scheduler&lt;/em&gt;&lt;/a&gt; pode priorizar outros programas do computador além do seu.</description>
+    </item>
+    
+    <item>
+      <title>glibc 2.21 já está disponível</title>
+      <link>https://butecotecnologico.com.br/glibc-2-21-ja-esta-disponivel/</link>
+      <pubDate>Fri, 06 Feb 2015 18:09:23 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/glibc-2-21-ja-esta-disponivel/</guid>
+      <description>A GNU C Library (glibc) é a biblioteca C padrão no sistema GNU e na maioria dos sistemas com Kernel Linux. A versão 2.21 vem com várias correções de bugs algumas funcionalidades novas.</description>
+    </item>
+    
+  </channel>
+</rss>

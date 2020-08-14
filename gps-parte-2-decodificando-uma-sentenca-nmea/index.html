@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>GPS Parte 2: Decodificando uma sentença NMEA &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="GPS Parte 2: Decodificando uma sentença NMEA">
+<meta itemprop="description" content="Na primeira parte sobre GPS vimos como este sistema de rastreamento por satélite funciona.">
+<meta itemprop="datePublished" content="2016-01-11T21:38:15+00:00" />
+<meta itemprop="dateModified" content="2016-01-11T21:38:15+00:00" />
+<meta itemprop="wordCount" content="1257">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png">
+
+
+
+<meta itemprop="keywords" content="geolocalização,gps,nmea,python," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png"/>
+
+<meta name="twitter:title" content="GPS Parte 2: Decodificando uma sentença NMEA"/>
+<meta name="twitter:description" content="Na primeira parte sobre GPS vimos como este sistema de rastreamento por satélite funciona."/>
+
+
+<meta property="og:title" content="GPS Parte 2: Decodificando uma sentença NMEA" />
+<meta property="og:description" content="Na primeira parte sobre GPS vimos como este sistema de rastreamento por satélite funciona." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png" />
+<meta property="article:published_time" content="2016-01-11T21:38:15+00:00" />
+<meta property="article:modified_time" content="2016-01-11T21:38:15+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>GPS Parte 2: Decodificando uma sentença NMEA</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           alt="Alexandre Vicenzi"
+           title="Alexandre Vicenzi">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+           class="author">Alexandre Vicenzi</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2016-01-11T21:38:15Z">Jan 11, 2016</time>
+      &middot; 6 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/"
+     data-text="GPS Parte 2: Decodificando uma sentença NMEA"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/"
+     data-text="GPS Parte 2: Decodificando uma sentença NMEA"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/"
+     data-text="GPS Parte 2: Decodificando uma sentença NMEA"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/"
+     data-text="GPS Parte 2: Decodificando uma sentença NMEA"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png"
+           alt="GPS Parte 2: Decodificando uma sentença NMEA">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p>Na <a href="/gps-parte-1-entendendo-o-seu-funcionamento" target="_blank">primeira parte</a> sobre GPS vimos como este sistema de rastreamento por satélite funciona. Também aproveitamos para explicar o que é o protocolo NMEA, utilizado pelos sistemas de navegação global.</p>
+<p>Uma sentença NMEA é formada por caracteres passíveis de impressão e CR (carriage return) e LF (line feed). Toda sentença inicia com <code>$</code> e termina com &lt;CR&gt; &lt;LF&gt;. Existem três tipos básicos de sentenças: <em>talker sentences</em>, <em>proprietary sentences</em> e <em>query sentences</em>.</p>
+<p>As <em>talker sentences</em> são as sentenças genéricas de comunicação do protocolo, já as <em>proprietary sentences</em> são sentenças proprietárias dos fabricantes e as <em>query sentences</em> são sentenças utilizadas para requisitar informações a partir de um receptor.</p>
+<p>Neste artigo iremos ver como implementar um decodificar de sentenças do protocolo NMEA 0183 versão 2.3. Para implementar o decodificador iremos utilizar Python sem nenhuma biblioteca adicional. O código desenvolvido é apenas para ilustrar como é feito este tipo de processo, se você procura algo para utilizar em seu sistema eu recomendo a biblioteca <a href="https://github.com/Knio/pynmea2" target="_blank">pynmea2</a>.</p>
+<p><strong>Decodificando uma sentença</strong></p>
+<p>Para decodificar uma sentença primeiro é necessário entender o seu funcionamento. No caso da sentença GGA (Global Positioning System Fix Data) podemos observar a descrição dos campos abaixo:</p>
+<p><code>$GPGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*47</code></p>
+<p>Para entender melhor, vamos explicar o que é cada parte:</p>
+<table>
+<tbody>
+<tr>
+<td>GP</td>
+<td>Talker (GPS)</td>
+</tr>
+<tr>
+<td>GGA</td>
+<td>Nome da sentença</td>
+</tr>
+<tr>
+<td>123519</td>
+<td>Hora da Fix (12:35:19 UTC)</td>
+</tr>
+<tr>
+<td>4807.038,N</td>
+<td>Latitude 48 deg 07.038' N</td>
+</tr>
+<tr>
+<td>01131.000,E</td>
+<td>Longitude 11 deg 31.000' E</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Qualidade da Fix</td>
+</tr>
+<tr>
+<td>08</td>
+<td>Número de satélites visíveis</td>
+</tr>
+<tr>
+<td>0.9</td>
+<td>Posição horizontal</td>
+</tr>
+<tr>
+<td>545.4,M</td>
+<td>Altitude, em metros, acima do nível do mar</td>
+</tr>
+<tr>
+<td>46.9,M</td>
+<td>Nível médio do mar</td>
+</tr>
+<tr>
+<td>(vazio)</td>
+<td>Tempo em segundos desde a última atualização do DGPS</td>
+</tr>
+<tr>
+<td>(vazio)</td>
+<td>DGPS ID</td>
+</tr>
+<tr>
+<td>*47</td>
+<td>checksum*</td>
+</tr>
+</tbody>
+</table>
+<p>Se você deseja conhecer as demais sentenças e seus campos eu recomento ler a <a href="http://www.tronico.fi/OH6NT/docs/NMEA0183.pdf" target="_blank">especificação do protocolo NMEA 0183</a> (em inglês).</p>
+<p>Bem, para entender melhor, vamos primeiro ver as principais partes do código, no fim será exibido o código por completo com alguns exemplos de uso.</p>
+<p><strong>Classe Sentence</strong></p>
+<p>A classe <code>Sentence</code> é a base de todas as sentenças NMEA. Toda sentença deve estender esta classe, como podemos observar na classe <code>GGLSentence</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">Sentence</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="n">sentence_name</span> <span class="o">=</span> <span class="s1">&#39;Unknown&#39;</span>
+    <span class="n">sentence_description</span> <span class="o">=</span> <span class="s1">&#39;Unknown Sentence&#39;</span>
+    <span class="n">fields</span> <span class="o">=</span> <span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fields_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fields</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_last</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields_count</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">sentence</span><span class="p">,</span> <span class="n">checksum</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+        <span class="n">raw_fields</span> <span class="o">=</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">raw_fields</span><span class="p">)</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields_count</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ParseException</span><span class="p">(</span>
+                <span class="s1">&#39;Field count mismatch. Expected </span><span class="si">%d</span><span class="s1"> fields, but found </span><span class="si">%d</span><span class="s1">.&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_fields_count</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">raw_fields</span><span class="p">)))</span>
+
+        <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">field</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fields</span><span class="p">):</span>
+            <span class="n">field_name</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">field_type</span> <span class="o">=</span> <span class="n">field</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="n">raw_fields</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+                <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+                    <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field_name</span><span class="p">,</span> <span class="n">field_type</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field_name</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+            <span class="k">except</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">ParseException</span><span class="p">(</span>
+                    <span class="s1">&#39;Can</span><span class="se">\&#39;</span><span class="s1">t parse value into field &#34;</span><span class="si">%s</span><span class="s1">&#34;: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">field_name</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_valid</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">False</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">Sentence(is_valid=</span><span class="si">%s</span><span class="s1">)&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sentence_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_valid</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Toda sentença deve possuir um nome (<code>sentence_name</code>), uma descrição (<code>sentence_description</code>) e seus respectivos campos (<code>fields</code>). Além disto, as classes devem implementar um método validador (<code>is_valid</code>) para verificar se a sentença recebida é valida.</p>
+<p>Podemos observar que existe um método para decodificar (<code>parse</code>) a sentença. Como as sentenças devem seguir o mesmo padrão, o método é genérico para todas as classes derivadas de <code>Sentence</code>.</p>
+<p>Inicialmente é extraído da sentença o seu checksum caso exista. Após é verificado se a quantidade de campos recebidos na sentença corresponde a quantidade de campos registrados. Por fim, é convertido o valor do campo recebido para um tipo Python compatível.</p>
+<p>Como sabemos para que tipo devemos converter determinado campo? É isso que você verá na classe <code>GLLSentence</code>.</p>
+<p><strong>Estendendo a classe Sentence</strong></p>
+<p>Na classe <code>GLLSentence</code> sobrescrevemos as propriedades necessárias para o funcionamento correto do <em>parser</em>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">GLLSentence</span><span class="p">(</span><span class="n">Sentence</span><span class="p">,</span> <span class="n">LatLonMixin</span><span class="p">):</span>
+    <span class="n">sentence_name</span> <span class="o">=</span> <span class="s1">&#39;GLL&#39;</span>
+    <span class="n">sentence_description</span> <span class="o">=</span> <span class="s1">&#39;Geographic Position – Latitude/Longitude&#39;</span>
+    <span class="n">fields</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="p">(</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;Latitude&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;ns_indicator&#39;</span><span class="p">,</span> <span class="s1">&#39;N/S Indicator&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="o">.</span><span class="n">upper</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;Longitude&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;ew_indicator&#39;</span><span class="p">,</span> <span class="s1">&#39;E/W Indicator&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="o">.</span><span class="n">upper</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;utc_time&#39;</span><span class="p">,</span> <span class="s1">&#39;UTC Time&#39;</span><span class="p">,</span> <span class="n">UTCTimeParser</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;status&#39;</span><span class="p">,</span> <span class="s1">&#39;Status&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="o">.</span><span class="n">upper</span><span class="p">),</span>
+        <span class="c1"># (&#39;mode&#39;, &#39;Mode&#39;, str), NMEA V 3.00</span>
+    <span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_valid</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Como podemos observar, sobrescrevemos os atributos <code>sentence_name</code> e <code>sentence_description</code> com o nome e a descrição da sentença.</p>
+<p>O atributo <code>fields</code> foi sobrescrito por uma tupla de tuplas que corresponde ao seguinte: o primeiro valor da tupla é o nome do campo, deve sem um nome de atributo válido, pois ele será atribuído a classe em tempo de execução; o segundo campo é uma descrição para o campo, pode ser qualquer texto; o terceiro campo é uma função/classe que será utilizada para converter o valor. Neste caso deve-se lembrar que a função/classe deve possuir apenas um parâmetro e do tipo <code>str</code>. Isto porque a função/classe é invocada com o valor recebido no campo.</p>
+<p>Se observarmos, é possível verificar que o campo <code>latitude</code> será convertido para <code>str</code>, já o campo <code>ns_indicator</code> será convertido para <code>str</code>, porém maiúscula. O campo <code>utc_time</code> usa a classe <code>UTCTimeParser</code> para converter para o tipo <code>datetime.date</code>.</p>
+<p>Por fim, implementamos a validação da sentença. No caso da sentença GLL, ela é valida se o <code>status</code> for igual a <code>A</code>. Uma validação não implementada é a do checksum. O checksum serve para verificar se o conteúdo recebido foi o mesmo que o enviado. Como o intuito é apenas exemplificar o funcionamento, podemos ignorar este item.</p>
+<p><strong>Classe NMEAParser</strong></p>
+<p>Para finalizar, vamos verificar como a classe <code>NMEAParser</code> identifica qual a sentença e sua respectiva classe para conversão.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">NMEAParser</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="n">parsers</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">GGASentence</span><span class="o">.</span><span class="n">sentence_name</span><span class="p">:</span> <span class="n">GGASentence</span><span class="p">,</span>
+        <span class="n">GLLSentence</span><span class="o">.</span><span class="n">sentence_name</span><span class="p">:</span> <span class="n">GLLSentence</span><span class="p">,</span>
+        <span class="n">RMCSentence</span><span class="o">.</span><span class="n">sentence_name</span><span class="p">:</span> <span class="n">RMCSentence</span><span class="p">,</span>
+        <span class="n">VTGSentence</span><span class="o">.</span><span class="n">sentence_name</span><span class="p">:</span> <span class="n">VTGSentence</span><span class="p">,</span>
+    <span class="p">}</span>
+
+    <span class="k">def</span> <span class="nf">_get_parser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="n">NMEAParser</span><span class="o">.</span><span class="n">parsers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+
+        <span class="k">if</span> <span class="n">parser</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">parser</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="bp">None</span>
+
+    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ParseException</span><span class="p">(</span><span class="s1">&#39;Can</span><span class="se">\&#39;</span><span class="s1">t parse empty data.&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="sa">u</span><span class="s1">&#39;$&#39;</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+
+        <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="sa">u</span><span class="s1">&#39;GP&#39;</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
+
+        <span class="n">sentence</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_parser</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">parser</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ParseException</span><span class="p">(</span><span class="s1">&#39;Can</span><span class="se">\&#39;</span><span class="s1">t find parser for sentence: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">sentence</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">4</span><span class="p">:])</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>A classe <code>NMEAParser</code> possui um atributo (<code>parsers</code>) responsável por armazenar o nome da sentença e a classe de conversão. Para identificar qual a classe correta extraímos no método <code>parse</code> o nome da sentença recebida. Se não for possível identificar a sentença ou se recebermos uma sentença não suportada é gerada uma exceção.</p>
+<p>Abaixo é possível observar o código completo da aplicação com alguns exemplos de uso.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">NMEAParser</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="n">parsers</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">GGASentence</span><span class="o">.</span><span class="n">sentence_name</span><span class="p">:</span> <span class="n">GGASentence</span><span class="p">,</span>
+        <span class="n">GLLSentence</span><span class="o">.</span><span class="n">sentence_name</span><span class="p">:</span> <span class="n">GLLSentence</span><span class="p">,</span>
+        <span class="n">RMCSentence</span><span class="o">.</span><span class="n">sentence_name</span><span class="p">:</span> <span class="n">RMCSentence</span><span class="p">,</span>
+        <span class="n">VTGSentence</span><span class="o">.</span><span class="n">sentence_name</span><span class="p">:</span> <span class="n">VTGSentence</span><span class="p">,</span>
+    <span class="p">}</span>
+
+    <span class="k">def</span> <span class="nf">_get_parser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="n">NMEAParser</span><span class="o">.</span><span class="n">parsers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+
+        <span class="k">if</span> <span class="n">parser</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">parser</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="bp">None</span>
+
+    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ParseException</span><span class="p">(</span><span class="s1">&#39;Can</span><span class="se">\&#39;</span><span class="s1">t parse empty data.&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="sa">u</span><span class="s1">&#39;$&#39;</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+
+        <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="sa">u</span><span class="s1">&#39;GP&#39;</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
+
+        <span class="n">sentence</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_parser</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">parser</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ParseException</span><span class="p">(</span><span class="s1">&#39;Can</span><span class="se">\&#39;</span><span class="s1">t find parser for sentence: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">sentence</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">4</span><span class="p">:])</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Você pode conferir o código fonte completo <a href="https://github.com/ButecoOpenSource/exemplos/blob/master/nmea/nmea.py">aqui</a>.</p>
+<p>Espero que você tenha gostado deste artigo. Na parte final desta série de artigos, iremos implementar uma pequena aplicação que captura a posição do GPS e informa em uma página Web.</p>
+<p>Até a próxima.</p>
+<p><em>Este artigo é uma adaptação da monografia BUSTRACKER: Sistema de rastreamento para transporte coletivo de Alexandre Vicenzi e o texto na íntegra pode ser encontrado <a href="https://raw.githubusercontent.com/alexandrevicenzi/tcc/master/monografia/tcc_bcc_2015_2_avicenzi_AlexandreVicenzi-VF.pdf" target="_blank">aqui</a>.</em></p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/geolocaliza%C3%A7%C3%A3o/" class="tag-link">geolocalização</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/gps/" class="tag-link">gps</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/nmea/" class="tag-link">nmea</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/python/" class="tag-link">python</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/"
+     data-text="GPS Parte 2: Decodificando uma sentença NMEA"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/"
+     data-text="GPS Parte 2: Decodificando uma sentença NMEA"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/"
+     data-text="GPS Parte 2: Decodificando uma sentença NMEA"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/"
+     data-text="GPS Parte 2: Decodificando uma sentença NMEA"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             alt="Alexandre Vicenzi">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">Alexandre Vicenzi</a>
+      </h2>
+      <span class="small text-muted">Engenheiro de Software</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

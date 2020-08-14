@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rtc on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/rtc/</link>
+    <description>Recent content in rtc on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 05 Apr 2016 16:37:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/rtc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conhecendo os módulos do NodeMCU</title>
+      <link>https://butecotecnologico.com.br/conhecendo-os-modulos-do-nodemcu/</link>
+      <pubDate>Tue, 05 Apr 2016 16:37:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/conhecendo-os-modulos-do-nodemcu/</guid>
+      <description>&lt;p&gt;O &lt;a href=&#34;http://nodemcu.com/index_en.html&#34; target=&#34;_blank&#34;&gt;NodeMCU&lt;/a&gt; é um firmware baseado no &lt;a href=&#34;http://www.eluaproject.net/&#34; target=&#34;_blank&#34;&gt;eLua&lt;/a&gt; para os dispositivos ESP8266. Se você deseja saber mais sobre o firmware recomendo a leitura do artigo &lt;a href=&#34;https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266&#34;&gt;NodeMCU: Lua para o ESP8266&lt;/a&gt; que publiquei recentemente. Neste artigo o foco foi a apresentação do firmware e como fazer o flash do seu dispositivo.&lt;/p&gt;
+&lt;p&gt;Com o decorrer dos projetos que fazem uso do ESP8266 e NodeMCU, eventualmente será necessário criar um firmware com módulos que não fazem parte da distribuição padrão. Sendo assim, o artigo de hoje visa explicar brevemente o que é cada um dos módulos disponíveis. Builds customizadas podem ser feitas através do site &lt;a href=&#34;http://nodemcu-build.com/&#34; target=&#34;_blank&#34;&gt;NodeMCU custom builds&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Relógio RTC com o ESP8266</title>
+      <link>https://butecotecnologico.com.br/rtc-com-esp8266/</link>
+      <pubDate>Fri, 05 Feb 2016 12:38:14 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/rtc-com-esp8266/</guid>
+      <description>&lt;p&gt;No artigo de hoje veremos como utilizar um RTC (&lt;em&gt;Real Time Clock&lt;/em&gt;) com o dispositivo ESP8266. Este módulo incorpora funções Wi-Fi e foi pensado para projetos de baixo custo para mobilidade, eletrônicos vestíveis, Internet das Coisas (IoT), e o que sua criatividade permitir.&lt;/p&gt;
+&lt;p&gt;Este artigo pode ser um tanto quanto simples, mas utilizar um RTC (&lt;em&gt;Real Time Clock&lt;/em&gt;) em um projeto é de grande importância as vezes. Principalmente quando desejamos monitorar algo em determinados horários. Vamos pegar um exemplo básico, supondo que você esteja monitorando a temperatura do ambiente, é interessante saber a hora da medição para calcular a variação de temperatura durante um determinado período. Sim, este é um exemplo simples, mas exemplifica claramente o uso de um RTC.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>certificados on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/certificados/</link>
+    <description>Recent content in certificados on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 23 May 2016 23:34:46 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/certificados/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>libssl e libcrypto: Visualizando certificados online em C</title>
+      <link>https://butecotecnologico.com.br/libssl-libcrypto-visualizando-certificados-online-em-c/</link>
+      <pubDate>Mon, 23 May 2016 23:34:46 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/libssl-libcrypto-visualizando-certificados-online-em-c/</guid>
+      <description>&lt;p&gt;Muito se fala do OpenSSL para geração e manutenção de certificados digitais, além disso, o OpenSSL pode criptografar arquivos, gerar números randômicos, e etc. Este artigo vem mostrar como utilizar a libssl para visualizar certificado utilizando a linguagem C.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

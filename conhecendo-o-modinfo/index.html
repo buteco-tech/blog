@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Conhecendo o modinfo &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Conhecendo o modinfo">
+<meta itemprop="description" content="Este artigo explica o funcionamento básico do comando kmod, e para que qual finalidade existe o comando. Ainda neste artigo, é mostrado exemplos de execução do comando e quais informações este pode extrair dos módulos do kernel.">
+<meta itemprop="datePublished" content="2015-02-25T23:54:31+00:00" />
+<meta itemprop="dateModified" content="2015-02-25T23:54:31+00:00" />
+<meta itemprop="wordCount" content="904">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg">
+
+
+
+<meta itemprop="keywords" content="kernel,linux,terminal," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg"/>
+
+<meta name="twitter:title" content="Conhecendo o modinfo"/>
+<meta name="twitter:description" content="Este artigo explica o funcionamento básico do comando kmod, e para que qual finalidade existe o comando. Ainda neste artigo, é mostrado exemplos de execução do comando e quais informações este pode extrair dos módulos do kernel."/>
+
+
+<meta property="og:title" content="Conhecendo o modinfo" />
+<meta property="og:description" content="Este artigo explica o funcionamento básico do comando kmod, e para que qual finalidade existe o comando. Ainda neste artigo, é mostrado exemplos de execução do comando e quais informações este pode extrair dos módulos do kernel." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/conhecendo-o-modinfo/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg" />
+<meta property="article:published_time" content="2015-02-25T23:54:31+00:00" />
+<meta property="article:modified_time" content="2015-02-25T23:54:31+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Conhecendo o modinfo</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+           alt="Marcos Paulo de Souza"
+           title="Marcos Paulo de Souza">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+           class="author">Marcos Paulo de Souza</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2015-02-25T23:54:31Z">Feb 25, 2015</time>
+      &middot; 5 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-modinfo/"
+     data-text="Conhecendo o modinfo"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-modinfo/"
+     data-text="Conhecendo o modinfo"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-modinfo/"
+     data-text="Conhecendo o modinfo"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-modinfo/"
+     data-text="Conhecendo o modinfo"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+  <div class="mt-5">
+    <figure class="figure">
+      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg"
+           alt="Conhecendo o modinfo">
+    </figure>
+  </div>
+  <article class="mt-3 mb-4">
+  <p style="text-align: justify;">Enquanto estudava para a prova LPI 101, eu acabei estudando os comandos que tratam de módulos do kernel. Alguns comandos eu já conhecia, como <em>insmod</em> para carregar um módulo do kernel, e <em>rmmod</em> para remover um módulo já carregado. Mas entre estes eu acabei encontrando o <em>modinfo</em>. Este comando busca informações de um módulo do kernel. Todos estes comandos fazem parte do pacote <em>kmod</em>, e este pacote existe em praticamente todas as distribuições Linux.</p>
+Segue abaixo a execução do modinfo no driver i915, que é o driver para placas gráficas da Intel.
+<pre><code class="bash">
+&lt;h5&gt;&lt;em&gt;marcos@xfiles: [~] # modinfo i915&lt;/em&gt;
+&lt;em&gt; filename: /lib/modules/3.18.5-201.fc21.x86_64/kernel/drivers/gpu/drm/i915/i915.ko.xz&lt;/em&gt;
+&lt;em&gt; license: GPL and additional rights&lt;/em&gt;
+&lt;em&gt; description: Intel Graphics&lt;/em&gt;
+&lt;em&gt; authors:
+  - Intel Corporation&lt;/em&gt;
+&lt;em&gt; authors:
+  - Tungsten Graphics, Inc.&lt;/em&gt;
+&lt;em&gt; …&lt;/em&gt;
+&lt;em&gt; alias: pci:v00008086d00003582sv*sd*bc03sc*i*&lt;/em&gt;
+&lt;em&gt; alias: pci:v00008086d00002562sv*sd*bc03sc*i*&lt;/em&gt;
+&lt;em&gt; alias: pci:v00008086d00003577sv*sd*bc03sc*i*&lt;/em&gt;
+&lt;em&gt; depends: drm_kms_helper,drm,video,i2c-algo-bit&lt;/em&gt;
+&lt;em&gt; intree: Y&lt;/em&gt;
+&lt;em&gt; vermagic: 3.18.5-201.fc21.x86_64 SMP mod_unload&lt;/em&gt;
+&lt;em&gt; signer: Fedora kernel signing key&lt;/em&gt;
+&lt;em&gt; sig_key: 3F:8E:A9:86:28:8C:19:99:F3:2A:50:D2:A3:7C:05:E5:4D:E8:EC:1E&lt;/em&gt;
+&lt;em&gt; sig_hashalgo: sha256&lt;/em&gt;
+&lt;em&gt; parm: modeset:Use kernel modesetting [KMS] (0=DRM_I915_KMS from .config, 1=on, -1=force vga console preference [default]) (int)&lt;/em&gt;
+&lt;em&gt; parm: panel_ignore_lid:Override lid status (0=autodetect, 1=autodetect disabled [default], -1=force lid closed, -2=force lid open) (int)&lt;/em&gt;
+&lt;em&gt; parm: powersave:Enable powersavings, fbc, downclocking, etc. (default: true) (int)&lt;/em&gt;
+&lt;em&gt; parm: semaphores:Use semaphores for inter-ring sync (default: -1 (use per-chip defaults)) (int)&lt;/em&gt;
+&lt;em&gt; parm: enable_rc6:Enable power-saving render C-state 6. Different stages can be selected via bitmask values (0 = disable; 1 = enable rc6; 2 = enable deep rc6; 4 = enable deepest rc6). For example, 3 would enable rc6 and deep rc6, and 7 would enable everything. default: -1 (use per-chip default) (int)&lt;/em&gt;
+&lt;em&gt; parm: enable_fbc:Enable frame buffer compression for power savings (default: -1 (use per-chip default)) (int)&lt;/em&gt;
+&lt;em&gt; parm: lvds_downclock:Use panel (LVDS/eDP) downclocking for power savings (default: false) (int)&lt;/em&gt;
+&lt;em&gt; parm: lvds_channel_mode:Specify LVDS channel mode (0=probe BIOS [default], 1=single-channel, 2=dual-channel) (int)&lt;/em&gt;
+&lt;em&gt; parm: lvds_use_ssc:Use Spread Spectrum Clock with panels [LVDS/eDP] (default: auto from VBT) (int)&lt;/em&gt;
+&lt;em&gt; parm: vbt_sdvo_panel_type:Override/Ignore selection of SDVO panel mode in the VBT (-2=ignore, -1=auto [default], index in VBT BIOS table) (int)&lt;/em&gt;
+&lt;em&gt; parm: reset:Attempt GPU resets (default: true) (bool)&lt;/em&gt;
+&lt;em&gt; parm: enable_hangcheck:Periodically check GPU activity for detecting hangs. WARNING: Disabling this can cause system wide hangs. (default: true) (bool)&lt;/em&gt;
+&lt;em&gt; parm: enable_ppgtt:Override PPGTT usage. (-1=auto [default], 0=disabled, 1=aliasing, 2=full) (int)&lt;/em&gt;
+&lt;em&gt; parm: enable_execlists:Override execlists usage. (-1=auto, 0=disabled [default], 1=enabled) (int)&lt;/em&gt;
+&lt;em&gt; parm: enable_psr:Enable PSR (default: false) (int)&lt;/em&gt;
+&lt;em&gt; parm: preliminary_hw_support:Enable preliminary hardware support. (int)&lt;/em&gt;
+&lt;em&gt; parm: disable_power_well:Disable the power well when possible (default: true) (int)&lt;/em&gt;
+&lt;em&gt; parm: enable_ips:Enable IPS (default: true) (int)&lt;/em&gt;
+&lt;em&gt; parm: fastboot:Try to skip unnecessary mode sets at boot time (default: false) (bool)&lt;/em&gt;
+&lt;em&gt; parm: prefault_disable:Disable page prefaulting for pread/pwrite/reloc (default:false). For developers only. (bool)&lt;/em&gt;
+&lt;em&gt; parm: invert_brightness:Invert backlight brightness (-1 force normal, 0 machine defaults, 1 force inversion), please report PCI device ID, subsystem vendor and subsystem device ID to dri-devel@lists.freedesktop.org, if your machine needs it. It will then be included in an upcoming module version. (int)&lt;/em&gt;
+&lt;em&gt; parm: disable_display:Disable display (default: false) (bool)&lt;/em&gt;
+&lt;em&gt; parm: disable_vtd_wa:Disable all VT-d workarounds (default: false) (bool)&lt;/em&gt;
+&lt;em&gt; parm: enable_cmd_parser:Enable command parsing (1=enabled [default], 0=disabled) (int)&lt;/em&gt;
+&lt;em&gt; parm: use_mmio_flip:use MMIO flips (-1=never, 0=driver discretion [default], 1=always) (int)&lt;/em&gt;
+&lt;em&gt; parm: mmio_debug:Enable the MMIO debug code (default: false). This may negatively affect performance. (bool)&lt;/em&gt;
+&lt;em&gt; parm: verbose_state_checks:Enable verbose logs (ie. WARN_ON()) in case of unexpected hw state conditions. (bool)&lt;/em&gt;&lt;/h5&gt;
+</code></pre>
+<p style="text-align: justify;">Além de informações sobre os responsáveis pela criação e manutenção do driver, o <em>modinfo</em> também mostra todos os parâmetros aceitos pelo driver em tempo de boot. Estes parâmetros têm a capacidade de alterar o comportamento do driver.</p>
+<p style="text-align: justify;">Vamos a mais um exemplo, agora mostrando a saída do modinfo para o driver nouveau, que é o driver open source para as placas de vídeo da NVIDIA:</p>
+<pre><code class="bash">
+&lt;h5&gt;&lt;em&gt;marcos@xfiles: [~] # modinfo nouveau&lt;/em&gt;
+&lt;em&gt; filename: /lib/modules/3.18.5-201.fc21.x86_64/kernel/drivers/gpu/drm/nouveau/nouveau.ko.xz&lt;/em&gt;
+&lt;em&gt; license: GPL and additional rights&lt;/em&gt;
+&lt;em&gt; description: nVidia Riva/TNT/GeForce/Quadro/Tesla&lt;/em&gt;
+&lt;em&gt; authors:
+  - Nouveau Project&lt;/em&gt;
+&lt;em&gt; alias: pci:v000012D2d*sv*sd*bc03sc*i*&lt;/em&gt;
+&lt;em&gt; alias: pci:v000010DEd*sv*sd*bc03sc*i*&lt;/em&gt;
+&lt;em&gt; depends: drm,drm_kms_helper,ttm,mxm-wmi,wmi,video,i2c-algo-bit&lt;/em&gt;
+&lt;em&gt; intree: Y&lt;/em&gt;
+&lt;em&gt; vermagic: 3.18.5-201.fc21.x86_64 SMP mod_unload&lt;/em&gt;
+&lt;em&gt; signer: Fedora kernel signing key&lt;/em&gt;
+&lt;em&gt; sig_key: 3F:8E:A9:86:28:8C:19:99:F3:2A:50:D2:A3:7C:05:E5:4D:E8:EC:1E&lt;/em&gt;
+&lt;em&gt; sig_hashalgo: sha256&lt;/em&gt;
+&lt;em&gt; parm: pstate:enable sysfs pstate file, which will be moved in the future (int)&lt;/em&gt;
+&lt;em&gt; parm: tv_norm:Default TV norm.&lt;/em&gt;
+&lt;em&gt; Supported: PAL, PAL-M, PAL-N, PAL-Nc, NTSC-M, NTSC-J,&lt;/em&gt;
+&lt;em&gt; hd480i, hd480p, hd576i, hd576p, hd720p, hd1080i.&lt;/em&gt;
+&lt;em&gt; Default: PAL&lt;/em&gt;
+&lt;em&gt; *NOTE* Ignored for cards with external TV encoders. (charp)&lt;/em&gt;
+&lt;em&gt; parm: tv_disable:Disable TV-out detection (int)&lt;/em&gt;
+&lt;em&gt; parm: ignorelid:Ignore ACPI lid status (int)&lt;/em&gt;
+&lt;em&gt; parm: duallink:Allow dual-link TMDS (default: enabled) (int)&lt;/em&gt;
+&lt;em&gt; parm: nofbaccel:Disable fbcon acceleration (int)&lt;/em&gt;
+&lt;em&gt; parm: agpmode:AGP mode (0 to disable AGP) (int)&lt;/em&gt;
+&lt;em&gt; parm: vram_pushbuf:Create DMA push buffers in VRAM (int)&lt;/em&gt;
+&lt;em&gt; parm: config:option string to pass to driver core (charp)&lt;/em&gt;
+&lt;em&gt; parm: debug:debug string to pass to driver core (charp)&lt;/em&gt;
+&lt;em&gt; parm: noaccel:disable kernel/abi16 acceleration (int)&lt;/em&gt;
+&lt;em&gt; parm: modeset:enable driver (default: auto, 0 = disabled, 1 = enabled, 2 = headless) (int)&lt;/em&gt;
+&lt;em&gt; parm: runpm:disable (0), force enable (1), optimus only default (-1) (int)&lt;/em&gt;&lt;/h5&gt;
+</code></pre>
+<p style="text-align: justify;">Ainda podemos notar pelo campo <em>depends</em>, quais os módulos que dependem do módulo listado, o tipo de licença do módulo, o caminho onde se encontra o módulo dentro do sistema de arquivos e muitas outras informações interessantes para quem tem interesse em device drivers, ou está curioso para saber como estes se organizam.</p>
+<p style="text-align: justify;">Espero que tenham gostado. Qualquer dúvida ou sugestão, por favor comente a postagem. Se inscreva em nossos perfis nas redes sociais para saber em primeira mão quando lançamos novos artigos. Até mais!</p>
+Referências:
+<a title="http://linux.die.net/man/8/modinfo" href="http://linux.die.net/man/8/modinfo" target="_blank">modinfo</a>
+<a title="http://linux.die.net/man/8/insmod" href="http://linux.die.net/man/8/insmod" target="_blank">insmod</a>
+<a title="http://linux.die.net/man/8/rmmod" href="http://linux.die.net/man/8/rmmod" target="_blank">rmmod</a>
+<a title="http://man7.org/linux/man-pages/man8/kmod.8.html" href="http://man7.org/linux/man-pages/man8/kmod.8.html" target="_blank">kmod</a>
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/kernel/" class="tag-link">kernel</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/terminal/" class="tag-link">terminal</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-modinfo/"
+     data-text="Conhecendo o modinfo"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-modinfo/"
+     data-text="Conhecendo o modinfo"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-modinfo/"
+     data-text="Conhecendo o modinfo"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/conhecendo-o-modinfo/"
+     data-text="Conhecendo o modinfo"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/mpdesouza/">
+        <img class="author-img"
+             src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+             alt="Marcos Paulo de Souza">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/">Marcos Paulo de Souza</a>
+      </h2>
+      <span class="small text-muted">Software Engineer</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

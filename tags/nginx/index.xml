@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nginx on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/nginx/</link>
+    <description>Recent content in nginx on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 03 Mar 2016 22:49:12 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>i18n: Detectando o idioma do usuário</title>
+      <link>https://butecotecnologico.com.br/i18n-detectando-o-idioma-do-usuario/</link>
+      <pubDate>Thu, 03 Mar 2016 22:49:12 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/i18n-detectando-o-idioma-do-usuario/</guid>
+      <description>&lt;p&gt;Internacionalizar uma aplicação nem sempre é algo fácil, ainda mais no mundo Web. Mas nesse mundo o seu melhor amigo é o header &lt;em&gt;Accept-Language&lt;/em&gt;. No lado do servidor, você provavelmente se limitará a duas formas de descobrir o idioma do usuário, uma pelo header &lt;em&gt;Accept-Language&lt;/em&gt; e a outra pelo endereço IP.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Alteração no padrão de URLs do Blog</title>
+      <link>https://butecotecnologico.com.br/alteracao-no-padrao-de-urls-do-blog/</link>
+      <pubDate>Sun, 24 May 2015 21:05:39 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/alteracao-no-padrao-de-urls-do-blog/</guid>
+      <description>Percebemos que muitos usuários ao ver uma url como-fazer-parte-1 tentavam acessar como-fazer-parte-2. Porém como nossa url continha a data da postagem e isso não era possível.
+Sendo assim resolvemos mudar para um novo padrão que atende melhor nossos leitores.</description>
+    </item>
+    
+  </channel>
+</rss>

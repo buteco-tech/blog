@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ux on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/ux/</link>
+    <description>Recent content in ux on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 11 May 2016 20:10:22 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/ux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acompanhe o TDC Floripa sem sair de casa</title>
+      <link>https://butecotecnologico.com.br/acompanhe-o-tdc-floripa-sem-sair-de-casa/</link>
+      <pubDate>Wed, 11 May 2016 20:10:22 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/acompanhe-o-tdc-floripa-sem-sair-de-casa/</guid>
+      <description>Acompanhe o TDC Floripa direto da sua casa, e de graça!</description>
+    </item>
+    
+  </channel>
+</rss>

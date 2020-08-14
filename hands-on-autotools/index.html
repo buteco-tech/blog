@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Hands on: autotools &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Hands on: autotools">
+<meta itemprop="description" content="Olá pessoal, a muito tempo eu queria aprender como funciona o tão famoso autotools.">
+<meta itemprop="datePublished" content="2014-10-10T00:44:22+00:00" />
+<meta itemprop="dateModified" content="2014-10-10T00:44:22+00:00" />
+<meta itemprop="wordCount" content="1937">
+<meta itemprop="image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="autotools,linux,terminal," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+
+<meta name="twitter:title" content="Hands on: autotools"/>
+<meta name="twitter:description" content="Olá pessoal, a muito tempo eu queria aprender como funciona o tão famoso autotools."/>
+
+
+<meta property="og:title" content="Hands on: autotools" />
+<meta property="og:description" content="Olá pessoal, a muito tempo eu queria aprender como funciona o tão famoso autotools." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/hands-on-autotools/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/logos/logo.png"/>
+<meta property="article:published_time" content="2014-10-10T00:44:22+00:00" />
+<meta property="article:modified_time" content="2014-10-10T00:44:22+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+    
+    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link type="text/css" rel="stylesheet" href="/css/custom.css">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="Podcast buteco.tech" href="https://buteco.tech/podcast-rss.xml"/>
+
+
+  
+  </head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/logo-og.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    
+    Buteco Tecnológico
+  </a>
+
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/envio-de-artigo/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        
+      
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/sobre/">
+            <span class="mr-1"><i class="far fa-question-circle"></i></span>
+            Sobre
+            
+          </a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Hands on: autotools</h1>
+    
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+           alt="Marcos Paulo de Souza"
+           title="Marcos Paulo de Souza">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+           class="author">Marcos Paulo de Souza</a>
+      </span>
+    </div>
+    <div class="text-muted">
+      <time datetime="2014-10-10T00:44:22Z">Oct 10, 2014</time>
+      &middot; 10 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/hands-on-autotools/"
+     data-text="Hands on: autotools"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/hands-on-autotools/"
+     data-text="Hands on: autotools"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/hands-on-autotools/"
+     data-text="Hands on: autotools"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/hands-on-autotools/"
+     data-text="Hands on: autotools"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header><article class="mt-3 mb-4">
+  <p>Olá pessoal, a muito tempo eu queria aprender como funciona o tão famoso <em>autotools</em>. Então eu decidi pegar um projeto pessoal meu e converter meu <em>Makefile</em>, feito na mão, por um script do <em>autotools</em>. Neste tutorial vou mostrar o que eu precisei fazer para a criação do script do zero e como ele funciona, incluindo checagens por bibliotecas necessárias para compilação e outras coisas interessantes.</p>
+<p>O <em>autotools</em>, ou o GNU Build System, é um projeto da Free Software Foundation (FSF) e tem como propósito facilitar a compilação de um projeto em diferentes ambientes <em>UNIX-like</em>. O <em>autotools</em> é um pacote com 3 ferramentas principais: <em>autoconf</em>, <em>automake</em> e <em>libtool</em>. Para mais informações sobre o <em>autotools</em> dê uma olhada na Wikipédia <a href="http://en.wikipedia.org/wiki/GNU_build_system">aqui</a>.</p>
+<p>Se você já precisou compilar um código fonte no Linux, talvez você já tenha utilizado o <em>autotools</em> sem saber! Se você já teve de executar os seguintes passos:</p>
+<pre><code class="bash">
+./configure
+make
+make install
+</code></pre>
+<p>então o <em>autotools</em> não é mais um ser desconhecido para você.</p>
+<p>Enquanto escrevo este artigo, encontrei este link da FSF com um <a href="http://www.gnu.org/software/automake/manual/html_node/Creating-amhello.html#Creating-amhello">hello world do autotools</a> que parece ser muito bom também.</p>
+<p>Aviso: os conhecimentos passados neste artigo foram retirados da minha experiência em aprende-lo. Se algo estiver errado, ou algo puder ser melhor explicado, por favor, escreva nos comentários, pois o adendo ajudará outras pessoas também.</p>
+<p>Porque usar o <em>autotools</em>? Ele facilita muito na compilação em ambientes diferentes do ambiente do desenvolvedor original do projeto. Ele contém macros onde é possível verificar se existem as bibliotecas necessárias para compilação no seu ambiente, é possível habilitar/desabilitar opções de compilação, facilidade em dizer ao desenvolvedor que está compilando o software quais as bibliotecas faltantes em seu ambiente, criação automática do arquivo Makefile entre vários outros motivos. Grandes projetos de software livre utilizam o <em>autotools</em>, como por exemplo o LibreOffice e o git. Imagine criar um Makefile para o LibreOffice, sendo que este projeto tem inúmeras possíveis configurações para serem ativadas ou desativadas em tempo de compilação. Para se ter uma ideia do tamanho do LibreOffice, seu arquivo <em>configure.ac</em>(que é o arquivo criado com macros do autoconf e automake) tem quase 13 mil linhas. Tive muitas vezes de verificar como o LibreOffice usava algumas macros do <em>autoconf</em> para poder converter meu projeto pessoal para o <em>autotools</em>, já que o LibreOffice abrange muitas opções da ferramenta.</p>
+<p>Para iniciar nosso artigo, este era o arquivo Makefile original, feito do zero, para meu projeto pessoal:</p>
+<pre><code class="bash">
+CC=g++
+CXXFLAGS=-Wall -Wextra -g -lpthread -std=c++0x
+
+# just use in case of debug
+#CXXFLAGS += -DCHAT_VERBOSE
+
+all:
+        $(CC) server.cxx $(CXXFLAGS) -o server
+        $(CC) client.cxx screen.c $(CXXFLAGS) -o client -lncurses
+
+clean:
+        rm server client
+</code></pre>
+<p>Pode-se notar como ele é simples e objetivo. Sem verificação de bibliotecas disponíveis no ambiente, sem verificar se existe um compilador instalado. Neste exemplo, se quisermos habilitar o modo &ldquo;verbose&rdquo; no projeto temos de ir no arquivo Makefile e descomentar a linha que faz um append no CXXFLAGS.</p>
+<p>Para iniciar a usar o <em>autotools</em> é necessário instalar este do repositório de sua distribuição Linux. Após instalado, é necessário criar um arquivo chamado <em>configure.ac</em>. O conteúdo deste arquivo são as configurações gerais do projeto, como por exemplo a verificação da existência de um compilador, existência de bibliotecas necessárias para compilar e possíveis parâmetros que podem ser passados ao projeto antes deste ser compilado. Estas definições são criadas utilizando macros do próprio <em>autotools</em>. Este arquivo será responsável pela geração do script <em>configure</em> com base nas macros definidas no arquivo <em>configure.ac</em>. Ao executar o script <em>configure</em>, esta irá executar as checagens de ambiente, para verificar se é possível compilar o projeto ou não. Após a execução do script <em>configure</em> sem erros então é gerado o arquivo <em>Makefile</em> para compilação do projeto.</p>
+<p>O arquivo <em>configure.ac</em> que foi criado para substituir o antigo Makefile é este:</p>
+<script src="//gistfy-app.herokuapp.com/github/marcosps/chat/configure.ac" type="text/javascript"></script>
+<p>Explicando cada linha do arquivo <em>configure.ac</em>:</p>
+<p>AC_INIT: Inicia o <em>autoconf</em>, que é a ferramenta que verifica os pré-requisitos para a compilação do projeto. Os parâmetros desta macro são o nome do projeto, versão do projeto, bugtracker do projeto (vazio neste caso), nome do <em>tarball</em> a ser gerado (também vazio neste caso) e página do projeto.</p>
+<p>AC_CHECK_LIB: Faz a verificação de uma biblioteca no sistema que está compilando o projeto. Os parâmetros são o nome da biblioteca, função a ser testada nesta biblioteca, ação se encontrar a biblioteca(vazio neste caso) e ação se não encontrar a biblioteca. Neste ultimo parâmetro foi utilizada outra macro AC_MSG_ERROR. Esta macro termina a execução do script <em>configure</em> e mostra a mensagem de erro especificada.</p>
+<p>AC_ARG_ENABLE: Adiciona parâmetro ao script. O parâmetro adicionado neste arquivo é para verificar se irá ser habilitado o modo verbose da aplicação. O parâmetro pode ser passado como &ndash;verbose, &ndash;enable-verbose=yes ou &ndash;enable-verbose=no. Isso tudo gerado automaticamente pelo <em>autoconf</em>.</p>
+<p>AC_MSG_CHECKING: Mensagem mostrada ao usuário na execução script <em>configure</em>. Esta mensagem geralmente é utilizada para checar algum possível parâmetro passado ao script <em>configure</em>. Neste caso estamos habilitando um parâmetro &ldquo;&ndash;verbose&rdquo; que pode ser especificado ao executar o script <em>configure</em>. Os parâmetros usados são o nome do parâmetro e a mensagem de help. Esta mensagem é mostrada quando o programador executa &ldquo;./configure &ndash;help&rdquo;</p>
+<p>AC_MSG_RESULT: Somente complementar a mensagem AC_MSG_CHECK, informando ao programador se a checagem encontrou ou não a configuração.</p>
+<p>AC_DEFINE: Define uma variável de ambiente. No contexto do arquivo <em>configure.ac</em> em que se encontra esta macro, é verificado se foi ou não informado o parâmetro de modo &ldquo;verbose&rdquo;.</p>
+<p>AM_INIT_AUTOMAKE: Inicia o <em>automake</em>, que irá criar os arquivos <em>Makefile</em> para compilação do projeto. O parâmetro passado nesta macro é a versão mínima do <em>automake</em> aceita pelo script.</p>
+<p>AC_CONFIG_FILES: Arquivos que serão gerados pelo <em>automake</em>. Neste caso terá um <em>Makefile</em> no mesmo nível do arquivo <em>configure.ac</em>, e outro dentro da estrutura de arquivos fonte.</p>
+<p>AC_PRO_CXX: Busca um compilador CXX no ambiente.</p>
+<p>AC_OUTPUT: Finaliza o script <em>configure.ac</em>. Neste ponto o script <em>configure</em> é gerado e está pronto para ser executado.</p>
+<p>Quando dizemos que os arquivos serão criados pela macro, esta criação acontece somente quando o script <em>configure</em> é executado. O arquivo <em>configure.ac</em> é, como falado antes, somente uma coleção de macros para ser gerado um script <em>configure</em>.</p>
+<p>Segundo meu entendimento, o prefixo AC se refere ao <em>autoconf</em> e o prefixo AM se refere ao <em>automake</em>.</p>
+<p>Como foi informado na macro AC_CONFIG_FILES dois arquivos <em>Makefile</em>, precisamos criar dois arquivos <em>Makefile.am</em>. O primeiro deles é mostrado abaixo:</p>
+<script src="//gistfy-app.herokuapp.com/github/marcosps/chat/Makefile.am" type="text/javascript"></script>
+<p>A definição SUBIRS informação que existe um outro <em>Makefile</em> dentro da pasta <em>src</em>. A definição EXTRA_DIST é basicamente para incluir arquivos que não gerados pela build do projeto no <em>tarball</em> resultante. Este será explicado posteriormente.</p>
+<p>O arquivo <em>Makefile.am</em> responsável pela compilação é mostrado abaixo:</p>
+<script src="//gistfy-app.herokuapp.com/github/marcosps/chat/src/Makefile.am" type="text/javascript"></script>
+<p>Explicando as definições deste novo artigo:</p>
+<p>bin_PROGRAMS: Os arquivos binários que serão gerados no final da build. Neste exemplo, o nome dos binários são server e client, e estes nomes serão utilizados para especificar o que compõe cada binário.</p>
+<p>server_SOURCES: Fontes que compõe o binário server.
+server_LDFLAGS: Flags para o linker encontrar as bibliotecas que o binário server necessita.
+server_CXXFLAGS: Flags de compilação para o binário server</p>
+<p>O binário cliente tem exatamente as mesmas configurações e com as mesmas opções.</p>
+<p>Alguns arquivos precisam ser criados para ser possível executar o <em>autotools</em>. Estes arquivos são somente para fins informativos do projeto caso ele seja distribuído.</p>
+<p>O comando a seguir cria os arquivos necessários:</p>
+<p>touch NEWS README AUTHORS COPYING INSTALL ChangeLog</p>
+<p>Após os arquivos criados, necessitamos executar o comando que realmente utiliza o <em>configure.ac</em> e cria o script <em>configure</em> que será executado pelo desenvolvedor. O arquivo <em>autogen.sh</em> foi criado para facilitar o desenvolvedor que altera o script <em>configure.ac</em> e precisa recriar e executar o script <em>configure</em>:</p>
+<script src="//gistfy-app.herokuapp.com/github/marcosps/chat/autogen.sh" type="text/javascript"></script>
+<p>Após a execução do arquivo <em>autogen.sh</em> com sucesso é possível verificar que um arquivo <em>Makefile</em> foi criado. Executando este, será compilado os fontes dentro da pasta src e os binários server e client estarão dentro da pasta src.</p>
+<p>Algumas coisas a mais que o <em>autotools</em> faz: existe um target no Makefile chamado dist. Este target pega seus arquivos fontes, todos aqueles arquivos relacionados a READ e demais, e cria um arquivo chat-0.01.tar.gz (neste exemplo). Você pode distribuir este arquivo compactado para outras pessoas para que estas possam compilar e usar o seu projeto. Como o arquivo <em>autogen.sh</em> não tem relação com o projeto, é necessário colocar a definição EXTRA_DIST no <em>Makefile.am</em> no mesmo nível do script <em>configure</em>. Explicado como prometido anteriormente!</p>
+<p>Abaixo está a saída de uma execução com sucesso do script configure:</p>
+<pre><code class="bash">
+[marcos@xfiles chat]$ ./configure
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking ncurses.h usability... yes
+checking ncurses.h presence... yes
+checking for ncurses.h... yes
+checking for initscr in -lncurses... yes
+checking for pthread_create in -lpthread... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking whether make supports nested variables... yes
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: executing depfiles commands
+</code></pre>
+<p>E a execução do <em>Makefile</em>:</p>
+<pre><code class="bash">
+[marcos@xfiles chat]$ make
+Making all in src/
+make[1]: Entrando no diretório `/mnt/data/gitroot/chat/src'
+g++ -DPACKAGE_NAME=&quot;chat&quot; -DPACKAGE_TARNAME=&quot;chat&quot; -DPACKAGE_VERSION=&quot;0.01&quot; -DPACKAGE_STRING=&quot;chat 0.01&quot; -DPACKAGE_BUGREPORT=&quot;&quot; -DPACKAGE_URL=&quot;&quot; -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DPACKAGE=&quot;chat&quot; -DVERSION=&quot;0.01&quot; -I.    -std=c++0x -g -O2 -MT server-server.o -MD -MP -MF .deps/server-server.Tpo -c -o server-server.o `test -f 'server.cxx' || echo './'`server.cxx
+mv -f .deps/server-server.Tpo .deps/server-server.Po
+g++ -std=c++0x -g -O2 -lpthread  -o server server-server.o
+g++ -DPACKAGE_NAME=&quot;chat&quot; -DPACKAGE_TARNAME=&quot;chat&quot; -DPACKAGE_VERSION=&quot;0.01&quot; -DPACKAGE_STRING=&quot;chat 0.01&quot; -DPACKAGE_BUGREPORT=&quot;&quot; -DPACKAGE_URL=&quot;&quot; -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DPACKAGE=&quot;chat&quot; -DVERSION=&quot;0.01&quot; -I.    -std=c++0x -g -O2 -MT client-client.o -MD -MP -MF .deps/client-client.Tpo -c -o client-client.o `test -f 'client.cxx' || echo './'`client.cxx
+mv -f .deps/client-client.Tpo .deps/client-client.Po
+g++ -DPACKAGE_NAME=&quot;chat&quot; -DPACKAGE_TARNAME=&quot;chat&quot; -DPACKAGE_VERSION=&quot;0.01&quot; -DPACKAGE_STRING=&quot;chat 0.01&quot; -DPACKAGE_BUGREPORT=&quot;&quot; -DPACKAGE_URL=&quot;&quot; -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DPACKAGE=&quot;chat&quot; -DVERSION=&quot;0.01&quot; -I.    -std=c++0x -g -O2 -MT client-screen.o -MD -MP -MF .deps/client-screen.Tpo -c -o client-screen.o `test -f 'screen.cxx' || echo './'`screen.cxx
+mv -f .deps/client-screen.Tpo .deps/client-screen.Po
+g++ -std=c++0x -g -O2 -lncurses -lpthread  -o client client-client.o client-screen.o
+make[1]: Saindo do diretório `/mnt/data/gitroot/chat/src'
+make[1]: Entrando no diretório `/mnt/data/gitroot/chat'
+make[1]: Nada a ser feito para `all-am'.
+make[1]: Saindo do diretório `/mnt/data/gitroot/chat'
+</code></pre>
+<p>Então pessoal, como foi possível verificar, o <em>autotools</em> no início parece ser complicado, mas não é. Após começar a entender como ele funciona, todo o resto acaba sendo implícito e ao finalizar seu primeiro script você se sentirá mais a vontade com esta ferramenta ao ver outros projetos a utilizando.</p>
+<p>O <em>autotools</em> tem muitas outras opções para resolver muitos outros problemas, mas para o caso apresentado as macros utilizadas no arquivo <em>configure.ac</em> foram suficientes.</p>
+<p>Espero que vocês tenham curtido o aprendizado do <em>autotools</em> tanto quando eu! Não se esqueça de se inscrever no nosso feed para ter em primeira mão nossos outros artigos! Um abraço!</p>
+
+  </article>
+
+  <footer>
+    <div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/autotools/" class="tag-link">autotools</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/terminal/" class="tag-link">terminal</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/hands-on-autotools/"
+     data-text="Hands on: autotools"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/hands-on-autotools/"
+     data-text="Hands on: autotools"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/hands-on-autotools/"
+     data-text="Hands on: autotools"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/hands-on-autotools/"
+     data-text="Hands on: autotools"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/mpdesouza/">
+        <img class="author-img"
+             src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+             alt="Marcos Paulo de Souza">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/">Marcos Paulo de Souza</a>
+      </h2>
+      <span class="small text-muted">Software Engineer</span>
+    </div>
+  </div>
+  
+</div>
+
+    <div class="border-top pt-4 pb-5">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              <b>
+              Anuncie conosco
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/envio-de-artigo/">
+              
+              Envie seu artigo
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://stats.buteco.me">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
+  
+
+  
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stackoverflow on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/stackoverflow/</link>
+    <description>Recent content in stackoverflow on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 11 Mar 2016 15:22:54 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/stackoverflow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sexta da Tirinha</title>
+      <link>https://butecotecnologico.com.br/sexta-da-tirinha-38/</link>
+      <pubDate>Fri, 11 Mar 2016 15:22:54 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-38/</guid>
+      <description>StackOverflow é meu pastor, e nada me faltará!</description>
+    </item>
+    
+    <item>
+      <title>Stack Overflow Introduz Snippets JavaScript, CSS, e HTML Executáveis.</title>
+      <link>https://butecotecnologico.com.br/stack-overflow-introduz-snippets-javascript-css-e-html-executaveis/</link>
+      <pubDate>Wed, 17 Sep 2014 13:03:06 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/stack-overflow-introduz-snippets-javascript-css-e-html-executaveis/</guid>
+      <description>No Stack Overflow e outros sites relacionados, criar um exemplo de código é a melhor maneira de obter resposta à sua pergunta.</description>
+    </item>
+    
+  </channel>
+</rss>

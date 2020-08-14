@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>virtualbox on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/virtualbox/</link>
+    <description>Recent content in virtualbox on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Tue, 03 May 2016 22:36:32 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dispositivos USB não são reconhecidos pelo VirtualBox (host Linux)</title>
+      <link>https://butecotecnologico.com.br/dispositivos-usb-nao-sao-reconhecidos-pelo-virtualbox-host-linux/</link>
+      <pubDate>Tue, 03 May 2016 22:36:32 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/dispositivos-usb-nao-sao-reconhecidos-pelo-virtualbox-host-linux/</guid>
+      <description>O VirtualBox é uma das mais bem conceituadas opções para emulação de sistemas operacionais em máquinas virtuais, com suporte a x86 e AMD64/Intel64. Atualmente o VirtualBox possui versões para hosts Windows, Linux, OS X, Solaris e FreeBSD.
+Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e leitores SD Card do host no sistema guest não funciona. Esse problema é geralmente causado por falta de permissão no seu usuário no momento da execução do VirtualBox.</description>
+    </item>
+    
+  </channel>
+</rss>
