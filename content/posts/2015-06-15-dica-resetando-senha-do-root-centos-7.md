@@ -8,9 +8,10 @@ authors:
   - marcooliveira
 slug: /dica-resetando-senha-do-root-centos-7/
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - linux
+  - centos
 ---
 
 <a href="/images/wp-content/uploads/2015/06/password-error.jpg"><img class=" size-full wp-image-2673 aligncenter" src="/images/wp-content/uploads/2015/06/password-error.jpg" alt="password-error" width="299" height="168" /></a>

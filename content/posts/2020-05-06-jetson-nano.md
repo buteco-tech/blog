@@ -5,6 +5,7 @@ tagline: "Uma placa de desenvolvimento focada em visão computacional e deep lea
 date: 2020-05-06 08:00:00
 categories:
   - Hardware
+  - Reviews
 tags:
   - nvidia
   - redes neurais

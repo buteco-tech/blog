@@ -8,7 +8,7 @@ authors:
   - alexandrevicenzi
 slug: /fazendo-squash-de-commits-com-git-rebase/
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - git
   - rebase

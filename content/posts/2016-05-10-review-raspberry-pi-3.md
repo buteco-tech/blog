@@ -8,13 +8,13 @@ slug: /review-raspberry-pi-3/
 images:
   - /images/wp-content/uploads/2016/05/raspberry-pi-3.jpg
 categories:
-  - Discussão
+  - Reviews
 tags:
   - arm
   - bluetooth
   - embarcados
   - linux
-  - raspberry pi
+  - Raspberry PI
 ---
 
 O <a href="http://www.filipeflop.com/pd-31a472-raspberry-pi-3-model-b.html?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoOpenSource" target="_blank">Raspberry Pi 3</a> acabou de chegar na <a href="http://www.filipeflop.com/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoOpenSource" target="_blank">FILIPEFLOP</a> e esta nova versão traz novidades em relação a versão anterior. As maiores novidades são o WiFi e Bluetooth integrado.

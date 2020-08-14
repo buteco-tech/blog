@@ -9,10 +9,11 @@ images:
   - /images/wp-content/uploads/2015/08/automatizar_tarefas_python_novatec.png
 categories:
   - Notícias
+  - Livros
 tags:
-  - livros
   - novatec
   - python
+  - automação
 ---
 
 <p align="center"><i>Título ensina a criar programas que fazem em minutos o que exigiria horas para ser feito manualmente</i></p>

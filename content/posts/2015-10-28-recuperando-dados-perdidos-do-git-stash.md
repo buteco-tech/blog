@@ -8,12 +8,10 @@ slug: /recuperando-dados-perdidos-do-git-stash/
 images:
   - /images/wp-content/uploads/2015/10/t8cnk.jpg
 categories:
-  - Dicas
+  - Tutoriais
 tags:
-  - dica
   - git
   - github
-  - tutorial
 ---
 
 Olá senhores e senhoras! =]

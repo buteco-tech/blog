@@ -6,7 +6,7 @@ authors:
   - marcossouza
 slug: /o-que-houve-com-o-hacking/
 categories:
-  - Discussão
+  - Discussões
 tags:
   - código aberto
   - hacking

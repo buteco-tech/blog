@@ -10,7 +10,7 @@ slug: /conheca-o-clappr/
 images:
   - /images/wp-content/uploads/2015/12/clappr_logo.png
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - javascript
   - player

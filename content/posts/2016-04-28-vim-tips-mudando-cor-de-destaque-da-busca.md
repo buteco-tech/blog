@@ -10,7 +10,7 @@ slug: /vim-tips-mudando-cor-de-destaque-da-busca/
 images:
   - /images/wp-content/uploads/2015/11/vim_logo_small.png
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - cores
   - highlight

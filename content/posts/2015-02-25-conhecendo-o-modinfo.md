@@ -10,7 +10,7 @@ slug: /conhecendo-o-modinfo/
 images:
   - /images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - kernel
   - linux

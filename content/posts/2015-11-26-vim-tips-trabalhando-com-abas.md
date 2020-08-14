@@ -10,7 +10,7 @@ slug: /vim-tips-trabalhando-com-abas/
 images:
   - /images/wp-content/uploads/2015/11/vim_logo_small.png
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - linux
   - terminal

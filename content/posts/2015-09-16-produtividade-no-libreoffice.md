@@ -6,7 +6,7 @@ authors:
   - dsantos
 slug: /produtividade-no-libreoffice/
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - libreoffice
   - produtividade

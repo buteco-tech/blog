@@ -11,9 +11,9 @@ images:
   - /images/wp-content/uploads/2015/05/livro-sql-teoria.jpg
 categories:
   - Notícias
+  - Livros
 tags:
   - banco de dados
-  - livros
   - novatec
   - sql
 ---

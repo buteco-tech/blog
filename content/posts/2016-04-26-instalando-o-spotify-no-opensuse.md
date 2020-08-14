@@ -10,7 +10,7 @@ slug: /instalando-o-spotify-no-opensuse/
 images:
   - /images/wp-content/uploads/2016/04/spotify.png
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - deb
   - música

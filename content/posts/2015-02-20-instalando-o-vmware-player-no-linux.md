@@ -11,7 +11,7 @@ slug: /instalando-o-vmware-player-no-linux/
 images:
   - /images/wp-content/uploads/2015/02/VMware_Player_logo.png
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - linux
   - vitualização

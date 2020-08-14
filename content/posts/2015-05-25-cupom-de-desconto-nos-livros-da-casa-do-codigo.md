@@ -12,10 +12,10 @@ images:
   - /images/wp-content/uploads/2015/05/cdc-logo-novo-400.png
 categories:
   - Notícias
+  - Livros
 tags:
   - ebook
-  - livros
-  - parceria
+  - cupom
 ---
 
 Cada vez mais tentamos trazer o melhor conteúdo para nossos leitores, sendo assim fizemos mais uma parceria.

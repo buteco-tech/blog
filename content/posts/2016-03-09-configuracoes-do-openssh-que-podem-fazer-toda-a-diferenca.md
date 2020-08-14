@@ -8,11 +8,11 @@ slug: /configuracoes-do-openssh-que-podem-fazer-toda-a-diferenca/
 images:
   - /images/wp-content/uploads/2016/03/OpenSSH_logo.png
 categories:
-  - Dicas
+  - Tutoriais
+  - Segurança
 tags:
   - linux
   - openssh
-  - segurança
   - ssh
 ---
 

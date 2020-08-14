@@ -9,13 +9,10 @@ images:
   - /images/wp-content/uploads/2015/12/Emacs-Logo-400x400.png
 categories:
   - Desenvolvimento
-  - Dicas
+  - Tutoriais
 tags:
-  - dica
-  - dicas
   - emacs
   - ide
-  - tutorial
 ---
 
 Utilizo o Emacs há algum tempo, pelo menos como ferramenta de desenvolvimento acho uma das melhores opções, onde, diferente de outras, é fácil fazer o desenvolvimento e estender suas funcionalidades, criar novas <em>hotkeys</em>. Tentarei demonstrar aqui, um básico das funcionalidades do Emacs.

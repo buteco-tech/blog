@@ -10,7 +10,7 @@ slug: /acesso-a-informacao-evolucao-tecnologia-e-caos/
 images:
   - /images/wp-content/uploads/2015/10/modelagem_e_tecnologia.jpg
 categories:
-  - Discussão
+  - Discussões
 tags:
   - educação
   - informação

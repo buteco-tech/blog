@@ -10,7 +10,7 @@ slug: /virsh-criando-e-gerenciando-vms-pelo-terminal/
 images:
   - /images/wp-content/uploads/2015/06/libvirtLogo.png
 categories:
-  - Dicas
+  - Tutoriais
   - Ferramentas
 tags:
   - kvm

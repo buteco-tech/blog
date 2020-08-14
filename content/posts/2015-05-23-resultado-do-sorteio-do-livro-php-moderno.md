@@ -9,8 +9,8 @@ images:
   - /images/wp-content/uploads/2015/04/php_moderno.png
 categories:
   - Sorteios
+  - Livros
 tags:
-  - livro
   - novatec
   - php
 ---

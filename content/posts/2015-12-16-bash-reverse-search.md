@@ -10,7 +10,7 @@ slug: /bash-reverse-search/
 images:
   - /images/wp-content/uploads/2015/12/bash.png
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - bash
   - console

@@ -10,12 +10,12 @@ authors:
 slug: /confira-os-novos-livros-da-novatec/
 categories:
   - Notícias
+  - Livros
 tags:
   - html5
   - hvvm
   - ipsec
   - ipv6
-  - livros
   - php
   - web-components
 ---

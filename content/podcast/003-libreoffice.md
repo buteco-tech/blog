@@ -7,7 +7,7 @@ slug: libreoffice
 aliases:
   - /podcast-libreoffice/
 categories:
-  - podcast
+  - Podcast
 tags:
   - libreoffice
   - office

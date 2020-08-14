@@ -9,8 +9,8 @@ images:
   - /images/wp-content/uploads/2015/09/python_com_pygame.jpg
 categories:
   - Notícias
+  - Livros
 tags:
-  - livros
   - novatec
   - pygame
   - python

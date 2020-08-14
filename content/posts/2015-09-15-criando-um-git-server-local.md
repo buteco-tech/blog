@@ -10,7 +10,7 @@ slug: /criando-um-git-server-local/
 images:
   - /images/wp-content/uploads/2014/11/Git-Icon-1788C.png
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - git
   - linux

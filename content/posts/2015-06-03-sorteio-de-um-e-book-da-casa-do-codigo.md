@@ -9,9 +9,9 @@ images:
   - /images/wp-content/uploads/2015/05/cdc-logo-novo-400.png
 categories:
   - Sorteios
+  - Livros
 tags:
   - ebook
-  - livros
 ---
 
 A nossa parceira, a <a href="http://www.casadocodigo.com.br/" target="_blank">Casa do Código</a>, está oferecendo um e-Book para sorteio aos nossos leitores.

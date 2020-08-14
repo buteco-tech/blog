@@ -10,10 +10,11 @@ images:
 categories:
   - Hardware
   - DIY
+  - Reviews
 tags:
   - display
   - hardware
-  - raspberrypi
+  - Raspberry PI
   - tft
 ---
 

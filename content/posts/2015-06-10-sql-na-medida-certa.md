@@ -8,10 +8,11 @@ authors:
   - marcooliveira
 slug: /sql-na-medida-certa/
 categories:
-  - Ferramentas
+  - Reviews
+  - Livros
 tags:
   - banco de dados
-  - livro
+  - sql
 ---
 
 <a href="http://www.novateceditora.com.br/livros/aprendendosql/"><img class="size-medium wp-image-2640 aligncenter" src="/images/wp-content/uploads/2015/06/apredendo-sql-222x300.jpg" alt="Onde comprar http://www.novateceditora.com.br/livros/aprendendosql/ XD" width="222" height="300" /></a>

@@ -7,7 +7,7 @@ slug: distribuicoes-linux
 aliases:
   - /podcast-distribuicoes-linux/
 categories:
-  - podcast
+  - Podcast
 tags:
   - distros
   - linux

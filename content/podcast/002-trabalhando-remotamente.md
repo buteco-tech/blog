@@ -7,7 +7,7 @@ slug: trabalhando-remotamente
 aliases:
   - /podcast-trabalhando-remotamente/
 categories:
-  - podcast
+  - Podcast
 tags:
   - trabalho remoto
   - CLT

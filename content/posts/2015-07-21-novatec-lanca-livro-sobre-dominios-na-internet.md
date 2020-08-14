@@ -9,10 +9,10 @@ images:
   - /images/wp-content/uploads/2015/07/nomes_dominios_novatec.png
 categories:
   - Notícias
+  - Livros
 tags:
   - domínios
   - internet
-  - livros
   - nic
   - novatec
 ---

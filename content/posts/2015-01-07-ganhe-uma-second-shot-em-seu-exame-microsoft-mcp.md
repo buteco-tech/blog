@@ -9,9 +9,10 @@ authors:
 slug: /ganhe-uma-second-shot-em-seu-exame-microsoft-mcp/
 categories:
   - Notícias
+  - Certificações
 tags:
-  - certificação
   - mcp
+  - mcsa
   - microsoft
 ---
 

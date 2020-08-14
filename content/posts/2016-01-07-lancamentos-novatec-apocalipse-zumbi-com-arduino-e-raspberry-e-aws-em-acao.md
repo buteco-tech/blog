@@ -7,11 +7,11 @@ authors:
 slug: /lancamentos-novatec-apocalipse-zumbi-com-arduino-e-raspberry-e-aws-em-acao/
 categories:
   - Notícias
+  - Livros
 tags:
   - amazon
   - arduino
   - aws
-  - livros
   - raspberrypi
 ---
 

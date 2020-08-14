@@ -10,7 +10,7 @@ slug: /visao-geral-do-dandified-yum/
 images:
   - /images/wp-content/uploads/2015/05/infinity-logo_400x400.png
 categories:
-  - Discussão
+  - Discussões
 tags:
   - distros
   - dnf

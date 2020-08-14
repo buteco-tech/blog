@@ -10,7 +10,7 @@ slug: /bash-tips-expressoes-regulares-no-bash/
 images:
   - /images/wp-content/uploads/2016/03/images.jpg
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - bash
   - expressão regular

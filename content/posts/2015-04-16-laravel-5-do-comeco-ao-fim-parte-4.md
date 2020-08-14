@@ -11,14 +11,13 @@ images:
   - /images/wp-content/uploads/2015/02/Laravel-5.png
 categories:
   - Desenvolvimento
+  - Tutoriais
 tags:
   - framework
   - laravel
   - laravel 5
   - php
-  - programação
   - testes
-  - tutorial
   - web
 ---
 

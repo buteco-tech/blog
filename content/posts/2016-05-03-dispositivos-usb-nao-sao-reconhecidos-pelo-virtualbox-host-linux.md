@@ -11,7 +11,7 @@ slug: /dispositivos-usb-nao-sao-reconhecidos-pelo-virtualbox-host-linux/
 images:
   - /images/wp-content/uploads/2016/04/virtualbox.png
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - linux
   - virtualbox

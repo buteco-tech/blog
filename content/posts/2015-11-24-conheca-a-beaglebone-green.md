@@ -12,6 +12,7 @@ images:
 categories:
   - Hardware
   - DIY
+  - Reviews
 tags:
   - arm
   - beaglebone

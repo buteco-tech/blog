@@ -5,6 +5,7 @@ tagline: "Aproveite o tempo em casa para ler alguns livros que estão de graça"
 date: 2020-04-24 08:00:00
 categories:
   - Livros
+  - Notícias
 tags:
   - kafka
   - kubernetes

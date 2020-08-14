@@ -8,9 +8,8 @@ slug: /lpic-por-onde-comecar/
 images:
   - /images/wp-content/uploads/2015/03/lpic-logos.png
 categories:
-  - Certificação
+  - Certificações
 tags:
-  - certificação
   - linux
   - lpic
 ---

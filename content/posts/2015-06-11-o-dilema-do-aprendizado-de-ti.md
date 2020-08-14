@@ -8,7 +8,7 @@ authors:
   - marcooliveira
 slug: /o-dilema-do-aprendizado-de-ti/
 categories:
-  - Discussão
+  - Discussões
 tags:
   - estudo
   - ti

@@ -6,10 +6,11 @@ authors:
   - marcossouza
 slug: /recortar-arquivo-de-audio-no-linux-pela-linha-de-comando/
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - linux
   - terminal
+  - ffmpeg
 ---
 
 Olá pessoa, segue uma dica para um problema que talvez alguns já tiveram. Ontem eu estava querendo colocar um novo toque no meu celular e eu queria cortar uma faixa de áudio, para que a música tivesse início no seu clímax. Então eu achei este post: <a title="Post" href="http://linux-software-news-tutorials.blogspot.com.br/2011/09/linux-cut-audio-files-directly-from.html">http://linux-software-news-tutorials.blogspot.com.br/2011/09/linux-cut-audio-files-directly-from.html</a>

@@ -9,7 +9,7 @@ authors:
   - alexandrevicenzi
 slug: /ajude-nos-a-escolher-os-temas-do-mes-de-julho/
 categories:
-  - Discussão
+  - Discussões
 tags:
   - questionário
   - tema

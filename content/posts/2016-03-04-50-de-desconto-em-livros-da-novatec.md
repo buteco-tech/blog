@@ -9,8 +9,8 @@ authors:
 slug: /50-de-desconto-em-livros-da-novatec/
 categories:
   - Notícias
+  - Livros
 tags:
-  - livros
   - novatec
   - promoção
 ---

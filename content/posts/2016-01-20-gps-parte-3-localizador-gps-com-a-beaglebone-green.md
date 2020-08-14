@@ -8,7 +8,8 @@ slug: /gps-parte-3-localizador-gps-com-a-beaglebone-green/
 images:
   - /images/wp-content/uploads/2015/12/map_pin.png
 categories:
-  - Tutorial
+  - Desenvolvimento
+  - Tutoriais
 tags:
   - beaglebone green
   - bottle
@@ -16,7 +17,7 @@ tags:
   - gps
   - nmea
   - python
-  - raspberrypi
+  - Raspberry Pi
 ---
 
 Na <a href="/gps-parte-1-entendendo-o-seu-funcionamento" target="_blank">primeira parte</a> sobre GPS, vimos como este sistema de rastreamento por satélite funciona. Já na <a href="/gps-parte-2-decodificando-uma-sentenca-nmea" target="_blank">segunda parte</a>, vimos uma sentença NMEA funciona e como fazemos para decodificá-la.

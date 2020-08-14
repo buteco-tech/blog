@@ -9,9 +9,9 @@ images:
   - /images/wp-content/uploads/2015/01/logo_novatec.jpg
 categories:
   - Notícias
+  - Livros
 tags:
   - cupom
-  - livros
   - novatec
 ---
 

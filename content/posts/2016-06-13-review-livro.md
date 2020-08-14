@@ -10,7 +10,8 @@ slug: /review-livro/
 images:
   - /images/wp-content/uploads/2016/06/capa.jpg
 categories:
-  - Livro
+  - Reviews
+  - Livros
 tags:
   - helpdesk
   - servicedesk

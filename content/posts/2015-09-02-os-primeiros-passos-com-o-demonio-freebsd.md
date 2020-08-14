@@ -9,8 +9,9 @@ authors:
 slug: /os-primeiros-passos-com-o-demonio-freebsd/
 categories:
   - Distros
+  - Tutoriais
 tags:
-  - dicas
+  - bds
   - freebsd
 ---
 

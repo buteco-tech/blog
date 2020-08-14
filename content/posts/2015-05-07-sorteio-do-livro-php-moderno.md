@@ -11,8 +11,8 @@ authors:
 slug: /sorteio-do-livro-php-moderno/
 categories:
   - Sorteios
+  - Livros
 tags:
-  - livro
   - novatec
   - php
 ---

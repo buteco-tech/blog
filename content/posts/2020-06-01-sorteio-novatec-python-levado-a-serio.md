@@ -5,9 +5,9 @@ tagline: "Aperfeiçoe suas habilidades com o livro Python Levado a Sério"
 date: 2020-06-01 08:00:00
 categories:
   - Sorteios
+  - Livros
 tags:
   - novatec
-  - livros
   - python
 slug: sorteio-novatec-python-levado-a-serio
 authors:

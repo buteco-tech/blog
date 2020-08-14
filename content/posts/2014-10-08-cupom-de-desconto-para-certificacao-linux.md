@@ -7,9 +7,12 @@ authors:
 slug: /cupom-de-desconto-para-certificacao-linux/
 categories:
   - Notícias
+  - Certificações
 tags:
-  - certificação
   - linux
+  - cupom
+  - LFCS
+  - LFCE
 ---
 
 Você já deve ter ouvido sobre os programas de certificação recentemente lançado pela <a href="http://www.linuxfoundation.org/">Linux Fundation</a>.

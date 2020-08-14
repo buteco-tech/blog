@@ -11,9 +11,8 @@ images:
   - /images/wp-content/uploads/2014/12/ifttt-banner.jpg
 categories:
   - Ferramentas
+  - Tutoriais
 tags:
-  - dica
-  - ferramenta
   - ifttt
 ---
 

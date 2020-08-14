@@ -4,7 +4,8 @@ summary: "Diversas aplicações precisam em algum momento armazenar arquivos, se
 tagline: "Aprenda a utilizar o AWS S3 no Python de forma fácil e objetiva"
 date: 2020-05-15 12:00:00
 categories:
-  - Python
+  - Desenvolvimento
+  - Tutoriais
 tags:
   - python
   - aws

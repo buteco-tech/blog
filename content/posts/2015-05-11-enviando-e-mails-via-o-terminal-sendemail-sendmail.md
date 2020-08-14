@@ -8,10 +8,11 @@ authors:
   - marcossouza
 slug: /enviando-e-mails-via-o-terminal-sendemail-sendmail/
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - linux
   - terminal
+  - email
 ---
 
 Olá,

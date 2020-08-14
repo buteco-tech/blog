@@ -12,13 +12,13 @@ images:
 categories:
   - Hardware
   - DIY
-  - Tutorial
+  - Tutoriais
 tags:
-  - banana-pi
+  - Banana Pi
   - embarcados
   - iot
   - python
-  - raspberry pi
+  - Raspberry Pi
   - servomotor
 ---
 

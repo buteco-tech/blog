@@ -11,9 +11,9 @@ images:
   - /images/wp-content/uploads/2015/11/dominando_android.jpg
 categories:
   - Notícias
+  - Livros
 tags:
   - android
-  - livro
   - novatec
 ---
 

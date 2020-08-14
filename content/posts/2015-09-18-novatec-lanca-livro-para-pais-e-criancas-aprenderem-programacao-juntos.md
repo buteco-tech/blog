@@ -9,8 +9,8 @@ images:
   - /images/wp-content/uploads/2015/09/ensine_seus_filhos_a_programar.jpg
 categories:
   - Notícias
+  - Livros
 tags:
-  - livros
   - novatec
   - python
 ---

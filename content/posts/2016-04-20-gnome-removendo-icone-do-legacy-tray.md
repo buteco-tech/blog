@@ -10,7 +10,7 @@ slug: /gnome-removendo-icone-do-legacy-tray/
 images:
   - /images/wp-content/uploads/2016/04/gnome-logo-300px-150x150.png
 categories:
-  - Dicas
+  - Tutoriais
 tags:
   - gnome
   - linux

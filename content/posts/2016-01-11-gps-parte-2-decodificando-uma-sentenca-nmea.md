@@ -8,7 +8,8 @@ slug: /gps-parte-2-decodificando-uma-sentenca-nmea/
 images:
   - /images/wp-content/uploads/2015/12/map_pin.png
 categories:
-  - Tutorial
+  - Tutoriais
+  - Desenvolvimento
 tags:
   - geolocalização
   - gps
