@@ -34,6 +34,7 @@ params:
   title: Buteco Tecnológico
   description: Um blog feito por, e para pessoas que gostam de compartilhar suas experiências com tecnologia, linux e software livre.
   images:
+    - /logos/capybara_400_bg.png
     - /logos/capybara_400.png
   logo: /logos/capybara_64.png
   copyright: Buteco Tecnológico
