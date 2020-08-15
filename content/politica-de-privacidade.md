@@ -6,9 +6,14 @@ disable_share: true
 disable_comments: true
 ---
 
-Sua privacidade é importante para nós. Quando o Buteco Open Source (ou seja, nós) coleta informações sobre você, nossa Política de Privacidade descreve de que forma gerenciamos essas informações.
+Sua privacidade é importante para nós. Quando o Buteco Tecnológico (ou seja, nós) coleta informações sobre você, nossa Política de Privacidade descreve de que forma gerenciamos essas informações.
 
-Este aviso de privacidade se aplica aos websites administrados pelo Buteco Open Source, inclusive os domínios, [butecopensource.com.br](https://butecopensource.com.br) e [buteco.me](https://buteco.me).
+Este aviso de privacidade se aplica aos websites administrados pelo Buteco Tecnológico, inclusive os domínios:
+
+* [butecotecnologico.com.br](https://butecotecnologico.com.br)
+* [butecopensource.com.br](https://butecopensource.com.br)
+* [buteco.tech](https://buteco.tech).
+* [buteco.me](https://buteco.me).
 
 ##  O que entendemos como "informações pessoais"?
 
@@ -36,7 +41,7 @@ Quando você nos envia informações pessoais, nós as utilizamos de acordo com 
 
 ## Quando compartilhamos suas informações com terceiros?
 
-Nós não compartilhamos as suas informações pessoais que se encontram em nossas bases de dados com terceiros ou qualquer outra entidade vinculada ao Buteco Open Source.
+Nós não compartilhamos as suas informações pessoais que se encontram em nossas bases de dados com terceiros ou qualquer outra entidade vinculada ao Buteco Tecnológico.
 
 Declaramos desde já que contabilizamos os números de visitação deste website e de suas páginas subjacentes, inclusive mediante utilização de cookies, de forma a melhorar a qualidade dos mesmos.
 
@@ -50,7 +55,7 @@ Também não queremos suas informações pessoais por um prazo mais longo do que
 
 ## Ligações a websites e serviços de terceiros
 
-O Buteco Open Source possui ligações com outros websites, os quais, a nosso ver, podem conter informações/ferramentas úteis a nós ou aos nossos visitantes. Neste caso a nossa política de privacidade não é aplicada a estes websites e não nos responsabilizamos pela política de privacidade e o conteúdo destes websites.
+O Buteco Tecnológico possui ligações com outros websites, os quais, a nosso ver, podem conter informações/ferramentas úteis a nós ou aos nossos visitantes. Neste caso a nossa política de privacidade não é aplicada a estes websites e não nos responsabilizamos pela política de privacidade e o conteúdo destes websites.
 
 Fazemos uso do Google Analytics para ajudar a analisar o tráfego nos nossos websites. As informações obtidas pelo Google Analytics são usadas nos serviços de publicidade oferecidos pela Google e podem vincular informações de visitas a diversos outros websites.
 
@@ -61,10 +66,6 @@ Para obter mais informações sobre como o Google utilize esses dados, [clique a
 ## Cookies e identificadores anônimos
 
 Nós usamos algumas tecnologias para coletar e armazenar informações quando um usuário visita um de nossos websites. Tais informações podem incluir o envio de um ou mais cookies ou identificadores anônimos para o dispositivo do usuário. O usuário também pode configurar seu navegador a qualquer momento para bloquear todos os cookies, inclusive os cookies associados a nossos serviços.
-
-## E se esta política for alterada?
-
-Pode vir a ser necessária uma alteração a esta política. Nesse caso, iremos notificar em nosso Blog.
 
 ## Contato
 

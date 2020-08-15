@@ -5,6 +5,6 @@ disable_share: true
 disable_comments: true
 ---
 
-Entre em contato conosco através do formulário abaixo, pelo email [contato@butecopensource.com.br](mailto:contato@butecopensource.com.br) ou pelo [grupo do Telegram](https://t.me/butecopensource).
+Entre em contato conosco através do formulário abaixo, pelo email [contato@butecopensource.com.br](mailto:contato@butecopensource.com.br) ou pelo [grupo do Telegram](https://t.me/butecotecnologico).
 
-{{< contact action="https://submit-form.com/uVyXk7USzrTtzJlqrb30l" >}}
+{{< contact action="https://submit-form.com/b8Gc7CBkMNh02UlKzu_Un" recaptcha="6Lf57r4ZAAAAAK6fSjQnmj_NvXyXIE0lYq4O2EV6" >}}

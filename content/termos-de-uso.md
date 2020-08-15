@@ -8,7 +8,7 @@ disable_comments: true
 
 ## Introdução
 
-Leia todos os termos deste documento (“Termos”) com atenção, pois eles explicam os seus direitos e responsabilidades ao acessar qualquer site do Buteco Open Source ou feeds, redes sociais, informativos e e-mails relacionados.
+Leia todos os termos deste documento (“Termos”) com atenção, pois eles explicam os seus direitos e responsabilidades ao acessar qualquer site do Buteco Tecnológico ou feeds, redes sociais, informativos e e-mails relacionados.
 
 Ao acessar ou se inscrever para receber informativos, você concorda em estar vinculado por estes Termos.
 
@@ -16,7 +16,7 @@ Ao acessar ou se inscrever para receber informativos, você concorda em estar vi
 
 Nossas comunicações incluem conteúdos como artigos, imagens, fotografias, comentários, áudios e videoclipes, além de outros materiais (em conjunto, “Conteúdo”), não se enquadrando neste item programas de computador.
 
-Todo o conteúdo disponível no Buteco Open Source, e exceto quando indicado, está licenciado sob a [Creative Commons - Atribuição-CompartilhaIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/legalcode.pt).
+Todo o conteúdo disponível no Buteco Tecnológico, e exceto quando indicado, está licenciado sob a [Creative Commons - Atribuição-CompartilhaIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/legalcode.pt).
 
 Determinados conteúdos contêm marcas registradas, apresentações comerciais, logotipos e propriedades de terceiros (“Marcas Registradas”). Salvo em circunstâncias específicas, as Marcas Registradas não poderão ser utilizadas sem autorização prévia, por escrito, do detentor da Marca Registrada.
 
@@ -37,7 +37,7 @@ Ao contribuir com conteúdo você concorda com o seguinte:
   * você reconhece que seu envio estará disponível a outros usuários;
   * você concorda em licenciar o envio com uma licença compatível à nossa;
   * você declara e garante que possui os direitos necessários para conceder os direitos outorgados nestes Termos e, ainda, que os usos neles previstos não violarão os direitos de propriedade intelectual ou outros direitos de propriedade de qualquer terceiro;
-  * você compreende e concorda que o Buteco Open Source se reserva o direito, a seu critério, de analisar, modificar ou remover qualquer Envio que considere questionável ou que viole estes Termos;
+  * você compreende e concorda que o Buteco Tecnológico se reserva o direito, a seu critério, de analisar, modificar ou remover qualquer Envio que considere questionável ou que viole estes Termos;
   * para se identificar como autor, poderá o criador do conteúdo enviado usar de seu nome civil, completo ou abreviado até por suas iniciais, de pseudônimo ou qualquer outro sinal convencional. (Lei Nº 9.610/1999, Art. 12);
   * você compreende e concorda que qualquer tipo de preconceito, seja de raça, cor, religião, social ou qualquer outro tipo de discriminação resultarão em banimento do conteúdo e do autor, podendo ou não ser considerado crime de acordo com a Lei Nº 7.716/1989.
 
@@ -49,13 +49,13 @@ A política de privacidade explica, por exemplo, que usamos determinados cookies
 
 ## Isenção de Responsabilidade; Limitação de Responsabilidade
 
-Em nenhuma situação o Buteco Open Source, seus autores, editores, colaboradores ou mantenedores são responsáveis por quaisquer danos, prejuízos ou outro efeito, direto ou indireto, relacionados ao uso, por parte de seus leitores ou de qualquer outra pessoa, dos websites e serviços definidos por estes termos, ou de qualquer outro website ou serviço aqui mencionado.
+Em nenhuma situação o Buteco Tecnológico, seus autores, editores, colaboradores ou mantenedores são responsáveis por quaisquer danos, prejuízos ou outro efeito, direto ou indireto, relacionados ao uso, por parte de seus leitores ou de qualquer outra pessoa, dos websites e serviços definidos por estes termos, ou de qualquer outro website ou serviço aqui mencionado.
 
-Na extensão permitida pela lei, o Buteco Open Source e as partes indenizadas neste ato se isentam de responsabilidade por todas as garantias, expressas ou implícitas, incluindo, sem limitação, as garantias de que as comunicações sejam livres de defeitos, comercializáveis, adequadas a uma finalidade particular e não causem violação.
+Na extensão permitida pela lei, o Buteco Tecnológico e as partes indenizadas neste ato se isentam de responsabilidade por todas as garantias, expressas ou implícitas, incluindo, sem limitação, as garantias de que as comunicações sejam livres de defeitos, comercializáveis, adequadas a uma finalidade particular e não causem violação.
 
 Você assume todo o risco relativo ao uso das comunicações para os seus fins e, em relação à qualidade e desempenho das comunicações, incluindo, sem limitação, o risco de que o seu hardware, software ou conteúdo seja apagado ou corrompido, que outra pessoa tenha acesso não autorizado às suas informações, ou que outro usuário faça uso indevido ou se aproprie indevidamente de seu envio.
 
-Em especial, o Buteco Open Souce não classifica nem analisa o conteúdo que seus leitores acrescentam como comentários ou qualquer outro tipo participação nas demais áreas do website. Se qualquer comentário ou participação em um de nossos websites infringir um direito seu, entre em contato na forma indicada neste mesmo documento, abaixo, no item "Denúncias de Abuso".
+Em especial, o Buteco Tecnológico não classifica nem analisa o conteúdo que seus leitores acrescentam como comentários ou qualquer outro tipo participação nas demais áreas do website. Se qualquer comentário ou participação em um de nossos websites infringir um direito seu, entre em contato na forma indicada neste mesmo documento, abaixo, no item "Denúncias de Abuso".
 
 ## Denúncias de Abuso
 
@@ -63,7 +63,7 @@ Para todo e qualquer tipo de denúncia, seja por reivindicação de uso indevido
 
 ## Vigência; Recisão
 
-Estes Termos continuarão aplicáveis até que sejam finalizados por você ou pelo Buteco Open Souce.
+Estes Termos continuarão aplicáveis até que sejam finalizados por você ou pelo Buteco Tecnológico.
 
 Você pode decidir finalizá-los a qualquer tempo, por qualquer motivo, cessando o uso de nossas Comunicações e, se for o caso, apagando sua conta.
 
@@ -73,7 +73,7 @@ Em todos os casos, estes Termos serão rescindidos, com exceção das seguintes 
 
 ## Indenização
 
-Você concorda em defender, indenizar e eximir o Buteco Open Source, suas contratadas, editores, colaboradores, licenciantes e parceiros ("Partes Indenizadas") de todas as reivindicações e despesas de terceiros, incluindo honorários advocatícios, resultantes do seu uso das Comunicações ou a ele relacionados (incluindo, sem limitação, de qualquer Envio seu ou violação destes Termos).
+Você concorda em defender, indenizar e eximir o Buteco Tecnológico, suas contratadas, editores, colaboradores, licenciantes e parceiros ("Partes Indenizadas") de todas as reivindicações e despesas de terceiros, incluindo honorários advocatícios, resultantes do seu uso das Comunicações ou a ele relacionados (incluindo, sem limitação, de qualquer Envio seu ou violação destes Termos).
 
 ## Modificações destes Termos
 
@@ -85,17 +85,17 @@ Para melhor controle, será sempre publicada a data de última revisão deste Te
 
 ## Disposições Gerais
 
-Estes Termos constituem o acordo integral entre você e o Buteco Open Source em relação às nossas Comunicações e substituem quaisquer versões anteriores destes Termos.
+Estes Termos constituem o acordo integral entre você e o Buteco Tecnológico em relação às nossas Comunicações e substituem quaisquer versões anteriores destes Termos.
 
 Se qualquer parte destes Termos for considerada inválida ou inexequível, as partes restantes permanecerão em pleno vigor e efeito.
 
-Todas as funções atribuídas e suas respectivas atividades são em caráter voluntário, todos os colaboradores ao utilizar quaisquer áreas do website, serviços, ferramentas e todas e quaisquer marcas/item vinculadas ao Buteco Open Source estão cientes que não há nenhum vinculo trabalhista e/ou financeiros com o Buteco Open Source.
+Todas as funções atribuídas e suas respectivas atividades são em caráter voluntário, todos os colaboradores ao utilizar quaisquer áreas do website, serviços, ferramentas e todas e quaisquer marcas/item vinculadas ao Buteco Tecnológico estão cientes que não há nenhum vinculo trabalhista e/ou financeiros com o Buteco Tecnológico.
 
 Estes Termos de Uso são regidos pelas leis brasileiras.
 
-O Buteco Open Souce consiste em um serviço de interesse público, que não gera qualquer relação de consumo e não se encontra regido pelo Código de Defesa do Consumidor.
+O Buteco Tecnológico consiste em um serviço de interesse público, que não gera qualquer relação de consumo e não se encontra regido pelo Código de Defesa do Consumidor.
 
-Qualquer ação judicial envolvendo o Buteco Open Source deverá ser proposta obrigatoriamente no foro da cidade de Blumenau, com exclusão de qualquer outro, por mais privilegiado que seja.
+Qualquer ação judicial envolvendo o Buteco Tecnológico deverá ser proposta obrigatoriamente no foro da cidade de Blumenau, com exclusão de qualquer outro, por mais privilegiado que seja.
 
 
-*Última revisão: Abril de 2020*
+*Última revisão: Agosto de 2020*
