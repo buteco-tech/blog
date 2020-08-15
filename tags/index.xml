@@ -282,15 +282,6 @@
     </item>
     
     <item>
-      <title>livros</title>
-      <link>https://butecotecnologico.com.br/tags/livros/</link>
-      <pubDate>Mon, 01 Jun 2020 08:00:00 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/tags/livros/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>novatec</title>
       <link>https://butecotecnologico.com.br/tags/novatec/</link>
       <pubDate>Mon, 01 Jun 2020 08:00:00 +0000</pubDate>
@@ -624,7 +615,7 @@
     </item>
     
     <item>
-      <title>raspberry pi</title>
+      <title>Raspberry PI</title>
       <link>https://butecotecnologico.com.br/tags/raspberry-pi/</link>
       <pubDate>Wed, 11 May 2016 21:28:51 +0000</pubDate>
       
@@ -1947,24 +1938,6 @@
     </item>
     
     <item>
-      <title>dica</title>
-      <link>https://butecotecnologico.com.br/tags/dica/</link>
-      <pubDate>Wed, 09 Dec 2015 07:46:43 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/tags/dica/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dicas</title>
-      <link>https://butecotecnologico.com.br/tags/dicas/</link>
-      <pubDate>Wed, 09 Dec 2015 07:46:43 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/tags/dicas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>emacs</title>
       <link>https://butecotecnologico.com.br/tags/emacs/</link>
       <pubDate>Wed, 09 Dec 2015 07:46:43 +0000</pubDate>
@@ -1983,15 +1956,6 @@
     </item>
     
     <item>
-      <title>tutorial</title>
-      <link>https://butecotecnologico.com.br/tags/tutorial/</link>
-      <pubDate>Wed, 09 Dec 2015 07:46:43 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>vi</title>
       <link>https://butecotecnologico.com.br/tags/vi/</link>
       <pubDate>Thu, 26 Nov 2015 21:24:08 +0000</pubDate>
@@ -2006,15 +1970,6 @@
       <pubDate>Thu, 26 Nov 2015 21:24:08 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/tags/vim-tabs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>livro</title>
-      <link>https://butecotecnologico.com.br/tags/livro/</link>
-      <pubDate>Wed, 25 Nov 2015 20:56:01 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/tags/livro/</guid>
       <description></description>
     </item>
     
@@ -2550,6 +2505,15 @@
     </item>
     
     <item>
+      <title>bds</title>
+      <link>https://butecotecnologico.com.br/tags/bds/</link>
+      <pubDate>Wed, 02 Sep 2015 23:12:01 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tags/bds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>sexta</title>
       <link>https://butecotecnologico.com.br/tags/sexta/</link>
       <pubDate>Fri, 28 Aug 2015 14:05:32 +0000</pubDate>
@@ -2609,6 +2573,15 @@
       <pubDate>Thu, 20 Aug 2015 22:28:06 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/tags/openelec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automação</title>
+      <link>https://butecotecnologico.com.br/tags/automa%C3%A7%C3%A3o/</link>
+      <pubDate>Tue, 18 Aug 2015 23:29:34 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tags/automa%C3%A7%C3%A3o/</guid>
       <description></description>
     </item>
     
@@ -2726,15 +2699,6 @@
       <pubDate>Mon, 20 Jul 2015 22:31:20 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/tags/sensor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>automação</title>
-      <link>https://butecotecnologico.com.br/tags/automa%C3%A7%C3%A3o/</link>
-      <pubDate>Mon, 20 Jul 2015 16:36:44 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/tags/automa%C3%A7%C3%A3o/</guid>
       <description></description>
     </item>
     
@@ -3099,11 +3063,11 @@
     </item>
     
     <item>
-      <title>parceria</title>
-      <link>https://butecotecnologico.com.br/tags/parceria/</link>
+      <title>cupom</title>
+      <link>https://butecotecnologico.com.br/tags/cupom/</link>
       <pubDate>Mon, 25 May 2015 00:04:17 +0000</pubDate>
       
-      <guid>https://butecotecnologico.com.br/tags/parceria/</guid>
+      <guid>https://butecotecnologico.com.br/tags/cupom/</guid>
       <description></description>
     </item>
     
@@ -3248,6 +3212,15 @@
       <pubDate>Mon, 11 May 2015 23:05:53 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/tags/tor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>email</title>
+      <link>https://butecotecnologico.com.br/tags/email/</link>
+      <pubDate>Mon, 11 May 2015 22:54:26 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tags/email/</guid>
       <description></description>
     </item>
     
@@ -3729,15 +3702,6 @@
     </item>
     
     <item>
-      <title>certificação</title>
-      <link>https://butecotecnologico.com.br/tags/certifica%C3%A7%C3%A3o/</link>
-      <pubDate>Tue, 24 Mar 2015 00:28:50 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/tags/certifica%C3%A7%C3%A3o/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>lpic</title>
       <link>https://butecotecnologico.com.br/tags/lpic/</link>
       <pubDate>Tue, 24 Mar 2015 00:28:50 +0000</pubDate>
@@ -3779,15 +3743,6 @@
       <pubDate>Mon, 23 Mar 2015 22:41:06 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/tags/yahoo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>alien</title>
-      <link>https://butecotecnologico.com.br/tags/alien/</link>
-      <pubDate>Tue, 17 Mar 2015 00:53:54 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/tags/alien/</guid>
       <description></description>
     </item>
     
@@ -3927,38 +3882,11 @@
     </item>
     
     <item>
-      <title>bbswitch</title>
-      <link>https://butecotecnologico.com.br/tags/bbswitch/</link>
-      <pubDate>Mon, 23 Feb 2015 00:59:15 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/tags/bbswitch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bumblebee</title>
-      <link>https://butecotecnologico.com.br/tags/bumblebee/</link>
-      <pubDate>Mon, 23 Feb 2015 00:59:15 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/tags/bumblebee/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>nouveau</title>
       <link>https://butecotecnologico.com.br/tags/nouveau/</link>
       <pubDate>Mon, 23 Feb 2015 00:59:15 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/tags/nouveau/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>optimus</title>
-      <link>https://butecotecnologico.com.br/tags/optimus/</link>
-      <pubDate>Mon, 23 Feb 2015 00:59:15 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/tags/optimus/</guid>
       <description></description>
     </item>
     
@@ -4215,24 +4143,6 @@
     </item>
     
     <item>
-      <title>cupom</title>
-      <link>https://butecotecnologico.com.br/tags/cupom/</link>
-      <pubDate>Thu, 15 Jan 2015 22:28:08 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/tags/cupom/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>email</title>
-      <link>https://butecotecnologico.com.br/tags/email/</link>
-      <pubDate>Thu, 15 Jan 2015 06:00:19 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/tags/email/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>smtplib</title>
       <link>https://butecotecnologico.com.br/tags/smtplib/</link>
       <pubDate>Thu, 15 Jan 2015 06:00:19 +0000</pubDate>
@@ -4292,6 +4202,15 @@
       <pubDate>Wed, 07 Jan 2015 20:48:20 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/tags/mcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mcsa</title>
+      <link>https://butecotecnologico.com.br/tags/mcsa/</link>
+      <pubDate>Wed, 07 Jan 2015 20:48:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tags/mcsa/</guid>
       <description></description>
     </item>
     
@@ -4458,6 +4377,24 @@
     </item>
     
     <item>
+      <title>LFCE</title>
+      <link>https://butecotecnologico.com.br/tags/lfce/</link>
+      <pubDate>Wed, 08 Oct 2014 15:05:30 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tags/lfce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LFCS</title>
+      <link>https://butecotecnologico.com.br/tags/lfcs/</link>
+      <pubDate>Wed, 08 Oct 2014 15:05:30 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tags/lfcs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>expect</title>
       <link>https://butecotecnologico.com.br/tags/expect/</link>
       <pubDate>Tue, 07 Oct 2014 00:23:49 +0000</pubDate>
@@ -4544,6 +4481,15 @@
       <pubDate>Tue, 23 Sep 2014 13:30:48 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/tags/cep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ffmpeg</title>
+      <link>https://butecotecnologico.com.br/tags/ffmpeg/</link>
+      <pubDate>Tue, 09 Sep 2014 23:01:02 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tags/ffmpeg/</guid>
       <description></description>
     </item>
     

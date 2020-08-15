@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LFCS on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/lfcs/</link>
+    <description>Recent content in LFCS on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 08 Oct 2014 15:05:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/lfcs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cupom de desconto para certificação Linux</title>
+      <link>https://butecotecnologico.com.br/cupom-de-desconto-para-certificacao-linux/</link>
+      <pubDate>Wed, 08 Oct 2014 15:05:30 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/cupom-de-desconto-para-certificacao-linux/</guid>
+      <description>Você já deve ter ouvido sobre os programas de certificação recentemente lançado pela Linux Fundation.</description>
+    </item>
+    
+  </channel>
+</rss>

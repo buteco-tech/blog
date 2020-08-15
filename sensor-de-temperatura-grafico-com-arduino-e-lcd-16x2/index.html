@@ -9,7 +9,7 @@
 
   <meta name="description" content="" />
 
-  
+
 
 <meta itemprop="name" content="Sensor de temperatura gráfico com Arduino e LCD 16x2">
 <meta itemprop="description" content="Dando continuidade ao artigo Sensor de temperatura e umidade no Arduino, hoje vamos ver como utilizar um LCD 16x2 para exibir a temperatura e a umidade capturada pelo sensor DHT11.
@@ -44,20 +44,19 @@ A grande diferença entre o artigo anterior e este é o uso do LCD, sendo assim,
 
 
   
-    
-    <link rel="stylesheet" href="/sass/iara.min.70b338a395d9e705e7c23113915d4acbfab563136c37a3a852608bfa08b42923.css">
   
+  <link rel="stylesheet" href="/sass/iara.min.164c2988d493389c9f877f9ef22cca72d15fb6cb8d853d94142d360efb378bd5.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
-  <link rel="apple-touch-icon-precomposed"
-        sizes="144x144"
-        href="/apple-touch-icon-144-precomposed.png">
+<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
 
-  <link rel="shortcut icon" href="/favicon.png">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/favicon.png">
+
 
   <link type="text/css" rel="stylesheet" href="/css/custom.css">
 
@@ -67,7 +66,7 @@ A grande diferença entre o artigo anterior e este é o uso do LCD, sendo assim,
 
 
   
-  </head>
+</head>
 <body class="d-flex flex-column h-100">
   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
   <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
@@ -78,10 +77,7 @@ A grande diferença entre o artigo anterior e este é o uso do LCD, sendo assim,
          alt="Logo"
          class="d-inline-block align-top"
          loading="lazy">
-    
-    Buteco Tecnológico
-  </a>
-
+    Buteco Tecnológico</a>
   <div class="d-flex flex-row order-2 order-lg-3">
     
     <ul class="navbar-nav flex-row">
@@ -95,7 +91,6 @@ A grande diferença entre o artigo anterior e este é o uso do LCD, sendo assim,
       </li>
     </ul>
     
-
     <button class="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -106,22 +101,14 @@ A grande diferença entre o artigo anterior e este é o uso do LCD, sendo assim,
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
-
   <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
-    <ul class="navbar-nav ml-auto">
-      
-      
-        
-        <li class="nav-item ">
+    <ul class="navbar-nav ml-auto"><li class="nav-item ">
           <a class="nav-link" href="/">
             <span class="mr-1"><i class="fas fa-home"></i></span>
             Início
             
           </a>
         </li>
-        
-      
-        
         <li class="nav-item ">
           <a class="nav-link" href="/podcast/">
             <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
@@ -129,9 +116,6 @@ A grande diferença entre o artigo anterior e este é o uso do LCD, sendo assim,
             
           </a>
         </li>
-        
-      
-        
         <li class="nav-item ">
           <a class="nav-link" href="/anuncie-conosco/">
             <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
@@ -139,9 +123,6 @@ A grande diferença entre o artigo anterior e este é o uso do LCD, sendo assim,
             
           </a>
         </li>
-        
-      
-        
         <li class="nav-item ">
           <a class="nav-link" href="/envio-de-artigo/">
             <span class="mr-1"><i class="far fa-heart"></i></span>
@@ -149,9 +130,6 @@ A grande diferença entre o artigo anterior e este é o uso do LCD, sendo assim,
             
           </a>
         </li>
-        
-      
-        
         <li class="nav-item ">
           <a class="nav-link" href="/sobre/">
             <span class="mr-1"><i class="far fa-question-circle"></i></span>
@@ -159,12 +137,9 @@ A grande diferença entre o artigo anterior e este é o uso do LCD, sendo assim,
             
           </a>
         </li>
-        
-      
-    </ul>
+        </ul>
   </div>
 </nav>
-
 
 
 
@@ -189,8 +164,7 @@ A grande diferença entre o artigo anterior e este é o uso do LCD, sendo assim,
            class="author">Alexandre Vicenzi</a>
       </span>
     </div>
-    <div class="text-muted">
-      <time datetime="2015-07-20T22:31:20Z">Jul 20, 2015</time>
+    <div class="text-muted"><time datetime="2015-07-20T22:31:20Z">20/07/2015</time>
       &middot; 2 minutos de leitura
     </div>
   </div>
@@ -256,7 +230,8 @@ Se você deseja criar seu próprio caractere, recomendo o site <a href="http://m
   </article>
 
   <footer>
-    <div class="mb-4">
+    
+<div class="mb-4">
   <ul class="list-unstyled tags">
   <li class="d-inline-block mb-1 mr-1">
      <a href="https://butecotecnologico.com.br/tags/arduino/" class="tag-link">arduino</a>
@@ -271,6 +246,7 @@ Se você deseja criar seu próprio caractere, recomendo o site <a href="http://m
   </li>
   </ul>
 </div>
+
 
 
     <div class="share-buttons text-center">
@@ -323,7 +299,7 @@ Se você deseja criar seu próprio caractere, recomendo o site <a href="http://m
   
 </div>
 
-    <div class="border-top pt-4 pb-5">
+    <div class="border-top pt-4 pb-4">
 <h2 class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
@@ -374,23 +350,23 @@ Se você deseja criar seu próprio caractere, recomendo o site <a href="http://m
       <ul class="list-unstyled">
         
         <li class="list-inline-item social-icon my-2">
-          <a href="https://t.me/butecopensource" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+          <a href="https://t.me/butecotecnologico" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
         </li>
         
         <li class="list-inline-item social-icon my-2">
-          <a href="https://twitter.com/butecopensource" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://twitter.com/butecotech" title="Twitter"><i class="fab fa-twitter"></i></a>
         </li>
         
         <li class="list-inline-item social-icon my-2">
-          <a href="https://www.linkedin.com/company/butecopensource" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.linkedin.com/company/butecotecnologico" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
         </li>
         
         <li class="list-inline-item social-icon my-2">
-          <a href="https://www.facebook.com/butecopensource" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.facebook.com/buteco.tech" title="Facebook"><i class="fab fa-facebook-f"></i></a>
         </li>
         
         <li class="list-inline-item social-icon my-2">
-          <a href="https://www.youtube.com/c/ButecoOpenSource" title="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.youtube.com/c/ButecoTech" title="YouTube"><i class="fab fa-youtube"></i></a>
         </li>
         
         <li class="list-inline-item social-icon my-2">
@@ -421,7 +397,7 @@ Se você deseja criar seu próprio caractere, recomendo o site <a href="http://m
             <a class="td-n td-h " href="/envio-de-artigo/">
               
               Envie seu artigo
-              
+              <i class="far fa-heart text-danger"></i>
             </a>
           </li>
           
@@ -437,7 +413,7 @@ Se você deseja criar seu próprio caractere, recomendo o site <a href="http://m
             <a class="td-n td-h " href="/podcast/">
               <b>
               Podcast
-              </b>
+              </b><span class="badge badge-success">Novo</span>
             </a>
           </li>
           
@@ -539,10 +515,11 @@ Se você deseja criar seu próprio caractere, recomendo o site <a href="http://m
 </footer>
 
 
-  
-  <script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.1c0f7f1b981cf11a160bc6756c89e1b7f0c1345df3aa249c5da02bee310f7566.js"></script>
-  
+  <script src="/vendor/fontawesome/js/all.min.js"></script>
+<script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.2c5425c23d5c49420cbeba91394de6c32f31cf7ff832cad34a85a954b8df0600.js"></script><script src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
 
-  
+
+
+
 </body>
 </html>

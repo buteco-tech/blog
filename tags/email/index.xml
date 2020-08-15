@@ -6,10 +6,19 @@
     <description>Recent content in email on Buteco Tecnológico</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 15 Jan 2015 06:00:19 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2015 22:54:26 +0000</lastBuildDate>
     
 	<atom:link href="https://butecotecnologico.com.br/tags/email/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Enviando e-mails via o terminal ( sendEmail != sendmail )</title>
+      <link>https://butecotecnologico.com.br/enviando-e-mails-via-o-terminal-sendemail-sendmail/</link>
+      <pubDate>Mon, 11 May 2015 22:54:26 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/enviando-e-mails-via-o-terminal-sendemail-sendmail/</guid>
+      <description>Tutorial sobre como utilizar o sendEmail pelo terminal para enviar emails</description>
+    </item>
     
     <item>
       <title>Formatando e adicionando anexos a e-mails no Python</title>

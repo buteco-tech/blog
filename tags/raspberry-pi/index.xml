@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>raspberry pi on Buteco Tecnológico</title>
+    <title>Raspberry PI on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/raspberry-pi/</link>
-    <description>Recent content in raspberry pi on Buteco Tecnológico</description>
+    <description>Recent content in Raspberry PI on Buteco Tecnológico</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
     <lastBuildDate>Wed, 11 May 2016 21:28:51 +0000</lastBuildDate>
@@ -41,6 +41,15 @@
     </item>
     
     <item>
+      <title>GPS Parte 3: Localizador GPS com a BeagleBone Green</title>
+      <link>https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/</link>
+      <pubDate>Wed, 20 Jan 2016 21:11:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/</guid>
+      <description>Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona.</description>
+    </item>
+    
+    <item>
       <title>Servo motor com Raspberry Pi</title>
       <link>https://butecotecnologico.com.br/servo-motor-com-raspberry-pi/</link>
       <pubDate>Wed, 13 Jan 2016 11:05:44 +0000</pubDate>
@@ -57,6 +66,16 @@ Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI us
       
       <guid>https://butecotecnologico.com.br/raspberry-pi-zero-5-em-uma-placa-que-roda-linux/</guid>
       <description>&lt;p&gt;A Raspberry Pi Foundation acaba de anunciar seu novo Raspberry Pi de baixo custo, chamado &lt;strong&gt;Zero&lt;/strong&gt;. O valor estipulado pela empresa da nova placa é de 5$, isso mesmo, com &lt;strong&gt;CINCO FUCKING DÓLARES&lt;/strong&gt; você compra uma das mais novas placas que rodam o sistema operacional GNU/Linux.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Review da tela 3.5 TFT no Raspberry Pi!</title>
+      <link>https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/</link>
+      <pubDate>Wed, 11 Nov 2015 12:43:20 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/</guid>
+      <description>&lt;p&gt;Olá pessoal, neste artigo iremos mostrar como instalar a tela TFT 3.5&amp;rdquo;, com suporte a caneta, no Raspberry Pi. Utilizaremos a distro Raspbian Wheezy, baseada no Debian e indicada pela Raspberry Foundation, e um Raspberry Pi modelo B. Se você deseja instalar a tela em outra distribuição, basta verificar quais arquivos de configuração se equiparam aos utilizados no Raspbian.&lt;/p&gt;
+&lt;p&gt;Após instalação da tela, será feito um review falando de sua qualidade e se de fato vale comprar tal acessório.&lt;/p&gt;</description>
     </item>
     
   </channel>

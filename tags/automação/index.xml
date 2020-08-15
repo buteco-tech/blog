@@ -6,10 +6,20 @@
     <description>Recent content in automação on Buteco Tecnológico</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 20 Jul 2015 16:36:44 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2015 23:29:34 +0000</lastBuildDate>
     
 	<atom:link href="https://butecotecnologico.com.br/tags/automa%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Novatec lança livro “Automatize tarefas maçantes com Python”</title>
+      <link>https://butecotecnologico.com.br/novatec-lanca-livro-automatize-tarefas-macantes-com-python/</link>
+      <pubDate>Tue, 18 Aug 2015 23:29:34 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/novatec-lanca-livro-automatize-tarefas-macantes-com-python/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;&lt;i&gt;Título ensina a criar programas que fazem em minutos o que exigiria horas para ser feito manualmente&lt;/i&gt;&lt;/p&gt;
+Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gastam uma boa quantidade de tempo dos desenvolvedores. Seria excelente se o computador pudesse executar estas tarefas sozinho enquanto o tempo do profissional é aproveitado para fazer coisas mais importantes.</description>
+    </item>
     
     <item>
       <title>Evento científico de tecnologia CTIA</title>

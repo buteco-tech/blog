@@ -115,15 +115,6 @@ quilt new alteracao1.patch
     </item>
     
     <item>
-      <title>Laravel 5 do começo ao fim [parte 4]</title>
-      <link>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-4/</link>
-      <pubDate>Thu, 16 Apr 2015 22:54:51 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-4/</guid>
-      <description>Nesta quarta parte do tutorial veremos um pouco da parte de testes do Laravel 5, uma boa pratica que todos deveriam adotar mas que muitas vezes é simplesmente ignorada.</description>
-    </item>
-    
-    <item>
       <title>Construindo a interface de login do spotify com PyGTK e CSS</title>
       <link>https://butecotecnologico.com.br/construindo-a-interface-de-login-do-spotify-com-pygtk-e-css/</link>
       <pubDate>Wed, 01 Apr 2015 12:10:10 +0000</pubDate>

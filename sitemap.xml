@@ -48,12 +48,12 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/podcast/</loc>
+    <loc>https://butecotecnologico.com.br/categorias/podcast/</loc>
     <lastmod>2020-08-14T08:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/categorias/podcast/</loc>
+    <loc>https://butecotecnologico.com.br/podcast/</loc>
     <lastmod>2020-08-14T08:00:00+00:00</lastmod>
   </url>
   
@@ -253,7 +253,7 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/livros/</loc>
+    <loc>https://butecotecnologico.com.br/categorias/livros/</loc>
     <lastmod>2020-06-01T08:00:00+00:00</lastmod>
   </url>
   
@@ -303,12 +303,12 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/gnome/</loc>
+    <loc>https://butecotecnologico.com.br/categorias/distros/</loc>
     <lastmod>2020-05-20T08:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/categorias/linux/</loc>
+    <loc>https://butecotecnologico.com.br/tags/gnome/</loc>
     <lastmod>2020-05-20T08:00:00+00:00</lastmod>
   </url>
   
@@ -333,12 +333,12 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/categorias/python/</loc>
+    <loc>https://butecotecnologico.com.br/tags/s3/</loc>
     <lastmod>2020-05-15T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/s3/</loc>
+    <loc>https://butecotecnologico.com.br/categorias/tutoriais/</loc>
     <lastmod>2020-05-15T12:00:00+00:00</lastmod>
   </url>
   
@@ -378,6 +378,11 @@
   </url>
   
   <url>
+    <loc>https://butecotecnologico.com.br/categorias/reviews/</loc>
+    <lastmod>2020-05-06T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://butecotecnologico.com.br/tags/bitcoin/</loc>
     <lastmod>2020-04-24T08:00:00+00:00</lastmod>
   </url>
@@ -393,12 +398,12 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/categorias/livros/</loc>
+    <loc>https://butecotecnologico.com.br/livros-gratuitos-abril-2020/</loc>
     <lastmod>2020-04-24T08:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/livros-gratuitos-abril-2020/</loc>
+    <loc>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</loc>
     <lastmod>2020-04-24T08:00:00+00:00</lastmod>
   </url>
   
@@ -424,11 +429,6 @@
   
   <url>
     <loc>https://butecotecnologico.com.br/tags/helpdesk/</loc>
-    <lastmod>2016-06-13T20:54:16+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/categorias/livro/</loc>
     <lastmod>2016-06-13T20:54:16+00:00</lastmod>
   </url>
   
@@ -628,11 +628,6 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/categorias/discuss%C3%A3o/</loc>
-    <lastmod>2016-05-10T12:57:34+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/tags/embarcados/</loc>
     <lastmod>2016-05-10T12:57:34+00:00</lastmod>
   </url>
@@ -653,18 +648,8 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</loc>
-    <lastmod>2016-05-09T22:55:41+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/tags/sql/</loc>
     <lastmod>2016-05-09T22:55:41+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/categorias/dicas/</loc>
-    <lastmod>2016-05-03T22:36:32+00:00</lastmod>
   </url>
   
   <url>
@@ -1333,6 +1318,11 @@
   </url>
   
   <url>
+    <loc>https://butecotecnologico.com.br/categorias/discuss%C3%B5es/</loc>
+    <lastmod>2016-02-18T16:32:59+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://butecotecnologico.com.br/novatec-lanca-5a-edicao-do-livro-expressoes-regulares-uma-abordagem-divertida/</loc>
     <lastmod>2016-02-17T21:53:50+00:00</lastmod>
   </url>
@@ -1409,11 +1399,6 @@
   
   <url>
     <loc>https://butecotecnologico.com.br/tags/distro/</loc>
-    <lastmod>2016-02-01T21:15:54+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/categorias/distros/</loc>
     <lastmod>2016-02-01T21:15:54+00:00</lastmod>
   </url>
   
@@ -1509,11 +1494,6 @@
   
   <url>
     <loc>https://butecotecnologico.com.br/tags/nmea/</loc>
-    <lastmod>2016-01-20T21:11:20+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/categorias/tutorial/</loc>
     <lastmod>2016-01-20T21:11:20+00:00</lastmod>
   </url>
   
@@ -1698,16 +1678,6 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/dica/</loc>
-    <lastmod>2015-12-09T07:46:43+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/dicas/</loc>
-    <lastmod>2015-12-09T07:46:43+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/tags/emacs/</loc>
     <lastmod>2015-12-09T07:46:43+00:00</lastmod>
   </url>
@@ -1719,11 +1689,6 @@
   
   <url>
     <loc>https://butecotecnologico.com.br/introduzindo-conceitos-do-emacs/</loc>
-    <lastmod>2015-12-09T07:46:43+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/tutorial/</loc>
     <lastmod>2015-12-09T07:46:43+00:00</lastmod>
   </url>
   
@@ -1755,11 +1720,6 @@
   <url>
     <loc>https://butecotecnologico.com.br/vim-tips-trabalhando-com-abas/</loc>
     <lastmod>2015-11-26T21:24:08+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/livro/</loc>
-    <lastmod>2015-11-25T20:56:01+00:00</lastmod>
   </url>
   
   <url>
@@ -2363,6 +2323,11 @@
   </url>
   
   <url>
+    <loc>https://butecotecnologico.com.br/tags/bds/</loc>
+    <lastmod>2015-09-02T23:12:01+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://butecotecnologico.com.br/os-primeiros-passos-com-o-demonio-freebsd/</loc>
     <lastmod>2015-09-02T23:12:01+00:00</lastmod>
   </url>
@@ -2430,6 +2395,11 @@
   <url>
     <loc>https://butecotecnologico.com.br/tags/openelec/</loc>
     <lastmod>2015-08-20T22:28:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/automa%C3%A7%C3%A3o/</loc>
+    <lastmod>2015-08-18T23:29:34+00:00</lastmod>
   </url>
   
   <url>
@@ -2540,11 +2510,6 @@
   <url>
     <loc>https://butecotecnologico.com.br/sensor-de-temperatura-grafico-com-arduino-e-lcd-16x2/</loc>
     <lastmod>2015-07-20T22:31:20+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/automa%C3%A7%C3%A3o/</loc>
-    <lastmod>2015-07-20T16:36:44+00:00</lastmod>
   </url>
   
   <url>
@@ -2933,12 +2898,12 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/cupom-de-desconto-nos-livros-da-casa-do-codigo/</loc>
+    <loc>https://butecotecnologico.com.br/tags/cupom/</loc>
     <lastmod>2015-05-25T00:04:17+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/parceria/</loc>
+    <loc>https://butecotecnologico.com.br/cupom-de-desconto-nos-livros-da-casa-do-codigo/</loc>
     <lastmod>2015-05-25T00:04:17+00:00</lastmod>
   </url>
   
@@ -3105,6 +3070,11 @@
   <url>
     <loc>https://butecotecnologico.com.br/torchat/</loc>
     <lastmod>2015-05-11T23:05:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/email/</loc>
+    <lastmod>2015-05-11T22:54:26+00:00</lastmod>
   </url>
   
   <url>
@@ -3583,12 +3553,7 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/categorias/certifica%C3%A7%C3%A3o/</loc>
-    <lastmod>2015-03-24T00:28:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/certifica%C3%A7%C3%A3o/</loc>
+    <loc>https://butecotecnologico.com.br/categorias/certifica%C3%A7%C3%B5es/</loc>
     <lastmod>2015-03-24T00:28:50+00:00</lastmod>
   </url>
   
@@ -3635,11 +3600,6 @@
   <url>
     <loc>https://butecotecnologico.com.br/builder-ide-nova-ide-para-criacao-de-aplicacoes-gnome-no-linux/</loc>
     <lastmod>2015-03-19T07:12:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/alien/</loc>
-    <lastmod>2015-03-17T00:53:54+00:00</lastmod>
   </url>
   
   <url>
@@ -3798,27 +3758,12 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/bbswitch/</loc>
-    <lastmod>2015-02-23T00:59:15+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/bumblebee/</loc>
-    <lastmod>2015-02-23T00:59:15+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/</loc>
     <lastmod>2015-02-23T00:59:15+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://butecotecnologico.com.br/tags/nouveau/</loc>
-    <lastmod>2015-02-23T00:59:15+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/optimus/</loc>
     <lastmod>2015-02-23T00:59:15+00:00</lastmod>
   </url>
   
@@ -4088,18 +4033,8 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/cupom/</loc>
-    <lastmod>2015-01-15T22:28:08+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/cupom-de-desconto-para-livros-da-novatec/</loc>
     <lastmod>2015-01-15T22:28:08+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/email/</loc>
-    <lastmod>2015-01-15T06:00:19+00:00</lastmod>
   </url>
   
   <url>
@@ -4174,6 +4109,11 @@
   
   <url>
     <loc>https://butecotecnologico.com.br/tags/mcp/</loc>
+    <lastmod>2015-01-07T20:48:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/mcsa/</loc>
     <lastmod>2015-01-07T20:48:20+00:00</lastmod>
   </url>
   
@@ -4413,6 +4353,16 @@
   </url>
   
   <url>
+    <loc>https://butecotecnologico.com.br/tags/lfce/</loc>
+    <lastmod>2014-10-08T15:05:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/lfcs/</loc>
+    <lastmod>2014-10-08T15:05:30+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://butecotecnologico.com.br/o-buteco-open-souce-mudou/</loc>
     <lastmod>2014-10-08T13:04:34+00:00</lastmod>
   </url>
@@ -4535,6 +4485,11 @@
   <url>
     <loc>https://butecotecnologico.com.br/pyston-0-2-ja-esta-disponivel/</loc>
     <lastmod>2014-09-12T15:17:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/ffmpeg/</loc>
+    <lastmod>2014-09-09T23:01:02+00:00</lastmod>
   </url>
   
   <url>

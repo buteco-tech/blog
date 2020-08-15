@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bds on Buteco Tecnológico</title>
+    <link>https://butecotecnologico.com.br/tags/bds/</link>
+    <description>Recent content in bds on Buteco Tecnológico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 02 Sep 2015 23:12:01 +0000</lastBuildDate>
+    
+	<atom:link href="https://butecotecnologico.com.br/tags/bds/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Os primeiros passos com o demônio - FreeBSD</title>
+      <link>https://butecotecnologico.com.br/os-primeiros-passos-com-o-demonio-freebsd/</link>
+      <pubDate>Wed, 02 Sep 2015 23:12:01 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/os-primeiros-passos-com-o-demonio-freebsd/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/freebsd.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-medium wp-image-3261&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/freebsd-212x300.jpg&#34; alt=&#34;freebsd&#34; width=&#34;212&#34; height=&#34;300&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Você se decidiu .. se rendeu, vai experimentar este demônio que o pessoal tanto comenta, fala, testa, que a Neflix usa, que o Groupon migrou os servidores, que o Whatsap utiliza, que a Juniper utilizar ..&lt;/p&gt;
+&lt;p&gt;Ok, mas por onde começar o_O ?&lt;/p&gt;
+&lt;p&gt;Óbvio pela bíblia do demônio :P &lt;a href=&#34;https://www.freebsd.org/doc/handbook/&#34; target=&#34;_blank&#34;&gt;&amp;quot;Freebsd Hadbook&amp;quot;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Marco lá não tem as dicas maneiras para arrumar o meu desktop demonizado &amp;hellip;.. calma gente que um outro ótimo texto de referência: &lt;a href=&#34;https://cooltrainer.org/a-freebsd-desktop-howto/&#34; target=&#34;_blank&#34;&gt;A FreeBSD 10 Desktop How-to&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
