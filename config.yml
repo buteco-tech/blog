@@ -32,12 +32,15 @@ params:
     - podcast
     - wordpress
   title: Buteco Tecnológico
-  description: Um blog feito por, e para pessoas que gostam de compartilhar suas experiências com linux, software livre e tecnologia.
+  description: Um blog feito por, e para pessoas que gostam de compartilhar suas experiências com tecnologia, linux e software livre.
   images:
     - logos/logo.png
   logo: logos/logo-og.png
   copyright: Buteco Tecnológico
   builtWith: false
+
+  # dateFormat: "Jan 2, 2006"
+  dateFormat: "02/01/2006"
 
   #
   # Sidebar
@@ -45,7 +48,7 @@ params:
   # Sidebar is hidden on small devices (< 576px)
   sidebar:
     categories:
-      show: false   # Show categories in sidebar
+      show: true   # Show categories in sidebar
       count: true  # Show article count in category
     tags:
       show: false   # Show categories in sidebar
@@ -56,6 +59,7 @@ params:
       index: true  # Show index number
       item:
         - path: posts/2020-06-16-de-que-sao-feitos-containers-linux.md
+        - path: posts/2020-08-13-kubernetes-explicado.md
         - path: posts/2020-05-15-usando-aws-s3-em-python.md
         - path: posts/2020-04-24-livros-gratuitos.md
         - path: posts/2020-05-20-ubuntu-20-04.md
@@ -73,19 +77,19 @@ params:
   social:
     - icon: fab fa-telegram-plane
       title: Telegram
-      url: https://t.me/butecopensource
+      url: https://t.me/butecotecnologico
     - icon: fab fa-twitter
       title: Twitter
-      url: https://twitter.com/butecopensource
+      url: https://twitter.com/butecotech
     - icon: fab fa-linkedin-in
       title: Linkedin
-      url: https://www.linkedin.com/company/butecopensource
+      url: https://www.linkedin.com/company/butecotecnologico
     - icon: fab fa-facebook-f
       title: Facebook
-      url: https://www.facebook.com/butecopensource
+      url: https://www.facebook.com/buteco.tech
     - icon: fab fa-youtube
       title: YouTube
-      url: https://www.youtube.com/c/ButecoOpenSource
+      url: https://www.youtube.com/c/ButecoTech
     - icon: fab fa-instagram
       title: Instagram
       url: https://www.instagram.com/buteco.tech/
@@ -128,15 +132,22 @@ menu:
       weight: 3
       identifier: DIY
       url: /categorias/diy/
-    - name: Linux
+    - name: Distros
       weight: 4
-      identifier: linux
-      url: /categorias/linux/
+      identifier: distros
+      url: /categorias/distros/
     - name: Segurança
       weight: 5
       identifier: segurança
       url: /categorias/segurança/
-
+    - name: Reviews
+      weight: 6
+      identifier: reviews
+      url: /categorias/reviews/
+    - name: Tutoriais
+      weight: 7
+      identifier: tutoriais
+      url: /categorias/tutoriais/
   terms:
     - name: Termos de Uso
       weight: 1
@@ -196,13 +207,14 @@ menu:
     - name: Envie seu artigo
       weight: 2
       url: /envio-de-artigo/
+      post: <i class="far fa-heart text-danger"></i>
   footer3:
     - name: Podcast
       weight: 1
       identifier: podcast
       url: /podcast/
       pre: <b>
-      post: </b>
+      post: </b><span class="badge badge-success">Novo</span>
     # - name: Equipe
     #   weight: 2
     #   identifier: equipe
