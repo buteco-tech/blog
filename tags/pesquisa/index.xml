@@ -3,14 +3,15 @@
   <channel>
     <title>pesquisa on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/pesquisa/</link>
-    <description>Recent content in pesquisa on Buteco Tecnológico</description>
+    <description>Recent content in pesquisa on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>pesquisa on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/pesquisa/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 05 May 2015 23:58:17 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/pesquisa/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 05 May 2015 23:58:17 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/pesquisa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pesquisa sobre Cursos Presenciais de Microcontroladores</title>
       <link>https://butecotecnologico.com.br/pesquisa-sobre-cursos-presenciais-de-microcontroladores/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/pesquisa-sobre-cursos-presenciais-de-microcontroladores/</guid>
       <description>O Embarcados está fazendo uma pesquisa sobre cursos presenciais de microcontroladores e ele conta com a sua opinião.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>pesquisa on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/pesquisa/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

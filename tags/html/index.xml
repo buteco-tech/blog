@@ -3,14 +3,15 @@
   <channel>
     <title>html on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/html/</link>
-    <description>Recent content in html on Buteco Tecnológico</description>
+    <description>Recent content in html on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>html on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/html/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 01 Apr 2016 21:50:20 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/html/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 01 Apr 2016 21:50:20 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lançamentos Novatec: Sass e Compass e Docker</title>
       <link>https://butecotecnologico.com.br/lancamentos-novatec-sass-e-compass-e-docker/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/lancamentos-novatec-sass-e-compass-e-docker/</guid>
       <description>Fundamentos de Sass e Compass Título é indicado para estudantes, designers e desenvolvedores que querem aprender os conceitos fundamentais de Sass e Compass</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>html on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/html/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

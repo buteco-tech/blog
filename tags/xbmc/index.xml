@@ -3,14 +3,15 @@
   <channel>
     <title>xbmc on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/xbmc/</link>
-    <description>Recent content in xbmc on Buteco Tecnológico</description>
+    <description>Recent content in xbmc on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>xbmc on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/xbmc/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 31 Mar 2015 00:38:13 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/xbmc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 31 Mar 2015 00:38:13 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/xbmc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kodi 14.2 está disponível</title>
       <link>https://butecotecnologico.com.br/kodi-14-2-esta-disponivel/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/kodi-14-2-esta-disponivel/</guid>
       <description>O Kodi é uma central multimídia livre (GPL) que pode ser instalada no Linux, OSX, Windows, iOS e Android. Permitindo que os usuários vejam e executem vídeos, músicas, Podcasts e outras mídias digitais armazenadas localmente, na rede ou na internet.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>xbmc on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/xbmc/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Kodi 14.1 já está disponível</title>
@@ -27,7 +34,14 @@
       
       <guid>https://butecotecnologico.com.br/kodi-14-1-ja-esta-disponivel/</guid>
       <description>Kodi é o novo nome do conhecido XBMC. Nesta versão além da correção de vários bugs, o XBMC vem com um novo nome (Kodi), um novo logo e uma variedade de novas funcionalidades.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>xbmc on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/xbmc/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

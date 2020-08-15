@@ -3,14 +3,15 @@
   <channel>
     <title>tecnologia on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/tecnologia/</link>
-    <description>Recent content in tecnologia on Buteco Tecnológico</description>
+    <description>Recent content in tecnologia on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>tecnologia on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/tecnologia/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 16 Oct 2015 09:40:30 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/tecnologia/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 16 Oct 2015 09:40:30 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/tecnologia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Acesso a informação, evolução, tecnologia e caos</title>
       <link>https://butecotecnologico.com.br/acesso-a-informacao-evolucao-tecnologia-e-caos/</link>
@@ -19,7 +20,13 @@
       <guid>https://butecotecnologico.com.br/acesso-a-informacao-evolucao-tecnologia-e-caos/</guid>
       <description>&lt;p&gt;Mais um texto que pode soar velho ;), mas velho eu sou&amp;hellip; tenho que aceitar&amp;hellip;&lt;/p&gt;
 &lt;p&gt;A ideia de hoje é falar um pouco de algo que contorna nosso nicho da tecnologia da computação, que é o acesso a informação. Bom, vou iniciar aos mais novos explicando que um dia existiram livros,  que eram usados antes da Wikipédia :P que as famílias compravam e tinham em casa. Um grupo de livros chamado Barsa, hoje quem sabe tenha disto em museus. No entanto só os como dizem, mais afortunados, tinham essa coleção de livros, e o que ali existia era o máximo de informação e conjunto de aprendizado que as pessoas em geral possuíam em suas casas, no modelo de enciclopédia.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>tecnologia on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/tecnologia/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lançado a 70º edição da Revista Espírito Livre</title>
@@ -28,7 +35,14 @@
       
       <guid>https://butecotecnologico.com.br/lancado-a-70o-edicao-da-revista-espirito-livre/</guid>
       <description>Vitória recebeu a oitava edição do Fórum Espírito Livre, ocorrido de 12 a 15 de novembro durante a 11º Semana Nacional de Ciência e Tecnologia. O evento aconteceu nas instalações na Universidade Federal do Espírito Santo – UFES. Participaram do evento diversos palestrantes de São Paulo, Rio de Janeiro, Minas Gerais, além de vários parceiros e colaboradores locais, possibilitando uma excelente troca de experiências, em um cenário bastante propício para tais debates.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>tecnologia on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/tecnologia/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

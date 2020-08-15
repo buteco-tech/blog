@@ -3,14 +3,15 @@
   <channel>
     <title>anonimo on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/anonimo/</link>
-    <description>Recent content in anonimo on Buteco Tecnológico</description>
+    <description>Recent content in anonimo on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>anonimo on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/anonimo/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 11 May 2015 23:05:53 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/anonimo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 11 May 2015 23:05:53 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/anonimo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TorChat</title>
       <link>https://butecotecnologico.com.br/torchat/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/torchat/</guid>
       <description>Muitos de vocês já devem ter ouvido falar do TorBrowser um serviço bastante conhecimento para quem deseja navegar de forma anônima, o TorChat busca a mesma ideia, envio e recebimento de mensagens de forma segura.
 TorChat é software livre licenciado sob os termos da GNU General Public License(GPL). A primeira versão pública do TorChat foi lançado em novembro de 2007 por Bernd Kreuß e desde então tem sido constantemente desenvolvido, disponível para Linux, Windows e atualmente em Mac.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>anonimo on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/anonimo/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>vi on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/vi/</link>
-    <description>Recent content in vi on Buteco Tecnológico</description>
+    <description>Recent content in vi on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>vi on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/vi/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 26 Nov 2015 21:24:08 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/vi/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 26 Nov 2015 21:24:08 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/vi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VIM Tips: Trabalhando com abas</title>
       <link>https://butecotecnologico.com.br/vim-tips-trabalhando-com-abas/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/vim-tips-trabalhando-com-abas/</guid>
       <description>&lt;p&gt;O VIM, como todos sabem, tem muitas ferramentas por padrão que são pouco mostradas, ou até mesmo não são exploradas com todo o seu potencial. Essa série de artigos tem como foco mostrar algumas funcionalidades interessantes e as vezes pouco exploradas.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>vi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/vi/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

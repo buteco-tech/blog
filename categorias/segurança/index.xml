@@ -3,14 +3,15 @@
   <channel>
     <title>Segurança on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/categorias/seguran%C3%A7a/</link>
-    <description>Recent content in Segurança on Buteco Tecnológico</description>
+    <description>Recent content in Segurança on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>Segurança on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/categorias/seguran%C3%A7a/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 04 Jun 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/categorias/seguran%C3%A7a/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 04 Jun 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/categorias/seguran%C3%A7a/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>E se você perdesse acesso a suas contas?</title>
       <link>https://butecotecnologico.com.br/e-se-voce-perdesse-acesso-a-suas-contas/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/e-se-voce-perdesse-acesso-a-suas-contas/</guid>
       <description>O que você faria se perdesse acesso a sua conta de e-mail?</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Segurança on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/seguran%C3%A7a/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Configurações do OpenSSH que podem fazer toda a diferença</title>
@@ -28,7 +35,14 @@
       <guid>https://butecotecnologico.com.br/configuracoes-do-openssh-que-podem-fazer-toda-a-diferenca/</guid>
       <description>&lt;p&gt;Para quem possui algum servidor, ou até para em seu computador pessoal, algumas configurações padrão do servidor SSH são extremamente permissivas, vulneráveis a ataques, e quem sabe até invasão com técnicas de &lt;a href=&#34;https://en.wikipedia.org/wiki/Brute-force_attack&#34; target=&#34;_blank&#34;&gt;força bruta&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Entre algumas dicas mais simples para aumentar a segurança estão configurar o seu firewall corretamente ou até desabilitar o acesso SSH. Para servidores, esta última opção não é válida. Sendo assim vamos conferir algumas configurações que podem fazer toda a diferença na hora de algum espertinho tentar invadir seu servidor.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Segurança on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/seguran%C3%A7a/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

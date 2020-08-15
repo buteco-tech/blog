@@ -3,14 +3,15 @@
   <channel>
     <title>c on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/c/</link>
-    <description>Recent content in c on Buteco Tecnológico</description>
+    <description>Recent content in c on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>c on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/c/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 23 May 2016 23:34:46 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/c/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 23 May 2016 23:34:46 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>libssl e libcrypto: Visualizando certificados online em C</title>
       <link>https://butecotecnologico.com.br/libssl-libcrypto-visualizando-certificados-online-em-c/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/libssl-libcrypto-visualizando-certificados-online-em-c/</guid>
       <description>&lt;p&gt;Muito se fala do OpenSSL para geração e manutenção de certificados digitais, além disso, o OpenSSL pode criptografar arquivos, gerar números randômicos, e etc. Este artigo vem mostrar como utilizar a libssl para visualizar certificado utilizando a linguagem C.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Vaga para programador Linux/C em Blumenau</title>
@@ -29,7 +36,13 @@
       <description>Desenvolvedor de Software – Linux e C 
 Responsabilidades
 Esta posição é responsável por desenhar e implementar aplicativos em SW para sistema operacional em Linux, incluindo desenvolvimento de novos aplicativos, melhorias e correções em aplicativos existentes, instalação de pacotes de aplicativos de código aberto.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>POSIX Regular Expression em C</title>
@@ -38,7 +51,13 @@ Esta posição é responsável por desenhar e implementar aplicativos em SW para
       
       <guid>https://butecotecnologico.com.br/posix-regular-expression-em-c/</guid>
       <description>&lt;p&gt;Expressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares &lt;em&gt;built-in&lt;/em&gt;, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a &lt;em&gt;POSIX RegEx&lt;/em&gt; na linguagem C na plataforma Linux.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -47,7 +66,13 @@ Esta posição é responsável por desenhar e implementar aplicativos em SW para
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-36/</guid>
       <description>Para quem está tentando aprender C++ e acha que é difícil :P</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Linux API: pthreads - Parte 1</title>
@@ -59,7 +84,13 @@ Esta posição é responsável por desenhar e implementar aplicativos em SW para
 &lt;p&gt;Para tal, este post mostrará como utilizar POSIX threads na linguagem C.&lt;/p&gt;
 &lt;h4&gt;O que são threads?&lt;/h4&gt;
 &lt;em&gt;Threads&lt;/em&gt; são linhas de execução para processos. Ao iniciar um processo, uma &lt;em&gt;thread&lt;/em&gt; principal é iniciada, um processo então pode criar outras &lt;em&gt;threads&lt;/em&gt; para que estas executem tarefas específicas e de forma paralela. Quando temos uma CPU com um único núcleo, dizemos que as &lt;em&gt;threads&lt;/em&gt; executam de forma &lt;em&gt;concorrente&lt;/em&gt;, uma vez que a CPU só pode executar uma thread por vez, mas há mais que uma para ser executada ao &#34;mesmo tempo&#34;. Já quando temos uma CPU com vários núcleos, as &lt;em&gt;threads&lt;/em&gt; podem ser executadas tanto de forma &lt;em&gt;concorrente&lt;/em&gt; como em &lt;em&gt;paralelo&lt;/em&gt;, pois o &lt;a href=&#34;https://pt.wikipedia.org/wiki/Escalonamento_de_processos&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;scheduler&lt;/em&gt;&lt;/a&gt; pode priorizar outros programas do computador além do seu.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Iluminação Natalina com Arduino, Temporizador e LDR</title>
@@ -68,7 +99,13 @@ Esta posição é responsável por desenhar e implementar aplicativos em SW para
       
       <guid>https://butecotecnologico.com.br/iluminacao-natalina-com-arduino-temporizador-e-ldr/</guid>
       <description>&lt;p&gt;&lt;span style=&#34;font-weight: 400;&#34;&gt;Neste projeto, irei apresentar a vocês como controlar uma carga de 110 ou 220 volts com um Arduíno e um relé. Utilizaremos também um LDR para medição de intensidade de luz, para poder fazer com que a carga seja ligada apenas quando for escuro, e além disso, com a opção de temporizar o tempo que a carga ficará ligada. Um exemplo de aplicação é a iluminação Natalina, fazendo ela ligar somente quando escurecer, e caso quiser, pode-se também programar essa para desligar após algumas horas, ou ainda, deixar com que ela se apague novamente quando o dia clarear.&lt;/span&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Como utilizar o getaddrinfo para evitar a falha GHOST</title>
@@ -77,7 +114,13 @@ Esta posição é responsável por desenhar e implementar aplicativos em SW para
       
       <guid>https://butecotecnologico.com.br/como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost/</guid>
       <description>&lt;p&gt;Em janeiro de 2015 se ouviu falar de uma falha de segurança na glibc chamada GHOST. Esta falha poderia ser explorada por um programa malicioso utilizando as funções &lt;code&gt;gethostbyname()&lt;/code&gt; e &lt;code&gt;gethostbyname2()&lt;/code&gt; da glibc. O ataque acontece por um &lt;em&gt;buffer overflow&lt;/em&gt; dentro destas funções quando um endereço inválido é passando como parâmetro. Ao explorar esta falha, o atacante consegue executar códigos arbitrários com as permissões do usuários executando o processo.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Implemente seu malloc/free. Just4fun!</title>
@@ -86,7 +129,13 @@ Esta posição é responsável por desenhar e implementar aplicativos em SW para
       
       <guid>https://butecotecnologico.com.br/implemente-seu-mallocfree-just4fun/</guid>
       <description>&lt;p&gt;Algum tempo atrás comprei o livro The Linux Programming Interface, um dos melhores livros que já adquiri. Um dos primeiros capítulos que li foi sobre alocação de memória. No final do capítulo, o autor oferece alguns exercícios. Entre eles existe um mais desafiador. Que é implementar funções equivalentes ao &lt;code&gt;malloc&lt;/code&gt; e &lt;code&gt;free&lt;/code&gt;. The challenge has been accepted!&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Gerando backtrace em C/C&#43;&#43; no Linux</title>
@@ -95,7 +144,13 @@ Esta posição é responsável por desenhar e implementar aplicativos em SW para
       
       <guid>https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/</guid>
       <description>&lt;p&gt;Olá pessoal, creio que muitos aqui já se depararam com algum &lt;em&gt;crash&lt;/em&gt; em seus programas em C/C++, e gostariam de poder ver a pilha de chamadas, ou &lt;em&gt;stacktrace/backtrace&lt;/em&gt;, ao menos no ambiente de testes. Pois bem, a boa notícia é que no Linux existe a possibilidade de mostrar qual o ultimo método chamado antes de receber um &lt;em&gt;crash&lt;/em&gt;.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Utilizando Shared Objects no Python</title>
@@ -105,7 +160,13 @@ Esta posição é responsável por desenhar e implementar aplicativos em SW para
       <guid>https://butecotecnologico.com.br/utilizando-shared-objects-no-python/</guid>
       <description>&lt;p&gt;Python é realmente uma linguagem muito versátil, tendo a mão quase sempre tudo o que se precisa fazer. Então, a algum tempo atrás eu precisava verificar a possibilidade de carregar um Shared Object com o Python, e eis que encontrei. A documentação do Python é realmente muito útil, com exemplos de utilização de módulos, inclusive do módulo em questão.&lt;/p&gt;
 &lt;p&gt;Para poder carregar a lib, eu utilizei o módulo &lt;strong&gt;ctypes&lt;/strong&gt;. Este módulo provê tipos de dados compatíveis com o C e permite chamar bibliotecas, como DDLs e shared objects. Para iniciar o exemplo, eu criei uma lib, na verdade um shared object, a seguir:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Vaga para programador Linux/C em Blumenau</title>
@@ -120,7 +181,13 @@ implementar aplicativos em SW para sistema operacional em Linux,
 incluindo desenvolvimento de novos aplicativos, melhorias e correções
 em aplicativos existentes, instalação de pacotes de aplicativos de
 código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -129,7 +196,13 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-14/</guid>
       <description>Mais uma tirinha para alegrar sua sexta-feira :)</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Cliente / Server com Boost.Asio</title>
@@ -138,7 +211,13 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/cliente-server-com-boost-asio/</guid>
       <description>Artigo que mostra um exemplo da utilização da biblioteca boost com asio.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -147,7 +226,13 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-5/</guid>
       <description>Não conhece a linguagem de programação D? Então veja este link.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Criando módulo Python em C/C&#43;&#43;</title>
@@ -156,7 +241,13 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/criando-modulo-python-em-cc/</guid>
       <description>Primeiros passos na criação de um módulo C/C++ para ser utilizado dentro do Python</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Builder IDE - Nova IDE para criação de aplicações GNOME no Linux</title>
@@ -165,7 +256,13 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/builder-ide-nova-ide-para-criacao-de-aplicacoes-gnome-no-linux/</guid>
       <description>Este post destaca as principais features da nova IDE Builder que esta sendo desenvolvida.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conhecendo Pipe e FIFO (parte final)</title>
@@ -174,7 +271,13 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/conhecendo-pipe-e-fifo-parte-final/</guid>
       <description>Última parte da sequencia de artigos sobre pipes e fifos. Nesta parte, serão explicados como funcionam os fifos e como se diferenciam dos pipes.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -183,7 +286,13 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Geração de MD5 utilizando C com OpenSSL e Python</title>
@@ -192,7 +301,13 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/</guid>
       <description>Esta postagem mostra como gerar MD5 via código C (utilizando a biblioteca OpenSSL) e com Python (utilizando a biblioteca hashlib).</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Entendendo Pipe e FIFO (parte 2)</title>
@@ -201,7 +316,13 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-2/</guid>
       <description>Esta é a segunda parte da postagem sobre Pipes e Fifos aqui do blog.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Utilizando atexit com C e Python</title>
@@ -210,7 +331,13 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/utilizando-atexit-com-c-e-python/</guid>
       <description>Em muitos casos, quando escrevemos programas se faz necessário liberar os recursos que o programa requisitou do sistema operacional.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>glibc 2.21 já está disponível</title>
@@ -219,7 +346,13 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/glibc-2-21-ja-esta-disponivel/</guid>
       <description>A GNU C Library (glibc) é a biblioteca C padrão no sistema GNU e na maioria dos sistemas com Kernel Linux. A versão 2.21 vem com várias correções de bugs algumas funcionalidades novas.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Entendendo Pipe e FIFO (parte 1)</title>
@@ -228,7 +361,13 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-1/</guid>
       <description>Pipes e FIFOs são muito utilizados no mundo Linux como um método de IPC (inter process communication), ou comunicação entre processos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Hands On: Shared Libraries no Linux</title>
@@ -237,7 +376,13 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/hands-on-shared-libraries-no-linux/</guid>
       <description>Bibliotecas compartilhadas são usadas em qualquer sistema operacional, seja Windows, Linux, Mac OSX ou qualquer *BSD ou *NIX.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Introdução ao ALSA e sua API em C e Python</title>
@@ -246,7 +391,14 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/</guid>
       <description>O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/c/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

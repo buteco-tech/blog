@@ -3,14 +3,15 @@
   <channel>
     <title>browser on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/browser/</link>
-    <description>Recent content in browser on Buteco Tecnológico</description>
+    <description>Recent content in browser on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>browser on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/browser/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 03 Jul 2015 12:40:21 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/browser/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 03 Jul 2015 12:40:21 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/browser/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Firefox 39 traz melhorias de segurança</title>
       <link>https://butecotecnologico.com.br/firefox-39-traz-melhorias-de-seguranca/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/firefox-39-traz-melhorias-de-seguranca/</guid>
       <description>&lt;p&gt;O Firefox 39.0 já está disponível e vem com melhorias de desempenho e correções de segurança. &lt;a href=&#34;https://www.mozilla.org/en-US/firefox/new/&#34; target=&#34;_blank&#34;&gt;Clique aqui&lt;/a&gt; caso queira fazer o download.&lt;/p&gt;
 &lt;p&gt;Dentre as novidades estão:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>browser on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/browser/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

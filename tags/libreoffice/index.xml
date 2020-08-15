@@ -3,14 +3,15 @@
   <channel>
     <title>libreoffice on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/libreoffice/</link>
-    <description>Recent content in libreoffice on Buteco Tecnológico</description>
+    <description>Recent content in libreoffice on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>libreoffice on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/libreoffice/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 14 Aug 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/libreoffice/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 14 Aug 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/libreoffice/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LibreOffice: A suite office livre</title>
       <link>https://butecotecnologico.com.br/podcast/libreoffice/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/podcast/libreoffice/</guid>
       <description>O LibreOffice é uma poderosa suíte de produtividade de escritório com planilha, editor de texto, editor de apresentação e muito mais.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>libreoffice on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/libreoffice/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Segunda temporada de caçada de bugs no LibreOffice 5.1</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/segunda-temporada-de-cacada-de-bugs-no-libreoffice-5-1/</guid>
       <description>São anunciadas as datas do bug hunt da versão 5.1 do LibreOffice</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>libreoffice on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/libreoffice/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>LibreOffice Magazine Número 19</title>
@@ -38,7 +51,13 @@
       <description>&lt;p&gt;Saiu a nova edição da LibreOffice Magazine!&lt;/p&gt;
 &lt;p&gt;Nesta edição o homenageado é o LibreOffice, onde é contado como tudo começou, qual a situação atual do projeto, sobre os cinco anos de desenvolvimento e os três anos da LibreOffice Magazine. Faz também, uma homenagem aos autores dos artigos das dezenove edições, em agradecimento pelo trabalho realizado até aqui.&lt;/p&gt;
 &lt;p&gt;Além destes, os temas abordados foram:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>libreoffice on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/libreoffice/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Produtividade no LibreOffice</title>
@@ -50,7 +69,13 @@
 &lt;p style=&#34;text-align: justify;&#34;&gt;Olá Pessoal! Neste artigo pretendo falar um pouco sobre uma forma simples de melhorar sua produtividade no LibreOffice, as teclas de atalho. Isso mesmo, parece besteira falar sobre este assunto, ainda mais num artigo voltado para usuários de Software Livre. Mas estou falando sério, não subestime este recurso.&lt;/p&gt;
 &lt;p style=&#34;text-align: justify;&#34;&gt;Às vezes sem reparar, você está procurando algo que poderia ter resolvido facilmente com uma tecla de atalho ou via acesso rápido ao menu (Alt + Letra sublinhada). Claro, não estou dizendo que deveríamos decorar todas as teclas de atalhos, pelo menos eu, imagino que isto seja quase impossível. Mas nos recursos que utilizamos com um pouco mais de frequência ganhamos produtividade quando utilizamos uma forma de cortar caminho. E quanto a isto, o LibreOffice não nos deixa na mão!&lt;/p&gt;
 &lt;p style=&#34;text-align: justify;&#34;&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>libreoffice on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/libreoffice/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>LibreOffice e os compiladores</title>
@@ -59,7 +84,14 @@
       
       <guid>https://butecotecnologico.com.br/libreoffice-e-os-compiladores/</guid>
       <description>Olá pessoal, está semana foram liberados os vídeos da LibreOffice Conference 2014.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>libreoffice on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/libreoffice/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

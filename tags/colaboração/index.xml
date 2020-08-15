@@ -3,14 +3,15 @@
   <channel>
     <title>colaboração on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/colabora%C3%A7%C3%A3o/</link>
-    <description>Recent content in colaboração on Buteco Tecnológico</description>
+    <description>Recent content in colaboração on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>colaboração on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/colabora%C3%A7%C3%A3o/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 21 Oct 2015 20:07:02 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/colabora%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 21 Oct 2015 20:07:02 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/colabora%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>O valor do open source</title>
       <link>https://butecotecnologico.com.br/o-valor-do-open-source/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/o-valor-do-open-source/</guid>
       <description>&lt;p lang=&#34;pt-PT&#34;&gt;Desde 2008, o &lt;em&gt;The Linux Foudation&lt;/em&gt; tem trabalhado com desenvolvedores e empresas de tecnologia para hospedar projetos &lt;em&gt;open source&lt;/em&gt; de vários segmentos da indústria de tecnologia, ajudando a resolver problemas complexos e adaptando os princípios e práticas que fizeram e fazem do Linux o que ele é.&lt;/p&gt;
 &lt;p lang=&#34;pt-PT&#34;&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>colaboração on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/colabora%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

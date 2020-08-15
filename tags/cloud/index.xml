@@ -3,14 +3,15 @@
   <channel>
     <title>cloud on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/cloud/</link>
-    <description>Recent content in cloud on Buteco Tecnológico</description>
+    <description>Recent content in cloud on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>cloud on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/cloud/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 31 Mar 2016 23:40:20 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 31 Mar 2016 23:40:20 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apache Mesos</title>
       <link>https://butecotecnologico.com.br/apache-mesos/</link>
@@ -19,7 +20,13 @@
       <guid>https://butecotecnologico.com.br/apache-mesos/</guid>
       <description>&lt;p&gt;Nos últimos tempos vem se falando muito em computação na nuvem, computação distribuída, Linux containers, Big Data, etc. Junto com o crescimento dessas tecnologias também se observa o surgimento de inúmeras ferramentas para resolver os problemas encontrados nesta área da computação. Poderíamos citar várias, mas iremos falar brevemente sobre Apache Mesos. Não irei me aprofundar muito pois pretendo fazer mais artigos sobre o assunto detalhando mais em determinados tópicos.&lt;/p&gt;
 &lt;p&gt;O Apache Mesos é considerado o &lt;em&gt;kernel&lt;/em&gt; de sistemas distribuídos. Ele foi criado com os mesmos princípios do &lt;em&gt;kernel&lt;/em&gt; Linux, só que em outro nível de abstração. O Mesos roda em todos os nós de &lt;em&gt;cluster&lt;/em&gt; e prove a &lt;em&gt;frameworks&lt;/em&gt; como Apache Spark, Hadoop, Cassandra, Kafka, Elastic Search e outros uma API para alocar recursos e rodarem suas &lt;em&gt;tasks&lt;/em&gt; através de todo o &lt;em&gt;cluster&lt;/em&gt; ou cloud. Em um Mesos &lt;em&gt;cluster&lt;/em&gt;, CPU, memória, disco e outros recursos computacionais de todas as máquinas, virtuais ou físicas, são abstraídos em um único &lt;em&gt;pool&lt;/em&gt; de recursos. Facilitando a criação e otimizando a utilização de sistemas distribuídos.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>cloud on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/cloud/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Deploy com um clique no Heroku</title>
@@ -29,7 +36,13 @@
       <guid>https://butecotecnologico.com.br/deploy-com-um-clique-no-heroku/</guid>
       <description>&lt;p&gt;Hoje vamos ver algo um pouco diferente, mas um tanto quanto comum em alguns projetos de código aberto, o botão de deploy do &lt;a href=&#34;https://www.heroku.com/home&#34; target=&#34;_blank&#34;&gt;Heroku&lt;/a&gt;. O Heroku é uma plataforma cloud PaaS, que suporta várias linguagens de programação e você pode fazer o deploy de uma aplicação com apenas um clique em um botão. :D&lt;/p&gt;
 &lt;p&gt;É mágica? Não! Mas o processo de criar um botão de deploy é simples, mas irá variar de acordo com o seu projeto. Nem todos projetos são possíveis de fazer deploy com apenas um clique. O artigo de hoje irá descrever como fazer um deploy de uma aplicação simples, sem necessidade de &lt;a href=&#34;https://elements.heroku.com/addons&#34; target=&#34;_blank&#34;&gt;add-ons&lt;/a&gt; do Heroku.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>cloud on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/cloud/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Samsung anuncia entrada na família Arduino</title>
@@ -38,7 +51,14 @@
       
       <guid>https://butecotecnologico.com.br/samsung-anuncia-entrada-na-familia-arduino/</guid>
       <description>A plataforma ARTIK está na categoria dos dispositivos compatíveis com Arduino, e seu foco é a Internet das Coisas. No momento existem três placas: ARTIK 1, ARTIK 5 e ARTIK 10. Todas as placas possuem processador ARM multi-core e Bluetooth Low Energy (BLE). As placas ARTIK 5 e ARTIK 10 contam também com Wi-Fi, BT, Zigbee e conexões Wirelles Multi-Thread</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>cloud on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/cloud/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>maxmind on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/maxmind/</link>
-    <description>Recent content in maxmind on Buteco Tecnológico</description>
+    <description>Recent content in maxmind on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>maxmind on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/maxmind/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 03 Mar 2016 22:49:12 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/maxmind/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 03 Mar 2016 22:49:12 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/maxmind/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>i18n: Detectando o idioma do usuário</title>
       <link>https://butecotecnologico.com.br/i18n-detectando-o-idioma-do-usuario/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/i18n-detectando-o-idioma-do-usuario/</guid>
       <description>&lt;p&gt;Internacionalizar uma aplicação nem sempre é algo fácil, ainda mais no mundo Web. Mas nesse mundo o seu melhor amigo é o header &lt;em&gt;Accept-Language&lt;/em&gt;. No lado do servidor, você provavelmente se limitará a duas formas de descobrir o idioma do usuário, uma pelo header &lt;em&gt;Accept-Language&lt;/em&gt; e a outra pelo endereço IP.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>maxmind on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/maxmind/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

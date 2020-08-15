@@ -3,14 +3,15 @@
   <channel>
     <title>educação on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/educa%C3%A7%C3%A3o/</link>
-    <description>Recent content in educação on Buteco Tecnológico</description>
+    <description>Recent content in educação on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>educação on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/educa%C3%A7%C3%A3o/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 16 Oct 2015 09:40:30 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/educa%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 16 Oct 2015 09:40:30 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/educa%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Acesso a informação, evolução, tecnologia e caos</title>
       <link>https://butecotecnologico.com.br/acesso-a-informacao-evolucao-tecnologia-e-caos/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/acesso-a-informacao-evolucao-tecnologia-e-caos/</guid>
       <description>&lt;p&gt;Mais um texto que pode soar velho ;), mas velho eu sou&amp;hellip; tenho que aceitar&amp;hellip;&lt;/p&gt;
 &lt;p&gt;A ideia de hoje é falar um pouco de algo que contorna nosso nicho da tecnologia da computação, que é o acesso a informação. Bom, vou iniciar aos mais novos explicando que um dia existiram livros,  que eram usados antes da Wikipédia :P que as famílias compravam e tinham em casa. Um grupo de livros chamado Barsa, hoje quem sabe tenha disto em museus. No entanto só os como dizem, mais afortunados, tinham essa coleção de livros, e o que ali existia era o máximo de informação e conjunto de aprendizado que as pessoas em geral possuíam em suas casas, no modelo de enciclopédia.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>educação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/educa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

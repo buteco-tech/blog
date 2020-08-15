@@ -3,14 +3,15 @@
   <channel>
     <title>octopkg on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/octopkg/</link>
-    <description>Recent content in octopkg on Buteco Tecnológico</description>
+    <description>Recent content in octopkg on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>octopkg on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/octopkg/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 28 Aug 2015 09:24:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/octopkg/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 28 Aug 2015 09:24:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/octopkg/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OctoPkg – A GUI for pkg-ng</title>
       <link>https://butecotecnologico.com.br/octopkg-a-gui-for-pkg-ng/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/octopkg-a-gui-for-pkg-ng/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/pacotes.png&#34;&gt;&lt;img class=&#34; size-medium wp-image-2985 aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/pacotes-300x289.png&#34; alt=&#34;pacotes&#34; width=&#34;300&#34; height=&#34;289&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Eu fico feliz quando pela minhas andanças surfando na web, encontro alguns projetos brasileiros envolvidos com FreeBSD e ou com código aberto em geral. O projeto da vez é o &lt;a href=&#34;https://octopkg.wordpress.com/&#34; target=&#34;_blank&#34;&gt;OctoPKG&lt;/a&gt;, criado pelo &lt;a href=&#34;https://twitter.com/aaarnt&#34;&gt;Alexandre A Arnt&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>octopkg on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/octopkg/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>ffmpeg on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/ffmpeg/</link>
-    <description>Recent content in ffmpeg on Buteco Tecnológico</description>
+    <description>Recent content in ffmpeg on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>ffmpeg on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/ffmpeg/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 09 Sep 2014 23:01:02 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 09 Sep 2014 23:01:02 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recortar arquivo de áudio no Linux pela linha de comando</title>
       <link>https://butecotecnologico.com.br/recortar-arquivo-de-audio-no-linux-pela-linha-de-comando/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/recortar-arquivo-de-audio-no-linux-pela-linha-de-comando/</guid>
       <description>Olá pessoa, segue uma dica para um problema que talvez alguns já tiveram.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>ffmpeg on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/ffmpeg/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

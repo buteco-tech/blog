@@ -3,14 +3,15 @@
   <channel>
     <title>sorteio on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/sorteio/</link>
-    <description>Recent content in sorteio on Buteco Tecnológico</description>
+    <description>Recent content in sorteio on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>sorteio on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/sorteio/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 04 Jan 2016 19:30:56 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/sorteio/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 04 Jan 2016 19:30:56 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/sorteio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kit Arduino Start - O sortudo da vez</title>
       <link>https://butecotecnologico.com.br/kit-arduino-start-o-sortudo-da-vez/</link>
@@ -19,7 +20,13 @@
       <guid>https://butecotecnologico.com.br/kit-arduino-start-o-sortudo-da-vez/</guid>
       <description>Olá caros leitores,
 Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Arduino Start: O nome dele é Bruno Naibert de Canoas/RS, Parabéns!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>sorteio on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/sorteio/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sorteio de um Kit Arduino Start</title>
@@ -30,7 +37,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       <description>&lt;p&gt;Ho! Ho! Ho!&lt;/p&gt;
 &lt;p&gt;Natal está chegando, e claro, não poderíamos deixar esta data passar. Sendo assim, em parceria com a &lt;a href=&#34;http://www.filipeflop.com&#34; target=&#34;_blank&#34;&gt;FILIPEFLOP&lt;/a&gt; vamos sortear um &lt;a href=&#34;http://www.filipeflop.com/pd-6b5b2-kit-arduino-start.html&#34; target=&#34;_blank&#34;&gt;Kit Arduino Start&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;O sorteio encerra no dia 23/12, então corra e não deixe para a última hora. O resultado sairá após o dia 28/12.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>sorteio on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/sorteio/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Resultado do sorteio de uma entrada para a Roadsec</title>
@@ -39,7 +52,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       
       <guid>https://butecotecnologico.com.br/resultado-do-sorteio-de-uma-entrada-para-a-roadsec/</guid>
       <description>Primeiramente gostaríamos de agradecer a todos que participaram do sorteio de uma entrada para o evento da Roadsec de mega encerramento em São Paulo no dia 12 de novembro.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>sorteio on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/sorteio/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sorteio de uma entrada para a Roadsec</title>
@@ -48,7 +67,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       
       <guid>https://butecotecnologico.com.br/sorteio-de-uma-entrada-para-a-roadsec/</guid>
       <description>Em parceria com a Roadsec, estamos sorteando uma entrada para o evento de mega encerramento em São Paulo no dia 12 de novembro, confira a programação.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>sorteio on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/sorteio/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>O sorteado da vez</title>
@@ -57,7 +82,14 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       
       <guid>https://butecotecnologico.com.br/o-sorteado-da-vez/</guid>
       <description>O sorteado da vez, premiado com o brinde do blog.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>sorteio on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/sorteio/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

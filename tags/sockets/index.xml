@@ -3,14 +3,15 @@
   <channel>
     <title>sockets on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/sockets/</link>
-    <description>Recent content in sockets on Buteco Tecnológico</description>
+    <description>Recent content in sockets on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>sockets on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/sockets/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 14 Jan 2015 00:05:04 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/sockets/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 14 Jan 2015 00:05:04 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/sockets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hands on: Sockets em Python</title>
       <link>https://butecotecnologico.com.br/hands-on-sockets-em-python/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/hands-on-sockets-em-python/</guid>
       <description>Muitos são os usos dos sockets atualmente e vários exemplos existem através de toda a internet em várias linguagens de programação diferentes.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>sockets on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/sockets/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

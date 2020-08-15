@@ -3,14 +3,15 @@
   <channel>
     <title>ios on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/ios/</link>
-    <description>Recent content in ios on Buteco Tecnológico</description>
+    <description>Recent content in ios on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>ios on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/ios/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 01 Jul 2015 22:55:51 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/ios/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 01 Jul 2015 22:55:51 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/ios/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Siga nosso canal no Pushbullet</title>
       <link>https://butecotecnologico.com.br/siga-nosso-canal-no-pushbullet/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/siga-nosso-canal-no-pushbullet/</guid>
       <description>Se você possui o Pushbullet, convidamos você a seguir o nosso canal (@buteco) e ficar por dentro de todos os nossos novos artigos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>ios on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/ios/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

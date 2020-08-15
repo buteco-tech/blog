@@ -3,14 +3,15 @@
   <channel>
     <title>deploy on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/deploy/</link>
-    <description>Recent content in deploy on Buteco Tecnológico</description>
+    <description>Recent content in deploy on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>deploy on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/deploy/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 23 Feb 2016 20:45:39 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/deploy/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 23 Feb 2016 20:45:39 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/deploy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploy com um clique no Heroku</title>
       <link>https://butecotecnologico.com.br/deploy-com-um-clique-no-heroku/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/deploy-com-um-clique-no-heroku/</guid>
       <description>&lt;p&gt;Hoje vamos ver algo um pouco diferente, mas um tanto quanto comum em alguns projetos de código aberto, o botão de deploy do &lt;a href=&#34;https://www.heroku.com/home&#34; target=&#34;_blank&#34;&gt;Heroku&lt;/a&gt;. O Heroku é uma plataforma cloud PaaS, que suporta várias linguagens de programação e você pode fazer o deploy de uma aplicação com apenas um clique em um botão. :D&lt;/p&gt;
 &lt;p&gt;É mágica? Não! Mas o processo de criar um botão de deploy é simples, mas irá variar de acordo com o seu projeto. Nem todos projetos são possíveis de fazer deploy com apenas um clique. O artigo de hoje irá descrever como fazer um deploy de uma aplicação simples, sem necessidade de &lt;a href=&#34;https://elements.heroku.com/addons&#34; target=&#34;_blank&#34;&gt;add-ons&lt;/a&gt; do Heroku.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>deploy on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/deploy/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

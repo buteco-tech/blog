@@ -3,14 +3,15 @@
   <channel>
     <title>teclado on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/teclado/</link>
-    <description>Recent content in teclado on Buteco Tecnológico</description>
+    <description>Recent content in teclado on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>teclado on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/teclado/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 19 May 2015 23:07:47 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/teclado/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 19 May 2015 23:07:47 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/teclado/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Utilizando um teclado matricial no Arduino</title>
       <link>https://butecotecnologico.com.br/utilizando-um-teclado-matricial-no-arduino/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/utilizando-um-teclado-matricial-no-arduino/</guid>
       <description>Já faz algum tempo que não falo do Arduino, porém hoje vou mostrar como utilizar um teclado matricial.
 O teclado que estou utilizando é um teclado matricial de membrana com 16 teclas e conector de 8 vias.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>teclado on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/teclado/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

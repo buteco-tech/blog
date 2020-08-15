@@ -3,14 +3,15 @@
   <channel>
     <title>autotools on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/autotools/</link>
-    <description>Recent content in autotools on Buteco Tecnológico</description>
+    <description>Recent content in autotools on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>autotools on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/autotools/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 10 Oct 2014 00:44:22 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/autotools/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 10 Oct 2014 00:44:22 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/autotools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hands on: autotools</title>
       <link>https://butecotecnologico.com.br/hands-on-autotools/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/hands-on-autotools/</guid>
       <description>Olá pessoal, a muito tempo eu queria aprender como funciona o tão famoso autotools.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>autotools on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/autotools/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

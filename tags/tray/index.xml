@@ -3,14 +3,15 @@
   <channel>
     <title>tray on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/tray/</link>
-    <description>Recent content in tray on Buteco Tecnológico</description>
+    <description>Recent content in tray on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>tray on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/tray/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 20 Apr 2016 23:16:52 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/tray/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 20 Apr 2016 23:16:52 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/tray/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GNOME: Removendo ícone do legacy tray</title>
       <link>https://butecotecnologico.com.br/gnome-removendo-icone-do-legacy-tray/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/gnome-removendo-icone-do-legacy-tray/</guid>
       <description>&lt;p&gt;No GNOME 3.16 foi introduzido &lt;a href=&#34;https://help.gnome.org/misc/release-notes/3.16/&#34; target=&#34;_blank&#34;&gt;um novo sistema de notificação&lt;/a&gt;, muito melhor que o antigo por sinal, porém com ele também veio um problema. O &amp;ldquo;legacy tray&amp;rdquo;, que permite que aplicativos que ainda utilizam o sistema de notificações antigo do GNOME é extremamente irritante.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>tray on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/tray/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

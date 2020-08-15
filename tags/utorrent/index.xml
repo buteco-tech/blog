@@ -3,14 +3,15 @@
   <channel>
     <title>utorrent on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/utorrent/</link>
-    <description>Recent content in utorrent on Buteco Tecnológico</description>
+    <description>Recent content in utorrent on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>utorrent on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/utorrent/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 19 Jan 2015 07:11:45 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/utorrent/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 19 Jan 2015 07:11:45 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/utorrent/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Criando um servidor de downloads de torrents com uTorrent Server</title>
       <link>https://butecotecnologico.com.br/criando-um-servidor-de-downloads-de-torrents-com-utorrent-server/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/criando-um-servidor-de-downloads-de-torrents-com-utorrent-server/</guid>
       <description>Aprenda a criar um servidor de downloads de maneira fácil e rapida com uTorrent Server;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>utorrent on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/utorrent/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

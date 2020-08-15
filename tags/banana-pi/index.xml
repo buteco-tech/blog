@@ -3,14 +3,15 @@
   <channel>
     <title>banana-pi on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/banana-pi/</link>
-    <description>Recent content in banana-pi on Buteco Tecnológico</description>
+    <description>Recent content in banana-pi on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>banana-pi on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/banana-pi/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 13 Jan 2016 11:05:44 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/banana-pi/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 13 Jan 2016 11:05:44 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/banana-pi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Servo motor com Raspberry Pi</title>
       <link>https://butecotecnologico.com.br/servo-motor-com-raspberry-pi/</link>
@@ -19,7 +20,13 @@
       <guid>https://butecotecnologico.com.br/servo-motor-com-raspberry-pi/</guid>
       <description>&lt;p&gt;Fala galera!
 Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI usando a linguagem Python.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>banana-pi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/banana-pi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conheça arkOS: Distro para hospedagem particular</title>
@@ -28,7 +35,13 @@ Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI us
       
       <guid>https://butecotecnologico.com.br/conheca-arkos-distro-para-hospedagem-particular/</guid>
       <description>&lt;p&gt;O arkOS é uma distribuição Linux baseada no &lt;a href=&#34;http://archlinuxarm.org&#34; target=&#34;_blank&#34;&gt;Arch Linux ARM&lt;/a&gt;, que funciona em dispositivos embarcados e servidores dedicados. Este contém um pacote de software completo para gerenciamento de  hospedagem particular (&lt;em&gt;self-hosting&lt;/em&gt;) de forma intuitiva e inteligente. Também permite executar sites, contas de e-mail, banco de dados e muito mais, tudo através de sua interface gráfica, que é fácil de usar.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>banana-pi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/banana-pi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi</title>
@@ -37,7 +50,13 @@ Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI us
       
       <guid>https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/</guid>
       <description>Hoje vou mostrar como instalar o ArchLinux no BananaPi. Escolhi o ArchLinux por ele ser uma distribuição bem enxuta, mas muito poderosa.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>banana-pi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/banana-pi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Primeiros passos com o Banana Pi</title>
@@ -46,7 +65,13 @@ Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI us
       
       <guid>https://butecotecnologico.com.br/primeiros-passos-com-o-banana-pi/</guid>
       <description>Na primeira postagem sobre o Banana Pi eu comentei sobre o hardware e se seria uma boa opção de compra.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>banana-pi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/banana-pi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rodando Linux em uma Banana</title>
@@ -55,7 +80,14 @@ Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI us
       
       <guid>https://butecotecnologico.com.br/rodando-linux-em-uma-banana/</guid>
       <description>Você já deve ter ouvido falar no Raspberry Pi, um computador single-board do tamanho de um cartão de crédito.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>banana-pi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/banana-pi/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

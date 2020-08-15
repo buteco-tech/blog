@@ -3,14 +3,15 @@
   <channel>
     <title>bottle on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/bottle/</link>
-    <description>Recent content in bottle on Buteco Tecnológico</description>
+    <description>Recent content in bottle on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>bottle on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/bottle/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 20 Jan 2016 21:11:20 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/bottle/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 20 Jan 2016 21:11:20 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/bottle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GPS Parte 3: Localizador GPS com a BeagleBone Green</title>
       <link>https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/</guid>
       <description>Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>bottle on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/bottle/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>otto on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/otto/</link>
-    <description>Recent content in otto on Buteco Tecnológico</description>
+    <description>Recent content in otto on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>otto on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/otto/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 29 Sep 2015 08:59:41 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/otto/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 29 Sep 2015 08:59:41 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/otto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Otto: O sucessor do Vagrant</title>
       <link>https://butecotecnologico.com.br/otto-o-sucessor-do-vagrant/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/otto-o-sucessor-do-vagrant/</guid>
       <description>&lt;p&gt;Foi anunciado ontem o Otto, sucessor do Vagrant. Sendo criado pela mesma equipe, este projeto é focado em desenvolvimento e &lt;em&gt;deploy&lt;/em&gt; de aplicações de uma maneira simplificada, sendo a ferramenta mais poderosa já desenvolvida por eles.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>otto on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/otto/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

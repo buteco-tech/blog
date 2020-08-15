@@ -3,14 +3,15 @@
   <channel>
     <title>tft on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/tft/</link>
-    <description>Recent content in tft on Buteco Tecnológico</description>
+    <description>Recent content in tft on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>tft on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/tft/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 11 Nov 2015 12:43:20 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/tft/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 11 Nov 2015 12:43:20 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/tft/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Review da tela 3.5 TFT no Raspberry Pi!</title>
       <link>https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/</guid>
       <description>&lt;p&gt;Olá pessoal, neste artigo iremos mostrar como instalar a tela TFT 3.5&amp;rdquo;, com suporte a caneta, no Raspberry Pi. Utilizaremos a distro Raspbian Wheezy, baseada no Debian e indicada pela Raspberry Foundation, e um Raspberry Pi modelo B. Se você deseja instalar a tela em outra distribuição, basta verificar quais arquivos de configuração se equiparam aos utilizados no Raspbian.&lt;/p&gt;
 &lt;p&gt;Após instalação da tela, será feito um review falando de sua qualidade e se de fato vale comprar tal acessório.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>tft on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/tft/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

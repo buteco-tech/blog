@@ -3,14 +3,15 @@
   <channel>
     <title>paho on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/paho/</link>
-    <description>Recent content in paho on Buteco Tecnológico</description>
+    <description>Recent content in paho on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>paho on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/paho/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 10 Mar 2016 23:43:51 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/paho/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 10 Mar 2016 23:43:51 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/paho/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MQTT Parte 2: Enviando e recebendo mensagens</title>
       <link>https://butecotecnologico.com.br/mqtt-parte-2-enviando-e-recebendo-mensagens/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/mqtt-parte-2-enviando-e-recebendo-mensagens/</guid>
       <description>&lt;p&gt;Na &lt;a href=&#34;https://butecotecnologico.com.br/mqtt-parte-1-o-que-e-mqtt&#34;&gt;primeira parte&lt;/a&gt; sobre o protocolo MQTT (&lt;em&gt;Message Queue Telemetry Transport&lt;/em&gt;) demos uma breve introdução ao assunto, explicando o seu funcionamento, &lt;em&gt;brokers&lt;/em&gt; e &lt;em&gt;clients&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Hoje o artigo é mais prático que teórico. Inicialmente vamos instalar/configurar o &lt;em&gt;broker&lt;/em&gt; e após vamos criar em cliente MQTT que irá ser conectar ao &lt;em&gt;broker&lt;/em&gt; para enviar ou receber mensagens.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>paho on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/paho/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

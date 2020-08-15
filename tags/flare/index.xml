@@ -3,14 +3,15 @@
   <channel>
     <title>flare on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/flare/</link>
-    <description>Recent content in flare on Buteco Tecnológico</description>
+    <description>Recent content in flare on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>flare on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/flare/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 03 Sep 2014 02:01:55 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/flare/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 03 Sep 2014 02:01:55 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/flare/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Problema ao atualizar o jogo Flare no Fedora 20</title>
       <link>https://butecotecnologico.com.br/problema-ao-atualizar-o-jogo-flare-no-fedora-20/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/problema-ao-atualizar-o-jogo-flare-no-fedora-20/</guid>
       <description>Olá pessoal, como primeiro post deste blog eu gostaria de falar sobre a minha experiência resolvendo um problema que tive hoje mesmo no Fedora 20!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>flare on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/flare/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

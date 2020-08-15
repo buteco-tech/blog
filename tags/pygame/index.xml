@@ -3,14 +3,15 @@
   <channel>
     <title>pygame on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/pygame/</link>
-    <description>Recent content in pygame on Buteco Tecnológico</description>
+    <description>Recent content in pygame on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>pygame on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/pygame/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 15 Sep 2015 20:20:02 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/pygame/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 15 Sep 2015 20:20:02 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/pygame/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Novatec lança livro que ensina a criar jogos em Python com PyGame</title>
       <link>https://butecotecnologico.com.br/novatec-lanca-livro-que-ensina-a-criar-jogos-em-python-com-pygame/</link>
@@ -19,7 +20,13 @@
       <guid>https://butecotecnologico.com.br/novatec-lanca-livro-que-ensina-a-criar-jogos-em-python-com-pygame/</guid>
       <description>&lt;p&gt;&lt;em&gt;Título ensina técnicas, dicas e truques dos maiores desenvolvedores de jogos do mundo &lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Desenvolvedores Python interessados em aprender a criar seus primeiros jogos têm agora um material completo com as melhores práticas, técnicas e truques para criar jogos atraentes usando a biblioteca PyGame.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>pygame on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/pygame/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Capturando Imagem da Webcam com o PyGame</title>
@@ -28,7 +35,14 @@
       
       <guid>https://butecotecnologico.com.br/capturando-imagem-da-webcam-com-o-pygame/</guid>
       <description>Este é o meu primeiro post no blog e gostaria de falar sobre o PyGame.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>pygame on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/pygame/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

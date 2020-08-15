@@ -3,14 +3,15 @@
   <channel>
     <title>processos on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/processos/</link>
-    <description>Recent content in processos on Buteco Tecnológico</description>
+    <description>Recent content in processos on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>processos on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/processos/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 15 Jul 2015 08:38:44 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/processos/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 15 Jul 2015 08:38:44 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/processos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Instalando o Supervisor: Um sistema de controle de processos</title>
       <link>https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/</link>
@@ -20,7 +21,14 @@
       <description>&lt;p&gt;O &lt;a href=&#34;http://supervisord.org/&#34;&gt;Supervisor&lt;/a&gt; é um sistema cliente/servidor que permite que os usuários monitorem e controlem inúmeros processos em sistema operacionais UNIX-like.&lt;/p&gt;
 &lt;p&gt;&lt;img class=&#34; aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/logo_supervisord.gif&#34; alt=&#34;Supervisord&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Ele possui alguns objetivos de programas similares, como o launchd, daemontools e runit. Mas diferente destes, ele não pretende ser um substituto ao &lt;em&gt;init&lt;/em&gt;, pelo contrário, ele inicia na inicialização do sistema como qualquer outro aplicativo.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>processos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/processos/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

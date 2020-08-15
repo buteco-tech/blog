@@ -3,14 +3,15 @@
   <channel>
     <title>jquery on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/jquery/</link>
-    <description>Recent content in jquery on Buteco Tecnológico</description>
+    <description>Recent content in jquery on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>jquery on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/jquery/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 26 Jan 2015 08:00:48 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 26 Jan 2015 08:00:48 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introdução a API do Youtube com jQuery</title>
       <link>https://butecotecnologico.com.br/introducao-a-api-do-youtube-com-jquery/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/introducao-a-api-do-youtube-com-jquery/</guid>
       <description>Veremos basicamente neste artigo como utilizar a API do Youtube, caso você não saiba, API quer dizer Aplication Programm Interface, ou interface de programação de aplicações, em outras palavras é uma camada de abstração que permite ao programador fazer chamadas a serviços.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>jquery on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/jquery/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Internacionalizando um site de forma simples</title>
@@ -27,7 +34,14 @@
       
       <guid>https://butecotecnologico.com.br/internacionalizando-um-site-de-forma-simples/</guid>
       <description>A algum tempo que já estava afim de traduzir meu site para o Português, mas nunca tive tempo e nem muito empenho.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>jquery on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/jquery/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

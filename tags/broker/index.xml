@@ -3,14 +3,15 @@
   <channel>
     <title>broker on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/broker/</link>
-    <description>Recent content in broker on Buteco Tecnológico</description>
+    <description>Recent content in broker on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>broker on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/broker/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 10 Mar 2016 23:43:51 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/broker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 10 Mar 2016 23:43:51 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/broker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MQTT Parte 2: Enviando e recebendo mensagens</title>
       <link>https://butecotecnologico.com.br/mqtt-parte-2-enviando-e-recebendo-mensagens/</link>
@@ -19,7 +20,13 @@
       <guid>https://butecotecnologico.com.br/mqtt-parte-2-enviando-e-recebendo-mensagens/</guid>
       <description>&lt;p&gt;Na &lt;a href=&#34;https://butecotecnologico.com.br/mqtt-parte-1-o-que-e-mqtt&#34;&gt;primeira parte&lt;/a&gt; sobre o protocolo MQTT (&lt;em&gt;Message Queue Telemetry Transport&lt;/em&gt;) demos uma breve introdução ao assunto, explicando o seu funcionamento, &lt;em&gt;brokers&lt;/em&gt; e &lt;em&gt;clients&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Hoje o artigo é mais prático que teórico. Inicialmente vamos instalar/configurar o &lt;em&gt;broker&lt;/em&gt; e após vamos criar em cliente MQTT que irá ser conectar ao &lt;em&gt;broker&lt;/em&gt; para enviar ou receber mensagens.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>broker on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/broker/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>MQTT Parte 1: O que é MQTT?</title>
@@ -29,7 +36,14 @@
       <guid>https://butecotecnologico.com.br/mqtt-parte-1-o-que-e-mqtt/</guid>
       <description>&lt;p&gt;O protocolo &lt;em&gt;Message Queue Telemetry Transport&lt;/em&gt; (MQTT) está presente no dia a dia da Internet das Coisas (IoT) e o seu principal uso é fazer as máquinas conversarem, também conhecido como Machine-to-Machine (M2M).&lt;/p&gt;
 &lt;p&gt;Nos últimos artigos temos dado ênfase aos sistemas embarcados, mais especificamente o NodeMCU e ao ESP8266. Pois bem, o NodeMCU possui embutido um &lt;a href=&#34;http://nodemcu.readthedocs.org/en/dev/en/modules/mqtt/&#34; target=&#34;_blank&#34;&gt;cliente MQTT&lt;/a&gt; para a versão 3.1.1 do protocolo. No artigo de hoje não vou me ater ao NodeMCU, mas sim, irei explicar o que é o protocolo em si, pois ele pode ser utilizado em outros ambientes, além de sistemas embarcados.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>broker on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/broker/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>Fun on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/categorias/fun/</link>
-    <description>Recent content in Fun on Buteco Tecnológico</description>
+    <description>Recent content in Fun on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>Fun on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/categorias/fun/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 22 Apr 2016 11:25:27 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/categorias/fun/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 22 Apr 2016 11:25:27 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/categorias/fun/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sexta da Tirinha</title>
       <link>https://butecotecnologico.com.br/sexta-da-tirinha-40/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-40/</guid>
       <description>Via 9gag</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-39/</guid>
       <description>Basicamente assim que funciona nos tempos de hoje :D</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -36,7 +49,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-38/</guid>
       <description>StackOverflow é meu pastor, e nada me faltará!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -47,7 +66,13 @@
       <description>O povo do SQL vai a loucura :)
 
  Via Vida de Programador</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -56,7 +81,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-36/</guid>
       <description>Para quem está tentando aprender C++ e acha que é difícil :P</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -65,7 +96,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-35/</guid>
       <description>Conheça o Bugginho Developer</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -74,7 +111,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-34/</guid>
       <description>Via 9gag</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -83,7 +126,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-33/</guid>
       <description>Via TI da Depressão</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -92,7 +141,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-32/</guid>
       <description>Sexta da Tirinha #32</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -101,7 +156,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-31/</guid>
       <description>Via BugginhoDeveloper</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -112,7 +173,13 @@
       <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
 &lt;p&gt;Já apresentamos aqui no Buteco Open Source o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;primeiro&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2&#34; target=&#34;_blank&#34;&gt;segundo&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-3&#34; target=&#34;_blank&#34;&gt;terceiro&lt;/a&gt; e &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-4&#34; target=&#34;_blank&#34;&gt;quarto&lt;/a&gt; episódios da série.&lt;/p&gt;
 &lt;p&gt;Neste vídeo da série &lt;em&gt;World Without Linux Episode #&lt;/em&gt;&lt;em&gt;5&lt;/em&gt;&lt;em&gt;: &lt;/em&gt;&lt;em&gt;Space Exploration&lt;/em&gt; (Mundo Sem Linux Episódio #5: Exploração Espacial), tenta demonstrar a importância do Linux na exploração espacial.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -121,7 +188,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-30/</guid>
       <description>A todos os backend developers :)</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -130,7 +203,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-29/</guid>
       <description>Wow, such browser :D</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -141,7 +220,13 @@
       <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
 &lt;p&gt;Já apresentamos aqui no Buteco Open Source o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;primeiro&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2&#34; target=&#34;_blank&#34;&gt;segundo&lt;/a&gt; e &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-3&#34; target=&#34;_blank&#34;&gt;terceiro&lt;/a&gt; episódios da série. Este vídeo, &lt;em&gt;World Without Linux Episode 4: Avatar Reimagined&lt;/em&gt; (Mundo Sem Linux Episódio 4: Avatar Reimaginado), tenta demonstrar a importância do Linux aos filmes.&lt;/p&gt;
 &lt;p&gt;Lembrem cada episódio tem &lt;em&gt;Easter Eggs&lt;/em&gt; novos para serem descobertos.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -150,7 +235,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-28/</guid>
       <description>Via 9gag</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -160,7 +251,13 @@
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-27/</guid>
       <description>Isso me lembra os meus tempos de Delphi (kkkk)
 Via xkcd</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -172,7 +269,13 @@ Via xkcd</description>
 &lt;p&gt;Já apresentamos aqui no Buteco Open Source o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;primeiro&lt;/a&gt; e o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2&#34; target=&#34;_blank&#34;&gt;segundo&lt;/a&gt; episódios da série.&lt;/p&gt;
 &lt;p&gt;Este terceiro vídeo da série, &lt;em&gt;World Without Linux &lt;/em&gt;&lt;em&gt;Episode 3: Can I Follow You?&lt;/em&gt; (Mundo Sem Linux Episódio 3: Posso Te Seguir?), tenta demonstrar a importância do Linux para as redes sociais.&lt;/p&gt;
 &lt;p&gt;Lembrem-se que cada episódio possui novos &lt;em&gt;Easter Eggs&lt;/em&gt; para serem descobertos.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -181,7 +284,13 @@ Via xkcd</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-26/</guid>
       <description>E a guerra santa está por ai, em cada empresa ou grupo de amigos!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -190,7 +299,13 @@ Via xkcd</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-25/</guid>
       <description>Via Bugginho Developer</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -200,7 +315,13 @@ Via xkcd</description>
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-24/</guid>
       <description>ba dum tss
 Via 9gag</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -211,7 +332,13 @@ Via 9gag</description>
       <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
 &lt;p&gt;Já apresentamos &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; no Buteco Open Source o primeiro episódio da série, &lt;em&gt;What&amp;rsquo;s the Name of that Song?&lt;/em&gt; (Qual o Nome Daquela Música?), que fez uma brincadeira para demonstrar os sistemas de busca.&lt;/p&gt;
 &lt;p&gt;Neste segundo vídeo da série, &lt;em&gt;World Without Linux Episode 2: Are We There Yet?&lt;/em&gt; (Mundo Sem Linux Episódio 2: Já chegamos?), tenta demonstrar a importância do Linux para os GPSs, que não está em todos (os aparelhos), mas sem ele teríamos poucas opções no mercado.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -220,7 +347,13 @@ Via 9gag</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-23/</guid>
       <description>Está é uma regra de ouro ao trabalhar com Banco de Dados.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -229,7 +362,13 @@ Via 9gag</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-22/</guid>
       <description>Via python-goto</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -238,7 +377,13 @@ Via 9gag</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-21/</guid>
       <description>Se você é desenvolvedor Web, você provavelmente já teve esse problema também :P</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -248,7 +393,13 @@ Via 9gag</description>
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-20/</guid>
       <description>Quem nunca né?
 Via 9GAG</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Feliz Dia da Árvore</title>
@@ -257,7 +408,13 @@ Via 9GAG</description>
       
       <guid>https://butecotecnologico.com.br/feliz-dia-da-arvore/</guid>
       <description>Hoje, dia 21 de setembro, é comemorado o dia da árvore.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -268,7 +425,13 @@ Via 9GAG</description>
       <description>
 Clique na imagem para aumentar o tamanho
 Via Cyanide &amp;amp; Happiness</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -277,7 +440,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-18/</guid>
       <description>Hoje nossa tirinha é um pouco diferente, na verdade se trata de um desabafo de um Web Designer.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -286,7 +455,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-17/</guid>
       <description>Será que um dia irão fazer um filme sobre nós? :P</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -297,7 +472,13 @@ Via Cyanide &amp;amp; Happiness</description>
       <description>
  Via Vida de Programador
  </description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -306,7 +487,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-15/</guid>
       <description>Via Vida de Suporte</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -315,7 +502,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-14/</guid>
       <description>Mais uma tirinha para alegrar sua sexta-feira :)</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -324,7 +517,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-13/</guid>
       <description>Via Vida de Programador</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -333,7 +532,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-12/</guid>
       <description>Sexta da Tirinha #12</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -342,7 +547,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-11/</guid>
       <description>Sexta da Tirinha #11</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -351,7 +562,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-10/</guid>
       <description>Via o Vida de Suporte</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -360,7 +577,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-9/</guid>
       <description>Via TI da Depressão</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -369,7 +592,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-8/</guid>
       <description>Conheça o Programmer&amp;rsquo;s life.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -378,7 +607,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-7/</guid>
       <description>Esta tirinha é uma homenagem ao nosso colaborador Pedro :)</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -387,7 +622,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-6/</guid>
       <description>Via Vida de Suporte.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -396,7 +637,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-5/</guid>
       <description>Não conhece a linguagem de programação D? Então veja este link.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -405,7 +652,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-4/</guid>
       <description>Conheça o blog Vida de Programador.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -414,7 +667,13 @@ Via Cyanide &amp;amp; Happiness</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-3/</guid>
       <description>Se você quiser abrir o DOS no Linux, podes utilizar o Wine.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -424,7 +683,13 @@ Via Cyanide &amp;amp; Happiness</description>
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-2/</guid>
       <description>Saiba mais sobre o Wine aqui.
 Conheça o blog Vida de Programador.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -433,7 +698,13 @@ Conheça o blog Vida de Programador.</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Harry speaks Python</title>
@@ -442,7 +713,13 @@ Conheça o blog Vida de Programador.</description>
       
       <guid>https://butecotecnologico.com.br/harry-speaks-python/</guid>
       <description>Via Reddit</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Python</title>
@@ -452,7 +729,14 @@ Conheça o blog Vida de Programador.</description>
       <guid>https://butecotecnologico.com.br/python/</guid>
       <description>Apenas para descontrair :P
 Via XKCD</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Fun on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/fun/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

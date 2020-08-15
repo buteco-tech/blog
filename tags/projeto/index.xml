@@ -3,14 +3,15 @@
   <channel>
     <title>projeto on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/projeto/</link>
-    <description>Recent content in projeto on Buteco Tecnológico</description>
+    <description>Recent content in projeto on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>projeto on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/projeto/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 15 Jan 2016 14:16:24 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/projeto/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 15 Jan 2016 14:16:24 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/projeto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sexta da Tirinha</title>
       <link>https://butecotecnologico.com.br/sexta-da-tirinha-32/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-32/</guid>
       <description>Sexta da Tirinha #32</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>projeto on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/projeto/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Feliz Aniversário Projeto GNU!</title>
@@ -29,7 +36,14 @@
       <description>&lt;p style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/GNU.png&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-3486&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/GNU.png&#34; alt=&#34;GNU&#34; width=&#34;350&#34; height=&#34;300&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &amp;nbsp;
 &lt;p&gt;Há 32 anos, em 27 de setembro de 1983, &lt;a href=&#34;https://pt.wikipedia.org/wiki/Richard_Matthew_Stallman&#34; target=&#34;_blank&#34;&gt;Richard Matthew Stallman&lt;/a&gt; &lt;a href=&#34;http://www.gnu.org/gnu/initial-announcement.html&#34; target=&#34;_blank&#34;&gt;anunciava&lt;/a&gt; ao mundo o &lt;a href=&#34;http://www.gnu.org&#34; target=&#34;_blank&#34;&gt;projeto GNU&lt;/a&gt; (sigla para Gnu Não é Unix).&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>projeto on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/projeto/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>algoritmo on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/algoritmo/</link>
-    <description>Recent content in algoritmo on Buteco Tecnológico</description>
+    <description>Recent content in algoritmo on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>algoritmo on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/algoritmo/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 23 Sep 2015 00:06:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/algoritmo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 23 Sep 2015 00:06:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/algoritmo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google anuncia Brotli</title>
       <link>https://butecotecnologico.com.br/google-anuncia-brotli/</link>
@@ -20,7 +21,14 @@
       <description>&lt;p style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/DataCompression.jpg&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-3441&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/DataCompression-300x225.jpg&#34; alt=&#34;DataCompression&#34; width=&#34;300&#34; height=&#34;225&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.com.br/2015/09/introducing-brotli-new-compression.html&#34; target=&#34;_blank&#34;&gt;blog de open source&lt;/a&gt; uma nova implementação para o Brotli, um algoritmo de compressão de dados sem perda (de dados) com propósito geral. Este novo algoritmo é melhor e mais rápido que o &lt;a href=&#34;https://github.com/google/zopfli&#34; target=&#34;_blank&#34;&gt;Zopfli&lt;/a&gt;, que foi anunciado há dois anos e, de acordo com &lt;a href=&#34;http://www.gstatic.com/b/brotlidocs/brotli-2015-09-22.pdf&#34; target=&#34;_blank&#34;&gt;estudo&lt;/a&gt; feito pela equipe de compressão de dados, em comparação com outros métodos e algoritmos de compactação.
 &lt;p style=&#34;text-align: right;&#34;&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>algoritmo on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/algoritmo/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

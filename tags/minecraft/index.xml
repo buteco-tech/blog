@@ -3,14 +3,15 @@
   <channel>
     <title>minecraft on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/minecraft/</link>
-    <description>Recent content in minecraft on Buteco Tecnológico</description>
+    <description>Recent content in minecraft on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>minecraft on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/minecraft/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 09 May 2016 22:55:41 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/minecraft/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 09 May 2016 22:55:41 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/minecraft/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lançamentos Novatec: Linguagem SQL e Minecraft</title>
       <link>https://butecotecnologico.com.br/lancamentos-novatec-linguagem-sql-e-minecraft/</link>
@@ -21,7 +22,14 @@
 &lt;p align=&#34;center&#34;&gt;&lt;strong&gt;Introdução à Linguagem SQL&lt;/strong&gt;&lt;/p&gt;
 Se você trabalha em uma empresa ou é profissional de TI, vai se beneficiar da leitura de &lt;a href=&#34;http://www.novatec.com.br/livros/introducao-sql&#34; target=&#34;_blank&#34;&gt;Introdução à Linguagem SQL&lt;/a&gt;, um guia prático introdutório que ensina a obter e transformar dados com o SQL de maneira significativa. Rapidamente, dominará os aspectos básicos do SQL e aprenderá como criar seus próprios bancos de dados.
 &lt;p&gt;O livro contém exercícios que vão ajudar o leitor a praticar suas recém descobertas aptidões no uso do SQL sem precisar empregar um ambiente de servidor de banco de dados. Aprenderá também  a usar instruções-chave do SQL para encontrar e manipular seus dados, e descobrirá como projetar e gerenciar eficientemente bancos de dados que atendam às suas necessidades.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>minecraft on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/minecraft/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

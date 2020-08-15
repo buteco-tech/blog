@@ -3,14 +3,15 @@
   <channel>
     <title>orquestração on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/orquestra%C3%A7%C3%A3o/</link>
-    <description>Recent content in orquestração on Buteco Tecnológico</description>
+    <description>Recent content in orquestração on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>orquestração on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/orquestra%C3%A7%C3%A3o/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Sun, 18 Oct 2015 19:53:49 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/orquestra%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 18 Oct 2015 19:53:49 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/orquestra%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker depois do hype, como começar a usá-lo hoje mesmo</title>
       <link>https://butecotecnologico.com.br/docker-depois-do-hype-como-comecar-a-usa-lo-hoje-mesmo/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/docker-depois-do-hype-como-comecar-a-usa-lo-hoje-mesmo/</guid>
       <description>&lt;p&gt;Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência ou evento da nossa área tem ou terá uma palestra sobre o assunto, é o que vende no momento. Vários cases sendo apresentados, toneladas de ferramentas de gerenciamento e orquestração de &lt;em&gt;containers&lt;/em&gt;, fazem do Docker uma ferramenta muito poderosa e que cresce a cada dia. Porém com tanta informação e soluções distintas faz com que muitos de nós sintam-se desmotivados a entrar nesse mundo, achando que no fim das contas será um grande &lt;em&gt;overkill&lt;/em&gt; para nossos projetos atuais&amp;hellip;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>orquestração on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/orquestra%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

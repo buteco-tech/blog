@@ -3,14 +3,15 @@
   <channel>
     <title>mcsa on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/mcsa/</link>
-    <description>Recent content in mcsa on Buteco Tecnológico</description>
+    <description>Recent content in mcsa on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>mcsa on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/mcsa/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 07 Jan 2015 20:48:20 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/mcsa/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 07 Jan 2015 20:48:20 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/mcsa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ganhe uma Second Shot em seu exame Microsoft MCP</title>
       <link>https://butecotecnologico.com.br/ganhe-uma-second-shot-em-seu-exame-microsoft-mcp/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/ganhe-uma-second-shot-em-seu-exame-microsoft-mcp/</guid>
       <description>A Microsoft esta disponibilizando gratuitamente uma Second Shot para qualquer exame MCP (Microsoft Certified Professional) efetuado entre 5 de janeiro de 2015 e 31 de maio de 2015.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>mcsa on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/mcsa/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,12 +3,14 @@
   <channel>
     <title>Podcasts on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/podcasts/</link>
-    <description>Recent content in Podcasts on Buteco Tecnológico</description>
+    <description>Recent content in Podcasts on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>Podcasts on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/podcasts/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-BR</language>
-    
-	<atom:link href="https://butecotecnologico.com.br/podcasts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>pt-BR</language><atom:link href="https://butecotecnologico.com.br/podcasts/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>estudo on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/estudo/</link>
-    <description>Recent content in estudo on Buteco Tecnológico</description>
+    <description>Recent content in estudo on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>estudo on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/estudo/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 11 Jun 2015 23:32:45 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/estudo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 11 Jun 2015 23:32:45 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/estudo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>O dilema do aprendizado de TI</title>
       <link>https://butecotecnologico.com.br/o-dilema-do-aprendizado-de-ti/</link>
@@ -21,7 +22,14 @@
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;Bem-vindo ao mundo de TI. Certo por onde começar o_O ?&lt;/p&gt;
 &lt;p&gt;Sim essa e uma das perguntas mais difíceis aos iniciantes. Que na sede e fome de conhecimento se sentem seduzidos a experimentar as várias ofertas que essa área fornece. Temos os sistemas operacionais, temos programação, temos rede, temos segurança da informação, temos banco de dados, temos uma infinidade de opções.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>estudo on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/estudo/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>yum on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/yum/</link>
-    <description>Recent content in yum on Buteco Tecnológico</description>
+    <description>Recent content in yum on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>yum on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/yum/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 24 Aug 2015 14:07:37 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/yum/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 24 Aug 2015 14:07:37 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/yum/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Visão geral do Dandified Yum</title>
       <link>https://butecotecnologico.com.br/visao-geral-do-dandified-yum/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/visao-geral-do-dandified-yum/</guid>
       <description>&lt;p&gt;Olá pessoal! Neste artigo procurarei descrever sobre alguns dos principais comandos do &lt;em&gt;Dandified Yum&lt;/em&gt;, carinhosamente apelidado de DNF, espero ser útil àqueles que encontraram alguma dificuldade, não tiveram a oportunidade ou necessidade em usá-lo.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>yum on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/yum/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

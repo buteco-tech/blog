@@ -3,14 +3,15 @@
   <channel>
     <title>framework on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/framework/</link>
-    <description>Recent content in framework on Buteco Tecnológico</description>
+    <description>Recent content in framework on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>framework on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/framework/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 02 Oct 2015 09:12:22 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/framework/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 02 Oct 2015 09:12:22 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/framework/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sexta da Tirinha</title>
       <link>https://butecotecnologico.com.br/sexta-da-tirinha-21/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-21/</guid>
       <description>Se você é desenvolvedor Web, você provavelmente já teve esse problema também :P</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>framework on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/framework/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5.1 do começo ao fim, parte 2</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/laravel-5-1-do-comeco-ao-fim-parte-2/</guid>
       <description>Segundo vídeo da série que fala sobre a versão 5.1 do framework PHP Laravel</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>framework on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/framework/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5.1 do começo ao fim (em vídeo)</title>
@@ -36,7 +49,13 @@
       
       <guid>https://butecotecnologico.com.br/laravel-5-1-do-comeco-ao-fim-video/</guid>
       <description>Primeiro vídeo da série falando sobre o laravel 5.1</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>framework on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/framework/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Integrando o Doctrine ORM e Laravel 5 [parte-1]</title>
@@ -45,7 +64,13 @@
       
       <guid>https://butecotecnologico.com.br/integrando-o-doctrine-orm-e-laravel-5-parte-1/</guid>
       <description>Veja este que é a primeira parte de um série sobre a integração do Doctrine ORM, uma biblioteca para se trabalhar com banco de dados e mapeamento, com o Laravel 5 o framework mais popular atualmente para PHP</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>framework on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/framework/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 do começo ao fim [parte 4]</title>
@@ -54,7 +79,13 @@
       
       <guid>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-4/</guid>
       <description>Nesta quarta parte do tutorial veremos um pouco da parte de testes do Laravel 5, uma boa pratica que todos deveriam adotar mas que muitas vezes é simplesmente ignorada.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>framework on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/framework/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lumen um micro-framework baseado no Laravel</title>
@@ -63,7 +94,13 @@
       
       <guid>https://butecotecnologico.com.br/lumen-um-micro-framework-baseado-no-laravel/</guid>
       <description>O tão esperado Lumen foi finalmente lançado, um projeto baseado no Laravel 5 e que segue a mesma linha dos micro-frameworks Silex e Slim, porém, segundo alguns benchmarks, com desempenho superior. Veja como começar seu projeto usando o recem lançado Lumen!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>framework on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/framework/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 do começo ao fim [parte 3]</title>
@@ -72,7 +109,13 @@
       
       <guid>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-3/</guid>
       <description>Este artigo apresenta a terceira parte de um tutorial sobre o framework PHP Laravel 5, apresentando como usar a parte de criação de model e view do framework</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>framework on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/framework/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 do começo ao fim [parte 2]</title>
@@ -81,7 +124,13 @@
       
       <guid>https://butecotecnologico.com.br/tutorial-laravel-5-parte-2/</guid>
       <description>Esta é a segunda parte do tutorial sobre Laravel 5, caso você não tenha ainda visto, veja a primeira parte dessa série neste link.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>framework on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/framework/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 do começo ao fim [parte 1]</title>
@@ -90,7 +139,13 @@
       
       <guid>https://butecotecnologico.com.br/tutorial-laravel-5/</guid>
       <description>Mostrarei a seguir um breve tutorial sobre o Laravel, um dos frameworks mais usados atualmente para PHP, com o lançamento do Laravel 5 houve algumas mudanças, e algumas delas você verá a seguir.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>framework on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/framework/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 é finalmente lançado!</title>
@@ -99,7 +154,14 @@
       
       <guid>https://butecotecnologico.com.br/laravel-5-e-finalmente-lancado/</guid>
       <description>Novidades com Laravel 5</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>framework on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/framework/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>Categorias on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/categorias/</link>
-    <description>Recent content in Categorias on Buteco Tecnológico</description>
+    <description>Recent content in Categorias on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>Categorias on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/categorias/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Sat, 15 Aug 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/categorias/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 15 Aug 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/categorias/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notícias</title>
       <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Podcast</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/podcast/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Desenvolvimento</title>
@@ -36,7 +49,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/desenvolvimento/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Segurança</title>
@@ -45,7 +64,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/seguran%C3%A7a/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Livros</title>
@@ -54,7 +79,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/livros/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sorteios</title>
@@ -63,7 +94,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/sorteios/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Hardware</title>
@@ -72,7 +109,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/hardware/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Distros</title>
@@ -81,7 +124,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/distros/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Tutoriais</title>
@@ -90,7 +139,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/tutoriais/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Curiosidades</title>
@@ -99,7 +154,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/curiosidades/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Reviews</title>
@@ -108,7 +169,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/reviews/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Ferramentas</title>
@@ -117,7 +184,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/ferramentas/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Eventos</title>
@@ -126,7 +199,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/eventos/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Fun</title>
@@ -135,7 +214,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/fun/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>DIY</title>
@@ -144,7 +229,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/diy/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Vagas</title>
@@ -153,7 +244,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/vagas/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Discussões</title>
@@ -162,7 +259,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/discuss%C3%B5es/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Jogos</title>
@@ -171,7 +274,13 @@
       
       <guid>https://butecotecnologico.com.br/categorias/jogos/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Certificações</title>
@@ -180,7 +289,14 @@
       
       <guid>https://butecotecnologico.com.br/categorias/certifica%C3%A7%C3%B5es/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Categorias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

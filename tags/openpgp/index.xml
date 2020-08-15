@@ -3,14 +3,15 @@
   <channel>
     <title>openpgp on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/openpgp/</link>
-    <description>Recent content in openpgp on Buteco Tecnológico</description>
+    <description>Recent content in openpgp on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>openpgp on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/openpgp/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 16 Feb 2015 12:22:27 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/openpgp/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 16 Feb 2015 12:22:27 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/openpgp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GnuPG 2.1.2 já está disponível</title>
       <link>https://butecotecnologico.com.br/gnupg-2-1-2-ja-esta-disponivel/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/gnupg-2-1-2-ja-esta-disponivel/</guid>
       <description>O GnuPG, também conhecido como GPG, permite criptografar e assinar dados e comunicação, possui um sistema de gerenciamento de chaves versátil, bem como módulos de acesso para os diretórios de chave pública. O GnuPG é uma ferramenta de linha de comando com recursos para uma fácil integração com outros aplicativos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>openpgp on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/openpgp/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

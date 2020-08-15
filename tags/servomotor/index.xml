@@ -3,14 +3,15 @@
   <channel>
     <title>servomotor on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/servomotor/</link>
-    <description>Recent content in servomotor on Buteco Tecnológico</description>
+    <description>Recent content in servomotor on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>servomotor on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/servomotor/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 13 Jan 2016 11:05:44 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/servomotor/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 13 Jan 2016 11:05:44 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/servomotor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Servo motor com Raspberry Pi</title>
       <link>https://butecotecnologico.com.br/servo-motor-com-raspberry-pi/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/servo-motor-com-raspberry-pi/</guid>
       <description>&lt;p&gt;Fala galera!
 Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI usando a linguagem Python.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>servomotor on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/servomotor/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

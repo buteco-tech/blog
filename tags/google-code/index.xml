@@ -3,14 +3,15 @@
   <channel>
     <title>google code on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/google-code/</link>
-    <description>Recent content in google code on Buteco Tecnológico</description>
+    <description>Recent content in google code on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>google code on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/google-code/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 13 Mar 2015 00:46:18 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/google-code/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 13 Mar 2015 00:46:18 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/google-code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google anuncia fim do Google Code</title>
       <link>https://butecotecnologico.com.br/google-anuncia-fim-do-google-code/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/google-anuncia-fim-do-google-code/</guid>
       <description>Com a maior parte dos projetos sendo hospedados no GitHub, incluindo vários da própria Google, a Google resolveu tirar do ar o seu serviço de hospedagem de código fonte, conhecido como Google Code.
 Para quem não o conhece, o Google Code é um serviço de hospedagem de código muito similar ao GitHub ou Bitbucket. Os seus serviços iniciaram em 2006, mas parece que a Google deixou este projeto de lado, pois ele ficou estagnado.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>google code on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/google-code/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

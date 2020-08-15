@@ -3,14 +3,15 @@
   <channel>
     <title>bds on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/bds/</link>
-    <description>Recent content in bds on Buteco Tecnológico</description>
+    <description>Recent content in bds on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>bds on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/bds/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 02 Sep 2015 23:12:01 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/bds/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 02 Sep 2015 23:12:01 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/bds/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Os primeiros passos com o demônio - FreeBSD</title>
       <link>https://butecotecnologico.com.br/os-primeiros-passos-com-o-demonio-freebsd/</link>
@@ -22,7 +23,14 @@
 &lt;p&gt;Ok, mas por onde começar o_O ?&lt;/p&gt;
 &lt;p&gt;Óbvio pela bíblia do demônio :P &lt;a href=&#34;https://www.freebsd.org/doc/handbook/&#34; target=&#34;_blank&#34;&gt;&amp;quot;Freebsd Hadbook&amp;quot;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Marco lá não tem as dicas maneiras para arrumar o meu desktop demonizado &amp;hellip;.. calma gente que um outro ótimo texto de referência: &lt;a href=&#34;https://cooltrainer.org/a-freebsd-desktop-howto/&#34; target=&#34;_blank&#34;&gt;A FreeBSD 10 Desktop How-to&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>bds on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/bds/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

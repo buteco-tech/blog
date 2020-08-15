@@ -3,14 +3,15 @@
   <channel>
     <title>internet on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/internet/</link>
-    <description>Recent content in internet on Buteco Tecnológico</description>
+    <description>Recent content in internet on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>internet on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/internet/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 21 Jul 2015 13:04:12 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/internet/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 21 Jul 2015 13:04:12 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/internet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Novatec lança livro sobre domínios na internet</title>
       <link>https://butecotecnologico.com.br/novatec-lanca-livro-sobre-dominios-na-internet/</link>
@@ -19,7 +20,13 @@
       <guid>https://butecotecnologico.com.br/novatec-lanca-livro-sobre-dominios-na-internet/</guid>
       <description>&lt;p&gt;Nomes de domínio são mais do que uma forma de identificar um computador na internet. Eles são também um nome que constitui uma importante ferramenta para o exercício negocial, empresarial, governamental, informacional e de mercado.&lt;/p&gt;
 &lt;p&gt;O livro &lt;a href=&#34;http://novatec.com.br/livros/nomesdominio/&#34;&gt;Nomes de domínio na internet&lt;/a&gt;, recém lançado pela &lt;a href=&#34;http://www.novatec.com.br/&#34;&gt;Novatec Editora&lt;/a&gt;, chega ao mercado para apresentar o conteúdo que advogados, juízes, desembargadores, estudantes e membros da comunidade jurídica em geral precisam conhecer sobre os nomes de domínio, incluindo sua origem, conceito, natureza jurídica, e as regras e procedimentos para efetivação, transferência e cancelamento.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>internet on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/internet/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Internet das Coisas</title>
@@ -29,7 +36,14 @@
       <guid>https://butecotecnologico.com.br/internet-das-coisas/</guid>
       <description>A internet passou por várias mudanças importante desde que surgiu para o mundo, a ideia de comunição entre computadores evoluiu e hoje podemos conectar vários dispositivos como celulares, televisões, carros, videogames e etc..
 Foi em 1991 que começou a discussão sobre a conexão de objetos, quando a conexão de TCP/IP e a Internet que conhecemos começou a se tonar acessível. Bill Joy, cofundador da Sun Microsystems, teve a ideia de conectar várias redes e dispositivos.E foi em 1999 que Kevin Ashton, do MIT, propôs o termo “Internet das Coisas” após dez anos de estudo e projetos, escreveu o artigo “A Coisa da Internet das Coisas” para o RFID Journal, e a partir dai o termo se popularizou.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>internet on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/internet/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>Camila Stadnik on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/autores/camila-stadnik/</link>
-    <description>Recent content in Camila Stadnik on Buteco Tecnológico</description>
+    <description>Recent content in Camila Stadnik on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>Camila Stadnik on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/autores/camila-stadnik/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 30 Mar 2015 20:17:40 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/autores/camila-stadnik/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 30 Mar 2015 20:17:40 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/autores/camila-stadnik/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Super Mario 64 em HD para Navegadores</title>
       <link>https://butecotecnologico.com.br/super-mario-64-em-hd-para-navegadores/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/super-mario-64-em-hd-para-navegadores/</guid>
       <description>Um dos clássicos da Nintendo, Super Mario 64, após ganhar seu espaço nos consoles N64 e NDS, recebeu uma versão em HD para navegadores. Infelizmente o criador só fez a primeira fase e não pretende continuar a desenvolver o projeto.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Camila Stadnik on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/camila-stadnik/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Envie seu artigo!</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/envie-seu-artigo/</guid>
       <description>Olá caros leitores, nosso site está passando por algumas melhorias de ano novo, até porque o que é bom pode ficar ainda melhor!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Camila Stadnik on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/camila-stadnik/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Feliz 2015!</title>
@@ -36,7 +49,14 @@
       
       <guid>https://butecotecnologico.com.br/feliz-2015/</guid>
       <description>No ano de 2014, deu-se início a um novo passo em nossas vidas, foi o ano em que resolvemos passar o nosso conhecimento a você caro leitor, dando início ao Buteco Open Source, onde pudemos contar com a sua colaboração.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Camila Stadnik on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/camila-stadnik/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>sql on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/sql/</link>
-    <description>Recent content in sql on Buteco Tecnológico</description>
+    <description>Recent content in sql on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>sql on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/sql/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 09 May 2016 22:55:41 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/sql/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 09 May 2016 22:55:41 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lançamentos Novatec: Linguagem SQL e Minecraft</title>
       <link>https://butecotecnologico.com.br/lancamentos-novatec-linguagem-sql-e-minecraft/</link>
@@ -21,7 +22,13 @@
 &lt;p align=&#34;center&#34;&gt;&lt;strong&gt;Introdução à Linguagem SQL&lt;/strong&gt;&lt;/p&gt;
 Se você trabalha em uma empresa ou é profissional de TI, vai se beneficiar da leitura de &lt;a href=&#34;http://www.novatec.com.br/livros/introducao-sql&#34; target=&#34;_blank&#34;&gt;Introdução à Linguagem SQL&lt;/a&gt;, um guia prático introdutório que ensina a obter e transformar dados com o SQL de maneira significativa. Rapidamente, dominará os aspectos básicos do SQL e aprenderá como criar seus próprios bancos de dados.
 &lt;p&gt;O livro contém exercícios que vão ajudar o leitor a praticar suas recém descobertas aptidões no uso do SQL sem precisar empregar um ambiente de servidor de banco de dados. Aprenderá também  a usar instruções-chave do SQL para encontrar e manipular seus dados, e descobrirá como projetar e gerenciar eficientemente bancos de dados que atendam às suas necessidades.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>sql on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/sql/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -32,7 +39,13 @@ Se você trabalha em uma empresa ou é profissional de TI, vai se beneficiar da 
       <description>O povo do SQL vai a loucura :)
 
  Via Vida de Programador</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>sql on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/sql/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>SQL na medida certa</title>
@@ -41,7 +54,13 @@ Se você trabalha em uma empresa ou é profissional de TI, vai se beneficiar da 
       
       <guid>https://butecotecnologico.com.br/sql-na-medida-certa/</guid>
       <description>Resenha do livro Aprendendo SQL da O&amp;rsquo;Reilly.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>sql on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/sql/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Novatec lança livro SQL e Teoria Relacional</title>
@@ -50,7 +69,13 @@ Se você trabalha em uma empresa ou é profissional de TI, vai se beneficiar da 
       
       <guid>https://butecotecnologico.com.br/novatec-lanca-livro-sql-e-teoria-relacional/</guid>
       <description>A linguagem de programação SQL pode ter diversas dificuldades e armadilhas para os mais descuidados. Mas este é um problema que pode ser solucionado caso o desenvolvedor compreenda e saiba colocar em prática a teoria relacional.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>sql on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/sql/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando o MariaDB no CentOS 7</title>
@@ -59,7 +84,14 @@ Se você trabalha em uma empresa ou é profissional de TI, vai se beneficiar da 
       
       <guid>https://butecotecnologico.com.br/instalando-o-mariadb-no-centos-7/</guid>
       <description>O MariaDB é um servidor de banco de dados que oferece as mesmas funcionalidades do MySQL. Na verdade ele é um fork do MySQL, feito após a sua compra pela Oracle. O MariaDB é desenvolvido pela comunidade de software livre e por alguns dos autores originais do MySQL.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>sql on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/sql/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

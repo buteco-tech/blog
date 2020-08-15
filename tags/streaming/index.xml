@@ -3,14 +3,15 @@
   <channel>
     <title>streaming on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/streaming/</link>
-    <description>Recent content in streaming on Buteco Tecnológico</description>
+    <description>Recent content in streaming on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>streaming on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/streaming/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 26 Apr 2016 22:27:10 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/streaming/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 26 Apr 2016 22:27:10 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/streaming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Instalando o Spotify no openSUSE</title>
       <link>https://butecotecnologico.com.br/instalando-o-spotify-no-opensuse/</link>
@@ -19,7 +20,13 @@
       <guid>https://butecotecnologico.com.br/instalando-o-spotify-no-opensuse/</guid>
       <description>&lt;p&gt;O &lt;a href=&#34;https://www.spotify.com/br/&#34; target=&#34;_blank&#34;&gt;Spotify&lt;/a&gt; é um serviço de stream de música que oferece opção gratuita e paga. O aplicativo do Spotify está disponível para a maioria dos sistemas operacionais, inclusive Linux. Bem, Linux só em formato DEB o que deixa a desejar para quem usa distribuições não debian-like, como openSUSE, Fedora ou alguma outra distro baseada no Red Hat.&lt;/p&gt;
 &lt;p&gt;No caso do openSUSE existe um projeto a parte para tornar possível a instalação do Spotify. O &lt;a href=&#34;https://github.com/aspiers/opensuse-spotify-installer/&#34; target=&#34;_blank&#34;&gt;spotify-installer&lt;/a&gt; é um projeto de código aberto que faz a conversão do DEB para RPM e alguns outros ajustes para permitir a instalação sem muitos problemas.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>streaming on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/streaming/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conheça o Clappr</title>
@@ -29,7 +36,14 @@
       <guid>https://butecotecnologico.com.br/conheca-o-clappr/</guid>
       <description>&lt;p&gt;Você já ouviu falar do Clappr? Talvez não, mas é bem provável que você já tenha passado por ele e nem se quer notado. Agora você deve estar se perguntando o que é, certo?&lt;/p&gt;
 &lt;p&gt;O &lt;a href=&#34;http://clappr.io/&#34;&gt;Clappr&lt;/a&gt; é um player extensível focado na web. Ou seja, é um player que você pode customizar a vontade, e o melhor, de graça. Sim, isso mesmo, e o projeto possui código aberto.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>streaming on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/streaming/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

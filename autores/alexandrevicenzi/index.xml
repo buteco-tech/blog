@@ -3,14 +3,15 @@
   <channel>
     <title>Alexandre Vicenzi on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
-    <description>Recent content in Alexandre Vicenzi on Buteco Tecnológico</description>
+    <description>Recent content in Alexandre Vicenzi on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Sat, 15 Aug 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/autores/alexandrevicenzi/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 15 Aug 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/autores/alexandrevicenzi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nós mudamos!</title>
       <link>https://butecotecnologico.com.br/nos-mudamos-para-buteco-tech/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/nos-mudamos-para-buteco-tech/</guid>
       <description>Novidades para nossos leitores e ouvintes.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>LibreOffice: A suite office livre</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/podcast/libreoffice/</guid>
       <description>O LibreOffice é uma poderosa suíte de produtividade de escritório com planilha, editor de texto, editor de apresentação e muito mais.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Kubernetes explicado</title>
@@ -36,7 +49,13 @@
       
       <guid>https://butecotecnologico.com.br/kubernetes-explicado/</guid>
       <description>O Kubernetes (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers e foi criado pelo Google.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Trabalhando Remotamente</title>
@@ -45,7 +64,13 @@
       
       <guid>https://butecotecnologico.com.br/podcast/trabalhando-remotamente/</guid>
       <description>Trabalho remoto virou um tema popular nos últimos meses devido à pandemia.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Distribuições Linux</title>
@@ -54,7 +79,13 @@
       
       <guid>https://butecotecnologico.com.br/podcast/distribuicoes-linux/</guid>
       <description>Você sabe o que é uma distribuição Linux? Neste episódio do nosso podcast discutimos sobre o assunto, abordando alguns dos principais projetos envolvidos, como tudo começou, o cenário atual e por fim falamos sobre a posição do Brasil nessa história.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>De que são feitos containers Linux?</title>
@@ -63,7 +94,13 @@
       
       <guid>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</guid>
       <description>Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>E se você perdesse acesso a suas contas?</title>
@@ -72,7 +109,13 @@
       
       <guid>https://butecotecnologico.com.br/e-se-voce-perdesse-acesso-a-suas-contas/</guid>
       <description>O que você faria se perdesse acesso a sua conta de e-mail?</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sorteio Novatec - Python Levado a Sério</title>
@@ -81,7 +124,13 @@
       
       <guid>https://butecotecnologico.com.br/sorteio-novatec-python-levado-a-serio/</guid>
       <description>Aperfeiçoe suas habilidades com o livro Python Levado a Sério.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Entendendo carros autônomos</title>
@@ -90,7 +139,13 @@
       
       <guid>https://butecotecnologico.com.br/entendendo-carros-autonomos/</guid>
       <description>Carros autônomos estão cada vez mais presentes em nossas vidas, mas o que é um carro autônomo de fato?</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Ubuntu 20.04 LTS (Focal Fossa)</title>
@@ -99,7 +154,13 @@
       
       <guid>https://butecotecnologico.com.br/ubuntu-20-04-lts/</guid>
       <description>Confira as novidadades e impressões desta nova versão após algumas semanas de uso.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Morando no Exterior</title>
@@ -108,7 +169,13 @@
       
       <guid>https://butecotecnologico.com.br/morando-no-exterior-2020/</guid>
       <description>Respondemos algumas dúvidas relacionadas a morar no exterior em uma live no YouTube.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>NVIDIA Jetson Nano Developer Kit</title>
@@ -117,7 +184,13 @@
       
       <guid>https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/</guid>
       <description>Uma placa de desenvolvimento focada em visão computacional e deep learning.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Livros gratuitos</title>
@@ -126,7 +199,13 @@
       
       <guid>https://butecotecnologico.com.br/livros-gratuitos-abril-2020/</guid>
       <description>Aproveite o tempo em casa para ler alguns livros que estão de graça.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Efetuando teste de carga com o Locust</title>
@@ -136,7 +215,13 @@
       <guid>https://butecotecnologico.com.br/efetuando-teste-de-carga-com-o-locust/</guid>
       <description>&lt;p&gt;Os testes de carga consistem em colocar uma demanda em um sistema de software ou dispositivo e medir a sua resposta. Este tipo de teste é realizado para determinar o comportamento de um sistema sob condições normais e picos de carga. Ela ajuda a identificar a capacidade máxima de operação de uma aplicação, bem como os gargalos e determinar qual elemento está causando lentidão.&lt;/p&gt;
 &lt;p&gt;Uma das ferramentas mais conceituadas nesse tipo de testes é o &lt;a href=&#34;http://jmeter.apache.org/&#34; target=&#34;_blank&#34;&gt;Apache JMeter™&lt;/a&gt;, porém hoje iremos abordar o &lt;a href=&#34;http://locust.io/&#34; target=&#34;_blank&#34;&gt;Locust&lt;/a&gt;, uma ferramenta escrita em Python extremamente simples e poderosa.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Concorra a um Raspberry Pi 3</title>
@@ -146,7 +231,13 @@
       <guid>https://butecotecnologico.com.br/concorra-um-raspberry-pi-3/</guid>
       <description>&lt;p&gt;A &lt;a href=&#34;http://www.filipeflop.com/?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;FILIPEFLOP&lt;/a&gt;, nossa parceira, esta realizando o sorteio de um Raspberry Pi 3. O Raspberry Pi 3 recém chegou na FILIPEFLOP e há alguns dias atras &lt;a href=&#34;https://butecotecnologico.com.br/review-raspberry-pi-3&#34; target=&#34;_blank&#34;&gt;fizemos uma review&lt;/a&gt; comentando as diferenças em relação ao seu antecessor.&lt;/p&gt;
 &lt;p&gt;O novo Raspberry Pi 3 vem agora com muito mais poder de processamento, tudo isso graças ao processador Broadcom Quad Core BCM2837 de 64 bits e clock de 1.2GHz. Além disso foi integrado WiFi 802.11n que permite conexões a internet sem cabo e Bluetooth 4.1 para uma conexão mais fácil ao RPi.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Acompanhe o TDC Floripa sem sair de casa</title>
@@ -155,7 +246,13 @@
       
       <guid>https://butecotecnologico.com.br/acompanhe-o-tdc-floripa-sem-sair-de-casa/</guid>
       <description>Acompanhe o TDC Floripa direto da sua casa, e de graça!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Review Raspberry Pi 3</title>
@@ -164,7 +261,13 @@
       
       <guid>https://butecotecnologico.com.br/review-raspberry-pi-3/</guid>
       <description>&lt;p&gt;O &lt;a href=&#34;http://www.filipeflop.com/pd-31a472-raspberry-pi-3-model-b.html?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;Raspberry Pi 3&lt;/a&gt; acabou de chegar na &lt;a href=&#34;http://www.filipeflop.com/?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;FILIPEFLOP&lt;/a&gt; e esta nova versão traz novidades em relação a versão anterior. As maiores novidades são o WiFi e Bluetooth integrado.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lançamentos Novatec: Linguagem SQL e Minecraft</title>
@@ -176,7 +279,13 @@
 &lt;p align=&#34;center&#34;&gt;&lt;strong&gt;Introdução à Linguagem SQL&lt;/strong&gt;&lt;/p&gt;
 Se você trabalha em uma empresa ou é profissional de TI, vai se beneficiar da leitura de &lt;a href=&#34;http://www.novatec.com.br/livros/introducao-sql&#34; target=&#34;_blank&#34;&gt;Introdução à Linguagem SQL&lt;/a&gt;, um guia prático introdutório que ensina a obter e transformar dados com o SQL de maneira significativa. Rapidamente, dominará os aspectos básicos do SQL e aprenderá como criar seus próprios bancos de dados.
 &lt;p&gt;O livro contém exercícios que vão ajudar o leitor a praticar suas recém descobertas aptidões no uso do SQL sem precisar empregar um ambiente de servidor de banco de dados. Aprenderá também  a usar instruções-chave do SQL para encontrar e manipular seus dados, e descobrirá como projetar e gerenciar eficientemente bancos de dados que atendam às suas necessidades.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Dispositivos USB não são reconhecidos pelo VirtualBox (host Linux)</title>
@@ -186,7 +295,13 @@ Se você trabalha em uma empresa ou é profissional de TI, vai se beneficiar da 
       <guid>https://butecotecnologico.com.br/dispositivos-usb-nao-sao-reconhecidos-pelo-virtualbox-host-linux/</guid>
       <description>O VirtualBox é uma das mais bem conceituadas opções para emulação de sistemas operacionais em máquinas virtuais, com suporte a x86 e AMD64/Intel64. Atualmente o VirtualBox possui versões para hosts Windows, Linux, OS X, Solaris e FreeBSD.
 Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e leitores SD Card do host no sistema guest não funciona. Esse problema é geralmente causado por falta de permissão no seu usuário no momento da execução do VirtualBox.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando o Spotify no openSUSE</title>
@@ -196,7 +311,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/instalando-o-spotify-no-opensuse/</guid>
       <description>&lt;p&gt;O &lt;a href=&#34;https://www.spotify.com/br/&#34; target=&#34;_blank&#34;&gt;Spotify&lt;/a&gt; é um serviço de stream de música que oferece opção gratuita e paga. O aplicativo do Spotify está disponível para a maioria dos sistemas operacionais, inclusive Linux. Bem, Linux só em formato DEB o que deixa a desejar para quem usa distribuições não debian-like, como openSUSE, Fedora ou alguma outra distro baseada no Red Hat.&lt;/p&gt;
 &lt;p&gt;No caso do openSUSE existe um projeto a parte para tornar possível a instalação do Spotify. O &lt;a href=&#34;https://github.com/aspiers/opensuse-spotify-installer/&#34; target=&#34;_blank&#34;&gt;spotify-installer&lt;/a&gt; é um projeto de código aberto que faz a conversão do DEB para RPM e alguns outros ajustes para permitir a instalação sem muitos problemas.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GNOME: Removendo ícone do legacy tray</title>
@@ -205,7 +326,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/gnome-removendo-icone-do-legacy-tray/</guid>
       <description>&lt;p&gt;No GNOME 3.16 foi introduzido &lt;a href=&#34;https://help.gnome.org/misc/release-notes/3.16/&#34; target=&#34;_blank&#34;&gt;um novo sistema de notificação&lt;/a&gt;, muito melhor que o antigo por sinal, porém com ele também veio um problema. O &amp;ldquo;legacy tray&amp;rdquo;, que permite que aplicativos que ainda utilizam o sistema de notificações antigo do GNOME é extremamente irritante.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Utilizando display OLED I2C no ESP8266</title>
@@ -216,7 +343,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <description>&lt;p&gt;Displays são sempre úteis em projetos relacionados a Internet das Coisas (IoT). Por exemplo, supondo que estamos desenvolvendo alguma forma de monitoramento de temperatura com o ESP8266, qual a forma mais simples de ficar sabendo a temperatura atual? Creio que seja exibindo-a em um display, certo?&lt;/p&gt;
 &lt;p&gt;Sendo assim, o tutorial de hoje irá mostrar como utilizar um display OLED I2C de 0.96 polegadas, pode parecer pequeno, mas acredite, é possível inserir bastante informação nele.&lt;/p&gt;
 &lt;p&gt;O display que estou utilizando é o &lt;a&gt;OLED com controlador SSD1306&lt;/a&gt; com tamanho de 128x64 pixels, que utiliza barramento I2C, suportado pelos ESP-07, ESP-12, entre outros. O I2C é suportado pelo ESP8266, porém placas como a ESP-01 não disponibilizam este pino.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -225,7 +358,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-39/</guid>
       <description>Basicamente assim que funciona nos tempos de hoje :D</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conhecendo os módulos do NodeMCU</title>
@@ -235,7 +374,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/conhecendo-os-modulos-do-nodemcu/</guid>
       <description>&lt;p&gt;O &lt;a href=&#34;http://nodemcu.com/index_en.html&#34; target=&#34;_blank&#34;&gt;NodeMCU&lt;/a&gt; é um firmware baseado no &lt;a href=&#34;http://www.eluaproject.net/&#34; target=&#34;_blank&#34;&gt;eLua&lt;/a&gt; para os dispositivos ESP8266. Se você deseja saber mais sobre o firmware recomendo a leitura do artigo &lt;a href=&#34;https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266&#34;&gt;NodeMCU: Lua para o ESP8266&lt;/a&gt; que publiquei recentemente. Neste artigo o foco foi a apresentação do firmware e como fazer o flash do seu dispositivo.&lt;/p&gt;
 &lt;p&gt;Com o decorrer dos projetos que fazem uso do ESP8266 e NodeMCU, eventualmente será necessário criar um firmware com módulos que não fazem parte da distribuição padrão. Sendo assim, o artigo de hoje visa explicar brevemente o que é cada um dos módulos disponíveis. Builds customizadas podem ser feitas através do site &lt;a href=&#34;http://nodemcu-build.com/&#34; target=&#34;_blank&#34;&gt;NodeMCU custom builds&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lançamentos Novatec: Sass e Compass e Docker</title>
@@ -244,7 +389,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/lancamentos-novatec-sass-e-compass-e-docker/</guid>
       <description>Fundamentos de Sass e Compass Título é indicado para estudantes, designers e desenvolvedores que querem aprender os conceitos fundamentais de Sass e Compass</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>MQTT Parte 2: Enviando e recebendo mensagens</title>
@@ -254,7 +405,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/mqtt-parte-2-enviando-e-recebendo-mensagens/</guid>
       <description>&lt;p&gt;Na &lt;a href=&#34;https://butecotecnologico.com.br/mqtt-parte-1-o-que-e-mqtt&#34;&gt;primeira parte&lt;/a&gt; sobre o protocolo MQTT (&lt;em&gt;Message Queue Telemetry Transport&lt;/em&gt;) demos uma breve introdução ao assunto, explicando o seu funcionamento, &lt;em&gt;brokers&lt;/em&gt; e &lt;em&gt;clients&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Hoje o artigo é mais prático que teórico. Inicialmente vamos instalar/configurar o &lt;em&gt;broker&lt;/em&gt; e após vamos criar em cliente MQTT que irá ser conectar ao &lt;em&gt;broker&lt;/em&gt; para enviar ou receber mensagens.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Configurações do OpenSSH que podem fazer toda a diferença</title>
@@ -264,7 +421,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/configuracoes-do-openssh-que-podem-fazer-toda-a-diferenca/</guid>
       <description>&lt;p&gt;Para quem possui algum servidor, ou até para em seu computador pessoal, algumas configurações padrão do servidor SSH são extremamente permissivas, vulneráveis a ataques, e quem sabe até invasão com técnicas de &lt;a href=&#34;https://en.wikipedia.org/wiki/Brute-force_attack&#34; target=&#34;_blank&#34;&gt;força bruta&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Entre algumas dicas mais simples para aumentar a segurança estão configurar o seu firewall corretamente ou até desabilitar o acesso SSH. Para servidores, esta última opção não é válida. Sendo assim vamos conferir algumas configurações que podem fazer toda a diferença na hora de algum espertinho tentar invadir seu servidor.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>i18n: Detectando o idioma do usuário</title>
@@ -273,7 +436,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/i18n-detectando-o-idioma-do-usuario/</guid>
       <description>&lt;p&gt;Internacionalizar uma aplicação nem sempre é algo fácil, ainda mais no mundo Web. Mas nesse mundo o seu melhor amigo é o header &lt;em&gt;Accept-Language&lt;/em&gt;. No lado do servidor, você provavelmente se limitará a duas formas de descobrir o idioma do usuário, uma pelo header &lt;em&gt;Accept-Language&lt;/em&gt; e a outra pelo endereço IP.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Deploy com um clique no Heroku</title>
@@ -283,7 +452,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/deploy-com-um-clique-no-heroku/</guid>
       <description>&lt;p&gt;Hoje vamos ver algo um pouco diferente, mas um tanto quanto comum em alguns projetos de código aberto, o botão de deploy do &lt;a href=&#34;https://www.heroku.com/home&#34; target=&#34;_blank&#34;&gt;Heroku&lt;/a&gt;. O Heroku é uma plataforma cloud PaaS, que suporta várias linguagens de programação e você pode fazer o deploy de uma aplicação com apenas um clique em um botão. :D&lt;/p&gt;
 &lt;p&gt;É mágica? Não! Mas o processo de criar um botão de deploy é simples, mas irá variar de acordo com o seu projeto. Nem todos projetos são possíveis de fazer deploy com apenas um clique. O artigo de hoje irá descrever como fazer um deploy de uma aplicação simples, sem necessidade de &lt;a href=&#34;https://elements.heroku.com/addons&#34; target=&#34;_blank&#34;&gt;add-ons&lt;/a&gt; do Heroku.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -292,7 +467,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-36/</guid>
       <description>Para quem está tentando aprender C++ e acha que é difícil :P</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Gerando bitlink atravéz da API do Bitly</title>
@@ -302,7 +483,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/gerando-bitlink-atravez-da-api-do-bitly/</guid>
       <description>&lt;p&gt;Gerar link curto é uma tarefa um tanto quanto rotineira em determinados casos. Por exemplo, nós do blog usamos links curtos para compartilhar nossas publicações nas rede sociais.&lt;/p&gt;
 &lt;p&gt;Bem, mas como fazer para gerar um link curto do &lt;a href=&#34;https://bitly.com/&#34; target=&#34;_blank&#34;&gt;Bitly&lt;/a&gt; via API e com um domínio customizado? Se você não reparou ainda, nossos links curtos são sempre com o domínio &lt;em&gt;buteco.me&lt;/em&gt;, ao invéz do tão popular &lt;em&gt;bit.ly&lt;/em&gt;. Se você se pergunta o porque de usar um outro domínio, bem a resposta é simples, isso ajuda na identidade visual de sua marca ou produto.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>MQTT Parte 1: O que é MQTT?</title>
@@ -312,7 +499,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/mqtt-parte-1-o-que-e-mqtt/</guid>
       <description>&lt;p&gt;O protocolo &lt;em&gt;Message Queue Telemetry Transport&lt;/em&gt; (MQTT) está presente no dia a dia da Internet das Coisas (IoT) e o seu principal uso é fazer as máquinas conversarem, também conhecido como Machine-to-Machine (M2M).&lt;/p&gt;
 &lt;p&gt;Nos últimos artigos temos dado ênfase aos sistemas embarcados, mais especificamente o NodeMCU e ao ESP8266. Pois bem, o NodeMCU possui embutido um &lt;a href=&#34;http://nodemcu.readthedocs.org/en/dev/en/modules/mqtt/&#34; target=&#34;_blank&#34;&gt;cliente MQTT&lt;/a&gt; para a versão 3.1.1 do protocolo. No artigo de hoje não vou me ater ao NodeMCU, mas sim, irei explicar o que é o protocolo em si, pois ele pode ser utilizado em outros ambientes, além de sistemas embarcados.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Relógio RTC com o ESP8266</title>
@@ -322,7 +515,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/rtc-com-esp8266/</guid>
       <description>&lt;p&gt;No artigo de hoje veremos como utilizar um RTC (&lt;em&gt;Real Time Clock&lt;/em&gt;) com o dispositivo ESP8266. Este módulo incorpora funções Wi-Fi e foi pensado para projetos de baixo custo para mobilidade, eletrônicos vestíveis, Internet das Coisas (IoT), e o que sua criatividade permitir.&lt;/p&gt;
 &lt;p&gt;Este artigo pode ser um tanto quanto simples, mas utilizar um RTC (&lt;em&gt;Real Time Clock&lt;/em&gt;) em um projeto é de grande importância as vezes. Principalmente quando desejamos monitorar algo em determinados horários. Vamos pegar um exemplo básico, supondo que você esteja monitorando a temperatura do ambiente, é interessante saber a hora da medição para calcular a variação de temperatura durante um determinado período. Sim, este é um exemplo simples, mas exemplifica claramente o uso de um RTC.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>NodeMCU: Lua para o ESP8266</title>
@@ -332,7 +531,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/</guid>
       <description>&lt;p&gt;O &lt;a href=&#34;http://nodemcu.com/index_en.html&#34; target=&#34;_blank&#34;&gt;NodeMCU&lt;/a&gt; é um &lt;em&gt;firmware&lt;/em&gt; e kit de desenvolvimento que permite a programação de protótipos para a Internet das Coisas (IoT). O &lt;em&gt;firmware&lt;/em&gt; utiliza o paradigma &lt;em&gt;event-driven&lt;/em&gt; para facilitar o desenvolvimento de aplicações que necessitem acesso à Internet. Além disso, integra módulos de GPIO, 1-Wire, I2C, SPI, PWM, ADC, entre outros, para facilitar o manuseio de módulos baseados no chip ESP8266.&lt;/p&gt;
 &lt;p&gt;Na verdade, o NodeMCU é mais que um &lt;em&gt;firmware&lt;/em&gt;, é a empresa por trás do NodeMCU Dev Kit, que além do &lt;em&gt;firmware&lt;/em&gt;, disponibiliza uma placa de desenvolvimento baseada no ESP8266.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Câmera IP com Webcam e Motion</title>
@@ -343,7 +548,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <description>&lt;p&gt;O &lt;a href=&#34;http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome&#34; target=&#34;_blank&#34;&gt;Motion&lt;/a&gt; é um programa que monitora o sinal de câmeras e permite fazer detecção de movimento. É uma ferramenta de grande utilidade para quem deseja fazer streamming de vídeo, mais precisamente criar uma câmera IP.&lt;/p&gt;
 &lt;p&gt;Escrito em C e disponível para várias distribuições Linux, fazendo uso da interface &lt;em&gt;video4linux&lt;/em&gt;, permite a captura de jpeg, ppm e mpeg com um baixo consumo de memória.&lt;/p&gt;
 &lt;p&gt;As câmeras IPs ganharam grande destaque pela sua facilidade de uso, e preço relativamente acessível. Hoje é simples monitorar a sua casa e enviar imagens para o seu smartphone quando algum movimento for detectado.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GPS Parte 3: Localizador GPS com a BeagleBone Green</title>
@@ -352,7 +563,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/</guid>
       <description>Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GPS Parte 2: Decodificando uma sentença NMEA</title>
@@ -361,7 +578,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/</guid>
       <description>Na primeira parte sobre GPS vimos como este sistema de rastreamento por satélite funciona.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GPS Parte 1: Entendendo o seu funcionamento</title>
@@ -371,7 +594,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/gps-parte-1-entendendo-o-seu-funcionamento/</guid>
       <description>&lt;p&gt;Você já parou pra pensar em como um GPS funciona? Bem, se você ainda não pesquisou sobre o assunto, este post abordará um pouco sobre o que é este dispositivo, que está presente em nosso dia a dia.&lt;/p&gt;
 &lt;p&gt;Essa série de artigos será divida em três partes. A primeira parte abordará os conceitos básicos. A segunda abordará como se interpreta os dados obtidos do GPS. E por fim será criada uma aplicação Web que indica no mapa onde você está.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conheça o Clappr</title>
@@ -381,7 +610,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/conheca-o-clappr/</guid>
       <description>&lt;p&gt;Você já ouviu falar do Clappr? Talvez não, mas é bem provável que você já tenha passado por ele e nem se quer notado. Agora você deve estar se perguntando o que é, certo?&lt;/p&gt;
 &lt;p&gt;O &lt;a href=&#34;http://clappr.io/&#34;&gt;Clappr&lt;/a&gt; é um player extensível focado na web. Ou seja, é um player que você pode customizar a vontade, e o melhor, de graça. Sim, isso mesmo, e o projeto possui código aberto.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conheça a BeagleBone Green</title>
@@ -392,7 +627,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <description>&lt;p&gt;Recentemente recebemos da &lt;a href=&#34;http://www.filipeflop.com/?utm_medium=PostBBG&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;FilipeFlop&lt;/a&gt; a &lt;a href=&#34;http://www.seeed.cc/beaglebone_green/&#34; target=&#34;_blank&#34;&gt;BeagleBone Green&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A BeagleBone Green, ou BBG para os mais íntimos, é produzida pela SeeedStudio e é baseada no hardware da BeagleBone Black. As maiores diferenças são a adição de dois conectores &lt;em&gt;Grove&lt;/em&gt; e a remoção do HDMI &lt;em&gt;on-board&lt;/em&gt;. Apesar de não possuir HDMI, é possível utilizar uma placa de expansão para obter esta funcionalidade.&lt;/p&gt;
 &lt;p&gt;A BBG é poderosa, ela vem com processador AM335x 1GHz ARM© Cortex-A8, memória de 512MB DDR3, 4GB eMMC de armazenamento interno (isso mesmo, não é necessário SD) e aceleração gráfica 3D.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Black Friday de Componentes Eletrônicos é na FILIPEFLOP</title>
@@ -401,7 +642,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/black-friday-de-componentes-eletronicos-e-na-filipeflop/</guid>
       <description>Black Friday é o nome dado ao dia seguinte ao &amp;ldquo;Dia de Ação de Graças&amp;rdquo; dos EUA, uma importante data comemorativa para o varejo americano, quando são praticados descontos altíssimos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.4 já está disponível</title>
@@ -410,7 +657,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/rust-1-4-ja-esta-disponivel/</guid>
       <description>Na última quinta (29/10) foi liberada a versão 1.4 da linguagem de programação Rust.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PyPy 4.0 já está disponível</title>
@@ -420,7 +673,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/pypy-4-0-ja-esta-disponivel/</guid>
       <description>&lt;p&gt;O PyPy 4.0 foi liberado nesta quinta (29/10) e vem com várias novidades em relação as versões anteriores.&lt;/p&gt;
 &lt;p&gt;O PyPy é uma alternativa a outros interpretadores como CPython, Jython e IronPython, e de acordo com os &lt;a href=&#34;http://speed.pypy.org/&#34; target=&#34;_blank&#34;&gt;diversos benchmarks&lt;/a&gt; publicados, o mais rápido entre eles.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Docker depois do hype, como começar a usá-lo hoje mesmo</title>
@@ -429,7 +688,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/docker-depois-do-hype-como-comecar-a-usa-lo-hoje-mesmo/</guid>
       <description>&lt;p&gt;Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência ou evento da nossa área tem ou terá uma palestra sobre o assunto, é o que vende no momento. Vários cases sendo apresentados, toneladas de ferramentas de gerenciamento e orquestração de &lt;em&gt;containers&lt;/em&gt;, fazem do Docker uma ferramenta muito poderosa e que cresce a cada dia. Porém com tanta informação e soluções distintas faz com que muitos de nós sintam-se desmotivados a entrar nesse mundo, achando que no fim das contas será um grande &lt;em&gt;overkill&lt;/em&gt; para nossos projetos atuais&amp;hellip;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.3 já está disponível</title>
@@ -438,7 +703,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/rust-1-3-ja-esta-disponivel/</guid>
       <description>Rust 1.3 é a mais nova versão stable disponível da linguagem de programação desenvolvida pela Mozilla.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Visão geral do Dandified Yum</title>
@@ -447,7 +718,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/visao-geral-do-dandified-yum/</guid>
       <description>&lt;p&gt;Olá pessoal! Neste artigo procurarei descrever sobre alguns dos principais comandos do &lt;em&gt;Dandified Yum&lt;/em&gt;, carinhosamente apelidado de DNF, espero ser útil àqueles que encontraram alguma dificuldade, não tiveram a oportunidade ou necessidade em usá-lo.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Adicionando Swap ao CentOS, Ubuntu e derivados</title>
@@ -458,7 +735,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <description>&lt;p&gt;Para você que acabou de criar a sua primeira VM no Digital Ocean e pegou logo de cara a de 512 de RAM, você vai se ver no aperto dependendo da aplicação que colocar para executar nela. Para solucionar possíveis problemas de falta de memória vamos adicionar Swap a esta máquina tão simplória.&lt;/p&gt;
 &lt;p&gt;Aplicações simples como o MySQL e o Jenkins rodando nessas máquinas poder gerar alguma dor de cabeça caso você não identifique que o problema é falta de memória. Por exemplo, no meu caso o Jenkins parava a execução dos testes no meio, pois recebia um SIGKILL de alguém, provavelmente do S.O. O mais estranho é que o Jenkins continuava executando, apenas parava o Job que estava em execução. A solução foi bem simples, adicionar uma Swap, já que não queríamos aumentar os valores com VMs do DO.&lt;/p&gt;
 &lt;p&gt;O tutorial de hoje é baseado no CentOS e no Ubuntu. Fiz a mesma configuração em duas VMs distintas. A maioria das distros suportam os comandos e sistemas de arquivos aqui mencionados.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sensor de temperatura gráfico com Arduino e LCD 16x2</title>
@@ -468,7 +751,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/sensor-de-temperatura-grafico-com-arduino-e-lcd-16x2/</guid>
       <description>&lt;p&gt;Dando continuidade ao artigo &lt;a href=&#34;https://butecotecnologico.com.br/sensor-de-temperatura-e-umidade-no-arduino&#34; target=&#34;_blank&#34;&gt;Sensor de temperatura e umidade no Arduino&lt;/a&gt;, hoje vamos ver como utilizar um LCD 16x2 para exibir a temperatura e a umidade capturada pelo sensor DHT11.&lt;/p&gt;
 &lt;p&gt;A grande diferença entre o artigo anterior e este é o uso do LCD, sendo assim, não há necessidade de conectar o Arduino ao PC só para saber a temperatura.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando o Supervisor: Um sistema de controle de processos</title>
@@ -479,7 +768,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <description>&lt;p&gt;O &lt;a href=&#34;http://supervisord.org/&#34;&gt;Supervisor&lt;/a&gt; é um sistema cliente/servidor que permite que os usuários monitorem e controlem inúmeros processos em sistema operacionais UNIX-like.&lt;/p&gt;
 &lt;p&gt;&lt;img class=&#34; aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/logo_supervisord.gif&#34; alt=&#34;Supervisord&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Ele possui alguns objetivos de programas similares, como o launchd, daemontools e runit. Mas diferente destes, ele não pretende ser um substituto ao &lt;em&gt;init&lt;/em&gt;, pelo contrário, ele inicia na inicialização do sistema como qualquer outro aplicativo.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sensor de temperatura e umidade no Arduino</title>
@@ -494,7 +789,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
     &lt;li&gt;Sensor de Umidade e Temperatura DHT11, que pode ser comprado &lt;a href=&#34;http://www.filipeflop.com/pd-6b8f7-sensor-de-umidade-e-temperatura-dht11.html?utm_source=BlogButeco&amp;utm_medium=Banner&amp;utm_campaign=ButecoOpenSource&#34;&gt;aqui&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;Resistor 10K&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Firefox 39 traz melhorias de segurança</title>
@@ -504,7 +805,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/firefox-39-traz-melhorias-de-seguranca/</guid>
       <description>&lt;p&gt;O Firefox 39.0 já está disponível e vem com melhorias de desempenho e correções de segurança. &lt;a href=&#34;https://www.mozilla.org/en-US/firefox/new/&#34; target=&#34;_blank&#34;&gt;Clique aqui&lt;/a&gt; caso queira fazer o download.&lt;/p&gt;
 &lt;p&gt;Dentre as novidades estão:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Siga nosso canal no Pushbullet</title>
@@ -513,7 +820,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/siga-nosso-canal-no-pushbullet/</guid>
       <description>Se você possui o Pushbullet, convidamos você a seguir o nosso canal (@buteco) e ficar por dentro de todos os nossos novos artigos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Ajude-nos a escolher os temas do mês de Julho</title>
@@ -522,7 +835,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/ajude-nos-a-escolher-os-temas-do-mes-de-julho/</guid>
       <description>&lt;p&gt;Gostaríamos de convidar você, nosso leitor, a ajudar a escolher alguns dos temas que abordaremos em nossas publicações no mês de Julho, então fique a vontade para votar no formulário abaixo.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Fazendo squash de commits com git rebase</title>
@@ -533,7 +852,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <description>&lt;p&gt;Eventualmente trabalhamos em algo grande, e acabamos por fazer vários micro commits. Se você gostaria de juntar esses micro commits em um único no fim da implementação e não sabe como, eis a solução. O squash irá unir vários micro commits em um único commit. Sendo assim, se pode juntar uma alteração que tem 10 commits em apenas um único commit.&lt;/p&gt;
 &lt;p&gt;&lt;img class=&#34; aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/git-squash-rebase.png&#34; alt=&#34;Git Squash Rebase&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Na imagem acima é possível observar que os commits antigos geram um novo commit unindo todas as alterações.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PyPy 2.6 já está disponível e 7x mais rápido que o CPython</title>
@@ -543,7 +868,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       <guid>https://butecotecnologico.com.br/pypy-2-6-ja-esta-disponivel-e-7x-mais-rapido-que-o-cpython/</guid>
       <description>A versão 2.6 do PyPy foi liberada nesta segunda (01/06) e vem com uma série de melhorias em relação a versão 2.5, além de uma melhor compatibilidade com o Python e Numpy.
 Quando se trata de desempenho com PyPy 2.6, há uma melhora significativa obtida com a refatoração e limpeza de código para melhorar o desempenho JIT, além de ter resultado em uma melhora de desempenho de I/O para os módulos zlib e bz2.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Cupom de desconto nos livros da Casa do Código</title>
@@ -553,7 +884,13 @@ Quando se trata de desempenho com PyPy 2.6, há uma melhora significativa obtida
       <guid>https://butecotecnologico.com.br/cupom-de-desconto-nos-livros-da-casa-do-codigo/</guid>
       <description>Cada vez mais tentamos trazer o melhor conteúdo para nossos leitores, sendo assim fizemos mais uma parceria.
 Agora você pode comprar livros e e-Books na Casa do Código com 15% de desconto.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Utilizando um teclado matricial no Arduino</title>
@@ -563,7 +900,13 @@ Agora você pode comprar livros e e-Books na Casa do Código com 15% de desconto
       <guid>https://butecotecnologico.com.br/utilizando-um-teclado-matricial-no-arduino/</guid>
       <description>Já faz algum tempo que não falo do Arduino, porém hoje vou mostrar como utilizar um teclado matricial.
 O teclado que estou utilizando é um teclado matricial de membrana com 16 teclas e conector de 8 vias.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Wine 1.7.43 traz melhorias na arquitetura ARM64</title>
@@ -572,7 +915,13 @@ O teclado que estou utilizando é um teclado matricial de membrana com 16 teclas
       
       <guid>https://butecotecnologico.com.br/wine-1-7-43-traz-melhorias-na-arquitetura-arm64/</guid>
       <description>O Wine (acrônimo de &amp;ldquo;Wine Is Not an Emulator&amp;rdquo;) é um camada de compatibilidade que permite a execução de aplicativos Windows em vários sistemas operacionais POSIX-compliant, incluindo Linux, Mac OS X e BSD. Ao invés de simular a lógica interna do Windows, como um emulador normal, o Wine faz a tradução das chamadas de API do Windows em chamadas POSIX. Isto melhora o desempenho da aplicação e permite a integração de aplicação Windows com a sua área de trabalho.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.0 já está disponível</title>
@@ -581,7 +930,13 @@ O teclado que estou utilizando é um teclado matricial de membrana com 16 teclas
       
       <guid>https://butecotecnologico.com.br/rust-1-0-ja-esta-disponivel/</guid>
       <description>Rust é uma nova linguagem de programação com o objetivo de tornar simples a construção de sistemas eficientes e confiáveis. Rust combina o controle de baixo nível sobre o desempenho com comodidade e segurança de alto nível.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>QtGamepad: Adicionando suporte a Gamepad no Qt</title>
@@ -590,7 +945,13 @@ O teclado que estou utilizando é um teclado matricial de membrana com 16 teclas
       
       <guid>https://butecotecnologico.com.br/qtgamepad-adicionando-suporte-a-gamepad-no-qt/</guid>
       <description>Um dos mais novos módulos adicionados ao Qt Labs é o QtGamepad, um módulo inspirado na API Gamepad do HTML5. Apesar de inspirado no Gamepad HTML, ele segue o estilo de desenvolvimento do Qt.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Samsung anuncia entrada na família Arduino</title>
@@ -599,7 +960,13 @@ O teclado que estou utilizando é um teclado matricial de membrana com 16 teclas
       
       <guid>https://butecotecnologico.com.br/samsung-anuncia-entrada-na-familia-arduino/</guid>
       <description>A plataforma ARTIK está na categoria dos dispositivos compatíveis com Arduino, e seu foco é a Internet das Coisas. No momento existem três placas: ARTIK 1, ARTIK 5 e ARTIK 10. Todas as placas possuem processador ARM multi-core e Bluetooth Low Energy (BLE). As placas ARTIK 5 e ARTIK 10 contam também com Wi-Fi, BT, Zigbee e conexões Wirelles Multi-Thread</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Pesquisa sobre Cursos Presenciais de Microcontroladores</title>
@@ -608,7 +975,13 @@ O teclado que estou utilizando é um teclado matricial de membrana com 16 teclas
       
       <guid>https://butecotecnologico.com.br/pesquisa-sobre-cursos-presenciais-de-microcontroladores/</guid>
       <description>O Embarcados está fazendo uma pesquisa sobre cursos presenciais de microcontroladores e ele conta com a sua opinião.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Vaga para desenvolvedor Front-end em Blumenau</title>
@@ -617,7 +990,13 @@ O teclado que estou utilizando é um teclado matricial de membrana com 16 teclas
       
       <guid>https://butecotecnologico.com.br/vaga-para-desenvolvedor-front-end-em-blumenau/</guid>
       <description>A Eventials é uma startup fundada em 2011, composta por equipe de empreendedores, designers e hackers. A empresa faz parte do grupo Locaweb, sendo a divisão responsável pelo desenvolvimento de soluções para streaming de vídeo. Junto com a Locaweb recebeu em 2014 os prêmios Great Place to Work e Melhores Empresas para Você Trabalhar.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Valve disponibiliza o OpenVR SDK</title>
@@ -626,7 +1005,13 @@ O teclado que estou utilizando é um teclado matricial de membrana com 16 teclas
       
       <guid>https://butecotecnologico.com.br/valve-disponibiliza-o-openvr-sdk/</guid>
       <description>O OpenVR SDK é basicamente uma camada de abstração para os desenvolvedores de jogos e aplicativos para acessar esses hardwares de forma fácil, que por sua vez possui suporte para o HTC Vive Developer Edition, SteamVR controlador e Lighthouse.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Primeiros passos com o ESP8266</title>
@@ -636,7 +1021,13 @@ O teclado que estou utilizando é um teclado matricial de membrana com 16 teclas
       <guid>https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/</guid>
       <description>Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.
 O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Usando a API do Google Analytics no Python</title>
@@ -645,7 +1036,13 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       
       <guid>https://butecotecnologico.com.br/usando-a-api-do-google-analytics-no-python/</guid>
       <description>O Google Analytics permite que você avalie seu ROI de publicidade, bem como acompanhar seus sites e aplicativos em Flash, vídeo e redes sociais. É uma ferramente indispensável para aqueles que gostam de monitorar seus sites e saber informações relacionadas aos acessos. Claro que existem outras ferramentas similares, mas hoje mostrarei como buscar dados desta.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Fazendo backup para o Amazon S3 com Python</title>
@@ -654,7 +1051,13 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       
       <guid>https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/</guid>
       <description>O Amazon Simple Storage Service (Amazon S3) oferece aos desenvolvedores e equipes de TI armazenamento de objetos seguro, durável e altamente escalonável. O Amazon S3 é fácil de usar, com uma interface de serviços da web simples para armazenar e recuperar qualquer quantidade de dados de qualquer parte da web. Com o Amazon S3, você paga apenas pelo armazenamento realmente utilizado. Não há taxa mínima nem custo de configuração.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>EXT4 com suporte a criptografia nativa</title>
@@ -663,7 +1066,13 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       
       <guid>https://butecotecnologico.com.br/ext4-com-suporte-a-criptografia-nativa/</guid>
       <description>EXT4 é a evolução do sistema de arquivos EXT3. De muitas maneiras, EXT4 é uma profunda melhoria sobre o  EXT3, sendo o EXT3, uma melhoria do EXT2.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GNOME 3.16.1 já está disponível</title>
@@ -672,7 +1081,13 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       
       <guid>https://butecotecnologico.com.br/gnome-3-16-1-ja-esta-disponivel/</guid>
       <description>O GNOME 3.16.1 foi disponibilizado hoje para download. Esta versão contempla atualizações sobre 3.16, liberada mês passado, e traz correções de BUGs, melhorias no próprio GNOME, atualização da documentação e traduções.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conheça o ESP8266: Um módulo WiFi por menos de 5 dólares</title>
@@ -681,7 +1096,13 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       
       <guid>https://butecotecnologico.com.br/conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares/</guid>
       <description>O ESP8266 é uma solução para a Internet das Coisas (IoT). Ele não é apenas um módulo WiFi que pode ser conectado ao Arduino, mas sim um System-on-a-chip (SoC). Ou seja, ele é uma solução completa para quem deseja criar um dispositivo que necessite conexão WiFi.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Kodi 14.2 está disponível</title>
@@ -690,7 +1111,13 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       
       <guid>https://butecotecnologico.com.br/kodi-14-2-esta-disponivel/</guid>
       <description>O Kodi é uma central multimídia livre (GPL) que pode ser instalada no Linux, OSX, Windows, iOS e Android. Permitindo que os usuários vejam e executem vídeos, músicas, Podcasts e outras mídias digitais armazenadas localmente, na rede ou na internet.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Nuclide: IDE do Facebook baseada no Atom</title>
@@ -699,7 +1126,13 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       
       <guid>https://butecotecnologico.com.br/nuclide-ide-do-facebook-baseada-no-atom/</guid>
       <description>Recentemente o Facebook lançou a sua IDE designada ao desenvolvimento da linguagem Hack. A Nuclide é uma IDE unificada que traz suporte a React, Flow dentre outras ferramentas do Facebook.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PyPy 2.5.1 já está disponível</title>
@@ -708,7 +1141,13 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       
       <guid>https://butecotecnologico.com.br/pypy-2-5-1-ja-esta-disponivel/</guid>
       <description>Esta nova versão vem com suporte a arquitetura x86, para os sistemas operacionais Linux 32/64, Mac OS X 64, Windows e OpenBSD, e arquitetura ARM (ARMv6 ou ARMv7 com VFPv3), para o sistema operacional Linux.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GXUI: Interface multiplataforma para Go</title>
@@ -717,7 +1156,13 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       
       <guid>https://butecotecnologico.com.br/gxui-interface-multiplataforma-para-go/</guid>
       <description>GXUI é uma nova interface de usuário multiplataforma desenvolvida pela Google para a linguagem de programação Go, que também é desenvolvida pela Google.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>redislite: Redis sem necessidade de servidor para Python</title>
@@ -727,7 +1172,13 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       <guid>https://butecotecnologico.com.br/redislite-redis-sem-necessidade-de-servidor-para-python/</guid>
       <description>O time de desenvolvedores do Yahoo anunciou uma implementação do Redis para Python sem a necessidade de instalar e configurar um servidor Redis. A grande vantagem é a remoção de uma dependência do seu código, quando o quesito é testes.
 O Redis é um banco de dados de código aberto, sob a licença BSD, para persistência de dados no modelo Chave/Valor e é escrito em C.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando o Alien no openSUSE</title>
@@ -736,7 +1187,13 @@ O Redis é um banco de dados de código aberto, sob a licença BSD, para persist
       
       <guid>https://butecotecnologico.com.br/instalando-o-alien-no-opensuse/</guid>
       <description>O Alien é um aplicativo para conversão de arquivos de instalação de pacotes. Ou seja, ele converte, por exemplo, um arquivo de instalação do Debian para um arquivo de instalação do openSUSE.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Google anuncia fim do Google Code</title>
@@ -746,7 +1203,13 @@ O Redis é um banco de dados de código aberto, sob a licença BSD, para persist
       <guid>https://butecotecnologico.com.br/google-anuncia-fim-do-google-code/</guid>
       <description>Com a maior parte dos projetos sendo hospedados no GitHub, incluindo vários da própria Google, a Google resolveu tirar do ar o seu serviço de hospedagem de código fonte, conhecido como Google Code.
 Para quem não o conhece, o Google Code é um serviço de hospedagem de código muito similar ao GitHub ou Bitbucket. Os seus serviços iniciaram em 2006, mas parece que a Google deixou este projeto de lado, pois ele ficou estagnado.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Python 3.5.0a2 já está disponível</title>
@@ -756,7 +1219,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       <guid>https://butecotecnologico.com.br/python-3-5-0a2-ja-esta-disponivel/</guid>
       <description>O Python 3.5.0a2 foi liberado nesta segunda (09/03) e vem com algumas novidades em relação a versão 3.4.
 O Python 3.5 ainda está em desenvolvimento e esta versão é a segunda &lt;em&gt;alpha release&lt;/em&gt;. Varias alterações para esta versão ainda estão em faze de desenvolvimento.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando o Apache no CentOS 7</title>
@@ -766,7 +1235,13 @@ O Python 3.5 ainda está em desenvolvimento e esta versão é a segunda &lt;em&g
       <guid>https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/</guid>
       <description>Dando continuidade ao tutorial de instalação do LAMP no CentOS, hoje vamos ver como instalar o Apache. No tutorial anterior, vimos como instalar o MariaDB.
 O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.20% dos servidores ativos no mundo. Além disso, é a principal tecnologia da Apache Software Foundation.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Unity 5 vem com suporte a WebGL e você pode conferir alguns exemplos</title>
@@ -775,7 +1250,13 @@ O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.2
       
       <guid>https://butecotecnologico.com.br/unity-5-vem-com-suporte-a-webgl-e-voce-pode-conferir-alguns-exemplos/</guid>
       <description>Esta nova versão da mais popular ferramenta de desenvolvimento de jogos inclui uma prévia do exportador para WebGL. Os desenvolvedores de jogos estão a um passo de publicar os seus jogos para a Web de uma nova forma, tirando proveito do WebGL e do asm.js.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Unreal Engine 4.7 inclui exportação para HTML5</title>
@@ -785,7 +1266,13 @@ O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.2
       <guid>https://butecotecnologico.com.br/unreal-engine-4-7-inclui-exportacao-para-html5/</guid>
       <description>Com o lançamento da Unreal Engine 4.7 no dia 24/02, a Epic Games adicionou uma nova funcionalidade que permite a exploração para HTML5. Com esta nova funcionalidade, você pode desenvolver seu jogo e exportá-lo imediatamente para a Web, e iniciar o jogo com apenas um clique.
 A versão 4.7 é considerada uma das maiores liberações já feitas desde o lançamento da Unreal Engine. Com isso, uma das maiores engines para desenvolvimento de jogos está cada vez mais perto de criar jogos para a Web.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Pyston 0.3 já está disponível</title>
@@ -795,7 +1282,13 @@ A versão 4.7 é considerada uma das maiores liberações já feitas desde o lan
       <guid>https://butecotecnologico.com.br/pyston-0-3-ja-esta-disponivel/</guid>
       <description>A versão 0.3 do Pyston foi liberada nesta terça-feira (24/02). O Pyston é uma proposta de uma implementação do Python com alto desempenho.
 Esta é liberação muito importante, pois em relação as versões anteriores, esta versão além de uma maior compatibilidade com o Python, também melhorou o seu desempenho na execução de scripts.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Python 3.4.3 já está disponível</title>
@@ -804,7 +1297,13 @@ Esta é liberação muito importante, pois em relação as versões anteriores, 
       
       <guid>https://butecotecnologico.com.br/python-3-4-3-ja-esta-disponivel/</guid>
       <description>Foi liberado ontem (25/02) a nova versão do Python, a 3.4.3 (final). Esta versão vem com várias correções de bugs e melhorias em relação a 3.4.2.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando driver NVIDIA Bumblebee no openSUSE</title>
@@ -813,7 +1312,13 @@ Esta é liberação muito importante, pois em relação as versões anteriores, 
       
       <guid>https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/</guid>
       <description>A tecnologia Optimus da NVIDIA otimiza o seu notebook de forma inteligente, oferecendo o desempenho gráfico impressionante que você precisa, quando você precisa, e sempre aumentando o tempo de vida da bateria para que você aproveite por mais tempo.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando o VMware Player no Linux</title>
@@ -823,7 +1328,13 @@ Esta é liberação muito importante, pois em relação as versões anteriores, 
       <guid>https://butecotecnologico.com.br/instalando-o-vmware-player-no-linux/</guid>
       <description>O VMware é um software/máquina virtual que permite a instalação e utilização de um sistema operacional dentro de outro, dando suporte real a software de outros sistemas.
 Se você, assim como eu, acha que instalar o VMware no Linux é algo complicado, você verá neste tutorial que é algo bem simples de ser feito.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GnuPG 2.1.2 já está disponível</title>
@@ -832,7 +1343,13 @@ Se você, assim como eu, acha que instalar o VMware no Linux é algo complicado,
       
       <guid>https://butecotecnologico.com.br/gnupg-2-1-2-ja-esta-disponivel/</guid>
       <description>O GnuPG, também conhecido como GPG, permite criptografar e assinar dados e comunicação, possui um sistema de gerenciamento de chaves versátil, bem como módulos de acesso para os diretórios de chave pública. O GnuPG é uma ferramenta de linha de comando com recursos para uma fácil integração com outros aplicativos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando o MariaDB no CentOS 7</title>
@@ -841,7 +1358,13 @@ Se você, assim como eu, acha que instalar o VMware no Linux é algo complicado,
       
       <guid>https://butecotecnologico.com.br/instalando-o-mariadb-no-centos-7/</guid>
       <description>O MariaDB é um servidor de banco de dados que oferece as mesmas funcionalidades do MySQL. Na verdade ele é um fork do MySQL, feito após a sua compra pela Oracle. O MariaDB é desenvolvido pela comunidade de software livre e por alguns dos autores originais do MySQL.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Python 3.4.3 e 3.5 já estão a caminho</title>
@@ -851,7 +1374,13 @@ Se você, assim como eu, acha que instalar o VMware no Linux é algo complicado,
       <guid>https://butecotecnologico.com.br/python-3-4-3-e-3-5-ja-estao-a-caminho/</guid>
       <description>Ontem (08/02) foi liberado o Python 3.4.3rc1 e o 3.5.0a1. A versão 3.4.3 está prevista para dia 22/02 e a 3.5 para 13/09.
 A versão 3.4.3rc1 vem com várias correções de bugs e pequenas melhorias em relação a 3.4.2. Já a versão 3.5 ainda está em desenvolvimento, e a 3.5.0a1 é a primeira liberação desta nova versão. Várias alterações ainda estão sendo planejadas para a 3.5.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Node.js v0.12.0 já está disponível</title>
@@ -861,7 +1390,13 @@ A versão 3.4.3rc1 vem com várias correções de bugs e pequenas melhorias em r
       <guid>https://butecotecnologico.com.br/node-js-v0-12-0-ja-esta-disponivel/</guid>
       <description>O Node.js é uma plataforma para desenvolvimento ágil de aplicações Web escaláveis, constuida sobre o V8 (Chrome&amp;rsquo;s JavaScript runtime). O V8 é a uma engine JavaScript de código aberto desenvolvida pelo Google e utilizado no Chrome.
 O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de 2014.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando o VLC no openSUSE</title>
@@ -870,7 +1405,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/instalando-o-vlc-no-opensuse/</guid>
       <description>O VLC é um reprodutor multimídia livre, de código aberto, multi-plataforma, que reproduz a maioria dos arquivos de mídia, bem como DVD, CD de áudio, VCD entre outros.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>glibc 2.21 já está disponível</title>
@@ -879,7 +1420,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/glibc-2-21-ja-esta-disponivel/</guid>
       <description>A GNU C Library (glibc) é a biblioteca C padrão no sistema GNU e na maioria dos sistemas com Kernel Linux. A versão 2.21 vem com várias correções de bugs algumas funcionalidades novas.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PyPy 2.5.0 já está disponível</title>
@@ -888,7 +1435,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/pypy-2-5-0-ja-esta-disponivel/</guid>
       <description>O PyPy é uma alternativa a outros interpretadores como CPython (o padrão), Jython e IronPython, e de acordo com os diversos benchmarks publicados, o mais rápido entre eles.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Kodi 14.1 já está disponível</title>
@@ -897,7 +1450,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/kodi-14-1-ja-esta-disponivel/</guid>
       <description>Kodi é o novo nome do conhecido XBMC. Nesta versão além da correção de vários bugs, o XBMC vem com um novo nome (Kodi), um novo logo e uma variedade de novas funcionalidades.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Corrigindo problemas de conexão do zypper no openSUSE 13.2</title>
@@ -906,7 +1465,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/corrigindo-problemas-de-conexao-do-zypper-no-opensuse-13-2/</guid>
       <description>Veja como corrigir problemas de conexão do zypper no openSUSE.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Inkscape 0.91 já está disponível</title>
@@ -915,7 +1480,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/inkscape-0-91-ja-esta-disponivel/</guid>
       <description>O Inkscape é uma ferramenta de código aberto para edição de gráficos vetoriais, muito semelhante ao Adobe Illustrator, Corel Draw, Freehand, ou Xara X</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Crie seu próprio console Infanto por menos de 300 reais</title>
@@ -924,7 +1495,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/crie-seu-proprio-console-infanto-por-menos-de-300-reais/</guid>
       <description>Há cerca de duas semanas, o assunto da vez na área de jogos no Brasil foi o console chamado de Infanto.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>MediaFire libera toolkit para desenvolvedores Linux</title>
@@ -933,7 +1510,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/mediafire-libera-toolkit-para-desenvolvedores-linux/</guid>
       <description>O MediaFire, um serviço de backup e hospedagem de arquivos, liberou um toolkit Open-Source para desenvolvedores que usam Linux.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Mozilla libera suporte ao WebVR no Firefox Nightly</title>
@@ -942,7 +1525,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/mozilla-libera-suporte-ao-webvr-no-firefox-nightly/</guid>
       <description>Recentemente a Mozilla liberou suporte ao WebVR no Firefox Nightly.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Vazam detalhes do Snapdrangon 820</title>
@@ -951,7 +1540,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/vazam-detalhes-do-snapdrangon-820/</guid>
       <description>Vários detalhes sobre os novos processadores da Qualcomm para a segunda metade de 2015 parecem ter vazado.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>QEMU 2.3 trará suporte a CPU Ivy Bridge</title>
@@ -960,7 +1555,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/qemu-2-3-trara-suporte-a-cpu-ivy-bridge/</guid>
       <description>O QEMU é um emulador e virtualizador de máquinas e é totalmente Open Source. A versão 2.2 foi lançada há pouco mais de um mês (09/12), e para a versão 2.3 a lista de novidades já é grande.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Formatando e adicionando anexos a e-mails no Python</title>
@@ -969,7 +1570,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/formatando-e-adicionando-anexos-a-e-mails-no-python/</guid>
       <description>Há algumas semanas, nós mostramos como enviar e-mail pelo Python usando o módulo smtplib.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Controlando um LED pelo Arduino</title>
@@ -978,7 +1585,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/controlando-um-led-pelo-arduino/</guid>
       <description>Veja como controlar um LED pelo Arduino. Iremos fazer duas operações básicas, fazer o LED piscar e alterar sua intensidade.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lua 5.3 já está disponível</title>
@@ -987,7 +1600,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/lua-5-3-ja-esta-disponivel/</guid>
       <description>Lua é uma linguagem poderosa, rápida e leve desenvolvida na PUC-Rio.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.0 Alpha já está disponível</title>
@@ -996,7 +1615,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/rust-1-0-alpha-ja-esta-disponivel/</guid>
       <description>Rust 1.0 Alpha foi lançado hoje.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>cURL 7.40 disponível e agora com suporte ao protocolo SMB/CIFS</title>
@@ -1005,7 +1630,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/curl-7-40-disponivel-e-agora-com-suporte-ao-protocolo-smbcifs/</guid>
       <description>O cURL 7.40 foi disponibilizado hoje (08/01) com várias novidades e correções de bugs.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Ganhe uma Second Shot em seu exame Microsoft MCP</title>
@@ -1014,7 +1645,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/ganhe-uma-second-shot-em-seu-exame-microsoft-mcp/</guid>
       <description>A Microsoft esta disponibilizando gratuitamente uma Second Shot para qualquer exame MCP (Microsoft Certified Professional) efetuado entre 5 de janeiro de 2015 e 31 de maio de 2015.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conectando um display de 7 segmentos no Arduino</title>
@@ -1023,7 +1660,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/conectando-um-display-de-7-segmentos-no-arduino/</guid>
       <description>Confira como utilizar um display de 7 segmentos no Arduino.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Enviando emails com o Python</title>
@@ -1032,7 +1675,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/enviando-emails-com-o-python/</guid>
       <description>Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo smtplib.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi</title>
@@ -1041,7 +1690,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/</guid>
       <description>Hoje vou mostrar como instalar o ArchLinux no BananaPi. Escolhi o ArchLinux por ele ser uma distribuição bem enxuta, mas muito poderosa.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Nós somos Linux</title>
@@ -1050,7 +1705,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/nos-somos-linux/</guid>
       <description>Nós somos Linux, e você? Se você ainda está em dúvida, confira o DistroWatch e escolha uma distribuição.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Enviando SMS pelo PagueVeloz</title>
@@ -1059,7 +1720,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/</guid>
       <description>É muito comum ver nos sistemas que desenvolvemos envio de e-mail.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.0 será lançado em 2015</title>
@@ -1068,7 +1735,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/rust-1-0-sera-lancado-em-2015/</guid>
       <description>O blog oficial da linguagem Rust compartilhou nesta sexta-feira (12/12) seus planos para 2015.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Python 2.7.9 já está disponível</title>
@@ -1077,7 +1750,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/python-2-7-9-ja-esta-disponivel/</guid>
       <description>A nova versão do Python, a 2.7.9, é uma versão que traz correções de bugs para a versão 2.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Primeiros passos com o Banana Pi</title>
@@ -1086,7 +1765,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/primeiros-passos-com-o-banana-pi/</guid>
       <description>Na primeira postagem sobre o Banana Pi eu comentei sobre o hardware e se seria uma boa opção de compra.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rodando Linux em uma Banana</title>
@@ -1095,7 +1780,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/rodando-linux-em-uma-banana/</guid>
       <description>Você já deve ter ouvido falar no Raspberry Pi, um computador single-board do tamanho de um cartão de crédito.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Git 2.2 está chegando com várias mudanças</title>
@@ -1104,7 +1795,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/git-2-2-esta-chegando-com-varias-mudancas/</guid>
       <description>O Git 2.2.0 RC 1 já está disponível e nesta última atualização o foco foi a estabilização.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Apresentando o Proxygen - Framework HTTP em C&#43;&#43; do Facebook</title>
@@ -1113,7 +1810,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/apresentando-o-proxygen-framework-http-em-c-do-facebook/</guid>
       <description>O Facebook anunciou o Proxygen, uma coleção de bibliotecas HTTP de código aberto para C++, incluindo um servidor HTTP fácil de usar.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Utilizando o OpenShift para hospedar uma aplicação Flask/Python</title>
@@ -1123,7 +1826,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       <guid>https://butecotecnologico.com.br/utilizando-o-openshift-para-hospedar-uma-aplicacao-flaskpython/</guid>
       <description>O que é OpenShift?
 OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações em nuvem disponibilizada pela Red Hat.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conheça o que está por vir no openSUSE 13.2</title>
@@ -1132,7 +1841,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/conheca-o-que-esta-por-vir-no-opensuse-13-2/</guid>
       <description>Faltam apenas 12 dias para o lançamento oficial do openSUSE 13.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Internacionalizando um site de forma simples</title>
@@ -1141,7 +1856,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/internacionalizando-um-site-de-forma-simples/</guid>
       <description>A algum tempo que já estava afim de traduzir meu site para o Português, mas nunca tive tempo e nem muito empenho.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>openSUSE 13.2: Chegou a hora de testar</title>
@@ -1150,7 +1871,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/opensuse-13-2-chegou-a-hora-de-testar/</guid>
       <description>Menos de três semanas se passaram desde o lançamento da primeira versão release candidate e já podemos sentir que estamos quase lá.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 0.12.0 é lançado</title>
@@ -1159,7 +1886,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/rust-0-12-0-e-lancado/</guid>
       <description>O Rust 0.12.0 foi lançado ontem (09/10) e esta nova versão traz nova documentação e melhoria na antiga, incluindo O Guia Rust, que substitui o tutorial antigo.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Cupom de desconto para certificação Linux</title>
@@ -1168,7 +1901,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/cupom-de-desconto-para-certificacao-linux/</guid>
       <description>Você já deve ter ouvido sobre os programas de certificação recentemente lançado pela Linux Fundation.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>pycompat: Verificando a versão do Python e do sistema de uma forma simples</title>
@@ -1177,7 +1916,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/pycompat-verificando-a-versao-do-python-e-do-sistema-de-uma-forma-simples/</guid>
       <description>A algum tempo desenvolvi uma mini biblioteca chamada pycompat para verificar a versão do Python e do sistema de uma simples e funcional.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Harry speaks Python</title>
@@ -1186,7 +1931,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/harry-speaks-python/</guid>
       <description>Via Reddit</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Introdução ao ALSA e sua API em C e Python</title>
@@ -1195,7 +1946,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/</guid>
       <description>O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket</title>
@@ -1204,7 +1961,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/</guid>
       <description>Estes dias tive um problema, eu necessitava adicionar um trecho de código do GitHub a uma página, mas este código estava em um repositório e não em um Gist.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Python</title>
@@ -1214,7 +1977,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       <guid>https://butecotecnologico.com.br/python/</guid>
       <description>Apenas para descontrair :P
 Via XKCD</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Stack Overflow Introduz Snippets JavaScript, CSS, e HTML Executáveis.</title>
@@ -1223,7 +1992,13 @@ Via XKCD</description>
       
       <guid>https://butecotecnologico.com.br/stack-overflow-introduz-snippets-javascript-css-e-html-executaveis/</guid>
       <description>No Stack Overflow e outros sites relacionados, criar um exemplo de código é a melhor maneira de obter resposta à sua pergunta.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>40&#43; eBooks Gratuitos</title>
@@ -1232,7 +2007,13 @@ Via XKCD</description>
       
       <guid>https://butecotecnologico.com.br/40-ebooks-gratis/</guid>
       <description>A Syncfusion está disponibilizando mais de 40 livros gratuitamente. Os livros abrangem de forma sucinta o assunto abordado e cada livro possui cerca de 100 páginas.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Pyston 0.2 já está disponível</title>
@@ -1241,7 +2022,13 @@ Via XKCD</description>
       
       <guid>https://butecotecnologico.com.br/pyston-0-2-ja-esta-disponivel/</guid>
       <description>O Pyston 0.2 foi anunciado ontem (11/09) e contém várias melhorias se comparado a versão inicial.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Capturando Imagem da Webcam com o PyGame</title>
@@ -1250,7 +2037,14 @@ Via XKCD</description>
       
       <guid>https://butecotecnologico.com.br/capturando-imagem-da-webcam-com-o-pygame/</guid>
       <description>Este é o meu primeiro post no blog e gostaria de falar sobre o PyGame.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Alexandre Vicenzi on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

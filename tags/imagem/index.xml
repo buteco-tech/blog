@@ -3,14 +3,15 @@
   <channel>
     <title>imagem on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/imagem/</link>
-    <description>Recent content in imagem on Buteco Tecnológico</description>
+    <description>Recent content in imagem on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>imagem on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/imagem/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 17 Nov 2014 07:47:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/imagem/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 17 Nov 2014 07:47:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/imagem/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Crie seu próprio Instagram com PHP</title>
       <link>https://butecotecnologico.com.br/crie-seu-proprio-instagram-com-php/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/crie-seu-proprio-instagram-com-php/</guid>
       <description>Olá pessoal! Hoje mostrarei como fazer uma edição e tratamento básico de imagens com PHP, para quem não sabe o PHP possui uma extensão dedicada para trabalhar com entidades gráficas, a php_gd2, consequentemente para este tutorial vamos precisar desta extensão habilitada e do PHP na versão 5.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>imagem on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/imagem/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

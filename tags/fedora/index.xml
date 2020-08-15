@@ -3,14 +3,15 @@
   <channel>
     <title>fedora on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/fedora/</link>
-    <description>Recent content in fedora on Buteco Tecnológico</description>
+    <description>Recent content in fedora on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>fedora on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/fedora/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 19 Jun 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 19 Jun 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Distribuições Linux</title>
       <link>https://butecotecnologico.com.br/podcast/distribuicoes-linux/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/podcast/distribuicoes-linux/</guid>
       <description>Você sabe o que é uma distribuição Linux? Neste episódio do nosso podcast discutimos sobre o assunto, abordando alguns dos principais projetos envolvidos, como tudo começou, o cenário atual e por fim falamos sobre a posição do Brasil nessa história.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>fedora on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/fedora/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Visão geral do Dandified Yum</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/visao-geral-do-dandified-yum/</guid>
       <description>&lt;p&gt;Olá pessoal! Neste artigo procurarei descrever sobre alguns dos principais comandos do &lt;em&gt;Dandified Yum&lt;/em&gt;, carinhosamente apelidado de DNF, espero ser útil àqueles que encontraram alguma dificuldade, não tiveram a oportunidade ou necessidade em usá-lo.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>fedora on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/fedora/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Fedup vai ser substituído no Fedora 23</title>
@@ -36,7 +49,13 @@
       
       <guid>https://butecotecnologico.com.br/fedup-vai-ser-substituido-no-fedora-23-2/</guid>
       <description>Artigo sobre nova abordagem da Red Hat sobre o atualizador Fedup, utilizado no Fedora</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>fedora on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/fedora/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Fedora 23 irá trocar o X.Org Server pelo Wayland</title>
@@ -45,7 +64,13 @@
       
       <guid>https://butecotecnologico.com.br/fedora-23-ira-trocar-o-x-org-server-pelo-wayland/</guid>
       <description>Enquanto muito se falava em trocar o X.Org Sever pelo Wayland como sendo algo distante, parece que o Fedora 23 irá fazer acontecer.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>fedora on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/fedora/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Problema ao atualizar o jogo Flare no Fedora 20</title>
@@ -54,7 +79,14 @@
       
       <guid>https://butecotecnologico.com.br/problema-ao-atualizar-o-jogo-flare-no-fedora-20/</guid>
       <description>Olá pessoal, como primeiro post deste blog eu gostaria de falar sobre a minha experiência resolvendo um problema que tive hoje mesmo no Fedora 20!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>fedora on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/fedora/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>openstreetmap on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/openstreetmap/</link>
-    <description>Recent content in openstreetmap on Buteco Tecnológico</description>
+    <description>Recent content in openstreetmap on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>openstreetmap on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/openstreetmap/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 23 Jul 2015 00:20:25 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/openstreetmap/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 23 Jul 2015 00:20:25 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/openstreetmap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projeto open source pretende mapear o mundo para cadeirantes</title>
       <link>https://butecotecnologico.com.br/projeto-open-source-pretende-mapear-o-mundo-para-cadeirantes/</link>
@@ -20,7 +21,14 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/wheelmap-logo-e1435718201487.png&#34;&gt;&lt;img class=&#34;alignnone size-large wp-image-2929&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/wheelmap-logo-1024x520.png&#34; alt=&#34;wheelmap-logo&#34; width=&#34;648&#34; height=&#34;329&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Encontrar estabelecimentos acessíveis por cadeiras de rodas pode ser trabalhoso, mas um projeto open source quer mudar ao menos um pouco essa história. Chamada de WheelMap, a iniciativa é bem isso: um mapa que indica locais que primam (ou não) pela acessibilidade.&lt;/p&gt;
 &lt;p&gt;Baseado no &lt;a href=&#34;http://www.openstreetmap.org/&#34; target=&#34;_blank&#34;&gt;OpenStreetMap&lt;/a&gt;, o serviço é bastante simples e qualquer um pode colaborar. Lojas, lanchonetes, bancos e outros pontos registrados no sistema são exibidos em seus respectivos locais no mapa, e um clique sobre o ícone permite classificá-los como “acessível por cadeira de rodas”, “parcialmente acessível” ou “inacessível”.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>openstreetmap on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/openstreetmap/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

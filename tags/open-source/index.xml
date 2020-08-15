@@ -3,14 +3,15 @@
   <channel>
     <title>open-source on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/open-source/</link>
-    <description>Recent content in open-source on Buteco Tecnológico</description>
+    <description>Recent content in open-source on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>open-source on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/open-source/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 07 Apr 2016 13:04:15 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 07 Apr 2016 13:04:15 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mesa muito próximo do OpenGL 4.2 e 4.3</title>
       <link>https://butecotecnologico.com.br/mesa-muito-proximo-do-opengl-4-2-e-4-3/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/mesa-muito-proximo-do-opengl-4-2-e-4-3/</guid>
       <description>&lt;p&gt;Há muito tempo que esperamos ter um bom suporte a jogos no Linux, e em partes isso já é realidade com a Steam e com os muitos jogos que já foram portados. Ainda assim, muito dos jogos AAA ainda precisam de um driver proprietário para poderem ser executados, mas isto pode mudar em breve.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>open-source on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/open-source/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -29,7 +36,13 @@
       <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
 &lt;p&gt;Já apresentamos aqui no Buteco Open Source o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;primeiro&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2&#34; target=&#34;_blank&#34;&gt;segundo&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-3&#34; target=&#34;_blank&#34;&gt;terceiro&lt;/a&gt; e &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-4&#34; target=&#34;_blank&#34;&gt;quarto&lt;/a&gt; episódios da série.&lt;/p&gt;
 &lt;p&gt;Neste vídeo da série &lt;em&gt;World Without Linux Episode #&lt;/em&gt;&lt;em&gt;5&lt;/em&gt;&lt;em&gt;: &lt;/em&gt;&lt;em&gt;Space Exploration&lt;/em&gt; (Mundo Sem Linux Episódio #5: Exploração Espacial), tenta demonstrar a importância do Linux na exploração espacial.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>open-source on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/open-source/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -40,7 +53,13 @@
       <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
 &lt;p&gt;Já apresentamos aqui no Buteco Open Source o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;primeiro&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2&#34; target=&#34;_blank&#34;&gt;segundo&lt;/a&gt; e &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-3&#34; target=&#34;_blank&#34;&gt;terceiro&lt;/a&gt; episódios da série. Este vídeo, &lt;em&gt;World Without Linux Episode 4: Avatar Reimagined&lt;/em&gt; (Mundo Sem Linux Episódio 4: Avatar Reimaginado), tenta demonstrar a importância do Linux aos filmes.&lt;/p&gt;
 &lt;p&gt;Lembrem cada episódio tem &lt;em&gt;Easter Eggs&lt;/em&gt; novos para serem descobertos.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>open-source on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/open-source/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Segunda temporada de caçada de bugs no LibreOffice 5.1</title>
@@ -49,7 +68,13 @@
       
       <guid>https://butecotecnologico.com.br/segunda-temporada-de-cacada-de-bugs-no-libreoffice-5-1/</guid>
       <description>São anunciadas as datas do bug hunt da versão 5.1 do LibreOffice</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>open-source on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/open-source/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -61,7 +86,13 @@
 &lt;p&gt;Já apresentamos aqui no Buteco Open Source o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;primeiro&lt;/a&gt; e o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2&#34; target=&#34;_blank&#34;&gt;segundo&lt;/a&gt; episódios da série.&lt;/p&gt;
 &lt;p&gt;Este terceiro vídeo da série, &lt;em&gt;World Without Linux &lt;/em&gt;&lt;em&gt;Episode 3: Can I Follow You?&lt;/em&gt; (Mundo Sem Linux Episódio 3: Posso Te Seguir?), tenta demonstrar a importância do Linux para as redes sociais.&lt;/p&gt;
 &lt;p&gt;Lembrem-se que cada episódio possui novos &lt;em&gt;Easter Eggs&lt;/em&gt; para serem descobertos.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>open-source on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/open-source/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>LibreOffice Magazine Número 19</title>
@@ -72,7 +103,13 @@
       <description>&lt;p&gt;Saiu a nova edição da LibreOffice Magazine!&lt;/p&gt;
 &lt;p&gt;Nesta edição o homenageado é o LibreOffice, onde é contado como tudo começou, qual a situação atual do projeto, sobre os cinco anos de desenvolvimento e os três anos da LibreOffice Magazine. Faz também, uma homenagem aos autores dos artigos das dezenove edições, em agradecimento pelo trabalho realizado até aqui.&lt;/p&gt;
 &lt;p&gt;Além destes, os temas abordados foram:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>open-source on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/open-source/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Café com Software Livre - Testemunho</title>
@@ -83,7 +120,13 @@
       <description>&lt;p&gt;Parte da equipe do Buteco Open Source esteve no Café com Software Livre, neste final de semana que passou. Daremos aqui uma visão geral sobre o evento.&lt;/p&gt;
 &lt;p&gt;O propósito do evento é fortalecer o software livre e correlatos, integrando os grupos com este mesmo objetivo no estado de Santa Catarina, mas isto não quer dizer que outros não possam vir ;) . Como este evento é organizado pelo pessoal do &lt;a href=&#34;http://www.blusol.org&#34; target=&#34;_blank&#34;&gt;Blusol&lt;/a&gt;, normalmente acontece em Blumenau ou região, neste ano foi na cidade de Indaial.&lt;/p&gt;
 &lt;p&gt;Cá entre nós, ele também serve para mostrar que não vivemos só da Oktoberfest, só que este evento é regado pela cafeína e frequentado por Nerds :)&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>open-source on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/open-source/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -94,7 +137,13 @@
       <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
 &lt;p&gt;Já apresentamos &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; no Buteco Open Source o primeiro episódio da série, &lt;em&gt;What&amp;rsquo;s the Name of that Song?&lt;/em&gt; (Qual o Nome Daquela Música?), que fez uma brincadeira para demonstrar os sistemas de busca.&lt;/p&gt;
 &lt;p&gt;Neste segundo vídeo da série, &lt;em&gt;World Without Linux Episode 2: Are We There Yet?&lt;/em&gt; (Mundo Sem Linux Episódio 2: Já chegamos?), tenta demonstrar a importância do Linux para os GPSs, que não está em todos (os aparelhos), mas sem ele teríamos poucas opções no mercado.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>open-source on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/open-source/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>O valor do open source</title>
@@ -104,7 +153,13 @@
       <guid>https://butecotecnologico.com.br/o-valor-do-open-source/</guid>
       <description>&lt;p lang=&#34;pt-PT&#34;&gt;Desde 2008, o &lt;em&gt;The Linux Foudation&lt;/em&gt; tem trabalhado com desenvolvedores e empresas de tecnologia para hospedar projetos &lt;em&gt;open source&lt;/em&gt; de vários segmentos da indústria de tecnologia, ajudando a resolver problemas complexos e adaptando os princípios e práticas que fizeram e fazem do Linux o que ele é.&lt;/p&gt;
 &lt;p lang=&#34;pt-PT&#34;&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>open-source on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/open-source/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -116,7 +171,13 @@
 &lt;p&gt;De acordo com a descrição da organização,&lt;/p&gt;
 &lt;blockquote&gt;Linux é o maior projeto de colaboração do mundo na história da computação. Ele roda a maior parte da infraestrutura de tecnologia do mundo e é apoiado por mais desenvolvedores e empresas do que qualquer outra plataforma. Está literalmente em toda parte - desde seu telefone até seu carro e escritório. Ele também alimenta a Internet, a nuvem, bolsas de valores do mundo, os supercomputadores, sistemas embarcados e muito mais.
 &lt;p&gt;Um mundo sem Linux é uma série que trará uma realidade confusa para ilustrar de forma divertida quão difundido o Linux é hoje. Este mundo fictício é uma ideia tão absurda que os cenários retratados na série vão nos ajudar a entender quanto o Linux é faz parte da nossa vida cotidiana e nos permite agradecer aos desenvolvedores e empresas que apoiam o Linux.&lt;/blockquote&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>open-source on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/open-source/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Inscrições abertas para o 11º Fórum Espírito Livre</title>
@@ -127,7 +188,13 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/inscricoes.jpg&#34;&gt;&lt;img class=&#34;alignnone size-large wp-image-2940&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/inscricoes-1024x356.jpg&#34; alt=&#34;inscricoes&#34; width=&#34;648&#34; height=&#34;225&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Já estão abertas as inscrições para o 11º Fórum Espírito Livre, que ocorrerá nos dias 24 e 25 de setembro de 2015, nas instalações do &lt;a href=&#34;http://st.ifes.edu.br/&#34; target=&#34;_blank&#34;&gt;IFES Santa Teresa&lt;/a&gt;, em Santa Teresa/ES&lt;/p&gt;
 &lt;p&gt;Este ano a Rede Espírito Livre comemora 6 anos de existência. O coletivo foi criado com o propósito de que atuar na mobilização de atividades relacionadas ao software livre e código aberto dentro e fora do ES. No ano de 2014 conseguimos bater a meta de levar o evento para fora do estado e ao final do ano, tínhamos conseguido realizar 10 edições do evento. Esta definitivamente não é uma simples marca! A Rede Espírito Livre tem se fortalecido em suas ações com o lançamento da Revista Espírito Livre, a TV Espírito Livre e o Fórum Espírito Livre.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>open-source on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/open-source/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Projetos interessantes do GSoC 2015</title>
@@ -136,7 +203,14 @@
       
       <guid>https://butecotecnologico.com.br/projetos-interessantes-do-gsoc-2015/</guid>
       <description>Uma breve lista com alguns dos pricipais projetos do GSoC deste ano.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>open-source on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/open-source/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

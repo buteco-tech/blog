@@ -3,14 +3,15 @@
   <channel>
     <title>paas on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/paas/</link>
-    <description>Recent content in paas on Buteco Tecnológico</description>
+    <description>Recent content in paas on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>paas on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/paas/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 13 Aug 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/paas/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 13 Aug 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/paas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes explicado</title>
       <link>https://butecotecnologico.com.br/kubernetes-explicado/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/kubernetes-explicado/</guid>
       <description>O Kubernetes (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers e foi criado pelo Google.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>paas on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/paas/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

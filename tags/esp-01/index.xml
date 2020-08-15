@@ -3,14 +3,15 @@
   <channel>
     <title>esp-01 on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/esp-01/</link>
-    <description>Recent content in esp-01 on Buteco Tecnológico</description>
+    <description>Recent content in esp-01 on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>esp-01 on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/esp-01/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 30 Apr 2015 08:53:10 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/esp-01/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 30 Apr 2015 08:53:10 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/esp-01/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Primeiros passos com o ESP8266</title>
       <link>https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/</guid>
       <description>Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.
 O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>esp-01 on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/esp-01/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

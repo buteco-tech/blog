@@ -3,14 +3,15 @@
   <channel>
     <title>cupom on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/cupom/</link>
-    <description>Recent content in cupom on Buteco Tecnológico</description>
+    <description>Recent content in cupom on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>cupom on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/cupom/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 25 May 2015 00:04:17 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/cupom/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 25 May 2015 00:04:17 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/cupom/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cupom de desconto nos livros da Casa do Código</title>
       <link>https://butecotecnologico.com.br/cupom-de-desconto-nos-livros-da-casa-do-codigo/</link>
@@ -19,7 +20,13 @@
       <guid>https://butecotecnologico.com.br/cupom-de-desconto-nos-livros-da-casa-do-codigo/</guid>
       <description>Cada vez mais tentamos trazer o melhor conteúdo para nossos leitores, sendo assim fizemos mais uma parceria.
 Agora você pode comprar livros e e-Books na Casa do Código com 15% de desconto.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>cupom on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/cupom/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Cupom de desconto para livros da Novatec</title>
@@ -28,7 +35,13 @@ Agora você pode comprar livros e e-Books na Casa do Código com 15% de desconto
       
       <guid>https://butecotecnologico.com.br/cupom-de-desconto-para-livros-da-novatec/</guid>
       <description>A equipe do Buteco Open Source fez uma parceria com a editora Novatec para poder disponibilizar aos nossos leitores um cupom de desconto na compra de livros pelo site da Novatec.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>cupom on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/cupom/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Cupom de desconto para certificação Linux</title>
@@ -37,7 +50,14 @@ Agora você pode comprar livros e e-Books na Casa do Código com 15% de desconto
       
       <guid>https://butecotecnologico.com.br/cupom-de-desconto-para-certificacao-linux/</guid>
       <description>Você já deve ter ouvido sobre os programas de certificação recentemente lançado pela Linux Fundation.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>cupom on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/cupom/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>ipcam on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/ipcam/</link>
-    <description>Recent content in ipcam on Buteco Tecnológico</description>
+    <description>Recent content in ipcam on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>ipcam on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/ipcam/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 28 Jan 2016 12:29:01 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/ipcam/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 28 Jan 2016 12:29:01 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/ipcam/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Câmera IP com Webcam e Motion</title>
       <link>https://butecotecnologico.com.br/camera-ip-com-webcam-e-motion/</link>
@@ -20,7 +21,14 @@
       <description>&lt;p&gt;O &lt;a href=&#34;http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome&#34; target=&#34;_blank&#34;&gt;Motion&lt;/a&gt; é um programa que monitora o sinal de câmeras e permite fazer detecção de movimento. É uma ferramenta de grande utilidade para quem deseja fazer streamming de vídeo, mais precisamente criar uma câmera IP.&lt;/p&gt;
 &lt;p&gt;Escrito em C e disponível para várias distribuições Linux, fazendo uso da interface &lt;em&gt;video4linux&lt;/em&gt;, permite a captura de jpeg, ppm e mpeg com um baixo consumo de memória.&lt;/p&gt;
 &lt;p&gt;As câmeras IPs ganharam grande destaque pela sua facilidade de uso, e preço relativamente acessível. Hoje é simples monitorar a sua casa e enviar imagens para o seu smartphone quando algum movimento for detectado.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>ipcam on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/ipcam/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

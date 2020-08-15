@@ -3,14 +3,15 @@
   <channel>
     <title>pwm on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/pwm/</link>
-    <description>Recent content in pwm on Buteco Tecnológico</description>
+    <description>Recent content in pwm on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>pwm on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/pwm/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 02 Mar 2016 23:51:38 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/pwm/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 02 Mar 2016 23:51:38 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/pwm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gerando melodia com o Arduino</title>
       <link>https://butecotecnologico.com.br/gerando-melodia-com-o-arduino/</link>
@@ -20,7 +21,14 @@
       <description>&lt;p&gt;Com a função &lt;strong&gt;&lt;em&gt;tone&lt;/em&gt;&lt;/strong&gt; do Arduino, é possível reproduzir qualquer melodia que desejar. Esta função tem como princípio gerar um sinal &lt;em&gt;PWM&lt;/em&gt; no pino definido no chamado desta função.&lt;/p&gt;
 &lt;p&gt;A função &lt;strong&gt;&lt;em&gt;tone&lt;/em&gt;&lt;/strong&gt; recebe os seguintes parâmetros: &lt;code&gt;tone(pino, frequência, duração);&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Quando chamada, esta função irá gerar um sinal &lt;em&gt;PWM&lt;/em&gt; na frequência e pelo tempo definido nos parâmetros passados. A frequência é definida em hertz e o tempo em milissegundos.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>pwm on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/pwm/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

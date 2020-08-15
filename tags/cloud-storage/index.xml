@@ -3,14 +3,15 @@
   <channel>
     <title>cloud-storage on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/cloud-storage/</link>
-    <description>Recent content in cloud-storage on Buteco Tecnológico</description>
+    <description>Recent content in cloud-storage on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>cloud-storage on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/cloud-storage/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 21 Jan 2015 15:02:01 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/cloud-storage/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 21 Jan 2015 15:02:01 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/cloud-storage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MediaFire libera toolkit para desenvolvedores Linux</title>
       <link>https://butecotecnologico.com.br/mediafire-libera-toolkit-para-desenvolvedores-linux/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/mediafire-libera-toolkit-para-desenvolvedores-linux/</guid>
       <description>O MediaFire, um serviço de backup e hospedagem de arquivos, liberou um toolkit Open-Source para desenvolvedores que usam Linux.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>cloud-storage on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/cloud-storage/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

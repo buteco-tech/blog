@@ -3,14 +3,15 @@
   <channel>
     <title>openssh on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/openssh/</link>
-    <description>Recent content in openssh on Buteco Tecnológico</description>
+    <description>Recent content in openssh on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>openssh on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/openssh/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 09 Mar 2016 23:57:19 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/openssh/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 09 Mar 2016 23:57:19 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/openssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configurações do OpenSSH que podem fazer toda a diferença</title>
       <link>https://butecotecnologico.com.br/configuracoes-do-openssh-que-podem-fazer-toda-a-diferenca/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/configuracoes-do-openssh-que-podem-fazer-toda-a-diferenca/</guid>
       <description>&lt;p&gt;Para quem possui algum servidor, ou até para em seu computador pessoal, algumas configurações padrão do servidor SSH são extremamente permissivas, vulneráveis a ataques, e quem sabe até invasão com técnicas de &lt;a href=&#34;https://en.wikipedia.org/wiki/Brute-force_attack&#34; target=&#34;_blank&#34;&gt;força bruta&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Entre algumas dicas mais simples para aumentar a segurança estão configurar o seu firewall corretamente ou até desabilitar o acesso SSH. Para servidores, esta última opção não é válida. Sendo assim vamos conferir algumas configurações que podem fazer toda a diferença na hora de algum espertinho tentar invadir seu servidor.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>openssh on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/openssh/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

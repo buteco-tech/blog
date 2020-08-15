@@ -3,14 +3,15 @@
   <channel>
     <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
-    <description>Recent content in Marco Carvalho de Oliveira on Buteco Tecnológico</description>
+    <description>Recent content in Marco Carvalho de Oliveira on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 13 Jun 2016 20:54:16 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/autores/marco-oliveira/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 13 Jun 2016 20:54:16 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/autores/marco-oliveira/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Review do livro &#34;Implantação de Help Desk e Service Desk&#34; - Roberto Cohen</title>
       <link>https://butecotecnologico.com.br/review-livro/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/review-livro/</guid>
       <description>Resenha e sugestão de livro sobre Help Desk - &amp;ldquo;Implatnação de Help Desk e Service Desk&amp;rdquo; - Roberto Cohen</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Compilando o FreeBSD: Parte 1</title>
@@ -28,7 +35,13 @@
       <guid>https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/</guid>
       <description>&lt;p&gt;Primeiro de tudo, sei que o conteúdo propriamente dito de como baixar e compilar os fontes do sistema operacional do FreeBSD é algo que tem aos montes na Internet. Entretanto acredito que reativar tópicos interessantes ou transformar eles em um registro no &lt;em&gt;feeds&lt;/em&gt; das notícias pode animar alguém a fazer estes testes.&lt;/p&gt;
 &lt;p&gt;Um aspecto é que, o objetivo deste texto é servir como base para a segunda parte que é compilar o sistema da nova maneira seguindo a proposta no livro de desenvolvimento do FreeBSD.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Introduzindo conceitos do Emacs</title>
@@ -37,7 +50,13 @@
       
       <guid>https://butecotecnologico.com.br/introduzindo-conceitos-do-emacs/</guid>
       <description>&lt;p&gt;Utilizo o Emacs há algum tempo, pelo menos como ferramenta de desenvolvimento acho uma das melhores opções, onde, diferente de outras, é fácil fazer o desenvolvimento e estender suas funcionalidades, criar novas &lt;em&gt;hotkeys&lt;/em&gt;. Tentarei demonstrar aqui, um básico das funcionalidades do Emacs.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Nova versão do Lumina</title>
@@ -47,7 +66,13 @@
       <guid>https://butecotecnologico.com.br/nova-versao-do-lumina/</guid>
       <description>&lt;p&gt;Você já ouviu falar ou leu sobre o Lumina?&lt;/p&gt;
 &lt;p&gt;Pois bem, nem só de KDE, Gnome, console, vive o FreeBSD :P, agora ele tem o Lumina. O Lumina  é um projeto de WM (&lt;em&gt;Window Manager&lt;/em&gt;) da XSystem desenhado para FreeBSD, desenvolvido de uma maneira para ser portável, funcionando em várias distribuições Linux. A solução vem sendo projetada em conjunto com o PC-BSD, o qual disponibiliza versões com Lumina atualizado.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>O sorteado da vez</title>
@@ -56,7 +81,13 @@
       
       <guid>https://butecotecnologico.com.br/o-sorteado-da-vez/</guid>
       <description>O sorteado da vez, premiado com o brinde do blog.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Acesso a informação, evolução, tecnologia e caos</title>
@@ -66,7 +97,13 @@
       <guid>https://butecotecnologico.com.br/acesso-a-informacao-evolucao-tecnologia-e-caos/</guid>
       <description>&lt;p&gt;Mais um texto que pode soar velho ;), mas velho eu sou&amp;hellip; tenho que aceitar&amp;hellip;&lt;/p&gt;
 &lt;p&gt;A ideia de hoje é falar um pouco de algo que contorna nosso nicho da tecnologia da computação, que é o acesso a informação. Bom, vou iniciar aos mais novos explicando que um dia existiram livros,  que eram usados antes da Wikipédia :P que as famílias compravam e tinham em casa. Um grupo de livros chamado Barsa, hoje quem sabe tenha disto em museus. No entanto só os como dizem, mais afortunados, tinham essa coleção de livros, e o que ali existia era o máximo de informação e conjunto de aprendizado que as pessoas em geral possuíam em suas casas, no modelo de enciclopédia.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>FreeBSD - pkg 1.6 chegando</title>
@@ -77,7 +114,13 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/pkg.jpg&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-3427&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/pkg.jpg&#34; alt=&#34;pkg&#34; width=&#34;638&#34; height=&#34;479&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Para os mais desavidos, desde que o FreeBSD mudou para sua versão 9, ele mudou o seu sistema de pacotes padrão para o pkg, uma grande evolução, e para nossa e vossa alegria o seu ciclo de desenvolvimento e melhorias ficou muito mais rápido, tanto que logo estamos chegando na versão 1.6. Foi lançado no dia 26/09, e com elo todo um conjunto de pacotes.
 No entanto, cuidado com atualizações via pacotes pois as vezes tendem a ter alguns &lt;em&gt;brokens&lt;/em&gt;, e como sabem, é sempre uma boa ideia utilizar em ambiente de teste antes de levar para a produção.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>RoadSec um testemunho</title>
@@ -86,7 +129,13 @@ No entanto, cuidado com atualizações via pacotes pois as vezes tendem a ter al
       
       <guid>https://butecotecnologico.com.br/roadsec-um-testemunho/</guid>
       <description>&lt;p&gt;Vou começar assim, a propaganda não era enganosa o evento foi bom, trouxe profissionais com experiência que compartilharam suas vivências na área de segurança. Nada daquelas palestras para preencher tempo, ou com profissionais que não tivessem desenvoltura para falar.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Roadsec - Floripa 26/09</title>
@@ -95,7 +144,13 @@ No entanto, cuidado com atualizações via pacotes pois as vezes tendem a ter al
       
       <guid>https://butecotecnologico.com.br/roadsec-floripa-2609/</guid>
       <description>Você está em Floripa ou redondezas? é geek? gosta de segurança de informação e está sem planos para sábado dia 26/09?</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Os primeiros passos com o demônio - FreeBSD</title>
@@ -108,7 +163,13 @@ No entanto, cuidado com atualizações via pacotes pois as vezes tendem a ter al
 &lt;p&gt;Ok, mas por onde começar o_O ?&lt;/p&gt;
 &lt;p&gt;Óbvio pela bíblia do demônio :P &lt;a href=&#34;https://www.freebsd.org/doc/handbook/&#34; target=&#34;_blank&#34;&gt;&amp;quot;Freebsd Hadbook&amp;quot;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Marco lá não tem as dicas maneiras para arrumar o meu desktop demonizado &amp;hellip;.. calma gente que um outro ótimo texto de referência: &lt;a href=&#34;https://cooltrainer.org/a-freebsd-desktop-howto/&#34; target=&#34;_blank&#34;&gt;A FreeBSD 10 Desktop How-to&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>OctoPkg – A GUI for pkg-ng</title>
@@ -118,7 +179,13 @@ No entanto, cuidado com atualizações via pacotes pois as vezes tendem a ter al
       <guid>https://butecotecnologico.com.br/octopkg-a-gui-for-pkg-ng/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/pacotes.png&#34;&gt;&lt;img class=&#34; size-medium wp-image-2985 aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/pacotes-300x289.png&#34; alt=&#34;pacotes&#34; width=&#34;300&#34; height=&#34;289&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Eu fico feliz quando pela minhas andanças surfando na web, encontro alguns projetos brasileiros envolvidos com FreeBSD e ou com código aberto em geral. O projeto da vez é o &lt;a href=&#34;https://octopkg.wordpress.com/&#34; target=&#34;_blank&#34;&gt;OctoPKG&lt;/a&gt;, criado pelo &lt;a href=&#34;https://twitter.com/aaarnt&#34;&gt;Alexandre A Arnt&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Evento científico de tecnologia CTIA</title>
@@ -127,7 +194,13 @@ No entanto, cuidado com atualizações via pacotes pois as vezes tendem a ter al
       
       <guid>https://butecotecnologico.com.br/evento-cientifico-de-tecnologia-ctia/</guid>
       <description>&lt;p&gt;Chega-se um momento na vida de um estudante que as vezes ele quer conhecer o tão badalado mundo científico, fugindo dos horizontes apenas dos livros e o material didático fornecidos pelos professores, ele se encontra com o tal mundo dos artigos científicos, e eventos de tecnologia. Chega ser outro mundo as vezes para algumas pessoas que não tem tanta afinidade em ler livros técnicos e acadêmicos. As vezes as pessoas só adentram este mundo por causa de exigências acadêmicas como o TCC, ou para conseguir uma bolsa, ou por exigência para se formar, ou algo entre poucos motivos.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>A – ZFS Parte 1</title>
@@ -140,7 +213,13 @@ Imagem retirado de &lt;a href=&#34;http://tweakers.net&#34; target=&#34;_blank&#
 &lt;p&gt;Por que não começar com a introdução da Wikipedia sobre ele&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ANTES: VOU REPETIR E DESTACAR, E SALIENTAR 2001&lt;/strong&gt; é o ano de origem do &lt;strong&gt;ZFS&lt;/strong&gt;, das ideias e planejamentos qualquer outra coisa que venha depois é mera cópia como produtos chineses !! Ele foi anunciado oficialmente em setembro de 2004, e lançado em novembro de 2005.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ZFS &lt;/strong&gt;é uma combinação de sistema de arquivos e volume de manipulação lógica desenhado pela &lt;strong&gt;Sun Microsystems&lt;/strong&gt;. As propriedades do &lt;strong&gt;ZFS &lt;/strong&gt;incluem proteção contra corrupção de dados, suporte para altas capacidades de armazenamento, eficiente compressão de dados, integração de conceitos de sistemas de arquivos e volumes lógicos, suporte a &lt;em&gt;snapshots &lt;/em&gt;e clones com cópia quando escreve, continua checagem de integração e automática recuperação, &lt;strong&gt;RAID-Z&lt;/strong&gt; e nativo suporte a &lt;strong&gt;ACLs &lt;/strong&gt;em &lt;strong&gt;NFSv4&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Dica - Resetando senha do root Centos 7</title>
@@ -149,7 +228,13 @@ Imagem retirado de &lt;a href=&#34;http://tweakers.net&#34; target=&#34;_blank&#
       
       <guid>https://butecotecnologico.com.br/dica-resetando-senha-do-root-centos-7/</guid>
       <description>Resetar senha de root em Red Hat Likes.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>O dilema do aprendizado de TI</title>
@@ -161,7 +246,13 @@ Imagem retirado de &lt;a href=&#34;http://tweakers.net&#34; target=&#34;_blank&#
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;Bem-vindo ao mundo de TI. Certo por onde começar o_O ?&lt;/p&gt;
 &lt;p&gt;Sim essa e uma das perguntas mais difíceis aos iniciantes. Que na sede e fome de conhecimento se sentem seduzidos a experimentar as várias ofertas que essa área fornece. Temos os sistemas operacionais, temos programação, temos rede, temos segurança da informação, temos banco de dados, temos uma infinidade de opções.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>SQL na medida certa</title>
@@ -170,7 +261,13 @@ Imagem retirado de &lt;a href=&#34;http://tweakers.net&#34; target=&#34;_blank&#
       
       <guid>https://butecotecnologico.com.br/sql-na-medida-certa/</guid>
       <description>Resenha do livro Aprendendo SQL da O&amp;rsquo;Reilly.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Revista BSD Magazine número 70</title>
@@ -179,7 +276,14 @@ Imagem retirado de &lt;a href=&#34;http://tweakers.net&#34; target=&#34;_blank&#
       
       <guid>https://butecotecnologico.com.br/revista-bsd-magazine-numero-70/</guid>
       <description>Edição 70 da revista BSD Magazine, uma revista especializada sobre sistemas operacionais BSD.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Marco Carvalho de Oliveira on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/marco-oliveira/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>wine on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/wine/</link>
-    <description>Recent content in wine on Buteco Tecnológico</description>
+    <description>Recent content in wine on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>wine on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/wine/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 15 May 2015 23:58:39 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/wine/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 15 May 2015 23:58:39 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/wine/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wine 1.7.43 traz melhorias na arquitetura ARM64</title>
       <link>https://butecotecnologico.com.br/wine-1-7-43-traz-melhorias-na-arquitetura-arm64/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/wine-1-7-43-traz-melhorias-na-arquitetura-arm64/</guid>
       <description>O Wine (acrônimo de &amp;ldquo;Wine Is Not an Emulator&amp;rdquo;) é um camada de compatibilidade que permite a execução de aplicativos Windows em vários sistemas operacionais POSIX-compliant, incluindo Linux, Mac OS X e BSD. Ao invés de simular a lógica interna do Windows, como um emulador normal, o Wine faz a tradução das chamadas de API do Windows em chamadas POSIX. Isto melhora o desempenho da aplicação e permite a integração de aplicação Windows com a sua área de trabalho.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>wine on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/wine/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-3/</guid>
       <description>Se você quiser abrir o DOS no Linux, podes utilizar o Wine.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>wine on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/wine/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -37,7 +50,14 @@
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-2/</guid>
       <description>Saiba mais sobre o Wine aqui.
 Conheça o blog Vida de Programador.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>wine on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/wine/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

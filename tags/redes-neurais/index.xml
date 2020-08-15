@@ -3,14 +3,15 @@
   <channel>
     <title>redes neurais on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/redes-neurais/</link>
-    <description>Recent content in redes neurais on Buteco Tecnológico</description>
+    <description>Recent content in redes neurais on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>redes neurais on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/redes-neurais/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 06 May 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/redes-neurais/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 06 May 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/redes-neurais/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NVIDIA Jetson Nano Developer Kit</title>
       <link>https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/</guid>
       <description>Uma placa de desenvolvimento focada em visão computacional e deep learning.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>redes neurais on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/redes-neurais/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

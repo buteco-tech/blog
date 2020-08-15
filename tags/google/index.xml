@@ -3,14 +3,15 @@
   <channel>
     <title>google on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/google/</link>
-    <description>Recent content in google on Buteco Tecnológico</description>
+    <description>Recent content in google on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>google on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/google/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 04 Jun 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/google/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 04 Jun 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/google/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>E se você perdesse acesso a suas contas?</title>
       <link>https://butecotecnologico.com.br/e-se-voce-perdesse-acesso-a-suas-contas/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/e-se-voce-perdesse-acesso-a-suas-contas/</guid>
       <description>O que você faria se perdesse acesso a sua conta de e-mail?</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>google on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/google/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Google anuncia Brotli</title>
@@ -29,7 +36,13 @@
       <description>&lt;p style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/DataCompression.jpg&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-3441&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/DataCompression-300x225.jpg&#34; alt=&#34;DataCompression&#34; width=&#34;300&#34; height=&#34;225&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.com.br/2015/09/introducing-brotli-new-compression.html&#34; target=&#34;_blank&#34;&gt;blog de open source&lt;/a&gt; uma nova implementação para o Brotli, um algoritmo de compressão de dados sem perda (de dados) com propósito geral. Este novo algoritmo é melhor e mais rápido que o &lt;a href=&#34;https://github.com/google/zopfli&#34; target=&#34;_blank&#34;&gt;Zopfli&lt;/a&gt;, que foi anunciado há dois anos e, de acordo com &lt;a href=&#34;http://www.gstatic.com/b/brotlidocs/brotli-2015-09-22.pdf&#34; target=&#34;_blank&#34;&gt;estudo&lt;/a&gt; feito pela equipe de compressão de dados, em comparação com outros métodos e algoritmos de compactação.
 &lt;p style=&#34;text-align: right;&#34;&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>google on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/google/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Curso online de AngularJS de $299 por $0 (grátis)</title>
@@ -38,7 +51,13 @@ Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.c
       
       <guid>https://butecotecnologico.com.br/curso-online-de-angularjs-de-299-por-0-gratis/</guid>
       <description>Não é piada, não é enganação, o curso é em inglês porém o material é ótimo e abrange boa parte do que você irá precisar saber para criar uma aplicação com AngularJS.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>google on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/google/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GXUI: Interface multiplataforma para Go</title>
@@ -47,7 +66,13 @@ Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.c
       
       <guid>https://butecotecnologico.com.br/gxui-interface-multiplataforma-para-go/</guid>
       <description>GXUI é uma nova interface de usuário multiplataforma desenvolvida pela Google para a linguagem de programação Go, que também é desenvolvida pela Google.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>google on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/google/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Google anuncia fim do Google Code</title>
@@ -57,7 +82,14 @@ Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.c
       <guid>https://butecotecnologico.com.br/google-anuncia-fim-do-google-code/</guid>
       <description>Com a maior parte dos projetos sendo hospedados no GitHub, incluindo vários da própria Google, a Google resolveu tirar do ar o seu serviço de hospedagem de código fonte, conhecido como Google Code.
 Para quem não o conhece, o Google Code é um serviço de hospedagem de código muito similar ao GitHub ou Bitbucket. Os seus serviços iniciaram em 2006, mas parece que a Google deixou este projeto de lado, pois ele ficou estagnado.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>google on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/google/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

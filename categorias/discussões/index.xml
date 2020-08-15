@@ -3,14 +3,15 @@
   <channel>
     <title>Discussões on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/categorias/discuss%C3%B5es/</link>
-    <description>Recent content in Discussões on Buteco Tecnológico</description>
+    <description>Recent content in Discussões on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>Discussões on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/categorias/discuss%C3%B5es/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 18 Feb 2016 16:32:59 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/categorias/discuss%C3%B5es/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 18 Feb 2016 16:32:59 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/categorias/discuss%C3%B5es/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Importância do Open Source na Pesquisa de Mercado</title>
       <link>https://butecotecnologico.com.br/4796/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/4796/</guid>
       <description>Um dos pontos mais estratégicos no desenvolvimento de um produto é a sua validação frente ao mercado.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Discussões on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/discuss%C3%B5es/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Acesso a informação, evolução, tecnologia e caos</title>
@@ -28,7 +35,13 @@
       <guid>https://butecotecnologico.com.br/acesso-a-informacao-evolucao-tecnologia-e-caos/</guid>
       <description>&lt;p&gt;Mais um texto que pode soar velho ;), mas velho eu sou&amp;hellip; tenho que aceitar&amp;hellip;&lt;/p&gt;
 &lt;p&gt;A ideia de hoje é falar um pouco de algo que contorna nosso nicho da tecnologia da computação, que é o acesso a informação. Bom, vou iniciar aos mais novos explicando que um dia existiram livros,  que eram usados antes da Wikipédia :P que as famílias compravam e tinham em casa. Um grupo de livros chamado Barsa, hoje quem sabe tenha disto em museus. No entanto só os como dizem, mais afortunados, tinham essa coleção de livros, e o que ali existia era o máximo de informação e conjunto de aprendizado que as pessoas em geral possuíam em suas casas, no modelo de enciclopédia.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Discussões on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/discuss%C3%B5es/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Visão geral do Dandified Yum</title>
@@ -37,7 +50,13 @@
       
       <guid>https://butecotecnologico.com.br/visao-geral-do-dandified-yum/</guid>
       <description>&lt;p&gt;Olá pessoal! Neste artigo procurarei descrever sobre alguns dos principais comandos do &lt;em&gt;Dandified Yum&lt;/em&gt;, carinhosamente apelidado de DNF, espero ser útil àqueles que encontraram alguma dificuldade, não tiveram a oportunidade ou necessidade em usá-lo.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Discussões on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/discuss%C3%B5es/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Ajude-nos a escolher os temas do mês de Julho</title>
@@ -46,7 +65,13 @@
       
       <guid>https://butecotecnologico.com.br/ajude-nos-a-escolher-os-temas-do-mes-de-julho/</guid>
       <description>&lt;p&gt;Gostaríamos de convidar você, nosso leitor, a ajudar a escolher alguns dos temas que abordaremos em nossas publicações no mês de Julho, então fique a vontade para votar no formulário abaixo.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Discussões on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/discuss%C3%B5es/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>O dilema do aprendizado de TI</title>
@@ -58,7 +83,13 @@
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;Bem-vindo ao mundo de TI. Certo por onde começar o_O ?&lt;/p&gt;
 &lt;p&gt;Sim essa e uma das perguntas mais difíceis aos iniciantes. Que na sede e fome de conhecimento se sentem seduzidos a experimentar as várias ofertas que essa área fornece. Temos os sistemas operacionais, temos programação, temos rede, temos segurança da informação, temos banco de dados, temos uma infinidade de opções.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Discussões on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/discuss%C3%B5es/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>O que houve com o hacking?</title>
@@ -67,7 +98,14 @@
       
       <guid>https://butecotecnologico.com.br/o-que-houve-com-o-hacking/</guid>
       <description>Não sei se é um acaso da idade, mas cada vez vejo menos pessoas se aventurando internamente e intricidamente nos meios da tecnologia.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Discussões on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/discuss%C3%B5es/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

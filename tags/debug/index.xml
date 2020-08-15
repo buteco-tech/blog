@@ -3,14 +3,15 @@
   <channel>
     <title>debug on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/debug/</link>
-    <description>Recent content in debug on Buteco Tecnológico</description>
+    <description>Recent content in debug on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>debug on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/debug/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 08 Jul 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/debug/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 08 Jul 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/debug/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Guia completo de Debug em Python</title>
       <link>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</guid>
       <description>Uma das atividades que mais realizamos durante o desenvolvendo é o debug para analisar algum erro ou até mesmo saber se o código esta executando da forma que gostaríamos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>debug on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/debug/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

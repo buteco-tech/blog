@@ -3,14 +3,15 @@
   <channel>
     <title>go-lang on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/go-lang/</link>
-    <description>Recent content in go-lang on Buteco Tecnológico</description>
+    <description>Recent content in go-lang on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>go-lang on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/go-lang/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 25 Mar 2015 22:49:49 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/go-lang/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 25 Mar 2015 22:49:49 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/go-lang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GXUI: Interface multiplataforma para Go</title>
       <link>https://butecotecnologico.com.br/gxui-interface-multiplataforma-para-go/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/gxui-interface-multiplataforma-para-go/</guid>
       <description>GXUI é uma nova interface de usuário multiplataforma desenvolvida pela Google para a linguagem de programação Go, que também é desenvolvida pela Google.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>go-lang on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/go-lang/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

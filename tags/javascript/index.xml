@@ -3,14 +3,15 @@
   <channel>
     <title>javascript on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/javascript/</link>
-    <description>Recent content in javascript on Buteco Tecnológico</description>
+    <description>Recent content in javascript on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>javascript on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/javascript/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 11 Mar 2016 15:22:54 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 11 Mar 2016 15:22:54 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sexta da Tirinha</title>
       <link>https://butecotecnologico.com.br/sexta-da-tirinha-38/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-38/</guid>
       <description>StackOverflow é meu pastor, e nada me faltará!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>javascript on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/javascript/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PM2 - Gerenciador de aplicações Node.js em ambientes de produção</title>
@@ -28,7 +35,13 @@
       <guid>https://butecotecnologico.com.br/pm2/</guid>
       <description>&lt;p&gt;O Node.js, famoso interpretador javascript do lado servidor, trouxe uma nova gama de possibilidades para a linguagem javascript. Entre suas maiores vantagens posso citar o uso da mesma linguagem de programação no lado cliente e servidor e usar programação assíncrona por padrão. Contudo em algum momento da vida de seu projeto ou da sua aplicação, este deve ser publicado, e é neste ponto que o PM2 aparece.&lt;/p&gt;
 &lt;p&gt;O PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cluster para alta disponibilidade com balanceamento de carga, logs, recarregar a aplicação automaticamente quando há alterações nos arquivos ou reinicio do servidor, entre diversas outras atividades que a principio podem parecer simples, porém tenha em mente que o PM2 foi projetado para gerenciar diversas aplicações rodando de uma só vez, em um único console.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>javascript on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/javascript/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conheça o Clappr</title>
@@ -38,7 +51,13 @@
       <guid>https://butecotecnologico.com.br/conheca-o-clappr/</guid>
       <description>&lt;p&gt;Você já ouviu falar do Clappr? Talvez não, mas é bem provável que você já tenha passado por ele e nem se quer notado. Agora você deve estar se perguntando o que é, certo?&lt;/p&gt;
 &lt;p&gt;O &lt;a href=&#34;http://clappr.io/&#34;&gt;Clappr&lt;/a&gt; é um player extensível focado na web. Ou seja, é um player que você pode customizar a vontade, e o melhor, de graça. Sim, isso mesmo, e o projeto possui código aberto.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>javascript on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/javascript/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -47,7 +66,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-25/</guid>
       <description>Via Bugginho Developer</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>javascript on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/javascript/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Curso online de AngularJS de $299 por $0 (grátis)</title>
@@ -56,7 +81,13 @@
       
       <guid>https://butecotecnologico.com.br/curso-online-de-angularjs-de-299-por-0-gratis/</guid>
       <description>Não é piada, não é enganação, o curso é em inglês porém o material é ótimo e abrange boa parte do que você irá precisar saber para criar uma aplicação com AngularJS.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>javascript on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/javascript/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Node.js v0.12.0 já está disponível</title>
@@ -66,7 +97,13 @@
       <guid>https://butecotecnologico.com.br/node-js-v0-12-0-ja-esta-disponivel/</guid>
       <description>O Node.js é uma plataforma para desenvolvimento ágil de aplicações Web escaláveis, constuida sobre o V8 (Chrome&amp;rsquo;s JavaScript runtime). O V8 é a uma engine JavaScript de código aberto desenvolvida pelo Google e utilizado no Chrome.
 O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de 2014.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>javascript on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/javascript/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Internacionalizando um site de forma simples</title>
@@ -75,7 +112,14 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/internacionalizando-um-site-de-forma-simples/</guid>
       <description>A algum tempo que já estava afim de traduzir meu site para o Português, mas nunca tive tempo e nem muito empenho.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>javascript on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/javascript/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

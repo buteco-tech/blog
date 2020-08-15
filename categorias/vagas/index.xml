@@ -3,14 +3,15 @@
   <channel>
     <title>Vagas on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/categorias/vagas/</link>
-    <description>Recent content in Vagas on Buteco Tecnológico</description>
+    <description>Recent content in Vagas on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>Vagas on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/categorias/vagas/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 28 Mar 2016 13:14:20 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/categorias/vagas/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 28 Mar 2016 13:14:20 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/categorias/vagas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vaga para programador Linux/C em Blumenau</title>
       <link>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau-2/</link>
@@ -20,7 +21,13 @@
       <description>Desenvolvedor de Software – Linux e C 
 Responsabilidades
 Esta posição é responsável por desenhar e implementar aplicativos em SW para sistema operacional em Linux, incluindo desenvolvimento de novos aplicativos, melhorias e correções em aplicativos existentes, instalação de pacotes de aplicativos de código aberto.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Vagas on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/vagas/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Vaga para programador Linux/C em Blumenau</title>
@@ -35,7 +42,13 @@ implementar aplicativos em SW para sistema operacional em Linux,
 incluindo desenvolvimento de novos aplicativos, melhorias e correções
 em aplicativos existentes, instalação de pacotes de aplicativos de
 código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Vagas on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/vagas/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Vaga para desenvolvedor Front-end em Blumenau</title>
@@ -44,7 +57,14 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
       
       <guid>https://butecotecnologico.com.br/vaga-para-desenvolvedor-front-end-em-blumenau/</guid>
       <description>A Eventials é uma startup fundada em 2011, composta por equipe de empreendedores, designers e hackers. A empresa faz parte do grupo Locaweb, sendo a divisão responsável pelo desenvolvimento de soluções para streaming de vídeo. Junto com a Locaweb recebeu em 2014 os prêmios Great Place to Work e Melhores Empresas para Você Trabalhar.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Vagas on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/vagas/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

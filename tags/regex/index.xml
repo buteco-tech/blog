@@ -3,14 +3,15 @@
   <channel>
     <title>regex on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/regex/</link>
-    <description>Recent content in regex on Buteco Tecnológico</description>
+    <description>Recent content in regex on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>regex on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/regex/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 12 Apr 2016 23:59:33 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/regex/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 12 Apr 2016 23:59:33 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/regex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BASH tips: Expressões regulares no bash</title>
       <link>https://butecotecnologico.com.br/bash-tips-expressoes-regulares-no-bash/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/bash-tips-expressoes-regulares-no-bash/</guid>
       <description>&lt;p&gt;Como hoje tive de utilizar expressões regulares no bash, pensei em compartilhar com nossos amigos leitores. O buteco já fez um post sobre a utilização de &lt;a href=&#34;https://butecotecnologico.com.br/posix-regular-expression-em-c&#34; target=&#34;_blank&#34;&gt;expressões regulares em C&lt;/a&gt;, e este artigo vem para complementar. Vamos ao exemplo abaixo:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>regex on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/regex/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>POSIX Regular Expression em C</title>
@@ -27,7 +34,14 @@
       
       <guid>https://butecotecnologico.com.br/posix-regular-expression-em-c/</guid>
       <description>&lt;p&gt;Expressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares &lt;em&gt;built-in&lt;/em&gt;, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a &lt;em&gt;POSIX RegEx&lt;/em&gt; na linguagem C na plataforma Linux.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>regex on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/regex/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

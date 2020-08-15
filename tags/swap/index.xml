@@ -3,14 +3,15 @@
   <channel>
     <title>swap on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/swap/</link>
-    <description>Recent content in swap on Buteco Tecnológico</description>
+    <description>Recent content in swap on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>swap on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/swap/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 23 Jul 2015 08:39:33 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/swap/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 23 Jul 2015 08:39:33 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/swap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adicionando Swap ao CentOS, Ubuntu e derivados</title>
       <link>https://butecotecnologico.com.br/adicionando-swap-ao-centos-ubuntu-e-derivados/</link>
@@ -20,7 +21,14 @@
       <description>&lt;p&gt;Para você que acabou de criar a sua primeira VM no Digital Ocean e pegou logo de cara a de 512 de RAM, você vai se ver no aperto dependendo da aplicação que colocar para executar nela. Para solucionar possíveis problemas de falta de memória vamos adicionar Swap a esta máquina tão simplória.&lt;/p&gt;
 &lt;p&gt;Aplicações simples como o MySQL e o Jenkins rodando nessas máquinas poder gerar alguma dor de cabeça caso você não identifique que o problema é falta de memória. Por exemplo, no meu caso o Jenkins parava a execução dos testes no meio, pois recebia um SIGKILL de alguém, provavelmente do S.O. O mais estranho é que o Jenkins continuava executando, apenas parava o Job que estava em execução. A solução foi bem simples, adicionar uma Swap, já que não queríamos aumentar os valores com VMs do DO.&lt;/p&gt;
 &lt;p&gt;O tutorial de hoje é baseado no CentOS e no Ubuntu. Fiz a mesma configuração em duas VMs distintas. A maioria das distros suportam os comandos e sistemas de arquivos aqui mencionados.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>swap on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/swap/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>squash on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/squash/</link>
-    <description>Recent content in squash on Buteco Tecnológico</description>
+    <description>Recent content in squash on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>squash on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/squash/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 18 Jun 2015 23:04:10 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/squash/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 18 Jun 2015 23:04:10 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/squash/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fazendo squash de commits com git rebase</title>
       <link>https://butecotecnologico.com.br/fazendo-squash-de-commits-com-git-rebase/</link>
@@ -20,7 +21,14 @@
       <description>&lt;p&gt;Eventualmente trabalhamos em algo grande, e acabamos por fazer vários micro commits. Se você gostaria de juntar esses micro commits em um único no fim da implementação e não sabe como, eis a solução. O squash irá unir vários micro commits em um único commit. Sendo assim, se pode juntar uma alteração que tem 10 commits em apenas um único commit.&lt;/p&gt;
 &lt;p&gt;&lt;img class=&#34; aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/git-squash-rebase.png&#34; alt=&#34;Git Squash Rebase&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Na imagem acima é possível observar que os commits antigos geram um novo commit unindo todas as alterações.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>squash on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/squash/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

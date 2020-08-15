@@ -3,14 +3,15 @@
   <channel>
     <title>bluetooth on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/bluetooth/</link>
-    <description>Recent content in bluetooth on Buteco Tecnológico</description>
+    <description>Recent content in bluetooth on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>bluetooth on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/bluetooth/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 10 May 2016 12:57:34 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/bluetooth/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 10 May 2016 12:57:34 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/bluetooth/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Review Raspberry Pi 3</title>
       <link>https://butecotecnologico.com.br/review-raspberry-pi-3/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/review-raspberry-pi-3/</guid>
       <description>&lt;p&gt;O &lt;a href=&#34;http://www.filipeflop.com/pd-31a472-raspberry-pi-3-model-b.html?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;Raspberry Pi 3&lt;/a&gt; acabou de chegar na &lt;a href=&#34;http://www.filipeflop.com/?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;FILIPEFLOP&lt;/a&gt; e esta nova versão traz novidades em relação a versão anterior. As maiores novidades são o WiFi e Bluetooth integrado.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>bluetooth on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/bluetooth/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

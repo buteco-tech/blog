@@ -3,14 +3,15 @@
   <channel>
     <title>lxc on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/lxc/</link>
-    <description>Recent content in lxc on Buteco Tecnológico</description>
+    <description>Recent content in lxc on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>lxc on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/lxc/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 16 Jun 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/lxc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 16 Jun 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/lxc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>De que são feitos containers Linux?</title>
       <link>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</guid>
       <description>Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>lxc on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/lxc/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

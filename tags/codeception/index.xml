@@ -3,14 +3,15 @@
   <channel>
     <title>codeception on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/codeception/</link>
-    <description>Recent content in codeception on Buteco Tecnológico</description>
+    <description>Recent content in codeception on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>codeception on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/codeception/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 16 Nov 2015 22:48:05 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/codeception/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 16 Nov 2015 22:48:05 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/codeception/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Codeception, testes de interface</title>
       <link>https://butecotecnologico.com.br/codeception-testes-de-interface/</link>
@@ -20,7 +21,13 @@
       <description>&lt;p&gt;Fala galera,&lt;/p&gt;
 &lt;p&gt;Mais uma vez falando sobre o &lt;a href=&#34;http://codeception.com/&#34; target=&#34;_blank&#34;&gt;Codeception&lt;/a&gt;, no post passado mostrei como fazer o setup inicial e como começar a usá lo com testes unitários. Clique &lt;a href=&#34;https://butecotecnologico.com.br/?p=3182&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; para ver o post anterior.&lt;/p&gt;
 &lt;p&gt;Testes unitários são provavelmente o primeiro tipo de teste que você vai ver em qualquer tutorial, são os testes mais simples de serem feitos e provavelmente, os mais importantes. São os testes unitários que vão testar as suas funções, as suas classes, as suas regras de negócio e sua integração com o banco. Para este último, apesar de na prática não há diferença, existe uma especialização dos testes unitários, que são os testes de integração. A diferença entre um teste unitário e de integração é basicamente que o teste de integração faz acesso a um recurso externo, seja ele um banco de dados, uma API, ou qualquer outra coisa. Não irei abordar esse tipo de teste aqui, pois na prática os testes de integração são testes unitários.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>codeception on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/codeception/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Codeception, testes em PHP para todos</title>
@@ -31,7 +38,14 @@
       <description>&lt;p&gt;Olá galera, tudo certo ?&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;message_content&#34;&gt;Hoje veremos como utilizar o framework de teste chamado Codeception. Eu acabei esbarrando com essa ferramenta por acaso enquanto estava pesquisando ferramentas mais completas do que o PHPUnit para criar testes no PHP. Vamos lá então?
 &lt;/span&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>codeception on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/codeception/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

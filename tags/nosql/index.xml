@@ -3,14 +3,15 @@
   <channel>
     <title>nosql on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/nosql/</link>
-    <description>Recent content in nosql on Buteco Tecnológico</description>
+    <description>Recent content in nosql on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>nosql on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/nosql/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 23 Mar 2015 22:41:06 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 23 Mar 2015 22:41:06 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>redislite: Redis sem necessidade de servidor para Python</title>
       <link>https://butecotecnologico.com.br/redislite-redis-sem-necessidade-de-servidor-para-python/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/redislite-redis-sem-necessidade-de-servidor-para-python/</guid>
       <description>O time de desenvolvedores do Yahoo anunciou uma implementação do Redis para Python sem a necessidade de instalar e configurar um servidor Redis. A grande vantagem é a remoção de uma dependência do seu código, quando o quesito é testes.
 O Redis é um banco de dados de código aberto, sob a licença BSD, para persistência de dados no modelo Chave/Valor e é escrito em C.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>nosql on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/nosql/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

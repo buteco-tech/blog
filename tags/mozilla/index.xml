@@ -3,14 +3,15 @@
   <channel>
     <title>mozilla on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/mozilla/</link>
-    <description>Recent content in mozilla on Buteco Tecnológico</description>
+    <description>Recent content in mozilla on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>mozilla on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/mozilla/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 22 Sep 2015 09:06:05 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/mozilla/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 22 Sep 2015 09:06:05 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/mozilla/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rust 1.3 já está disponível</title>
       <link>https://butecotecnologico.com.br/rust-1-3-ja-esta-disponivel/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/rust-1-3-ja-esta-disponivel/</guid>
       <description>Rust 1.3 é a mais nova versão stable disponível da linguagem de programação desenvolvida pela Mozilla.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>mozilla on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/mozilla/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Firefox 39 traz melhorias de segurança</title>
@@ -28,7 +35,13 @@
       <guid>https://butecotecnologico.com.br/firefox-39-traz-melhorias-de-seguranca/</guid>
       <description>&lt;p&gt;O Firefox 39.0 já está disponível e vem com melhorias de desempenho e correções de segurança. &lt;a href=&#34;https://www.mozilla.org/en-US/firefox/new/&#34; target=&#34;_blank&#34;&gt;Clique aqui&lt;/a&gt; caso queira fazer o download.&lt;/p&gt;
 &lt;p&gt;Dentre as novidades estão:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>mozilla on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/mozilla/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.0 já está disponível</title>
@@ -37,7 +50,13 @@
       
       <guid>https://butecotecnologico.com.br/rust-1-0-ja-esta-disponivel/</guid>
       <description>Rust é uma nova linguagem de programação com o objetivo de tornar simples a construção de sistemas eficientes e confiáveis. Rust combina o controle de baixo nível sobre o desempenho com comodidade e segurança de alto nível.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>mozilla on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/mozilla/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Firefox 38 adiciona suporte a imagens responsivas e Ruby annotations</title>
@@ -46,7 +65,13 @@
       
       <guid>https://butecotecnologico.com.br/firefox-38-adiciona-suporte-a-imagens-responsivas-e-ruby-annotations/</guid>
       <description>Post com algumas novas funcionalidades do Firefox 38, que está sendo liberado hoje (12/05),</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>mozilla on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/mozilla/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Unity 5 vem com suporte a WebGL e você pode conferir alguns exemplos</title>
@@ -55,7 +80,13 @@
       
       <guid>https://butecotecnologico.com.br/unity-5-vem-com-suporte-a-webgl-e-voce-pode-conferir-alguns-exemplos/</guid>
       <description>Esta nova versão da mais popular ferramenta de desenvolvimento de jogos inclui uma prévia do exportador para WebGL. Os desenvolvedores de jogos estão a um passo de publicar os seus jogos para a Web de uma nova forma, tirando proveito do WebGL e do asm.js.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>mozilla on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/mozilla/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.0 Alpha já está disponível</title>
@@ -64,7 +95,14 @@
       
       <guid>https://butecotecnologico.com.br/rust-1-0-alpha-ja-esta-disponivel/</guid>
       <description>Rust 1.0 Alpha foi lançado hoje.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>mozilla on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/mozilla/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

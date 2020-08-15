@@ -3,14 +3,15 @@
   <channel>
     <title>flisol on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/flisol/</link>
-    <description>Recent content in flisol on Buteco Tecnológico</description>
+    <description>Recent content in flisol on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>flisol on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/flisol/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Sat, 18 Apr 2015 22:25:03 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/flisol/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 18 Apr 2015 22:25:03 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/flisol/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FLISoL 2015</title>
       <link>https://butecotecnologico.com.br/flisol-2015/</link>
@@ -20,7 +21,14 @@
       <description>O que é FLISoL?
 O Festival Latino-americano de Instalação de Software Livre (FLISoL) é o maior evento da América Latina de divulgação de Software Livre. Ele é realizado desde o ano de 2005, e desde 2008 sua realização acontece no 4º sábado de abril de cada ano.
 Seu principal objetivo é promover o uso de Software Livre, mostrando ao público em geral sua filosofia, abrangência, avanços e desenvolvimento.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>flisol on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/flisol/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

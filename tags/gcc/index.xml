@@ -3,14 +3,15 @@
   <channel>
     <title>gcc on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/gcc/</link>
-    <description>Recent content in gcc on Buteco Tecnológico</description>
+    <description>Recent content in gcc on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>gcc on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/gcc/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 25 Feb 2016 23:37:14 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/gcc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 25 Feb 2016 23:37:14 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/gcc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Novidades que virão no GCC 6</title>
       <link>https://butecotecnologico.com.br/novidades-que-virao-no-gcc-6/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/novidades-que-virao-no-gcc-6/</guid>
       <description>Postagem sobre novos recursos do GCC 6 ainda a ser lançado.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>gcc on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/gcc/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

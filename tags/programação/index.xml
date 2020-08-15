@@ -3,14 +3,15 @@
   <channel>
     <title>programação on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
-    <description>Recent content in programação on Buteco Tecnológico</description>
+    <description>Recent content in programação on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>programação on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 08 Jan 2016 10:26:04 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 08 Jan 2016 10:26:04 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Iluminação Natalina com Arduino, Temporizador e LDR</title>
       <link>https://butecotecnologico.com.br/iluminacao-natalina-com-arduino-temporizador-e-ldr/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/iluminacao-natalina-com-arduino-temporizador-e-ldr/</guid>
       <description>&lt;p&gt;&lt;span style=&#34;font-weight: 400;&#34;&gt;Neste projeto, irei apresentar a vocês como controlar uma carga de 110 ou 220 volts com um Arduíno e um relé. Utilizaremos também um LDR para medição de intensidade de luz, para poder fazer com que a carga seja ligada apenas quando for escuro, e além disso, com a opção de temporizar o tempo que a carga ficará ligada. Um exemplo de aplicação é a iluminação Natalina, fazendo ela ligar somente quando escurecer, e caso quiser, pode-se também programar essa para desligar após algumas horas, ou ainda, deixar com que ela se apague novamente quando o dia clarear.&lt;/span&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Como utilizar o getaddrinfo para evitar a falha GHOST</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost/</guid>
       <description>&lt;p&gt;Em janeiro de 2015 se ouviu falar de uma falha de segurança na glibc chamada GHOST. Esta falha poderia ser explorada por um programa malicioso utilizando as funções &lt;code&gt;gethostbyname()&lt;/code&gt; e &lt;code&gt;gethostbyname2()&lt;/code&gt; da glibc. O ataque acontece por um &lt;em&gt;buffer overflow&lt;/em&gt; dentro destas funções quando um endereço inválido é passando como parâmetro. Ao explorar esta falha, o atacante consegue executar códigos arbitrários com as permissões do usuários executando o processo.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -36,7 +49,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-30/</guid>
       <description>A todos os backend developers :)</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -45,7 +64,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-28/</guid>
       <description>Via 9gag</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -55,7 +80,13 @@
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-27/</guid>
       <description>Isso me lembra os meus tempos de Delphi (kkkk)
 Via xkcd</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -64,7 +95,13 @@ Via xkcd</description>
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-22/</guid>
       <description>Via python-goto</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Feliz Dia da Árvore</title>
@@ -73,7 +110,13 @@ Via xkcd</description>
       
       <guid>https://butecotecnologico.com.br/feliz-dia-da-arvore/</guid>
       <description>Hoje, dia 21 de setembro, é comemorado o dia da árvore.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -84,7 +127,13 @@ Via xkcd</description>
       <description>
 Clique na imagem para aumentar o tamanho
 Via Cyanide &amp;amp; Happiness</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Hands on: quilt</title>
@@ -103,7 +152,13 @@ main.py  new_tab.py  new_tab.pyc  new_tab.ui  window.ui
 quilt new alteracao1.patch
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Após a execução deste comando, será criada uma pasta &amp;ldquo;patches&amp;rdquo;, que conterá todos os patches criados. Por hora esta pasta contém apenas o arquivo series, já que não adicionamos e nem alteramos nenhum arquivo para adicionar ao patch recem criado. O arquivo series mostra a ordem em que os patches criados serão aplicados.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Interagindo com a câmera do Raspberry Pi</title>
@@ -112,7 +167,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/interagindo-com-a-camera-do-raspberry-pi/</guid>
       <description>Este artigo traz uma introdução de como pode ser feita a integração do Raspberry Pi com seu módulo de câmera chamado picamera.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Construindo a interface de login do spotify com PyGTK e CSS</title>
@@ -121,7 +182,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/construindo-a-interface-de-login-do-spotify-com-pygtk-e-css/</guid>
       <description>Desenvolva aplicativos mais facilmente fazendo o uso do CSS linguagem de estilo da web agora aplicada a interfaces com Python e Gtk.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PHP 7 virá em 2015!</title>
@@ -130,7 +197,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/php-7-vira-em-2015/</guid>
       <description>Soube hoje que a versão 7 do PHP terá seu primeiro release em 2015, mais especificamente no mês de outubro, segundo um infografo disponibilizado pela Zend (disponivel neste link), a versão 7 do PHP continua o processo de tornar a linguagem mais concisa e podemos dizer mais próxima da linguagem C++.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PyPy 2.5.0 já está disponível</title>
@@ -139,7 +212,14 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/pypy-2-5-0-ja-esta-disponivel/</guid>
       <description>O PyPy é uma alternativa a outros interpretadores como CPython (o padrão), Jython e IronPython, e de acordo com os diversos benchmarks publicados, o mais rápido entre eles.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

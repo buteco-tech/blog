@@ -3,14 +3,15 @@
   <channel>
     <title>blog on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/blog/</link>
-    <description>Recent content in blog on Buteco Tecnológico</description>
+    <description>Recent content in blog on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>blog on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/blog/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Sun, 24 May 2015 21:05:39 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 24 May 2015 21:05:39 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alteração no padrão de URLs do Blog</title>
       <link>https://butecotecnologico.com.br/alteracao-no-padrao-de-urls-do-blog/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/alteracao-no-padrao-de-urls-do-blog/</guid>
       <description>Percebemos que muitos usuários ao ver uma url como-fazer-parte-1 tentavam acessar como-fazer-parte-2. Porém como nossa url continha a data da postagem e isso não era possível.
 Sendo assim resolvemos mudar para um novo padrão que atende melhor nossos leitores.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>blog on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/blog/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

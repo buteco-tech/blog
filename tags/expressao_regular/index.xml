@@ -3,14 +3,15 @@
   <channel>
     <title>expressao_regular on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/expressao_regular/</link>
-    <description>Recent content in expressao_regular on Buteco Tecnológico</description>
+    <description>Recent content in expressao_regular on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>expressao_regular on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/expressao_regular/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 17 Mar 2016 09:35:57 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/expressao_regular/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 17 Mar 2016 09:35:57 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/expressao_regular/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>POSIX Regular Expression em C</title>
       <link>https://butecotecnologico.com.br/posix-regular-expression-em-c/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/posix-regular-expression-em-c/</guid>
       <description>&lt;p&gt;Expressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares &lt;em&gt;built-in&lt;/em&gt;, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a &lt;em&gt;POSIX RegEx&lt;/em&gt; na linguagem C na plataforma Linux.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>expressao_regular on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/expressao_regular/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

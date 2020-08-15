@@ -3,14 +3,15 @@
   <channel>
     <title>desconto on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/desconto/</link>
-    <description>Recent content in desconto on Buteco Tecnológico</description>
+    <description>Recent content in desconto on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>desconto on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/desconto/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 18 Nov 2015 22:54:30 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/desconto/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 18 Nov 2015 22:54:30 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/desconto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Black Friday de Componentes Eletrônicos é na FILIPEFLOP</title>
       <link>https://butecotecnologico.com.br/black-friday-de-componentes-eletronicos-e-na-filipeflop/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/black-friday-de-componentes-eletronicos-e-na-filipeflop/</guid>
       <description>Black Friday é o nome dado ao dia seguinte ao &amp;ldquo;Dia de Ação de Graças&amp;rdquo; dos EUA, uma importante data comemorativa para o varejo americano, quando são praticados descontos altíssimos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>desconto on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/desconto/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

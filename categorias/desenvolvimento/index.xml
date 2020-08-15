@@ -3,14 +3,15 @@
   <channel>
     <title>Desenvolvimento on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
-    <description>Recent content in Desenvolvimento on Buteco Tecnológico</description>
+    <description>Recent content in Desenvolvimento on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>Desenvolvimento on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 13 Aug 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/categorias/desenvolvimento/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 13 Aug 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/categorias/desenvolvimento/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes explicado</title>
       <link>https://butecotecnologico.com.br/kubernetes-explicado/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/kubernetes-explicado/</guid>
       <description>O Kubernetes (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers e foi criado pelo Google.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conhecendo o Btrfs</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/conhecendo-o-btrfs/</guid>
       <description>O sistema de arquivos Btrfs foi criando em 2007, por engenheiros que trabalhavam na Oracle e FusionIO.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Guia completo de Debug em Python</title>
@@ -36,7 +49,13 @@
       
       <guid>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</guid>
       <description>Uma das atividades que mais realizamos durante o desenvolvendo é o debug para analisar algum erro ou até mesmo saber se o código esta executando da forma que gostaríamos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>De que são feitos containers Linux?</title>
@@ -45,7 +64,13 @@
       
       <guid>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</guid>
       <description>Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>AWS S3 em Python</title>
@@ -54,7 +79,13 @@
       
       <guid>https://butecotecnologico.com.br/python-aws-s3/</guid>
       <description>Diversas aplicações precisam em algum momento armazenar arquivos, seja para backup, CDN ou outros. Um dos serviços mais utilizados para armazenamento de arquivos é o AWS S3. Veja neste artigo como usar o S3 em suas aplicações Python.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Extração de dados com Logstash</title>
@@ -63,7 +94,13 @@
       
       <guid>https://butecotecnologico.com.br/logstash/</guid>
       <description>&lt;p&gt;Logstash basicamente é uma ferramenta de extração de dados, seu uso é simples, você determina um entrada (input), extrai informações que atendem a um padrão com filtros (filters) e gera uma saída (output), o famoso &amp;ldquo;entrada -&amp;gt; processo -&amp;gt; saída&amp;rdquo;. Seguindo esse conceito base, para cada etapa, o logstash possuí vários &amp;ldquo;plugins&amp;rdquo; que são pequenos programas que fazem as integrações do logstash, cada etapa possuí seus plugins, o que faz com que você possa fazer a entrada, processo e saída de várias formas diferentes.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>libssl e libcrypto: Visualizando certificados online em C</title>
@@ -72,7 +109,13 @@
       
       <guid>https://butecotecnologico.com.br/libssl-libcrypto-visualizando-certificados-online-em-c/</guid>
       <description>&lt;p&gt;Muito se fala do OpenSSL para geração e manutenção de certificados digitais, além disso, o OpenSSL pode criptografar arquivos, gerar números randômicos, e etc. Este artigo vem mostrar como utilizar a libssl para visualizar certificado utilizando a linguagem C.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PHP e Performance, parte 1</title>
@@ -81,7 +124,13 @@
       
       <guid>https://butecotecnologico.com.br/performance-com-php-parte-1/</guid>
       <description>&lt;p style=&#34;text-align: left;&#34;&gt;Algo que alguns criticam no PHP é questão de performance, sempre digo que PHP é uma linguagem performática para o que ele se propõe a fazer. Contudo, performance não é algo simples, existem centenas de milhares de fatores que podem interferir, começando pelo hardware usado até a alocação desnecessária de variáveis.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Como usar o MongoDB com PHP</title>
@@ -90,7 +139,13 @@
       
       <guid>https://butecotecnologico.com.br/como-usar-o-mongodb-com-php/</guid>
       <description>&lt;p&gt;Dentre os bancos de dados NoSQL da atualidade um dos mais usados é o MongoDB, seja pela sua eficiência em trabalhar com enormes volumes de dados ou pela sua flexibilidade, algo comum em bancos NoSQL. Abordaremos neste artigo como trabalhar com ele no PHP.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>POSIX Regular Expression em C</title>
@@ -99,7 +154,13 @@
       
       <guid>https://butecotecnologico.com.br/posix-regular-expression-em-c/</guid>
       <description>&lt;p&gt;Expressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares &lt;em&gt;built-in&lt;/em&gt;, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a &lt;em&gt;POSIX RegEx&lt;/em&gt; na linguagem C na plataforma Linux.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>MQTT Parte 2: Enviando e recebendo mensagens</title>
@@ -109,7 +170,13 @@
       <guid>https://butecotecnologico.com.br/mqtt-parte-2-enviando-e-recebendo-mensagens/</guid>
       <description>&lt;p&gt;Na &lt;a href=&#34;https://butecotecnologico.com.br/mqtt-parte-1-o-que-e-mqtt&#34;&gt;primeira parte&lt;/a&gt; sobre o protocolo MQTT (&lt;em&gt;Message Queue Telemetry Transport&lt;/em&gt;) demos uma breve introdução ao assunto, explicando o seu funcionamento, &lt;em&gt;brokers&lt;/em&gt; e &lt;em&gt;clients&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Hoje o artigo é mais prático que teórico. Inicialmente vamos instalar/configurar o &lt;em&gt;broker&lt;/em&gt; e após vamos criar em cliente MQTT que irá ser conectar ao &lt;em&gt;broker&lt;/em&gt; para enviar ou receber mensagens.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Comunicação serial RS232 com Leitura/Escrita da EEPROM no PIC16F628A</title>
@@ -118,7 +185,13 @@
       
       <guid>https://butecotecnologico.com.br/comunicacao-serial-rs232-com-leituraescrita-da-eeprom-no-pic16f628a/</guid>
       <description>&lt;p&gt;Muitos cursos de eletrônica fazem uma breve introdução ao mundo dos microcontroladores, mostrando superficialmente como utilizar seus recursos. Pensando nisso, este artigo tem como objetivo mostrar como utilizar dois recursos muito úteis no PIC 16F628A, comunicação serial e armazenamento de dados na memória EEPROM interna do PIC.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>i18n: Detectando o idioma do usuário</title>
@@ -127,7 +200,13 @@
       
       <guid>https://butecotecnologico.com.br/i18n-detectando-o-idioma-do-usuario/</guid>
       <description>&lt;p&gt;Internacionalizar uma aplicação nem sempre é algo fácil, ainda mais no mundo Web. Mas nesse mundo o seu melhor amigo é o header &lt;em&gt;Accept-Language&lt;/em&gt;. No lado do servidor, você provavelmente se limitará a duas formas de descobrir o idioma do usuário, uma pelo header &lt;em&gt;Accept-Language&lt;/em&gt; e a outra pelo endereço IP.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Deploy com um clique no Heroku</title>
@@ -137,7 +216,13 @@
       <guid>https://butecotecnologico.com.br/deploy-com-um-clique-no-heroku/</guid>
       <description>&lt;p&gt;Hoje vamos ver algo um pouco diferente, mas um tanto quanto comum em alguns projetos de código aberto, o botão de deploy do &lt;a href=&#34;https://www.heroku.com/home&#34; target=&#34;_blank&#34;&gt;Heroku&lt;/a&gt;. O Heroku é uma plataforma cloud PaaS, que suporta várias linguagens de programação e você pode fazer o deploy de uma aplicação com apenas um clique em um botão. :D&lt;/p&gt;
 &lt;p&gt;É mágica? Não! Mas o processo de criar um botão de deploy é simples, mas irá variar de acordo com o seu projeto. Nem todos projetos são possíveis de fazer deploy com apenas um clique. O artigo de hoje irá descrever como fazer um deploy de uma aplicação simples, sem necessidade de &lt;a href=&#34;https://elements.heroku.com/addons&#34; target=&#34;_blank&#34;&gt;add-ons&lt;/a&gt; do Heroku.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Gerando bitlink atravéz da API do Bitly</title>
@@ -147,7 +232,13 @@
       <guid>https://butecotecnologico.com.br/gerando-bitlink-atravez-da-api-do-bitly/</guid>
       <description>&lt;p&gt;Gerar link curto é uma tarefa um tanto quanto rotineira em determinados casos. Por exemplo, nós do blog usamos links curtos para compartilhar nossas publicações nas rede sociais.&lt;/p&gt;
 &lt;p&gt;Bem, mas como fazer para gerar um link curto do &lt;a href=&#34;https://bitly.com/&#34; target=&#34;_blank&#34;&gt;Bitly&lt;/a&gt; via API e com um domínio customizado? Se você não reparou ainda, nossos links curtos são sempre com o domínio &lt;em&gt;buteco.me&lt;/em&gt;, ao invéz do tão popular &lt;em&gt;bit.ly&lt;/em&gt;. Se você se pergunta o porque de usar um outro domínio, bem a resposta é simples, isso ajuda na identidade visual de sua marca ou produto.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Git: commit parcial de arquivos</title>
@@ -156,7 +247,13 @@
       
       <guid>https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/</guid>
       <description>&lt;p&gt;Neste post demonstrarei uma das muitas &lt;em&gt;features&lt;/em&gt; bacanas disponíveis no git, o &lt;em&gt;commit&lt;/em&gt; parcial de arquivos. Esta &lt;em&gt;feature&lt;/em&gt; permite ao usuário selecionar quais alterações de determinado arquivo devem ser commitados.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>MQTT Parte 1: O que é MQTT?</title>
@@ -166,7 +263,13 @@
       <guid>https://butecotecnologico.com.br/mqtt-parte-1-o-que-e-mqtt/</guid>
       <description>&lt;p&gt;O protocolo &lt;em&gt;Message Queue Telemetry Transport&lt;/em&gt; (MQTT) está presente no dia a dia da Internet das Coisas (IoT) e o seu principal uso é fazer as máquinas conversarem, também conhecido como Machine-to-Machine (M2M).&lt;/p&gt;
 &lt;p&gt;Nos últimos artigos temos dado ênfase aos sistemas embarcados, mais especificamente o NodeMCU e ao ESP8266. Pois bem, o NodeMCU possui embutido um &lt;a href=&#34;http://nodemcu.readthedocs.org/en/dev/en/modules/mqtt/&#34; target=&#34;_blank&#34;&gt;cliente MQTT&lt;/a&gt; para a versão 3.1.1 do protocolo. No artigo de hoje não vou me ater ao NodeMCU, mas sim, irei explicar o que é o protocolo em si, pois ele pode ser utilizado em outros ambientes, além de sistemas embarcados.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Relógio RTC com o ESP8266</title>
@@ -176,7 +279,13 @@
       <guid>https://butecotecnologico.com.br/rtc-com-esp8266/</guid>
       <description>&lt;p&gt;No artigo de hoje veremos como utilizar um RTC (&lt;em&gt;Real Time Clock&lt;/em&gt;) com o dispositivo ESP8266. Este módulo incorpora funções Wi-Fi e foi pensado para projetos de baixo custo para mobilidade, eletrônicos vestíveis, Internet das Coisas (IoT), e o que sua criatividade permitir.&lt;/p&gt;
 &lt;p&gt;Este artigo pode ser um tanto quanto simples, mas utilizar um RTC (&lt;em&gt;Real Time Clock&lt;/em&gt;) em um projeto é de grande importância as vezes. Principalmente quando desejamos monitorar algo em determinados horários. Vamos pegar um exemplo básico, supondo que você esteja monitorando a temperatura do ambiente, é interessante saber a hora da medição para calcular a variação de temperatura durante um determinado período. Sim, este é um exemplo simples, mas exemplifica claramente o uso de um RTC.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PM2 - Gerenciador de aplicações Node.js em ambientes de produção</title>
@@ -186,7 +295,13 @@
       <guid>https://butecotecnologico.com.br/pm2/</guid>
       <description>&lt;p&gt;O Node.js, famoso interpretador javascript do lado servidor, trouxe uma nova gama de possibilidades para a linguagem javascript. Entre suas maiores vantagens posso citar o uso da mesma linguagem de programação no lado cliente e servidor e usar programação assíncrona por padrão. Contudo em algum momento da vida de seu projeto ou da sua aplicação, este deve ser publicado, e é neste ponto que o PM2 aparece.&lt;/p&gt;
 &lt;p&gt;O PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cluster para alta disponibilidade com balanceamento de carga, logs, recarregar a aplicação automaticamente quando há alterações nos arquivos ou reinicio do servidor, entre diversas outras atividades que a principio podem parecer simples, porém tenha em mente que o PM2 foi projetado para gerenciar diversas aplicações rodando de uma só vez, em um único console.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GPS Parte 3: Localizador GPS com a BeagleBone Green</title>
@@ -195,7 +310,13 @@
       
       <guid>https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/</guid>
       <description>Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Linux API: pthreads - Parte 1</title>
@@ -207,7 +328,13 @@
 &lt;p&gt;Para tal, este post mostrará como utilizar POSIX threads na linguagem C.&lt;/p&gt;
 &lt;h4&gt;O que são threads?&lt;/h4&gt;
 &lt;em&gt;Threads&lt;/em&gt; são linhas de execução para processos. Ao iniciar um processo, uma &lt;em&gt;thread&lt;/em&gt; principal é iniciada, um processo então pode criar outras &lt;em&gt;threads&lt;/em&gt; para que estas executem tarefas específicas e de forma paralela. Quando temos uma CPU com um único núcleo, dizemos que as &lt;em&gt;threads&lt;/em&gt; executam de forma &lt;em&gt;concorrente&lt;/em&gt;, uma vez que a CPU só pode executar uma thread por vez, mas há mais que uma para ser executada ao &#34;mesmo tempo&#34;. Já quando temos uma CPU com vários núcleos, as &lt;em&gt;threads&lt;/em&gt; podem ser executadas tanto de forma &lt;em&gt;concorrente&lt;/em&gt; como em &lt;em&gt;paralelo&lt;/em&gt;, pois o &lt;a href=&#34;https://pt.wikipedia.org/wiki/Escalonamento_de_processos&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;scheduler&lt;/em&gt;&lt;/a&gt; pode priorizar outros programas do computador além do seu.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GPS Parte 2: Decodificando uma sentença NMEA</title>
@@ -216,7 +343,13 @@
       
       <guid>https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/</guid>
       <description>Na primeira parte sobre GPS vimos como este sistema de rastreamento por satélite funciona.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Como utilizar o getaddrinfo para evitar a falha GHOST</title>
@@ -225,7 +358,13 @@
       
       <guid>https://butecotecnologico.com.br/como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost/</guid>
       <description>&lt;p&gt;Em janeiro de 2015 se ouviu falar de uma falha de segurança na glibc chamada GHOST. Esta falha poderia ser explorada por um programa malicioso utilizando as funções &lt;code&gt;gethostbyname()&lt;/code&gt; e &lt;code&gt;gethostbyname2()&lt;/code&gt; da glibc. O ataque acontece por um &lt;em&gt;buffer overflow&lt;/em&gt; dentro destas funções quando um endereço inválido é passando como parâmetro. Ao explorar esta falha, o atacante consegue executar códigos arbitrários com as permissões do usuários executando o processo.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GPS Parte 1: Entendendo o seu funcionamento</title>
@@ -235,7 +374,13 @@
       <guid>https://butecotecnologico.com.br/gps-parte-1-entendendo-o-seu-funcionamento/</guid>
       <description>&lt;p&gt;Você já parou pra pensar em como um GPS funciona? Bem, se você ainda não pesquisou sobre o assunto, este post abordará um pouco sobre o que é este dispositivo, que está presente em nosso dia a dia.&lt;/p&gt;
 &lt;p&gt;Essa série de artigos será divida em três partes. A primeira parte abordará os conceitos básicos. A segunda abordará como se interpreta os dados obtidos do GPS. E por fim será criada uma aplicação Web que indica no mapa onde você está.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5.2 lançado, veja as novidades</title>
@@ -246,7 +391,13 @@
       <description>&lt;p&gt;A mais nova versão do Laravel foi  lançada finalmente. Nessa versão 5.2 tivemos diversas melhorias e algumas novidades, veja abaixo algumas delas:&lt;/p&gt;
 &lt;p style=&#34;text-align: center;&#34;&gt;&lt;strong&gt;Drivers múltiplos para autenticação&lt;/strong&gt;&lt;/p&gt;
 Nas versões anteriores do Laravel, somente era possível ter um único model para autenticação do usuário. Agora é possível ter mais de um, é possível ter tabelas diferentes para perfis diferentes como admin e usuário por exemplo.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Introduzindo conceitos do Emacs</title>
@@ -255,7 +406,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       
       <guid>https://butecotecnologico.com.br/introduzindo-conceitos-do-emacs/</guid>
       <description>&lt;p&gt;Utilizo o Emacs há algum tempo, pelo menos como ferramenta de desenvolvimento acho uma das melhores opções, onde, diferente de outras, é fácil fazer o desenvolvimento e estender suas funcionalidades, criar novas &lt;em&gt;hotkeys&lt;/em&gt;. Tentarei demonstrar aqui, um básico das funcionalidades do Emacs.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Implemente seu malloc/free. Just4fun!</title>
@@ -264,7 +421,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       
       <guid>https://butecotecnologico.com.br/implemente-seu-mallocfree-just4fun/</guid>
       <description>&lt;p&gt;Algum tempo atrás comprei o livro The Linux Programming Interface, um dos melhores livros que já adquiri. Um dos primeiros capítulos que li foi sobre alocação de memória. No final do capítulo, o autor oferece alguns exercícios. Entre eles existe um mais desafiador. Que é implementar funções equivalentes ao &lt;code&gt;malloc&lt;/code&gt; e &lt;code&gt;free&lt;/code&gt;. The challenge has been accepted!&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Codeception, testes de interface</title>
@@ -275,7 +438,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       <description>&lt;p&gt;Fala galera,&lt;/p&gt;
 &lt;p&gt;Mais uma vez falando sobre o &lt;a href=&#34;http://codeception.com/&#34; target=&#34;_blank&#34;&gt;Codeception&lt;/a&gt;, no post passado mostrei como fazer o setup inicial e como começar a usá lo com testes unitários. Clique &lt;a href=&#34;https://butecotecnologico.com.br/?p=3182&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; para ver o post anterior.&lt;/p&gt;
 &lt;p&gt;Testes unitários são provavelmente o primeiro tipo de teste que você vai ver em qualquer tutorial, são os testes mais simples de serem feitos e provavelmente, os mais importantes. São os testes unitários que vão testar as suas funções, as suas classes, as suas regras de negócio e sua integração com o banco. Para este último, apesar de na prática não há diferença, existe uma especialização dos testes unitários, que são os testes de integração. A diferença entre um teste unitário e de integração é basicamente que o teste de integração faz acesso a um recurso externo, seja ele um banco de dados, uma API, ou qualquer outra coisa. Não irei abordar esse tipo de teste aqui, pois na prática os testes de integração são testes unitários.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Gerando backtrace em C/C&#43;&#43; no Linux</title>
@@ -284,7 +453,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       
       <guid>https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/</guid>
       <description>&lt;p&gt;Olá pessoal, creio que muitos aqui já se depararam com algum &lt;em&gt;crash&lt;/em&gt; em seus programas em C/C++, e gostariam de poder ver a pilha de chamadas, ou &lt;em&gt;stacktrace/backtrace&lt;/em&gt;, ao menos no ambiente de testes. Pois bem, a boa notícia é que no Linux existe a possibilidade de mostrar qual o ultimo método chamado antes de receber um &lt;em&gt;crash&lt;/em&gt;.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Utilizando a API REST do Docker com Python</title>
@@ -295,7 +470,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       <description>&lt;p&gt;O Docker é uma plataforma para construir e executar aplicações distribuídas. Com ele é possível executar um &lt;em&gt;bash&lt;/em&gt; em um ambiente Debian mesmo estando dentro um Fedora, por exemplo. Seu funcionamento se assemelha ao de uma máquina virtual, mas as aplicações executadas no Docker estão de fato sendo executados no sistema &lt;em&gt;host&lt;/em&gt;, ou seja, não existe a camada de emulação.&lt;/p&gt;
 &lt;p&gt;Isso se deve à utilização de &lt;em&gt;templates&lt;/em&gt; de imagens do Debian (existem imagens de sistemas inteiros, como Debian, Ubuntu, e também de aplicações, como Apache, MySQL e etc). Para mais informações sobre o Docker, basta verificar a &lt;a href=&#34;https://www.docker.com/&#34; target=&#34;_blank&#34;&gt;página&lt;/a&gt; do projeto.&lt;/p&gt;
 &lt;p&gt;Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifique como instalá-lo em sua distribuição. Após instalado, você precisará iniciá-lo através do &lt;em&gt;docker daemon&lt;/em&gt; para receber requisições HTTP, além das requisições por &lt;em&gt;socket&lt;/em&gt; (este é utilizado pelo &lt;em&gt;docker client&lt;/em&gt;). Antes de iniciá-lo com estas opções, você precisará ter certeza que o mesmo não esteja executando. Para tal, basta executar:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Codeception, testes em PHP para todos</title>
@@ -306,7 +487,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       <description>&lt;p&gt;Olá galera, tudo certo ?&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;message_content&#34;&gt;Hoje veremos como utilizar o framework de teste chamado Codeception. Eu acabei esbarrando com essa ferramenta por acaso enquanto estava pesquisando ferramentas mais completas do que o PHPUnit para criar testes no PHP. Vamos lá então?
 &lt;/span&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Criando gráficos com matplot</title>
@@ -316,7 +503,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       <guid>https://butecotecnologico.com.br/criando-graficos-com-matplot/</guid>
       <description>&lt;p&gt;Criado por &lt;a href=&#34;https://en.wikipedia.org/wiki/John_D._Hunter&#34; target=&#34;_blank&#34;&gt;John Hunter (1968-2012)&lt;/a&gt; , &lt;a href=&#34;http://matplotlib.org/index.html&#34; target=&#34;_blank&#34;&gt;matplot&lt;/a&gt; é usada para criação de &lt;em&gt;plots&lt;/em&gt;, histogramas, espectrogramas, gráficos (&lt;em&gt;charts&lt;/em&gt;) simples e 3D e etc. Para ter uma ideia da diversidade dessa ferramenta, você pode visitar a &lt;a href=&#34;http://matplotlib.org/gallery.html&#34; target=&#34;_blank&#34;&gt;galeria de exemplos&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Neste artigo, vou fazer uma demonstração bem simples, onde apresentarei como criar um gráfico de barras (&lt;em&gt;barchart&lt;/em&gt;) em python. Para isso, você deve fazer a instalação de algumas bibliotecas. No meu caso, estou usando um &lt;em&gt;Debian-like&lt;/em&gt;, então substitua o gerenciador de pacotes de acordo com sua distro.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Curso online de AngularJS de $299 por $0 (grátis)</title>
@@ -325,7 +518,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       
       <guid>https://butecotecnologico.com.br/curso-online-de-angularjs-de-299-por-0-gratis/</guid>
       <description>Não é piada, não é enganação, o curso é em inglês porém o material é ótimo e abrange boa parte do que você irá precisar saber para criar uma aplicação com AngularJS.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Utilizando Shared Objects no Python</title>
@@ -335,7 +534,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       <guid>https://butecotecnologico.com.br/utilizando-shared-objects-no-python/</guid>
       <description>&lt;p&gt;Python é realmente uma linguagem muito versátil, tendo a mão quase sempre tudo o que se precisa fazer. Então, a algum tempo atrás eu precisava verificar a possibilidade de carregar um Shared Object com o Python, e eis que encontrei. A documentação do Python é realmente muito útil, com exemplos de utilização de módulos, inclusive do módulo em questão.&lt;/p&gt;
 &lt;p&gt;Para poder carregar a lib, eu utilizei o módulo &lt;strong&gt;ctypes&lt;/strong&gt;. Este módulo provê tipos de dados compatíveis com o C e permite chamar bibliotecas, como DDLs e shared objects. Para iniciar o exemplo, eu criei uma lib, na verdade um shared object, a seguir:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5.1 do começo ao fim, parte 2</title>
@@ -344,7 +549,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       
       <guid>https://butecotecnologico.com.br/laravel-5-1-do-comeco-ao-fim-parte-2/</guid>
       <description>Segundo vídeo da série que fala sobre a versão 5.1 do framework PHP Laravel</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5.1 do começo ao fim (em vídeo)</title>
@@ -353,7 +564,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       
       <guid>https://butecotecnologico.com.br/laravel-5-1-do-comeco-ao-fim-video/</guid>
       <description>Primeiro vídeo da série falando sobre o laravel 5.1</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>HHVM está rodando mais rápido que o próprio PHP 7</title>
@@ -362,7 +579,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       
       <guid>https://butecotecnologico.com.br/hhvm-esta-rodando-mais-rapido-que-o-proprio-php-7/</guid>
       <description>&lt;p&gt;&lt;span id=&#34;spelling-correction&#34; class=&#34;gt-spell-correct-message&#34;&gt;A&lt;/span&gt; &lt;span class=&#34;hps&#34;&gt;equipe do Facebook&lt;/span&gt; &lt;span class=&#34;hps&#34;&gt;que está trabalhando no projeto&lt;/span&gt; &lt;span class=&#34;hps&#34;&gt;HHVM (aka HipHop Virtual Machine) ,&lt;/span&gt; que é um interpretador &lt;span class=&#34;hps&#34;&gt;otimizado&lt;/span&gt; para o &lt;span class=&#34;hps&#34;&gt;PHP&lt;/span&gt; &lt;span class=&#34;hps&#34;&gt;usando sua linguagem &lt;strong&gt;Hack&lt;/strong&gt;, declararam seus resultados após algumas semanas de concentração para obter melhorias de performance em projetos de código aberto.&lt;/span&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Hands on: quilt</title>
@@ -381,7 +604,13 @@ main.py  new_tab.py  new_tab.pyc  new_tab.ui  window.ui
 quilt new alteracao1.patch
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Após a execução deste comando, será criada uma pasta &amp;ldquo;patches&amp;rdquo;, que conterá todos os patches criados. Por hora esta pasta contém apenas o arquivo series, já que não adicionamos e nem alteramos nenhum arquivo para adicionar ao patch recem criado. O arquivo series mostra a ordem em que os patches criados serão aplicados.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5.1 LTS lançado, veja algumas das novidades</title>
@@ -392,7 +621,13 @@ quilt new alteracao1.patch
       <description>&lt;p&gt;A tão esperada versão 5.1 do Laravel foi finalmente lançada, como não podíamos deixar passar, veja a lista abaixo de algumas das novidades dessa nova versão:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;LTS&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Long Term Support significa que o framework receberá correções de bugs por 2 anos e correções de problemas de segurança por 3 anos, isso trará uma maior confiabilidade para que as pessoas comecem a investir no framework.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Integrando o Doctrine ORM e Laravel 5 [parte-1]</title>
@@ -401,7 +636,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/integrando-o-doctrine-orm-e-laravel-5-parte-1/</guid>
       <description>Veja este que é a primeira parte de um série sobre a integração do Doctrine ORM, uma biblioteca para se trabalhar com banco de dados e mapeamento, com o Laravel 5 o framework mais popular atualmente para PHP</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Interagindo com a câmera do Raspberry Pi</title>
@@ -410,7 +651,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/interagindo-com-a-camera-do-raspberry-pi/</guid>
       <description>Este artigo traz uma introdução de como pode ser feita a integração do Raspberry Pi com seu módulo de câmera chamado picamera.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Cliente / Server com Boost.Asio</title>
@@ -419,7 +666,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/cliente-server-com-boost-asio/</guid>
       <description>Artigo que mostra um exemplo da utilização da biblioteca boost com asio.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Usando a API do Google Analytics no Python</title>
@@ -428,7 +681,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/usando-a-api-do-google-analytics-no-python/</guid>
       <description>O Google Analytics permite que você avalie seu ROI de publicidade, bem como acompanhar seus sites e aplicativos em Flash, vídeo e redes sociais. É uma ferramente indispensável para aqueles que gostam de monitorar seus sites e saber informações relacionadas aos acessos. Claro que existem outras ferramentas similares, mas hoje mostrarei como buscar dados desta.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 do começo ao fim [parte 4]</title>
@@ -437,7 +696,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-4/</guid>
       <description>Nesta quarta parte do tutorial veremos um pouco da parte de testes do Laravel 5, uma boa pratica que todos deveriam adotar mas que muitas vezes é simplesmente ignorada.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lumen um micro-framework baseado no Laravel</title>
@@ -446,7 +711,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/lumen-um-micro-framework-baseado-no-laravel/</guid>
       <description>O tão esperado Lumen foi finalmente lançado, um projeto baseado no Laravel 5 e que segue a mesma linha dos micro-frameworks Silex e Slim, porém, segundo alguns benchmarks, com desempenho superior. Veja como começar seu projeto usando o recem lançado Lumen!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Criando módulo Python em C/C&#43;&#43;</title>
@@ -455,7 +726,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/criando-modulo-python-em-cc/</guid>
       <description>Primeiros passos na criação de um módulo C/C++ para ser utilizado dentro do Python</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Construindo a interface de login do spotify com PyGTK e CSS</title>
@@ -464,7 +741,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/construindo-a-interface-de-login-do-spotify-com-pygtk-e-css/</guid>
       <description>Desenvolva aplicativos mais facilmente fazendo o uso do CSS linguagem de estilo da web agora aplicada a interfaces com Python e Gtk.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Nuclide: IDE do Facebook baseada no Atom</title>
@@ -473,7 +756,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/nuclide-ide-do-facebook-baseada-no-atom/</guid>
       <description>Recentemente o Facebook lançou a sua IDE designada ao desenvolvimento da linguagem Hack. A Nuclide é uma IDE unificada que traz suporte a React, Flow dentre outras ferramentas do Facebook.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PHP 7 virá em 2015!</title>
@@ -482,7 +771,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/php-7-vira-em-2015/</guid>
       <description>Soube hoje que a versão 7 do PHP terá seu primeiro release em 2015, mais especificamente no mês de outubro, segundo um infografo disponibilizado pela Zend (disponivel neste link), a versão 7 do PHP continua o processo de tornar a linguagem mais concisa e podemos dizer mais próxima da linguagem C++.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PyPy 2.5.1 já está disponível</title>
@@ -491,7 +786,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/pypy-2-5-1-ja-esta-disponivel/</guid>
       <description>Esta nova versão vem com suporte a arquitetura x86, para os sistemas operacionais Linux 32/64, Mac OS X 64, Windows e OpenBSD, e arquitetura ARM (ARMv6 ou ARMv7 com VFPv3), para o sistema operacional Linux.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GXUI: Interface multiplataforma para Go</title>
@@ -500,7 +801,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/gxui-interface-multiplataforma-para-go/</guid>
       <description>GXUI é uma nova interface de usuário multiplataforma desenvolvida pela Google para a linguagem de programação Go, que também é desenvolvida pela Google.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 do começo ao fim [parte 3]</title>
@@ -509,7 +816,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-3/</guid>
       <description>Este artigo apresenta a terceira parte de um tutorial sobre o framework PHP Laravel 5, apresentando como usar a parte de criação de model e view do framework</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>redislite: Redis sem necessidade de servidor para Python</title>
@@ -519,7 +832,13 @@ quilt new alteracao1.patch
       <guid>https://butecotecnologico.com.br/redislite-redis-sem-necessidade-de-servidor-para-python/</guid>
       <description>O time de desenvolvedores do Yahoo anunciou uma implementação do Redis para Python sem a necessidade de instalar e configurar um servidor Redis. A grande vantagem é a remoção de uma dependência do seu código, quando o quesito é testes.
 O Redis é um banco de dados de código aberto, sob a licença BSD, para persistência de dados no modelo Chave/Valor e é escrito em C.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Builder IDE - Nova IDE para criação de aplicações GNOME no Linux</title>
@@ -528,7 +847,13 @@ O Redis é um banco de dados de código aberto, sob a licença BSD, para persist
       
       <guid>https://butecotecnologico.com.br/builder-ide-nova-ide-para-criacao-de-aplicacoes-gnome-no-linux/</guid>
       <description>Este post destaca as principais features da nova IDE Builder que esta sendo desenvolvida.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conhecendo Pipe e FIFO (parte final)</title>
@@ -537,7 +862,13 @@ O Redis é um banco de dados de código aberto, sob a licença BSD, para persist
       
       <guid>https://butecotecnologico.com.br/conhecendo-pipe-e-fifo-parte-final/</guid>
       <description>Última parte da sequencia de artigos sobre pipes e fifos. Nesta parte, serão explicados como funcionam os fifos e como se diferenciam dos pipes.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Geração de MD5 utilizando C com OpenSSL e Python</title>
@@ -546,7 +877,13 @@ O Redis é um banco de dados de código aberto, sob a licença BSD, para persist
       
       <guid>https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/</guid>
       <description>Esta postagem mostra como gerar MD5 via código C (utilizando a biblioteca OpenSSL) e com Python (utilizando a biblioteca hashlib).</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Python 3.5.0a2 já está disponível</title>
@@ -556,7 +893,13 @@ O Redis é um banco de dados de código aberto, sob a licença BSD, para persist
       <guid>https://butecotecnologico.com.br/python-3-5-0a2-ja-esta-disponivel/</guid>
       <description>O Python 3.5.0a2 foi liberado nesta segunda (09/03) e vem com algumas novidades em relação a versão 3.4.
 O Python 3.5 ainda está em desenvolvimento e esta versão é a segunda &lt;em&gt;alpha release&lt;/em&gt;. Varias alterações para esta versão ainda estão em faze de desenvolvimento.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Criando formulários com Python e PyGTK3</title>
@@ -565,7 +908,13 @@ O Python 3.5 ainda está em desenvolvimento e esta versão é a segunda &lt;em&g
       
       <guid>https://butecotecnologico.com.br/criando-formularios-com-python-e-pygtk3/</guid>
       <description>Python e Gtk uma combinação simples e prática para criação de interfaces. Nesse artigo você encontra o básico para poder implementar suas próprias interfaces, contendo  botões, caixas de entrada, título, caixa de seleção e muito mais.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 do começo ao fim [parte 2]</title>
@@ -574,7 +923,13 @@ O Python 3.5 ainda está em desenvolvimento e esta versão é a segunda &lt;em&g
       
       <guid>https://butecotecnologico.com.br/tutorial-laravel-5-parte-2/</guid>
       <description>Esta é a segunda parte do tutorial sobre Laravel 5, caso você não tenha ainda visto, veja a primeira parte dessa série neste link.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Pyston 0.3 já está disponível</title>
@@ -584,7 +939,13 @@ O Python 3.5 ainda está em desenvolvimento e esta versão é a segunda &lt;em&g
       <guid>https://butecotecnologico.com.br/pyston-0-3-ja-esta-disponivel/</guid>
       <description>A versão 0.3 do Pyston foi liberada nesta terça-feira (24/02). O Pyston é uma proposta de uma implementação do Python com alto desempenho.
 Esta é liberação muito importante, pois em relação as versões anteriores, esta versão além de uma maior compatibilidade com o Python, também melhorou o seu desempenho na execução de scripts.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Python 3.4.3 já está disponível</title>
@@ -593,7 +954,13 @@ Esta é liberação muito importante, pois em relação as versões anteriores, 
       
       <guid>https://butecotecnologico.com.br/python-3-4-3-ja-esta-disponivel/</guid>
       <description>Foi liberado ontem (25/02) a nova versão do Python, a 3.4.3 (final). Esta versão vem com várias correções de bugs e melhorias em relação a 3.4.2.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 do começo ao fim [parte 1]</title>
@@ -602,7 +969,13 @@ Esta é liberação muito importante, pois em relação as versões anteriores, 
       
       <guid>https://butecotecnologico.com.br/tutorial-laravel-5/</guid>
       <description>Mostrarei a seguir um breve tutorial sobre o Laravel, um dos frameworks mais usados atualmente para PHP, com o lançamento do Laravel 5 houve algumas mudanças, e algumas delas você verá a seguir.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Entendendo Pipe e FIFO (parte 2)</title>
@@ -611,7 +984,13 @@ Esta é liberação muito importante, pois em relação as versões anteriores, 
       
       <guid>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-2/</guid>
       <description>Esta é a segunda parte da postagem sobre Pipes e Fifos aqui do blog.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 é finalmente lançado!</title>
@@ -620,7 +999,13 @@ Esta é liberação muito importante, pois em relação as versões anteriores, 
       
       <guid>https://butecotecnologico.com.br/laravel-5-e-finalmente-lancado/</guid>
       <description>Novidades com Laravel 5</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Python 3.4.3 e 3.5 já estão a caminho</title>
@@ -630,7 +1015,13 @@ Esta é liberação muito importante, pois em relação as versões anteriores, 
       <guid>https://butecotecnologico.com.br/python-3-4-3-e-3-5-ja-estao-a-caminho/</guid>
       <description>Ontem (08/02) foi liberado o Python 3.4.3rc1 e o 3.5.0a1. A versão 3.4.3 está prevista para dia 22/02 e a 3.5 para 13/09.
 A versão 3.4.3rc1 vem com várias correções de bugs e pequenas melhorias em relação a 3.4.2. Já a versão 3.5 ainda está em desenvolvimento, e a 3.5.0a1 é a primeira liberação desta nova versão. Várias alterações ainda estão sendo planejadas para a 3.5.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Node.js v0.12.0 já está disponível</title>
@@ -640,7 +1031,13 @@ A versão 3.4.3rc1 vem com várias correções de bugs e pequenas melhorias em r
       <guid>https://butecotecnologico.com.br/node-js-v0-12-0-ja-esta-disponivel/</guid>
       <description>O Node.js é uma plataforma para desenvolvimento ágil de aplicações Web escaláveis, constuida sobre o V8 (Chrome&amp;rsquo;s JavaScript runtime). O V8 é a uma engine JavaScript de código aberto desenvolvida pelo Google e utilizado no Chrome.
 O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de 2014.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Utilizando atexit com C e Python</title>
@@ -649,7 +1046,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/utilizando-atexit-com-c-e-python/</guid>
       <description>Em muitos casos, quando escrevemos programas se faz necessário liberar os recursos que o programa requisitou do sistema operacional.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>glibc 2.21 já está disponível</title>
@@ -658,7 +1061,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/glibc-2-21-ja-esta-disponivel/</guid>
       <description>A GNU C Library (glibc) é a biblioteca C padrão no sistema GNU e na maioria dos sistemas com Kernel Linux. A versão 2.21 vem com várias correções de bugs algumas funcionalidades novas.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PyPy 2.5.0 já está disponível</title>
@@ -667,7 +1076,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/pypy-2-5-0-ja-esta-disponivel/</guid>
       <description>O PyPy é uma alternativa a outros interpretadores como CPython (o padrão), Jython e IronPython, e de acordo com os diversos benchmarks publicados, o mais rápido entre eles.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Introdução a API do Youtube com jQuery</title>
@@ -676,7 +1091,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/introducao-a-api-do-youtube-com-jquery/</guid>
       <description>Veremos basicamente neste artigo como utilizar a API do Youtube, caso você não saiba, API quer dizer Aplication Programm Interface, ou interface de programação de aplicações, em outras palavras é uma camada de abstração que permite ao programador fazer chamadas a serviços.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Entendendo Pipe e FIFO (parte 1)</title>
@@ -685,7 +1106,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-1/</guid>
       <description>Pipes e FIFOs são muito utilizados no mundo Linux como um método de IPC (inter process communication), ou comunicação entre processos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>MediaFire libera toolkit para desenvolvedores Linux</title>
@@ -694,7 +1121,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/mediafire-libera-toolkit-para-desenvolvedores-linux/</guid>
       <description>O MediaFire, um serviço de backup e hospedagem de arquivos, liberou um toolkit Open-Source para desenvolvedores que usam Linux.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Formatando e adicionando anexos a e-mails no Python</title>
@@ -703,7 +1136,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/formatando-e-adicionando-anexos-a-e-mails-no-python/</guid>
       <description>Há algumas semanas, nós mostramos como enviar e-mail pelo Python usando o módulo smtplib.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Hands on: Sockets em Python</title>
@@ -712,7 +1151,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/hands-on-sockets-em-python/</guid>
       <description>Muitos são os usos dos sockets atualmente e vários exemplos existem através de toda a internet em várias linguagens de programação diferentes.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Controlando um LED pelo Arduino</title>
@@ -721,7 +1166,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/controlando-um-led-pelo-arduino/</guid>
       <description>Veja como controlar um LED pelo Arduino. Iremos fazer duas operações básicas, fazer o LED piscar e alterar sua intensidade.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lua 5.3 já está disponível</title>
@@ -730,7 +1181,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/lua-5-3-ja-esta-disponivel/</guid>
       <description>Lua é uma linguagem poderosa, rápida e leve desenvolvida na PUC-Rio.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.0 Alpha já está disponível</title>
@@ -739,7 +1196,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/rust-1-0-alpha-ja-esta-disponivel/</guid>
       <description>Rust 1.0 Alpha foi lançado hoje.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>cURL 7.40 disponível e agora com suporte ao protocolo SMB/CIFS</title>
@@ -748,7 +1211,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/curl-7-40-disponivel-e-agora-com-suporte-ao-protocolo-smbcifs/</guid>
       <description>O cURL 7.40 foi disponibilizado hoje (08/01) com várias novidades e correções de bugs.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conectando um display de 7 segmentos no Arduino</title>
@@ -757,7 +1226,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/conectando-um-display-de-7-segmentos-no-arduino/</guid>
       <description>Confira como utilizar um display de 7 segmentos no Arduino.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conhecendo o virt-manager</title>
@@ -766,7 +1241,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/conhecendo-o-virt-manager/</guid>
       <description>O virt-manager é uma ferramenta desenvolvida pela RedHat para gerenciar máquinas virtuais.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Enviando emails com o Python</title>
@@ -775,7 +1256,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/enviando-emails-com-o-python/</guid>
       <description>Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo smtplib.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando ArchLinux &#43; XFCE &#43; LXDM no Banana Pi</title>
@@ -784,7 +1271,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/</guid>
       <description>Hoje vou mostrar como instalar o ArchLinux no BananaPi. Escolhi o ArchLinux por ele ser uma distribuição bem enxuta, mas muito poderosa.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Enviando SMS pelo PagueVeloz</title>
@@ -793,7 +1286,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/</guid>
       <description>É muito comum ver nos sistemas que desenvolvemos envio de e-mail.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.0 será lançado em 2015</title>
@@ -802,7 +1301,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/rust-1-0-sera-lancado-em-2015/</guid>
       <description>O blog oficial da linguagem Rust compartilhou nesta sexta-feira (12/12) seus planos para 2015.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Python 2.7.9 já está disponível</title>
@@ -811,7 +1316,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/python-2-7-9-ja-esta-disponivel/</guid>
       <description>A nova versão do Python, a 2.7.9, é uma versão que traz correções de bugs para a versão 2.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Primeiros passos com o Banana Pi</title>
@@ -820,7 +1331,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/primeiros-passos-com-o-banana-pi/</guid>
       <description>Na primeira postagem sobre o Banana Pi eu comentei sobre o hardware e se seria uma boa opção de compra.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rodando Linux em uma Banana</title>
@@ -829,7 +1346,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/rodando-linux-em-uma-banana/</guid>
       <description>Você já deve ter ouvido falar no Raspberry Pi, um computador single-board do tamanho de um cartão de crédito.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Crie seu próprio Instagram com PHP</title>
@@ -838,7 +1361,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/crie-seu-proprio-instagram-com-php/</guid>
       <description>Olá pessoal! Hoje mostrarei como fazer uma edição e tratamento básico de imagens com PHP, para quem não sabe o PHP possui uma extensão dedicada para trabalhar com entidades gráficas, a php_gd2, consequentemente para este tutorial vamos precisar desta extensão habilitada e do PHP na versão 5.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Git 2.2 está chegando com várias mudanças</title>
@@ -847,7 +1376,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/git-2-2-esta-chegando-com-varias-mudancas/</guid>
       <description>O Git 2.2.0 RC 1 já está disponível e nesta última atualização o foco foi a estabilização.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Apresentando o Proxygen - Framework HTTP em C&#43;&#43; do Facebook</title>
@@ -856,7 +1391,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/apresentando-o-proxygen-framework-http-em-c-do-facebook/</guid>
       <description>O Facebook anunciou o Proxygen, uma coleção de bibliotecas HTTP de código aberto para C++, incluindo um servidor HTTP fácil de usar.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>LibreOffice e os compiladores</title>
@@ -865,7 +1406,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/libreoffice-e-os-compiladores/</guid>
       <description>Olá pessoal, está semana foram liberados os vídeos da LibreOffice Conference 2014.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Controle de dependência em PHP usando o composer</title>
@@ -874,7 +1421,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/controle-de-dependencia-em-php-usando-o-composer/</guid>
       <description>Atualmente existem diversos projetos que fazem a atividade de controle de dependências, no caso do PHP uma das mais usadas é o composer, um programa extremamente simples de ser usado e que pode lhe economizar muito tempo, segue um breve tutorial de como usá-lo.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Utilizando o OpenShift para hospedar uma aplicação Flask/Python</title>
@@ -884,7 +1437,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       <guid>https://butecotecnologico.com.br/utilizando-o-openshift-para-hospedar-uma-aplicacao-flaskpython/</guid>
       <description>O que é OpenShift?
 OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações em nuvem disponibilizada pela Red Hat.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Usando o framework Laravel com Bootstrap</title>
@@ -893,7 +1452,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/usando-o-framework-laravel-com-bootstrap/</guid>
       <description>Este post tem o objetivo de mostrar de maneira fácil e rápida como utilizar o poder do artisan do laravel para geração de telas de cadastros apenas com linha de comando.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Internacionalizando um site de forma simples</title>
@@ -902,7 +1467,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/internacionalizando-um-site-de-forma-simples/</guid>
       <description>A algum tempo que já estava afim de traduzir meu site para o Português, mas nunca tive tempo e nem muito empenho.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Pexpect: Integração entre Python e expect para automatização de tarefas</title>
@@ -911,7 +1482,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/pexpect-integracao-entre-python-e-expect-para-automatizacao-de-tarefas/</guid>
       <description>Olá pessoa, este post é uma continuação do post sobre tcl/expect escrito previamente no blog.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Gerador de sistemas em PHP usando apenas SQL</title>
@@ -920,7 +1497,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/gerador-de-sistemas-em-php-usando-apenas-sql/</guid>
       <description>Fala pessoal, a alguns dias achei um site muito interessante que gostaria de compartilhar, o Rizer, ele é um projeto gratuito que a partir do SQL dump do banco gera o projeto final do sistema, achei uma ferramenta muito boa para quem está começando no PHP, ele suporta 3 frameworks, o CodeIgniter, Laravel e CakePHP.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 0.12.0 é lançado</title>
@@ -929,7 +1512,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/rust-0-12-0-e-lancado/</guid>
       <description>O Rust 0.12.0 foi lançado ontem (09/10) e esta nova versão traz nova documentação e melhoria na antiga, incluindo O Guia Rust, que substitui o tutorial antigo.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Hands on: autotools</title>
@@ -938,7 +1527,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/hands-on-autotools/</guid>
       <description>Olá pessoal, a muito tempo eu queria aprender como funciona o tão famoso autotools.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Tcl/Expect: Automatização de comandos interativos no Linux</title>
@@ -947,7 +1542,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/tclexpect-automatizacao-de-comandos-interativos-no-linux/</guid>
       <description>Olá pessoal, neste artigo será abordado a automatização de comandos com o Tcl/expect.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>pycompat: Verificando a versão do Python e do sistema de uma forma simples</title>
@@ -956,7 +1557,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/pycompat-verificando-a-versao-do-python-e-do-sistema-de-uma-forma-simples/</guid>
       <description>A algum tempo desenvolvi uma mini biblioteca chamada pycompat para verificar a versão do Python e do sistema de uma simples e funcional.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Hands On: Shared Libraries no Linux</title>
@@ -965,7 +1572,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/hands-on-shared-libraries-no-linux/</guid>
       <description>Bibliotecas compartilhadas são usadas em qualquer sistema operacional, seja Windows, Linux, Mac OSX ou qualquer *BSD ou *NIX.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Introdução ao ALSA e sua API em C e Python</title>
@@ -974,7 +1587,13 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
       
       <guid>https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/</guid>
       <description>O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Informações de localização pelo CEP com PHP</title>
@@ -996,7 +1615,13 @@ print_r($localizacao);
 //array() = (&#39;cep&#39;,&#39;89050000&#39;,&#39;logradouro&#39;,&#39;Avenida Brasil&#39;, &#39;bairro&#39;,&#39;Ponta Aguda&#39;, &#39;cidade&#39;,&#39;Blumenau&#39;,&#39;uf&#39;,&#39;Santa Catarina&#39;)
 
 &lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel uma verdadeira caixa de ferramentas para PHP</title>
@@ -1005,7 +1630,13 @@ print_r($localizacao);
       
       <guid>https://butecotecnologico.com.br/laravel-uma-verdadeira-caixa-de-ferramentas-para-php/</guid>
       <description>Laravel é sem dúvida um dos frameworks de desenvolvimento mais promissores da atualidade para PHP, conforme podemos ver no gráfico abaixo, ele segue disparado na frente.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Stack Overflow Introduz Snippets JavaScript, CSS, e HTML Executáveis.</title>
@@ -1014,7 +1645,13 @@ print_r($localizacao);
       
       <guid>https://butecotecnologico.com.br/stack-overflow-introduz-snippets-javascript-css-e-html-executaveis/</guid>
       <description>No Stack Overflow e outros sites relacionados, criar um exemplo de código é a melhor maneira de obter resposta à sua pergunta.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>QEMU/KVM: Habilitar serial console no CentOS/RHEL para acessá-lo pelo virsh console</title>
@@ -1023,7 +1660,13 @@ print_r($localizacao);
       
       <guid>https://butecotecnologico.com.br/qemukvm-habilitar-serial-console-no-centosrhel-para-acessa-lo-pelo-virsh-console/</guid>
       <description>Olá pessoal, a alguns dias atrás eu precisei fazer alguns testes usando o QEMU/KVM, e para isso foi necessário o acesso a uma máquina virtual com CentOS utilizando o virsh console.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>40&#43; eBooks Gratuitos</title>
@@ -1032,7 +1675,13 @@ print_r($localizacao);
       
       <guid>https://butecotecnologico.com.br/40-ebooks-gratis/</guid>
       <description>A Syncfusion está disponibilizando mais de 40 livros gratuitamente. Os livros abrangem de forma sucinta o assunto abordado e cada livro possui cerca de 100 páginas.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Pyston 0.2 já está disponível</title>
@@ -1041,7 +1690,13 @@ print_r($localizacao);
       
       <guid>https://butecotecnologico.com.br/pyston-0-2-ja-esta-disponivel/</guid>
       <description>O Pyston 0.2 foi anunciado ontem (11/09) e contém várias melhorias se comparado a versão inicial.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Capturando Imagem da Webcam com o PyGame</title>
@@ -1050,7 +1705,14 @@ print_r($localizacao);
       
       <guid>https://butecotecnologico.com.br/capturando-imagem-da-webcam-com-o-pygame/</guid>
       <description>Este é o meu primeiro post no blog e gostaria de falar sobre o PyGame.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Desenvolvimento on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/desenvolvimento/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

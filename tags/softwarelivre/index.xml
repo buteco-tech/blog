@@ -3,14 +3,15 @@
   <channel>
     <title>softwarelivre on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/softwarelivre/</link>
-    <description>Recent content in softwarelivre on Buteco Tecnológico</description>
+    <description>Recent content in softwarelivre on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>softwarelivre on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/softwarelivre/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 05 Nov 2015 22:39:46 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/softwarelivre/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 05 Nov 2015 22:39:46 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/softwarelivre/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LibreOffice Magazine Número 19</title>
       <link>https://butecotecnologico.com.br/libreoffice-magazine-numero-19/</link>
@@ -20,7 +21,13 @@
       <description>&lt;p&gt;Saiu a nova edição da LibreOffice Magazine!&lt;/p&gt;
 &lt;p&gt;Nesta edição o homenageado é o LibreOffice, onde é contado como tudo começou, qual a situação atual do projeto, sobre os cinco anos de desenvolvimento e os três anos da LibreOffice Magazine. Faz também, uma homenagem aos autores dos artigos das dezenove edições, em agradecimento pelo trabalho realizado até aqui.&lt;/p&gt;
 &lt;p&gt;Além destes, os temas abordados foram:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>softwarelivre on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/softwarelivre/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Café com Software Livre - Testemunho</title>
@@ -31,7 +38,13 @@
       <description>&lt;p&gt;Parte da equipe do Buteco Open Source esteve no Café com Software Livre, neste final de semana que passou. Daremos aqui uma visão geral sobre o evento.&lt;/p&gt;
 &lt;p&gt;O propósito do evento é fortalecer o software livre e correlatos, integrando os grupos com este mesmo objetivo no estado de Santa Catarina, mas isto não quer dizer que outros não possam vir ;) . Como este evento é organizado pelo pessoal do &lt;a href=&#34;http://www.blusol.org&#34; target=&#34;_blank&#34;&gt;Blusol&lt;/a&gt;, normalmente acontece em Blumenau ou região, neste ano foi na cidade de Indaial.&lt;/p&gt;
 &lt;p&gt;Cá entre nós, ele também serve para mostrar que não vivemos só da Oktoberfest, só que este evento é regado pela cafeína e frequentado por Nerds :)&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>softwarelivre on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/softwarelivre/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>FISL 16</title>
@@ -40,7 +53,13 @@
       
       <guid>https://butecotecnologico.com.br/fisl-16/</guid>
       <description>O FISL sempre conta com grandes personalidades nacionais e internacionais do Sofware Livre e está na sua 16º edição, o evento acontecerá na cidade de Porto Alegre no período 8 a 11 de Julho.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>softwarelivre on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/softwarelivre/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>FLISoL 2015</title>
@@ -51,7 +70,14 @@
       <description>O que é FLISoL?
 O Festival Latino-americano de Instalação de Software Livre (FLISoL) é o maior evento da América Latina de divulgação de Software Livre. Ele é realizado desde o ano de 2005, e desde 2008 sua realização acontece no 4º sábado de abril de cada ano.
 Seu principal objetivo é promover o uso de Software Livre, mostrando ao público em geral sua filosofia, abrangência, avanços e desenvolvimento.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>softwarelivre on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/softwarelivre/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

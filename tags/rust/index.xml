@@ -3,14 +3,15 @@
   <channel>
     <title>rust on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/rust/</link>
-    <description>Recent content in rust on Buteco Tecnológico</description>
+    <description>Recent content in rust on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>rust on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/rust/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 04 Nov 2015 07:07:34 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/rust/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 04 Nov 2015 07:07:34 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rust 1.4 já está disponível</title>
       <link>https://butecotecnologico.com.br/rust-1-4-ja-esta-disponivel/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/rust-1-4-ja-esta-disponivel/</guid>
       <description>Na última quinta (29/10) foi liberada a versão 1.4 da linguagem de programação Rust.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>rust on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/rust/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.3 já está disponível</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/rust-1-3-ja-esta-disponivel/</guid>
       <description>Rust 1.3 é a mais nova versão stable disponível da linguagem de programação desenvolvida pela Mozilla.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>rust on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/rust/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.0 já está disponível</title>
@@ -36,7 +49,13 @@
       
       <guid>https://butecotecnologico.com.br/rust-1-0-ja-esta-disponivel/</guid>
       <description>Rust é uma nova linguagem de programação com o objetivo de tornar simples a construção de sistemas eficientes e confiáveis. Rust combina o controle de baixo nível sobre o desempenho com comodidade e segurança de alto nível.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>rust on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/rust/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.0 Alpha já está disponível</title>
@@ -45,7 +64,13 @@
       
       <guid>https://butecotecnologico.com.br/rust-1-0-alpha-ja-esta-disponivel/</guid>
       <description>Rust 1.0 Alpha foi lançado hoje.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>rust on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/rust/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.0 será lançado em 2015</title>
@@ -54,7 +79,13 @@
       
       <guid>https://butecotecnologico.com.br/rust-1-0-sera-lancado-em-2015/</guid>
       <description>O blog oficial da linguagem Rust compartilhou nesta sexta-feira (12/12) seus planos para 2015.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>rust on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/rust/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 0.12.0 é lançado</title>
@@ -63,7 +94,14 @@
       
       <guid>https://butecotecnologico.com.br/rust-0-12-0-e-lancado/</guid>
       <description>O Rust 0.12.0 foi lançado ontem (09/10) e esta nova versão traz nova documentação e melhoria na antiga, incluindo O Guia Rust, que substitui o tutorial antigo.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>rust on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/rust/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

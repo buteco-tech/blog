@@ -3,14 +3,15 @@
   <channel>
     <title>ubuntu on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/ubuntu/</link>
-    <description>Recent content in ubuntu on Buteco Tecnológico</description>
+    <description>Recent content in ubuntu on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>ubuntu on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/ubuntu/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 19 Jun 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 19 Jun 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Distribuições Linux</title>
       <link>https://butecotecnologico.com.br/podcast/distribuicoes-linux/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/podcast/distribuicoes-linux/</guid>
       <description>Você sabe o que é uma distribuição Linux? Neste episódio do nosso podcast discutimos sobre o assunto, abordando alguns dos principais projetos envolvidos, como tudo começou, o cenário atual e por fim falamos sobre a posição do Brasil nessa história.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>ubuntu on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/ubuntu/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Ubuntu 20.04 LTS (Focal Fossa)</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/ubuntu-20-04-lts/</guid>
       <description>Confira as novidadades e impressões desta nova versão após algumas semanas de uso.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>ubuntu on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/ubuntu/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Adicionando Swap ao CentOS, Ubuntu e derivados</title>
@@ -38,7 +51,13 @@
       <description>&lt;p&gt;Para você que acabou de criar a sua primeira VM no Digital Ocean e pegou logo de cara a de 512 de RAM, você vai se ver no aperto dependendo da aplicação que colocar para executar nela. Para solucionar possíveis problemas de falta de memória vamos adicionar Swap a esta máquina tão simplória.&lt;/p&gt;
 &lt;p&gt;Aplicações simples como o MySQL e o Jenkins rodando nessas máquinas poder gerar alguma dor de cabeça caso você não identifique que o problema é falta de memória. Por exemplo, no meu caso o Jenkins parava a execução dos testes no meio, pois recebia um SIGKILL de alguém, provavelmente do S.O. O mais estranho é que o Jenkins continuava executando, apenas parava o Job que estava em execução. A solução foi bem simples, adicionar uma Swap, já que não queríamos aumentar os valores com VMs do DO.&lt;/p&gt;
 &lt;p&gt;O tutorial de hoje é baseado no CentOS e no Ubuntu. Fiz a mesma configuração em duas VMs distintas. A maioria das distros suportam os comandos e sistemas de arquivos aqui mencionados.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>ubuntu on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/ubuntu/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando o Ubuntu MATE 15.04 no Raspberry PI 2</title>
@@ -50,7 +69,14 @@
 &lt;p&gt;Nesse artigo irei mostrar a instalação do Ubuntu MATE 15.04 no Raspberry PI 2.&lt;/p&gt;
 &lt;p&gt;O Raspberry PI 2 foi cedido pela Loja Mundi e você pode olhar esse e outros produtos clicando &lt;a href=&#34;http://www.lojamundi.com.br/embarcados-raspberry-cubieboard-beagleboneblack.html/?utm_source=Blog&amp;amp;utm_medium=Banner&amp;amp;utm_campaign=ButecoOpenSource&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;O Ubuntu MATE teve algumas atualizações em relação a versão anterior, Ubuntu MATE 14.10.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>ubuntu on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/ubuntu/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

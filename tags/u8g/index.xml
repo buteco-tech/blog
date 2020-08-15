@@ -3,14 +3,15 @@
   <channel>
     <title>u8g on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/u8g/</link>
-    <description>Recent content in u8g on Buteco Tecnológico</description>
+    <description>Recent content in u8g on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>u8g on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/u8g/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 11 Apr 2016 18:52:21 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/u8g/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 11 Apr 2016 18:52:21 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/u8g/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Utilizando display OLED I2C no ESP8266</title>
       <link>https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/</link>
@@ -20,7 +21,14 @@
       <description>&lt;p&gt;Displays são sempre úteis em projetos relacionados a Internet das Coisas (IoT). Por exemplo, supondo que estamos desenvolvendo alguma forma de monitoramento de temperatura com o ESP8266, qual a forma mais simples de ficar sabendo a temperatura atual? Creio que seja exibindo-a em um display, certo?&lt;/p&gt;
 &lt;p&gt;Sendo assim, o tutorial de hoje irá mostrar como utilizar um display OLED I2C de 0.96 polegadas, pode parecer pequeno, mas acredite, é possível inserir bastante informação nele.&lt;/p&gt;
 &lt;p&gt;O display que estou utilizando é o &lt;a&gt;OLED com controlador SSD1306&lt;/a&gt; com tamanho de 128x64 pixels, que utiliza barramento I2C, suportado pelos ESP-07, ESP-12, entre outros. O I2C é suportado pelo ESP8266, porém placas como a ESP-01 não disponibilizam este pino.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>u8g on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/u8g/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

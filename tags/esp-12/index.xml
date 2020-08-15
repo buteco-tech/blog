@@ -3,14 +3,15 @@
   <channel>
     <title>esp-12 on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/esp-12/</link>
-    <description>Recent content in esp-12 on Buteco Tecnológico</description>
+    <description>Recent content in esp-12 on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>esp-12 on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/esp-12/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 05 Feb 2016 12:38:14 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/esp-12/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 05 Feb 2016 12:38:14 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/esp-12/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Relógio RTC com o ESP8266</title>
       <link>https://butecotecnologico.com.br/rtc-com-esp8266/</link>
@@ -19,7 +20,13 @@
       <guid>https://butecotecnologico.com.br/rtc-com-esp8266/</guid>
       <description>&lt;p&gt;No artigo de hoje veremos como utilizar um RTC (&lt;em&gt;Real Time Clock&lt;/em&gt;) com o dispositivo ESP8266. Este módulo incorpora funções Wi-Fi e foi pensado para projetos de baixo custo para mobilidade, eletrônicos vestíveis, Internet das Coisas (IoT), e o que sua criatividade permitir.&lt;/p&gt;
 &lt;p&gt;Este artigo pode ser um tanto quanto simples, mas utilizar um RTC (&lt;em&gt;Real Time Clock&lt;/em&gt;) em um projeto é de grande importância as vezes. Principalmente quando desejamos monitorar algo em determinados horários. Vamos pegar um exemplo básico, supondo que você esteja monitorando a temperatura do ambiente, é interessante saber a hora da medição para calcular a variação de temperatura durante um determinado período. Sim, este é um exemplo simples, mas exemplifica claramente o uso de um RTC.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>esp-12 on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/esp-12/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Primeiros passos com o ESP8266</title>
@@ -29,7 +36,14 @@
       <guid>https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/</guid>
       <description>Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.
 O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>esp-12 on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/esp-12/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

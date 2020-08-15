@@ -3,14 +3,15 @@
   <channel>
     <title>developer on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/developer/</link>
-    <description>Recent content in developer on Buteco Tecnológico</description>
+    <description>Recent content in developer on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>developer on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/developer/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 18 Dec 2015 08:53:04 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/developer/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 18 Dec 2015 08:53:04 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/developer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sexta da Tirinha</title>
       <link>https://butecotecnologico.com.br/sexta-da-tirinha-30/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-30/</guid>
       <description>A todos os backend developers :)</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>developer on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/developer/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -27,7 +34,14 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-26/</guid>
       <description>E a guerra santa está por ai, em cada empresa ou grupo de amigos!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>developer on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/developer/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

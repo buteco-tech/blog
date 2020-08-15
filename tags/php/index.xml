@@ -3,14 +3,15 @@
   <channel>
     <title>php on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/php/</link>
-    <description>Recent content in php on Buteco Tecnológico</description>
+    <description>Recent content in php on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>php on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/php/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 11 May 2016 20:10:22 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/php/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 11 May 2016 20:10:22 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/php/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Acompanhe o TDC Floripa sem sair de casa</title>
       <link>https://butecotecnologico.com.br/acompanhe-o-tdc-floripa-sem-sair-de-casa/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/acompanhe-o-tdc-floripa-sem-sair-de-casa/</guid>
       <description>Acompanhe o TDC Floripa direto da sua casa, e de graça!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PHP e Performance, parte 1</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/performance-com-php-parte-1/</guid>
       <description>&lt;p style=&#34;text-align: left;&#34;&gt;Algo que alguns criticam no PHP é questão de performance, sempre digo que PHP é uma linguagem performática para o que ele se propõe a fazer. Contudo, performance não é algo simples, existem centenas de milhares de fatores que podem interferir, começando pelo hardware usado até a alocação desnecessária de variáveis.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Como usar o MongoDB com PHP</title>
@@ -36,7 +49,13 @@
       
       <guid>https://butecotecnologico.com.br/como-usar-o-mongodb-com-php/</guid>
       <description>&lt;p&gt;Dentre os bancos de dados NoSQL da atualidade um dos mais usados é o MongoDB, seja pela sua eficiência em trabalhar com enormes volumes de dados ou pela sua flexibilidade, algo comum em bancos NoSQL. Abordaremos neste artigo como trabalhar com ele no PHP.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5.2 lançado, veja as novidades</title>
@@ -47,7 +66,13 @@
       <description>&lt;p&gt;A mais nova versão do Laravel foi  lançada finalmente. Nessa versão 5.2 tivemos diversas melhorias e algumas novidades, veja abaixo algumas delas:&lt;/p&gt;
 &lt;p style=&#34;text-align: center;&#34;&gt;&lt;strong&gt;Drivers múltiplos para autenticação&lt;/strong&gt;&lt;/p&gt;
 Nas versões anteriores do Laravel, somente era possível ter um único model para autenticação do usuário. Agora é possível ter mais de um, é possível ter tabelas diferentes para perfis diferentes como admin e usuário por exemplo.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -56,7 +81,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-30/</guid>
       <description>A todos os backend developers :)</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Codeception, testes de interface</title>
@@ -67,7 +98,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       <description>&lt;p&gt;Fala galera,&lt;/p&gt;
 &lt;p&gt;Mais uma vez falando sobre o &lt;a href=&#34;http://codeception.com/&#34; target=&#34;_blank&#34;&gt;Codeception&lt;/a&gt;, no post passado mostrei como fazer o setup inicial e como começar a usá lo com testes unitários. Clique &lt;a href=&#34;https://butecotecnologico.com.br/?p=3182&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; para ver o post anterior.&lt;/p&gt;
 &lt;p&gt;Testes unitários são provavelmente o primeiro tipo de teste que você vai ver em qualquer tutorial, são os testes mais simples de serem feitos e provavelmente, os mais importantes. São os testes unitários que vão testar as suas funções, as suas classes, as suas regras de negócio e sua integração com o banco. Para este último, apesar de na prática não há diferença, existe uma especialização dos testes unitários, que são os testes de integração. A diferença entre um teste unitário e de integração é basicamente que o teste de integração faz acesso a um recurso externo, seja ele um banco de dados, uma API, ou qualquer outra coisa. Não irei abordar esse tipo de teste aqui, pois na prática os testes de integração são testes unitários.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Codeception, testes em PHP para todos</title>
@@ -78,7 +115,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       <description>&lt;p&gt;Olá galera, tudo certo ?&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;message_content&#34;&gt;Hoje veremos como utilizar o framework de teste chamado Codeception. Eu acabei esbarrando com essa ferramenta por acaso enquanto estava pesquisando ferramentas mais completas do que o PHPUnit para criar testes no PHP. Vamos lá então?
 &lt;/span&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -87,7 +130,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-18/</guid>
       <description>Hoje nossa tirinha é um pouco diferente, na verdade se trata de um desabafo de um Web Designer.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5.1 do começo ao fim, parte 2</title>
@@ -96,7 +145,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       
       <guid>https://butecotecnologico.com.br/laravel-5-1-do-comeco-ao-fim-parte-2/</guid>
       <description>Segundo vídeo da série que fala sobre a versão 5.1 do framework PHP Laravel</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5.1 do começo ao fim (em vídeo)</title>
@@ -105,7 +160,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       
       <guid>https://butecotecnologico.com.br/laravel-5-1-do-comeco-ao-fim-video/</guid>
       <description>Primeiro vídeo da série falando sobre o laravel 5.1</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>HHVM está rodando mais rápido que o próprio PHP 7</title>
@@ -114,7 +175,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       
       <guid>https://butecotecnologico.com.br/hhvm-esta-rodando-mais-rapido-que-o-proprio-php-7/</guid>
       <description>&lt;p&gt;&lt;span id=&#34;spelling-correction&#34; class=&#34;gt-spell-correct-message&#34;&gt;A&lt;/span&gt; &lt;span class=&#34;hps&#34;&gt;equipe do Facebook&lt;/span&gt; &lt;span class=&#34;hps&#34;&gt;que está trabalhando no projeto&lt;/span&gt; &lt;span class=&#34;hps&#34;&gt;HHVM (aka HipHop Virtual Machine) ,&lt;/span&gt; que é um interpretador &lt;span class=&#34;hps&#34;&gt;otimizado&lt;/span&gt; para o &lt;span class=&#34;hps&#34;&gt;PHP&lt;/span&gt; &lt;span class=&#34;hps&#34;&gt;usando sua linguagem &lt;strong&gt;Hack&lt;/strong&gt;, declararam seus resultados após algumas semanas de concentração para obter melhorias de performance em projetos de código aberto.&lt;/span&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Integrando o Doctrine ORM e Laravel 5 [parte-1]</title>
@@ -123,7 +190,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       
       <guid>https://butecotecnologico.com.br/integrando-o-doctrine-orm-e-laravel-5-parte-1/</guid>
       <description>Veja este que é a primeira parte de um série sobre a integração do Doctrine ORM, uma biblioteca para se trabalhar com banco de dados e mapeamento, com o Laravel 5 o framework mais popular atualmente para PHP</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Resultado do Sorteio do livro PHP Moderno</title>
@@ -132,7 +205,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       
       <guid>https://butecotecnologico.com.br/resultado-do-sorteio-do-livro-php-moderno/</guid>
       <description>Primeiramente gostaríamos de agradecer a todos os inscritos, no total foram 271 participantes, mas infelizmente não temos como entregar uma cópia do livro para cada um.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Últimas horas para participar do sorteio do livro PHP Moderno</title>
@@ -142,7 +221,13 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       <guid>https://butecotecnologico.com.br/ultimas-horas-para-participar-do-sorteio-do-livro-php-moderno/</guid>
       <description>Nosso sorteio está quase chegando, e você já fez a sua inscrição?
 Não deixe de participar do sorteio do livro PHP Moderno.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sorteio do livro PHP Moderno</title>
@@ -153,7 +238,13 @@ Não deixe de participar do sorteio do livro PHP Moderno.</description>
       <description>A Novatec, nossa parceira, nos cedeu o livro PHP Moderno para sorteio.
 O prazo para participação inicia hoje (06/05) e vai até o dia 20/05. O ganhador será anunciado no dia 22/05.
 Lembre-se, quanto mais você compartilhar, maior serão as suas chances.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Confira os novos livros da Novatec</title>
@@ -163,7 +254,13 @@ Lembre-se, quanto mais você compartilhar, maior serão as suas chances.</descri
       <guid>https://butecotecnologico.com.br/confira-os-novos-livros-da-novatec/</guid>
       <description>A Novatec, nossa parceira, acabou de lançar alguns novos títulos voltados a quem gosta de Web.
 Confira o que estes títulos abordam.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 do começo ao fim [parte 4]</title>
@@ -172,7 +269,13 @@ Confira o que estes títulos abordam.</description>
       
       <guid>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-4/</guid>
       <description>Nesta quarta parte do tutorial veremos um pouco da parte de testes do Laravel 5, uma boa pratica que todos deveriam adotar mas que muitas vezes é simplesmente ignorada.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lumen um micro-framework baseado no Laravel</title>
@@ -181,7 +284,13 @@ Confira o que estes títulos abordam.</description>
       
       <guid>https://butecotecnologico.com.br/lumen-um-micro-framework-baseado-no-laravel/</guid>
       <description>O tão esperado Lumen foi finalmente lançado, um projeto baseado no Laravel 5 e que segue a mesma linha dos micro-frameworks Silex e Slim, porém, segundo alguns benchmarks, com desempenho superior. Veja como começar seu projeto usando o recem lançado Lumen!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PHP 7 virá em 2015!</title>
@@ -190,7 +299,13 @@ Confira o que estes títulos abordam.</description>
       
       <guid>https://butecotecnologico.com.br/php-7-vira-em-2015/</guid>
       <description>Soube hoje que a versão 7 do PHP terá seu primeiro release em 2015, mais especificamente no mês de outubro, segundo um infografo disponibilizado pela Zend (disponivel neste link), a versão 7 do PHP continua o processo de tornar a linguagem mais concisa e podemos dizer mais próxima da linguagem C++.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 do começo ao fim [parte 3]</title>
@@ -199,7 +314,13 @@ Confira o que estes títulos abordam.</description>
       
       <guid>https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-3/</guid>
       <description>Este artigo apresenta a terceira parte de um tutorial sobre o framework PHP Laravel 5, apresentando como usar a parte de criação de model e view do framework</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 do começo ao fim [parte 2]</title>
@@ -208,7 +329,13 @@ Confira o que estes títulos abordam.</description>
       
       <guid>https://butecotecnologico.com.br/tutorial-laravel-5-parte-2/</guid>
       <description>Esta é a segunda parte do tutorial sobre Laravel 5, caso você não tenha ainda visto, veja a primeira parte dessa série neste link.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando o Apache no CentOS 7</title>
@@ -218,7 +345,13 @@ Confira o que estes títulos abordam.</description>
       <guid>https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/</guid>
       <description>Dando continuidade ao tutorial de instalação do LAMP no CentOS, hoje vamos ver como instalar o Apache. No tutorial anterior, vimos como instalar o MariaDB.
 O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.20% dos servidores ativos no mundo. Além disso, é a principal tecnologia da Apache Software Foundation.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 do começo ao fim [parte 1]</title>
@@ -227,7 +360,13 @@ O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.2
       
       <guid>https://butecotecnologico.com.br/tutorial-laravel-5/</guid>
       <description>Mostrarei a seguir um breve tutorial sobre o Laravel, um dos frameworks mais usados atualmente para PHP, com o lançamento do Laravel 5 houve algumas mudanças, e algumas delas você verá a seguir.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel 5 é finalmente lançado!</title>
@@ -236,7 +375,13 @@ O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.2
       
       <guid>https://butecotecnologico.com.br/laravel-5-e-finalmente-lancado/</guid>
       <description>Novidades com Laravel 5</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Crie seu próprio Instagram com PHP</title>
@@ -245,7 +390,13 @@ O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.2
       
       <guid>https://butecotecnologico.com.br/crie-seu-proprio-instagram-com-php/</guid>
       <description>Olá pessoal! Hoje mostrarei como fazer uma edição e tratamento básico de imagens com PHP, para quem não sabe o PHP possui uma extensão dedicada para trabalhar com entidades gráficas, a php_gd2, consequentemente para este tutorial vamos precisar desta extensão habilitada e do PHP na versão 5.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Controle de dependência em PHP usando o composer</title>
@@ -254,7 +405,13 @@ O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.2
       
       <guid>https://butecotecnologico.com.br/controle-de-dependencia-em-php-usando-o-composer/</guid>
       <description>Atualmente existem diversos projetos que fazem a atividade de controle de dependências, no caso do PHP uma das mais usadas é o composer, um programa extremamente simples de ser usado e que pode lhe economizar muito tempo, segue um breve tutorial de como usá-lo.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Usando o framework Laravel com Bootstrap</title>
@@ -263,7 +420,13 @@ O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.2
       
       <guid>https://butecotecnologico.com.br/usando-o-framework-laravel-com-bootstrap/</guid>
       <description>Este post tem o objetivo de mostrar de maneira fácil e rápida como utilizar o poder do artisan do laravel para geração de telas de cadastros apenas com linha de comando.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Gerador de sistemas em PHP usando apenas SQL</title>
@@ -272,7 +435,13 @@ O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.2
       
       <guid>https://butecotecnologico.com.br/gerador-de-sistemas-em-php-usando-apenas-sql/</guid>
       <description>Fala pessoal, a alguns dias achei um site muito interessante que gostaria de compartilhar, o Rizer, ele é um projeto gratuito que a partir do SQL dump do banco gera o projeto final do sistema, achei uma ferramenta muito boa para quem está começando no PHP, ele suporta 3 frameworks, o CodeIgniter, Laravel e CakePHP.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Apigility, Web Service com Zend Framework</title>
@@ -281,7 +450,13 @@ O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.2
       
       <guid>https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/</guid>
       <description>Com a variedade de clientes que acessam nossas aplicações hoje fica cada vez mais difícil criar algo que atenda a todos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Informações de localização pelo CEP com PHP</title>
@@ -303,7 +478,13 @@ print_r($localizacao);
 //array() = (&#39;cep&#39;,&#39;89050000&#39;,&#39;logradouro&#39;,&#39;Avenida Brasil&#39;, &#39;bairro&#39;,&#39;Ponta Aguda&#39;, &#39;cidade&#39;,&#39;Blumenau&#39;,&#39;uf&#39;,&#39;Santa Catarina&#39;)
 
 &lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Laravel uma verdadeira caixa de ferramentas para PHP</title>
@@ -312,7 +493,14 @@ print_r($localizacao);
       
       <guid>https://butecotecnologico.com.br/laravel-uma-verdadeira-caixa-de-ferramentas-para-php/</guid>
       <description>Laravel é sem dúvida um dos frameworks de desenvolvimento mais promissores da atualidade para PHP, conforme podemos ver no gráfico abaixo, ele segue disparado na frente.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>php on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/php/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

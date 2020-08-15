@@ -3,14 +3,15 @@
   <channel>
     <title>sensores on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/sensores/</link>
-    <description>Recent content in sensores on Buteco Tecnológico</description>
+    <description>Recent content in sensores on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>sensores on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/sensores/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 28 May 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/sensores/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 28 May 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/sensores/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Entendendo carros autônomos</title>
       <link>https://butecotecnologico.com.br/entendendo-carros-autonomos/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/entendendo-carros-autonomos/</guid>
       <description>Carros autônomos estão cada vez mais presentes em nossas vidas, mas o que é um carro autônomo de fato?</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>sensores on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/sensores/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sensor de temperatura e umidade no Arduino</title>
@@ -33,7 +40,14 @@
     &lt;li&gt;Sensor de Umidade e Temperatura DHT11, que pode ser comprado &lt;a href=&#34;http://www.filipeflop.com/pd-6b8f7-sensor-de-umidade-e-temperatura-dht11.html?utm_source=BlogButeco&amp;utm_medium=Banner&amp;utm_campaign=ButecoOpenSource&#34;&gt;aqui&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;Resistor 10K&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>sensores on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/sensores/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

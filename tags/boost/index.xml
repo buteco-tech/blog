@@ -3,14 +3,15 @@
   <channel>
     <title>boost on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/boost/</link>
-    <description>Recent content in boost on Buteco Tecnológico</description>
+    <description>Recent content in boost on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>boost on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/boost/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 27 Apr 2015 16:23:46 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/boost/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 27 Apr 2015 16:23:46 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/boost/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cliente / Server com Boost.Asio</title>
       <link>https://butecotecnologico.com.br/cliente-server-com-boost-asio/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/cliente-server-com-boost-asio/</guid>
       <description>Artigo que mostra um exemplo da utilização da biblioteca boost com asio.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>boost on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/boost/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

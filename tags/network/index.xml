@@ -3,14 +3,15 @@
   <channel>
     <title>network on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/network/</link>
-    <description>Recent content in network on Buteco Tecnológico</description>
+    <description>Recent content in network on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>network on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/network/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 05 Jan 2016 23:09:47 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/network/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 05 Jan 2016 23:09:47 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Como utilizar o getaddrinfo para evitar a falha GHOST</title>
       <link>https://butecotecnologico.com.br/como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost/</guid>
       <description>&lt;p&gt;Em janeiro de 2015 se ouviu falar de uma falha de segurança na glibc chamada GHOST. Esta falha poderia ser explorada por um programa malicioso utilizando as funções &lt;code&gt;gethostbyname()&lt;/code&gt; e &lt;code&gt;gethostbyname2()&lt;/code&gt; da glibc. O ataque acontece por um &lt;em&gt;buffer overflow&lt;/em&gt; dentro destas funções quando um endereço inválido é passando como parâmetro. Ao explorar esta falha, o atacante consegue executar códigos arbitrários com as permissões do usuários executando o processo.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>network on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/network/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

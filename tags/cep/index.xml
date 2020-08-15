@@ -3,14 +3,15 @@
   <channel>
     <title>cep on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/cep/</link>
-    <description>Recent content in cep on Buteco Tecnológico</description>
+    <description>Recent content in cep on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>cep on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/cep/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 23 Sep 2014 13:30:48 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/cep/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 23 Sep 2014 13:30:48 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/cep/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Informações de localização pelo CEP com PHP</title>
       <link>https://butecotecnologico.com.br/informacoes-de-localizacao-pelo-cep-com-php/</link>
@@ -31,7 +32,14 @@ print_r($localizacao);
 //array() = (&#39;cep&#39;,&#39;89050000&#39;,&#39;logradouro&#39;,&#39;Avenida Brasil&#39;, &#39;bairro&#39;,&#39;Ponta Aguda&#39;, &#39;cidade&#39;,&#39;Blumenau&#39;,&#39;uf&#39;,&#39;Santa Catarina&#39;)
 
 &lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>cep on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/cep/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>matplot on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/matplot/</link>
-    <description>Recent content in matplot on Buteco Tecnológico</description>
+    <description>Recent content in matplot on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>matplot on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/matplot/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 07 Oct 2015 23:40:15 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/matplot/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 07 Oct 2015 23:40:15 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/matplot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Criando gráficos com matplot</title>
       <link>https://butecotecnologico.com.br/criando-graficos-com-matplot/</link>
@@ -19,7 +20,14 @@
       <guid>https://butecotecnologico.com.br/criando-graficos-com-matplot/</guid>
       <description>&lt;p&gt;Criado por &lt;a href=&#34;https://en.wikipedia.org/wiki/John_D._Hunter&#34; target=&#34;_blank&#34;&gt;John Hunter (1968-2012)&lt;/a&gt; , &lt;a href=&#34;http://matplotlib.org/index.html&#34; target=&#34;_blank&#34;&gt;matplot&lt;/a&gt; é usada para criação de &lt;em&gt;plots&lt;/em&gt;, histogramas, espectrogramas, gráficos (&lt;em&gt;charts&lt;/em&gt;) simples e 3D e etc. Para ter uma ideia da diversidade dessa ferramenta, você pode visitar a &lt;a href=&#34;http://matplotlib.org/gallery.html&#34; target=&#34;_blank&#34;&gt;galeria de exemplos&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Neste artigo, vou fazer uma demonstração bem simples, onde apresentarei como criar um gráfico de barras (&lt;em&gt;barchart&lt;/em&gt;) em python. Para isso, você deve fazer a instalação de algumas bibliotecas. No meu caso, estou usando um &lt;em&gt;Debian-like&lt;/em&gt;, então substitua o gerenciador de pacotes de acordo com sua distro.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>matplot on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/matplot/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

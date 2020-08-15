@@ -3,14 +3,15 @@
   <channel>
     <title>mqtt on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/mqtt/</link>
-    <description>Recent content in mqtt on Buteco Tecnológico</description>
+    <description>Recent content in mqtt on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>mqtt on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/mqtt/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 05 Apr 2016 16:37:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/mqtt/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 05 Apr 2016 16:37:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/mqtt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Conhecendo os módulos do NodeMCU</title>
       <link>https://butecotecnologico.com.br/conhecendo-os-modulos-do-nodemcu/</link>
@@ -19,7 +20,13 @@
       <guid>https://butecotecnologico.com.br/conhecendo-os-modulos-do-nodemcu/</guid>
       <description>&lt;p&gt;O &lt;a href=&#34;http://nodemcu.com/index_en.html&#34; target=&#34;_blank&#34;&gt;NodeMCU&lt;/a&gt; é um firmware baseado no &lt;a href=&#34;http://www.eluaproject.net/&#34; target=&#34;_blank&#34;&gt;eLua&lt;/a&gt; para os dispositivos ESP8266. Se você deseja saber mais sobre o firmware recomendo a leitura do artigo &lt;a href=&#34;https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266&#34;&gt;NodeMCU: Lua para o ESP8266&lt;/a&gt; que publiquei recentemente. Neste artigo o foco foi a apresentação do firmware e como fazer o flash do seu dispositivo.&lt;/p&gt;
 &lt;p&gt;Com o decorrer dos projetos que fazem uso do ESP8266 e NodeMCU, eventualmente será necessário criar um firmware com módulos que não fazem parte da distribuição padrão. Sendo assim, o artigo de hoje visa explicar brevemente o que é cada um dos módulos disponíveis. Builds customizadas podem ser feitas através do site &lt;a href=&#34;http://nodemcu-build.com/&#34; target=&#34;_blank&#34;&gt;NodeMCU custom builds&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>mqtt on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/mqtt/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>MQTT Parte 2: Enviando e recebendo mensagens</title>
@@ -29,7 +36,13 @@
       <guid>https://butecotecnologico.com.br/mqtt-parte-2-enviando-e-recebendo-mensagens/</guid>
       <description>&lt;p&gt;Na &lt;a href=&#34;https://butecotecnologico.com.br/mqtt-parte-1-o-que-e-mqtt&#34;&gt;primeira parte&lt;/a&gt; sobre o protocolo MQTT (&lt;em&gt;Message Queue Telemetry Transport&lt;/em&gt;) demos uma breve introdução ao assunto, explicando o seu funcionamento, &lt;em&gt;brokers&lt;/em&gt; e &lt;em&gt;clients&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Hoje o artigo é mais prático que teórico. Inicialmente vamos instalar/configurar o &lt;em&gt;broker&lt;/em&gt; e após vamos criar em cliente MQTT que irá ser conectar ao &lt;em&gt;broker&lt;/em&gt; para enviar ou receber mensagens.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>mqtt on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/mqtt/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>MQTT Parte 1: O que é MQTT?</title>
@@ -39,7 +52,14 @@
       <guid>https://butecotecnologico.com.br/mqtt-parte-1-o-que-e-mqtt/</guid>
       <description>&lt;p&gt;O protocolo &lt;em&gt;Message Queue Telemetry Transport&lt;/em&gt; (MQTT) está presente no dia a dia da Internet das Coisas (IoT) e o seu principal uso é fazer as máquinas conversarem, também conhecido como Machine-to-Machine (M2M).&lt;/p&gt;
 &lt;p&gt;Nos últimos artigos temos dado ênfase aos sistemas embarcados, mais especificamente o NodeMCU e ao ESP8266. Pois bem, o NodeMCU possui embutido um &lt;a href=&#34;http://nodemcu.readthedocs.org/en/dev/en/modules/mqtt/&#34; target=&#34;_blank&#34;&gt;cliente MQTT&lt;/a&gt; para a versão 3.1.1 do protocolo. No artigo de hoje não vou me ater ao NodeMCU, mas sim, irei explicar o que é o protocolo em si, pois ele pode ser utilizado em outros ambientes, além de sistemas embarcados.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>mqtt on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/mqtt/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

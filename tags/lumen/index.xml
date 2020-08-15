@@ -3,14 +3,15 @@
   <channel>
     <title>lumen on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/lumen/</link>
-    <description>Recent content in lumen on Buteco Tecnológico</description>
+    <description>Recent content in lumen on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>lumen on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/lumen/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 14 Apr 2015 11:37:46 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/lumen/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 14 Apr 2015 11:37:46 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/lumen/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lumen um micro-framework baseado no Laravel</title>
       <link>https://butecotecnologico.com.br/lumen-um-micro-framework-baseado-no-laravel/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/lumen-um-micro-framework-baseado-no-laravel/</guid>
       <description>O tão esperado Lumen foi finalmente lançado, um projeto baseado no Laravel 5 e que segue a mesma linha dos micro-frameworks Silex e Slim, porém, segundo alguns benchmarks, com desempenho superior. Veja como começar seu projeto usando o recem lançado Lumen!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>lumen on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/lumen/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

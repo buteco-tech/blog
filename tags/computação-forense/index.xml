@@ -3,14 +3,15 @@
   <channel>
     <title>computação forense on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/computa%C3%A7%C3%A3o-forense/</link>
-    <description>Recent content in computação forense on Buteco Tecnológico</description>
+    <description>Recent content in computação forense on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>computação forense on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/computa%C3%A7%C3%A3o-forense/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 09 Jun 2015 22:46:34 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/computa%C3%A7%C3%A3o-forense/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 09 Jun 2015 22:46:34 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/computa%C3%A7%C3%A3o-forense/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Conheça o Security Cast</title>
       <link>https://butecotecnologico.com.br/conheca-o-security-cast/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/conheca-o-security-cast/</guid>
       <description>É um webcast, mas podemos chamar de um bate papo sobre vulnerabilidades, computação forense, ferramentas de segurança, privacidade, certificações, ataques, defesas, mercado e muitos outros assuntos ligados à área de Segurança da Informação. Participam os especialistas em Segurança da Informação Alberto Azevedo, Alcyon Junior, Gilberto Sudré e Gustavo Martinelli.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>computação forense on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/computa%C3%A7%C3%A3o-forense/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>linguagem-programação on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/linguagem-programa%C3%A7%C3%A3o/</link>
-    <description>Recent content in linguagem-programação on Buteco Tecnológico</description>
+    <description>Recent content in linguagem-programação on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>linguagem-programação on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/linguagem-programa%C3%A7%C3%A3o/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 22 Sep 2015 09:06:05 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/linguagem-programa%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 22 Sep 2015 09:06:05 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/linguagem-programa%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rust 1.3 já está disponível</title>
       <link>https://butecotecnologico.com.br/rust-1-3-ja-esta-disponivel/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/rust-1-3-ja-esta-disponivel/</guid>
       <description>Rust 1.3 é a mais nova versão stable disponível da linguagem de programação desenvolvida pela Mozilla.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>linguagem-programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/linguagem-programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.0 Alpha já está disponível</title>
@@ -27,7 +34,14 @@
       
       <guid>https://butecotecnologico.com.br/rust-1-0-alpha-ja-esta-disponivel/</guid>
       <description>Rust 1.0 Alpha foi lançado hoje.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>linguagem-programação on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/linguagem-programa%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

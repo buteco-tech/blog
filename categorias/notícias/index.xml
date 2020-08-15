@@ -3,14 +3,15 @@
   <channel>
     <title>Notícias on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
-    <description>Recent content in Notícias on Buteco Tecnológico</description>
+    <description>Recent content in Notícias on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>Notícias on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Sat, 15 Aug 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/categorias/not%C3%ADcias/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 15 Aug 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/categorias/not%C3%ADcias/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nós mudamos!</title>
       <link>https://butecotecnologico.com.br/nos-mudamos-para-buteco-tech/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/nos-mudamos-para-buteco-tech/</guid>
       <description>Novidades para nossos leitores e ouvintes.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Livros gratuitos</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/livros-gratuitos-abril-2020/</guid>
       <description>Aproveite o tempo em casa para ler alguns livros que estão de graça.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lançamentos Novatec: Linguagem SQL e Minecraft</title>
@@ -39,7 +52,13 @@
 &lt;p align=&#34;center&#34;&gt;&lt;strong&gt;Introdução à Linguagem SQL&lt;/strong&gt;&lt;/p&gt;
 Se você trabalha em uma empresa ou é profissional de TI, vai se beneficiar da leitura de &lt;a href=&#34;http://www.novatec.com.br/livros/introducao-sql&#34; target=&#34;_blank&#34;&gt;Introdução à Linguagem SQL&lt;/a&gt;, um guia prático introdutório que ensina a obter e transformar dados com o SQL de maneira significativa. Rapidamente, dominará os aspectos básicos do SQL e aprenderá como criar seus próprios bancos de dados.
 &lt;p&gt;O livro contém exercícios que vão ajudar o leitor a praticar suas recém descobertas aptidões no uso do SQL sem precisar empregar um ambiente de servidor de banco de dados. Aprenderá também  a usar instruções-chave do SQL para encontrar e manipular seus dados, e descobrirá como projetar e gerenciar eficientemente bancos de dados que atendam às suas necessidades.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Mesa muito próximo do OpenGL 4.2 e 4.3</title>
@@ -48,7 +67,13 @@ Se você trabalha em uma empresa ou é profissional de TI, vai se beneficiar da 
       
       <guid>https://butecotecnologico.com.br/mesa-muito-proximo-do-opengl-4-2-e-4-3/</guid>
       <description>&lt;p&gt;Há muito tempo que esperamos ter um bom suporte a jogos no Linux, e em partes isso já é realidade com a Steam e com os muitos jogos que já foram portados. Ainda assim, muito dos jogos AAA ainda precisam de um driver proprietário para poderem ser executados, mas isto pode mudar em breve.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lançamentos Novatec: Sass e Compass e Docker</title>
@@ -57,7 +82,13 @@ Se você trabalha em uma empresa ou é profissional de TI, vai se beneficiar da 
       
       <guid>https://butecotecnologico.com.br/lancamentos-novatec-sass-e-compass-e-docker/</guid>
       <description>Fundamentos de Sass e Compass Título é indicado para estudantes, designers e desenvolvedores que querem aprender os conceitos fundamentais de Sass e Compass</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lançamentos Novatec: Android, Pentest e Segurança Web</title>
@@ -67,7 +98,13 @@ Se você trabalha em uma empresa ou é profissional de TI, vai se beneficiar da 
       <guid>https://butecotecnologico.com.br/lancamentos-novatec-android-pentest-e-seguranca-web/</guid>
       <description>Android Essencial
 Título é um resumo do conteúdo do best-seller Google Android</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>50% de desconto em livros da Novatec</title>
@@ -77,7 +114,13 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       <guid>https://butecotecnologico.com.br/50-de-desconto-em-livros-da-novatec/</guid>
       <description>&lt;p&gt;A Novatec está com uma promoção de 50% em alguns títulos da O&amp;rsquo;Reilly para compras efetuadas no site da Novatec. Confira abaixo alguns dos livros da promoção.&lt;/p&gt;
 &lt;p&gt;&lt;img class=&#34;aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/livros-promocao-novatec.png&#34; alt=&#34;Livros Promoção Novatec&#34; /&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lançado Raspberry PI 3 Modelo B</title>
@@ -87,7 +130,13 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       <guid>https://butecotecnologico.com.br/lancado-raspberry-pi-3-modelo-b/</guid>
       <description>&lt;p&gt;Em celebração ao quarto ano da The Raspberry PI Foundation, foi anunciado hoje no blog &lt;a href=&#34;http://rasbperry.org&#34; target=&#34;_blank&#34;&gt;rasbperry.org&lt;/a&gt; o novo Raspberry PI 3 Modelo B.&lt;/p&gt;
 &lt;p&gt;&lt;img class=&#34;aligncenter size-full wp-image-4905&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/RPI05B3.jpg&#34; alt=&#34;RPI05B3&#34; width=&#34;938&#34; height=&#34;525&#34; /&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Novidades que virão no GCC 6</title>
@@ -96,7 +145,13 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       
       <guid>https://butecotecnologico.com.br/novidades-que-virao-no-gcc-6/</guid>
       <description>Postagem sobre novos recursos do GCC 6 ainda a ser lançado.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Novatec lança 5ª Edição do livro “Expressões Regulares – Uma abordagem divertida”</title>
@@ -107,7 +162,13 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       <description>&lt;p&gt;Você procura uma sigla em um texto longo, mas não lembra direito quais eram as letras. Só lembra que era uma sigla de quatro letras. Simples, procure por [A-Z]{4}.&lt;/p&gt;
 &lt;p&gt;Revisando aquela tese de mestrado, você percebe que digitou errado o nome daquele pesquisador alemão famoso. E foram várias vezes. Escreveu Miller, Mueller e Müler, quando na verdade era Müller. Que tal corrigir todos de uma vez? Fácil, use a expressão M(i|ue|ü)ll?er.&lt;/p&gt;
 &lt;p&gt;Que tal encontrar todas as palavras repetidas repetidas em seu texto? Ou garantir que há um espaço em branco após todas as vírgulas e os pontos finais?&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lançamentos Novatec: Apocalipse zumbi com Arduino e Raspberry e AWS em ação</title>
@@ -120,7 +181,13 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
 Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Cozinhando o animal de estimação da família? Decapitando vizinhos que viraram zumbis?
 &lt;p&gt;Se ler o livro &lt;a href=&#34;http://novatec.com.br/livros/guia-maker-zumbi-arduino-raspberry/&#34; target=&#34;_blank&#34;&gt;Guia do maker para o apocalipse zumbi&lt;/a&gt; você estará construindo fortalezas, criando armadilhas, gerando eletricidade e criando dispositivos eletrônicos essenciais para a sua sobrevivência.&lt;/p&gt;
 &lt;p&gt;Com uma narrativa objetiva e bem-humorada, o livro &lt;a href=&#34;http://novatec.com.br/livros/guia-maker-zumbi-arduino-raspberry/&#34; target=&#34;_blank&#34;&gt;Guia do maker para o apocalipse zumbi&lt;/a&gt;, lançado pela &lt;a href=&#34;http://www.novatec.com.br/&#34;&gt;Novatec Editora&lt;/a&gt;, ensina tudo o que você precisa saber (e fazer) para se preparar para o apocalipse zumbi, e como utilizar Arduino e Raspberry Pi para criar circuitos simples para se defender.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Feliz 2016!</title>
@@ -129,7 +196,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
       
       <guid>https://butecotecnologico.com.br/feliz-2016/</guid>
       <description>Mais um ano que se foi, 2015, um ano de muitas novidades e novas experiências, boas ou ruins, todas foram em prol do fortalecimento.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -140,7 +213,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
       <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
 &lt;p&gt;Já apresentamos aqui no Buteco Open Source o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;primeiro&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2&#34; target=&#34;_blank&#34;&gt;segundo&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-3&#34; target=&#34;_blank&#34;&gt;terceiro&lt;/a&gt; e &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-4&#34; target=&#34;_blank&#34;&gt;quarto&lt;/a&gt; episódios da série.&lt;/p&gt;
 &lt;p&gt;Neste vídeo da série &lt;em&gt;World Without Linux Episode #&lt;/em&gt;&lt;em&gt;5&lt;/em&gt;&lt;em&gt;: &lt;/em&gt;&lt;em&gt;Space Exploration&lt;/em&gt; (Mundo Sem Linux Episódio #5: Exploração Espacial), tenta demonstrar a importância do Linux na exploração espacial.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Novatec lança 2a edição do livro Dominando o Android</title>
@@ -150,7 +229,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
       <guid>https://butecotecnologico.com.br/novatec-lanca-2a-edicao-do-livro-dominando-o-android/</guid>
       <description>&lt;p&gt;O Android é a plataforma para dispositivos móveis do Google que se tornou líder no mercado mobile mundial, e vem impressionando pela quantidade de recursos que proporcionam uma envolvente e estimulante interação com smartphones e tablets.&lt;/p&gt;
 &lt;p&gt;Os estudantes e profissionais de desenvolvimento que querem aprender a desenvolver aplicativos para Android, a &lt;a href=&#34;http://novatec.com.br/&#34; target=&#34;_blank&#34;&gt;Novatec Editora&lt;/a&gt; lança o livro &lt;a href=&#34;http://novatec.com.br/livros/dominando-android-2ed/&#34; target=&#34;_blank&#34;&gt;Dominando o Android – 2&lt;sup&gt;a&lt;/sup&gt; edição&lt;/a&gt;, do autor Nelson Glauber. A nova edição foi ampliada e atualizada, e o título tem mais de 900 páginas de abordagem dos conceitos mais básicos até as técnicas mais avançadas do assunto.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -161,7 +246,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
       <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
 &lt;p&gt;Já apresentamos aqui no Buteco Open Source o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;primeiro&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2&#34; target=&#34;_blank&#34;&gt;segundo&lt;/a&gt; e &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-3&#34; target=&#34;_blank&#34;&gt;terceiro&lt;/a&gt; episódios da série. Este vídeo, &lt;em&gt;World Without Linux Episode 4: Avatar Reimagined&lt;/em&gt; (Mundo Sem Linux Episódio 4: Avatar Reimaginado), tenta demonstrar a importância do Linux aos filmes.&lt;/p&gt;
 &lt;p&gt;Lembrem cada episódio tem &lt;em&gt;Easter Eggs&lt;/em&gt; novos para serem descobertos.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Black Friday de Componentes Eletrônicos é na FILIPEFLOP</title>
@@ -170,7 +261,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
       
       <guid>https://butecotecnologico.com.br/black-friday-de-componentes-eletronicos-e-na-filipeflop/</guid>
       <description>Black Friday é o nome dado ao dia seguinte ao &amp;ldquo;Dia de Ação de Graças&amp;rdquo; dos EUA, uma importante data comemorativa para o varejo americano, quando são praticados descontos altíssimos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Segunda temporada de caçada de bugs no LibreOffice 5.1</title>
@@ -179,7 +276,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
       
       <guid>https://butecotecnologico.com.br/segunda-temporada-de-cacada-de-bugs-no-libreoffice-5-1/</guid>
       <description>São anunciadas as datas do bug hunt da versão 5.1 do LibreOffice</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>LibreOffice Magazine Número 19</title>
@@ -190,7 +293,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
       <description>&lt;p&gt;Saiu a nova edição da LibreOffice Magazine!&lt;/p&gt;
 &lt;p&gt;Nesta edição o homenageado é o LibreOffice, onde é contado como tudo começou, qual a situação atual do projeto, sobre os cinco anos de desenvolvimento e os três anos da LibreOffice Magazine. Faz também, uma homenagem aos autores dos artigos das dezenove edições, em agradecimento pelo trabalho realizado até aqui.&lt;/p&gt;
 &lt;p&gt;Além destes, os temas abordados foram:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.4 já está disponível</title>
@@ -199,7 +308,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
       
       <guid>https://butecotecnologico.com.br/rust-1-4-ja-esta-disponivel/</guid>
       <description>Na última quinta (29/10) foi liberada a versão 1.4 da linguagem de programação Rust.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Nova versão do Lumina</title>
@@ -209,7 +324,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
       <guid>https://butecotecnologico.com.br/nova-versao-do-lumina/</guid>
       <description>&lt;p&gt;Você já ouviu falar ou leu sobre o Lumina?&lt;/p&gt;
 &lt;p&gt;Pois bem, nem só de KDE, Gnome, console, vive o FreeBSD :P, agora ele tem o Lumina. O Lumina  é um projeto de WM (&lt;em&gt;Window Manager&lt;/em&gt;) da XSystem desenhado para FreeBSD, desenvolvido de uma maneira para ser portável, funcionando em várias distribuições Linux. A solução vem sendo projetada em conjunto com o PC-BSD, o qual disponibiliza versões com Lumina atualizado.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PyPy 4.0 já está disponível</title>
@@ -219,7 +340,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
       <guid>https://butecotecnologico.com.br/pypy-4-0-ja-esta-disponivel/</guid>
       <description>&lt;p&gt;O PyPy 4.0 foi liberado nesta quinta (29/10) e vem com várias novidades em relação as versões anteriores.&lt;/p&gt;
 &lt;p&gt;O PyPy é uma alternativa a outros interpretadores como CPython, Jython e IronPython, e de acordo com os &lt;a href=&#34;http://speed.pypy.org/&#34; target=&#34;_blank&#34;&gt;diversos benchmarks&lt;/a&gt; publicados, o mais rápido entre eles.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -230,7 +357,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
       <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
 &lt;p&gt;Já apresentamos &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; no Buteco Open Source o primeiro episódio da série, &lt;em&gt;What&amp;rsquo;s the Name of that Song?&lt;/em&gt; (Qual o Nome Daquela Música?), que fez uma brincadeira para demonstrar os sistemas de busca.&lt;/p&gt;
 &lt;p&gt;Neste segundo vídeo da série, &lt;em&gt;World Without Linux Episode 2: Are We There Yet?&lt;/em&gt; (Mundo Sem Linux Episódio 2: Já chegamos?), tenta demonstrar a importância do Linux para os GPSs, que não está em todos (os aparelhos), mas sem ele teríamos poucas opções no mercado.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Confira algumas novidades do kernel Linux 4.3</title>
@@ -248,7 +381,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
 	&lt;li&gt;Melhorias mínimas em &lt;em&gt;drivers&lt;/em&gt; de &lt;em&gt;framebuffer&lt;/em&gt;&lt;/li&gt;
 	&lt;li&gt;Várias mudanças para gráficos Intel e diversas melhorias em &lt;em&gt;drivers&lt;/em&gt; DRM&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>O valor do open source</title>
@@ -258,7 +397,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
       <guid>https://butecotecnologico.com.br/o-valor-do-open-source/</guid>
       <description>&lt;p lang=&#34;pt-PT&#34;&gt;Desde 2008, o &lt;em&gt;The Linux Foudation&lt;/em&gt; tem trabalhado com desenvolvedores e empresas de tecnologia para hospedar projetos &lt;em&gt;open source&lt;/em&gt; de vários segmentos da indústria de tecnologia, ajudando a resolver problemas complexos e adaptando os princípios e práticas que fizeram e fazem do Linux o que ele é.&lt;/p&gt;
 &lt;p lang=&#34;pt-PT&#34;&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>NVIDIA anuncia driver 358 (beta) para Linux, Solaris e FreeBSD</title>
@@ -267,7 +412,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
       
       <guid>https://butecotecnologico.com.br/nvidia-anuncia-driver-358-beta-para-linux-solaris-e-freebsd/</guid>
       <description>&lt;p&gt;A NVIDIA disponibilizou a primeira versão pública beta do &lt;em&gt;driver&lt;/em&gt; 358 (358.09) para Linux, FreeBSD e Solaris. Construído sobre o driver 355, a série 358 acrescenta mais peças ao quebra-cabeças da interface com DRM/KMS (&lt;em&gt;Direct Rendering Manager/Kernel Mode Setting&lt;/em&gt;) e continua melhorando o suporte ao Mir/Wayland.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -279,7 +430,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
 &lt;p&gt;De acordo com a descrição da organização,&lt;/p&gt;
 &lt;blockquote&gt;Linux é o maior projeto de colaboração do mundo na história da computação. Ele roda a maior parte da infraestrutura de tecnologia do mundo e é apoiado por mais desenvolvedores e empresas do que qualquer outra plataforma. Está literalmente em toda parte - desde seu telefone até seu carro e escritório. Ele também alimenta a Internet, a nuvem, bolsas de valores do mundo, os supercomputadores, sistemas embarcados e muito mais.
 &lt;p&gt;Um mundo sem Linux é uma série que trará uma realidade confusa para ilustrar de forma divertida quão difundido o Linux é hoje. Este mundo fictício é uma ideia tão absurda que os cenários retratados na série vão nos ajudar a entender quanto o Linux é faz parte da nossa vida cotidiana e nos permite agradecer aos desenvolvedores e empresas que apoiam o Linux.&lt;/blockquote&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Otto: O sucessor do Vagrant</title>
@@ -288,7 +445,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
       
       <guid>https://butecotecnologico.com.br/otto-o-sucessor-do-vagrant/</guid>
       <description>&lt;p&gt;Foi anunciado ontem o Otto, sucessor do Vagrant. Sendo criado pela mesma equipe, este projeto é focado em desenvolvimento e &lt;em&gt;deploy&lt;/em&gt; de aplicações de uma maneira simplificada, sendo a ferramenta mais poderosa já desenvolvida por eles.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Novidades do GNOME 3.18</title>
@@ -309,7 +472,13 @@ Onde você vai estar quando o apocalipse zumbi acontecer? Trancado no porão? Co
 	&lt;li&gt;Muitas outras melhorias e correções de bugs&lt;/li&gt;
 &lt;/ul&gt;
 Como de praxe, a GNOME foundation também libera um vídeo mostrando as melhorias desta nova versão:</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Google anuncia Brotli</title>
@@ -320,7 +489,13 @@ Como de praxe, a GNOME foundation também libera um vídeo mostrando as melhoria
       <description>&lt;p style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/DataCompression.jpg&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-3441&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/DataCompression-300x225.jpg&#34; alt=&#34;DataCompression&#34; width=&#34;300&#34; height=&#34;225&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.com.br/2015/09/introducing-brotli-new-compression.html&#34; target=&#34;_blank&#34;&gt;blog de open source&lt;/a&gt; uma nova implementação para o Brotli, um algoritmo de compressão de dados sem perda (de dados) com propósito geral. Este novo algoritmo é melhor e mais rápido que o &lt;a href=&#34;https://github.com/google/zopfli&#34; target=&#34;_blank&#34;&gt;Zopfli&lt;/a&gt;, que foi anunciado há dois anos e, de acordo com &lt;a href=&#34;http://www.gstatic.com/b/brotlidocs/brotli-2015-09-22.pdf&#34; target=&#34;_blank&#34;&gt;estudo&lt;/a&gt; feito pela equipe de compressão de dados, em comparação com outros métodos e algoritmos de compactação.
 &lt;p style=&#34;text-align: right;&#34;&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.3 já está disponível</title>
@@ -329,7 +504,13 @@ Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.c
       
       <guid>https://butecotecnologico.com.br/rust-1-3-ja-esta-disponivel/</guid>
       <description>Rust 1.3 é a mais nova versão stable disponível da linguagem de programação desenvolvida pela Mozilla.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Novatec lança livro para pais e crianças aprenderem programação juntos</title>
@@ -339,7 +520,13 @@ Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.c
       <guid>https://butecotecnologico.com.br/novatec-lanca-livro-para-pais-e-criancas-aprenderem-programacao-juntos/</guid>
       <description>&lt;p&gt;&lt;em&gt;“Ensine seus filhos a programar” tem explicações passo a passo na linguagem Python&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Os tempos mudaram e as crianças dessa geração não querem mais apenas jogar jogos que alguém criou ou usar programas que outra pessoa produziu. Elas querem fazer parte do processo, entender o que há por trás de tudo e usar a imaginação e o conhecimento para criarem seus próprios aplicativos, jogos, sites e animações.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Parece que o jogo Alien: Isolation está chegando ao Linux</title>
@@ -349,7 +536,13 @@ Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.c
       <guid>https://butecotecnologico.com.br/parece-que-o-jogo-alien-isolation-esta-chegando-ao-linux/</guid>
       <description>&lt;p&gt;Com a nova versão do Catalyst 15.9 para Linux, foi mencionada uma correção para o jogo Alien: Isolation, mas esse jogo ainda não está disponível para Linux.&lt;/p&gt;
 &lt;p&gt;Isso não seria uma grande surpresa visto que o game já consta na SteamDB a alguns meses. Fique ligado, pois o Alien: Isolation poderá ser lançado em breve! O game foi lançado para Windows em 2015, e este jogo de ação/aventura utiliza uma nova engine desenvolvida pela Creative Assembly.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Novatec lança livro que ensina a criar jogos em Python com PyGame</title>
@@ -359,7 +552,13 @@ Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.c
       <guid>https://butecotecnologico.com.br/novatec-lanca-livro-que-ensina-a-criar-jogos-em-python-com-pygame/</guid>
       <description>&lt;p&gt;&lt;em&gt;Título ensina técnicas, dicas e truques dos maiores desenvolvedores de jogos do mundo &lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Desenvolvedores Python interessados em aprender a criar seus primeiros jogos têm agora um material completo com as melhores práticas, técnicas e truques para criar jogos atraentes usando a biblioteca PyGame.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Mais correções no RC3 do Mesa 11.0</title>
@@ -368,7 +567,13 @@ Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.c
       
       <guid>https://butecotecnologico.com.br/mais-correcoes-no-rc3-do-mesa-11-0/</guid>
       <description>&lt;p&gt;O terceiro Release Candidate do Mesa 11.0 está disponível. Esta nova versão traz várias correções para os drivers R600g e RadeonSI, Nouveau NV50, Freedreno, atualizações no driver i965 e uma série de outras coisas.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Aniversário do Buteco!</title>
@@ -377,7 +582,13 @@ Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.c
       
       <guid>https://butecotecnologico.com.br/aniversario-do-buteco/</guid>
       <description>Aniversário do Buteco!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Novatec lança livro “Automatize tarefas maçantes com Python”</title>
@@ -387,7 +598,13 @@ Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.c
       <guid>https://butecotecnologico.com.br/novatec-lanca-livro-automatize-tarefas-macantes-com-python/</guid>
       <description>&lt;p align=&#34;center&#34;&gt;&lt;i&gt;Título ensina a criar programas que fazem em minutos o que exigiria horas para ser feito manualmente&lt;/i&gt;&lt;/p&gt;
 Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gastam uma boa quantidade de tempo dos desenvolvedores. Seria excelente se o computador pudesse executar estas tarefas sozinho enquanto o tempo do profissional é aproveitado para fazer coisas mais importantes.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Kali Linux 2.0 já tem data para o lançamento</title>
@@ -396,7 +613,13 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
       
       <guid>https://butecotecnologico.com.br/kali-linux-2-0-ja-tem-data-para-o-lancamento/</guid>
       <description>&lt;p&gt;A &lt;a href=&#34;https://www.offensive-security.com/&#34; target=&#34;_blank&#34;&gt;Offensive Security&lt;/a&gt;, criadora e mantenedora do Kali Linux, divulgou um vídeo de pré-lançamento da nova versão do Kali Linux; com lançamento oficial previsto para 11 de agosto de 2015. A equipe, nos últimos meses, tem trabalhado ferozmente nessa próxima versão – que promete muita coisa nova. No vídeo divulgado, a empresa mostra toda a cronologia de desenvolvimento da ferramenta, desde da época do BackTrack, e por fim as novidades da nova versão, confira.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Finalmente: Mesa ganha suporte a OpenGL 4.0, e está proximo do 4.1 e 4.2</title>
@@ -405,7 +628,13 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
       
       <guid>https://butecotecnologico.com.br/finalmente-mesa-ganha-suporte-a-opengl-4-0-e-esta-proximo-do-4-1-e-4-2/</guid>
       <description>&lt;p&gt;Depois de cinco anos da especificação do OpenGL 4.0 ser introduzido, o projeto open source Mesa 3D finalmente ganhou suporte a todas as extensões necessárias, sendo que existem patches pendentes que estão implementando as extensões das especificações 4.1 e 4.2. O desenvolvedor responsável pelos patches da versão 4.0 do Mesa foi o David Airlie, da Red Hat.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Projeto open source pretende mapear o mundo para cadeirantes</title>
@@ -416,7 +645,13 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
       <description>&lt;p&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/wheelmap-logo-e1435718201487.png&#34;&gt;&lt;img class=&#34;alignnone size-large wp-image-2929&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/wheelmap-logo-1024x520.png&#34; alt=&#34;wheelmap-logo&#34; width=&#34;648&#34; height=&#34;329&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Encontrar estabelecimentos acessíveis por cadeiras de rodas pode ser trabalhoso, mas um projeto open source quer mudar ao menos um pouco essa história. Chamada de WheelMap, a iniciativa é bem isso: um mapa que indica locais que primam (ou não) pela acessibilidade.&lt;/p&gt;
 &lt;p&gt;Baseado no &lt;a href=&#34;http://www.openstreetmap.org/&#34; target=&#34;_blank&#34;&gt;OpenStreetMap&lt;/a&gt;, o serviço é bastante simples e qualquer um pode colaborar. Lojas, lanchonetes, bancos e outros pontos registrados no sistema são exibidos em seus respectivos locais no mapa, e um clique sobre o ícone permite classificá-los como “acessível por cadeira de rodas”, “parcialmente acessível” ou “inacessível”.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Novatec lança livro sobre domínios na internet</title>
@@ -426,7 +661,13 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
       <guid>https://butecotecnologico.com.br/novatec-lanca-livro-sobre-dominios-na-internet/</guid>
       <description>&lt;p&gt;Nomes de domínio são mais do que uma forma de identificar um computador na internet. Eles são também um nome que constitui uma importante ferramenta para o exercício negocial, empresarial, governamental, informacional e de mercado.&lt;/p&gt;
 &lt;p&gt;O livro &lt;a href=&#34;http://novatec.com.br/livros/nomesdominio/&#34;&gt;Nomes de domínio na internet&lt;/a&gt;, recém lançado pela &lt;a href=&#34;http://www.novatec.com.br/&#34;&gt;Novatec Editora&lt;/a&gt;, chega ao mercado para apresentar o conteúdo que advogados, juízes, desembargadores, estudantes e membros da comunidade jurídica em geral precisam conhecer sobre os nomes de domínio, incluindo sua origem, conceito, natureza jurídica, e as regras e procedimentos para efetivação, transferência e cancelamento.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Veja o que virá de novo no Linux 4.2</title>
@@ -435,7 +676,13 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
       
       <guid>https://butecotecnologico.com.br/veja-o-que-vira-de-novo-no-linux-4-2/</guid>
       <description>&lt;p&gt;No último dia 5 Linus fechou a &amp;ldquo;merge window&amp;rdquo;, período para inclusão de alterações para uma nova versão do Linux, e criou o primeiro Release Candidate do Linux 4.2. Ainda podem ser adicionada alguma &amp;ldquo;late feature&amp;rdquo; no kernel, mas as features abaixo são as que tem destaque nesta nova versão:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Firefox 39 traz melhorias de segurança</title>
@@ -445,7 +692,13 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
       <guid>https://butecotecnologico.com.br/firefox-39-traz-melhorias-de-seguranca/</guid>
       <description>&lt;p&gt;O Firefox 39.0 já está disponível e vem com melhorias de desempenho e correções de segurança. &lt;a href=&#34;https://www.mozilla.org/en-US/firefox/new/&#34; target=&#34;_blank&#34;&gt;Clique aqui&lt;/a&gt; caso queira fazer o download.&lt;/p&gt;
 &lt;p&gt;Dentre as novidades estão:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Siga nosso canal no Pushbullet</title>
@@ -454,7 +707,13 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
       
       <guid>https://butecotecnologico.com.br/siga-nosso-canal-no-pushbullet/</guid>
       <description>Se você possui o Pushbullet, convidamos você a seguir o nosso canal (@buteco) e ficar por dentro de todos os nossos novos artigos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rumores sobre a Microsoft comprar a AMD</title>
@@ -464,7 +723,13 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
       <guid>https://butecotecnologico.com.br/rumores-sobre-a-microsoft-comprar-a-amd/</guid>
       <description>&lt;p&gt;Na sequência de um relatório recente sobre a AMD ser dividida ou potencialmente vender suas unidades de negócio, existe um novo rumor sobre a Microsoft estar de olho na AMD.&lt;/p&gt;
 &lt;p&gt;De acordo com &lt;a href=&#34;http://www.kitguru.net/components/anton-shilov/microsoft-is-interested-to-buy-advanced-micro-devices-source/&#34; target=&#34;_blank&#34;&gt;relatório de hoje do KitGuru&lt;/a&gt;, um site aparentemente confiável focado em Windows, a Microsoft tem interesse em comprar a AMD. O interesse primário da Microsoft é sobre os chips do Xbox e divisão de games, mas também é possível que eles possam utilizar os chips da AMD para futuros tablets Surface, em Smartphones e outros.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Linux Mint 17.2 &#34;Rafaela&#34; RC já está disponível</title>
@@ -473,7 +738,13 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
       
       <guid>https://butecotecnologico.com.br/linux-mint-17-2-rafaela-ja-esta-disponivel/</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color: #333333;&#34;&gt;&lt;span style=&#34;font-family: Arial, sans-serif;&#34;&gt;&lt;span style=&#34;font-size: medium;&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;Essa semana foi lançado a nova versão do Linux Mint: 17.2 “Rafaela”, para Cinnamon e Mate. Esta versão é LTS (Long Term Support) com suporte até 2019. O Kernel padrão é 3.16, utiliza-se da base de pacotes do Ubuntu 14.04 e traz novas funcionalidades para deixar sua área de trabalho mais confortável.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conheça o Security Cast</title>
@@ -482,7 +753,13 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
       
       <guid>https://butecotecnologico.com.br/conheca-o-security-cast/</guid>
       <description>É um webcast, mas podemos chamar de um bate papo sobre vulnerabilidades, computação forense, ferramentas de segurança, privacidade, certificações, ataques, defesas, mercado e muitos outros assuntos ligados à área de Segurança da Informação. Participam os especialistas em Segurança da Informação Alberto Azevedo, Alcyon Junior, Gilberto Sudré e Gustavo Martinelli.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lançado a 70º edição da Revista Espírito Livre</title>
@@ -491,7 +768,13 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
       
       <guid>https://butecotecnologico.com.br/lancado-a-70o-edicao-da-revista-espirito-livre/</guid>
       <description>Vitória recebeu a oitava edição do Fórum Espírito Livre, ocorrido de 12 a 15 de novembro durante a 11º Semana Nacional de Ciência e Tecnologia. O evento aconteceu nas instalações na Universidade Federal do Espírito Santo – UFES. Participaram do evento diversos palestrantes de São Paulo, Rio de Janeiro, Minas Gerais, além de vários parceiros e colaboradores locais, possibilitando uma excelente troca de experiências, em um cenário bastante propício para tais debates.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>PyPy 2.6 já está disponível e 7x mais rápido que o CPython</title>
@@ -501,7 +784,13 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
       <guid>https://butecotecnologico.com.br/pypy-2-6-ja-esta-disponivel-e-7x-mais-rapido-que-o-cpython/</guid>
       <description>A versão 2.6 do PyPy foi liberada nesta segunda (01/06) e vem com uma série de melhorias em relação a versão 2.5, além de uma melhor compatibilidade com o Python e Numpy.
 Quando se trata de desempenho com PyPy 2.6, há uma melhora significativa obtida com a refatoração e limpeza de código para melhorar o desempenho JIT, além de ter resultado em uma melhora de desempenho de I/O para os módulos zlib e bz2.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Revista BSD Magazine número 70</title>
@@ -510,7 +799,13 @@ Quando se trata de desempenho com PyPy 2.6, há uma melhora significativa obtida
       
       <guid>https://butecotecnologico.com.br/revista-bsd-magazine-numero-70/</guid>
       <description>Edição 70 da revista BSD Magazine, uma revista especializada sobre sistemas operacionais BSD.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Novatec lança livro SQL e Teoria Relacional</title>
@@ -519,7 +814,13 @@ Quando se trata de desempenho com PyPy 2.6, há uma melhora significativa obtida
       
       <guid>https://butecotecnologico.com.br/novatec-lanca-livro-sql-e-teoria-relacional/</guid>
       <description>A linguagem de programação SQL pode ter diversas dificuldades e armadilhas para os mais descuidados. Mas este é um problema que pode ser solucionado caso o desenvolvedor compreenda e saiba colocar em prática a teoria relacional.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Fedup vai ser substituído no Fedora 23</title>
@@ -528,7 +829,13 @@ Quando se trata de desempenho com PyPy 2.6, há uma melhora significativa obtida
       
       <guid>https://butecotecnologico.com.br/fedup-vai-ser-substituido-no-fedora-23-2/</guid>
       <description>Artigo sobre nova abordagem da Red Hat sobre o atualizador Fedup, utilizado no Fedora</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Cupom de desconto nos livros da Casa do Código</title>
@@ -538,7 +845,13 @@ Quando se trata de desempenho com PyPy 2.6, há uma melhora significativa obtida
       <guid>https://butecotecnologico.com.br/cupom-de-desconto-nos-livros-da-casa-do-codigo/</guid>
       <description>Cada vez mais tentamos trazer o melhor conteúdo para nossos leitores, sendo assim fizemos mais uma parceria.
 Agora você pode comprar livros e e-Books na Casa do Código com 15% de desconto.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Internet das Coisas</title>
@@ -548,7 +861,13 @@ Agora você pode comprar livros e e-Books na Casa do Código com 15% de desconto
       <guid>https://butecotecnologico.com.br/internet-das-coisas/</guid>
       <description>A internet passou por várias mudanças importante desde que surgiu para o mundo, a ideia de comunição entre computadores evoluiu e hoje podemos conectar vários dispositivos como celulares, televisões, carros, videogames e etc..
 Foi em 1991 que começou a discussão sobre a conexão de objetos, quando a conexão de TCP/IP e a Internet que conhecemos começou a se tonar acessível. Bill Joy, cofundador da Sun Microsystems, teve a ideia de conectar várias redes e dispositivos.E foi em 1999 que Kevin Ashton, do MIT, propôs o termo “Internet das Coisas” após dez anos de estudo e projetos, escreveu o artigo “A Coisa da Internet das Coisas” para o RFID Journal, e a partir dai o termo se popularizou.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Alteração no padrão de URLs do Blog</title>
@@ -558,7 +877,13 @@ Foi em 1991 que começou a discussão sobre a conexão de objetos, quando a cone
       <guid>https://butecotecnologico.com.br/alteracao-no-padrao-de-urls-do-blog/</guid>
       <description>Percebemos que muitos usuários ao ver uma url como-fazer-parte-1 tentavam acessar como-fazer-parte-2. Porém como nossa url continha a data da postagem e isso não era possível.
 Sendo assim resolvemos mudar para um novo padrão que atende melhor nossos leitores.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>O Buteco está de cara nova</title>
@@ -567,7 +892,13 @@ Sendo assim resolvemos mudar para um novo padrão que atende melhor nossos leito
       
       <guid>https://butecotecnologico.com.br/o-buteco-esta-de-cara-nova-2/</guid>
       <description>Visando a melhoria de nosso Blog e a experiência de uso, fizemos uma alteração no nosso tema.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Wine 1.7.43 traz melhorias na arquitetura ARM64</title>
@@ -576,7 +907,13 @@ Sendo assim resolvemos mudar para um novo padrão que atende melhor nossos leito
       
       <guid>https://butecotecnologico.com.br/wine-1-7-43-traz-melhorias-na-arquitetura-arm64/</guid>
       <description>O Wine (acrônimo de &amp;ldquo;Wine Is Not an Emulator&amp;rdquo;) é um camada de compatibilidade que permite a execução de aplicativos Windows em vários sistemas operacionais POSIX-compliant, incluindo Linux, Mac OS X e BSD. Ao invés de simular a lógica interna do Windows, como um emulador normal, o Wine faz a tradução das chamadas de API do Windows em chamadas POSIX. Isto melhora o desempenho da aplicação e permite a integração de aplicação Windows com a sua área de trabalho.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.0 já está disponível</title>
@@ -585,7 +922,13 @@ Sendo assim resolvemos mudar para um novo padrão que atende melhor nossos leito
       
       <guid>https://butecotecnologico.com.br/rust-1-0-ja-esta-disponivel/</guid>
       <description>Rust é uma nova linguagem de programação com o objetivo de tornar simples a construção de sistemas eficientes e confiáveis. Rust combina o controle de baixo nível sobre o desempenho com comodidade e segurança de alto nível.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>QtGamepad: Adicionando suporte a Gamepad no Qt</title>
@@ -594,7 +937,13 @@ Sendo assim resolvemos mudar para um novo padrão que atende melhor nossos leito
       
       <guid>https://butecotecnologico.com.br/qtgamepad-adicionando-suporte-a-gamepad-no-qt/</guid>
       <description>Um dos mais novos módulos adicionados ao Qt Labs é o QtGamepad, um módulo inspirado na API Gamepad do HTML5. Apesar de inspirado no Gamepad HTML, ele segue o estilo de desenvolvimento do Qt.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Samsung anuncia entrada na família Arduino</title>
@@ -603,7 +952,13 @@ Sendo assim resolvemos mudar para um novo padrão que atende melhor nossos leito
       
       <guid>https://butecotecnologico.com.br/samsung-anuncia-entrada-na-familia-arduino/</guid>
       <description>A plataforma ARTIK está na categoria dos dispositivos compatíveis com Arduino, e seu foco é a Internet das Coisas. No momento existem três placas: ARTIK 1, ARTIK 5 e ARTIK 10. Todas as placas possuem processador ARM multi-core e Bluetooth Low Energy (BLE). As placas ARTIK 5 e ARTIK 10 contam também com Wi-Fi, BT, Zigbee e conexões Wirelles Multi-Thread</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Firefox 38 adiciona suporte a imagens responsivas e Ruby annotations</title>
@@ -612,7 +967,13 @@ Sendo assim resolvemos mudar para um novo padrão que atende melhor nossos leito
       
       <guid>https://butecotecnologico.com.br/firefox-38-adiciona-suporte-a-imagens-responsivas-e-ruby-annotations/</guid>
       <description>Post com algumas novas funcionalidades do Firefox 38, que está sendo liberado hoje (12/05),</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Projetos interessantes do GSoC 2015</title>
@@ -621,7 +982,13 @@ Sendo assim resolvemos mudar para um novo padrão que atende melhor nossos leito
       
       <guid>https://butecotecnologico.com.br/projetos-interessantes-do-gsoc-2015/</guid>
       <description>Uma breve lista com alguns dos pricipais projetos do GSoC deste ano.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Valve disponibiliza o OpenVR SDK</title>
@@ -630,7 +997,13 @@ Sendo assim resolvemos mudar para um novo padrão que atende melhor nossos leito
       
       <guid>https://butecotecnologico.com.br/valve-disponibiliza-o-openvr-sdk/</guid>
       <description>O OpenVR SDK é basicamente uma camada de abstração para os desenvolvedores de jogos e aplicativos para acessar esses hardwares de forma fácil, que por sua vez possui suporte para o HTC Vive Developer Edition, SteamVR controlador e Lighthouse.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Confira os novos livros da Novatec</title>
@@ -640,7 +1013,13 @@ Sendo assim resolvemos mudar para um novo padrão que atende melhor nossos leito
       <guid>https://butecotecnologico.com.br/confira-os-novos-livros-da-novatec/</guid>
       <description>A Novatec, nossa parceira, acabou de lançar alguns novos títulos voltados a quem gosta de Web.
 Confira o que estes títulos abordam.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Novidades que virão no Linux 4.1</title>
@@ -649,7 +1028,13 @@ Confira o que estes títulos abordam.</description>
       
       <guid>https://butecotecnologico.com.br/novidades-que-virao-no-linux-4-1/</guid>
       <description>Algumas novidades que virão com o kernel 4.1 do Linux, listando as principais melhorias desta nova versão.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>EXT4 com suporte a criptografia nativa</title>
@@ -658,7 +1043,13 @@ Confira o que estes títulos abordam.</description>
       
       <guid>https://butecotecnologico.com.br/ext4-com-suporte-a-criptografia-nativa/</guid>
       <description>EXT4 é a evolução do sistema de arquivos EXT3. De muitas maneiras, EXT4 é uma profunda melhoria sobre o  EXT3, sendo o EXT3, uma melhoria do EXT2.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GNOME 3.16.1 já está disponível</title>
@@ -667,7 +1058,13 @@ Confira o que estes títulos abordam.</description>
       
       <guid>https://butecotecnologico.com.br/gnome-3-16-1-ja-esta-disponivel/</guid>
       <description>O GNOME 3.16.1 foi disponibilizado hoje para download. Esta versão contempla atualizações sobre 3.16, liberada mês passado, e traz correções de BUGs, melhorias no próprio GNOME, atualização da documentação e traduções.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Novidades do kernel 4.0</title>
@@ -676,7 +1073,13 @@ Confira o que estes títulos abordam.</description>
       
       <guid>https://butecotecnologico.com.br/novidades-do-kernel-4-0/</guid>
       <description>Resumo das novas feature que serão vistas na versão 4.0 do kernel Linux</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GNOME 3.16 foi lançado</title>
@@ -685,7 +1088,13 @@ Confira o que estes títulos abordam.</description>
       
       <guid>https://butecotecnologico.com.br/gnome-3-16-foi-lancado/</guid>
       <description>Notas de lançamento da versão GNOME 3.16, com imagem e vídeo sobre as novas features.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Builder IDE - Nova IDE para criação de aplicações GNOME no Linux</title>
@@ -694,7 +1103,13 @@ Confira o que estes títulos abordam.</description>
       
       <guid>https://butecotecnologico.com.br/builder-ide-nova-ide-para-criacao-de-aplicacoes-gnome-no-linux/</guid>
       <description>Este post destaca as principais features da nova IDE Builder que esta sendo desenvolvida.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Google anuncia fim do Google Code</title>
@@ -704,7 +1119,13 @@ Confira o que estes títulos abordam.</description>
       <guid>https://butecotecnologico.com.br/google-anuncia-fim-do-google-code/</guid>
       <description>Com a maior parte dos projetos sendo hospedados no GitHub, incluindo vários da própria Google, a Google resolveu tirar do ar o seu serviço de hospedagem de código fonte, conhecido como Google Code.
 Para quem não o conhece, o Google Code é um serviço de hospedagem de código muito similar ao GitHub ou Bitbucket. Os seus serviços iniciaram em 2006, mas parece que a Google deixou este projeto de lado, pois ele ficou estagnado.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Novas mudanças no blog</title>
@@ -713,7 +1134,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/novas-mudancas-no-blog/</guid>
       <description>Se você acessa nosso blog com frequência, talvez você tenha percebido que tivemos alguns problemas de instabilidade nesta segunda e terça-feira.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>GnuPG 2.1.2 já está disponível</title>
@@ -722,7 +1149,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/gnupg-2-1-2-ja-esta-disponivel/</guid>
       <description>O GnuPG, também conhecido como GPG, permite criptografar e assinar dados e comunicação, possui um sistema de gerenciamento de chaves versátil, bem como módulos de acesso para os diretórios de chave pública. O GnuPG é uma ferramenta de linha de comando com recursos para uma fácil integração com outros aplicativos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Fedora 23 irá trocar o X.Org Server pelo Wayland</title>
@@ -731,7 +1164,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/fedora-23-ira-trocar-o-x-org-server-pelo-wayland/</guid>
       <description>Enquanto muito se falava em trocar o X.Org Sever pelo Wayland como sendo algo distante, parece que o Fedora 23 irá fazer acontecer.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>MediaFire libera toolkit para desenvolvedores Linux</title>
@@ -740,7 +1179,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/mediafire-libera-toolkit-para-desenvolvedores-linux/</guid>
       <description>O MediaFire, um serviço de backup e hospedagem de arquivos, liberou um toolkit Open-Source para desenvolvedores que usam Linux.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Mozilla libera suporte ao WebVR no Firefox Nightly</title>
@@ -749,7 +1194,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/mozilla-libera-suporte-ao-webvr-no-firefox-nightly/</guid>
       <description>Recentemente a Mozilla liberou suporte ao WebVR no Firefox Nightly.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Vazam detalhes do Snapdrangon 820</title>
@@ -758,7 +1209,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/vazam-detalhes-do-snapdrangon-820/</guid>
       <description>Vários detalhes sobre os novos processadores da Qualcomm para a segunda metade de 2015 parecem ter vazado.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Carregamento de hardware/driver assíncrono no kernel Linux</title>
@@ -767,7 +1224,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/carregamento-de-hardwaredriver-assincrono-no-kernel-linux/</guid>
       <description>Enquanto o Chrome OS já tem o suporte ao carregamento de dispositivos/drivers assíncrono, o kernel linux ainda não.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>QEMU 2.3 trará suporte a CPU Ivy Bridge</title>
@@ -776,7 +1239,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/qemu-2-3-trara-suporte-a-cpu-ivy-bridge/</guid>
       <description>O QEMU é um emulador e virtualizador de máquinas e é totalmente Open Source. A versão 2.2 foi lançada há pouco mais de um mês (09/12), e para a versão 2.3 a lista de novidades já é grande.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Cupom de desconto para livros da Novatec</title>
@@ -785,7 +1254,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/cupom-de-desconto-para-livros-da-novatec/</guid>
       <description>A equipe do Buteco Open Source fez uma parceria com a editora Novatec para poder disponibilizar aos nossos leitores um cupom de desconto na compra de livros pelo site da Novatec.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.0 Alpha já está disponível</title>
@@ -794,7 +1269,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/rust-1-0-alpha-ja-esta-disponivel/</guid>
       <description>Rust 1.0 Alpha foi lançado hoje.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>cURL 7.40 disponível e agora com suporte ao protocolo SMB/CIFS</title>
@@ -803,7 +1284,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/curl-7-40-disponivel-e-agora-com-suporte-ao-protocolo-smbcifs/</guid>
       <description>O cURL 7.40 foi disponibilizado hoje (08/01) com várias novidades e correções de bugs.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Envie seu artigo!</title>
@@ -812,7 +1299,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/envie-seu-artigo/</guid>
       <description>Olá caros leitores, nosso site está passando por algumas melhorias de ano novo, até porque o que é bom pode ficar ainda melhor!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Ganhe uma Second Shot em seu exame Microsoft MCP</title>
@@ -821,7 +1314,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/ganhe-uma-second-shot-em-seu-exame-microsoft-mcp/</guid>
       <description>A Microsoft esta disponibilizando gratuitamente uma Second Shot para qualquer exame MCP (Microsoft Certified Professional) efetuado entre 5 de janeiro de 2015 e 31 de maio de 2015.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Feliz 2015!</title>
@@ -830,7 +1329,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/feliz-2015/</guid>
       <description>No ano de 2014, deu-se início a um novo passo em nossas vidas, foi o ano em que resolvemos passar o nosso conhecimento a você caro leitor, dando início ao Buteco Open Source, onde pudemos contar com a sua colaboração.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Nós somos Linux</title>
@@ -839,7 +1344,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/nos-somos-linux/</guid>
       <description>Nós somos Linux, e você? Se você ainda está em dúvida, confira o DistroWatch e escolha uma distribuição.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 1.0 será lançado em 2015</title>
@@ -848,7 +1359,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/rust-1-0-sera-lancado-em-2015/</guid>
       <description>O blog oficial da linguagem Rust compartilhou nesta sexta-feira (12/12) seus planos para 2015.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Python 2.7.9 já está disponível</title>
@@ -857,7 +1374,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/python-2-7-9-ja-esta-disponivel/</guid>
       <description>A nova versão do Python, a 2.7.9, é uma versão que traz correções de bugs para a versão 2.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Git 2.2 está chegando com várias mudanças</title>
@@ -866,7 +1389,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/git-2-2-esta-chegando-com-varias-mudancas/</guid>
       <description>O Git 2.2.0 RC 1 já está disponível e nesta última atualização o foco foi a estabilização.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conheça o que está por vir no openSUSE 13.2</title>
@@ -875,7 +1404,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/conheca-o-que-esta-por-vir-no-opensuse-13-2/</guid>
       <description>Faltam apenas 12 dias para o lançamento oficial do openSUSE 13.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>O Buteco está de cara nova</title>
@@ -884,7 +1419,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/o-buteco-esta-de-cara-nova/</guid>
       <description>É isso aí, demos uma repaginada no layout para melhorar o uso do blog.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>openSUSE 13.2: Chegou a hora de testar</title>
@@ -893,7 +1434,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/opensuse-13-2-chegou-a-hora-de-testar/</guid>
       <description>Menos de três semanas se passaram desde o lançamento da primeira versão release candidate e já podemos sentir que estamos quase lá.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Rust 0.12.0 é lançado</title>
@@ -902,7 +1449,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/rust-0-12-0-e-lancado/</guid>
       <description>O Rust 0.12.0 foi lançado ontem (09/10) e esta nova versão traz nova documentação e melhoria na antiga, incluindo O Guia Rust, que substitui o tutorial antigo.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Cupom de desconto para certificação Linux</title>
@@ -911,7 +1464,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/cupom-de-desconto-para-certificacao-linux/</guid>
       <description>Você já deve ter ouvido sobre os programas de certificação recentemente lançado pela Linux Fundation.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>O Buteco Open Source mudou</title>
@@ -920,7 +1479,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/o-buteco-open-souce-mudou/</guid>
       <description>Devido ao grande número de acessos ao nosso blog, resolvemos migra-lo do WordPress para um servidor nosso, onde podemos ter maior controle &amp;ldquo;das coisas&amp;rdquo;.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>40&#43; eBooks Gratuitos</title>
@@ -929,7 +1494,13 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/40-ebooks-gratis/</guid>
       <description>A Syncfusion está disponibilizando mais de 40 livros gratuitamente. Os livros abrangem de forma sucinta o assunto abordado e cada livro possui cerca de 100 páginas.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Pyston 0.2 já está disponível</title>
@@ -938,7 +1509,14 @@ Para quem não o conhece, o Google Code é um serviço de hospedagem de código 
       
       <guid>https://butecotecnologico.com.br/pyston-0-2-ja-esta-disponivel/</guid>
       <description>O Pyston 0.2 foi anunciado ontem (11/09) e contém várias melhorias se comparado a versão inicial.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Notícias on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/categorias/not%C3%ADcias/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>lançamento php 7 on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/lan%C3%A7amento-php-7/</link>
-    <description>Recent content in lançamento php 7 on Buteco Tecnológico</description>
+    <description>Recent content in lançamento php 7 on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>lançamento php 7 on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/lan%C3%A7amento-php-7/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 27 Mar 2015 10:57:33 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/lan%C3%A7amento-php-7/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 27 Mar 2015 10:57:33 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/lan%C3%A7amento-php-7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PHP 7 virá em 2015!</title>
       <link>https://butecotecnologico.com.br/php-7-vira-em-2015/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/php-7-vira-em-2015/</guid>
       <description>Soube hoje que a versão 7 do PHP terá seu primeiro release em 2015, mais especificamente no mês de outubro, segundo um infografo disponibilizado pela Zend (disponivel neste link), a versão 7 do PHP continua o processo de tornar a linguagem mais concisa e podemos dizer mais próxima da linguagem C++.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>lançamento php 7 on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/lan%C3%A7amento-php-7/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

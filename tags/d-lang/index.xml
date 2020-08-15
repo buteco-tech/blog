@@ -3,14 +3,15 @@
   <channel>
     <title>d lang on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/d-lang/</link>
-    <description>Recent content in d lang on Buteco Tecnológico</description>
+    <description>Recent content in d lang on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>d lang on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/d-lang/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 17 Apr 2015 09:22:10 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/d-lang/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 17 Apr 2015 09:22:10 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/d-lang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sexta da Tirinha</title>
       <link>https://butecotecnologico.com.br/sexta-da-tirinha-5/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-5/</guid>
       <description>Não conhece a linguagem de programação D? Então veja este link.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>d lang on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/d-lang/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

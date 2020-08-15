@@ -3,14 +3,15 @@
   <channel>
     <title>distro on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/distro/</link>
-    <description>Recent content in distro on Buteco Tecnológico</description>
+    <description>Recent content in distro on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>distro on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/distro/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 01 Feb 2016 21:15:54 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/distro/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 01 Feb 2016 21:15:54 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/distro/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Compilando o FreeBSD: Parte 1</title>
       <link>https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/</link>
@@ -19,7 +20,13 @@
       <guid>https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/</guid>
       <description>&lt;p&gt;Primeiro de tudo, sei que o conteúdo propriamente dito de como baixar e compilar os fontes do sistema operacional do FreeBSD é algo que tem aos montes na Internet. Entretanto acredito que reativar tópicos interessantes ou transformar eles em um registro no &lt;em&gt;feeds&lt;/em&gt; das notícias pode animar alguém a fazer estes testes.&lt;/p&gt;
 &lt;p&gt;Um aspecto é que, o objetivo deste texto é servir como base para a segunda parte que é compilar o sistema da nova maneira seguindo a proposta no livro de desenvolvimento do FreeBSD.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>distro on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/distro/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Kali Linux 2.0 já tem data para o lançamento</title>
@@ -28,7 +35,13 @@
       
       <guid>https://butecotecnologico.com.br/kali-linux-2-0-ja-tem-data-para-o-lancamento/</guid>
       <description>&lt;p&gt;A &lt;a href=&#34;https://www.offensive-security.com/&#34; target=&#34;_blank&#34;&gt;Offensive Security&lt;/a&gt;, criadora e mantenedora do Kali Linux, divulgou um vídeo de pré-lançamento da nova versão do Kali Linux; com lançamento oficial previsto para 11 de agosto de 2015. A equipe, nos últimos meses, tem trabalhado ferozmente nessa próxima versão – que promete muita coisa nova. No vídeo divulgado, a empresa mostra toda a cronologia de desenvolvimento da ferramenta, desde da época do BackTrack, e por fim as novidades da nova versão, confira.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>distro on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/distro/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Revista BSD Magazine número 70</title>
@@ -37,7 +50,14 @@
       
       <guid>https://butecotecnologico.com.br/revista-bsd-magazine-numero-70/</guid>
       <description>Edição 70 da revista BSD Magazine, uma revista especializada sobre sistemas operacionais BSD.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>distro on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/distro/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

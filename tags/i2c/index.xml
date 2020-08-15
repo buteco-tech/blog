@@ -3,14 +3,15 @@
   <channel>
     <title>i2c on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/i2c/</link>
-    <description>Recent content in i2c on Buteco Tecnológico</description>
+    <description>Recent content in i2c on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>i2c on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/i2c/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 11 Apr 2016 18:52:21 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/i2c/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 11 Apr 2016 18:52:21 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/i2c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Utilizando display OLED I2C no ESP8266</title>
       <link>https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/</link>
@@ -20,7 +21,13 @@
       <description>&lt;p&gt;Displays são sempre úteis em projetos relacionados a Internet das Coisas (IoT). Por exemplo, supondo que estamos desenvolvendo alguma forma de monitoramento de temperatura com o ESP8266, qual a forma mais simples de ficar sabendo a temperatura atual? Creio que seja exibindo-a em um display, certo?&lt;/p&gt;
 &lt;p&gt;Sendo assim, o tutorial de hoje irá mostrar como utilizar um display OLED I2C de 0.96 polegadas, pode parecer pequeno, mas acredite, é possível inserir bastante informação nele.&lt;/p&gt;
 &lt;p&gt;O display que estou utilizando é o &lt;a&gt;OLED com controlador SSD1306&lt;/a&gt; com tamanho de 128x64 pixels, que utiliza barramento I2C, suportado pelos ESP-07, ESP-12, entre outros. O I2C é suportado pelo ESP8266, porém placas como a ESP-01 não disponibilizam este pino.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>i2c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/i2c/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conhecendo os módulos do NodeMCU</title>
@@ -30,7 +37,14 @@
       <guid>https://butecotecnologico.com.br/conhecendo-os-modulos-do-nodemcu/</guid>
       <description>&lt;p&gt;O &lt;a href=&#34;http://nodemcu.com/index_en.html&#34; target=&#34;_blank&#34;&gt;NodeMCU&lt;/a&gt; é um firmware baseado no &lt;a href=&#34;http://www.eluaproject.net/&#34; target=&#34;_blank&#34;&gt;eLua&lt;/a&gt; para os dispositivos ESP8266. Se você deseja saber mais sobre o firmware recomendo a leitura do artigo &lt;a href=&#34;https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266&#34;&gt;NodeMCU: Lua para o ESP8266&lt;/a&gt; que publiquei recentemente. Neste artigo o foco foi a apresentação do firmware e como fazer o flash do seu dispositivo.&lt;/p&gt;
 &lt;p&gt;Com o decorrer dos projetos que fazem uso do ESP8266 e NodeMCU, eventualmente será necessário criar um firmware com módulos que não fazem parte da distribuição padrão. Sendo assim, o artigo de hoje visa explicar brevemente o que é cada um dos módulos disponíveis. Builds customizadas podem ser feitas através do site &lt;a href=&#34;http://nodemcu-build.com/&#34; target=&#34;_blank&#34;&gt;NodeMCU custom builds&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>i2c on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/i2c/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

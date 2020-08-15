@@ -3,14 +3,15 @@
   <channel>
     <title>nvidia on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/nvidia/</link>
-    <description>Recent content in nvidia on Buteco Tecnológico</description>
+    <description>Recent content in nvidia on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>nvidia on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/nvidia/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 28 May 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/nvidia/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 28 May 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/nvidia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Entendendo carros autônomos</title>
       <link>https://butecotecnologico.com.br/entendendo-carros-autonomos/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/entendendo-carros-autonomos/</guid>
       <description>Carros autônomos estão cada vez mais presentes em nossas vidas, mas o que é um carro autônomo de fato?</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>nvidia on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/nvidia/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Ubuntu 20.04 LTS (Focal Fossa)</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/ubuntu-20-04-lts/</guid>
       <description>Confira as novidadades e impressões desta nova versão após algumas semanas de uso.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>nvidia on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/nvidia/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>NVIDIA Jetson Nano Developer Kit</title>
@@ -36,7 +49,13 @@
       
       <guid>https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/</guid>
       <description>Uma placa de desenvolvimento focada em visão computacional e deep learning.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>nvidia on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/nvidia/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>NVIDIA anuncia driver 358 (beta) para Linux, Solaris e FreeBSD</title>
@@ -45,7 +64,13 @@
       
       <guid>https://butecotecnologico.com.br/nvidia-anuncia-driver-358-beta-para-linux-solaris-e-freebsd/</guid>
       <description>&lt;p&gt;A NVIDIA disponibilizou a primeira versão pública beta do &lt;em&gt;driver&lt;/em&gt; 358 (358.09) para Linux, FreeBSD e Solaris. Construído sobre o driver 355, a série 358 acrescenta mais peças ao quebra-cabeças da interface com DRM/KMS (&lt;em&gt;Direct Rendering Manager/Kernel Mode Setting&lt;/em&gt;) e continua melhorando o suporte ao Mir/Wayland.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>nvidia on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/nvidia/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Instalando driver NVIDIA Bumblebee no openSUSE</title>
@@ -54,7 +79,14 @@
       
       <guid>https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/</guid>
       <description>A tecnologia Optimus da NVIDIA otimiza o seu notebook de forma inteligente, oferecendo o desempenho gráfico impressionante que você precisa, quando você precisa, e sempre aumentando o tempo de vida da bateria para que você aproveite por mais tempo.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>nvidia on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/nvidia/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

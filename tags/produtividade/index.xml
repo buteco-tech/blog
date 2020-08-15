@@ -3,14 +3,15 @@
   <channel>
     <title>produtividade on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/produtividade/</link>
-    <description>Recent content in produtividade on Buteco Tecnológico</description>
+    <description>Recent content in produtividade on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>produtividade on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/produtividade/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 16 Sep 2015 23:16:52 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/produtividade/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 16 Sep 2015 23:16:52 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/produtividade/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Produtividade no LibreOffice</title>
       <link>https://butecotecnologico.com.br/produtividade-no-libreoffice/</link>
@@ -21,7 +22,14 @@
 &lt;p style=&#34;text-align: justify;&#34;&gt;Olá Pessoal! Neste artigo pretendo falar um pouco sobre uma forma simples de melhorar sua produtividade no LibreOffice, as teclas de atalho. Isso mesmo, parece besteira falar sobre este assunto, ainda mais num artigo voltado para usuários de Software Livre. Mas estou falando sério, não subestime este recurso.&lt;/p&gt;
 &lt;p style=&#34;text-align: justify;&#34;&gt;Às vezes sem reparar, você está procurando algo que poderia ter resolvido facilmente com uma tecla de atalho ou via acesso rápido ao menu (Alt + Letra sublinhada). Claro, não estou dizendo que deveríamos decorar todas as teclas de atalhos, pelo menos eu, imagino que isto seja quase impossível. Mas nos recursos que utilizamos com um pouco mais de frequência ganhamos produtividade quando utilizamos uma forma de cortar caminho. E quanto a isto, o LibreOffice não nos deixa na mão!&lt;/p&gt;
 &lt;p style=&#34;text-align: justify;&#34;&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>produtividade on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/produtividade/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

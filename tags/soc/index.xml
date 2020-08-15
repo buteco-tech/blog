@@ -3,14 +3,15 @@
   <channel>
     <title>soc on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/soc/</link>
-    <description>Recent content in soc on Buteco Tecnológico</description>
+    <description>Recent content in soc on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>soc on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/soc/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 07 Apr 2015 01:49:31 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/soc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 07 Apr 2015 01:49:31 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/soc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Conheça o ESP8266: Um módulo WiFi por menos de 5 dólares</title>
       <link>https://butecotecnologico.com.br/conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares/</guid>
       <description>O ESP8266 é uma solução para a Internet das Coisas (IoT). Ele não é apenas um módulo WiFi que pode ser conectado ao Arduino, mas sim um System-on-a-chip (SoC). Ou seja, ele é uma solução completa para quem deseja criar um dispositivo que necessite conexão WiFi.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>soc on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/soc/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

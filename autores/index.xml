@@ -3,14 +3,15 @@
   <channel>
     <title>Autores on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/autores/</link>
-    <description>Recent content in Autores on Buteco Tecnológico</description>
+    <description>Recent content in Autores on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>Autores on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/autores/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Sat, 15 Aug 2020 08:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/autores/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 15 Aug 2020 08:00:00 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/autores/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alexandre Vicenzi</title>
       <link>https://butecotecnologico.com.br/autores/alexandrevicenzi/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/autores/alexandrevicenzi/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Autores on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Marcos Paulo de Souza</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/autores/mpdesouza/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Autores on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Jonathan André Schweder</title>
@@ -36,7 +49,13 @@
       
       <guid>https://butecotecnologico.com.br/autores/jaswdr/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Autores on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Equipe Buteco</title>
@@ -45,7 +64,13 @@
       
       <guid>https://butecotecnologico.com.br/autores/buteco/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Autores on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Marco Carvalho de Oliveira</title>
@@ -54,7 +79,13 @@
       
       <guid>https://butecotecnologico.com.br/autores/marco-oliveira/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Autores on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Daniel Magevski</title>
@@ -63,7 +94,13 @@
       
       <guid>https://butecotecnologico.com.br/autores/daniel-magevski/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Autores on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>José Guilherme Vanz</title>
@@ -72,7 +109,13 @@
       
       <guid>https://butecotecnologico.com.br/autores/jvanz/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Autores on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Bruno Piske</title>
@@ -81,7 +124,13 @@
       
       <guid>https://butecotecnologico.com.br/autores/bruno-piske/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Autores on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Douglas Santos</title>
@@ -90,7 +139,13 @@
       
       <guid>https://butecotecnologico.com.br/autores/dsantos/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Autores on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Pedro Jefferson</title>
@@ -99,7 +154,13 @@
       
       <guid>https://butecotecnologico.com.br/autores/pedro-jefferson/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Autores on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Camila Stadnik</title>
@@ -108,7 +169,14 @@
       
       <guid>https://butecotecnologico.com.br/autores/camila-stadnik/</guid>
       <description></description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Autores on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>iot on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/iot/</link>
-    <description>Recent content in iot on Buteco Tecnológico</description>
+    <description>Recent content in iot on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>iot on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/iot/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 11 May 2016 20:10:22 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/iot/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 11 May 2016 20:10:22 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/iot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Acompanhe o TDC Floripa sem sair de casa</title>
       <link>https://butecotecnologico.com.br/acompanhe-o-tdc-floripa-sem-sair-de-casa/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/acompanhe-o-tdc-floripa-sem-sair-de-casa/</guid>
       <description>Acompanhe o TDC Floripa direto da sua casa, e de graça!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>iot on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/iot/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Utilizando display OLED I2C no ESP8266</title>
@@ -29,7 +36,13 @@
       <description>&lt;p&gt;Displays são sempre úteis em projetos relacionados a Internet das Coisas (IoT). Por exemplo, supondo que estamos desenvolvendo alguma forma de monitoramento de temperatura com o ESP8266, qual a forma mais simples de ficar sabendo a temperatura atual? Creio que seja exibindo-a em um display, certo?&lt;/p&gt;
 &lt;p&gt;Sendo assim, o tutorial de hoje irá mostrar como utilizar um display OLED I2C de 0.96 polegadas, pode parecer pequeno, mas acredite, é possível inserir bastante informação nele.&lt;/p&gt;
 &lt;p&gt;O display que estou utilizando é o &lt;a&gt;OLED com controlador SSD1306&lt;/a&gt; com tamanho de 128x64 pixels, que utiliza barramento I2C, suportado pelos ESP-07, ESP-12, entre outros. O I2C é suportado pelo ESP8266, porém placas como a ESP-01 não disponibilizam este pino.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>iot on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/iot/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>MQTT Parte 2: Enviando e recebendo mensagens</title>
@@ -39,7 +52,13 @@
       <guid>https://butecotecnologico.com.br/mqtt-parte-2-enviando-e-recebendo-mensagens/</guid>
       <description>&lt;p&gt;Na &lt;a href=&#34;https://butecotecnologico.com.br/mqtt-parte-1-o-que-e-mqtt&#34;&gt;primeira parte&lt;/a&gt; sobre o protocolo MQTT (&lt;em&gt;Message Queue Telemetry Transport&lt;/em&gt;) demos uma breve introdução ao assunto, explicando o seu funcionamento, &lt;em&gt;brokers&lt;/em&gt; e &lt;em&gt;clients&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Hoje o artigo é mais prático que teórico. Inicialmente vamos instalar/configurar o &lt;em&gt;broker&lt;/em&gt; e após vamos criar em cliente MQTT que irá ser conectar ao &lt;em&gt;broker&lt;/em&gt; para enviar ou receber mensagens.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>iot on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/iot/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>MQTT Parte 1: O que é MQTT?</title>
@@ -49,7 +68,13 @@
       <guid>https://butecotecnologico.com.br/mqtt-parte-1-o-que-e-mqtt/</guid>
       <description>&lt;p&gt;O protocolo &lt;em&gt;Message Queue Telemetry Transport&lt;/em&gt; (MQTT) está presente no dia a dia da Internet das Coisas (IoT) e o seu principal uso é fazer as máquinas conversarem, também conhecido como Machine-to-Machine (M2M).&lt;/p&gt;
 &lt;p&gt;Nos últimos artigos temos dado ênfase aos sistemas embarcados, mais especificamente o NodeMCU e ao ESP8266. Pois bem, o NodeMCU possui embutido um &lt;a href=&#34;http://nodemcu.readthedocs.org/en/dev/en/modules/mqtt/&#34; target=&#34;_blank&#34;&gt;cliente MQTT&lt;/a&gt; para a versão 3.1.1 do protocolo. No artigo de hoje não vou me ater ao NodeMCU, mas sim, irei explicar o que é o protocolo em si, pois ele pode ser utilizado em outros ambientes, além de sistemas embarcados.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>iot on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/iot/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Relógio RTC com o ESP8266</title>
@@ -59,7 +84,13 @@
       <guid>https://butecotecnologico.com.br/rtc-com-esp8266/</guid>
       <description>&lt;p&gt;No artigo de hoje veremos como utilizar um RTC (&lt;em&gt;Real Time Clock&lt;/em&gt;) com o dispositivo ESP8266. Este módulo incorpora funções Wi-Fi e foi pensado para projetos de baixo custo para mobilidade, eletrônicos vestíveis, Internet das Coisas (IoT), e o que sua criatividade permitir.&lt;/p&gt;
 &lt;p&gt;Este artigo pode ser um tanto quanto simples, mas utilizar um RTC (&lt;em&gt;Real Time Clock&lt;/em&gt;) em um projeto é de grande importância as vezes. Principalmente quando desejamos monitorar algo em determinados horários. Vamos pegar um exemplo básico, supondo que você esteja monitorando a temperatura do ambiente, é interessante saber a hora da medição para calcular a variação de temperatura durante um determinado período. Sim, este é um exemplo simples, mas exemplifica claramente o uso de um RTC.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>iot on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/iot/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>NodeMCU: Lua para o ESP8266</title>
@@ -69,7 +100,13 @@
       <guid>https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/</guid>
       <description>&lt;p&gt;O &lt;a href=&#34;http://nodemcu.com/index_en.html&#34; target=&#34;_blank&#34;&gt;NodeMCU&lt;/a&gt; é um &lt;em&gt;firmware&lt;/em&gt; e kit de desenvolvimento que permite a programação de protótipos para a Internet das Coisas (IoT). O &lt;em&gt;firmware&lt;/em&gt; utiliza o paradigma &lt;em&gt;event-driven&lt;/em&gt; para facilitar o desenvolvimento de aplicações que necessitem acesso à Internet. Além disso, integra módulos de GPIO, 1-Wire, I2C, SPI, PWM, ADC, entre outros, para facilitar o manuseio de módulos baseados no chip ESP8266.&lt;/p&gt;
 &lt;p&gt;Na verdade, o NodeMCU é mais que um &lt;em&gt;firmware&lt;/em&gt;, é a empresa por trás do NodeMCU Dev Kit, que além do &lt;em&gt;firmware&lt;/em&gt;, disponibiliza uma placa de desenvolvimento baseada no ESP8266.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>iot on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/iot/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Servo motor com Raspberry Pi</title>
@@ -79,7 +116,13 @@
       <guid>https://butecotecnologico.com.br/servo-motor-com-raspberry-pi/</guid>
       <description>&lt;p&gt;Fala galera!
 Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI usando a linguagem Python.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>iot on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/iot/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Black Friday de Componentes Eletrônicos é na FILIPEFLOP</title>
@@ -88,7 +131,13 @@ Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI us
       
       <guid>https://butecotecnologico.com.br/black-friday-de-componentes-eletronicos-e-na-filipeflop/</guid>
       <description>Black Friday é o nome dado ao dia seguinte ao &amp;ldquo;Dia de Ação de Graças&amp;rdquo; dos EUA, uma importante data comemorativa para o varejo americano, quando são praticados descontos altíssimos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>iot on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/iot/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Acesso a informação, evolução, tecnologia e caos</title>
@@ -98,7 +147,13 @@ Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI us
       <guid>https://butecotecnologico.com.br/acesso-a-informacao-evolucao-tecnologia-e-caos/</guid>
       <description>&lt;p&gt;Mais um texto que pode soar velho ;), mas velho eu sou&amp;hellip; tenho que aceitar&amp;hellip;&lt;/p&gt;
 &lt;p&gt;A ideia de hoje é falar um pouco de algo que contorna nosso nicho da tecnologia da computação, que é o acesso a informação. Bom, vou iniciar aos mais novos explicando que um dia existiram livros,  que eram usados antes da Wikipédia :P que as famílias compravam e tinham em casa. Um grupo de livros chamado Barsa, hoje quem sabe tenha disto em museus. No entanto só os como dizem, mais afortunados, tinham essa coleção de livros, e o que ali existia era o máximo de informação e conjunto de aprendizado que as pessoas em geral possuíam em suas casas, no modelo de enciclopédia.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>iot on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/iot/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Evento científico de tecnologia CTIA</title>
@@ -107,7 +162,13 @@ Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI us
       
       <guid>https://butecotecnologico.com.br/evento-cientifico-de-tecnologia-ctia/</guid>
       <description>&lt;p&gt;Chega-se um momento na vida de um estudante que as vezes ele quer conhecer o tão badalado mundo científico, fugindo dos horizontes apenas dos livros e o material didático fornecidos pelos professores, ele se encontra com o tal mundo dos artigos científicos, e eventos de tecnologia. Chega ser outro mundo as vezes para algumas pessoas que não tem tanta afinidade em ler livros técnicos e acadêmicos. As vezes as pessoas só adentram este mundo por causa de exigências acadêmicas como o TCC, ou para conseguir uma bolsa, ou por exigência para se formar, ou algo entre poucos motivos.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>iot on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/iot/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lançado a 70º edição da Revista Espírito Livre</title>
@@ -116,7 +177,13 @@ Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI us
       
       <guid>https://butecotecnologico.com.br/lancado-a-70o-edicao-da-revista-espirito-livre/</guid>
       <description>Vitória recebeu a oitava edição do Fórum Espírito Livre, ocorrido de 12 a 15 de novembro durante a 11º Semana Nacional de Ciência e Tecnologia. O evento aconteceu nas instalações na Universidade Federal do Espírito Santo – UFES. Participaram do evento diversos palestrantes de São Paulo, Rio de Janeiro, Minas Gerais, além de vários parceiros e colaboradores locais, possibilitando uma excelente troca de experiências, em um cenário bastante propício para tais debates.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>iot on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/iot/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Internet das Coisas</title>
@@ -126,7 +193,13 @@ Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI us
       <guid>https://butecotecnologico.com.br/internet-das-coisas/</guid>
       <description>A internet passou por várias mudanças importante desde que surgiu para o mundo, a ideia de comunição entre computadores evoluiu e hoje podemos conectar vários dispositivos como celulares, televisões, carros, videogames e etc..
 Foi em 1991 que começou a discussão sobre a conexão de objetos, quando a conexão de TCP/IP e a Internet que conhecemos começou a se tonar acessível. Bill Joy, cofundador da Sun Microsystems, teve a ideia de conectar várias redes e dispositivos.E foi em 1999 que Kevin Ashton, do MIT, propôs o termo “Internet das Coisas” após dez anos de estudo e projetos, escreveu o artigo “A Coisa da Internet das Coisas” para o RFID Journal, e a partir dai o termo se popularizou.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>iot on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/iot/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Primeiros passos com o ESP8266</title>
@@ -136,7 +209,14 @@ Foi em 1991 que começou a discussão sobre a conexão de objetos, quando a cone
       <guid>https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/</guid>
       <description>Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.
 O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>iot on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/iot/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>qa on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/qa/</link>
-    <description>Recent content in qa on Buteco Tecnológico</description>
+    <description>Recent content in qa on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>qa on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/qa/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 17 Nov 2015 22:28:44 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/qa/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 17 Nov 2015 22:28:44 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/qa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Segunda temporada de caçada de bugs no LibreOffice 5.1</title>
       <link>https://butecotecnologico.com.br/segunda-temporada-de-cacada-de-bugs-no-libreoffice-5-1/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/segunda-temporada-de-cacada-de-bugs-no-libreoffice-5-1/</guid>
       <description>São anunciadas as datas do bug hunt da versão 5.1 do LibreOffice</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>qa on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/qa/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sexta da Tirinha</title>
@@ -27,7 +34,14 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-26/</guid>
       <description>E a guerra santa está por ai, em cada empresa ou grupo de amigos!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>qa on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/qa/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

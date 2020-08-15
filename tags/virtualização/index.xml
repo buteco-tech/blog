@@ -3,14 +3,15 @@
   <channel>
     <title>virtualização on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/virtualiza%C3%A7%C3%A3o/</link>
-    <description>Recent content in virtualização on Buteco Tecnológico</description>
+    <description>Recent content in virtualização on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>virtualização on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/virtualiza%C3%A7%C3%A3o/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 03 May 2016 22:36:32 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/virtualiza%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 03 May 2016 22:36:32 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/virtualiza%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dispositivos USB não são reconhecidos pelo VirtualBox (host Linux)</title>
       <link>https://butecotecnologico.com.br/dispositivos-usb-nao-sao-reconhecidos-pelo-virtualbox-host-linux/</link>
@@ -19,7 +20,13 @@
       <guid>https://butecotecnologico.com.br/dispositivos-usb-nao-sao-reconhecidos-pelo-virtualbox-host-linux/</guid>
       <description>O VirtualBox é uma das mais bem conceituadas opções para emulação de sistemas operacionais em máquinas virtuais, com suporte a x86 e AMD64/Intel64. Atualmente o VirtualBox possui versões para hosts Windows, Linux, OS X, Solaris e FreeBSD.
 Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e leitores SD Card do host no sistema guest não funciona. Esse problema é geralmente causado por falta de permissão no seu usuário no momento da execução do VirtualBox.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>virtualização on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/virtualiza%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Virsh: criando e gerenciando VMs pelo terminal</title>
@@ -28,7 +35,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/virsh-criando-e-gerenciando-vms-pelo-terminal/</guid>
       <description>Este artigo apresenta uma introdução a ferramenta virsh, baseada na libvirt, para gerenciar máquinas virtuais no Linux.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>virtualização on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/virtualiza%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>QEMU 2.3 trará suporte a CPU Ivy Bridge</title>
@@ -37,7 +50,13 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/qemu-2-3-trara-suporte-a-cpu-ivy-bridge/</guid>
       <description>O QEMU é um emulador e virtualizador de máquinas e é totalmente Open Source. A versão 2.2 foi lançada há pouco mais de um mês (09/12), e para a versão 2.3 a lista de novidades já é grande.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>virtualização on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/virtualiza%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conhecendo o virt-manager</title>
@@ -46,7 +65,14 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
       
       <guid>https://butecotecnologico.com.br/conhecendo-o-virt-manager/</guid>
       <description>O virt-manager é uma ferramenta desenvolvida pela RedHat para gerenciar máquinas virtuais.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>virtualização on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/virtualiza%C3%A7%C3%A3o/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

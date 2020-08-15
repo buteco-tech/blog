@@ -3,14 +3,15 @@
   <channel>
     <title>apigility on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/apigility/</link>
-    <description>Recent content in apigility on Buteco Tecnológico</description>
+    <description>Recent content in apigility on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>apigility on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/apigility/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 02 Oct 2014 08:33:20 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/apigility/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 02 Oct 2014 08:33:20 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/apigility/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apigility, Web Service com Zend Framework</title>
       <link>https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/</guid>
       <description>Com a variedade de clientes que acessam nossas aplicações hoje fica cada vez mais difícil criar algo que atenda a todos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>apigility on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/apigility/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

@@ -3,14 +3,15 @@
   <channel>
     <title>eeprom on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/eeprom/</link>
-    <description>Recent content in eeprom on Buteco Tecnológico</description>
+    <description>Recent content in eeprom on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>eeprom on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/eeprom/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 08 Mar 2016 00:00:12 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/eeprom/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 08 Mar 2016 00:00:12 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/eeprom/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Comunicação serial RS232 com Leitura/Escrita da EEPROM no PIC16F628A</title>
       <link>https://butecotecnologico.com.br/comunicacao-serial-rs232-com-leituraescrita-da-eeprom-no-pic16f628a/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/comunicacao-serial-rs232-com-leituraescrita-da-eeprom-no-pic16f628a/</guid>
       <description>&lt;p&gt;Muitos cursos de eletrônica fazem uma breve introdução ao mundo dos microcontroladores, mostrando superficialmente como utilizar seus recursos. Pensando nisso, este artigo tem como objetivo mostrar como utilizar dois recursos muito úteis no PIC 16F628A, comunicação serial e armazenamento de dados na memória EEPROM interna do PIC.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>eeprom on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/eeprom/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

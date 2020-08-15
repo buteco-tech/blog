@@ -3,14 +3,15 @@
   <channel>
     <title>segurança on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/seguran%C3%A7a/</link>
-    <description>Recent content in segurança on Buteco Tecnológico</description>
+    <description>Recent content in segurança on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>segurança on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/seguran%C3%A7a/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 22 Apr 2016 11:25:27 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/seguran%C3%A7a/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 22 Apr 2016 11:25:27 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/seguran%C3%A7a/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sexta da Tirinha</title>
       <link>https://butecotecnologico.com.br/sexta-da-tirinha-40/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/sexta-da-tirinha-40/</guid>
       <description>Via 9gag</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>segurança on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/seguran%C3%A7a/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Lançamentos Novatec: Android, Pentest e Segurança Web</title>
@@ -28,7 +35,13 @@
       <guid>https://butecotecnologico.com.br/lancamentos-novatec-android-pentest-e-seguranca-web/</guid>
       <description>Android Essencial
 Título é um resumo do conteúdo do best-seller Google Android</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>segurança on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/seguran%C3%A7a/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Resultado do sorteio de uma entrada para a Roadsec</title>
@@ -37,7 +50,13 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       
       <guid>https://butecotecnologico.com.br/resultado-do-sorteio-de-uma-entrada-para-a-roadsec/</guid>
       <description>Primeiramente gostaríamos de agradecer a todos que participaram do sorteio de uma entrada para o evento da Roadsec de mega encerramento em São Paulo no dia 12 de novembro.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>segurança on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/seguran%C3%A7a/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sorteio de uma entrada para a Roadsec</title>
@@ -46,7 +65,13 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       
       <guid>https://butecotecnologico.com.br/sorteio-de-uma-entrada-para-a-roadsec/</guid>
       <description>Em parceria com a Roadsec, estamos sorteando uma entrada para o evento de mega encerramento em São Paulo no dia 12 de novembro, confira a programação.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>segurança on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/seguran%C3%A7a/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conheça arkOS: Distro para hospedagem particular</title>
@@ -55,7 +80,13 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       
       <guid>https://butecotecnologico.com.br/conheca-arkos-distro-para-hospedagem-particular/</guid>
       <description>&lt;p&gt;O arkOS é uma distribuição Linux baseada no &lt;a href=&#34;http://archlinuxarm.org&#34; target=&#34;_blank&#34;&gt;Arch Linux ARM&lt;/a&gt;, que funciona em dispositivos embarcados e servidores dedicados. Este contém um pacote de software completo para gerenciamento de  hospedagem particular (&lt;em&gt;self-hosting&lt;/em&gt;) de forma intuitiva e inteligente. Também permite executar sites, contas de e-mail, banco de dados e muito mais, tudo através de sua interface gráfica, que é fácil de usar.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>segurança on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/seguran%C3%A7a/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Esteganografia com Steghide</title>
@@ -65,7 +96,13 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       <guid>https://butecotecnologico.com.br/esteganografia-com-steghide/</guid>
       <description>&lt;p&gt;Nesse artigo irei falar um pouco sobre esteganografia e mostrar o uso simples do Steghide.&lt;/p&gt;
 &lt;p&gt;Esteganografia (do grego &amp;ldquo;escrita escondida&amp;rdquo;) é o estudo e uso das técnicas para ocultar a existência de uma mensagem dentro de outra, uma forma de segurança por obscurantismo. Em outras palavras, esteganografia é o ramo particular da criptologia que consiste em fazer com que uma forma escrita seja camuflada em outra a fim de mascarar o seu verdadeiro sentido.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>segurança on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/seguran%C3%A7a/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>RoadSec um testemunho</title>
@@ -74,7 +111,13 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       
       <guid>https://butecotecnologico.com.br/roadsec-um-testemunho/</guid>
       <description>&lt;p&gt;Vou começar assim, a propaganda não era enganosa o evento foi bom, trouxe profissionais com experiência que compartilharam suas vivências na área de segurança. Nada daquelas palestras para preencher tempo, ou com profissionais que não tivessem desenvoltura para falar.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>segurança on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/seguran%C3%A7a/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Roadsec - Floripa 26/09</title>
@@ -83,7 +126,13 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       
       <guid>https://butecotecnologico.com.br/roadsec-floripa-2609/</guid>
       <description>Você está em Floripa ou redondezas? é geek? gosta de segurança de informação e está sem planos para sábado dia 26/09?</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>segurança on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/seguran%C3%A7a/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>CriptoParty</title>
@@ -93,7 +142,13 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       <guid>https://butecotecnologico.com.br/criptoparty-2/</guid>
       <description>&lt;p&gt;A privacidade é um dos maiores patrimônios que possuímos atualmente, mas muitas pessoas não estão adequadamente protegidas. Neste evento vamos conhecer na prática algumas tećnicas e tecnologias para evitar a exposição indevida de nossas informações privadas.&lt;/p&gt;
 &lt;p&gt;CryptoParty  é um evento organizado de maneira voluntária por pesquisadores, tecnoativistas e organizações sociais que atuam em temas relacionados a promoção da liberdade de expressão e defesa da privacidade.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>segurança on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/seguran%C3%A7a/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conheça o Security Cast</title>
@@ -102,7 +157,13 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       
       <guid>https://butecotecnologico.com.br/conheca-o-security-cast/</guid>
       <description>É um webcast, mas podemos chamar de um bate papo sobre vulnerabilidades, computação forense, ferramentas de segurança, privacidade, certificações, ataques, defesas, mercado e muitos outros assuntos ligados à área de Segurança da Informação. Participam os especialistas em Segurança da Informação Alberto Azevedo, Alcyon Junior, Gilberto Sudré e Gustavo Martinelli.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>segurança on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/seguran%C3%A7a/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Tutorial Nessus Home Parte 2 (Final)</title>
@@ -111,7 +172,13 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       
       <guid>https://butecotecnologico.com.br/tutorial-nessus-home-parte-2-final/</guid>
       <description>Nesse artigo irei dar continuação, agora abordando politicas, varreduras e analisa de vulnerabilidades</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>segurança on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/seguran%C3%A7a/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Tutorial Nessus Home Parte 1</title>
@@ -123,7 +190,14 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
 Nessus é um programa de verificação de falhas/vulnerabilidades de segurança. Ele é composto por um cliente e servidor, sendo que o scan propriamente dito é feito pelo servidor. O nessusd (servidor Nessus) faz um port scan ao computador alvo, depois disso vários scripts (escritos em NASL, Nessus Attack Sincripta Language) ligam-se a cada porta aberta para verificar problemas de segurança.
 Ele é ideal para você fazer análise da rede da sua casa, lembrando que para fins comerciais existem outras versões.
 O Nessus é distribuído sob os termos da Licença Pública Geral GNU.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>segurança on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/seguran%C3%A7a/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

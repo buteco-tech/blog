@@ -3,14 +3,15 @@
   <channel>
     <title>lakka on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/lakka/</link>
-    <description>Recent content in lakka on Buteco Tecnológico</description>
+    <description>Recent content in lakka on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>lakka on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/lakka/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 21 Jan 2015 21:00:21 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/lakka/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 21 Jan 2015 21:00:21 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/lakka/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Crie seu próprio console Infanto por menos de 300 reais</title>
       <link>https://butecotecnologico.com.br/crie-seu-proprio-console-infanto-por-menos-de-300-reais/</link>
@@ -18,7 +19,14 @@
       
       <guid>https://butecotecnologico.com.br/crie-seu-proprio-console-infanto-por-menos-de-300-reais/</guid>
       <description>Há cerca de duas semanas, o assunto da vez na área de jogos no Brasil foi o console chamado de Infanto.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>lakka on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/lakka/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

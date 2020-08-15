@@ -3,14 +3,15 @@
   <channel>
     <title>Douglas Santos on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/autores/dsantos/</link>
-    <description>Recent content in Douglas Santos on Buteco Tecnológico</description>
+    <description>Recent content in Douglas Santos on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>Douglas Santos on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 29 Feb 2016 23:50:31 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/autores/dsantos/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 29 Feb 2016 23:50:31 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/autores/dsantos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lançado Raspberry PI 3 Modelo B</title>
       <link>https://butecotecnologico.com.br/lancado-raspberry-pi-3-modelo-b/</link>
@@ -19,7 +20,13 @@
       <guid>https://butecotecnologico.com.br/lancado-raspberry-pi-3-modelo-b/</guid>
       <description>&lt;p&gt;Em celebração ao quarto ano da The Raspberry PI Foundation, foi anunciado hoje no blog &lt;a href=&#34;http://rasbperry.org&#34; target=&#34;_blank&#34;&gt;rasbperry.org&lt;/a&gt; o novo Raspberry PI 3 Modelo B.&lt;/p&gt;
 &lt;p&gt;&lt;img class=&#34;aligncenter size-full wp-image-4905&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/RPI05B3.jpg&#34; alt=&#34;RPI05B3&#34; width=&#34;938&#34; height=&#34;525&#34; /&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Kit Arduino Start - O sortudo da vez</title>
@@ -29,7 +36,13 @@
       <guid>https://butecotecnologico.com.br/kit-arduino-start-o-sortudo-da-vez/</guid>
       <description>Olá caros leitores,
 Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Arduino Start: O nome dele é Bruno Naibert de Canoas/RS, Parabéns!</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Feliz 2016!</title>
@@ -38,7 +51,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       
       <guid>https://butecotecnologico.com.br/feliz-2016/</guid>
       <description>Mais um ano que se foi, 2015, um ano de muitas novidades e novas experiências, boas ou ruins, todas foram em prol do fortalecimento.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -49,7 +68,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
 &lt;p&gt;Já apresentamos aqui no Buteco Open Source o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;primeiro&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2&#34; target=&#34;_blank&#34;&gt;segundo&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-3&#34; target=&#34;_blank&#34;&gt;terceiro&lt;/a&gt; e &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-4&#34; target=&#34;_blank&#34;&gt;quarto&lt;/a&gt; episódios da série.&lt;/p&gt;
 &lt;p&gt;Neste vídeo da série &lt;em&gt;World Without Linux Episode #&lt;/em&gt;&lt;em&gt;5&lt;/em&gt;&lt;em&gt;: &lt;/em&gt;&lt;em&gt;Space Exploration&lt;/em&gt; (Mundo Sem Linux Episódio #5: Exploração Espacial), tenta demonstrar a importância do Linux na exploração espacial.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -60,7 +85,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
 &lt;p&gt;Já apresentamos aqui no Buteco Open Source o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;primeiro&lt;/a&gt;, &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2&#34; target=&#34;_blank&#34;&gt;segundo&lt;/a&gt; e &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-3&#34; target=&#34;_blank&#34;&gt;terceiro&lt;/a&gt; episódios da série. Este vídeo, &lt;em&gt;World Without Linux Episode 4: Avatar Reimagined&lt;/em&gt; (Mundo Sem Linux Episódio 4: Avatar Reimaginado), tenta demonstrar a importância do Linux aos filmes.&lt;/p&gt;
 &lt;p&gt;Lembrem cada episódio tem &lt;em&gt;Easter Eggs&lt;/em&gt; novos para serem descobertos.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -72,7 +103,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
 &lt;p&gt;Já apresentamos aqui no Buteco Open Source o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;primeiro&lt;/a&gt; e o &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2&#34; target=&#34;_blank&#34;&gt;segundo&lt;/a&gt; episódios da série.&lt;/p&gt;
 &lt;p&gt;Este terceiro vídeo da série, &lt;em&gt;World Without Linux &lt;/em&gt;&lt;em&gt;Episode 3: Can I Follow You?&lt;/em&gt; (Mundo Sem Linux Episódio 3: Posso Te Seguir?), tenta demonstrar a importância do Linux para as redes sociais.&lt;/p&gt;
 &lt;p&gt;Lembrem-se que cada episódio possui novos &lt;em&gt;Easter Eggs&lt;/em&gt; para serem descobertos.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>LibreOffice Magazine Número 19</title>
@@ -83,7 +120,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       <description>&lt;p&gt;Saiu a nova edição da LibreOffice Magazine!&lt;/p&gt;
 &lt;p&gt;Nesta edição o homenageado é o LibreOffice, onde é contado como tudo começou, qual a situação atual do projeto, sobre os cinco anos de desenvolvimento e os três anos da LibreOffice Magazine. Faz também, uma homenagem aos autores dos artigos das dezenove edições, em agradecimento pelo trabalho realizado até aqui.&lt;/p&gt;
 &lt;p&gt;Além destes, os temas abordados foram:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Café com Software Livre - Testemunho</title>
@@ -94,7 +137,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       <description>&lt;p&gt;Parte da equipe do Buteco Open Source esteve no Café com Software Livre, neste final de semana que passou. Daremos aqui uma visão geral sobre o evento.&lt;/p&gt;
 &lt;p&gt;O propósito do evento é fortalecer o software livre e correlatos, integrando os grupos com este mesmo objetivo no estado de Santa Catarina, mas isto não quer dizer que outros não possam vir ;) . Como este evento é organizado pelo pessoal do &lt;a href=&#34;http://www.blusol.org&#34; target=&#34;_blank&#34;&gt;Blusol&lt;/a&gt;, normalmente acontece em Blumenau ou região, neste ano foi na cidade de Indaial.&lt;/p&gt;
 &lt;p&gt;Cá entre nós, ele também serve para mostrar que não vivemos só da Oktoberfest, só que este evento é regado pela cafeína e frequentado por Nerds :)&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -105,7 +154,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       <description>&lt;p&gt;A série &lt;em&gt;World Without Linux&lt;/em&gt; (Mundo Sem Linux) lançada pela &lt;em&gt;Linux Foudation&lt;/em&gt;, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.&lt;/p&gt;
 &lt;p&gt;Já apresentamos &lt;a href=&#34;https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; no Buteco Open Source o primeiro episódio da série, &lt;em&gt;What&amp;rsquo;s the Name of that Song?&lt;/em&gt; (Qual o Nome Daquela Música?), que fez uma brincadeira para demonstrar os sistemas de busca.&lt;/p&gt;
 &lt;p&gt;Neste segundo vídeo da série, &lt;em&gt;World Without Linux Episode 2: Are We There Yet?&lt;/em&gt; (Mundo Sem Linux Episódio 2: Já chegamos?), tenta demonstrar a importância do Linux para os GPSs, que não está em todos (os aparelhos), mas sem ele teríamos poucas opções no mercado.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>O valor do open source</title>
@@ -115,7 +170,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       <guid>https://butecotecnologico.com.br/o-valor-do-open-source/</guid>
       <description>&lt;p lang=&#34;pt-PT&#34;&gt;Desde 2008, o &lt;em&gt;The Linux Foudation&lt;/em&gt; tem trabalhado com desenvolvedores e empresas de tecnologia para hospedar projetos &lt;em&gt;open source&lt;/em&gt; de vários segmentos da indústria de tecnologia, ajudando a resolver problemas complexos e adaptando os princípios e práticas que fizeram e fazem do Linux o que ele é.&lt;/p&gt;
 &lt;p lang=&#34;pt-PT&#34;&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>NVIDIA anuncia driver 358 (beta) para Linux, Solaris e FreeBSD</title>
@@ -124,7 +185,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       
       <guid>https://butecotecnologico.com.br/nvidia-anuncia-driver-358-beta-para-linux-solaris-e-freebsd/</guid>
       <description>&lt;p&gt;A NVIDIA disponibilizou a primeira versão pública beta do &lt;em&gt;driver&lt;/em&gt; 358 (358.09) para Linux, FreeBSD e Solaris. Construído sobre o driver 355, a série 358 acrescenta mais peças ao quebra-cabeças da interface com DRM/KMS (&lt;em&gt;Direct Rendering Manager/Kernel Mode Setting&lt;/em&gt;) e continua melhorando o suporte ao Mir/Wayland.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>É difícil imaginar um mundo sem Linux</title>
@@ -136,7 +203,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
 &lt;p&gt;De acordo com a descrição da organização,&lt;/p&gt;
 &lt;blockquote&gt;Linux é o maior projeto de colaboração do mundo na história da computação. Ele roda a maior parte da infraestrutura de tecnologia do mundo e é apoiado por mais desenvolvedores e empresas do que qualquer outra plataforma. Está literalmente em toda parte - desde seu telefone até seu carro e escritório. Ele também alimenta a Internet, a nuvem, bolsas de valores do mundo, os supercomputadores, sistemas embarcados e muito mais.
 &lt;p&gt;Um mundo sem Linux é uma série que trará uma realidade confusa para ilustrar de forma divertida quão difundido o Linux é hoje. Este mundo fictício é uma ideia tão absurda que os cenários retratados na série vão nos ajudar a entender quanto o Linux é faz parte da nossa vida cotidiana e nos permite agradecer aos desenvolvedores e empresas que apoiam o Linux.&lt;/blockquote&gt;&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Feliz Aniversário Projeto GNU!</title>
@@ -147,7 +220,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       <description>&lt;p style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/GNU.png&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-3486&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/GNU.png&#34; alt=&#34;GNU&#34; width=&#34;350&#34; height=&#34;300&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &amp;nbsp;
 &lt;p&gt;Há 32 anos, em 27 de setembro de 1983, &lt;a href=&#34;https://pt.wikipedia.org/wiki/Richard_Matthew_Stallman&#34; target=&#34;_blank&#34;&gt;Richard Matthew Stallman&lt;/a&gt; &lt;a href=&#34;http://www.gnu.org/gnu/initial-announcement.html&#34; target=&#34;_blank&#34;&gt;anunciava&lt;/a&gt; ao mundo o &lt;a href=&#34;http://www.gnu.org&#34; target=&#34;_blank&#34;&gt;projeto GNU&lt;/a&gt; (sigla para Gnu Não é Unix).&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Google anuncia Brotli</title>
@@ -158,7 +237,13 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       <description>&lt;p style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/DataCompression.jpg&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-3441&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/DataCompression-300x225.jpg&#34; alt=&#34;DataCompression&#34; width=&#34;300&#34; height=&#34;225&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.com.br/2015/09/introducing-brotli-new-compression.html&#34; target=&#34;_blank&#34;&gt;blog de open source&lt;/a&gt; uma nova implementação para o Brotli, um algoritmo de compressão de dados sem perda (de dados) com propósito geral. Este novo algoritmo é melhor e mais rápido que o &lt;a href=&#34;https://github.com/google/zopfli&#34; target=&#34;_blank&#34;&gt;Zopfli&lt;/a&gt;, que foi anunciado há dois anos e, de acordo com &lt;a href=&#34;http://www.gstatic.com/b/brotlidocs/brotli-2015-09-22.pdf&#34; target=&#34;_blank&#34;&gt;estudo&lt;/a&gt; feito pela equipe de compressão de dados, em comparação com outros métodos e algoritmos de compactação.
 &lt;p style=&#34;text-align: right;&#34;&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Produtividade no LibreOffice</title>
@@ -170,7 +255,14 @@ Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.c
 &lt;p style=&#34;text-align: justify;&#34;&gt;Olá Pessoal! Neste artigo pretendo falar um pouco sobre uma forma simples de melhorar sua produtividade no LibreOffice, as teclas de atalho. Isso mesmo, parece besteira falar sobre este assunto, ainda mais num artigo voltado para usuários de Software Livre. Mas estou falando sério, não subestime este recurso.&lt;/p&gt;
 &lt;p style=&#34;text-align: justify;&#34;&gt;Às vezes sem reparar, você está procurando algo que poderia ter resolvido facilmente com uma tecla de atalho ou via acesso rápido ao menu (Alt + Letra sublinhada). Claro, não estou dizendo que deveríamos decorar todas as teclas de atalhos, pelo menos eu, imagino que isto seja quase impossível. Mas nos recursos que utilizamos com um pouco mais de frequência ganhamos produtividade quando utilizamos uma forma de cortar caminho. E quanto a isto, o LibreOffice não nos deixa na mão!&lt;/p&gt;
 &lt;p style=&#34;text-align: justify;&#34;&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Douglas Santos on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/autores/dsantos/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

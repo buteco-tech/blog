@@ -3,14 +3,15 @@
   <channel>
     <title>terminal on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/terminal/</link>
-    <description>Recent content in terminal on Buteco Tecnológico</description>
+    <description>Recent content in terminal on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>terminal on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/terminal/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 16 Dec 2015 21:22:36 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 16 Dec 2015 21:22:36 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bash: Reverse Search</title>
       <link>https://butecotecnologico.com.br/bash-reverse-search/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/bash-reverse-search/</guid>
       <description>&lt;p&gt;No Bash, é comum reexecutarmos comandos o tempo inteiro, especialmente quando precisamos compilar um programa ou mover um arquivo. O que se faz geralmente é ir apertando a tecla &amp;ldquo;para cima&amp;rdquo; e encontrar o comando desejado. Essa tarefa pode ser um pouco custosa, uma vez que o comando pode ter sido executado há horas e então, ficar voltando enumeros comandos não deve ser muito interessante.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>VIM Tips: Trabalhando com abas</title>
@@ -27,7 +34,13 @@
       
       <guid>https://butecotecnologico.com.br/vim-tips-trabalhando-com-abas/</guid>
       <description>&lt;p&gt;O VIM, como todos sabem, tem muitas ferramentas por padrão que são pouco mostradas, ou até mesmo não são exploradas com todo o seu potencial. Essa série de artigos tem como foco mostrar algumas funcionalidades interessantes e as vezes pouco exploradas.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Gerando backtrace em C/C&#43;&#43; no Linux</title>
@@ -36,7 +49,13 @@
       
       <guid>https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/</guid>
       <description>&lt;p&gt;Olá pessoal, creio que muitos aqui já se depararam com algum &lt;em&gt;crash&lt;/em&gt; em seus programas em C/C++, e gostariam de poder ver a pilha de chamadas, ou &lt;em&gt;stacktrace/backtrace&lt;/em&gt;, ao menos no ambiente de testes. Pois bem, a boa notícia é que no Linux existe a possibilidade de mostrar qual o ultimo método chamado antes de receber um &lt;em&gt;crash&lt;/em&gt;.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Utilizando a API REST do Docker com Python</title>
@@ -47,7 +66,13 @@
       <description>&lt;p&gt;O Docker é uma plataforma para construir e executar aplicações distribuídas. Com ele é possível executar um &lt;em&gt;bash&lt;/em&gt; em um ambiente Debian mesmo estando dentro um Fedora, por exemplo. Seu funcionamento se assemelha ao de uma máquina virtual, mas as aplicações executadas no Docker estão de fato sendo executados no sistema &lt;em&gt;host&lt;/em&gt;, ou seja, não existe a camada de emulação.&lt;/p&gt;
 &lt;p&gt;Isso se deve à utilização de &lt;em&gt;templates&lt;/em&gt; de imagens do Debian (existem imagens de sistemas inteiros, como Debian, Ubuntu, e também de aplicações, como Apache, MySQL e etc). Para mais informações sobre o Docker, basta verificar a &lt;a href=&#34;https://www.docker.com/&#34; target=&#34;_blank&#34;&gt;página&lt;/a&gt; do projeto.&lt;/p&gt;
 &lt;p&gt;Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifique como instalá-lo em sua distribuição. Após instalado, você precisará iniciá-lo através do &lt;em&gt;docker daemon&lt;/em&gt; para receber requisições HTTP, além das requisições por &lt;em&gt;socket&lt;/em&gt; (este é utilizado pelo &lt;em&gt;docker client&lt;/em&gt;). Antes de iniciá-lo com estas opções, você precisará ter certeza que o mesmo não esteja executando. Para tal, basta executar:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Criando um git server local</title>
@@ -56,7 +81,13 @@
       
       <guid>https://butecotecnologico.com.br/criando-um-git-server-local/</guid>
       <description>&lt;p&gt;Algumas vezes queremos ter um ponto comum em uma rede local onde podemos enviar nossos &lt;em&gt;commits&lt;/em&gt;, especialmente quando estamos trabalhando em equipe. Pois bem, a solução é simples.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Utilizando Shared Objects no Python</title>
@@ -66,7 +97,13 @@
       <guid>https://butecotecnologico.com.br/utilizando-shared-objects-no-python/</guid>
       <description>&lt;p&gt;Python é realmente uma linguagem muito versátil, tendo a mão quase sempre tudo o que se precisa fazer. Então, a algum tempo atrás eu precisava verificar a possibilidade de carregar um Shared Object com o Python, e eis que encontrei. A documentação do Python é realmente muito útil, com exemplos de utilização de módulos, inclusive do módulo em questão.&lt;/p&gt;
 &lt;p&gt;Para poder carregar a lib, eu utilizei o módulo &lt;strong&gt;ctypes&lt;/strong&gt;. Este módulo provê tipos de dados compatíveis com o C e permite chamar bibliotecas, como DDLs e shared objects. Para iniciar o exemplo, eu criei uma lib, na verdade um shared object, a seguir:&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Virsh: criando e gerenciando VMs pelo terminal</title>
@@ -75,7 +112,13 @@
       
       <guid>https://butecotecnologico.com.br/virsh-criando-e-gerenciando-vms-pelo-terminal/</guid>
       <description>Este artigo apresenta uma introdução a ferramenta virsh, baseada na libvirt, para gerenciar máquinas virtuais no Linux.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Vaga para programador Linux/C em Blumenau</title>
@@ -90,7 +133,13 @@ implementar aplicativos em SW para sistema operacional em Linux,
 incluindo desenvolvimento de novos aplicativos, melhorias e correções
 em aplicativos existentes, instalação de pacotes de aplicativos de
 código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Hands on: quilt</title>
@@ -109,7 +158,13 @@ main.py  new_tab.py  new_tab.pyc  new_tab.ui  window.ui
 quilt new alteracao1.patch
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Após a execução deste comando, será criada uma pasta &amp;ldquo;patches&amp;rdquo;, que conterá todos os patches criados. Por hora esta pasta contém apenas o arquivo series, já que não adicionamos e nem alteramos nenhum arquivo para adicionar ao patch recem criado. O arquivo series mostra a ordem em que os patches criados serão aplicados.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Interagindo com a câmera do Raspberry Pi</title>
@@ -118,7 +173,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/interagindo-com-a-camera-do-raspberry-pi/</guid>
       <description>Este artigo traz uma introdução de como pode ser feita a integração do Raspberry Pi com seu módulo de câmera chamado picamera.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Vendo a memória de forma simplificada no FreeBSD ( I have free )</title>
@@ -127,7 +188,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/vendo-a-memoria-de-forma-simplificada-no-freebsd-i-have-free/</guid>
       <description>Como executar o comando free no FreeBSD, da mesma forma que é executado no Linux.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Enviando e-mails via o terminal ( sendEmail != sendmail )</title>
@@ -136,7 +203,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/enviando-e-mails-via-o-terminal-sendemail-sendmail/</guid>
       <description>Tutorial sobre como utilizar o sendEmail pelo terminal para enviar emails</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Criando módulo Python em C/C&#43;&#43;</title>
@@ -145,7 +218,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/criando-modulo-python-em-cc/</guid>
       <description>Primeiros passos na criação de um módulo C/C++ para ser utilizado dentro do Python</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conhecendo Pipe e FIFO (parte final)</title>
@@ -154,7 +233,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/conhecendo-pipe-e-fifo-parte-final/</guid>
       <description>Última parte da sequencia de artigos sobre pipes e fifos. Nesta parte, serão explicados como funcionam os fifos e como se diferenciam dos pipes.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Conhecendo o modinfo</title>
@@ -163,7 +248,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/conhecendo-o-modinfo/</guid>
       <description>Este artigo explica o funcionamento básico do comando kmod, e para que qual finalidade existe o comando. Ainda neste artigo, é mostrado exemplos de execução do comando e quais informações este pode extrair dos módulos do kernel.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Entendendo Pipe e FIFO (parte 2)</title>
@@ -172,7 +263,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-2/</guid>
       <description>Esta é a segunda parte da postagem sobre Pipes e Fifos aqui do blog.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Entendendo Pipe e FIFO (parte 1)</title>
@@ -181,7 +278,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-1/</guid>
       <description>Pipes e FIFOs são muito utilizados no mundo Linux como um método de IPC (inter process communication), ou comunicação entre processos.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Hands on: autotools</title>
@@ -190,7 +293,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/hands-on-autotools/</guid>
       <description>Olá pessoal, a muito tempo eu queria aprender como funciona o tão famoso autotools.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Tcl/Expect: Automatização de comandos interativos no Linux</title>
@@ -199,7 +308,13 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/tclexpect-automatizacao-de-comandos-interativos-no-linux/</guid>
       <description>Olá pessoal, neste artigo será abordado a automatização de comandos com o Tcl/expect.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Recortar arquivo de áudio no Linux pela linha de comando</title>
@@ -208,7 +323,14 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/recortar-arquivo-de-audio-no-linux-pela-linha-de-comando/</guid>
       <description>Olá pessoa, segue uma dica para um problema que talvez alguns já tiveram.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>terminal on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/terminal/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+

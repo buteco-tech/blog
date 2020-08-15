@@ -3,14 +3,15 @@
   <channel>
     <title>ebook on Buteco Tecnológico</title>
     <link>https://butecotecnologico.com.br/tags/ebook/</link>
-    <description>Recent content in ebook on Buteco Tecnológico</description>
+    <description>Recent content in ebook on Buteco Tecnológico</description><image>
+      <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+      <title>ebook on Buteco Tecnológico</title>
+      <link>https://butecotecnologico.com.br/tags/ebook/</link>
+    </image>
+    
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 19 Oct 2015 21:48:33 +0000</lastBuildDate>
-    
-	<atom:link href="https://butecotecnologico.com.br/tags/ebook/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 19 Oct 2015 21:48:33 +0000</lastBuildDate><atom:link href="https://butecotecnologico.com.br/tags/ebook/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>O sorteado da vez</title>
       <link>https://butecotecnologico.com.br/o-sorteado-da-vez/</link>
@@ -18,7 +19,13 @@
       
       <guid>https://butecotecnologico.com.br/o-sorteado-da-vez/</guid>
       <description>O sorteado da vez, premiado com o brinde do blog.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>ebook on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/ebook/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sorteio de um e-Book</title>
@@ -29,7 +36,13 @@
       <description>&lt;p&gt;Já faz algum tempo que não fazemos um sorteio. Hoje damos início a mais um sorteio em parceria com a &lt;a href=&#34;http://www.casadocodigo.com.br/&#34; target=&#34;_blank&#34;&gt;Casa do Código&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;O Sorteio se inicia hoje (05/10) e termina segunda (12/10). O sorteado será revelado na quarta (14/10).&lt;/p&gt;
 &lt;p&gt;O prêmio é um e-Book, o título fica a escolha do ganhador.&lt;/p&gt;</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>ebook on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/ebook/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Resultado do sorteio do e-Book</title>
@@ -38,7 +51,13 @@
       
       <guid>https://butecotecnologico.com.br/resultado-do-sorteio-do-e-book/</guid>
       <description>Primeiramente gostaríamos de agradecer a todos que participaram do sorteio do e-Book da Casa do Código.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>ebook on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/ebook/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Sorteio de um e-Book da Casa do Código</title>
@@ -47,7 +66,13 @@
       
       <guid>https://butecotecnologico.com.br/sorteio-de-um-e-book-da-casa-do-codigo/</guid>
       <description>A nossa parceira, a Casa do Código, está oferecendo um e-Book para sorteio aos nossos leitores.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>ebook on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/ebook/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>Cupom de desconto nos livros da Casa do Código</title>
@@ -57,7 +82,13 @@
       <guid>https://butecotecnologico.com.br/cupom-de-desconto-nos-livros-da-casa-do-codigo/</guid>
       <description>Cada vez mais tentamos trazer o melhor conteúdo para nossos leitores, sendo assim fizemos mais uma parceria.
 Agora você pode comprar livros e e-Books na Casa do Código com 15% de desconto.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>ebook on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/ebook/</link>
+      </image>
+      
+      </item>
     
     <item>
       <title>40&#43; eBooks Gratuitos</title>
@@ -66,7 +97,14 @@ Agora você pode comprar livros e e-Books na Casa do Código com 15% de desconto
       
       <guid>https://butecotecnologico.com.br/40-ebooks-gratis/</guid>
       <description>A Syncfusion está disponibilizando mais de 40 livros gratuitamente. Os livros abrangem de forma sucinta o assunto abordado e cada livro possui cerca de 100 páginas.</description>
-    </item>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>ebook on Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/tags/ebook/</link>
+      </image>
+      
+      </item>
     
   </channel>
 </rss>
+
