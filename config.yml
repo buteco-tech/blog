@@ -258,7 +258,7 @@ menu:
     - name: Estatísticas
       weight: 3
       identifier: stats
-      url: https://stats.buteco.me
+      url: https://estatisticas.buteco.me/
 
 markup:
   defaultMarkdownHandler: goldmark
