@@ -203,7 +203,13 @@ O tutorial de hoje é baseado no CentOS e no Ubuntu. Fiz a mesma configuração 
   </div>
 </div>
 
-  </header><article class="mt-3 mb-4">
+  </header><div class="alert alert-warning" role="alert">
+  <h4 class="alert-heading">Atenção</h4>
+  <p>Este artigo foi migrado do Wordpress e pode conter erros de formatação.</p>
+  <p>Caso encontre algum problema deixe um comentário que iremos resolver o mais breve possível.</p>
+</div>
+
+  <article class="mt-3 mb-4">
   <p>Para você que acabou de criar a sua primeira VM no Digital Ocean e pegou logo de cara a de 512 de RAM, você vai se ver no aperto dependendo da aplicação que colocar para executar nela. Para solucionar possíveis problemas de falta de memória vamos adicionar Swap a esta máquina tão simplória.</p>
 <p>Aplicações simples como o MySQL e o Jenkins rodando nessas máquinas poder gerar alguma dor de cabeça caso você não identifique que o problema é falta de memória. Por exemplo, no meu caso o Jenkins parava a execução dos testes no meio, pois recebia um SIGKILL de alguém, provavelmente do S.O. O mais estranho é que o Jenkins continuava executando, apenas parava o Job que estava em execução. A solução foi bem simples, adicionar uma Swap, já que não queríamos aumentar os valores com VMs do DO.</p>
 <p>O tutorial de hoje é baseado no CentOS e no Ubuntu. Fiz a mesma configuração em duas VMs distintas. A maioria das distros suportam os comandos e sistemas de arquivos aqui mencionados.</p>

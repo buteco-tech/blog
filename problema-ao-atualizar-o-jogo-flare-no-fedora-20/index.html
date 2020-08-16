@@ -197,7 +197,13 @@
   </div>
 </div>
 
-  </header><article class="mt-3 mb-4">
+  </header><div class="alert alert-warning" role="alert">
+  <h4 class="alert-heading">Atenção</h4>
+  <p>Este artigo foi migrado do Wordpress e pode conter erros de formatação.</p>
+  <p>Caso encontre algum problema deixe um comentário que iremos resolver o mais breve possível.</p>
+</div>
+
+  <article class="mt-3 mb-4">
   <p>Olá pessoal, como primeiro post deste blog eu gostaria de falar sobre a minha experiência resolvendo um problema que tive hoje mesmo no Fedora 20!</p>
 <p>Após fazer um <em>yum update</em> no meu Fedora 20, vi que o jogo Flare foi atualizado, e então resolvi abrir para ver se percebia algo diferente no jogo. Acontece que o item de menu do jogo havia sumido do menu do Mate. Então executei pela linha de comando (digitei <em>flare</em> no terminal) e não consegui jogar. O botão &ldquo;Play Game&rdquo; estava desabilitado, e aparecia uma mensagem falando que era necessário pelo menos um <em>mod</em> do jogo estar habilitado. Ao entrar no menu &ldquo;Configurations&rdquo; eu vi que não existia nenhum <em>mod </em> para ser habilitado. Então eu abri um bug para verificar o problema: <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1136498"><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1136498">https://bugzilla.redhat.com/show_bug.cgi?id=1136498</a></a></p>
 <p>Acontece que para executar o jogo pela linha de comando é necessário passar parâmetros, e passando estes o problema é resolvido, fazendo o programa encontrar os <em>mods</em> padrões do jogo e os habilitando. Mas o problema do ícone ter sumido ainda existia, e conforme um comentário no bug acima, existe ainda este erro.</p>

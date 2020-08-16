@@ -5,36 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="Hugo 0.74.3" />
 
-  <title>Instalando o Apache no CentOS 7 &middot; Buteco Tecnológico</title>
+  <title>Instalando o Apache Server no CentOS 7 &middot; Buteco Tecnológico</title>
 
   <meta name="description" content="" />
 
 
 
-<meta itemprop="name" content="Instalando o Apache no CentOS 7">
-<meta itemprop="description" content="Dando continuidade ao tutorial de instalação do LAMP no CentOS, hoje vamos ver como instalar o Apache. No tutorial anterior, vimos como instalar o MariaDB.
-O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.20% dos servidores ativos no mundo. Além disso, é a principal tecnologia da Apache Software Foundation.">
+<meta itemprop="name" content="Instalando o Apache Server no CentOS 7">
+<meta itemprop="description" content="O Apache é um dos mais bem sucedido servidor web livre, representando cerca de 47% dos servidores ativos no mundo.">
 <meta itemprop="datePublished" content="2015-03-05T00:20:38+00:00" />
 <meta itemprop="dateModified" content="2015-03-05T00:20:38+00:00" />
-<meta itemprop="wordCount" content="193">
+<meta itemprop="wordCount" content="168">
 <meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/Apache-Logo.png">
 
 
 
-<meta itemprop="keywords" content="apache,centos,httpd,lamp,php,wordpress," />
+<meta itemprop="keywords" content="apache,centos,httpd,php,wordpress," />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/Apache-Logo.png"/>
 
-<meta name="twitter:title" content="Instalando o Apache no CentOS 7"/>
-<meta name="twitter:description" content="Dando continuidade ao tutorial de instalação do LAMP no CentOS, hoje vamos ver como instalar o Apache. No tutorial anterior, vimos como instalar o MariaDB.
-O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.20% dos servidores ativos no mundo. Além disso, é a principal tecnologia da Apache Software Foundation."/>
+<meta name="twitter:title" content="Instalando o Apache Server no CentOS 7"/>
+<meta name="twitter:description" content="O Apache é um dos mais bem sucedido servidor web livre, representando cerca de 47% dos servidores ativos no mundo."/>
 
 
-<meta property="og:title" content="Instalando o Apache no CentOS 7" />
-<meta property="og:description" content="Dando continuidade ao tutorial de instalação do LAMP no CentOS, hoje vamos ver como instalar o Apache. No tutorial anterior, vimos como instalar o MariaDB.
-O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.20% dos servidores ativos no mundo. Além disso, é a principal tecnologia da Apache Software Foundation." />
+<meta property="og:title" content="Instalando o Apache Server no CentOS 7" />
+<meta property="og:description" content="O Apache é um dos mais bem sucedido servidor web livre, representando cerca de 47% dos servidores ativos no mundo." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/" />
 <meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/Apache-Logo.png" />
@@ -151,7 +148,7 @@ O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.2
 
 <section class="container article">
   <header class="mb-4">
-    <h1>Instalando o Apache no CentOS 7</h1>
+    <h1>Instalando o Apache Server no CentOS 7</h1>
     
     <div class="meta d-flex"><div class="d-inline-block mr-2">
     <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
@@ -176,60 +173,70 @@ O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.2
      href="#"
      title="Share on Twitter"
      data-url="https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/"
-     data-text="Instalando o Apache no CentOS 7"><i class="fab fa-twitter"></i></a>
+     data-text="Instalando o Apache Server no CentOS 7"><i class="fab fa-twitter"></i></a>
 
   <a class="linkedin-share-button"
      href="#"
      title="Share on LinkedIn"
      data-url="https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/"
-     data-text="Instalando o Apache no CentOS 7"><i class="fab fa-linkedin-in"></i></a>
+     data-text="Instalando o Apache Server no CentOS 7"><i class="fab fa-linkedin-in"></i></a>
 
   <a class="facebook-share-button"
      href="#"
      title="Share on Facebook"
      data-url="https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/"
-     data-text="Instalando o Apache no CentOS 7"><i class="fab fa-facebook"></i></a>
+     data-text="Instalando o Apache Server no CentOS 7"><i class="fab fa-facebook"></i></a>
 
   <a class="pinterest-share-button"
      href="#"
      title="Share on Pinterest"
      data-url="https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/"
-     data-text="Instalando o Apache no CentOS 7"><i class="fab fa-pinterest"></i></a>
+     data-text="Instalando o Apache Server no CentOS 7"><i class="fab fa-pinterest"></i></a>
 </div>
 
   </div>
 </div>
 
   </header>
-  <div class="mt-5">
-    <figure class="figure">
-      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/Apache-Logo.png"
-           alt="Instalando o Apache no CentOS 7">
-    </figure>
-  </div>
+
   <article class="mt-3 mb-4">
-  <p>Dando continuidade ao tutorial de instalação do LAMP no CentOS, hoje vamos ver como instalar o Apache. No tutorial anterior, vimos <a href="/instalando-o-mariadb-no-centos-7" target="_blank">como instalar o MariaDB</a>.</p>
-<p>O Apache é o mais bem-sucedido servidor web livre. Ele representa cerca de 47.20% dos servidores ativos no mundo. Além disso, é a principal tecnologia da <a href="http://www.apache.org/" target="_blank">Apache Software Foundation</a>.</p>
-<p>Para instalar o Apache execute o comando abaixo.</p>
+  <figure>
+    <img src="/images/wp-content/uploads/2015/03/Apache-Logo.png"
+         alt="K8s" width="200"/> 
+</figure>
+
+<p>O <a href="http://httpd.apache.org/docs/"
+   
+   target="_blank">Apache HTTP Server</a> é um dos mais bem-sucedido servidor web livre, representando cerca de 47% dos servidores ativos no mundo.</p>
+<p>O Apache é um dos projetos que é mantido pela <a href="https://www.apache.org/"
+   
+   target="_blank">Apache Software Foundation</a>.</p>
+<h2 id="instalação">Instalação</h2>
+<p>Para instalar o Apache execute o comando:</p>
 <p><code>yum install httpd</code></p>
 <p>Ao término da instalação deverá ser exibida uma mensagem de concluído.</p>
-<p>Para iniciar o serviço do Apache execute o comando abaixo:</p>
+<p>Para iniciar o serviço do Apache execute o comando:</p>
 <p><code>systemctl start httpd.service</code></p>
-<p>Após iniciado basta digitar no seu browser <em>localhost</em> e você deverá ver uma página com a seguinte mensagem:</p>
-<p><code>Testing 123.. page</code></p>
-<p>Como nosso intuito é colocar o Worpress nesse servidor, vamos instalar alguns pacotes adicionais.</p>
-<p>Execute o comando abaixo para instalar os pacotes necessários para a hospedagem do Worpress nesse servidor:</p>
-<p><code>yum install php php-mysql php-gd</code></p>
-<p>Após isto reinicie o Apache com o comando abaixo:</p>
-<p><code>systemctl restart httpd.service</code></p>
-<p>Para adicionar o Apache na inicialização do sistema digite o comando abaixo:</p>
+<p>Para adicionar o Apache na inicialização do sistema execute o comando:</p>
 <p><code>systemctl enable httpd.service</code></p>
-<p>A instalação do Apache em si é bem simples. Na próxima parte iremos ver como configurar o Wordpress.</p>
+<h2 id="teste">Teste</h2>
+<p>Após iniciado basta digitar no seu browser <a href="http://localhost"
+   
+   target="_blank">http://localhost</a> e você deverá ver uma página com a seguinte mensagem:</p>
+<p><code>Testing 123.. page</code></p>
+<h2 id="pacotes-adicionais">Pacotes adicionais</h2>
+<p>Para utilizar com o Worpress, é necessário instalar alguns pacotes adicionais.</p>
+<p>Execute o comando a seguir para instalar os pacotes necessários para a hospedagem do Worpress no seu servidor:</p>
+<p><code>yum install php php-mysql php-gd</code></p>
+<p>Após isto reinicie o Apache com o comando:</p>
+<p><code>systemctl restart httpd.service</code></p>
+<h2 id="conclusão">Conclusão</h2>
+<p>A instalação do Apache em si é bem simples. Espero que tenha gostado.</p>
 <p>Até a próxima.</p>
 
   </article>
 
-  <footer>
+  <footer class="mt-3 mb-4">
     
 <div class="mb-4">
   <ul class="list-unstyled tags">
@@ -246,10 +253,6 @@ O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.2
   </li>
   
   <li class="d-inline-block mb-1 mr-1">
-     <a href="https://butecotecnologico.com.br/tags/lamp/" class="tag-link">lamp</a>
-  </li>
-  
-  <li class="d-inline-block mb-1 mr-1">
      <a href="https://butecotecnologico.com.br/tags/php/" class="tag-link">php</a>
   </li>
   
@@ -260,33 +263,31 @@ O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.2
 </div>
 
 
-
     <div class="share-buttons text-center">
   <a class="twitter-share-button"
      href="#"
      title="Share on Twitter"
      data-url="https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/"
-     data-text="Instalando o Apache no CentOS 7"><i class="fab fa-twitter"></i></a>
+     data-text="Instalando o Apache Server no CentOS 7"><i class="fab fa-twitter"></i></a>
 
   <a class="linkedin-share-button"
      href="#"
      title="Share on LinkedIn"
      data-url="https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/"
-     data-text="Instalando o Apache no CentOS 7"><i class="fab fa-linkedin-in"></i></a>
+     data-text="Instalando o Apache Server no CentOS 7"><i class="fab fa-linkedin-in"></i></a>
 
   <a class="facebook-share-button"
      href="#"
      title="Share on Facebook"
      data-url="https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/"
-     data-text="Instalando o Apache no CentOS 7"><i class="fab fa-facebook"></i></a>
+     data-text="Instalando o Apache Server no CentOS 7"><i class="fab fa-facebook"></i></a>
 
   <a class="pinterest-share-button"
      href="#"
      title="Share on Pinterest"
      data-url="https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/"
-     data-text="Instalando o Apache no CentOS 7"><i class="fab fa-pinterest"></i></a>
+     data-text="Instalando o Apache Server no CentOS 7"><i class="fab fa-pinterest"></i></a>
 </div>
-
 
     
 <div class="border-top py-4">
@@ -310,7 +311,6 @@ O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.2
   </div>
   
 </div>
-
     <div class="border-top pt-4 pb-4">
 <h2 class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>

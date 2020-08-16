@@ -15,7 +15,7 @@
 <meta itemprop="description" content="O MariaDB é um servidor de banco de dados que oferece as mesmas funcionalidades do MySQL. Na verdade ele é um fork do MySQL, feito após a sua compra pela Oracle. O MariaDB é desenvolvido pela comunidade de software livre e por alguns dos autores originais do MySQL.">
 <meta itemprop="datePublished" content="2015-02-11T19:30:29+00:00" />
 <meta itemprop="dateModified" content="2015-02-11T19:30:29+00:00" />
-<meta itemprop="wordCount" content="502">
+<meta itemprop="wordCount" content="440">
 <meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Mariadb-seal-shaded-browntext.png">
 
 
@@ -198,28 +198,26 @@
 </div>
 
   </header>
-  <div class="mt-5">
-    <figure class="figure">
-      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Mariadb-seal-shaded-browntext.png"
-           alt="Instalando o MariaDB no CentOS 7">
-    </figure>
-  </div>
+
   <article class="mt-3 mb-4">
-  <p>Hoje vamos dar início a uma série de artigos sobre como configurar um servidor Web. No meu caso utilizarei o <a title="CentOS" href="http://www.centos.org/" target="_blank">CentOS 7</a>, mas este artigo pode ser usado como base para a instalação em outras distribuições.</p>
-<p>O conteúdo será divido em 4 partes. Sendo:</p>
-<ol>
-  <li>Instalação e configuração do <a href="https://mariadb.org/pt-br/" target="_blank">MariaDB</a></li>
-  <li>Instalação e configuração do <a href="http://www.apache.org/" target="_blank">Apache</a></li>
-  <li>Instalação e configuração do <a href="https://br.wordpress.org/" target="_blank">WordPress</a></li>
-  <li>Instalação e configuração do <a href="http://www.phpmyadmin.net/home_page/index.php" target="_blank">phpMyAdmin</a></li>
-</ol>
-<p>Agora que você já sabe o que está por vir, vamos dar início a instalação do MariaDB.</p>
-<p>O MariaDB é um servidor de banco de dados que oferece as mesmas funcionalidades do MySQL. Na verdade ele é um fork do MySQL, feito após a sua compra pela Oracle. O MariaDB é desenvolvido pela comunidade de software livre e por alguns dos autores originais do MySQL.</p>
-<p><strong>Instalação</strong></p>
+  <figure>
+    <img src="/images/wp-content/uploads/2015/02/Mariadb-seal-shaded-browntext.png"
+         alt="MariaDB" width="250"/> 
+</figure>
+
+<p>O <a href="https://mariadb.org/pt-br/"
+   
+   target="_blank">MariaDB</a> é um servidor de banco de dados que oferece as mesmas funcionalidades do MySQL. Na verdade ele é um fork do MySQL, feito após a sua compra pela Oracle. O <a href="https://mariadb.org/pt-br/"
+   
+   target="_blank">MariaDB</a> é desenvolvido pela comunidade de software livre e por alguns dos autores originais do MySQL.</p>
+<p>No meu caso utilizarei o <a href="https://www.centos.org/"
+   
+   target="_blank">CentOS 7</a>, mas este artigo pode ser usado como base para a instalação em outras distribuições.</p>
+<h2 id="instalação">Instalação</h2>
 <p>Para instalar o MariaDB no Centos 7 execute o comando:</p>
 <p><code>sudo yum install mariadb-server mariadb</code></p>
-<p>Ao final da instalação deverá aparecer <strong>Complete!</strong>.</p>
-<p><strong>Configuração</strong></p>
+<p>Ao final da instalação deverá aparecer a mensagem <em>Completed!</em>.</p>
+<h2 id="configuração">Configuração</h2>
 <p>Após instalado, devemos configurar alguns itens.</p>
 <p>O primeiro é iniciar o serviço do MariaDB. Para iniciá-lo execute o comando:</p>
 <p><code>sudo systemctl start mariadb</code></p>
@@ -227,9 +225,7 @@
 <p><code>sudo mysql_secure_installation</code></p>
 <p>Note que este passo solicita a configuração de outros itens, então iremos por partes.</p>
 <p>Inicialmente será solicitado a senha do <em>root</em>, conforme abaixo:</p>
-<pre>
-<code>
-NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
+<pre><code>NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
 SERVERS IN PRODUCTION USE! PLEASE READ EACH STEP CAREFULLY!
 
 In order to log into MariaDB to secure it, we'll need the current
@@ -238,42 +234,39 @@ you haven't set the root password yet, the password will be blank,
 so you should just press enter here.
 
 Enter current password for root (enter for none):
-</code>
-</pre>
-<p>Apenas aperte Enter, pois não existe uma senha definida.</p>
+</code></pre><p>Apenas aperte Enter, pois não existe uma senha definida.</p>
 <p>Após isso, será solicitado se você deseja definir uma nova senha do <em>root</em>, conforme abaixo:</p>
-<pre>
-<code>
-Setting the root password ensures that nobody can log into the MariaDB
+<pre><code>Setting the root password ensures that nobody can log into the MariaDB
 root user without the proper authorisation.
 
 Set root password? [Y/n]
-</code>
-</pre>
-<p>Escolha <strong>Y</strong> e defina uma nova senha.</p>
+</code></pre><p>Escolha <strong>Y</strong> e defina uma nova senha.</p>
 <p>Se tudo ocorrer bem, você deverá ver algo semelhante a:</p>
-<p><code>Password updated successfully!
-Reloading privilege tables..</code></p>
-<p>Ainda serão feitas outras perguntas sobre acesso a base, apenas escolha entre Y/N de acordo com a sua necessidade.</p>
+<pre><code>Password updated successfully!
+Reloading privilege tables..
+</code></pre><p>Ainda serão feitas outras perguntas sobre acesso a base, apenas escolha entre Y/N de acordo com a sua necessidade.</p>
 <p>Após configurado, vamos colocá-lo para iniciar automaticamente no boot. Para isso, execute o comando:</p>
 <p><code>systemctl enable mariadb.service</code></p>
-<p><strong>Teste</strong></p>
+<h2 id="teste">Teste</h2>
 <p>Se tudo estiver certo, agora você já pode se conectar no MySQL. Para isso, execute o comando:</p>
 <p><code>mysql -u root -p</code></p>
-<p>Para fazer um pequeno teste no nosso BD, vamos criar um usuário e uma base.</p>
+<p>Para fazer um pequeno teste no nosso BD, vamos criar um usuário e uma base para o <a href="https://br.wordpress.org/"
+   
+   target="_blank">Wordpress</a>.</p>
 <p>Para criar uma base execute o seguinte comando:</p>
 <p><code>CREATE DATABASE wordpress;</code></p>
 <p>Para criar um usuário execute o seguinte comando:</p>
-<p><code>CREATE USER &lsquo;usuario&rsquo;@&lsquo;localhost&rsquo; IDENTIFIED BY &lsquo;senha&rsquo;;</code></p>
+<p><code>CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'senha';</code></p>
 <p>Para atribuir permissões de acesso a base ao usuário execute o seguinte comando:</p>
-<p><code>GRANT ALL PRIVILEGES ON wordpress . * TO &lsquo;usuario&rsquo;@&lsquo;localhost&rsquo;;
-FLUSH PRIVILEGES;</code></p>
-<p>Pronto! Já demos o passo inicial para o nosso servidor do WordPress.</p>
-<p>Assine nosso <a href="/feed.xml" target="_blank">feed</a> e não perca a continuidade deste artigo. Até a próxima.</p>
+<p><code>GRANT ALL PRIVILEGES ON wordpress . * TO 'usuario'@'localhost'; FLUSH PRIVILEGES;</code></p>
+<p>Pronto!</p>
+<h2 id="conclusão">Conclusão</h2>
+<p>A instalação do MariaDB em si é bem simples. Espero que tenha gostado.</p>
+<p>Até a próxima.</p>
 
   </article>
 
-  <footer>
+  <footer class="mt-3 mb-4">
     
 <div class="mb-4">
   <ul class="list-unstyled tags">
@@ -304,7 +297,6 @@ FLUSH PRIVILEGES;</code></p>
 </div>
 
 
-
     <div class="share-buttons text-center">
   <a class="twitter-share-button"
      href="#"
@@ -331,7 +323,6 @@ FLUSH PRIVILEGES;</code></p>
      data-text="Instalando o MariaDB no CentOS 7"><i class="fab fa-pinterest"></i></a>
 </div>
 
-
     
 <div class="border-top py-4">
   <div class="author-info">
@@ -354,7 +345,6 @@ FLUSH PRIVILEGES;</code></p>
   </div>
   
 </div>
-
     <div class="border-top pt-4 pb-4">
 <h2 class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>

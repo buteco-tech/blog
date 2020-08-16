@@ -201,26 +201,34 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
 </div>
 
   </header>
-  <div class="mt-5">
-    <figure class="figure">
-      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2016/04/virtualbox.png"
-           alt="Dispositivos USB não são reconhecidos pelo VirtualBox (host Linux)">
-    </figure>
-  </div>
+
   <article class="mt-3 mb-4">
-  <p>O <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a> é uma das mais bem conceituadas opções para emulação de sistemas operacionais em máquinas virtuais, com suporte a x86 e AMD64/Intel64. Atualmente o VirtualBox possui versões para hosts Windows, Linux, OS X, Solaris e FreeBSD.</p>
+  <figure>
+    <img src="/images/wp-content/uploads/2016/04/virtualbox.png"
+         alt="VBox" width="150"/> 
+</figure>
+
+<p>O <a href="https://www.virtualbox.org/"
+   
+   target="_blank">VirtualBox</a> é uma das mais bem conceituadas opções para emulação de sistemas operacionais em máquinas virtuais, com suporte a x86 e AMD64/Intel64. Atualmente o VirtualBox possui versões para hosts Windows, Linux, OS X, Solaris e FreeBSD.</p>
 <p>Porém no Linux, em alguns casos o reconhecimento de dispositivos USB, Webcam e leitores SD Card do host no sistema guest não funciona. Esse problema é geralmente causado por falta de permissão no seu usuário no momento da execução do VirtualBox.</p>
-<p><strong>VirtualBox Extension Pack</strong></p>
-<p>Primeiro vamos instalar o pacote de extensão que adiciona suporte a USB 2.0 e 3.0, VirtualBoxRDP e PXE boot. Faça o <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">download do VirtualBox Extension Pack</a> para a versão do seu VirtualBox.</p>
+<h3 id="virtualbox-extension-pack">VirtualBox Extension Pack</h3>
+<p>Primeiro vamos instalar o pacote de extensão que adiciona suporte a USB 2.0 e 3.0, VirtualBoxRDP e PXE boot. Faça o <a href="https://www.virtualbox.org/wiki/Downloads"
+   
+   target="_blank">download do VirtualBox Extension Pack</a> para a versão do seu VirtualBox.</p>
 <p>No VirtualBox acesse o menu Arquivo &gt; Preferências &gt; Extensões. Na tela de extensões clique no botão de acrescentar e escolha o arquivo que você acabou de baixar.</p>
-<p><a href="/images/wp-content/uploads/2016/04/vbox-pref-extensoes-a.png"><img class="aligncenter wp-image-5299 size-full" src="/images/wp-content/uploads/2016/04/vbox-pref-extensoes-a.png" alt="vbox-pref-extensoes-a" width="757" height="424" /></a></p>
+<figure>
+    <img src="/images/wp-content/uploads/2016/04/vbox-pref-extensoes-a.png"
+         alt="VBox"/> 
+</figure>
+
 <p>Aguarde a instalação.</p>
-<p><strong>Adicionando seu usuário ao grupo vboxusers</strong></p>
+<h3 id="adicionando-seu-usuário-ao-grupo-vboxusers">Adicionando seu usuário ao grupo vboxusers</h3>
 <p>Primeiro vamos descobrir se seu usuário pertence ao grupo <em>vboxusers</em>.</p>
 <p>Para isto execute o comando abaixo no terminal:</p>
 <p><code>$ groups SEU_USUARIO</code></p>
 <p>O resultado deverá ser algo similar ao abaixo:</p>
-<p><samp>SEU_USUARIO : users vboxusers</samp></p>
+<p><code>SEU_USUARIO : users vboxusers</code></p>
 <p>Se nesta linha incluir o <em>vboxusers</em> já está tudo certo.</p>
 <p>Caso não, vamos adicionar seu usuário ao grupo com o comando:</p>
 <p><code>$ sudo adduser SEU_USUARIO vboxusers</code></p>
@@ -228,12 +236,16 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
 <p><code>$ usermod SEU_USUARIO -a -G vboxusers</code></p>
 <p>Após isto, faça logoff ou reinicie o computador.</p>
 <p>Agora deverá ser possível reconhecer dispositivos conectados ao Linux no sistema hospedeiro.</p>
-<p><a href="/images/wp-content/uploads/2016/04/vbox-usb-a.png"><img class="aligncenter wp-image-5300 size-large" src="/images/wp-content/uploads/2016/04/vbox-usb-a-1024x523.png" alt="vbox-usb-a" width="648" height="331" /></a></p>
+<figure>
+    <img src="/images/wp-content/uploads/2016/04/vbox-usb-a.png"
+         alt="VBox"/> 
+</figure>
+
 <p>Espero que este tutorial ajude você, assim como me ajudou.</p>
 
   </article>
 
-  <footer>
+  <footer class="mt-3 mb-4">
     
 <div class="mb-4">
   <ul class="list-unstyled tags">
@@ -254,7 +266,6 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
   </li>
   </ul>
 </div>
-
 
 
     <div class="share-buttons text-center">
@@ -283,7 +294,6 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
      data-text="Dispositivos USB não são reconhecidos pelo VirtualBox (host Linux)"><i class="fab fa-pinterest"></i></a>
 </div>
 
-
     
 <div class="border-top py-4">
   <div class="author-info">
@@ -306,7 +316,6 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
   </div>
   
 </div>
-
     <div class="border-top pt-4 pb-4">
 <h2 class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>

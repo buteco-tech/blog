@@ -204,6 +204,12 @@
            alt="Como utilizar o getaddrinfo para evitar a falha GHOST">
     </figure>
   </div>
+  <div class="alert alert-warning" role="alert">
+  <h4 class="alert-heading">Atenção</h4>
+  <p>Este artigo foi migrado do Wordpress e pode conter erros de formatação.</p>
+  <p>Caso encontre algum problema deixe um comentário que iremos resolver o mais breve possível.</p>
+</div>
+
   <article class="mt-3 mb-4">
   <p>Em janeiro de 2015 se ouviu falar de uma falha de segurança na glibc chamada GHOST. Esta falha poderia ser explorada por um programa malicioso utilizando as funções <code>gethostbyname()</code> e <code>gethostbyname2()</code> da glibc. O ataque acontece por um <em>buffer overflow</em> dentro destas funções quando um endereço inválido é passando como parâmetro. Ao explorar esta falha, o atacante consegue executar códigos arbitrários com as permissões do usuários executando o processo.</p>
 <p>Este problema existia na glibc desde 2000, e foi corrigido em 2013, mas como a falha não havia sido detectada, não foi criada outra versão estável da glibc após a correção. Quando a falha foi exposta, grandes distribuições como Red Hat e Debian atualizaram a sua versão da glibc. Segundo esta <a href="http://blogs.cisco.com/security/talos/ghost-glibc" target="_blank">publicação</a> da Cisco, a falha não é tão assutadora quanto parece, pois o software a ser explorado precisa aceitar <em>hostnames</em> como entrada e ainda assim existem algumas situações em que o <em>bug</em> pode ser explorado: o primeiro carácter precisa ser um dígito, o último carácter não pode ser um ponto e o <em>hostname</em> precisa ser construído somente por dígitos e pontos (um endereço IPv4 comum).</p>

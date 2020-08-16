@@ -236,7 +236,13 @@ print_r($localizacao);
   </div>
 </div>
 
-  </header><article class="mt-3 mb-4">
+  </header><div class="alert alert-warning" role="alert">
+  <h4 class="alert-heading">Atenção</h4>
+  <p>Este artigo foi migrado do Wordpress e pode conter erros de formatação.</p>
+  <p>Caso encontre algum problema deixe um comentário que iremos resolver o mais breve possível.</p>
+</div>
+
+  <article class="mt-3 mb-4">
   <p>Tive a necessidade a alguns dias de através do CEP passado retornar algumas informações como logradouro, cidade, estado, bairro, etc&hellip; pesquisando um pouco vi que existem diversos serviços <em>RESTful</em> que retornam essas informações, porém nada padronizado, além disso nada me garantiria que esses serviços estivessem no ar.</p>
 <p>Para isto criei um repositório no <em>GIT</em> com classes que consumam esses web services com efeito cascata, caso um deles não estiver disponível a classe tentará o próximo serviço até conseguir preencher todas as informações para retorno ou acabe a lista de serviços.</p>
 <p><a href="https://github.com/ButecoOpenSource/phpcepinfo" target="_blank">Repositório no GITHub</a></p>

@@ -12,11 +12,10 @@
 
 
 <meta itemprop="name" content="Recuperando dados perdidos do git-stash">
-<meta itemprop="description" content="Olá senhores e senhoras! =]
-Em meu primeiro post no Buteco Open Source vou demonstrar como recuperar dados perdidos do git-stash. Talvez salvando muitas horas de trabalho que poderiam ser perdidas acidentalmente. Na realidade o método demonstrado neste artigo pode ser utilizado para  recuperar qualquer objeto git perdido. Antes de mais nada, enquanto você estiver implementando alguma grande feature, quebre-a em pequenos pedaços e faça commits regularmente. Não é uma boa ideia permanecer muito tempo sem &ldquo;comitar&rdquo;. Tenha cuidado.">
+<meta itemprop="description" content="Confira como recuperar dados perdidos do git-stash">
 <meta itemprop="datePublished" content="2015-10-28T21:29:14+00:00" />
 <meta itemprop="dateModified" content="2015-10-28T21:29:14+00:00" />
-<meta itemprop="wordCount" content="545">
+<meta itemprop="wordCount" content="543">
 <meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/t8cnk.jpg">
 
 
@@ -28,13 +27,11 @@ Em meu primeiro post no Buteco Open Source vou demonstrar como recuperar dados p
 <meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/t8cnk.jpg"/>
 
 <meta name="twitter:title" content="Recuperando dados perdidos do git-stash"/>
-<meta name="twitter:description" content="Olá senhores e senhoras! =]
-Em meu primeiro post no Buteco Open Source vou demonstrar como recuperar dados perdidos do git-stash. Talvez salvando muitas horas de trabalho que poderiam ser perdidas acidentalmente. Na realidade o método demonstrado neste artigo pode ser utilizado para  recuperar qualquer objeto git perdido. Antes de mais nada, enquanto você estiver implementando alguma grande feature, quebre-a em pequenos pedaços e faça commits regularmente. Não é uma boa ideia permanecer muito tempo sem &ldquo;comitar&rdquo;. Tenha cuidado."/>
+<meta name="twitter:description" content="Confira como recuperar dados perdidos do git-stash"/>
 
 
 <meta property="og:title" content="Recuperando dados perdidos do git-stash" />
-<meta property="og:description" content="Olá senhores e senhoras! =]
-Em meu primeiro post no Buteco Open Source vou demonstrar como recuperar dados perdidos do git-stash. Talvez salvando muitas horas de trabalho que poderiam ser perdidas acidentalmente. Na realidade o método demonstrado neste artigo pode ser utilizado para  recuperar qualquer objeto git perdido. Antes de mais nada, enquanto você estiver implementando alguma grande feature, quebre-a em pequenos pedaços e faça commits regularmente. Não é uma boa ideia permanecer muito tempo sem &ldquo;comitar&rdquo;. Tenha cuidado." />
+<meta property="og:description" content="Confira como recuperar dados perdidos do git-stash" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/recuperando-dados-perdidos-do-git-stash/" />
 <meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/t8cnk.jpg" />
@@ -201,44 +198,83 @@ Em meu primeiro post no Buteco Open Source vou demonstrar como recuperar dados p
 </div>
 
   </header>
-  <div class="mt-5">
-    <figure class="figure">
-      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/t8cnk.jpg"
-           alt="Recuperando dados perdidos do git-stash">
-    </figure>
-  </div>
+
   <article class="mt-3 mb-4">
-  <p>Olá senhores e senhoras! =]</p>
-<p>Em meu primeiro post no Buteco Open Source vou demonstrar como recuperar dados perdidos do git-stash. Talvez salvando muitas horas de trabalho que poderiam ser perdidas acidentalmente. Na realidade o método demonstrado neste artigo pode ser utilizado para  recuperar qualquer objeto git perdido. Antes de mais nada, enquanto você estiver implementando alguma grande <em>feature</em>, quebre-a em pequenos pedaços e faça <em>commits</em> regularmente. Não é uma boa ideia permanecer muito tempo sem &ldquo;comitar&rdquo;. Tenha cuidado.</p>
-<p>Vamos simular o cenário para mostrar o que você pode fazer quando perder dados do <em>stash</em> do git. Em um repositório para demonstração existe apenas um arquivo, main.c. Ele será utilizado para demonstrar o problema e a solução. Então, nosso repositório está assim agora:</p>
-<p><a href="/images/wp-content/uploads/2015/10/missing_data_from_stash_01.jpeg"><img class="alignnone wp-image-3870" src="/images/wp-content/uploads/2015/10/missing_data_from_stash_01-300x37.jpeg" alt="missing_data_from_stash_01" width="422" height="52" /></a></p>
+  <figure>
+    <img src="/images/wp-content/uploads/2015/10/t8cnk.jpg"
+         alt="K8s" width="400"/> 
+</figure>
+
+<p>Olá senhores e senhoras! =]</p>
+<p>Em meu primeiro post no Buteco vou demonstrar como recuperar dados perdidos do git-stash. Talvez salvando muitas horas de trabalho que poderiam ser perdidas acidentalmente. Na realidade o método demonstrado neste artigo pode ser utilizado para recuperar qualquer objeto git perdido. Antes de mais nada, enquanto você estiver implementando alguma grande <em>feature</em>, quebre-a em pequenos pedaços e faça <em>commits</em> regularmente. Não é uma boa ideia permanecer muito tempo sem &ldquo;comitar&rdquo;. Tenha cuidado.</p>
+<p>Vamos simular o cenário para mostrar o que você pode fazer quando perder dados do <em>stash</em> do git. Em um repositório para demonstração existe apenas um arquivo, <code>main.c</code>. Ele será utilizado para demonstrar o problema e a solução. Então, nosso repositório está assim agora:</p>
+<figure>
+    <img src="/images/wp-content/uploads/2015/10/missing_data_from_stash_01.jpeg"
+         alt="git"/> 
+</figure>
+
 <p>e existe apenas um <em>commit</em>:</p>
-<p><a href="/images/wp-content/uploads/2015/10/missing_data_from_stash_02.jpeg"><img class="alignnone wp-image-3869" src="/images/wp-content/uploads/2015/10/missing_data_from_stash_02-300x80.jpeg" alt="missing_data_from_stash_02" width="431" height="115" /></a></p>
+<figure>
+    <img src="/images/wp-content/uploads/2015/10/missing_data_from_stash_02.jpeg"
+         alt="git"/> 
+</figure>
+
 <p>A primeira versão do arquivo é:</p>
-<p><a href="/images/wp-content/uploads/2015/10/missing_data_from_stash_03.jpeg"><img class="alignnone wp-image-3868" src="/images/wp-content/uploads/2015/10/missing_data_from_stash_03-300x159.jpeg" alt="missing_data_from_stash_03" width="434" height="230" /></a></p>
+<figure>
+    <img src="/images/wp-content/uploads/2015/10/missing_data_from_stash_03.jpeg"
+         alt="git"/> 
+</figure>
+
 <p>Vamos começar a codificar alguma coisa. Para este exemplo, não é necessário uma grande mudança, é apenas alguma coisa para colocar no git stash. Para isso, será adicionado apenas uma nova linha. O git-diff após a alteração é:</p>
-<p><a href="/images/wp-content/uploads/2015/10/missing_data_from_stash_04.jpeg"><img class="alignnone wp-image-3867" src="/images/wp-content/uploads/2015/10/missing_data_from_stash_04-300x133.jpeg" alt="missing_data_from_stash_04" width="451" height="200" /></a></p>
+<figure>
+    <img src="/images/wp-content/uploads/2015/10/missing_data_from_stash_04.jpeg"
+         alt="git"/> 
+</figure>
+
 <p>Agora, suponha que você tenha que realizar o <em>pull</em> de novas alterações de um repositório remoto e não quer realizar o <em>commit</em> de suas alterações por que elas não estão terminadas. Assim, você decide joga-las para o <em>stash</em>, baixar as alterações do repositório remoto e aplicar seu código novamente. Por isso, você executa o seguinte comando para mover suas alterações para o git stash:</p>
 <p><code>git stash</code></p>
 <p>Analisando o <em>stash</em> será possível ver que o comando funcionou como o esperado:</p>
-<p><a href="/images/wp-content/uploads/2015/10/missing_data_from_stash_06.jpeg"><img class="alignnone wp-image-3866" src="/images/wp-content/uploads/2015/10/missing_data_from_stash_06-300x48.jpeg" alt="missing_data_from_stash_06" width="469" height="75" /></a></p>
+<figure>
+    <img src="/images/wp-content/uploads/2015/10/missing_data_from_stash_06.jpeg"
+         alt="git"/> 
+</figure>
+
 <p>Neste momento, o código está em um local seguro e o <em>branch master</em> está limpo e o <em>pull</em> das mudanças pode ser realizado. Depois de ter atualizado o <em>branch</em> local com as alterações do <em>branch</em> remoto, é a hora de aplicar o código no <em>master</em> novamente. Vamos supor que acidentalmente você executa:</p>
 <p><code>git stash drop</code></p>
 <p>e depois é possível verifica, com o comando <code>git stash list</code>, que o <em>stash</em> limpou, e que o código foi removido e não foi aplicado no <em>branch master</em>. OMG! Quem poderá nos ajudar? Como você irá ver em breve, o git não apagou o objeto que contem as alterações. Ele apenas removeu a referência para ele. Para provar isso, pode ser usado o git-fsck. Este comando, verifica a conectividade e validade dos objeto na base de dados. Veja que no começo do nosso repositório foi executado o comando git-fsck e a saída foi:</p>
-<p><a href="/images/wp-content/uploads/2015/10/missing_data_from_stash_07.jpeg"><img class="alignnone wp-image-3865" src="/images/wp-content/uploads/2015/10/missing_data_from_stash_07-300x40.jpeg" alt="missing_data_from_stash_07" width="473" height="63" /></a></p>
+<figure>
+    <img src="/images/wp-content/uploads/2015/10/missing_data_from_stash_07.jpeg"
+         alt="git"/> 
+</figure>
+
 <p>Basicamente, git-fsck mostrou os objetos que são inalcançáveis ( flag <code>–unreachable</code> ). Como pode ser visto, ele não mostrou nenhum objeto. Depois que os elementos do <em>stash</em> foram <em>dropados</em>  o git-fsck mostrou:</p>
-<p><a href="/images/wp-content/uploads/2015/10/missing_data_from_stash_08.jpeg"><img class="alignnone wp-image-3864" src="/images/wp-content/uploads/2015/10/missing_data_from_stash_08-300x71.jpeg" alt="missing_data_from_stash_08" width="499" height="118" /></a></p>
+<figure>
+    <img src="/images/wp-content/uploads/2015/10/missing_data_from_stash_08.jpeg"
+         alt="git"/> 
+</figure>
+
 <p>Na última execução pode ser visto que existem três objeto inalcançáveis. Mas qual deles é o código perdido? Temos que procurar por ele, para isso podemos usar o comando git-show para visualizar o que é cada objeto.</p>
-<p><a href="/images/wp-content/uploads/2015/10/missing_data_from_stash_09.jpeg"><img class="alignnone wp-image-3863" src="/images/wp-content/uploads/2015/10/missing_data_from_stash_09-300x147.jpeg" alt="missing_data_from_stash_09" width="508" height="249" /></a></p>
+<figure>
+    <img src="/images/wp-content/uploads/2015/10/missing_data_from_stash_09.jpeg"
+         alt="git"/> 
+</figure>
+
 <p>Ai está! O ID 95ccbd927ad4cd413ee2a28014c81454f4ede82c é a alteração que estávamos procurando e temos que recuperá-lo! Uma possível solução é fazer o <em>checkout</em> do ID em um novo <em>branch</em> ou aplicar o <em>commit</em> diretamente. Neste exemplo será utilizado o git-stash para aplicar o <em>commit</em> no <em>branch master</em> novamente.</p>
-<p><code>git stash apply </code><code>95ccbd927ad4cd413ee2a28014c81454f4ede82c</code></p>
+<p><code>git stash apply 95ccbd927ad4cd413ee2a28014c81454f4ede82c</code></p>
 <p>É importante relembrar, git executa seu <em>garbage collector</em> (gc) periodicamente. Após a execução do gc não será mais possível ver os objetos inalcançáveis.</p>
-<p><strong>Referência:</strong></p>
-<p><a href="https://git-scm.com/docs/git-fsck">git-fsck</a></p>
-<p><a href="https://git-scm.com/docs/git-stash">git-stash</a></p>
+<p><strong>Referência</strong></p>
+<ul>
+<li><a href="https://git-scm.com/docs/git-fsck"
+   
+   target="_blank">git-fsck</a></li>
+<li><a href="https://git-scm.com/docs/git-stash"
+   
+   target="_blank">git-stash</a></li>
+</ul>
+
   </article>
 
-  <footer>
+  <footer class="mt-3 mb-4">
     
 <div class="mb-4">
   <ul class="list-unstyled tags">
@@ -251,7 +287,6 @@ Em meu primeiro post no Buteco Open Source vou demonstrar como recuperar dados p
   </li>
   </ul>
 </div>
-
 
 
     <div class="share-buttons text-center">
@@ -280,7 +315,6 @@ Em meu primeiro post no Buteco Open Source vou demonstrar como recuperar dados p
      data-text="Recuperando dados perdidos do git-stash"><i class="fab fa-pinterest"></i></a>
 </div>
 
-
     
 <div class="border-top py-4">
   <div class="author-info">
@@ -303,7 +337,6 @@ Em meu primeiro post no Buteco Open Source vou demonstrar como recuperar dados p
   </div>
   
 </div>
-
     <div class="border-top pt-4 pb-4">
 <h2 class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>

@@ -12,10 +12,10 @@
 
 
 <meta itemprop="name" content="GPS Parte 2: Decodificando uma sentença NMEA">
-<meta itemprop="description" content="Na primeira parte sobre GPS vimos como este sistema de rastreamento por satélite funciona.">
+<meta itemprop="description" content="Na primeira parte sobre GPS (Entendendo o seu funcionamento) vimos como este sistema de rastreamento por satélite funciona.">
 <meta itemprop="datePublished" content="2016-01-11T21:38:15+00:00" />
 <meta itemprop="dateModified" content="2016-01-11T21:38:15+00:00" />
-<meta itemprop="wordCount" content="1257">
+<meta itemprop="wordCount" content="1260">
 <meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png">
 
 
@@ -27,11 +27,11 @@
 <meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png"/>
 
 <meta name="twitter:title" content="GPS Parte 2: Decodificando uma sentença NMEA"/>
-<meta name="twitter:description" content="Na primeira parte sobre GPS vimos como este sistema de rastreamento por satélite funciona."/>
+<meta name="twitter:description" content="Na primeira parte sobre GPS (Entendendo o seu funcionamento) vimos como este sistema de rastreamento por satélite funciona."/>
 
 
 <meta property="og:title" content="GPS Parte 2: Decodificando uma sentença NMEA" />
-<meta property="og:description" content="Na primeira parte sobre GPS vimos como este sistema de rastreamento por satélite funciona." />
+<meta property="og:description" content="Na primeira parte sobre GPS (Entendendo o seu funcionamento) vimos como este sistema de rastreamento por satélite funciona." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/" />
 <meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png" />
@@ -198,22 +198,33 @@
 </div>
 
   </header>
-  <div class="mt-5">
-    <figure class="figure">
-      <img class="figure-img" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png"
-           alt="GPS Parte 2: Decodificando uma sentença NMEA">
-    </figure>
-  </div>
+
   <article class="mt-3 mb-4">
-  <p>Na <a href="/gps-parte-1-entendendo-o-seu-funcionamento" target="_blank">primeira parte</a> sobre GPS vimos como este sistema de rastreamento por satélite funciona. Também aproveitamos para explicar o que é o protocolo NMEA, utilizado pelos sistemas de navegação global.</p>
-<p>Uma sentença NMEA é formada por caracteres passíveis de impressão e CR (carriage return) e LF (line feed). Toda sentença inicia com <code>$</code> e termina com &lt;CR&gt; &lt;LF&gt;. Existem três tipos básicos de sentenças: <em>talker sentences</em>, <em>proprietary sentences</em> e <em>query sentences</em>.</p>
+  <figure>
+    <img src="/images/wp-content/uploads/2015/12/map_pin.png"
+         alt="Map" width="200"/> 
+</figure>
+
+<p>Na <a href="/gps-parte-1-entendendo-o-seu-funcionamento"
+   
+   >primeira parte sobre GPS (Entendendo o seu funcionamento)</a> vimos como este sistema de rastreamento por satélite funciona. Também aproveitamos para explicar o que é o protocolo NMEA, utilizado pelos sistemas de navegação global.</p>
+<p>Uma sentença NMEA é formada por caracteres passíveis de impressão e <strong>CR</strong> (carriage return) e <strong>LF</strong> (line feed). Toda sentença inicia com <code>$</code> e termina com &lt;CR&gt; &lt;LF&gt;. Existem três tipos básicos de sentenças: <em>talker sentences</em>, <em>proprietary sentences</em> e <em>query sentences</em>.</p>
 <p>As <em>talker sentences</em> são as sentenças genéricas de comunicação do protocolo, já as <em>proprietary sentences</em> são sentenças proprietárias dos fabricantes e as <em>query sentences</em> são sentenças utilizadas para requisitar informações a partir de um receptor.</p>
-<p>Neste artigo iremos ver como implementar um decodificar de sentenças do protocolo NMEA 0183 versão 2.3. Para implementar o decodificador iremos utilizar Python sem nenhuma biblioteca adicional. O código desenvolvido é apenas para ilustrar como é feito este tipo de processo, se você procura algo para utilizar em seu sistema eu recomendo a biblioteca <a href="https://github.com/Knio/pynmea2" target="_blank">pynmea2</a>.</p>
-<p><strong>Decodificando uma sentença</strong></p>
-<p>Para decodificar uma sentença primeiro é necessário entender o seu funcionamento. No caso da sentença GGA (Global Positioning System Fix Data) podemos observar a descrição dos campos abaixo:</p>
+<p>Neste artigo iremos ver como implementar um decodificar de sentenças do protocolo NMEA 0183 versão 2.3.</p>
+<p>Para implementar o decodificador iremos utilizar Python sem nenhuma biblioteca adicional. O código desenvolvido é apenas para ilustrar como é feito este tipo de processo, se você procura algo para utilizar em seu sistema eu recomendo a biblioteca <a href="https://github.com/Knio/pynmea2"
+   
+   target="_blank">pynmea2</a>.</p>
+<h2 id="decodificando-uma-sentença-nmea">Decodificando uma sentença NMEA</h2>
+<p>Para decodificar uma sentença primeiro é necessário entender o seu funcionamento. No caso da sentença <strong>GGA</strong> (Global Positioning System Fix Data) podemos observar a descrição dos campos abaixo:</p>
 <p><code>$GPGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*47</code></p>
 <p>Para entender melhor, vamos explicar o que é cada parte:</p>
 <table>
+<thead>
+<tr>
+<th>Parte</th>
+<th>Descrição</th>
+</tr>
+</thead>
 <tbody>
 <tr>
 <td>GP</td>
@@ -229,11 +240,11 @@
 </tr>
 <tr>
 <td>4807.038,N</td>
-<td>Latitude 48 deg 07.038' N</td>
+<td>Latitude 48 deg 07.038&rsquo; N</td>
 </tr>
 <tr>
 <td>01131.000,E</td>
-<td>Longitude 11 deg 31.000' E</td>
+<td>Longitude 11 deg 31.000&rsquo; E</td>
 </tr>
 <tr>
 <td>1</td>
@@ -265,13 +276,15 @@
 </tr>
 <tr>
 <td>*47</td>
-<td>checksum*</td>
+<td>Checksum</td>
 </tr>
 </tbody>
 </table>
-<p>Se você deseja conhecer as demais sentenças e seus campos eu recomento ler a <a href="http://www.tronico.fi/OH6NT/docs/NMEA0183.pdf" target="_blank">especificação do protocolo NMEA 0183</a> (em inglês).</p>
+<p>Se você deseja conhecer as demais sentenças e seus campos eu recomento ler a <a href="http://www.tronico.fi/OH6NT/docs/NMEA0183.pdf"
+   
+   target="_blank">especificação do protocolo NMEA 0183</a> (em inglês).</p>
 <p>Bem, para entender melhor, vamos primeiro ver as principais partes do código, no fim será exibido o código por completo com alguns exemplos de uso.</p>
-<p><strong>Classe Sentence</strong></p>
+<h2 id="classe-sentence">Classe Sentence</h2>
 <p>A classe <code>Sentence</code> é a base de todas as sentenças NMEA. Toda sentença deve estender esta classe, como podemos observar na classe <code>GGLSentence</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -313,8 +326,6 @@
 </span><span class="lnt">36
 </span><span class="lnt">37
 </span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">Sentence</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -332,8 +343,7 @@
         <span class="n">raw_fields</span> <span class="o">=</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">raw_fields</span><span class="p">)</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields_count</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="n">ParseException</span><span class="p">(</span>
-                <span class="s1">&#39;Field count mismatch. Expected </span><span class="si">%d</span><span class="s1"> fields, but found </span><span class="si">%d</span><span class="s1">.&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_fields_count</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">raw_fields</span><span class="p">)))</span>
+            <span class="k">raise</span> <span class="n">ParseException</span><span class="p">(</span><span class="s1">&#39;Field count mismatch. Expected </span><span class="si">%d</span><span class="s1"> fields, but found </span><span class="si">%d</span><span class="s1">.&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_fields_count</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">raw_fields</span><span class="p">)))</span>
 
         <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">field</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fields</span><span class="p">):</span>
             <span class="n">field_name</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">field_type</span> <span class="o">=</span> <span class="n">field</span>
@@ -346,8 +356,7 @@
                 <span class="k">else</span><span class="p">:</span>
                     <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field_name</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
             <span class="k">except</span><span class="p">:</span>
-                <span class="k">raise</span> <span class="n">ParseException</span><span class="p">(</span>
-                    <span class="s1">&#39;Can</span><span class="se">\&#39;</span><span class="s1">t parse value into field &#34;</span><span class="si">%s</span><span class="s1">&#34;: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">field_name</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+                <span class="k">raise</span> <span class="n">ParseException</span><span class="p">(</span><span class="s1">&#39;Can</span><span class="se">\&#39;</span><span class="s1">t parse value into field &#34;</span><span class="si">%s</span><span class="s1">&#34;: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">field_name</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
 
         <span class="k">return</span> <span class="bp">self</span>
 
@@ -363,7 +372,7 @@
 <p>Podemos observar que existe um método para decodificar (<code>parse</code>) a sentença. Como as sentenças devem seguir o mesmo padrão, o método é genérico para todas as classes derivadas de <code>Sentence</code>.</p>
 <p>Inicialmente é extraído da sentença o seu checksum caso exista. Após é verificado se a quantidade de campos recebidos na sentença corresponde a quantidade de campos registrados. Por fim, é convertido o valor do campo recebido para um tipo Python compatível.</p>
 <p>Como sabemos para que tipo devemos converter determinado campo? É isso que você verá na classe <code>GLLSentence</code>.</p>
-<p><strong>Estendendo a classe Sentence</strong></p>
+<h2 id="estendendo-a-classe-sentence">Estendendo a classe Sentence</h2>
 <p>Na classe <code>GLLSentence</code> sobrescrevemos as propriedades necessárias para o funcionamento correto do <em>parser</em>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -407,7 +416,7 @@
 <p>O atributo <code>fields</code> foi sobrescrito por uma tupla de tuplas que corresponde ao seguinte: o primeiro valor da tupla é o nome do campo, deve sem um nome de atributo válido, pois ele será atribuído a classe em tempo de execução; o segundo campo é uma descrição para o campo, pode ser qualquer texto; o terceiro campo é uma função/classe que será utilizada para converter o valor. Neste caso deve-se lembrar que a função/classe deve possuir apenas um parâmetro e do tipo <code>str</code>. Isto porque a função/classe é invocada com o valor recebido no campo.</p>
 <p>Se observarmos, é possível verificar que o campo <code>latitude</code> será convertido para <code>str</code>, já o campo <code>ns_indicator</code> será convertido para <code>str</code>, porém maiúscula. O campo <code>utc_time</code> usa a classe <code>UTCTimeParser</code> para converter para o tipo <code>datetime.date</code>.</p>
 <p>Por fim, implementamos a validação da sentença. No caso da sentença GLL, ela é valida se o <code>status</code> for igual a <code>A</code>. Uma validação não implementada é a do checksum. O checksum serve para verificar se o conteúdo recebido foi o mesmo que o enviado. Como o intuito é apenas exemplificar o funcionamento, podemos ignorar este item.</p>
-<p><strong>Classe NMEAParser</strong></p>
+<h2 id="classe-nmeaparser">Classe NMEAParser</h2>
 <p>Para finalizar, vamos verificar como a classe <code>NMEAParser</code> identifica qual a sentença e sua respectiva classe para conversão.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -555,14 +564,18 @@
         <span class="k">return</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">4</span><span class="p">:])</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Você pode conferir o código fonte completo <a href="https://github.com/ButecoOpenSource/exemplos/blob/master/nmea/nmea.py">aqui</a>.</p>
+</div><p>Você pode conferir o código fonte completo <a href="https://github.com/ButecoOpenSource/exemplos/blob/master/nmea/nmea.py"
+   
+   target="_blank">aqui</a>.</p>
 <p>Espero que você tenha gostado deste artigo. Na parte final desta série de artigos, iremos implementar uma pequena aplicação que captura a posição do GPS e informa em uma página Web.</p>
 <p>Até a próxima.</p>
-<p><em>Este artigo é uma adaptação da monografia BUSTRACKER: Sistema de rastreamento para transporte coletivo de Alexandre Vicenzi e o texto na íntegra pode ser encontrado <a href="https://raw.githubusercontent.com/alexandrevicenzi/tcc/master/monografia/tcc_bcc_2015_2_avicenzi_AlexandreVicenzi-VF.pdf" target="_blank">aqui</a>.</em></p>
+<p><em>Este artigo é uma adaptação da monografia BUSTRACKER: Sistema de rastreamento para transporte coletivo de Alexandre Vicenzi e o texto na íntegra pode ser encontrado <a href="https://bu.furb.br/consulta/portalConsulta/recuperaMfnCompleto.php?menu=rapida&amp;CdMFN=363720"
+   
+   target="_blank">aqui</a>.</em></p>
 
   </article>
 
-  <footer>
+  <footer class="mt-3 mb-4">
     
 <div class="mb-4">
   <ul class="list-unstyled tags">
@@ -583,7 +596,6 @@
   </li>
   </ul>
 </div>
-
 
 
     <div class="share-buttons text-center">
@@ -612,7 +624,6 @@
      data-text="GPS Parte 2: Decodificando uma sentença NMEA"><i class="fab fa-pinterest"></i></a>
 </div>
 
-
     
 <div class="border-top py-4">
   <div class="author-info">
@@ -635,7 +646,6 @@
   </div>
   
 </div>
-
     <div class="border-top pt-4 pb-4">
 <h2 class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>

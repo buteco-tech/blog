@@ -1245,7 +1245,7 @@ Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI us
       <pubDate>Mon, 11 Jan 2016 21:38:15 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/</guid>
-      <description>Na primeira parte sobre GPS vimos como este sistema de rastreamento por satélite funciona.</description>
+      <description>Na primeira parte sobre GPS (Entendendo o seu funcionamento) vimos como este sistema de rastreamento por satélite funciona.</description>
       
       <image>
         <url>https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png</url>
@@ -1356,8 +1356,7 @@ Depois de vários sorteios sem resposta, temos o vencedor do sorteio do Kit Ardu
       <pubDate>Mon, 28 Dec 2015 20:55:51 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/gps-parte-1-entendendo-o-seu-funcionamento/</guid>
-      <description>&lt;p&gt;Você já parou pra pensar em como um GPS funciona? Bem, se você ainda não pesquisou sobre o assunto, este post abordará um pouco sobre o que é este dispositivo, que está presente em nosso dia a dia.&lt;/p&gt;
-&lt;p&gt;Essa série de artigos será divida em três partes. A primeira parte abordará os conceitos básicos. A segunda abordará como se interpreta os dados obtidos do GPS. E por fim será criada uma aplicação Web que indica no mapa onde você está.&lt;/p&gt;</description>
+      <description>O GPS é um sistema de navegação global desenvolvido pelo Departamento de Defesa dos Estados Unidos da América. O seu intuito inicial era ser o principal sistema de navegação das forças armadas americanas. A concepção do sistema GPS permite que um usuário, em qualquer local da superfície terrestre, ou próxima a ela, tenha à sua disposição, no mínimo, quatro satélites para serem rastreados.</description>
       
       <image>
         <url>https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png</url>
@@ -1862,8 +1861,7 @@ Via xkcd</description>
       <pubDate>Wed, 28 Oct 2015 21:29:14 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/recuperando-dados-perdidos-do-git-stash/</guid>
-      <description>&lt;p&gt;Olá senhores e senhoras! =]&lt;/p&gt;
-&lt;p&gt;Em meu primeiro post no Buteco Open Source vou demonstrar como recuperar dados perdidos do git-stash. Talvez salvando muitas horas de trabalho que poderiam ser perdidas acidentalmente. Na realidade o método demonstrado neste artigo pode ser utilizado para  recuperar qualquer objeto git perdido. Antes de mais nada, enquanto você estiver implementando alguma grande &lt;em&gt;feature&lt;/em&gt;, quebre-a em pequenos pedaços e faça &lt;em&gt;commits&lt;/em&gt; regularmente. Não é uma boa ideia permanecer muito tempo sem &amp;ldquo;comitar&amp;rdquo;. Tenha cuidado.&lt;/p&gt;</description>
+      <description>Confira como recuperar dados perdidos do git-stash</description>
       
       <image>
         <url>https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/t8cnk.jpg</url>
@@ -3181,17 +3179,19 @@ quilt new alteracao1.patch
     </item>
     <item>
       
-      <title>Dica - Resetando senha do root Centos 7</title>
+      <title>Resetando a senha do root no Centos 7</title>
       <link>https://butecotecnologico.com.br/dica-resetando-senha-do-root-centos-7/</link>
       <pubDate>Mon, 15 Jun 2015 23:13:07 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/dica-resetando-senha-do-root-centos-7/</guid>
-      <description>Resetar senha de root em Red Hat Likes.</description>
+      <description>Aprenda a resetar a senha do root em sistemas da Red Hat.</description>
+      
       <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/pyston/</link>
+        <url>https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/password-error.jpg</url>
+        <title>Resetando a senha do root no Centos 7</title>
+        <link>https://butecotecnologico.com.br/dica-resetando-senha-do-root-centos-7/</link>
       </image>
+      
     </item>
     <item>
       
@@ -4487,17 +4487,16 @@ O Python 3.5 ainda está em desenvolvimento e esta versão é a segunda &lt;em&g
     </item>
     <item>
       
-      <title>Instalando o Apache no CentOS 7</title>
+      <title>Instalando o Apache Server no CentOS 7</title>
       <link>https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/</link>
       <pubDate>Thu, 05 Mar 2015 00:20:38 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/</guid>
-      <description>Dando continuidade ao tutorial de instalação do LAMP no CentOS, hoje vamos ver como instalar o Apache. No tutorial anterior, vimos como instalar o MariaDB.
-O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.20% dos servidores ativos no mundo. Além disso, é a principal tecnologia da Apache Software Foundation.</description>
+      <description>O Apache é um dos mais bem sucedido servidor web livre, representando cerca de 47% dos servidores ativos no mundo.</description>
       
       <image>
         <url>https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/Apache-Logo.png</url>
-        <title>Instalando o Apache no CentOS 7</title>
+        <title>Instalando o Apache Server no CentOS 7</title>
         <link>https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/</link>
       </image>
       
@@ -5225,11 +5224,13 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       
       <guid>https://butecotecnologico.com.br/enviando-emails-com-o-python/</guid>
       <description>Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo smtplib.</description>
+      
       <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/pyston/</link>
+        <url>https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png</url>
+        <title>Enviando emails com o Python</title>
+        <link>https://butecotecnologico.com.br/enviando-emails-com-o-python/</link>
       </image>
+      
     </item>
     <item>
       

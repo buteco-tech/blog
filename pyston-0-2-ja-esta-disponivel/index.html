@@ -197,7 +197,13 @@
   </div>
 </div>
 
-  </header><article class="mt-3 mb-4">
+  </header><div class="alert alert-warning" role="alert">
+  <h4 class="alert-heading">Atenção</h4>
+  <p>Este artigo foi migrado do Wordpress e pode conter erros de formatação.</p>
+  <p>Caso encontre algum problema deixe um comentário que iremos resolver o mais breve possível.</p>
+</div>
+
+  <article class="mt-3 mb-4">
   <p>O Pyston 0.2 foi anunciado ontem (11/09) e contém várias melhorias se comparado a versão inicial. Ainda existe muito trabalho a ser feito é claro, mas nesta versão já é possível executar programas simples e várias das bibliotecas padrão sem modificação.</p>
 <p>Para quem ainda não o conhece, o <a href="https://tech.dropbox.com/2014/04/introducing-pyston-an-upcoming-jit-based-python-implementation/">Pyston </a>é uma nova implementação em código aberto da linguagem Python. Em alto nível, o Pyston pega o código <a href="https://www.python.org/">Python</a> e transforma-o para a representação intermediária LLVM (IR). O IR é então executado através do otimizador LLVM e passado para a <em>engine</em> LLVM JIT, resultando em código de máquina executável. As técnicas JIT tem tido grande sucesso no JavaScript <a href="https://code.google.com/p/v8/">V8</a> do Chrome e o propósito do Pyston é conseguir melhorias semelhantes para o Python.</p>
 <h2>Mudanças significativas nesta versão</h2>
