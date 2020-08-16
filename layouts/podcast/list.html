@@ -15,12 +15,13 @@
   <ul class="list-unstyled mt-3 mb-5">
     {{ range .Data.Pages -}}
     <li class="my-2">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-      {{ if eq .Kind "page" }}
-      <span class="float-right">
-        <time class="pull-right post-list" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-      </span>
-      {{ end }}
+      <div class="d-flex justify-content-between">
+        <a href="{{ .Permalink }}" class="col-8 col-md-9 p-0 text-truncate">{{ .Title }}</a>
+        {{ if eq .Kind "page" }}
+        {{- $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" -}}
+        <time class="post-list" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format $dateFormat }}</time>
+        {{ end }}
+      </div>
     </li>
     {{- end }}
   </ul>
