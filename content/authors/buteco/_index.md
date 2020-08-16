@@ -6,7 +6,9 @@ avatar: /logos/capybara_400.png
 email: contato@buteco.tech
 www: https://buteco.tech
 github: ButecoOpenSource
-linkedin:
+linkedin_c: butecotecnologico
+instagram: buteco.tech
+facebook: buteco.tech
 twitter: butecotech
-youtub]e: UCufXNYRURPEpF7uRDig5SDw
+youtube_c: ButecoTech
 ---
