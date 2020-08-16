@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes explicado"
 summary: "O Kubernetes (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers e foi criado pelo Google."
-tagline: "Kubernetes explicado"
+tagline: "Entendendo os conceitos do Kubernetes"
 date: 2020-08-13 08:00:00
 categories:
   - Desenvolvimento
@@ -18,7 +18,7 @@ images:
 - /images/posts/k8s-logo.png
 ---
 
-{{< figure src="/images/posts/k8s-logo.png" alt="K8s" >}}
+{{< figure src="/images/posts/k8s-logo.png" alt="K8s" width="200" >}}
 
 O [Kubernetes][kubernetes-io] (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers. A Google criou o projeto inicialmente para uso interno, e tornou-o software livre em 2014.
 
@@ -36,7 +36,7 @@ O Kubernetes não é um PaaS (Platform as a Service), porém ele provê algumas 
 
 ## Conceitos
 
-![Componentes do Kubernetes](/images/posts/components-of-kubernetes.png)
+{{< figure src="/images/posts/components-of-kubernetes.png" alt="Componentes do Kubernetes" caption="Componentes do Kubernetes" >}}
 
 ### Cluster
 

@@ -19,7 +19,7 @@ images:
 - /images/posts/btrfs-logo.png
 ---
 
-{{< figure src="/images/posts/btrfs-logo.png" alt="btrfs" >}}
+{{< figure src="/images/posts/btrfs-logo.png" alt="btrfs" width="250" >}}
 
 O sistema de arquivos Btrfs foi criando em 2007, por engenheiros que trabalhavam na Oracle e FusionIO. Ele foi concebido com a ideia de ter um sistema de arquivos que provesse funcionalidades semelhantes ao o que o ZFS já oferecia no Solaris e variantes do BSD.
 

@@ -10,7 +10,7 @@ images:
   - /images/posts/sql-alchemy-logo.png
 ---
 
-{{< figure src="/images/posts/sql-alchemy-logo.png" alt="sqlalchemy" >}}
+{{< figure src="/images/posts/sql-alchemy-logo.png" alt="sqlalchemy" width="150" >}}
 
 Diversas aplicaçōes escritas em Python precisam armazenar dados relacionais, usando bancos de dados como PostgreSQL, MySQL, Oracle e outros.
 

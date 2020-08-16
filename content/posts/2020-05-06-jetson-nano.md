@@ -23,6 +23,7 @@ images:
 
 ## Especificações
 
+| | |
 |:---|:---|
 | CPU           | Quad-core ARM A57 @ 1.43 GHz |
 | GPU           | 128-core Maxwell |

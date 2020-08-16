@@ -19,7 +19,7 @@ images:
   - /images/posts/kafka-definitive-guide-cover.jpg
 ---
 
-{{< figure src="/images/posts/kafka-definitive-guide-cover.jpg" alt="Kafka - The Definitive Guide" >}}
+{{< figure src="/images/posts/kafka-definitive-guide-cover.jpg" alt="Kafka - The Definitive Guide" width="250" >}}
 
 Ficar em casa trancado não é legal, porém você pode utilizar este tempo para por a sua leitura em dia.
 

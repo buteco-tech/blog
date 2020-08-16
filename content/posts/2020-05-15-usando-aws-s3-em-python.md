@@ -17,7 +17,7 @@ images:
   - /images/posts/aws-python-s3.png
 ---
 
-{{< figure src="/images/posts/aws-python-s3.png" alt="AWS" >}}
+{{< figure src="/images/posts/aws-python-s3.png" alt="AWS" width="150" >}}
 
 Existem diversos serviços de armazenamento de arquivos na nuvem, um dos mais usados é o S3 da Amazon. Veja a seguir como usá-lo na linguagem Python.
 
