@@ -9,6 +9,7 @@ enableEmoji: true
 paginate: 10
 theme: iara
 disqusShortname: butecopensource
+googleAnalytics: UA-55693832-1
 disableKinds:
   - pages
 
