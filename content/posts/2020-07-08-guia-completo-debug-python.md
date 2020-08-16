@@ -9,7 +9,7 @@ tags:
   - python
   - debug
   - pdb
-slug: de-que-sao-feitos-containers-linux
+slug: guia-completo-debug-python
 authors:
   - jaswdr
 images:
