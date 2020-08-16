@@ -5,38 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="Hugo 0.74.3" />
 
-  <title>Guia completo de Debug em Python &middot; Buteco Tecnológico</title>
+  <title>De que são feitos containers Linux? &middot; Buteco Tecnológico</title>
 
   <meta name="description" content="" />
 
 
 
-<meta itemprop="name" content="Guia completo de Debug em Python">
-<meta itemprop="description" content="Uma das atividades que mais realizamos durante o desenvolvendo é o debug para analisar algum erro ou até mesmo saber se o código esta executando da forma que gostaríamos.">
-<meta itemprop="datePublished" content="2020-07-08T08:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-07-08T08:00:00+00:00" />
-<meta itemprop="wordCount" content="2146">
-<meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/python-logo.png">
+<meta itemprop="name" content="De que são feitos containers Linux?">
+<meta itemprop="description" content="Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema.">
+<meta itemprop="datePublished" content="2020-06-16T08:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-06-16T08:00:00+00:00" />
+<meta itemprop="wordCount" content="1201">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/lxc-logo.png">
 
 
 
-<meta itemprop="keywords" content="python,debug,pdb," />
+<meta itemprop="keywords" content="containers,docker,lxc,linux," />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://butecotecnologico.com.br/images/posts/python-logo.png"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/posts/lxc-logo.png"/>
 
-<meta name="twitter:title" content="Guia completo de Debug em Python"/>
-<meta name="twitter:description" content="Uma das atividades que mais realizamos durante o desenvolvendo é o debug para analisar algum erro ou até mesmo saber se o código esta executando da forma que gostaríamos."/>
+<meta name="twitter:title" content="De que são feitos containers Linux?"/>
+<meta name="twitter:description" content="Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema."/>
 
 
-<meta property="og:title" content="Guia completo de Debug em Python" />
-<meta property="og:description" content="Uma das atividades que mais realizamos durante o desenvolvendo é o debug para analisar algum erro ou até mesmo saber se o código esta executando da forma que gostaríamos." />
+<meta property="og:title" content="De que são feitos containers Linux?" />
+<meta property="og:description" content="Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/" />
-<meta property="og:image" content="https://butecotecnologico.com.br/images/posts/python-logo.png" />
-<meta property="article:published_time" content="2020-07-08T08:00:00+00:00" />
-<meta property="article:modified_time" content="2020-07-08T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/posts/lxc-logo.png" />
+<meta property="article:published_time" content="2020-06-16T08:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-16T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 
@@ -148,23 +148,23 @@
 
 <section class="container article">
   <header class="mb-4">
-    <h1>Guia completo de Debug em Python</h1>
-    
+    <h1>De que são feitos containers Linux?</h1>
+    <h2 class="tagline text-muted mb-4">Containers Linux explicado</h2>
     <div class="meta d-flex"><div class="d-inline-block mr-2">
-    <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+    <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
        class="d-inline-block avatar mt-1 ml-0">
-      <img src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
-           alt="Jonathan André Schweder"
-           title="Jonathan André Schweder">
+      <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           alt="Alexandre Vicenzi"
+           title="Alexandre Vicenzi">
     </a>
     </div><div class="d-inline-block authors">
     <div class="text-muted"><span>
-        <a href="https://butecotecnologico.com.br/autores/jaswdr/"
-           class="author">Jonathan André Schweder</a>
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+           class="author">Alexandre Vicenzi</a>
       </span>
     </div>
-    <div class="text-muted"><time datetime="2020-07-08T08:00:00Z">08/07/2020</time>
-      &middot; 11 minutos de leitura
+    <div class="text-muted"><time datetime="2020-06-16T08:00:00Z">16/06/2020</time>
+      &middot; 6 minutos de leitura
     </div>
   </div>
   <div class="d-none d-md-inline-block ml-auto">
@@ -173,25 +173,25 @@
      href="#"
      title="Share on Twitter"
      data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
-     data-text="Guia completo de Debug em Python"><i class="fab fa-twitter"></i></a>
+     data-text="De que são feitos containers Linux?"><i class="fab fa-twitter"></i></a>
 
   <a class="linkedin-share-button"
      href="#"
      title="Share on LinkedIn"
      data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
-     data-text="Guia completo de Debug em Python"><i class="fab fa-linkedin-in"></i></a>
+     data-text="De que são feitos containers Linux?"><i class="fab fa-linkedin-in"></i></a>
 
   <a class="facebook-share-button"
      href="#"
      title="Share on Facebook"
      data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
-     data-text="Guia completo de Debug em Python"><i class="fab fa-facebook"></i></a>
+     data-text="De que são feitos containers Linux?"><i class="fab fa-facebook"></i></a>
 
   <a class="pinterest-share-button"
      href="#"
      title="Share on Pinterest"
      data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
-     data-text="Guia completo de Debug em Python"><i class="fab fa-pinterest"></i></a>
+     data-text="De que são feitos containers Linux?"><i class="fab fa-pinterest"></i></a>
 </div>
 
   </div>
@@ -201,488 +201,137 @@
 
   <article class="mt-3 mb-4">
   <figure>
-    <img src="/images/posts/python-logo.png"
-         alt="Python"/> 
+    <img src="/images/posts/lxc-logo.png"
+         alt="LXC"/> 
 </figure>
 
-<p>Uma das atividades que mais realizamos durante o desenvolvendo é o debug para analisar algum erro ou até mesmo saber se o código esta executando da forma que gostaríamos. Existem diversas técnicas e ferramentas no mundo Python para ajudar nessa tarefa e hoje iremos discutir algumas delas para facilitar sua vida.</p>
-<h3 id="pdb">PDB</h3>
-<p>A primeira ferramenta que você pode usar é o <code>pdb</code>, ou &ldquo;Python Debugger&rdquo;, esta biblioteca já vem com o Python e permite que você faça coisas como, execução passo-a-passo, inspeção de variáveis e muito mais.</p>
-<p>Para usá-lo você pode executar o comando abaixo:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python -m pdb script.py</span> 
-&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
--&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
-<span class="o">(</span>Pdb<span class="o">)</span> _
-
-</code></pre></td></tr></table>
-</div>
-</div><p>Ao executar o comando acima em qualquer arquivo o pdb irá carregá-lo e pausar a execução na primeira linha, nesse exemplo o arquivo está no diretório <code>/app</code> e a primeira linha do arquivo, como podemos ver, tem a declaração de uma função de soma chamada <code>add(x,y)</code>.</p>
-<p>Perceba que também existe um prompt de comando na linha <code>(Pdb) _</code>, sendo <code>_</code> o local onde seu cursor está, o pdb permite o uso de diversos comandos, cada um com alguma funcionalidade que te ajuda na hora do debug, vamos listar todos os comandos disponíveis digitando o comando <code>help</code> e apertando a tecla <code>Enter</code>.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python -m pdb script.py</span> 
-&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
--&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
-<span class="o">(</span>Pdb<span class="o">)</span> <span class="nb">help</span>
-
-Documented commands <span class="o">(</span><span class="nb">type</span> <span class="nb">help</span> &lt;topic&gt;<span class="o">)</span>:
-<span class="o">========================================</span>
-EOF    c          d        h         list      q        rv       undisplay
-a      cl         debug    <span class="nb">help</span>      ll        quit     s        unt      
-<span class="nb">alias</span>  clear      disable  ignore    longlist  r        <span class="nb">source</span>   <span class="k">until</span>    
-args   commands   display  interact  n         restart  step     up       
-b      condition  down     j         next      <span class="k">return</span>   tbreak   w        
-<span class="nb">break</span>  cont       <span class="nb">enable</span>   jump      p         retval   u        whatis   
-bt     <span class="k">continue</span>   <span class="nb">exit</span>     l         pp        run      <span class="nb">unalias</span>  where    
-
-Miscellaneous <span class="nb">help</span> topics:
-<span class="o">==========================</span>
-<span class="nb">exec</span>  pdb
-
-<span class="o">(</span>Pdb<span class="o">)</span> _
-</code></pre></td></tr></table>
-</div>
-</div><p>O pdb executa o comando e imediatamente retorna ao prompt para podermos executar novos comandos, além disso, o comando <code>help</code> imprimiu toda a lista de comandos disponíveis no pdb. Veremos alguns a seguir mas caso você queira saber mais, você pode acessar a página de documentação do pdb pelo link <a href="https://docs.python.org/3/library/pdb.html">https://docs.python.org/3/library/pdb.html</a>.</p>
-<p>Continuando nosso exemplo, vamos imprimir a linha atual em que estamos, para isso use o comando <code>list</code>.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> list
-  <span class="m">1</span>  -&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
-  <span class="m">2</span>         <span class="k">return</span> x + y
-  <span class="m">3</span>     
-  <span class="m">4</span>     
-  <span class="m">5</span>     <span class="k">if</span> <span class="nv">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span>:
-  <span class="m">6</span>         print<span class="o">(</span>add<span class="o">(</span>2, 3<span class="o">))</span>
-<span class="o">[</span>EOF<span class="o">]</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Podemos ver em nosso exemplo que foi listado a função <code>add</code> que mencionei anteriormente, assim como o resto do arquivo. Agora que sabemos onde estamos, podemos realizar uma execução passo-a-passo, para isso utilize o comando <code>next</code> ou sua abreviação <code>n</code> e aperte <code>Enter</code>.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> next
-&gt; /app/script.py<span class="o">(</span>5<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
--&gt; <span class="k">if</span> <span class="nv">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span>:
-<span class="o">(</span>Pdb<span class="o">)</span> _
-</code></pre></td></tr></table>
-</div>
-</div><p>Neste exemplo o PDB parou na próxima linha a ser executada, nesta linha temos um <code>if</code> verificando a variável <code>__name__</code>, vamos continuar a execução com o comando <code>next</code>.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> next
-&gt; /app/script.py<span class="o">(</span>6<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
--&gt; print<span class="o">(</span>add<span class="o">(</span>2, 3<span class="o">))</span>
-<span class="o">(</span>Pdb<span class="o">)</span> _
-</code></pre></td></tr></table>
-</div>
-</div><p>Dessa vez o cursor parou na linha de chamada da função <code>add</code>, estando nessa linha podemos &ldquo;entrar&rdquo; na função usando o comando <code>step</code> ou sua abreviação <code>s</code>, este comando irá colocar o cursor na primeira linha da função <code>add</code>.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> step
---Call--
-&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>add<span class="o">()</span>
--&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
-<span class="o">(</span>Pdb<span class="o">)</span> _ 
-</code></pre></td></tr></table>
-</div>
-</div><p>Agora que estamos dentro da função <code>add</code>, podemos analisar quais foram os argumentos passados, para isso usamos o comando <code>args</code>.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> args
-<span class="nv">x</span> <span class="o">=</span> <span class="m">2</span>
-<span class="nv">y</span> <span class="o">=</span> <span class="m">3</span>
-<span class="o">(</span>Pdb<span class="o">)</span> _
-</code></pre></td></tr></table>
-</div>
-</div><p>Como esperado, podemos ver que foram passado os valores que vimos anteriormente. Para saber o valor de uma variável podemos usar o comando <code>p</code> ou <code>pp</code> para imprimir o valor formatado.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> p x
-<span class="m">2</span>
-<span class="o">(</span>Pdb<span class="o">)</span> _
-</code></pre></td></tr></table>
-</div>
-</div><p>Enquanto estamos fazendo o debug, podemos alterar os valores das variáveis da mesma forma que escrevemos código Python.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> <span class="nv">x</span> <span class="o">=</span> <span class="m">5</span>
-<span class="o">(</span>Pdb<span class="o">)</span> p x
-<span class="m">5</span>
-<span class="o">(</span>Pdb<span class="o">)</span> _ 
-</code></pre></td></tr></table>
-</div>
-</div><p>É claro que qualquer alteração feita irá refletir na sessão atual, por fim continuaremos a execução até o término do programa com o comando <code>continue</code>.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> <span class="k">continue</span>
-<span class="m">8</span>
-The program finished and will be restarted
-&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
--&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
-<span class="o">(</span>Pdb<span class="o">)</span> _
-</code></pre></td></tr></table>
-</div>
-</div><p>Por ter alterado o valor da variável <code>x</code> o código imprimiu o valor 8 ao em vez do valor esperado 5.</p>
-<p>Porém, vão existir momentos que você não sabe exatamente a ordem em que tudo irá executar, ou até mesmo essa ordem não importa e você quer ir direto para o ponto do código de interesse, nesses casos você pode importar o módulo do pdb e chamar a função <code>set_trace()</code> que irá parar a execução naquele ponto e disponibilizar o prompt do pdb para você, veja o exemplo.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-    <span class="kn">import</span> <span class="nn">pdb</span><span class="p">;</span> <span class="n">pdb</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Executando o arquivo.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python script.py</span>
-&gt; /app/script.py<span class="o">(</span>3<span class="o">)</span>add<span class="o">()</span>
--&gt; <span class="k">return</span> x + y
-<span class="o">(</span>Pdb<span class="o">)</span> _
-</code></pre></td></tr></table>
-</div>
-</div><p>Nesse ponto você tem todos os comandos do PDB disponível para debugar o código. Se quiser sair você tambêm pode usar o comando <code>quit</code> ou sua abreviação <code>q</code>.</p>
-<p>Veja estes e outros comandos disponíveis no modulo PDB na <a href="https://docs.python.org/3/library/pdb.html"
+<p>Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema.</p>
+<h2 id="o-que-é-um-container">O que é um container?</h2>
+<p>Em uma breve definição, um container é uma forma de isolar aplicações do sistema hospedeiro.</p>
+<p>Containers possuem todos os arquivos necessários para que aplicações possam ser executadas, aumentando a portabilidade e eficiência na hora de migrar do ambiente de desenvolvimento para testes e produção.</p>
+<h2 id="um-pouco-da-história">Um pouco da história</h2>
+<p><img src="/images/posts/container-timeline.png" alt="Timeline"></p>
+<p>O que hoje é conhecido como containers Linux surgiu inicialmente no FreeBSD 4.x com o <a href="https://www.freebsd.org/doc/handbook/jails.html"
    
-   target="_blank">documentação oficial</a>.</p>
-<h3 id="trace">Trace</h3>
-<p>Outra biblioteca que pode te ajudar a entender o que está acontecendo em uma execução é o módulo <code>trace</code>. Este módulo permite que você rastreie chamadas de uma maneira mais simples, podendo verificar, por exemplo, qual ou quais arquivos e funções são chamados, a sequência em que essas funções são chamadas e outros detalhes.</p>
-<p>Para exemplificar vamos usar o seguinte código e salvar em um arquivo <code>script.py</code>.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">return</span> <span class="mi">1</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Agora vamos verificar a sequência de chamadas com o módulo trace e a opção <code>--trace</code>.</p>
-<pre><code># python -m trace --trace script.py 
- --- modulename: script, funcname: &lt;module&gt;
-script.py(1): def factorial(x):
-script.py(7): if __name__ == &quot;__main__&quot;:
-script.py(8):     print(factorial(5))
- --- modulename: script, funcname: factorial
-script.py(2):     if x &lt;= 1:
-script.py(4):     return x * factorial(x - 1)
- --- modulename: script, funcname: factorial
-script.py(2):     if x &lt;= 1:
-script.py(4):     return x * factorial(x - 1)
- --- modulename: script, funcname: factorial
-script.py(2):     if x &lt;= 1:
-script.py(4):     return x * factorial(x - 1)
- --- modulename: script, funcname: factorial
-script.py(2):     if x &lt;= 1:
-script.py(4):     return x * factorial(x - 1)
- --- modulename: script, funcname: factorial
-script.py(2):     if x &lt;= 1:
-script.py(3):         return 1
-120
-</code></pre><p>O comando acima mostrou a sequência da execução, podemos ver que houve um total de 4 chamadas a função <code>factorial</code> e um <code>return</code>. Com isso já conseguimos entender totalmente como o programa chegou no resultado esperado.</p>
-<p>Outra forma de obter um resultado mais simplificado é usar a opção <code>--count</code>, vejamos o que acontece se executarmos em nosso script.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python -m trace --count script.py</span>
-<span class="m">120</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Aparentemente nada de mais, porém se olharmos no diretório podemos ver que foi criado um arquivo <code>script.cover</code>, este arquivo possuí (neste caso) o seguinte conteúdo.</p>
-<pre><code>    1: def factorial(x):
-    5:     if x &lt;= 1:
-    1:         return 1
-    4:     return x * factorial(x - 1)
-       
-       
-    1: if __name__ == &quot;__main__&quot;:
-    1:     print(factorial(5))
-</code></pre><p>O conteúdo do arquivo mostra algo parecido com o que vimos antes, porém de uma forma mais simplificada, mostrando quantidade de execuções que houveram linha a linha. Perceba por exemplo que a linha <code>if x &lt;= 1:</code> foi executada 5 vezes, a linha <code>return 1</code> foi executada somente uma, o que é esperado pois é o ponto de parada da função e por fim a linha <code>return x * factorial(x - 1)</code> foi executada 4 vezes.</p>
-<p>Veja mais detalhes sobre o módulo <code>trace</code> na <a href="https://docs.python.org/3/library/trace.html#command-line-usage"
+   target="_blank">Jails</a> no ano 2000. O Jails permite a criação de um ambiente seguro e isolado do resto do sistema assim como os containers Linux.</p>
+<p>Logo após surgiu o <a href="https://man7.org/linux/man-pages/man7/cgroups.7.html"
    
-   target="_blank">documentação oficial</a>.</p>
-<h3 id="timeit">Timeit</h3>
-<p>Em alguns momentos pode ser que seja necessário verificar o tempo de execução de alguma função, para isso que a biblioteca <code>timeit</code> existe.</p>
-<p>O timeit permite você mensurar quanto tempo a execução de uma função demorou, para entender melhor vamos usar o seguinte código de exemplo:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">timeit</span>
-<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
-
-
-<span class="k">def</span> <span class="nf">func1</span><span class="p">():</span>
-    <span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;func1 done&#34;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">func2</span><span class="p">():</span>
-    <span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;func2 done&#34;</span><span class="p">)</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Time of func1: {}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="n">func1</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="mi">1</span><span class="p">)))</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Time of func2: {}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="n">func2</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="mi">1</span><span class="p">)))</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Perceba que neste código existem 2 funções, <code>func1</code> e <code>func2</code>, apesar de serem apenas exemplos você pode considerar que essas funções representam qualquer função do seu código que realizam tarefas diferentes.</p>
-<p>Nas últimas 2 linhas estamos usando a função <code>timeit</code> da biblioteca <code>timeit</code>, essa função recebe como parâmetro a função a ser executada, e neste exemplo estamos declarando o número de vezes que a função será executada, nesse caso 1, para determinar o tempo médio de execução. É importante você ter em mente pois muitas vezes haverá situações em que o código executará de forma mais rápida ou lenta, isso acontece por uma série de fatores, alguns deles não temos total controle, como a forma como que o sistema operacional agenda os processos, entre outros detalhes. Também é importante considerar o tempo médio das execuções ou até mesmo uma porcentagem como 99% ou 95% para excluir as exceções que tiveram uma demora anormal em relação ao restante das execuções.</p>
-<p>Executando o código acima temos o seguinte resultado.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python script.py</span> 
-func1 <span class="k">done</span>
-Time of func1: 5.008903064999686
-func2 <span class="k">done</span>
-Time of func2: 3.008447170999716
-</code></pre></td></tr></table>
-</div>
-</div><p>A função <code>timeit</code> como podemos ver, está retornando o tempo em segundos, apesar de ser um exemplo bastante óbvio, no dia a dia esse tempo é imprevisível e muitas vezes é difícil identificar qual parte do projeto ou do código esta interferindo mais no desempenho. Com o <code>timeit</code> você pode analisar o tempo e realizar testes locais para verificar se sua alteração tem melhor ou pior desempenho em relação à versão anterior do código.</p>
-<p>Veja mais sobre o timeit na <a href="https://docs.python.org/3/library/timeit.html"
+   target="_blank">control groups (cgroups)</a> no Kernel Linux 2.6, uma parte essencial do ecossistema. cgroups permite limitar e isolar recursos como CPU, memória, disco, redes, etc.</p>
+<p>Em 2008 surge o <a href="https://linuxcontainers.org/lxc/"
    
-   target="_blank">documentação oficial</a>.</p>
-<h3 id="tracemalloc">Tracemalloc</h3>
-<p>A último biblioteca que vamos aprender a usar é o <code>tracemalloc</code>, este módulo tem o objetivo de fazer o rastreio da alocação de mémoria, com ele você consegue saber quanto de memória o programa esta usando, e não só isso, saber quanto cada linha esta alocando.</p>
-<p>Como de costume vamos usar o seguinte código como base.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">tracemalloc</span>
-
-
-<span class="k">class</span> <span class="nc">Foo</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">foo</span> <span class="o">=</span> <span class="s2">&#34;foo&#34;</span>
-
-
-<span class="k">def</span> <span class="nf">func1</span><span class="p">():</span>
-    <span class="n">foo</span> <span class="o">=</span> <span class="n">Foo</span><span class="p">()</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;func1 done&#34;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">func2</span><span class="p">():</span>
-    <span class="n">foo</span> <span class="o">=</span> <span class="s2">&#34;foo&#34;</span>
-    <span class="n">bar</span> <span class="o">=</span> <span class="s2">&#34;bar&#34;</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;func2 done&#34;</span><span class="p">)</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-    <span class="n">tracemalloc</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
-    <span class="n">before</span> <span class="o">=</span> <span class="n">tracemalloc</span><span class="o">.</span><span class="n">take_snapshot</span><span class="p">()</span>
-    <span class="n">func1</span><span class="p">()</span>
-    <span class="n">func2</span><span class="p">()</span>
-    <span class="n">after</span> <span class="o">=</span> <span class="n">tracemalloc</span><span class="o">.</span><span class="n">take_snapshot</span><span class="p">()</span>
-    <span class="n">top_stats</span> <span class="o">=</span> <span class="n">after</span><span class="o">.</span><span class="n">compare_to</span><span class="p">(</span><span class="n">before</span><span class="p">,</span> <span class="s1">&#39;lineno&#39;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;(Malloc)&#34;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">stat</span> <span class="ow">in</span> <span class="n">top_stats</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">stat</span><span class="p">)</span>
-
-</code></pre></td></tr></table>
-</div>
-</div><p>O código acima declara duas funções, <code>func1</code> está declarando uma nova instância da classe <code>Foo</code>, enquanto <code>func2</code> esta declarando uma variável do tipo string <code>bar</code>. Nas últimas linhas estamos utilizando o módulo <code>tracemalloc</code> para rastrear justamente o quanto de memória cada função esta alocando, além de estarmos criando snapshots usando a função <code>take_snapshot</code>, essa função irá criar algo como uma &ldquo;fotografia&rdquo; da memória no momento que o método for chamado, nesse caso estamos criando um snapshot no início e no fim, se executarmos o código podemos ver o seguinte.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python script.py</span> 
-func1 <span class="k">done</span>
-func2 <span class="k">done</span>
-<span class="o">(</span>Malloc<span class="o">)</span>
-script.py:24: <span class="nv">size</span><span class="o">=</span><span class="m">416</span> B <span class="o">(</span>+416 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">416</span> B
-script.py:10: <span class="nv">size</span><span class="o">=</span><span class="m">408</span> B <span class="o">(</span>+408 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">408</span> B
-/usr/local/lib/python3.8/tracemalloc.py:397: <span class="nv">size</span><span class="o">=</span><span class="m">88</span> B <span class="o">(</span>+88 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">2</span> <span class="o">(</span>+2<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">44</span> B
-/usr/local/lib/python3.8/tracemalloc.py:534: <span class="nv">size</span><span class="o">=</span><span class="m">48</span> B <span class="o">(</span>+48 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">48</span> B
-/usr/local/lib/python3.8/tracemalloc.py:291: <span class="nv">size</span><span class="o">=</span><span class="m">40</span> B <span class="o">(</span>+40 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">40</span> B
-</code></pre></td></tr></table>
-</div>
-</div><p>O resultado irá mostrar as linhas que mais alocaram memória, como este exemplo é simples, não irá ter muita alocação de memória, porém vale algumas observações. Primeiro as 3 últimas linhas são do proprio tracemalloc. Segundo podemos ver que as linhas 24 e 10 são as que alocaram mais memória, se olharmos o código da linha 24 é chamada a função <code>func2</code> que até aquele momento havia alocado 416 bytes, e a linha 10 é a linha onde estamos declarando nossa instância da classe <code>Foo</code> e até aquele momento foi alocado 408 bytes, é importante entender que a função <code>func2</code> não alocou os 416 bytes, pela <code>func2</code> ser chamada após a <code>func1</code> a quantidade de 408 bytes já havia sido alocado e a <code>func2</code> alocou apenas mais 8 bytes. Com isso conseguimos fazer o rastreio do uso de memória.</p>
-<h3 id="conclusão">Conclusão</h3>
-<p>Verificamos como você pode usar uma série de bibliotecas do Python para poder fazer o debug dos seus programas, rastreando tempo de execução e alocação de memória. Já conhecia ou usa no dia a dia alguns deles? Comente ou deixe sua opinião.</p>
-<p>Até a próxima</p>
+   target="_blank">LXC</a>, trazendo vários conceitos e ferramentas para se trabalhar com containers.</p>
+<h2 id="qual-a-finalidade">Qual a finalidade?</h2>
+<p>Containers reduzem a complexidade, aumentam a portabilidade e a segurança e padronizam ambientes. Era comum ouvirmos a expressão “Funciona na minha máquina”. Tem tempo que eu não ouço essa frase.</p>
+<p>Com containers você possui um ambiente controlado, não é afetado facilmente pelo o que acontece no resto do sistema e se usado corretamente, as imagens sempre serão idênticas, ou seja, se não funciona em um, não irá funcionar em outro, pois é a mesma imagem.</p>
+<p>Uma imagem (ou container image) é uma forma de encapsulamento (ou empacotamento) de sua aplicação, bem como todas as dependências para a sua execução. Como essas imagens são compiladas e publicadas em um registro de containers, toda pessoa que usar essa imagem receberá uma cópia idêntica da versão compilada.</p>
+<p>Como os containers são isolados um dos outros, evitamos que um afete o outro ou o sistema num todo. Isso é de extrema importância no quesito segurança. Imagine que uma biblioteca que você use possui uma grave falha de segurança, como a aplicação está isolada em um container essa falha possivelmente não irá afetar o sistema todo.</p>
+<h2 id="containers-vs-virtualização">Containers vs Virtualização</h2>
+<p><img src="/images/posts/containers-vs-virtualizacao.png" alt="Containers vs Virtualização"></p>
+<p>Um container não é uma máquina virtual, mas existem algumas semelhanças. Na virtualização você está rodando um sistema simultaneamente em um único hardware. O exemplo mais comum é rodar Windows dentro do Linux.</p>
+<p>Virtualização usa <a href="https://pt.wikipedia.org/wiki/Hipervisor"
+   
+   target="_blank">Hypervisor</a> para emulação de hardware e isso consome mais recursos que containers. Na virtualização é possível executar um sistema operacional dentro de outro. Com containers você está compartilhando o mesmo Kernel Linux, ou seja, você apenas isola aplicações e bibliotecas do resto do sistema, não sendo possível executar um container Windows dentro do Linux, por exemplo.</p>
+<p>Neste caso, se você está rodando Ubuntu 20 com Kernel 5.4 e iniciar um container e executar o comando <code>uname -r</code> você terá a mesma versão que o sistema hospedeiro. O Kernel é o mesmo, porém o ecossistema pode ser totalmente diferente. Você pode executar um container Fedora 32 dentro do Ubuntu, por exemplo.</p>
+<h2 id="containers-ao-nível-de-kernel">Containers ao nível de Kernel</h2>
+<p>Existem diversas funcionalidades ao nível de Kernel que permitem a implementação de containers. No Kernel em si não existem containers, mas as funcionalidades abaixo permitem a implementação de containers.</p>
+<h3 id="namespaces">Namespaces</h3>
+<p><a href="https://man7.org/linux/man-pages/man7/namespaces.7.html"
+   
+   target="_blank">Namespaces</a> servem para isolar recursos do sistema.</p>
+<p>Existem os seguintes namespaces:</p>
+<ul>
+<li>Cgroup - Isola o diretório raiz do cgroup</li>
+<li>IPC - Isola o System V IPC e a fila de mensagens POSIX</li>
+<li>Network - Isola dispositivos de rede, portas, etc.</li>
+<li>Mount - Isola mount points.</li>
+<li>PID - Isola IDs de processos</li>
+<li>Time - Isola os relógios</li>
+<li>User - Isola IDs de usuários e grupos</li>
+<li>UTS - Isola hostname e nome de domínio</li>
+</ul>
+<p>Com essa funcionalidade é possível isolar vários recursos do sistema, permitindo que o container só enxergue aquilo que lhe foi permitido. Um container não consegue enxergar recursos de outro ou até mesmo os recursos totais do sistema.</p>
+<p>Um exemplo bem simples é limites de memória. Seu servidor pode ter 128 GB de RAM, mas se o limite para o container for de 4 GB ele irá pensar que existem apenas 4 GB no sistema.</p>
+<h3 id="control-groups">Control Groups</h3>
+<p><a href="https://man7.org/linux/man-pages/man7/cgroups.7.html"
+   
+   target="_blank">cgroups</a> permite limitar e isolar recursos como CPU, memória, disco, redes, etc. Com essa funcionalidade é possível organizar processos em grupos hierárquicos de uso por vários tipos de recursos.</p>
+<p>cgroups ainda provê um pseudo sistema de arquivos chamado cgroupfs, que pode ser usado para obter informações do cgroups.</p>
+<h3 id="capabilities">Capabilities</h3>
+<p>Tradicionalmente UNIX distingue processos em duas categorias, <em>privileged</em> (privilegiado) e <em>unprivileged</em> (não privilegiado). Um processo root (com user ID 0) não tem checagens, porém um processo não root passa por todas as checagens de permissões.</p>
+<p><a href="https://man7.org/linux/man-pages/man7/capabilities.7.html"
+   
+   target="_blank">capabilities</a> permite definir privilégios por processo, permitindo um controle maior sobre processos do que apenas usando as categorias root ou não root, além disso, é possível fracionar as capabilities de root, onde um processo pode ter permissões root para determinadas ações (capabilities), mas ele não possui acesso root em todo o sistema.</p>
+<p>A lista de capabilities é grande e não vou mencionar aqui, mas elas dão permissões a certos recursos do sistema, como a <code>CAP_NET_ADMIN</code> que permite alterar várias configurações relacionadas a redes.</p>
+<h3 id="segurança">Segurança</h3>
+<p>Linux Security Modules (LSM) é um framework que permite suporte ao nível de Kernel para diversos modelos de segurança. <a href="https://en.wikipedia.org/wiki/AppArmor"
+   
+   target="_blank">AppArmor</a>, <a href="https://en.wikipedia.org/wiki/SELinux"
+   
+   target="_blank">SELinux</a>, <a href="https://en.wikipedia.org/wiki/Smack_%28software%29"
+   
+   target="_blank">Smack</a> e <a href="https://en.wikipedia.org/wiki/Tomoyo_Linux"
+   
+   target="_blank">TOMOYO Linux</a> fazem parte dos módulos oficiais.</p>
+<p>Esses módulos são usados para assegurar a separação entre host e container e também entre containers individualmente. Essa separação é feita aplicando políticas de seguranças que restringem os processos rodando.</p>
+<p>Essa funcionalidade não é só usada para containers, mas também pode ser aplicada a processos rodando no sistema host.</p>
+<h2 id="container-runtime">Container runtime</h2>
+<p>Um container runtime é responsável por gerenciar e executar os containers, porém alguns possuem funcionalidades extras como gerenciar imagens.</p>
+<p>Alguns exemplos de runtime são:</p>
+<ul>
+<li><a href="https://linuxcontainers.org/lxc/"
+   
+   target="_blank">LXC</a></li>
+<li><a href="https://github.com/opencontainers/runc"
+   
+   target="_blank">runC</a></li>
+<li><a href="https://containerd.io/"
+   
+   target="_blank">containerd</a></li>
+<li><a href="https://cri-o.io/"
+   
+   target="_blank">CRI-O</a></li>
+</ul>
+<h2 id="container-engine">Container engine</h2>
+<p>Um container engine é uma aplicação que aceita requisições e se comunica com o container runtime, geralmente são disponibilizados em forma de aplicações de linha de comando.</p>
+<p>Alguns exemplos de engine são:</p>
+<ul>
+<li><a href="https://docs.docker.com/engine/"
+   
+   target="_blank">Docker</a></li>
+<li><a href="https://podman.io/"
+   
+   target="_blank">Podman</a></li>
+<li><a href="https://coreos.com/rkt/"
+   
+   target="_blank">RKT</a></li>
+<li><a href="https://linuxcontainers.org/lxd/"
+   
+   target="_blank">LXD</a></li>
+</ul>
+<h2 id="outras-abordagens">Outras abordagens</h2>
+<p>Até agora mencionamos apenas sobre containers nativos (ao nível de Kernel), mas podemos citar ainda duas outras abordagens de implementação de containers.</p>
+<h3 id="containers-virtualizados">Containers virtualizados</h3>
+<p>São implementações que usam KVM ou Xen para virtualizar um container. O principal uso é para aplicações que necessitam um maior isolamento em relação ao sistema hospedeiro, usando a virtualização de hardware como uma segunda camada de defesa e segurança, mas não se limita apenas a isso.</p>
+<p>Alguns exemplos de runtime que usam virtualização são:</p>
+<ul>
+<li><a href="https://github.com/kubernetes/frakti"
+   
+   target="_blank">Frakti</a></li>
+<li><a href="https://katacontainers.io/"
+   
+   target="_blank">Kata Containers</a></li>
+<li><a href="https://firecracker-microvm.github.io/"
+   
+   target="_blank">Firecracker</a></li>
+</ul>
+<h3 id="gvisor">gVisor</h3>
+<p>O <a href="https://gvisor.dev/"
+   
+   target="_blank">gVisor</a> é um runtime que implementa o seu próprio Kernel para adicionar um nível extra de segurança, é como se o container executasse em uma camada sandbox, separada do Kernel Linux, mas ao mesmo tempo, sem ser uma máquina virtual.</p>
+<h2 id="conclusão">Conclusão</h2>
+<p>Containers é um assunto abrangente, impossível de cobrir tudo em apenas um artigo e como podemos observar, existem múltiplas formas de se fazer a mesma coisa.</p>
+<p>Sabendo o básico do funcionamento e o quais camadas compõem, fica fácil dar continuidade nos estudos, mas traremos mais conteúdo no futuro para lhe ajudar a entender mais, não se preocupe.</p>
+<p>Você já usa containers? Qual sua engine preferida? Deixe um comentário com sua opinião.</p>
 
   </article>
 
@@ -691,15 +340,19 @@ script.py:10: <span class="nv">size</span><span class="o">=</span><span class="m
 <div class="mb-4">
   <ul class="list-unstyled tags">
   <li class="d-inline-block mb-1 mr-1">
-     <a href="https://butecotecnologico.com.br/tags/python/" class="tag-link">python</a>
+     <a href="https://butecotecnologico.com.br/tags/containers/" class="tag-link">containers</a>
   </li>
   
   <li class="d-inline-block mb-1 mr-1">
-     <a href="https://butecotecnologico.com.br/tags/debug/" class="tag-link">debug</a>
+     <a href="https://butecotecnologico.com.br/tags/docker/" class="tag-link">docker</a>
   </li>
   
   <li class="d-inline-block mb-1 mr-1">
-     <a href="https://butecotecnologico.com.br/tags/pdb/" class="tag-link">pdb</a>
+     <a href="https://butecotecnologico.com.br/tags/lxc/" class="tag-link">lxc</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
   </li>
   </ul>
 </div>
@@ -710,35 +363,35 @@ script.py:10: <span class="nv">size</span><span class="o">=</span><span class="m
      href="#"
      title="Share on Twitter"
      data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
-     data-text="Guia completo de Debug em Python"><i class="fab fa-twitter"></i></a>
+     data-text="De que são feitos containers Linux?"><i class="fab fa-twitter"></i></a>
 
   <a class="linkedin-share-button"
      href="#"
      title="Share on LinkedIn"
      data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
-     data-text="Guia completo de Debug em Python"><i class="fab fa-linkedin-in"></i></a>
+     data-text="De que são feitos containers Linux?"><i class="fab fa-linkedin-in"></i></a>
 
   <a class="facebook-share-button"
      href="#"
      title="Share on Facebook"
      data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
-     data-text="Guia completo de Debug em Python"><i class="fab fa-facebook"></i></a>
+     data-text="De que são feitos containers Linux?"><i class="fab fa-facebook"></i></a>
 
   <a class="pinterest-share-button"
      href="#"
      title="Share on Pinterest"
      data-url="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
-     data-text="Guia completo de Debug em Python"><i class="fab fa-pinterest"></i></a>
+     data-text="De que são feitos containers Linux?"><i class="fab fa-pinterest"></i></a>
 </div>
 
     
 <div class="border-top py-4">
   <div class="author-info">
     <div class="author-avatar d-inline-block position-absolute mt-2">
-      <a href="https://butecotecnologico.com.br/autores/jaswdr/">
+      <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
         <img class="author-img"
-             src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
-             alt="Jonathan André Schweder">
+             src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             alt="Alexandre Vicenzi">
       </a>
     </div>
     <div class="author-meta d-inline-block align-top">
@@ -746,9 +399,9 @@ script.py:10: <span class="nv">size</span><span class="o">=</span><span class="m
       <span class="small text-muted text-uppercase">Escrito por</span>
       
       <h2 class="m-0">
-        <a href="https://butecotecnologico.com.br/autores/jaswdr/">Jonathan André Schweder</a>
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">Alexandre Vicenzi</a>
       </h2>
-      <span class="small text-muted">System Developer Engineer at Amazon Web Services</span>
+      <span class="small text-muted">Engenheiro de Software</span>
     </div>
   </div>
   
