@@ -1,9 +1,7 @@
 ---
-type: wordpress
-title: Instalando o Apache no CentOS 7
+title: Instalando o Apache Server no CentOS 7
 summary: |
-  Dando continuidade ao tutorial de instalação do LAMP no CentOS, hoje vamos ver como instalar o Apache. No tutorial anterior, vimos como instalar o MariaDB.
-  O Apache é o mais bem sucedido servidor web livre. Ele representa cerca de 47.20% dos servidores ativos no mundo. Além disso, é a principal tecnologia da Apache Software Foundation.
+  O Apache é um dos mais bem sucedido servidor web livre, representando cerca de 47% dos servidores ativos no mundo.
 date: 2015-03-05 00:20:38
 authors:
   - alexandrevicenzi
@@ -12,47 +10,57 @@ images:
   - /images/wp-content/uploads/2015/03/Apache-Logo.png
 categories:
   - Tutoriais
+  - Distros
 tags:
   - apache
   - centos
   - httpd
-  - lamp
   - php
   - wordpress
 ---
 
-Dando continuidade ao tutorial de instalação do LAMP no CentOS, hoje vamos ver como instalar o Apache. No tutorial anterior, vimos <a href="/instalando-o-mariadb-no-centos-7" target="_blank">como instalar o MariaDB</a>.
+{{< figure src="/images/wp-content/uploads/2015/03/Apache-Logo.png" alt="K8s" width="200" >}}
 
-O Apache é o mais bem-sucedido servidor web livre. Ele representa cerca de 47.20% dos servidores ativos no mundo. Além disso, é a principal tecnologia da <a href="http://www.apache.org/" target="_blank">Apache Software Foundation</a>.
+O [Apache HTTP Server](http://httpd.apache.org/docs/) é um dos mais bem-sucedido servidor web livre, representando cerca de 47% dos servidores ativos no mundo.
 
-Para instalar o Apache execute o comando abaixo.
+O Apache é um dos projetos que é mantido pela [Apache Software Foundation](https://www.apache.org/).
 
-<code>yum install httpd</code>
+## Instalação
+
+Para instalar o Apache execute o comando:
+
+`yum install httpd`
 
 Ao término da instalação deverá ser exibida uma mensagem de concluído.
 
-Para iniciar o serviço do Apache execute o comando abaixo:
+Para iniciar o serviço do Apache execute o comando:
 
-<code>systemctl start httpd.service</code>
+`systemctl start httpd.service`
 
-Após iniciado basta digitar no seu browser <em>localhost</em> e você deverá ver uma página com a seguinte mensagem:
+Para adicionar o Apache na inicialização do sistema execute o comando:
 
-<code>Testing 123.. page</code>
+`systemctl enable httpd.service`
 
-Como nosso intuito é colocar o Worpress nesse servidor, vamos instalar alguns pacotes adicionais.
+## Teste
 
-Execute o comando abaixo para instalar os pacotes necessários para a hospedagem do Worpress nesse servidor:
+Após iniciado basta digitar no seu browser [http://localhost](http://localhost) e você deverá ver uma página com a seguinte mensagem:
 
-<code>yum install php php-mysql php-gd</code>
+`Testing 123.. page`
 
-Após isto reinicie o Apache com o comando abaixo:
+## Pacotes adicionais
 
-<code>systemctl restart httpd.service</code>
+Para utilizar com o Worpress, é necessário instalar alguns pacotes adicionais.
 
-Para adicionar o Apache na inicialização do sistema digite o comando abaixo:
+Execute o comando a seguir para instalar os pacotes necessários para a hospedagem do Worpress no seu servidor:
 
-<code>systemctl enable httpd.service</code>
+`yum install php php-mysql php-gd`
 
-A instalação do Apache em si é bem simples. Na próxima parte iremos ver como configurar o Wordpress.
+Após isto reinicie o Apache com o comando:
+
+`systemctl restart httpd.service`
+
+## Conclusão
+
+A instalação do Apache em si é bem simples. Espero que tenha gostado.
 
 Até a próxima.

@@ -1,55 +1,57 @@
 ---
-type: wordpress
-title: Dica - Resetando senha do root Centos 7
+title: Resetando a senha do root no Centos 7
 summary: |
-  Resetar senha de root em Red Hat Likes.
+  Aprenda a resetar a senha do root em sistemas da Red Hat.
 date: 2015-06-15 23:13:07
 authors:
   - marcooliveira
 slug: /dica-resetando-senha-do-root-centos-7/
 categories:
   - Tutoriais
+  - Distros
 tags:
   - linux
   - centos
+images:
+  - /images/wp-content/uploads/2015/06/password-error.jpg
 ---
 
-<a href="/images/wp-content/uploads/2015/06/password-error.jpg"><img class=" size-full wp-image-2673 aligncenter" src="/images/wp-content/uploads/2015/06/password-error.jpg" alt="password-error" width="299" height="168" /></a>
+{{< figure src="/images/wp-content/uploads/2015/06/password-error.jpg" alt="PWD Error" >}}
 
-Dica rápida para este processo, trivial do cotidiano de um administrador que pega ambientes dos quais não existem documentações, ou daqueles como eu que se esquecem da senha do root de sua máquina virtualizada... XD
+Dica rápida para este processo, trivial do cotidiano de um administrador que pega ambientes dos quais não existem documentações, ou daqueles que como eu se esquecem da senha do root de sua máquina virtualizada... XD
 
 No grub entre no modo de edição da parametrização do boot do kernel que você utiliza. Pressionando "E".
 
-O modo de edição do grub permite navegar utilizando as teclas de setas, e a hotkey <strong>CTRL+E</strong> para ir ao final da linha. Procure a linha onde existe a configuração <strong>linux16</strong> e no final dela adicione "<strong>rd.break enforcing=0"</strong>. Conforme a imagem a seguir:
+O modo de edição do grub permite navegar utilizando as teclas de setas, e a hotkey **CTRL + E** para ir ao final da linha. Procure a linha onde existe a configuração **linux16** e no final dela adicione "**rd.break enforcing=0"**. Conforme a imagem a seguir:
 
-<a href="/images/wp-content/uploads/2015/06/reset2.png"><img class=" size-full wp-image-2671 aligncenter" src="/images/wp-content/uploads/2015/06/reset2.png" alt="reset2" width="728" height="393" /></a>
+{{< figure src="/images/wp-content/uploads/2015/06/reset2.png" alt="PWD Reset" >}}
 
-Pressione <strong>CTRL+X</strong> para bootar no kernel modificado
+Pressione **CTRL + X** para bootar no kernel modificado.
 
-Na sequência ele deve iniciar o sistema operacional no no modo de quebra, para tentar resolver algum problema que tenha ocorrido no sistema antes dele inicializar ( <strong>rd.break</strong> ), e desabilitar o <strong>SELINUX</strong> temporariamente pois não precisamos para fazer esta alteração. Para melhor exemplificar segue uma imagem com todos os comandos necessários executar para resetar a senha
+Na sequência ele deve iniciar o sistema operacional no modo de quebra, para tentar resolver algum problema que tenha ocorrido no sistema antes dele inicializar ( **rd.break** ), e desabilitar o **SELINUX** temporariamente pois não precisamos para fazer esta alteração.
 
-<a href="/images/wp-content/uploads/2015/06/reset4.png"><img class=" size-full wp-image-2672 aligncenter" src="/images/wp-content/uploads/2015/06/reset4.png" alt="reset4" width="727" height="393" /></a>
+Para melhor exemplificar confira a abaixo imagem com todos os comandos necessários executar para resetar a senha:
+
+{{< figure src="/images/wp-content/uploads/2015/06/reset4.png" alt="PWD Reset" >}}
 
 No modo de quebra, montamos o disco do nosso sistema no modo de escrita.
 
-<code># mount -o remount,rw /sysroot</code>
+`# mount -o remount,rw /sysroot`
 
-Utilizamos o <strong>chroot</strong> para alternar as pasta raíz do sistema, para que possamos utilizar dos programas de onde o sistema operacional se encontra instalado no disco.
+Utilizamos o **chroot** para alternar as pasta raíz do sistema, para que possamos utilizar dos programas de onde o sistema operacional se encontra instalado no disco.
 
-<code># chroot /sysroot</code>
+`# chroot /sysroot`
 
-A próxima etapa é alterar a senha com o comando <strong>passwd</strong>.
+A próxima etapa é alterar a senha com o comando **passwd**.
 
-<code># passwd</code>
+`# passwd`
 
 Na sequência remontamos a raiz do sistema no modo de leitura.
 
-<code># mount -o remount,ro /</code>
+`# mount -o remount,ro /`
 
-Por fim saímos do <strong>chroot </strong> e do modo <strong>rd.break</strong> executando duas vezes o comando <strong>exit</strong>. E o sistema em sequência deve carregar o ambiente agora com a nova senha de root.
+Por fim saímos do **chroot ** e do modo **rd.break** executando duas vezes o comando **exit**. O sistema em sequência deve carregar o ambiente agora com a nova senha de root.
 
-Referências:
+**Referências**
 
-<a href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/sec-Terminal_Menu_Editing_During_Boot.html" target="_blank">Terminal Menu Editing During Boot</a> - Documentação oficial da Red Hat
-
-&nbsp;
+* [Terminal Menu Editing During Boot](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-working_with_the_grub_2_boot_loader#sec-Terminal_Menu_Editing_During_Boot) - Documentação oficial da Red Hat

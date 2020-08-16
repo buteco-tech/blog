@@ -1,5 +1,4 @@
 ---
-type: wordpress
 title: "GPS Parte 2: Decodificando uma sentença NMEA"
 date: 2016-01-11 21:38:15
 authors:
@@ -17,85 +16,49 @@ tags:
   - python
 ---
 
-Na <a href="/gps-parte-1-entendendo-o-seu-funcionamento" target="_blank">primeira parte</a> sobre GPS vimos como este sistema de rastreamento por satélite funciona. Também aproveitamos para explicar o que é o protocolo NMEA, utilizado pelos sistemas de navegação global.
+{{< figure src="/images/wp-content/uploads/2015/12/map_pin.png" alt="Map" width="200" >}}
 
-Uma sentença NMEA é formada por caracteres passíveis de impressão e CR (carriage return) e LF (line feed). Toda sentença inicia com <code>$</code> e termina com &lt;CR&gt; &lt;LF&gt;. Existem três tipos básicos de sentenças: <em>talker sentences</em>, <em>proprietary sentences</em> e <em>query sentences</em>.
+Na [primeira parte sobre GPS (Entendendo o seu funcionamento)](/gps-parte-1-entendendo-o-seu-funcionamento) vimos como este sistema de rastreamento por satélite funciona. Também aproveitamos para explicar o que é o protocolo NMEA, utilizado pelos sistemas de navegação global.
 
-As <em>talker sentences</em> são as sentenças genéricas de comunicação do protocolo, já as <em>proprietary sentences</em> são sentenças proprietárias dos fabricantes e as <em>query sentences</em> são sentenças utilizadas para requisitar informações a partir de um receptor.
+Uma sentença NMEA é formada por caracteres passíveis de impressão e **CR** (carriage return) e **LF** (line feed). Toda sentença inicia com `$` e termina com &lt;CR&gt; &lt;LF&gt;. Existem três tipos básicos de sentenças: _talker sentences_, _proprietary sentences_ e _query sentences_.
 
-Neste artigo iremos ver como implementar um decodificar de sentenças do protocolo NMEA 0183 versão 2.3. Para implementar o decodificador iremos utilizar Python sem nenhuma biblioteca adicional. O código desenvolvido é apenas para ilustrar como é feito este tipo de processo, se você procura algo para utilizar em seu sistema eu recomendo a biblioteca <a href="https://github.com/Knio/pynmea2" target="_blank">pynmea2</a>.
+As _talker sentences_ são as sentenças genéricas de comunicação do protocolo, já as _proprietary sentences_ são sentenças proprietárias dos fabricantes e as _query sentences_ são sentenças utilizadas para requisitar informações a partir de um receptor.
 
-<strong>Decodificando uma sentença</strong>
+Neste artigo iremos ver como implementar um decodificar de sentenças do protocolo NMEA 0183 versão 2.3.
 
-Para decodificar uma sentença primeiro é necessário entender o seu funcionamento. No caso da sentença GGA (Global Positioning System Fix Data) podemos observar a descrição dos campos abaixo:
+Para implementar o decodificador iremos utilizar Python sem nenhuma biblioteca adicional. O código desenvolvido é apenas para ilustrar como é feito este tipo de processo, se você procura algo para utilizar em seu sistema eu recomendo a biblioteca [pynmea2](https://github.com/Knio/pynmea2).
 
-<code>$GPGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*47</code>
+## Decodificando uma sentença NMEA
+
+Para decodificar uma sentença primeiro é necessário entender o seu funcionamento. No caso da sentença **GGA** (Global Positioning System Fix Data) podemos observar a descrição dos campos abaixo:
+
+`$GPGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*47`
 
 Para entender melhor, vamos explicar o que é cada parte:
-<table>
-<tbody>
-<tr>
-<td>GP</td>
-<td>Talker (GPS)</td>
-</tr>
-<tr>
-<td>GGA</td>
-<td>Nome da sentença</td>
-</tr>
-<tr>
-<td>123519</td>
-<td>Hora da Fix (12:35:19 UTC)</td>
-</tr>
-<tr>
-<td>4807.038,N</td>
-<td>Latitude 48 deg 07.038' N</td>
-</tr>
-<tr>
-<td>01131.000,E</td>
-<td>Longitude 11 deg 31.000' E</td>
-</tr>
-<tr>
-<td>1</td>
-<td>Qualidade da Fix</td>
-</tr>
-<tr>
-<td>08</td>
-<td>Número de satélites visíveis</td>
-</tr>
-<tr>
-<td>0.9</td>
-<td>Posição horizontal</td>
-</tr>
-<tr>
-<td>545.4,M</td>
-<td>Altitude, em metros, acima do nível do mar</td>
-</tr>
-<tr>
-<td>46.9,M</td>
-<td>Nível médio do mar</td>
-</tr>
-<tr>
-<td>(vazio)</td>
-<td>Tempo em segundos desde a última atualização do DGPS</td>
-</tr>
-<tr>
-<td>(vazio)</td>
-<td>DGPS ID</td>
-</tr>
-<tr>
-<td>*47</td>
-<td>checksum*</td>
-</tr>
-</tbody>
-</table>
 
-Se você deseja conhecer as demais sentenças e seus campos eu recomento ler a <a href="http://www.tronico.fi/OH6NT/docs/NMEA0183.pdf" target="_blank">especificação do protocolo NMEA 0183</a> (em inglês).
+| Parte | Descrição |
+|-------------|------------------------------------------------------|
+| GP          | Talker (GPS)                                         |
+| GGA         | Nome da sentença                                     |
+| 123519      | Hora da Fix (12:35:19 UTC)                           |
+| 4807.038,N  | Latitude 48 deg 07.038' N                            |
+| 01131.000,E | Longitude 11 deg 31.000' E                           |
+| 1           | Qualidade da Fix                                     |
+| 08          | Número de satélites visíveis                         |
+| 0.9         | Posição horizontal                                   |
+| 545.4,M     | Altitude, em metros, acima do nível do mar           |
+| 46.9,M      | Nível médio do mar                                   |
+| (vazio)     | Tempo em segundos desde a última atualização do DGPS |
+| (vazio)     | DGPS ID                                              |
+| \*47        | Checksum                                             |
+
+Se você deseja conhecer as demais sentenças e seus campos eu recomento ler a [especificação do protocolo NMEA 0183](http://www.tronico.fi/OH6NT/docs/NMEA0183.pdf) (em inglês).
 
 Bem, para entender melhor, vamos primeiro ver as principais partes do código, no fim será exibido o código por completo com alguns exemplos de uso.
 
-<strong>Classe Sentence</strong>
+## Classe Sentence
 
-A classe <code>Sentence</code> é a base de todas as sentenças NMEA. Toda sentença deve estender esta classe, como podemos observar na classe <code>GGLSentence</code>.
+A classe `Sentence` é a base de todas as sentenças NMEA. Toda sentença deve estender esta classe, como podemos observar na classe `GGLSentence`.
 
 ```py
 class Sentence(object):
@@ -113,8 +76,7 @@ class Sentence(object):
         raw_fields = sentence.split(',')
 
         if len(raw_fields) != self._fields_count:
-            raise ParseException(
-                'Field count mismatch. Expected %d fields, but found %d.' % (self._fields_count, len(raw_fields)))
+            raise ParseException('Field count mismatch. Expected %d fields, but found %d.' % (self._fields_count, len(raw_fields)))
 
         for index, field in enumerate(self.fields):
             field_name, _, field_type = field
@@ -127,8 +89,7 @@ class Sentence(object):
                 else:
                     setattr(self, field_name, None)
             except:
-                raise ParseException(
-                    'Can\'t parse value into field "%s": %s' % (field_name, value))
+                raise ParseException('Can\'t parse value into field "%s": %s' % (field_name, value))
 
         return self
 
@@ -140,17 +101,17 @@ class Sentence(object):
         return '%sSentence(is_valid=%s)' % (self.sentence_name, self.is_valid)
 ```
 
-Toda sentença deve possuir um nome (<code>sentence_name</code>), uma descrição (<code>sentence_description</code>) e seus respectivos campos (<code>fields</code>). Além disto, as classes devem implementar um método validador (<code>is_valid</code>) para verificar se a sentença recebida é valida.
+Toda sentença deve possuir um nome (`sentence_name`), uma descrição (`sentence_description`) e seus respectivos campos (`fields`). Além disto, as classes devem implementar um método validador (`is_valid`) para verificar se a sentença recebida é valida.
 
-Podemos observar que existe um método para decodificar (<code>parse</code>) a sentença. Como as sentenças devem seguir o mesmo padrão, o método é genérico para todas as classes derivadas de <code>Sentence</code>.
+Podemos observar que existe um método para decodificar (`parse`) a sentença. Como as sentenças devem seguir o mesmo padrão, o método é genérico para todas as classes derivadas de `Sentence`.
 
 Inicialmente é extraído da sentença o seu checksum caso exista. Após é verificado se a quantidade de campos recebidos na sentença corresponde a quantidade de campos registrados. Por fim, é convertido o valor do campo recebido para um tipo Python compatível.
 
-Como sabemos para que tipo devemos converter determinado campo? É isso que você verá na classe <code>GLLSentence</code>.
+Como sabemos para que tipo devemos converter determinado campo? É isso que você verá na classe `GLLSentence`.
 
-<strong>Estendendo a classe Sentence</strong>
+## Estendendo a classe Sentence
 
-Na classe <code>GLLSentence</code> sobrescrevemos as propriedades necessárias para o funcionamento correto do <em>parser</em>.
+Na classe `GLLSentence` sobrescrevemos as propriedades necessárias para o funcionamento correto do _parser_.
 
 ```py
 class GLLSentence(Sentence, LatLonMixin):
@@ -171,17 +132,17 @@ class GLLSentence(Sentence, LatLonMixin):
         return self.status == 'A'
 ```
 
-Como podemos observar, sobrescrevemos os atributos <code>sentence_name</code> e <code>sentence_description</code> com o nome e a descrição da sentença.
+Como podemos observar, sobrescrevemos os atributos `sentence_name` e `sentence_description` com o nome e a descrição da sentença.
 
-O atributo <code>fields</code> foi sobrescrito por uma tupla de tuplas que corresponde ao seguinte: o primeiro valor da tupla é o nome do campo, deve sem um nome de atributo válido, pois ele será atribuído a classe em tempo de execução; o segundo campo é uma descrição para o campo, pode ser qualquer texto; o terceiro campo é uma função/classe que será utilizada para converter o valor. Neste caso deve-se lembrar que a função/classe deve possuir apenas um parâmetro e do tipo <code>str</code>. Isto porque a função/classe é invocada com o valor recebido no campo.
+O atributo `fields` foi sobrescrito por uma tupla de tuplas que corresponde ao seguinte: o primeiro valor da tupla é o nome do campo, deve sem um nome de atributo válido, pois ele será atribuído a classe em tempo de execução; o segundo campo é uma descrição para o campo, pode ser qualquer texto; o terceiro campo é uma função/classe que será utilizada para converter o valor. Neste caso deve-se lembrar que a função/classe deve possuir apenas um parâmetro e do tipo `str`. Isto porque a função/classe é invocada com o valor recebido no campo.
 
-Se observarmos, é possível verificar que o campo <code>latitude</code> será convertido para <code>str</code>, já o campo <code>ns_indicator</code> será convertido para <code>str</code>, porém maiúscula. O campo <code>utc_time</code> usa a classe <code>UTCTimeParser</code> para converter para o tipo <code>datetime.date</code>.
+Se observarmos, é possível verificar que o campo `latitude` será convertido para `str`, já o campo `ns_indicator` será convertido para `str`, porém maiúscula. O campo `utc_time` usa a classe `UTCTimeParser` para converter para o tipo `datetime.date`.
 
-Por fim, implementamos a validação da sentença. No caso da sentença GLL, ela é valida se o <code>status</code> for igual a <code>A</code>. Uma validação não implementada é a do checksum. O checksum serve para verificar se o conteúdo recebido foi o mesmo que o enviado. Como o intuito é apenas exemplificar o funcionamento, podemos ignorar este item.
+Por fim, implementamos a validação da sentença. No caso da sentença GLL, ela é valida se o `status` for igual a `A`. Uma validação não implementada é a do checksum. O checksum serve para verificar se o conteúdo recebido foi o mesmo que o enviado. Como o intuito é apenas exemplificar o funcionamento, podemos ignorar este item.
 
-<strong>Classe NMEAParser</strong>
+## Classe NMEAParser
 
-Para finalizar, vamos verificar como a classe <code>NMEAParser</code> identifica qual a sentença e sua respectiva classe para conversão.
+Para finalizar, vamos verificar como a classe `NMEAParser` identifica qual a sentença e sua respectiva classe para conversão.
 
 ```py
 class NMEAParser(object):
@@ -219,7 +180,7 @@ class NMEAParser(object):
         return parser.parse(data[4:])
 ```
 
-A classe <code>NMEAParser</code> possui um atributo (<code>parsers</code>) responsável por armazenar o nome da sentença e a classe de conversão. Para identificar qual a classe correta extraímos no método <code>parse</code> o nome da sentença recebida. Se não for possível identificar a sentença ou se recebermos uma sentença não suportada é gerada uma exceção.
+A classe `NMEAParser` possui um atributo (`parsers`) responsável por armazenar o nome da sentença e a classe de conversão. Para identificar qual a classe correta extraímos no método `parse` o nome da sentença recebida. Se não for possível identificar a sentença ou se recebermos uma sentença não suportada é gerada uma exceção.
 
 Abaixo é possível observar o código completo da aplicação com alguns exemplos de uso.
 
@@ -259,10 +220,10 @@ class NMEAParser(object):
         return parser.parse(data[4:])
 ```
 
-Você pode conferir o código fonte completo <a href="https://github.com/ButecoOpenSource/exemplos/blob/master/nmea/nmea.py">aqui</a>.
+Você pode conferir o código fonte completo [aqui](https://github.com/ButecoOpenSource/exemplos/blob/master/nmea/nmea.py).
 
 Espero que você tenha gostado deste artigo. Na parte final desta série de artigos, iremos implementar uma pequena aplicação que captura a posição do GPS e informa em uma página Web.
 
 Até a próxima.
 
-<em>Este artigo é uma adaptação da monografia BUSTRACKER: Sistema de rastreamento para transporte coletivo de Alexandre Vicenzi e o texto na íntegra pode ser encontrado <a href="https://raw.githubusercontent.com/alexandrevicenzi/tcc/master/monografia/tcc_bcc_2015_2_avicenzi_AlexandreVicenzi-VF.pdf" target="_blank">aqui</a>.</em>
+_Este artigo é uma adaptação da monografia BUSTRACKER: Sistema de rastreamento para transporte coletivo de Alexandre Vicenzi e o texto na íntegra pode ser encontrado [aqui](https://bu.furb.br/consulta/portalConsulta/recuperaMfnCompleto.php?menu=rapida&CdMFN=363720)._

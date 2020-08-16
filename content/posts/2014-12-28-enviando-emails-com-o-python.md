@@ -1,5 +1,4 @@
 ---
-type: wordpress
 title: Enviando emails com o Python
 date: 2014-12-28 06:00:49
 authors:
@@ -7,20 +6,27 @@ authors:
 slug: /enviando-emails-com-o-python/
 categories:
   - Desenvolvimento
+  - Tutorial
 tags:
   - email
   - python
+  - smtplib
+  - smtp
+images:
+  - /images/wp-content/uploads/2014/12/python-logo.png
 ---
 
-Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo <a href="https://docs.python.org/2.7/library/smtplib.html" target="_blank">smtplib</a>.
+{{< figure src="/images/wp-content/uploads/2014/12/python-logo.png" alt="Python" width="150" >}}
 
-Vale ressaltar que o exemplo é indicado para envio de email mais simples, para enviar email com formatações especiais e anexos é recomendado o uso do módulo <a href="https://docs.python.org/2.7/library/email.html" target="_blank">email</a>. Abordarei este módulo em uma outra publicação.
+Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo [smtplib](https://docs.python.org/3.8/library/smtplib.html).
 
-O módulo <em>smtplib</em> define um cliente SMTP que pode ser usado para enviar emails tanto via SMTP quanto ESMTP. O <em>smtplib</em> segue os padrões da RFC 821 (SMTP), RFC 1869 (ESMTP), RFC 2554 (Autenticação SMTP) e RFC 2487 (SMTP Seguro via TLS).
+Vale ressaltar que o exemplo é indicado para envio de email mais simples, para enviar email com formatações especiais e anexos é recomendado o uso do módulo [email](https://docs.python.org/3.8/library/email.html) que foi abordado no artigo [Formatando e adicionando anexos a e-mails no Python](/formatando-e-adicionando-anexos-a-e-mails-no-python/).
+
+O módulo _smtplib_ define um cliente SMTP que pode ser usado para enviar emails tanto via SMTP quanto ESMTP. A _smtplib_ segue os padrões da RFC 821 (SMTP), RFC 1869 (ESMTP), RFC 2554 (Autenticação SMTP) e RFC 2487 (SMTP Seguro via TLS).
 
 Como este módulo já está incluso nas bibliotecas do Python você não precisará instalar nenhuma biblioteca adicional.
 
-Agora que já demos uma boa introdução sobre o módulo <em>smtplib</em> vamos ao que interessa.
+Agora que já demos uma boa introdução sobre o módulo _smtplib_ vamos ao que interessa.
 
 Inicialmente vamos importar o módulo:
 
@@ -30,20 +36,20 @@ import smtplib
 
 Vamos criar a instância do SMTP de acordo com a forma de autenticação:
 
-<strong>TLS</strong>
+**TLS**
 
 ```py
 smtp = smtplib.SMTP('localhost', 587)
 smtp.starttls()
 ```
 
-<strong>SSL</strong>
+**SSL**
 
 ```py
 smtp = smtplib.SMTP_SSL('localhost', 465)
 ```
 
-<strong>Sem autenticação</strong>
+**Sem autenticação**
 
 ```py
 smtp = smtplib.SMTP('localhost', 25)
@@ -68,21 +74,21 @@ smtp.helo()
 smtp.ehlo_or_helo_if_needed()
 ```
 
-Não há necessidade de chamar os métodos <code>ehlo</code> ou <code>helo</code> quando se utiliza SSL ou TLS, pois o método login faz a chamada desses métodos caso seja necessário.
+Não há necessidade de chamar os métodos `ehlo` ou `helo` quando se utiliza SSL ou TLS, pois o método login faz a chamada desses métodos caso seja necessário.
 
 Enviando um email:
 
 ```py
 msg = '''From: Seu Nome <seuemail@seudominio.com.br>
 To: outroemail@seudominio.com.br
-Subject: Buteco Open Source
+Subject: Mensagem do Buteco
 
-Email de teste do Buteco Open Source'''
+Email de teste do Buteco'''
 
 smtp.sendmail('seuemail@seudominio.com.br', ['outroemail@seudominio.com.br'], msg)
 ```
 
-Note que o segundo parâmetro do método <code>sendmail</code> deve ser uma lista. Mesmo que o destinatário seja apenas um.
+Note que o segundo parâmetro do método `sendmail` deve ser uma lista. Mesmo que o destinatário seja apenas um.
 
 Finalizando a sessão SMTP:
 
@@ -106,9 +112,9 @@ de = 'seuemail@gmail.com'
 para = ['seuemail@gmail.com']
 msg = """From: %s
 To: %s
-Subject: Buteco Open Source
+Subject: Mensagem do Buteco
 
-Email de teste do Buteco Open Source.""" % (de, ', '.join(para))
+Email de teste do Buteco.""" % (de, ', '.join(para))
 
 smtp.sendmail(de, para, msg)
 
@@ -128,9 +134,9 @@ de = 'seuemail@gmail.com'
 para = ['seuemail@gmail.com']
 msg = """From: %s
 To: %s
-Subject: Buteco Open Source
+Subject: Mensagem do Buteco
 
-Email de teste do Buteco Open Source.""" % (de, ', '.join(para))
+Email de teste do Buteco.""" % (de, ', '.join(para))
 
 smtp.sendmail(de, para, msg)
 
@@ -139,61 +145,16 @@ smtp.quit()
 
 Confira abaixo uma lista dos servidores de email mais comuns e suas configurações.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Nome</th>
-<th align="center">Servidor</th>
-<th align="center">Autenticação</th>
-<th align="center">Porta</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Gmail</td>
-<td align="center">smtp.gmail.com</td>
-<td align="center">SSL</td>
-<td align="center">465</td>
-</tr>
-<tr class="even">
-<td align="left">Gmail</td>
-<td align="center">smtp.gmail.com</td>
-<td align="center">StartTLS</td>
-<td align="center">587</td>
-</tr>
-<tr class="odd">
-<td align="left">Hotmail</td>
-<td align="center">smtp.live.com</td>
-<td align="center">SSL</td>
-<td align="center">465</td>
-</tr>
-<tr class="even">
-<td align="left">Mail.com</td>
-<td align="center">smtp.mail.com</td>
-<td align="center">SSL</td>
-<td align="center">465</td>
-</tr>
-<tr class="odd">
-<td align="left">Outlook.com</td>
-<td align="center">smtp.live.com</td>
-<td align="center">StartTLS</td>
-<td align="center">587</td>
-</tr>
-<tr class="even">
-<td align="left">Office365.com</td>
-<td align="center">smtp.office365.com</td>
-<td align="center">StartTLS</td>
-<td align="center">587</td>
-</tr>
-<tr class="odd">
-<td align="left">Yahoo Mail</td>
-<td align="center">smtp.mail.yahoo.com</td>
-<td align="center">SSL</td>
-<td align="center">465</td>
-</tr>
-</tbody>
-</table>
+| Nome | Servidor | Autenticação | Porta |
+|:--------------|:-------------------:|:------------:|:-----:|
+| Gmail         |   smtp.gmail.com    |     SSL      |  465  |
+| Gmail         |   smtp.gmail.com    |   StartTLS   |  587  |
+| Hotmail       |    smtp.live.com    |     SSL      |  465  |
+| Mail.com      |    smtp.mail.com    |     SSL      |  465  |
+| Outlook.com   |    smtp.live.com    |   StartTLS   |  587  |
+| Office365.com | smtp.office365.com  |   StartTLS   |  587  |
+| Yahoo Mail    | smtp.mail.yahoo.com |     SSL      |  465  |
 
 Espero que você tenha gostado desta publicação.
 
-Continue acompanhando que faremos uma continuação falando sobre o módulo <a href="https://docs.python.org/2.7/library/email.html" target="_blank">email</a>.
+Continue acompanhando que faremos uma continuação falando sobre o módulo _email_.
