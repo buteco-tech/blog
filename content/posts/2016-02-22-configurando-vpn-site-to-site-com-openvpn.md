@@ -1,5 +1,4 @@
 ---
-type: wordpress
 title: Configurando VPN site-to-site com OpenVPN
 summary: |
   Resumo
@@ -37,17 +36,22 @@ O OpenVPN é um software livre e open-source para criar redes privadas virtuais 
 
 <strong>Instale o OpenVPN e também o easy-rsa</strong>
 
-<code>apt-get install openvpn easy-rsa</code>
+```bash
+apt-get install openvpn easy-rsa
+```
 
 Agora entramos no diretório do OpenVPN, utilizamos o comando make-cadir (disponibilizado pelo pacote easy-rsa) para criar um diretório chamado <code>easy-rsa</code> que conterá vários <em>scripts</em> úteis. Entramos no diretório <code>easy-rsa</code> e editamos o arquivos chamado vars.
 
-<code>root@wolf:~# cd /etc/openvpn/
+```bash
+root@wolf:~# cd /etc/openvpn/
 root@wolf:/etc/openvpn# make-cadir easy-rsa
 root@wolf:/etc/openvpn# cd easy-rsa/
-root@wolf:/etc/openvpn/easy-rsa# nano vars</code>
+root@wolf:/etc/openvpn/easy-rsa# nano vars
+```
 
 <strong>Agora vá ate o final e edite os seguintes valores</strong>
-<pre># These are the default values for fields
+```bash
+# These are the default values for fields
 # which will be placed in the certificate.
 # Don't leave any of these fields blank.
 export KEY_COUNTRY="BR"
@@ -56,14 +60,18 @@ export KEY_CITY="Vila-Velha"
 export KEY_ORG="Butecopensource"
 export KEY_EMAIL="daniel@butecopensource.org"
 export KEY_OU="butecopensource.org"
-</pre>
+```
 Após editar o arquivo use:
 
-<code>source vars</code>
+```bash
+source vars
+```
 
 e depois
 
-<code>./clean-all</code>
+```bash
+./clean-all
+```
 
 <strong>Criando os certificados</strong>
 
@@ -71,8 +79,11 @@ Durante esse processo você será perguntado dos valores para alguns campos, os 
 
 <strong>Gerando o certificado da sua unidade certificadora</strong>
 
-<code>root@wolf:/etc/openvpn/easy-rsa# ./build-ca</code>
-<pre>Generating a 2048 bit RSA private key
+```bash
+root@wolf:/etc/openvpn/easy-rsa# ./build-ca
+```
+```bash
+Generating a 2048 bit RSA private key
 .+++
 ...+++
 writing new private key to 'ca.key'
@@ -93,13 +104,16 @@ Common Name (eg, your name or your server's hostname) [Butecopensource CA]:
 Name [EasyRSA]:
 Email Address [daniel@butecopensource.org]:
 root@wolf:/etc/openvpn/easy-rsa#
-</pre>
+```
 <strong>Gerando chave para o Servidor</strong>
 
-Gerando a chave para o servidor. Utilize o comando <code>build-key-server</code> seguido do nome do servidor (<em>hostname</em>).
+Gerando a chave para o servidor. Utilize o comando `build-key-server` seguido do nome do servidor (<em>hostname</em>).
 
-<code>root@wolf:/etc/openvpn/easy-rsa# ./build-key-server server</code>
-<pre>Generating a 2048 bit RSA private key
+```bash
+root@wolf:/etc/openvpn/easy-rsa# ./build-key-server server
+```
+```bash
+Generating a 2048 bit RSA private key
 ..................................+++
 ................................................................+++
 writing new private key to 'server.key'
@@ -142,21 +156,27 @@ Sign the certificate? [y/n]:y
 Write out database with 1 new entries
 Data Base Updated
 root@wolf:/etc/openvpn/easy-rsa#
-</pre>
+```
 Agora vamos gerar uma chave <a href="https://pt.wikipedia.org/wiki/Diffie-Hellman" target="_blank">Diffie-Hellman</a> e que será utilizada pelo cliente e servidor durante a troca de chave, pode demorar um certo tempo.
 Obs: Não gere chave com valor igual o menor que 1024 bits, por padrão esse <em>script</em> gera em 2048 bits
 
-<code>root@wolf:/etc/openvpn/easy-rsa# ./build-dh</code>
-<pre>Generating DH parameters, 2048 bit long safe prime, generator 2
+```bash
+root@wolf:/etc/openvpn/easy-rsa# ./build-dh
+```
+```bash
+Generating DH parameters, 2048 bit long safe prime, generator 2
 This is going to take a long time
 ............................+++
-</pre>
+```
 <strong>Gerando chave para o cliente</strong>
 
 Nesse tutorial iremos gerar somente uma chave, para a filial, porém dependendo de como você irá implementar sua VPN você pode criar mais.
 
-<code>root@wolf:/etc/openvpn/easy-rsa# ./build-key filial</code>
-<pre>Generating a 2048 bit RSA private key
+```bash
+root@wolf:/etc/openvpn/easy-rsa# ./build-key filial
+```
+```bash
+Generating a 2048 bit RSA private key
 ..............................................................................................................+++
 ......................+++
 writing new private key to 'filial.key'
@@ -183,32 +203,35 @@ Sign the certificate? [y/n]:y
 Write out database with 1 new entries
 Data Base Updated
 root@wolf:/etc/openvpn/easy-rsa#
-</pre>
+```
 <strong>Excluar os arquivos desnecessários</strong>
 
-<code>rm keys/*.csr</code>
+```bash
+rm keys/*.csr
+```
 
 Pronto, agora precisamos pegar os arquivos no servidor e passar cliente,
 
-<code>root@wolf:/etc/openvpn/easy-rsa# cd keys</code>
-<code>root@wolf:/etc/openvpn/easy-rsa/keys# ls</code>
-<pre>01.pem ca.key filial.key index.txt.attr.old serial.old
+```bash
+root@wolf:/etc/openvpn/easy-rsa# cd keys
+root@wolf:/etc/openvpn/easy-rsa/keys# ls
+01.pem ca.key filial.key index.txt.attr.old serial.old
 02.pem dh2048.pem index.txt index.txt.old server.crt
 ca.crt filial.crt index.txt.attr serial server.key
-</pre>
+```
 Iremos precisar dos arquivos, <strong>filial.crt,  filial.key, dh2048.pem</strong>
 
-Vocẽ pode copiar esses arquivos com softwares como <a href="https://filezilla-project.org/" target="_blank">FileZilla</a> (Linux e Windows) ou <a href="https://winscp.net/eng/download.php" target="_blank">WinSCP</a> (Windows).
+Você pode copiar esses arquivos com softwares como <a href="https://filezilla-project.org/" target="_blank">FileZilla</a> (Linux e Windows) ou <a href="https://winscp.net/eng/download.php" target="_blank">WinSCP</a> (Windows).
 
 <strong>Configuração do OpenVPN para o servidor</strong>
 
-<code> Crie o arquivo /etc/openvpn/server.conf </code>
+Crie o arquivo /etc/openvpn/server.conf
 
 Caso você cria o nome do servidor direrente de "server", lembre de mudar o nome do <strong>"crt"</strong> e <strong>"key"</strong>
 
 Veja o arquivo de configuração.
 
-```sh
+```bash
 ##############################
 ####### OpenVPN Server #######
 ####### Site-to-Site##########
@@ -312,15 +335,23 @@ log-append /var/log/openvpn/matriz.log
 ```
 
 Agora vamos adicionar a rota, criando um arquivo dentro do diretório /etc/init.d:
- <code>echo "route add -net 192.168.1.0 netmask 255.255.255.0 gw 10.8.0.1 dev tun0" &gt; /etc/init.d/rota &amp;&amp; chmod +x rota &amp;&amp; update-rc.d rota defaults</code>
+ ```bash
+ echo "route add -net 192.168.1.0 netmask 255.255.255.0 gw 10.8.0.1 dev tun0" &gt; /etc/init.d/rota &amp;&amp; chmod +x rota &amp;&amp; update-rc.d rota defaults
+ ```
 
 Após criada a rota, será iniciado o serviço:
- <code>service openvpn start</code>
+ ```bash
+ service openvpn start
+ ```
 
 Precisamos compartilhar a internet do servidor, execute:
- <code>sysctl -w net.ipv4.ip_forward=1</code>
+ ```bash
+ sysctl -w net.ipv4.ip_forward=1
+ ```
 
-<code>iptables -t nat -s 10.8.0.0/24 -A POSTROUTING -o eth0 -j MASQUERADE</code>
+```bash
+iptables -t nat -s 10.8.0.0/24 -A POSTROUTING -o eth0 -j MASQUERADE
+```
 
 10.8.0.0/24 é a rede da VPN e eth0 é a interface do servidor que está conectada com a internet.
 
@@ -444,10 +475,14 @@ status openvpn-status.log
 
 Agora vamos adicionar a rota crie um arquivo rota
 
-<code> echo "route add -net 192.168.0.0 netmask 255.255.255.0 gw 10.8.0.2 dev tun0" &gt; /etc/init.d/rota &amp;&amp; chmod +x rota &amp;&amp; update-rc.d rota defaults </code>
+```bash
+echo "route add -net 192.168.0.0 netmask 255.255.255.0 gw 10.8.0.2 dev tun0" &gt; /etc/init.d/rota &amp;&amp; chmod +x rota &amp;&amp; update-rc.d rota defaults
+```
 
 Agora vamos acessa-la, entra dentro do diretório onde está as chaves e digite,
-<code>openvpn client.ovpn </code>
+```bash
+openvpn client.ovpn
+```
 
 Ele irá imprimir na tela os dados na conexão, se tudo ocorreu bem aparecerá, <strong>Initialization Sequence Completed</strong>
 
