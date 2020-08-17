@@ -1,10 +1,9 @@
 ---
-type: wordpress
 title: Problema ao atualizar o jogo Flare no Fedora 20
 date: 2014-09-03 02:01:55
 authors:
   - marcossouza
-slug: /problema-ao-atualizar-o-jogo-flare-no-fedora-20/
+slug: problema-ao-atualizar-o-jogo-flare-no-fedora-20
 categories:
   - Jogos
 tags:
@@ -25,7 +24,9 @@ Após alterar o arquivo <em>flare.desktop</em> algumas vezes e ficar verificando
 
 Segue trecho do arquivo com problemas:
 
+```bash
 TryExec=/usr/bin/flare "--game=flare-game"
+```
 
 Ao informar Erik, o mantenedor do pacote, sobre como resolvi o problema este me disse que já havia executado o programa desktop-file-validator no arquivo <em>flare.desktop</em>, e que este não acusou nenhum erro. Então fiz um patch removendo "--game=flare-game" da entrada <em>TryExec</em>, somente deixando o caminho para o binário e enviei ao Erik.
 
