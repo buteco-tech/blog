@@ -4,11 +4,11 @@
 </p>
 <p align="center">
 </p>
+<p align="center"><img text-align="center" width="300" src="https://raw.githubusercontent.com/ButecoOpenSource/logos/master/capivara-completa.svg"></p>
 <p align="center">
     <a href="https://buteco.tech">buteco.tech</a>
 </p>
 
-<p align="center"><img text-align="center" width="300" src="https://raw.githubusercontent.com/ButecoOpenSource/logos/master/capivara-completa.svg"></p>
 
 ## Sobre
 
