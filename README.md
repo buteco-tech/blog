@@ -1,6 +1,16 @@
-# Blog do Buteco
 
-Acesse o nosso site, visite [https://buteco.tech](https://buteco.tech).
+<p align="center">
+    <b>Blog do Buteco</b>
+</p>
+<p align="center">
+</p>
+<p align="center">
+    <a href="https://buteco.tech">buteco.tech</a>
+</p>
+
+<p align="center"><img text-align="center" width="300" src="https://raw.githubusercontent.com/ButecoOpenSource/logos/master/capivara-completa.svg"></p>
+
+## Sobre
 
 Nosso blog é feito com o [Hugo](https://gohugo.io/), o tema [Iara](https://github.com/alexandrevicenzi/iara) e o [GitHub Pages](https://pages.github.com/).
 
@@ -18,7 +28,9 @@ Você pode testar suas modificações e artigos localmente, basta ter instalado 
 
 Execute o seguinte comando:
 
-`docker-compose up`
+```bash
+$ docker-compose up
+```
 
 Acesse [http://localhost:3000/](http://localhost:3000/) para visualizar o site.
 
