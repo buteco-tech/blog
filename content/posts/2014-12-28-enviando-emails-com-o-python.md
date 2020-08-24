@@ -6,7 +6,7 @@ authors:
 slug: /enviando-emails-com-o-python/
 categories:
   - Desenvolvimento
-  - Tutorial
+  - Tutoriais
 tags:
   - email
   - python
