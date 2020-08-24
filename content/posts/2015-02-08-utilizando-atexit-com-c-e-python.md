@@ -4,7 +4,7 @@ title: Utilizando atexit com C e Python
 date: 2015-02-08 18:00:09
 authors:
   - marcossouza
-slug: /utilizando-atexit-com-c-e-python/
+slug: utilizando-atexit-com-c-e-python
 images:
   - /images/wp-content/uploads/2015/02/saida.jpg
 categories:

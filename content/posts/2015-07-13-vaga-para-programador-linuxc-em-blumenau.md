@@ -6,7 +6,7 @@ summary: |
 date: 2015-07-13 21:51:56
 authors:
   - marcossouza
-slug: /vaga-para-programador-linuxc-em-blumenau/
+slug: vaga-para-programador-linuxc-em-blumenau
 categories:
   - Vagas
 tags:

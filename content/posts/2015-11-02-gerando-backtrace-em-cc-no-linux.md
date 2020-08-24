@@ -6,7 +6,7 @@ summary: |
 date: 2015-11-02 19:56:42
 authors:
   - marcossouza
-slug: /gerando-backtrace-em-cc-no-linux/
+slug: gerando-backtrace-em-cc-no-linux
 images:
   - /images/wp-content/uploads/2015/10/588396621.jpg
 categories:

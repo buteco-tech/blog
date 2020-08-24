@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-15 23:58:39
 authors:
   - alexandrevicenzi
-slug: /wine-1-7-43-traz-melhorias-na-arquitetura-arm64/
+slug: wine-1-7-43-traz-melhorias-na-arquitetura-arm64
 images:
   - /images/wp-content/uploads/2015/05/wine.png
 categories:

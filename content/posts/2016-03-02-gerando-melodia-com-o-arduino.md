@@ -6,7 +6,7 @@ summary: |
 date: 2016-03-02 23:51:38
 authors:
   - brunopiske
-slug: /gerando-melodia-com-o-arduino/
+slug: gerando-melodia-com-o-arduino
 images:
   - /images/wp-content/uploads/2016/02/logo-arduino.png
 categories:

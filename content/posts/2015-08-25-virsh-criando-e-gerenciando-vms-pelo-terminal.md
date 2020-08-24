@@ -6,7 +6,7 @@ summary: |
 date: 2015-08-25 23:44:58
 authors:
   - marcossouza
-slug: /virsh-criando-e-gerenciando-vms-pelo-terminal/
+slug: virsh-criando-e-gerenciando-vms-pelo-terminal
 images:
   - /images/wp-content/uploads/2015/06/libvirtLogo.png
 categories:

@@ -6,7 +6,7 @@ summary: |
 date: 2015-11-26 21:24:08
 authors:
   - marcossouza
-slug: /vim-tips-trabalhando-com-abas/
+slug: vim-tips-trabalhando-com-abas
 images:
   - /images/wp-content/uploads/2015/11/vim_logo_small.png
 categories:

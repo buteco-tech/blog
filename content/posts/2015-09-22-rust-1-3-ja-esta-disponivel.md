@@ -4,7 +4,7 @@ title: Rust 1.3 já está disponível
 date: 2015-09-22 09:06:05
 authors:
   - alexandrevicenzi
-slug: /rust-1-3-ja-esta-disponivel/
+slug: rust-1-3-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2014/10/rust-logo-256x256-blk.png
 categories:

@@ -6,7 +6,7 @@ summary: |
 date: 2016-02-01 21:15:54
 authors:
   - marcooliveira
-slug: /compilando-o-freebsd-parte-1/
+slug: compilando-o-freebsd-parte-1
 images:
   - /images/wp-content/uploads/2016/01/freebsd2.png
 categories:

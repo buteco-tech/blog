@@ -6,7 +6,7 @@ summary: |
 date: 2015-02-23 00:59:15
 authors:
   - alexandrevicenzi
-slug: /instalando-driver-nvidia-bumblebee-no-opensuse/
+slug: instalando-driver-nvidia-bumblebee-no-opensuse
 images:
   - /images/wp-content/uploads/2015/02/bumblebee_250.png
 categories:

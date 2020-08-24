@@ -6,7 +6,7 @@ summary: |
 date: 2016-03-08 00:00:12
 authors:
   - brunopiske
-slug: /comunicacao-serial-rs232-com-leituraescrita-da-eeprom-no-pic16f628a/
+slug: comunicacao-serial-rs232-com-leituraescrita-da-eeprom-no-pic16f628a
 images:
   - /images/wp-content/uploads/2016/02/PIC16F628A-e1456826573109.jpg
 categories:

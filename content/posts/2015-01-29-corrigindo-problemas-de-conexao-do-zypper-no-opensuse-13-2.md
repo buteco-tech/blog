@@ -6,7 +6,7 @@ summary: |
 date: 2015-01-29 21:35:09
 authors:
   - alexandrevicenzi
-slug: /corrigindo-problemas-de-conexao-do-zypper-no-opensuse-13-2/
+slug: corrigindo-problemas-de-conexao-do-zypper-no-opensuse-13-2
 images:
   - /images/wp-content/uploads/2015/01/Opensuse-logo.png
 categories:

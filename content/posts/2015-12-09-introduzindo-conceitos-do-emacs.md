@@ -4,7 +4,7 @@ title: Introduzindo conceitos do Emacs
 date: 2015-12-09 07:46:43
 authors:
   - marcooliveira
-slug: /introduzindo-conceitos-do-emacs/
+slug: introduzindo-conceitos-do-emacs
 images:
   - /images/wp-content/uploads/2015/12/Emacs-Logo-400x400.png
 categories:

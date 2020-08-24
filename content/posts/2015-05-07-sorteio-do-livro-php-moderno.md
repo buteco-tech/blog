@@ -8,7 +8,7 @@ summary: |
 date: 2015-05-07 00:01:16
 authors:
   - buteco
-slug: /sorteio-do-livro-php-moderno/
+slug: sorteio-do-livro-php-moderno
 categories:
   - Sorteios
   - Livros

@@ -6,7 +6,7 @@ summary: |
 date: 2015-09-29 08:59:41
 authors:
   - marcossouza
-slug: /otto-o-sucessor-do-vagrant/
+slug: otto-o-sucessor-do-vagrant
 images:
   - /images/wp-content/uploads/2015/09/ImgOtto-e1443492325176.png
 categories:

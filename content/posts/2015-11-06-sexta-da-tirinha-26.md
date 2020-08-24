@@ -4,7 +4,7 @@ title: Sexta da Tirinha #26
 date: 2015-11-06 12:32:09
 authors:
   - buteco
-slug: /sexta-da-tirinha-26/
+slug: sexta-da-tirinha-26
 categories:
   - Fun
 tags:

@@ -6,7 +6,7 @@ summary: |
 date: 2015-07-01 21:44:00
 authors:
   - daniel_magevski
-slug: /inscricoes-abertas-para-o-11o-forum-espirito-livre/
+slug: inscricoes-abertas-para-o-11o-forum-espirito-livre
 categories:
   - Eventos
 tags:

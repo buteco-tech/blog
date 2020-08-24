@@ -4,7 +4,7 @@ title: Sexta da Tirinha #21
 date: 2015-10-02 09:12:22
 authors:
   - buteco
-slug: /sexta-da-tirinha-21/
+slug: sexta-da-tirinha-21
 categories:
   - Fun
 tags:

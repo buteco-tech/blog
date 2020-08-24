@@ -6,7 +6,7 @@ summary: |
 date: 2015-07-27 20:10:47
 authors:
   - jaswdr
-slug: /laravel-5-1-do-comeco-ao-fim-video/
+slug: laravel-5-1-do-comeco-ao-fim-video
 categories:
   - Desenvolvimento
 tags:

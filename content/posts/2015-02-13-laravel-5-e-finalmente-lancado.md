@@ -6,7 +6,7 @@ summary: |
 date: 2015-02-13 06:00:24
 authors:
   - jaswdr
-slug: /laravel-5-e-finalmente-lancado/
+slug: laravel-5-e-finalmente-lancado
 images:
   - /images/wp-content/uploads/2015/02/laravel-logo1.png
 categories:

@@ -4,7 +4,7 @@ title: Sexta da Tirinha #19
 date: 2015-09-18 12:11:32
 authors:
   - buteco
-slug: /sexta-da-tirinha-19/
+slug: sexta-da-tirinha-19
 categories:
   - Fun
 tags:

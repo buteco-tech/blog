@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-05 08:33:38
 authors:
   - alexandrevicenzi
-slug: /vaga-para-desenvolvedor-front-end-em-blumenau/
+slug: vaga-para-desenvolvedor-front-end-em-blumenau
 images:
   - /images/wp-content/uploads/2015/05/eventials-logo.png
 categories:

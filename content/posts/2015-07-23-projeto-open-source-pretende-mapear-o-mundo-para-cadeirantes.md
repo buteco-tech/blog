@@ -6,7 +6,7 @@ summary: |
 date: 2015-07-23 00:20:25
 authors:
   - daniel_magevski
-slug: /projeto-open-source-pretende-mapear-o-mundo-para-cadeirantes/
+slug: projeto-open-source-pretende-mapear-o-mundo-para-cadeirantes
 categories:
   - Ferramentas
   - Notícias

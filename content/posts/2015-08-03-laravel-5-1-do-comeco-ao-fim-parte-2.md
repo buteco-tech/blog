@@ -6,7 +6,7 @@ summary: |
 date: 2015-08-03 12:00:41
 authors:
   - jaswdr
-slug: /laravel-5-1-do-comeco-ao-fim-parte-2/
+slug: laravel-5-1-do-comeco-ao-fim-parte-2
 categories:
   - Desenvolvimento
 tags:

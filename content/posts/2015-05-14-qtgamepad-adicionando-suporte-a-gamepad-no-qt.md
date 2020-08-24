@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-14 23:08:42
 authors:
   - alexandrevicenzi
-slug: /qtgamepad-adicionando-suporte-a-gamepad-no-qt/
+slug: qtgamepad-adicionando-suporte-a-gamepad-no-qt
 images:
   - /images/wp-content/uploads/2015/05/Qt_logo.png
 categories:

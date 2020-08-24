@@ -6,7 +6,7 @@ summary: |
 date: 2015-03-31 00:38:13
 authors:
   - alexandrevicenzi
-slug: /kodi-14-2-esta-disponivel/
+slug: kodi-14-2-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/03/kodi-light-300x300.png
 categories:

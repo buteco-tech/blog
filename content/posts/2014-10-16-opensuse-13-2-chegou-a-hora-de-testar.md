@@ -4,7 +4,7 @@ title: "openSUSE 13.2: Chegou a hora de testar"
 date: 2014-10-16 15:03:13
 authors:
   - alexandrevicenzi
-slug: /opensuse-13-2-chegou-a-hora-de-testar/
+slug: opensuse-13-2-chegou-a-hora-de-testar
 images:
   - /images/wp-content/uploads/2014/10/i-want-you-1-238x300.jpg
 categories:

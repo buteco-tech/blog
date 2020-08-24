@@ -6,7 +6,7 @@ summary: |
 date: 2015-11-30 22:53:32
 authors:
   - jaswdr
-slug: /raspberry-pi-zero-5-em-uma-placa-que-roda-linux/
+slug: raspberry-pi-zero-5-em-uma-placa-que-roda-linux
 images:
   - /images/wp-content/uploads/2015/11/rpi_zero.png
 categories:

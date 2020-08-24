@@ -6,7 +6,7 @@ summary: |
 date: 2015-08-24 14:07:37
 authors:
   - alexandrevicenzi
-slug: /visao-geral-do-dandified-yum/
+slug: visao-geral-do-dandified-yum
 images:
   - /images/wp-content/uploads/2015/05/infinity-logo_400x400.png
 categories:

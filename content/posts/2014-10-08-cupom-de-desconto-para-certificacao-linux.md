@@ -4,7 +4,7 @@ title: Cupom de desconto para certificação Linux
 date: 2014-10-08 15:05:30
 authors:
   - alexandrevicenzi
-slug: /cupom-de-desconto-para-certificacao-linux/
+slug: cupom-de-desconto-para-certificacao-linux
 categories:
   - Notícias
   - Certificações

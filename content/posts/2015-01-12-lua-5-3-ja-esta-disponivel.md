@@ -4,7 +4,7 @@ title: Lua 5.3 já está disponível
 date: 2015-01-12 19:33:32
 authors:
   - alexandrevicenzi
-slug: /lua-5-3-ja-esta-disponivel/
+slug: lua-5-3-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/01/lua.png
 categories:

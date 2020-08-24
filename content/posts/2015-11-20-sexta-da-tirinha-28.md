@@ -4,7 +4,7 @@ title: Sexta da Tirinha #28
 date: 2015-11-20 11:07:22
 authors:
   - buteco
-slug: /sexta-da-tirinha-28/
+slug: sexta-da-tirinha-28
 categories:
   - Fun
 tags:

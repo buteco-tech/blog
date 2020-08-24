@@ -4,7 +4,7 @@ title: Novatec lança livro para pais e crianças aprenderem programação junto
 date: 2015-09-18 09:06:50
 authors:
   - buteco
-slug: /novatec-lanca-livro-para-pais-e-criancas-aprenderem-programacao-juntos/
+slug: novatec-lanca-livro-para-pais-e-criancas-aprenderem-programacao-juntos
 images:
   - /images/wp-content/uploads/2015/09/ensine_seus_filhos_a_programar.jpg
 categories:

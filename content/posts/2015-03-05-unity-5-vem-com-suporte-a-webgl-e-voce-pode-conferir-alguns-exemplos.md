@@ -6,7 +6,7 @@ summary: |
 date: 2015-03-05 00:20:01
 authors:
   - alexandrevicenzi
-slug: /unity-5-vem-com-suporte-a-webgl-e-voce-pode-conferir-alguns-exemplos/
+slug: unity-5-vem-com-suporte-a-webgl-e-voce-pode-conferir-alguns-exemplos
 images:
   - /images/wp-content/uploads/2015/03/Unity_3D_logo.png
 categories:

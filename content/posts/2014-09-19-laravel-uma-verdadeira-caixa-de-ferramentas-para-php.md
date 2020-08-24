@@ -4,7 +4,7 @@ title: Laravel uma verdadeira caixa de ferramentas para PHP
 date: 2014-09-19 16:53:01
 authors:
   - jaswdr
-slug: /laravel-uma-verdadeira-caixa-de-ferramentas-para-php/
+slug: laravel-uma-verdadeira-caixa-de-ferramentas-para-php
 categories:
   - Desenvolvimento
 tags:

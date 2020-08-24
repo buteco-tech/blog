@@ -4,7 +4,7 @@ title: Harry speaks Python
 date: 2014-09-30 08:21:15
 authors:
   - alexandrevicenzi
-slug: /harry-speaks-python/
+slug: harry-speaks-python
 categories:
   - Fun
 tags:

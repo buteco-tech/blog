@@ -6,7 +6,7 @@ summary: |
 date: 2015-08-06 10:05:46
 authors:
   - daniel_magevski
-slug: /kali-linux-2-0-ja-tem-data-para-o-lancamento/
+slug: kali-linux-2-0-ja-tem-data-para-o-lancamento
 images:
   - /images/wp-content/uploads/2015/07/Kali-Linux2.0.jpg
 categories:

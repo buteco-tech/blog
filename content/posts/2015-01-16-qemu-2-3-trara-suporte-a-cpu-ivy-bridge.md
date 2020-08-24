@@ -6,7 +6,7 @@ summary: |
 date: 2015-01-16 20:03:31
 authors:
   - alexandrevicenzi
-slug: /qemu-2-3-trara-suporte-a-cpu-ivy-bridge/
+slug: qemu-2-3-trara-suporte-a-cpu-ivy-bridge
 images:
   - /images/wp-content/uploads/2015/01/Qemu-logo.png
 categories:

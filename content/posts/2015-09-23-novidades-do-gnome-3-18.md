@@ -4,7 +4,7 @@ title: Novidades do GNOME 3.18
 date: 2015-09-23 23:51:43
 authors:
   - marcossouza
-slug: /novidades-do-gnome-3-18/
+slug: novidades-do-gnome-3-18
 images:
   - /images/wp-content/uploads/2015/03/402px-gnomelogo-svg.png
 categories:

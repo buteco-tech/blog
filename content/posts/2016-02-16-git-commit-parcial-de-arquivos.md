@@ -6,7 +6,7 @@ summary: |
 date: 2016-02-16 21:08:42
 authors:
   - guilhermevanz
-slug: /git-commit-parcial-de-arquivos/
+slug: git-commit-parcial-de-arquivos
 images:
   - /images/wp-content/uploads/2016/02/Git-Logo-Black.png
 categories:

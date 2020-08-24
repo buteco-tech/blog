@@ -6,7 +6,7 @@ summary: |
 date: 2015-06-29 23:35:56
 authors:
   - marcossouza
-slug: /hands-on-quilt/
+slug: hands-on-quilt
 images:
   - /images/wp-content/uploads/2015/06/Captura-de-tela-de-2015-06-08-23-26-13.png
 categories:

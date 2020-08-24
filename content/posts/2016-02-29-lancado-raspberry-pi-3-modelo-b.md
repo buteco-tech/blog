@@ -4,7 +4,7 @@ title: Lançado Raspberry PI 3 Modelo B
 date: 2016-02-29 23:50:31
 authors:
   - dsantos
-slug: /lancado-raspberry-pi-3-modelo-b/
+slug: lancado-raspberry-pi-3-modelo-b
 images:
   - /images/wp-content/uploads/2015/05/index.png
 categories:

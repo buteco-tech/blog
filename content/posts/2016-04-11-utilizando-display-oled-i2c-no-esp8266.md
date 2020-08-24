@@ -6,7 +6,7 @@ summary: |
 date: 2016-04-11 18:52:21
 authors:
   - alexandrevicenzi
-slug: /utilizando-display-oled-i2c-no-esp8266/
+slug: utilizando-display-oled-i2c-no-esp8266
 images:
   - /images/wp-content/uploads/2016/04/oled_display.jpg
 categories:

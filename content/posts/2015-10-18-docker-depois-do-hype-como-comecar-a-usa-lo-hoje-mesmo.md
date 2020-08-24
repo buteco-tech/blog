@@ -4,7 +4,7 @@ title: Docker depois do hype, como começar a usá-lo hoje mesmo
 date: 2015-10-18 19:53:49
 authors:
   - alexandrevicenzi
-slug: /docker-depois-do-hype-como-comecar-a-usa-lo-hoje-mesmo/
+slug: docker-depois-do-hype-como-comecar-a-usa-lo-hoje-mesmo
 images:
   - /images/wp-content/uploads/2015/10/docker-small.png
 categories:

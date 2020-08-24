@@ -6,7 +6,7 @@ summary: |
 date: 2015-04-07 01:49:31
 authors:
   - alexandrevicenzi
-slug: /conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares/
+slug: conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares
 images:
   - /images/wp-content/uploads/2015/03/esp8266.jpg
 categories:

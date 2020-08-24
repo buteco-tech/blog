@@ -6,7 +6,7 @@ summary: |
 date: 2015-06-01 23:28:40
 authors:
   - marcooliveira
-slug: /revista-bsd-magazine-numero-70/
+slug: revista-bsd-magazine-numero-70
 images:
   - /images/wp-content/uploads/2015/06/BSD_05_2015-1-230x3001.jpg
 categories:

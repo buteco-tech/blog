@@ -6,7 +6,7 @@ summary: |
 date: 2015-09-02 23:12:01
 authors:
   - marcooliveira
-slug: /os-primeiros-passos-com-o-demonio-freebsd/
+slug: os-primeiros-passos-com-o-demonio-freebsd
 categories:
   - Distros
   - Tutoriais

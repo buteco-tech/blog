@@ -4,7 +4,7 @@ title: Entendendo Pipe e FIFO (parte 1)
 date: 2015-01-22 22:20:52
 authors:
   - marcossouza
-slug: /entendendo-pipe-e-fifo-parte-1/
+slug: entendendo-pipe-e-fifo-parte-1
 images:
   - /images/wp-content/uploads/2015/01/pipes.png
 categories:

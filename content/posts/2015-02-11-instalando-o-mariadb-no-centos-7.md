@@ -5,7 +5,7 @@ summary: |
 date: 2015-02-11 19:30:29
 authors:
   - alexandrevicenzi
-slug: /instalando-o-mariadb-no-centos-7/
+slug: instalando-o-mariadb-no-centos-7
 images:
   - /images/wp-content/uploads/2015/02/Mariadb-seal-shaded-browntext.png
 categories:

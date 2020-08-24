@@ -4,7 +4,7 @@ title: O Buteco Open Source mudou
 date: 2014-10-08 13:04:34
 authors:
   - buteco
-slug: /o-buteco-open-souce-mudou/
+slug: o-buteco-open-souce-mudou
 categories:
   - Notícias
 

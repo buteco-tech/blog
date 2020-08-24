@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-12 23:20:47
 authors:
   - marcossouza
-slug: /firefox-38-adiciona-suporte-a-imagens-responsivas-e-ruby-annotations/
+slug: firefox-38-adiciona-suporte-a-imagens-responsivas-e-ruby-annotations
 images:
   - /images/wp-content/uploads/2015/05/firefox-logo.bee1d85af18f-e1431444837127.png
 categories:

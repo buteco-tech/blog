@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-13 22:48:53
 authors:
   - marcossouza
-slug: /vendo-a-memoria-de-forma-simplificada-no-freebsd-i-have-free/
+slug: vendo-a-memoria-de-forma-simplificada-no-freebsd-i-have-free
 categories:
   - Ferramentas
 tags:

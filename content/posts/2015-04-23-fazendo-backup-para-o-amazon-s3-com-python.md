@@ -6,7 +6,7 @@ summary: |
 date: 2015-04-23 07:46:32
 authors:
   - alexandrevicenzi
-slug: /fazendo-backup-para-o-amazon-s3-com-python/
+slug: fazendo-backup-para-o-amazon-s3-com-python
 images:
   - /images/wp-content/uploads/2015/04/amazon_aws-s3.png
 categories:

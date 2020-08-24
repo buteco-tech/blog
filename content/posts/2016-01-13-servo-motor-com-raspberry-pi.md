@@ -6,7 +6,7 @@ summary: |
 date: 2016-01-13 11:05:44
 authors:
   - jaswdr
-slug: /servo-motor-com-raspberry-pi/
+slug: servo-motor-com-raspberry-pi
 images:
   - /images/wp-content/uploads/2015/05/index.png
 categories:

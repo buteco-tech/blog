@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-28 23:56:19
 authors:
   - marcossouza
-slug: /fedup-vai-ser-substituido-no-fedora-23-2/
+slug: fedup-vai-ser-substituido-no-fedora-23-2
 images:
   - /images/wp-content/uploads/2015/05/infinity-logo_400x400.png
 categories:

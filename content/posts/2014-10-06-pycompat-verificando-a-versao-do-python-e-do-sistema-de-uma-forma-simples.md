@@ -4,7 +4,7 @@ title: "pycompat: Verificando a versão do Python e do sistema de uma forma simp
 date: 2014-10-06 13:20:35
 authors:
   - alexandrevicenzi
-slug: /pycompat-verificando-a-versao-do-python-e-do-sistema-de-uma-forma-simples/
+slug: pycompat-verificando-a-versao-do-python-e-do-sistema-de-uma-forma-simples
 categories:
   - Desenvolvimento
 tags:

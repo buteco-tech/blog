@@ -6,7 +6,7 @@ summary: |
 date: 2015-11-24 10:24:12
 authors:
   - alexandrevicenzi
-slug: /conheca-a-beaglebone-green/
+slug: conheca-a-beaglebone-green
 images:
   - /images/wp-content/uploads/2015/11/beagle-hd-logo_dd.png
 categories:

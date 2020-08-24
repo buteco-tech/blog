@@ -7,7 +7,7 @@ summary: |
 date: 2015-06-29 08:54:48
 authors:
   - alexandrevicenzi
-slug: /ajude-nos-a-escolher-os-temas-do-mes-de-julho/
+slug: ajude-nos-a-escolher-os-temas-do-mes-de-julho
 categories:
   - Discussões
 tags:

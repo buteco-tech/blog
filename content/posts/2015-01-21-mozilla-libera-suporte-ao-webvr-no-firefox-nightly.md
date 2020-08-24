@@ -6,7 +6,7 @@ summary: |
 date: 2015-01-21 10:30:12
 authors:
   - alexandrevicenzi
-slug: /mozilla-libera-suporte-ao-webvr-no-firefox-nightly/
+slug: mozilla-libera-suporte-ao-webvr-no-firefox-nightly
 images:
   - /images/wp-content/uploads/2015/01/mozvr.jpg
 categories:

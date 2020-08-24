@@ -4,7 +4,7 @@ title: Introdução ao ALSA e sua API em C e Python
 date: 2014-09-24 23:48:00
 authors:
   - alexandrevicenzi
-slug: /introducao-ao-alsa-e-sua-api-em-c-e-python/
+slug: introducao-ao-alsa-e-sua-api-em-c-e-python
 categories:
   - Desenvolvimento
 tags:

@@ -6,7 +6,7 @@ summary: |
 date: 2015-06-18 23:18:08
 authors:
   - jaswdr
-slug: /lancamento-laravel-5-1/
+slug: lancamento-laravel-5-1
 images:
   - /images/wp-content/uploads/2015/06/laravel-5.1-released.png
 categories:

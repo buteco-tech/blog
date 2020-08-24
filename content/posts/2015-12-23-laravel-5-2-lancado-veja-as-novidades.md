@@ -6,7 +6,7 @@ summary: |
 date: 2015-12-23 07:59:34
 authors:
   - jaswdr
-slug: /laravel-5-2-lancado-veja-as-novidades/
+slug: laravel-5-2-lancado-veja-as-novidades
 images:
   - /images/wp-content/uploads/2015/02/Laravel-5.png
 categories:

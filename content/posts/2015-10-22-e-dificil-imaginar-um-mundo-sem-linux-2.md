@@ -4,7 +4,7 @@ title: É difícil imaginar um mundo sem Linux #2
 date: 2015-10-22 21:50:50
 authors:
   - dsantos
-slug: /e-dificil-imaginar-um-mundo-sem-linux-2/
+slug: e-dificil-imaginar-um-mundo-sem-linux-2
 images:
   - /images/wp-content/uploads/2015/10/WorldWithoutLinux.png
 categories:

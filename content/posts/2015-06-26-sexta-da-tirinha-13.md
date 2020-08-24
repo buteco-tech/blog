@@ -4,7 +4,7 @@ title: Sexta da Tirinha #13
 date: 2015-06-26 00:58:30
 authors:
   - buteco
-slug: /sexta-da-tirinha-13/
+slug: sexta-da-tirinha-13
 categories:
   - Fun
 

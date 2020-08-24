@@ -6,7 +6,7 @@ summary: |
 date: 2015-06-10 23:01:00
 authors:
   - marcooliveira
-slug: /sql-na-medida-certa/
+slug: sql-na-medida-certa
 categories:
   - Reviews
   - Livros

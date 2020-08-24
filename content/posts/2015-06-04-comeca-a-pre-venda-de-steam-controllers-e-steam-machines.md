@@ -6,7 +6,7 @@ summary: |
 date: 2015-06-04 23:16:04
 authors:
   - marcossouza
-slug: /comeca-a-pre-venda-de-steam-controllers-e-steam-machines/
+slug: comeca-a-pre-venda-de-steam-controllers-e-steam-machines
 images:
   - /images/wp-content/uploads/2015/06/Steam.jpg
 categories:

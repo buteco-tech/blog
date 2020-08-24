@@ -4,7 +4,7 @@ title: Carregamento de hardware/driver assíncrono no kernel Linux
 date: 2015-01-20 18:33:36
 authors:
   - marcossouza
-slug: /carregamento-de-hardwaredriver-assincrono-no-kernel-linux/
+slug: carregamento-de-hardwaredriver-assincrono-no-kernel-linux
 images:
   - /images/wp-content/uploads/2015/01/Tux.png
 categories:

@@ -4,7 +4,7 @@ title: Sexta da Tirinha #34
 date: 2016-01-29 14:30:38
 authors:
   - buteco
-slug: /sexta-da-tirinha-34/
+slug: sexta-da-tirinha-34
 categories:
   - Fun
 tags:

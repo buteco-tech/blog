@@ -7,7 +7,7 @@ summary: |
 date: 2016-02-19 16:52:31
 authors:
   - alexandrevicenzi
-slug: /gerando-bitlink-atravez-da-api-do-bitly/
+slug: gerando-bitlink-atravez-da-api-do-bitly
 images:
   - /images/wp-content/uploads/2016/02/bitly_logo_small.png
 categories:

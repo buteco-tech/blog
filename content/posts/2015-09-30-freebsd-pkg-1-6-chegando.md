@@ -6,7 +6,7 @@ summary: |
 date: 2015-09-30 23:04:13
 authors:
   - marcooliveira
-slug: /freebsd-pkg-1-6-chegando/
+slug: freebsd-pkg-1-6-chegando
 categories:
   - Distros
 tags:

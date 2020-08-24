@@ -6,7 +6,7 @@ summary: |
 date: 2015-11-02 12:49:15
 authors:
   - buteco
-slug: /sorteio-de-uma-entrada-para-a-roadsec/
+slug: sorteio-de-uma-entrada-para-a-roadsec
 images:
   - /images/wp-content/uploads/2015/09/road-sec.jpg
 categories:

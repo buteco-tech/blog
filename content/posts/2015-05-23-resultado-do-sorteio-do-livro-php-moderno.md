@@ -4,7 +4,7 @@ title: Resultado do Sorteio do livro PHP Moderno
 date: 2015-05-23 22:27:48
 authors:
   - buteco
-slug: /resultado-do-sorteio-do-livro-php-moderno/
+slug: resultado-do-sorteio-do-livro-php-moderno
 images:
   - /images/wp-content/uploads/2015/04/php_moderno.png
 categories:

@@ -4,7 +4,7 @@ title: "LPIC: por onde começar"
 date: 2015-03-24 00:28:50
 authors:
   - marcossouza
-slug: /lpic-por-onde-comecar/
+slug: lpic-por-onde-comecar
 images:
   - /images/wp-content/uploads/2015/03/lpic-logos.png
 categories:

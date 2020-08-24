@@ -4,7 +4,7 @@ title: Sexta da Tirinha #39
 date: 2016-04-08 13:18:57
 authors:
   - alexandrevicenzi
-slug: /sexta-da-tirinha-39/
+slug: sexta-da-tirinha-39
 categories:
   - Fun
 tags:

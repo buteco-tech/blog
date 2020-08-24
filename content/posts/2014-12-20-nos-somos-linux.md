@@ -4,7 +4,7 @@ title: Nós somos Linux
 date: 2014-12-20 06:00:24
 authors:
   - alexandrevicenzi
-slug: /nos-somos-linux/
+slug: nos-somos-linux
 categories:
   - Notícias
 tags:

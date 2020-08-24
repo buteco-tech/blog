@@ -6,7 +6,7 @@ summary: |
 date: 2015-06-24 12:57:00
 authors:
   - daniel_magevski
-slug: /linux-mint-17-2-rafaela-ja-esta-disponivel/
+slug: linux-mint-17-2-rafaela-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/06/linux-mint.png
 categories:

@@ -4,7 +4,7 @@ title: Sensor de temperatura gráfico com Arduino e LCD 16x2
 date: 2015-07-20 22:31:20
 authors:
   - alexandrevicenzi
-slug: /sensor-de-temperatura-grafico-com-arduino-e-lcd-16x2/
+slug: sensor-de-temperatura-grafico-com-arduino-e-lcd-16x2
 categories:
   - Hardware
   - DIY

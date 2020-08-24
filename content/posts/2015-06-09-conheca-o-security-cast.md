@@ -6,7 +6,7 @@ summary: |
 date: 2015-06-09 22:46:34
 authors:
   - daniel_magevski
-slug: /conheca-o-security-cast/
+slug: conheca-o-security-cast
 images:
   - /images/wp-content/uploads/2015/06/SecurityCast-logo.jpg
 categories:

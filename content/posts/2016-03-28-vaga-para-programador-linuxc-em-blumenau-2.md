@@ -4,7 +4,7 @@ title: Vaga para programador Linux/C em Blumenau
 date: 2016-03-28 13:14:20
 authors:
   - marcossouza
-slug: /vaga-para-programador-linuxc-em-blumenau-2/
+slug: vaga-para-programador-linuxc-em-blumenau-2
 categories:
   - Vagas
 tags:

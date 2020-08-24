@@ -6,7 +6,7 @@ summary: |
 date: 2015-12-14 23:48:03
 authors:
   - alexandrevicenzi
-slug: /conheca-o-clappr/
+slug: conheca-o-clappr
 images:
   - /images/wp-content/uploads/2015/12/clappr_logo.png
 categories:

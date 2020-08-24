@@ -7,7 +7,7 @@ summary: |
 date: 2015-06-03 21:29:01
 authors:
   - alexandrevicenzi
-slug: /pypy-2-6-ja-esta-disponivel-e-7x-mais-rapido-que-o-cpython/
+slug: pypy-2-6-ja-esta-disponivel-e-7x-mais-rapido-que-o-cpython
 images:
   - /images/wp-content/uploads/2015/02/Pypy_logo.png
 categories:

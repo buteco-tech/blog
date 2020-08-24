@@ -6,7 +6,7 @@ summary: |
 date: 2015-01-06 20:00:01
 authors:
   - alexandrevicenzi
-slug: /conectando-um-display-de-7-segmentos-no-arduino/
+slug: conectando-um-display-de-7-segmentos-no-arduino
 images:
   - /images/wp-content/uploads/2015/01/7-seg.jpg
 categories:

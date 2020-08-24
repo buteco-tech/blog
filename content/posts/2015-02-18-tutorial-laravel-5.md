@@ -4,7 +4,7 @@ title: Laravel 5 do começo ao fim [parte 1]
 date: 2015-02-18 19:28:23
 authors:
   - jaswdr
-slug: /tutorial-laravel-5/
+slug: tutorial-laravel-5
 images:
   - /images/wp-content/uploads/2015/02/Laravel-5.png
 categories:

@@ -7,7 +7,7 @@ summary: |
 date: 2015-05-24 23:58:51
 authors:
   - daniel_magevski
-slug: /internet-das-coisas/
+slug: internet-das-coisas
 images:
   - /images/wp-content/uploads/2015/05/Imagen-iot.jpg
 categories:

@@ -4,7 +4,7 @@ title: "Tcl/Expect: Automatização de comandos interativos no Linux"
 date: 2014-10-07 00:23:49
 authors:
   - marcossouza
-slug: /tclexpect-automatizacao-de-comandos-interativos-no-linux/
+slug: tclexpect-automatizacao-de-comandos-interativos-no-linux
 categories:
   - Desenvolvimento
 tags:

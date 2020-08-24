@@ -6,7 +6,7 @@ summary: |
 date: 2016-03-17 09:35:57
 authors:
   - marcossouza
-slug: /posix-regular-expression-em-c/
+slug: posix-regular-expression-em-c
 images:
   - /images/wp-content/uploads/2016/03/images.jpg
 categories:

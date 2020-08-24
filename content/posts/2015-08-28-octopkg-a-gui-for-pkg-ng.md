@@ -6,7 +6,7 @@ summary: |
 date: 2015-08-28 09:24:00
 authors:
   - marcooliveira
-slug: /octopkg-a-gui-for-pkg-ng/
+slug: octopkg-a-gui-for-pkg-ng
 categories:
   - Ferramentas
 tags:

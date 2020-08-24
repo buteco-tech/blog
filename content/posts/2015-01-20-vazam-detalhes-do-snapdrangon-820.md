@@ -6,7 +6,7 @@ summary: |
 date: 2015-01-20 20:49:14
 authors:
   - alexandrevicenzi
-slug: /vazam-detalhes-do-snapdrangon-820/
+slug: vazam-detalhes-do-snapdrangon-820
 images:
   - /images/wp-content/uploads/2015/01/snapdragon-chip-stone.png
 categories:

@@ -6,7 +6,7 @@ summary: |
 date: 2016-04-28 00:31:09
 authors:
   - marcossouza
-slug: /vim-tips-mudando-cor-de-destaque-da-busca/
+slug: vim-tips-mudando-cor-de-destaque-da-busca
 images:
   - /images/wp-content/uploads/2015/11/vim_logo_small.png
 categories:

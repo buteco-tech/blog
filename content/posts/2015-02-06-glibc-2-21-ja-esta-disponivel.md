@@ -6,7 +6,7 @@ summary: |
 date: 2015-02-06 18:09:23
 authors:
   - alexandrevicenzi
-slug: /glibc-2-21-ja-esta-disponivel/
+slug: glibc-2-21-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/02/Linux_kernel_System_Call_Interface_and_glibc.png
 categories:

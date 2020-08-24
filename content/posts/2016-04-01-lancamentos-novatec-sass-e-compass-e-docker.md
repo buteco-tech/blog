@@ -4,7 +4,7 @@ title: "Lançamentos Novatec: Sass e Compass e Docker"
 date: 2016-04-01 21:50:20
 authors:
   - alexandrevicenzi
-slug: /lancamentos-novatec-sass-e-compass-e-docker/
+slug: lancamentos-novatec-sass-e-compass-e-docker
 categories:
   - Notícias
 tags:

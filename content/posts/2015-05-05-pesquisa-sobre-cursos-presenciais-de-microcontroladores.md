@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-05 23:58:17
 authors:
   - alexandrevicenzi
-slug: /pesquisa-sobre-cursos-presenciais-de-microcontroladores/
+slug: pesquisa-sobre-cursos-presenciais-de-microcontroladores
 images:
   - /images/wp-content/uploads/2015/05/pesquisas.jpg
 categories:

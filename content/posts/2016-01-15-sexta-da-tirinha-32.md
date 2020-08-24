@@ -6,7 +6,7 @@ summary: |
 date: 2016-01-15 14:16:24
 authors:
   - buteco
-slug: /sexta-da-tirinha-32/
+slug: sexta-da-tirinha-32
 categories:
   - Fun
 tags:

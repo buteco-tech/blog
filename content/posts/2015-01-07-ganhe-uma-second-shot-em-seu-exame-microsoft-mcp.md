@@ -6,7 +6,7 @@ summary: |
 date: 2015-01-07 20:48:20
 authors:
   - alexandrevicenzi
-slug: /ganhe-uma-second-shot-em-seu-exame-microsoft-mcp/
+slug: ganhe-uma-second-shot-em-seu-exame-microsoft-mcp
 categories:
   - Notícias
   - Certificações

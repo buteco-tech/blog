@@ -4,7 +4,7 @@ title: Crie seu próprio console Infanto por menos de 300 reais
 date: 2015-01-21 21:00:21
 authors:
   - alexandrevicenzi
-slug: /crie-seu-proprio-console-infanto-por-menos-de-300-reais/
+slug: crie-seu-proprio-console-infanto-por-menos-de-300-reais
 images:
   - /images/wp-content/uploads/2015/01/infanto.jpg
 categories:

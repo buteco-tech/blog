@@ -4,7 +4,7 @@ title: Configurações do OpenSSH que podem fazer toda a diferença
 date: 2016-03-09 23:57:19
 authors:
   - alexandrevicenzi
-slug: /configuracoes-do-openssh-que-podem-fazer-toda-a-diferenca/
+slug: configuracoes-do-openssh-que-podem-fazer-toda-a-diferenca
 images:
   - /images/wp-content/uploads/2016/03/OpenSSH_logo.png
 categories:

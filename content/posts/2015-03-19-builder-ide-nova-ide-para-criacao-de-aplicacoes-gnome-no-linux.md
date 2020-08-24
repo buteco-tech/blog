@@ -6,7 +6,7 @@ summary: |
 date: 2015-03-19 07:12:23
 authors:
   - marcossouza
-slug: /builder-ide-nova-ide-para-criacao-de-aplicacoes-gnome-no-linux/
+slug: builder-ide-nova-ide-para-criacao-de-aplicacoes-gnome-no-linux
 images:
   - /images/wp-content/uploads/2015/03/splash.png
 categories:

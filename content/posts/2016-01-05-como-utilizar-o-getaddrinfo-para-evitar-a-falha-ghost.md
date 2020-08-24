@@ -6,7 +6,7 @@ summary: |
 date: 2016-01-05 23:09:47
 authors:
   - marcossouza
-slug: /como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost/
+slug: como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost
 images:
   - /images/wp-content/uploads/2016/01/glibc-ghost.png
 categories:

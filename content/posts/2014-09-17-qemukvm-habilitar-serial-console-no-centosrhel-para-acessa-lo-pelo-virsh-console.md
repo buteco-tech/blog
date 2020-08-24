@@ -4,7 +4,7 @@ title: "QEMU/KVM: Habilitar serial console no CentOS/RHEL para acessá-lo pelo v
 date: 2014-09-17 12:03:21
 authors:
   - marcossouza
-slug: /qemukvm-habilitar-serial-console-no-centosrhel-para-acessa-lo-pelo-virsh-console/
+slug: qemukvm-habilitar-serial-console-no-centosrhel-para-acessa-lo-pelo-virsh-console
 categories:
   - Desenvolvimento
   - Ferramentas

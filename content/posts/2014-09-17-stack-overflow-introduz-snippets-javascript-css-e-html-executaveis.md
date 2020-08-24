@@ -4,7 +4,7 @@ title: Stack Overflow Introduz Snippets JavaScript, CSS, e HTML Executáveis.
 date: 2014-09-17 13:03:06
 authors:
   - alexandrevicenzi
-slug: /stack-overflow-introduz-snippets-javascript-css-e-html-executaveis/
+slug: stack-overflow-introduz-snippets-javascript-css-e-html-executaveis
 categories:
   - Desenvolvimento
 tags:

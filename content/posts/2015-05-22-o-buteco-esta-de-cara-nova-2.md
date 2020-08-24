@@ -4,7 +4,7 @@ title: O Buteco está de cara nova
 date: 2015-05-22 00:37:31
 authors:
   - buteco
-slug: /o-buteco-esta-de-cara-nova-2/
+slug: o-buteco-esta-de-cara-nova-2
 categories:
   - Notícias
 tags:

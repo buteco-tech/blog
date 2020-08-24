@@ -4,7 +4,7 @@ title: Codeception, testes de interface
 date: 2015-11-16 22:48:05
 authors:
   - jaswdr
-slug: /codeception-testes-de-interface/
+slug: codeception-testes-de-interface
 images:
   - /images/wp-content/uploads/2015/11/codeception-logo.png
 categories:

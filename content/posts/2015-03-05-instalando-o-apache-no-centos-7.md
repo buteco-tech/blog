@@ -5,7 +5,7 @@ summary: |
 date: 2015-03-05 00:20:38
 authors:
   - alexandrevicenzi
-slug: /instalando-o-apache-no-centos-7/
+slug: instalando-o-apache-no-centos-7
 images:
   - /images/wp-content/uploads/2015/03/Apache-Logo.png
 categories:

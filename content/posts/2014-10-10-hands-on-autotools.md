@@ -4,7 +4,7 @@ title: "Hands on: autotools"
 date: 2014-10-10 00:44:22
 authors:
   - marcossouza
-slug: /hands-on-autotools/
+slug: hands-on-autotools
 categories:
   - Desenvolvimento
   - Ferramentas

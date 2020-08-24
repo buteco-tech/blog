@@ -6,7 +6,7 @@ summary: |
 date: 2015-11-17 22:28:44
 authors:
   - marcossouza
-slug: /segunda-temporada-de-cacada-de-bugs-no-libreoffice-5-1/
+slug: segunda-temporada-de-cacada-de-bugs-no-libreoffice-5-1
 images:
   - /images/wp-content/uploads/2015/09/LibreOffice800x600.png
 categories:

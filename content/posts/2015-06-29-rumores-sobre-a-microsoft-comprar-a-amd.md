@@ -6,7 +6,7 @@ summary: |
 date: 2015-06-29 23:33:30
 authors:
   - marcossouza
-slug: /rumores-sobre-a-microsoft-comprar-a-amd/
+slug: rumores-sobre-a-microsoft-comprar-a-amd
 images:
   - /images/wp-content/uploads/2015/06/amd_logo.png
 categories:

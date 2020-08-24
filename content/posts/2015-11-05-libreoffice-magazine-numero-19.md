@@ -4,7 +4,7 @@ title: LibreOffice Magazine Número 19
 date: 2015-11-05 22:39:46
 authors:
   - dsantos
-slug: /libreoffice-magazine-numero-19/
+slug: libreoffice-magazine-numero-19
 images:
   - /images/wp-content/uploads/2015/11/RevistaLibreOfficeNro19.jpg
 categories:

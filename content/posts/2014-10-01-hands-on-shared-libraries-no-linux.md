@@ -4,7 +4,7 @@ title: "Hands On: Shared Libraries no Linux"
 date: 2014-10-01 00:42:05
 authors:
   - marcossouza
-slug: /hands-on-shared-libraries-no-linux/
+slug: hands-on-shared-libraries-no-linux
 categories:
   - Desenvolvimento
 tags:

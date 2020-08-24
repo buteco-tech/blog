@@ -7,7 +7,7 @@ summary: |
 date: 2015-03-10 21:14:07
 authors:
   - alexandrevicenzi
-slug: /python-3-5-0a2-ja-esta-disponivel/
+slug: python-3-5-0a2-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 categories:

@@ -4,7 +4,7 @@ title: Review da tela 3.5 TFT no Raspberry Pi!
 date: 2015-11-11 12:43:20
 authors:
   - marcossouza
-slug: /review-da-tela-3-5-tft-no-raspberry-pi/
+slug: review-da-tela-3-5-tft-no-raspberry-pi
 images:
   - /images/wp-content/uploads/2015/05/index.png
 categories:

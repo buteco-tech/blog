@@ -6,7 +6,7 @@ summary: |
 date: 2015-09-28 23:56:39
 authors:
   - marcooliveira
-slug: /roadsec-um-testemunho/
+slug: roadsec-um-testemunho
 images:
   - /images/wp-content/uploads/2015/09/road-sec.jpg
 categories:

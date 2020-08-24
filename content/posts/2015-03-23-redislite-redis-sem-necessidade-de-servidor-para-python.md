@@ -7,7 +7,7 @@ summary: |
 date: 2015-03-23 22:41:06
 authors:
   - alexandrevicenzi
-slug: /redislite-redis-sem-necessidade-de-servidor-para-python/
+slug: redislite-redis-sem-necessidade-de-servidor-para-python
 images:
   - /images/wp-content/uploads/2015/03/redis.png
 categories:

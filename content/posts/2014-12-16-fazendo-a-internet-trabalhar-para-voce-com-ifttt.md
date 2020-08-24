@@ -6,7 +6,7 @@ summary: |
 date: 2014-12-16 08:30:27
 authors:
   - jaswdr
-slug: /fazendo-a-internet-trabalhar-para-voce-com-ifttt/
+slug: fazendo-a-internet-trabalhar-para-voce-com-ifttt
 images:
   - /images/wp-content/uploads/2014/12/ifttt-banner.jpg
 categories:

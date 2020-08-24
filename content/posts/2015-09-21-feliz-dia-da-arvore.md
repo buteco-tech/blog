@@ -4,7 +4,7 @@ title: Feliz Dia da Árvore
 date: 2015-09-21 17:23:04
 authors:
   - marcossouza
-slug: /feliz-dia-da-arvore/
+slug: feliz-dia-da-arvore
 categories:
   - Fun
 tags:

@@ -6,7 +6,7 @@ summary: |
 date: 2015-11-25 20:56:01
 authors:
   - buteco
-slug: /novatec-lanca-2a-edicao-do-livro-dominando-o-android/
+slug: novatec-lanca-2a-edicao-do-livro-dominando-o-android
 images:
   - /images/wp-content/uploads/2015/11/dominando_android.jpg
 categories:

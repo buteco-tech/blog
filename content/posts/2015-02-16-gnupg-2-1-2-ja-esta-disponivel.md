@@ -6,7 +6,7 @@ summary: |
 date: 2015-02-16 12:22:27
 authors:
   - alexandrevicenzi
-slug: /gnupg-2-1-2-ja-esta-disponivel/
+slug: gnupg-2-1-2-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/02/GnuPG-Logo.png
 categories:

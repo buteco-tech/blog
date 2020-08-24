@@ -4,7 +4,7 @@ title: Sorteio de um e-Book da Casa do Código
 date: 2015-06-03 08:04:22
 authors:
   - buteco
-slug: /sorteio-de-um-e-book-da-casa-do-codigo/
+slug: sorteio-de-um-e-book-da-casa-do-codigo
 images:
   - /images/wp-content/uploads/2015/05/cdc-logo-novo-400.png
 categories:

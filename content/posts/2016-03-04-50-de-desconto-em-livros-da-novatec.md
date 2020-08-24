@@ -6,7 +6,7 @@ summary: |
 date: 2016-03-04 23:01:03
 authors:
   - buteco
-slug: /50-de-desconto-em-livros-da-novatec/
+slug: 50-de-desconto-em-livros-da-novatec
 categories:
   - Notícias
   - Livros

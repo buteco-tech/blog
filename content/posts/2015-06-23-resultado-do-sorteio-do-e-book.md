@@ -4,7 +4,7 @@ title: Resultado do sorteio do e-Book
 date: 2015-06-23 10:57:33
 authors:
   - buteco
-slug: /resultado-do-sorteio-do-e-book/
+slug: resultado-do-sorteio-do-e-book
 images:
   - /images/wp-content/uploads/2015/05/cdc-logo-novo-400.png
 categories:

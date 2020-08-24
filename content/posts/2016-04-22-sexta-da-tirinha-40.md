@@ -4,7 +4,7 @@ title: Sexta da Tirinha #40
 date: 2016-04-22 11:25:27
 authors:
   - buteco
-slug: /sexta-da-tirinha-40/
+slug: sexta-da-tirinha-40
 categories:
   - Fun
 tags:

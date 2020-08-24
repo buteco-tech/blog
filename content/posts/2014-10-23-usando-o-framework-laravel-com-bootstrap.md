@@ -4,7 +4,7 @@ title: Usando o framework Laravel com Bootstrap
 date: 2014-10-23 07:09:48
 authors:
   - jaswdr
-slug: /usando-o-framework-laravel-com-bootstrap/
+slug: usando-o-framework-laravel-com-bootstrap
 categories:
   - Desenvolvimento
 tags:

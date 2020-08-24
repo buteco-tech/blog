@@ -4,7 +4,7 @@ title: Sexta da Tirinha #31
 date: 2016-01-08 15:13:16
 authors:
   - buteco
-slug: /sexta-da-tirinha-31/
+slug: sexta-da-tirinha-31
 categories:
   - Fun
 tags:

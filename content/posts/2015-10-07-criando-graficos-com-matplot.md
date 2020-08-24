@@ -4,7 +4,7 @@ title: Criando gráficos com matplot
 date: 2015-10-07 23:40:15
 authors:
   - marcossouza
-slug: /criando-graficos-com-matplot/
+slug: criando-graficos-com-matplot
 images:
   - /images/wp-content/uploads/2015/10/logoMatPlotLib.png
 categories:

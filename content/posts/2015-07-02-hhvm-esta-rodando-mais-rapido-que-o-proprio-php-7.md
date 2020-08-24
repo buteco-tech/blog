@@ -6,7 +6,7 @@ summary: |
 date: 2015-07-02 21:25:59
 authors:
   - jaswdr
-slug: /hhvm-esta-rodando-mais-rapido-que-o-proprio-php-7/
+slug: hhvm-esta-rodando-mais-rapido-que-o-proprio-php-7
 images:
   - /images/wp-content/uploads/2015/06/hack-programming-language-facebook-code1.png
 categories:

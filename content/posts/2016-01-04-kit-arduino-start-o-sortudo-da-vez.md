@@ -4,7 +4,7 @@ title: Kit Arduino Start - O sortudo da vez
 date: 2016-01-04 19:30:56
 authors:
   - dsantos
-slug: /kit-arduino-start-o-sortudo-da-vez/
+slug: kit-arduino-start-o-sortudo-da-vez
 images:
   - /images/wp-content/uploads/2016/01/450xN.jpg
 categories:

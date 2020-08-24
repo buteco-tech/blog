@@ -6,7 +6,7 @@ summary: |
 date: 2015-06-11 23:32:45
 authors:
   - marcooliveira
-slug: /o-dilema-do-aprendizado-de-ti/
+slug: o-dilema-do-aprendizado-de-ti
 categories:
   - Discussões
 tags:

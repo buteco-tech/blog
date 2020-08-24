@@ -4,7 +4,7 @@ title: Sexta da Tirinha #35
 date: 2016-02-05 12:55:20
 authors:
   - marcossouza
-slug: /sexta-da-tirinha-35/
+slug: sexta-da-tirinha-35
 categories:
   - Fun
 tags:

@@ -6,7 +6,7 @@ summary: |
 date: 2015-01-21 15:02:01
 authors:
   - alexandrevicenzi
-slug: /mediafire-libera-toolkit-para-desenvolvedores-linux/
+slug: mediafire-libera-toolkit-para-desenvolvedores-linux
 images:
   - /images/wp-content/uploads/2015/01/mediafiresquare.png
 categories:

@@ -4,7 +4,7 @@ title: Sexta da Tirinha #15
 date: 2015-07-10 14:29:41
 authors:
   - buteco
-slug: /sexta-da-tirinha-15/
+slug: sexta-da-tirinha-15
 categories:
   - Fun
 tags:

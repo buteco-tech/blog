@@ -6,7 +6,7 @@ summary: |
 date: 2015-04-16 22:54:51
 authors:
   - jaswdr
-slug: /laravel-5-do-comeco-ao-fim-parte-4/
+slug: laravel-5-do-comeco-ao-fim-parte-4
 images:
   - /images/wp-content/uploads/2015/02/Laravel-5.png
 categories:

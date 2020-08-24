@@ -6,7 +6,7 @@ summary: |
 date: 2015-09-18 00:11:55
 authors:
   - marcossouza
-slug: /parece-que-o-jogo-alien-isolation-esta-chegando-ao-linux/
+slug: parece-que-o-jogo-alien-isolation-esta-chegando-ao-linux
 images:
   - /images/wp-content/uploads/2015/09/alienisolation.jpg
 categories:

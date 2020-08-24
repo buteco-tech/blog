@@ -7,7 +7,7 @@ summary: |
 date: 2015-02-28 15:37:13
 authors:
   - alexandrevicenzi
-slug: /unreal-engine-4-7-inclui-exportacao-para-html5/
+slug: unreal-engine-4-7-inclui-exportacao-para-html5
 images:
   - /images/wp-content/uploads/2015/02/Unreal_Engine_logo_and_wordmark.png
 categories:

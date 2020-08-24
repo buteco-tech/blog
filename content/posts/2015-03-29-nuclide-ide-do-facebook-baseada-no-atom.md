@@ -6,7 +6,7 @@ summary: |
 date: 2015-03-29 21:23:58
 authors:
   - alexandrevicenzi
-slug: /nuclide-ide-do-facebook-baseada-no-atom/
+slug: nuclide-ide-do-facebook-baseada-no-atom
 images:
   - /images/wp-content/uploads/2015/03/nuclide-logo.png
 categories:

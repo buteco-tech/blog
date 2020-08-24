@@ -7,7 +7,7 @@ summary: |
 date: 2015-02-09 12:30:00
 authors:
   - alexandrevicenzi
-slug: /node-js-v0-12-0-ja-esta-disponivel/
+slug: node-js-v0-12-0-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/02/NodeJS.png
 categories:

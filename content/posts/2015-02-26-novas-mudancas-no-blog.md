@@ -4,7 +4,7 @@ title: Novas mudanças no blog
 date: 2015-02-26 13:49:06
 authors:
   - buteco
-slug: /novas-mudancas-no-blog/
+slug: novas-mudancas-no-blog
 images:
   - /images/wp-content/uploads/2015/02/logo-site.png
 categories:

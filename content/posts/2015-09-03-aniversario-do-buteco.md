@@ -6,7 +6,7 @@ summary: |
 date: 2015-09-03 22:44:59
 authors:
   - marcossouza
-slug: /aniversario-do-buteco/
+slug: aniversario-do-buteco
 categories:
   - Notícias
 tags:

@@ -6,7 +6,7 @@ summary: |
 date: 2016-04-05 16:37:00
 authors:
   - alexandrevicenzi
-slug: /conhecendo-os-modulos-do-nodemcu/
+slug: conhecendo-os-modulos-do-nodemcu
 images:
   - /images/wp-content/uploads/2016/02/nodeMCU-logo-300x300-e1454377964183.png
 categories:

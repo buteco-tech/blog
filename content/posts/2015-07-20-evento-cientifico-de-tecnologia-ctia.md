@@ -6,7 +6,7 @@ summary: |
 date: 2015-07-20 16:36:44
 authors:
   - marcooliveira
-slug: /evento-cientifico-de-tecnologia-ctia/
+slug: evento-cientifico-de-tecnologia-ctia
 images:
   - /images/wp-content/uploads/2015/07/ctia.png
 categories:

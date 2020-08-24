@@ -6,7 +6,7 @@ summary: |
 date: 2015-09-15 00:35:22
 authors:
   - marcossouza
-slug: /criando-um-git-server-local/
+slug: criando-um-git-server-local
 images:
   - /images/wp-content/uploads/2014/11/Git-Icon-1788C.png
 categories:

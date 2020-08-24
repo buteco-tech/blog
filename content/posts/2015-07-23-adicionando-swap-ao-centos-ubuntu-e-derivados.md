@@ -7,7 +7,7 @@ summary: |
 date: 2015-07-23 08:39:33
 authors:
   - alexandrevicenzi
-slug: /adicionando-swap-ao-centos-ubuntu-e-derivados/
+slug: adicionando-swap-ao-centos-ubuntu-e-derivados
 categories:
   - Tutoriais
 tags:

@@ -4,7 +4,7 @@ title: Conheça o Elementary OS
 date: 2015-03-03 23:45:54
 authors:
   - pedrojefferson
-slug: /conheca-o-elementary-os/
+slug: conheca-o-elementary-os
 images:
   - /images/wp-content/uploads/2015/02/elementary.png
 categories:

@@ -6,7 +6,7 @@ summary: |
 date: 2015-03-25 22:49:49
 authors:
   - alexandrevicenzi
-slug: /gxui-interface-multiplataforma-para-go/
+slug: gxui-interface-multiplataforma-para-go
 images:
   - /images/wp-content/uploads/2015/03/go-lang-logo.jpg
 categories:

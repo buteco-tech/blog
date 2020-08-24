@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-21 23:33:25
 authors:
   - marcossouza
-slug: /interagindo-com-a-camera-do-raspberry-pi/
+slug: interagindo-com-a-camera-do-raspberry-pi
 images:
   - /images/wp-content/uploads/2015/05/index.png
 categories:

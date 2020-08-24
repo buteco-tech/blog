@@ -4,7 +4,7 @@ title: cURL 7.40 disponível e agora com suporte ao protocolo SMB/CIFS
 date: 2015-01-08 18:21:55
 authors:
   - alexandrevicenzi
-slug: /curl-7-40-disponivel-e-agora-com-suporte-ao-protocolo-smbcifs/
+slug: curl-7-40-disponivel-e-agora-com-suporte-ao-protocolo-smbcifs
 images:
   - /images/wp-content/uploads/2015/01/ds-libcurl.jpg
 categories:

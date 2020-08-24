@@ -6,7 +6,7 @@ summary: |
 date: 2016-04-26 22:27:10
 authors:
   - alexandrevicenzi
-slug: /instalando-o-spotify-no-opensuse/
+slug: instalando-o-spotify-no-opensuse
 images:
   - /images/wp-content/uploads/2016/04/spotify.png
 categories:

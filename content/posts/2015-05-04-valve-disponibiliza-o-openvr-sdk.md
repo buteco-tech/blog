@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-04 09:06:02
 authors:
   - alexandrevicenzi
-slug: /valve-disponibiliza-o-openvr-sdk/
+slug: valve-disponibiliza-o-openvr-sdk
 images:
   - /images/wp-content/uploads/2015/05/valve-logo.jpg
 categories:

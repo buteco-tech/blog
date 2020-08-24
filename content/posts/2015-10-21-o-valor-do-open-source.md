@@ -4,7 +4,7 @@ title: O valor do open source
 date: 2015-10-21 20:07:02
 authors:
   - dsantos
-slug: /o-valor-do-open-source/
+slug: o-valor-do-open-source
 images:
   - /images/wp-content/uploads/2015/05/pesquisas.jpg
 categories:

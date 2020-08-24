@@ -4,7 +4,7 @@ title: Sexta da Tirinha #33
 date: 2016-01-22 12:58:05
 authors:
   - buteco
-slug: /sexta-da-tirinha-33/
+slug: sexta-da-tirinha-33
 categories:
   - Fun
 tags:

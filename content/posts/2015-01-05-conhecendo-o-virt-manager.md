@@ -4,7 +4,7 @@ title: Conhecendo o virt-manager
 date: 2015-01-05 08:00:45
 authors:
   - marcossouza
-slug: /conhecendo-o-virt-manager/
+slug: conhecendo-o-virt-manager
 categories:
   - Desenvolvimento
 tags:

@@ -6,7 +6,7 @@ summary: |
 date: 2015-10-27 21:09:12
 authors:
   - daniel_magevski
-slug: /conheca-arkos-distro-para-hospedagem-particular/
+slug: conheca-arkos-distro-para-hospedagem-particular
 images:
   - /images/wp-content/uploads/2015/09/logo-arkos1.png
 categories:

@@ -3,7 +3,7 @@ title: "GPS Parte 2: Decodificando uma sentença NMEA"
 date: 2016-01-11 21:38:15
 authors:
   - alexandrevicenzi
-slug: /gps-parte-2-decodificando-uma-sentenca-nmea/
+slug: gps-parte-2-decodificando-uma-sentenca-nmea
 images:
   - /images/wp-content/uploads/2015/12/map_pin.png
 categories:

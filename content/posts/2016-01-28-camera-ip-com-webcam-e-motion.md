@@ -7,7 +7,7 @@ summary: |
 date: 2016-01-28 12:29:01
 authors:
   - alexandrevicenzi
-slug: /camera-ip-com-webcam-e-motion/
+slug: camera-ip-com-webcam-e-motion
 images:
   - /images/wp-content/uploads/2016/01/You-are-being-watched-620-by-338.jpg
 categories:

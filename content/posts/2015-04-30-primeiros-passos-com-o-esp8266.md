@@ -6,7 +6,7 @@ summary: |
 date: 2015-04-30 08:53:10
 authors:
   - alexandrevicenzi
-slug: /primeiros-passos-com-o-esp8266/
+slug: primeiros-passos-com-o-esp8266
 images:
   - /images/wp-content/uploads/2015/03/esp8266.jpg
 categories:

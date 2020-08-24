@@ -7,7 +7,7 @@ summary: |
 date: 2015-05-19 13:40:14
 authors:
   - buteco
-slug: /ultimas-horas-para-participar-do-sorteio-do-livro-php-moderno/
+slug: ultimas-horas-para-participar-do-sorteio-do-livro-php-moderno
 categories:
   - Sorteios
 tags:

@@ -4,7 +4,7 @@ title: Sexta da Tirinha #38
 date: 2016-03-11 15:22:54
 authors:
   - buteco
-slug: /sexta-da-tirinha-38/
+slug: sexta-da-tirinha-38
 categories:
   - Fun
 tags:

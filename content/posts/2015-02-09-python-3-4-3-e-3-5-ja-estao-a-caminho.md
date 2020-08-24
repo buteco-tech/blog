@@ -7,7 +7,7 @@ summary: |
 date: 2015-02-09 14:06:08
 authors:
   - alexandrevicenzi
-slug: /python-3-4-3-e-3-5-ja-estao-a-caminho/
+slug: python-3-4-3-e-3-5-ja-estao-a-caminho
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 categories:

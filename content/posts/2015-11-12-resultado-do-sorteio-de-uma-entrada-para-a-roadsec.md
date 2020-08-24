@@ -4,7 +4,7 @@ title: Resultado do sorteio de uma entrada para a Roadsec
 date: 2015-11-12 22:48:27
 authors:
   - buteco
-slug: /resultado-do-sorteio-de-uma-entrada-para-a-roadsec/
+slug: resultado-do-sorteio-de-uma-entrada-para-a-roadsec
 images:
   - /images/wp-content/uploads/2015/09/road-sec.jpg
 categories:

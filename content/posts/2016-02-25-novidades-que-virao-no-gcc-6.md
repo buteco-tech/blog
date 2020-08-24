@@ -6,7 +6,7 @@ summary: |
 date: 2016-02-25 23:37:14
 authors:
   - marcossouza
-slug: /novidades-que-virao-no-gcc-6/
+slug: novidades-que-virao-no-gcc-6
 images:
   - /images/wp-content/uploads/2016/02/index.png
 categories:

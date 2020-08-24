@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-29 10:05:59
 authors:
   - buteco
-slug: /novatec-lanca-livro-sql-e-teoria-relacional/
+slug: novatec-lanca-livro-sql-e-teoria-relacional
 images:
   - /images/wp-content/uploads/2015/05/livro-sql-teoria.jpg
 categories:

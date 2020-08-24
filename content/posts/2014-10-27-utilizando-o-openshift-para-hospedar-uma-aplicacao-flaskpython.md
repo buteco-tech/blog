@@ -4,7 +4,7 @@ title: Utilizando o OpenShift para hospedar uma aplicação Flask/Python
 date: 2014-10-27 14:12:38
 authors:
   - alexandrevicenzi
-slug: /utilizando-o-openshift-para-hospedar-uma-aplicacao-flaskpython/
+slug: utilizando-o-openshift-para-hospedar-uma-aplicacao-flaskpython
 categories:
   - Desenvolvimento
 tags:

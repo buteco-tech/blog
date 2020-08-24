@@ -4,7 +4,7 @@ title: Sorteio de um convite para o Inbox
 date: 2014-11-08 14:47:58
 authors:
   - buteco
-slug: /sorteio-de-um-convite-para-o-inbox/
+slug: sorteio-de-um-convite-para-o-inbox
 images:
   - /images/wp-content/uploads/2014/11/Inbox-by-Gmail.jpg
 categories:

@@ -4,7 +4,7 @@ title: Novatec lança 5ª Edição do livro “Expressões Regulares – Uma abo
 date: 2016-02-17 21:53:50
 authors:
   - buteco
-slug: /novatec-lanca-5a-edicao-do-livro-expressoes-regulares-uma-abordagem-divertida/
+slug: novatec-lanca-5a-edicao-do-livro-expressoes-regulares-uma-abordagem-divertida
 images:
   - /images/wp-content/uploads/2016/02/expressoes-regulares-capa.jpg
 categories:

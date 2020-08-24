@@ -4,7 +4,7 @@ title: Conheça o que está por vir no openSUSE 13.2
 date: 2014-10-23 11:36:23
 authors:
   - alexandrevicenzi
-slug: /conheca-o-que-esta-por-vir-no-opensuse-13-2/
+slug: conheca-o-que-esta-por-vir-no-opensuse-13-2
 categories:
   - Notícias
 tags:

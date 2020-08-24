@@ -6,7 +6,7 @@ summary: |
 date: 2016-02-23 20:45:39
 authors:
   - alexandrevicenzi
-slug: /deploy-com-um-clique-no-heroku/
+slug: deploy-com-um-clique-no-heroku
 images:
   - /images/wp-content/uploads/2016/02/Heroku_logo.png
 categories:

@@ -4,7 +4,7 @@ title: 40+ eBooks Gratuitos
 date: 2014-09-16 13:25:00
 authors:
   - alexandrevicenzi
-slug: /40-ebooks-gratis/
+slug: 40-ebooks-gratis
 categories:
   - Desenvolvimento
   - Notícias

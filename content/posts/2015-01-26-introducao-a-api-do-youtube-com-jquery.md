@@ -4,7 +4,7 @@ title: Introdução a API do Youtube com jQuery
 date: 2015-01-26 08:00:48
 authors:
   - jaswdr
-slug: /introducao-a-api-do-youtube-com-jquery/
+slug: introducao-a-api-do-youtube-com-jquery
 images:
   - /images/wp-content/uploads/2015/01/youtube_logo.png
 categories:

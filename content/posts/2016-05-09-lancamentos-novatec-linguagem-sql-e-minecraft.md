@@ -4,7 +4,7 @@ title: "Lançamentos Novatec: Linguagem SQL e Minecraft"
 date: 2016-05-09 22:55:41
 authors:
   - alexandrevicenzi
-slug: /lancamentos-novatec-linguagem-sql-e-minecraft/
+slug: lancamentos-novatec-linguagem-sql-e-minecraft
 categories:
   - Notícias
 tags:

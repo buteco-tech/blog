@@ -7,7 +7,7 @@ summary: |
 date: 2015-02-27 19:10:49
 authors:
   - alexandrevicenzi
-slug: /pyston-0-3-ja-esta-disponivel/
+slug: pyston-0-3-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 categories:

@@ -7,7 +7,7 @@ summary: |
 date: 2015-05-19 23:07:47
 authors:
   - alexandrevicenzi
-slug: /utilizando-um-teclado-matricial-no-arduino/
+slug: utilizando-um-teclado-matricial-no-arduino
 categories:
   - Hardware
   - DIY

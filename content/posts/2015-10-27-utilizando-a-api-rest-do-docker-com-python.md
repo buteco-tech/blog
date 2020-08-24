@@ -6,7 +6,7 @@ summary: |
 date: 2015-10-27 08:31:51
 authors:
   - marcossouza
-slug: /utilizando-a-api-rest-do-docker-com-python/
+slug: utilizando-a-api-rest-do-docker-com-python
 images:
   - /images/wp-content/uploads/2015/10/docker-100275159-orig.jpg
 categories:

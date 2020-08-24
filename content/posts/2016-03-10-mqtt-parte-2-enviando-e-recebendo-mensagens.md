@@ -7,7 +7,7 @@ summary: |
 date: 2016-03-10 23:43:51
 authors:
   - alexandrevicenzi
-slug: /mqtt-parte-2-enviando-e-recebendo-mensagens/
+slug: mqtt-parte-2-enviando-e-recebendo-mensagens
 images:
   - /images/wp-content/uploads/2016/02/mqttorg-glow.png
 categories:

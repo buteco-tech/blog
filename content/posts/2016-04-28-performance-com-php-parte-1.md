@@ -6,7 +6,7 @@ summary: |
 date: 2016-04-28 12:30:31
 authors:
   - jaswdr
-slug: /performance-com-php-parte-1/
+slug: performance-com-php-parte-1
 images:
   - /images/wp-content/uploads/2016/04/phplogo-highres.png
 categories:

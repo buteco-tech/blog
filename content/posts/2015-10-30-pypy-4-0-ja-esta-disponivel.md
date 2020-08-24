@@ -7,7 +7,7 @@ summary: |
 date: 2015-10-30 06:48:26
 authors:
   - alexandrevicenzi
-slug: /pypy-4-0-ja-esta-disponivel/
+slug: pypy-4-0-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/02/Pypy_logo.png
 categories:

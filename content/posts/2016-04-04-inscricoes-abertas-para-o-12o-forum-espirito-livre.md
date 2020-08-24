@@ -7,7 +7,7 @@ summary: |
 date: 2016-04-04 22:49:49
 authors:
   - daniel_magevski
-slug: /inscricoes-abertas-para-o-12o-forum-espirito-livre/
+slug: inscricoes-abertas-para-o-12o-forum-espirito-livre
 images:
   - /images/wp-content/uploads/2016/04/Logo_12_Forum.jpg
 categories:

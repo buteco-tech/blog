@@ -6,7 +6,7 @@ summary: |
 date: 2015-01-19 07:11:45
 authors:
   - jaswdr
-slug: /criando-um-servidor-de-downloads-de-torrents-com-utorrent-server/
+slug: criando-um-servidor-de-downloads-de-torrents-com-utorrent-server
 images:
   - /images/wp-content/uploads/2015/01/logo_utorrent-150x150.png
 categories:

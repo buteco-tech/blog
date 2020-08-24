@@ -6,7 +6,7 @@ summary: |
 date: 2016-02-22 23:24:51
 authors:
   - daniel_magevski
-slug: /configurando-vpn-site-to-site-com-openvpn/
+slug: configurando-vpn-site-to-site-com-openvpn
 images:
   - /images/wp-content/uploads/2016/01/openvpn-logo.png
 categories:

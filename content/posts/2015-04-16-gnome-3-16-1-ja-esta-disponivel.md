@@ -6,7 +6,7 @@ summary: |
 date: 2015-04-16 13:54:50
 authors:
   - alexandrevicenzi
-slug: /gnome-3-16-1-ja-esta-disponivel/
+slug: gnome-3-16-1-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/03/402px-gnomelogo-svg.png
 categories:

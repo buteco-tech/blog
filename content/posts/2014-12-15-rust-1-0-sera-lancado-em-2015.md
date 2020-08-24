@@ -4,7 +4,7 @@ title: Rust 1.0 será lançado em 2015
 date: 2014-12-15 11:36:08
 authors:
   - alexandrevicenzi
-slug: /rust-1-0-sera-lancado-em-2015/
+slug: rust-1-0-sera-lancado-em-2015
 images:
   - /images/wp-content/uploads/2014/10/rust-logo-256x256-blk.png
 categories:

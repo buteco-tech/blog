@@ -4,7 +4,7 @@ title: Concorra a um Raspberry Pi 3
 date: 2016-05-11 21:28:51
 authors:
   - alexandrevicenzi
-slug: /concorra-um-raspberry-pi-3/
+slug: concorra-um-raspberry-pi-3
 images:
   - /images/wp-content/uploads/2016/05/raspberry-pi-3.jpg
 categories:

@@ -7,7 +7,7 @@ summary: |
 date: 2015-07-15 08:38:44
 authors:
   - alexandrevicenzi
-slug: /instalando-o-supervisor-um-sistema-de-controle-de-processos/
+slug: instalando-o-supervisor-um-sistema-de-controle-de-processos
 categories:
   - Ferramentas
 tags:

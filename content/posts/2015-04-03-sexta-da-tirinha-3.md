@@ -4,7 +4,7 @@ title: Sexta da Tirinha #3
 date: 2015-04-03 13:41:43
 authors:
   - buteco
-slug: /sexta-da-tirinha-3/
+slug: sexta-da-tirinha-3
 categories:
   - Fun
 tags:

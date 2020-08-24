@@ -4,7 +4,7 @@ title: Sorteio de um e-Book
 date: 2015-10-05 20:27:03
 authors:
   - buteco
-slug: /sorteio-de-um-e-book/
+slug: sorteio-de-um-e-book
 images:
   - /images/wp-content/uploads/2015/06/livros-casa-do-codigo.jpg
 categories:

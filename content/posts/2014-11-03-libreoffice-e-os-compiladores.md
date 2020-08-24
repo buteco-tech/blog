@@ -4,7 +4,7 @@ title: LibreOffice e os compiladores
 date: 2014-11-03 22:44:49
 authors:
   - marcossouza
-slug: /libreoffice-e-os-compiladores/
+slug: libreoffice-e-os-compiladores
 categories:
   - Desenvolvimento
 tags:

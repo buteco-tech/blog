@@ -6,7 +6,7 @@ summary: |
 date: 2015-04-14 11:37:46
 authors:
   - jaswdr
-slug: /lumen-um-micro-framework-baseado-no-laravel/
+slug: lumen-um-micro-framework-baseado-no-laravel
 images:
   - /images/wp-content/uploads/2015/04/lumen-logo-e1429022192118.png
 categories:

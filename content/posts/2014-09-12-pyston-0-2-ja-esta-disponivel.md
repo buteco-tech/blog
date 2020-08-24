@@ -4,7 +4,7 @@ title: Pyston 0.2 já está disponível
 date: 2014-09-12 15:17:24
 authors:
   - alexandrevicenzi
-slug: /pyston-0-2-ja-esta-disponivel/
+slug: pyston-0-2-ja-esta-disponivel
 categories:
   - Desenvolvimento
   - Notícias

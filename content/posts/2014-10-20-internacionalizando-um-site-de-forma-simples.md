@@ -4,7 +4,7 @@ title: Internacionalizando um site de forma simples
 date: 2014-10-20 10:44:49
 authors:
   - alexandrevicenzi
-slug: /internacionalizando-um-site-de-forma-simples/
+slug: internacionalizando-um-site-de-forma-simples
 categories:
   - Desenvolvimento
 tags:

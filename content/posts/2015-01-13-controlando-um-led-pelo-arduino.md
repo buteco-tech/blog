@@ -6,7 +6,7 @@ summary: |
 date: 2015-01-13 08:00:35
 authors:
   - alexandrevicenzi
-slug: /controlando-um-led-pelo-arduino/
+slug: controlando-um-led-pelo-arduino
 categories:
   - Desenvolvimento
   - Hardware

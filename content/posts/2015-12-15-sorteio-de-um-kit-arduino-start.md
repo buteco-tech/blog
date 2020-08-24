@@ -4,7 +4,7 @@ title: Sorteio de um Kit Arduino Start
 date: 2015-12-15 23:04:54
 authors:
   - buteco
-slug: /sorteio-de-um-kit-arduino-start/
+slug: sorteio-de-um-kit-arduino-start
 categories:
   - Sorteios
 tags:

@@ -6,7 +6,7 @@ summary: |
 date: 2015-10-19 21:48:33
 authors:
   - marcooliveira
-slug: /o-sorteado-da-vez/
+slug: o-sorteado-da-vez
 images:
   - /images/wp-content/uploads/2015/06/livros-casa-do-codigo.jpg
 categories:

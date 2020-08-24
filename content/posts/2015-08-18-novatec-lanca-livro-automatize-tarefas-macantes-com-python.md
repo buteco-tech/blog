@@ -4,7 +4,7 @@ title: Novatec lança livro “Automatize tarefas maçantes com Python”
 date: 2015-08-18 23:29:34
 authors:
   - buteco
-slug: /novatec-lanca-livro-automatize-tarefas-macantes-com-python/
+slug: novatec-lanca-livro-automatize-tarefas-macantes-com-python
 images:
   - /images/wp-content/uploads/2015/08/automatizar_tarefas_python_novatec.png
 categories:

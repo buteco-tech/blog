@@ -6,7 +6,7 @@ summary: |
 date: 2015-08-31 12:25:26
 authors:
   - marcossouza
-slug: /utilizando-shared-objects-no-python/
+slug: utilizando-shared-objects-no-python
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 categories:

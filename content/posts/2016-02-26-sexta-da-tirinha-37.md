@@ -4,7 +4,7 @@ title: Sexta da Tirinha #37
 date: 2016-02-26 15:33:23
 authors:
   - buteco
-slug: /sexta-da-tirinha-37/
+slug: sexta-da-tirinha-37
 categories:
   - Fun
 tags:

@@ -4,7 +4,7 @@ title: Sexta da Tirinha #23
 date: 2015-10-16 09:28:03
 authors:
   - buteco
-slug: /sexta-da-tirinha-23/
+slug: sexta-da-tirinha-23
 categories:
   - Fun
 tags:

@@ -3,7 +3,7 @@ title: Enviando emails com o Python
 date: 2014-12-28 06:00:49
 authors:
   - alexandrevicenzi
-slug: /enviando-emails-com-o-python/
+slug: enviando-emails-com-o-python
 categories:
   - Desenvolvimento
   - Tutoriais

@@ -4,7 +4,7 @@ title: Implemente seu malloc/free. Just4fun!
 date: 2015-12-03 13:18:40
 authors:
   - guilhermevanz
-slug: /implemente-seu-mallocfree-just4fun/
+slug: implemente-seu-mallocfree-just4fun
 images:
   - /images/wp-content/uploads/2015/11/1042021.png
 categories:

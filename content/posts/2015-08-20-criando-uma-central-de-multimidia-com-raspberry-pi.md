@@ -6,7 +6,7 @@ summary: |
 date: 2015-08-20 22:28:06
 authors:
   - daniel_magevski
-slug: /criando-uma-central-de-multimidia-com-raspberry-pi/
+slug: criando-uma-central-de-multimidia-com-raspberry-pi
 images:
   - /images/wp-content/uploads/2015/07/openelec.jpg
 categories:

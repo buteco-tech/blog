@@ -6,7 +6,7 @@ summary: |
 date: 2016-05-03 22:36:32
 authors:
   - alexandrevicenzi
-slug: /dispositivos-usb-nao-sao-reconhecidos-pelo-virtualbox-host-linux/
+slug: dispositivos-usb-nao-sao-reconhecidos-pelo-virtualbox-host-linux
 images:
   - /images/wp-content/uploads/2016/04/virtualbox.png
 categories:

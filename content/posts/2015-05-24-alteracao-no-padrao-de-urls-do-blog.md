@@ -7,7 +7,7 @@ summary: |
 date: 2015-05-24 21:05:39
 authors:
   - buteco
-slug: /alteracao-no-padrao-de-urls-do-blog/
+slug: alteracao-no-padrao-de-urls-do-blog
 images:
   - /images/wp-content/uploads/2015/05/buteco-alpha-100-100.png
 categories:

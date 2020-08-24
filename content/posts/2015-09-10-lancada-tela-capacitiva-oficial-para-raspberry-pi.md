@@ -4,7 +4,7 @@ title: Lançada tela capacitiva oficial para Raspberry Pi
 date: 2015-09-10 22:44:20
 authors:
   - buteco
-slug: /lancada-tela-capacitiva-oficial-para-raspberry-pi/
+slug: lancada-tela-capacitiva-oficial-para-raspberry-pi
 categories:
   - Hardware
   - DIY

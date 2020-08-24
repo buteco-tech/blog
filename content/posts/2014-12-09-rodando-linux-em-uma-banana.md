@@ -4,7 +4,7 @@ title: Rodando Linux em uma Banana
 date: 2014-12-09 12:46:36
 authors:
   - alexandrevicenzi
-slug: /rodando-linux-em-uma-banana/
+slug: rodando-linux-em-uma-banana
 categories:
   - Desenvolvimento
   - Hardware

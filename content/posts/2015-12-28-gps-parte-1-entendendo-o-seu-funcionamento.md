@@ -5,7 +5,7 @@ summary: |
 date: 2015-12-28 20:55:51
 authors:
   - alexandrevicenzi
-slug: /gps-parte-1-entendendo-o-seu-funcionamento/
+slug: gps-parte-1-entendendo-o-seu-funcionamento
 images:
   - /images/wp-content/uploads/2015/12/map_pin.png
 categories:

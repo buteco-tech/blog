@@ -6,7 +6,7 @@ summary: |
 date: 2016-03-03 22:49:12
 authors:
   - alexandrevicenzi
-slug: /i18n-detectando-o-idioma-do-usuario/
+slug: i18n-detectando-o-idioma-do-usuario
 images:
   - /images/wp-content/uploads/2016/03/200px-Globe_of_letters.png
 categories:

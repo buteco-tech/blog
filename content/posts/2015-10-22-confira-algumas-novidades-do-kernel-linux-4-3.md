@@ -6,7 +6,7 @@ summary: |
 date: 2015-10-22 21:49:26
 authors:
   - marcossouza
-slug: /confira-algumas-novidades-do-kernel-linux-4-3/
+slug: confira-algumas-novidades-do-kernel-linux-4-3
 images:
   - /images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg
 categories:

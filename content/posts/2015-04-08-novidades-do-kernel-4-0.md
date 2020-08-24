@@ -6,7 +6,7 @@ summary: |
 date: 2015-04-08 23:12:54
 authors:
   - marcossouza
-slug: /novidades-do-kernel-4-0/
+slug: novidades-do-kernel-4-0
 images:
   - /images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg
 categories:

@@ -6,7 +6,7 @@ summary: |
 date: 2015-03-09 22:29:05
 authors:
   - pedrojefferson
-slug: /criando-formularios-com-python-e-pygtk3/
+slug: criando-formularios-com-python-e-pygtk3
 images:
   - /images/wp-content/uploads/2015/02/pythonzz2.png
 categories:

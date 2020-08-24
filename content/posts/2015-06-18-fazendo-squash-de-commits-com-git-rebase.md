@@ -6,7 +6,7 @@ summary: |
 date: 2015-06-18 23:04:10
 authors:
   - alexandrevicenzi
-slug: /fazendo-squash-de-commits-com-git-rebase/
+slug: fazendo-squash-de-commits-com-git-rebase
 categories:
   - Tutoriais
 tags:

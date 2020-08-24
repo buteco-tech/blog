@@ -6,7 +6,7 @@ summary: |
 date: 2015-06-16 23:29:13
 authors:
   - daniel_magevski
-slug: /criptoparty-2/
+slug: criptoparty-2
 images:
   - /images/wp-content/uploads/2015/06/criptoparty-1.jpg
 categories:

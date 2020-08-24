@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-06 22:59:54
 authors:
   - daniel_magevski
-slug: /tutorial-nessus-home-parte-2-final/
+slug: tutorial-nessus-home-parte-2-final
 categories:
   - Ferramentas
 tags:

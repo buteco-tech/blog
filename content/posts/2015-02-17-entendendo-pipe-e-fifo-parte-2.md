@@ -4,7 +4,7 @@ title: Entendendo Pipe e FIFO (parte 2)
 date: 2015-02-17 20:50:57
 authors:
   - marcossouza
-slug: /entendendo-pipe-e-fifo-parte-2/
+slug: entendendo-pipe-e-fifo-parte-2
 images:
   - /images/wp-content/uploads/2015/01/pipes.png
 categories:
@@ -16,7 +16,7 @@ tags:
   - terminal
 ---
 
-<p style="text-align: justify;">Esta é a segunda parte da postagem sobre Pipes e Fifos aqui do blog. Se ainda não viu a primeira parte, pode acessá-la por <a title="Entendendo Pipes e FIFOs (parte 1)" href="/entendendo-pipe-e-fifo-parte-1" target="_blank">aqui</a>. Nesta parte será explicado como processos podem ter seus dados interligados, exatamente como o shell faz no comando <em>ls | wc -l</em>. Para entender como este processo ocorre é necessário entender que existem três "arquivos" que são abertos quando um processo se inicia.</p>
+<p style="text-align: justify;">Esta é a segunda parte da postagem sobre Pipes e Fifos aqui do blog. Se ainda não viu a primeira parte, pode acessá-la por <a title="Entendendo Pipes e FIFOs (parte 1)" href="/entendendo-pipe-e-fifo-parte-1/" target="_blank">aqui</a>. Nesta parte será explicado como processos podem ter seus dados interligados, exatamente como o shell faz no comando <em>ls | wc -l</em>. Para entender como este processo ocorre é necessário entender que existem três "arquivos" que são abertos quando um processo se inicia.</p>
 Estes arquivos são:
 <ul>
 	<li>entrada padrão ou <em>stdin</em> (file descriptor zero)</li>

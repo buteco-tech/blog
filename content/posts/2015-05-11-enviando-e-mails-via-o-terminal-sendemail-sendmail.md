@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-11 22:54:26
 authors:
   - marcossouza
-slug: /enviando-e-mails-via-o-terminal-sendemail-sendmail/
+slug: enviando-e-mails-via-o-terminal-sendemail-sendmail
 categories:
   - Tutoriais
 tags:

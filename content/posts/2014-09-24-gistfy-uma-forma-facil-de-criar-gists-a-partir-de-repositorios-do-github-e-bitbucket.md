@@ -4,7 +4,7 @@ title: Gistfy - Uma forma fácil de criar Gists a partir de repositórios do Git
 date: 2014-09-24 15:17:18
 authors:
   - alexandrevicenzi
-slug: /gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/
+slug: gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket
 categories:
   - Ferramentas
 tags:

@@ -4,7 +4,7 @@ title: Roadsec - Floripa 26/09
 date: 2015-09-22 22:33:32
 authors:
   - marcooliveira
-slug: /roadsec-floripa-2609/
+slug: roadsec-floripa-2609
 categories:
   - Eventos
 tags:

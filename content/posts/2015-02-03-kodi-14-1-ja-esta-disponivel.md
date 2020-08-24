@@ -6,7 +6,7 @@ summary: |
 date: 2015-02-03 13:41:00
 authors:
   - alexandrevicenzi
-slug: /kodi-14-1-ja-esta-disponivel/
+slug: kodi-14-1-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/02/kodi-helix-14.1-600x336.png
 categories:

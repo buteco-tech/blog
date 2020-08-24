@@ -4,7 +4,7 @@ title: Efetuando teste de carga com o Locust
 date: 2016-05-19 00:43:51
 authors:
   - alexandrevicenzi
-slug: /efetuando-teste-de-carga-com-o-locust/
+slug: efetuando-teste-de-carga-com-o-locust
 images:
   - /images/wp-content/uploads/2016/05/locust-logo.png
 categories:

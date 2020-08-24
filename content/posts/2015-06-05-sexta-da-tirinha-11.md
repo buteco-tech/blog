@@ -6,7 +6,7 @@ summary: |
 date: 2015-06-05 19:15:18
 authors:
   - buteco
-slug: /sexta-da-tirinha-11/
+slug: sexta-da-tirinha-11
 categories:
   - Fun
 tags:

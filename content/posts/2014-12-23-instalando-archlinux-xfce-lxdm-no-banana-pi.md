@@ -4,7 +4,7 @@ title: Instalando ArchLinux + XFCE + LXDM no Banana Pi
 date: 2014-12-23 08:00:05
 authors:
   - alexandrevicenzi
-slug: /instalando-archlinux-xfce-lxdm-no-banana-pi/
+slug: instalando-archlinux-xfce-lxdm-no-banana-pi
 images:
   - /images/wp-content/uploads/2014/12/ArchlinuxLogo2.png
 categories:

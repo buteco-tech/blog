@@ -7,7 +7,7 @@ summary: |
 date: 2015-02-20 14:09:32
 authors:
   - alexandrevicenzi
-slug: /instalando-o-vmware-player-no-linux/
+slug: instalando-o-vmware-player-no-linux
 images:
   - /images/wp-content/uploads/2015/02/VMware_Player_logo.png
 categories:

@@ -4,7 +4,7 @@ title: Sexta da Tirinha #36
 date: 2016-02-19 17:01:27
 authors:
   - alexandrevicenzi
-slug: /sexta-da-tirinha-36/
+slug: sexta-da-tirinha-36
 categories:
   - Fun
 tags:

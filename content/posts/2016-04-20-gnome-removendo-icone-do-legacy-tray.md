@@ -6,7 +6,7 @@ summary: |
 date: 2016-04-20 23:16:52
 authors:
   - alexandrevicenzi
-slug: /gnome-removendo-icone-do-legacy-tray/
+slug: gnome-removendo-icone-do-legacy-tray
 images:
   - /images/wp-content/uploads/2016/04/gnome-logo-300px-150x150.png
 categories:

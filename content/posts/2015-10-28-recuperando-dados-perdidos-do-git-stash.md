@@ -4,7 +4,7 @@ summary: Confira como recuperar dados perdidos do git-stash
 date: 2015-10-28 21:29:14
 authors:
   - guilhermevanz
-slug: /recuperando-dados-perdidos-do-git-stash/
+slug: recuperando-dados-perdidos-do-git-stash
 images:
   - /images/wp-content/uploads/2015/10/t8cnk.jpg
 categories:

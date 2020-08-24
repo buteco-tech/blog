@@ -6,7 +6,7 @@ summary: |
 date: 2015-04-13 11:32:48
 authors:
   - marcossouza
-slug: /criando-modulo-python-em-cc/
+slug: criando-modulo-python-em-cc
 images:
   - /images/wp-content/uploads/2015/04/c_python.png
 categories:
@@ -80,7 +80,7 @@ String teste duplicada: testeteste</strong>
 Este artigo de forma alguma espera ser um guia definitivo para a criação de extensões em C/C++ par Python, mas sim um ponto de início. Para mais informações sobre, veja os links de referência. Espero que tenham gostado! Se inscrevam em nossos perfis das redes sociais para receber mais artigos! Até mais!
 
 Referências:
-<a href="/entendendo-pipe-e-fifo-parte-1" target="_blank">Extending Python</a>
+<a href="/entendendo-pipe-e-fifo-parte-1/" target="_blank">Extending Python</a>
 <a href="https://docs.python.org/2/c-api/arg.html#c.Py_BuildValue" target="_blank">Py_BuildValue</a>
 <a href="https://docs.python.org/2/c-api/arg.html#c.PyArg_ParseTuple" target="_blank">Py_ParseTuple</a>
 <a href="https://docs.python.org/2/c-api/allocation.html#c.Py_InitModule4" target="_blank">Py_InitModule</a>

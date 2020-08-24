@@ -4,7 +4,7 @@ title: Python 2.7.9 já está disponível
 date: 2014-12-11 14:18:37
 authors:
   - alexandrevicenzi
-slug: /python-2-7-9-ja-esta-disponivel/
+slug: python-2-7-9-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 categories:

@@ -4,7 +4,7 @@ title: Review Raspberry Pi 3
 date: 2016-05-10 12:57:34
 authors:
   - alexandrevicenzi
-slug: /review-raspberry-pi-3/
+slug: review-raspberry-pi-3
 images:
   - /images/wp-content/uploads/2016/05/raspberry-pi-3.jpg
 categories:

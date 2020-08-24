@@ -4,7 +4,7 @@ title: Acompanhe o TDC Floripa sem sair de casa
 date: 2016-05-11 20:10:22
 authors:
   - alexandrevicenzi
-slug: /acompanhe-o-tdc-floripa-sem-sair-de-casa/
+slug: acompanhe-o-tdc-floripa-sem-sair-de-casa
 images:
   - /images/wp-content/uploads/2016/05/tdc-logo.png
 categories:

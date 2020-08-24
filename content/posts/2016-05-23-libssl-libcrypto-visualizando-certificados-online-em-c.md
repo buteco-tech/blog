@@ -6,7 +6,7 @@ summary: |
 date: 2016-05-23 23:34:46
 authors:
   - marcossouza
-slug: /libssl-libcrypto-visualizando-certificados-online-em-c/
+slug: libssl-libcrypto-visualizando-certificados-online-em-c
 images:
   - /images/wp-content/uploads/2016/05/openssl-3.png
 categories:

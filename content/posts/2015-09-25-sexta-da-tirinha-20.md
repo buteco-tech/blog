@@ -4,7 +4,7 @@ title: Sexta da Tirinha #20
 date: 2015-09-25 09:18:56
 authors:
   - buteco
-slug: /sexta-da-tirinha-20/
+slug: sexta-da-tirinha-20
 categories:
   - Fun
 tags:

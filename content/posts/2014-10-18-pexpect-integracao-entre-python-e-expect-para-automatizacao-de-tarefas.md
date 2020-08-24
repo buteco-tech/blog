@@ -4,7 +4,7 @@ title: "Pexpect: Integração entre Python e expect para automatização de tare
 date: 2014-10-18 10:03:28
 authors:
   - marcossouza
-slug: /pexpect-integracao-entre-python-e-expect-para-automatizacao-de-tarefas/
+slug: pexpect-integracao-entre-python-e-expect-para-automatizacao-de-tarefas
 categories:
   - Desenvolvimento
 tags:

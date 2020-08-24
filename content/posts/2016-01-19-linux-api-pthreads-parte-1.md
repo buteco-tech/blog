@@ -6,7 +6,7 @@ summary: |
 date: 2016-01-19 11:45:24
 authors:
   - marcossouza
-slug: /linux-api-pthreads-parte-1/
+slug: linux-api-pthreads-parte-1
 images:
   - /images/wp-content/uploads/2016/01/pthreads1.png
 categories:

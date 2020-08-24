@@ -7,7 +7,7 @@ summary: |
 date: 2015-05-11 08:34:48
 authors:
   - pedrojefferson
-slug: /usando-o-hangouts-chat-via-terminal/
+slug: usando-o-hangouts-chat-via-terminal
 categories:
   - Tutoriais
 tags:

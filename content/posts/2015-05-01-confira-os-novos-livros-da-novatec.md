@@ -7,7 +7,7 @@ summary: |
 date: 2015-05-01 10:30:13
 authors:
   - buteco
-slug: /confira-os-novos-livros-da-novatec/
+slug: confira-os-novos-livros-da-novatec
 categories:
   - Notícias
   - Livros

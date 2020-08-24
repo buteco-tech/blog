@@ -6,7 +6,7 @@ summary: |
 date: 2015-12-16 21:22:36
 authors:
   - marcossouza
-slug: /bash-reverse-search/
+slug: bash-reverse-search
 images:
   - /images/wp-content/uploads/2015/12/bash.png
 categories:

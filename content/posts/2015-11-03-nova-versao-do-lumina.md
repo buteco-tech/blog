@@ -6,7 +6,7 @@ summary: |
 date: 2015-11-03 21:48:24
 authors:
   - marcooliveira
-slug: /nova-versao-do-lumina/
+slug: nova-versao-do-lumina
 images:
   - /images/wp-content/uploads/2015/10/Lumina.png
 categories:

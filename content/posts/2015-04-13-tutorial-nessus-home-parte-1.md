@@ -9,7 +9,7 @@ summary: |
 date: 2015-04-13 22:41:54
 authors:
   - daniel_magevski
-slug: /tutorial-nessus-home-parte-1/
+slug: tutorial-nessus-home-parte-1
 categories:
   - Ferramentas
 tags:

@@ -4,7 +4,7 @@ title: Sexta da Tirinha #30
 date: 2015-12-18 08:53:04
 authors:
   - buteco
-slug: /sexta-da-tirinha-30/
+slug: sexta-da-tirinha-30
 categories:
   - Fun
 tags:

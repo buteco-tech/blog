@@ -6,7 +6,7 @@ summary: |
 date: 2015-07-01 22:55:51
 authors:
   - alexandrevicenzi
-slug: /siga-nosso-canal-no-pushbullet/
+slug: siga-nosso-canal-no-pushbullet
 images:
   - /images/wp-content/uploads/2015/07/pushbullet.jpg
 categories:

@@ -6,7 +6,7 @@ summary: |
 date: 2016-04-12 23:59:33
 authors:
   - marcossouza
-slug: /bash-tips-expressoes-regulares-no-bash/
+slug: bash-tips-expressoes-regulares-no-bash
 images:
   - /images/wp-content/uploads/2016/03/images.jpg
 categories:

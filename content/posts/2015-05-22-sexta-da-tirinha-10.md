@@ -4,7 +4,7 @@ title: Sexta da Tirinha #10
 date: 2015-05-22 13:52:58
 authors:
   - buteco
-slug: /sexta-da-tirinha-10/
+slug: sexta-da-tirinha-10
 categories:
   - Fun
 tags:

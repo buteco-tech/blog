@@ -3,7 +3,7 @@ title: Formatando e adicionando anexos a e-mails no Python
 date: 2015-01-15 06:00:19
 authors:
   - alexandrevicenzi
-slug: /formatando-e-adicionando-anexos-a-e-mails-no-python/
+slug: formatando-e-adicionando-anexos-a-e-mails-no-python
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 categories:

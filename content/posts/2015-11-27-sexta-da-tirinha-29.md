@@ -6,7 +6,7 @@ summary: |
 date: 2015-11-27 13:09:24
 authors:
   - buteco
-slug: /sexta-da-tirinha-29/
+slug: sexta-da-tirinha-29
 categories:
   - Fun
 

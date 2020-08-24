@@ -4,7 +4,7 @@ title: Novatec lança livro sobre domínios na internet
 date: 2015-07-21 13:04:12
 authors:
   - buteco
-slug: /novatec-lanca-livro-sobre-dominios-na-internet/
+slug: novatec-lanca-livro-sobre-dominios-na-internet
 images:
   - /images/wp-content/uploads/2015/07/nomes_dominios_novatec.png
 categories:

@@ -4,7 +4,7 @@ title: Feliz Aniversário Projeto GNU!
 date: 2015-09-27 21:23:13
 authors:
   - dsantos
-slug: /feliz-aniversario-projeto-gnu/
+slug: feliz-aniversario-projeto-gnu
 categories:
   - Eventos
 tags:

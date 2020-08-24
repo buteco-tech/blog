@@ -6,7 +6,7 @@ summary: |
 date: 2016-05-31 10:15:33
 authors:
   - daniel_magevski
-slug: /tutorial-gnupg/
+slug: tutorial-gnupg
 images:
   - /images/wp-content/uploads/2015/02/GnuPG-Logo.png
 categories:

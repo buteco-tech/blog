@@ -6,7 +6,7 @@ summary: |
 date: 2015-09-07 20:35:16
 authors:
   - marcossouza
-slug: /mais-correcoes-no-rc3-do-mesa-11-0/
+slug: mais-correcoes-no-rc3-do-mesa-11-0
 images:
   - /images/wp-content/uploads/2015/07/attachment.cgi_.png
 categories:

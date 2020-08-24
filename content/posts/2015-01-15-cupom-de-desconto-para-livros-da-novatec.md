@@ -4,7 +4,7 @@ title: Cupom de desconto para livros da Novatec
 date: 2015-01-15 22:28:08
 authors:
   - buteco
-slug: /cupom-de-desconto-para-livros-da-novatec/
+slug: cupom-de-desconto-para-livros-da-novatec
 images:
   - /images/wp-content/uploads/2015/01/logo_novatec.jpg
 categories:

@@ -4,7 +4,7 @@ title: Primeiros passos com o Banana Pi
 date: 2014-12-10 22:35:12
 authors:
   - alexandrevicenzi
-slug: /primeiros-passos-com-o-banana-pi/
+slug: primeiros-passos-com-o-banana-pi
 categories:
   - Desenvolvimento
   - Hardware

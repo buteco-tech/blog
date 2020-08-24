@@ -6,7 +6,7 @@ summary: |
 date: 2015-04-27 16:23:46
 authors:
   - marcossouza
-slug: /cliente-server-com-boost-asio/
+slug: cliente-server-com-boost-asio
 images:
   - /images/wp-content/uploads/2015/04/boost.png
 categories:

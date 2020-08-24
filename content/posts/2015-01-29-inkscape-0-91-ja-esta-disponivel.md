@@ -6,7 +6,7 @@ summary: |
 date: 2015-01-29 19:20:14
 authors:
   - alexandrevicenzi
-slug: /inkscape-0-91-ja-esta-disponivel/
+slug: inkscape-0-91-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/01/inkscape_091_icon_1.png
 categories:

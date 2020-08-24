@@ -4,7 +4,7 @@ title: "Hands on: Sockets em Python"
 date: 2015-01-14 00:05:04
 authors:
   - marcossouza
-slug: /hands-on-sockets-em-python/
+slug: hands-on-sockets-em-python
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 categories:

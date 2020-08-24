@@ -4,7 +4,7 @@ title: "Lançamentos Novatec: Apocalipse zumbi com Arduino e Raspberry e AWS em 
 date: 2016-01-07 08:07:04
 authors:
   - buteco
-slug: /lancamentos-novatec-apocalipse-zumbi-com-arduino-e-raspberry-e-aws-em-acao/
+slug: lancamentos-novatec-apocalipse-zumbi-com-arduino-e-raspberry-e-aws-em-acao
 categories:
   - Notícias
   - Livros

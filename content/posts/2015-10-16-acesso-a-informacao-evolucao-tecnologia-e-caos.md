@@ -6,7 +6,7 @@ summary: |
 date: 2015-10-16 09:40:30
 authors:
   - marcooliveira
-slug: /acesso-a-informacao-evolucao-tecnologia-e-caos/
+slug: acesso-a-informacao-evolucao-tecnologia-e-caos
 images:
   - /images/wp-content/uploads/2015/10/modelagem_e_tecnologia.jpg
 categories:

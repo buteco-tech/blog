@@ -4,7 +4,7 @@ title: Enviando SMS pelo PagueVeloz
 date: 2014-12-19 01:04:48
 authors:
   - alexandrevicenzi
-slug: /enviando-sms-pelo-pagueveloz/
+slug: enviando-sms-pelo-pagueveloz
 categories:
   - Desenvolvimento
 tags:

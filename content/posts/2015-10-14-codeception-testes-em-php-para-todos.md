@@ -6,7 +6,7 @@ summary: |
 date: 2015-10-14 22:51:45
 authors:
   - jaswdr
-slug: /codeception-testes-em-php-para-todos/
+slug: codeception-testes-em-php-para-todos
 images:
   - /images/wp-content/uploads/2015/10/logo2.png
 categories:

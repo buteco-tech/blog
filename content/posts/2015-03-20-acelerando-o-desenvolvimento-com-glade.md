@@ -6,7 +6,7 @@ summary: |
 date: 2015-03-20 08:25:17
 authors:
   - pedrojefferson
-slug: /acelerando-o-desenvolvimento-com-glade/
+slug: acelerando-o-desenvolvimento-com-glade
 categories:
   - Ferramentas
 tags:

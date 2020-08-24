@@ -6,7 +6,7 @@ summary: |
 date: 2015-06-04 23:03:35
 authors:
   - daniel_magevski
-slug: /lancado-a-70o-edicao-da-revista-espirito-livre/
+slug: lancado-a-70o-edicao-da-revista-espirito-livre
 images:
   - /images/wp-content/uploads/2015/06/revista-espiritolivre-e1433347337883.png
 categories:

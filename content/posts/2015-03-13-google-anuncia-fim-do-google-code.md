@@ -7,7 +7,7 @@ summary: |
 date: 2015-03-13 00:46:18
 authors:
   - alexandrevicenzi
-slug: /google-anuncia-fim-do-google-code/
+slug: google-anuncia-fim-do-google-code
 images:
   - /images/wp-content/uploads/2015/03/google-code-logo.png
 categories:

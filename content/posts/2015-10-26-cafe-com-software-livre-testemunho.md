@@ -6,7 +6,7 @@ summary: |
 date: 2015-10-26 22:52:25
 authors:
   - dsantos
-slug: /cafe-com-software-livre-testemunho/
+slug: cafe-com-software-livre-testemunho
 images:
   - /images/wp-content/uploads/2015/10/CaféComSL3_Caneca743x655.png
 categories:

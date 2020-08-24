@@ -7,7 +7,7 @@ summary: |
 date: 2015-05-25 00:04:17
 authors:
   - alexandrevicenzi
-slug: /cupom-de-desconto-nos-livros-da-casa-do-codigo/
+slug: cupom-de-desconto-nos-livros-da-casa-do-codigo
 images:
   - /images/wp-content/uploads/2015/05/cdc-logo-novo-400.png
 categories:

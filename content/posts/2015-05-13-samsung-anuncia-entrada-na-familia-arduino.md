@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-13 09:17:43
 authors:
   - alexandrevicenzi
-slug: /samsung-anuncia-entrada-na-familia-arduino/
+slug: samsung-anuncia-entrada-na-familia-arduino
 images:
   - /images/wp-content/uploads/2015/05/artik-1.png
 categories:

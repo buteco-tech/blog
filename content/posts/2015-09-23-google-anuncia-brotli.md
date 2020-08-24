@@ -4,7 +4,7 @@ title: Google anuncia Brotli
 date: 2015-09-23 00:06:00
 authors:
   - dsantos
-slug: /google-anuncia-brotli/
+slug: google-anuncia-brotli
 categories:
   - Notícias
 tags:

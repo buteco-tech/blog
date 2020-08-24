@@ -4,7 +4,7 @@ title: Capturando Imagem da Webcam com o PyGame
 date: 2014-09-09 00:27:57
 authors:
   - alexandrevicenzi
-slug: /capturando-imagem-da-webcam-com-o-pygame/
+slug: capturando-imagem-da-webcam-com-o-pygame
 categories:
   - Desenvolvimento
   - Jogos

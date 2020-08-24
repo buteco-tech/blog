@@ -4,7 +4,7 @@ title: Sexta da Tirinha #2
 date: 2015-03-27 13:30:30
 authors:
   - buteco
-slug: /sexta-da-tirinha-2/
+slug: sexta-da-tirinha-2
 categories:
   - Fun
 tags:

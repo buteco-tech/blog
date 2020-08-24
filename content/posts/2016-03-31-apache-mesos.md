@@ -6,7 +6,7 @@ summary: |
 date: 2016-03-31 23:40:20
 authors:
   - guilhermevanz
-slug: /apache-mesos/
+slug: apache-mesos
 images:
   - /images/wp-content/uploads/2016/03/apache_mesos.png
 categories:

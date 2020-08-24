@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-28 14:53:31
 authors:
   - jaswdr
-slug: /integrando-o-doctrine-orm-e-laravel-5-parte-1/
+slug: integrando-o-doctrine-orm-e-laravel-5-parte-1
 images:
   - /images/wp-content/uploads/2015/05/doctrine-e1432605186500.jpg
 categories:

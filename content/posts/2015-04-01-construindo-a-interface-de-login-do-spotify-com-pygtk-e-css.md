@@ -6,7 +6,7 @@ summary: |
 date: 2015-04-01 12:10:10
 authors:
   - pedrojefferson
-slug: /construindo-a-interface-de-login-do-spotify-com-pygtk-e-css/
+slug: construindo-a-interface-de-login-do-spotify-com-pygtk-e-css
 categories:
   - Desenvolvimento
 tags:

@@ -6,7 +6,7 @@ summary: |
 date: 2015-11-18 22:54:30
 authors:
   - alexandrevicenzi
-slug: /black-friday-de-componentes-eletronicos-e-na-filipeflop/
+slug: black-friday-de-componentes-eletronicos-e-na-filipeflop
 images:
   - /images/wp-content/uploads/2015/11/banner_bf_ff.png.png
 categories:

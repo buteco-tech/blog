@@ -6,7 +6,7 @@ summary: |
 date: 2015-02-07 15:00:12
 authors:
   - alexandrevicenzi
-slug: /instalando-o-vlc-no-opensuse/
+slug: instalando-o-vlc-no-opensuse
 images:
   - /images/wp-content/uploads/2015/02/vlc.png
 categories:

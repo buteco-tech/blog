@@ -6,7 +6,7 @@ summary: |
 date: 2014-09-23 13:30:48
 authors:
   - jaswdr
-slug: /informacoes-de-localizacao-pelo-cep-com-php/
+slug: informacoes-de-localizacao-pelo-cep-com-php
 categories:
   - Desenvolvimento
 tags:

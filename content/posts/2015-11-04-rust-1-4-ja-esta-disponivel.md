@@ -4,7 +4,7 @@ title: Rust 1.4 já está disponível
 date: 2015-11-04 07:07:34
 authors:
   - alexandrevicenzi
-slug: /rust-1-4-ja-esta-disponivel/
+slug: rust-1-4-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2014/10/rust-logo-256x256-blk.png
 categories:

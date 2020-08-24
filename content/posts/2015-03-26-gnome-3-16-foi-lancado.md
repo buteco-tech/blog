@@ -6,7 +6,7 @@ summary: |
 date: 2015-03-26 21:48:19
 authors:
   - marcossouza
-slug: /gnome-3-16-foi-lancado/
+slug: gnome-3-16-foi-lancado
 images:
   - /images/wp-content/uploads/2015/03/402px-gnomelogo-svg.png
 categories:

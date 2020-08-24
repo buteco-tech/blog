@@ -6,7 +6,7 @@ summary: |
 date: 2016-02-11 21:37:22
 authors:
   - alexandrevicenzi
-slug: /mqtt-parte-1-o-que-e-mqtt/
+slug: mqtt-parte-1-o-que-e-mqtt
 images:
   - /images/wp-content/uploads/2016/02/mqttorg-glow.png
 categories:

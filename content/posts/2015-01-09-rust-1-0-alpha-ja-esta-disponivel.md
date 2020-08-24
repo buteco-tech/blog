@@ -6,7 +6,7 @@ summary: |
 date: 2015-01-09 20:00:40
 authors:
   - alexandrevicenzi
-slug: /rust-1-0-alpha-ja-esta-disponivel/
+slug: rust-1-0-alpha-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2014/10/rust-logo-256x256-blk.png
 categories:

@@ -4,7 +4,7 @@ title: Crie seu próprio Instagram com PHP
 date: 2014-11-17 07:47:00
 authors:
   - jaswdr
-slug: /crie-seu-proprio-instagram-com-php/
+slug: crie-seu-proprio-instagram-com-php
 categories:
   - Desenvolvimento
 tags:

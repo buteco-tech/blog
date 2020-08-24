@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-15 23:58:35
 authors:
   - alexandrevicenzi
-slug: /rust-1-0-ja-esta-disponivel/
+slug: rust-1-0-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2014/10/rust-logo-256x256-blk.png
 categories:

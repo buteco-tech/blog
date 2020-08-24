@@ -6,7 +6,7 @@ summary: |
 date: 2016-04-19 08:41:55
 authors:
   - jaswdr
-slug: /como-usar-o-mongodb-com-php/
+slug: como-usar-o-mongodb-com-php
 images:
   - /images/wp-content/uploads/2016/04/mongodb-logo.jpg
 categories:

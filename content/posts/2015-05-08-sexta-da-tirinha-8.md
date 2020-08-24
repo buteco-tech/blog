@@ -4,7 +4,7 @@ title: Sexta da Tirinha #8
 date: 2015-05-08 11:29:50
 authors:
   - buteco
-slug: /sexta-da-tirinha-8/
+slug: sexta-da-tirinha-8
 categories:
   - Fun
 

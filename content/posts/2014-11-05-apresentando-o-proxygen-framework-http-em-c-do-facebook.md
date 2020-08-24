@@ -4,7 +4,7 @@ title: Apresentando o Proxygen - Framework HTTP em C++ do Facebook
 date: 2014-11-05 18:24:52
 authors:
   - alexandrevicenzi
-slug: /apresentando-o-proxygen-framework-http-em-c-do-facebook/
+slug: apresentando-o-proxygen-framework-http-em-c-do-facebook
 images:
   - /images/wp-content/uploads/2014/11/ProxygenLogo650.jpg
 categories:

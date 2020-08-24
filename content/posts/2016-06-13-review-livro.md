@@ -6,7 +6,7 @@ summary: |
 date: 2016-06-13 20:54:16
 authors:
   - marcooliveira
-slug: /review-livro/
+slug: review-livro
 images:
   - /images/wp-content/uploads/2016/06/capa.jpg
 categories:

@@ -4,7 +4,7 @@ title: Envie seu artigo!
 date: 2015-01-08 08:00:15
 authors:
   - camilastadnik
-slug: /envie-seu-artigo/
+slug: envie-seu-artigo
 categories:
   - Notícias
 

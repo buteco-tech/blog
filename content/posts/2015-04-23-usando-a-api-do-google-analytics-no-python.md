@@ -6,7 +6,7 @@ summary: |
 date: 2015-04-23 23:18:51
 authors:
   - alexandrevicenzi
-slug: /usando-a-api-do-google-analytics-no-python/
+slug: usando-a-api-do-google-analytics-no-python
 images:
   - /images/wp-content/uploads/2015/04/Logo_Google_Analytics.png
 categories:

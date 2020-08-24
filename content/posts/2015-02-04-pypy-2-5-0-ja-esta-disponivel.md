@@ -6,7 +6,7 @@ summary: |
 date: 2015-02-04 14:23:06
 authors:
   - alexandrevicenzi
-slug: /pypy-2-5-0-ja-esta-disponivel/
+slug: pypy-2-5-0-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/02/Pypy_logo.png
 categories:

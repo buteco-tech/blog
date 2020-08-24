@@ -6,7 +6,7 @@ summary: |
 date: 2016-01-08 10:26:04
 authors:
   - brunopiske
-slug: /iluminacao-natalina-com-arduino-temporizador-e-ldr/
+slug: iluminacao-natalina-com-arduino-temporizador-e-ldr
 categories:
   - Hardware
   - DIY

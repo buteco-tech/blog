@@ -4,7 +4,7 @@ title: Sensor de temperatura e umidade no Arduino
 date: 2015-07-09 21:29:14
 authors:
   - alexandrevicenzi
-slug: /sensor-de-temperatura-e-umidade-no-arduino/
+slug: sensor-de-temperatura-e-umidade-no-arduino
 categories:
   - Hardware
   - DIY

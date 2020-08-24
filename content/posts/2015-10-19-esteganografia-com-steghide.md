@@ -4,7 +4,7 @@ title: Esteganografia com Steghide
 date: 2015-10-19 21:29:19
 authors:
   - daniel_magevski
-slug: /esteganografia-com-steghide/
+slug: esteganografia-com-steghide
 images:
   - /images/wp-content/uploads/2015/09/steg-logo.jpg
 categories:

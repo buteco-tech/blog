@@ -6,7 +6,7 @@ summary: |
 date: 2015-04-29 09:47:34
 authors:
   - marcossouza
-slug: /novidades-que-virao-no-linux-4-1/
+slug: novidades-que-virao-no-linux-4-1
 images:
   - /images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg
 categories:

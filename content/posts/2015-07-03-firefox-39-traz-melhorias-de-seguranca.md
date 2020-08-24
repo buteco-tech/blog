@@ -7,7 +7,7 @@ summary: |
 date: 2015-07-03 12:40:21
 authors:
   - alexandrevicenzi
-slug: /firefox-39-traz-melhorias-de-seguranca/
+slug: firefox-39-traz-melhorias-de-seguranca
 images:
   - /images/wp-content/uploads/2015/05/firefox-logo.bee1d85af18f-e1431444837127.png
 categories:

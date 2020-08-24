@@ -5,7 +5,7 @@ summary: |
 date: 2015-06-15 23:13:07
 authors:
   - marcooliveira
-slug: /dica-resetando-senha-do-root-centos-7/
+slug: dica-resetando-senha-do-root-centos-7
 categories:
   - Tutoriais
   - Distros

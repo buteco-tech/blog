@@ -4,7 +4,7 @@ title: O que houve com o hacking?
 date: 2015-05-06 00:27:09
 authors:
   - marcossouza
-slug: /o-que-houve-com-o-hacking/
+slug: o-que-houve-com-o-hacking
 categories:
   - Discussões
 tags:

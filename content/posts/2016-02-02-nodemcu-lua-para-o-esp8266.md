@@ -6,7 +6,7 @@ summary: |
 date: 2016-02-02 22:22:16
 authors:
   - alexandrevicenzi
-slug: /nodemcu-lua-para-o-esp8266/
+slug: nodemcu-lua-para-o-esp8266
 images:
   - /images/wp-content/uploads/2016/02/nodeMCU-logo-300x300-e1454377964183.png
 categories:

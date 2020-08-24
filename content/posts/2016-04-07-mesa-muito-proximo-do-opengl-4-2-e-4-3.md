@@ -6,7 +6,7 @@ summary: |
 date: 2016-04-07 13:04:15
 authors:
   - marcossouza
-slug: /mesa-muito-proximo-do-opengl-4-2-e-4-3/
+slug: mesa-muito-proximo-do-opengl-4-2-e-4-3
 images:
   - /images/wp-content/uploads/2015/07/attachment.cgi_.png
 categories:

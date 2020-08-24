@@ -6,7 +6,7 @@ summary: |
 date: 2015-03-17 00:53:54
 authors:
   - alexandrevicenzi
-slug: /instalando-o-alien-no-opensuse/
+slug: instalando-o-alien-no-opensuse
 images:
   - /images/wp-content/uploads/2015/03/deb-rpm-pkg.png
 categories:

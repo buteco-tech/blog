@@ -4,7 +4,7 @@ title: Git 2.2 está chegando com várias mudanças
 date: 2014-11-10 21:43:11
 authors:
   - alexandrevicenzi
-slug: /git-2-2-esta-chegando-com-varias-mudancas/
+slug: git-2-2-esta-chegando-com-varias-mudancas
 images:
   - /images/wp-content/uploads/2014/11/Git-Icon-1788C.png
 categories:

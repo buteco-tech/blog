@@ -6,7 +6,7 @@ summary: |
 date: 2015-05-05 00:28:06
 authors:
   - marcossouza
-slug: /projetos-interessantes-do-gsoc-2015/
+slug: projetos-interessantes-do-gsoc-2015
 images:
   - /images/wp-content/uploads/2015/05/gsoc2015-300x270.jpg
 categories:

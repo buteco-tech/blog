@@ -4,7 +4,7 @@ title: Produtividade no LibreOffice
 date: 2015-09-16 23:16:52
 authors:
   - dsantos
-slug: /produtividade-no-libreoffice/
+slug: produtividade-no-libreoffice
 categories:
   - Tutoriais
 tags:

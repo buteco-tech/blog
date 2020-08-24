@@ -4,7 +4,7 @@ title: Apigility, Web Service com Zend Framework
 date: 2014-10-02 08:33:20
 authors:
   - jaswdr
-slug: /apigility-web-service-com-zend-framework/
+slug: apigility-web-service-com-zend-framework
 categories:
   - Ferramentas
 tags:

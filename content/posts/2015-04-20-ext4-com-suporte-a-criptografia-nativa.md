@@ -6,7 +6,7 @@ summary: |
 date: 2015-04-20 17:26:16
 authors:
   - alexandrevicenzi
-slug: /ext4-com-suporte-a-criptografia-nativa/
+slug: ext4-com-suporte-a-criptografia-nativa
 images:
   - /images/wp-content/uploads/2015/04/ext4.png
 categories:
