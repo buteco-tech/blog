@@ -1,12 +1,17 @@
 ---
 title: "Criando seu cluster Kubernetes com apenas um comando"
-summary: "Criar um cluster Kubernetes pronto para produção pode não ser simples, veja como criar um usando apenas um único comando."
-tagline: "Criar cluster kubernetes com apenas um comando"
-date: 2020-08-29 08:00:00
+summary: "Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando."
+tagline: "Configurando um cluster na AWS de forma simples e fácil"
+date: 2020-08-27 08:00:00
 categories:
   - Desenvolvimento
+  - Ferramentas
 tags:
   - kubernetes
+  - cloud
+  - computing
+  - aws
+  - eksctl
 slug: criando-cluster-kubernetes
 authors:
   - jaswdr
@@ -74,10 +79,10 @@ Alguns parâmetros podem já ser auto-explicativos mas vamos entender cada um.
 - `--node-volume-size` e `--node-volume-type` informam o tamanho do volume de cada instância (volume do EBS) e o tipo, veja mais detalhes de vantagens e desvantagens de cada tipo de volume na [documentação oficial](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html).
 - `--ssh-access`: permite acesso via protocolo `ssh` a cada instância, isso pode lhe ajudar caso queira realizar algum debug, por padrão esse acesso é desativado.
 - `--external-dns-access`: exporta e libera o acesso externo a provedores de DNS, permitindo que suas instâncias recebam trafego externo. 
-- `--full-ecr-access`: habilita a integração com o serviço ECR da AWS, podendo por exemplo usar repositórios privados de imagens de containers.
+- `--full-ecr-access`: habilita a integração com o serviço ECR da AWS, podendo por exemplo, usar repositórios privados de imagens de containers.
 - `--set-kubeconfig-context`, `--auto-kubeconfig` e `--write-kubeconfig`: geram o arquivo de configuração e acesso ao cluster.
 
-Executando o comando acima teremos algumas informações sendo impressas no terminal.
+Executando o comando acima teremos algumas informações no terminal.
 
 ```bash
 [ℹ]  eksctl version 0.25.0
@@ -124,7 +129,7 @@ Em resumo o que o comando acima está fazendo é uma nova stack no CloudFormatio
 [✔]  EKS cluster "exemplo" in "eu-west-1" region is ready
 ```
 
-Dentre diversas informações, podemos ver que a ultima mensagem indica que o cluster `exemplo` na região `eu-west-1` está pronto, para provar isso podemos testar alguns comandos, perceba que foi gerado um arquivo de configuração, o caminho para o arquivo pode ser visto na penultima linha, no meu caso `/home/jaswdr/.kube/eksctl/clusters/exemplo`, podemos usar tanto o comando que foi gerado usando a opção `--kubeconfig` ou usar a variável de ambiente `KUBECONFIG`
+Dentre diversas informações, podemos ver que a última mensagem indica que o cluster `exemplo` na região `eu-west-1` está pronto, para provar isso podemos testar alguns comandos, perceba que foi gerado um arquivo de configuração, o caminho para o arquivo pode ser visto na penúltima linha, no meu caso `/home/jaswdr/.kube/eksctl/clusters/exemplo`, podemos usar tanto o comando que foi gerado usando a opção `--kubeconfig` ou usar a variável de ambiente `KUBECONFIG`
 
 ```bash
 $ export KUBECONFIG=$HOME/.kube/eksctl/clusters/exemplo
@@ -135,10 +140,10 @@ ip-192-168-36-217.eu-west-1.compute.internal   Ready    <none>   15m   v1.17.9-e
 ip-192-168-76-142.eu-west-1.compute.internal   Ready    <none>   15m   v1.17.9-eks-4c6976s
 ```
 
-Por fim temos nosso cluster, com 3 nodes e pronto para produção e pronto para você usar todos os comandos disponíveis do `kubectl`.
+Por fim temos nosso cluster pronto para uso em produção, e disponível para usar com todos os comandos do `kubectl`.
 
 > Importante: Para excluir o cluster que acabamos de criar e remover todos os recursos relacionado ao cluster basta executar o comando `eksctl delete cluster --name exemplo`
 
 ## Conclusão
 
-O `eksctl` possui varias outras opções, como escalar para aumentar ou diminuir a quantidade de hosts ou criar um auto-scale para que isso seja feito de forma automática, contudo isso é algo que você pode buscar na [documentação oficial](https://eksctl.io/) ou comentar abaixo se quiser mais artigos sobre o assunto, de qualquer forma espero que o conteúdo aqui tenha sido útil a você que quer começar a usar o Kubernetes em produção usando a nuvem da AWS. Até a próxima!
+O `eksctl` possui várias outras opções, como escalar para aumentar ou diminuir a quantidade de hosts ou criar um auto-scale para que isso seja feito de forma automática, contudo isso é algo que você pode buscar na [documentação oficial](https://eksctl.io/) ou comentar abaixo se quiser mais artigos sobre o assunto, de qualquer forma espero que o conteúdo aqui tenha sido útil a você que quer começar a usar o Kubernetes em produção usando a nuvem da AWS. Até a próxima!
