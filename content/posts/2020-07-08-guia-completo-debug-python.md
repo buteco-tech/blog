@@ -1,7 +1,6 @@
 ---
 title: "Guia completo de Debug em Python"
-# summary: ""
-# tagline: ""
+summary: "Existem diversas técnicas e ferramentas no mundo Python para ajudar na tarefa de debug, confira algumas delas para facilitar sua vida."
 date: 2020-07-08 08:00:00
 categories:
   - Desenvolvimento

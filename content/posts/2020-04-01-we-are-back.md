@@ -5,6 +5,10 @@ date: 2020-04-01 08:00:00
 slug: we-are-back
 authors:
   - buteco
+categories:
+  - Notícias
+tags:
+  - novidades
 images:
   - /images/posts/capa-we-are-back.jpg
 ---

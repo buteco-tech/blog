@@ -6,6 +6,14 @@ date: 2020-04-21 12:00:00
 slug: comecando-com-sql-alchemy
 authors:
   - jaswdr
+categories:
+  - Tutoriais
+  - Desenvolvimento
+tags:
+  - python
+  - sql
+  - orm
+  - banco de dados
 images:
   - /images/posts/sql-alchemy-logo.png
 ---
