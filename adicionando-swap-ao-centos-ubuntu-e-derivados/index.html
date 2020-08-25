@@ -7,7 +7,9 @@
 
   <title>Adicionando Swap ao CentOS, Ubuntu e derivados &middot; Buteco Tecnológico</title>
 
-  <meta name="description" content="" />
+  <meta name="description" content="Para você que acabou de criar a sua primeira VM no Digital Ocean e pegou logo de cara a de 512 de RAM, você vai se ver no aperto dependendo da aplicação que colocar para executar nela. Para solucionar possíveis problemas de falta de memória vamos adicionar Swap a esta máquina tão simplória.
+Aplicações simples como o MySQL e o Jenkins rodando nessas máquinas poder gerar alguma dor de cabeça caso você não identifique que o problema é falta de memória. Por exemplo, no meu caso o Jenkins parava a execução dos testes no meio, pois recebia um SIGKILL de alguém, provavelmente do S.O. O mais estranho é que o Jenkins continuava executando, apenas parava o Job que estava em execução. A solução foi bem simples, adicionar uma Swap, já que não queríamos aumentar os valores com VMs do DO.
+O tutorial de hoje é baseado no CentOS e no Ubuntu. Fiz a mesma configuração em duas VMs distintas. A maioria das distros suportam os comandos e sistemas de arquivos aqui mencionados." />
 
 
 
@@ -61,14 +63,14 @@ O tutorial de hoje é baseado no CentOS e no Ubuntu. Fiz a mesma configuração 
 <link rel="shortcut icon" href="/logos/capybara_64.png">
 
 
-  <link type="text/css" rel="stylesheet" href="/css/custom.css">
-
-
   
 
 
   
-<script data-ad-client="ca-pub-6625957038449899" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+  
+<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 
 </head>
@@ -612,8 +614,13 @@ vm.vfs_cache_pressure=50
 </footer>
 
 
-  <script src="/vendor/fontawesome/js/all.min.js"></script>
-<script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script><script src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
+  <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
+<script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
+  
+  <script type="text/javascript" src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script>
+
+  
+  <script type="text/javascript" src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
 
 
 
@@ -630,7 +637,7 @@ if (!doNotTrack) {
 
 
 
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
+<script type="text/javascript" defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
 
 
 </body>

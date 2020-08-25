@@ -7,7 +7,10 @@
 
   <title>Linux API: pthreads - Parte 1 &middot; Buteco Tecnológico</title>
 
-  <meta name="description" content="" />
+  <meta name="description" content="Processadores de múltiplos núcleos já são uma realidade nos computadores da grande maioria dos usuários comuns. Em meio a esse avanço podemos escrever programas que executam várias linhas de processamento em paralelo, podendo fazer com que esses programas tenham um tempo de resposta menor.
+Para tal, este post mostrará como utilizar POSIX threads na linguagem C.
+O que são threads?
+Threads são linhas de execução para processos. Ao iniciar um processo, uma thread principal é iniciada, um processo então pode criar outras threads para que estas executem tarefas específicas e de forma paralela. Quando temos uma CPU com um único núcleo, dizemos que as threads executam de forma concorrente, uma vez que a CPU só pode executar uma thread por vez, mas há mais que uma para ser executada ao &#34;mesmo tempo&#34;. Já quando temos uma CPU com vários núcleos, as threads podem ser executadas tanto de forma concorrente como em paralelo, pois o scheduler pode priorizar outros programas do computador além do seu." />
 
 
 
@@ -64,14 +67,14 @@ Threads são linhas de execução para processos. Ao iniciar um processo, uma th
 <link rel="shortcut icon" href="/logos/capybara_64.png">
 
 
-  <link type="text/css" rel="stylesheet" href="/css/custom.css">
-
-
   
 
 
   
-<script data-ad-client="ca-pub-6625957038449899" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+  
+<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 
 </head>
@@ -579,8 +582,13 @@ Resultado: 1100</pre>
 </footer>
 
 
-  <script src="/vendor/fontawesome/js/all.min.js"></script>
-<script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script><script src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
+  <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
+<script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
+  
+  <script type="text/javascript" src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script>
+
+  
+  <script type="text/javascript" src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
 
 
 
@@ -597,7 +605,7 @@ if (!doNotTrack) {
 
 
 
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
+<script type="text/javascript" defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
 
 
 </body>

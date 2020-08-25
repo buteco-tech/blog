@@ -7,7 +7,9 @@
 
   <title>Utilizando a API REST do Docker com Python &middot; Buteco Tecnológico</title>
 
-  <meta name="description" content="" />
+  <meta name="description" content="O Docker é uma plataforma para construir e executar aplicações distribuídas. Com ele é possível executar um bash em um ambiente Debian mesmo estando dentro um Fedora, por exemplo. Seu funcionamento se assemelha ao de uma máquina virtual, mas as aplicações executadas no Docker estão de fato sendo executados no sistema host, ou seja, não existe a camada de emulação.
+Isso se deve à utilização de templates de imagens do Debian (existem imagens de sistemas inteiros, como Debian, Ubuntu, e também de aplicações, como Apache, MySQL e etc). Para mais informações sobre o Docker, basta verificar a página do projeto.
+Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifique como instalá-lo em sua distribuição. Após instalado, você precisará iniciá-lo através do docker daemon para receber requisições HTTP, além das requisições por socket (este é utilizado pelo docker client). Antes de iniciá-lo com estas opções, você precisará ter certeza que o mesmo não esteja executando. Para tal, basta executar:" />
 
 
 
@@ -61,14 +63,14 @@ Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifi
 <link rel="shortcut icon" href="/logos/capybara_64.png">
 
 
-  <link type="text/css" rel="stylesheet" href="/css/custom.css">
-
-
   
 
 
   
-<script data-ad-client="ca-pub-6625957038449899" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+  
+<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 
 </head>
@@ -566,8 +568,13 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
 </footer>
 
 
-  <script src="/vendor/fontawesome/js/all.min.js"></script>
-<script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script><script src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
+  <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
+<script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
+  
+  <script type="text/javascript" src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script>
+
+  
+  <script type="text/javascript" src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
 
 
 
@@ -584,7 +591,7 @@ if (!doNotTrack) {
 
 
 
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
+<script type="text/javascript" defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
 
 
 </body>

@@ -7,7 +7,16 @@
 
   <title>Confira algumas novidades do kernel Linux 4.3 &middot; Buteco Tecnológico</title>
 
-  <meta name="description" content="" />
+  <meta name="description" content="Como de costume, sempre tentamos mostrar aqui algumas novidades das releases do kernel Linux. Segue uma lista abaixo do que será encontrado na versão 4.3, que já se encontra no rc6 e que em breve será lançado:
+DRM (Direct Rendering Manager)/Gráficos
+
+	Intel Skylake &#34;Gen9&#34; agora é suportado por padrão e não mais é necessário ativa-lo utilizando uma opção do kernel command-line
+	Suporte inicial para  AMD R9 Fury &#39;Fiji&#39;, mas sem gerenciamento de energia ou re-cloking (o que mantém a performance baixa até então).
+	Um grande retrabalho foi feito no Nouveau, afim de facilitar futuras melhorias no driver, além de ter algumas melhorias no re-cloking de algumas GPUs da Nvidia. Embora tenham acontecido estas melhorias, a performance até agora é a mesma.
+	Suporte a OpenGL 3.3 para o VMware. Este suporte se faz necessário quando o Linux é executado como guest VM no VMware workstation 12 e a utilização do driver VMWgfx no guest, em conjunto com o novo Mesa 11.0.
+	Melhorias mínimas em drivers de framebuffer
+	Várias mudanças para gráficos Intel e diversas melhorias em drivers DRM
+" />
 
 
 
@@ -82,14 +91,14 @@ DRM (Direct Rendering Manager)/Gráficos
 <link rel="shortcut icon" href="/logos/capybara_64.png">
 
 
-  <link type="text/css" rel="stylesheet" href="/css/custom.css">
-
-
   
 
 
   
-<script data-ad-client="ca-pub-6625957038449899" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+  
+<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 
 </head>
@@ -581,8 +590,13 @@ De minha parte, realmente fiquei curioso sobre o tempo de <em>boot</em> e sobre 
 </footer>
 
 
-  <script src="/vendor/fontawesome/js/all.min.js"></script>
-<script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script><script src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
+  <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
+<script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
+  
+  <script type="text/javascript" src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script>
+
+  
+  <script type="text/javascript" src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
 
 
 
@@ -599,7 +613,7 @@ if (!doNotTrack) {
 
 
 
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
+<script type="text/javascript" defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
 
 
 </body>

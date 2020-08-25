@@ -7,7 +7,17 @@
 
   <title>Hands on: quilt &middot; Buteco Tecnológico</title>
 
-  <meta name="description" content="" />
+  <meta name="description" content="Quilt é uma ferramenta para criação e manipulação de patches de código fonte. Sua utilização é bem simples e permite criar patches de forma bem prática. Ele foi originalmente criado pelo desenvolvedor Andrew Morton, sendo uma série de scripts para gerenciar patches no Linux. Mas Andreas Grünbacher, um outro desenvolvedor, melhorou os scripts de Andrew para gerar constumizações do kernel para o SuSe Linux.
+Para um exemplo prático, vejamos a seguinte estrutura de arquivos:
+
+[marcos@puppet pytabs]$ ls
+main.py  new_tab.py  new_tab.pyc  new_tab.ui  window.ui
+
+Para criar um novo patch, execute:
+
+quilt new alteracao1.patch
+
+Após a execução deste comando, será criada uma pasta &ldquo;patches&rdquo;, que conterá todos os patches criados. Por hora esta pasta contém apenas o arquivo series, já que não adicionamos e nem alteramos nenhum arquivo para adicionar ao patch recem criado. O arquivo series mostra a ordem em que os patches criados serão aplicados." />
 
 
 
@@ -85,14 +95,14 @@ Após a execução deste comando, será criada uma pasta &ldquo;patches&rdquo;, 
 <link rel="shortcut icon" href="/logos/capybara_64.png">
 
 
-  <link type="text/css" rel="stylesheet" href="/css/custom.css">
-
-
   
 
 
   
-<script data-ad-client="ca-pub-6625957038449899" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+  
+<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 
 </head>
@@ -687,8 +697,13 @@ rename</p>
 </footer>
 
 
-  <script src="/vendor/fontawesome/js/all.min.js"></script>
-<script src="/vendor/jquery/jquery.min.js"></script><script src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script><script src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
+  <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
+<script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
+  
+  <script type="text/javascript" src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script>
+
+  
+  <script type="text/javascript" src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
 
 
 
@@ -705,7 +720,7 @@ if (!doNotTrack) {
 
 
 
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
+<script type="text/javascript" defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
 
 
 </body>
