@@ -68,7 +68,7 @@
       <pubDate>Fri, 31 Jul 2020 08:00:00 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/conhecendo-o-btrfs/</guid>
-      <description>O sistema de arquivos Btrfs foi criando em 2007, por engenheiros que trabalhavam na Oracle e FusionIO.</description>
+      <description>O sistema de arquivos Btrfs foi criando em 2007 e foi concebido com a ideia de ser um sistema de arquivos que possuísse funcionalidades semelhantes ao o que o ZFS oferecia no Solaris e variantes do BSD.</description>
       
       <image>
         <url>https://butecotecnologico.com.br/images/posts/btrfs-logo.png</url>
@@ -100,7 +100,7 @@
       <pubDate>Wed, 08 Jul 2020 08:00:00 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/guia-completo-debug-python/</guid>
-      <description>Uma das atividades que mais realizamos durante o desenvolvendo é o debug para analisar algum erro ou até mesmo saber se o código esta executando da forma que gostaríamos.</description>
+      <description>Existem diversas técnicas e ferramentas no mundo Python para ajudar na tarefa de debug, confira algumas delas para facilitar sua vida.</description>
       
       <image>
         <url>https://butecotecnologico.com.br/images/posts/python-logo.png</url>
@@ -532,20 +532,6 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-40/</link>
-      <pubDate>Fri, 22 Apr 2016 11:25:27 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-40/</guid>
-      <description>Via 9gag</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>GNOME: Removendo ícone do legacy tray</title>
       <link>https://butecotecnologico.com.br/gnome-removendo-icone-do-legacy-tray/</link>
       <pubDate>Wed, 20 Apr 2016 23:16:52 +0000</pubDate>
@@ -609,20 +595,6 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
         <link>https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-39/</link>
-      <pubDate>Fri, 08 Apr 2016 13:18:57 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-39/</guid>
-      <description>Basicamente assim que funciona nos tempos de hoje :D</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -707,22 +679,6 @@ Porém no Linux, em alguns casos, o reconhecimento de dispositivos USB, Webcam e
     </item>
     <item>
       
-      <title>Vaga para programador Linux/C em Blumenau</title>
-      <link>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau-2/</link>
-      <pubDate>Mon, 28 Mar 2016 13:14:20 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau-2/</guid>
-      <description>Desenvolvedor de Software – Linux e C 
-Responsabilidades
-Esta posição é responsável por desenhar e implementar aplicativos em SW para sistema operacional em Linux, incluindo desenvolvimento de novos aplicativos, melhorias e correções em aplicativos existentes, instalação de pacotes de aplicativos de código aberto.</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Lançamentos Novatec: Android, Pentest e Segurança Web</title>
       <link>https://butecotecnologico.com.br/lancamentos-novatec-android-pentest-e-seguranca-web/</link>
       <pubDate>Tue, 22 Mar 2016 16:45:00 +0000</pubDate>
@@ -751,20 +707,6 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
         <link>https://butecotecnologico.com.br/posix-regular-expression-em-c/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-38/</link>
-      <pubDate>Fri, 11 Mar 2016 15:22:54 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-38/</guid>
-      <description>StackOverflow é meu pastor, e nada me faltará!</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -884,22 +826,6 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-37/</link>
-      <pubDate>Fri, 26 Feb 2016 15:33:23 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-37/</guid>
-      <description>O povo do SQL vai a loucura :)
-
- Via Vida de Programador</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Novidades que virão no GCC 6</title>
       <link>https://butecotecnologico.com.br/novidades-que-virao-no-gcc-6/</link>
       <pubDate>Thu, 25 Feb 2016 23:37:14 +0000</pubDate>
@@ -950,20 +876,6 @@ O OpenVPN é um software livre e open-source para criar redes privadas virtuais 
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-36/</link>
-      <pubDate>Fri, 19 Feb 2016 17:01:27 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-36/</guid>
-      <description>Para quem está tentando aprender C++ e acha que é difícil :P</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Gerando bitlink atravéz da API do Bitly</title>
       <link>https://butecotecnologico.com.br/gerando-bitlink-atravez-da-api-do-bitly/</link>
       <pubDate>Fri, 19 Feb 2016 16:52:31 +0000</pubDate>
@@ -982,10 +894,10 @@ O OpenVPN é um software livre e open-source para criar redes privadas virtuais 
     <item>
       
       <title>A Importância do Open Source na Pesquisa de Mercado</title>
-      <link>https://butecotecnologico.com.br/4796/</link>
+      <link>https://butecotecnologico.com.br/importancia-do-open-source-na-pesquisa-de-mercado/</link>
       <pubDate>Thu, 18 Feb 2016 16:32:59 +0000</pubDate>
       
-      <guid>https://butecotecnologico.com.br/4796/</guid>
+      <guid>https://butecotecnologico.com.br/importancia-do-open-source-na-pesquisa-de-mercado/</guid>
       <description>Um dos pontos mais estratégicos no desenvolvimento de um produto é a sua validação frente ao mercado.</description>
       <image>
         <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
@@ -1046,20 +958,6 @@ O OpenVPN é um software livre e open-source para criar redes privadas virtuais 
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-35/</link>
-      <pubDate>Fri, 05 Feb 2016 12:55:20 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-35/</guid>
-      <description>Conheça o Bugginho Developer</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Relógio RTC com o ESP8266</title>
       <link>https://butecotecnologico.com.br/rtc-com-esp8266/</link>
       <pubDate>Fri, 05 Feb 2016 12:38:14 +0000</pubDate>
@@ -1111,20 +1009,6 @@ O OpenVPN é um software livre e open-source para criar redes privadas virtuais 
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-34/</link>
-      <pubDate>Fri, 29 Jan 2016 14:30:38 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-34/</guid>
-      <description>Via 9gag</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Câmera IP com Webcam e Motion</title>
       <link>https://butecotecnologico.com.br/camera-ip-com-webcam-e-motion/</link>
       <pubDate>Thu, 28 Jan 2016 12:29:01 +0000</pubDate>
@@ -1157,20 +1041,6 @@ O OpenVPN é um software livre e open-source para criar redes privadas virtuais 
         <link>https://butecotecnologico.com.br/pm2/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-33/</link>
-      <pubDate>Fri, 22 Jan 2016 12:58:05 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-33/</guid>
-      <description>Via TI da Depressão</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -1209,20 +1079,6 @@ O OpenVPN é um software livre e open-source para criar redes privadas virtuais 
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-32/</link>
-      <pubDate>Fri, 15 Jan 2016 14:16:24 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-32/</guid>
-      <description>Sexta da Tirinha #32</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Servo motor com Raspberry Pi</title>
       <link>https://butecotecnologico.com.br/servo-motor-com-raspberry-pi/</link>
       <pubDate>Wed, 13 Jan 2016 11:05:44 +0000</pubDate>
@@ -1253,20 +1109,6 @@ Hoje vamos ver um exemplo de como trabalhar com um servomotor no Raspberry PI us
         <link>https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-31/</link>
-      <pubDate>Fri, 08 Jan 2016 15:13:16 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-31/</guid>
-      <description>Via BugginhoDeveloper</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -1403,20 +1245,6 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-30/</link>
-      <pubDate>Fri, 18 Dec 2015 08:53:04 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-30/</guid>
-      <description>A todos os backend developers :)</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Bash: Reverse Search</title>
       <link>https://butecotecnologico.com.br/bash-reverse-search/</link>
       <pubDate>Wed, 16 Dec 2015 21:22:36 +0000</pubDate>
@@ -1514,20 +1342,6 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-29/</link>
-      <pubDate>Fri, 27 Nov 2015 13:09:24 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-29/</guid>
-      <description>Wow, such browser :D</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>VIM Tips: Trabalhando com abas</title>
       <link>https://butecotecnologico.com.br/vim-tips-trabalhando-com-abas/</link>
       <pubDate>Thu, 26 Nov 2015 21:24:08 +0000</pubDate>
@@ -1597,20 +1411,6 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-28/</link>
-      <pubDate>Fri, 20 Nov 2015 11:07:22 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-28/</guid>
-      <description>Via 9gag</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Black Friday de Componentes Eletrônicos é na FILIPEFLOP</title>
       <link>https://butecotecnologico.com.br/black-friday-de-componentes-eletronicos-e-na-filipeflop/</link>
       <pubDate>Wed, 18 Nov 2015 22:54:30 +0000</pubDate>
@@ -1658,21 +1458,6 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
         <link>https://butecotecnologico.com.br/codeception-testes-de-interface/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-27/</link>
-      <pubDate>Fri, 13 Nov 2015 16:14:02 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-27/</guid>
-      <description>Isso me lembra os meus tempos de Delphi (kkkk)
-Via xkcd</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -1725,20 +1510,6 @@ Via xkcd</description>
         <link>https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-26/</link>
-      <pubDate>Fri, 06 Nov 2015 12:32:09 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-26/</guid>
-      <description>E a guerra santa está por ai, em cada empresa ou grupo de amigos!</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -1842,20 +1613,6 @@ Via xkcd</description>
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-25/</link>
-      <pubDate>Fri, 30 Oct 2015 06:38:29 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-25/</guid>
-      <description>Via Bugginho Developer</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Recuperando dados perdidos do git-stash</title>
       <link>https://butecotecnologico.com.br/recuperando-dados-perdidos-do-git-stash/</link>
       <pubDate>Wed, 28 Oct 2015 21:29:14 +0000</pubDate>
@@ -1921,21 +1678,6 @@ Via xkcd</description>
         <link>https://butecotecnologico.com.br/cafe-com-software-livre-testemunho/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-24/</link>
-      <pubDate>Fri, 23 Oct 2015 10:08:39 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-24/</guid>
-      <description>ba dum tss
-Via 9gag</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -2065,20 +1807,6 @@ Via 9gag</description>
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-23/</link>
-      <pubDate>Fri, 16 Oct 2015 09:28:03 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-23/</guid>
-      <description>Está é uma regra de ouro ao trabalhar com Banco de Dados.</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Codeception, testes em PHP para todos</title>
       <link>https://butecotecnologico.com.br/codeception-testes-em-php-para-todos/</link>
       <pubDate>Wed, 14 Oct 2015 22:51:45 +0000</pubDate>
@@ -2110,20 +1838,6 @@ Via 9gag</description>
         <link>https://butecotecnologico.com.br/nvidia-anuncia-driver-358-beta-para-linux-solaris-e-freebsd/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-22/</link>
-      <pubDate>Fri, 09 Oct 2015 10:01:45 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-22/</guid>
-      <description>Via python-goto</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -2178,20 +1892,6 @@ Via 9gag</description>
         <link>https://butecotecnologico.com.br/sorteio-de-um-e-book/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-21/</link>
-      <pubDate>Fri, 02 Oct 2015 09:12:22 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-21/</guid>
-      <description>Se você é desenvolvedor Web, você provavelmente já teve esse problema também :P</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -2251,21 +1951,6 @@ No entanto, cuidado com atualizações via pacotes pois as vezes tendem a ter al
       <description>&lt;p style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/GNU.png&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-3486&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/GNU.png&#34; alt=&#34;GNU&#34; width=&#34;350&#34; height=&#34;300&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &amp;nbsp;
 &lt;p&gt;Há 32 anos, em 27 de setembro de 1983, &lt;a href=&#34;https://pt.wikipedia.org/wiki/Richard_Matthew_Stallman&#34; target=&#34;_blank&#34;&gt;Richard Matthew Stallman&lt;/a&gt; &lt;a href=&#34;http://www.gnu.org/gnu/initial-announcement.html&#34; target=&#34;_blank&#34;&gt;anunciava&lt;/a&gt; ao mundo o &lt;a href=&#34;http://www.gnu.org&#34; target=&#34;_blank&#34;&gt;projeto GNU&lt;/a&gt; (sigla para Gnu Não é Unix).&lt;/p&gt;</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-20/</link>
-      <pubDate>Fri, 25 Sep 2015 09:18:56 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-20/</guid>
-      <description>Quem nunca né?
-Via 9GAG</description>
       <image>
         <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
         <title>Buteco Tecnológico</title>
@@ -2362,22 +2047,6 @@ Google anunciou ontem em seu &lt;a href=&#34;http://google-opensource.blogspot.c
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-19/</link>
-      <pubDate>Fri, 18 Sep 2015 12:11:32 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-19/</guid>
-      <description>
-Clique na imagem para aumentar o tamanho
-Via Cyanide &amp;amp; Happiness</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Novatec lança livro para pais e crianças aprenderem programação juntos</title>
       <link>https://butecotecnologico.com.br/novatec-lanca-livro-para-pais-e-criancas-aprenderem-programacao-juntos/</link>
       <pubDate>Fri, 18 Sep 2015 09:06:50 +0000</pubDate>
@@ -2459,20 +2128,6 @@ Via Cyanide &amp;amp; Happiness</description>
         <link>https://butecotecnologico.com.br/criando-um-git-server-local/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-18/</link>
-      <pubDate>Fri, 11 Sep 2015 19:12:21 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-18/</guid>
-      <description>Hoje nossa tirinha é um pouco diferente, na verdade se trata de um desabafo de um Web Designer.</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -2569,20 +2224,6 @@ Via Cyanide &amp;amp; Happiness</description>
         <link>https://butecotecnologico.com.br/utilizando-shared-objects-no-python/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-17/</link>
-      <pubDate>Fri, 28 Aug 2015 14:05:32 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-17/</guid>
-      <description>Será que um dia irão fazer um filme sobre nós? :P</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -2807,22 +2448,6 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-16/</link>
-      <pubDate>Fri, 17 Jul 2015 14:06:00 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-16/</guid>
-      <description>
- Via Vida de Programador
- </description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Instalando o Supervisor: Um sistema de controle de processos</title>
       <link>https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/</link>
       <pubDate>Wed, 15 Jul 2015 08:38:44 +0000</pubDate>
@@ -2855,40 +2480,6 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
         <link>https://butecotecnologico.com.br/instalando-o-ubuntu-mate-15-04-no-raspberry-pi-2/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Vaga para programador Linux/C em Blumenau</title>
-      <link>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau/</link>
-      <pubDate>Mon, 13 Jul 2015 21:51:56 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/vaga-para-programador-linuxc-em-blumenau/</guid>
-      <description>&lt;p&gt;O profissional trabalhará para empresa com sede em Blumenau-SC, que por sua vez foi contratada  para prestar serviços a uma empresa com Sede nos Estados Unidos (&lt;a class=&#34;moz-txt-link-abbreviated&#34; href=&#34;http://www.zpesystems.com&#34;&gt;&lt;a href=&#34;http://www.zpesystems.com&#34;&gt;www.zpesystems.com&lt;/a&gt;&lt;/a&gt;) , no desenvolvimento de Software.&lt;/p&gt;
-&lt;p&gt;Desenvolvedor de Software para ambiente Linux e C&lt;/p&gt;
-&lt;p&gt;Responsabilidades: Esta posição é responsável por desenhar e
-implementar aplicativos em SW para sistema operacional em Linux,
-incluindo desenvolvimento de novos aplicativos, melhorias e correções
-em aplicativos existentes, instalação de pacotes de aplicativos de
-código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-15/</link>
-      <pubDate>Fri, 10 Jul 2015 14:29:41 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-15/</guid>
-      <description>Via Vida de Suporte</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -2925,20 +2516,6 @@ código aberto. Esta posição responde para o supervisor do time.&lt;/p&gt;</de
         <link>https://butecotecnologico.com.br/veja-o-que-vira-de-novo-no-linux-4-2/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-14/</link>
-      <pubDate>Fri, 03 Jul 2015 12:47:11 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-14/</guid>
-      <description>Mais uma tirinha para alegrar sua sexta-feira :)</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -3082,20 +2659,6 @@ quilt new alteracao1.patch
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-13/</link>
-      <pubDate>Fri, 26 Jun 2015 00:58:30 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-13/</guid>
-      <description>Via Vida de Programador</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Linux Mint 17.2 &#34;Rafaela&#34; RC já está disponível</title>
       <link>https://butecotecnologico.com.br/linux-mint-17-2-rafaela-ja-esta-disponivel/</link>
       <pubDate>Wed, 24 Jun 2015 12:57:00 +0000</pubDate>
@@ -3195,20 +2758,6 @@ quilt new alteracao1.patch
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-12/</link>
-      <pubDate>Fri, 12 Jun 2015 10:32:54 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-12/</guid>
-      <description>Sexta da Tirinha #12</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>O dilema do aprendizado de TI</title>
       <link>https://butecotecnologico.com.br/o-dilema-do-aprendizado-de-ti/</link>
       <pubDate>Thu, 11 Jun 2015 23:32:45 +0000</pubDate>
@@ -3253,20 +2802,6 @@ quilt new alteracao1.patch
         <link>https://butecotecnologico.com.br/conheca-o-security-cast/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-11/</link>
-      <pubDate>Fri, 05 Jun 2015 19:15:18 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-11/</guid>
-      <description>Sexta da Tirinha #11</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -3466,20 +3001,6 @@ Sendo assim resolvemos mudar para um novo padrão que atende melhor nossos leito
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-10/</link>
-      <pubDate>Fri, 22 May 2015 13:52:58 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-10/</guid>
-      <description>Via o Vida de Suporte</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>O Buteco está de cara nova</title>
       <link>https://butecotecnologico.com.br/o-buteco-esta-de-cara-nova-2/</link>
       <pubDate>Fri, 22 May 2015 00:37:31 +0000</pubDate>
@@ -3583,20 +3104,6 @@ Não deixe de participar do sorteio do livro PHP Moderno.</description>
         <link>https://butecotecnologico.com.br/rust-1-0-ja-esta-disponivel/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-9/</link>
-      <pubDate>Fri, 15 May 2015 08:18:20 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-9/</guid>
-      <description>Via TI da Depressão</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -3706,20 +3213,6 @@ Mcabber roda sobre a GNU GPL, e tem suporte a GNU/LINUX. Ele é bastante utiliza
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-8/</link>
-      <pubDate>Fri, 08 May 2015 11:29:50 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-8/</guid>
-      <description>Conheça o Programmer&amp;rsquo;s life.</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Sorteio do livro PHP Moderno</title>
       <link>https://butecotecnologico.com.br/sorteio-do-livro-php-moderno/</link>
       <pubDate>Thu, 07 May 2015 00:01:16 +0000</pubDate>
@@ -3780,22 +3273,6 @@ Lembre-se, quanto mais você compartilhar, maior serão as suas chances.</descri
     </item>
     <item>
       
-      <title>Vaga para desenvolvedor Front-end em Blumenau</title>
-      <link>https://butecotecnologico.com.br/vaga-para-desenvolvedor-front-end-em-blumenau/</link>
-      <pubDate>Tue, 05 May 2015 08:33:38 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/vaga-para-desenvolvedor-front-end-em-blumenau/</guid>
-      <description>A Eventials é uma startup fundada em 2011, composta por equipe de empreendedores, designers e hackers. A empresa faz parte do grupo Locaweb, sendo a divisão responsável pelo desenvolvimento de soluções para streaming de vídeo. Junto com a Locaweb recebeu em 2014 os prêmios Great Place to Work e Melhores Empresas para Você Trabalhar.</description>
-      
-      <image>
-        <url>https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/eventials-logo.png</url>
-        <title>Vaga para desenvolvedor Front-end em Blumenau</title>
-        <link>https://butecotecnologico.com.br/vaga-para-desenvolvedor-front-end-em-blumenau/</link>
-      </image>
-      
-    </item>
-    <item>
-      
       <title>Projetos interessantes do GSoC 2015</title>
       <link>https://butecotecnologico.com.br/projetos-interessantes-do-gsoc-2015/</link>
       <pubDate>Tue, 05 May 2015 00:28:06 +0000</pubDate>
@@ -3825,20 +3302,6 @@ Lembre-se, quanto mais você compartilhar, maior serão as suas chances.</descri
         <link>https://butecotecnologico.com.br/valve-disponibiliza-o-openvr-sdk/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-7/</link>
-      <pubDate>Fri, 01 May 2015 20:19:15 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-7/</guid>
-      <description>Esta tirinha é uma homenagem ao nosso colaborador Pedro :)</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -3906,20 +3369,6 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-6/</link>
-      <pubDate>Fri, 24 Apr 2015 13:26:26 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-6/</guid>
-      <description>Via Vida de Suporte.</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Usando a API do Google Analytics no Python</title>
       <link>https://butecotecnologico.com.br/usando-a-api-do-google-analytics-no-python/</link>
       <pubDate>Thu, 23 Apr 2015 23:18:51 +0000</pubDate>
@@ -3976,20 +3425,6 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       <description>O que é FLISoL?
 O Festival Latino-americano de Instalação de Software Livre (FLISoL) é o maior evento da América Latina de divulgação de Software Livre. Ele é realizado desde o ano de 2005, e desde 2008 sua realização acontece no 4º sábado de abril de cada ano.
 Seu principal objetivo é promover o uso de Software Livre, mostrando ao público em geral sua filosofia, abrangência, avanços e desenvolvimento.</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-5/</link>
-      <pubDate>Fri, 17 Apr 2015 09:22:10 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-5/</guid>
-      <description>Não conhece a linguagem de programação D? Então veja este link.</description>
       <image>
         <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
         <title>Buteco Tecnológico</title>
@@ -4079,20 +3514,6 @@ O Nessus é distribuído sob os termos da Licença Pública Geral GNU.</descript
     </item>
     <item>
       
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-4/</link>
-      <pubDate>Fri, 10 Apr 2015 15:56:11 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-4/</guid>
-      <description>Conheça o blog Vida de Programador.</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Novidades do kernel 4.0</title>
       <link>https://butecotecnologico.com.br/novidades-do-kernel-4-0/</link>
       <pubDate>Wed, 08 Apr 2015 23:12:54 +0000</pubDate>
@@ -4122,20 +3543,6 @@ O Nessus é distribuído sob os termos da Licença Pública Geral GNU.</descript
         <link>https://butecotecnologico.com.br/conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-3/</link>
-      <pubDate>Fri, 03 Apr 2015 13:41:43 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-3/</guid>
-      <description>Se você quiser abrir o DOS no Linux, podes utilizar o Wine.</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -4198,21 +3605,6 @@ O Nessus é distribuído sob os termos da Licença Pública Geral GNU.</descript
         <link>https://butecotecnologico.com.br/nuclide-ide-do-facebook-baseada-no-atom/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha-2/</link>
-      <pubDate>Fri, 27 Mar 2015 13:30:30 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha-2/</guid>
-      <description>Saiba mais sobre o Wine aqui.
-Conheça o blog Vida de Programador.</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -4388,20 +3780,6 @@ O Redis é um banco de dados de código aberto, sob a licença BSD, para persist
         <link>https://butecotecnologico.com.br/conhecendo-pipe-e-fifo-parte-final/</link>
       </image>
       
-    </item>
-    <item>
-      
-      <title>Sexta da Tirinha</title>
-      <link>https://butecotecnologico.com.br/sexta-da-tirinha/</link>
-      <pubDate>Fri, 13 Mar 2015 15:19:33 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/sexta-da-tirinha/</guid>
-      <description></description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/tags/model/</link>
-      </image>
     </item>
     <item>
       
@@ -5745,10 +5123,10 @@ print_r($localizacao);
     <item>
       
       <title>Python</title>
-      <link>https://butecotecnologico.com.br/python/</link>
+      <link>https://butecotecnologico.com.br/python-xkcd/</link>
       <pubDate>Mon, 22 Sep 2014 17:08:36 +0000</pubDate>
       
-      <guid>https://butecotecnologico.com.br/python/</guid>
+      <guid>https://butecotecnologico.com.br/python-xkcd/</guid>
       <description>Apenas para descontrair :P
 Via XKCD</description>
       <image>
