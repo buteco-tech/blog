@@ -8,8 +8,7 @@ categories:
   - Ferramentas
 tags:
   - kubernetes
-  - cloud
-  - computing
+  - cloud computing
   - aws
   - eksctl
 slug: criando-cluster-kubernetes
@@ -27,6 +26,8 @@ Criar um cluster Kubernetes não é algo trivial, existem diversos detalhes que 
 
 Existem algumas formas de instalar o `eksctl`, veja abaixo como fazer a instalação para cada sistema operacional.
 
+> Importante: O `eksctl` é focado na nuvem AWS e para poder criar todos os recursos necessários você precisará de uma conta com as permissões corretas.
+
 ### Bash
 
 ```bash
@@ -43,15 +44,13 @@ brew install weaveworks/tap/eksctl
 
 ### Windows
 
-```bash
+```
 chocolatey install eksctl
 ```
 
-> Importante: O `eksctl` é focado na nuvem AWS e para poder criar todos os recursos necessários você precisará de uma conta com as permissões corretas.
-
 ## Criando seu cluster
 
-Depois de instalado, podemos criar nosso cluster usando o comando `eksctl create cluster`, porém esse comando irá usar uma série de parametros padrões que possivelmente não atenderá a sua necessidade. Vamos então utilizar um exemplo para entender melhor algumas das opções disponíveis, veja a seguir:
+Depois de instalado, podemos criar nosso cluster usando o comando `eksctl create cluster`, porém esse comando irá usar uma série de parametros padrões que possivelmente não atenderão a sua necessidade. Vamos então utilizar um exemplo para entender melhor algumas das opções disponíveis, veja a seguir:
 
 ```bash
 eksctl create cluster \
@@ -74,11 +73,11 @@ Alguns parâmetros podem já ser auto-explicativos mas vamos entender cada um.
 
 - `-n`: determina o "nome" do seu cluster, este nome é usado para referenciar o cluster em comandos futuros, como por exemplo quando você quiser aumentar a quantidade de hosts no seu cluster.
 - `-r`: se refere a região aonde seu cluster será criado, neste exemplo estou usando a região de Dublin ou `eu-west-1`, você pode usar qualquer outra região da AWS.
-- `-t`: determina o tipo de instância, o tipo irá determinar fatores como quantidade de CPU e memória, instâncias do tipo `t3.medium` como é o caso do exemplo possuem 2 vCPUs e 4Gb de memória ram, um pouco a mais do que o [mínimo recomendado](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/), veja outras opções de instâncias na [documentação oficial](https://aws.amazon.com/ec2/instance-types/).
+- `-t`: determina o tipo de instância. O tipo irá determinar fatores como quantidade de CPU e memória, instâncias do tipo `t3.medium` como é o caso do exemplo possuem 2 vCPUs e 4Gb de memória ram, um pouco a mais do que o [mínimo recomendado](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/), veja outras opções de instâncias na [documentação oficial](https://aws.amazon.com/ec2/instance-types/).
 - `-N`: quantidade de instâncias que serão criadas.
 - `--node-volume-size` e `--node-volume-type` informam o tamanho do volume de cada instância (volume do EBS) e o tipo, veja mais detalhes de vantagens e desvantagens de cada tipo de volume na [documentação oficial](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html).
-- `--ssh-access`: permite acesso via protocolo `ssh` a cada instância, isso pode lhe ajudar caso queira realizar algum debug, por padrão esse acesso é desativado.
-- `--external-dns-access`: exporta e libera o acesso externo a provedores de DNS, permitindo que suas instâncias recebam trafego externo. 
+- `--ssh-access`: permite acesso via protocolo `ssh` a cada instância, isso pode ser util caso queira realizar algum debug, por padrão esse acesso é desativado.
+- `--external-dns-access`: exporta e libera o acesso externo a provedores de DNS, permitindo que suas instâncias recebam tráfego externo. 
 - `--full-ecr-access`: habilita a integração com o serviço ECR da AWS, podendo por exemplo, usar repositórios privados de imagens de containers.
 - `--set-kubeconfig-context`, `--auto-kubeconfig` e `--write-kubeconfig`: geram o arquivo de configuração e acesso ao cluster.
 
