@@ -15,10 +15,10 @@ slug: criando-cluster-kubernetes
 authors:
   - jaswdr
 images:
-- /images/posts/k8s-logo.png
+- /images/posts/eksctl-gopher.png
 ---
 
-{{< figure src="/images/posts/k8s-logo.png" alt="K8s" width="200" >}}
+{{< figure src="/images/posts/eksctl-gopher.png" alt="K8s" width="200" >}}
 
 Criar um cluster Kubernetes não é algo trivial, existem diversos detalhes que você deve levar em consideração, da quantidade de hosts até o sistema operacional e o container runtime. Por sorte existem diversas ferramentas que facilitam o processo, veremos aqui como usar o `eksctl` para criar seu cluster com apenas um comando.
 
