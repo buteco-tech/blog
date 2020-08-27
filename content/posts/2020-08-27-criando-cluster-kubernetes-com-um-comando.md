@@ -114,7 +114,7 @@ Em resumo o que o comando acima está fazendo é uma nova stack no CloudFormatio
 [ℹ]  --nodes-max=3 was set automatically for nodegroup ng-f33cf19e
 [ℹ]  deploying stack "eksctl-exemplo-nodegroup-ng-f33cf19e"
 [ℹ]  waiting for the control plane availability...
-[✔]  saved kubeconfig as "/Users/schwede/.kube/eksctl/clusters/exemplo"
+[✔]  saved kubeconfig as "/home/jaswdr/.kube/eksctl/clusters/exemplo"
 [ℹ]  no tasks
 [✔]  all EKS cluster resources for "exemplo" have been created
 [ℹ]  adding identity "arn:aws:iam::049366202265:role/eksctl-exemplo-nodegroup-ng-f33cf-NodeInstanceRole-1A3862T8QOQW5" to auth ConfigMap
