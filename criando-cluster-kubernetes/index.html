@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Criando seu cluster Kubernetes com apenas um comando &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando." />
+
+
+
+<meta itemprop="name" content="Criando seu cluster Kubernetes com apenas um comando">
+<meta itemprop="description" content="Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando.">
+<meta itemprop="datePublished" content="2020-08-27T08:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-08-27T08:00:00+00:00" />
+<meta itemprop="wordCount" content="1086">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/eksctl-gopher.png">
+
+
+
+<meta itemprop="keywords" content="kubernetes,cloud computing,aws,eksctl," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/posts/eksctl-gopher.png"/>
+
+<meta name="twitter:title" content="Criando seu cluster Kubernetes com apenas um comando"/>
+<meta name="twitter:description" content="Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando."/>
+
+
+<meta property="og:title" content="Criando seu cluster Kubernetes com apenas um comando" />
+<meta property="og:description" content="Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/criando-cluster-kubernetes/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/posts/eksctl-gopher.png" />
+<meta property="article:published_time" content="2020-08-27T08:00:00+00:00" />
+<meta property="article:modified_time" content="2020-08-27T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+  
+  
+  <link rel="stylesheet" href="/sass/iara.min.6546ad337831f834de34f43a27ca1ea3b812a14f210f7556eff0db6ef71dbadf.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/logos/capybara_144.png">
+<link rel="shortcut icon" href="/logos/capybara_64.png">
+
+
+  
+
+
+  
+
+
+  
+<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+</head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/capybara_64.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    Buteco Tecnológico</a>
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto"><li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/contribua-com-nosso-blog/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/contato/">
+            <span class="mr-1"><i class="fas fa-phone"></i></span>
+            Contato
+            
+          </a>
+        </li>
+        </ul>
+  </div>
+</nav>
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Criando seu cluster Kubernetes com apenas um comando</h1>
+    <h2 class="tagline text-muted mb-4">Configurando um cluster na AWS de forma simples e fácil</h2>
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+           alt="Jonathan André Schweder"
+           title="Jonathan André Schweder">
+    </a>
+    </div><div class="d-inline-block authors">
+    <div class="text-muted"><span>
+        <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+           class="author">Jonathan André Schweder</a>
+      </span>
+    <span>em</span>
+    <span>
+        <a href="https://butecotecnologico.com.br/categorias/desenvolvimento/" class="text-decoration-none">Desenvolvimento</a> e 
+        
+        <a href="https://butecotecnologico.com.br/categorias/ferramentas/" class="text-decoration-none">Ferramentas</a>
+        </span>
+    </div>
+    <div class="text-muted"><time datetime="2020-08-27T08:00:00Z">27/08/2020</time>
+      &middot; 6 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/criando-cluster-kubernetes/"
+     data-text="Criando seu cluster Kubernetes com apenas um comando"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/criando-cluster-kubernetes/"
+     data-text="Criando seu cluster Kubernetes com apenas um comando"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/criando-cluster-kubernetes/"
+     data-text="Criando seu cluster Kubernetes com apenas um comando"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/criando-cluster-kubernetes/"
+     data-text="Criando seu cluster Kubernetes com apenas um comando"><i class="fab fa-pinterest"></i></a>
+</div>
+
+  </div>
+</div>
+
+  </header>
+
+  <article class="mt-3 mb-4">
+  <figure>
+    <img src="/images/posts/eksctl-gopher.png"
+         alt="K8s" width="200"/> 
+</figure>
+
+<p>Criar um cluster Kubernetes não é algo trivial, existem diversos detalhes que você deve levar em consideração, da quantidade de hosts até o sistema operacional e o container runtime. Por sorte existem diversas ferramentas que facilitam o processo, veremos aqui como usar o <code>eksctl</code> para criar seu cluster com apenas um comando.</p>
+<h2 id="instalação">Instalação</h2>
+<p>Existem algumas formas de instalar o <code>eksctl</code>, veja abaixo como fazer a instalação para cada sistema operacional.</p>
+<blockquote>
+<p>Importante: O <code>eksctl</code> é focado na nuvem AWS e para poder criar todos os recursos necessários você precisará de uma conta com as permissões corretas.</p>
+</blockquote>
+<h3 id="bash">Bash</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">curl --silent --location <span class="s2">&#34;https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_</span><span class="k">$(</span>uname -s<span class="k">)</span><span class="s2">_amd64.tar.gz&#34;</span> <span class="p">|</span> tar xz -C /tmp
+sudo mv /tmp/eksctl /usr/local/bin
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="homebrew">Homebrew</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">brew tap weaveworks/tap
+brew install weaveworks/tap/eksctl
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="windows">Windows</h3>
+<pre><code>chocolatey install eksctl
+</code></pre><h2 id="criando-seu-cluster">Criando seu cluster</h2>
+<p>Depois de instalado, podemos criar nosso cluster usando o comando <code>eksctl create cluster</code>, porém esse comando irá usar uma série de parametros padrões que possivelmente não atenderão a sua necessidade. Vamos então utilizar um exemplo para entender melhor algumas das opções disponíveis, veja a seguir:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">eksctl create cluster <span class="se">\
+</span><span class="se"></span>    -n exemplo <span class="se">\
+</span><span class="se"></span>    -r eu-west-1 <span class="se">\
+</span><span class="se"></span>    -t <span class="s2">&#34;t3.medium&#34;</span> <span class="se">\
+</span><span class="se"></span>    -N <span class="m">3</span> <span class="se">\
+</span><span class="se"></span>    --node-volume-size <span class="m">80</span> <span class="se">\
+</span><span class="se"></span>    --node-volume-type gp2 <span class="se">\
+</span><span class="se"></span>    --max-pods-per-node <span class="m">10</span> <span class="se">\
+</span><span class="se"></span>    --ssh-access <span class="se">\
+</span><span class="se"></span>    --external-dns-access <span class="se">\
+</span><span class="se"></span>    --full-ecr-access <span class="se">\
+</span><span class="se"></span>    --set-kubeconfig-context <span class="se">\
+</span><span class="se"></span>    --auto-kubeconfig <span class="se">\
+</span><span class="se"></span>    --write-kubeconfig
+</code></pre></td></tr></table>
+</div>
+</div><p>Alguns parâmetros podem já ser auto-explicativos mas vamos entender cada um.</p>
+<ul>
+<li><code>-n</code>: determina o &ldquo;nome&rdquo; do seu cluster, este nome é usado para referenciar o cluster em comandos futuros, como por exemplo quando você quiser aumentar a quantidade de hosts no seu cluster.</li>
+<li><code>-r</code>: se refere a região aonde seu cluster será criado, neste exemplo estou usando a região de Dublin ou <code>eu-west-1</code>, você pode usar qualquer outra região da AWS.</li>
+<li><code>-t</code>: determina o tipo de instância. O tipo irá determinar fatores como quantidade de CPU e memória, instâncias do tipo <code>t3.medium</code> como é o caso do exemplo possuem 2 vCPUs e 4Gb de memória ram, um pouco a mais do que o <a href="https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/"
+   
+   target="_blank">mínimo recomendado</a>, veja outras opções de instâncias na <a href="https://aws.amazon.com/ec2/instance-types/"
+   
+   target="_blank">documentação oficial</a>.</li>
+<li><code>-N</code>: quantidade de instâncias que serão criadas.</li>
+<li><code>--node-volume-size</code> e <code>--node-volume-type</code> informam o tamanho do volume de cada instância (volume do EBS) e o tipo, veja mais detalhes de vantagens e desvantagens de cada tipo de volume na <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html"
+   
+   target="_blank">documentação oficial</a>.</li>
+<li><code>--ssh-access</code>: permite acesso via protocolo <code>ssh</code> a cada instância, isso pode ser util caso queira realizar algum debug, por padrão esse acesso é desativado.</li>
+<li><code>--external-dns-access</code>: exporta e libera o acesso externo a provedores de DNS, permitindo que suas instâncias recebam tráfego externo.</li>
+<li><code>--full-ecr-access</code>: habilita a integração com o serviço ECR da AWS, podendo por exemplo, usar repositórios privados de imagens de containers.</li>
+<li><code>--set-kubeconfig-context</code>, <code>--auto-kubeconfig</code> e <code>--write-kubeconfig</code>: geram o arquivo de configuração e acesso ao cluster.</li>
+</ul>
+<p>Executando o comando acima teremos algumas informações no terminal.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>ℹ<span class="o">]</span>  eksctl version 0.25.0
+<span class="o">[</span>ℹ<span class="o">]</span>  using region eu-west-1
+<span class="o">[</span>ℹ<span class="o">]</span>  setting availability zones to <span class="o">[</span>eu-west-1c eu-west-1a eu-west-1b<span class="o">]</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  subnets <span class="k">for</span> eu-west-1c - public:192.168.0.0/19 private:192.168.96.0/19
+<span class="o">[</span>ℹ<span class="o">]</span>  subnets <span class="k">for</span> eu-west-1a - public:192.168.32.0/19 private:192.168.128.0/19
+<span class="o">[</span>ℹ<span class="o">]</span>  subnets <span class="k">for</span> eu-west-1b - public:192.168.64.0/19 private:192.168.160.0/19
+<span class="o">[</span>ℹ<span class="o">]</span>  nodegroup <span class="s2">&#34;ng-f33cf19e&#34;</span> will use <span class="s2">&#34;ami-0531361dba695e426&#34;</span> <span class="o">[</span>AmazonLinux2/1.17<span class="o">]</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  using SSH public key <span class="s2">&#34;/home/jaswdr/.ssh/id_rsa.pub&#34;</span> as <span class="s2">&#34;eksctl-exemplo-nodegroup-ng-f33cf19e-ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff&#34;</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  using Kubernetes version 1.17
+<span class="o">[</span>ℹ<span class="o">]</span>  creating EKS cluster <span class="s2">&#34;exemplo&#34;</span> in <span class="s2">&#34;eu-west-1&#34;</span> region with un-managed nodes
+<span class="o">[</span>ℹ<span class="o">]</span>  will create <span class="m">2</span> separate CloudFormation stacks <span class="k">for</span> cluster itself and the initial nodegroup
+<span class="o">[</span>ℹ<span class="o">]</span>  <span class="k">if</span> you encounter any issues, check CloudFormation console or try <span class="s1">&#39;eksctl utils describe-stacks --region=eu-west-1 --cluster=exemplo&#39;</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  CloudWatch logging will not be enabled <span class="k">for</span> cluster <span class="s2">&#34;exemplo&#34;</span> in <span class="s2">&#34;eu-west-1&#34;</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  you can <span class="nb">enable</span> it with <span class="s1">&#39;eksctl utils update-cluster-logging --region=eu-west-1 --cluster=exemplo&#39;</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  Kubernetes API endpoint access will use default of <span class="o">{</span><span class="nv">publicAccess</span><span class="o">=</span>true, <span class="nv">privateAccess</span><span class="o">=</span>false<span class="o">}</span> <span class="k">for</span> cluster <span class="s2">&#34;exemplo&#34;</span> in <span class="s2">&#34;eu-west-1&#34;</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  <span class="m">2</span> sequential tasks: <span class="o">{</span> create cluster control plane <span class="s2">&#34;exemplo&#34;</span>, <span class="m">2</span> sequential sub-tasks: <span class="o">{</span> no tasks, create nodegroup <span class="s2">&#34;ng-f33cf19e&#34;</span> <span class="o">}</span> <span class="o">}</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  building cluster stack <span class="s2">&#34;eksctl-exemplo-cluster&#34;</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  deploying stack <span class="s2">&#34;eksctl-exemplo-cluster&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Em resumo o que o comando acima está fazendo é uma nova stack no CloudFormation para criar todos os recursos necessários para que seu cluster funcione, criando itens como subnets, nodegroup, cluster EKS e outros. O comando pode demorar alguns minutos por que é esperado uma resposta da stack criada no CloudFormation, após finalizar a execução algo parecido como o seguinte texto é impresso.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">...
+<span class="o">[</span>ℹ<span class="o">]</span>  deploying stack <span class="s2">&#34;eksctl-exemplo-cluster&#34;</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  building nodegroup stack <span class="s2">&#34;eksctl-exemplo-nodegroup-ng-f33cf19e&#34;</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  --nodes-min<span class="o">=</span><span class="m">3</span> was <span class="nb">set</span> automatically <span class="k">for</span> nodegroup ng-f33cf19e
+<span class="o">[</span>ℹ<span class="o">]</span>  --nodes-max<span class="o">=</span><span class="m">3</span> was <span class="nb">set</span> automatically <span class="k">for</span> nodegroup ng-f33cf19e
+<span class="o">[</span>ℹ<span class="o">]</span>  deploying stack <span class="s2">&#34;eksctl-exemplo-nodegroup-ng-f33cf19e&#34;</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  waiting <span class="k">for</span> the control plane availability...
+<span class="o">[</span>✔<span class="o">]</span>  saved kubeconfig as <span class="s2">&#34;/Users/schwede/.kube/eksctl/clusters/exemplo&#34;</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  no tasks
+<span class="o">[</span>✔<span class="o">]</span>  all EKS cluster resources <span class="k">for</span> <span class="s2">&#34;exemplo&#34;</span> have been created
+<span class="o">[</span>ℹ<span class="o">]</span>  adding identity <span class="s2">&#34;arn:aws:iam::049366202265:role/eksctl-exemplo-nodegroup-ng-f33cf-NodeInstanceRole-1A3862T8QOQW5&#34;</span> to auth ConfigMap
+<span class="o">[</span>ℹ<span class="o">]</span>  nodegroup <span class="s2">&#34;ng-f33cf19e&#34;</span> has <span class="m">0</span> node<span class="o">(</span>s<span class="o">)</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  waiting <span class="k">for</span> at least <span class="m">3</span> node<span class="o">(</span>s<span class="o">)</span> to become ready in <span class="s2">&#34;ng-f33cf19e&#34;</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  nodegroup <span class="s2">&#34;ng-f33cf19e&#34;</span> has <span class="m">3</span> node<span class="o">(</span>s<span class="o">)</span>
+<span class="o">[</span>ℹ<span class="o">]</span>  node <span class="s2">&#34;ip-192-168-14-130.eu-west-1.compute.internal&#34;</span> is ready
+<span class="o">[</span>ℹ<span class="o">]</span>  node <span class="s2">&#34;ip-192-168-36-217.eu-west-1.compute.internal&#34;</span> is ready
+<span class="o">[</span>ℹ<span class="o">]</span>  node <span class="s2">&#34;ip-192-168-76-142.eu-west-1.compute.internal&#34;</span> is ready
+<span class="o">[</span>ℹ<span class="o">]</span>  kubectl <span class="nb">command</span> should work with <span class="s2">&#34;/home/jaswdr/.kube/eksctl/clusters/exemplo&#34;</span>, try <span class="s1">&#39;kubectl --kubeconfig=/home/jaswdr/.kube/eksctl/clusters/exemplo get nodes&#39;</span>
+<span class="o">[</span>✔<span class="o">]</span>  EKS cluster <span class="s2">&#34;exemplo&#34;</span> in <span class="s2">&#34;eu-west-1&#34;</span> region is ready
+</code></pre></td></tr></table>
+</div>
+</div><p>Dentre diversas informações, podemos ver que a última mensagem indica que o cluster <code>exemplo</code> na região <code>eu-west-1</code> está pronto, para provar isso podemos testar alguns comandos, perceba que foi gerado um arquivo de configuração, o caminho para o arquivo pode ser visto na penúltima linha, no meu caso <code>/home/jaswdr/.kube/eksctl/clusters/exemplo</code>, podemos usar tanto o comando que foi gerado usando a opção <code>--kubeconfig</code> ou usar a variável de ambiente <code>KUBECONFIG</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">export</span> <span class="nv">KUBECONFIG</span><span class="o">=</span><span class="nv">$HOME</span>/.kube/eksctl/clusters/exemplo
+$ kubectl get nodes
+NAME                                           STATUS   ROLES    AGE   VERSION
+ip-192-168-14-130.eu-west-1.compute.internal   Ready    &lt;none&gt;   15m   v1.17.9-eks-4c6976
+ip-192-168-36-217.eu-west-1.compute.internal   Ready    &lt;none&gt;   15m   v1.17.9-eks-4c6976
+ip-192-168-76-142.eu-west-1.compute.internal   Ready    &lt;none&gt;   15m   v1.17.9-eks-4c6976s
+</code></pre></td></tr></table>
+</div>
+</div><p>Por fim temos nosso cluster pronto para uso em produção, e disponível para usar com todos os comandos do <code>kubectl</code>.</p>
+<blockquote>
+<p>Importante: Para excluir o cluster que acabamos de criar e remover todos os recursos relacionado ao cluster basta executar o comando <code>eksctl delete cluster --name exemplo</code></p>
+</blockquote>
+<h2 id="conclusão">Conclusão</h2>
+<p>O <code>eksctl</code> possui várias outras opções, como escalar para aumentar ou diminuir a quantidade de hosts ou criar um auto-scale para que isso seja feito de forma automática, contudo isso é algo que você pode buscar na <a href="https://eksctl.io/"
+   
+   target="_blank">documentação oficial</a> ou comentar abaixo se quiser mais artigos sobre o assunto, de qualquer forma espero que o conteúdo aqui tenha sido útil a você que quer começar a usar o Kubernetes em produção usando a nuvem da AWS. Até a próxima!</p>
+
+  </article>
+
+  <footer class="mt-3 mb-4">
+    
+<div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/kubernetes/" class="tag-link">kubernetes</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/aws/" class="tag-link">aws</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/eksctl/" class="tag-link">eksctl</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/criando-cluster-kubernetes/"
+     data-text="Criando seu cluster Kubernetes com apenas um comando"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/criando-cluster-kubernetes/"
+     data-text="Criando seu cluster Kubernetes com apenas um comando"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/criando-cluster-kubernetes/"
+     data-text="Criando seu cluster Kubernetes com apenas um comando"><i class="fab fa-facebook"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/criando-cluster-kubernetes/"
+     data-text="Criando seu cluster Kubernetes com apenas um comando"><i class="fab fa-pinterest"></i></a>
+</div>
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/jaswdr/">
+        <img class="author-img"
+             src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+             alt="Jonathan André Schweder">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/jaswdr/">Jonathan André Schweder</a>
+      </h2>
+      <span class="small text-muted">System Developer Engineer at Amazon Web Services</span>
+    </div>
+  </div>
+  
+</div>
+    <div class="border-top pt-4 pb-4">
+<h2 class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecoopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="site-footer mt-auto pt-5">
+  <div class="clearfix">
+    
+    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecotecnologico" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecotech" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecotecnologico" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/buteco.tech" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoTech" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://butecotecnologico.com.br/index.xml" title="Feed RSS"><i class="fas fa-rss"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b><span class="badge badge-success">Novo</span>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              
+              Anuncie conosco
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/contribua-com-nosso-blog/">
+              
+              Contribua com nosso blog
+              <i class="far fa-heart text-danger"></i>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/equipe/">
+              
+              Equipe
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/feed-rss/">
+              
+              Feed RSS
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/">
+              
+              Tags
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://estatisticas.buteco.me/">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="copyright clearfix">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+      
+    </div>
+    
+    <div class="d-md-inline-block float-md-right">
+        <ul class="list-unstyled">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+  <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
+<script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
+  
+  <script type="text/javascript" src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script>
+
+  
+  <script type="text/javascript" src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-55693832-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+<script type="text/javascript" defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
+
+
+</body>
+</html>

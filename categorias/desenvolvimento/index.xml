@@ -11,8 +11,24 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 13 Aug 2020 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2020 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/categorias/desenvolvimento/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      
+      <title>Criando seu cluster Kubernetes com apenas um comando</title>
+      <link>https://butecotecnologico.com.br/criando-cluster-kubernetes/</link>
+      <pubDate>Thu, 27 Aug 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-cluster-kubernetes/</guid>
+      <description>Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando.</description>
+      
+      <image>
+        <url>https://butecotecnologico.com.br/images/posts/eksctl-gopher.png</url>
+        <title>Criando seu cluster Kubernetes com apenas um comando</title>
+        <link>https://butecotecnologico.com.br/criando-cluster-kubernetes/</link>
+      </image>
+      
+    </item>
     <item>
       
       <title>Nós mudamos!</title>

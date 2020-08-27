@@ -3,27 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://butecotecnologico.com.br/autores/alexandrevicenzi/</loc>
-    <lastmod>2020-08-15T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/posts/</loc>
-    <lastmod>2020-08-15T08:00:00+00:00</lastmod>
+    <lastmod>2020-08-27T08:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://butecotecnologico.com.br/autores/</loc>
-    <lastmod>2020-08-15T08:00:00+00:00</lastmod>
+    <lastmod>2020-08-27T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/aws/</loc>
+    <lastmod>2020-08-27T08:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://butecotecnologico.com.br/</loc>
-    <lastmod>2020-08-15T08:00:00+00:00</lastmod>
+    <lastmod>2020-08-27T08:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://butecotecnologico.com.br/categorias/</loc>
+    <lastmod>2020-08-27T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/cloud-computing/</loc>
+    <lastmod>2020-08-27T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/criando-cluster-kubernetes/</loc>
+    <lastmod>2020-08-27T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/categorias/desenvolvimento/</loc>
+    <lastmod>2020-08-27T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/eksctl/</loc>
+    <lastmod>2020-08-27T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/categorias/ferramentas/</loc>
+    <lastmod>2020-08-27T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/autores/jaswdr/</loc>
+    <lastmod>2020-08-27T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/kubernetes/</loc>
+    <lastmod>2020-08-27T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/</loc>
+    <lastmod>2020-08-27T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/autores/alexandrevicenzi/</loc>
     <lastmod>2020-08-15T08:00:00+00:00</lastmod>
   </url>
   
@@ -39,11 +84,6 @@
   
   <url>
     <loc>https://butecotecnologico.com.br/nos-mudamos-para-buteco-tech/</loc>
-    <lastmod>2020-08-15T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/</loc>
     <lastmod>2020-08-15T08:00:00+00:00</lastmod>
   </url>
   
@@ -93,17 +133,7 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/categorias/desenvolvimento/</loc>
-    <lastmod>2020-08-13T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/tags/docker/</loc>
-    <lastmod>2020-08-13T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/kubernetes/</loc>
     <lastmod>2020-08-13T08:00:00+00:00</lastmod>
   </url>
   
@@ -184,11 +214,6 @@
   
   <url>
     <loc>https://butecotecnologico.com.br/guia-completo-debug-python/</loc>
-    <lastmod>2020-07-08T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/autores/jaswdr/</loc>
     <lastmod>2020-07-08T08:00:00+00:00</lastmod>
   </url>
   
@@ -343,11 +368,6 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/aws/</loc>
-    <lastmod>2020-05-15T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/python-aws-s3/</loc>
     <lastmod>2020-05-15T12:00:00+00:00</lastmod>
   </url>
@@ -489,11 +509,6 @@
   
   <url>
     <loc>https://butecotecnologico.com.br/logstash/</loc>
-    <lastmod>2016-06-13T12:00:05+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/categorias/ferramentas/</loc>
     <lastmod>2016-06-13T12:00:05+00:00</lastmod>
   </url>
   

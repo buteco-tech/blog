@@ -15,6 +15,22 @@
     <atom:link href="https://butecotecnologico.com.br/tags/esp-12/index.xml" rel="self" type="application/rss+xml" />
     <item>
       
+      <title>Criando seu cluster Kubernetes com apenas um comando</title>
+      <link>https://butecotecnologico.com.br/criando-cluster-kubernetes/</link>
+      <pubDate>Thu, 27 Aug 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/criando-cluster-kubernetes/</guid>
+      <description>Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando.</description>
+      
+      <image>
+        <url>https://butecotecnologico.com.br/images/posts/eksctl-gopher.png</url>
+        <title>Criando seu cluster Kubernetes com apenas um comando</title>
+        <link>https://butecotecnologico.com.br/criando-cluster-kubernetes/</link>
+      </image>
+      
+    </item>
+    <item>
+      
       <title>Nós mudamos!</title>
       <link>https://butecotecnologico.com.br/nos-mudamos-para-buteco-tech/</link>
       <pubDate>Sat, 15 Aug 2020 08:00:00 +0000</pubDate>
