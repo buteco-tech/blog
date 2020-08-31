@@ -20,4 +20,4 @@ name: buteco.tech
 
 Nosso podcast está disponível em uma variedade de locais, confira:
 
-{{< podcast-distribuicao >}}
+{{< podcast-distribuicao download="" >}}

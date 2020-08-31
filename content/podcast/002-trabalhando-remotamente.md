@@ -31,7 +31,7 @@ Neste episódio discutimos vários aspectos de se trabalhar remotamente, os lado
 
 Escute em uma variedade de locais, confira:
 
-{{< podcast-distribuicao >}}
+{{< podcast-distribuicao download="https://s3.castbox.fm/08/98/0d/5c969f4a44bc34cecf6c4a5f52.mp3" >}}
 
 ### Participantes
 

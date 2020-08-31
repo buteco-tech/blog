@@ -32,7 +32,7 @@ Neste episódio conversamos sobre a história do projeto, quem mantém, como con
 
 Escute em uma variedade de locais, confira:
 
-{{< podcast-distribuicao >}}
+{{< podcast-distribuicao download="https://s3.castbox.fm/85/f6/c2/2e127c4d5b87f851b24f285878.mp3" >}}
 
 ### Participantes
 

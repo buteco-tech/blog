@@ -31,7 +31,7 @@ Você sabe o que é uma distribuição Linux? Neste episódio do nosso podcast d
 
 Escute em uma variedade de locais, confira:
 
-{{< podcast-distribuicao >}}
+{{< podcast-distribuicao download="https://s3.castbox.fm/ec/d4/bf/00457b424fad05b154ed193d57.mp3" >}}
 
 ### Participantes
 

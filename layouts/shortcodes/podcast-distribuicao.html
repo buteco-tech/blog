@@ -69,4 +69,40 @@
     <img src="/images/podcast/rss.svg" class="mb-1 mr-1" height="25px">
     RSS
   </a>
+  {{ with .Params.download }}
+  <button type="button" class="btn btn-outline-light text-dark text-decoration-none m-1" title="Baixar MP3" data-toggle="modal" data-target="#modal-mp3">
+    <img src="/images/podcast/download.svg" class="mb-1 mr-1" height="25px">
+    Baixar MP3
+  </button>
+  {{ end }}
 </div>
+
+{{ with .Params.download }}
+<div class="modal fade" id="modal-mp3" tabindex="-1" role="dialog" aria-labelledby="modal-mp3-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-mp3-label">Baixar MP3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <audio controls style="width: 100%">
+          <source src="{{ . }}" type="audio/mpeg">
+          Não foi possível carregar o MP3.
+        </audio>
+        <p class="text-center mt-3">
+          <a href="{{ . }}" class="btn btn-lg btn-success" download>
+            <img src="/images/podcast/mp3.svg" class="mb-1 mr-1" height="32px">
+            Baixar MP3
+          </a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
