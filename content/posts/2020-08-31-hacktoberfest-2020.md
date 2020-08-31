@@ -22,7 +22,7 @@ images:
 
 Crie artigos para o nosso blog e ganhe uma camisa.
 
-Iremos ajudar os interessados a participar do [Hacktoberfest][hf], e também dar dicas de como contribuir com outros projetos, não apenas o nosso.
+Iremos ajudar os interessados a participar do [Hacktoberfest][hf] dando dicas de como contribuir e iniciar no mundo do Software Livre.
 
 ## O Evento
 
@@ -34,7 +34,7 @@ Ao se inscrever você receberá mais detalhes de como participar.
 
 ### Agenda
 
-* 13:00 — Introdução e boas vindas
+* 13:00 — Introdução e boas-vindas
 * 13:30 — O que é software livre
 * 14:00 — Como contribuir com projetos
 * 14:30 — Como escrever artigos
@@ -43,7 +43,7 @@ Ao se inscrever você receberá mais detalhes de como participar.
 
 ## Como contribuir
 
-Contribuir é fácil, procure por issues com o label `hacktoberfest` ou [clique aqui](https://github.com/ButecoOpenSource/blog/issues?q=is%3Aissue+is%3Aopen+label%3Ahacktoberfest) para conferir.
+Contribuir é fácil, procure por issues com o label `hacktoberfest` no GitHub ou se quiser contribuir com o nosso blog [clique aqui](https://github.com/ButecoOpenSource/blog/issues?q=is%3Aissue+is%3Aopen+label%3Ahacktoberfest) para conferir temas e ideias para artigos.
 
 Deixe um comentário, ou atribua a issue a você para saber que ela esta em andamento.
 
@@ -53,7 +53,7 @@ Ao finalizar o artigo envie o seu pull request que iremos revisar.
 
 O Hacktoberfest é uma celebração do software livre que dura um mês e os mantenedores são convidados a orientar quem possui interesse em ajudar um projeto, e você têm a oportunidade de contribuir os projetos do seu interesse.
 
-Nenhuma contribuição é muito pequena - correções de bugs e atualizações de documentação são formas válidas de participação.
+Nenhuma contribuição é pequena - correções de bugs e atualizações de documentação são formas válidas de participação.
 
 O Hacktoberfest é virtual e aberto a participantes de todo o mundo.
 
