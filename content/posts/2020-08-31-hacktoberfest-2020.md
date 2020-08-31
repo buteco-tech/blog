@@ -32,6 +32,8 @@ O nosso evento será dia 10 de outubro das 13:00 às 17:00, e para participar do
 
 Ao se inscrever você receberá mais detalhes de como participar.
 
+{{< button location="center" text="Inscreva-se" url="https://organize.mlh.io/participants/events/3934-hacktoberfest-do-buteco" color="success" target="_blank" >}}
+
 ### Agenda
 
 * 13:00 — Introdução e boas-vindas
