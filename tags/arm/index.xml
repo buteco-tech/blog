@@ -15,6 +15,32 @@
     <atom:link href="https://butecotecnologico.com.br/tags/arm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       
+      <title>Hacktoberfest 2020</title>
+      <link>https://butecotecnologico.com.br/hacktoberfest-2020/</link>
+      <pubDate>Mon, 31 Aug 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/hacktoberfest-2020/</guid>
+      <description>Crie artigos para o nosso blog e ganhe uma camisa.</description>
+      
+      <image>
+        <url>https://butecotecnologico.com.br/images/posts/hf-2020-400.png</url>
+        <title>Hacktoberfest 2020</title>
+        <link>https://butecotecnologico.com.br/hacktoberfest-2020/</link>
+      </image>
+      <image>
+        <url>https://butecotecnologico.com.br/images/posts/hf-2020-600.png</url>
+        <title>Hacktoberfest 2020</title>
+        <link>https://butecotecnologico.com.br/hacktoberfest-2020/</link>
+      </image>
+      <image>
+        <url>https://butecotecnologico.com.br/images/posts/hf-2020-1000.png</url>
+        <title>Hacktoberfest 2020</title>
+        <link>https://butecotecnologico.com.br/hacktoberfest-2020/</link>
+      </image>
+      
+    </item>
+    <item>
+      
       <title>Criando seu cluster Kubernetes com apenas um comando</title>
       <link>https://butecotecnologico.com.br/criando-cluster-kubernetes/</link>
       <pubDate>Thu, 27 Aug 2020 08:00:00 +0000</pubDate>
