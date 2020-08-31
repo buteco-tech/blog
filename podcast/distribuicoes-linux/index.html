@@ -15,7 +15,7 @@
 <meta itemprop="description" content="Você sabe o que é uma distribuição Linux? Neste episódio do nosso podcast discutimos sobre o assunto, abordando alguns dos principais projetos envolvidos, como tudo começou, o cenário atual e por fim falamos sobre a posição do Brasil nessa história.">
 <meta itemprop="datePublished" content="2020-06-19T08:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-06-19T08:00:00+00:00" />
-<meta itemprop="wordCount" content="192">
+<meta itemprop="wordCount" content="206">
 <meta itemprop="image" content="https://butecotecnologico.com.br/images/podcast/tux-bg-400.png">
 
 
@@ -284,7 +284,43 @@
     <img src="/images/podcast/rss.svg" class="mb-1 mr-1" height="25px">
     RSS
   </a>
+  
+  <button type="button" class="btn btn-outline-light text-dark text-decoration-none m-1" title="Baixar MP3" data-toggle="modal" data-target="#modal-mp3">
+    <img src="/images/podcast/download.svg" class="mb-1 mr-1" height="25px">
+    Baixar MP3
+  </button>
+  
 </div>
+
+
+<div class="modal fade" id="modal-mp3" tabindex="-1" role="dialog" aria-labelledby="modal-mp3-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-mp3-label">Baixar MP3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <audio controls style="width: 100%">
+          <source src="https://s3.castbox.fm/ec/d4/bf/00457b424fad05b154ed193d57.mp3" type="audio/mpeg">
+          Não foi possível carregar o MP3.
+        </audio>
+        <p class="text-center mt-3">
+          <a href="https://s3.castbox.fm/ec/d4/bf/00457b424fad05b154ed193d57.mp3" class="btn btn-lg btn-success" download>
+            <img src="/images/podcast/mp3.svg" class="mb-1 mr-1" height="32px">
+            Baixar MP3
+          </a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <h3 id="participantes">Participantes</h3>
 <h4 id="alexandre-vicenzi">Alexandre Vicenzi</h4>
