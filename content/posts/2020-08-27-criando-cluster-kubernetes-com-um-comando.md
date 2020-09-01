@@ -1,5 +1,5 @@
 ---
-title: "Criando seu cluster Kubernetes com apenas um comando"
+title: "Cluster Kubernetes com apenas um comando"
 summary: "Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando."
 tagline: "Configurando um cluster na AWS de forma simples e fácil"
 date: 2020-08-27 08:00:00
