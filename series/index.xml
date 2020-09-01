@@ -40,7 +40,7 @@
     </item>
     <item>
       
-      <title>Criando seu cluster Kubernetes com apenas um comando</title>
+      <title>Cluster Kubernetes com apenas um comando</title>
       <link>https://butecotecnologico.com.br/criando-cluster-kubernetes/</link>
       <pubDate>Thu, 27 Aug 2020 08:00:00 +0000</pubDate>
       
@@ -49,7 +49,7 @@
       
       <image>
         <url>https://butecotecnologico.com.br/images/posts/eksctl-gopher.png</url>
-        <title>Criando seu cluster Kubernetes com apenas um comando</title>
+        <title>Cluster Kubernetes com apenas um comando</title>
         <link>https://butecotecnologico.com.br/criando-cluster-kubernetes/</link>
       </image>
       
