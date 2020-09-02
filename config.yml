@@ -87,6 +87,9 @@ params:
     - icon: fab fa-telegram-plane
       title: Telegram
       url: https://t.me/butecotecnologico
+    - icon: fab fa-discord
+      title: Discord
+      url: https://discord.gg/eX2jAvw
     - icon: fab fa-twitter
       title: Twitter
       url: https://twitter.com/butecotech
