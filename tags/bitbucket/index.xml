@@ -15,6 +15,22 @@
     <atom:link href="https://butecotecnologico.com.br/tags/bitbucket/index.xml" rel="self" type="application/rss+xml" />
     <item>
       
+      <title>Desenvolvimento de Jogos</title>
+      <link>https://butecotecnologico.com.br/podcast/desenvolvimento-de-jogos/</link>
+      <pubDate>Thu, 03 Sep 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/podcast/desenvolvimento-de-jogos/</guid>
+      <description>Neste episódio conversamos sobre o dia a dia de um desenvolvedor de jogos, como começar nessa área, como obter ideias para jogos, quais ferramentas usar e mais.</description>
+      
+      <image>
+        <url>https://butecotecnologico.com.br/images/podcast/gamedev.png</url>
+        <title>Desenvolvimento de Jogos</title>
+        <link>https://butecotecnologico.com.br/podcast/desenvolvimento-de-jogos/</link>
+      </image>
+      
+    </item>
+    <item>
+      
       <title>Hacktoberfest 2020</title>
       <link>https://butecotecnologico.com.br/hacktoberfest-2020/</link>
       <pubDate>Mon, 31 Aug 2020 08:00:00 +0000</pubDate>
