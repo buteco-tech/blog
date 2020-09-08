@@ -27,6 +27,19 @@ permalinks:
   tags: /tags/:slug/
   authors: /autores/:slug/
 
+outputs:
+  home:
+    - HTML
+    - RSS
+  page:
+    - HTML
+  section:
+    - HTML
+  taxonomy:
+    - HTML
+  term:
+    - HTML
+
 params:
   mainSections:
     - posts

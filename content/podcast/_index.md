@@ -3,6 +3,9 @@ alias:
   - podcasts
 title: Podcast
 name: buteco.tech
+outputs:
+- html
+- rss
 ---
 
 {{< figure src="/images/podcast/logo-400-bg.png" alt="Logo buteco.tech" class="text-center" height="200" width="200" >}}
