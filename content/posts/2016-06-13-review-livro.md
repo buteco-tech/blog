@@ -1,6 +1,6 @@
 ---
 type: wordpress
-title: Review do livro "Implantação de Help Desk e Service Desk" - Roberto Cohen
+title: Review do livro Implantação de Help Desk e Service Desk - Roberto Cohen
 summary: |
   Resenha e sugestão de livro sobre Help Desk - "Implatnação de Help Desk e Service Desk" - Roberto Cohen
 date: 2016-06-13 20:54:16
