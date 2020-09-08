@@ -31,6 +31,7 @@ outputs:
   home:
     - HTML
     - RSS
+    - SHARING
   page:
     - HTML
   section:
@@ -39,6 +40,15 @@ outputs:
     - HTML
   term:
     - HTML
+
+outputFormats:
+  sharing:
+    name: SHARING
+    baseName: sharing
+    isPlainText: true
+    mediaType: application/json
+    protocol: https://
+    notAlternative: true
 
 params:
   mainSections:

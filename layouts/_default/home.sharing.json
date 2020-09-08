@@ -1,0 +1,69 @@
+{{- $regularPages := where .Site.RegularPages "Type" "in" .Site.Params.MainSections -}}
+[
+  {{ range $index, $item := first 50 $regularPages -}}{{ if $index }},{{end}}
+  {
+    "id": "{{ .Permalink }}",
+    "date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+    "date_modified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+    "title": "{{ .Title }}",
+    "url": "{{ .Permalink }}",
+    "summary": "{{ replace .Summary "\n" "\\n" | replaceRE "\"" "\\\"" }}",
+    "tagline": "{{ .Params.tagline | default "" }}",
+    "images": [{{ range $idxIm, $item := .Params.images }}{{ if $idxIm }},{{end}}"{{ $item | absURL }}"{{ end }}],
+    "tags": {{ .Params.tags | jsonify }},
+    "categories": {{ .Params.categories | jsonify }},
+    {{- $postSummary := replace .Summary "\n" "\\n" | replaceRE "\"" "\\\"" -}}
+    {{- $postText := printf `%s\n\n%s` .Title $postSummary -}}
+    {{- $postShortText := .Title -}}
+    {{- $postImages := .Params.images | default "" -}}
+    {{- $postImage := index $postImages 0 | absURL }}
+    "sharing": {
+      {{- with .Params.sharing -}}
+      {{- $shareImage := .image | default $postImage | absURL -}}
+      {{- $shareText := .text | default $postText }}
+      "twitter": {
+        "text": "{{ with .twitter.text }}{{ replace . "\n" "\\n" | replaceRE "\"" "\\\"" }}{{ else }}{{ $shareText }}{{ end }}",
+        "image": "{{ with .twitter.image }}{{ . | absURL }}{{ else }}{{ $postImage }}{{ end }}"
+      },
+      "facebook": {
+        "text": "{{ with .facebook.text }}{{ replace . "\n" "\\n" | replaceRE "\"" "\\\"" }}{{ else }}{{ $shareText }}{{ end }}",
+        "image": "{{ with .facebook.image }}{{ . | absURL }}{{ else }}{{ $postImage }}{{ end }}"
+      },
+      "linkedin": {
+        "text": "{{ with .linkedin.text }}{{ replace . "\n" "\\n" | replaceRE "\"" "\\\"" }}{{ else }}{{ $shareText }}{{ end }}",
+        "image": "{{ with .linkedin.image }}{{ . | absURL }}{{ else }}{{ $postImage }}{{ end }}"
+      },
+      "instagram": {
+        "text": "{{ with .instagram.text }}{{ replace . "\n" "\\n" | replaceRE "\"" "\\\"" }}{{ else }}{{ $shareText }}{{ end }}",
+        "image": "{{ with .instagram.image }}{{ . | absURL }}{{ else }}{{ $postImage }}{{ end }}"
+      },
+      "pinterest": {
+        "text": "{{ with .pinterest.text }}{{ replace . "\n" "\\n" | replaceRE "\"" "\\\"" }}{{ else }}{{ $shareText }}{{ end }}",
+        "image": "{{ with .pinterest.image }}{{ . | absURL }}{{ else }}{{ $postImage }}{{ end }}"
+      }
+      {{- else }}
+      "twitter": {
+        "text": "{{ $postShortText }}",
+        "image": "{{ $postImage }}"
+      },
+      "facebook": {
+        "text": "{{ $postText }}",
+        "image": "{{ $postImage }}"
+      },
+      "linkedin": {
+        "text": "{{ $postText }}",
+        "image": "{{ $postImage }}"
+      },
+      "instagram": {
+        "text": "{{ $postText }}",
+        "image": "{{ $postImage }}"
+      },
+      "pinterest": {
+        "text": "{{ $postText }}",
+        "image": "{{ $postImage }}"
+      }
+      {{- end }}
+    }
+  }
+  {{- end }}
+]
