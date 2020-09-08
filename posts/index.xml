@@ -13,6 +13,7 @@
     <language>pt-BR</language>
     <lastBuildDate>Tue, 08 Sep 2020 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/posts/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       
       <title>Cluster de Kubernetes gratuito</title>
@@ -31,22 +32,6 @@
         <url>https://butecotecnologico.com.br/images/posts/kubesail-logo-wide.jpeg</url>
         <title>Cluster de Kubernetes gratuito</title>
         <link>https://butecotecnologico.com.br/kubesail-cluster-kubernetes-gratuito/</link>
-      </image>
-      
-    </item>
-    <item>
-      
-      <title>Desenvolvimento de Jogos</title>
-      <link>https://butecotecnologico.com.br/podcast/desenvolvimento-de-jogos/</link>
-      <pubDate>Thu, 03 Sep 2020 08:00:00 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/podcast/desenvolvimento-de-jogos/</guid>
-      <description>Neste episódio conversamos sobre o dia a dia de um desenvolvedor de jogos, como começar nessa área, como obter ideias para jogos, quais ferramentas usar e mais.</description>
-      
-      <image>
-        <url>https://butecotecnologico.com.br/images/podcast/gamedev.png</url>
-        <title>Desenvolvimento de Jogos</title>
-        <link>https://butecotecnologico.com.br/podcast/desenvolvimento-de-jogos/</link>
       </image>
       
     </item>
@@ -110,22 +95,6 @@
     </item>
     <item>
       
-      <title>LibreOffice: A suite office livre</title>
-      <link>https://butecotecnologico.com.br/podcast/libreoffice/</link>
-      <pubDate>Fri, 14 Aug 2020 08:00:00 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/podcast/libreoffice/</guid>
-      <description>O LibreOffice é uma poderosa suíte de produtividade de escritório com planilha, editor de texto, editor de apresentação e muito mais.</description>
-      
-      <image>
-        <url>https://butecotecnologico.com.br/images/podcast/libreoffice-logo.png</url>
-        <title>LibreOffice: A suite office livre</title>
-        <link>https://butecotecnologico.com.br/podcast/libreoffice/</link>
-      </image>
-      
-    </item>
-    <item>
-      
       <title>Kubernetes explicado</title>
       <link>https://butecotecnologico.com.br/kubernetes-explicado/</link>
       <pubDate>Thu, 13 Aug 2020 08:00:00 +0000</pubDate>
@@ -158,22 +127,6 @@
     </item>
     <item>
       
-      <title>Trabalhando Remotamente</title>
-      <link>https://butecotecnologico.com.br/podcast/trabalhando-remotamente/</link>
-      <pubDate>Fri, 24 Jul 2020 08:00:00 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/podcast/trabalhando-remotamente/</guid>
-      <description>Trabalho remoto virou um tema popular nos últimos meses devido à pandemia.</description>
-      
-      <image>
-        <url>https://butecotecnologico.com.br/images/podcast/trampo-remoto-capa.jpeg</url>
-        <title>Trabalhando Remotamente</title>
-        <link>https://butecotecnologico.com.br/podcast/trabalhando-remotamente/</link>
-      </image>
-      
-    </item>
-    <item>
-      
       <title>Guia completo de Debug em Python</title>
       <link>https://butecotecnologico.com.br/guia-completo-debug-python/</link>
       <pubDate>Wed, 08 Jul 2020 08:00:00 +0000</pubDate>
@@ -185,22 +138,6 @@
         <url>https://butecotecnologico.com.br/images/posts/python-logo.png</url>
         <title>Guia completo de Debug em Python</title>
         <link>https://butecotecnologico.com.br/guia-completo-debug-python/</link>
-      </image>
-      
-    </item>
-    <item>
-      
-      <title>Distribuições Linux</title>
-      <link>https://butecotecnologico.com.br/podcast/distribuicoes-linux/</link>
-      <pubDate>Fri, 19 Jun 2020 08:00:00 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/podcast/distribuicoes-linux/</guid>
-      <description>Você sabe o que é uma distribuição Linux? Neste episódio do nosso podcast discutimos sobre o assunto, abordando alguns dos principais projetos envolvidos, como tudo começou, o cenário atual e por fim falamos sobre a posição do Brasil nessa história.</description>
-      
-      <image>
-        <url>https://butecotecnologico.com.br/images/podcast/tux-bg-400.png</url>
-        <title>Distribuições Linux</title>
-        <link>https://butecotecnologico.com.br/podcast/distribuicoes-linux/</link>
       </image>
       
     </item>
