@@ -15,6 +15,27 @@
     <atom:link href="https://butecotecnologico.com.br/tags/eventos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       
+      <title>Cluster de Kubernetes gratuito</title>
+      <link>https://butecotecnologico.com.br/kubesail-cluster-kubernetes-gratuito/</link>
+      <pubDate>Tue, 08 Sep 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/kubesail-cluster-kubernetes-gratuito/</guid>
+      <description>KubeSail é uma plataforma que permite que você cria sua própria nuvem, contando com um plano de uso gratuito.</description>
+      
+      <image>
+        <url>https://butecotecnologico.com.br/images/posts/kubesail-logo.png</url>
+        <title>Cluster de Kubernetes gratuito</title>
+        <link>https://butecotecnologico.com.br/kubesail-cluster-kubernetes-gratuito/</link>
+      </image>
+      <image>
+        <url>https://butecotecnologico.com.br/images/posts/kubesail-logo-wide.jpeg</url>
+        <title>Cluster de Kubernetes gratuito</title>
+        <link>https://butecotecnologico.com.br/kubesail-cluster-kubernetes-gratuito/</link>
+      </image>
+      
+    </item>
+    <item>
+      
       <title>Desenvolvimento de Jogos</title>
       <link>https://butecotecnologico.com.br/podcast/desenvolvimento-de-jogos/</link>
       <pubDate>Thu, 03 Sep 2020 08:00:00 +0000</pubDate>
