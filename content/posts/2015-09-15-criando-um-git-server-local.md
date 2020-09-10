@@ -1,5 +1,4 @@
 ---
-type: wordpress
 title: Criando um git server local
 summary: |
   Mini tutorial de como criar um servidor git local.
@@ -17,32 +16,38 @@ tags:
   - terminal
 ---
 
-Algumas vezes queremos ter um ponto comum em uma rede local onde podemos enviar nossos <em>commits</em>, especialmente quando estamos trabalhando em equipe. Pois bem, a solução é simples.
+{{< figure src="/images/wp-content/uploads/2014/11/Git-Icon-1788C.png" alt="Git" width="250" >}}
 
-<!--more-->
+Algumas vezes queremos ter um ponto comum em uma rede local onde podemos enviar nossos *commits*, especialmente quando estamos trabalhando em equipe. Pois bem, a solução é simples.
 
-Para tal feito, basta ter uma máquina Linux com <em>sshd</em> rodando e git instalado. Feito isto, vá até um local onde queira criar o repositório, podendo ser em um $HOME de um usuário mesmo:
-<code>mkdir /home/fulano/meu_projeto.git
-cd /home/fulano/meu_projeto.git</code>
+Para tal feito, basta ter uma máquina Linux com `sshd` rodando e `git` instalado. Feito isto, vá até um local onde queira criar o repositório, podendo ser em um `$HOME` de um usuário, como por exemplo:
 
-Além do famoso git init, é preciso um parâmetro adicional:
-<code>git init --bare</code>
+```bash
+mkdir /home/fulano/projeto.git
+cd /home/fulano/projeto.git
+```
 
-Com este comando o git cria um repositório "nú". Ao executar o <em>git init</em>, este repositório se torna um <em>working directory</em>. Esse tipo de repositório tem um diretório <em>.git</em> onde uma cópia dos arquivos da pasta do projeto e todas as configurações são guardadas.
+Ao executar o famoso `git init`, é preciso passar um parâmetro adicional:
 
-Já nos "repositórios nús", os arquivos de configuração são colocados na própria pasta raiz do projeto ao invés da pasta <em>.git</em>, e com isso não existe uma <em>working tree</em>, com uma cópia dos seus arquivos lá dentro.
+`git init --bare`
 
-Para poder acessar os arquivos do seu novo repositório, basta executar:
-<code>git clone fulano@ip_do_git_server:/home/fulano/meu_projeto</code>
+Com este comando o git cria um repositório "nú". Ao executar o `git init`, este repositório se torna um *working directory*. Esse tipo de repositório tem um diretório `.git` onde uma cópia dos arquivos da pasta do projeto e todas as configurações são guardadas.
 
-O git utiliza o protocolo SSH para fazer as transferências de <em>commits</em>, então basta você informar a senha do usuário do SSH e tudo funcionará.
+Já nos "repositórios nús", os arquivos de configuração são colocados na própria pasta raiz do projeto ao invés da pasta `.git`, e com isso não existe uma *working tree*, com uma cópia dos seus arquivos lá dentro.
 
-Ao fazer git push você também precisa informar a senha do usuário do SSH. Mas para evitar, basta executar um <em>ssh-copy-id</em>, assim, não será necessário informar a senha em cada <em>push</em>.
+Para poder acessar os arquivos do seu novo repositório, basta executar o comando:
 
-Espero que este artigo tenha sido útil para você! Dúvidas, críticas ou sugestões, favor informar nos comentários.
+`git clone fulano@ip-do-git-server:/home/fulano/projeto`
+
+O `git` utiliza o protocolo SSH para fazer as transferências de *commits*, então basta você informar a senha do usuário do SSH e tudo funcionará.
+
+Ao fazer `git push` você também precisa informar a senha do usuário do SSH. Mas para evitar, basta executar um `ssh-copy-id`, assim, não será necessário informar a senha em cada *push*.
+
+Espero que este artigo tenha sido útil para você! Dúvidas, críticas ou sugestões? Deixe um comentário.
 
 Até a próxima!
 
-Referências:
-<a href="https://www.kernel.org/pub/software/scm/git/docs/git-init.html" target="_blank">Git init manual</a>
-<a href="http://linux.die.net/man/1/ssh-copy-id" target="_blank">ssh-copy-id manual</a>
+**Referências**
+
+- [Git init manual](https://www.kernel.org/pub/software/scm/git/docs/git-init.html)
+- [ssh-copy-id manual](https://linux.die.net/man/1/ssh-copy-id)
