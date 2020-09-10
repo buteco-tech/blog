@@ -2157,13 +2157,13 @@
     "authors": ["daniel_magevski"]
   },
   {
-    "id": "enviando-e-mails-via-o-terminal-sendemail-sendmail",
+    "id": "enviando-emails-pelo-terminal-com-sendemail",
     "date_published": "2015-05-11T22:54:26Z",
     "date_modified": "2015-05-11T22:54:26Z",
-    "title": "Enviando e-mails via o terminal ( sendEmail != sendmail )",
-    "url": "https://butecotecnologico.com.br/enviando-e-mails-via-o-terminal-sendemail-sendmail/",
-    "images": [],
-    "tags": ["linux","terminal","email"],
+    "title": "Enviando e-mails pelo terminal com sendEmail",
+    "url": "https://butecotecnologico.com.br/enviando-emails-pelo-terminal-com-sendemail/",
+    "images": ["https://butecotecnologico.com.br/images/posts/sendEmail-script.png"],
+    "tags": ["linux","terminal","email","smtp","gmail"],
     "categories": ["Tutoriais"],
     "authors": ["marcossouza"]
   },
