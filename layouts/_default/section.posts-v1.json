@@ -1,0 +1,16 @@
+{{- $regularPages := where .Site.RegularPages "Type" "in" .Site.Params.MainSections -}}
+[
+  {{ range $index, $item := $regularPages -}}{{ if $index }},{{end}}
+  {
+    "id": "{{ .Params.slug | default .Params.url }}",
+    "date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+    "date_modified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+    "title": "{{ .Title }}",
+    "url": "{{ .Permalink }}",
+    "images": [{{ range $idxIm, $item := .Params.images }}{{ if $idxIm }},{{end}}"{{ $item | absURL }}"{{ end }}],
+    "tags": {{ .Params.tags | jsonify }},
+    "categories": {{ .Params.categories | jsonify }},
+    "authors": {{ .Params.authors | jsonify }}
+  }
+  {{- end }}
+]

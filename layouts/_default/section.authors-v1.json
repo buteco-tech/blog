@@ -1,0 +1,14 @@
+{{- $scratch := newScratch -}}
+{{- $scratch.Set "delimit" 0 -}}
+[
+  {{ range $name, $item := $.Site.Taxonomies.authors -}}{{ if $scratch.Get "delimit" }},{{end}}
+  {{- $scratch.Set "delimit" 1 }}
+  {
+    "id": "{{ $name }}",
+    "title": "{{ $item.Page.Title }}",
+    "url": "{{ $item.Page.Permalink }}",
+    "bio": "{{ $item.Page.Params.bio | default "" }}",
+    "article_count": "{{ $item.Count }}"
+  }
+  {{- end }}
+]

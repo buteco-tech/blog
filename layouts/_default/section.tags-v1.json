@@ -1,0 +1,13 @@
+{{- $scratch := newScratch -}}
+{{- $scratch.Set "delimit" 0 -}}
+[
+  {{ range $name, $item := $.Site.Taxonomies.tags -}}{{ if $scratch.Get "delimit" }},{{end}}
+  {{- $scratch.Set "delimit" 1 }}
+  {
+    "id": "{{ $name }}",
+    "title": "{{ $item.Page.Title }}",
+    "url": "{{ $item.Page.Permalink }}",
+    "article_count": "{{ $item.Count }}"
+  }
+  {{- end }}
+]
