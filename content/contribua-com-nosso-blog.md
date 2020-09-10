@@ -18,4 +18,6 @@ Nós iremos revisar e sugerir alterações caso necessário, se tudo estiver cor
 
 Em caso de dúvidas entre em contato pelo [grupo do Telegram](https://t.me/butecotecnologico).
 
+Se preferir, envie seu artigo pelo formulário abaixo.
+
 {{< envio-de-artigo action="https://submit-form.com/NUIICBvgCDi30z3cu5x_c" recaptcha="6Lf57r4ZAAAAAK6fSjQnmj_NvXyXIE0lYq4O2EV6" >}}
