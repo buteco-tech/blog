@@ -1,0 +1,80 @@
+[
+  
+  {
+    "id": "alexandrevicenzi",
+    "title": "Alexandre Vicenzi",
+    "url": "https://butecotecnologico.com.br/autores/alexandrevicenzi/",
+    "bio": "Engenheiro de Software",
+    "article_count": "130"
+  },
+  {
+    "id": "brunopiske",
+    "title": "Bruno Piske",
+    "url": "https://butecotecnologico.com.br/autores/bruno-piske/",
+    "bio": "",
+    "article_count": "3"
+  },
+  {
+    "id": "buteco",
+    "title": "Equipe Buteco",
+    "url": "https://butecotecnologico.com.br/autores/buteco/",
+    "bio": "Editores do Buteco Tecnológico",
+    "article_count": "30"
+  },
+  {
+    "id": "camilastadnik",
+    "title": "Camila Stadnik",
+    "url": "https://butecotecnologico.com.br/autores/camila-stadnik/",
+    "bio": "",
+    "article_count": "2"
+  },
+  {
+    "id": "daniel_magevski",
+    "title": "Daniel Magevski",
+    "url": "https://butecotecnologico.com.br/autores/daniel-magevski/",
+    "bio": "",
+    "article_count": "21"
+  },
+  {
+    "id": "dsantos",
+    "title": "Douglas Santos",
+    "url": "https://butecotecnologico.com.br/autores/dsantos/",
+    "bio": "Desenvolvedor de Software/Sistemas",
+    "article_count": "15"
+  },
+  {
+    "id": "guilhermevanz",
+    "title": "José Guilherme Vanz",
+    "url": "https://butecotecnologico.com.br/autores/jvanz/",
+    "bio": "Software Engineer",
+    "article_count": "4"
+  },
+  {
+    "id": "jaswdr",
+    "title": "Jonathan André Schweder",
+    "url": "https://butecotecnologico.com.br/autores/jaswdr/",
+    "bio": "System Developer Engineer at Amazon Web Services",
+    "article_count": "36"
+  },
+  {
+    "id": "marcooliveira",
+    "title": "Marco Carvalho de Oliveira",
+    "url": "https://butecotecnologico.com.br/autores/marco-oliveira/",
+    "bio": "Gerente de TI",
+    "article_count": "17"
+  },
+  {
+    "id": "marcossouza",
+    "title": "Marcos Paulo de Souza",
+    "url": "https://butecotecnologico.com.br/autores/mpdesouza/",
+    "bio": "Software Engineer",
+    "article_count": "63"
+  },
+  {
+    "id": "pedrojefferson",
+    "title": "Pedro Jefferson",
+    "url": "https://butecotecnologico.com.br/autores/pedro-jefferson/",
+    "bio": "",
+    "article_count": "5"
+  }
+]

@@ -1720,16 +1720,7 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       <pubDate>Thu, 22 Oct 2015 21:49:26 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/confira-algumas-novidades-do-kernel-linux-4-3/</guid>
-      <description>&lt;p&gt;Como de costume, sempre tentamos mostrar aqui algumas novidades das &lt;em&gt;releases&lt;/em&gt; do &lt;em&gt;kernel&lt;/em&gt; Linux. Segue uma lista abaixo do que será encontrado na versão 4.3, que já se encontra no rc6 e que em breve será lançado:&lt;/p&gt;
-&lt;p&gt;DRM (&lt;em&gt;Direct Rendering Manager&lt;/em&gt;)/Gráficos&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;Intel Skylake &#34;Gen9&#34; agora é suportado por padrão e não mais é necessário ativa-lo utilizando uma opção do kernel command-line&lt;/li&gt;
-	&lt;li&gt;Suporte inicial para  AMD R9 Fury &#39;Fiji&#39;, mas sem gerenciamento de energia ou re-cloking (o que mantém a performance baixa até então).&lt;/li&gt;
-	&lt;li&gt;Um grande retrabalho foi feito no Nouveau, afim de facilitar futuras melhorias no &lt;em&gt;driver&lt;/em&gt;, além de ter algumas melhorias no re-cloking de algumas GPUs da Nvidia. Embora tenham acontecido estas melhorias, a performance até agora é a mesma.&lt;/li&gt;
-	&lt;li&gt;Suporte a OpenGL 3.3 para o VMware. Este suporte se faz necessário quando o Linux é executado como &lt;em&gt;guest&lt;/em&gt; VM no VMware workstation 12 e a utilização do &lt;em&gt;driver&lt;/em&gt; VMWgfx no &lt;em&gt;guest&lt;/em&gt;, em conjunto com o novo Mesa 11.0.&lt;/li&gt;
-	&lt;li&gt;Melhorias mínimas em &lt;em&gt;drivers&lt;/em&gt; de &lt;em&gt;framebuffer&lt;/em&gt;&lt;/li&gt;
-	&lt;li&gt;Várias mudanças para gráficos Intel e diversas melhorias em &lt;em&gt;drivers&lt;/em&gt; DRM&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Como de costume, sempre tentamos mostrar aqui algumas novidades das &lt;em&gt;releases&lt;/em&gt; do &lt;em&gt;kernel&lt;/em&gt; Linux. Segue uma lista abaixo do que será encontrado na versão 4.3, que já se encontra no rc6 e que em breve será lançado:&lt;/p&gt;</description>
       
       <image>
         <url>https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg</url>
@@ -1980,19 +1971,7 @@ No entanto, cuidado com atualizações via pacotes pois as vezes tendem a ter al
       <pubDate>Wed, 23 Sep 2015 23:51:43 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/novidades-do-gnome-3-18/</guid>
-      <description>&lt;p&gt;O novo GNOME 3.18 foi lançado hoje, com muitas novidades e melhorias. Segue abaixo algumas delas:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;O suporte a HiDPI (famosa tela Retina dos Macs) ainda tem alguns problemas, mas a versão 3.18 finalmente resolveu o problema de redimensionamento de cursor&lt;/li&gt;
-	&lt;li&gt;Um bug de longa data da NVIDIA foi corrigido&lt;/li&gt;
-	&lt;li&gt;Integração com o Google Drive&lt;/li&gt;
-	&lt;li&gt;&lt;em&gt;Browser Epiphany&lt;/em&gt; bloqueia propaganda por padrão e habilita o DNT (&lt;em&gt;Do not Track&lt;/em&gt;)&lt;/li&gt;
-	&lt;li&gt;Melhorias no &lt;em&gt;File Chooser&lt;/em&gt; (seletor de arquivos)&lt;/li&gt;
-	&lt;li&gt;Trabalhado o suporte a atualização de firmware UEFI através do GNOME Software&lt;/li&gt;
-	&lt;li&gt;Melhorias no &lt;em&gt;Calendar&lt;/em&gt; e Nautilus&lt;/li&gt;
-	&lt;li&gt;Removido o suporte ao Window XP no GTK+&lt;/li&gt;
-	&lt;li&gt;Muitas outras melhorias e correções de bugs&lt;/li&gt;
-&lt;/ul&gt;
-Como de praxe, a GNOME foundation também libera um vídeo mostrando as melhorias desta nova versão:</description>
+      <description>&lt;p&gt;O novo GNOME 3.18 foi lançado hoje, com muitas novidades e melhorias.&lt;/p&gt;</description>
       
       <image>
         <url>https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/402px-gnomelogo-svg.png</url>
@@ -2675,7 +2654,7 @@ quilt new alteracao1.patch
     </item>
     <item>
       
-      <title>Linux Mint 17.2 &#34;Rafaela&#34; RC já está disponível</title>
+      <title>Linux Mint 17.2 (Rafaela) RC já está disponível</title>
       <link>https://butecotecnologico.com.br/linux-mint-17-2-rafaela-ja-esta-disponivel/</link>
       <pubDate>Wed, 24 Jun 2015 12:57:00 +0000</pubDate>
       
@@ -2684,7 +2663,7 @@ quilt new alteracao1.patch
       
       <image>
         <url>https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/linux-mint.png</url>
-        <title>Linux Mint 17.2 &#34;Rafaela&#34; RC já está disponível</title>
+        <title>Linux Mint 17.2 (Rafaela) RC já está disponível</title>
         <link>https://butecotecnologico.com.br/linux-mint-17-2-rafaela-ja-esta-disponivel/</link>
       </image>
       
@@ -4540,20 +4519,6 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
     </item>
     <item>
       
-      <title>Envie seu artigo!</title>
-      <link>https://butecotecnologico.com.br/envie-seu-artigo/</link>
-      <pubDate>Thu, 08 Jan 2015 08:00:15 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/envie-seu-artigo/</guid>
-      <description>Olá caros leitores, nosso site está passando por algumas melhorias de ano novo, até porque o que é bom pode ficar ainda melhor!</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/posts/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Ganhe uma Second Shot em seu exame Microsoft MCP</title>
       <link>https://butecotecnologico.com.br/ganhe-uma-second-shot-em-seu-exame-microsoft-mcp/</link>
       <pubDate>Wed, 07 Jan 2015 20:48:20 +0000</pubDate>
@@ -5069,20 +5034,6 @@ OpenShift Online é a plataforma de desenvolvimento e hospedagem de aplicações
     </item>
     <item>
       
-      <title>Harry speaks Python</title>
-      <link>https://butecotecnologico.com.br/harry-speaks-python/</link>
-      <pubDate>Tue, 30 Sep 2014 08:21:15 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/harry-speaks-python/</guid>
-      <description>Via Reddit</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/posts/</link>
-      </image>
-    </item>
-    <item>
-      
       <title>Introdução ao ALSA e sua API em C e Python</title>
       <link>https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/</link>
       <pubDate>Wed, 24 Sep 2014 23:48:00 +0000</pubDate>
@@ -5130,21 +5081,6 @@ print_r($localizacao);
 //array() = (&#39;cep&#39;,&#39;89050000&#39;,&#39;logradouro&#39;,&#39;Avenida Brasil&#39;, &#39;bairro&#39;,&#39;Ponta Aguda&#39;, &#39;cidade&#39;,&#39;Blumenau&#39;,&#39;uf&#39;,&#39;Santa Catarina&#39;)
 
 &lt;/code&gt;&lt;/pre&gt;</description>
-      <image>
-        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
-        <title>Buteco Tecnológico</title>
-        <link>https://butecotecnologico.com.br/posts/</link>
-      </image>
-    </item>
-    <item>
-      
-      <title>Python</title>
-      <link>https://butecotecnologico.com.br/python-xkcd/</link>
-      <pubDate>Mon, 22 Sep 2014 17:08:36 +0000</pubDate>
-      
-      <guid>https://butecotecnologico.com.br/python-xkcd/</guid>
-      <description>Apenas para descontrair :P
-Via XKCD</description>
       <image>
         <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
         <title>Buteco Tecnológico</title>
