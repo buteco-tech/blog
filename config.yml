@@ -160,7 +160,7 @@ params:
     #   url: https://github.com/ButecoOpenSource
     - icon: fas fa-rss
       title: Feed RSS
-      url: https://butecotecnologico.com.br/index.xml
+      url: /feed-rss/
 menu:
   main:
     - name: Início
