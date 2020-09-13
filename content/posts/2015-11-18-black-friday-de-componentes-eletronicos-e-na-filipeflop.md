@@ -10,14 +10,12 @@ slug: black-friday-de-componentes-eletronicos-e-na-filipeflop
 images:
   - /images/wp-content/uploads/2015/11/banner_bf_ff.png.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - arduino
-  - black friday
-  - desconto
-  - embarcados
+  - black-friday
   - iot
-  - raspberrypi
+  - raspberry-pi
 ---
 
 <strong>Você sabe o que é Black Friday?</strong>

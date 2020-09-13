@@ -8,11 +8,10 @@ slug: e-dificil-imaginar-um-mundo-sem-linux
 images:
   - /images/wp-content/uploads/2015/10/WorldWithoutLinux.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - linux
-  - open-source
-  - video
+  - software-livre
 ---
 
 Este é o tema de uma série de vídeos lançada pela The Linux Foundation.

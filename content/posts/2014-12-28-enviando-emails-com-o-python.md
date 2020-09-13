@@ -5,13 +5,14 @@ authors:
   - alexandrevicenzi
 slug: enviando-emails-com-o-python
 categories:
-  - Desenvolvimento
-  - Tutoriais
+  - desenvolvimento
+  - tutoriais
 tags:
   - email
   - python
   - smtplib
   - smtp
+  - gmail
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 ---

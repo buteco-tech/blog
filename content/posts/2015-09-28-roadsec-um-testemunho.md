@@ -10,11 +10,9 @@ slug: roadsec-um-testemunho
 images:
   - /images/wp-content/uploads/2015/09/road-sec.jpg
 categories:
-  - Eventos
+  - eventos
 tags:
-  - evento
   - roadsec
-  - segurança
 ---
 
 Vou começar assim, a propaganda não era enganosa o evento foi bom, trouxe profissionais com experiência que compartilharam suas vivências na área de segurança. Nada daquelas palestras para preencher tempo, ou com profissionais que não tivessem desenvoltura para falar.

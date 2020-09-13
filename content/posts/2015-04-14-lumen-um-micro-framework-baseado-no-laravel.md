@@ -10,14 +10,11 @@ slug: lumen-um-micro-framework-baseado-no-laravel
 images:
   - /images/wp-content/uploads/2015/04/lumen-logo-e1429022192118.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - framework
-  - laçamento
   - laravel
-  - laravel 5
   - lumen
-  - micro-framework
   - php
   - web
 ---

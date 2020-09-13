@@ -2,16 +2,15 @@
 title: "Hacktoberfest 2020"
 summary: "Crie artigos para o nosso blog e ganhe uma camisa."
 date: 2020-08-31 08:00:00
-categories:
-  - Notícias
-tags:
-  - novidades
-  - hacktoberfest
-  - github
-  - digitalocean
 slug: hacktoberfest-2020
 authors:
   - alexandrevicenzi
+categories:
+  - noticias
+tags:
+  - hacktoberfest
+  - github
+  - digitalocean
 images:
 - /images/posts/hf-2020-400.png
 - /images/posts/hf-2020-600.png

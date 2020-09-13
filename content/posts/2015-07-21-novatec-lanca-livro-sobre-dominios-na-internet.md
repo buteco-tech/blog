@@ -8,10 +8,10 @@ slug: novatec-lanca-livro-sobre-dominios-na-internet
 images:
   - /images/wp-content/uploads/2015/07/nomes_dominios_novatec.png
 categories:
-  - Notícias
-  - Livros
+  - noticias
 tags:
-  - domínios
+  - livros
+  - dominios
   - internet
   - nic
   - novatec

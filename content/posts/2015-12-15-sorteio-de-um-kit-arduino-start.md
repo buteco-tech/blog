@@ -6,11 +6,10 @@ authors:
   - buteco
 slug: sorteio-de-um-kit-arduino-start
 categories:
-  - Sorteios
+  - sorteios
 tags:
   - arduino
-  - sorteio
-  - uno r3
+  - arduino-uno
 ---
 
 Ho! Ho! Ho!

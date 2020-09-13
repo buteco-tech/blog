@@ -3,17 +3,17 @@ title: "Kubernetes explicado"
 summary: "O Kubernetes (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers e foi criado pelo Google."
 tagline: "Entendendo os conceitos do Kubernetes"
 date: 2020-08-13 08:00:00
+slug: kubernetes-explicado
+authors:
+  - alexandrevicenzi
 categories:
-  - Desenvolvimento
+  - cloud-computing
 tags:
   - containers
   - linux
   - docker
   - kubernetes
   - paas
-slug: kubernetes-explicado
-authors:
-  - alexandrevicenzi
 images:
 - /images/posts/k8s-logo.png
 ---

@@ -8,13 +8,9 @@ slug: resultado-do-sorteio-de-uma-entrada-para-a-roadsec
 images:
   - /images/wp-content/uploads/2015/09/road-sec.jpg
 categories:
-  - Sorteios
+  - sorteios
 tags:
-  - evento
-  - eventos
   - roadsec
-  - segurança
-  - sorteio
 ---
 
 Primeiramente gostaríamos de agradecer a todos que participaram do sorteio de uma entrada para o evento da <a href="http://roadsec.com.br/" target="_blank">Roadsec</a> de mega encerramento em São Paulo no dia 12 de novembro.

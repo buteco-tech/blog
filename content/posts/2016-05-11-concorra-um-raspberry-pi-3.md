@@ -8,11 +8,10 @@ slug: concorra-um-raspberry-pi-3
 images:
   - /images/wp-content/uploads/2016/05/raspberry-pi-3.jpg
 categories:
-  - Sorteios
+  - sorteios
 tags:
   - arm
-  - raspberry pi
-  - wifi
+  - raspberry-pi
 ---
 
 A <a href="http://www.filipeflop.com/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoOpenSource" target="_blank">FILIPEFLOP</a>, nossa parceira, esta realizando o sorteio de um Raspberry Pi 3. O Raspberry Pi 3 recém chegou na FILIPEFLOP e há alguns dias atras <a href="/review-raspberry-pi-3" target="_blank">fizemos uma review</a> comentando as diferenças em relação ao seu antecessor.

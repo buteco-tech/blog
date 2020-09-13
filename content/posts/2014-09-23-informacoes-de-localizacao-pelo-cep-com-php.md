@@ -8,7 +8,7 @@ authors:
   - jaswdr
 slug: informacoes-de-localizacao-pelo-cep-com-php
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - cep
   - php

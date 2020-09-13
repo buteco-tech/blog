@@ -10,12 +10,10 @@ slug: novidades-do-kernel-4-0
 images:
   - /images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg
 categories:
-  - Notícias
+  - noticias
 tags:
   - kernel
   - linux
-  - opensuse
-  - redhat
 ---
 
 Após a versão 3.19, Linus escolheu via enquete no Google Plus para pular para a versão 4.0 do kernel. A versão 4.0 deve ser oficialmente lançada em algumas semanas. Aqui estão algumas novidades desta nova versão:

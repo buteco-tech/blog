@@ -6,10 +6,12 @@ authors:
   - jaswdr
 slug: usando-o-framework-laravel-com-bootstrap
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - laravel
   - php
+  - bootstrap
 ---
 
 <p class="separator"><a href="http://3.bp.blogspot.com/-eLybhJqsUiE/VEfRGrzDOvI/AAAAAAAADrg/e09RPLXGsk8/s1600/logo.png"><img class="aligncenter" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2F3.bp.blogspot.com%2F-eLybhJqsUiE%2FVEfRGrzDOvI%2FAAAAAAAADrg%2Fe09RPLXGsk8%2Fs1600%2Flogo.png&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" alt="" border="0" data-orig-src="http://3.bp.blogspot.com/-eLybhJqsUiE/VEfRGrzDOvI/AAAAAAAADrg/e09RPLXGsk8/s1600/logo.png" /></a></p>

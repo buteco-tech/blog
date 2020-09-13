@@ -10,7 +10,7 @@ slug: comeca-a-pre-venda-de-steam-controllers-e-steam-machines
 images:
   - /images/wp-content/uploads/2015/06/Steam.jpg
 categories:
-  - Jogos
+  - jogos
 tags:
   - games
   - linux

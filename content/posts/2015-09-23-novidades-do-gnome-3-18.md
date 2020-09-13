@@ -8,7 +8,7 @@ slug: novidades-do-gnome-3-18
 images:
   - /images/wp-content/uploads/2015/03/402px-gnomelogo-svg.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - desktop
   - gnome

@@ -10,11 +10,11 @@ slug: projetos-interessantes-do-gsoc-2015
 images:
   - /images/wp-content/uploads/2015/05/gsoc2015-300x270.jpg
 categories:
-  - Notícias
+  - noticias
 tags:
   - linux
-  - open-source
   - software-livre
+  - gsoc
 ---
 
 <b>Google Summer of Code</b> é um projeto para incentivar estudantes de todo mundo a desenvolver softwares livre. É um programa anual que acontece desde 2005, no qual o Google fornece bolsas (de US$5,500, em 2014) para todos os estudantes que completem com sucesso um projeto de Software Livre durante o verão do hemisfério norte. O programa é aberto para estudantes a partir de 18 anos.

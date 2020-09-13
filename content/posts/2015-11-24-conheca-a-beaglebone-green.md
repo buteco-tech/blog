@@ -10,13 +10,13 @@ slug: conheca-a-beaglebone-green
 images:
   - /images/wp-content/uploads/2015/11/beagle-hd-logo_dd.png
 categories:
-  - Hardware
-  - DIY
-  - Reviews
+  - embarcados
+  - reviews
 tags:
+  - diy
   - arm
   - beaglebone
-  - beaglebone green
+  - beaglebone-green
   - cloud9
 ---
 

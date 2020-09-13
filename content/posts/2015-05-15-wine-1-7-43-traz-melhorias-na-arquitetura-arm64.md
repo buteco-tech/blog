@@ -10,11 +10,11 @@ slug: wine-1-7-43-traz-melhorias-na-arquitetura-arm64
 images:
   - /images/wp-content/uploads/2015/05/wine.png
 categories:
-  - Notícias
+  - noticias
 tags:
-  - jogos
   - linux
   - wine
+  - arm
 ---
 
 O Wine 1.7.43 foi liberado hoje (15/05) e vem com várias melhorias em relação a versão anterior.

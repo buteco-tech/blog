@@ -10,10 +10,11 @@ slug: inkscape-0-91-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/01/inkscape_091_icon_1.png
 categories:
-  - Ferramentas
+  - noticias
 tags:
   - inkscape
   - svg
+  - vetorial
 ---
 
 O Inkscape é uma ferramenta de código aberto para edição de gráficos vetoriais, muito semelhante ao Adobe Illustrator, Corel Draw, Freehand, ou Xara X. O que diferencia o Inkscape destes outros aplicativos, é o suporte a Scalable Vector Graphics (SVG) como seu formato de arquivos nativo. O SVG é um padrão aberto baseado no XML.

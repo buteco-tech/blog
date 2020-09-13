@@ -10,12 +10,12 @@ slug: kodi-14-1-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/02/kodi-helix-14.1-600x336.png
 categories:
-  - Ferramentas
+  - noticias
 tags:
-  - audio
   - central-multimidia
-  - kodi
+  - audio
   - video
+  - kodi
   - xbmc
 ---
 

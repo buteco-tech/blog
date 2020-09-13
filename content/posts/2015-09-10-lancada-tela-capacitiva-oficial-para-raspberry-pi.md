@@ -6,11 +6,12 @@ authors:
   - buteco
 slug: lancada-tela-capacitiva-oficial-para-raspberry-pi
 categories:
-  - Hardware
-  - DIY
+  - embarcados
+  - noticias
 tags:
-  - hardware
-  - raspberrypi
+  - diy
+  - display
+  - raspberry-pi
 ---
 
 A Raspberry Pi Foundation anunicou recentemente uma tela touchscreen capacitiva para o Raspberry Pi. O acessório possui display de 7 polegadas, resolução de 800x480 pixels a 60fps, ângulo de visualização de 70 graus além de suportar até 10 toques simultâneos.

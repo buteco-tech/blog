@@ -10,10 +10,9 @@ slug: o-sorteado-da-vez
 images:
   - /images/wp-content/uploads/2015/06/livros-casa-do-codigo.jpg
 categories:
-  - Sorteios
+  - sorteios
 tags:
   - ebook
-  - sorteio
 ---
 
 Olá caros leitores,

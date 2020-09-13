@@ -10,7 +10,8 @@ slug: codeception-testes-em-php-para-todos
 images:
   - /images/wp-content/uploads/2015/10/logo2.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - codeception
   - php

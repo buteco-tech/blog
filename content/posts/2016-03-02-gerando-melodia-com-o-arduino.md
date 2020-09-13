@@ -10,11 +10,11 @@ slug: gerando-melodia-com-o-arduino
 images:
   - /images/wp-content/uploads/2016/02/logo-arduino.png
 categories:
-  - Hardware
-  - DIY
+  - embarcados
+  - tutoriais
 tags:
+  - diy
   - arduino
-  - hardware
   - mario
   - pwm
 ---

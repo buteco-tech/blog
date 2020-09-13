@@ -10,12 +10,14 @@ slug: fazendo-backup-para-o-amazon-s3-com-python
 images:
   - /images/wp-content/uploads/2015/04/amazon_aws-s3.png
 categories:
-  - Ferramentas
+  - ferramentas
+  - tutoriais
 tags:
-  - amazon s3
+  - aws
+  - amazon-s3
   - boto
   - python
-  - yaml
+  - backup
 ---
 
 Fazer backup é algo muito importante quando se tem um site ou sistemas em produção. Existem várias formas de se fazer um backup. Você pode optar por um software, pago ou não, ou criar a sua própria ferramente ou script dependendo de sua necessidade.

@@ -9,7 +9,7 @@ authors:
   - buteco
 slug: ultimas-horas-para-participar-do-sorteio-do-livro-php-moderno
 categories:
-  - Sorteios
+  - sorteios
 tags:
   - novatec
   - php

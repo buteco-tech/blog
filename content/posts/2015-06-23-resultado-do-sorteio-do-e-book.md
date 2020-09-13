@@ -8,8 +8,9 @@ slug: resultado-do-sorteio-do-e-book
 images:
   - /images/wp-content/uploads/2015/05/cdc-logo-novo-400.png
 categories:
-  - Sorteios
+  - sorteios
 tags:
+  - livros
   - ebook
 ---
 

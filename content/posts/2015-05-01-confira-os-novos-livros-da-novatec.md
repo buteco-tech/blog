@@ -9,9 +9,9 @@ authors:
   - buteco
 slug: confira-os-novos-livros-da-novatec
 categories:
-  - Notícias
-  - Livros
+  - noticias
 tags:
+  - livros
   - html5
   - hvvm
   - ipsec

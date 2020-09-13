@@ -9,13 +9,12 @@ authors:
   - alexandrevicenzi
 slug: instalando-o-supervisor-um-sistema-de-controle-de-processos
 categories:
-  - Ferramentas
+  - ferramentas
+  - tutoriais
 tags:
-  - daemon
-  - gerenciamento
   - linux
-  - processos
   - systemd
+  - supervisor
 ---
 
 O <a href="http://supervisord.org/">Supervisor</a> é um sistema cliente/servidor que permite que os usuários monitorem e controlem inúmeros processos em sistema operacionais UNIX-like.

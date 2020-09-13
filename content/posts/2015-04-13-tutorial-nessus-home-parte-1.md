@@ -11,11 +11,12 @@ authors:
   - daniel_magevski
 slug: tutorial-nessus-home-parte-1
 categories:
-  - Ferramentas
+  - tutoriais
+  - seguranca
 tags:
-  - ferramenta
   - redes
-  - segurança
+  - linux
+  - kali-linux
 ---
 
 <a href="/images/wp-content/uploads/2015/04/Nessus-home.jpg"><img class="alignnone  wp-image-1817" src="/images/wp-content/uploads/2015/04/Nessus-home.jpg" alt="Nessus-home" width="567" height="100" /></a>

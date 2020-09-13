@@ -3,18 +3,19 @@ title: "Livros gratuitos"
 summary: "Aproveite o tempo em casa para ler alguns livros que estão de graça."
 tagline: "Aproveite o tempo em casa para ler alguns livros que estão de graça"
 date: 2020-04-24 08:00:00
+slug: livros-gratuitos-abril-2020
+authors:
+  - alexandrevicenzi
 categories:
-  - Livros
-  - Notícias
+  - noticias
+  - cloud-computing
 tags:
+  - livros
   - kafka
   - kubernetes
   - sre
   - devops
   - bitcoin
-slug: livros-gratuitos-abril-2020
-authors:
-  - alexandrevicenzi
 images:
   - /images/posts/kafka-definitive-guide-cover.jpg
 ---

@@ -6,10 +6,12 @@ authors:
   - marcossouza
 slug: conhecendo-o-virt-manager
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - linux
-  - virtualização
+  - centos
+  - virtualizacao
+  - virt-manager
 ---
 
 O virt-manager é uma ferramenta desenvolvida pela RedHat para gerenciar máquinas virtuais. Para quem já trabalhou com VMWare e VirtualBox, a interface do virt-manager é bem semelhante. A ferramenta foi construída sobre a <a href="https://en.wikipedia.org/wiki/Libvirt">libvirt</a>, que é uma ferramenta para gerenciar plataformas de virtualização. Por isso, o virt-manager tem suporte a uma série de plataformas de hypervisors, como por exemplo QEMU/KVM, LXC (linux containers), Xen, entre várias outras. Como podemos ver abaixo, o visual do virt-manager deixa claro que seu foco está na simplicidade e na facilidade do seu uso:

@@ -8,7 +8,7 @@ slug: sorteio-de-um-convite-para-o-inbox
 images:
   - /images/wp-content/uploads/2014/11/Inbox-by-Gmail.jpg
 categories:
-  - Sorteios
+  - sorteios
 tags:
   - email
   - gmail

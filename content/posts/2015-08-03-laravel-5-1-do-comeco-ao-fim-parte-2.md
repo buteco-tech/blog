@@ -8,7 +8,7 @@ authors:
   - jaswdr
 slug: laravel-5-1-do-comeco-ao-fim-parte-2
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - framework
   - laravel

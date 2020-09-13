@@ -8,10 +8,10 @@ authors:
   - marcooliveira
 slug: sql-na-medida-certa
 categories:
-  - Reviews
-  - Livros
+  - reviews
+  - banco-de-dados
 tags:
-  - banco de dados
+  - livros
   - sql
 ---
 

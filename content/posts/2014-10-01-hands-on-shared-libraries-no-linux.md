@@ -6,9 +6,10 @@ authors:
   - marcossouza
 slug: hands-on-shared-libraries-no-linux
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - c
+  - cpp
   - linux
   - shared-libraries
 ---

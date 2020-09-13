@@ -8,11 +8,11 @@ slug: curl-7-40-disponivel-e-agora-com-suporte-ao-protocolo-smbcifs
 images:
   - /images/wp-content/uploads/2015/01/ds-libcurl.jpg
 categories:
-  - Desenvolvimento
-  - Notícias
+  - noticias
 tags:
   - curl
   - libcurl
+  - linux
 ---
 
 O cURL 7.40 foi disponibilizado hoje (08/01) com várias novidades e correções de bugs. Para quem não o conhece ainda, o cURL é um aplicativo e biblioteca para download pelos mais variados tipos de protocolos.

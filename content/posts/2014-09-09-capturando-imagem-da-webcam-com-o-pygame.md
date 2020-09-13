@@ -1,32 +1,134 @@
 ---
-type: wordpress
-title: Capturando Imagem da Webcam com o PyGame
+title: Capturando imagem da webcam com o PyGame
 date: 2014-09-09 00:27:57
 authors:
   - alexandrevicenzi
 slug: capturando-imagem-da-webcam-com-o-pygame
 categories:
-  - Desenvolvimento
-  - Jogos
+  - desenvolvimento
+  - jogos
 tags:
   - camera
   - pygame
   - python
   - webcam
+images:
+  - /images/posts/pygame-logo.png
 ---
 
-Este é o meu primeiro post no blog e gostaria de falar sobre o <a title="PyGame" href="http://www.pygame.org/news.html" target="_blank">PyGame</a>. Para quem ainda não conhece o PyGame, ele é uma biblioteca Python para escrever jogos baseados no SDL.
+{{<figure src="/images/posts/pygame-logo.png" alt="pygame">}}
 
-No exemplo de hoje vou mostrar como utilizar o PyGame e uma Webcam para capturar imagens em tempo real. O módulo de câmera é experimental e suporta apenas Linux e câmeras v4l2 no momento.
+O [PyGame][pygame] é uma coleção de módulos Python para a criação de jogos baseados em [SDL][sdl].
+Sendo em Python, ele é portável e funciona em praticamente qualquer plataforma ou sistema.
+
+Para instalar o PyGame execute o comando:
+
+```sh
+pip install pygame
+```
+
+Provavelmente será necessário instalar uma variedade de pacotes no seu sistema, confira a [documentação de compilação][compilation] para obter a lista completa, ou tente instalar o pacote `python3-pygame`, caso esteja disponível em sua distro, que ele virá com todas as dependências necessárias.
+
+No exemplo de hoje vou mostrar como utilizar o PyGame e uma webcam para capturar imagens em tempo real. O módulo de câmera é experimental e suporta apenas Linux e câmeras v4l2 no momento.
 
 Abaixo você pode verificar o código completo com alguns comentários:
 
-<script type='text/javascript' src='//gistfy-app.herokuapp.com/github/ButecoOpenSource/pycam/pycam.py'></script>
+```py
+import pygame
+import pygame.camera
 
-Código fonte no <a href="https://github.com/ButecoOpenSource/pycam">GitHub</a>.
+from datetime import datetime
+from pygame.locals import *
 
-E ai, gostou?
+FPS = 30
 
-Deixe seu comentário ou sua dúvida.
+class App(object):
+
+    def __init__(self, size=None):
+        # Iniciando o Pygame.
+        pygame.init()
+        # Iniciando o módulo de som.
+        pygame.mixer.init()
+        # Iniciando o módulo de câmera.
+        pygame.camera.init()
+        # Iniciando o módulo de fonte.
+        pygame.font.init()
+        pygame.display.set_caption("PyCam")
+
+        self.size = size or (640, 480)
+        # Cria a tela principal.
+        self.display = pygame.display.set_mode(self.size, 0)
+        # Relógio para controlar o FPS.
+        self.clock = pygame.time.Clock()
+
+    def __del__(self):
+        # Liberando os módulos.
+        pygame.font.quit()
+        pygame.camera.quit()
+        pygame.mixer.quit()
+        pygame.quit()
+
+    def main(self):
+        running = True
+
+        # Recuperar a lista de câmeras disponíveis.
+        clist = pygame.camera.list_cameras()
+
+        # Lista vazia?
+        if not clist:
+            raise ValueError("Nenhuma camera encontrada.")
+
+        # Define a câmera a ser usada e a resolução.
+        cam = pygame.camera.Camera(clist[0], self.size)
+        # Iniciando a Webcam.
+        cam.start()
+
+        # Enquanto o usuário não fechar a tela ou apertar ESC,
+        # ficará exibindo imagens da câmera em tempo real.
+        while running:
+            events = pygame.event.get()
+
+            for e in events:
+                if e.type == QUIT or (e.type == KEYDOWN and e.key == K_ESCAPE):
+                    running = False
+                if (e.type == KEYDOWN and e.key == K_RETURN):
+                    # Salva a imagem em um arquivo em disco ao apertar a tecla ENTER.
+                    img = cam.get_image()
+                    filename = datetime.strftime(datetime.now(), "capture_%d_%m_%Y_%H_%m_%S.png")
+                    pygame.image.save(img, filename)
+                    print(f"Imagem salva em: {filename}")
+                    try:
+                        # Toca um som de captura, simulando uma câmera.
+                        pygame.mixer.Sound("camera-shutter-click.ogg").play()
+                    except Exception as e:
+                        print(e)
+
+            # Verifica se a câmera está pronta para uso.
+            if cam.query_image():
+                # Captura uma imagem e joga na tela.
+                snapshot = cam.get_image()
+                self.display.blit(snapshot, (0, 0))
+
+            pygame.display.flip()
+            self.clock.tick(FPS)
+
+        # Liberando a Webcam.
+        cam.stop()
+
+if __name__ == "__main__":
+    A = App()
+    A.main()
+```
+
+Atalhos disponíveis:
+
+<kbd>Enter</kbd> — uma imagem será capturada e salva no local de execução do aplicativo
+<kbd>Esc</kbd> — encerra a aplicação
+
+E ai, gostou? Deixe um comentário.
 
 Até a próxima.
+
+[pygame]: https://www.pygame.org/
+[sdl]: https://www.libsdl.org/
+[compilation]: https://www.pygame.org/wiki/Compilation

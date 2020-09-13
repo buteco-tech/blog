@@ -10,9 +10,8 @@ slug: gxui-interface-multiplataforma-para-go
 images:
   - /images/wp-content/uploads/2015/03/go-lang-logo.jpg
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
-  - go
   - go-lang
   - google
   - gxui

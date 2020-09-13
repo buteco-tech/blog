@@ -3,12 +3,12 @@ type: wordpress
 title: "LPIC: por onde começar"
 date: 2015-03-24 00:28:50
 authors:
-  - marcossouza
+  - marcooliveira
 slug: lpic-por-onde-comecar
 images:
   - /images/wp-content/uploads/2015/03/lpic-logos.png
 categories:
-  - Certificações
+  - certificacoes
 tags:
   - linux
   - lpic
@@ -48,5 +48,4 @@ Fiz uma palestra a algum tempo atrás sobre <a href="http://pt.slideshare.net/de
 
 *THE END .. por hora é isto :)*
 
-Artigo enviado por: Marco Carvalho de Oliveira
 Blog: <a href="http://demoncyber.wordpress.com/" target="_blank">http://demoncyber.wordpress.com/</a>

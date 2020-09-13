@@ -8,11 +8,13 @@ authors:
   - pedrojefferson
 slug: acelerando-o-desenvolvimento-com-glade
 categories:
-  - Ferramentas
-tags:
+  - ferramentas
   - desenvolvimento
+tags:
   - gnome
   - python
+  - glade
+  - gtk
 ---
 
 <img class="aligncenter size-full wp-image-1575" src="/images/wp-content/uploads/2015/03/gnome-logosz.png" alt="gnome-logosz" width="417" height="201" />

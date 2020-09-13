@@ -8,7 +8,7 @@ slug: nvidia-anuncia-driver-358-beta-para-linux-solaris-e-freebsd
 images:
   - /images/wp-content/uploads/2015/10/NVIDIA-Driver-Update-Linux-FreeBSD.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - driver
   - freebsd

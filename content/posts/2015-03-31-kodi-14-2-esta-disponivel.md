@@ -10,12 +10,12 @@ slug: kodi-14-2-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/03/kodi-light-300x300.png
 categories:
-  - Ferramentas
+  - noticias
 tags:
   - audio
+  - video
   - central-multimidia
   - kodi
-  - video
   - xbmc
 ---
 

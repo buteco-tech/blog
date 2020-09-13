@@ -10,11 +10,11 @@ slug: revista-bsd-magazine-numero-70
 images:
   - /images/wp-content/uploads/2015/06/BSD_05_2015-1-230x3001.jpg
 categories:
-  - Notícias
+  - noticias
 tags:
   - distro
   - freebsd
-  - revista
+  - bsd
 ---
 
 Você já imaginou uma revista completa sobre seu sistema operacional demoníaco preferido (FreeBSD). :)

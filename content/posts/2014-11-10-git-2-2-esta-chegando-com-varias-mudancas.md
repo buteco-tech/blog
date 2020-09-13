@@ -8,9 +8,7 @@ slug: git-2-2-esta-chegando-com-varias-mudancas
 images:
   - /images/wp-content/uploads/2014/11/Git-Icon-1788C.png
 categories:
-  - Desenvolvimento
-  - Ferramentas
-  - Notícias
+  - noticias
 tags:
   - git
 ---

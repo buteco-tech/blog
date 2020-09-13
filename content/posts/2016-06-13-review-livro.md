@@ -10,11 +10,12 @@ slug: review-livro
 images:
   - /images/wp-content/uploads/2016/06/capa.jpg
 categories:
-  - Reviews
-  - Livros
+  - reviews
 tags:
+  - livros
   - helpdesk
   - servicedesk
+  - novatec
 ---
 
 Estamos ajustando processos de helpdesk do setor de TI, e precisava de algum livro para utilizar como referência, e acabei me assustando como é pequeno o acervo de livros sobre este tema em português. Assusto-me como encontro tantos livros sobre como usar ferramentas, e não sobre os conceitos e o que estas ferramentas fazem.

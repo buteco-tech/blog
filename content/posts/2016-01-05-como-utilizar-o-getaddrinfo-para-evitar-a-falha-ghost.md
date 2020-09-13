@@ -10,13 +10,14 @@ slug: como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost
 images:
   - /images/wp-content/uploads/2016/01/glibc-ghost.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - c
+  - cpp
   - glibc
   - linux
   - network
-  - programação
   - redes
 ---
 

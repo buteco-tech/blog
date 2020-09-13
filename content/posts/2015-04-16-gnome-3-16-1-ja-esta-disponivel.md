@@ -10,7 +10,7 @@ slug: gnome-3-16-1-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/03/402px-gnomelogo-svg.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - gnome
   - linux

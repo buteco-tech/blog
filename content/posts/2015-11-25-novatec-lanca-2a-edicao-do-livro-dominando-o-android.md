@@ -10,9 +10,9 @@ slug: novatec-lanca-2a-edicao-do-livro-dominando-o-android
 images:
   - /images/wp-content/uploads/2015/11/dominando_android.jpg
 categories:
-  - Notícias
-  - Livros
+  - noticias
 tags:
+  - livros
   - android
   - novatec
 ---

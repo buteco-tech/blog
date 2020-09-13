@@ -10,12 +10,11 @@ slug: conhecendo-pipe-e-fifo-parte-final
 images:
   - /images/wp-content/uploads/2015/01/pipes.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
-  - api
   - c
+  - cpp
   - linux
-  - terminal
 ---
 
 Esta é a última parte desta série de postagens que têm como foco explicar o funcionamento básicos de pipes e fifos no Linux. Se você não viu as primeiras duas partes, clique <a title="Parte 1" href="/entendendo-pipe-e-fifo-parte-1/" target="_blank">aqui</a> e <a title="Parte 2" href="/entendendo-pipe-e-fifo-parte-2" target="_blank">aqui</a>.

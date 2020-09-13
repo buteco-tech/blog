@@ -8,9 +8,11 @@ authors:
   - marcooliveira
 slug: freebsd-pkg-1-6-chegando
 categories:
-  - Distros
+  - noticias
+  - distros
 tags:
   - freebsd
+  - bsd
   - pkg
 ---
 

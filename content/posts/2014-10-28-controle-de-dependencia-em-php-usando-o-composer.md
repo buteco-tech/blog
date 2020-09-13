@@ -8,7 +8,8 @@ slug: controle-de-dependencia-em-php-usando-o-composer
 images:
   - /images/wp-content/uploads/2014/10/logo-composer-transparent.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - composer
   - php

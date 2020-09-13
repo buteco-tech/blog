@@ -10,13 +10,9 @@ slug: sorteio-de-uma-entrada-para-a-roadsec
 images:
   - /images/wp-content/uploads/2015/09/road-sec.jpg
 categories:
-  - Sorteios
+  - sorteios
 tags:
-  - evento
-  - eventos
   - roadsec
-  - segurança
-  - sorteio
 ---
 
 Em parceria com o <a href="http://roadsec.com.br/" target="_blank">Roadsec</a> estamos sorteando uma entrada para o evento de mega encerramento em São Paulo no dia 12 de novembro, confira a programação.

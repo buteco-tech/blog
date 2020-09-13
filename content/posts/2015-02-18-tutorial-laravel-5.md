@@ -8,12 +8,13 @@ slug: tutorial-laravel-5
 images:
   - /images/wp-content/uploads/2015/02/Laravel-5.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - framework
   - laravel
-  - laravel 5
   - php
+  - mvc
 ---
 
 Mostrarei a seguir um breve tutorial sobre o Laravel, um dos frameworks mais usados atualmente para PHP, com o lançamento do Laravel 5 houve algumas mudanças, e algumas delas você verá a seguir.

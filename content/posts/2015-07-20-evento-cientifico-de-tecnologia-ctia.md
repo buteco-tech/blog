@@ -10,10 +10,9 @@ slug: evento-cientifico-de-tecnologia-ctia
 images:
   - /images/wp-content/uploads/2015/07/ctia.png
 categories:
-  - Eventos
-tags:
-  - automação
   - eventos
+tags:
+  - automacao
   - iot
 ---
 

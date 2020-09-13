@@ -10,9 +10,9 @@ authors:
   - buteco
 slug: sorteio-do-livro-php-moderno
 categories:
-  - Sorteios
-  - Livros
+  - sorteios
 tags:
+  - livros
   - novatec
   - php
 ---

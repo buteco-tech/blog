@@ -8,9 +8,9 @@ slug: resultado-do-sorteio-do-livro-php-moderno
 images:
   - /images/wp-content/uploads/2015/04/php_moderno.png
 categories:
-  - Sorteios
-  - Livros
+  - sorteios
 tags:
+  - livros
   - novatec
   - php
 ---

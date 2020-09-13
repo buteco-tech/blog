@@ -6,7 +6,7 @@ authors:
   - jaswdr
 slug: apigility-web-service-com-zend-framework
 categories:
-  - Ferramentas
+  - ferramentas
 tags:
   - apigility
   - php

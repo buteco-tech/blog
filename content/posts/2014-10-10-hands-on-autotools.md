@@ -6,12 +6,13 @@ authors:
   - marcossouza
 slug: hands-on-autotools
 categories:
-  - Desenvolvimento
-  - Ferramentas
+  - desenvolvimento
+  - ferramentas
 tags:
   - autotools
+  - make
   - linux
-  - terminal
+  - cpp
 ---
 
 Olá pessoal, a muito tempo eu queria aprender como funciona o tão famoso <em>autotools</em>. Então eu decidi pegar um projeto pessoal meu e converter meu <em>Makefile</em>, feito na mão, por um script do <em>autotools</em>. Neste tutorial vou mostrar o que eu precisei fazer para a criação do script do zero e como ele funciona, incluindo checagens por bibliotecas necessárias para compilação e outras coisas interessantes.

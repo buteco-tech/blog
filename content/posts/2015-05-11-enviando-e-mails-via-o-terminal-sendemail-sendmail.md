@@ -10,10 +10,10 @@ slug: enviando-emails-pelo-terminal-com-sendemail
 aliases:
   - enviando-e-mails-via-o-terminal-sendemail-sendmail
 categories:
-  - Tutoriais
+  - tutoriais
+  - ferramentas
 tags:
   - linux
-  - terminal
   - email
   - smtp
   - gmail

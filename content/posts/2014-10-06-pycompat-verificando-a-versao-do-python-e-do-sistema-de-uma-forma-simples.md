@@ -6,9 +6,8 @@ authors:
   - alexandrevicenzi
 slug: pycompat-verificando-a-versao-do-python-e-do-sistema-de-uma-forma-simples
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
-  - pycompat
   - python
 ---
 

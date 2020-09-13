@@ -11,10 +11,11 @@ slug: internet-das-coisas
 images:
   - /images/wp-content/uploads/2015/05/Imagen-iot.jpg
 categories:
-  - Notícias
+  - discussoes
 tags:
   - internet
   - iot
+  - rfid
 ---
 
 <span style="color: #000000;"><span style="font-family: Arial, sans-serif;"><span style="font-size: medium;">A internet passou por várias mudanças importante desde que surgiu para o mundo, a ideia de comunição entre computadores evoluiu e hoje podemos conectar vários dispositivos como celulares, televisões, carros, videogames e etc..</span></span></span>

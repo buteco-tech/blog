@@ -6,7 +6,8 @@ authors:
   - marcossouza
 slug: recortar-arquivo-de-audio-no-linux-pela-linha-de-comando
 categories:
-  - Tutoriais
+  - tutoriais
+  - ferramentas
 tags:
   - linux
   - terminal

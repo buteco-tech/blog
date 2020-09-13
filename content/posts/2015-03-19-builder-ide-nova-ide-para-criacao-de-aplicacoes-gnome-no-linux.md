@@ -10,13 +10,13 @@ slug: builder-ide-nova-ide-para-criacao-de-aplicacoes-gnome-no-linux
 images:
   - /images/wp-content/uploads/2015/03/splash.png
 categories:
-  - Desenvolvimento
-  - Notícias
+  - noticias
 tags:
   - c
   - ide
   - linux
   - python
+  - gnome
 ---
 
 <p style="text-align: justify;">A muito tempo se fala em IDEs de qualidade para criação de software para Linux. Já existem IDEs com renome para Linux, como o NetBeans, Eclipse, Qt Creator, entre outras. Mas nenhuma destas tem o foco para criação de software para o ambiente GNOME.</p>

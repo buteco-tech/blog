@@ -10,10 +10,12 @@ slug: cliente-server-com-boost-asio
 images:
   - /images/wp-content/uploads/2015/04/boost.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - boost
   - c
+  - cpp
 ---
 
 Neste post vamos mostrar como criar um cliente/servidor com Boost.Asio. Para quem não conhece, boost é uma library para programação network cross-plataform. Então para este exemplo, você deve estar certo que tenha as libraries do Boost. Caso não tenha, rode o seguinte comando para instalar emj uma distribuição Debian-like:

@@ -10,13 +10,12 @@ slug: mqtt-parte-1-o-que-e-mqtt
 images:
   - /images/wp-content/uploads/2016/02/mqttorg-glow.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
-  - broker
   - iot
   - mosquitto
   - mqtt
-  - pub/sub
+  - pub-sub
   - rabbitmq
 ---
 

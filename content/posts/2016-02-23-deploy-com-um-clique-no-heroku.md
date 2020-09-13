@@ -10,10 +10,9 @@ slug: deploy-com-um-clique-no-heroku
 images:
   - /images/wp-content/uploads/2016/02/Heroku_logo.png
 categories:
-  - Desenvolvimento
+  - cloud-computing
+  - tutoriais
 tags:
-  - cloud
-  - deploy
   - heroku
   - python
 ---

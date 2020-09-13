@@ -3,17 +3,16 @@ title: "Cluster Kubernetes com apenas um comando"
 summary: "Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando."
 tagline: "Configurando um cluster na AWS de forma simples e fácil"
 date: 2020-08-27 08:00:00
-categories:
-  - Desenvolvimento
-  - Ferramentas
-tags:
-  - kubernetes
-  - cloud computing
-  - aws
-  - eksctl
 slug: criando-cluster-kubernetes
 authors:
   - jaswdr
+categories:
+  - cloud-computing
+  - tutoriais
+tags:
+  - kubernetes
+  - aws
+  - eksctl
 images:
 - /images/posts/eksctl-gopher.png
 ---

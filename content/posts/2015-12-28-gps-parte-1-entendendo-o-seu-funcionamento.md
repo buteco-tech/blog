@@ -9,10 +9,10 @@ slug: gps-parte-1-entendendo-o-seu-funcionamento
 images:
   - /images/wp-content/uploads/2015/12/map_pin.png
 categories:
-  - Tutoriais
-  - Desenvolvimento
+  - tutoriais
+  - desenvolvimento
 tags:
-  - geolocalização
+  - geolocalizacao
   - glonass
   - gnss
   - gps

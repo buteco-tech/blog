@@ -8,7 +8,8 @@ slug: introducao-a-api-do-youtube-com-jquery
 images:
   - /images/wp-content/uploads/2015/01/youtube_logo.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - api
   - jquery

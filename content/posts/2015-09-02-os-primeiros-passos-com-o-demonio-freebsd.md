@@ -8,10 +8,10 @@ authors:
   - marcooliveira
 slug: os-primeiros-passos-com-o-demonio-freebsd
 categories:
-  - Distros
-  - Tutoriais
+  - distros
+  - tutoriais
 tags:
-  - bds
+  - bsd
   - freebsd
 ---
 

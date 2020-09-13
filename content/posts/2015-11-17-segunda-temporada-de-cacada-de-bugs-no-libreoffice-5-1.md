@@ -10,11 +10,10 @@ slug: segunda-temporada-de-cacada-de-bugs-no-libreoffice-5-1
 images:
   - /images/wp-content/uploads/2015/09/LibreOffice800x600.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - libreoffice
-  - open-source
-  - qa
+  - testes
 ---
 
 Foi anuanciado hoje, dia 17 de novembro, o período de caça bugs para o lançamento do novo LibreOffice 5.1 em fevereiro. O evento acontecerá do dia 4 até o dia 6 de dezembro, e terá como foco as novas funcionalidades e também correções de bugs.

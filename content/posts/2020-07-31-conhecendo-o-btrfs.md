@@ -2,18 +2,19 @@
 title: "Conhecendo o Btrfs"
 summary: "O sistema de arquivos Btrfs foi criando em 2007 e foi concebido com a ideia de ser um sistema de arquivos que possuísse funcionalidades semelhantes ao o que o ZFS oferecia no Solaris e variantes do BSD."
 date: 2020-07-31 08:00:00
+slug: conhecendo-o-btrfs
+authors:
+  - marcossouza
 categories:
-  - Desenvolvimento
+  - distros
 tags:
-  - sistemas de arquivos
+  - sistema-de-arquivos
+  - opensuse
   - fs
   - ext
   - xfs
   - btrfs
   - linux
-slug: conhecendo-o-btrfs
-authors:
-  - marcossouza
 images:
 - /images/posts/btrfs-logo.png
 ---

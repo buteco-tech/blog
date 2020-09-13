@@ -10,9 +10,9 @@ slug: performance-com-php-parte-1
 images:
   - /images/wp-content/uploads/2016/04/phplogo-highres.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
-  - performance
+  - desempenho
   - php
 ---
 

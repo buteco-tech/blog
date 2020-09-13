@@ -11,12 +11,10 @@ slug: node-js-v0-12-0-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/02/NodeJS.png
 categories:
-  - Desenvolvimento
+  - noticias
 tags:
-  - api
   - javascript
-  - nodejs
-  - v8
+  - node-js
 ---
 
 Nesta sexta-feira (06/02), foi liberada a nova versão do <a href="http://nodejs.org/" target="_blank">Node.js</a>, a v0.12.0.

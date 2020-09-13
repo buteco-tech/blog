@@ -10,10 +10,10 @@ slug: lancamento-laravel-5-1
 images:
   - /images/wp-content/uploads/2015/06/laravel-5.1-released.png
 categories:
-  - Desenvolvimento
-  - Ferramentas
+  - noticias
 tags:
   - laravel
+  - php
 ---
 
 A tão esperada versão 5.1 do Laravel foi finalmente lançada, como não podíamos deixar passar, veja a lista abaixo de algumas das novidades dessa nova versão:

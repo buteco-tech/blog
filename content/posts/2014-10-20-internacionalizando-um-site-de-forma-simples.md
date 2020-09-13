@@ -6,11 +6,12 @@ authors:
   - alexandrevicenzi
 slug: internacionalizando-um-site-de-forma-simples
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - javascript
   - jquery
   - localization
+  - i18n
 ---
 
 A algum tempo que já estava afim de traduzir <a href="http://alexandrevicenzi.com">meu site</a> para o Português, mas nunca tive tempo e nem muito empenho.
@@ -18,9 +19,9 @@ Ontem estava procurando uma forma simples de traduzir o site sem muito trabalho,
 
 Dentre as formas de tradução encontrei:
 <ul>
-	<li>Criar outra página, duplicando HTML, o que acho desnecessário.</li>
-	<li>Utilizar <a href="https://angularjs.org/">AngularJS</a> + i18n/l10n, o que não vem ao caso, pois meu site possui apenas uma página.</li>
-	<li>Por fim, o <a href="https://github.com/eligrey/l10n.js/">l10n.js</a> que também não veio ao caso pela documentação escassa e falta de exemplos palpáveis.</li>
+    <li>Criar outra página, duplicando HTML, o que acho desnecessário.</li>
+    <li>Utilizar <a href="https://angularjs.org/">AngularJS</a> + i18n/l10n, o que não vem ao caso, pois meu site possui apenas uma página.</li>
+    <li>Por fim, o <a href="https://github.com/eligrey/l10n.js/">l10n.js</a> que também não veio ao caso pela documentação escassa e falta de exemplos palpáveis.</li>
 </ul>
 Sendo assim, criei uma forma <del>tosca</del>, mas simples de traduzir uma página pequena, sem muito trabalho. Na verdade essa ideia foi baseada no <a href="https://github.com/jdm/asknot">asknot</a> que utiliza arquivos <code>.ini</code> como resource de tradução, junto com o <code>l10n.js</code>.
 

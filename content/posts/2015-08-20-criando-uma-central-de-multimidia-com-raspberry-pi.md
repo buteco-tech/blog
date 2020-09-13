@@ -10,10 +10,16 @@ slug: criando-uma-central-de-multimidia-com-raspberry-pi
 images:
   - /images/wp-content/uploads/2015/07/openelec.jpg
 categories:
-  - Distros
+  - distros
+  - tutoriais
 tags:
+  - diy
   - openelec
-  - raspberrypi
+  - linux
+  - kodi
+  - xmbc
+  - raspberry-pi
+  - central-multimidia
 ---
 
 Usaremos o OpenELEC para criar a central de multimídia, irei instalar no Raspberry Pi 2, porém também está disponível para o Raspberry PI.

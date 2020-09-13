@@ -6,13 +6,14 @@ authors:
   - marcossouza
 slug: qemukvm-habilitar-serial-console-no-centosrhel-para-acessa-lo-pelo-virsh-console
 categories:
-  - Desenvolvimento
-  - Ferramentas
+  - desenvolvimento
+  - ferramentas
 tags:
   - centos
   - kvm
-  - linux
   - qemu
+  - virtualizacao
+  - linux
 ---
 
 Olá pessoal, a alguns dias atrás eu precisei fazer alguns testes usando o QEMU/KVM, e para isso foi necessário o acesso a uma máquina virtual com CentOS utilizando o virsh console. Para isto eu precisei habilitar o ttyS0 tanto no inittab como na linha de inicialização do Kernel no CentOS.

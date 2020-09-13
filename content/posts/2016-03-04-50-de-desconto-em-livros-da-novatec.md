@@ -8,11 +8,10 @@ authors:
   - buteco
 slug: 50-de-desconto-em-livros-da-novatec
 categories:
-  - Notícias
-  - Livros
+  - noticias
 tags:
+  - livros
   - novatec
-  - promoção
 ---
 
 A Novatec está com uma promoção de 50% em alguns títulos da O'Reilly para compras efetuadas no site da Novatec. Confira abaixo alguns dos livros da promoção.

@@ -3,12 +3,12 @@ type: wordpress
 title: O que houve com o hacking?
 date: 2015-05-06 00:27:09
 authors:
-  - marcossouza
+  - marcooliveira
 slug: o-que-houve-com-o-hacking
 categories:
-  - Discussões
+  - discussoes
 tags:
-  - código aberto
+  - software-livre
   - hacking
 ---
 
@@ -27,7 +27,5 @@ Compartilhe seu tempo, construa conhecimento de qualidade, mantenha vivo a essê
 “O tempo é a maior riqueza que temos…”
 
 <a href="/images/wp-content/uploads/2015/04/post2.jpg"><img class=" size-medium wp-image-1992 aligncenter" src="/images/wp-content/uploads/2015/04/post2-300x225.jpg" alt="post2" width="300" height="225" /></a>
-
-Enviado pelo colaborador Marco Carvalho de Oliveira.
 
 Blog: <a href="https://demoncyber.wordpress.com/" target="_blank">https://demoncyber.wordpress.com/</a>

@@ -11,13 +11,12 @@ slug: redislite-redis-sem-necessidade-de-servidor-para-python
 images:
   - /images/wp-content/uploads/2015/03/redis.png
 categories:
-  - Desenvolvimento
+  - noticias
+  - banco-de-dados
 tags:
-  - nosql
   - python
   - redis
   - redislite
-  - yahoo
 ---
 
 O time de desenvolvedores do Yahoo <a href="http://yahooeng.tumblr.com/post/114042809966/announcing-redislite-python-support-for-redis" target="_blank">anunciou uma implementação do Redis para Python</a> sem a necessidade de instalar e configurar um servidor Redis. A grande vantagem é a remoção de uma dependência do seu código, quando o quesito é testes.

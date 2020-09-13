@@ -8,11 +8,14 @@ slug: entendendo-pipe-e-fifo-parte-1
 images:
   - /images/wp-content/uploads/2015/01/pipes.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - c
+  - cpp
   - linux
-  - terminal
+  - pipe
+  - fifo
+  - ipc
 ---
 
 <p style="text-align: justify;">Pipes e FIFOs são muito utilizados no mundo Linux como um método de IPC (inter process communication), ou comunicação entre processos. Muitas das vezes nem percebemos que estamos usando-os pela sua facilidade. Normalmente usamos pipes no shell, como no comando abaixo:</p>

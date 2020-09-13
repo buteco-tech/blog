@@ -10,10 +10,9 @@ slug: comunicacao-serial-rs232-com-leituraescrita-da-eeprom-no-pic16f628a
 images:
   - /images/wp-content/uploads/2016/02/PIC16F628A-e1456826573109.jpg
 categories:
-  - Desenvolvimento
-  - Hardware
-  - DIY
+  - embarcados
 tags:
+  - diy
   - assembly
   - eeprom
   - pic16f628a

@@ -10,12 +10,12 @@ slug: conectando-um-display-de-7-segmentos-no-arduino
 images:
   - /images/wp-content/uploads/2015/01/7-seg.jpg
 categories:
-  - Desenvolvimento
-  - Hardware
-  - DIY
+  - tutoriais
+  - embarcados
 tags:
   - arduino
   - display
+  - diy
 ---
 
 Hoje o tutorial é bem simples, vamos ver como conectar um display de 7 segmentos no Arduino.

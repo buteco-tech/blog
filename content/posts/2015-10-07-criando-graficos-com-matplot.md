@@ -8,11 +8,13 @@ slug: criando-graficos-com-matplot
 images:
   - /images/wp-content/uploads/2015/10/logoMatPlotLib.png
 categories:
-  - Desenvolvimento
+  - data-science
+  - tutoriais
 tags:
-  - libs
   - matplot
   - python
+  - scipy
+  - numpy
 ---
 
 Criado por <a href="https://en.wikipedia.org/wiki/John_D._Hunter" target="_blank">John Hunter (1968-2012)</a> , <a href="http://matplotlib.org/index.html" target="_blank">matplot</a> é usada para criação de <em>plots</em>, histogramas, espectrogramas, gráficos (<em>charts</em>) simples e 3D e etc. Para ter uma ideia da diversidade dessa ferramenta, você pode visitar a <a href="http://matplotlib.org/gallery.html" target="_blank">galeria de exemplos</a>.

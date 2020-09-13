@@ -10,12 +10,14 @@ slug: gerando-backtrace-em-cc-no-linux
 images:
   - /images/wp-content/uploads/2015/10/588396621.jpg
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - ferramentas
 tags:
-  - api
   - c
+  - cpp
   - linux
-  - terminal
+  - gcc
+  - debug
 ---
 
 Olá pessoal, creio que muitos aqui já se depararam com algum <em>crash</em> em seus programas em C/C++, e gostariam de poder ver a pilha de chamadas, ou <em>stacktrace/backtrace</em>, ao menos no ambiente de testes. Pois bem, a boa notícia é que no Linux existe a possibilidade de mostrar qual o ultimo método chamado antes de receber um <em>crash</em>.

@@ -8,7 +8,7 @@ authors:
   - jaswdr
 slug: laravel-5-1-do-comeco-ao-fim-video
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - framework
   - laravel

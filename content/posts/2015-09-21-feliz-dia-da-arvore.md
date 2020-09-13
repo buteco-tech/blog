@@ -6,9 +6,7 @@ authors:
   - marcossouza
 slug: feliz-dia-da-arvore
 categories:
-  - Fun
-tags:
-  - programação
+  - noticias
 ---
 
 Hoje, dia 21 de setembro, é comemorado o dia da árvore. Sendo assim, não podemos deixar esta data passar em branco, isto porque todo programador usou ou irá usar uma árvore em sua vida. :P

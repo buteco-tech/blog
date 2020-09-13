@@ -10,9 +10,10 @@ slug: primeiros-passos-com-o-esp8266
 images:
   - /images/wp-content/uploads/2015/03/esp8266.jpg
 categories:
-  - Hardware
-  - DIY
+  - embarcados
+  - tutoriais
 tags:
+  - diy
   - arduino
   - esp-01
   - esp-12

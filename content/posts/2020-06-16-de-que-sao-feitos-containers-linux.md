@@ -3,16 +3,16 @@ title: "De que são feitos containers Linux?"
 summary: "Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema."
 tagline: "Containers Linux explicado"
 date: 2020-06-16 08:00:00
+slug: de-que-sao-feitos-containers-linux
+authors:
+  - alexandrevicenzi
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - containers
   - docker
   - lxc
   - linux
-slug: de-que-sao-feitos-containers-linux
-authors:
-  - alexandrevicenzi
 images:
 - /images/posts/lxc-logo.png
 ---

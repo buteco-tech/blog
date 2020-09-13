@@ -10,13 +10,12 @@ slug: vim-tips-trabalhando-com-abas
 images:
   - /images/wp-content/uploads/2015/11/vim_logo_small.png
 categories:
-  - Tutoriais
+  - tutoriais
+  - ferramentas
 tags:
   - linux
-  - terminal
-  - vi
   - vim
-  - vim tabs
+  - vim-tabs
 ---
 
 O VIM, como todos sabem, tem muitas ferramentas por padrão que são pouco mostradas, ou até mesmo não são exploradas com todo o seu potencial. Essa série de artigos tem como foco mostrar algumas funcionalidades interessantes e as vezes pouco exploradas.

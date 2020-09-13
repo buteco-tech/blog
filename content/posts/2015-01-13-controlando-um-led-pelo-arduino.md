@@ -8,12 +8,12 @@ authors:
   - alexandrevicenzi
 slug: controlando-um-led-pelo-arduino
 categories:
-  - Desenvolvimento
-  - Hardware
-  - DIY
+  - tutoriais
+  - embarcados
 tags:
   - arduino
   - led
+  - diy
 ---
 
 Dando continuidade aos tutoriais do Arduino, hoje veremos como controlar um LED. Iremos fazer duas operações básicas, fazer o LED piscar e alterar sua intensidade.

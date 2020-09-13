@@ -10,7 +10,8 @@ slug: configurando-vpn-site-to-site-com-openvpn
 images:
   - /images/wp-content/uploads/2016/01/openvpn-logo.png
 categories:
-  - Ferramentas
+  - seguranca
+  - tutoriais
 tags:
   - openvpn
   - redes

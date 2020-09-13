@@ -8,12 +8,14 @@ slug: instalando-archlinux-xfce-lxdm-no-banana-pi
 images:
   - /images/wp-content/uploads/2014/12/ArchlinuxLogo2.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - archlinux
   - banana-pi
   - lxdm
   - xfce
+  - pacman
 ---
 
 Hoje vou mostrar como instalar o <a href="http://www.archlinux-br.org/" target="_blank">ArchLinux</a> no BananaPi. Escolhi o ArchLinux por ele ser uma distribuição bem enxuta, mas muito poderosa. Outro motivo que me leva a usá-lo é o fato de que pretendo fazer testes com o <a href="https://wiki.archlinux.org/index.php/RetroArch" target="_blank">RetroArch</a>.

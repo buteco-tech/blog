@@ -10,14 +10,13 @@ slug: instalando-o-spotify-no-opensuse
 images:
   - /images/wp-content/uploads/2016/04/spotify.png
 categories:
-  - Tutoriais
+  - tutoriais
+  - distros
 tags:
   - deb
-  - música
-  - opensuse
   - rpm
+  - opensuse
   - spotify
-  - streaming
 ---
 
 O <a href="https://www.spotify.com/br/" target="_blank">Spotify</a> é um serviço de stream de música que oferece opção gratuita e paga. O aplicativo do Spotify está disponível para a maioria dos sistemas operacionais, inclusive Linux. Bem, Linux só em formato DEB o que deixa a desejar para quem usa distribuições não debian-like, como openSUSE, Fedora ou alguma outra distro baseada no Red Hat.

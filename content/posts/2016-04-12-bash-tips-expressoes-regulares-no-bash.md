@@ -10,12 +10,10 @@ slug: bash-tips-expressoes-regulares-no-bash
 images:
   - /images/wp-content/uploads/2016/03/images.jpg
 categories:
-  - Tutoriais
+  - tutoriais
 tags:
   - bash
-  - expressão regular
   - regex
-  - regular expression
 ---
 
 Como hoje tive de utilizar expressões regulares no bash, pensei em compartilhar com nossos amigos leitores. O buteco já fez um post sobre a utilização de <a href="/posix-regular-expression-em-c" target="_blank">expressões regulares em C</a>, e este artigo vem para complementar. Vamos ao exemplo abaixo:

@@ -10,11 +10,11 @@ slug: criando-um-servidor-de-downloads-de-torrents-com-utorrent-server
 images:
   - /images/wp-content/uploads/2015/01/logo_utorrent-150x150.png
 categories:
-  - Ferramentas
+  - ferramentas
+  - tutoriais
 tags:
-  - download
-  - servidor
-  - utorrent
+  - torrent
+  - linux
 ---
 
 Algo que pessoalmente eu sempre tive vontade de criar, era um servidor de downloads de torrents, e se você é como eu e tem uma velocidade de internet que beira a lentidão, segue abaixo uma boa dica de servidor de download de fácil instalação e muito fácil de ser utilizado, o uTorrent Server:

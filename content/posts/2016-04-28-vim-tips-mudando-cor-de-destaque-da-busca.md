@@ -10,12 +10,12 @@ slug: vim-tips-mudando-cor-de-destaque-da-busca
 images:
   - /images/wp-content/uploads/2015/11/vim_logo_small.png
 categories:
-  - Tutoriais
+  - tutoriais
+  - ferramentas
 tags:
-  - cores
-  - highlight
   - vim
   - vim-config
+  - highlight
 ---
 
 O VIM realmente é um canivete suíço dos editores de texto, sendo possível customizar praticamente todos as suas configurações, desde histórico de comandos até as cores de destaque ao fazer uma busca em um arquivo de texto.

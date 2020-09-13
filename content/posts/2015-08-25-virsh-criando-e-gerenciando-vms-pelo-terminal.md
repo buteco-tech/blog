@@ -9,8 +9,8 @@ slug: virsh-criando-e-gerenciando-vms-pelo-terminal
 images:
   - /images/wp-content/uploads/2015/06/libvirtLogo.png
 categories:
-  - Tutoriais
-  - Ferramentas
+  - tutoriais
+  - ferramentas
 tags:
   - linux
   - kvm
@@ -18,7 +18,7 @@ tags:
   - terminal
   - virsh
   - virt-manager
-  - virtualização
+  - virtualizacao
 ---
 
 {{< figure src="/images/wp-content/uploads/2015/06/libvirtLogo.png" alt="libvirt" >}}

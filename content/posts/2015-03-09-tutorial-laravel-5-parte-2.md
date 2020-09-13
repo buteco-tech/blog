@@ -8,18 +8,13 @@ slug: tutorial-laravel-5-parte-2
 images:
   - /images/wp-content/uploads/2015/02/Laravel-5.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
-  - controller
   - framework
-  - http
   - laravel
-  - laravel 5
-  - model
   - mvc
   - php
-  - rotas
-  - view
 ---
 
 Esta é a segunda parte do tutorial sobre Laravel 5, caso você não tenha ainda visto, veja a primeira parte dessa série neste <a href="/tutorial-laravel-5">link</a>.

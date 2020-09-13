@@ -11,12 +11,12 @@ slug: google-anuncia-fim-do-google-code
 images:
   - /images/wp-content/uploads/2015/03/google-code-logo.png
 categories:
-  - Notícias
+  - noticias
 tags:
-  - bitbucket
+  - git
   - github
+  - bitbucket
   - google
-  - google code
 ---
 
 Com a maior parte dos projetos sendo hospedados no GitHub, incluindo vários da própria Google, a Google resolveu tirar do ar o seu serviço de hospedagem de código, conhecido como Google Code.

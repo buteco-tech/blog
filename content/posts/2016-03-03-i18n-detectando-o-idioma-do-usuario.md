@@ -10,13 +10,13 @@ slug: i18n-detectando-o-idioma-do-usuario
 images:
   - /images/wp-content/uploads/2016/03/200px-Globe_of_letters.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - geoip
-  - geolocalização
-  - http
+  - geolocalizacoo
   - i18n
-  - internacionalização
+  - internacionalizacao
   - maxmind
   - nginx
   - web

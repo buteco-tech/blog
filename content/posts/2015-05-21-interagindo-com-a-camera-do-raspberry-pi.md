@@ -10,13 +10,13 @@ slug: interagindo-com-a-camera-do-raspberry-pi
 images:
   - /images/wp-content/uploads/2015/05/index.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - linux
-  - programação
   - python
-  - raspberrypi
-  - terminal
+  - raspberry-pi
+  - camera
 ---
 
 Interagir com a câmera do Raspberry Pi é muito simples, graças ao módulo criado pelo desenvolvedor Dave Jones (veja seu github <a href="https://github.com/waveform80" target="_blank">aqui</a>). Este módulo torna simples tirar fotos, fazer vídeos e alterar parâmetros da câmera.

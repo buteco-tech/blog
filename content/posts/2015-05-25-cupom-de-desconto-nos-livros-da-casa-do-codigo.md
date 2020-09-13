@@ -11,9 +11,9 @@ slug: cupom-de-desconto-nos-livros-da-casa-do-codigo
 images:
   - /images/wp-content/uploads/2015/05/cdc-logo-novo-400.png
 categories:
-  - Notícias
-  - Livros
+  - noticias
 tags:
+  - livros
   - ebook
   - cupom
 ---

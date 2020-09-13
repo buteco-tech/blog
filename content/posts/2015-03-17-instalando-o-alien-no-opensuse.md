@@ -10,7 +10,8 @@ slug: instalando-o-alien-no-opensuse
 images:
   - /images/wp-content/uploads/2015/03/deb-rpm-pkg.png
 categories:
-  - Tutoriais
+  - tutoriais
+  - distros
 tags:
   - deb
   - dpkg

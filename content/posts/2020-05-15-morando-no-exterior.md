@@ -3,15 +3,16 @@ title: "Morando no Exterior"
 summary: "Respondemos algumas dúvidas relacionadas a morar no exterior em uma live no YouTube."
 tagline: "Respondemos algumas dúvidas em uma live no YouTube"
 date: 2020-05-15 08:00:00
+slug: morando-no-exterior-2020
+authors:
+  - alexandrevicenzi
 categories:
-  - Curiosidades
+  - discussoes
 tags:
  - morando-no-exterior
  - europa
  - irlanda
-slug: morando-no-exterior-2020
-authors:
-  - alexandrevicenzi
+ - youtube
 ---
 
 Recentemente fizemos uma live no YouTube em parceria com o [Hackerspace Blumenau](https://www.hackerspaceblumenau.org/) sobre como é morar fora do Brasil. Contamos como é morar na Irlanda, Portugal, Holanda e República Tcheca.

@@ -10,13 +10,14 @@ slug: utilizando-shared-objects-no-python
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - c
-  - libs
+  - cpp
+  - cytpes
   - linux
   - python
-  - terminal
 ---
 
 Python é realmente uma linguagem muito versátil, tendo a mão quase sempre tudo o que se precisa fazer. Então, a algum tempo atrás eu precisava verificar a possibilidade de carregar um Shared Object com o Python, e eis que encontrei. A documentação do Python é realmente muito útil, com exemplos de utilização de módulos, inclusive do módulo em questão.

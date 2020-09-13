@@ -8,13 +8,10 @@ slug: libreoffice-magazine-numero-19
 images:
   - /images/wp-content/uploads/2015/11/RevistaLibreOfficeNro19.jpg
 categories:
-  - Notícias
+  - noticias
 tags:
   - libreoffice
-  - noticias
-  - open-source
   - software-livre
-  - softwarelivre
 ---
 
 Saiu a nova edição da LibreOffice Magazine!

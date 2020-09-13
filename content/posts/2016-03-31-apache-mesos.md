@@ -10,12 +10,12 @@ slug: apache-mesos
 images:
   - /images/wp-content/uploads/2016/03/apache_mesos.png
 categories:
-  - Ferramentas
+  - cloud-computing
+  - tutoriais
 tags:
   - apache
-  - cloud
-  - cluster
   - mesos
+  - linux
 ---
 
 Nos últimos tempos vem se falando muito em computação na nuvem, computação distribuída, Linux containers, Big Data, etc. Junto com o crescimento dessas tecnologias também se observa o surgimento de inúmeras ferramentas para resolver os problemas encontrados nesta área da computação. Poderíamos citar várias, mas iremos falar brevemente sobre Apache Mesos. Não irei me aprofundar muito pois pretendo fazer mais artigos sobre o assunto detalhando mais em determinados tópicos.

@@ -6,9 +6,9 @@ slug: we-are-back
 authors:
   - buteco
 categories:
-  - Notícias
+  - noticias
 tags:
-  - novidades
+  - buteco
 images:
   - /images/posts/capa-we-are-back.jpg
 ---

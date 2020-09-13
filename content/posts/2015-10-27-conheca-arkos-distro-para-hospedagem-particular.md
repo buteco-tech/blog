@@ -10,17 +10,14 @@ slug: conheca-arkos-distro-para-hospedagem-particular
 images:
   - /images/wp-content/uploads/2015/09/logo-arkos1.png
 categories:
-  - Distros
+  - distros
 tags:
   - arkos
   - arm
+  - arch-linux
+  - linux
   - banana-pi
-  - beaglebone
-  - cubieboard
-  - cubietruck
-  - raspberrypi
-  - segurança
-  - so
+  - raspberry-pi
 ---
 
 O arkOS é uma distribuição Linux baseada no <a href="http://archlinuxarm.org" target="_blank">Arch Linux ARM</a>, que funciona em dispositivos embarcados e servidores dedicados. Este contém um pacote de software completo para gerenciamento de  hospedagem particular (<em>self-hosting</em>) de forma intuitiva e inteligente. Também permite executar sites, contas de e-mail, banco de dados e muito mais, tudo através de sua interface gráfica, que é fácil de usar.

@@ -10,11 +10,11 @@ slug: hhvm-esta-rodando-mais-rapido-que-o-proprio-php-7
 images:
   - /images/wp-content/uploads/2015/06/hack-programming-language-facebook-code1.png
 categories:
-  - Desenvolvimento
+  - noticias
 tags:
   - hhvm
   - php
-  - php 7
+  - facebook
 ---
 
 <span id="spelling-correction" class="gt-spell-correct-message">A</span> <span class="hps">equipe do Facebook</span> <span class="hps">que está trabalhando no projeto</span> <span class="hps">HHVM (aka HipHop Virtual Machine) ,</span> que é um interpretador <span class="hps">otimizado</span> para o <span class="hps">PHP</span> <span class="hps">usando sua linguagem <strong>Hack</strong>, declararam seus resultados após algumas semanas de concentração para obter melhorias de performance em projetos de código aberto.</span>

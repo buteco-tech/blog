@@ -8,11 +8,11 @@ slug: hands-on-sockets-em-python
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - linux
   - python
-  - script
   - sockets
 ---
 

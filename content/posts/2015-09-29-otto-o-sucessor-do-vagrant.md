@@ -10,7 +10,7 @@ slug: otto-o-sucessor-do-vagrant
 images:
   - /images/wp-content/uploads/2015/09/ImgOtto-e1443492325176.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - linux
   - otto

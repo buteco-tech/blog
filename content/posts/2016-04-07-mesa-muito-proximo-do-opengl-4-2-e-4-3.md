@@ -10,14 +10,12 @@ slug: mesa-muito-proximo-do-opengl-4-2-e-4-3
 images:
   - /images/wp-content/uploads/2015/07/attachment.cgi_.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - driver
   - games
-  - jogos
   - linux
   - mesa
-  - open-source
   - opengl
 ---
 

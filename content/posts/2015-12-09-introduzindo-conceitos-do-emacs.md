@@ -8,8 +8,8 @@ slug: introduzindo-conceitos-do-emacs
 images:
   - /images/wp-content/uploads/2015/12/Emacs-Logo-400x400.png
 categories:
-  - Desenvolvimento
-  - Tutoriais
+  - desenvolvimento
+  - tutoriais
 tags:
   - emacs
   - ide

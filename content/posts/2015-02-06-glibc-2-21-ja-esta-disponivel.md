@@ -10,9 +10,10 @@ slug: glibc-2-21-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/02/Linux_kernel_System_Call_Interface_and_glibc.png
 categories:
-  - Desenvolvimento
+  - noticias
 tags:
   - c
+  - cpp
   - glibc
   - linux
   - posix

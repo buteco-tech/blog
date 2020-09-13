@@ -9,7 +9,7 @@ authors:
   - pedrojefferson
 slug: usando-o-hangouts-chat-via-terminal
 categories:
-  - Tutoriais
+  - tutoriais
 tags:
   - chat
   - hangouts

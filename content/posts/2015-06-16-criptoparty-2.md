@@ -10,12 +10,9 @@ slug: criptoparty-2
 images:
   - /images/wp-content/uploads/2015/06/criptoparty-1.jpg
 categories:
-  - Eventos
+  - eventos
 tags:
   - criptoparty
-  - eventos
-  - privacidade
-  - segurança
 ---
 
 A privacidade é um dos maiores patrimônios que possuímos atualmente, mas muitas pessoas não estão adequadamente protegidas. Neste evento vamos conhecer na prática algumas tećnicas e tecnologias para evitar a exposição indevida de nossas informações privadas.

@@ -8,8 +8,7 @@ slug: python-2-7-9-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 categories:
-  - Desenvolvimento
-  - Notícias
+  - noticias
 tags:
   - python
 ---

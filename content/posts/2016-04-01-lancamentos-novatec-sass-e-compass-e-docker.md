@@ -6,12 +6,11 @@ authors:
   - alexandrevicenzi
 slug: lancamentos-novatec-sass-e-compass-e-docker
 categories:
-  - Notícias
+  - noticias
 tags:
   - css
   - docker
   - html
-  - linux
   - novatec
   - sass
 ---

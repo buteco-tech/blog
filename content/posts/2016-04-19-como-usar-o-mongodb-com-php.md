@@ -10,7 +10,8 @@ slug: como-usar-o-mongodb-com-php
 images:
   - /images/wp-content/uploads/2016/04/mongodb-logo.jpg
 categories:
-  - Desenvolvimento
+  - banco-de-dados
+  - tutoriais
 tags:
   - mongodb
   - php

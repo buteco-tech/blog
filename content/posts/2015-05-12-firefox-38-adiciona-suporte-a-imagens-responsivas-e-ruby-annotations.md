@@ -10,11 +10,10 @@ slug: firefox-38-adiciona-suporte-a-imagens-responsivas-e-ruby-annotations
 images:
   - /images/wp-content/uploads/2015/05/firefox-logo.bee1d85af18f-e1431444837127.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - firefox
   - mozilla
-  - web
 ---
 
 A nova atualização do Mozilla Firefox está sendo liberada hoje (12/05), e traz novas funcionalidades como:

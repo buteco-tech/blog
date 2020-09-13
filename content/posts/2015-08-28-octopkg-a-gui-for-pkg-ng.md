@@ -8,8 +8,9 @@ authors:
   - marcooliveira
 slug: octopkg-a-gui-for-pkg-ng
 categories:
-  - Ferramentas
+  - ferramentas
 tags:
+  - bsd
   - freebsd
   - octopkg
 ---

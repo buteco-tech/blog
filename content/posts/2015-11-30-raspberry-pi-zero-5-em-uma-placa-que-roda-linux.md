@@ -10,10 +10,12 @@ slug: raspberry-pi-zero-5-em-uma-placa-que-roda-linux
 images:
   - /images/wp-content/uploads/2015/11/rpi_zero.png
 categories:
-  - Hardware
-  - DIY
+  - embarcados
+  - noticias
 tags:
-  - raspberry pi
+  - diy
+  - arm
+  - raspberry-pi
 ---
 
 A Raspberry Pi Foundation acaba de anunciar seu novo Raspberry Pi de baixo custo, chamado <strong>Zero</strong>. O valor estipulado pela empresa da nova placa é de 5$, isso mesmo, com <strong>CINCO FUCKING DÓLARES</strong> você compra uma das mais novas placas que rodam o sistema operacional GNU/Linux.<!--more-->

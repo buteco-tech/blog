@@ -8,10 +8,10 @@ slug: o-valor-do-open-source
 images:
   - /images/wp-content/uploads/2015/05/pesquisas.jpg
 categories:
-  - Notícias
+  - noticias
 tags:
-  - colaboração
-  - open-source
+  - linux
+  - software-livre
 ---
 
 <p lang="pt-PT">Desde 2008, o <em>The Linux Foudation</em> tem trabalhado com desenvolvedores e empresas de tecnologia para hospedar projetos <em>open source</em> de vários segmentos da indústria de tecnologia, ajudando a resolver problemas complexos e adaptando os princípios e práticas que fizeram e fazem do Linux o que ele é.</p>

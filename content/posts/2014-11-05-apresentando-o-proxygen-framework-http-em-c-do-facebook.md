@@ -8,12 +8,13 @@ slug: apresentando-o-proxygen-framework-http-em-c-do-facebook
 images:
   - /images/wp-content/uploads/2014/11/ProxygenLogo650.jpg
 categories:
-  - Desenvolvimento
-  - Ferramentas
+  - desenvolvimento
+  - ferramentas
 tags:
-  - c++
+  - cpp
   - facebook
   - http
+  - proxygen
 ---
 
 O Facebook anunciou o Proxygen, uma coleção de bibliotecas HTTP de código aberto para C++, incluindo um servidor HTTP fácil de usar. Além de HTTP/1.1, o Proxygen suporta <a href="http://www.chromium.org/spdy/spdy-protocol/spdy-protocol-draft3">SPDY/3</a> e <a href="http://www.chromium.org/spdy/spdy-protocol/spdy-protocol-draft3-1">SPDY/3.1</a>. Também está sendo desenvolvendo suporte para HTTP/2.

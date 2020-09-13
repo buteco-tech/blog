@@ -3,16 +3,17 @@ title: "NVIDIA Jetson Nano Developer Kit"
 summary: "Uma placa de desenvolvimento focada em visão computacional e deep learning."
 tagline: "Uma placa de desenvolvimento focada em visão computacional e deep learning"
 date: 2020-05-06 08:00:00
-categories:
-  - Hardware
-  - Reviews
-tags:
-  - nvidia
-  - redes neurais
-  - hardware
 slug: review-nvidia-jetson-nano-developer-kit
 authors:
   - alexandrevicenzi
+categories:
+  - embarcados
+  - reviews
+tags:
+  - arm
+  - nvidia
+  - redes-neurais
+  - ubuntu
 images:
   - /images/posts/jetson-nano-devkit.png
 ---

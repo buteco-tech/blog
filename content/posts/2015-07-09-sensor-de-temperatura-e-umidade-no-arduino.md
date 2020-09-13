@@ -6,9 +6,10 @@ authors:
   - alexandrevicenzi
 slug: sensor-de-temperatura-e-umidade-no-arduino
 categories:
-  - Hardware
-  - DIY
+  - embarcados
+  - tutoriais
 tags:
+  - diy
   - arduino
   - dht11
   - dht22

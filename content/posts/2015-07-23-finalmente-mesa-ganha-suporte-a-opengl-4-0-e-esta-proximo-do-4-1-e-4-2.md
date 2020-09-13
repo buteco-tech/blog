@@ -10,10 +10,8 @@ slug: finalmente-mesa-ganha-suporte-a-opengl-4-0-e-esta-proximo-do-4-1-e-4-2
 images:
   - /images/wp-content/uploads/2015/07/attachment.cgi_.png
 categories:
-  - Jogos
-  - Notícias
+  - noticias
 tags:
-  - jogos
   - kernel
   - linux
   - mesa

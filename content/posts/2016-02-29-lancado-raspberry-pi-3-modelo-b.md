@@ -8,10 +8,10 @@ slug: lancado-raspberry-pi-3-modelo-b
 images:
   - /images/wp-content/uploads/2015/05/index.png
 categories:
-  - Notícias
+  - noticias
 tags:
-  - raspberry pi
-  - raspberrypi
+  - raspberry-pi
+  - arm
 ---
 
 Em celebração ao quarto ano da The Raspberry PI Foundation, foi anunciado hoje no blog <a href="http://rasbperry.org" target="_blank">rasbperry.org</a> o novo Raspberry PI 3 Modelo B.

@@ -10,7 +10,7 @@ slug: super-mario-64-em-hd-para-navegadores
 images:
   - /images/wp-content/uploads/2015/03/bdc077c8b4bbbd099eeb421963c7f90d.jpg
 categories:
-  - Jogos
+  - jogos
 tags:
   - nintendo
   - supermario

@@ -10,12 +10,12 @@ slug: samsung-anuncia-entrada-na-familia-arduino
 images:
   - /images/wp-content/uploads/2015/05/artik-1.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - arduino
   - arm
   - artik
-  - cloud
+  - iot
   - samsung
 ---
 

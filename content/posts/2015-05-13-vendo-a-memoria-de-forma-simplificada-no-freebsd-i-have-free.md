@@ -5,14 +5,14 @@ summary: |
   Como executar o comando free no FreeBSD, da mesma forma que é executado no Linux.
 date: 2015-05-13 22:48:53
 authors:
-  - marcossouza
+  - marcooliveira
 slug: vendo-a-memoria-de-forma-simplificada-no-freebsd-i-have-free
 categories:
-  - Ferramentas
+  - ferramentas
+  - tutoriais
 tags:
-  - ferramenta
   - freebsd
-  - terminal
+  - free
 ---
 
 <div class="main">
@@ -36,6 +36,5 @@ Referências:
 <a href="http://stackoverflow.com/questions/4093786/what-is-equivalent-of-linuxs-free-command-on-freebsd-v8-1" rel="nofollow">http://stackoverflow.com/questions/4093786/what-is-equivalent-of-linuxs-free-command-on-freebsd-v8-1</a> – Outras formas de mostrar a memória no FreeBSD
 
 </div>
-Enviado pelo colaborador Marco Carvalho de Oliveira
 
 Blog: <a href="https://demoncyber.wordpress.com/" target="_blank">https://demoncyber.wordpress.com/</a>

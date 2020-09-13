@@ -10,11 +10,12 @@ slug: monitoramento-de-servidor-com-netdata
 images:
   - /images/wp-content/uploads/2016/05/netdata-capa.png
 categories:
-  - Ferramentas
+  - ferramentas
+  - tutoriais
 tags:
-  - github
   - monitoramento
   - netdata
+  - linux
 ---
 
 <h2>Introdução</h2>

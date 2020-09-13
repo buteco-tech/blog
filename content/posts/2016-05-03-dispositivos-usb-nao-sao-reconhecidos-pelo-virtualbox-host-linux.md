@@ -14,7 +14,7 @@ categories:
 tags:
   - linux
   - virtualbox
-  - virtualização
+  - virtualizacao
   - vm
 ---
 

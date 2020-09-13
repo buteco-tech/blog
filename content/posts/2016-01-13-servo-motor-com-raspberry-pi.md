@@ -10,15 +10,13 @@ slug: servo-motor-com-raspberry-pi
 images:
   - /images/wp-content/uploads/2015/05/index.png
 categories:
-  - Hardware
-  - DIY
-  - Tutoriais
-tags:
-  - Banana Pi
   - embarcados
+  - tutoriais
+tags:
+  - diy
   - iot
   - python
-  - Raspberry Pi
+  - raspberry-pi
   - servomotor
 ---
 

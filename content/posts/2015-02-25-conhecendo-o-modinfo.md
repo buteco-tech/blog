@@ -10,11 +10,13 @@ slug: conhecendo-o-modinfo
 images:
   - /images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg
 categories:
-  - Tutoriais
+  - tutoriais
+  - ferramentas
 tags:
-  - kernel
   - linux
-  - terminal
+  - kernel
+  - kmod
+  - modinfo
 ---
 
 <p style="text-align: justify;">Enquanto estudava para a prova LPI 101, eu acabei estudando os comandos que tratam de módulos do kernel. Alguns comandos eu já conhecia, como <em>insmod</em> para carregar um módulo do kernel, e <em>rmmod</em> para remover um módulo já carregado. Mas entre estes eu acabei encontrando o <em>modinfo</em>. Este comando busca informações de um módulo do kernel. Todos estes comandos fazem parte do pacote <em>kmod</em>, e este pacote existe em praticamente todas as distribuições Linux.</p>

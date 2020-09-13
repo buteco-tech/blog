@@ -10,10 +10,12 @@ slug: criando-formularios-com-python-e-pygtk3
 images:
   - /images/wp-content/uploads/2015/02/pythonzz2.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - form
   - gtk3
+  - gnome
   - python
 ---
 

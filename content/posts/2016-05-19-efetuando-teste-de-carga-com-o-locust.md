@@ -8,7 +8,8 @@ slug: efetuando-teste-de-carga-com-o-locust
 images:
   - /images/wp-content/uploads/2016/05/locust-logo.png
 categories:
-  - Ferramentas
+  - ferramentas
+  - tutoriais
 tags:
   - python
   - testes

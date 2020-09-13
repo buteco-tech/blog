@@ -11,7 +11,7 @@ slug: python-3-4-3-e-3-5-ja-estao-a-caminho
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 categories:
-  - Desenvolvimento
+  - noticias
 tags:
   - python
 ---

@@ -9,11 +9,12 @@ slug: criando-um-git-server-local
 images:
   - /images/wp-content/uploads/2014/11/Git-Icon-1788C.png
 categories:
-  - Tutoriais
+  - tutoriais
+  - ferramentas
 tags:
   - git
+  - ssh
   - linux
-  - terminal
 ---
 
 {{< figure src="/images/wp-content/uploads/2014/11/Git-Icon-1788C.png" alt="Git" width="250" >}}

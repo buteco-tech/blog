@@ -1,33 +1,49 @@
 ---
-type: wordpress
-title: 40+ eBooks Gratuitos
+title: 170 ebooks gratuitos
+tagline: Desenvolvimento de software, linguagens, data science e mais
 date: 2014-09-16 13:25:00
 authors:
   - alexandrevicenzi
-slug: 40-ebooks-gratis
+slug: syncfusion-ebooks-gratuitos
+aliases:
+  - 40-ebooks-gratis
 categories:
-  - Desenvolvimento
-  - Notícias
+  - desenvolvimento
+  - noticias
 tags:
   - ebook
+  - git
+  - docker
+  - kubernetes
+  - go
+  - python
+  - react-js
+images:
+  - /images/posts/syncfusion-ebooks.png
 ---
 
-A <a href="http://www.syncfusion.com">Syncfusion </a>está disponibilizando mais de 40 livros gratuitamente. Os livros abrangem de forma sucinta o assunto abordado e cada livro possui cerca de 100 páginas.
+{{<figure src="/images/posts/syncfusion-ebooks.png" alt="syncfusion">}}
 
-<strong>Alguns destaques</strong>
+A [Syncfusion][syncfusion] disponibiliza mais de 170 livros gratuitamente.
+Os livros abrangem de forma sucinta cada tema proposto e cada livro possui cerca de 100 páginas,
+todo mês tem livro novo sendo lançado.
 
-<a><img src="http://www.syncfusion.com/Content/en-US/Images/cplusplus.png?v=15092014084648" alt="C++" /></a>
+**Alguns destaques**
 
-<a><img src="http://www.syncfusion.com/Content/en-US/Images/git.png?v=15092014084648" alt="Git" /></a>
+- [Go Succinctly](https://www.syncfusion.com/ebooks/go_succinctly)
+- [Python Succinctly](https://www.syncfusion.com/ebooks/python)
+- [C# Succinctly](https://www.syncfusion.com/ebooks/csharp)
+- [JavaScript Succinctly](https://www.syncfusion.com/ebooks/javascript)
+- [Kubernetes Succinctly](https://www.syncfusion.com/ebooks/kubernetes-succinctly)
+- [Docker Succinctly](https://www.syncfusion.com/ebooks/docker_succinctly)
+- [Flutter Succinctly](https://www.syncfusion.com/ebooks/flutter-succinctly)
+- [React Succinctly](https://www.syncfusion.com/ebooks/react-succinctly)
+- [Vue.js Succinctly](https://www.syncfusion.com/ebooks/vuejs-succinctly)
+- [Git Succinctly](https://www.syncfusion.com/ebooks/git)
 
-<a><img src="http://www.syncfusion.com/Content/en-US/Images/node-js.png?v=15092014084648" alt="Node.js" /></a>
+Para ver todos os livros [clique aqui][all-ebooks].
 
-<a><img src="http://www.syncfusion.com/Content/en-US/Images/android.png?v=15092014084648" alt="Android" /></a>
+**Obs:** Para fazer o download é necessário realizar cadastro no site.
 
-<a><img src="http://www.syncfusion.com/Content/en-US/Images/angular-js.png?v=15092014084648" alt="AngularJS" /></a>
-
-Para ver todos os livros <a href="http://www.syncfusion.com/resources/techportal/ebooks">clique aqui</a>.
-
-<strong>Obs:</strong> Para fazer o download é necessário fazer um pequeno cadastro no site.
-
-Via <a href="http://www.syncfusion.com/resources/techportal/ebooks">Syncfusion</a>
+[syncfusion]: https://www.syncfusion.com/
+[all-ebooks]: https://www.syncfusion.com/ebooks

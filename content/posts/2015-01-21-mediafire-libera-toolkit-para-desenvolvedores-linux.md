@@ -10,12 +10,11 @@ slug: mediafire-libera-toolkit-para-desenvolvedores-linux
 images:
   - /images/wp-content/uploads/2015/01/mediafiresquare.png
 categories:
-  - Desenvolvimento
-  - Notícias
+  - noticias
 tags:
   - cloud-storage
   - linux
-  - mediafire
+  - fuse
 ---
 
 O <a href="https://www.mediafire.com/" target="_blank">MediaFire</a>, um serviço de backup e hospedagem de arquivos, liberou um toolkit Open-Source para desenvolvedores que usam Linux.

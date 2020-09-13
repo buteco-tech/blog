@@ -10,11 +10,11 @@ slug: usando-a-api-do-google-analytics-no-python
 images:
   - /images/wp-content/uploads/2015/04/Logo_Google_Analytics.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - api
   - google-analytics
-  - oauth
   - python
 ---
 
@@ -45,5 +45,3 @@ Toda busca de informações deve ser feita a partir do <em>DataFeedQuery</em>, q
 Se você está na dúvida de quais os parâmetros a serem usados ou os seus resultados, você pode fazer uso do <a href="https://ga-dev-tools.appspot.com/query-explorer/" target="_blank">Query Explorer</a>, uma ferramenta Web para consulta de dados customizados. Ou ainda, você pode consultar a <a href="https://developers.google.com/analytics/devguides/reporting/core/v3/" target="_blank">documentação</a> Analytics Core Reporting API para obter detalhes mais precisos.
 
 Gostou? Então continue ligado no nosso blog e veja como utilizar APIs de outros serviços nas próximas publicações.
-
-Já posso adiantar que iremos ver APIs do Twitter, Facebook e SoundCloud.

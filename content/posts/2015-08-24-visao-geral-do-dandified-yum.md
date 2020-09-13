@@ -10,9 +10,9 @@ slug: visao-geral-do-dandified-yum
 images:
   - /images/wp-content/uploads/2015/05/infinity-logo_400x400.png
 categories:
-  - Discussões
-tags:
+  - discussoes
   - distros
+tags:
   - dnf
   - fedora
   - rpm

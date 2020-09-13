@@ -11,12 +11,13 @@ slug: pypy-2-6-ja-esta-disponivel-e-7x-mais-rapido-que-o-cpython
 images:
   - /images/wp-content/uploads/2015/02/Pypy_logo.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - jit
   - numpy
   - pypy
   - python
+  - cpython
 ---
 
 A versão 2.6 do PyPy foi liberada nesta segunda (01/06) e vem com uma série de melhorias em relação a versão 2.5, além de uma melhor compatibilidade com o Python e Numpy.

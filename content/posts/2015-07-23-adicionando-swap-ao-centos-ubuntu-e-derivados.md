@@ -9,10 +9,12 @@ authors:
   - alexandrevicenzi
 slug: adicionando-swap-ao-centos-ubuntu-e-derivados
 categories:
-  - Tutoriais
+  - tutoriais
+  - distros
 tags:
+  - linux
   - centos
-  - memória
+  - memoria
   - swap
   - ubuntu
 ---

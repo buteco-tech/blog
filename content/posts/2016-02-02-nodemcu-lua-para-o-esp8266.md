@@ -10,16 +10,15 @@ slug: nodemcu-lua-para-o-esp8266
 images:
   - /images/wp-content/uploads/2016/02/nodeMCU-logo-300x300-e1454377964183.png
 categories:
-  - Hardware
-  - DIY
+  - embarcados
+  - tutoriais
 tags:
+  - diy
   - esp8266
   - esptool
-  - hardware
   - iot
   - lua
   - nodemcu
-  - nodemcu flasher
 ---
 
 O <a href="http://nodemcu.com/index_en.html" target="_blank">NodeMCU</a> é um <em>firmware</em> e kit de desenvolvimento que permite a programação de protótipos para a Internet das Coisas (IoT). O <em>firmware</em> utiliza o paradigma <em>event-driven</em> para facilitar o desenvolvimento de aplicações que necessitem acesso à Internet. Além disso, integra módulos de GPIO, 1-Wire, I2C, SPI, PWM, ADC, entre outros, para facilitar o manuseio de módulos baseados no chip ESP8266.

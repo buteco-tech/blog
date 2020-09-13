@@ -8,13 +8,12 @@ slug: review-da-tela-3-5-tft-no-raspberry-pi
 images:
   - /images/wp-content/uploads/2015/05/index.png
 categories:
-  - Hardware
-  - DIY
-  - Reviews
+  - embarcados
+  - reviews
 tags:
+  - diy
   - display
-  - hardware
-  - Raspberry PI
+  - raspberry-pi
   - tft
 ---
 

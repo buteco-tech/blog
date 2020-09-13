@@ -6,11 +6,13 @@ authors:
   - jaswdr
 slug: crie-seu-proprio-instagram-com-php
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - imagem
+  - instagram
   - php
-  - php_gd2
+  - php-gd2
 ---
 
 <div class="separator" style="clear: both; text-align: left;">Olá pessoal! Hoje mostrarei como fazer uma edição e tratamento básico de imagens com PHP, para quem não sabe o PHP possui uma extensão dedicada para trabalhar com entidades gráficas, a <strong>php_gd2</strong>, consequentemente para este tutorial vamos precisar desta extensão habilitada e do PHP na versão 5.5 ou superior.</div>

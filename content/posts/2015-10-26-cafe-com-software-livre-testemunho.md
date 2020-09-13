@@ -10,13 +10,9 @@ slug: cafe-com-software-livre-testemunho
 images:
   - /images/wp-content/uploads/2015/10/CaféComSL3_Caneca743x655.png
 categories:
-  - Eventos
-tags:
-  - evento
   - eventos
-  - open-source
+tags:
   - software-livre
-  - softwarelivre
 ---
 
 Parte da equipe do Buteco Open Source esteve no Café com Software Livre, neste final de semana que passou. Daremos aqui uma visão geral sobre o evento.

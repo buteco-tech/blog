@@ -9,8 +9,8 @@ slug: instalando-o-mariadb-no-centos-7
 images:
   - /images/wp-content/uploads/2015/02/Mariadb-seal-shaded-browntext.png
 categories:
-  - Tutoriais
-  - Distros
+  - tutoriais
+  - distros
 tags:
   - centos
   - linux

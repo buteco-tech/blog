@@ -8,7 +8,7 @@ authors:
   - marcossouza
 slug: aniversario-do-buteco
 categories:
-  - Notícias
+  - noticias
 tags:
   - buteco
 ---

@@ -8,10 +8,10 @@ slug: esteganografia-com-steghide
 images:
   - /images/wp-content/uploads/2015/09/steg-logo.jpg
 categories:
-  - Ferramentas
+  - seguranca
+  - tutoriais
 tags:
-  - segurança
-  - steganografia
+  - esteganografia
   - steghide
 ---
 

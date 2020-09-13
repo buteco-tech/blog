@@ -8,14 +8,9 @@ slug: acompanhe-o-tdc-floripa-sem-sair-de-casa
 images:
   - /images/wp-content/uploads/2016/05/tdc-logo.png
 categories:
-  - Eventos
+  - eventos
 tags:
-  - android
-  - iot
-  - mobile
-  - php
-  - python
-  - ux
+  - tdc
 ---
 
 <p style="text-align: center;"><strong>Acompanhe o TDC Floripa direto da sua casa, e de graça!</strong></p>

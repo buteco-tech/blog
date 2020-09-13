@@ -8,8 +8,9 @@ alias:
   /4796/
 slug: importancia-do-open-source-na-pesquisa-de-mercado
 categories:
-  - Discussões
-
+  - discussoes
+tags:
+  - software-livre
 ---
 
 Um dos pontos mais estratégicos no desenvolvimento de um produto é a sua validação frente ao mercado. Para <strong>colocar um produto novo no mercado o investimento é altíssimo</strong>. Empresas multinacionais da área de produtos de consumo diário precisam direcionar algumas dezenas de milhões de dólares para colocar um produto novo no mercado. Isso não se deve somente ao P&amp;D, mas à toda linha de produção e de mercadologia que precisa ser desenvolvida junto ao produto, para que este possa ir chegar ao mercado.

@@ -8,13 +8,13 @@ authors:
   - brunopiske
 slug: iluminacao-natalina-com-arduino-temporizador-e-ldr
 categories:
-  - Hardware
-  - DIY
+  - embarcados
+  - tutoriais
 tags:
+  - diy
   - arduino
+  - arduino-mega
   - c
-  - natal
-  - programação
 ---
 
 <span style="font-weight: 400;">Neste projeto, irei apresentar a vocês como controlar uma carga de 110 ou 220 volts com um Arduíno e um relé. Utilizaremos também um LDR para medição de intensidade de luz, para poder fazer com que a carga seja ligada apenas quando for escuro, e além disso, com a opção de temporizar o tempo que a carga ficará ligada. Um exemplo de aplicação é a iluminação Natalina, fazendo ela ligar somente quando escurecer, e caso quiser, pode-se também programar essa para desligar após algumas horas, ou ainda, deixar com que ela se apague novamente quando o dia clarear.</span>

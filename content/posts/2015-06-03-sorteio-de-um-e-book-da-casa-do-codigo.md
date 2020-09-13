@@ -8,9 +8,9 @@ slug: sorteio-de-um-e-book-da-casa-do-codigo
 images:
   - /images/wp-content/uploads/2015/05/cdc-logo-novo-400.png
 categories:
-  - Sorteios
-  - Livros
+  - sorteios
 tags:
+  - livros
   - ebook
 ---
 

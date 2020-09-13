@@ -10,11 +10,10 @@ slug: laravel-5-e-finalmente-lancado
 images:
   - /images/wp-content/uploads/2015/02/laravel-logo1.png
 categories:
-  - Desenvolvimento
+  - noticias
 tags:
   - framework
   - laravel
-  - laravel 5
   - php
 ---
 

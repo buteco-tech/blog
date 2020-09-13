@@ -11,13 +11,9 @@ slug: inscricoes-abertas-para-o-12o-forum-espirito-livre
 images:
   - /images/wp-content/uploads/2016/04/Logo_12_Forum.jpg
 categories:
-  - Eventos
+  - eventos
 tags:
-  - espiritolivre
-  - evento
   - hackthon
-  - minicurso
-  - palestra
 ---
 
 O 12º Fórum Espírito Livre acontecerá entre os dias <strong>4 a 6 de maio de 2016</strong> no município de <strong>Vila Velha/ES </strong>no <a href="http://ceetvascocoutinho.com.br/" target="_blank">Centro Estadual de Educação Técnica (CEET) Vasco Coutinho</a> e tem como objetivos reunir a comunidade estadual e nacional interessada em desenvolvimento e aplicação de software livre. Desta maneira, visa compartilhar experiências e conhecimento, de modo a estimular o uso crescente dos softwares livres, tecnologias e padrões abertos, o aprimoramento de tecnologias, a difusão da filosofia de compartilhamento e criação colaborativa e coletiva. Além disso espera-se estreitar a comunicação entre colaboradores e leitores da Revista Espírito Livre.

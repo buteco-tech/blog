@@ -6,12 +6,13 @@ authors:
   - alexandrevicenzi
 slug: utilizando-o-openshift-para-hospedar-uma-aplicacao-flaskpython
 categories:
-  - Desenvolvimento
+  - cloud-computing
+  - tutoriais
 tags:
   - flask
   - openshift
+  - kubernetes
   - python
-  - rhc
 ---
 
 <strong>O que é OpenShift?</strong>

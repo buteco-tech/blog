@@ -6,13 +6,12 @@ authors:
   - buteco
 slug: lancamentos-novatec-apocalipse-zumbi-com-arduino-e-raspberry-e-aws-em-acao
 categories:
-  - Notícias
-  - Livros
+  - noticias
 tags:
-  - amazon
-  - arduino
+  - livros
   - aws
-  - raspberrypi
+  - arduino
+  - raspberry-pi
 ---
 
 <p style="text-align: center;"><a href="/images/wp-content/uploads/2016/01/capa_ampliada9788575224700.jpg" rel="attachment wp-att-4453"><img class="alignnone size-medium wp-image-4453" src="/images/wp-content/uploads/2016/01/capa_ampliada9788575224700-215x300.jpg" alt="capa_ampliada9788575224700" width="215" height="300" /></a></p>

@@ -11,15 +11,12 @@ slug: firefox-39-traz-melhorias-de-seguranca
 images:
   - /images/wp-content/uploads/2015/05/firefox-logo.bee1d85af18f-e1431444837127.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - browser
   - firefox
   - linux
   - mozilla
-  - os x
-  - ssl
-  - web
 ---
 
 O Firefox 39.0 já está disponível e vem com melhorias de desempenho e correções de segurança. <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Clique aqui</a> caso queira fazer o download.

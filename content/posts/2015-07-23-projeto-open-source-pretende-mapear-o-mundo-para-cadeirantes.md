@@ -8,12 +8,11 @@ authors:
   - daniel_magevski
 slug: projeto-open-source-pretende-mapear-o-mundo-para-cadeirantes
 categories:
-  - Ferramentas
-  - Notícias
+  - noticias
 tags:
   - android
   - openstreetmap
-  - wheelmap
+  - mapas
 ---
 
 <a href="/images/wp-content/uploads/2015/06/wheelmap-logo-e1435718201487.png"><img class="alignnone size-large wp-image-2929" src="/images/wp-content/uploads/2015/06/wheelmap-logo-1024x520.png" alt="wheelmap-logo" width="648" height="329" /></a>

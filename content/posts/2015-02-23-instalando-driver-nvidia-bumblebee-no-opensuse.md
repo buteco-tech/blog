@@ -10,12 +10,13 @@ slug: instalando-driver-nvidia-bumblebee-no-opensuse
 images:
   - /images/wp-content/uploads/2015/02/bumblebee_250.png
 categories:
-  - Tutoriais
+  - tutoriais
+  - distros
 tags:
   - linux
   - nouveau
   - nvidia
-  - openSUSE
+  - opensuse
 ---
 
 Eu, como muitos de vocês, gosto de jogar um pouquinho as vezes. E porque não tirar todo o potencial da sua placa de vídeo no Linux?

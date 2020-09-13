@@ -8,9 +8,11 @@ slug: implemente-seu-mallocfree-just4fun
 images:
   - /images/wp-content/uploads/2015/11/1042021.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - c
+  - cpp
   - glibc
   - linux
 ---

@@ -10,9 +10,9 @@ slug: conhecendo-os-modulos-do-nodemcu
 images:
   - /images/wp-content/uploads/2016/02/nodeMCU-logo-300x300-e1454377964183.png
 categories:
-  - Hardware
-  - DIY
+  - embarcados
 tags:
+  - diy
   - esp8266
   - i2c
   - lua

@@ -9,12 +9,14 @@ authors:
   - alexandrevicenzi
 slug: utilizando-um-teclado-matricial-no-arduino
 categories:
-  - Hardware
-  - DIY
+  - embarcados
+  - tutoriais
 tags:
+  - diy
   - arduino
   - keypad
   - teclado
+  - iot
 ---
 
 Já faz algum tempo que não falo do Arduino, porém hoje vou mostrar como utilizar um teclado matricial.

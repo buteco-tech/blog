@@ -10,11 +10,8 @@ slug: rust-1-0-alpha-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2014/10/rust-logo-256x256-blk.png
 categories:
-  - Desenvolvimento
-  - Notícias
+  - noticias
 tags:
-  - linguagem-programação
-  - mozilla
   - rust
 ---
 

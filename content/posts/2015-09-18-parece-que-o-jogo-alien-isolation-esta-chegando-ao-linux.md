@@ -10,7 +10,7 @@ slug: parece-que-o-jogo-alien-isolation-esta-chegando-ao-linux
 images:
   - /images/wp-content/uploads/2015/09/alienisolation.jpg
 categories:
-  - Notícias
+  - noticias
 tags:
   - games
   - linux

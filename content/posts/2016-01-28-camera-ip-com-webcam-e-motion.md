@@ -11,13 +11,15 @@ slug: camera-ip-com-webcam-e-motion
 images:
   - /images/wp-content/uploads/2016/01/You-are-being-watched-620-by-338.jpg
 categories:
-  - Tutoriais
-  - DIY
+  - tutoriais
 tags:
-  - câmera ip
+  - diy
+  - camera-ip
   - debian
+  - linux
   - ipcam
-  - motion
+  - raspberry-pi
+  - beaglebone
   - web
 ---
 

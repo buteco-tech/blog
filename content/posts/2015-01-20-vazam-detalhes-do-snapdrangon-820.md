@@ -10,7 +10,7 @@ slug: vazam-detalhes-do-snapdrangon-820
 images:
   - /images/wp-content/uploads/2015/01/snapdragon-chip-stone.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - qualcomm
   - snapdragon

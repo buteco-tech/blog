@@ -11,7 +11,7 @@ slug: pyston-0-3-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 categories:
-  - Desenvolvimento
+  - noticias
 tags:
   - jit
   - pyston

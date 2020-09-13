@@ -6,7 +6,7 @@ authors:
   - jaswdr
 slug: gerador-de-sistemas-em-php-usando-apenas-sql
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - cakephp
   - codeigniter

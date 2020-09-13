@@ -10,13 +10,12 @@ slug: qtgamepad-adicionando-suporte-a-gamepad-no-qt
 images:
   - /images/wp-content/uploads/2015/05/Qt_logo.png
 categories:
-  - Notícias
+  - noticias
 tags:
-  - jogos
   - qt
-  - qt5
   - qtgamepad
   - sdl
+  - cpp
 ---
 
 Um dos mais novos módulos adicionados ao Qt Labs é o QtGamepad, um módulo inspirado na <a href="http://www.w3.org/TR/gamepad/" target="_blank">API Gamepad do HTML5</a>. Apesar de inspirado no Gamepad HTML, ele segue o estilo de desenvolvimento do Qt.

@@ -8,11 +8,11 @@ slug: cupom-de-desconto-para-livros-da-novatec
 images:
   - /images/wp-content/uploads/2015/01/logo_novatec.jpg
 categories:
-  - Notícias
-  - Livros
+  - noticias
 tags:
   - cupom
   - novatec
+  - livros
 ---
 
 A equipe do Buteco Open Source fez uma parceria com a <a href="http://novatec.com.br/">editora Novatec</a> para poder disponibilizar aos nossos leitores um cupom de desconto na compra de livros pelo site da Novatec.

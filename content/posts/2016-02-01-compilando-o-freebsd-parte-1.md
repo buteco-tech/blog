@@ -10,10 +10,11 @@ slug: compilando-o-freebsd-parte-1
 images:
   - /images/wp-content/uploads/2016/01/freebsd2.png
 categories:
-  - Distros
+  - distros
+  - tutoriais
 tags:
-  - distro
   - freebsd
+  - bsd
   - kernel
 ---
 

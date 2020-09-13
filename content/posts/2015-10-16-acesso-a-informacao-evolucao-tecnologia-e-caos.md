@@ -10,10 +10,8 @@ slug: acesso-a-informacao-evolucao-tecnologia-e-caos
 images:
   - /images/wp-content/uploads/2015/10/modelagem_e_tecnologia.jpg
 categories:
-  - Discussões
+  - discussoes
 tags:
-  - educação
-  - informação
   - iot
   - tecnologia
   - ti

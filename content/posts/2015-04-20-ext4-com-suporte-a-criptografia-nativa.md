@@ -10,7 +10,7 @@ slug: ext4-com-suporte-a-criptografia-nativa
 images:
   - /images/wp-content/uploads/2015/04/ext4.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - ext4
   - linux

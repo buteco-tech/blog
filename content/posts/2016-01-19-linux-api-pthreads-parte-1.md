@@ -10,9 +10,11 @@ slug: linux-api-pthreads-parte-1
 images:
   - /images/wp-content/uploads/2016/01/pthreads1.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - c
+  - cpp
   - linux
   - posix
   - threads

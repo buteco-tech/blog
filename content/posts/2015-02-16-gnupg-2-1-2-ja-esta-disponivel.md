@@ -10,7 +10,7 @@ slug: gnupg-2-1-2-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/02/GnuPG-Logo.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - criptografia
   - gnupg

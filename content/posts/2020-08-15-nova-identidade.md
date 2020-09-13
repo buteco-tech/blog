@@ -2,14 +2,11 @@
 title: "Nós mudamos!"
 summary: Novidades para nossos leitores e ouvintes.
 date: 2020-08-15 08:00:00
-categories:
-  - Notícias
-tags:
-  - novidades
-  - tema
 slug: nos-mudamos-para-buteco-tech
 authors:
   - alexandrevicenzi
+categories:
+  - noticias
 images:
 - /images/posts/buteco-logo-2020.png
 ---

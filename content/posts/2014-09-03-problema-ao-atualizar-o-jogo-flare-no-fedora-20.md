@@ -5,7 +5,8 @@ authors:
   - marcossouza
 slug: problema-ao-atualizar-o-jogo-flare-no-fedora-20
 categories:
-  - Jogos
+  - jogos
+  - distros
 tags:
   - fedora
   - flare

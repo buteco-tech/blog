@@ -8,9 +8,11 @@ slug: utilizando-atexit-com-c-e-python
 images:
   - /images/wp-content/uploads/2015/02/saida.jpg
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - c
+  - cpp
   - linux
   - python
 ---

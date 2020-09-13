@@ -8,11 +8,11 @@ authors:
   - daniel_magevski
 slug: tutorial-nessus-home-parte-2-final
 categories:
-  - Ferramentas
+  - tutoriais
+  - seguranca
 tags:
-  - ferramenta
   - redes
-  - segurança
+  - openssl
 ---
 
 <a href="/images/wp-content/uploads/2015/04/Nessus-home.jpg"><img class="alignnone size-full wp-image-1817" src="/images/wp-content/uploads/2015/04/Nessus-home.jpg" alt="Nessus-home" width="641" height="113" /></a>

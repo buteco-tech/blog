@@ -8,7 +8,10 @@ slug: novatec-lanca-5a-edicao-do-livro-expressoes-regulares-uma-abordagem-divert
 images:
   - /images/wp-content/uploads/2016/02/expressoes-regulares-capa.jpg
 categories:
-  - Notícias
+  - noticias
+tags:
+  - regex
+  - novatec
 
 ---
 

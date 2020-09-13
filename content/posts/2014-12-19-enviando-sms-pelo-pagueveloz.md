@@ -6,9 +6,16 @@ authors:
   - alexandrevicenzi
 slug: enviando-sms-pelo-pagueveloz
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - sms
+  - csharp
+  - python
+  - ruby
+  - java
+  - cpp
+  - node-js
+  - servicos
 ---
 
 É muito comum ver nos sistemas que desenvolvemos envio de e-mail. Mas em alguns setores o envio de SMS facilita muito mais que um e-mail.

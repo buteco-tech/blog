@@ -8,11 +8,12 @@ slug: fedora-23-ira-trocar-o-x-org-server-pelo-wayland
 images:
   - /images/wp-content/uploads/2015/01/7b5b9071afbe94c1cfff78b1ce5721e5.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - fedora
   - linux
-  - testes
+  - xorg
+  - wayland
 ---
 
 Enquanto muito se falava em trocar o X.Org Sever pelo Wayland como sendo algo distante, parece que o Fedora 23 irá fazer acontecer.

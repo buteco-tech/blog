@@ -10,11 +10,11 @@ slug: gnome-removendo-icone-do-legacy-tray
 images:
   - /images/wp-content/uploads/2016/04/gnome-logo-300px-150x150.png
 categories:
-  - Tutoriais
+  - tutoriais
+  - distros
 tags:
   - gnome
   - linux
-  - tray
 ---
 
 No GNOME 3.16 foi introduzido <a href="https://help.gnome.org/misc/release-notes/3.16/" target="_blank">um novo sistema de notificação</a>, muito melhor que o antigo por sinal, porém com ele também veio um problema. O "legacy tray", que permite que aplicativos que ainda utilizam o sistema de notificações antigo do GNOME é extremamente irritante.

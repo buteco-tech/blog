@@ -10,9 +10,8 @@ slug: valve-disponibiliza-o-openvr-sdk
 images:
   - /images/wp-content/uploads/2015/05/valve-logo.jpg
 categories:
-  - Notícias
+  - noticias
 tags:
-  - jogos
   - openvr
   - steam
   - steamvr

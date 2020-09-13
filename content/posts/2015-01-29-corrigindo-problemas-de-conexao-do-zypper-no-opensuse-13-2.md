@@ -10,7 +10,8 @@ slug: corrigindo-problemas-de-conexao-do-zypper-no-opensuse-13-2
 images:
   - /images/wp-content/uploads/2015/01/Opensuse-logo.png
 categories:
-  - Tutoriais
+  - tutoriais
+  - distros
 tags:
   - opensuse
   - yast

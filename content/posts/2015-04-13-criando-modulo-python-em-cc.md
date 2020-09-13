@@ -10,12 +10,13 @@ slug: criando-modulo-python-em-cc
 images:
   - /images/wp-content/uploads/2015/04/c_python.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - c
+  - cpp
   - linux
   - python
-  - terminal
 ---
 
 <p style="text-align: justify;">A linguagem Python, sendo versátil, possui aplicações em vários nichos, desde a web até plataformas embarcadas. Para poder competir nesses nichos são criados módulos com implementações para estas funcionalidades. Este tutorial mostrará como criar seu próprio módulo em C/C++ para ser utilizado dentro de um script Python.</p>

@@ -8,8 +8,7 @@ slug: rust-1-0-sera-lancado-em-2015
 images:
   - /images/wp-content/uploads/2014/10/rust-logo-256x256-blk.png
 categories:
-  - Desenvolvimento
-  - Notícias
+  - noticias
 tags:
   - rust
 ---

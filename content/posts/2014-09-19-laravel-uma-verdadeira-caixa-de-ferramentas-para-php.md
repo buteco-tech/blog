@@ -6,7 +6,7 @@ authors:
   - jaswdr
 slug: laravel-uma-verdadeira-caixa-de-ferramentas-para-php
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - laravel
   - php

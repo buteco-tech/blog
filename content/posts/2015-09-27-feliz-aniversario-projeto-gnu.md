@@ -6,11 +6,10 @@ authors:
   - dsantos
 slug: feliz-aniversario-projeto-gnu
 categories:
-  - Eventos
+  - eventos
 tags:
-  - aniversário
   - gnu
-  - projeto
+  - linux
 ---
 
 <p style="text-align: center;"><a href="/images/wp-content/uploads/2015/09/GNU.png"><img class="alignnone size-medium wp-image-3486" src="/images/wp-content/uploads/2015/09/GNU.png" alt="GNU" width="350" height="300" /></a></p>

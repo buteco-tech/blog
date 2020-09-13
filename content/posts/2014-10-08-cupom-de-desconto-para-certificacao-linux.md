@@ -6,8 +6,8 @@ authors:
   - alexandrevicenzi
 slug: cupom-de-desconto-para-certificacao-linux
 categories:
-  - Notícias
-  - Certificações
+  - noticias
+  - certificacoes
 tags:
   - linux
   - cupom
@@ -18,10 +18,12 @@ tags:
 Você já deve ter ouvido sobre os programas de certificação recentemente lançado pela <a href="http://www.linuxfoundation.org/">Linux Fundation</a>.
 
 As certificações disponíveis são:
+
 <ul>
-	<li>Linux Foundation Certified Sysadmin (LFCS), abrange administração básica do sistema</li>
-	<li>Linux Foundation Certified Engineers (LFCE), abrange administração avançada do sistema e habilidades de engenharia</li>
+    <li>Linux Foundation Certified Sysadmin (LFCS), abrange administração básica do sistema</li>
+    <li>Linux Foundation Certified Engineers (LFCE), abrange administração avançada do sistema e habilidades de engenharia</li>
 </ul>
+
 Você pode ver os detalhes completo de cada programa <a href="http://bit.ly/1yKRjxp">aqui</a>.
 
 Diferentemente de outras certificações Linux, estes exames são oferecidos para várias distribuições, como por exemplo o Ubuntu, CentOS e o openSUSE.

@@ -10,13 +10,11 @@ slug: hands-on-quilt
 images:
   - /images/wp-content/uploads/2015/06/Captura-de-tela-de-2015-06-08-23-26-13.png
 categories:
-  - Desenvolvimento
-  - Ferramentas
+  - ferramentas
+  - tutoriais
 tags:
   - linux
-  - programação
   - quilt
-  - terminal
 ---
 
 Quilt é uma ferramenta para criação e manipulação de patches de código fonte. Sua utilização é bem simples e permite criar patches de forma bem prática. Ele foi originalmente criado pelo desenvolvedor Andrew Morton, sendo uma série de scripts para gerenciar patches no Linux. Mas Andreas Grünbacher, um outro desenvolvedor, melhorou os scripts de Andrew para gerar constumizações do kernel para o SuSe Linux.

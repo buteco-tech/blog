@@ -8,9 +8,9 @@ slug: novatec-lanca-livro-para-pais-e-criancas-aprenderem-programacao-juntos
 images:
   - /images/wp-content/uploads/2015/09/ensine_seus_filhos_a_programar.jpg
 categories:
-  - Notícias
-  - Livros
+  - noticias
 tags:
+  - livros
   - novatec
   - python
 ---

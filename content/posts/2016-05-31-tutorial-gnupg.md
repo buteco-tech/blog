@@ -10,11 +10,13 @@ slug: tutorial-gnupg
 images:
   - /images/wp-content/uploads/2015/02/GnuPG-Logo.png
 categories:
-  - Ferramentas
+  - ferramentas
+  - tutoriais
 tags:
   - criptografia
   - gnupg
   - pgp
+  - gpg
 ---
 
 <h2>Introdução</h2>

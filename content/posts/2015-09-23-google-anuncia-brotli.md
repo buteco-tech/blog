@@ -6,10 +6,10 @@ authors:
   - dsantos
 slug: google-anuncia-brotli
 categories:
-  - Notícias
+  - noticias
 tags:
   - algoritmo
-  - compactação
+  - compactacao
   - google
 ---
 

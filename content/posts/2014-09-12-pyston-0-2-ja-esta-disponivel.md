@@ -6,8 +6,7 @@ authors:
   - alexandrevicenzi
 slug: pyston-0-2-ja-esta-disponivel
 categories:
-  - Desenvolvimento
-  - Notícias
+  - noticias
 tags:
   - pyston
   - python

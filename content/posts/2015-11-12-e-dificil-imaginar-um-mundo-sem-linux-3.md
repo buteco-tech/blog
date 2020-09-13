@@ -8,11 +8,10 @@ slug: e-dificil-imaginar-um-mundo-sem-linux-3
 images:
   - /images/wp-content/uploads/2015/10/WorldWithoutLinux.png
 categories:
-  - Fun
+  - noticias
 tags:
   - linux
-  - open-source
-  - video
+  - software-livre
 ---
 
 A série <em>World Without Linux</em> (Mundo Sem Linux) lançada pela <em>Linux Foudation</em>, tentará demonstrar numa série de seis vídeos, lançados periodicamente, a importância do Linux para o desenvolvimento tecnológico e o envolvimento que já temos com ele.

@@ -3,16 +3,17 @@ title: "Entendendo carros autônomos"
 summary: "Carros autônomos estão cada vez mais presentes em nossas vidas, mas o que é um carro autônomo de fato?"
 tagline: "Carros autônomos estão cada vez mais presentes em nossas vidas, mas o que é um carro autônomo de fato?"
 date: 2020-05-28 08:00:00
+slug: entendendo-carros-autonomos
+authors:
+  - alexandrevicenzi
 categories:
-  - Hardware
+  - inteligencia-artificial
 tags:
   - nvidia
   - carros
   - sensores
-  - hardware
-slug: entendendo-carros-autonomos
-authors:
-  - alexandrevicenzi
+  - tesla
+  - darpa
 images:
   - /images/posts/tesla-autopilot.jpg
 ---

@@ -10,10 +10,12 @@ slug: fazendo-a-internet-trabalhar-para-voce-com-ifttt
 images:
   - /images/wp-content/uploads/2014/12/ifttt-banner.jpg
 categories:
-  - Ferramentas
-  - Tutoriais
+  - ferramentas
+  - tutoriais
 tags:
   - ifttt
+  - automacao
+  - servicos
 ---
 
 <strong>IFTTT</strong> é um site que vai provavelmente lhe ajudar na automação de muitas tarefas rotineiras, como por exemplo postagens em blogs, envio de e-mail, notificações no celular, checagem da previsão do tempo, tudo numa plataforma simples, pois é para isso que existe o site <a href="http://ifttt.com"><strong>IFTTT.com</strong></a>.

@@ -8,12 +8,13 @@ authors:
   - pedrojefferson
 slug: construindo-a-interface-de-login-do-spotify-com-pygtk-e-css
 categories:
-  - Desenvolvimento
-tags:
   - desenvolvimento
+  - tutoriais
+tags:
   - gnome
-  - programação
+  - gtk
   - python
+  - spotify
 ---
 
 Atenção, construiremos uma interface muito <strong>semelhante</strong> a do spotify. Há alguns elementos que não foram possíveis a representação igual ao da interface original.

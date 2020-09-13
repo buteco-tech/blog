@@ -7,8 +7,8 @@ slug: formatando-e-adicionando-anexos-a-e-mails-no-python
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 categories:
-  - Desenvolvimento
-  - Tutoriais
+  - desenvolvimento
+  - tutoriais
 tags:
   - email
   - python

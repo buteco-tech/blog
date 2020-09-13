@@ -8,12 +8,14 @@ slug: crie-seu-proprio-console-infanto-por-menos-de-300-reais
 images:
   - /images/wp-content/uploads/2015/01/infanto.jpg
 categories:
-  - Jogos
+  - embarcados
+  - jogos
 tags:
   - console
-  - games
-  - infanto
   - lakka
+  - linux
+  - openelec
+  - retroarch
 ---
 
 Há cerca de duas semanas, o assunto da vez na área de jogos no Brasil foi o console chamado de Infanto. Se você ainda não ouviu falar nele, você pode ver uma matéria do TecMundo <a href="http://www.tecmundo.com.br/video-game-e-jogos/70903-conheca-infanto-console-brasileiro-obra-pirataria-6-mil-jogos.htm" target="_blank">aqui</a>.

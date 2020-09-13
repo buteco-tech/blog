@@ -10,11 +10,11 @@ slug: fedup-vai-ser-substituido-no-fedora-23-2
 images:
   - /images/wp-content/uploads/2015/05/infinity-logo_400x400.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - fedora
   - linux
-  - release
+  - dnf
 ---
 
 Fedup é a ferramenta utilizada pelo Fedora para suas atualizações de sistema, e existe desde o Fedora 17. Entretanto, com a liberação do Fedora 23 sendo no fim deste ano, a ferramenta vai ser substituída nas novas releases do Fedora.

@@ -8,10 +8,11 @@ slug: docker-depois-do-hype-como-comecar-a-usa-lo-hoje-mesmo
 images:
   - /images/wp-content/uploads/2015/10/docker-small.png
 categories:
-  - Ferramentas
+  - ferramentas
+  - tutoriais
 tags:
   - docker
-  - orquestração
+  - docker-compose
   - python
   - vagrant
 ---

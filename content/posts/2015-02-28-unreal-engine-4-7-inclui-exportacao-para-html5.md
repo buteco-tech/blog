@@ -11,10 +11,11 @@ slug: unreal-engine-4-7-inclui-exportacao-para-html5
 images:
   - /images/wp-content/uploads/2015/02/Unreal_Engine_logo_and_wordmark.png
 categories:
-  - Jogos
+  - jogos
+  - noticias
 tags:
   - html5
-  - unreal engine
+  - unreal-engine
   - webgl
 ---
 

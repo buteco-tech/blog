@@ -6,7 +6,7 @@ authors:
   - alexandrevicenzi
 slug: lancamentos-novatec-linguagem-sql-e-minecraft
 categories:
-  - Notícias
+  - noticias
 tags:
   - minecraft
   - python

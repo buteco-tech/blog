@@ -10,9 +10,11 @@ slug: geracao-de-md5-utilizando-c-com-openssl-e-python
 images:
   - /images/wp-content/uploads/2015/03/Sem-título-1.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - c
+  - cpp
   - linux
   - python
 ---

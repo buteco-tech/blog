@@ -10,11 +10,11 @@ slug: qemu-2-3-trara-suporte-a-cpu-ivy-bridge
 images:
   - /images/wp-content/uploads/2015/01/Qemu-logo.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - kvm
   - qemu
-  - virtualização
+  - virtualizacao
 ---
 
 O QEMU é um emulador e virtualizador de máquinas e é totalmente Open Source. A versão 2.2 foi lançada há pouco mais de um mês (09/12), e para a versão 2.3 a lista de novidades já é grande.

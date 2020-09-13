@@ -8,7 +8,7 @@ slug: sorteio-de-um-e-book
 images:
   - /images/wp-content/uploads/2015/06/livros-casa-do-codigo.jpg
 categories:
-  - Sorteios
+  - sorteios
 tags:
   - ebook
 ---

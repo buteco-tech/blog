@@ -8,7 +8,7 @@ slug: rust-1-4-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2014/10/rust-logo-256x256-blk.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - rust
 ---

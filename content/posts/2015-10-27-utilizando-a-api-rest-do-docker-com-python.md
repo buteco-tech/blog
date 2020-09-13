@@ -10,14 +10,13 @@ slug: utilizando-a-api-rest-do-docker-com-python
 images:
   - /images/wp-content/uploads/2015/10/docker-100275159-orig.jpg
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
-  - api
   - docker
   - linux
   - python
   - requests
-  - terminal
 ---
 
 O Docker é uma plataforma para construir e executar aplicações distribuídas. Com ele é possível executar um <em>bash</em> em um ambiente Debian mesmo estando dentro um Fedora, por exemplo. Seu funcionamento se assemelha ao de uma máquina virtual, mas as aplicações executadas no Docker estão de fato sendo executados no sistema <em>host</em>, ou seja, não existe a camada de emulação.

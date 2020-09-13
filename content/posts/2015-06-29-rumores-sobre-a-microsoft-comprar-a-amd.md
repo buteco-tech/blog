@@ -10,10 +10,9 @@ slug: rumores-sobre-a-microsoft-comprar-a-amd
 images:
   - /images/wp-content/uploads/2015/06/amd_logo.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - amd
-  - jogos
   - microsoft
   - surface
   - xbox

@@ -11,9 +11,9 @@ slug: gerando-bitlink-atravez-da-api-do-bitly
 images:
   - /images/wp-content/uploads/2016/02/bitly_logo_small.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
-  - bitlinks
   - bitly
   - python
   - requests

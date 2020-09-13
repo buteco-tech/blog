@@ -9,8 +9,8 @@ slug: instalando-o-apache-no-centos-7
 images:
   - /images/wp-content/uploads/2015/03/Apache-Logo.png
 categories:
-  - Tutoriais
-  - Distros
+  - tutoriais
+  - distros
 tags:
   - apache
   - centos

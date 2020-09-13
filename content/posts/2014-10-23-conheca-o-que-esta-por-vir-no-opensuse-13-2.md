@@ -6,10 +6,12 @@ authors:
   - alexandrevicenzi
 slug: conheca-o-que-esta-por-vir-no-opensuse-13-2
 categories:
-  - Notícias
+  - noticias
+  - distros
 tags:
   - linux
   - opensuse
+  - gnome
 ---
 
 Faltam apenas 12 dias para o lançamento oficial do openSUSE 13.2 e nada melhor do que dar uma espiada no que está por vir nesta nova versão.

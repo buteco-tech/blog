@@ -10,15 +10,14 @@ slug: libssl-libcrypto-visualizando-certificados-online-em-c
 images:
   - /images/wp-content/uploads/2016/05/openssl-3.png
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - c
-  - certificados
-  - certs
+  - cpp
   - libcrypto
   - libssl
-  - linux
   - openssl
+  - linux
 ---
 
 Muito se fala do OpenSSL para geração e manutenção de certificados digitais, além disso, o OpenSSL pode criptografar arquivos, gerar números randômicos, e etc. Este artigo vem mostrar como utilizar a libssl para visualizar certificado utilizando a linguagem C.

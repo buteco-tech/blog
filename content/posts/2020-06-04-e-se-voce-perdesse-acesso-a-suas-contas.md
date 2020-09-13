@@ -3,17 +3,17 @@ title: "E se você perdesse acesso a suas contas?"
 summary: "O que você faria se perdesse acesso a sua conta de e-mail?"
 tagline: "O que você faria se perdesse acesso a sua conta de e-mail?"
 date: 2020-06-04 08:00:00
-categories:
-  - Segurança
-tags:
-  - privacidade
-  - e-mail
-  - NAS
-  - nuvem
-  - google
 slug: e-se-voce-perdesse-acesso-a-suas-contas
 authors:
   - alexandrevicenzi
+categories:
+  - seguranca
+  - privacidade
+tags:
+  - email
+  - NAS
+  - nuvem
+  - google
 images:
   - /images/posts/gmail-webapp.jpg
 ---

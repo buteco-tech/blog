@@ -7,16 +7,17 @@ slug: gps-parte-3-localizador-gps-com-a-beaglebone-green
 images:
   - /images/wp-content/uploads/2015/12/map_pin.png
 categories:
-  - Desenvolvimento
-  - Tutoriais
+  - desenvolvimento
+  - tutoriais
 tags:
-  - beaglebone green
+  - beaglebone
+  - beaglebone-green
+  - raspberry-pi
   - bottle
   - flask
   - gps
   - nmea
   - python
-  - Raspberry Pi
 images:
   - /images/wp-content/uploads/2015/12/map_pin.png
 ---

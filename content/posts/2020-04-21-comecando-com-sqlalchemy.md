@@ -7,13 +7,12 @@ slug: comecando-com-sql-alchemy
 authors:
   - jaswdr
 categories:
-  - Tutoriais
-  - Desenvolvimento
+  - tutoriais
+  - banco-de-dados
 tags:
   - python
   - sql
   - orm
-  - banco de dados
 images:
   - /images/posts/sql-alchemy-logo.png
 ---

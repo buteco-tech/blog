@@ -10,12 +10,9 @@ slug: kali-linux-2-0-ja-tem-data-para-o-lancamento
 images:
   - /images/wp-content/uploads/2015/07/Kali-Linux2.0.jpg
 categories:
-  - Distros
-  - Notícias
+  - noticias
 tags:
-  - distro
   - kali-linux
-  - lançamento
   - linux
   - offensive-security
 ---

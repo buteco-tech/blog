@@ -3,16 +3,16 @@ title: "AWS S3 em Python"
 summary: "Diversas aplicações precisam em algum momento armazenar arquivos, seja para backup, CDN ou outros. Um dos serviços mais utilizados para armazenamento de arquivos é o AWS S3. Veja neste artigo como usar o S3 em suas aplicações Python."
 tagline: "Aprenda a utilizar o AWS S3 no Python de forma fácil e objetiva"
 date: 2020-05-15 12:00:00
-categories:
-  - Desenvolvimento
-  - Tutoriais
-tags:
-  - python
-  - aws
-  - s3
 slug: python-aws-s3
 authors:
   - jaswdr
+categories:
+  - desenvolvimento
+  - tutoriais
+tags:
+  - python
+  - aws
+  - aws-s3
 images:
   - /images/posts/aws-python-s3.png
 ---

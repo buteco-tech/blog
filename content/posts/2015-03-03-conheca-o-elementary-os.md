@@ -8,7 +8,7 @@ slug: conheca-o-elementary-os
 images:
   - /images/wp-content/uploads/2015/02/elementary.png
 categories:
-  - Distros
+  - distros
 tags:
   - elementary
   - linux

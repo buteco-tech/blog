@@ -8,9 +8,9 @@ slug: novatec-lanca-livro-que-ensina-a-criar-jogos-em-python-com-pygame
 images:
   - /images/wp-content/uploads/2015/09/python_com_pygame.jpg
 categories:
-  - Notícias
-  - Livros
+  - noticias
 tags:
+  - livros
   - novatec
   - pygame
   - python

@@ -10,13 +10,13 @@ slug: bash-reverse-search
 images:
   - /images/wp-content/uploads/2015/12/bash.png
 categories:
-  - Tutoriais
+  - tutoriais
+  - ferramentas
 tags:
   - bash
   - console
   - linux
   - shell
-  - terminal
 ---
 
 No Bash, é comum reexecutarmos comandos o tempo inteiro, especialmente quando precisamos compilar um programa ou mover um arquivo. O que se faz geralmente é ir apertando a tecla "para cima" e encontrar o comando desejado. Essa tarefa pode ser um pouco custosa, uma vez que o comando pode ter sido executado há horas e então, ficar voltando enumeros comandos não deve ser muito interessante.

@@ -6,10 +6,9 @@ authors:
   - marcooliveira
 slug: roadsec-floripa-2609
 categories:
-  - Eventos
-tags:
   - eventos
-  - segurança
+tags:
+  - roadsec
 ---
 
 <a href="/images/wp-content/uploads/2015/09/roadsec2.png"><img class="aligncenter size-full wp-image-3409" src="/images/wp-content/uploads/2015/09/roadsec2.png" alt="Road sec" width="950" height="159" /></a>

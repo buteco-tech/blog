@@ -10,10 +10,11 @@ slug: posix-regular-expression-em-c
 images:
   - /images/wp-content/uploads/2016/03/images.jpg
 categories:
-  - Desenvolvimento
+  - desenvolvimento
+  - tutoriais
 tags:
   - c
-  - expressao_regular
+  - cpp
   - linux
   - posix
   - regex

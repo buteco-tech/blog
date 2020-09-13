@@ -10,11 +10,9 @@ slug: mais-correcoes-no-rc3-do-mesa-11-0
 images:
   - /images/wp-content/uploads/2015/07/attachment.cgi_.png
 categories:
-  - Jogos
-  - Notícias
+  - noticias
 tags:
-  - games
-  - jogos
+  - mesa
   - linux
   - opengl
 ---

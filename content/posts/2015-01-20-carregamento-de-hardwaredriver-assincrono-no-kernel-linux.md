@@ -8,9 +8,7 @@ slug: carregamento-de-hardwaredriver-assincrono-no-kernel-linux
 images:
   - /images/wp-content/uploads/2015/01/Tux.png
 categories:
-  - Hardware
-  - DIY
-  - Notícias
+  - noticias
 tags:
   - kernel
   - linux

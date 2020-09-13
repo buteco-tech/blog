@@ -10,7 +10,7 @@ slug: mozilla-libera-suporte-ao-webvr-no-firefox-nightly
 images:
   - /images/wp-content/uploads/2015/01/mozvr.jpg
 categories:
-  - Notícias
+  - noticias
 tags:
   - firefox
   - oculus-rift

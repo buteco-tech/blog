@@ -11,7 +11,7 @@ slug: pypy-4-0-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/02/Pypy_logo.png
 categories:
-  - Notícias
+  - noticias
 tags:
   - cpython
   - jit

@@ -8,7 +8,7 @@ slug: lua-5-3-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/01/lua.png
 categories:
-  - Desenvolvimento
+  - noticias
 tags:
   - lua
 ---

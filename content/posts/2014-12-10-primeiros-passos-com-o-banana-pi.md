@@ -6,11 +6,13 @@ authors:
   - alexandrevicenzi
 slug: primeiros-passos-com-o-banana-pi
 categories:
-  - Desenvolvimento
-  - Hardware
-  - DIY
+  - embarcados
+  - tutoriais
 tags:
   - banana-pi
+  - linux
+  - img
+  - diy
 ---
 
 Na <a href="/rodando-linux-em-uma-banana">primeira postagem sobre o Banana Pi</a> eu comentei sobre o <em>hardware</em> e se seria uma boa opção de compra. Pois bem, nesta postagem irei comentar como colocar o BPi para funcionar, caso você já possua um ou está pensando em adquiri-lo.
@@ -23,19 +25,19 @@ Na <a href="/rodando-linux-em-uma-banana">primeira postagem sobre o Banana Pi</a
 
 O primeiro passo é copiar uma imagem de algum sistema operacional disponível para o BPi. Atualmente o BPi possui as seguintes imagens:
 <ul>
-	<li>Lubuntu</li>
-	<li>Raspbian</li>
-	<li>Android</li>
-	<li>Bananian</li>
-	<li>Berryboot</li>
-	<li>LeMedia (XBMC)</li>
-	<li>OpenSuse</li>
-	<li>Fedora</li>
-	<li>Gentoo</li>
-	<li>Scratch</li>
-	<li>ArchLinux</li>
-	<li>Open Media Vault</li>
-	<li>OpenWrt</li>
+    <li>Lubuntu</li>
+    <li>Raspbian</li>
+    <li>Android</li>
+    <li>Bananian</li>
+    <li>Berryboot</li>
+    <li>LeMedia (XBMC)</li>
+    <li>OpenSuse</li>
+    <li>Fedora</li>
+    <li>Gentoo</li>
+    <li>Scratch</li>
+    <li>ArchLinux</li>
+    <li>Open Media Vault</li>
+    <li>OpenWrt</li>
 </ul>
 Você pode fazer o download das imagens <a href="http://www.lemaker.org/resources/9-38/image_files.html">aqui</a>.
 

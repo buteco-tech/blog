@@ -8,11 +8,10 @@ slug: kit-arduino-start-o-sortudo-da-vez
 images:
   - /images/wp-content/uploads/2016/01/450xN.jpg
 categories:
-  - Sorteios
+  - sorteios
 tags:
   - arduino
-  - sorteio
-  - uno r3
+  - arduino-uno
 ---
 
 Olá caros leitores,

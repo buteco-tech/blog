@@ -10,13 +10,14 @@ slug: conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares
 images:
   - /images/wp-content/uploads/2015/03/esp8266.jpg
 categories:
-  - Hardware
-  - DIY
+  - embarcados
 tags:
+  - diy
   - arduino
   - esp8266
   - lua
   - soc
+  - iot
 ---
 
 O ESP8266 é uma solução para a Internet das Coisas (IoT). Ele não é apenas um módulo WiFi que pode ser conectado ao Arduino, mas sim um <em>System-on-a-chip</em> (SoC). Ou seja, ele é uma solução completa para quem deseja criar um dispositivo que necessite conexão WiFi.

@@ -6,11 +6,14 @@ authors:
   - alexandrevicenzi
 slug: rodando-linux-em-uma-banana
 categories:
-  - Desenvolvimento
-  - Hardware
-  - DIY
+  - embarcados
+  - tutoriais
 tags:
   - banana-pi
+  - linux
+  - sbc
+  - raspbian
+  - diy
 ---
 
 Você já deve ter ouvido falar no <a href="http://www.raspberrypi.org/">Raspberry Pi</a>, um computador <em>single-board</em> do tamanho de um cartão de crédito.

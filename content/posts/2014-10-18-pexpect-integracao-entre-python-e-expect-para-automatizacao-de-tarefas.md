@@ -6,10 +6,13 @@ authors:
   - marcossouza
 slug: pexpect-integracao-entre-python-e-expect-para-automatizacao-de-tarefas
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - pexpect
   - python
+  - tcl
+  - tcl-expect
+  - automacao
 ---
 
 Olá pessoa, este post é uma continuação do post sobre tcl/expect escrito previamente no blog. Se você perdeu este artigo, você pode vê-lo <a href="/tclexpect-automatizacao-de-comandos-interativos-no-linux">aqui</a>.

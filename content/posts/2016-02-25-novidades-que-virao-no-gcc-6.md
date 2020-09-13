@@ -10,10 +10,11 @@ slug: novidades-que-virao-no-gcc-6
 images:
   - /images/wp-content/uploads/2016/02/index.png
 categories:
-  - Notícias
+  - noticias
 tags:
-  - compiler
   - gcc
+  - c
+  - cpp
 ---
 
 Apesar do Clang estar ganhando terreno, o GCC ainda tem seu brilho. Confira algumas novidades da próxima release deste ótimo compilador:

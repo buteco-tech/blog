@@ -11,7 +11,7 @@ slug: python-3-5-0a2-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2014/12/python-logo.png
 categories:
-  - Desenvolvimento
+  - noticias
 tags:
   - python
 ---

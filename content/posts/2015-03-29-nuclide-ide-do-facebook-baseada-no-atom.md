@@ -10,13 +10,13 @@ slug: nuclide-ide-do-facebook-baseada-no-atom
 images:
   - /images/wp-content/uploads/2015/03/nuclide-logo.png
 categories:
-  - Desenvolvimento
+  - noticias
 tags:
   - atom
   - facebook
   - github
   - ide
-  - nuclide
+  - hack
 ---
 
 Recentemente o Facebook lançou a sua IDE designada ao desenvolvimento da linguagem Hack. A <a href="http://nuclide.io/">Nuclide</a> é uma IDE unificada que traz suporte a React, Flow dentre outras ferramentas do Facebook.

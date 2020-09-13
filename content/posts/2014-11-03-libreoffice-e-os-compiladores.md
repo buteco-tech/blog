@@ -6,7 +6,7 @@ authors:
   - marcossouza
 slug: libreoffice-e-os-compiladores
 categories:
-  - Desenvolvimento
+  - desenvolvimento
 tags:
   - compiladores
   - libreoffice

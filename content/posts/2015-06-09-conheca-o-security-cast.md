@@ -10,11 +10,11 @@ slug: conheca-o-security-cast
 images:
   - /images/wp-content/uploads/2015/06/SecurityCast-logo.jpg
 categories:
-  - Notícias
-tags:
-  - computação forense
+  - noticias
+  - seguranca
   - privacidade
-  - segurança
+tags:
+  - computacao-forense
 ---
 
 É um webcast, mas podemos chamar de um bate papo sobre vulnerabilidades, computação forense, ferramentas de segurança, privacidade, certificações, ataques, defesas, mercado e muitos outros assuntos ligados à área de Segurança da Informação. Participam os especialistas em Segurança da Informação Alberto Azevedo, Alcyon Junior, Gilberto Sudré e Gustavo Martinelli.

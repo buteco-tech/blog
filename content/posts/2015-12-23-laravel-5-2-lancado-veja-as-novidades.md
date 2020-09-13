@@ -10,7 +10,7 @@ slug: laravel-5-2-lancado-veja-as-novidades
 images:
   - /images/wp-content/uploads/2015/02/Laravel-5.png
 categories:
-  - Desenvolvimento
+  - noticias
 tags:
   - laravel
   - php

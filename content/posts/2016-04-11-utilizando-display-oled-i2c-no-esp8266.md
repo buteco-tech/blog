@@ -10,9 +10,10 @@ slug: utilizando-display-oled-i2c-no-esp8266
 images:
   - /images/wp-content/uploads/2016/04/oled_display.jpg
 categories:
-  - Hardware
-  - DIY
+  - embarcados
+  - tutoriais
 tags:
+  - diy
   - display
   - esp12
   - esp8266

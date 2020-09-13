@@ -10,11 +10,11 @@ slug: nova-versao-do-lumina
 images:
   - /images/wp-content/uploads/2015/10/Lumina.png
 categories:
-  - Distros
-  - Notícias
+  - distros
+  - noticias
 tags:
   - freebsd
-  - noticias
+  - bsd
 ---
 
 Você já ouviu falar ou leu sobre o Lumina?

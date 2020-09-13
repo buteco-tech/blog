@@ -8,11 +8,10 @@ authors:
   - daniel_magevski
 slug: inscricoes-abertas-para-o-11o-forum-espirito-livre
 categories:
-  - Eventos
+  - eventos
 tags:
   - eventos
-  - linux
-  - open-source
+  - software-livre
 ---
 
 <a href="/images/wp-content/uploads/2015/07/inscricoes.jpg"><img class="alignnone size-large wp-image-2940" src="/images/wp-content/uploads/2015/07/inscricoes-1024x356.jpg" alt="inscricoes" width="648" height="225" /></a>

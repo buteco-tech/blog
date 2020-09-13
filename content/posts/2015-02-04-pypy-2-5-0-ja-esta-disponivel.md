@@ -10,10 +10,9 @@ slug: pypy-2-5-0-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/02/Pypy_logo.png
 categories:
-  - Desenvolvimento
+  - noticias
 tags:
   - cpython
-  - programação
   - pypy
   - python
 ---

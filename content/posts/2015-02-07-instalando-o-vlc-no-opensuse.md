@@ -10,7 +10,8 @@ slug: instalando-o-vlc-no-opensuse
 images:
   - /images/wp-content/uploads/2015/02/vlc.png
 categories:
-  - Tutoriais
+  - tutoriais
+  - distros
 tags:
   - audio
   - codecs
