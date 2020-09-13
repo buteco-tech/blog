@@ -6,7 +6,7 @@ defaultContentLanguage: pt
 enableInlineShortcodes: true
 summarylength: 10
 enableEmoji: true
-paginate: 10
+paginate: 25
 theme: iara
 disqusShortname: butecoopensource
 googleAnalytics: UA-55693832-1
@@ -103,7 +103,8 @@ params:
       show: true   # Show categories in sidebar
       count: true  # Show article count in category
     tags:
-      show: false   # Show categories in sidebar
+      show: false   # Show tags in sidebar
+      count: true  # Show article count in tag
     #
     # Feature articles
     #
@@ -184,133 +185,160 @@ menu:
       url: /contato/
       pre: <span class="mr-1"><i class="fas fa-phone"></i></span>
   carousel:
-    - name: Desenvolvimento
+    - name: Cloud Computing
       weight: 1
-      identifier: desenvolvimento
-      url: /categorias/desenvolvimento/
-    - name: Hardware
+      url: /categorias/cloud-computing/
+    - name: Embarcados
       weight: 2
-      identifier: hardware
-      url: /categorias/hardware/
-    - name: DIY
+      url: /categorias/embarcados/
+    - name: Data Science
       weight: 3
-      identifier: DIY
-      url: /categorias/diy/
+      url: /categorias/data-science/
+    - name: IA
+      weight: 3
+      url: /categorias/inteligencia-artificial/
     - name: Distros
       weight: 4
-      identifier: distros
       url: /categorias/distros/
     - name: Segurança
       weight: 5
-      identifier: segurança
-      url: /categorias/segurança/
-    - name: Reviews
+      url: /categorias/seguranca/
+    - name: Privacidade
       weight: 6
-      identifier: reviews
-      url: /categorias/reviews/
-    - name: Tutoriais
+      url: /categorias/privacidade/
+    - name: Reviews
       weight: 7
-      identifier: tutoriais
-      url: /categorias/tutoriais/
+      url: /categorias/reviews/
   terms:
     - name: Termos de Uso
       weight: 1
-      identifier: uso
       url: /termos-de-uso/
     - name: Privacidade
       weight: 2
-      identifier: privacidade
       url: /politica-de-privacidade/
-  # footer1:
-  #   - name: Artificial Inteligence
-  #     weight: 1
-  #     url: '#'
-  #     pre: <b>
-  #     post: </b>
-  #   - name: Machine Learning
-  #     weight: 2
-  #     url: '#'
-  #   - name: Deep Learning
-  #     weight: 2
-  #     url: '#'
-  #   - name: Natural Language Processing
-  #     weight: 3
-  #     url: '#'
-  #     badge: New
-  #   - name: Robotis
-  #     weight: 4
-  #     url: '#'
-  # footer2:
-  #   - name: SBCs
-  #     weight: 1
-  #     url: '#'
-  #     pre: <b>
-  #     post: </b>
-  #   - name: Raspbery Pi
-  #     weight: 2
-  #     url: '#'
-  #     post: <span class="badge badge-pill badge-success">Discount</span>
-  #   - name: BeagleBone
-  #     weight: 3
-  #     url: '#'
-  #   - name: ODROID
-  #     weight: 4
-  #     url: '#'
-  #   - name: Micro Bit
-  #     weight: 5
-  #     url: '#'
-  #   - name: Arduino
-  #     weight: 6
-  #     url: '#'
+  footer1:
+    - name: Cloud Computing
+      weight: 1
+      url: /categorias/cloud-computing/
+      pre: <b>
+      post: </b>
+    - name: Kubernetes
+      weight: 2
+      url: /tags/kubernetes/
+    - name: Docker
+      weight: 3
+      url: /tags/docker/
+    - name: Virtualização
+      weight: 4
+      url: /tags/virtualizacao/
+    - name: AWS
+      weight: 5
+      url: /tags/aws/
   footer2:
+    - name: Embarcados
+      weight: 1
+      url: /categorias/embarcados/
+      pre: <b>
+      post: </b>
+    - name: Raspberry Pi
+      weight: 2
+      url: /tags/raspberry-pi/
+    - name: ARM
+      weight: 3
+      url: /tags/arm/
+    - name: Arduino
+      weight: 4
+      url: /tags/arduino/
+    - name: Internet das Coisas
+      weight: 5
+      url: /tags/iot/
+    - name: DIY
+      weight: 6
+      url: /tags/diy/
+  footer3:
+    - name: Desenvolvimento
+      weight: 1
+      url: /categorias/desenvolvimento/
+      pre: <b>
+      post: </b>
+    - name: Python
+      weight: 2
+      url: /tags/python/
+    - name: C/C++
+      weight: 3
+      url: /tags/cpp/
+    - name: PHP
+      weight: 4
+      url: /tags/php/
+    - name: Node.JS
+      weight: 5
+      url: /tags/node-js/
+    - name: Lua
+      weight: 6
+      url: /tags/lua/
+  footer4:
+    - name: Distros
+      weight: 1
+      url: /categorias/distros/
+      pre: <b>
+      post: </b>
+    - name: Linux
+      weight: 2
+      url: /tags/linux/
+    - name: Ubuntu
+      weight: 3
+      url: /tags/ubuntu/
+    - name: Fedora
+      weight: 4
+      url: /tags/fedora/
+    - name: CentOS
+      weight: 5
+      url: /tags/centos/
+    - name: openSUSE
+      weight: 6
+      url: /tags/opensuse/
+    - name: BSD
+      weight: 7
+      url: /tags/bsd/
+  footer5:
     - name: Podcast
       weight: 1
-      identifier: podcast
       url: /podcast/
       pre: <b>
       post: </b><span class="badge badge-success">Novo</span>
-    - name: Anuncie conosco
+    - name: Contribua com o blog
       weight: 2
-      url: /anuncie-conosco/
-    - name: Contribua com nosso blog
-      weight: 3
       url: /contribua-com-nosso-blog/
       post: <i class="far fa-heart text-danger"></i>
-  footer3:
-    - name: Equipe
-      weight: 1
-      identifier: equipe
-      url: /equipe/
-    - name: Autores
-      weight: 2
-      identifier: autores
-      url: /autores/
-    - name: Feed RSS
+    - name: Anuncie conosco
       weight: 3
-      identifier: feed
-      url: /feed-rss/
+      url: /anuncie-conosco/
     - name: Categorias
       weight: 4
-      identifier: categorias
       url: /categorias/
-    - name: Tags
+    - name: Autores
       weight: 5
-      identifier: tags
-      url: /tags/
-  footer4:
+      url: /autores/
+    # - name: Tags
+    #   weight: 6
+    #   url: /tags/
+  footer6:
     - name: Contato
       weight: 1
-      identifier: contato
       url: /contato/
       pre: <b>
       post: </b>
-    - name: Sobre
+    - name: Sobre nós
       weight: 2
-      identifier: sobre
       url: /sobre/
-    - name: Estatísticas
+    - name: Equipe
       weight: 3
-      identifier: stats
+    - name: Feed RSS
+      weight: 4
+      url: /feed-rss/
+      url: /equipe/
+    - name: Estatísticas
+      weight: 5
       url: https://estatisticas.buteco.me/
 
 markup:
