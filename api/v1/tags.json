@@ -13,14 +13,8 @@
     "article_count": "1"
   },
   {
-    "id": "amazon",
-    "title": "amazon",
-    "url": "https://butecotecnologico.com.br/tags/amazon/",
-    "article_count": "1"
-  },
-  {
     "id": "amazon-s3",
-    "title": "amazon s3",
+    "title": "amazon-s3",
     "url": "https://butecotecnologico.com.br/tags/amazon-s3/",
     "article_count": "1"
   },
@@ -34,7 +28,7 @@
     "id": "android",
     "title": "android",
     "url": "https://butecotecnologico.com.br/tags/android/",
-    "article_count": "5"
+    "article_count": "3"
   },
   {
     "id": "angularjs",
@@ -43,15 +37,9 @@
     "article_count": "1"
   },
   {
-    "id": "aniversário",
-    "title": "aniversário",
-    "url": "https://butecotecnologico.com.br/tags/anivers%C3%A1rio/",
-    "article_count": "1"
-  },
-  {
-    "id": "anonimo",
-    "title": "anonimo",
-    "url": "https://butecotecnologico.com.br/tags/anonimo/",
+    "id": "anonimato",
+    "title": "anonimato",
+    "url": "https://butecotecnologico.com.br/tags/anonimato/",
     "article_count": "1"
   },
   {
@@ -64,12 +52,18 @@
     "id": "api",
     "title": "api",
     "url": "https://butecotecnologico.com.br/tags/api/",
-    "article_count": "6"
+    "article_count": "2"
   },
   {
     "id": "apigility",
     "title": "apigility",
     "url": "https://butecotecnologico.com.br/tags/apigility/",
+    "article_count": "1"
+  },
+  {
+    "id": "arch-linux",
+    "title": "arch-linux",
+    "url": "https://butecotecnologico.com.br/tags/arch-linux/",
     "article_count": "1"
   },
   {
@@ -82,7 +76,19 @@
     "id": "arduino",
     "title": "arduino",
     "url": "https://butecotecnologico.com.br/tags/arduino/",
-    "article_count": "15"
+    "article_count": "14"
+  },
+  {
+    "id": "arduino-mega",
+    "title": "arduino-mega",
+    "url": "https://butecotecnologico.com.br/tags/arduino-mega/",
+    "article_count": "1"
+  },
+  {
+    "id": "arduino-uno",
+    "title": "arduino-uno",
+    "url": "https://butecotecnologico.com.br/tags/arduino-uno/",
+    "article_count": "2"
   },
   {
     "id": "arkos",
@@ -94,7 +100,7 @@
     "id": "arm",
     "title": "arm",
     "url": "https://butecotecnologico.com.br/tags/arm/",
-    "article_count": "5"
+    "article_count": "9"
   },
   {
     "id": "artik",
@@ -121,10 +127,10 @@
     "article_count": "3"
   },
   {
-    "id": "automação",
-    "title": "automação",
-    "url": "https://butecotecnologico.com.br/tags/automa%C3%A7%C3%A3o/",
-    "article_count": "2"
+    "id": "automacao",
+    "title": "automacao",
+    "url": "https://butecotecnologico.com.br/tags/automacao/",
+    "article_count": "5"
   },
   {
     "id": "autotools",
@@ -136,19 +142,25 @@
     "id": "aws",
     "title": "aws",
     "url": "https://butecotecnologico.com.br/tags/aws/",
-    "article_count": "3"
+    "article_count": "4"
+  },
+  {
+    "id": "aws-s3",
+    "title": "aws-s3",
+    "url": "https://butecotecnologico.com.br/tags/aws-s3/",
+    "article_count": "1"
+  },
+  {
+    "id": "backup",
+    "title": "backup",
+    "url": "https://butecotecnologico.com.br/tags/backup/",
+    "article_count": "1"
   },
   {
     "id": "banana-pi",
     "title": "banana-pi",
     "url": "https://butecotecnologico.com.br/tags/banana-pi/",
-    "article_count": "5"
-  },
-  {
-    "id": "banco-de-dados",
-    "title": "banco de dados",
-    "url": "https://butecotecnologico.com.br/tags/banco-de-dados/",
-    "article_count": "3"
+    "article_count": "4"
   },
   {
     "id": "bash",
@@ -157,20 +169,14 @@
     "article_count": "2"
   },
   {
-    "id": "bds",
-    "title": "bds",
-    "url": "https://butecotecnologico.com.br/tags/bds/",
-    "article_count": "1"
-  },
-  {
     "id": "beaglebone",
     "title": "beaglebone",
     "url": "https://butecotecnologico.com.br/tags/beaglebone/",
-    "article_count": "2"
+    "article_count": "3"
   },
   {
     "id": "beaglebone-green",
-    "title": "beaglebone green",
+    "title": "beaglebone-green",
     "url": "https://butecotecnologico.com.br/tags/beaglebone-green/",
     "article_count": "2"
   },
@@ -187,12 +193,6 @@
     "article_count": "1"
   },
   {
-    "id": "bitlinks",
-    "title": "bitlinks",
-    "url": "https://butecotecnologico.com.br/tags/bitlinks/",
-    "article_count": "1"
-  },
-  {
     "id": "bitly",
     "title": "bitly",
     "url": "https://butecotecnologico.com.br/tags/bitly/",
@@ -200,14 +200,8 @@
   },
   {
     "id": "black-friday",
-    "title": "black friday",
+    "title": "black-friday",
     "url": "https://butecotecnologico.com.br/tags/black-friday/",
-    "article_count": "1"
-  },
-  {
-    "id": "blog",
-    "title": "blog",
-    "url": "https://butecotecnologico.com.br/tags/blog/",
     "article_count": "1"
   },
   {
@@ -223,6 +217,12 @@
     "article_count": "1"
   },
   {
+    "id": "bootstrap",
+    "title": "bootstrap",
+    "url": "https://butecotecnologico.com.br/tags/bootstrap/",
+    "article_count": "1"
+  },
+  {
     "id": "boto",
     "title": "boto",
     "url": "https://butecotecnologico.com.br/tags/boto/",
@@ -235,16 +235,16 @@
     "article_count": "1"
   },
   {
-    "id": "broker",
-    "title": "broker",
-    "url": "https://butecotecnologico.com.br/tags/broker/",
-    "article_count": "2"
-  },
-  {
     "id": "browser",
     "title": "browser",
     "url": "https://butecotecnologico.com.br/tags/browser/",
     "article_count": "1"
+  },
+  {
+    "id": "bsd",
+    "title": "bsd",
+    "url": "https://butecotecnologico.com.br/tags/bsd/",
+    "article_count": "7"
   },
   {
     "id": "btrfs",
@@ -256,19 +256,13 @@
     "id": "buteco",
     "title": "buteco",
     "url": "https://butecotecnologico.com.br/tags/buteco/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "c",
     "title": "c",
     "url": "https://butecotecnologico.com.br/tags/c/",
-    "article_count": "19"
-  },
-  {
-    "id": "c++",
-    "title": "c++",
-    "url": "https://butecotecnologico.com.br/tags/c-/",
-    "article_count": "1"
+    "article_count": "20"
   },
   {
     "id": "cakephp",
@@ -280,6 +274,12 @@
     "id": "camera",
     "title": "camera",
     "url": "https://butecotecnologico.com.br/tags/camera/",
+    "article_count": "2"
+  },
+  {
+    "id": "camera-ip",
+    "title": "camera-ip",
+    "url": "https://butecotecnologico.com.br/tags/camera-ip/",
     "article_count": "1"
   },
   {
@@ -292,13 +292,13 @@
     "id": "centos",
     "title": "centos",
     "url": "https://butecotecnologico.com.br/tags/centos/",
-    "article_count": "5"
+    "article_count": "6"
   },
   {
     "id": "central-multimidia",
     "title": "central-multimidia",
     "url": "https://butecotecnologico.com.br/tags/central-multimidia/",
-    "article_count": "2"
+    "article_count": "3"
   },
   {
     "id": "cep",
@@ -307,34 +307,10 @@
     "article_count": "1"
   },
   {
-    "id": "certificados",
-    "title": "certificados",
-    "url": "https://butecotecnologico.com.br/tags/certificados/",
-    "article_count": "1"
-  },
-  {
-    "id": "certs",
-    "title": "certs",
-    "url": "https://butecotecnologico.com.br/tags/certs/",
-    "article_count": "1"
-  },
-  {
     "id": "chat",
     "title": "chat",
     "url": "https://butecotecnologico.com.br/tags/chat/",
     "article_count": "1"
-  },
-  {
-    "id": "cloud",
-    "title": "cloud",
-    "url": "https://butecotecnologico.com.br/tags/cloud/",
-    "article_count": "4"
-  },
-  {
-    "id": "cloud-computing",
-    "title": "cloud computing",
-    "url": "https://butecotecnologico.com.br/tags/cloud-computing/",
-    "article_count": "2"
   },
   {
     "id": "cloud-storage",
@@ -352,12 +328,6 @@
     "id": "clt",
     "title": "CLT",
     "url": "https://butecotecnologico.com.br/tags/clt/",
-    "article_count": "1"
-  },
-  {
-    "id": "cluster",
-    "title": "cluster",
-    "url": "https://butecotecnologico.com.br/tags/cluster/",
     "article_count": "1"
   },
   {
@@ -379,15 +349,9 @@
     "article_count": "1"
   },
   {
-    "id": "colaboração",
-    "title": "colaboração",
-    "url": "https://butecotecnologico.com.br/tags/colabora%C3%A7%C3%A3o/",
-    "article_count": "1"
-  },
-  {
-    "id": "compactação",
-    "title": "compactação",
-    "url": "https://butecotecnologico.com.br/tags/compacta%C3%A7%C3%A3o/",
+    "id": "compactacao",
+    "title": "compactacao",
+    "url": "https://butecotecnologico.com.br/tags/compactacao/",
     "article_count": "1"
   },
   {
@@ -397,21 +361,15 @@
     "article_count": "1"
   },
   {
-    "id": "compiler",
-    "title": "compiler",
-    "url": "https://butecotecnologico.com.br/tags/compiler/",
-    "article_count": "1"
-  },
-  {
     "id": "composer",
     "title": "composer",
     "url": "https://butecotecnologico.com.br/tags/composer/",
     "article_count": "1"
   },
   {
-    "id": "computação-forense",
-    "title": "computação forense",
-    "url": "https://butecotecnologico.com.br/tags/computa%C3%A7%C3%A3o-forense/",
+    "id": "computacao-forense",
+    "title": "computacao-forense",
+    "url": "https://butecotecnologico.com.br/tags/computacao-forense/",
     "article_count": "1"
   },
   {
@@ -427,22 +385,16 @@
     "article_count": "2"
   },
   {
-    "id": "controller",
-    "title": "controller",
-    "url": "https://butecotecnologico.com.br/tags/controller/",
-    "article_count": "1"
-  },
-  {
-    "id": "cores",
-    "title": "cores",
-    "url": "https://butecotecnologico.com.br/tags/cores/",
-    "article_count": "1"
+    "id": "cpp",
+    "title": "cpp",
+    "url": "https://butecotecnologico.com.br/tags/cpp/",
+    "article_count": "22"
   },
   {
     "id": "cpython",
     "title": "cpython",
     "url": "https://butecotecnologico.com.br/tags/cpython/",
-    "article_count": "2"
+    "article_count": "3"
   },
   {
     "id": "criptografia",
@@ -457,21 +409,15 @@
     "article_count": "1"
   },
   {
+    "id": "csharp",
+    "title": "csharp",
+    "url": "https://butecotecnologico.com.br/tags/csharp/",
+    "article_count": "1"
+  },
+  {
     "id": "css",
     "title": "css",
     "url": "https://butecotecnologico.com.br/tags/css/",
-    "article_count": "1"
-  },
-  {
-    "id": "cubieboard",
-    "title": "cubieboard",
-    "url": "https://butecotecnologico.com.br/tags/cubieboard/",
-    "article_count": "1"
-  },
-  {
-    "id": "cubietruck",
-    "title": "cubietruck",
-    "url": "https://butecotecnologico.com.br/tags/cubietruck/",
     "article_count": "1"
   },
   {
@@ -487,21 +433,15 @@
     "article_count": "1"
   },
   {
-    "id": "câmera-ip",
-    "title": "câmera ip",
-    "url": "https://butecotecnologico.com.br/tags/c%C3%A2mera-ip/",
+    "id": "cytpes",
+    "title": "cytpes",
+    "url": "https://butecotecnologico.com.br/tags/cytpes/",
     "article_count": "1"
   },
   {
-    "id": "código-aberto",
-    "title": "código aberto",
-    "url": "https://butecotecnologico.com.br/tags/c%C3%B3digo-aberto/",
-    "article_count": "1"
-  },
-  {
-    "id": "daemon",
-    "title": "daemon",
-    "url": "https://butecotecnologico.com.br/tags/daemon/",
+    "id": "darpa",
+    "title": "darpa",
+    "url": "https://butecotecnologico.com.br/tags/darpa/",
     "article_count": "1"
   },
   {
@@ -520,25 +460,19 @@
     "id": "debug",
     "title": "debug",
     "url": "https://butecotecnologico.com.br/tags/debug/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
-    "id": "deploy",
-    "title": "deploy",
-    "url": "https://butecotecnologico.com.br/tags/deploy/",
-    "article_count": "1"
-  },
-  {
-    "id": "desconto",
-    "title": "desconto",
-    "url": "https://butecotecnologico.com.br/tags/desconto/",
+    "id": "desempenho",
+    "title": "desempenho",
+    "url": "https://butecotecnologico.com.br/tags/desempenho/",
     "article_count": "1"
   },
   {
     "id": "desenvolvimento",
     "title": "desenvolvimento",
     "url": "https://butecotecnologico.com.br/tags/desenvolvimento/",
-    "article_count": "3"
+    "article_count": "1"
   },
   {
     "id": "desktop",
@@ -556,7 +490,7 @@
     "id": "dht11",
     "title": "dht11",
     "url": "https://butecotecnologico.com.br/tags/dht11/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "dht22",
@@ -574,31 +508,43 @@
     "id": "display",
     "title": "display",
     "url": "https://butecotecnologico.com.br/tags/display/",
-    "article_count": "3"
+    "article_count": "4"
   },
   {
     "id": "distro",
     "title": "distro",
     "url": "https://butecotecnologico.com.br/tags/distro/",
-    "article_count": "3"
+    "article_count": "1"
   },
   {
     "id": "distros",
     "title": "distros",
     "url": "https://butecotecnologico.com.br/tags/distros/",
-    "article_count": "2"
+    "article_count": "1"
+  },
+  {
+    "id": "diy",
+    "title": "diy",
+    "url": "https://butecotecnologico.com.br/tags/diy/",
+    "article_count": "22"
   },
   {
     "id": "dnf",
     "title": "dnf",
     "url": "https://butecotecnologico.com.br/tags/dnf/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "docker",
-    "title": "docker",
+    "title": "Docker",
     "url": "https://butecotecnologico.com.br/tags/docker/",
-    "article_count": "5"
+    "article_count": "6"
+  },
+  {
+    "id": "docker-compose",
+    "title": "docker-compose",
+    "url": "https://butecotecnologico.com.br/tags/docker-compose/",
+    "article_count": "1"
   },
   {
     "id": "doctrine",
@@ -607,21 +553,9 @@
     "article_count": "1"
   },
   {
-    "id": "doctrine-orm",
-    "title": "doctrine orm",
-    "url": "https://butecotecnologico.com.br/tags/doctrine-orm/",
-    "article_count": "1"
-  },
-  {
-    "id": "domínios",
-    "title": "domínios",
-    "url": "https://butecotecnologico.com.br/tags/dom%C3%ADnios/",
-    "article_count": "1"
-  },
-  {
-    "id": "download",
-    "title": "download",
-    "url": "https://butecotecnologico.com.br/tags/download/",
+    "id": "dominios",
+    "title": "dominios",
+    "url": "https://butecotecnologico.com.br/tags/dominios/",
     "article_count": "1"
   },
   {
@@ -637,12 +571,6 @@
     "article_count": "2"
   },
   {
-    "id": "e-mail",
-    "title": "e-mail",
-    "url": "https://butecotecnologico.com.br/tags/e-mail/",
-    "article_count": "1"
-  },
-  {
     "id": "ebook",
     "title": "ebook",
     "url": "https://butecotecnologico.com.br/tags/ebook/",
@@ -652,12 +580,6 @@
     "id": "editor-de-texto",
     "title": "editor de texto",
     "url": "https://butecotecnologico.com.br/tags/editor-de-texto/",
-    "article_count": "1"
-  },
-  {
-    "id": "educação",
-    "title": "educação",
-    "url": "https://butecotecnologico.com.br/tags/educa%C3%A7%C3%A3o/",
     "article_count": "1"
   },
   {
@@ -694,13 +616,7 @@
     "id": "email",
     "title": "email",
     "url": "https://butecotecnologico.com.br/tags/email/",
-    "article_count": "4"
-  },
-  {
-    "id": "embarcados",
-    "title": "embarcados",
-    "url": "https://butecotecnologico.com.br/tags/embarcados/",
-    "article_count": "4"
+    "article_count": "5"
   },
   {
     "id": "esp-01",
@@ -727,27 +643,15 @@
     "article_count": "6"
   },
   {
-    "id": "espiritolivre",
-    "title": "espiritolivre",
-    "url": "https://butecotecnologico.com.br/tags/espiritolivre/",
-    "article_count": "1"
-  },
-  {
-    "id": "esplorer",
-    "title": "esplorer",
-    "url": "https://butecotecnologico.com.br/tags/esplorer/",
-    "article_count": "1"
-  },
-  {
     "id": "esptool",
     "title": "esptool",
     "url": "https://butecotecnologico.com.br/tags/esptool/",
     "article_count": "1"
   },
   {
-    "id": "estudo",
-    "title": "estudo",
-    "url": "https://butecotecnologico.com.br/tags/estudo/",
+    "id": "esteganografia",
+    "title": "esteganografia",
+    "url": "https://butecotecnologico.com.br/tags/esteganografia/",
     "article_count": "1"
   },
   {
@@ -757,33 +661,9 @@
     "article_count": "1"
   },
   {
-    "id": "evento",
-    "title": "evento",
-    "url": "https://butecotecnologico.com.br/tags/evento/",
-    "article_count": "5"
-  },
-  {
     "id": "eventos",
     "title": "eventos",
     "url": "https://butecotecnologico.com.br/tags/eventos/",
-    "article_count": "8"
-  },
-  {
-    "id": "expect",
-    "title": "expect",
-    "url": "https://butecotecnologico.com.br/tags/expect/",
-    "article_count": "1"
-  },
-  {
-    "id": "expressao_regular",
-    "title": "expressao_regular",
-    "url": "https://butecotecnologico.com.br/tags/expressao_regular/",
-    "article_count": "1"
-  },
-  {
-    "id": "expressão-regular",
-    "title": "expressão regular",
-    "url": "https://butecotecnologico.com.br/tags/express%C3%A3o-regular/",
     "article_count": "1"
   },
   {
@@ -799,16 +679,10 @@
     "article_count": "1"
   },
   {
-    "id": "extração-de-dados",
-    "title": "extração de dados",
-    "url": "https://butecotecnologico.com.br/tags/extra%C3%A7%C3%A3o-de-dados/",
-    "article_count": "1"
-  },
-  {
     "id": "facebook",
     "title": "facebook",
     "url": "https://butecotecnologico.com.br/tags/facebook/",
-    "article_count": "2"
+    "article_count": "3"
   },
   {
     "id": "fedora",
@@ -817,22 +691,16 @@
     "article_count": "5"
   },
   {
-    "id": "feed",
-    "title": "feed",
-    "url": "https://butecotecnologico.com.br/tags/feed/",
-    "article_count": "1"
-  },
-  {
-    "id": "ferramenta",
-    "title": "ferramenta",
-    "url": "https://butecotecnologico.com.br/tags/ferramenta/",
-    "article_count": "3"
-  },
-  {
     "id": "ffmpeg",
     "title": "ffmpeg",
     "url": "https://butecotecnologico.com.br/tags/ffmpeg/",
     "article_count": "1"
+  },
+  {
+    "id": "fifo",
+    "title": "fifo",
+    "url": "https://butecotecnologico.com.br/tags/fifo/",
+    "article_count": "2"
   },
   {
     "id": "firefox",
@@ -844,12 +712,6 @@
     "id": "fisl",
     "title": "fisl",
     "url": "https://butecotecnologico.com.br/tags/fisl/",
-    "article_count": "1"
-  },
-  {
-    "id": "fisl16",
-    "title": "fisl16",
-    "url": "https://butecotecnologico.com.br/tags/fisl16/",
     "article_count": "1"
   },
   {
@@ -883,6 +745,12 @@
     "article_count": "9"
   },
   {
+    "id": "free",
+    "title": "free",
+    "url": "https://butecotecnologico.com.br/tags/free/",
+    "article_count": "1"
+  },
+  {
     "id": "freebsd",
     "title": "freebsd",
     "url": "https://butecotecnologico.com.br/tags/freebsd/",
@@ -895,6 +763,12 @@
     "article_count": "1"
   },
   {
+    "id": "fuse",
+    "title": "fuse",
+    "url": "https://butecotecnologico.com.br/tags/fuse/",
+    "article_count": "1"
+  },
+  {
     "id": "gamedev",
     "title": "gamedev",
     "url": "https://butecotecnologico.com.br/tags/gamedev/",
@@ -904,13 +778,13 @@
     "id": "games",
     "title": "games",
     "url": "https://butecotecnologico.com.br/tags/games/",
-    "article_count": "6"
+    "article_count": "4"
   },
   {
     "id": "gcc",
     "title": "gcc",
     "url": "https://butecotecnologico.com.br/tags/gcc/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "geoip",
@@ -919,15 +793,15 @@
     "article_count": "1"
   },
   {
-    "id": "geolocalização",
-    "title": "geolocalização",
-    "url": "https://butecotecnologico.com.br/tags/geolocaliza%C3%A7%C3%A3o/",
-    "article_count": "3"
+    "id": "geolocalizacao",
+    "title": "geolocalizacao",
+    "url": "https://butecotecnologico.com.br/tags/geolocalizacao/",
+    "article_count": "2"
   },
   {
-    "id": "gerenciamento",
-    "title": "gerenciamento",
-    "url": "https://butecotecnologico.com.br/tags/gerenciamento/",
+    "id": "geolocalizacoo",
+    "title": "geolocalizacoo",
+    "url": "https://butecotecnologico.com.br/tags/geolocalizacoo/",
     "article_count": "1"
   },
   {
@@ -946,7 +820,7 @@
     "id": "git",
     "title": "git",
     "url": "https://butecotecnologico.com.br/tags/git/",
-    "article_count": "5"
+    "article_count": "7"
   },
   {
     "id": "git-add",
@@ -961,10 +835,22 @@
     "article_count": "1"
   },
   {
+    "id": "git-stash",
+    "title": "git-stash",
+    "url": "https://butecotecnologico.com.br/tags/git-stash/",
+    "article_count": "1"
+  },
+  {
     "id": "github",
     "title": "github",
     "url": "https://butecotecnologico.com.br/tags/github/",
-    "article_count": "6"
+    "article_count": "5"
+  },
+  {
+    "id": "glade",
+    "title": "glade",
+    "url": "https://butecotecnologico.com.br/tags/glade/",
+    "article_count": "1"
   },
   {
     "id": "glibc",
@@ -982,13 +868,13 @@
     "id": "gmail",
     "title": "gmail",
     "url": "https://butecotecnologico.com.br/tags/gmail/",
-    "article_count": "2"
+    "article_count": "3"
   },
   {
     "id": "gnome",
     "title": "gnome",
     "url": "https://butecotecnologico.com.br/tags/gnome/",
-    "article_count": "7"
+    "article_count": "10"
   },
   {
     "id": "gnss",
@@ -1033,9 +919,9 @@
     "article_count": "1"
   },
   {
-    "id": "google-code",
-    "title": "google code",
-    "url": "https://butecotecnologico.com.br/tags/google-code/",
+    "id": "gpg",
+    "title": "gpg",
+    "url": "https://butecotecnologico.com.br/tags/gpg/",
     "article_count": "1"
   },
   {
@@ -1043,6 +929,18 @@
     "title": "gps",
     "url": "https://butecotecnologico.com.br/tags/gps/",
     "article_count": "3"
+  },
+  {
+    "id": "gsoc",
+    "title": "gsoc",
+    "url": "https://butecotecnologico.com.br/tags/gsoc/",
+    "article_count": "1"
+  },
+  {
+    "id": "gtk",
+    "title": "gtk",
+    "url": "https://butecotecnologico.com.br/tags/gtk/",
+    "article_count": "2"
   },
   {
     "id": "gtk3",
@@ -1054,6 +952,12 @@
     "id": "gxui",
     "title": "gxui",
     "url": "https://butecotecnologico.com.br/tags/gxui/",
+    "article_count": "1"
+  },
+  {
+    "id": "hack",
+    "title": "hack",
+    "url": "https://butecotecnologico.com.br/tags/hack/",
     "article_count": "1"
   },
   {
@@ -1079,12 +983,6 @@
     "title": "hangouts",
     "url": "https://butecotecnologico.com.br/tags/hangouts/",
     "article_count": "1"
-  },
-  {
-    "id": "hardware",
-    "title": "hardware",
-    "url": "https://butecotecnologico.com.br/tags/hardware/",
-    "article_count": "6"
   },
   {
     "id": "helpdesk",
@@ -1126,7 +1024,7 @@
     "id": "http",
     "title": "http",
     "url": "https://butecotecnologico.com.br/tags/http/",
-    "article_count": "3"
+    "article_count": "1"
   },
   {
     "id": "httpd",
@@ -1144,7 +1042,7 @@
     "id": "i18n",
     "title": "i18n",
     "url": "https://butecotecnologico.com.br/tags/i18n/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "i2c",
@@ -1171,21 +1069,15 @@
     "article_count": "1"
   },
   {
+    "id": "img",
+    "title": "img",
+    "url": "https://butecotecnologico.com.br/tags/img/",
+    "article_count": "1"
+  },
+  {
     "id": "inbox",
     "title": "inbox",
     "url": "https://butecotecnologico.com.br/tags/inbox/",
-    "article_count": "1"
-  },
-  {
-    "id": "infanto",
-    "title": "infanto",
-    "url": "https://butecotecnologico.com.br/tags/infanto/",
-    "article_count": "1"
-  },
-  {
-    "id": "informação",
-    "title": "informação",
-    "url": "https://butecotecnologico.com.br/tags/informa%C3%A7%C3%A3o/",
     "article_count": "1"
   },
   {
@@ -1195,15 +1087,15 @@
     "article_count": "1"
   },
   {
-    "id": "integração",
-    "title": "integração",
-    "url": "https://butecotecnologico.com.br/tags/integra%C3%A7%C3%A3o/",
+    "id": "instagram",
+    "title": "instagram",
+    "url": "https://butecotecnologico.com.br/tags/instagram/",
     "article_count": "1"
   },
   {
-    "id": "internacionalização",
-    "title": "internacionalização",
-    "url": "https://butecotecnologico.com.br/tags/internacionaliza%C3%A7%C3%A3o/",
+    "id": "internacionalizacao",
+    "title": "internacionalizacao",
+    "url": "https://butecotecnologico.com.br/tags/internacionalizacao/",
     "article_count": "1"
   },
   {
@@ -1213,16 +1105,16 @@
     "article_count": "2"
   },
   {
-    "id": "ios",
-    "title": "ios",
-    "url": "https://butecotecnologico.com.br/tags/ios/",
-    "article_count": "1"
-  },
-  {
     "id": "iot",
     "title": "iot",
     "url": "https://butecotecnologico.com.br/tags/iot/",
-    "article_count": "13"
+    "article_count": "15"
+  },
+  {
+    "id": "ipc",
+    "title": "ipc",
+    "url": "https://butecotecnologico.com.br/tags/ipc/",
+    "article_count": "2"
   },
   {
     "id": "ipcam",
@@ -1249,6 +1141,12 @@
     "article_count": "1"
   },
   {
+    "id": "java",
+    "title": "java",
+    "url": "https://butecotecnologico.com.br/tags/java/",
+    "article_count": "1"
+  },
+  {
     "id": "javascript",
     "title": "javascript",
     "url": "https://butecotecnologico.com.br/tags/javascript/",
@@ -1264,7 +1162,7 @@
     "id": "jogos",
     "title": "jogos",
     "url": "https://butecotecnologico.com.br/tags/jogos/",
-    "article_count": "8"
+    "article_count": "1"
   },
   {
     "id": "jquery",
@@ -1282,7 +1180,7 @@
     "id": "kali-linux",
     "title": "kali-linux",
     "url": "https://butecotecnologico.com.br/tags/kali-linux/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "kernel",
@@ -1297,16 +1195,28 @@
     "article_count": "1"
   },
   {
+    "id": "kmod",
+    "title": "kmod",
+    "url": "https://butecotecnologico.com.br/tags/kmod/",
+    "article_count": "1"
+  },
+  {
     "id": "kodi",
     "title": "kodi",
     "url": "https://butecotecnologico.com.br/tags/kodi/",
-    "article_count": "2"
+    "article_count": "3"
   },
   {
     "id": "kubernetes",
-    "title": "kubernetes",
+    "title": "Kubernetes",
     "url": "https://butecotecnologico.com.br/tags/kubernetes/",
-    "article_count": "4"
+    "article_count": "6"
+  },
+  {
+    "id": "kubesail",
+    "title": "kubesail",
+    "url": "https://butecotecnologico.com.br/tags/kubesail/",
+    "article_count": "1"
   },
   {
     "id": "kvm",
@@ -1321,34 +1231,10 @@
     "article_count": "1"
   },
   {
-    "id": "lançamento",
-    "title": "lançamento",
-    "url": "https://butecotecnologico.com.br/tags/lan%C3%A7amento/",
-    "article_count": "1"
-  },
-  {
-    "id": "lançamento-php-7",
-    "title": "lançamento php 7",
-    "url": "https://butecotecnologico.com.br/tags/lan%C3%A7amento-php-7/",
-    "article_count": "1"
-  },
-  {
     "id": "laravel",
     "title": "laravel",
     "url": "https://butecotecnologico.com.br/tags/laravel/",
     "article_count": "14"
-  },
-  {
-    "id": "laravel-5",
-    "title": "laravel 5",
-    "url": "https://butecotecnologico.com.br/tags/laravel-5/",
-    "article_count": "6"
-  },
-  {
-    "id": "laçamento",
-    "title": "laçamento",
-    "url": "https://butecotecnologico.com.br/tags/la%C3%A7amento/",
-    "article_count": "1"
   },
   {
     "id": "lcd",
@@ -1393,34 +1279,28 @@
     "article_count": "5"
   },
   {
-    "id": "libs",
-    "title": "libs",
-    "url": "https://butecotecnologico.com.br/tags/libs/",
-    "article_count": "2"
-  },
-  {
     "id": "libssl",
     "title": "libssl",
     "url": "https://butecotecnologico.com.br/tags/libssl/",
     "article_count": "1"
   },
   {
-    "id": "linguagem-programação",
-    "title": "linguagem-programação",
-    "url": "https://butecotecnologico.com.br/tags/linguagem-programa%C3%A7%C3%A3o/",
-    "article_count": "2"
-  },
-  {
     "id": "linux",
     "title": "linux",
     "url": "https://butecotecnologico.com.br/tags/linux/",
-    "article_count": "88"
+    "article_count": "101"
   },
   {
-    "id": "linuxmint",
-    "title": "linuxmint",
-    "url": "https://butecotecnologico.com.br/tags/linuxmint/",
+    "id": "linux-mint",
+    "title": "linux-mint",
+    "url": "https://butecotecnologico.com.br/tags/linux-mint/",
     "article_count": "1"
+  },
+  {
+    "id": "livros",
+    "title": "livros",
+    "url": "https://butecotecnologico.com.br/tags/livros/",
+    "article_count": "20"
   },
   {
     "id": "localization",
@@ -1465,6 +1345,18 @@
     "article_count": "1"
   },
   {
+    "id": "make",
+    "title": "make",
+    "url": "https://butecotecnologico.com.br/tags/make/",
+    "article_count": "1"
+  },
+  {
+    "id": "mapas",
+    "title": "mapas",
+    "url": "https://butecotecnologico.com.br/tags/mapas/",
+    "article_count": "1"
+  },
+  {
     "id": "mariadb",
     "title": "mariadb",
     "url": "https://butecotecnologico.com.br/tags/mariadb/",
@@ -1474,12 +1366,6 @@
     "id": "mario",
     "title": "mario",
     "url": "https://butecotecnologico.com.br/tags/mario/",
-    "article_count": "1"
-  },
-  {
-    "id": "mate",
-    "title": "mate",
-    "url": "https://butecotecnologico.com.br/tags/mate/",
     "article_count": "1"
   },
   {
@@ -1513,33 +1399,21 @@
     "article_count": "1"
   },
   {
-    "id": "mediafire",
-    "title": "mediafire",
-    "url": "https://butecotecnologico.com.br/tags/mediafire/",
-    "article_count": "1"
-  },
-  {
-    "id": "memória",
-    "title": "memória",
-    "url": "https://butecotecnologico.com.br/tags/mem%C3%B3ria/",
+    "id": "memoria",
+    "title": "memoria",
+    "url": "https://butecotecnologico.com.br/tags/memoria/",
     "article_count": "1"
   },
   {
     "id": "mesa",
     "title": "mesa",
     "url": "https://butecotecnologico.com.br/tags/mesa/",
-    "article_count": "2"
+    "article_count": "3"
   },
   {
     "id": "mesos",
     "title": "mesos",
     "url": "https://butecotecnologico.com.br/tags/mesos/",
-    "article_count": "1"
-  },
-  {
-    "id": "micro-framework",
-    "title": "micro-framework",
-    "url": "https://butecotecnologico.com.br/tags/micro-framework/",
     "article_count": "1"
   },
   {
@@ -1561,21 +1435,9 @@
     "article_count": "1"
   },
   {
-    "id": "minicurso",
-    "title": "minicurso",
-    "url": "https://butecotecnologico.com.br/tags/minicurso/",
-    "article_count": "1"
-  },
-  {
-    "id": "mobile",
-    "title": "mobile",
-    "url": "https://butecotecnologico.com.br/tags/mobile/",
-    "article_count": "1"
-  },
-  {
-    "id": "model",
-    "title": "model",
-    "url": "https://butecotecnologico.com.br/tags/model/",
+    "id": "modinfo",
+    "title": "modinfo",
+    "url": "https://butecotecnologico.com.br/tags/modinfo/",
     "article_count": "1"
   },
   {
@@ -1603,16 +1465,10 @@
     "article_count": "2"
   },
   {
-    "id": "motion",
-    "title": "motion",
-    "url": "https://butecotecnologico.com.br/tags/motion/",
-    "article_count": "1"
-  },
-  {
     "id": "mozilla",
     "title": "mozilla",
     "url": "https://butecotecnologico.com.br/tags/mozilla/",
-    "article_count": "6"
+    "article_count": "4"
   },
   {
     "id": "mqtt",
@@ -1624,7 +1480,7 @@
     "id": "mvc",
     "title": "mvc",
     "url": "https://butecotecnologico.com.br/tags/mvc/",
-    "article_count": "2"
+    "article_count": "3"
   },
   {
     "id": "mvw",
@@ -1639,21 +1495,9 @@
     "article_count": "1"
   },
   {
-    "id": "música",
-    "title": "música",
-    "url": "https://butecotecnologico.com.br/tags/m%C3%BAsica/",
-    "article_count": "1"
-  },
-  {
     "id": "nas",
     "title": "NAS",
     "url": "https://butecotecnologico.com.br/tags/nas/",
-    "article_count": "1"
-  },
-  {
-    "id": "natal",
-    "title": "natal",
-    "url": "https://butecotecnologico.com.br/tags/natal/",
     "article_count": "1"
   },
   {
@@ -1672,7 +1516,7 @@
     "id": "nginx",
     "title": "nginx",
     "url": "https://butecotecnologico.com.br/tags/nginx/",
-    "article_count": "2"
+    "article_count": "1"
   },
   {
     "id": "nic",
@@ -1693,46 +1537,16 @@
     "article_count": "3"
   },
   {
-    "id": "node",
-    "title": "node",
-    "url": "https://butecotecnologico.com.br/tags/node/",
-    "article_count": "1"
-  },
-  {
-    "id": "nodejs",
-    "title": "nodejs",
-    "url": "https://butecotecnologico.com.br/tags/nodejs/",
-    "article_count": "1"
+    "id": "node-js",
+    "title": "node-js",
+    "url": "https://butecotecnologico.com.br/tags/node-js/",
+    "article_count": "4"
   },
   {
     "id": "nodemcu",
     "title": "nodemcu",
     "url": "https://butecotecnologico.com.br/tags/nodemcu/",
     "article_count": "4"
-  },
-  {
-    "id": "nodemcu-flasher",
-    "title": "nodemcu flasher",
-    "url": "https://butecotecnologico.com.br/tags/nodemcu-flasher/",
-    "article_count": "1"
-  },
-  {
-    "id": "nosql",
-    "title": "nosql",
-    "url": "https://butecotecnologico.com.br/tags/nosql/",
-    "article_count": "1"
-  },
-  {
-    "id": "noticias",
-    "title": "noticias",
-    "url": "https://butecotecnologico.com.br/tags/noticias/",
-    "article_count": "2"
-  },
-  {
-    "id": "notificação",
-    "title": "notificação",
-    "url": "https://butecotecnologico.com.br/tags/notifica%C3%A7%C3%A3o/",
-    "article_count": "1"
   },
   {
     "id": "nouveau",
@@ -1744,13 +1558,7 @@
     "id": "novatec",
     "title": "novatec",
     "url": "https://butecotecnologico.com.br/tags/novatec/",
-    "article_count": "13"
-  },
-  {
-    "id": "novidades",
-    "title": "novidades",
-    "url": "https://butecotecnologico.com.br/tags/novidades/",
-    "article_count": "3"
+    "article_count": "15"
   },
   {
     "id": "ntp",
@@ -1759,16 +1567,10 @@
     "article_count": "1"
   },
   {
-    "id": "nuclide",
-    "title": "nuclide",
-    "url": "https://butecotecnologico.com.br/tags/nuclide/",
-    "article_count": "1"
-  },
-  {
     "id": "numpy",
     "title": "numpy",
     "url": "https://butecotecnologico.com.br/tags/numpy/",
-    "article_count": "2"
+    "article_count": "3"
   },
   {
     "id": "nuvem",
@@ -1781,12 +1583,6 @@
     "title": "nvidia",
     "url": "https://butecotecnologico.com.br/tags/nvidia/",
     "article_count": "5"
-  },
-  {
-    "id": "oauth",
-    "title": "oauth",
-    "url": "https://butecotecnologico.com.br/tags/oauth/",
-    "article_count": "1"
   },
   {
     "id": "octopkg",
@@ -1819,16 +1615,10 @@
     "article_count": "1"
   },
   {
-    "id": "open-source",
-    "title": "open-source",
-    "url": "https://butecotecnologico.com.br/tags/open-source/",
-    "article_count": "12"
-  },
-  {
     "id": "openelec",
     "title": "openelec",
     "url": "https://butecotecnologico.com.br/tags/openelec/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "opengl",
@@ -1858,7 +1648,7 @@
     "id": "openssl",
     "title": "openssl",
     "url": "https://butecotecnologico.com.br/tags/openssl/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "openstreetmap",
@@ -1888,19 +1678,7 @@
     "id": "orm",
     "title": "orm",
     "url": "https://butecotecnologico.com.br/tags/orm/",
-    "article_count": "1"
-  },
-  {
-    "id": "orquestração",
-    "title": "orquestração",
-    "url": "https://butecotecnologico.com.br/tags/orquestra%C3%A7%C3%A3o/",
-    "article_count": "1"
-  },
-  {
-    "id": "os-x",
-    "title": "os x",
-    "url": "https://butecotecnologico.com.br/tags/os-x/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "otto",
@@ -1915,15 +1693,21 @@
     "article_count": "1"
   },
   {
+    "id": "pacman",
+    "title": "pacman",
+    "url": "https://butecotecnologico.com.br/tags/pacman/",
+    "article_count": "1"
+  },
+  {
     "id": "paho",
     "title": "paho",
     "url": "https://butecotecnologico.com.br/tags/paho/",
     "article_count": "1"
   },
   {
-    "id": "palestra",
-    "title": "palestra",
-    "url": "https://butecotecnologico.com.br/tags/palestra/",
+    "id": "passwd",
+    "title": "passwd",
+    "url": "https://butecotecnologico.com.br/tags/passwd/",
     "article_count": "1"
   },
   {
@@ -1936,18 +1720,6 @@
     "id": "pentest",
     "title": "pentest",
     "url": "https://butecotecnologico.com.br/tags/pentest/",
-    "article_count": "1"
-  },
-  {
-    "id": "performance",
-    "title": "performance",
-    "url": "https://butecotecnologico.com.br/tags/performance/",
-    "article_count": "1"
-  },
-  {
-    "id": "pesquisa",
-    "title": "pesquisa",
-    "url": "https://butecotecnologico.com.br/tags/pesquisa/",
     "article_count": "1"
   },
   {
@@ -1969,21 +1741,27 @@
     "article_count": "29"
   },
   {
-    "id": "php-7",
-    "title": "php 7",
-    "url": "https://butecotecnologico.com.br/tags/php-7/",
-    "article_count": "2"
-  },
-  {
-    "id": "php_gd2",
-    "title": "php_gd2",
-    "url": "https://butecotecnologico.com.br/tags/php_gd2/",
+    "id": "php-gd2",
+    "title": "php-gd2",
+    "url": "https://butecotecnologico.com.br/tags/php-gd2/",
     "article_count": "1"
   },
   {
     "id": "pic16f628a",
     "title": "pic16f628a",
     "url": "https://butecotecnologico.com.br/tags/pic16f628a/",
+    "article_count": "1"
+  },
+  {
+    "id": "pipe",
+    "title": "pipe",
+    "url": "https://butecotecnologico.com.br/tags/pipe/",
+    "article_count": "2"
+  },
+  {
+    "id": "pipeline",
+    "title": "pipeline",
+    "url": "https://butecotecnologico.com.br/tags/pipeline/",
     "article_count": "1"
   },
   {
@@ -2005,12 +1783,6 @@
     "article_count": "1"
   },
   {
-    "id": "player",
-    "title": "player",
-    "url": "https://butecotecnologico.com.br/tags/player/",
-    "article_count": "1"
-  },
-  {
     "id": "pm2",
     "title": "pm2",
     "url": "https://butecotecnologico.com.br/tags/pm2/",
@@ -2023,69 +1795,27 @@
     "article_count": "3"
   },
   {
-    "id": "privacidade",
-    "title": "privacidade",
-    "url": "https://butecotecnologico.com.br/tags/privacidade/",
-    "article_count": "3"
-  },
-  {
-    "id": "processos",
-    "title": "processos",
-    "url": "https://butecotecnologico.com.br/tags/processos/",
-    "article_count": "1"
-  },
-  {
     "id": "produtividade",
     "title": "produtividade",
     "url": "https://butecotecnologico.com.br/tags/produtividade/",
     "article_count": "1"
   },
   {
-    "id": "programação",
-    "title": "programação",
-    "url": "https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o/",
-    "article_count": "8"
-  },
-  {
-    "id": "programação-web",
-    "title": "programação web",
-    "url": "https://butecotecnologico.com.br/tags/programa%C3%A7%C3%A3o-web/",
+    "id": "proxygen",
+    "title": "proxygen",
+    "url": "https://butecotecnologico.com.br/tags/proxygen/",
     "article_count": "1"
   },
   {
-    "id": "projeto",
-    "title": "projeto",
-    "url": "https://butecotecnologico.com.br/tags/projeto/",
-    "article_count": "1"
-  },
-  {
-    "id": "promoção",
-    "title": "promoção",
-    "url": "https://butecotecnologico.com.br/tags/promo%C3%A7%C3%A3o/",
-    "article_count": "1"
-  },
-  {
-    "id": "pub/sub",
-    "title": "pub/sub",
-    "url": "https://butecotecnologico.com.br/tags/pub/sub/",
-    "article_count": "2"
-  },
-  {
-    "id": "pushbullet",
-    "title": "pushbullet",
-    "url": "https://butecotecnologico.com.br/tags/pushbullet/",
+    "id": "pub-sub",
+    "title": "pub-sub",
+    "url": "https://butecotecnologico.com.br/tags/pub-sub/",
     "article_count": "1"
   },
   {
     "id": "pwm",
     "title": "pwm",
     "url": "https://butecotecnologico.com.br/tags/pwm/",
-    "article_count": "1"
-  },
-  {
-    "id": "pycompat",
-    "title": "pycompat",
-    "url": "https://butecotecnologico.com.br/tags/pycompat/",
     "article_count": "1"
   },
   {
@@ -2110,13 +1840,7 @@
     "id": "python",
     "title": "python",
     "url": "https://butecotecnologico.com.br/tags/python/",
-    "article_count": "49"
-  },
-  {
-    "id": "qa",
-    "title": "qa",
-    "url": "https://butecotecnologico.com.br/tags/qa/",
-    "article_count": "1"
+    "article_count": "50"
   },
   {
     "id": "qemu",
@@ -2131,12 +1855,6 @@
     "article_count": "1"
   },
   {
-    "id": "qt5",
-    "title": "qt5",
-    "url": "https://butecotecnologico.com.br/tags/qt5/",
-    "article_count": "1"
-  },
-  {
     "id": "qtgamepad",
     "title": "qtgamepad",
     "url": "https://butecotecnologico.com.br/tags/qtgamepad/",
@@ -2146,12 +1864,6 @@
     "id": "qualcomm",
     "title": "qualcomm",
     "url": "https://butecotecnologico.com.br/tags/qualcomm/",
-    "article_count": "1"
-  },
-  {
-    "id": "questionário",
-    "title": "questionário",
-    "url": "https://butecotecnologico.com.br/tags/question%C3%A1rio/",
     "article_count": "1"
   },
   {
@@ -2168,15 +1880,21 @@
   },
   {
     "id": "raspberry-pi",
-    "title": "Raspberry PI",
+    "title": "raspberry-pi",
     "url": "https://butecotecnologico.com.br/tags/raspberry-pi/",
-    "article_count": "7"
+    "article_count": "16"
   },
   {
-    "id": "raspberrypi",
-    "title": "raspberrypi",
-    "url": "https://butecotecnologico.com.br/tags/raspberrypi/",
-    "article_count": "8"
+    "id": "raspbian",
+    "title": "raspbian",
+    "url": "https://butecotecnologico.com.br/tags/raspbian/",
+    "article_count": "1"
+  },
+  {
+    "id": "react-js",
+    "title": "react-js",
+    "url": "https://butecotecnologico.com.br/tags/react-js/",
+    "article_count": "1"
   },
   {
     "id": "rebase",
@@ -2192,14 +1910,8 @@
   },
   {
     "id": "redes-neurais",
-    "title": "redes neurais",
+    "title": "redes-neurais",
     "url": "https://butecotecnologico.com.br/tags/redes-neurais/",
-    "article_count": "1"
-  },
-  {
-    "id": "redhat",
-    "title": "redhat",
-    "url": "https://butecotecnologico.com.br/tags/redhat/",
     "article_count": "1"
   },
   {
@@ -2218,19 +1930,7 @@
     "id": "regex",
     "title": "regex",
     "url": "https://butecotecnologico.com.br/tags/regex/",
-    "article_count": "2"
-  },
-  {
-    "id": "regular-expression",
-    "title": "regular expression",
-    "url": "https://butecotecnologico.com.br/tags/regular-expression/",
-    "article_count": "1"
-  },
-  {
-    "id": "release",
-    "title": "release",
-    "url": "https://butecotecnologico.com.br/tags/release/",
-    "article_count": "1"
+    "article_count": "3"
   },
   {
     "id": "requests",
@@ -2239,28 +1939,22 @@
     "article_count": "2"
   },
   {
-    "id": "revista",
-    "title": "revista",
-    "url": "https://butecotecnologico.com.br/tags/revista/",
-    "article_count": "2"
+    "id": "retroarch",
+    "title": "retroarch",
+    "url": "https://butecotecnologico.com.br/tags/retroarch/",
+    "article_count": "1"
   },
   {
-    "id": "rhc",
-    "title": "rhc",
-    "url": "https://butecotecnologico.com.br/tags/rhc/",
+    "id": "rfid",
+    "title": "rfid",
+    "url": "https://butecotecnologico.com.br/tags/rfid/",
     "article_count": "1"
   },
   {
     "id": "roadsec",
     "title": "roadsec",
     "url": "https://butecotecnologico.com.br/tags/roadsec/",
-    "article_count": "3"
-  },
-  {
-    "id": "rotas",
-    "title": "rotas",
-    "url": "https://butecotecnologico.com.br/tags/rotas/",
-    "article_count": "1"
+    "article_count": "4"
   },
   {
     "id": "rpm",
@@ -2281,16 +1975,16 @@
     "article_count": "2"
   },
   {
+    "id": "ruby",
+    "title": "ruby",
+    "url": "https://butecotecnologico.com.br/tags/ruby/",
+    "article_count": "2"
+  },
+  {
     "id": "rust",
     "title": "rust",
     "url": "https://butecotecnologico.com.br/tags/rust/",
     "article_count": "6"
-  },
-  {
-    "id": "s3",
-    "title": "s3",
-    "url": "https://butecotecnologico.com.br/tags/s3/",
-    "article_count": "1"
   },
   {
     "id": "samsung",
@@ -2305,22 +1999,22 @@
     "article_count": "1"
   },
   {
-    "id": "script",
-    "title": "script",
-    "url": "https://butecotecnologico.com.br/tags/script/",
-    "article_count": "2"
+    "id": "sbc",
+    "title": "sbc",
+    "url": "https://butecotecnologico.com.br/tags/sbc/",
+    "article_count": "1"
+  },
+  {
+    "id": "scipy",
+    "title": "scipy",
+    "url": "https://butecotecnologico.com.br/tags/scipy/",
+    "article_count": "1"
   },
   {
     "id": "sdl",
     "title": "sdl",
     "url": "https://butecotecnologico.com.br/tags/sdl/",
     "article_count": "1"
-  },
-  {
-    "id": "segurança",
-    "title": "segurança",
-    "url": "https://butecotecnologico.com.br/tags/seguran%C3%A7a/",
-    "article_count": "11"
   },
   {
     "id": "sensor",
@@ -2341,16 +2035,10 @@
     "article_count": "1"
   },
   {
-    "id": "servidor",
-    "title": "servidor",
-    "url": "https://butecotecnologico.com.br/tags/servidor/",
-    "article_count": "1"
-  },
-  {
-    "id": "serviços",
-    "title": "serviços",
-    "url": "https://butecotecnologico.com.br/tags/servi%C3%A7os/",
-    "article_count": "1"
+    "id": "servicos",
+    "title": "servicos",
+    "url": "https://butecotecnologico.com.br/tags/servicos/",
+    "article_count": "3"
   },
   {
     "id": "servomotor",
@@ -2371,10 +2059,10 @@
     "article_count": "1"
   },
   {
-    "id": "sistemas-de-arquivos",
-    "title": "sistemas de arquivos",
-    "url": "https://butecotecnologico.com.br/tags/sistemas-de-arquivos/",
-    "article_count": "1"
+    "id": "sistema-de-arquivos",
+    "title": "sistema-de-arquivos",
+    "url": "https://butecotecnologico.com.br/tags/sistema-de-arquivos/",
+    "article_count": "2"
   },
   {
     "id": "sms",
@@ -2407,12 +2095,6 @@
     "article_count": "1"
   },
   {
-    "id": "so",
-    "title": "so",
-    "url": "https://butecotecnologico.com.br/tags/so/",
-    "article_count": "1"
-  },
-  {
     "id": "soc",
     "title": "soc",
     "url": "https://butecotecnologico.com.br/tags/soc/",
@@ -2428,13 +2110,7 @@
     "id": "software-livre",
     "title": "software-livre",
     "url": "https://butecotecnologico.com.br/tags/software-livre/",
-    "article_count": "3"
-  },
-  {
-    "id": "softwarelivre",
-    "title": "softwarelivre",
-    "url": "https://butecotecnologico.com.br/tags/softwarelivre/",
-    "article_count": "4"
+    "article_count": "14"
   },
   {
     "id": "solaris",
@@ -2443,16 +2119,10 @@
     "article_count": "1"
   },
   {
-    "id": "sorteio",
-    "title": "sorteio",
-    "url": "https://butecotecnologico.com.br/tags/sorteio/",
-    "article_count": "5"
-  },
-  {
     "id": "spotify",
     "title": "spotify",
     "url": "https://butecotecnologico.com.br/tags/spotify/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "sql",
@@ -2476,19 +2146,7 @@
     "id": "ssh",
     "title": "ssh",
     "url": "https://butecotecnologico.com.br/tags/ssh/",
-    "article_count": "1"
-  },
-  {
-    "id": "ssl",
-    "title": "ssl",
-    "url": "https://butecotecnologico.com.br/tags/ssl/",
-    "article_count": "1"
-  },
-  {
-    "id": "stackoverflow",
-    "title": "stackoverflow",
-    "url": "https://butecotecnologico.com.br/tags/stackoverflow/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "steam",
@@ -2503,12 +2161,6 @@
     "article_count": "1"
   },
   {
-    "id": "steganografia",
-    "title": "steganografia",
-    "url": "https://butecotecnologico.com.br/tags/steganografia/",
-    "article_count": "1"
-  },
-  {
     "id": "steghide",
     "title": "steghide",
     "url": "https://butecotecnologico.com.br/tags/steghide/",
@@ -2518,12 +2170,18 @@
     "id": "streaming",
     "title": "streaming",
     "url": "https://butecotecnologico.com.br/tags/streaming/",
-    "article_count": "2"
+    "article_count": "1"
   },
   {
     "id": "supermario",
     "title": "supermario",
     "url": "https://butecotecnologico.com.br/tags/supermario/",
+    "article_count": "1"
+  },
+  {
+    "id": "supervisor",
+    "title": "supervisor",
+    "url": "https://butecotecnologico.com.br/tags/supervisor/",
     "article_count": "1"
   },
   {
@@ -2554,6 +2212,18 @@
     "id": "tcl",
     "title": "tcl",
     "url": "https://butecotecnologico.com.br/tags/tcl/",
+    "article_count": "2"
+  },
+  {
+    "id": "tcl-expect",
+    "title": "tcl-expect",
+    "url": "https://butecotecnologico.com.br/tags/tcl-expect/",
+    "article_count": "2"
+  },
+  {
+    "id": "tdc",
+    "title": "tdc",
+    "url": "https://butecotecnologico.com.br/tags/tdc/",
     "article_count": "1"
   },
   {
@@ -2566,13 +2236,7 @@
     "id": "tecnologia",
     "title": "tecnologia",
     "url": "https://butecotecnologico.com.br/tags/tecnologia/",
-    "article_count": "2"
-  },
-  {
-    "id": "tema",
-    "title": "tema",
-    "url": "https://butecotecnologico.com.br/tags/tema/",
-    "article_count": "2"
+    "article_count": "1"
   },
   {
     "id": "temperatura",
@@ -2581,16 +2245,16 @@
     "article_count": "1"
   },
   {
-    "id": "termin",
-    "title": "termin",
-    "url": "https://butecotecnologico.com.br/tags/termin/",
-    "article_count": "1"
-  },
-  {
     "id": "terminal",
     "title": "terminal",
     "url": "https://butecotecnologico.com.br/tags/terminal/",
-    "article_count": "19"
+    "article_count": "2"
+  },
+  {
+    "id": "tesla",
+    "title": "tesla",
+    "url": "https://butecotecnologico.com.br/tags/tesla/",
+    "article_count": "1"
   },
   {
     "id": "testes",
@@ -2623,15 +2287,15 @@
     "article_count": "1"
   },
   {
-    "id": "trabalho-remoto",
-    "title": "trabalho remoto",
-    "url": "https://butecotecnologico.com.br/tags/trabalho-remoto/",
+    "id": "torrent",
+    "title": "torrent",
+    "url": "https://butecotecnologico.com.br/tags/torrent/",
     "article_count": "1"
   },
   {
-    "id": "tray",
-    "title": "tray",
-    "url": "https://butecotecnologico.com.br/tags/tray/",
+    "id": "trabalho-remoto",
+    "title": "trabalho remoto",
+    "url": "https://butecotecnologico.com.br/tags/trabalho-remoto/",
     "article_count": "1"
   },
   {
@@ -2644,7 +2308,13 @@
     "id": "ubuntu",
     "title": "ubuntu",
     "url": "https://butecotecnologico.com.br/tags/ubuntu/",
-    "article_count": "4"
+    "article_count": "5"
+  },
+  {
+    "id": "ubuntu-mate",
+    "title": "ubuntu-mate",
+    "url": "https://butecotecnologico.com.br/tags/ubuntu-mate/",
+    "article_count": "1"
   },
   {
     "id": "ui",
@@ -2659,33 +2329,9 @@
     "article_count": "2"
   },
   {
-    "id": "uno-r3",
-    "title": "uno r3",
-    "url": "https://butecotecnologico.com.br/tags/uno-r3/",
-    "article_count": "2"
-  },
-  {
     "id": "unreal-engine",
-    "title": "unreal engine",
+    "title": "unreal-engine",
     "url": "https://butecotecnologico.com.br/tags/unreal-engine/",
-    "article_count": "1"
-  },
-  {
-    "id": "utorrent",
-    "title": "utorrent",
-    "url": "https://butecotecnologico.com.br/tags/utorrent/",
-    "article_count": "1"
-  },
-  {
-    "id": "ux",
-    "title": "ux",
-    "url": "https://butecotecnologico.com.br/tags/ux/",
-    "article_count": "1"
-  },
-  {
-    "id": "v8",
-    "title": "v8",
-    "url": "https://butecotecnologico.com.br/tags/v8/",
     "article_count": "1"
   },
   {
@@ -2701,22 +2347,16 @@
     "article_count": "1"
   },
   {
-    "id": "vi",
-    "title": "vi",
-    "url": "https://butecotecnologico.com.br/tags/vi/",
+    "id": "vetorial",
+    "title": "vetorial",
+    "url": "https://butecotecnologico.com.br/tags/vetorial/",
     "article_count": "1"
   },
   {
     "id": "video",
     "title": "video",
     "url": "https://butecotecnologico.com.br/tags/video/",
-    "article_count": "8"
-  },
-  {
-    "id": "view",
-    "title": "view",
-    "url": "https://butecotecnologico.com.br/tags/view/",
-    "article_count": "1"
+    "article_count": "3"
   },
   {
     "id": "vim",
@@ -2732,9 +2372,21 @@
   },
   {
     "id": "vim-tabs",
-    "title": "vim tabs",
+    "title": "vim-tabs",
     "url": "https://butecotecnologico.com.br/tags/vim-tabs/",
     "article_count": "1"
+  },
+  {
+    "id": "virsh",
+    "title": "virsh",
+    "url": "https://butecotecnologico.com.br/tags/virsh/",
+    "article_count": "1"
+  },
+  {
+    "id": "virt-manager",
+    "title": "virt-manager",
+    "url": "https://butecotecnologico.com.br/tags/virt-manager/",
+    "article_count": "2"
   },
   {
     "id": "virtualbox",
@@ -2743,15 +2395,15 @@
     "article_count": "1"
   },
   {
-    "id": "virtualização",
-    "title": "virtualização",
-    "url": "https://butecotecnologico.com.br/tags/virtualiza%C3%A7%C3%A3o/",
-    "article_count": "4"
+    "id": "virtualizacao",
+    "title": "Virtualização",
+    "url": "https://butecotecnologico.com.br/tags/virtualizacao/",
+    "article_count": "5"
   },
   {
-    "id": "vitualização",
-    "title": "vitualização",
-    "url": "https://butecotecnologico.com.br/tags/vitualiza%C3%A7%C3%A3o/",
+    "id": "vitualizacao",
+    "title": "vitualizacao",
+    "url": "https://butecotecnologico.com.br/tags/vitualizacao/",
     "article_count": "1"
   },
   {
@@ -2785,10 +2437,16 @@
     "article_count": "1"
   },
   {
+    "id": "wayland",
+    "title": "wayland",
+    "url": "https://butecotecnologico.com.br/tags/wayland/",
+    "article_count": "1"
+  },
+  {
     "id": "web",
     "title": "web",
     "url": "https://butecotecnologico.com.br/tags/web/",
-    "article_count": "11"
+    "article_count": "8"
   },
   {
     "id": "web-components",
@@ -2815,18 +2473,6 @@
     "article_count": "1"
   },
   {
-    "id": "wheelmap",
-    "title": "wheelmap",
-    "url": "https://butecotecnologico.com.br/tags/wheelmap/",
-    "article_count": "1"
-  },
-  {
-    "id": "wifi",
-    "title": "wifi",
-    "url": "https://butecotecnologico.com.br/tags/wifi/",
-    "article_count": "1"
-  },
-  {
     "id": "wine",
     "title": "wine",
     "url": "https://butecotecnologico.com.br/tags/wine/",
@@ -2836,7 +2482,7 @@
     "id": "wordpress",
     "title": "wordpress",
     "url": "https://butecotecnologico.com.br/tags/wordpress/",
-    "article_count": "4"
+    "article_count": "2"
   },
   {
     "id": "xbmc",
@@ -2863,15 +2509,15 @@
     "article_count": "1"
   },
   {
-    "id": "yahoo",
-    "title": "yahoo",
-    "url": "https://butecotecnologico.com.br/tags/yahoo/",
+    "id": "xmbc",
+    "title": "xmbc",
+    "url": "https://butecotecnologico.com.br/tags/xmbc/",
     "article_count": "1"
   },
   {
-    "id": "yaml",
-    "title": "yaml",
-    "url": "https://butecotecnologico.com.br/tags/yaml/",
+    "id": "xorg",
+    "title": "xorg",
+    "url": "https://butecotecnologico.com.br/tags/xorg/",
     "article_count": "1"
   },
   {
@@ -2884,7 +2530,7 @@
     "id": "youtube",
     "title": "youtube",
     "url": "https://butecotecnologico.com.br/tags/youtube/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "yum",

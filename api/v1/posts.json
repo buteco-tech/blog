@@ -7,8 +7,8 @@
     "title": "Cluster de Kubernetes gratuito",
     "url": "https://butecotecnologico.com.br/kubesail-cluster-kubernetes-gratuito/",
     "images": ["https://butecotecnologico.com.br/images/posts/kubesail-logo.png","https://butecotecnologico.com.br/images/posts/kubesail-logo-wide.jpeg"],
-    "tags": ["kubernetes","cloud-computing","cloud","serviços"],
-    "categories": ["Notícias"],
+    "tags": ["kubernetes","servicos","kubesail"],
+    "categories": ["cloud-computing"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -29,8 +29,8 @@
     "title": "Hacktoberfest 2020",
     "url": "https://butecotecnologico.com.br/hacktoberfest-2020/",
     "images": ["https://butecotecnologico.com.br/images/posts/hf-2020-400.png","https://butecotecnologico.com.br/images/posts/hf-2020-600.png","https://butecotecnologico.com.br/images/posts/hf-2020-1000.png"],
-    "tags": ["novidades","hacktoberfest","github","digitalocean"],
-    "categories": ["Notícias"],
+    "tags": ["hacktoberfest","github","digitalocean"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -40,8 +40,8 @@
     "title": "Cluster Kubernetes com apenas um comando",
     "url": "https://butecotecnologico.com.br/criando-cluster-kubernetes/",
     "images": ["https://butecotecnologico.com.br/images/posts/eksctl-gopher.png"],
-    "tags": ["kubernetes","cloud computing","aws","eksctl"],
-    "categories": ["Desenvolvimento","Ferramentas"],
+    "tags": ["kubernetes","aws","eksctl"],
+    "categories": ["cloud-computing","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -51,8 +51,8 @@
     "title": "Nós mudamos!",
     "url": "https://butecotecnologico.com.br/nos-mudamos-para-buteco-tech/",
     "images": ["https://butecotecnologico.com.br/images/posts/buteco-logo-2020.png"],
-    "tags": ["novidades","tema"],
-    "categories": ["Notícias"],
+    "tags": null,
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -74,7 +74,7 @@
     "url": "https://butecotecnologico.com.br/kubernetes-explicado/",
     "images": ["https://butecotecnologico.com.br/images/posts/k8s-logo.png"],
     "tags": ["containers","linux","docker","kubernetes","paas"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["cloud-computing"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -84,8 +84,8 @@
     "title": "Conhecendo o Btrfs",
     "url": "https://butecotecnologico.com.br/conhecendo-o-btrfs/",
     "images": ["https://butecotecnologico.com.br/images/posts/btrfs-logo.png"],
-    "tags": ["sistemas de arquivos","fs","ext","xfs","btrfs","linux"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["sistema-de-arquivos","opensuse","fs","ext","xfs","btrfs","linux"],
+    "categories": ["distros"],
     "authors": ["marcossouza"]
   },
   {
@@ -107,7 +107,7 @@
     "url": "https://butecotecnologico.com.br/guia-completo-debug-python/",
     "images": ["https://butecotecnologico.com.br/images/posts/python-logo.png"],
     "tags": ["python","debug","pdb"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -129,7 +129,7 @@
     "url": "https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/",
     "images": ["https://butecotecnologico.com.br/images/posts/lxc-logo.png"],
     "tags": ["containers","docker","lxc","linux"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["desenvolvimento"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -139,8 +139,8 @@
     "title": "E se você perdesse acesso a suas contas?",
     "url": "https://butecotecnologico.com.br/e-se-voce-perdesse-acesso-a-suas-contas/",
     "images": ["https://butecotecnologico.com.br/images/posts/gmail-webapp.jpg"],
-    "tags": ["privacidade","e-mail","NAS","nuvem","google"],
-    "categories": ["Segurança"],
+    "tags": ["email","NAS","nuvem","google"],
+    "categories": ["seguranca","privacidade"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -150,8 +150,8 @@
     "title": "Sorteio Novatec - Python Levado a Sério",
     "url": "https://butecotecnologico.com.br/sorteio-novatec-python-levado-a-serio/",
     "images": ["https://butecotecnologico.com.br/images/posts/capa-python-levado-a-serio.jpg"],
-    "tags": ["novatec","python"],
-    "categories": ["Sorteios","Livros"],
+    "tags": ["livros","novatec","python"],
+    "categories": ["sorteios"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -161,8 +161,8 @@
     "title": "Entendendo carros autônomos",
     "url": "https://butecotecnologico.com.br/entendendo-carros-autonomos/",
     "images": ["https://butecotecnologico.com.br/images/posts/tesla-autopilot.jpg"],
-    "tags": ["nvidia","carros","sensores","hardware"],
-    "categories": ["Hardware"],
+    "tags": ["nvidia","carros","sensores","tesla","darpa"],
+    "categories": ["inteligencia-artificial"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -173,7 +173,7 @@
     "url": "https://butecotecnologico.com.br/ubuntu-20-04-lts/",
     "images": ["https://butecotecnologico.com.br/images/posts/ubuntu-focal-fossa.jpg"],
     "tags": ["ubuntu","linux","gnome","snap","nvidia"],
-    "categories": ["Distros"],
+    "categories": ["distros","reviews"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -183,8 +183,8 @@
     "title": "AWS S3 em Python",
     "url": "https://butecotecnologico.com.br/python-aws-s3/",
     "images": ["https://butecotecnologico.com.br/images/posts/aws-python-s3.png"],
-    "tags": ["python","aws","s3"],
-    "categories": ["Desenvolvimento","Tutoriais"],
+    "tags": ["python","aws","aws-s3"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -194,8 +194,8 @@
     "title": "Morando no Exterior",
     "url": "https://butecotecnologico.com.br/morando-no-exterior-2020/",
     "images": [],
-    "tags": ["morando-no-exterior","europa","irlanda"],
-    "categories": ["Curiosidades"],
+    "tags": ["morando-no-exterior","europa","irlanda","youtube"],
+    "categories": ["discussoes"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -205,8 +205,8 @@
     "title": "NVIDIA Jetson Nano Developer Kit",
     "url": "https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/",
     "images": ["https://butecotecnologico.com.br/images/posts/jetson-nano-devkit.png"],
-    "tags": ["nvidia","redes neurais","hardware"],
-    "categories": ["Hardware","Reviews"],
+    "tags": ["arm","nvidia","redes-neurais","ubuntu"],
+    "categories": ["embarcados","reviews"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -216,8 +216,8 @@
     "title": "Livros gratuitos",
     "url": "https://butecotecnologico.com.br/livros-gratuitos-abril-2020/",
     "images": ["https://butecotecnologico.com.br/images/posts/kafka-definitive-guide-cover.jpg"],
-    "tags": ["kafka","kubernetes","sre","devops","bitcoin"],
-    "categories": ["Livros","Notícias"],
+    "tags": ["livros","kafka","kubernetes","sre","devops","bitcoin"],
+    "categories": ["noticias","cloud-computing"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -227,8 +227,8 @@
     "title": "Começando com SQL Alchemy",
     "url": "https://butecotecnologico.com.br/comecando-com-sql-alchemy/",
     "images": ["https://butecotecnologico.com.br/images/posts/sql-alchemy-logo.png"],
-    "tags": ["python","sql","orm","banco de dados"],
-    "categories": ["Tutoriais","Desenvolvimento"],
+    "tags": ["python","sql","orm"],
+    "categories": ["tutoriais","banco-de-dados"],
     "authors": ["jaswdr"]
   },
   {
@@ -238,8 +238,8 @@
     "title": "Estamos de Volta",
     "url": "https://butecotecnologico.com.br/we-are-back/",
     "images": ["https://butecotecnologico.com.br/images/posts/capa-we-are-back.jpg"],
-    "tags": ["novidades"],
-    "categories": ["Notícias"],
+    "tags": ["buteco"],
+    "categories": ["noticias"],
     "authors": ["buteco"]
   },
   {
@@ -249,8 +249,8 @@
     "title": "Review do livro Implantação de Help Desk e Service Desk - Roberto Cohen",
     "url": "https://butecotecnologico.com.br/review-livro/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/06/capa.jpg"],
-    "tags": ["helpdesk","servicedesk"],
-    "categories": ["Reviews","Livros"],
+    "tags": ["livros","helpdesk","servicedesk","novatec"],
+    "categories": ["reviews"],
     "authors": ["marcooliveira"]
   },
   {
@@ -260,8 +260,8 @@
     "title": "Extração de dados com Logstash",
     "url": "https://butecotecnologico.com.br/logstash/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/05/logstash-logo.png"],
-    "tags": ["elk","extração de dados","logstash"],
-    "categories": ["Desenvolvimento","Ferramentas"],
+    "tags": ["elk","logstash","pipeline"],
+    "categories": ["data-science","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -271,8 +271,8 @@
     "title": "Monitoramento de servidor com Netdata",
     "url": "https://butecotecnologico.com.br/monitoramento-de-servidor-com-netdata/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/05/netdata-capa.png"],
-    "tags": ["github","monitoramento","netdata"],
-    "categories": ["Ferramentas"],
+    "tags": ["monitoramento","netdata","linux"],
+    "categories": ["ferramentas","tutoriais"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -282,8 +282,8 @@
     "title": "Tutorial GnuPG",
     "url": "https://butecotecnologico.com.br/tutorial-gnupg/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/GnuPG-Logo.png"],
-    "tags": ["criptografia","gnupg","pgp"],
-    "categories": ["Ferramentas"],
+    "tags": ["criptografia","gnupg","pgp","gpg"],
+    "categories": ["ferramentas","tutoriais"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -293,8 +293,8 @@
     "title": "libssl e libcrypto: Visualizando certificados online em C",
     "url": "https://butecotecnologico.com.br/libssl-libcrypto-visualizando-certificados-online-em-c/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/05/openssl-3.png"],
-    "tags": ["c","certificados","certs","libcrypto","libssl","linux","openssl"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","libcrypto","libssl","openssl","linux"],
+    "categories": ["desenvolvimento"],
     "authors": ["marcossouza"]
   },
   {
@@ -305,7 +305,7 @@
     "url": "https://butecotecnologico.com.br/efetuando-teste-de-carga-com-o-locust/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/05/locust-logo.png"],
     "tags": ["python","testes","web"],
-    "categories": ["Ferramentas"],
+    "categories": ["ferramentas","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -315,8 +315,8 @@
     "title": "Concorra a um Raspberry Pi 3",
     "url": "https://butecotecnologico.com.br/concorra-um-raspberry-pi-3/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/05/raspberry-pi-3.jpg"],
-    "tags": ["arm","raspberry pi","wifi"],
-    "categories": ["Sorteios"],
+    "tags": ["arm","raspberry-pi"],
+    "categories": ["sorteios"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -326,8 +326,8 @@
     "title": "Acompanhe o TDC Floripa sem sair de casa",
     "url": "https://butecotecnologico.com.br/acompanhe-o-tdc-floripa-sem-sair-de-casa/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/05/tdc-logo.png"],
-    "tags": ["android","iot","mobile","php","python","ux"],
-    "categories": ["Eventos"],
+    "tags": ["tdc"],
+    "categories": ["eventos"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -337,8 +337,8 @@
     "title": "Review Raspberry Pi 3",
     "url": "https://butecotecnologico.com.br/review-raspberry-pi-3/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/05/raspberry-pi-3.jpg"],
-    "tags": ["arm","bluetooth","embarcados","linux","Raspberry PI"],
-    "categories": ["Reviews"],
+    "tags": ["linux","arm","bluetooth","raspberry-pi"],
+    "categories": ["embarcados","reviews"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -349,7 +349,7 @@
     "url": "https://butecotecnologico.com.br/lancamentos-novatec-linguagem-sql-e-minecraft/",
     "images": [],
     "tags": ["minecraft","python","sql"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -359,7 +359,7 @@
     "title": "Dispositivos USB não são reconhecidos pelo VirtualBox (host Linux)",
     "url": "https://butecotecnologico.com.br/dispositivos-usb-nao-sao-reconhecidos-pelo-virtualbox-host-linux/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/04/virtualbox.png"],
-    "tags": ["linux","virtualbox","virtualização","vm"],
+    "tags": ["linux","virtualbox","virtualizacao","vm"],
     "categories": ["Tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
@@ -370,8 +370,8 @@
     "title": "PHP e Performance, parte 1",
     "url": "https://butecotecnologico.com.br/performance-com-php-parte-1/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/04/phplogo-highres.png"],
-    "tags": ["performance","php"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["desempenho","php"],
+    "categories": ["desenvolvimento"],
     "authors": ["jaswdr"]
   },
   {
@@ -381,8 +381,8 @@
     "title": "VIM tips: Mudando cor de destaque da busca",
     "url": "https://butecotecnologico.com.br/vim-tips-mudando-cor-de-destaque-da-busca/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/11/vim_logo_small.png"],
-    "tags": ["cores","highlight","vim","vim-config"],
-    "categories": ["Tutoriais"],
+    "tags": ["vim","vim-config","highlight"],
+    "categories": ["tutoriais","ferramentas"],
     "authors": ["marcossouza"]
   },
   {
@@ -392,8 +392,8 @@
     "title": "Instalando o Spotify no openSUSE",
     "url": "https://butecotecnologico.com.br/instalando-o-spotify-no-opensuse/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/04/spotify.png"],
-    "tags": ["deb","música","opensuse","rpm","spotify","streaming"],
-    "categories": ["Tutoriais"],
+    "tags": ["deb","rpm","opensuse","spotify"],
+    "categories": ["tutoriais","distros"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -403,8 +403,8 @@
     "title": "GNOME: Removendo ícone do legacy tray",
     "url": "https://butecotecnologico.com.br/gnome-removendo-icone-do-legacy-tray/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/04/gnome-logo-300px-150x150.png"],
-    "tags": ["gnome","linux","tray"],
-    "categories": ["Tutoriais"],
+    "tags": ["gnome","linux"],
+    "categories": ["tutoriais","distros"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -415,7 +415,7 @@
     "url": "https://butecotecnologico.com.br/como-usar-o-mongodb-com-php/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/04/mongodb-logo.jpg"],
     "tags": ["mongodb","php"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["banco-de-dados","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -425,8 +425,8 @@
     "title": "BASH tips: Expressões regulares no bash",
     "url": "https://butecotecnologico.com.br/bash-tips-expressoes-regulares-no-bash/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/images.jpg"],
-    "tags": ["bash","expressão regular","regex","regular expression"],
-    "categories": ["Tutoriais"],
+    "tags": ["bash","regex"],
+    "categories": ["tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -436,8 +436,8 @@
     "title": "Utilizando display OLED I2C no ESP8266",
     "url": "https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/04/oled_display.jpg"],
-    "tags": ["display","esp12","esp8266","i2c","iot","nodemcu","oled","u8g"],
-    "categories": ["Hardware","DIY"],
+    "tags": ["diy","display","esp12","esp8266","i2c","iot","nodemcu","oled","u8g"],
+    "categories": ["embarcados","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -447,8 +447,8 @@
     "title": "Mesa muito próximo do OpenGL 4.2 e 4.3",
     "url": "https://butecotecnologico.com.br/mesa-muito-proximo-do-opengl-4-2-e-4-3/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/attachment.cgi_.png"],
-    "tags": ["driver","games","jogos","linux","mesa","open-source","opengl"],
-    "categories": ["Notícias"],
+    "tags": ["driver","games","linux","mesa","opengl"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -458,8 +458,8 @@
     "title": "Conhecendo os módulos do NodeMCU",
     "url": "https://butecotecnologico.com.br/conhecendo-os-modulos-do-nodemcu/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/nodeMCU-logo-300x300-e1454377964183.png"],
-    "tags": ["esp8266","i2c","lua","mqtt","nodemcu","ntp","rtc"],
-    "categories": ["Hardware","DIY"],
+    "tags": ["diy","esp8266","i2c","lua","mqtt","nodemcu","ntp","rtc"],
+    "categories": ["embarcados"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -469,8 +469,8 @@
     "title": "Inscrições abertas para o 12º Fórum Espírito Livre",
     "url": "https://butecotecnologico.com.br/inscricoes-abertas-para-o-12o-forum-espirito-livre/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/04/Logo_12_Forum.jpg"],
-    "tags": ["espiritolivre","evento","hackthon","minicurso","palestra"],
-    "categories": ["Eventos"],
+    "tags": ["hackthon"],
+    "categories": ["eventos"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -480,8 +480,8 @@
     "title": "Lançamentos Novatec: Sass e Compass e Docker",
     "url": "https://butecotecnologico.com.br/lancamentos-novatec-sass-e-compass-e-docker/",
     "images": [],
-    "tags": ["css","docker","html","linux","novatec","sass"],
-    "categories": ["Notícias"],
+    "tags": ["css","docker","html","novatec","sass"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -491,8 +491,8 @@
     "title": "Apache Mesos",
     "url": "https://butecotecnologico.com.br/apache-mesos/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/apache_mesos.png"],
-    "tags": ["apache","cloud","cluster","mesos"],
-    "categories": ["Ferramentas"],
+    "tags": ["apache","mesos","linux"],
+    "categories": ["cloud-computing","tutoriais"],
     "authors": ["guilhermevanz"]
   },
   {
@@ -502,8 +502,8 @@
     "title": "Lançamentos Novatec: Android, Pentest e Segurança Web",
     "url": "https://butecotecnologico.com.br/lancamentos-novatec-android-pentest-e-seguranca-web/",
     "images": [],
-    "tags": ["android","pentest","redes","segurança","web"],
-    "categories": ["Notícias","Livros"],
+    "tags": ["livros","android","pentest","redes","web"],
+    "categories": ["noticias"],
     "authors": ["buteco"]
   },
   {
@@ -513,8 +513,8 @@
     "title": "POSIX Regular Expression em C",
     "url": "https://butecotecnologico.com.br/posix-regular-expression-em-c/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/images.jpg"],
-    "tags": ["c","expressao_regular","linux","posix","regex"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","linux","posix","regex"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -524,8 +524,8 @@
     "title": "MQTT Parte 2: Enviando e recebendo mensagens",
     "url": "https://butecotecnologico.com.br/mqtt-parte-2-enviando-e-recebendo-mensagens/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/mqttorg-glow.png"],
-    "tags": ["broker","iot","mosquitto","mqtt","paho","pub/sub","python"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["iot","mosquitto","mqtt","paho","python"],
+    "categories": ["desenvolvimento"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -536,7 +536,7 @@
     "url": "https://butecotecnologico.com.br/configuracoes-do-openssh-que-podem-fazer-toda-a-diferenca/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/OpenSSH_logo.png"],
     "tags": ["linux","openssh","ssh"],
-    "categories": ["Tutoriais","Segurança"],
+    "categories": ["tutoriais","seguranca"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -546,8 +546,8 @@
     "title": "Comunicação serial RS232 com Leitura/Escrita da EEPROM no PIC16F628A",
     "url": "https://butecotecnologico.com.br/comunicacao-serial-rs232-com-leituraescrita-da-eeprom-no-pic16f628a/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/PIC16F628A-e1456826573109.jpg"],
-    "tags": ["assembly","eeprom","pic16f628a","rs232"],
-    "categories": ["Desenvolvimento","Hardware","DIY"],
+    "tags": ["diy","assembly","eeprom","pic16f628a","rs232"],
+    "categories": ["embarcados"],
     "authors": ["brunopiske"]
   },
   {
@@ -557,8 +557,8 @@
     "title": "50% de desconto em livros da Novatec",
     "url": "https://butecotecnologico.com.br/50-de-desconto-em-livros-da-novatec/",
     "images": [],
-    "tags": ["novatec","promoção"],
-    "categories": ["Notícias","Livros"],
+    "tags": ["livros","novatec"],
+    "categories": ["noticias"],
     "authors": ["buteco"]
   },
   {
@@ -568,8 +568,8 @@
     "title": "i18n: Detectando o idioma do usuário",
     "url": "https://butecotecnologico.com.br/i18n-detectando-o-idioma-do-usuario/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/200px-Globe_of_letters.png"],
-    "tags": ["geoip","geolocalização","http","i18n","internacionalização","maxmind","nginx","web"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["geoip","geolocalizacoo","i18n","internacionalizacao","maxmind","nginx","web"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -579,8 +579,8 @@
     "title": "Gerando melodia com o Arduino",
     "url": "https://butecotecnologico.com.br/gerando-melodia-com-o-arduino/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/logo-arduino.png"],
-    "tags": ["arduino","hardware","mario","pwm"],
-    "categories": ["Hardware","DIY"],
+    "tags": ["diy","arduino","mario","pwm"],
+    "categories": ["embarcados","tutoriais"],
     "authors": ["brunopiske"]
   },
   {
@@ -590,8 +590,8 @@
     "title": "Lançado Raspberry PI 3 Modelo B",
     "url": "https://butecotecnologico.com.br/lancado-raspberry-pi-3-modelo-b/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/index.png"],
-    "tags": ["raspberry pi","raspberrypi"],
-    "categories": ["Notícias"],
+    "tags": ["raspberry-pi","arm"],
+    "categories": ["noticias"],
     "authors": ["dsantos"]
   },
   {
@@ -601,8 +601,8 @@
     "title": "Novidades que virão no GCC 6",
     "url": "https://butecotecnologico.com.br/novidades-que-virao-no-gcc-6/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/index.png"],
-    "tags": ["compiler","gcc"],
-    "categories": ["Notícias"],
+    "tags": ["gcc","c","cpp"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -612,8 +612,8 @@
     "title": "Deploy com um clique no Heroku",
     "url": "https://butecotecnologico.com.br/deploy-com-um-clique-no-heroku/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/Heroku_logo.png"],
-    "tags": ["cloud","deploy","heroku","python"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["heroku","python"],
+    "categories": ["cloud-computing","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -624,7 +624,7 @@
     "url": "https://butecotecnologico.com.br/configurando-vpn-site-to-site-com-openvpn/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/openvpn-logo.png"],
     "tags": ["openvpn","redes","vpn"],
-    "categories": ["Ferramentas"],
+    "categories": ["seguranca","tutoriais"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -634,8 +634,8 @@
     "title": "Gerando bitlink atravéz da API do Bitly",
     "url": "https://butecotecnologico.com.br/gerando-bitlink-atravez-da-api-do-bitly/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/bitly_logo_small.png"],
-    "tags": ["bitlinks","bitly","python","requests"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["bitly","python","requests"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -645,8 +645,8 @@
     "title": "A Importância do Open Source na Pesquisa de Mercado",
     "url": "https://butecotecnologico.com.br/importancia-do-open-source-na-pesquisa-de-mercado/",
     "images": [],
-    "tags": null,
-    "categories": ["Discussões"],
+    "tags": ["software-livre"],
+    "categories": ["discussoes"],
     "authors": ["buteco"]
   },
   {
@@ -656,8 +656,8 @@
     "title": "Novatec lança 5ª Edição do livro “Expressões Regulares – Uma abordagem divertida”",
     "url": "https://butecotecnologico.com.br/novatec-lanca-5a-edicao-do-livro-expressoes-regulares-uma-abordagem-divertida/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/expressoes-regulares-capa.jpg"],
-    "tags": null,
-    "categories": ["Notícias"],
+    "tags": ["regex","novatec"],
+    "categories": ["noticias"],
     "authors": ["buteco"]
   },
   {
@@ -668,7 +668,7 @@
     "url": "https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/Git-Logo-Black.png"],
     "tags": ["git","git-add","git-commit"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["ferramentas","tutoriais"],
     "authors": ["guilhermevanz"]
   },
   {
@@ -678,8 +678,8 @@
     "title": "MQTT Parte 1: O que é MQTT?",
     "url": "https://butecotecnologico.com.br/mqtt-parte-1-o-que-e-mqtt/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/mqttorg-glow.png"],
-    "tags": ["broker","iot","mosquitto","mqtt","pub/sub","rabbitmq"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["iot","mosquitto","mqtt","pub-sub","rabbitmq"],
+    "categories": ["desenvolvimento"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -689,8 +689,8 @@
     "title": "Relógio RTC com o ESP8266",
     "url": "https://butecotecnologico.com.br/rtc-com-esp8266/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/rtc.jpg"],
-    "tags": ["esp-12","esp8266","esplorer","iot","lua","nodemcu","rtc"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["esp-12","esp8266","iot","lua","nodemcu","rtc"],
+    "categories": ["embarcados","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -700,8 +700,8 @@
     "title": "NodeMCU: Lua para o ESP8266",
     "url": "https://butecotecnologico.com.br/nodemcu-lua-para-o-esp8266/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/nodeMCU-logo-300x300-e1454377964183.png"],
-    "tags": ["esp8266","esptool","hardware","iot","lua","nodemcu","nodemcu flasher"],
-    "categories": ["Hardware","DIY"],
+    "tags": ["diy","esp8266","esptool","iot","lua","nodemcu"],
+    "categories": ["embarcados","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -711,8 +711,8 @@
     "title": "Compilando o FreeBSD: Parte 1",
     "url": "https://butecotecnologico.com.br/compilando-o-freebsd-parte-1/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/freebsd2.png"],
-    "tags": ["distro","freebsd","kernel"],
-    "categories": ["Distros"],
+    "tags": ["freebsd","bsd","kernel"],
+    "categories": ["distros","tutoriais"],
     "authors": ["marcooliveira"]
   },
   {
@@ -722,8 +722,8 @@
     "title": "Câmera IP com Webcam e Motion",
     "url": "https://butecotecnologico.com.br/camera-ip-com-webcam-e-motion/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/You-are-being-watched-620-by-338.jpg"],
-    "tags": ["câmera ip","debian","ipcam","motion","web"],
-    "categories": ["Tutoriais","DIY"],
+    "tags": ["diy","camera-ip","debian","linux","ipcam","raspberry-pi","beaglebone","web"],
+    "categories": ["tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -733,8 +733,8 @@
     "title": "PM2 - Gerenciador de aplicações Node.js em ambientes de produção",
     "url": "https://butecotecnologico.com.br/pm2/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/logo_pm2.png"],
-    "tags": ["javascript","node","pm2"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["javascript","node-js","pm2"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -744,8 +744,8 @@
     "title": "GPS Parte 3: Localizador GPS com a BeagleBone Green",
     "url": "https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png"],
-    "tags": ["beaglebone green","bottle","flask","gps","nmea","python","Raspberry Pi"],
-    "categories": ["Desenvolvimento","Tutoriais"],
+    "tags": ["beaglebone","beaglebone-green","raspberry-pi","bottle","flask","gps","nmea","python"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -755,8 +755,8 @@
     "title": "Linux API: pthreads - Parte 1",
     "url": "https://butecotecnologico.com.br/linux-api-pthreads-parte-1/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/pthreads1.png"],
-    "tags": ["c","linux","posix","threads"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","linux","posix","threads"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -766,8 +766,8 @@
     "title": "Servo motor com Raspberry Pi",
     "url": "https://butecotecnologico.com.br/servo-motor-com-raspberry-pi/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/index.png"],
-    "tags": ["Banana Pi","embarcados","iot","python","Raspberry Pi","servomotor"],
-    "categories": ["Hardware","DIY","Tutoriais"],
+    "tags": ["diy","iot","python","raspberry-pi","servomotor"],
+    "categories": ["embarcados","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -777,8 +777,8 @@
     "title": "GPS Parte 2: Decodificando uma sentença NMEA",
     "url": "https://butecotecnologico.com.br/gps-parte-2-decodificando-uma-sentenca-nmea/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png"],
-    "tags": ["geolocalização","gps","nmea","python"],
-    "categories": ["Tutoriais","Desenvolvimento"],
+    "tags": ["geolocalizacao","gps","nmea","python"],
+    "categories": ["tutoriais","desenvolvimento"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -788,8 +788,8 @@
     "title": "Iluminação Natalina com Arduino, Temporizador e LDR",
     "url": "https://butecotecnologico.com.br/iluminacao-natalina-com-arduino-temporizador-e-ldr/",
     "images": [],
-    "tags": ["arduino","c","natal","programação"],
-    "categories": ["Hardware","DIY"],
+    "tags": ["diy","arduino","arduino-mega","c"],
+    "categories": ["embarcados","tutoriais"],
     "authors": ["brunopiske"]
   },
   {
@@ -799,8 +799,8 @@
     "title": "Lançamentos Novatec: Apocalipse zumbi com Arduino e Raspberry e AWS em ação",
     "url": "https://butecotecnologico.com.br/lancamentos-novatec-apocalipse-zumbi-com-arduino-e-raspberry-e-aws-em-acao/",
     "images": [],
-    "tags": ["amazon","arduino","aws","raspberrypi"],
-    "categories": ["Notícias","Livros"],
+    "tags": ["livros","aws","arduino","raspberry-pi"],
+    "categories": ["noticias"],
     "authors": ["buteco"]
   },
   {
@@ -810,8 +810,8 @@
     "title": "Como utilizar o getaddrinfo para evitar a falha GHOST",
     "url": "https://butecotecnologico.com.br/como-utilizar-o-getaddrinfo-para-evitar-a-falha-ghost/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/glibc-ghost.png"],
-    "tags": ["c","glibc","linux","network","programação","redes"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","glibc","linux","network","redes"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -821,8 +821,8 @@
     "title": "Kit Arduino Start - O sortudo da vez",
     "url": "https://butecotecnologico.com.br/kit-arduino-start-o-sortudo-da-vez/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/450xN.jpg"],
-    "tags": ["arduino","sorteio","uno r3"],
-    "categories": ["Sorteios"],
+    "tags": ["arduino","arduino-uno"],
+    "categories": ["sorteios"],
     "authors": ["dsantos"]
   },
   {
@@ -833,7 +833,7 @@
     "url": "https://butecotecnologico.com.br/feliz-2016/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/FelizAnoNovo.jpg"],
     "tags": null,
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["dsantos"]
   },
   {
@@ -843,8 +843,8 @@
     "title": "GPS Parte 1: Entendendo o seu funcionamento",
     "url": "https://butecotecnologico.com.br/gps-parte-1-entendendo-o-seu-funcionamento/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png"],
-    "tags": ["geolocalização","glonass","gnss","gps","nmea"],
-    "categories": ["Tutoriais","Desenvolvimento"],
+    "tags": ["geolocalizacao","glonass","gnss","gps","nmea"],
+    "categories": ["tutoriais","desenvolvimento"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -855,7 +855,7 @@
     "url": "https://butecotecnologico.com.br/laravel-5-2-lancado-veja-as-novidades/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Laravel-5.png"],
     "tags": ["laravel","php"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["noticias"],
     "authors": ["jaswdr"]
   },
   {
@@ -865,8 +865,8 @@
     "title": "É difícil imaginar um mundo sem Linux",
     "url": "https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-5/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/WorldWithoutLinux.png"],
-    "tags": ["linux","open-source","video"],
-    "categories": ["Fun","Notícias"],
+    "tags": ["linux","software-livre"],
+    "categories": ["noticias"],
     "authors": ["dsantos"]
   },
   {
@@ -876,8 +876,8 @@
     "title": "Bash: Reverse Search",
     "url": "https://butecotecnologico.com.br/bash-reverse-search/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/bash.png"],
-    "tags": ["bash","console","linux","shell","terminal"],
-    "categories": ["Tutoriais"],
+    "tags": ["bash","console","linux","shell"],
+    "categories": ["tutoriais","ferramentas"],
     "authors": ["marcossouza"]
   },
   {
@@ -887,8 +887,8 @@
     "title": "Sorteio de um Kit Arduino Start",
     "url": "https://butecotecnologico.com.br/sorteio-de-um-kit-arduino-start/",
     "images": [],
-    "tags": ["arduino","sorteio","uno r3"],
-    "categories": ["Sorteios"],
+    "tags": ["arduino","arduino-uno"],
+    "categories": ["sorteios"],
     "authors": ["buteco"]
   },
   {
@@ -898,8 +898,8 @@
     "title": "Conheça o Clappr",
     "url": "https://butecotecnologico.com.br/conheca-o-clappr/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/clappr_logo.png"],
-    "tags": ["javascript","player","streaming","web"],
-    "categories": ["Tutoriais"],
+    "tags": ["javascript","streaming","web"],
+    "categories": ["desenvolvimento"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -910,7 +910,7 @@
     "url": "https://butecotecnologico.com.br/introduzindo-conceitos-do-emacs/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/Emacs-Logo-400x400.png"],
     "tags": ["emacs","ide"],
-    "categories": ["Desenvolvimento","Tutoriais"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["marcooliveira"]
   },
   {
@@ -920,8 +920,8 @@
     "title": "Implemente seu malloc/free. Just4fun!",
     "url": "https://butecotecnologico.com.br/implemente-seu-mallocfree-just4fun/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/11/1042021.png"],
-    "tags": ["c","glibc","linux"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","glibc","linux"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["guilhermevanz"]
   },
   {
@@ -931,8 +931,8 @@
     "title": "Raspberry Pi Zero, 5$ em uma placa que roda Linux",
     "url": "https://butecotecnologico.com.br/raspberry-pi-zero-5-em-uma-placa-que-roda-linux/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/11/rpi_zero.png"],
-    "tags": ["raspberry pi"],
-    "categories": ["Hardware","DIY"],
+    "tags": ["diy","arm","raspberry-pi"],
+    "categories": ["embarcados","noticias"],
     "authors": ["jaswdr"]
   },
   {
@@ -942,8 +942,8 @@
     "title": "VIM Tips: Trabalhando com abas",
     "url": "https://butecotecnologico.com.br/vim-tips-trabalhando-com-abas/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/11/vim_logo_small.png"],
-    "tags": ["linux","terminal","vi","vim","vim tabs"],
-    "categories": ["Tutoriais"],
+    "tags": ["linux","vim","vim-tabs"],
+    "categories": ["tutoriais","ferramentas"],
     "authors": ["marcossouza"]
   },
   {
@@ -953,8 +953,8 @@
     "title": "Novatec lança 2a edição do livro Dominando o Android",
     "url": "https://butecotecnologico.com.br/novatec-lanca-2a-edicao-do-livro-dominando-o-android/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/11/dominando_android.jpg"],
-    "tags": ["android","novatec"],
-    "categories": ["Notícias","Livros"],
+    "tags": ["livros","android","novatec"],
+    "categories": ["noticias"],
     "authors": ["buteco"]
   },
   {
@@ -964,8 +964,8 @@
     "title": "Conheça a BeagleBone Green",
     "url": "https://butecotecnologico.com.br/conheca-a-beaglebone-green/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/11/beagle-hd-logo_dd.png"],
-    "tags": ["arm","beaglebone","beaglebone green","cloud9"],
-    "categories": ["Hardware","DIY","Reviews"],
+    "tags": ["diy","arm","beaglebone","beaglebone-green","cloud9"],
+    "categories": ["embarcados","reviews"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -975,8 +975,8 @@
     "title": "É difícil imaginar um mundo sem Linux",
     "url": "https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-4/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/WorldWithoutLinux.png"],
-    "tags": ["linux","open-source","video"],
-    "categories": ["Fun","Notícias"],
+    "tags": ["linux","software-livre"],
+    "categories": ["noticias"],
     "authors": ["dsantos"]
   },
   {
@@ -986,8 +986,8 @@
     "title": "Black Friday de Componentes Eletrônicos é na FILIPEFLOP",
     "url": "https://butecotecnologico.com.br/black-friday-de-componentes-eletronicos-e-na-filipeflop/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/11/banner_bf_ff.png.png"],
-    "tags": ["arduino","black friday","desconto","embarcados","iot","raspberrypi"],
-    "categories": ["Notícias"],
+    "tags": ["arduino","black-friday","iot","raspberry-pi"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -997,8 +997,8 @@
     "title": "Segunda temporada de caçada de bugs no LibreOffice 5.1",
     "url": "https://butecotecnologico.com.br/segunda-temporada-de-cacada-de-bugs-no-libreoffice-5-1/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/LibreOffice800x600.png"],
-    "tags": ["libreoffice","open-source","qa"],
-    "categories": ["Notícias"],
+    "tags": ["libreoffice","testes"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -1009,7 +1009,7 @@
     "url": "https://butecotecnologico.com.br/codeception-testes-de-interface/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/11/codeception-logo.png"],
     "tags": ["codeception","php","testes"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -1019,8 +1019,8 @@
     "title": "Resultado do sorteio de uma entrada para a Roadsec",
     "url": "https://butecotecnologico.com.br/resultado-do-sorteio-de-uma-entrada-para-a-roadsec/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/road-sec.jpg"],
-    "tags": ["evento","eventos","roadsec","segurança","sorteio"],
-    "categories": ["Sorteios"],
+    "tags": ["roadsec"],
+    "categories": ["sorteios"],
     "authors": ["buteco"]
   },
   {
@@ -1030,8 +1030,8 @@
     "title": "É difícil imaginar um mundo sem Linux",
     "url": "https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-3/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/WorldWithoutLinux.png"],
-    "tags": ["linux","open-source","video"],
-    "categories": ["Fun"],
+    "tags": ["linux","software-livre"],
+    "categories": ["noticias"],
     "authors": ["dsantos"]
   },
   {
@@ -1041,8 +1041,8 @@
     "title": "Review da tela 3.5 TFT no Raspberry Pi!",
     "url": "https://butecotecnologico.com.br/review-da-tela-3-5-tft-no-raspberry-pi/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/index.png"],
-    "tags": ["display","hardware","Raspberry PI","tft"],
-    "categories": ["Hardware","DIY","Reviews"],
+    "tags": ["diy","display","raspberry-pi","tft"],
+    "categories": ["embarcados","reviews"],
     "authors": ["marcossouza"]
   },
   {
@@ -1052,8 +1052,8 @@
     "title": "LibreOffice Magazine Número 19",
     "url": "https://butecotecnologico.com.br/libreoffice-magazine-numero-19/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/11/RevistaLibreOfficeNro19.jpg"],
-    "tags": ["libreoffice","noticias","open-source","software-livre","softwarelivre"],
-    "categories": ["Notícias"],
+    "tags": ["libreoffice","software-livre"],
+    "categories": ["noticias"],
     "authors": ["dsantos"]
   },
   {
@@ -1064,7 +1064,7 @@
     "url": "https://butecotecnologico.com.br/rust-1-4-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/10/rust-logo-256x256-blk.png"],
     "tags": ["rust"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -1074,8 +1074,8 @@
     "title": "Nova versão do Lumina",
     "url": "https://butecotecnologico.com.br/nova-versao-do-lumina/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/Lumina.png"],
-    "tags": ["freebsd","noticias"],
-    "categories": ["Distros","Notícias"],
+    "tags": ["freebsd","bsd"],
+    "categories": ["distros","noticias"],
     "authors": ["marcooliveira"]
   },
   {
@@ -1085,8 +1085,8 @@
     "title": "Gerando backtrace em C/C++ no Linux",
     "url": "https://butecotecnologico.com.br/gerando-backtrace-em-cc-no-linux/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/588396621.jpg"],
-    "tags": ["api","c","linux","terminal"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","linux","gcc","debug"],
+    "categories": ["desenvolvimento","ferramentas"],
     "authors": ["marcossouza"]
   },
   {
@@ -1096,8 +1096,8 @@
     "title": "Sorteio de uma entrada para a Roadsec",
     "url": "https://butecotecnologico.com.br/sorteio-de-uma-entrada-para-a-roadsec/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/road-sec.jpg"],
-    "tags": ["evento","eventos","roadsec","segurança","sorteio"],
-    "categories": ["Sorteios"],
+    "tags": ["roadsec"],
+    "categories": ["sorteios"],
     "authors": ["buteco"]
   },
   {
@@ -1108,7 +1108,7 @@
     "url": "https://butecotecnologico.com.br/pypy-4-0-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Pypy_logo.png"],
     "tags": ["cpython","jit","numpy","pypy","python"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -1118,8 +1118,8 @@
     "title": "Recuperando dados perdidos do git-stash",
     "url": "https://butecotecnologico.com.br/recuperando-dados-perdidos-do-git-stash/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/t8cnk.jpg"],
-    "tags": ["git","github"],
-    "categories": ["Tutoriais"],
+    "tags": ["git","git-stash","github"],
+    "categories": ["tutoriais","ferramentas"],
     "authors": ["guilhermevanz"]
   },
   {
@@ -1129,8 +1129,8 @@
     "title": "Conheça arkOS: Distro para hospedagem particular",
     "url": "https://butecotecnologico.com.br/conheca-arkos-distro-para-hospedagem-particular/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/logo-arkos1.png"],
-    "tags": ["arkos","arm","banana-pi","beaglebone","cubieboard","cubietruck","raspberrypi","segurança","so"],
-    "categories": ["Distros"],
+    "tags": ["arkos","arm","arch-linux","linux","banana-pi","raspberry-pi"],
+    "categories": ["distros"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -1140,8 +1140,8 @@
     "title": "Utilizando a API REST do Docker com Python",
     "url": "https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/docker-100275159-orig.jpg"],
-    "tags": ["api","docker","linux","python","requests","terminal"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["docker","linux","python","requests"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -1151,8 +1151,8 @@
     "title": "Café com Software Livre - Testemunho",
     "url": "https://butecotecnologico.com.br/cafe-com-software-livre-testemunho/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/Caf%C3%A9ComSL3_Caneca743x655.png"],
-    "tags": ["evento","eventos","open-source","software-livre","softwarelivre"],
-    "categories": ["Eventos"],
+    "tags": ["software-livre"],
+    "categories": ["eventos"],
     "authors": ["dsantos"]
   },
   {
@@ -1162,8 +1162,8 @@
     "title": "É difícil imaginar um mundo sem Linux",
     "url": "https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux-2/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/WorldWithoutLinux.png"],
-    "tags": ["linux","open-source","video"],
-    "categories": ["Fun","Notícias"],
+    "tags": ["linux","software-livre"],
+    "categories": ["noticias"],
     "authors": ["dsantos"]
   },
   {
@@ -1174,7 +1174,7 @@
     "url": "https://butecotecnologico.com.br/confira-algumas-novidades-do-kernel-linux-4-3/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg"],
     "tags": ["kernel","linux"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -1184,8 +1184,8 @@
     "title": "O valor do open source",
     "url": "https://butecotecnologico.com.br/o-valor-do-open-source/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/pesquisas.jpg"],
-    "tags": ["colaboração","open-source"],
-    "categories": ["Notícias"],
+    "tags": ["linux","software-livre"],
+    "categories": ["noticias"],
     "authors": ["dsantos"]
   },
   {
@@ -1195,8 +1195,8 @@
     "title": "O sorteado da vez",
     "url": "https://butecotecnologico.com.br/o-sorteado-da-vez/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/livros-casa-do-codigo.jpg"],
-    "tags": ["ebook","sorteio"],
-    "categories": ["Sorteios"],
+    "tags": ["ebook"],
+    "categories": ["sorteios"],
     "authors": ["marcooliveira"]
   },
   {
@@ -1206,8 +1206,8 @@
     "title": "Esteganografia com Steghide",
     "url": "https://butecotecnologico.com.br/esteganografia-com-steghide/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/steg-logo.jpg"],
-    "tags": ["segurança","steganografia","steghide"],
-    "categories": ["Ferramentas"],
+    "tags": ["esteganografia","steghide"],
+    "categories": ["seguranca","tutoriais"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -1217,8 +1217,8 @@
     "title": "Docker depois do hype, como começar a usá-lo hoje mesmo",
     "url": "https://butecotecnologico.com.br/docker-depois-do-hype-como-comecar-a-usa-lo-hoje-mesmo/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/docker-small.png"],
-    "tags": ["docker","orquestração","python","vagrant"],
-    "categories": ["Ferramentas"],
+    "tags": ["docker","docker-compose","python","vagrant"],
+    "categories": ["ferramentas","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -1228,8 +1228,8 @@
     "title": "Acesso a informação, evolução, tecnologia e caos",
     "url": "https://butecotecnologico.com.br/acesso-a-informacao-evolucao-tecnologia-e-caos/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/modelagem_e_tecnologia.jpg"],
-    "tags": ["educação","informação","iot","tecnologia","ti"],
-    "categories": ["Discussões"],
+    "tags": ["iot","tecnologia","ti"],
+    "categories": ["discussoes"],
     "authors": ["marcooliveira"]
   },
   {
@@ -1240,7 +1240,7 @@
     "url": "https://butecotecnologico.com.br/codeception-testes-em-php-para-todos/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/logo2.png"],
     "tags": ["codeception","php","testes"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -1251,7 +1251,7 @@
     "url": "https://butecotecnologico.com.br/nvidia-anuncia-driver-358-beta-para-linux-solaris-e-freebsd/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/NVIDIA-Driver-Update-Linux-FreeBSD.png"],
     "tags": ["driver","freebsd","kernel","linux","nvidia","solaris"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["dsantos"]
   },
   {
@@ -1261,8 +1261,8 @@
     "title": "Criando gráficos com matplot",
     "url": "https://butecotecnologico.com.br/criando-graficos-com-matplot/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/logoMatPlotLib.png"],
-    "tags": ["libs","matplot","python"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["matplot","python","scipy","numpy"],
+    "categories": ["data-science","tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -1272,8 +1272,8 @@
     "title": "É difícil imaginar um mundo sem Linux",
     "url": "https://butecotecnologico.com.br/e-dificil-imaginar-um-mundo-sem-linux/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/WorldWithoutLinux.png"],
-    "tags": ["linux","open-source","video"],
-    "categories": ["Notícias"],
+    "tags": ["linux","software-livre"],
+    "categories": ["noticias"],
     "authors": ["dsantos"]
   },
   {
@@ -1284,7 +1284,7 @@
     "url": "https://butecotecnologico.com.br/sorteio-de-um-e-book/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/livros-casa-do-codigo.jpg"],
     "tags": ["ebook"],
-    "categories": ["Sorteios"],
+    "categories": ["sorteios"],
     "authors": ["buteco"]
   },
   {
@@ -1294,8 +1294,8 @@
     "title": "FreeBSD - pkg 1.6 chegando",
     "url": "https://butecotecnologico.com.br/freebsd-pkg-1-6-chegando/",
     "images": [],
-    "tags": ["freebsd","pkg"],
-    "categories": ["Distros"],
+    "tags": ["freebsd","bsd","pkg"],
+    "categories": ["noticias","distros"],
     "authors": ["marcooliveira"]
   },
   {
@@ -1306,7 +1306,7 @@
     "url": "https://butecotecnologico.com.br/otto-o-sucessor-do-vagrant/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/ImgOtto-e1443492325176.png"],
     "tags": ["linux","otto","vagrant"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -1316,8 +1316,8 @@
     "title": "RoadSec um testemunho",
     "url": "https://butecotecnologico.com.br/roadsec-um-testemunho/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/road-sec.jpg"],
-    "tags": ["evento","roadsec","segurança"],
-    "categories": ["Eventos"],
+    "tags": ["roadsec"],
+    "categories": ["eventos"],
     "authors": ["marcooliveira"]
   },
   {
@@ -1327,8 +1327,8 @@
     "title": "Feliz Aniversário Projeto GNU!",
     "url": "https://butecotecnologico.com.br/feliz-aniversario-projeto-gnu/",
     "images": [],
-    "tags": ["aniversário","gnu","projeto"],
-    "categories": ["Eventos"],
+    "tags": ["gnu","linux"],
+    "categories": ["eventos"],
     "authors": ["dsantos"]
   },
   {
@@ -1339,7 +1339,7 @@
     "url": "https://butecotecnologico.com.br/novidades-do-gnome-3-18/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/402px-gnomelogo-svg.png"],
     "tags": ["desktop","gnome","linux"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -1349,8 +1349,8 @@
     "title": "Google anuncia Brotli",
     "url": "https://butecotecnologico.com.br/google-anuncia-brotli/",
     "images": [],
-    "tags": ["algoritmo","compactação","google"],
-    "categories": ["Notícias"],
+    "tags": ["algoritmo","compactacao","google"],
+    "categories": ["noticias"],
     "authors": ["dsantos"]
   },
   {
@@ -1360,8 +1360,8 @@
     "title": "Roadsec - Floripa 26/09",
     "url": "https://butecotecnologico.com.br/roadsec-floripa-2609/",
     "images": [],
-    "tags": ["eventos","segurança"],
-    "categories": ["Eventos"],
+    "tags": ["roadsec"],
+    "categories": ["eventos"],
     "authors": ["marcooliveira"]
   },
   {
@@ -1371,8 +1371,8 @@
     "title": "Rust 1.3 já está disponível",
     "url": "https://butecotecnologico.com.br/rust-1-3-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/10/rust-logo-256x256-blk.png"],
-    "tags": ["linguagem-programação","mozilla","rust"],
-    "categories": ["Notícias"],
+    "tags": ["mozilla","rust"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -1382,8 +1382,8 @@
     "title": "Feliz Dia da Árvore",
     "url": "https://butecotecnologico.com.br/feliz-dia-da-arvore/",
     "images": [],
-    "tags": ["programação"],
-    "categories": ["Fun"],
+    "tags": null,
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -1393,8 +1393,8 @@
     "title": "Novatec lança livro para pais e crianças aprenderem programação juntos",
     "url": "https://butecotecnologico.com.br/novatec-lanca-livro-para-pais-e-criancas-aprenderem-programacao-juntos/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/ensine_seus_filhos_a_programar.jpg"],
-    "tags": ["novatec","python"],
-    "categories": ["Notícias","Livros"],
+    "tags": ["livros","novatec","python"],
+    "categories": ["noticias"],
     "authors": ["buteco"]
   },
   {
@@ -1405,7 +1405,7 @@
     "url": "https://butecotecnologico.com.br/parece-que-o-jogo-alien-isolation-esta-chegando-ao-linux/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/alienisolation.jpg"],
     "tags": ["games","linux"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -1416,7 +1416,7 @@
     "url": "https://butecotecnologico.com.br/produtividade-no-libreoffice/",
     "images": [],
     "tags": ["libreoffice","produtividade"],
-    "categories": ["Tutoriais"],
+    "categories": ["tutoriais"],
     "authors": ["dsantos"]
   },
   {
@@ -1426,8 +1426,8 @@
     "title": "Novatec lança livro que ensina a criar jogos em Python com PyGame",
     "url": "https://butecotecnologico.com.br/novatec-lanca-livro-que-ensina-a-criar-jogos-em-python-com-pygame/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/python_com_pygame.jpg"],
-    "tags": ["novatec","pygame","python"],
-    "categories": ["Notícias","Livros"],
+    "tags": ["livros","novatec","pygame","python"],
+    "categories": ["noticias"],
     "authors": ["buteco"]
   },
   {
@@ -1437,8 +1437,8 @@
     "title": "Criando um git server local",
     "url": "https://butecotecnologico.com.br/criando-um-git-server-local/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/11/Git-Icon-1788C.png"],
-    "tags": ["git","linux","terminal"],
-    "categories": ["Tutoriais"],
+    "tags": ["git","ssh","linux"],
+    "categories": ["tutoriais","ferramentas"],
     "authors": ["marcossouza"]
   },
   {
@@ -1448,8 +1448,8 @@
     "title": "Lançada tela capacitiva oficial para Raspberry Pi",
     "url": "https://butecotecnologico.com.br/lancada-tela-capacitiva-oficial-para-raspberry-pi/",
     "images": [],
-    "tags": ["hardware","raspberrypi"],
-    "categories": ["Hardware","DIY"],
+    "tags": ["diy","display","raspberry-pi"],
+    "categories": ["embarcados","noticias"],
     "authors": ["buteco"]
   },
   {
@@ -1460,7 +1460,7 @@
     "url": "https://butecotecnologico.com.br/curso-online-de-angularjs-de-299-por-0-gratis/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/09/13762694923891.png"],
     "tags": ["angularjs","google","javascript","mvw"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["noticias"],
     "authors": ["jaswdr"]
   },
   {
@@ -1470,8 +1470,8 @@
     "title": "Mais correções no RC3 do Mesa 11.0",
     "url": "https://butecotecnologico.com.br/mais-correcoes-no-rc3-do-mesa-11-0/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/attachment.cgi_.png"],
-    "tags": ["games","jogos","linux","opengl"],
-    "categories": ["Jogos","Notícias"],
+    "tags": ["mesa","linux","opengl"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -1482,7 +1482,7 @@
     "url": "https://butecotecnologico.com.br/aniversario-do-buteco/",
     "images": [],
     "tags": ["buteco"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -1492,8 +1492,8 @@
     "title": "Os primeiros passos com o demônio - FreeBSD",
     "url": "https://butecotecnologico.com.br/os-primeiros-passos-com-o-demonio-freebsd/",
     "images": [],
-    "tags": ["bds","freebsd"],
-    "categories": ["Distros","Tutoriais"],
+    "tags": ["bsd","freebsd"],
+    "categories": ["distros","tutoriais"],
     "authors": ["marcooliveira"]
   },
   {
@@ -1503,8 +1503,8 @@
     "title": "Utilizando Shared Objects no Python",
     "url": "https://butecotecnologico.com.br/utilizando-shared-objects-no-python/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png"],
-    "tags": ["c","libs","linux","python","terminal"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","cytpes","linux","python"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -1514,19 +1514,19 @@
     "title": "OctoPkg – A GUI for pkg-ng",
     "url": "https://butecotecnologico.com.br/octopkg-a-gui-for-pkg-ng/",
     "images": [],
-    "tags": ["freebsd","octopkg"],
-    "categories": ["Ferramentas"],
+    "tags": ["bsd","freebsd","octopkg"],
+    "categories": ["ferramentas"],
     "authors": ["marcooliveira"]
   },
   {
     "id": "virsh-criando-e-gerenciando-vms-pelo-terminal",
     "date_published": "2015-08-25T23:44:58Z",
     "date_modified": "2015-08-25T23:44:58Z",
-    "title": "Virsh: criando e gerenciando VMs pelo terminal",
+    "title": "Virsh: Criando e gerenciando VMs pelo terminal",
     "url": "https://butecotecnologico.com.br/virsh-criando-e-gerenciando-vms-pelo-terminal/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/libvirtLogo.png"],
-    "tags": ["kvm","linux","qemu","terminal","virtualização"],
-    "categories": ["Tutoriais","Ferramentas"],
+    "tags": ["linux","kvm","qemu","terminal","virsh","virt-manager","virtualizacao"],
+    "categories": ["tutoriais","ferramentas"],
     "authors": ["marcossouza"]
   },
   {
@@ -1536,8 +1536,8 @@
     "title": "Visão geral do Dandified Yum",
     "url": "https://butecotecnologico.com.br/visao-geral-do-dandified-yum/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/infinity-logo_400x400.png"],
-    "tags": ["distros","dnf","fedora","rpm","yum"],
-    "categories": ["Discussões"],
+    "tags": ["dnf","fedora","rpm","yum"],
+    "categories": ["discussoes","distros"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -1547,8 +1547,8 @@
     "title": "Criando uma Central de Multimídia com Raspberry Pi",
     "url": "https://butecotecnologico.com.br/criando-uma-central-de-multimidia-com-raspberry-pi/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/openelec.jpg"],
-    "tags": ["openelec","raspberrypi"],
-    "categories": ["Distros"],
+    "tags": ["diy","openelec","linux","kodi","xmbc","raspberry-pi","central-multimidia"],
+    "categories": ["distros","tutoriais"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -1558,8 +1558,8 @@
     "title": "Novatec lança livro “Automatize tarefas maçantes com Python”",
     "url": "https://butecotecnologico.com.br/novatec-lanca-livro-automatize-tarefas-macantes-com-python/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/08/automatizar_tarefas_python_novatec.png"],
-    "tags": ["novatec","python","automação"],
-    "categories": ["Notícias","Livros"],
+    "tags": ["livros","novatec","python","automacao"],
+    "categories": ["noticias"],
     "authors": ["buteco"]
   },
   {
@@ -1569,8 +1569,8 @@
     "title": "Kali Linux 2.0 já tem data para o lançamento",
     "url": "https://butecotecnologico.com.br/kali-linux-2-0-ja-tem-data-para-o-lancamento/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/Kali-Linux2.0.jpg"],
-    "tags": ["distro","kali-linux","lançamento","linux","offensive-security"],
-    "categories": ["Distros","Notícias"],
+    "tags": ["kali-linux","linux","offensive-security"],
+    "categories": ["noticias"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -1581,7 +1581,7 @@
     "url": "https://butecotecnologico.com.br/laravel-5-1-do-comeco-ao-fim-parte-2/",
     "images": [],
     "tags": ["framework","laravel","php"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["desenvolvimento"],
     "authors": ["jaswdr"]
   },
   {
@@ -1592,7 +1592,7 @@
     "url": "https://butecotecnologico.com.br/laravel-5-1-do-comeco-ao-fim-video/",
     "images": [],
     "tags": ["framework","laravel","php"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["desenvolvimento"],
     "authors": ["jaswdr"]
   },
   {
@@ -1602,8 +1602,8 @@
     "title": "Finalmente: Mesa ganha suporte a OpenGL 4.0, e está proximo do 4.1 e 4.2",
     "url": "https://butecotecnologico.com.br/finalmente-mesa-ganha-suporte-a-opengl-4-0-e-esta-proximo-do-4-1-e-4-2/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/attachment.cgi_.png"],
-    "tags": ["jogos","kernel","linux","mesa","opengl"],
-    "categories": ["Jogos","Notícias"],
+    "tags": ["kernel","linux","mesa","opengl"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -1613,8 +1613,8 @@
     "title": "Adicionando Swap ao CentOS, Ubuntu e derivados",
     "url": "https://butecotecnologico.com.br/adicionando-swap-ao-centos-ubuntu-e-derivados/",
     "images": [],
-    "tags": ["centos","memória","swap","ubuntu"],
-    "categories": ["Tutoriais"],
+    "tags": ["linux","centos","memoria","swap","ubuntu"],
+    "categories": ["tutoriais","distros"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -1624,8 +1624,8 @@
     "title": "Projeto open source pretende mapear o mundo para cadeirantes",
     "url": "https://butecotecnologico.com.br/projeto-open-source-pretende-mapear-o-mundo-para-cadeirantes/",
     "images": [],
-    "tags": ["android","openstreetmap","wheelmap"],
-    "categories": ["Ferramentas","Notícias"],
+    "tags": ["android","openstreetmap","mapas"],
+    "categories": ["noticias"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -1635,8 +1635,8 @@
     "title": "Novatec lança livro sobre domínios na internet",
     "url": "https://butecotecnologico.com.br/novatec-lanca-livro-sobre-dominios-na-internet/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/nomes_dominios_novatec.png"],
-    "tags": ["domínios","internet","nic","novatec"],
-    "categories": ["Notícias","Livros"],
+    "tags": ["livros","dominios","internet","nic","novatec"],
+    "categories": ["noticias"],
     "authors": ["buteco"]
   },
   {
@@ -1646,8 +1646,8 @@
     "title": "Sensor de temperatura gráfico com Arduino e LCD 16x2",
     "url": "https://butecotecnologico.com.br/sensor-de-temperatura-grafico-com-arduino-e-lcd-16x2/",
     "images": [],
-    "tags": ["arduino","lcd","sensor"],
-    "categories": ["Hardware","DIY"],
+    "tags": ["diy","arduino","lcd","sensor","dht11"],
+    "categories": ["embarcados","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -1657,8 +1657,8 @@
     "title": "Evento científico de tecnologia CTIA",
     "url": "https://butecotecnologico.com.br/evento-cientifico-de-tecnologia-ctia/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/ctia.png"],
-    "tags": ["automação","eventos","iot"],
-    "categories": ["Eventos"],
+    "tags": ["automacao","iot"],
+    "categories": ["eventos"],
     "authors": ["marcooliveira"]
   },
   {
@@ -1668,8 +1668,8 @@
     "title": "Instalando o Supervisor: Um sistema de controle de processos",
     "url": "https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/",
     "images": [],
-    "tags": ["daemon","gerenciamento","linux","processos","systemd"],
-    "categories": ["Ferramentas"],
+    "tags": ["linux","systemd","supervisor"],
+    "categories": ["ferramentas","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -1679,8 +1679,8 @@
     "title": "Instalando o Ubuntu MATE 15.04 no Raspberry PI 2",
     "url": "https://butecotecnologico.com.br/instalando-o-ubuntu-mate-15-04-no-raspberry-pi-2/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/ubuntu-mate-logo.jpg"],
-    "tags": ["linux","mate","raspberrypi","ubuntu"],
-    "categories": ["Distros"],
+    "tags": ["linux","raspberry-pi","ubuntu","ubuntu-mate"],
+    "categories": ["distros","tutoriais"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -1690,8 +1690,8 @@
     "title": "Sensor de temperatura e umidade no Arduino",
     "url": "https://butecotecnologico.com.br/sensor-de-temperatura-e-umidade-no-arduino/",
     "images": [],
-    "tags": ["arduino","dht11","dht22","sensores","temperatura"],
-    "categories": ["Hardware","DIY"],
+    "tags": ["diy","arduino","dht11","dht22","sensores","temperatura"],
+    "categories": ["embarcados","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -1702,7 +1702,7 @@
     "url": "https://butecotecnologico.com.br/veja-o-que-vira-de-novo-no-linux-4-2/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg"],
     "tags": ["kernel","linux"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -1712,8 +1712,8 @@
     "title": "Firefox 39 traz melhorias de segurança",
     "url": "https://butecotecnologico.com.br/firefox-39-traz-melhorias-de-seguranca/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/firefox-logo.bee1d85af18f-e1431444837127.png"],
-    "tags": ["browser","firefox","linux","mozilla","os x","ssl","web"],
-    "categories": ["Notícias"],
+    "tags": ["browser","firefox","linux","mozilla"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -1723,8 +1723,8 @@
     "title": "HHVM está rodando mais rápido que o próprio PHP 7",
     "url": "https://butecotecnologico.com.br/hhvm-esta-rodando-mais-rapido-que-o-proprio-php-7/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/hack-programming-language-facebook-code1.png"],
-    "tags": ["hhvm","php","php 7"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["hhvm","php","facebook"],
+    "categories": ["noticias"],
     "authors": ["jaswdr"]
   },
   {
@@ -1734,20 +1734,9 @@
     "title": "A – ZFS Parte 1",
     "url": "https://butecotecnologico.com.br/a-zfs-parte-1/",
     "images": [],
-    "tags": ["freebsd","zfs"],
-    "categories": ["Ferramentas"],
+    "tags": ["freebsd","bsd","zfs","sistema-de-arquivos"],
+    "categories": ["ferramentas"],
     "authors": ["marcooliveira"]
-  },
-  {
-    "id": "siga-nosso-canal-no-pushbullet",
-    "date_published": "2015-07-01T22:55:51Z",
-    "date_modified": "2015-07-01T22:55:51Z",
-    "title": "Siga nosso canal no Pushbullet",
-    "url": "https://butecotecnologico.com.br/siga-nosso-canal-no-pushbullet/",
-    "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/pushbullet.jpg"],
-    "tags": ["android","feed","ios","notificação","pushbullet"],
-    "categories": ["Notícias"],
-    "authors": ["alexandrevicenzi"]
   },
   {
     "id": "inscricoes-abertas-para-o-11o-forum-espirito-livre",
@@ -1756,8 +1745,8 @@
     "title": "Inscrições abertas para o 11º Fórum Espírito Livre",
     "url": "https://butecotecnologico.com.br/inscricoes-abertas-para-o-11o-forum-espirito-livre/",
     "images": [],
-    "tags": ["eventos","linux","open-source"],
-    "categories": ["Eventos"],
+    "tags": ["eventos","software-livre"],
+    "categories": ["eventos"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -1767,8 +1756,8 @@
     "title": "Hands on: quilt",
     "url": "https://butecotecnologico.com.br/hands-on-quilt/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/Captura-de-tela-de-2015-06-08-23-26-13.png"],
-    "tags": ["linux","programação","quilt","terminal"],
-    "categories": ["Desenvolvimento","Ferramentas"],
+    "tags": ["linux","quilt"],
+    "categories": ["ferramentas","tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -1778,20 +1767,9 @@
     "title": "Rumores sobre a Microsoft comprar a AMD",
     "url": "https://butecotecnologico.com.br/rumores-sobre-a-microsoft-comprar-a-amd/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/amd_logo.png"],
-    "tags": ["amd","jogos","microsoft","surface","xbox"],
-    "categories": ["Notícias"],
+    "tags": ["amd","microsoft","surface","xbox"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
-  },
-  {
-    "id": "ajude-nos-a-escolher-os-temas-do-mes-de-julho",
-    "date_published": "2015-06-29T08:54:48Z",
-    "date_modified": "2015-06-29T08:54:48Z",
-    "title": "Ajude-nos a escolher os temas do mês de Julho",
-    "url": "https://butecotecnologico.com.br/ajude-nos-a-escolher-os-temas-do-mes-de-julho/",
-    "images": [],
-    "tags": ["questionário","tema"],
-    "categories": ["Discussões"],
-    "authors": ["alexandrevicenzi"]
   },
   {
     "id": "linux-mint-17-2-rafaela-ja-esta-disponivel",
@@ -1800,8 +1778,8 @@
     "title": "Linux Mint 17.2 (Rafaela) RC já está disponível",
     "url": "https://butecotecnologico.com.br/linux-mint-17-2-rafaela-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/linux-mint.png"],
-    "tags": ["linux","linuxmint"],
-    "categories": ["Notícias"],
+    "tags": ["linux","linux-mint"],
+    "categories": ["noticias"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -1811,8 +1789,8 @@
     "title": "Resultado do sorteio do e-Book",
     "url": "https://butecotecnologico.com.br/resultado-do-sorteio-do-e-book/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/cdc-logo-novo-400.png"],
-    "tags": ["ebook"],
-    "categories": ["Sorteios"],
+    "tags": ["livros","ebook"],
+    "categories": ["sorteios"],
     "authors": ["buteco"]
   },
   {
@@ -1822,8 +1800,8 @@
     "title": "Laravel 5.1 LTS lançado, veja algumas das novidades",
     "url": "https://butecotecnologico.com.br/lancamento-laravel-5-1/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/laravel-5.1-released.png"],
-    "tags": ["laravel"],
-    "categories": ["Desenvolvimento","Ferramentas"],
+    "tags": ["laravel","php"],
+    "categories": ["noticias"],
     "authors": ["jaswdr"]
   },
   {
@@ -1834,7 +1812,7 @@
     "url": "https://butecotecnologico.com.br/fazendo-squash-de-commits-com-git-rebase/",
     "images": [],
     "tags": ["git","rebase","squash"],
-    "categories": ["Tutoriais"],
+    "categories": ["tutoriais","ferramentas"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -1844,8 +1822,8 @@
     "title": "CriptoParty",
     "url": "https://butecotecnologico.com.br/criptoparty-2/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/criptoparty-1.jpg"],
-    "tags": ["criptoparty","eventos","privacidade","segurança"],
-    "categories": ["Eventos"],
+    "tags": ["criptoparty"],
+    "categories": ["eventos"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -1855,8 +1833,8 @@
     "title": "Resetando a senha do root no Centos 7",
     "url": "https://butecotecnologico.com.br/dica-resetando-senha-do-root-centos-7/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/password-error.jpg"],
-    "tags": ["linux","centos"],
-    "categories": ["Tutoriais","Distros"],
+    "tags": ["linux","centos","passwd"],
+    "categories": ["tutoriais","distros"],
     "authors": ["marcooliveira"]
   },
   {
@@ -1866,8 +1844,8 @@
     "title": "O dilema do aprendizado de TI",
     "url": "https://butecotecnologico.com.br/o-dilema-do-aprendizado-de-ti/",
     "images": [],
-    "tags": ["estudo","ti"],
-    "categories": ["Discussões"],
+    "tags": ["ti"],
+    "categories": ["discussoes"],
     "authors": ["marcooliveira"]
   },
   {
@@ -1877,8 +1855,8 @@
     "title": "SQL na medida certa",
     "url": "https://butecotecnologico.com.br/sql-na-medida-certa/",
     "images": [],
-    "tags": ["banco de dados","sql"],
-    "categories": ["Reviews","Livros"],
+    "tags": ["livros","sql"],
+    "categories": ["reviews","banco-de-dados"],
     "authors": ["marcooliveira"]
   },
   {
@@ -1888,8 +1866,8 @@
     "title": "Conheça o Security Cast",
     "url": "https://butecotecnologico.com.br/conheca-o-security-cast/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/SecurityCast-logo.jpg"],
-    "tags": ["computação forense","privacidade","segurança"],
-    "categories": ["Notícias"],
+    "tags": ["computacao-forense"],
+    "categories": ["noticias","seguranca","privacidade"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -1900,7 +1878,7 @@
     "url": "https://butecotecnologico.com.br/comeca-a-pre-venda-de-steam-controllers-e-steam-machines/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/Steam.jpg"],
     "tags": ["games","linux","steam"],
-    "categories": ["Jogos"],
+    "categories": ["jogos"],
     "authors": ["marcossouza"]
   },
   {
@@ -1910,8 +1888,8 @@
     "title": "Lançado a 70º edição da Revista Espírito Livre",
     "url": "https://butecotecnologico.com.br/lancado-a-70o-edicao-da-revista-espirito-livre/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/revista-espiritolivre-e1433347337883.png"],
-    "tags": ["iot","revista","tecnologia"],
-    "categories": ["Notícias"],
+    "tags": ["iot","raspberry-pi"],
+    "categories": ["noticias"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -1921,8 +1899,8 @@
     "title": "PyPy 2.6 já está disponível e 7x mais rápido que o CPython",
     "url": "https://butecotecnologico.com.br/pypy-2-6-ja-esta-disponivel-e-7x-mais-rapido-que-o-cpython/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Pypy_logo.png"],
-    "tags": ["jit","numpy","pypy","python"],
-    "categories": ["Notícias"],
+    "tags": ["jit","numpy","pypy","python","cpython"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -1932,8 +1910,8 @@
     "title": "Sorteio de um e-Book da Casa do Código",
     "url": "https://butecotecnologico.com.br/sorteio-de-um-e-book-da-casa-do-codigo/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/cdc-logo-novo-400.png"],
-    "tags": ["ebook"],
-    "categories": ["Sorteios","Livros"],
+    "tags": ["livros","ebook"],
+    "categories": ["sorteios"],
     "authors": ["buteco"]
   },
   {
@@ -1943,8 +1921,8 @@
     "title": "Revista BSD Magazine número 70",
     "url": "https://butecotecnologico.com.br/revista-bsd-magazine-numero-70/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/BSD_05_2015-1-230x3001.jpg"],
-    "tags": ["distro","freebsd","revista"],
-    "categories": ["Notícias"],
+    "tags": ["distro","freebsd","bsd"],
+    "categories": ["noticias"],
     "authors": ["marcooliveira"]
   },
   {
@@ -1954,8 +1932,8 @@
     "title": "Novatec lança livro SQL e Teoria Relacional",
     "url": "https://butecotecnologico.com.br/novatec-lanca-livro-sql-e-teoria-relacional/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/livro-sql-teoria.jpg"],
-    "tags": ["banco de dados","novatec","sql"],
-    "categories": ["Notícias","Livros"],
+    "tags": ["livros","novatec","sql"],
+    "categories": ["noticias","banco-de-dados"],
     "authors": ["buteco"]
   },
   {
@@ -1965,8 +1943,8 @@
     "title": "Fedup vai ser substituído no Fedora 23",
     "url": "https://butecotecnologico.com.br/fedup-vai-ser-substituido-no-fedora-23-2/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/infinity-logo_400x400.png"],
-    "tags": ["fedora","linux","release"],
-    "categories": ["Notícias"],
+    "tags": ["fedora","linux","dnf"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -1976,8 +1954,8 @@
     "title": "Integrando o Doctrine ORM e Laravel 5 [parte-1]",
     "url": "https://butecotecnologico.com.br/integrando-o-doctrine-orm-e-laravel-5-parte-1/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/doctrine-e1432605186500.jpg"],
-    "tags": ["doctrine","doctrine orm","framework","integração","laravel","php"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["doctrine","orm","framework","laravel","php"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -1987,8 +1965,8 @@
     "title": "Cupom de desconto nos livros da Casa do Código",
     "url": "https://butecotecnologico.com.br/cupom-de-desconto-nos-livros-da-casa-do-codigo/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/cdc-logo-novo-400.png"],
-    "tags": ["ebook","cupom"],
-    "categories": ["Notícias","Livros"],
+    "tags": ["livros","ebook","cupom"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -1998,20 +1976,9 @@
     "title": "Internet das Coisas",
     "url": "https://butecotecnologico.com.br/internet-das-coisas/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/Imagen-iot.jpg"],
-    "tags": ["internet","iot"],
-    "categories": ["Notícias"],
+    "tags": ["internet","iot","rfid"],
+    "categories": ["discussoes"],
     "authors": ["daniel_magevski"]
-  },
-  {
-    "id": "alteracao-no-padrao-de-urls-do-blog",
-    "date_published": "2015-05-24T21:05:39Z",
-    "date_modified": "2015-05-24T21:05:39Z",
-    "title": "Alteração no padrão de URLs do Blog",
-    "url": "https://butecotecnologico.com.br/alteracao-no-padrao-de-urls-do-blog/",
-    "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/buteco-alpha-100-100.png"],
-    "tags": ["blog","nginx","wordpress"],
-    "categories": ["Notícias"],
-    "authors": ["buteco"]
   },
   {
     "id": "resultado-do-sorteio-do-livro-php-moderno",
@@ -2020,19 +1987,8 @@
     "title": "Resultado do Sorteio do livro PHP Moderno",
     "url": "https://butecotecnologico.com.br/resultado-do-sorteio-do-livro-php-moderno/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/php_moderno.png"],
-    "tags": ["novatec","php"],
-    "categories": ["Sorteios","Livros"],
-    "authors": ["buteco"]
-  },
-  {
-    "id": "o-buteco-esta-de-cara-nova-2",
-    "date_published": "2015-05-22T00:37:31Z",
-    "date_modified": "2015-05-22T00:37:31Z",
-    "title": "O Buteco está de cara nova",
-    "url": "https://butecotecnologico.com.br/o-buteco-esta-de-cara-nova-2/",
-    "images": [],
-    "tags": ["wordpress"],
-    "categories": ["Notícias"],
+    "tags": ["livros","novatec","php"],
+    "categories": ["sorteios"],
     "authors": ["buteco"]
   },
   {
@@ -2042,8 +1998,8 @@
     "title": "Interagindo com a câmera do Raspberry Pi",
     "url": "https://butecotecnologico.com.br/interagindo-com-a-camera-do-raspberry-pi/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/index.png"],
-    "tags": ["linux","programação","python","raspberrypi","terminal"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["linux","python","raspberry-pi","camera"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -2053,8 +2009,8 @@
     "title": "Utilizando um teclado matricial no Arduino",
     "url": "https://butecotecnologico.com.br/utilizando-um-teclado-matricial-no-arduino/",
     "images": [],
-    "tags": ["arduino","keypad","teclado"],
-    "categories": ["Hardware","DIY"],
+    "tags": ["diy","arduino","keypad","teclado","iot"],
+    "categories": ["embarcados","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2065,7 +2021,7 @@
     "url": "https://butecotecnologico.com.br/ultimas-horas-para-participar-do-sorteio-do-livro-php-moderno/",
     "images": [],
     "tags": ["novatec","php"],
-    "categories": ["Sorteios"],
+    "categories": ["sorteios"],
     "authors": ["buteco"]
   },
   {
@@ -2075,8 +2031,8 @@
     "title": "FISL 16",
     "url": "https://butecotecnologico.com.br/fisl-16/",
     "images": [],
-    "tags": ["fisl","fisl16","softwarelivre"],
-    "categories": ["Eventos"],
+    "tags": ["fisl","software-livre"],
+    "categories": ["eventos"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -2086,8 +2042,8 @@
     "title": "Wine 1.7.43 traz melhorias na arquitetura ARM64",
     "url": "https://butecotecnologico.com.br/wine-1-7-43-traz-melhorias-na-arquitetura-arm64/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/wine.png"],
-    "tags": ["jogos","linux","wine"],
-    "categories": ["Notícias"],
+    "tags": ["linux","wine","arm"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2098,7 +2054,7 @@
     "url": "https://butecotecnologico.com.br/rust-1-0-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/10/rust-logo-256x256-blk.png"],
     "tags": ["mozilla","rust"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2108,8 +2064,8 @@
     "title": "QtGamepad: Adicionando suporte a Gamepad no Qt",
     "url": "https://butecotecnologico.com.br/qtgamepad-adicionando-suporte-a-gamepad-no-qt/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/Qt_logo.png"],
-    "tags": ["jogos","qt","qt5","qtgamepad","sdl"],
-    "categories": ["Notícias"],
+    "tags": ["qt","qtgamepad","sdl","cpp"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2119,9 +2075,9 @@
     "title": "Vendo a memória de forma simplificada no FreeBSD ( I have free )",
     "url": "https://butecotecnologico.com.br/vendo-a-memoria-de-forma-simplificada-no-freebsd-i-have-free/",
     "images": [],
-    "tags": ["ferramenta","freebsd","terminal"],
-    "categories": ["Ferramentas"],
-    "authors": ["marcossouza"]
+    "tags": ["freebsd","free"],
+    "categories": ["ferramentas","tutoriais"],
+    "authors": ["marcooliveira"]
   },
   {
     "id": "samsung-anuncia-entrada-na-familia-arduino",
@@ -2130,8 +2086,8 @@
     "title": "Samsung anuncia entrada na família Arduino",
     "url": "https://butecotecnologico.com.br/samsung-anuncia-entrada-na-familia-arduino/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/artik-1.png"],
-    "tags": ["arduino","arm","artik","cloud","samsung"],
-    "categories": ["Notícias"],
+    "tags": ["arduino","arm","artik","iot","samsung"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2141,8 +2097,8 @@
     "title": "Firefox 38 adiciona suporte a imagens responsivas e Ruby annotations",
     "url": "https://butecotecnologico.com.br/firefox-38-adiciona-suporte-a-imagens-responsivas-e-ruby-annotations/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/firefox-logo.bee1d85af18f-e1431444837127.png"],
-    "tags": ["firefox","mozilla","web"],
-    "categories": ["Notícias"],
+    "tags": ["firefox","mozilla"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -2152,8 +2108,8 @@
     "title": "TorChat",
     "url": "https://butecotecnologico.com.br/torchat/",
     "images": [],
-    "tags": ["anonimo","tor"],
-    "categories": ["Ferramentas"],
+    "tags": ["anonimato","tor"],
+    "categories": ["seguranca","privacidade"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -2163,8 +2119,8 @@
     "title": "Enviando e-mails pelo terminal com sendEmail",
     "url": "https://butecotecnologico.com.br/enviando-emails-pelo-terminal-com-sendemail/",
     "images": ["https://butecotecnologico.com.br/images/posts/sendEmail-script.png"],
-    "tags": ["linux","terminal","email","smtp","gmail"],
-    "categories": ["Tutoriais"],
+    "tags": ["linux","email","smtp","gmail"],
+    "categories": ["tutoriais","ferramentas"],
     "authors": ["marcossouza"]
   },
   {
@@ -2175,7 +2131,7 @@
     "url": "https://butecotecnologico.com.br/usando-o-hangouts-chat-via-terminal/",
     "images": [],
     "tags": ["chat","hangouts","mcabber"],
-    "categories": ["Tutoriais"],
+    "categories": ["tutoriais"],
     "authors": ["pedrojefferson"]
   },
   {
@@ -2185,8 +2141,8 @@
     "title": "Sorteio do livro PHP Moderno",
     "url": "https://butecotecnologico.com.br/sorteio-do-livro-php-moderno/",
     "images": [],
-    "tags": ["novatec","php"],
-    "categories": ["Sorteios","Livros"],
+    "tags": ["livros","novatec","php"],
+    "categories": ["sorteios"],
     "authors": ["buteco"]
   },
   {
@@ -2196,8 +2152,8 @@
     "title": "Tutorial Nessus Home Parte 2 (Final)",
     "url": "https://butecotecnologico.com.br/tutorial-nessus-home-parte-2-final/",
     "images": [],
-    "tags": ["ferramenta","redes","segurança"],
-    "categories": ["Ferramentas"],
+    "tags": ["redes","openssl"],
+    "categories": ["tutoriais","seguranca"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -2207,20 +2163,9 @@
     "title": "O que houve com o hacking?",
     "url": "https://butecotecnologico.com.br/o-que-houve-com-o-hacking/",
     "images": [],
-    "tags": ["código aberto","hacking"],
-    "categories": ["Discussões"],
-    "authors": ["marcossouza"]
-  },
-  {
-    "id": "pesquisa-sobre-cursos-presenciais-de-microcontroladores",
-    "date_published": "2015-05-05T23:58:17Z",
-    "date_modified": "2015-05-05T23:58:17Z",
-    "title": "Pesquisa sobre Cursos Presenciais de Microcontroladores",
-    "url": "https://butecotecnologico.com.br/pesquisa-sobre-cursos-presenciais-de-microcontroladores/",
-    "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/pesquisas.jpg"],
-    "tags": ["arduino","embarcados","pesquisa"],
-    "categories": ["Hardware","DIY"],
-    "authors": ["alexandrevicenzi"]
+    "tags": ["software-livre","hacking"],
+    "categories": ["discussoes"],
+    "authors": ["marcooliveira"]
   },
   {
     "id": "projetos-interessantes-do-gsoc-2015",
@@ -2229,8 +2174,8 @@
     "title": "Projetos interessantes do GSoC 2015",
     "url": "https://butecotecnologico.com.br/projetos-interessantes-do-gsoc-2015/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/gsoc2015-300x270.jpg"],
-    "tags": ["linux","open-source","software-livre"],
-    "categories": ["Notícias"],
+    "tags": ["linux","software-livre","gsoc"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -2240,8 +2185,8 @@
     "title": "Valve disponibiliza o OpenVR SDK",
     "url": "https://butecotecnologico.com.br/valve-disponibiliza-o-openvr-sdk/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/valve-logo.jpg"],
-    "tags": ["jogos","openvr","steam","steamvr","valve"],
-    "categories": ["Notícias"],
+    "tags": ["openvr","steam","steamvr","valve"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2251,8 +2196,8 @@
     "title": "Confira os novos livros da Novatec",
     "url": "https://butecotecnologico.com.br/confira-os-novos-livros-da-novatec/",
     "images": [],
-    "tags": ["html5","hvvm","ipsec","ipv6","php","web-components"],
-    "categories": ["Notícias","Livros"],
+    "tags": ["livros","html5","hvvm","ipsec","ipv6","php","web-components"],
+    "categories": ["noticias"],
     "authors": ["buteco"]
   },
   {
@@ -2262,8 +2207,8 @@
     "title": "Primeiros passos com o ESP8266",
     "url": "https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/esp8266.jpg"],
-    "tags": ["arduino","esp-01","esp-12","esp8266","iot"],
-    "categories": ["Hardware","DIY"],
+    "tags": ["diy","arduino","esp-01","esp-12","esp8266","iot"],
+    "categories": ["embarcados","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2274,7 +2219,7 @@
     "url": "https://butecotecnologico.com.br/novidades-que-virao-no-linux-4-1/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg"],
     "tags": ["kernel","linux"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -2284,8 +2229,8 @@
     "title": "Cliente / Server com Boost.Asio",
     "url": "https://butecotecnologico.com.br/cliente-server-com-boost-asio/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/boost.png"],
-    "tags": ["boost","c"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["boost","c","cpp"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -2295,8 +2240,8 @@
     "title": "Usando a API do Google Analytics no Python",
     "url": "https://butecotecnologico.com.br/usando-a-api-do-google-analytics-no-python/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/Logo_Google_Analytics.png"],
-    "tags": ["api","google-analytics","oauth","python"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["api","google-analytics","python"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2306,8 +2251,8 @@
     "title": "Fazendo backup para o Amazon S3 com Python",
     "url": "https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/amazon_aws-s3.png"],
-    "tags": ["amazon s3","boto","python","yaml"],
-    "categories": ["Ferramentas"],
+    "tags": ["aws","amazon-s3","boto","python","backup"],
+    "categories": ["ferramentas","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2318,7 +2263,7 @@
     "url": "https://butecotecnologico.com.br/ext4-com-suporte-a-criptografia-nativa/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/ext4.png"],
     "tags": ["ext4","linux"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2328,8 +2273,8 @@
     "title": "FLISoL 2015",
     "url": "https://butecotecnologico.com.br/flisol-2015/",
     "images": [],
-    "tags": ["eventos","flisol","softwarelivre"],
-    "categories": ["Eventos"],
+    "tags": ["flisol","software-livre"],
+    "categories": ["eventos"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -2339,8 +2284,8 @@
     "title": "Laravel 5 do começo ao fim [parte 4]",
     "url": "https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-4/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Laravel-5.png"],
-    "tags": ["framework","laravel","laravel 5","php","testes","web"],
-    "categories": ["Desenvolvimento","Tutoriais"],
+    "tags": ["framework","laravel","php","testes","web"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -2351,7 +2296,7 @@
     "url": "https://butecotecnologico.com.br/gnome-3-16-1-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/402px-gnomelogo-svg.png"],
     "tags": ["gnome","linux"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2361,8 +2306,8 @@
     "title": "Lumen um micro-framework baseado no Laravel",
     "url": "https://butecotecnologico.com.br/lumen-um-micro-framework-baseado-no-laravel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/lumen-logo-e1429022192118.png"],
-    "tags": ["framework","laçamento","laravel","laravel 5","lumen","micro-framework","php","web"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["framework","laravel","lumen","php","web"],
+    "categories": ["desenvolvimento"],
     "authors": ["jaswdr"]
   },
   {
@@ -2372,8 +2317,8 @@
     "title": "Tutorial Nessus Home Parte 1",
     "url": "https://butecotecnologico.com.br/tutorial-nessus-home-parte-1/",
     "images": [],
-    "tags": ["ferramenta","redes","segurança"],
-    "categories": ["Ferramentas"],
+    "tags": ["redes","linux","kali-linux"],
+    "categories": ["tutoriais","seguranca"],
     "authors": ["daniel_magevski"]
   },
   {
@@ -2383,8 +2328,8 @@
     "title": "Criando módulo Python em C/C++",
     "url": "https://butecotecnologico.com.br/criando-modulo-python-em-cc/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/c_python.png"],
-    "tags": ["c","linux","python","terminal"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","linux","python"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -2394,8 +2339,8 @@
     "title": "Novidades do kernel 4.0",
     "url": "https://butecotecnologico.com.br/novidades-do-kernel-4-0/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg"],
-    "tags": ["kernel","linux","opensuse","redhat"],
-    "categories": ["Notícias"],
+    "tags": ["kernel","linux"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -2405,8 +2350,8 @@
     "title": "Conheça o ESP8266: Um módulo WiFi por menos de 5 dólares",
     "url": "https://butecotecnologico.com.br/conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/esp8266.jpg"],
-    "tags": ["arduino","esp8266","lua","soc"],
-    "categories": ["Hardware","DIY"],
+    "tags": ["diy","arduino","esp8266","lua","soc","iot"],
+    "categories": ["embarcados"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2416,8 +2361,8 @@
     "title": "Construindo a interface de login do spotify com PyGTK e CSS",
     "url": "https://butecotecnologico.com.br/construindo-a-interface-de-login-do-spotify-com-pygtk-e-css/",
     "images": [],
-    "tags": ["desenvolvimento","gnome","programação","python"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["gnome","gtk","python","spotify"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["pedrojefferson"]
   },
   {
@@ -2427,8 +2372,8 @@
     "title": "Kodi 14.2 está disponível",
     "url": "https://butecotecnologico.com.br/kodi-14-2-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/kodi-light-300x300.png"],
-    "tags": ["audio","central-multimidia","kodi","video","xbmc"],
-    "categories": ["Ferramentas"],
+    "tags": ["audio","video","central-multimidia","kodi","xbmc"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2439,7 +2384,7 @@
     "url": "https://butecotecnologico.com.br/super-mario-64-em-hd-para-navegadores/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/bdc077c8b4bbbd099eeb421963c7f90d.jpg"],
     "tags": ["nintendo","supermario","unity"],
-    "categories": ["Jogos"],
+    "categories": ["jogos"],
     "authors": ["camilastadnik"]
   },
   {
@@ -2449,8 +2394,8 @@
     "title": "Nuclide: IDE do Facebook baseada no Atom",
     "url": "https://butecotecnologico.com.br/nuclide-ide-do-facebook-baseada-no-atom/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/nuclide-logo.png"],
-    "tags": ["atom","facebook","github","ide","nuclide"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["atom","facebook","github","ide","hack"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2460,8 +2405,8 @@
     "title": "PHP 7 virá em 2015!",
     "url": "https://butecotecnologico.com.br/php-7-vira-em-2015/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/4c8415972c5c4ce08cdef3a799bc21191.png"],
-    "tags": ["lançamento php 7","php","php 7","programação","programação web","web"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["php"],
+    "categories": ["noticias"],
     "authors": ["jaswdr"]
   },
   {
@@ -2472,7 +2417,7 @@
     "url": "https://butecotecnologico.com.br/pypy-2-5-1-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Pypy_logo.png"],
     "tags": ["pypy","python"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2483,7 +2428,7 @@
     "url": "https://butecotecnologico.com.br/gnome-3-16-foi-lancado/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/402px-gnomelogo-svg.png"],
     "tags": ["gnome","linux"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -2493,8 +2438,8 @@
     "title": "GXUI: Interface multiplataforma para Go",
     "url": "https://butecotecnologico.com.br/gxui-interface-multiplataforma-para-go/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/go-lang-logo.jpg"],
-    "tags": ["go","go-lang","google","gxui","ui"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["go-lang","google","gxui","ui"],
+    "categories": ["desenvolvimento"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2504,8 +2449,8 @@
     "title": "Laravel 5 do começo ao fim [parte 3]",
     "url": "https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-3/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Laravel-5.png"],
-    "tags": ["framework","laravel","laravel 5","mvc","php","web"],
-    "categories": ["Desenvolvimento","Tutoriais"],
+    "tags": ["framework","laravel","mvc","php","web"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -2516,8 +2461,8 @@
     "url": "https://butecotecnologico.com.br/lpic-por-onde-comecar/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/lpic-logos.png"],
     "tags": ["linux","lpic"],
-    "categories": ["Certificações"],
-    "authors": ["marcossouza"]
+    "categories": ["certificacoes"],
+    "authors": ["marcooliveira"]
   },
   {
     "id": "redislite-redis-sem-necessidade-de-servidor-para-python",
@@ -2526,8 +2471,8 @@
     "title": "redislite: Redis sem necessidade de servidor para Python",
     "url": "https://butecotecnologico.com.br/redislite-redis-sem-necessidade-de-servidor-para-python/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/redis.png"],
-    "tags": ["nosql","python","redis","redislite","yahoo"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["python","redis","redislite"],
+    "categories": ["noticias","banco-de-dados"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2537,8 +2482,8 @@
     "title": "Acelerando o desenvolvimento com glade",
     "url": "https://butecotecnologico.com.br/acelerando-o-desenvolvimento-com-glade/",
     "images": [],
-    "tags": ["desenvolvimento","gnome","python"],
-    "categories": ["Ferramentas"],
+    "tags": ["gnome","python","glade","gtk"],
+    "categories": ["ferramentas","desenvolvimento"],
     "authors": ["pedrojefferson"]
   },
   {
@@ -2548,8 +2493,8 @@
     "title": "Builder IDE - Nova IDE para criação de aplicações GNOME no Linux",
     "url": "https://butecotecnologico.com.br/builder-ide-nova-ide-para-criacao-de-aplicacoes-gnome-no-linux/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/splash.png"],
-    "tags": ["c","ide","linux","python"],
-    "categories": ["Desenvolvimento","Notícias"],
+    "tags": ["c","ide","linux","python","gnome"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -2560,7 +2505,7 @@
     "url": "https://butecotecnologico.com.br/instalando-o-alien-no-opensuse/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/deb-rpm-pkg.png"],
     "tags": ["deb","dpkg","linux","rpm"],
-    "categories": ["Tutoriais"],
+    "categories": ["tutoriais","distros"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2570,8 +2515,8 @@
     "title": "Conhecendo Pipe e FIFO (parte final)",
     "url": "https://butecotecnologico.com.br/conhecendo-pipe-e-fifo-parte-final/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/pipes.png"],
-    "tags": ["api","c","linux","terminal"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","linux"],
+    "categories": ["desenvolvimento"],
     "authors": ["marcossouza"]
   },
   {
@@ -2581,8 +2526,8 @@
     "title": "Google anuncia fim do Google Code",
     "url": "https://butecotecnologico.com.br/google-anuncia-fim-do-google-code/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/google-code-logo.png"],
-    "tags": ["bitbucket","github","google","google code"],
-    "categories": ["Notícias"],
+    "tags": ["git","github","bitbucket","google"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2592,8 +2537,8 @@
     "title": "Geração de MD5 utilizando C com OpenSSL e Python",
     "url": "https://butecotecnologico.com.br/geracao-de-md5-utilizando-c-com-openssl-e-python/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/Sem-t%C3%ADtulo-1.png"],
-    "tags": ["c","linux","python"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","linux","python"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -2604,7 +2549,7 @@
     "url": "https://butecotecnologico.com.br/python-3-5-0a2-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png"],
     "tags": ["python"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2614,8 +2559,8 @@
     "title": "Criando formulários com Python e PyGTK3",
     "url": "https://butecotecnologico.com.br/criando-formularios-com-python-e-pygtk3/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/pythonzz2.png"],
-    "tags": ["form","gtk3","python"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["form","gtk3","gnome","python"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["pedrojefferson"]
   },
   {
@@ -2625,8 +2570,8 @@
     "title": "Laravel 5 do começo ao fim [parte 2]",
     "url": "https://butecotecnologico.com.br/tutorial-laravel-5-parte-2/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Laravel-5.png"],
-    "tags": ["controller","framework","http","laravel","laravel 5","model","mvc","php","rotas","view"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["framework","laravel","mvc","php"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -2637,7 +2582,7 @@
     "url": "https://butecotecnologico.com.br/instalando-o-apache-no-centos-7/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/Apache-Logo.png"],
     "tags": ["apache","centos","httpd","php","wordpress"],
-    "categories": ["Tutoriais","Distros"],
+    "categories": ["tutoriais","distros"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2647,8 +2592,8 @@
     "title": "Unity 5 vem com suporte a WebGL e você pode conferir alguns exemplos",
     "url": "https://butecotecnologico.com.br/unity-5-vem-com-suporte-a-webgl-e-voce-pode-conferir-alguns-exemplos/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/Unity_3D_logo.png"],
-    "tags": ["mozilla","unity","webgl"],
-    "categories": ["Jogos"],
+    "tags": ["unity","webgl"],
+    "categories": ["jogos","noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2659,7 +2604,7 @@
     "url": "https://butecotecnologico.com.br/conheca-o-elementary-os/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/elementary.png"],
     "tags": ["elementary","linux"],
-    "categories": ["Distros"],
+    "categories": ["distros"],
     "authors": ["pedrojefferson"]
   },
   {
@@ -2669,8 +2614,8 @@
     "title": "Unreal Engine 4.7 inclui exportação para HTML5",
     "url": "https://butecotecnologico.com.br/unreal-engine-4-7-inclui-exportacao-para-html5/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Unreal_Engine_logo_and_wordmark.png"],
-    "tags": ["html5","unreal engine","webgl"],
-    "categories": ["Jogos"],
+    "tags": ["html5","unreal-engine","webgl"],
+    "categories": ["jogos","noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2681,7 +2626,7 @@
     "url": "https://butecotecnologico.com.br/pyston-0-3-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png"],
     "tags": ["jit","pyston","python"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2692,19 +2637,8 @@
     "url": "https://butecotecnologico.com.br/python-3-4-3-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png"],
     "tags": ["python"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
-  },
-  {
-    "id": "novas-mudancas-no-blog",
-    "date_published": "2015-02-26T13:49:06Z",
-    "date_modified": "2015-02-26T13:49:06Z",
-    "title": "Novas mudanças no blog",
-    "url": "https://butecotecnologico.com.br/novas-mudancas-no-blog/",
-    "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/logo-site.png"],
-    "tags": null,
-    "categories": ["Notícias"],
-    "authors": ["buteco"]
   },
   {
     "id": "conhecendo-o-modinfo",
@@ -2713,8 +2647,8 @@
     "title": "Conhecendo o modinfo",
     "url": "https://butecotecnologico.com.br/conhecendo-o-modinfo/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/LXF117.fix_.illo_penguin-e1424908179658.jpg"],
-    "tags": ["kernel","linux","terminal"],
-    "categories": ["Tutoriais"],
+    "tags": ["linux","kernel","kmod","modinfo"],
+    "categories": ["tutoriais","ferramentas"],
     "authors": ["marcossouza"]
   },
   {
@@ -2724,8 +2658,8 @@
     "title": "Instalando driver NVIDIA Bumblebee no openSUSE",
     "url": "https://butecotecnologico.com.br/instalando-driver-nvidia-bumblebee-no-opensuse/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/bumblebee_250.png"],
-    "tags": ["linux","nouveau","nvidia","openSUSE"],
-    "categories": ["Tutoriais"],
+    "tags": ["linux","nouveau","nvidia","opensuse"],
+    "categories": ["tutoriais","distros"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2735,8 +2669,8 @@
     "title": "Instalando o VMware Player no Linux",
     "url": "https://butecotecnologico.com.br/instalando-o-vmware-player-no-linux/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/VMware_Player_logo.png"],
-    "tags": ["linux","vitualização","vmplayer","vmware"],
-    "categories": ["Tutoriais"],
+    "tags": ["linux","vitualizacao","vmplayer","vmware"],
+    "categories": ["tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2746,8 +2680,8 @@
     "title": "Laravel 5 do começo ao fim [parte 1]",
     "url": "https://butecotecnologico.com.br/tutorial-laravel-5/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Laravel-5.png"],
-    "tags": ["framework","laravel","laravel 5","php"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["framework","laravel","php","mvc"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -2757,8 +2691,8 @@
     "title": "Entendendo Pipe e FIFO (parte 2)",
     "url": "https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-2/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/pipes.png"],
-    "tags": ["c","linux","termin","terminal"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","linux","pipe","fifo","ipc"],
+    "categories": ["desenvolvimento"],
     "authors": ["marcossouza"]
   },
   {
@@ -2769,7 +2703,7 @@
     "url": "https://butecotecnologico.com.br/gnupg-2-1-2-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/GnuPG-Logo.png"],
     "tags": ["criptografia","gnupg","linux","openpgp","pgp"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2779,8 +2713,8 @@
     "title": "Laravel 5 é finalmente lançado!",
     "url": "https://butecotecnologico.com.br/laravel-5-e-finalmente-lancado/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/laravel-logo1.png"],
-    "tags": ["framework","laravel","laravel 5","php"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["framework","laravel","php"],
+    "categories": ["noticias"],
     "authors": ["jaswdr"]
   },
   {
@@ -2791,7 +2725,7 @@
     "url": "https://butecotecnologico.com.br/instalando-o-mariadb-no-centos-7/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Mariadb-seal-shaded-browntext.png"],
     "tags": ["centos","linux","mariadb","mysql","sql","wordpress"],
-    "categories": ["Tutoriais","Distros"],
+    "categories": ["tutoriais","distros"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2802,7 +2736,7 @@
     "url": "https://butecotecnologico.com.br/python-3-4-3-e-3-5-ja-estao-a-caminho/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png"],
     "tags": ["python"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2812,8 +2746,8 @@
     "title": "Node.js v0.12.0 já está disponível",
     "url": "https://butecotecnologico.com.br/node-js-v0-12-0-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/NodeJS.png"],
-    "tags": ["api","javascript","nodejs","v8"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["javascript","node-js"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2823,8 +2757,8 @@
     "title": "Utilizando atexit com C e Python",
     "url": "https://butecotecnologico.com.br/utilizando-atexit-com-c-e-python/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/saida.jpg"],
-    "tags": ["c","linux","python"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","linux","python"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -2835,7 +2769,7 @@
     "url": "https://butecotecnologico.com.br/instalando-o-vlc-no-opensuse/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/vlc.png"],
     "tags": ["audio","codecs","linux","opensuse","video","vlc"],
-    "categories": ["Tutoriais"],
+    "categories": ["tutoriais","distros"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2845,8 +2779,8 @@
     "title": "glibc 2.21 já está disponível",
     "url": "https://butecotecnologico.com.br/glibc-2-21-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Linux_kernel_System_Call_Interface_and_glibc.png"],
-    "tags": ["c","glibc","linux","posix"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","glibc","linux","posix"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2856,8 +2790,8 @@
     "title": "PyPy 2.5.0 já está disponível",
     "url": "https://butecotecnologico.com.br/pypy-2-5-0-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Pypy_logo.png"],
-    "tags": ["cpython","programação","pypy","python"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["cpython","pypy","python"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2867,8 +2801,8 @@
     "title": "Kodi 14.1 já está disponível",
     "url": "https://butecotecnologico.com.br/kodi-14-1-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/kodi-helix-14.1-600x336.png"],
-    "tags": ["audio","central-multimidia","kodi","video","xbmc"],
-    "categories": ["Ferramentas"],
+    "tags": ["central-multimidia","audio","video","kodi","xbmc"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2879,7 +2813,7 @@
     "url": "https://butecotecnologico.com.br/corrigindo-problemas-de-conexao-do-zypper-no-opensuse-13-2/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/Opensuse-logo.png"],
     "tags": ["opensuse","yast","zypper"],
-    "categories": ["Tutoriais"],
+    "categories": ["tutoriais","distros"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2889,8 +2823,8 @@
     "title": "Inkscape 0.91 já está disponível",
     "url": "https://butecotecnologico.com.br/inkscape-0-91-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/inkscape_091_icon_1.png"],
-    "tags": ["inkscape","svg"],
-    "categories": ["Ferramentas"],
+    "tags": ["inkscape","svg","vetorial"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2900,8 +2834,8 @@
     "title": "Fedora 23 irá trocar o X.Org Server pelo Wayland",
     "url": "https://butecotecnologico.com.br/fedora-23-ira-trocar-o-x-org-server-pelo-wayland/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/7b5b9071afbe94c1cfff78b1ce5721e5.png"],
-    "tags": ["fedora","linux","testes"],
-    "categories": ["Notícias"],
+    "tags": ["fedora","linux","xorg","wayland"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -2912,7 +2846,7 @@
     "url": "https://butecotecnologico.com.br/introducao-a-api-do-youtube-com-jquery/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/youtube_logo.png"],
     "tags": ["api","jquery","youtube"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -2922,8 +2856,8 @@
     "title": "Entendendo Pipe e FIFO (parte 1)",
     "url": "https://butecotecnologico.com.br/entendendo-pipe-e-fifo-parte-1/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/pipes.png"],
-    "tags": ["c","linux","terminal"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","linux","pipe","fifo","ipc"],
+    "categories": ["desenvolvimento"],
     "authors": ["marcossouza"]
   },
   {
@@ -2933,8 +2867,8 @@
     "title": "Crie seu próprio console Infanto por menos de 300 reais",
     "url": "https://butecotecnologico.com.br/crie-seu-proprio-console-infanto-por-menos-de-300-reais/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/infanto.jpg"],
-    "tags": ["console","games","infanto","lakka"],
-    "categories": ["Jogos"],
+    "tags": ["console","lakka","linux","openelec","retroarch"],
+    "categories": ["embarcados","jogos"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2944,8 +2878,8 @@
     "title": "MediaFire libera toolkit para desenvolvedores Linux",
     "url": "https://butecotecnologico.com.br/mediafire-libera-toolkit-para-desenvolvedores-linux/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/mediafiresquare.png"],
-    "tags": ["cloud-storage","linux","mediafire"],
-    "categories": ["Desenvolvimento","Notícias"],
+    "tags": ["cloud-storage","linux","fuse"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2956,7 +2890,7 @@
     "url": "https://butecotecnologico.com.br/mozilla-libera-suporte-ao-webvr-no-firefox-nightly/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/mozvr.jpg"],
     "tags": ["firefox","oculus-rift","webvr"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2967,7 +2901,7 @@
     "url": "https://butecotecnologico.com.br/vazam-detalhes-do-snapdrangon-820/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/snapdragon-chip-stone.png"],
     "tags": ["qualcomm","snapdragon"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -2978,7 +2912,7 @@
     "url": "https://butecotecnologico.com.br/carregamento-de-hardwaredriver-assincrono-no-kernel-linux/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/Tux.png"],
     "tags": ["kernel","linux"],
-    "categories": ["Hardware","DIY","Notícias"],
+    "categories": ["noticias"],
     "authors": ["marcossouza"]
   },
   {
@@ -2988,8 +2922,8 @@
     "title": "Criando um servidor de downloads de torrents com uTorrent Server",
     "url": "https://butecotecnologico.com.br/criando-um-servidor-de-downloads-de-torrents-com-utorrent-server/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/logo_utorrent-150x150.png"],
-    "tags": ["download","servidor","utorrent"],
-    "categories": ["Ferramentas"],
+    "tags": ["torrent","linux"],
+    "categories": ["ferramentas","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -2999,8 +2933,8 @@
     "title": "QEMU 2.3 trará suporte a CPU Ivy Bridge",
     "url": "https://butecotecnologico.com.br/qemu-2-3-trara-suporte-a-cpu-ivy-bridge/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/Qemu-logo.png"],
-    "tags": ["kvm","qemu","virtualização"],
-    "categories": ["Notícias"],
+    "tags": ["kvm","qemu","virtualizacao"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3010,8 +2944,8 @@
     "title": "Cupom de desconto para livros da Novatec",
     "url": "https://butecotecnologico.com.br/cupom-de-desconto-para-livros-da-novatec/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/logo_novatec.jpg"],
-    "tags": ["cupom","novatec"],
-    "categories": ["Notícias","Livros"],
+    "tags": ["cupom","novatec","livros"],
+    "categories": ["noticias"],
     "authors": ["buteco"]
   },
   {
@@ -3022,7 +2956,7 @@
     "url": "https://butecotecnologico.com.br/formatando-e-adicionando-anexos-a-e-mails-no-python/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png"],
     "tags": ["email","python","smtplib","smtp","mime"],
-    "categories": ["Desenvolvimento","Tutoriais"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3032,8 +2966,8 @@
     "title": "Hands on: Sockets em Python",
     "url": "https://butecotecnologico.com.br/hands-on-sockets-em-python/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png"],
-    "tags": ["linux","python","script","sockets"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["linux","python","sockets"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -3043,8 +2977,8 @@
     "title": "Controlando um LED pelo Arduino",
     "url": "https://butecotecnologico.com.br/controlando-um-led-pelo-arduino/",
     "images": [],
-    "tags": ["arduino","led"],
-    "categories": ["Desenvolvimento","Hardware","DIY"],
+    "tags": ["arduino","led","diy"],
+    "categories": ["tutoriais","embarcados"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3055,7 +2989,7 @@
     "url": "https://butecotecnologico.com.br/lua-5-3-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/lua.png"],
     "tags": ["lua"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3065,8 +2999,8 @@
     "title": "Rust 1.0 Alpha já está disponível",
     "url": "https://butecotecnologico.com.br/rust-1-0-alpha-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/10/rust-logo-256x256-blk.png"],
-    "tags": ["linguagem-programação","mozilla","rust"],
-    "categories": ["Desenvolvimento","Notícias"],
+    "tags": ["rust"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3076,8 +3010,8 @@
     "title": "cURL 7.40 disponível e agora com suporte ao protocolo SMB/CIFS",
     "url": "https://butecotecnologico.com.br/curl-7-40-disponivel-e-agora-com-suporte-ao-protocolo-smbcifs/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/ds-libcurl.jpg"],
-    "tags": ["curl","libcurl"],
-    "categories": ["Desenvolvimento","Notícias"],
+    "tags": ["curl","libcurl","linux"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3088,7 +3022,7 @@
     "url": "https://butecotecnologico.com.br/ganhe-uma-second-shot-em-seu-exame-microsoft-mcp/",
     "images": [],
     "tags": ["mcp","mcsa","microsoft"],
-    "categories": ["Notícias","Certificações"],
+    "categories": ["noticias","certificacoes"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3098,8 +3032,8 @@
     "title": "Conectando um display de 7 segmentos no Arduino",
     "url": "https://butecotecnologico.com.br/conectando-um-display-de-7-segmentos-no-arduino/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2015/01/7-seg.jpg"],
-    "tags": ["arduino","display"],
-    "categories": ["Desenvolvimento","Hardware","DIY"],
+    "tags": ["arduino","display","diy"],
+    "categories": ["tutoriais","embarcados"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3110,7 +3044,7 @@
     "url": "https://butecotecnologico.com.br/feliz-2015/",
     "images": [],
     "tags": null,
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["camilastadnik"]
   },
   {
@@ -3120,8 +3054,8 @@
     "title": "Conhecendo o virt-manager",
     "url": "https://butecotecnologico.com.br/conhecendo-o-virt-manager/",
     "images": [],
-    "tags": ["linux","virtualização"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["linux","centos","virtualizacao","virt-manager"],
+    "categories": ["desenvolvimento"],
     "authors": ["marcossouza"]
   },
   {
@@ -3131,8 +3065,8 @@
     "title": "Enviando emails com o Python",
     "url": "https://butecotecnologico.com.br/enviando-emails-com-o-python/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png"],
-    "tags": ["email","python","smtplib","smtp"],
-    "categories": ["Desenvolvimento","Tutoriais"],
+    "tags": ["email","python","smtplib","smtp","gmail"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3142,8 +3076,8 @@
     "title": "Instalando ArchLinux + XFCE + LXDM no Banana Pi",
     "url": "https://butecotecnologico.com.br/instalando-archlinux-xfce-lxdm-no-banana-pi/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/ArchlinuxLogo2.png"],
-    "tags": ["archlinux","banana-pi","lxdm","xfce"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["archlinux","banana-pi","lxdm","xfce","pacman"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3154,7 +3088,7 @@
     "url": "https://butecotecnologico.com.br/nos-somos-linux/",
     "images": [],
     "tags": ["linux"],
-    "categories": ["Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3164,8 +3098,8 @@
     "title": "Enviando SMS pelo PagueVeloz",
     "url": "https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/",
     "images": [],
-    "tags": ["sms"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["sms","csharp","python","ruby","java","cpp","node-js","servicos"],
+    "categories": ["desenvolvimento"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3175,8 +3109,8 @@
     "title": "Fazendo a internet trabalhar para você com IFTTT",
     "url": "https://butecotecnologico.com.br/fazendo-a-internet-trabalhar-para-voce-com-ifttt/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/ifttt-banner.jpg"],
-    "tags": ["ifttt"],
-    "categories": ["Ferramentas","Tutoriais"],
+    "tags": ["ifttt","automacao","servicos"],
+    "categories": ["ferramentas","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -3187,7 +3121,7 @@
     "url": "https://butecotecnologico.com.br/rust-1-0-sera-lancado-em-2015/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/10/rust-logo-256x256-blk.png"],
     "tags": ["rust"],
-    "categories": ["Desenvolvimento","Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3198,7 +3132,7 @@
     "url": "https://butecotecnologico.com.br/python-2-7-9-ja-esta-disponivel/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png"],
     "tags": ["python"],
-    "categories": ["Desenvolvimento","Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3208,8 +3142,8 @@
     "title": "Primeiros passos com o Banana Pi",
     "url": "https://butecotecnologico.com.br/primeiros-passos-com-o-banana-pi/",
     "images": [],
-    "tags": ["banana-pi"],
-    "categories": ["Desenvolvimento","Hardware","DIY"],
+    "tags": ["banana-pi","linux","img","diy"],
+    "categories": ["embarcados","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3219,8 +3153,8 @@
     "title": "Rodando Linux em uma Banana",
     "url": "https://butecotecnologico.com.br/rodando-linux-em-uma-banana/",
     "images": [],
-    "tags": ["banana-pi"],
-    "categories": ["Desenvolvimento","Hardware","DIY"],
+    "tags": ["banana-pi","linux","sbc","raspbian","diy"],
+    "categories": ["embarcados","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3230,8 +3164,8 @@
     "title": "Crie seu próprio Instagram com PHP",
     "url": "https://butecotecnologico.com.br/crie-seu-proprio-instagram-com-php/",
     "images": [],
-    "tags": ["imagem","php","php_gd2"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["imagem","instagram","php","php-gd2"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -3242,7 +3176,7 @@
     "url": "https://butecotecnologico.com.br/git-2-2-esta-chegando-com-varias-mudancas/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/11/Git-Icon-1788C.png"],
     "tags": ["git"],
-    "categories": ["Desenvolvimento","Ferramentas","Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3253,7 +3187,7 @@
     "url": "https://butecotecnologico.com.br/sorteio-de-um-convite-para-o-inbox/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/11/Inbox-by-Gmail.jpg"],
     "tags": ["email","gmail","inbox"],
-    "categories": ["Sorteios"],
+    "categories": ["sorteios"],
     "authors": ["buteco"]
   },
   {
@@ -3263,8 +3197,8 @@
     "title": "Apresentando o Proxygen - Framework HTTP em C++ do Facebook",
     "url": "https://butecotecnologico.com.br/apresentando-o-proxygen-framework-http-em-c-do-facebook/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/11/ProxygenLogo650.jpg"],
-    "tags": ["c++","facebook","http"],
-    "categories": ["Desenvolvimento","Ferramentas"],
+    "tags": ["cpp","facebook","http","proxygen"],
+    "categories": ["desenvolvimento","ferramentas"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3275,7 +3209,7 @@
     "url": "https://butecotecnologico.com.br/libreoffice-e-os-compiladores/",
     "images": [],
     "tags": ["compiladores","libreoffice","linux"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["desenvolvimento"],
     "authors": ["marcossouza"]
   },
   {
@@ -3286,7 +3220,7 @@
     "url": "https://butecotecnologico.com.br/controle-de-dependencia-em-php-usando-o-composer/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/10/logo-composer-transparent.png"],
     "tags": ["composer","php"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["jaswdr"]
   },
   {
@@ -3296,8 +3230,8 @@
     "title": "Utilizando o OpenShift para hospedar uma aplicação Flask/Python",
     "url": "https://butecotecnologico.com.br/utilizando-o-openshift-para-hospedar-uma-aplicacao-flaskpython/",
     "images": [],
-    "tags": ["flask","openshift","python","rhc"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["flask","openshift","kubernetes","python"],
+    "categories": ["cloud-computing","tutoriais"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3307,8 +3241,8 @@
     "title": "Conheça o que está por vir no openSUSE 13.2",
     "url": "https://butecotecnologico.com.br/conheca-o-que-esta-por-vir-no-opensuse-13-2/",
     "images": [],
-    "tags": ["linux","opensuse"],
-    "categories": ["Notícias"],
+    "tags": ["linux","opensuse","gnome"],
+    "categories": ["noticias","distros"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3318,20 +3252,9 @@
     "title": "Usando o framework Laravel com Bootstrap",
     "url": "https://butecotecnologico.com.br/usando-o-framework-laravel-com-bootstrap/",
     "images": [],
-    "tags": ["laravel","php"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["laravel","php","bootstrap"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["jaswdr"]
-  },
-  {
-    "id": "o-buteco-esta-de-cara-nova",
-    "date_published": "2014-10-22T12:40:21Z",
-    "date_modified": "2014-10-22T12:40:21Z",
-    "title": "O Buteco está de cara nova",
-    "url": "https://butecotecnologico.com.br/o-buteco-esta-de-cara-nova/",
-    "images": [],
-    "tags": null,
-    "categories": ["Notícias"],
-    "authors": ["buteco"]
   },
   {
     "id": "internacionalizando-um-site-de-forma-simples",
@@ -3340,8 +3263,8 @@
     "title": "Internacionalizando um site de forma simples",
     "url": "https://butecotecnologico.com.br/internacionalizando-um-site-de-forma-simples/",
     "images": [],
-    "tags": ["javascript","jquery","localization"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["javascript","jquery","localization","i18n"],
+    "categories": ["desenvolvimento"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3351,8 +3274,8 @@
     "title": "Pexpect: Integração entre Python e expect para automatização de tarefas",
     "url": "https://butecotecnologico.com.br/pexpect-integracao-entre-python-e-expect-para-automatizacao-de-tarefas/",
     "images": [],
-    "tags": ["pexpect","python"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["pexpect","python","tcl","tcl-expect","automacao"],
+    "categories": ["desenvolvimento"],
     "authors": ["marcossouza"]
   },
   {
@@ -3363,7 +3286,7 @@
     "url": "https://butecotecnologico.com.br/opensuse-13-2-chegou-a-hora-de-testar/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/10/i-want-you-1-238x300.jpg"],
     "tags": ["linux","opensuse","testes"],
-    "categories": ["Notícias"],
+    "categories": ["noticias","distros"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3374,7 +3297,7 @@
     "url": "https://butecotecnologico.com.br/gerador-de-sistemas-em-php-usando-apenas-sql/",
     "images": [],
     "tags": ["cakephp","codeigniter","laravel","php"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["desenvolvimento"],
     "authors": ["jaswdr"]
   },
   {
@@ -3385,7 +3308,7 @@
     "url": "https://butecotecnologico.com.br/rust-0-12-0-e-lancado/",
     "images": ["https://butecotecnologico.com.br/images/wp-content/uploads/2014/10/rust-logo-256x256-blk.png"],
     "tags": ["rust"],
-    "categories": ["Desenvolvimento","Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3395,8 +3318,8 @@
     "title": "Hands on: autotools",
     "url": "https://butecotecnologico.com.br/hands-on-autotools/",
     "images": [],
-    "tags": ["autotools","linux","terminal"],
-    "categories": ["Desenvolvimento","Ferramentas"],
+    "tags": ["autotools","make","linux","cpp"],
+    "categories": ["desenvolvimento","ferramentas"],
     "authors": ["marcossouza"]
   },
   {
@@ -3407,19 +3330,8 @@
     "url": "https://butecotecnologico.com.br/cupom-de-desconto-para-certificacao-linux/",
     "images": [],
     "tags": ["linux","cupom","LFCS","LFCE"],
-    "categories": ["Notícias","Certificações"],
+    "categories": ["noticias","certificacoes"],
     "authors": ["alexandrevicenzi"]
-  },
-  {
-    "id": "o-buteco-open-souce-mudou",
-    "date_published": "2014-10-08T13:04:34Z",
-    "date_modified": "2014-10-08T13:04:34Z",
-    "title": "O Buteco Open Source mudou",
-    "url": "https://butecotecnologico.com.br/o-buteco-open-souce-mudou/",
-    "images": [],
-    "tags": null,
-    "categories": ["Notícias"],
-    "authors": ["buteco"]
   },
   {
     "id": "tclexpect-automatizacao-de-comandos-interativos-no-linux",
@@ -3428,8 +3340,8 @@
     "title": "Tcl/Expect: Automatização de comandos interativos no Linux",
     "url": "https://butecotecnologico.com.br/tclexpect-automatizacao-de-comandos-interativos-no-linux/",
     "images": [],
-    "tags": ["expect","linux","script","tcl","terminal"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["linux","tcl","tcl-expect","ruby","automacao"],
+    "categories": ["desenvolvimento","tutoriais"],
     "authors": ["marcossouza"]
   },
   {
@@ -3439,8 +3351,8 @@
     "title": "pycompat: Verificando a versão do Python e do sistema de uma forma simples",
     "url": "https://butecotecnologico.com.br/pycompat-verificando-a-versao-do-python-e-do-sistema-de-uma-forma-simples/",
     "images": [],
-    "tags": ["pycompat","python"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["python"],
+    "categories": ["desenvolvimento"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3451,7 +3363,7 @@
     "url": "https://butecotecnologico.com.br/apigility-web-service-com-zend-framework/",
     "images": [],
     "tags": ["apigility","php","zend"],
-    "categories": ["Ferramentas"],
+    "categories": ["ferramentas"],
     "authors": ["jaswdr"]
   },
   {
@@ -3461,8 +3373,8 @@
     "title": "Hands On: Shared Libraries no Linux",
     "url": "https://butecotecnologico.com.br/hands-on-shared-libraries-no-linux/",
     "images": [],
-    "tags": ["c","linux","shared-libraries"],
-    "categories": ["Desenvolvimento"],
+    "tags": ["c","cpp","linux","shared-libraries"],
+    "categories": ["desenvolvimento"],
     "authors": ["marcossouza"]
   },
   {
@@ -3471,20 +3383,20 @@
     "date_modified": "2014-09-24T23:48:00Z",
     "title": "Introdução ao ALSA e sua API em C e Python",
     "url": "https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/",
-    "images": [],
-    "tags": ["alsa","c","python"],
-    "categories": ["Desenvolvimento"],
-    "authors": ["alexandrevicenzi"]
+    "images": ["https://butecotecnologico.com.br/images/posts/alsa-mixer.png"],
+    "tags": ["alsa","c","cpp","python","linux"],
+    "categories": ["desenvolvimento"],
+    "authors": ["alexandrevicenzi","marcossouza"]
   },
   {
     "id": "gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket",
     "date_published": "2014-09-24T15:17:18Z",
     "date_modified": "2014-09-24T15:17:18Z",
-    "title": "Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket",
+    "title": "Crie Gists a partir de repositórios do GitHub e Bitbucket",
     "url": "https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/",
     "images": [],
-    "tags": ["gist","gistfy","github"],
-    "categories": ["Ferramentas"],
+    "tags": ["gist","gistfy","github","node-js"],
+    "categories": ["ferramentas"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3495,7 +3407,7 @@
     "url": "https://butecotecnologico.com.br/informacoes-de-localizacao-pelo-cep-com-php/",
     "images": [],
     "tags": ["cep","php"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["desenvolvimento"],
     "authors": ["jaswdr"]
   },
   {
@@ -3506,19 +3418,8 @@
     "url": "https://butecotecnologico.com.br/laravel-uma-verdadeira-caixa-de-ferramentas-para-php/",
     "images": [],
     "tags": ["laravel","php"],
-    "categories": ["Desenvolvimento"],
+    "categories": ["desenvolvimento"],
     "authors": ["jaswdr"]
-  },
-  {
-    "id": "stack-overflow-introduz-snippets-javascript-css-e-html-executaveis",
-    "date_published": "2014-09-17T13:03:06Z",
-    "date_modified": "2014-09-17T13:03:06Z",
-    "title": "Stack Overflow Introduz Snippets JavaScript, CSS, e HTML Executáveis.",
-    "url": "https://butecotecnologico.com.br/stack-overflow-introduz-snippets-javascript-css-e-html-executaveis/",
-    "images": [],
-    "tags": ["stackoverflow"],
-    "categories": ["Desenvolvimento"],
-    "authors": ["alexandrevicenzi"]
   },
   {
     "id": "qemukvm-habilitar-serial-console-no-centosrhel-para-acessa-lo-pelo-virsh-console",
@@ -3527,19 +3428,19 @@
     "title": "QEMU/KVM: Habilitar serial console no CentOS/RHEL para acessá-lo pelo virsh console",
     "url": "https://butecotecnologico.com.br/qemukvm-habilitar-serial-console-no-centosrhel-para-acessa-lo-pelo-virsh-console/",
     "images": [],
-    "tags": ["centos","kvm","linux","qemu"],
-    "categories": ["Desenvolvimento","Ferramentas"],
+    "tags": ["centos","kvm","qemu","virtualizacao","linux"],
+    "categories": ["desenvolvimento","ferramentas"],
     "authors": ["marcossouza"]
   },
   {
-    "id": "40-ebooks-gratis",
+    "id": "syncfusion-ebooks-gratuitos",
     "date_published": "2014-09-16T13:25:00Z",
     "date_modified": "2014-09-16T13:25:00Z",
-    "title": "40+ eBooks Gratuitos",
-    "url": "https://butecotecnologico.com.br/40-ebooks-gratis/",
-    "images": [],
-    "tags": ["ebook"],
-    "categories": ["Desenvolvimento","Notícias"],
+    "title": "170 ebooks gratuitos",
+    "url": "https://butecotecnologico.com.br/syncfusion-ebooks-gratuitos/",
+    "images": ["https://butecotecnologico.com.br/images/posts/syncfusion-ebooks.png"],
+    "tags": ["ebook","git","docker","kubernetes","go","python","react-js"],
+    "categories": ["desenvolvimento","noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3550,7 +3451,7 @@
     "url": "https://butecotecnologico.com.br/pyston-0-2-ja-esta-disponivel/",
     "images": [],
     "tags": ["pyston","python"],
-    "categories": ["Desenvolvimento","Notícias"],
+    "categories": ["noticias"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3561,18 +3462,18 @@
     "url": "https://butecotecnologico.com.br/recortar-arquivo-de-audio-no-linux-pela-linha-de-comando/",
     "images": [],
     "tags": ["linux","terminal","ffmpeg"],
-    "categories": ["Tutoriais"],
+    "categories": ["tutoriais","ferramentas"],
     "authors": ["marcossouza"]
   },
   {
     "id": "capturando-imagem-da-webcam-com-o-pygame",
     "date_published": "2014-09-09T00:27:57Z",
     "date_modified": "2014-09-09T00:27:57Z",
-    "title": "Capturando Imagem da Webcam com o PyGame",
+    "title": "Capturando imagem da webcam com o PyGame",
     "url": "https://butecotecnologico.com.br/capturando-imagem-da-webcam-com-o-pygame/",
-    "images": [],
+    "images": ["https://butecotecnologico.com.br/images/posts/pygame-logo.png"],
     "tags": ["camera","pygame","python","webcam"],
-    "categories": ["Desenvolvimento","Jogos"],
+    "categories": ["desenvolvimento","jogos"],
     "authors": ["alexandrevicenzi"]
   },
   {
@@ -3583,7 +3484,7 @@
     "url": "https://butecotecnologico.com.br/problema-ao-atualizar-o-jogo-flare-no-fedora-20/",
     "images": [],
     "tags": ["fedora","flare","linux"],
-    "categories": ["Jogos"],
+    "categories": ["jogos","distros"],
     "authors": ["marcossouza"]
   }
 ]

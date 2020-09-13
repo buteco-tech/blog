@@ -15,16 +15,16 @@
 <meta itemprop="description" content="O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio.">
 <meta itemprop="datePublished" content="2014-09-24T23:48:00+00:00" />
 <meta itemprop="dateModified" content="2014-09-24T23:48:00+00:00" />
-<meta itemprop="wordCount" content="337">
-<meta itemprop="image" content="https://butecotecnologico.com.br/logos/capybara_400_bg.png"/>
+<meta itemprop="wordCount" content="690">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/alsa-mixer.png">
 
 
 
-<meta itemprop="keywords" content="alsa,c,python," />
+<meta itemprop="keywords" content="alsa,c,cpp,python,linux," />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://butecotecnologico.com.br/logos/capybara_400_bg.png"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/posts/alsa-mixer.png"/>
 
 <meta name="twitter:title" content="Introdução ao ALSA e sua API em C e Python"/>
 <meta name="twitter:description" content="O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio."/>
@@ -34,7 +34,7 @@
 <meta property="og:description" content="O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/" />
-<meta property="og:image" content="https://butecotecnologico.com.br/logos/capybara_400_bg.png"/>
+<meta property="og:image" content="https://butecotecnologico.com.br/images/posts/alsa-mixer.png" />
 <meta property="article:published_time" content="2014-09-24T23:48:00+00:00" />
 <meta property="article:modified_time" content="2014-09-24T23:48:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
@@ -42,7 +42,7 @@
 
   
   
-  <link rel="stylesheet" href="/sass/iara.min.6546ad337831f834de34f43a27ca1ea3b812a14f210f7556eff0db6ef71dbadf.css">
+  <link rel="stylesheet" href="/sass/iara.min.ec6a6d47e30bb1ea2f411506e8d933b4d3046198313d0832904eee33d737d7f1.css">
 
 
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -151,16 +151,28 @@
     <h1>Introdução ao ALSA e sua API em C e Python</h1>
     
     <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <div class="d-inline-flex">
     <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
        class="d-inline-block avatar mt-1 ml-0">
       <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
            alt="Alexandre Vicenzi"
            title="Alexandre Vicenzi">
     </a>
-    </div><div class="d-inline-block authors">
+    
+    <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+       class="d-inline-block avatar mt-1 ml-n2">
+      <img src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+           alt="Marcos Paulo de Souza"
+           title="Marcos Paulo de Souza">
+    </a>
+    </div>
+  </div><div class="d-inline-block authors">
     <div class="text-muted"><span>
         <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
-           class="author">Alexandre Vicenzi</a>
+           class="author">Alexandre Vicenzi</a> e 
+      
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
+           class="author">Marcos Paulo de Souza</a>
       </span>
     <span>em</span>
     <span>
@@ -168,74 +180,296 @@
         </span>
     </div>
     <div class="text-muted"><time datetime="2014-09-24T23:48:00Z">24/09/2014</time>
-      &middot; 2 minutos de leitura
+      &middot; 4 minutos de leitura
     </div>
   </div>
   <div class="d-none d-md-inline-block ml-auto">
-    <div class="share-buttons text-center">
-  <a class="twitter-share-button"
-     href="#"
-     title="Share on Twitter"
-     data-url="https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/"
-     data-text="Introdução ao ALSA e sua API em C e Python"><i class="fab fa-twitter"></i></a>
+    <div class="d-inline-flex share-buttons text-center">
+      <a class="twitter-share-button"
+         href="#"
+         title="Share on Twitter"
+         data-url="https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/"
+         data-text="Introdução ao ALSA e sua API em C e Python"><i class="fab fa-twitter"></i></a>
 
-  <a class="linkedin-share-button"
-     href="#"
-     title="Share on LinkedIn"
-     data-url="https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/"
-     data-text="Introdução ao ALSA e sua API em C e Python"><i class="fab fa-linkedin-in"></i></a>
+      <a class="linkedin-share-button"
+         href="#"
+         title="Share on LinkedIn"
+         data-url="https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/"
+         data-text="Introdução ao ALSA e sua API em C e Python"><i class="fab fa-linkedin-in"></i></a>
 
-  <a class="facebook-share-button"
-     href="#"
-     title="Share on Facebook"
-     data-url="https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/"
-     data-text="Introdução ao ALSA e sua API em C e Python"><i class="fab fa-facebook"></i></a>
+      <a class="facebook-share-button"
+         href="#"
+         title="Share on Facebook"
+         data-url="https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/"
+         data-text="Introdução ao ALSA e sua API em C e Python"><i class="fab fa-facebook"></i></a>
 
-  <a class="pinterest-share-button"
-     href="#"
-     title="Share on Pinterest"
-     data-url="https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/"
-     data-text="Introdução ao ALSA e sua API em C e Python"><i class="fab fa-pinterest"></i></a>
-</div>
-
+      <a class="pinterest-share-button"
+         href="#"
+         title="Share on Pinterest"
+         data-url="https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/"
+         data-text="Introdução ao ALSA e sua API em C e Python"><i class="fab fa-pinterest"></i></a>
+    </div>
   </div>
 </div>
 
-  </header><div class="alert alert-warning" role="alert">
-  <h4 class="alert-heading">Atenção</h4>
-  <p>Este artigo foi migrado do Wordpress e pode conter erros de formatação.</p>
-  <p>Caso encontre algum problema deixe um comentário que iremos resolver o mais breve possível.</p>
-</div>
+  </header>
 
   <article class="mt-3 mb-4">
-  <p>O <em>ALSA</em> (Advanced Linux Sound Architeture) é um framework para <em>kernel space</em> e <em>user space</em> para manipular dispositivos de áudio. No <em>kernel space</em> o <em>ALSA</em> é a API padrão para a criação dos <em>devices drivers </em>de dispositivos de áudio, e no <em>user space</em> o <em>ALSA</em> existe como uma API para permitir a configuração dos dispositivos de áudio que tenham seu <em>device driver</em> implementado com o framework <em>ALSA</em>. Um exemplo de um programa que utilize a API <em>user space</em> do <em>ALSA</em> é o <em>alsamixer</em>.</p>
-<p>Abaixo uma imagem do <em>alsamixer</em> executando em uma máquina desktop:</p>
-<p><img src="//i.imgur.com/3Lxu5KC.png" alt="mixer" /></p>
-<p>Nesta tela podemos ver algumas configurações da placa de áudio e podemos interagir com esta. Para uma descrição mais completa da API, e do porque ela foi criada <a href="https://en.wikipedia.org/wiki/Advanced_Linux_Sound_Architecture">clique aqui</a>.</p>
-<p>A documentação da API pode ser encontrada <a href="http://www.alsa-project.org/alsa-doc/alsa-lib/">aqui</a>. Para os controles básicos de áudio, tal como nível de volume e configuração de microfone, é utilizada a <a href="http://www.alsa-project.org/alsa-doc/alsa-lib/group___simple_mixer.html">API mixer-controls</a> do <em>ALSA</em>.</p>
-<p>Para ilustrar o funcionamento básico do <em>ALSA</em> seguem dois exemplos de códigos que permitem alterar o volume de de áudio de uma máquina com Linux. Estes código podem ser baixados <a href="//github.com/ButecoOpenSource/alsa" target="_blank">no nosso github</a>. Um dos exemplos será na linguagem C e o outro será em Python. O primeiro exemplo é na linguagem C, que basicamente diz quais os valores limite do volume da placa de áudio e também permite ao usuário trocar o nível do volume.</p>
-<script type='text/javascript' src='//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/alsa/volume.c'></script>
-<p>Para compilar este programar basta executar:</p>
-<pre><code class="shell">
-g++ volume.c -o volume -lasound
-</code></pre>
-<p>Onde o arquivo salvo tem o nome volume.c.</p>
+  <p>O <a href="https://www.alsa-project.org/wiki/Main_Page"
+   
+   target="_blank">ALSA</a> (Advanced Linux Sound Architeture) é um framework para <em>kernel space</em> e <em>user space</em> para manipular dispositivos de áudio.
+No <em>kernel space</em> o <a href="https://www.alsa-project.org/wiki/Main_Page"
+   
+   target="_blank">ALSA</a> é a API padrão para a criação dos <em>devices drivers</em> de dispositivos de áudio, e no <em>user space</em> o <a href="https://www.alsa-project.org/wiki/Main_Page"
+   
+   target="_blank">ALSA</a> existe como uma API para permitir a configuração dos dispositivos de áudio que tenham seu <em>device driver</em> implementado com o framework <a href="https://www.alsa-project.org/wiki/Main_Page"
+   
+   target="_blank">ALSA</a>.
+Um exemplo de um programa que utilize a API <em>user space</em> do <a href="https://www.alsa-project.org/wiki/Main_Page"
+   
+   target="_blank">ALSA</a> é o <em>alsamixer</em>.</p>
+<p>Abaixo uma imagem do <code>alsamixer</code> executando em uma máquina desktop:</p>
+<figure>
+    <img src="/images/posts/alsa-mixer.png"
+         alt="Alsa Mixed"/> 
+</figure>
+
+<p>Na imagem podemos ver algumas configurações da placa de áudio e podemos interagir com esta.</p>
+<p>Para os controles básicos de áudio, tal como nível de volume e configuração de microfone, é necessário utilizar a <a href="https://www.alsa-project.org/alsa-doc/alsa-lib/group___simple_mixer.html"
+   
+   target="_blank">API mixer-controls</a>, a documentação completapode ser encontrada <a href="https://www.alsa-project.org/alsa-doc/alsa-lib/"
+   
+   target="_blank">aqui</a>.</p>
+<p>Para ilustrar o funcionamento básico do <a href="https://www.alsa-project.org/wiki/Main_Page"
+   
+   target="_blank">ALSA</a> seguem dois exemplos de códigos que permitem alterar o volume de de áudio de uma máquina com Linux.
+Um dos exemplos será na linguagem C e o outro será em Python.
+O primeiro exemplo é na linguagem C, que basicamente diz quais os valores limite do volume da placa de áudio e também permite ao usuário trocar o nível do volume.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="cp">#include</span> <span class="cpf">&lt;alsa/asoundlib.h&gt;</span><span class="cp">
+</span><span class="cp"></span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+    <span class="kt">long</span> <span class="n">vol_min</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">vol_max</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">vol</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">snd_mixer_t</span> <span class="o">*</span><span class="n">handle</span><span class="p">;</span>
+    <span class="n">snd_mixer_elem_t</span> <span class="o">*</span><span class="n">elem</span><span class="p">;</span>
+    <span class="n">snd_mixer_selem_id_t</span> <span class="o">*</span><span class="n">sid</span><span class="p">;</span>
+    <span class="n">snd_mixer_selem_channel_id_t</span> <span class="n">channel</span> <span class="o">=</span> <span class="n">SND_MIXER_SCHN_FRONT_LEFT</span><span class="p">;</span>
+
+    <span class="n">snd_mixer_open</span><span class="p">(</span><span class="o">&amp;</span><span class="n">handle</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">snd_mixer_attach</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="s">&#34;default&#34;</span><span class="p">);</span>
+    <span class="n">snd_mixer_selem_register</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+    <span class="n">snd_mixer_load</span><span class="p">(</span><span class="n">handle</span><span class="p">);</span>
+
+    <span class="n">snd_mixer_selem_id_alloca</span><span class="p">(</span><span class="o">&amp;</span><span class="n">sid</span><span class="p">);</span>
+    <span class="n">snd_mixer_selem_id_set_index</span><span class="p">(</span><span class="n">sid</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="c1">// pegar volume minimo e máximo
+</span><span class="c1"></span>    <span class="c1">// Master aqui se refere ao volume de saida
+</span><span class="c1"></span>    <span class="c1">// geralmente esse é o nome da configuração de volume da máquina
+</span><span class="c1"></span>    <span class="n">snd_mixer_selem_id_set_name</span><span class="p">(</span><span class="n">sid</span><span class="p">,</span> <span class="s">&#34;Master&#34;</span><span class="p">);</span>
+    <span class="n">elem</span> <span class="o">=</span> <span class="n">snd_mixer_find_selem</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">sid</span><span class="p">);</span>
+
+    <span class="n">snd_mixer_selem_get_playback_volume_range</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vol_min</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vol_max</span><span class="p">);</span>
+
+    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Volume mínimo: %ld e máximo: %ld</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">vol_min</span><span class="p">,</span> <span class="n">vol_max</span><span class="p">);</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">&#34;Voce precisa passar um valor %ld e %ld como volume</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">vol_min</span><span class="p">,</span> <span class="n">vol_max</span><span class="p">);</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">snd_mixer_selem_set_playback_volume_all</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="n">atol</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]));</span>
+
+    <span class="n">snd_mixer_selem_get_playback_volume</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="n">channel</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vol</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Volume atual: %ld</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">vol</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Para compilar este programar basta executar:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">g++ volume.c -o volume -lasound
+</code></pre></td></tr></table>
+</div>
+</div><p>Onde o arquivo salvo tem o nome <code>volume.c</code>.</p>
 <p>Executando em minha máquina, tenho a seguinte saída:</p>
-<pre><code class="shell">
-[marcos@localhost ~]$ ./volume 40000
-Volume mínimo: 0 e máximo: 65536
-Volume atual: 40000
-</code></pre>
-<p>Abaixo se encontra um exemplo da utilização do <em>ALSA</em> em Python.</p>
-<script type='text/javascript' src='//gistfy-app.herokuapp.com/github/ButecoOpenSource/exemplos/alsa/alsa.py'></script>
-<p>Neste exemplo em python, pode-se ver alguns usos do framework <em>ALSA</em>, como pegar e setar configurações de placas e níveis de áudio.</p>
-<p>Se você tiver algum problema na execução desses códigos, ou tem alguma dúvida, poste nos comentários!</p>
-<p>Não se esqueça se de cadastrar no nosso feed. Até mais!</p>
-<p>Autores: Marcos Paulo de Souza e Alexandre Vicenzi</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>marcos@localhost ~<span class="o">]</span>$ ./volume <span class="m">40000</span>
+Volume mínimo: <span class="m">0</span> e máximo: <span class="m">65536</span>
+Volume atual: <span class="m">40000</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Abaixo temos um exemplo da utilização do <a href="https://www.alsa-project.org/wiki/Main_Page"
+   
+   target="_blank">ALSA</a> em Python.
+Será necessário instalar a biblioteca <a href="http://larsimmisch.github.io/pyalsaaudio/"
+   
+   target="_blank">pyalsaaudio</a>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">alsaaudio</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;ALSA Audio&#34;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;----------&#34;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Placas disponíveis:&#34;</span><span class="p">)</span>
+
+<span class="c1"># Lista as placas disponíveis</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">cards</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Controles disponíveis:&#34;</span><span class="p">)</span>
+
+<span class="c1"># Lista os controles disponíveis</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">mixers</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># Seleciona a placa de som com ID 0 - Master</span>
+<span class="n">mixer</span> <span class="o">=</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">Mixer</span><span class="p">(</span><span class="n">control</span><span class="o">=</span><span class="s2">&#34;Master&#34;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cardindex</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Lista algumas informações do controle Master</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;O volume de playback do controle Master é: </span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getvolume</span><span class="p">(</span><span class="n">alsaaudio</span><span class="o">.</span><span class="n">PCM_PLAYBACK</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;O volume do captura controle Master é: </span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getvolume</span><span class="p">(</span><span class="n">alsaaudio</span><span class="o">.</span><span class="n">PCM_CAPTURE</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Controle Master está mudo.&#34;</span> <span class="k">if</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getmute</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="s2">&#34;Controle Master não está mudo.&#34;</span><span class="p">)</span>
+
+<span class="n">mixer</span><span class="o">.</span><span class="n">setvolume</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;O volumedo do controle Master foi alterado para 100.&#34;</span><span class="p">)</span>
+
+<span class="n">mixer</span> <span class="o">=</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">Mixer</span><span class="p">(</span><span class="n">control</span><span class="o">=</span><span class="s2">&#34;Mic&#34;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cardindex</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Lista algumas informações do controle Mic</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;O volume de playback do controle Mic é: </span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getvolume</span><span class="p">(</span><span class="n">alsaaudio</span><span class="o">.</span><span class="n">PCM_PLAYBACK</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;O volume do captura controle Mic é: </span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getvolume</span><span class="p">(</span><span class="n">alsaaudio</span><span class="o">.</span><span class="n">PCM_CAPTURE</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Controle Mic está mudo.&#34;</span> <span class="k">if</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getmute</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="s2">&#34;Controle Mic não está mudo.&#34;</span><span class="p">)</span>
+
+<span class="n">mixer</span><span class="o">.</span><span class="n">setvolume</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;O volumedo do controle Mic foi alterado para 100.&#34;</span><span class="p">)</span>
+
+<span class="c1"># Seleciona a placa de som com ID 0 - Captura</span>
+<span class="n">mixer</span> <span class="o">=</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">Mixer</span><span class="p">(</span><span class="n">control</span><span class="o">=</span><span class="s2">&#34;Capture&#34;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cardindex</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">mixer</span><span class="o">.</span><span class="n">setrec</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Captura desabilitada no controle Capture&#34;</span><span class="p">)</span>
+
+<span class="n">mixer</span><span class="o">.</span><span class="n">setrec</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Captura habilitada no controle Capture&#34;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>No exemplo em Python, podemos observar alguns usos do framework <a href="https://www.alsa-project.org/wiki/Main_Page"
+   
+   target="_blank">ALSA</a>, como por exemplo, pegar e setar configurações de placas e níveis de áudio.</p>
+<p>Se você tiver algum problema na execução desses códigos, ou tem alguma dúvida, deixe um comentário.</p>
 
   </article>
 
-  <footer>
+  <footer class="mt-3 mb-4">
     
 <div class="mb-4">
   <ul class="list-unstyled tags">
@@ -248,11 +482,18 @@ Volume atual: 40000
   </li>
   
   <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/cpp/" class="tag-link">cpp</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
      <a href="https://butecotecnologico.com.br/tags/python/" class="tag-link">python</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
   </li>
   </ul>
 </div>
-
 
 
     <div class="share-buttons text-center">
@@ -280,7 +521,6 @@ Volume atual: 40000
      data-url="https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/"
      data-text="Introdução ao ALSA e sua API em C e Python"><i class="fab fa-pinterest"></i></a>
 </div>
-
 
     
 <div class="border-top py-4">
@@ -303,8 +543,24 @@ Volume atual: 40000
     </div>
   </div>
   
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/mpdesouza/">
+        <img class="author-img"
+             src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+             alt="Marcos Paulo de Souza">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <h2 >
+        <a href="https://butecotecnologico.com.br/autores/mpdesouza/">Marcos Paulo de Souza</a>
+      </h2>
+      <span class="small text-muted">Software Engineer</span>
+    </div>
+  </div>
+  
 </div>
-
     <div class="border-top pt-4 pb-4">
 <h2 class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
@@ -352,7 +608,7 @@ Volume atual: 40000
   <footer class="site-footer mt-auto pt-5">
   <div class="clearfix">
     
-    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+    <div class="social-icons d-xl-inline-block align-top float-xl-left">
       <ul class="list-unstyled">
         
         <li class="list-inline-item social-icon my-2">
@@ -392,7 +648,229 @@ Volume atual: 40000
     
 
     
-    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+    <div class="footer-sections my-md-3 my-xl-0 d-xl-inline-block align-top float-xl-right">
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/cloud-computing/">
+              <b>
+              Cloud Computing
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/kubernetes/">
+              
+              Kubernetes
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/docker/">
+              
+              Docker
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/virtualizacao/">
+              
+              Virtualização
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/aws/">
+              
+              AWS
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/embarcados/">
+              <b>
+              Embarcados
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/raspberry-pi/">
+              
+              Raspberry Pi
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/arm/">
+              
+              ARM
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/arduino/">
+              
+              Arduino
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/iot/">
+              
+              Internet das Coisas
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/diy/">
+              
+              DIY
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/desenvolvimento/">
+              <b>
+              Desenvolvimento
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/python/">
+              
+              Python
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/cpp/">
+              
+              C/C&#43;&#43;
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/php/">
+              
+              PHP
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/node-js/">
+              
+              Node.JS
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/lua/">
+              
+              Lua
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/distros/">
+              <b>
+              Distros
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/linux/">
+              
+              Linux
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/ubuntu/">
+              
+              Ubuntu
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/fedora/">
+              
+              Fedora
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/centos/">
+              
+              CentOS
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/opensuse/">
+              
+              openSUSE
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/bsd/">
+              
+              BSD
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
       
 
       
@@ -408,49 +886,17 @@ Volume atual: 40000
           </li>
           
           <li>
-            <a class="td-n td-h " href="/anuncie-conosco/">
-              
-              Anuncie conosco
-              
-            </a>
-          </li>
-          
-          <li>
             <a class="td-n td-h " href="/contribua-com-nosso-blog/">
               
-              Contribua com nosso blog
+              Contribua com o blog
               <i class="far fa-heart text-danger"></i>
             </a>
           </li>
           
-        </ul>
-      </div>
-      
-
-      
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
-        <ul class="list-unstyled">
-          
           <li>
-            <a class="td-n td-h " href="/equipe/">
+            <a class="td-n td-h " href="/anuncie-conosco/">
               
-              Equipe
-              
-            </a>
-          </li>
-          
-          <li>
-            <a class="td-n td-h " href="/autores/">
-              
-              Autores
-              
-            </a>
-          </li>
-          
-          <li>
-            <a class="td-n td-h " href="/feed-rss/">
-              
-              Feed RSS
+              Anuncie conosco
               
             </a>
           </li>
@@ -464,9 +910,9 @@ Volume atual: 40000
           </li>
           
           <li>
-            <a class="td-n td-h " href="/tags/">
+            <a class="td-n td-h " href="/autores/">
               
-              Tags
+              Autores
               
             </a>
           </li>
@@ -490,7 +936,23 @@ Volume atual: 40000
           <li>
             <a class="td-n td-h " href="/sobre/">
               
-              Sobre
+              Sobre nós
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="">
+              
+              Equipe
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/equipe/">
+              
+              Feed RSS
               
             </a>
           </li>
@@ -512,7 +974,7 @@ Volume atual: 40000
 
   <div class="copyright clearfix">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      <i class="far fa-copyright"></i> 2020 Buteco Tecnológico
       
       &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
       
@@ -544,6 +1006,8 @@ Volume atual: 40000
   </div>
 </footer>
 
+
+  
 
   <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>

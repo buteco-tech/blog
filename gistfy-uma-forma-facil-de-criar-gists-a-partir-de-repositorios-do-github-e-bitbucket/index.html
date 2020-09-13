@@ -5,33 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="Hugo 0.74.3" />
 
-  <title>Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket &middot; Buteco Tecnológico</title>
+  <title>Crie Gists a partir de repositórios do GitHub e Bitbucket &middot; Buteco Tecnológico</title>
 
-  <meta name="description" content="Estes dias tive um problema, eu necessitava adicionar um trecho de código do GitHub a uma página, mas este código estava em um repositório e não em um Gist." />
+  <meta name="description" content="Estes dias tive um problema, eu necessitava adicionar um trecho de código do GitHub a uma página, mas este código estava em um repositório do GitHub e não em um Gist." />
 
 
 
-<meta itemprop="name" content="Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket">
-<meta itemprop="description" content="Estes dias tive um problema, eu necessitava adicionar um trecho de código do GitHub a uma página, mas este código estava em um repositório e não em um Gist.">
+<meta itemprop="name" content="Crie Gists a partir de repositórios do GitHub e Bitbucket">
+<meta itemprop="description" content="Estes dias tive um problema, eu necessitava adicionar um trecho de código do GitHub a uma página, mas este código estava em um repositório do GitHub e não em um Gist.">
 <meta itemprop="datePublished" content="2014-09-24T15:17:18+00:00" />
 <meta itemprop="dateModified" content="2014-09-24T15:17:18+00:00" />
-<meta itemprop="wordCount" content="144">
+<meta itemprop="wordCount" content="165">
 <meta itemprop="image" content="https://butecotecnologico.com.br/logos/capybara_400_bg.png"/>
 
 
 
-<meta itemprop="keywords" content="gist,gistfy,github," />
+<meta itemprop="keywords" content="gist,gistfy,github,node-js," />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://butecotecnologico.com.br/logos/capybara_400_bg.png"/>
 
-<meta name="twitter:title" content="Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket"/>
-<meta name="twitter:description" content="Estes dias tive um problema, eu necessitava adicionar um trecho de código do GitHub a uma página, mas este código estava em um repositório e não em um Gist."/>
+<meta name="twitter:title" content="Crie Gists a partir de repositórios do GitHub e Bitbucket"/>
+<meta name="twitter:description" content="Estes dias tive um problema, eu necessitava adicionar um trecho de código do GitHub a uma página, mas este código estava em um repositório do GitHub e não em um Gist."/>
 
 
-<meta property="og:title" content="Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket" />
-<meta property="og:description" content="Estes dias tive um problema, eu necessitava adicionar um trecho de código do GitHub a uma página, mas este código estava em um repositório e não em um Gist." />
+<meta property="og:title" content="Crie Gists a partir de repositórios do GitHub e Bitbucket" />
+<meta property="og:description" content="Estes dias tive um problema, eu necessitava adicionar um trecho de código do GitHub a uma página, mas este código estava em um repositório do GitHub e não em um Gist." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/" />
 <meta property="og:image" content="https://butecotecnologico.com.br/logos/capybara_400_bg.png"/>
@@ -42,7 +42,7 @@
 
   
   
-  <link rel="stylesheet" href="/sass/iara.min.6546ad337831f834de34f43a27ca1ea3b812a14f210f7556eff0db6ef71dbadf.css">
+  <link rel="stylesheet" href="/sass/iara.min.ec6a6d47e30bb1ea2f411506e8d933b4d3046198313d0832904eee33d737d7f1.css">
 
 
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -148,16 +148,18 @@
 
 <section class="container article">
   <header class="mb-4">
-    <h1>Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket</h1>
-    
+    <h1>Crie Gists a partir de repositórios do GitHub e Bitbucket</h1>
+    <h2 class="tagline text-muted mb-4">Conheça o Gistfy</h2>
     <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <div class="d-inline-flex">
     <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
        class="d-inline-block avatar mt-1 ml-0">
       <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
            alt="Alexandre Vicenzi"
            title="Alexandre Vicenzi">
     </a>
-    </div><div class="d-inline-block authors">
+    </div>
+  </div><div class="d-inline-block authors">
     <div class="text-muted"><span>
         <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
            class="author">Alexandre Vicenzi</a>
@@ -172,60 +174,68 @@
     </div>
   </div>
   <div class="d-none d-md-inline-block ml-auto">
-    <div class="share-buttons text-center">
-  <a class="twitter-share-button"
-     href="#"
-     title="Share on Twitter"
-     data-url="https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/"
-     data-text="Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-twitter"></i></a>
+    <div class="d-inline-flex share-buttons text-center">
+      <a class="twitter-share-button"
+         href="#"
+         title="Share on Twitter"
+         data-url="https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/"
+         data-text="Crie Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-twitter"></i></a>
 
-  <a class="linkedin-share-button"
-     href="#"
-     title="Share on LinkedIn"
-     data-url="https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/"
-     data-text="Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-linkedin-in"></i></a>
+      <a class="linkedin-share-button"
+         href="#"
+         title="Share on LinkedIn"
+         data-url="https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/"
+         data-text="Crie Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-linkedin-in"></i></a>
 
-  <a class="facebook-share-button"
-     href="#"
-     title="Share on Facebook"
-     data-url="https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/"
-     data-text="Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-facebook"></i></a>
+      <a class="facebook-share-button"
+         href="#"
+         title="Share on Facebook"
+         data-url="https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/"
+         data-text="Crie Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-facebook"></i></a>
 
-  <a class="pinterest-share-button"
-     href="#"
-     title="Share on Pinterest"
-     data-url="https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/"
-     data-text="Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-pinterest"></i></a>
-</div>
-
+      <a class="pinterest-share-button"
+         href="#"
+         title="Share on Pinterest"
+         data-url="https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/"
+         data-text="Crie Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-pinterest"></i></a>
+    </div>
   </div>
 </div>
 
-  </header><div class="alert alert-warning" role="alert">
-  <h4 class="alert-heading">Atenção</h4>
-  <p>Este artigo foi migrado do Wordpress e pode conter erros de formatação.</p>
-  <p>Caso encontre algum problema deixe um comentário que iremos resolver o mais breve possível.</p>
-</div>
+  </header>
 
   <article class="mt-3 mb-4">
-  <p>Estes dias tive um problema, eu necessitava adicionar um trecho de código do GitHub a uma página, mas este código estava em um repositório e não em um Gist.
+  <p>Estes dias tive um problema, eu necessitava adicionar um trecho de código do GitHub a uma página, mas este código estava em um repositório do GitHub e não em um Gist.
 Particularmente eu não gosto muito de criar Gists, e como o GitHub não oferece uma forma de criar um Gist a partir de um repositório eu resolvi criar a minha própria ferramenta.</p>
-<p>A partir desta necessidade eu criei o <a href="//gistfy-app.herokuapp.com">Gistfy</a>. A ideia e o projeto são simples, mas cumpre o que promete.</p>
-<p>Na <a href="//gistfy-app.herokuapp.com/#usage">documentação</a> você pode encontrar exemplos de códigos em <a href="https://angularjs.org/">AngularJS</a>, <a href="http://jquery.com/">jQuery</a> e <a href="http://www.w3schools.com/tags/tag_script.asp">HTML</a>.</p>
-<p>Como você pode observar na imagem abaixo o snippet é semelhante a um Gist do GitHub:</p>
-<p><img src="//i.imgur.com/5x0exhk.png" alt="exemplo" /></p>
+<p>A partir desta necessidade eu criei o <a href="https://gistfy-app.herokuapp.com"
+   
+   target="_blank">Gistfy</a>, um meio de compartilhar código do GitHub e Bitbucket em páginas, como um Gist. A ideia e o projeto são simples, mas cumpre o que promete.</p>
+<p>Na documentação você irá encontrar exemplos de <a href="https://gistfy-app.herokuapp.com/usage.html"
+   
+   target="_blank">como usar</a> e os <a href="https://gistfy-app.herokuapp.com/api.html"
+   
+   target="_blank">parâmetros aceitos</a>.</p>
+<p>Como você pode observar no exemplo abaixo o snippet é semelhante a um Gist do GitHub:</p>
+<script type="text/javascript" src="https://gistfy-app.herokuapp.com/github/isagalaev/highlight.js/test/detect/python/default.txt?lang=python"></script>
 <p>Para usar basta adicionar esta linha a sua página (substitua os dados pelos seus):</p>
-<pre><code class="html">
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;//gistfy-app.herokuapp.com/github/isagalaev/highlight.js/test/detect/python/default.txt?lang=python&quot;&gt;&lt;/script&gt;
-
-</code></pre>
-<p>Você pode criar o seu próprio servidor com o pacote <a href="https://www.npmjs.org/package/gistfy">npm</a>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span>
+        <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://gistfy-app.herokuapp.com/github/isagalaev/highlight.js/test/detect/python/default.txt?lang=python&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Você pode criar o seu próprio servidor no Heroku, confira o <a href="https://github.com/alexandrevicenzi/gistfy"
+   
+   target="_blank">repositório do projeto</a>.</p>
 <p>Não esqueça de deixar seu comentário.</p>
 
   </article>
 
-  <footer>
+  <footer class="mt-3 mb-4">
     
 <div class="mb-4">
   <ul class="list-unstyled tags">
@@ -240,9 +250,12 @@ Particularmente eu não gosto muito de criar Gists, e como o GitHub não oferece
   <li class="d-inline-block mb-1 mr-1">
      <a href="https://butecotecnologico.com.br/tags/github/" class="tag-link">github</a>
   </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/node-js/" class="tag-link">node-js</a>
+  </li>
   </ul>
 </div>
-
 
 
     <div class="share-buttons text-center">
@@ -250,27 +263,26 @@ Particularmente eu não gosto muito de criar Gists, e como o GitHub não oferece
      href="#"
      title="Share on Twitter"
      data-url="https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/"
-     data-text="Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-twitter"></i></a>
+     data-text="Crie Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-twitter"></i></a>
 
   <a class="linkedin-share-button"
      href="#"
      title="Share on LinkedIn"
      data-url="https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/"
-     data-text="Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-linkedin-in"></i></a>
+     data-text="Crie Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-linkedin-in"></i></a>
 
   <a class="facebook-share-button"
      href="#"
      title="Share on Facebook"
      data-url="https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/"
-     data-text="Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-facebook"></i></a>
+     data-text="Crie Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-facebook"></i></a>
 
   <a class="pinterest-share-button"
      href="#"
      title="Share on Pinterest"
      data-url="https://butecotecnologico.com.br/gistfy-uma-forma-facil-de-criar-gists-a-partir-de-repositorios-do-github-e-bitbucket/"
-     data-text="Gistfy - Uma forma fácil de criar Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-pinterest"></i></a>
+     data-text="Crie Gists a partir de repositórios do GitHub e Bitbucket"><i class="fab fa-pinterest"></i></a>
 </div>
-
 
     
 <div class="border-top py-4">
@@ -294,7 +306,6 @@ Particularmente eu não gosto muito de criar Gists, e como o GitHub não oferece
   </div>
   
 </div>
-
     <div class="border-top pt-4 pb-4">
 <h2 class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
@@ -342,7 +353,7 @@ Particularmente eu não gosto muito de criar Gists, e como o GitHub não oferece
   <footer class="site-footer mt-auto pt-5">
   <div class="clearfix">
     
-    <div class="social-icons d-lg-inline-block align-top float-lg-left">
+    <div class="social-icons d-xl-inline-block align-top float-xl-left">
       <ul class="list-unstyled">
         
         <li class="list-inline-item social-icon my-2">
@@ -382,7 +393,229 @@ Particularmente eu não gosto muito de criar Gists, e como o GitHub não oferece
     
 
     
-    <div class="footer-sections my-md-3 my-lg-0 d-lg-inline-block align-top float-lg-right">
+    <div class="footer-sections my-md-3 my-xl-0 d-xl-inline-block align-top float-xl-right">
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/cloud-computing/">
+              <b>
+              Cloud Computing
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/kubernetes/">
+              
+              Kubernetes
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/docker/">
+              
+              Docker
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/virtualizacao/">
+              
+              Virtualização
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/aws/">
+              
+              AWS
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/embarcados/">
+              <b>
+              Embarcados
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/raspberry-pi/">
+              
+              Raspberry Pi
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/arm/">
+              
+              ARM
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/arduino/">
+              
+              Arduino
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/iot/">
+              
+              Internet das Coisas
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/diy/">
+              
+              DIY
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/desenvolvimento/">
+              <b>
+              Desenvolvimento
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/python/">
+              
+              Python
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/cpp/">
+              
+              C/C&#43;&#43;
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/php/">
+              
+              PHP
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/node-js/">
+              
+              Node.JS
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/lua/">
+              
+              Lua
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/distros/">
+              <b>
+              Distros
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/linux/">
+              
+              Linux
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/ubuntu/">
+              
+              Ubuntu
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/fedora/">
+              
+              Fedora
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/centos/">
+              
+              CentOS
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/opensuse/">
+              
+              openSUSE
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/bsd/">
+              
+              BSD
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
       
 
       
@@ -398,49 +631,17 @@ Particularmente eu não gosto muito de criar Gists, e como o GitHub não oferece
           </li>
           
           <li>
-            <a class="td-n td-h " href="/anuncie-conosco/">
-              
-              Anuncie conosco
-              
-            </a>
-          </li>
-          
-          <li>
             <a class="td-n td-h " href="/contribua-com-nosso-blog/">
               
-              Contribua com nosso blog
+              Contribua com o blog
               <i class="far fa-heart text-danger"></i>
             </a>
           </li>
           
-        </ul>
-      </div>
-      
-
-      
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
-        <ul class="list-unstyled">
-          
           <li>
-            <a class="td-n td-h " href="/equipe/">
+            <a class="td-n td-h " href="/anuncie-conosco/">
               
-              Equipe
-              
-            </a>
-          </li>
-          
-          <li>
-            <a class="td-n td-h " href="/autores/">
-              
-              Autores
-              
-            </a>
-          </li>
-          
-          <li>
-            <a class="td-n td-h " href="/feed-rss/">
-              
-              Feed RSS
+              Anuncie conosco
               
             </a>
           </li>
@@ -454,9 +655,9 @@ Particularmente eu não gosto muito de criar Gists, e como o GitHub não oferece
           </li>
           
           <li>
-            <a class="td-n td-h " href="/tags/">
+            <a class="td-n td-h " href="/autores/">
               
-              Tags
+              Autores
               
             </a>
           </li>
@@ -480,7 +681,23 @@ Particularmente eu não gosto muito de criar Gists, e como o GitHub não oferece
           <li>
             <a class="td-n td-h " href="/sobre/">
               
-              Sobre
+              Sobre nós
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="">
+              
+              Equipe
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/equipe/">
+              
+              Feed RSS
               
             </a>
           </li>
@@ -502,7 +719,7 @@ Particularmente eu não gosto muito de criar Gists, e como o GitHub não oferece
 
   <div class="copyright clearfix">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> Buteco Tecnológico 2020
+      <i class="far fa-copyright"></i> 2020 Buteco Tecnológico
       
       &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
       
@@ -534,6 +751,8 @@ Particularmente eu não gosto muito de criar Gists, e como o GitHub não oferece
   </div>
 </footer>
 
+
+  
 
   <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
