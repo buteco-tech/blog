@@ -94,11 +94,24 @@ params:
   # dateFormat: "Jan 2, 2006"
   dateFormat: "02/01/2006"
 
+  organization:
+    name: Buteco Tecnológico
+    url: https://butecotecnologico.com.br/
+    logo: /logos/capybara_400.png
+    sameas:
+      - https://www.linkedin.com/company/butecotecnologico
+      - https://twitter.com/butecotech
+      - https://www.facebook.com/buteco.tech
+      - https://www.youtube.com/c/ButecoTech
+      - https://www.instagram.com/buteco.tech/
+
   #
   # Sidebar
   #
   # Sidebar is hidden on small devices (< 576px)
   sidebar:
+    show: true
+
     categories:
       show: true   # Show categories in sidebar
       count: true  # Show article count in category
