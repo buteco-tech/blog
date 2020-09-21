@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.75.1" />
 
   <title>Primeiros passos com o ESP8266 &middot; Buteco Tecnológico</title>
 
@@ -31,6 +31,7 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 <meta name="twitter:title" content="Primeiros passos com o ESP8266"/>
 <meta name="twitter:description" content="Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.
 O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo."/>
+<meta name="twitter:site" content="@butecotech"/>
 
 
 <meta property="og:title" content="Primeiros passos com o ESP8266" />
@@ -44,9 +45,140 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://butecotecnologico.com.br/#organization",
+      "name": "Buteco Tecnológico",
+      "url": "https://butecotecnologico.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://butecotecnologico.com.br/logos/capybara_400.png"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/butecotecnologico",
+        "https://twitter.com/butecotech",
+        "https://www.facebook.com/buteco.tech",
+        "https://www.youtube.com/c/ButecoTech",
+        "https://www.instagram.com/buteco.tech/"
+      ]
+    },{
+      "@type": "WebSite",
+      "@id": "https://butecotecnologico.com.br/#website",
+      "url": "https://butecotecnologico.com.br/",
+      "name": "Buteco Tecnológico",
+      "description": "Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.\nO ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo.",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://butecotecnologico.com.br/#primaryimage",
+      "url": "https://butecotecnologico.com.br/logos/capybara_64.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400_bg.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/#webpage",
+      "url": "https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/",
+      "name": "Primeiros passos com o ESP8266",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/#website"
+      },
+      "about": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://butecotecnologico.com.br/#primaryimage"
+      },
+      "datePublished": "2015-04-30T08:53:10+00:00",
+      "dateModified": "2015-04-30T08:53:10+00:00",
+      "description": "Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.\nO ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo.",
+      "inLanguage": "pt-BR",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/#webpage"
+      },
+      "headline": "Primeiros passos com o ESP8266",
+      "image": [
+        "https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/esp8266.jpg"
+      ],
+      "datePublished": "2015-04-30T08:53:10+00:00",
+      "dateModified": "2015-04-30T08:53:10+00:00",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "keywords": [
+        "diy",
+        "arduino",
+        "esp-01",
+        "esp-12",
+        "esp8266",
+        "iot"
+      ],
+      "articleSection": [
+        "Embarcados",
+        "Tutoriais"
+      ],
+      "inLanguage": "pt-BR",
+      "author": [
+        {
+          "@type":"Person",
+          "name": "Alexandre Vicenzi",
+          "image": {
+            "@type":"ImageObject",
+            "url": "https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&d=mp"
+          },
+          "description": "Engenheiro de Software"
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
   
   
-  <link rel="stylesheet" href="/sass/iara.min.ec6a6d47e30bb1ea2f411506e8d933b4d3046198313d0832904eee33d737d7f1.css">
+  <link rel="stylesheet" href="/sass/iara.min.79b5306d3933557cf16019cfd71c157355a9277c2de52d99c70513d28c74982d.css">
 
 
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -68,6 +200,9 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
   
 <script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+
+
+  
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -159,16 +294,19 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
     <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
        class="d-inline-block avatar mt-1 ml-0">
       <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           loading="lazy"
            alt="Alexandre Vicenzi"
            title="Alexandre Vicenzi">
     </a>
     </div>
   </div><div class="d-inline-block authors">
-    <div class="text-muted"><span>
+    <div><span>
         <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
            class="author">Alexandre Vicenzi</a>
       </span>
-    <span>em</span>
+    
+    <span class="text-muted">em</span>
+    
     <span>
         <a href="https://butecotecnologico.com.br/categorias/embarcados/" class="text-decoration-none">Embarcados</a> e 
         
@@ -181,25 +319,25 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
   </div>
   <div class="d-none d-md-inline-block ml-auto">
     <div class="d-inline-flex share-buttons text-center">
-      <a class="twitter-share-button"
+      <a class="share-button share-twitter"
          href="#"
          title="Share on Twitter"
          data-url="https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/"
          data-text="Primeiros passos com o ESP8266"><i class="fab fa-twitter"></i></a>
 
-      <a class="linkedin-share-button"
+      <a class="share-button share-linkedin"
          href="#"
          title="Share on LinkedIn"
          data-url="https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/"
          data-text="Primeiros passos com o ESP8266"><i class="fab fa-linkedin-in"></i></a>
 
-      <a class="facebook-share-button"
+      <a class="share-button share-facebook"
          href="#"
          title="Share on Facebook"
          data-url="https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/"
          data-text="Primeiros passos com o ESP8266"><i class="fab fa-facebook"></i></a>
 
-      <a class="pinterest-share-button"
+      <a class="share-button share-pinterest"
          href="#"
          title="Share on Pinterest"
          data-url="https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/"
@@ -213,7 +351,8 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
   <article class="mt-3 mb-4">
   <figure>
     <img src="/images/wp-content/uploads/2015/03/esp8266.jpg"
-         alt="ESP8266" width="250"/> 
+         loading="lazy"
+         alt="ESP8266" width="250"/>
 </figure>
 
 <p>Dando continuidade ao artigo <a href="/conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares"
@@ -225,19 +364,22 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 <p>Abaixo você pode conferir os meus ESPs montados.</p>
 <figure>
     <img src="/images/wp-content/uploads/2015/04/esp-12-uart.jpg"
-         alt="ESP-12" height="400"/> 
+         loading="lazy"
+         alt="ESP-12" height="400"/>
 </figure>
 
 <figure>
     <img src="/images/wp-content/uploads/2015/04/esp-01-uart.jpg"
-         alt="ESP-01" width="400"/> 
+         loading="lazy"
+         alt="ESP-01" width="400"/>
 </figure>
 
 <h2 id="módulo-uart">Módulo UART</h2>
 <p>No meu caso o módulo usa o chip CP2102 e possui alimentação de 5 e 3.3v.</p>
 <figure>
     <img src="/images/wp-content/uploads/2015/04/cp2102-usb-ttl-high-speed-stc-download-hdd-flash-line-3.jpg"
-         alt="UART USB TTL CP2102" width="250"/> 
+         loading="lazy"
+         alt="UART USB TTL CP2102" width="250"/>
 </figure>
 
 <h2 id="ide-arduino">IDE Arduino</h2>
@@ -258,30 +400,30 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 <table>
 <thead>
 <tr>
-<th align="center">ESP</th>
-<th align="center">UART</th>
+<th style="text-align:center">ESP</th>
+<th style="text-align:center">UART</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">RX</td>
-<td align="center">TX</td>
+<td style="text-align:center">RX</td>
+<td style="text-align:center">TX</td>
 </tr>
 <tr>
-<td align="center">TX</td>
-<td align="center">RX</td>
+<td style="text-align:center">TX</td>
+<td style="text-align:center">RX</td>
 </tr>
 <tr>
-<td align="center">VCC</td>
-<td align="center">VCC</td>
+<td style="text-align:center">VCC</td>
+<td style="text-align:center">VCC</td>
 </tr>
 <tr>
-<td align="center">CH_PD</td>
-<td align="center">VCC</td>
+<td style="text-align:center">CH_PD</td>
+<td style="text-align:center">VCC</td>
 </tr>
 <tr>
-<td align="center">GND</td>
-<td align="center">GND</td>
+<td style="text-align:center">GND</td>
+<td style="text-align:center">GND</td>
 </tr>
 </tbody>
 </table>
@@ -290,7 +432,8 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 <p>Abaixo você pode observar os pinos do ESP-01.</p>
 <figure>
     <img src="/images/wp-content/uploads/2015/04/Esp8266pinout1.png"
-         alt="ESP-01 Pins" width="400"/> 
+         loading="lazy"
+         alt="ESP-01 Pins" width="400"/>
 </figure>
 
 <h2 id="programação">Programação</h2>
@@ -299,28 +442,32 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 <p>Para entrar no modo de atualização de firmware, você deve conectar o GND ao GPIO0. Confira imagem abaixo:</p>
 <figure>
     <img src="/images/wp-content/uploads/2015/04/esp01-uart-flash.png"
-         alt="ESP-01 UART Flash" width="400"/> 
+         loading="lazy"
+         alt="ESP-01 UART Flash" width="400"/>
 </figure>
 
 <h2 id="esp-12">ESP-12</h2>
 <p>Abaixo você pode observar os pinos do ESP-12.</p>
 <figure>
     <img src="/images/wp-content/uploads/2015/04/esp_12_pin_map.png"
-         alt="ESP-12 Pins" width="400"/> 
+         loading="lazy"
+         alt="ESP-12 Pins" width="400"/>
 </figure>
 
 <h2 id="programação-1">Programação</h2>
 <p>No modo de programação ainda é necessário conectar o pino GND ao GPIO15. Confira imagem abaixo:</p>
 <figure>
     <img src="/images/wp-content/uploads/2015/04/ESP-12-UART-Prog.png"
-         alt="ESP-12 Pins" height="400"/> 
+         loading="lazy"
+         alt="ESP-12 Pins" height="400"/>
 </figure>
 
 <h2 id="flash-1">Flash</h2>
 <p>Para entrar no modo de atualização de firmware, você deve conectar o GND ao GPIO0. Confira imagem abaixo:</p>
 <figure>
     <img src="/images/wp-content/uploads/2015/04/ESP-12-UART-Flash.png"
-         alt="ESP-12 Pins to Flash" height="400"/> 
+         loading="lazy"
+         alt="ESP-12 Pins to Flash" height="400"/>
 </figure>
 
 <h2 id="comunicação-serial">Comunicação Serial</h2>
@@ -328,7 +475,8 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 <p>Após abrir a IDE do Arduino vá em <em>Tools &gt; Port</em> e escolha a porta USB onde está o UART. Depois disto, vá em <em>Tools &gt; Serial Monitor</em>. Você deverá ver uma tela como esta:</p>
 <figure>
     <img src="/images/wp-content/uploads/2015/04/serial-monitor.png"
-         alt="Arduino Serial Monitor"/> 
+         loading="lazy"
+         alt="Arduino Serial Monitor"/>
 </figure>
 
 <p>Agora vamos configurar a comunicação. Por padrão a velocidade é <em>9200 baud</em> e o fim de linha é <em>Both NL &amp; CR</em>, como mostrado acima, mas caso você tenha problemas, tente mudar estes valores.</p>
@@ -371,7 +519,7 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 <td>AT+CWJAP</td>
 <td>SSID<br>Senha<br>Canal<br>Criptografia</td>
 <td>Conecta a uma rede</td>
-<td>AT+CWJAP=&quot;seu SSID&rdquo;,&ldquo;sua senha&rdquo;</td>
+<td>AT+CWJAP=&ldquo;seu SSID&rdquo;,&ldquo;sua senha&rdquo;</td>
 </tr>
 <tr>
 <td>AT+CWQAP</td>
@@ -448,25 +596,25 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 
 
     <div class="share-buttons text-center">
-  <a class="twitter-share-button"
+  <a class="share-button share-twitter"
      href="#"
      title="Share on Twitter"
      data-url="https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/"
      data-text="Primeiros passos com o ESP8266"><i class="fab fa-twitter"></i></a>
 
-  <a class="linkedin-share-button"
+  <a class="share-button share-linkedin"
      href="#"
      title="Share on LinkedIn"
      data-url="https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/"
      data-text="Primeiros passos com o ESP8266"><i class="fab fa-linkedin-in"></i></a>
 
-  <a class="facebook-share-button"
+  <a class="share-button share-facebook"
      href="#"
      title="Share on Facebook"
      data-url="https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/"
      data-text="Primeiros passos com o ESP8266"><i class="fab fa-facebook"></i></a>
 
-  <a class="pinterest-share-button"
+  <a class="share-button share-pinterest"
      href="#"
      title="Share on Pinterest"
      data-url="https://butecotecnologico.com.br/primeiros-passos-com-o-esp8266/"
@@ -480,6 +628,7 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
         <img class="author-img"
              src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             loading="lazy"
              alt="Alexandre Vicenzi">
       </a>
     </div>
@@ -496,7 +645,7 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
   
 </div>
     <div class="border-top pt-4 pb-4">
-<h2 class="mt-0">Comentários</h2>
+<h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -523,7 +672,7 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 </section>
   </main>
 
-  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -539,10 +688,13 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 </div>
 
 
-  <footer class="site-footer mt-auto pt-5">
-  <div class="clearfix">
+  
+
+<footer class="site-footer mt-auto pt-5 pb-3 px-4">
+  
+  <div class="clearfix text-center">
     
-    <div class="social-icons d-xl-inline-block align-top float-xl-left">
+    <div class="social-icons d-xl-inline-block float-xl-left">
       <ul class="list-unstyled">
         
         <li class="list-inline-item social-icon my-2">
@@ -582,9 +734,9 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
     
 
     
-    <div class="footer-sections my-md-3 my-xl-0 d-xl-inline-block align-top float-xl-right">
+    <div class="footer-sections d-xl-inline-block float-xl-right">
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -632,7 +784,7 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -688,7 +840,7 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -744,7 +896,7 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -808,7 +960,7 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -856,7 +1008,7 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -905,18 +1057,19 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
     </div>
     
   </div>
+  <hr class="my-3">
+  
 
-  <div class="copyright clearfix">
+  <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
       <i class="far fa-copyright"></i> 2020 Buteco Tecnológico
       
       &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
       
-      
     </div>
     
-    <div class="d-md-inline-block float-md-right">
-        <ul class="list-unstyled">
+    <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
+        <ul class="list-unstyled m-0">
           
           <li class="list-inline-item">
             <a href="/termos-de-uso/">
@@ -937,6 +1090,7 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
         </ul>
     </div>
     
+    
   </div>
 </footer>
 
@@ -949,7 +1103,7 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
   <script type="text/javascript" src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script>
 
   
-  <script type="text/javascript" src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
+  <script type="text/javascript" src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
 
 
 

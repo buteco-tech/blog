@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.75.1" />
 
   <title>PM2 - Gerenciador de aplicações Node.js em ambientes de produção &middot; Buteco Tecnológico</title>
 
@@ -31,6 +31,7 @@ O PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cl
 <meta name="twitter:title" content="PM2 - Gerenciador de aplicações Node.js em ambientes de produção"/>
 <meta name="twitter:description" content="O Node.js, famoso interpretador javascript do lado servidor, trouxe uma nova gama de possibilidades para a linguagem javascript. Entre suas maiores vantagens posso citar o uso da mesma linguagem de programação no lado cliente e servidor e usar programação assíncrona por padrão. Contudo em algum momento da vida de seu projeto ou da sua aplicação, este deve ser publicado, e é neste ponto que o PM2 aparece.
 O PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cluster para alta disponibilidade com balanceamento de carga, logs, recarregar a aplicação automaticamente quando há alterações nos arquivos ou reinicio do servidor, entre diversas outras atividades que a principio podem parecer simples, porém tenha em mente que o PM2 foi projetado para gerenciar diversas aplicações rodando de uma só vez, em um único console."/>
+<meta name="twitter:site" content="@butecotech"/>
 
 
 <meta property="og:title" content="PM2 - Gerenciador de aplicações Node.js em ambientes de produção" />
@@ -44,9 +45,137 @@ O PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cl
 
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://butecotecnologico.com.br/#organization",
+      "name": "Buteco Tecnológico",
+      "url": "https://butecotecnologico.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://butecotecnologico.com.br/logos/capybara_400.png"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/butecotecnologico",
+        "https://twitter.com/butecotech",
+        "https://www.facebook.com/buteco.tech",
+        "https://www.youtube.com/c/ButecoTech",
+        "https://www.instagram.com/buteco.tech/"
+      ]
+    },{
+      "@type": "WebSite",
+      "@id": "https://butecotecnologico.com.br/#website",
+      "url": "https://butecotecnologico.com.br/",
+      "name": "Buteco Tecnológico",
+      "description": "\u003cp\u003eO Node.js, famoso interpretador javascript do lado servidor, trouxe uma nova gama de possibilidades para a linguagem javascript. Entre suas maiores vantagens posso citar o uso da mesma linguagem de programação no lado cliente e servidor e usar programação assíncrona por padrão. Contudo em algum momento da vida de seu projeto ou da sua aplicação, este deve ser publicado, e é neste ponto que o PM2 aparece.\u003c/p\u003e\n\u003cp\u003eO PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cluster para alta disponibilidade com balanceamento de carga, logs, recarregar a aplicação automaticamente quando há alterações nos arquivos ou reinicio do servidor, entre diversas outras atividades que a principio podem parecer simples, porém tenha em mente que o PM2 foi projetado para gerenciar diversas aplicações rodando de uma só vez, em um único console.\u003c/p\u003e",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://butecotecnologico.com.br/#primaryimage",
+      "url": "https://butecotecnologico.com.br/logos/capybara_64.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400_bg.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://butecotecnologico.com.br/pm2/#webpage",
+      "url": "https://butecotecnologico.com.br/pm2/",
+      "name": "PM2 - Gerenciador de aplicações Node.js em ambientes de produção",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/#website"
+      },
+      "about": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://butecotecnologico.com.br/#primaryimage"
+      },
+      "datePublished": "2016-01-27T12:12:29+00:00",
+      "dateModified": "2016-01-27T12:12:29+00:00",
+      "description": "\u003cp\u003eO Node.js, famoso interpretador javascript do lado servidor, trouxe uma nova gama de possibilidades para a linguagem javascript. Entre suas maiores vantagens posso citar o uso da mesma linguagem de programação no lado cliente e servidor e usar programação assíncrona por padrão. Contudo em algum momento da vida de seu projeto ou da sua aplicação, este deve ser publicado, e é neste ponto que o PM2 aparece.\u003c/p\u003e\n\u003cp\u003eO PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cluster para alta disponibilidade com balanceamento de carga, logs, recarregar a aplicação automaticamente quando há alterações nos arquivos ou reinicio do servidor, entre diversas outras atividades que a principio podem parecer simples, porém tenha em mente que o PM2 foi projetado para gerenciar diversas aplicações rodando de uma só vez, em um único console.\u003c/p\u003e",
+      "inLanguage": "pt-BR",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://butecotecnologico.com.br/pm2/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/pm2/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://butecotecnologico.com.br/pm2/#webpage"
+      },
+      "headline": "PM2 - Gerenciador de aplicações Node.js em ambientes de produção",
+      "image": [
+        "https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/logo_pm2.png"
+      ],
+      "datePublished": "2016-01-27T12:12:29+00:00",
+      "dateModified": "2016-01-27T12:12:29+00:00",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "keywords": [
+        "javascript",
+        "node-js",
+        "pm2"
+      ],
+      "articleSection": [
+        "Desenvolvimento",
+        "Tutoriais"
+      ],
+      "inLanguage": "pt-BR",
+      "author": [
+        {
+          "@type":"Person",
+          "name": "Jonathan André Schweder",
+          "image": {
+            "@type":"ImageObject",
+            "url": "https://avatars1.githubusercontent.com/u/6409113?v=2&s=200"
+          },
+          "description": "System Developer Engineer at Amazon Web Services"
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://butecotecnologico.com.br/pm2/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
   
   
-  <link rel="stylesheet" href="/sass/iara.min.ec6a6d47e30bb1ea2f411506e8d933b4d3046198313d0832904eee33d737d7f1.css">
+  <link rel="stylesheet" href="/sass/iara.min.79b5306d3933557cf16019cfd71c157355a9277c2de52d99c70513d28c74982d.css">
 
 
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -68,6 +197,9 @@ O PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cl
   
 <script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+
+
+  
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -159,16 +291,19 @@ O PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cl
     <a href="https://butecotecnologico.com.br/autores/jaswdr/"
        class="d-inline-block avatar mt-1 ml-0">
       <img src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+           loading="lazy"
            alt="Jonathan André Schweder"
            title="Jonathan André Schweder">
     </a>
     </div>
   </div><div class="d-inline-block authors">
-    <div class="text-muted"><span>
+    <div><span>
         <a href="https://butecotecnologico.com.br/autores/jaswdr/"
            class="author">Jonathan André Schweder</a>
       </span>
-    <span>em</span>
+    
+    <span class="text-muted">em</span>
+    
     <span>
         <a href="https://butecotecnologico.com.br/categorias/desenvolvimento/" class="text-decoration-none">Desenvolvimento</a> e 
         
@@ -181,25 +316,25 @@ O PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cl
   </div>
   <div class="d-none d-md-inline-block ml-auto">
     <div class="d-inline-flex share-buttons text-center">
-      <a class="twitter-share-button"
+      <a class="share-button share-twitter"
          href="#"
          title="Share on Twitter"
          data-url="https://butecotecnologico.com.br/pm2/"
          data-text="PM2 - Gerenciador de aplicações Node.js em ambientes de produção"><i class="fab fa-twitter"></i></a>
 
-      <a class="linkedin-share-button"
+      <a class="share-button share-linkedin"
          href="#"
          title="Share on LinkedIn"
          data-url="https://butecotecnologico.com.br/pm2/"
          data-text="PM2 - Gerenciador de aplicações Node.js em ambientes de produção"><i class="fab fa-linkedin-in"></i></a>
 
-      <a class="facebook-share-button"
+      <a class="share-button share-facebook"
          href="#"
          title="Share on Facebook"
          data-url="https://butecotecnologico.com.br/pm2/"
          data-text="PM2 - Gerenciador de aplicações Node.js em ambientes de produção"><i class="fab fa-facebook"></i></a>
 
-      <a class="pinterest-share-button"
+      <a class="share-button share-pinterest"
          href="#"
          title="Share on Pinterest"
          data-url="https://butecotecnologico.com.br/pm2/"
@@ -234,8 +369,8 @@ Logo em seguida podemos verificar se a aplicação está rodando corretamente co
 <p style="text-align: center;"><strong>pm2 list</strong></p>
 Algo como a imagem abaixo deve ser exibido.
 <p><img class="aligncenter size-full wp-image-4629" src="/images/wp-content/uploads/2016/01/Captura-de-tela-de-2016-01-25-202321.png" alt="pm2 list" width="770" height="113" /></p>
-<p>Agora conforme está colocado no arquivo <strong><em>ping.js</em></strong>, se acessarmos no navegador o endereço <strong>&quot;http://localhost:3000&quot;</strong> será retornado um objeto JSON com as informações que comentei anteriormente.</p>
-<p>Contudo, até aqui, o pm2 não se diferencia  dos outros gerenciadores ou até mesmo de executar apenas o próprio node com o comando <strong>&quot;node ping.js&quot;</strong>, o resultado é o mesmo e veremos agora alguns diferenciais dele. O primeiro é a possibilidade criar um cluster. O conceito básico de um cluster é criar varias instâncias da aplicação e fazer o balanceamento da requisições do cliente entre elas, otimizando o uso de recursos. Para criarmos um cluster no PM2 inicialmente precisamos remover a aplicação que adicionamos anteriormente executando o comando abaixo para remover :</p>
+<p>Agora conforme está colocado no arquivo <strong><em>ping.js</em></strong>, se acessarmos no navegador o endereço <strong>&ldquo;http://localhost:3000&rdquo;</strong> será retornado um objeto JSON com as informações que comentei anteriormente.</p>
+<p>Contudo, até aqui, o pm2 não se diferencia  dos outros gerenciadores ou até mesmo de executar apenas o próprio node com o comando <strong>&ldquo;node ping.js&rdquo;</strong>, o resultado é o mesmo e veremos agora alguns diferenciais dele. O primeiro é a possibilidade criar um cluster. O conceito básico de um cluster é criar varias instâncias da aplicação e fazer o balanceamento da requisições do cliente entre elas, otimizando o uso de recursos. Para criarmos um cluster no PM2 inicialmente precisamos remover a aplicação que adicionamos anteriormente executando o comando abaixo para remover :</p>
 <p style="text-align: center;"><strong>pm2 delete 0</strong></p>
 Agora se rodarmos <strong>"pm2 list"</strong> novamente não será mais exibido a aplicação <strong>"ping.js"</strong>.
 <p>A criação de um cluster no PM2 é muito simples. Após criado, o pm2 irá equilibrar automaticamente as requisições entre essas instâncias, melhorando assim o uso de CPU, atento que o ideal é ter o número de instâncias igual ao número de processadores. Do contrário pode inclusive acontecer de sua aplicação ficar mais lenta e o tempo de resposta aumentar consideravelmente.</p>
@@ -299,25 +434,25 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
 
 
     <div class="share-buttons text-center">
-  <a class="twitter-share-button"
+  <a class="share-button share-twitter"
      href="#"
      title="Share on Twitter"
      data-url="https://butecotecnologico.com.br/pm2/"
      data-text="PM2 - Gerenciador de aplicações Node.js em ambientes de produção"><i class="fab fa-twitter"></i></a>
 
-  <a class="linkedin-share-button"
+  <a class="share-button share-linkedin"
      href="#"
      title="Share on LinkedIn"
      data-url="https://butecotecnologico.com.br/pm2/"
      data-text="PM2 - Gerenciador de aplicações Node.js em ambientes de produção"><i class="fab fa-linkedin-in"></i></a>
 
-  <a class="facebook-share-button"
+  <a class="share-button share-facebook"
      href="#"
      title="Share on Facebook"
      data-url="https://butecotecnologico.com.br/pm2/"
      data-text="PM2 - Gerenciador de aplicações Node.js em ambientes de produção"><i class="fab fa-facebook"></i></a>
 
-  <a class="pinterest-share-button"
+  <a class="share-button share-pinterest"
      href="#"
      title="Share on Pinterest"
      data-url="https://butecotecnologico.com.br/pm2/"
@@ -332,6 +467,7 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
       <a href="https://butecotecnologico.com.br/autores/jaswdr/">
         <img class="author-img"
              src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+             loading="lazy"
              alt="Jonathan André Schweder">
       </a>
     </div>
@@ -349,7 +485,7 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
 </div>
 
     <div class="border-top pt-4 pb-4">
-<h2 class="mt-0">Comentários</h2>
+<h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -376,7 +512,7 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
 </section>
   </main>
 
-  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -392,10 +528,13 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
 </div>
 
 
-  <footer class="site-footer mt-auto pt-5">
-  <div class="clearfix">
+  
+
+<footer class="site-footer mt-auto pt-5 pb-3 px-4">
+  
+  <div class="clearfix text-center">
     
-    <div class="social-icons d-xl-inline-block align-top float-xl-left">
+    <div class="social-icons d-xl-inline-block float-xl-left">
       <ul class="list-unstyled">
         
         <li class="list-inline-item social-icon my-2">
@@ -435,9 +574,9 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
     
 
     
-    <div class="footer-sections my-md-3 my-xl-0 d-xl-inline-block align-top float-xl-right">
+    <div class="footer-sections d-xl-inline-block float-xl-right">
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -485,7 +624,7 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -541,7 +680,7 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -597,7 +736,7 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -661,7 +800,7 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -709,7 +848,7 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -758,18 +897,19 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
     </div>
     
   </div>
+  <hr class="my-3">
+  
 
-  <div class="copyright clearfix">
+  <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
       <i class="far fa-copyright"></i> 2020 Buteco Tecnológico
       
       &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
       
-      
     </div>
     
-    <div class="d-md-inline-block float-md-right">
-        <ul class="list-unstyled">
+    <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
+        <ul class="list-unstyled m-0">
           
           <li class="list-inline-item">
             <a href="/termos-de-uso/">
@@ -790,6 +930,7 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
         </ul>
     </div>
     
+    
   </div>
 </footer>
 
@@ -802,7 +943,7 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
   <script type="text/javascript" src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script>
 
   
-  <script type="text/javascript" src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
+  <script type="text/javascript" src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
 
 
 

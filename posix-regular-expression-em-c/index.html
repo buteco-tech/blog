@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.75.1" />
 
   <title>POSIX Regular Expression em C &middot; Buteco Tecnológico</title>
 
@@ -28,6 +28,7 @@
 
 <meta name="twitter:title" content="POSIX Regular Expression em C"/>
 <meta name="twitter:description" content="Expressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares built-in, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a POSIX RegEx na linguagem C na plataforma Linux."/>
+<meta name="twitter:site" content="@butecotech"/>
 
 
 <meta property="og:title" content="POSIX Regular Expression em C" />
@@ -40,9 +41,139 @@
 
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://butecotecnologico.com.br/#organization",
+      "name": "Buteco Tecnológico",
+      "url": "https://butecotecnologico.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://butecotecnologico.com.br/logos/capybara_400.png"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/butecotecnologico",
+        "https://twitter.com/butecotech",
+        "https://www.facebook.com/buteco.tech",
+        "https://www.youtube.com/c/ButecoTech",
+        "https://www.instagram.com/buteco.tech/"
+      ]
+    },{
+      "@type": "WebSite",
+      "@id": "https://butecotecnologico.com.br/#website",
+      "url": "https://butecotecnologico.com.br/",
+      "name": "Buteco Tecnológico",
+      "description": "\u003cp\u003eExpressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares \u003cem\u003ebuilt-in\u003c/em\u003e, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a \u003cem\u003ePOSIX RegEx\u003c/em\u003e na linguagem C na plataforma Linux.\u003c/p\u003e",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://butecotecnologico.com.br/#primaryimage",
+      "url": "https://butecotecnologico.com.br/logos/capybara_64.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400_bg.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://butecotecnologico.com.br/posix-regular-expression-em-c/#webpage",
+      "url": "https://butecotecnologico.com.br/posix-regular-expression-em-c/",
+      "name": "POSIX Regular Expression em C",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/#website"
+      },
+      "about": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://butecotecnologico.com.br/#primaryimage"
+      },
+      "datePublished": "2016-03-17T09:35:57+00:00",
+      "dateModified": "2016-03-17T09:35:57+00:00",
+      "description": "\u003cp\u003eExpressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares \u003cem\u003ebuilt-in\u003c/em\u003e, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a \u003cem\u003ePOSIX RegEx\u003c/em\u003e na linguagem C na plataforma Linux.\u003c/p\u003e",
+      "inLanguage": "pt-BR",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://butecotecnologico.com.br/posix-regular-expression-em-c/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/posix-regular-expression-em-c/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://butecotecnologico.com.br/posix-regular-expression-em-c/#webpage"
+      },
+      "headline": "POSIX Regular Expression em C",
+      "image": [
+        "https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/images.jpg"
+      ],
+      "datePublished": "2016-03-17T09:35:57+00:00",
+      "dateModified": "2016-03-17T09:35:57+00:00",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "keywords": [
+        "c",
+        "cpp",
+        "linux",
+        "posix",
+        "regex"
+      ],
+      "articleSection": [
+        "Desenvolvimento",
+        "Tutoriais"
+      ],
+      "inLanguage": "pt-BR",
+      "author": [
+        {
+          "@type":"Person",
+          "name": "Marcos Paulo de Souza",
+          "image": {
+            "@type":"ImageObject",
+            "url": "https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&d=mp"
+          },
+          "description": "Software Engineer"
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://butecotecnologico.com.br/posix-regular-expression-em-c/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
   
   
-  <link rel="stylesheet" href="/sass/iara.min.ec6a6d47e30bb1ea2f411506e8d933b4d3046198313d0832904eee33d737d7f1.css">
+  <link rel="stylesheet" href="/sass/iara.min.79b5306d3933557cf16019cfd71c157355a9277c2de52d99c70513d28c74982d.css">
 
 
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -64,6 +195,9 @@
   
 <script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+
+
+  
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -155,16 +289,19 @@
     <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
        class="d-inline-block avatar mt-1 ml-0">
       <img src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+           loading="lazy"
            alt="Marcos Paulo de Souza"
            title="Marcos Paulo de Souza">
     </a>
     </div>
   </div><div class="d-inline-block authors">
-    <div class="text-muted"><span>
+    <div><span>
         <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
            class="author">Marcos Paulo de Souza</a>
       </span>
-    <span>em</span>
+    
+    <span class="text-muted">em</span>
+    
     <span>
         <a href="https://butecotecnologico.com.br/categorias/desenvolvimento/" class="text-decoration-none">Desenvolvimento</a> e 
         
@@ -177,25 +314,25 @@
   </div>
   <div class="d-none d-md-inline-block ml-auto">
     <div class="d-inline-flex share-buttons text-center">
-      <a class="twitter-share-button"
+      <a class="share-button share-twitter"
          href="#"
          title="Share on Twitter"
          data-url="https://butecotecnologico.com.br/posix-regular-expression-em-c/"
          data-text="POSIX Regular Expression em C"><i class="fab fa-twitter"></i></a>
 
-      <a class="linkedin-share-button"
+      <a class="share-button share-linkedin"
          href="#"
          title="Share on LinkedIn"
          data-url="https://butecotecnologico.com.br/posix-regular-expression-em-c/"
          data-text="POSIX Regular Expression em C"><i class="fab fa-linkedin-in"></i></a>
 
-      <a class="facebook-share-button"
+      <a class="share-button share-facebook"
          href="#"
          title="Share on Facebook"
          data-url="https://butecotecnologico.com.br/posix-regular-expression-em-c/"
          data-text="POSIX Regular Expression em C"><i class="fab fa-facebook"></i></a>
 
-      <a class="pinterest-share-button"
+      <a class="share-button share-pinterest"
          href="#"
          title="Share on Pinterest"
          data-url="https://butecotecnologico.com.br/posix-regular-expression-em-c/"
@@ -240,7 +377,7 @@ Group 2: [6-9]: 123
 <p>Chegamos na função <code>regexec</code>, que recebe um <code>regex_t</code>, a string a ser analisada, o número de matches, uma variável <code>regmatch_t</code> e <em>flags</em>. Um exemplo de flag é <code>REG_ICASE</code>, onde a execução da regex não diferencia maiúsculas/minísculas. Neste exemplo não utilizamos nehum flag. Para saber sobre of flags disponíveis veja nas referências.</p>
 <p>Se <code>regexec</code> executar com sucesso, iteramos sobre os <code>nsub</code> encontrados. Vamos nos aprofundar na struct <code>regmatch_t</code>. Essa struct contém dois membros: <code>rm_so</code> (regmatch start offset) e <code>rm_eo</code> (regmatch end offset). Esses offsets são usados para encontrar o match dentro da string, contendo os índices de início e fim da <em>substring</em> detectada pela regex.</p>
 <p>Simplificando, offsets são as posições de início e fim de cada match dentro da string original.</p>
-<p>Pelo nosso último exemplo de código, podemos ver no Group 1, que o primeiro match começa na posição 0 da string <em>buteco123xxxxx</em>, e finaliza na posição 6 (a posição 6 é o fim da string, logo atribuímos <code>'&lsquo;</code>). Da mesma forma, o segundo match começa na posição 6 e termina na 9.</p>
+<p>Pelo nosso último exemplo de código, podemos ver no Group 1, que o primeiro match começa na posição 0 da string <em>buteco123xxxxx</em>, e finaliza na posição 6 (a posição 6 é o fim da string, logo atribuímos <code>''</code>). Da mesma forma, o segundo match começa na posição 6 e termina na 9.</p>
 <p>Utilizando esses <em>offsets</em>, fazemos uma cópia da <em>substring</em> para uma nova string.</p>
 <p>Quando o start offset é igual a <code>-1</code>, isso mostra que não existem mais matches para serem computados. Segue abaixo a execução do código fonte mostrado no início da postagem:</p>
 <p><samp>[marcos@localhost posix_regex]$ ./regex
@@ -313,25 +450,25 @@ Group 0: [0-1]: b
 
 
     <div class="share-buttons text-center">
-  <a class="twitter-share-button"
+  <a class="share-button share-twitter"
      href="#"
      title="Share on Twitter"
      data-url="https://butecotecnologico.com.br/posix-regular-expression-em-c/"
      data-text="POSIX Regular Expression em C"><i class="fab fa-twitter"></i></a>
 
-  <a class="linkedin-share-button"
+  <a class="share-button share-linkedin"
      href="#"
      title="Share on LinkedIn"
      data-url="https://butecotecnologico.com.br/posix-regular-expression-em-c/"
      data-text="POSIX Regular Expression em C"><i class="fab fa-linkedin-in"></i></a>
 
-  <a class="facebook-share-button"
+  <a class="share-button share-facebook"
      href="#"
      title="Share on Facebook"
      data-url="https://butecotecnologico.com.br/posix-regular-expression-em-c/"
      data-text="POSIX Regular Expression em C"><i class="fab fa-facebook"></i></a>
 
-  <a class="pinterest-share-button"
+  <a class="share-button share-pinterest"
      href="#"
      title="Share on Pinterest"
      data-url="https://butecotecnologico.com.br/posix-regular-expression-em-c/"
@@ -346,6 +483,7 @@ Group 0: [0-1]: b
       <a href="https://butecotecnologico.com.br/autores/mpdesouza/">
         <img class="author-img"
              src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+             loading="lazy"
              alt="Marcos Paulo de Souza">
       </a>
     </div>
@@ -363,7 +501,7 @@ Group 0: [0-1]: b
 </div>
 
     <div class="border-top pt-4 pb-4">
-<h2 class="mt-0">Comentários</h2>
+<h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -390,7 +528,7 @@ Group 0: [0-1]: b
 </section>
   </main>
 
-  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -406,10 +544,13 @@ Group 0: [0-1]: b
 </div>
 
 
-  <footer class="site-footer mt-auto pt-5">
-  <div class="clearfix">
+  
+
+<footer class="site-footer mt-auto pt-5 pb-3 px-4">
+  
+  <div class="clearfix text-center">
     
-    <div class="social-icons d-xl-inline-block align-top float-xl-left">
+    <div class="social-icons d-xl-inline-block float-xl-left">
       <ul class="list-unstyled">
         
         <li class="list-inline-item social-icon my-2">
@@ -449,9 +590,9 @@ Group 0: [0-1]: b
     
 
     
-    <div class="footer-sections my-md-3 my-xl-0 d-xl-inline-block align-top float-xl-right">
+    <div class="footer-sections d-xl-inline-block float-xl-right">
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -499,7 +640,7 @@ Group 0: [0-1]: b
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -555,7 +696,7 @@ Group 0: [0-1]: b
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -611,7 +752,7 @@ Group 0: [0-1]: b
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -675,7 +816,7 @@ Group 0: [0-1]: b
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -723,7 +864,7 @@ Group 0: [0-1]: b
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -772,18 +913,19 @@ Group 0: [0-1]: b
     </div>
     
   </div>
+  <hr class="my-3">
+  
 
-  <div class="copyright clearfix">
+  <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
       <i class="far fa-copyright"></i> 2020 Buteco Tecnológico
       
       &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
       
-      
     </div>
     
-    <div class="d-md-inline-block float-md-right">
-        <ul class="list-unstyled">
+    <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
+        <ul class="list-unstyled m-0">
           
           <li class="list-inline-item">
             <a href="/termos-de-uso/">
@@ -804,6 +946,7 @@ Group 0: [0-1]: b
         </ul>
     </div>
     
+    
   </div>
 </footer>
 
@@ -816,7 +959,7 @@ Group 0: [0-1]: b
   <script type="text/javascript" src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script>
 
   
-  <script type="text/javascript" src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
+  <script type="text/javascript" src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
 
 
 

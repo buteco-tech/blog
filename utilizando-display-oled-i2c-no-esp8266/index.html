@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.75.1" />
 
   <title>Utilizando display OLED I2C no ESP8266 &middot; Buteco Tecnológico</title>
 
@@ -34,6 +34,7 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
 <meta name="twitter:description" content="Displays são sempre úteis em projetos relacionados a Internet das Coisas (IoT). Por exemplo, supondo que estamos desenvolvendo alguma forma de monitoramento de temperatura com o ESP8266, qual a forma mais simples de ficar sabendo a temperatura atual? Creio que seja exibindo-a em um display, certo?
 Sendo assim, o tutorial de hoje irá mostrar como utilizar um display OLED I2C de 0.96 polegadas, pode parecer pequeno, mas acredite, é possível inserir bastante informação nele.
 O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 128x64 pixels, que utiliza barramento I2C, suportado pelos ESP-07, ESP-12, entre outros. O I2C é suportado pelo ESP8266, porém placas como a ESP-01 não disponibilizam este pino."/>
+<meta name="twitter:site" content="@butecotech"/>
 
 
 <meta property="og:title" content="Utilizando display OLED I2C no ESP8266" />
@@ -48,9 +49,143 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
 
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://butecotecnologico.com.br/#organization",
+      "name": "Buteco Tecnológico",
+      "url": "https://butecotecnologico.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://butecotecnologico.com.br/logos/capybara_400.png"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/butecotecnologico",
+        "https://twitter.com/butecotech",
+        "https://www.facebook.com/buteco.tech",
+        "https://www.youtube.com/c/ButecoTech",
+        "https://www.instagram.com/buteco.tech/"
+      ]
+    },{
+      "@type": "WebSite",
+      "@id": "https://butecotecnologico.com.br/#website",
+      "url": "https://butecotecnologico.com.br/",
+      "name": "Buteco Tecnológico",
+      "description": "\u003cp\u003eDisplays são sempre úteis em projetos relacionados a Internet das Coisas (IoT). Por exemplo, supondo que estamos desenvolvendo alguma forma de monitoramento de temperatura com o ESP8266, qual a forma mais simples de ficar sabendo a temperatura atual? Creio que seja exibindo-a em um display, certo?\u003c/p\u003e\n\u003cp\u003eSendo assim, o tutorial de hoje irá mostrar como utilizar um display OLED I2C de 0.96 polegadas, pode parecer pequeno, mas acredite, é possível inserir bastante informação nele.\u003c/p\u003e\n\u003cp\u003eO display que estou utilizando é o \u003ca\u003eOLED com controlador SSD1306\u003c/a\u003e com tamanho de 128x64 pixels, que utiliza barramento I2C, suportado pelos ESP-07, ESP-12, entre outros. O I2C é suportado pelo ESP8266, porém placas como a ESP-01 não disponibilizam este pino.\u003c/p\u003e",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://butecotecnologico.com.br/#primaryimage",
+      "url": "https://butecotecnologico.com.br/logos/capybara_64.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400_bg.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/#webpage",
+      "url": "https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/",
+      "name": "Utilizando display OLED I2C no ESP8266",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/#website"
+      },
+      "about": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://butecotecnologico.com.br/#primaryimage"
+      },
+      "datePublished": "2016-04-11T18:52:21+00:00",
+      "dateModified": "2016-04-11T18:52:21+00:00",
+      "description": "\u003cp\u003eDisplays são sempre úteis em projetos relacionados a Internet das Coisas (IoT). Por exemplo, supondo que estamos desenvolvendo alguma forma de monitoramento de temperatura com o ESP8266, qual a forma mais simples de ficar sabendo a temperatura atual? Creio que seja exibindo-a em um display, certo?\u003c/p\u003e\n\u003cp\u003eSendo assim, o tutorial de hoje irá mostrar como utilizar um display OLED I2C de 0.96 polegadas, pode parecer pequeno, mas acredite, é possível inserir bastante informação nele.\u003c/p\u003e\n\u003cp\u003eO display que estou utilizando é o \u003ca\u003eOLED com controlador SSD1306\u003c/a\u003e com tamanho de 128x64 pixels, que utiliza barramento I2C, suportado pelos ESP-07, ESP-12, entre outros. O I2C é suportado pelo ESP8266, porém placas como a ESP-01 não disponibilizam este pino.\u003c/p\u003e",
+      "inLanguage": "pt-BR",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/#webpage"
+      },
+      "headline": "Utilizando display OLED I2C no ESP8266",
+      "image": [
+        "https://butecotecnologico.com.br/images/wp-content/uploads/2016/04/oled_display.jpg"
+      ],
+      "datePublished": "2016-04-11T18:52:21+00:00",
+      "dateModified": "2016-04-11T18:52:21+00:00",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "keywords": [
+        "diy",
+        "display",
+        "esp12",
+        "esp8266",
+        "i2c",
+        "iot",
+        "nodemcu",
+        "oled",
+        "u8g"
+      ],
+      "articleSection": [
+        "Embarcados",
+        "Tutoriais"
+      ],
+      "inLanguage": "pt-BR",
+      "author": [
+        {
+          "@type":"Person",
+          "name": "Alexandre Vicenzi",
+          "image": {
+            "@type":"ImageObject",
+            "url": "https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&d=mp"
+          },
+          "description": "Engenheiro de Software"
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
   
   
-  <link rel="stylesheet" href="/sass/iara.min.ec6a6d47e30bb1ea2f411506e8d933b4d3046198313d0832904eee33d737d7f1.css">
+  <link rel="stylesheet" href="/sass/iara.min.79b5306d3933557cf16019cfd71c157355a9277c2de52d99c70513d28c74982d.css">
 
 
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -72,6 +207,9 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
   
 <script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+
+
+  
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -163,16 +301,19 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
     <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
        class="d-inline-block avatar mt-1 ml-0">
       <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           loading="lazy"
            alt="Alexandre Vicenzi"
            title="Alexandre Vicenzi">
     </a>
     </div>
   </div><div class="d-inline-block authors">
-    <div class="text-muted"><span>
+    <div><span>
         <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
            class="author">Alexandre Vicenzi</a>
       </span>
-    <span>em</span>
+    
+    <span class="text-muted">em</span>
+    
     <span>
         <a href="https://butecotecnologico.com.br/categorias/embarcados/" class="text-decoration-none">Embarcados</a> e 
         
@@ -185,25 +326,25 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
   </div>
   <div class="d-none d-md-inline-block ml-auto">
     <div class="d-inline-flex share-buttons text-center">
-      <a class="twitter-share-button"
+      <a class="share-button share-twitter"
          href="#"
          title="Share on Twitter"
          data-url="https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/"
          data-text="Utilizando display OLED I2C no ESP8266"><i class="fab fa-twitter"></i></a>
 
-      <a class="linkedin-share-button"
+      <a class="share-button share-linkedin"
          href="#"
          title="Share on LinkedIn"
          data-url="https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/"
          data-text="Utilizando display OLED I2C no ESP8266"><i class="fab fa-linkedin-in"></i></a>
 
-      <a class="facebook-share-button"
+      <a class="share-button share-facebook"
          href="#"
          title="Share on Facebook"
          data-url="https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/"
          data-text="Utilizando display OLED I2C no ESP8266"><i class="fab fa-facebook"></i></a>
 
-      <a class="pinterest-share-button"
+      <a class="share-button share-pinterest"
          href="#"
          title="Share on Pinterest"
          data-url="https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/"
@@ -286,25 +427,25 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
 
 
     <div class="share-buttons text-center">
-  <a class="twitter-share-button"
+  <a class="share-button share-twitter"
      href="#"
      title="Share on Twitter"
      data-url="https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/"
      data-text="Utilizando display OLED I2C no ESP8266"><i class="fab fa-twitter"></i></a>
 
-  <a class="linkedin-share-button"
+  <a class="share-button share-linkedin"
      href="#"
      title="Share on LinkedIn"
      data-url="https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/"
      data-text="Utilizando display OLED I2C no ESP8266"><i class="fab fa-linkedin-in"></i></a>
 
-  <a class="facebook-share-button"
+  <a class="share-button share-facebook"
      href="#"
      title="Share on Facebook"
      data-url="https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/"
      data-text="Utilizando display OLED I2C no ESP8266"><i class="fab fa-facebook"></i></a>
 
-  <a class="pinterest-share-button"
+  <a class="share-button share-pinterest"
      href="#"
      title="Share on Pinterest"
      data-url="https://butecotecnologico.com.br/utilizando-display-oled-i2c-no-esp8266/"
@@ -319,6 +460,7 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
       <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
         <img class="author-img"
              src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             loading="lazy"
              alt="Alexandre Vicenzi">
       </a>
     </div>
@@ -336,7 +478,7 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
 </div>
 
     <div class="border-top pt-4 pb-4">
-<h2 class="mt-0">Comentários</h2>
+<h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -363,7 +505,7 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
 </section>
   </main>
 
-  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -379,10 +521,13 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
 </div>
 
 
-  <footer class="site-footer mt-auto pt-5">
-  <div class="clearfix">
+  
+
+<footer class="site-footer mt-auto pt-5 pb-3 px-4">
+  
+  <div class="clearfix text-center">
     
-    <div class="social-icons d-xl-inline-block align-top float-xl-left">
+    <div class="social-icons d-xl-inline-block float-xl-left">
       <ul class="list-unstyled">
         
         <li class="list-inline-item social-icon my-2">
@@ -422,9 +567,9 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
     
 
     
-    <div class="footer-sections my-md-3 my-xl-0 d-xl-inline-block align-top float-xl-right">
+    <div class="footer-sections d-xl-inline-block float-xl-right">
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -472,7 +617,7 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -528,7 +673,7 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -584,7 +729,7 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -648,7 +793,7 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -696,7 +841,7 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -745,18 +890,19 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
     </div>
     
   </div>
+  <hr class="my-3">
+  
 
-  <div class="copyright clearfix">
+  <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
       <i class="far fa-copyright"></i> 2020 Buteco Tecnológico
       
       &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
       
-      
     </div>
     
-    <div class="d-md-inline-block float-md-right">
-        <ul class="list-unstyled">
+    <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
+        <ul class="list-unstyled m-0">
           
           <li class="list-inline-item">
             <a href="/termos-de-uso/">
@@ -777,6 +923,7 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
         </ul>
     </div>
     
+    
   </div>
 </footer>
 
@@ -789,7 +936,7 @@ O display que estou utilizando é o OLED com controlador SSD1306 com tamanho de 
   <script type="text/javascript" src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script>
 
   
-  <script type="text/javascript" src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
+  <script type="text/javascript" src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
 
 
 

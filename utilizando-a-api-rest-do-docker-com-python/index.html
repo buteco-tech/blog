@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.75.1" />
 
   <title>Utilizando a API REST do Docker com Python &middot; Buteco Tecnológico</title>
 
@@ -34,6 +34,7 @@ Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifi
 <meta name="twitter:description" content="O Docker é uma plataforma para construir e executar aplicações distribuídas. Com ele é possível executar um bash em um ambiente Debian mesmo estando dentro um Fedora, por exemplo. Seu funcionamento se assemelha ao de uma máquina virtual, mas as aplicações executadas no Docker estão de fato sendo executados no sistema host, ou seja, não existe a camada de emulação.
 Isso se deve à utilização de templates de imagens do Debian (existem imagens de sistemas inteiros, como Debian, Ubuntu, e também de aplicações, como Apache, MySQL e etc). Para mais informações sobre o Docker, basta verificar a página do projeto.
 Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifique como instalá-lo em sua distribuição. Após instalado, você precisará iniciá-lo através do docker daemon para receber requisições HTTP, além das requisições por socket (este é utilizado pelo docker client). Antes de iniciá-lo com estas opções, você precisará ter certeza que o mesmo não esteja executando. Para tal, basta executar:"/>
+<meta name="twitter:site" content="@butecotech"/>
 
 
 <meta property="og:title" content="Utilizando a API REST do Docker com Python" />
@@ -48,9 +49,138 @@ Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifi
 
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://butecotecnologico.com.br/#organization",
+      "name": "Buteco Tecnológico",
+      "url": "https://butecotecnologico.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://butecotecnologico.com.br/logos/capybara_400.png"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/butecotecnologico",
+        "https://twitter.com/butecotech",
+        "https://www.facebook.com/buteco.tech",
+        "https://www.youtube.com/c/ButecoTech",
+        "https://www.instagram.com/buteco.tech/"
+      ]
+    },{
+      "@type": "WebSite",
+      "@id": "https://butecotecnologico.com.br/#website",
+      "url": "https://butecotecnologico.com.br/",
+      "name": "Buteco Tecnológico",
+      "description": "\u003cp\u003eO Docker é uma plataforma para construir e executar aplicações distribuídas. Com ele é possível executar um \u003cem\u003ebash\u003c/em\u003e em um ambiente Debian mesmo estando dentro um Fedora, por exemplo. Seu funcionamento se assemelha ao de uma máquina virtual, mas as aplicações executadas no Docker estão de fato sendo executados no sistema \u003cem\u003ehost\u003c/em\u003e, ou seja, não existe a camada de emulação.\u003c/p\u003e\n\u003cp\u003eIsso se deve à utilização de \u003cem\u003etemplates\u003c/em\u003e de imagens do Debian (existem imagens de sistemas inteiros, como Debian, Ubuntu, e também de aplicações, como Apache, MySQL e etc). Para mais informações sobre o Docker, basta verificar a \u003ca href=\"https://www.docker.com/\" target=\"_blank\"\u003epágina\u003c/a\u003e do projeto.\u003c/p\u003e\n\u003cp\u003eEste tutorial não tem como foco instalar o Docker, então antes de tudo, verifique como instalá-lo em sua distribuição. Após instalado, você precisará iniciá-lo através do \u003cem\u003edocker daemon\u003c/em\u003e para receber requisições HTTP, além das requisições por \u003cem\u003esocket\u003c/em\u003e (este é utilizado pelo \u003cem\u003edocker client\u003c/em\u003e). Antes de iniciá-lo com estas opções, você precisará ter certeza que o mesmo não esteja executando. Para tal, basta executar:\u003c/p\u003e",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://butecotecnologico.com.br/#primaryimage",
+      "url": "https://butecotecnologico.com.br/logos/capybara_64.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400_bg.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/#webpage",
+      "url": "https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/",
+      "name": "Utilizando a API REST do Docker com Python",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/#website"
+      },
+      "about": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://butecotecnologico.com.br/#primaryimage"
+      },
+      "datePublished": "2015-10-27T08:31:51+00:00",
+      "dateModified": "2015-10-27T08:31:51+00:00",
+      "description": "\u003cp\u003eO Docker é uma plataforma para construir e executar aplicações distribuídas. Com ele é possível executar um \u003cem\u003ebash\u003c/em\u003e em um ambiente Debian mesmo estando dentro um Fedora, por exemplo. Seu funcionamento se assemelha ao de uma máquina virtual, mas as aplicações executadas no Docker estão de fato sendo executados no sistema \u003cem\u003ehost\u003c/em\u003e, ou seja, não existe a camada de emulação.\u003c/p\u003e\n\u003cp\u003eIsso se deve à utilização de \u003cem\u003etemplates\u003c/em\u003e de imagens do Debian (existem imagens de sistemas inteiros, como Debian, Ubuntu, e também de aplicações, como Apache, MySQL e etc). Para mais informações sobre o Docker, basta verificar a \u003ca href=\"https://www.docker.com/\" target=\"_blank\"\u003epágina\u003c/a\u003e do projeto.\u003c/p\u003e\n\u003cp\u003eEste tutorial não tem como foco instalar o Docker, então antes de tudo, verifique como instalá-lo em sua distribuição. Após instalado, você precisará iniciá-lo através do \u003cem\u003edocker daemon\u003c/em\u003e para receber requisições HTTP, além das requisições por \u003cem\u003esocket\u003c/em\u003e (este é utilizado pelo \u003cem\u003edocker client\u003c/em\u003e). Antes de iniciá-lo com estas opções, você precisará ter certeza que o mesmo não esteja executando. Para tal, basta executar:\u003c/p\u003e",
+      "inLanguage": "pt-BR",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/#webpage"
+      },
+      "headline": "Utilizando a API REST do Docker com Python",
+      "image": [
+        "https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/docker-100275159-orig.jpg"
+      ],
+      "datePublished": "2015-10-27T08:31:51+00:00",
+      "dateModified": "2015-10-27T08:31:51+00:00",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "keywords": [
+        "Docker",
+        "linux",
+        "python",
+        "requests"
+      ],
+      "articleSection": [
+        "Desenvolvimento",
+        "Tutoriais"
+      ],
+      "inLanguage": "pt-BR",
+      "author": [
+        {
+          "@type":"Person",
+          "name": "Marcos Paulo de Souza",
+          "image": {
+            "@type":"ImageObject",
+            "url": "https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&d=mp"
+          },
+          "description": "Software Engineer"
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
   
   
-  <link rel="stylesheet" href="/sass/iara.min.ec6a6d47e30bb1ea2f411506e8d933b4d3046198313d0832904eee33d737d7f1.css">
+  <link rel="stylesheet" href="/sass/iara.min.79b5306d3933557cf16019cfd71c157355a9277c2de52d99c70513d28c74982d.css">
 
 
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -72,6 +202,9 @@ Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifi
   
 <script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+
+
+  
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -163,16 +296,19 @@ Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifi
     <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
        class="d-inline-block avatar mt-1 ml-0">
       <img src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+           loading="lazy"
            alt="Marcos Paulo de Souza"
            title="Marcos Paulo de Souza">
     </a>
     </div>
   </div><div class="d-inline-block authors">
-    <div class="text-muted"><span>
+    <div><span>
         <a href="https://butecotecnologico.com.br/autores/mpdesouza/"
            class="author">Marcos Paulo de Souza</a>
       </span>
-    <span>em</span>
+    
+    <span class="text-muted">em</span>
+    
     <span>
         <a href="https://butecotecnologico.com.br/categorias/desenvolvimento/" class="text-decoration-none">Desenvolvimento</a> e 
         
@@ -185,25 +321,25 @@ Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifi
   </div>
   <div class="d-none d-md-inline-block ml-auto">
     <div class="d-inline-flex share-buttons text-center">
-      <a class="twitter-share-button"
+      <a class="share-button share-twitter"
          href="#"
          title="Share on Twitter"
          data-url="https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/"
          data-text="Utilizando a API REST do Docker com Python"><i class="fab fa-twitter"></i></a>
 
-      <a class="linkedin-share-button"
+      <a class="share-button share-linkedin"
          href="#"
          title="Share on LinkedIn"
          data-url="https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/"
          data-text="Utilizando a API REST do Docker com Python"><i class="fab fa-linkedin-in"></i></a>
 
-      <a class="facebook-share-button"
+      <a class="share-button share-facebook"
          href="#"
          title="Share on Facebook"
          data-url="https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/"
          data-text="Utilizando a API REST do Docker com Python"><i class="fab fa-facebook"></i></a>
 
-      <a class="pinterest-share-button"
+      <a class="share-button share-pinterest"
          href="#"
          title="Share on Pinterest"
          data-url="https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/"
@@ -278,25 +414,25 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
 
 
     <div class="share-buttons text-center">
-  <a class="twitter-share-button"
+  <a class="share-button share-twitter"
      href="#"
      title="Share on Twitter"
      data-url="https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/"
      data-text="Utilizando a API REST do Docker com Python"><i class="fab fa-twitter"></i></a>
 
-  <a class="linkedin-share-button"
+  <a class="share-button share-linkedin"
      href="#"
      title="Share on LinkedIn"
      data-url="https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/"
      data-text="Utilizando a API REST do Docker com Python"><i class="fab fa-linkedin-in"></i></a>
 
-  <a class="facebook-share-button"
+  <a class="share-button share-facebook"
      href="#"
      title="Share on Facebook"
      data-url="https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/"
      data-text="Utilizando a API REST do Docker com Python"><i class="fab fa-facebook"></i></a>
 
-  <a class="pinterest-share-button"
+  <a class="share-button share-pinterest"
      href="#"
      title="Share on Pinterest"
      data-url="https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/"
@@ -311,6 +447,7 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
       <a href="https://butecotecnologico.com.br/autores/mpdesouza/">
         <img class="author-img"
              src="https://gravatar.com/avatar/11fc78ee518c3894943153a8f2e5cb0d?s=200&amp;d=mp"
+             loading="lazy"
              alt="Marcos Paulo de Souza">
       </a>
     </div>
@@ -328,7 +465,7 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
 </div>
 
     <div class="border-top pt-4 pb-4">
-<h2 class="mt-0">Comentários</h2>
+<h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -355,7 +492,7 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
 </section>
   </main>
 
-  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -371,10 +508,13 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
 </div>
 
 
-  <footer class="site-footer mt-auto pt-5">
-  <div class="clearfix">
+  
+
+<footer class="site-footer mt-auto pt-5 pb-3 px-4">
+  
+  <div class="clearfix text-center">
     
-    <div class="social-icons d-xl-inline-block align-top float-xl-left">
+    <div class="social-icons d-xl-inline-block float-xl-left">
       <ul class="list-unstyled">
         
         <li class="list-inline-item social-icon my-2">
@@ -414,9 +554,9 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
     
 
     
-    <div class="footer-sections my-md-3 my-xl-0 d-xl-inline-block align-top float-xl-right">
+    <div class="footer-sections d-xl-inline-block float-xl-right">
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -464,7 +604,7 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -520,7 +660,7 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -576,7 +716,7 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -640,7 +780,7 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -688,7 +828,7 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -737,18 +877,19 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
     </div>
     
   </div>
+  <hr class="my-3">
+  
 
-  <div class="copyright clearfix">
+  <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
       <i class="far fa-copyright"></i> 2020 Buteco Tecnológico
       
       &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
       
-      
     </div>
     
-    <div class="d-md-inline-block float-md-right">
-        <ul class="list-unstyled">
+    <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
+        <ul class="list-unstyled m-0">
           
           <li class="list-inline-item">
             <a href="/termos-de-uso/">
@@ -769,6 +910,7 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
         </ul>
     </div>
     
+    
   </div>
 </footer>
 
@@ -781,7 +923,7 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
   <script type="text/javascript" src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script>
 
   
-  <script type="text/javascript" src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
+  <script type="text/javascript" src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
 
 
 

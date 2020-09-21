@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.75.1" />
 
   <title>Extração de dados com Logstash &middot; Buteco Tecnológico</title>
 
@@ -28,6 +28,7 @@
 
 <meta name="twitter:title" content="Extração de dados com Logstash"/>
 <meta name="twitter:description" content="Logstash basicamente é uma ferramenta de extração de dados, seu uso é simples, você determina um entrada (input), extrai informações que atendem a um padrão com filtros (filters) e gera uma saída (output), o famoso &ldquo;entrada -&gt; processo -&gt; saída&rdquo;. Seguindo esse conceito base, para cada etapa, o logstash possuí vários &ldquo;plugins&rdquo; que são pequenos programas que fazem as integrações do logstash, cada etapa possuí seus plugins, o que faz com que você possa fazer a entrada, processo e saída de várias formas diferentes."/>
+<meta name="twitter:site" content="@butecotech"/>
 
 
 <meta property="og:title" content="Extração de dados com Logstash" />
@@ -40,9 +41,137 @@
 
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://butecotecnologico.com.br/#organization",
+      "name": "Buteco Tecnológico",
+      "url": "https://butecotecnologico.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://butecotecnologico.com.br/logos/capybara_400.png"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/butecotecnologico",
+        "https://twitter.com/butecotech",
+        "https://www.facebook.com/buteco.tech",
+        "https://www.youtube.com/c/ButecoTech",
+        "https://www.instagram.com/buteco.tech/"
+      ]
+    },{
+      "@type": "WebSite",
+      "@id": "https://butecotecnologico.com.br/#website",
+      "url": "https://butecotecnologico.com.br/",
+      "name": "Buteco Tecnológico",
+      "description": "\u003cp\u003eLogstash basicamente é uma ferramenta de extração de dados, seu uso é simples, você determina um entrada (input), extrai informações que atendem a um padrão com filtros (filters) e gera uma saída (output), o famoso \u0026ldquo;entrada -\u0026gt; processo -\u0026gt; saída\u0026rdquo;. Seguindo esse conceito base, para cada etapa, o logstash possuí vários \u0026ldquo;plugins\u0026rdquo; que são pequenos programas que fazem as integrações do logstash, cada etapa possuí seus plugins, o que faz com que você possa fazer a entrada, processo e saída de várias formas diferentes.\u003c/p\u003e",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://butecotecnologico.com.br/#primaryimage",
+      "url": "https://butecotecnologico.com.br/logos/capybara_64.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400_bg.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://butecotecnologico.com.br/logstash/#webpage",
+      "url": "https://butecotecnologico.com.br/logstash/",
+      "name": "Extração de dados com Logstash",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/#website"
+      },
+      "about": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://butecotecnologico.com.br/#primaryimage"
+      },
+      "datePublished": "2016-06-13T12:00:05+00:00",
+      "dateModified": "2016-06-13T12:00:05+00:00",
+      "description": "\u003cp\u003eLogstash basicamente é uma ferramenta de extração de dados, seu uso é simples, você determina um entrada (input), extrai informações que atendem a um padrão com filtros (filters) e gera uma saída (output), o famoso \u0026ldquo;entrada -\u0026gt; processo -\u0026gt; saída\u0026rdquo;. Seguindo esse conceito base, para cada etapa, o logstash possuí vários \u0026ldquo;plugins\u0026rdquo; que são pequenos programas que fazem as integrações do logstash, cada etapa possuí seus plugins, o que faz com que você possa fazer a entrada, processo e saída de várias formas diferentes.\u003c/p\u003e",
+      "inLanguage": "pt-BR",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://butecotecnologico.com.br/logstash/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/logstash/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://butecotecnologico.com.br/logstash/#webpage"
+      },
+      "headline": "Extração de dados com Logstash",
+      "image": [
+        "https://butecotecnologico.com.br/images/wp-content/uploads/2016/05/logstash-logo.png"
+      ],
+      "datePublished": "2016-06-13T12:00:05+00:00",
+      "dateModified": "2016-06-13T12:00:05+00:00",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "keywords": [
+        "elk",
+        "logstash",
+        "pipeline"
+      ],
+      "articleSection": [
+        "Data Science",
+        "Tutoriais"
+      ],
+      "inLanguage": "pt-BR",
+      "author": [
+        {
+          "@type":"Person",
+          "name": "Jonathan André Schweder",
+          "image": {
+            "@type":"ImageObject",
+            "url": "https://avatars1.githubusercontent.com/u/6409113?v=2&s=200"
+          },
+          "description": "System Developer Engineer at Amazon Web Services"
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://butecotecnologico.com.br/logstash/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
   
   
-  <link rel="stylesheet" href="/sass/iara.min.ec6a6d47e30bb1ea2f411506e8d933b4d3046198313d0832904eee33d737d7f1.css">
+  <link rel="stylesheet" href="/sass/iara.min.79b5306d3933557cf16019cfd71c157355a9277c2de52d99c70513d28c74982d.css">
 
 
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -64,6 +193,9 @@
   
 <script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+
+
+  
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -155,16 +287,19 @@
     <a href="https://butecotecnologico.com.br/autores/jaswdr/"
        class="d-inline-block avatar mt-1 ml-0">
       <img src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+           loading="lazy"
            alt="Jonathan André Schweder"
            title="Jonathan André Schweder">
     </a>
     </div>
   </div><div class="d-inline-block authors">
-    <div class="text-muted"><span>
+    <div><span>
         <a href="https://butecotecnologico.com.br/autores/jaswdr/"
            class="author">Jonathan André Schweder</a>
       </span>
-    <span>em</span>
+    
+    <span class="text-muted">em</span>
+    
     <span>
         <a href="https://butecotecnologico.com.br/categorias/data-science/" class="text-decoration-none">Data Science</a> e 
         
@@ -177,25 +312,25 @@
   </div>
   <div class="d-none d-md-inline-block ml-auto">
     <div class="d-inline-flex share-buttons text-center">
-      <a class="twitter-share-button"
+      <a class="share-button share-twitter"
          href="#"
          title="Share on Twitter"
          data-url="https://butecotecnologico.com.br/logstash/"
          data-text="Extração de dados com Logstash"><i class="fab fa-twitter"></i></a>
 
-      <a class="linkedin-share-button"
+      <a class="share-button share-linkedin"
          href="#"
          title="Share on LinkedIn"
          data-url="https://butecotecnologico.com.br/logstash/"
          data-text="Extração de dados com Logstash"><i class="fab fa-linkedin-in"></i></a>
 
-      <a class="facebook-share-button"
+      <a class="share-button share-facebook"
          href="#"
          title="Share on Facebook"
          data-url="https://butecotecnologico.com.br/logstash/"
          data-text="Extração de dados com Logstash"><i class="fab fa-facebook"></i></a>
 
-      <a class="pinterest-share-button"
+      <a class="share-button share-pinterest"
          href="#"
          title="Share on Pinterest"
          data-url="https://butecotecnologico.com.br/logstash/"
@@ -240,7 +375,7 @@ logstash -f pipeline.conf
 <p>Você vai perceber que o programa não termina de executar, digite algo no terminal e aperte enter, algo como a imagem abaixo será exibido.</p>
 <figure class="graf--figure">
 <div class="aspectRatioPlaceholder is-locked">
-<p>[caption id=&rdquo;&rdquo; align=&quot;aligncenter&rdquo; width=&quot;500&rdquo;]<img class="graf-image" src="https://cdn-images-1.medium.com/max/800/1*_8dVDgOGrJDPz3Uh5eAEXg.gif" width="500" height="150" data-image-id="1*_8dVDgOGrJDPz3Uh5eAEXg.gif" data-width="500" data-height="150" /> Exemplo 1: Lendo e escrevendo no terminal[/caption]</p>
+<p>[caption id=&quot;&quot; align=&ldquo;aligncenter&rdquo; width=&ldquo;500&rdquo;]<img class="graf-image" src="https://cdn-images-1.medium.com/max/800/1*_8dVDgOGrJDPz3Uh5eAEXg.gif" width="500" height="150" data-image-id="1*_8dVDgOGrJDPz3Uh5eAEXg.gif" data-width="500" data-height="150" /> Exemplo 1: Lendo e escrevendo no terminal[/caption]</p>
 </div>
 <figcaption class="imageCaption"></figcaption></figure>Simples não acha ? qualquer texto digitado no terminal será impresso no formato do logstash, vamos agora a um exemplo mais complexo onde iremos adicionar filtros para extrair dados de um arquivo.
 <h2>Exemplo 2: Lendo um arquivo e extraindo dados</h2>
@@ -269,7 +404,7 @@ linha 3
 <p>Caso precise rodar mais vezes será necessário abrir e salvar o arquivo de entrada, nesse caso “arquivo.log” para que o logstash detecte a mudança na data de modificação do arquivo e execute novamente, como utilizamos a tag “start_position” como “beginning” ele sempre fará a leitura a partir do começo do arquivo, do contrário apenas irá considerar as novas linhas.</p>
 <figure class="graf--figure">
 <div class="aspectRatioPlaceholder is-locked">
-<p>[caption id=&rdquo;&rdquo; align=&quot;aligncenter&rdquo; width=&quot;424&rdquo;]<img class="graf-image" src="https://cdn-images-1.medium.com/max/800/1*Mf62bxoew3mDXYHr5FWU1g.gif" width="424" height="212" data-image-id="1*Mf62bxoew3mDXYHr5FWU1g.gif" data-width="424" data-height="212" /> Exemplo 2: Lendo um arquivo e extraindo dados[/caption]</p>
+<p>[caption id=&quot;&quot; align=&ldquo;aligncenter&rdquo; width=&ldquo;424&rdquo;]<img class="graf-image" src="https://cdn-images-1.medium.com/max/800/1*Mf62bxoew3mDXYHr5FWU1g.gif" width="424" height="212" data-image-id="1*Mf62bxoew3mDXYHr5FWU1g.gif" data-width="424" data-height="212" /> Exemplo 2: Lendo um arquivo e extraindo dados[/caption]</p>
 </div>
 </figure>No caso de arquivos cada linha representa um registro, para registros que usam mais de uma linha é necessário o uso de plugins como o multiline.
 <p>A próxima etapa será extrair alguma informação mais útil deste arquivo, vamos então começar a trabalhar com filtros, um filtro bastante comumente usado é o “grok”, este utiliza de regex para extrair informações de textos.</p>
@@ -288,7 +423,7 @@ linha 3
 <p>Não se assuste, vamos por partes, primeiramente acesse o site grokdebug, nele poderemos testar nosso script antes e enviar ao logstash, insira as informações conforme a imagem.</p>
 <figure class="graf--figure">
 <div class="aspectRatioPlaceholder is-locked">
-<p>[caption id=&rdquo;&rdquo; align=&quot;aligncenter&rdquo; width=&quot;800&rdquo;]<img class="graf-image" src="https://cdn-images-1.medium.com/max/800/1*P5hXc8dUMQNov6tz35ch0Q.gif" width="800" height="306" data-image-id="1*P5hXc8dUMQNov6tz35ch0Q.gif" data-width="960" data-height="368" data-action="zoom" data-action-value="1*P5hXc8dUMQNov6tz35ch0Q.gif" /> Exemplo 2: Lendo um arquivo e extraindo dados[/caption]</p>
+<p>[caption id=&quot;&quot; align=&ldquo;aligncenter&rdquo; width=&ldquo;800&rdquo;]<img class="graf-image" src="https://cdn-images-1.medium.com/max/800/1*P5hXc8dUMQNov6tz35ch0Q.gif" width="800" height="306" data-image-id="1*P5hXc8dUMQNov6tz35ch0Q.gif" data-width="960" data-height="368" data-action="zoom" data-action-value="1*P5hXc8dUMQNov6tz35ch0Q.gif" /> Exemplo 2: Lendo um arquivo e extraindo dados[/caption]</p>
 </div>
 </figure>O resultado é mostrado logo abaixo.
 <pre><code class="bash">
@@ -338,7 +473,7 @@ stdout {}
 <p>Executando temos o seguinte resultado.</p>
 <figure class="graf--figure">
 <div class="aspectRatioPlaceholder is-locked">
-<p>[caption id=&rdquo;&rdquo; align=&quot;aligncenter&rdquo; width=&quot;800&rdquo;]<img class="graf-image" src="https://cdn-images-1.medium.com/max/800/1*ll1UdajeVvfMJDht3gBE-Q.gif" width="800" height="124" data-image-id="1*ll1UdajeVvfMJDht3gBE-Q.gif" data-width="960" data-height="149" data-action="zoom" data-action-value="1*ll1UdajeVvfMJDht3gBE-Q.gif" /> Exemplo 2: Lendo um arquivo e extraindo dados[/caption]</p>
+<p>[caption id=&quot;&quot; align=&ldquo;aligncenter&rdquo; width=&ldquo;800&rdquo;]<img class="graf-image" src="https://cdn-images-1.medium.com/max/800/1*ll1UdajeVvfMJDht3gBE-Q.gif" width="800" height="124" data-image-id="1*ll1UdajeVvfMJDht3gBE-Q.gif" data-width="960" data-height="149" data-action="zoom" data-action-value="1*ll1UdajeVvfMJDht3gBE-Q.gif" /> Exemplo 2: Lendo um arquivo e extraindo dados[/caption]</p>
 </div>
 </figure>Por fim vamos rodar esse mesmo comando porém adicionando um plugin de saída, usaremos aqui o plugin “csv” que gera arquivos “.csv” ou “comma-separated values”, altere a tag output para o seguinte.
 <pre><code class="bash">
@@ -383,25 +518,25 @@ Podemos concluir que o logstash é uma ótima alternativa para o processamento e
 
 
     <div class="share-buttons text-center">
-  <a class="twitter-share-button"
+  <a class="share-button share-twitter"
      href="#"
      title="Share on Twitter"
      data-url="https://butecotecnologico.com.br/logstash/"
      data-text="Extração de dados com Logstash"><i class="fab fa-twitter"></i></a>
 
-  <a class="linkedin-share-button"
+  <a class="share-button share-linkedin"
      href="#"
      title="Share on LinkedIn"
      data-url="https://butecotecnologico.com.br/logstash/"
      data-text="Extração de dados com Logstash"><i class="fab fa-linkedin-in"></i></a>
 
-  <a class="facebook-share-button"
+  <a class="share-button share-facebook"
      href="#"
      title="Share on Facebook"
      data-url="https://butecotecnologico.com.br/logstash/"
      data-text="Extração de dados com Logstash"><i class="fab fa-facebook"></i></a>
 
-  <a class="pinterest-share-button"
+  <a class="share-button share-pinterest"
      href="#"
      title="Share on Pinterest"
      data-url="https://butecotecnologico.com.br/logstash/"
@@ -416,6 +551,7 @@ Podemos concluir que o logstash é uma ótima alternativa para o processamento e
       <a href="https://butecotecnologico.com.br/autores/jaswdr/">
         <img class="author-img"
              src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+             loading="lazy"
              alt="Jonathan André Schweder">
       </a>
     </div>
@@ -433,7 +569,7 @@ Podemos concluir que o logstash é uma ótima alternativa para o processamento e
 </div>
 
     <div class="border-top pt-4 pb-4">
-<h2 class="mt-0">Comentários</h2>
+<h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -460,7 +596,7 @@ Podemos concluir que o logstash é uma ótima alternativa para o processamento e
 </section>
   </main>
 
-  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -476,10 +612,13 @@ Podemos concluir que o logstash é uma ótima alternativa para o processamento e
 </div>
 
 
-  <footer class="site-footer mt-auto pt-5">
-  <div class="clearfix">
+  
+
+<footer class="site-footer mt-auto pt-5 pb-3 px-4">
+  
+  <div class="clearfix text-center">
     
-    <div class="social-icons d-xl-inline-block align-top float-xl-left">
+    <div class="social-icons d-xl-inline-block float-xl-left">
       <ul class="list-unstyled">
         
         <li class="list-inline-item social-icon my-2">
@@ -519,9 +658,9 @@ Podemos concluir que o logstash é uma ótima alternativa para o processamento e
     
 
     
-    <div class="footer-sections my-md-3 my-xl-0 d-xl-inline-block align-top float-xl-right">
+    <div class="footer-sections d-xl-inline-block float-xl-right">
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -569,7 +708,7 @@ Podemos concluir que o logstash é uma ótima alternativa para o processamento e
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -625,7 +764,7 @@ Podemos concluir que o logstash é uma ótima alternativa para o processamento e
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -681,7 +820,7 @@ Podemos concluir que o logstash é uma ótima alternativa para o processamento e
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -745,7 +884,7 @@ Podemos concluir que o logstash é uma ótima alternativa para o processamento e
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -793,7 +932,7 @@ Podemos concluir que o logstash é uma ótima alternativa para o processamento e
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -842,18 +981,19 @@ Podemos concluir que o logstash é uma ótima alternativa para o processamento e
     </div>
     
   </div>
+  <hr class="my-3">
+  
 
-  <div class="copyright clearfix">
+  <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
       <i class="far fa-copyright"></i> 2020 Buteco Tecnológico
       
       &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
       
-      
     </div>
     
-    <div class="d-md-inline-block float-md-right">
-        <ul class="list-unstyled">
+    <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
+        <ul class="list-unstyled m-0">
           
           <li class="list-inline-item">
             <a href="/termos-de-uso/">
@@ -874,6 +1014,7 @@ Podemos concluir que o logstash é uma ótima alternativa para o processamento e
         </ul>
     </div>
     
+    
   </div>
 </footer>
 
@@ -886,7 +1027,7 @@ Podemos concluir que o logstash é uma ótima alternativa para o processamento e
   <script type="text/javascript" src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script>
 
   
-  <script type="text/javascript" src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
+  <script type="text/javascript" src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
 
 
 

@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.75.1" />
 
   <title>José Guilherme Vanz &middot; Buteco Tecnológico</title>
 
@@ -20,6 +20,7 @@
 
 <meta name="twitter:title" content="José Guilherme Vanz"/>
 <meta name="twitter:description" content="Um blog feito por, e para pessoas que gostam de compartilhar suas experiências com tecnologia, linux e software livre."/>
+<meta name="twitter:site" content="@butecotech"/>
 
 
 <meta property="og:title" content="José Guilherme Vanz" />
@@ -31,9 +32,88 @@
 
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://butecotecnologico.com.br/#organization",
+      "name": "Buteco Tecnológico",
+      "url": "https://butecotecnologico.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://butecotecnologico.com.br/logos/capybara_400.png"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/butecotecnologico",
+        "https://twitter.com/butecotech",
+        "https://www.facebook.com/buteco.tech",
+        "https://www.youtube.com/c/ButecoTech",
+        "https://www.instagram.com/buteco.tech/"
+      ]
+    },{
+      "@type": "WebSite",
+      "@id": "https://butecotecnologico.com.br/#website",
+      "url": "https://butecotecnologico.com.br/",
+      "name": "Buteco Tecnológico",
+      "description": "Um blog feito por, e para pessoas que gostam de compartilhar suas experiências com tecnologia, linux e software livre.",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://butecotecnologico.com.br/#primaryimage",
+      "url": "https://butecotecnologico.com.br/logos/capybara_64.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400_bg.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://butecotecnologico.com.br/autores/jvanz/#webpage",
+      "url": "https://butecotecnologico.com.br/autores/jvanz/",
+      "name": "José Guilherme Vanz",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/#website"
+      },
+      "about": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://butecotecnologico.com.br/#primaryimage"
+      },
+      "dateModified": "2016-03-31T23:40:20+00:00",
+      "description": "Um blog feito por, e para pessoas que gostam de compartilhar suas experiências com tecnologia, linux e software livre.",
+      "inLanguage": "pt-BR",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://butecotecnologico.com.br/autores/jvanz/"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
   
   
-  <link rel="stylesheet" href="/sass/iara.min.ec6a6d47e30bb1ea2f411506e8d933b4d3046198313d0832904eee33d737d7f1.css">
+  <link rel="stylesheet" href="/sass/iara.min.79b5306d3933557cf16019cfd71c157355a9277c2de52d99c70513d28c74982d.css">
 
 
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -55,6 +135,9 @@
   
 <script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+
+
+  
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -137,10 +220,11 @@
   <section class="container taxonomy">
   <div class="mt-3 mb-3">
     <div class="text-center">
-        <img src="https://jvanz.com/images/avatar.jpg"
-             class="border rounded-circle mt-2"
-             width="150"
-             alt="José Guilherme Vanz"></div>
+      <img src="https://jvanz.com/images/avatar.jpg"
+           loading="lazy"
+           class="border rounded-circle mt-2"
+           width="150"
+           alt="José Guilherme Vanz"></div>
     <div class="mt-3 text-center">
       <h1>José Guilherme Vanz</h1>
       <div>
@@ -152,39 +236,167 @@
 
   
 
-  <h2 class="mt-5">Artigos</h2>
+  <ul class="nav nav-tabs">
+  
+  <li class="nav-item">
+    <a class="nav-link active" href="#latest" data-toggle="tab">Recente</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#archive" data-toggle="tab">Arquivo</a>
+  </li>
+</ul>
+<div class="tab-content">
+  
 
-  <ul class="list-unstyled mt-3 mb-5">
-    <li class="my-2">
-      <div class="d-flex justify-content-between">
-        <a href="https://butecotecnologico.com.br/apache-mesos/" class="col-8 col-md-9 p-0 text-truncate">Apache Mesos</a>
-        <time class="post-list" datetime="2016-03-31T23:40:20Z">31/03/2016</time>
-        
+  <div role="latest" class="tab-pane fade show active" id="latest">
+    <ul class="list-unstyled mt-3 mb-5">
+      <li class="my-2">
+        <div class="card border-0 mt-4">
+  <div class="row no-gutters">
+    <div class="col-9">
+      <div class="card-body pl-0 py-0">
+        <h5 class="card-title">
+          <a href="https://butecotecnologico.com.br/apache-mesos/" class="text-decoration-only-hover">Apache Mesos</a>
+        </h5>
+        <div class="card-text d-none d-md-block mb-1">
+          <a href="https://butecotecnologico.com.br/apache-mesos/" class="text-decoration-none"><p>Nos últimos tempos vem se falando muito em computação na nuvem, computação distribuída, Linux containers, Big Data, etc. Junto com o crescimento dessas tecnologias também se observa o surgimento de inúmeras ferramentas para resolver os problemas encontrados nesta área da computação. Poderíamos citar várias, mas iremos falar brevemente sobre Apache Mesos. Não irei me aprofundar muito pois pretendo fazer mais artigos sobre o assunto detalhando mais em determinados tópicos.</p>
+<p>O Apache Mesos é considerado o <em>kernel</em> de sistemas distribuídos. Ele foi criado com os mesmos princípios do <em>kernel</em> Linux, só que em outro nível de abstração. O Mesos roda em todos os nós de <em>cluster</em> e prove a <em>frameworks</em> como Apache Spark, Hadoop, Cassandra, Kafka, Elastic Search e outros uma API para alocar recursos e rodarem suas <em>tasks</em> através de todo o <em>cluster</em> ou cloud. Em um Mesos <em>cluster</em>, CPU, memória, disco e outros recursos computacionais de todas as máquinas, virtuais ou físicas, são abstraídos em um único <em>pool</em> de recursos. Facilitando a criação e otimizando a utilização de sistemas distribuídos.</p></a>
+        </div>
+        <p class="card-text text-muted small mb-1">
+          <time datetime="2016-03-31T23:40:20Z">31/03/2016</time>
+
+          <span>&middot; 4 minutos de leitura</span>
+
+        </p>
       </div>
-    </li><li class="my-2">
-      <div class="d-flex justify-content-between">
-        <a href="https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/" class="col-8 col-md-9 p-0 text-truncate">Git: commit parcial de arquivos</a>
-        <time class="post-list" datetime="2016-02-16T21:08:42Z">16/02/2016</time>
-        
+    </div>
+    <div class="col-3 m-auto">
+      <a href="https://butecotecnologico.com.br/apache-mesos/">
+        <img style="max-width: 150px; max-height: 150px;" src="https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/apache_mesos.png" loading="lazy" class="card-img" alt="Apache Mesos">
+      </a>
+    </div>
+  </div>
+</div>
+
+      </li><li class="my-2">
+        <div class="card border-0 mt-4">
+  <div class="row no-gutters">
+    <div class="col-9">
+      <div class="card-body pl-0 py-0">
+        <h5 class="card-title">
+          <a href="https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/" class="text-decoration-only-hover">Git: commit parcial de arquivos</a>
+        </h5>
+        <div class="card-text d-none d-md-block mb-1">
+          <a href="https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/" class="text-decoration-none"><p>Neste post demonstrarei uma das muitas <em>features</em> bacanas disponíveis no git, o <em>commit</em> parcial de arquivos. Esta <em>feature</em> permite ao usuário selecionar quais alterações de determinado arquivo devem ser commitados.</p></a>
+        </div>
+        <p class="card-text text-muted small mb-1">
+          <time datetime="2016-02-16T21:08:42Z">16/02/2016</time>
+
+          <span>&middot; 3 minutos de leitura</span>
+
+        </p>
       </div>
-    </li><li class="my-2">
-      <div class="d-flex justify-content-between">
-        <a href="https://butecotecnologico.com.br/implemente-seu-mallocfree-just4fun/" class="col-8 col-md-9 p-0 text-truncate">Implemente seu malloc/free. Just4fun!</a>
-        <time class="post-list" datetime="2015-12-03T13:18:40Z">03/12/2015</time>
-        
+    </div>
+    <div class="col-3 m-auto">
+      <a href="https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/">
+        <img style="max-width: 150px; max-height: 150px;" src="https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/Git-Logo-Black.png" loading="lazy" class="card-img" alt="Git: commit parcial de arquivos">
+      </a>
+    </div>
+  </div>
+</div>
+
+      </li><li class="my-2">
+        <div class="card border-0 mt-4">
+  <div class="row no-gutters">
+    <div class="col-9">
+      <div class="card-body pl-0 py-0">
+        <h5 class="card-title">
+          <a href="https://butecotecnologico.com.br/implemente-seu-mallocfree-just4fun/" class="text-decoration-only-hover">Implemente seu malloc/free. Just4fun!</a>
+        </h5>
+        <div class="card-text d-none d-md-block mb-1">
+          <a href="https://butecotecnologico.com.br/implemente-seu-mallocfree-just4fun/" class="text-decoration-none"><p>Algum tempo atrás comprei o livro The Linux Programming Interface, um dos melhores livros que já adquiri. Um dos primeiros capítulos que li foi sobre alocação de memória. No final do capítulo, o autor oferece alguns exercícios. Entre eles existe um mais desafiador. Que é implementar funções equivalentes ao <code>malloc</code> e <code>free</code>. The challenge has been accepted!</p></a>
+        </div>
+        <p class="card-text text-muted small mb-1">
+          <time datetime="2015-12-03T13:18:40Z">03/12/2015</time>
+
+          <span>&middot; 4 minutos de leitura</span>
+
+        </p>
       </div>
-    </li><li class="my-2">
-      <div class="d-flex justify-content-between">
-        <a href="https://butecotecnologico.com.br/recuperando-dados-perdidos-do-git-stash/" class="col-8 col-md-9 p-0 text-truncate">Recuperando dados perdidos do git-stash</a>
-        <time class="post-list" datetime="2015-10-28T21:29:14Z">28/10/2015</time>
-        
+    </div>
+    <div class="col-3 m-auto">
+      <a href="https://butecotecnologico.com.br/implemente-seu-mallocfree-just4fun/">
+        <img style="max-width: 150px; max-height: 150px;" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/11/1042021.png" loading="lazy" class="card-img" alt="Implemente seu malloc/free. Just4fun!">
+      </a>
+    </div>
+  </div>
+</div>
+
+      </li><li class="my-2">
+        <div class="card border-0 mt-4">
+  <div class="row no-gutters">
+    <div class="col-9">
+      <div class="card-body pl-0 py-0">
+        <h5 class="card-title">
+          <a href="https://butecotecnologico.com.br/recuperando-dados-perdidos-do-git-stash/" class="text-decoration-only-hover">Recuperando dados perdidos do git-stash</a>
+        </h5>
+        <div class="card-text d-none d-md-block mb-1">
+          <a href="https://butecotecnologico.com.br/recuperando-dados-perdidos-do-git-stash/" class="text-decoration-none">Confira como recuperar dados perdidos do git-stash</a>
+        </div>
+        <p class="card-text text-muted small mb-1">
+          <time datetime="2015-10-28T21:29:14Z">28/10/2015</time>
+
+          <span>&middot; 3 minutos de leitura</span>
+
+        </p>
       </div>
-    </li>
-  </ul>
+    </div>
+    <div class="col-3 m-auto">
+      <a href="https://butecotecnologico.com.br/recuperando-dados-perdidos-do-git-stash/">
+        <img style="max-width: 150px; max-height: 150px;" src="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/t8cnk.jpg" loading="lazy" class="card-img" alt="Recuperando dados perdidos do git-stash">
+      </a>
+    </div>
+  </div>
+</div>
+
+      </li>
+    </ul>
+  </div>
+  <div role="archive" class="tab-pane fade" id="archive">
+    <ul class="list-unstyled mt-3 mb-5">
+      <li class="my-2">
+        <div class="d-flex justify-content-between">
+          <a href="https://butecotecnologico.com.br/apache-mesos/" class="col-8 col-md-9 p-0 text-decoration-only-hover text-truncate">Apache Mesos</a>
+          <time class="post-list" datetime="2016-03-31T23:40:20Z">31/03/2016</time>
+          
+        </div>
+      </li><li class="my-2">
+        <div class="d-flex justify-content-between">
+          <a href="https://butecotecnologico.com.br/git-commit-parcial-de-arquivos/" class="col-8 col-md-9 p-0 text-decoration-only-hover text-truncate">Git: commit parcial de arquivos</a>
+          <time class="post-list" datetime="2016-02-16T21:08:42Z">16/02/2016</time>
+          
+        </div>
+      </li><li class="my-2">
+        <div class="d-flex justify-content-between">
+          <a href="https://butecotecnologico.com.br/implemente-seu-mallocfree-just4fun/" class="col-8 col-md-9 p-0 text-decoration-only-hover text-truncate">Implemente seu malloc/free. Just4fun!</a>
+          <time class="post-list" datetime="2015-12-03T13:18:40Z">03/12/2015</time>
+          
+        </div>
+      </li><li class="my-2">
+        <div class="d-flex justify-content-between">
+          <a href="https://butecotecnologico.com.br/recuperando-dados-perdidos-do-git-stash/" class="col-8 col-md-9 p-0 text-decoration-only-hover text-truncate">Recuperando dados perdidos do git-stash</a>
+          <time class="post-list" datetime="2015-10-28T21:29:14Z">28/10/2015</time>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
 </section>
   </main>
 
-  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -200,10 +412,13 @@
 </div>
 
 
-  <footer class="site-footer mt-auto pt-5">
-  <div class="clearfix">
+  
+
+<footer class="site-footer mt-auto pt-5 pb-3 px-4">
+  
+  <div class="clearfix text-center">
     
-    <div class="social-icons d-xl-inline-block align-top float-xl-left">
+    <div class="social-icons d-xl-inline-block float-xl-left">
       <ul class="list-unstyled">
         
         <li class="list-inline-item social-icon my-2">
@@ -243,9 +458,9 @@
     
 
     
-    <div class="footer-sections my-md-3 my-xl-0 d-xl-inline-block align-top float-xl-right">
+    <div class="footer-sections d-xl-inline-block float-xl-right">
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -293,7 +508,7 @@
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -349,7 +564,7 @@
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -405,7 +620,7 @@
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -469,7 +684,7 @@
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -517,7 +732,7 @@
       
 
       
-      <div class="my-3 my-md-0 mx-md-3 d-md-inline-block align-top">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
         <ul class="list-unstyled">
           
           <li>
@@ -566,18 +781,19 @@
     </div>
     
   </div>
+  <hr class="my-3">
+  
 
-  <div class="copyright clearfix">
+  <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
       <i class="far fa-copyright"></i> 2020 Buteco Tecnológico
       
       &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
       
-      
     </div>
     
-    <div class="d-md-inline-block float-md-right">
-        <ul class="list-unstyled">
+    <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
+        <ul class="list-unstyled m-0">
           
           <li class="list-inline-item">
             <a href="/termos-de-uso/">
@@ -598,6 +814,7 @@
         </ul>
     </div>
     
+    
   </div>
 </footer>
 
@@ -610,7 +827,7 @@
   <script type="text/javascript" src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script>
 
   
-  <script type="text/javascript" src="/js/iara.min.3fa03bf882cb417778a7864ac8285e86b68abf5024c6067f07a213f3c15257a4.js"></script>
+  <script type="text/javascript" src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
 
 
 
