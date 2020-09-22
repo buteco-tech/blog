@@ -1,6 +1,17 @@
 [
   
   {
+    "id": "livros-gratuitos-data-science-setembro-2020",
+    "date_published": "2020-09-22T08:00:00Z",
+    "date_modified": "2020-09-22T08:00:00Z",
+    "title": "Livros gratuitos",
+    "url": "https://butecotecnologico.com.br/livros-gratuitos-data-science-setembro-2020/",
+    "images": ["https://butecotecnologico.com.br/images/posts/books-ai-ds.png"],
+    "tags": ["livros","kafka","kubernetes","sre","devops","bitcoin"],
+    "categories": ["noticias","data-science"],
+    "authors": ["alexandrevicenzi"]
+  },
+  {
     "id": "kubesail-cluster-kubernetes-gratuito",
     "date_published": "2020-09-08T08:00:00Z",
     "date_modified": "2020-09-08T08:00:00Z",
