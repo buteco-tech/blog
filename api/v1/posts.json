@@ -7,7 +7,7 @@
     "title": "Livros gratuitos",
     "url": "https://butecotecnologico.com.br/livros-gratuitos-data-science-setembro-2020/",
     "images": ["https://butecotecnologico.com.br/images/posts/books-ai-ds.png"],
-    "tags": ["livros","kafka","kubernetes","sre","devops","bitcoin"],
+    "tags": ["livros","kafka","hadoop","python","machine-learning","deep-learning"],
     "categories": ["noticias","data-science"],
     "authors": ["alexandrevicenzi"]
   },

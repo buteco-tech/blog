@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://butecotecnologico.com.br/sitemap.xml
