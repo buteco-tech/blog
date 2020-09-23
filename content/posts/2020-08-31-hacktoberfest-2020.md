@@ -38,7 +38,7 @@ Ao se inscrever você receberá mais detalhes de como participar.
 * 13:00 — Introdução e boas-vindas
 * 13:15 — O que é software livre
 * 13:45 — Como contribuir com projetos
-* 14:30 — Bate papo sobre experiências com SL
+* 14:15 — Bate papo sobre experiências com SL
 * 15:00 — Como escrever artigos
 * 15:30 — Hacking
 * 17:00 — Encerramento
