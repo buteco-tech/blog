@@ -36,10 +36,11 @@ Ao se inscrever você receberá mais detalhes de como participar.
 ### Agenda
 
 * 13:00 — Introdução e boas-vindas
-* 13:30 — O que é software livre
-* 14:00 — Como contribuir com projetos
-* 14:30 — Como escrever artigos
-* 15:00 — Hacking
+* 13:15 — O que é software livre
+* 13:45 — Como contribuir com projetos
+* 14:30 — Bate papo sobre experiências com SL
+* 15:00 — Como escrever artigos
+* 15:30 — Hacking
 * 17:00 — Encerramento
 
 ## Como contribuir
