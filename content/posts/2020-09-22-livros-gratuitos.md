@@ -1,6 +1,6 @@
 ---
 title: "Livros gratuitos"
-summary: "Vários livros de Data Science, Inteligência Artificial, Machine Learning e Deep Learning que são disponibilizados gratuitamente."
+summary: "Vários livros de Data Science, Inteligência Artificial, Machine Learning e Deep Learning que são disponibilizados gratuitamente por autores ou editoras."
 tagline: "Data Science, Machine Learning, Deep Learning e mais"
 date: 2020-09-22 08:00:00
 slug: livros-gratuitos-data-science-setembro-2020
