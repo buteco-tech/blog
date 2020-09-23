@@ -12,10 +12,10 @@ categories:
 tags:
   - livros
   - kafka
-  - kubernetes
-  - sre
-  - devops
-  - bitcoin
+  - hadoop
+  - python
+  - machine-learning
+  - deep-learning
 images:
   - /images/posts/books-ai-ds.png
 ---
