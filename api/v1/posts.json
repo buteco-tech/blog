@@ -1,6 +1,17 @@
 [
   
   {
+    "id": "microsservicos-monolitos-e-cloud",
+    "date_published": "2020-09-24T08:00:00Z",
+    "date_modified": "2020-09-24T08:00:00Z",
+    "title": "Microsserviços, Monolitos e Cloud",
+    "url": "https://butecotecnologico.com.br/podcast/microsservicos-monolitos-e-cloud/",
+    "images": ["https://butecotecnologico.com.br/images/podcast/microservices.png"],
+    "tags": ["desenvolvimento","microsservicos","monolito","cloud"],
+    "categories": ["Podcast"],
+    "authors": ["alexandrevicenzi"]
+  },
+  {
     "id": "livros-gratuitos-data-science-setembro-2020",
     "date_published": "2020-09-22T08:00:00Z",
     "date_modified": "2020-09-22T08:00:00Z",

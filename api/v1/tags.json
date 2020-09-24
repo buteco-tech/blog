@@ -313,6 +313,12 @@
     "article_count": "1"
   },
   {
+    "id": "cloud",
+    "title": "cloud",
+    "url": "https://butecotecnologico.com.br/tags/cloud/",
+    "article_count": "1"
+  },
+  {
     "id": "cloud-storage",
     "title": "cloud-storage",
     "url": "https://butecotecnologico.com.br/tags/cloud-storage/",
@@ -478,7 +484,7 @@
     "id": "desenvolvimento",
     "title": "desenvolvimento",
     "url": "https://butecotecnologico.com.br/tags/desenvolvimento/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "desktop",
@@ -1441,6 +1447,12 @@
     "article_count": "2"
   },
   {
+    "id": "microsservicos",
+    "title": "microsservicos",
+    "url": "https://butecotecnologico.com.br/tags/microsservicos/",
+    "article_count": "1"
+  },
+  {
     "id": "mime",
     "title": "mime",
     "url": "https://butecotecnologico.com.br/tags/mime/",
@@ -1468,6 +1480,12 @@
     "id": "monitoramento",
     "title": "monitoramento",
     "url": "https://butecotecnologico.com.br/tags/monitoramento/",
+    "article_count": "1"
+  },
+  {
+    "id": "monolito",
+    "title": "monolito",
+    "url": "https://butecotecnologico.com.br/tags/monolito/",
     "article_count": "1"
   },
   {
