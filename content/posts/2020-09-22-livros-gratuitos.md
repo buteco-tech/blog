@@ -50,8 +50,6 @@ Vai ser difícil arrumar tempo parar ler tudo isso até o natal.
 
 [Natural Language Processing with Python](http://www.nltk.org/book_1ed/)
 
-~~[Artificial Intelligence – A Modern Approach](http://aima.cs.berkeley.edu/)~~ – Removido
-
 [Python Machine Learning By Example](https://www.packtpub.com/free-ebooks/big-data-and-business-intelligence/python-machine-learning-example/9781783553112)
 
 [Introduction to Machine Learning](http://arxiv.org/pdf/0904.3664.pdf)
