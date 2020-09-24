@@ -11,9 +11,9 @@ categories:
   - data-science
 tags:
   - livros
-  - kafka
   - hadoop
   - python
+  - estatistica
   - machine-learning
   - deep-learning
 images:
