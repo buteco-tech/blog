@@ -36,9 +36,9 @@ Vai ser difícil arrumar tempo parar ler tudo isso até o natal.
 
 [Think Bayes – Bayesian Statistics Made Simple](https://greenteapress.com/wp/think-bayes/)
 
-[The Elements of Statistical Learning – Data Mining, Inference, and Prediction](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
+[The Elements of Statistical Learning – Data Mining, Inference, and Prediction](https://web.stanford.edu/~hastie/ElemStatLearn/)
 
-[Mining of Massive Datasets](http://infolab.stanford.edu/~ullman/mmds/book0n.pdf)
+[Mining of Massive Datasets](http://www.mmds.org/)
 
 [Hadoop – The Definitive Guide (4th Edition)](https://archive.org/details/HadoopTheDefinitiveGuide4thEdition/)
 
@@ -50,7 +50,7 @@ Vai ser difícil arrumar tempo parar ler tudo isso até o natal.
 
 [Natural Language Processing with Python](http://www.nltk.org/book_1ed/)
 
-[Artificial Intelligence – A Modern Approach](http://www.cin.ufpe.br/~tfl2/artificial-intelligence-modern-approach.9780131038059.25368.pdf)
+~~[Artificial Intelligence – A Modern Approach](http://aima.cs.berkeley.edu/)~~ – Removido
 
 [Python Machine Learning By Example](https://www.packtpub.com/free-ebooks/big-data-and-business-intelligence/python-machine-learning-example/9781783553112)
 
@@ -58,7 +58,7 @@ Vai ser difícil arrumar tempo parar ler tudo isso até o natal.
 
 [Machine Learning – The Complete Guide](https://en.wikipedia.org/wiki/Book:Machine_Learning_%E2%80%93_The_Complete_Guide)
 
-[Reinforcement Learning – An Introduction](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
+[Reinforcement Learning – An Introduction](http://www.incompleteideas.net/book/the-book-2nd.html)
 
 [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/)
 
