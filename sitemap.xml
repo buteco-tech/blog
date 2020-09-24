@@ -78,12 +78,12 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/hadoop/</loc>
+    <loc>https://butecotecnologico.com.br/tags/estatistica/</loc>
     <lastmod>2020-09-22T08:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/kafka/</loc>
+    <loc>https://butecotecnologico.com.br/tags/hadoop/</loc>
     <lastmod>2020-09-22T08:00:00+00:00</lastmod>
   </url>
   
@@ -549,6 +549,11 @@
   
   <url>
     <loc>https://butecotecnologico.com.br/tags/devops/</loc>
+    <lastmod>2020-04-24T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/kafka/</loc>
     <lastmod>2020-04-24T08:00:00+00:00</lastmod>
   </url>
   

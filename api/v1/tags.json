@@ -661,6 +661,12 @@
     "article_count": "1"
   },
   {
+    "id": "estatistica",
+    "title": "estatistica",
+    "url": "https://butecotecnologico.com.br/tags/estatistica/",
+    "article_count": "1"
+  },
+  {
     "id": "esteganografia",
     "title": "esteganografia",
     "url": "https://butecotecnologico.com.br/tags/esteganografia/",
@@ -1192,7 +1198,7 @@
     "id": "kafka",
     "title": "kafka",
     "url": "https://butecotecnologico.com.br/tags/kafka/",
-    "article_count": "2"
+    "article_count": "1"
   },
   {
     "id": "kali-linux",
