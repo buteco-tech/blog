@@ -1,17 +1,16 @@
 ---
-title: "Conhecendo o Docker"
-summary: "Learn about the complete container solution provided by Docker. Find information for developers, IT operations, and business executives."
-tagline: "Learn about the complete container solution provided by Docker. Find information for developers, IT operations, and business executives."
+title: "Tutorial de Docker"
+summary: "Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos."
+tagline: "Conhecendo o Docker com exemplos práticos."
 date: 2020-10-02 08:00:00
 categories:
   - Desenvolvimento
-  - Ferramentas
 tags:
   - docker
   - devops
   - containers
   - linux
-slug: conhecendo-docker
+slug: tutorial-de-docker
 authors:
   - jaswdr
 images:
@@ -20,9 +19,9 @@ images:
 
 {{< figure src="/images/posts/docker-logo.png" alt="Docker" >}}
 
-O Docker é uma ferramenta criada para facilitar o uso de contêineres, algo que não é tão novo no mundo Linux, uma vez que projetos como o LXC já existe a muitos anos, porém o seu uso é complexo e a curva de aprendizado é bastante grande. Para resolver este e outros problemas que o `Docker` nasceu. Inicialmente criado por uma empresa independente, teve tanto sucesso que a própria empresa mudou seu nome posteriormente para `Docker Inc.`.
+O Docker é um conjunto de ferrametas criada para facilitar o uso de contêineres, algo que não é tão novo no mundo Linux, uma vez que projetos como o LXC já existem a muitos anos, porém o seu uso é complexo e a curva de aprendizado é bastante grande. Foi para resolver este e outros problemas que o Docker nasceu. Inicialmente criado por uma empresa independente, teve tanto sucesso que a própria empresa mudou seu nome posteriormente para Docker Inc..
 
-Mas por que você deveria se importar com contêineres? Existe uma série de motivos que fazem os contêineres serem interessantes e uma melhor alternativa que as máquinas virtuais. O principal motivo é que contêineres usam bem menos recursos do HOST, na prática, cada contêiner é apenas um processo isolado, diferente de todo o overhead que existe quando se usa uma máquina virtual, onde se tem todo um sistema operacional convidado, que consome recursos, independente da sua aplicação e apenas para manter este sistema operacional funcionando. Isso permite que você execute muito mais aplicações e contêineres no mesmo equipamento físico.
+Mas por que você deveria se importar com [contêineres](https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/)? Existe uma série de motivos que fazem os contêineres serem interessantes e uma melhor alternativa que as máquinas virtuais. O principal motivo é que contêineres usam bem menos recursos da maquina hospedeira, na prática, cada contêiner é apenas um processo isolado, diferente de toda a sobrecarga que existe quando se usa uma máquina virtual, onde se tem todo um sistema operacional convidado, que consome recursos, independente da sua aplicação e apenas para manter este sistema operacional funcionando. Isso permite que você execute muito mais aplicações e contêineres no mesmo equipamento físico.
 
 Outra questão muito importante que nem sempre é considerado quando se usa máquinas virtuais, é que contêineres são efêmeros, ou seja, um contêiner não deve armazenar dados importantes em seu `filesystem`,
 
@@ -282,17 +281,6 @@ print("Version info.")
 print (sys.version_info)
 ```
 
-Python 2.7
-
-```bash
-$ docker run --rm -v $PWD/main.py:/main.py python:2.7 python /main.py
-Python version
-2.7.18 (default, Apr 20 2020, 19:27:10)
-[GCC 8.3.0]
-Version info.
-sys.version_info(major=2, minor=7, micro=18, releaselevel='final', serial=0)
-```
-
 Python 3.6
 
 ```bash
@@ -302,6 +290,17 @@ Python version
 [GCC 8.3.0]
 Version info.
 sys.version_info(major=3, minor=6, micro=11, releaselevel='final', serial=0)
+```
+
+Python 3.8
+
+```bash
+$ docker run --rm -v $PWD/main.py:/main.py python:3.8 python /main.py
+Python version
+3.8.5 (default, Sep 10 2020, 16:47:10)
+[GCC 8.3.0]
+Version info.
+sys.version_info(major=3, minor=8, micro=5, releaselevel='final', serial=0)
 ```
 
 ## Ubuntu
@@ -322,5 +321,7 @@ root@f948917eca40:/# curl https://example.org
 ```
 
 # Conclusão
+
+O docker é uma alternativa perfeita para ajudar no desenvolvimento de software, com ele você consegue rapidamente criar seu ambiente de desenvolvimento, testar seu código em diferentes versões, criar servidores de banco de dados, servidores WEB e muito mais, tudo de forma rápida, isolada e confiável.
 
 E ai gostou do docker? quer ver mais conteúdo sobre, tem alguma sugestão? comente abaixo e nos vemos na próxima.
