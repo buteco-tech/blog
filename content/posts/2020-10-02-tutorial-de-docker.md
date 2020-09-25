@@ -23,9 +23,9 @@ O Docker é um conjunto de ferrametas criada para facilitar o uso de contêinere
 
 Mas por que você deveria se importar com [contêineres](https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/)? Existe uma série de motivos que fazem os contêineres serem interessantes e uma melhor alternativa que as máquinas virtuais. O principal motivo é que contêineres usam bem menos recursos da maquina hospedeira, na prática, cada contêiner é apenas um processo isolado, diferente de toda a sobrecarga que existe quando se usa uma máquina virtual, onde se tem todo um sistema operacional convidado, que consome recursos, independente da sua aplicação e apenas para manter este sistema operacional funcionando. Isso permite que você execute muito mais aplicações e contêineres no mesmo equipamento físico.
 
-Outra questão muito importante que nem sempre é considerado quando se usa máquinas virtuais, é que contêineres são efêmeros, ou seja, um contêiner não deve armazenar dados importantes em seu `filesystem`,
+Outra questão importante que nem sempre é considerado quando se usa máquinas virtuais, é que contêineres são efêmeros, ou seja, um contêiner não deve armazenar dados importantes em seu `filesystem`,
 
-Aprenda neste tutorial como você pode usar e aproveitar o máximo do Docker no seu dia a dia como desenvolvedor de software.
+Aprenda neste tutorial como usar e aproveitar o máximo do Docker no seu dia a dia como desenvolvedor de software.
 
 ## Instalação
 
@@ -34,14 +34,14 @@ A forma de instalação do docker depende do sistema operacional que você está
 ```bash
 $ curl -fsSL https://get.docker.io | bash
 ```
-O comando acima irá fazer o download de um script que fará a instalação do docker em praticamente qualquer distribuição Linux, e executa a instalação usando o `bash`.
+O comando acima irá fazer o download de um script que fará a instalação do docker na maioria das distribuições Linux, e executa a instalação usando o `bash`.
 
 Para fazer a instalação em outros sistemas operacionais, clique no link abaixo para fazer a transferência do instalador:
 
 - [Windows](https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe)
 - [Mac](https://download.docker.com/mac/stable/Docker.dmg)
 
-A instalação no Windows e Mac são bem simples, basta seguir o passo a passo que você fará a instalação do Docker Desktop, essa aplicação funciona de forma diferente, como o docker é nativo apenas de Linux e se você quiser rodar contêineres Linux em outro sistema operacional, o Docker Desktop irá criar uma máquina virtual para executar os contêineres. Sendo que no Windows é usado por padrão o HyperV e no Mac o VirtualBox.
+A instalação no Windows e Mac são bem simples, basta seguir o passo a passo ao executador o instalador. Perceba que o Docker Desktop funciona de forma diferente, como o docker é nativo apenas de Linux e se você quiser rodar contêineres Linux em outro sistema operacional, o Docker Desktop irá criar uma máquina virtual para executar os contêineres. Sendo que no Windows é usado por padrão o HyperV e no Mac o VirtualBox.
 
 Algo importante de se notar é que existem contêineres nativos para Windows, porém saiba que imagens de contêineres Linux não são compatíveis com imagens de contêineres Windows, contudo usando contêineres Windows no sistema operacional Windows você terá a mesma experiência e desempenho semelhantes a contêineres Linux sendo executados em alguma distribuição.
 
@@ -167,7 +167,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-O comando acima execute o subcomando `run` que basicamente cria e executa um novo contêiner. O único parâmetro que realmente é obrigatório para executar um contêiner é o nome da imagem do contêiner. Uma imagem de contêiner é um pacote executável leve, standalone, que incluí tudo necessário para executar a aplicação, como código, runtime, ferramentas de runtime, bibliotecas e configurações.
+O comando acima executa o subcomando `run` que basicamente cria e executa um novo contêiner. O único parâmetro que realmente é obrigatório para executar um contêiner é o nome da imagem do contêiner. Uma imagem de contêiner é um pacote executável leve, standalone, que incluí tudo necessário para executar a aplicação, como código, runtime, ferramentas de runtime, bibliotecas e configurações.
 
 Na saída do programa podemos ver que o docker tentou buscar localmente a imagem `hello-world`, porém como nesse caso não existia ele buscou do repositório padrão, que é o [Docker Hub](https://hub.docker.com/). Logo após iniciou o download de cada camada da imagem, cada camada é uma mudança na imagem, como o `hello-world` é simples, possuí apenas uma única camada.
 
@@ -175,7 +175,7 @@ Por fim, após o download do imagem é criado uma instância da imagem que é o 
 
 ## Conceitos importantes
 
-Além do que vimos acima existem diversos outros conceitos importantes que você deve saber antes de começar a usar o docker, ou até mesmo para usar todo o potêncial do mesmo.
+Além do que vimos acima, existem diversos outros conceitos importantes que você deve saber antes de começar a usar o docker, ou até mesmo para usar todo o potêncial do mesmo.
 
 ### Volumes
 
@@ -192,7 +192,7 @@ Agora execute o comando usando o docker abaixo para criar um contêiner do Ubunt
 ```bash
 $ docker run -it -v $PWD:/exemplo ubuntu
 ```
-A principio nada de mais parece ter mudado, mas vá para o diretório `/exemplo` usando o `cd`.
+A princípio nada de mais parece ter mudado, mas vá para o diretório `/exemplo` usando o `cd`.
 
 ```bash
 $ cd exemplo/
@@ -227,13 +227,13 @@ Usando volumes você pode por exemplo executar o seu código local em um contêi
 
 Outro conceito importante de entender é como o docker vincula portas locais com as portas do contêiner. Muitas vezes você executa algum serviço que executa numa porta, como servidores WEB ou até mesmo bancos de dados. Para ter acesso a esses serviços localmente você vincular as portas da sua máquina a portas do contêiner. Para entender melhor vamos novamente a um exemplo prático.
 
-Digamos que você queira rodar o servidor NGINX, para isso basta executar o comando abaixo:
+Digamos que você queira rodar o servidor Nginx, para isso basta executar o comando abaixo:
 
 ```bash
 $ docker run -d -p 8080:80 nginx
 ```
 
-Perceba o uso da flag `-p` passando o valor `8080:80`, isso significa que está sendo feito um vinculo, ou *bind*, da porta 8080 local com a porta 80 do contêiner, fazendo com que requisições que sejam feitos a porta 8080 local sejam redirecionadas a porta 80 do contêiner. Experimente acessar o endereço http://localhost:8080/ no seu navegador para ver a página padrão do NGINX.
+Perceba o uso da flag `-p` passando o valor `8080:80`, isso significa que está sendo feito um vinculo, ou *bind*, da porta 8080 local com a porta 80 do contêiner, fazendo com que requisições que sejam feitos a porta 8080 local sejam redirecionadas a porta 80 do contêiner, é importante ressaltar pode-se ter apenas um vínculo por porta, não sendo possível ter 2 ou mais contêineres vinculados a mesma porta. Experimente acessar o endereço http://localhost:8080/ no seu navegador para ver a página padrão do Nginx.
 
 ## Exemplos
 
@@ -249,9 +249,9 @@ $ docker run -d -e POSTGRES_PASSWORD=secret -p 5432:5432 postgres
 
 Execute o comando acima e tente conectar com algum cliente do PostgreSQL na porta 5432 da sua máquina com o usuário `postgres` e senha `secret`.
 
-## NGINX
+## Nginx
 
-Execute o servidor NGINX passando o diretório atual como *root*.
+Execute o servidor Nginx passando o diretório atual como *root*.
 
 ```bash
 $ docker run -d -v $PWD:/usr/share/nginx/html -p 8080:80 nginx
