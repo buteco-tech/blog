@@ -324,4 +324,4 @@ root@f948917eca40:/# curl https://example.org
 
 O docker é uma alternativa perfeita para ajudar no desenvolvimento de software, com ele você consegue rapidamente criar seu ambiente de desenvolvimento, testar seu código em diferentes versões, criar servidores de banco de dados, servidores WEB e muito mais, tudo de forma rápida, isolada e confiável.
 
-E ai gostou do docker? Quer ver mais conteúdo sobre, tem alguma sugestão? comente abaixo e nos vemos na próxima.
+E ai gostou do docker? Quer ver mais conteúdo sobre, tem alguma sugestão? Comente abaixo e nos vemos na próxima.
