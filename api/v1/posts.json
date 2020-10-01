@@ -1,6 +1,17 @@
 [
   
   {
+    "id": "tutorial-de-docker",
+    "date_published": "2020-10-01T08:00:00Z",
+    "date_modified": "2020-10-01T08:00:00Z",
+    "title": "Tutorial de Docker",
+    "url": "https://butecotecnologico.com.br/tutorial-de-docker/",
+    "images": ["https://butecotecnologico.com.br/images/posts/docker-logo.png"],
+    "tags": ["docker","devops","containers","linux"],
+    "categories": ["Desenvolvimento"],
+    "authors": ["jaswdr"]
+  },
+  {
     "id": "microsservicos-monolitos-e-cloud",
     "date_published": "2020-09-24T08:00:00Z",
     "date_modified": "2020-09-24T08:00:00Z",

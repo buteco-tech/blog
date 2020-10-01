@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.75.1" />
+
+  <title>Tutorial de Docker &middot; Buteco Tecnológico</title>
+
+  <meta name="description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos." />
+
+
+
+<meta itemprop="name" content="Tutorial de Docker">
+<meta itemprop="description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos.">
+<meta itemprop="datePublished" content="2020-10-01T08:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-10-01T08:00:00+00:00" />
+<meta itemprop="wordCount" content="2299">
+<meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/docker-logo.png">
+
+
+
+<meta itemprop="keywords" content="docker,devops,containers,linux," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/posts/docker-logo.png"/>
+
+<meta name="twitter:title" content="Tutorial de Docker"/>
+<meta name="twitter:description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos."/>
+<meta name="twitter:site" content="@butecotech"/>
+
+
+<meta property="og:title" content="Tutorial de Docker" />
+<meta property="og:description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/tutorial-de-docker/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/images/posts/docker-logo.png" />
+<meta property="article:published_time" content="2020-10-01T08:00:00+00:00" />
+<meta property="article:modified_time" content="2020-10-01T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://butecotecnologico.com.br/#organization",
+      "name": "Buteco Tecnológico",
+      "url": "https://butecotecnologico.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://butecotecnologico.com.br/logos/capybara_400.png"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/butecotecnologico",
+        "https://twitter.com/butecotech",
+        "https://www.facebook.com/buteco.tech",
+        "https://www.youtube.com/c/ButecoTech",
+        "https://www.instagram.com/buteco.tech/"
+      ]
+    },{
+      "@type": "WebSite",
+      "@id": "https://butecotecnologico.com.br/#website",
+      "url": "https://butecotecnologico.com.br/",
+      "name": "Buteco Tecnológico",
+      "description": "Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos.",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://butecotecnologico.com.br/#primaryimage",
+      "url": "https://butecotecnologico.com.br/logos/capybara_64.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400_bg.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://butecotecnologico.com.br/tutorial-de-docker/#webpage",
+      "url": "https://butecotecnologico.com.br/tutorial-de-docker/",
+      "name": "Tutorial de Docker",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/#website"
+      },
+      "about": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://butecotecnologico.com.br/#primaryimage"
+      },
+      "datePublished": "2020-10-01T08:00:00+00:00",
+      "dateModified": "2020-10-01T08:00:00+00:00",
+      "description": "Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos.",
+      "inLanguage": "pt-BR",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://butecotecnologico.com.br/tutorial-de-docker/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/tutorial-de-docker/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://butecotecnologico.com.br/tutorial-de-docker/#webpage"
+      },
+      "headline": "Tutorial de Docker",
+      "image": [
+        "https://butecotecnologico.com.br/images/posts/docker-logo.png"
+      ],
+      "datePublished": "2020-10-01T08:00:00+00:00",
+      "dateModified": "2020-10-01T08:00:00+00:00",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "keywords": [
+        "Docker",
+        "devops",
+        "containers",
+        "linux"
+      ],
+      "articleSection": [
+        "Desenvolvimento"
+      ],
+      "inLanguage": "pt-BR",
+      "author": [
+        {
+          "@type":"Person",
+          "name": "Jonathan André Schweder",
+          "image": {
+            "@type":"ImageObject",
+            "url": "https://avatars1.githubusercontent.com/u/6409113?v=2&s=200"
+          },
+          "description": "System Developer Engineer at Amazon Web Services"
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://butecotecnologico.com.br/tutorial-de-docker/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  
+  
+  <link rel="stylesheet" href="/sass/iara.min.79b5306d3933557cf16019cfd71c157355a9277c2de52d99c70513d28c74982d.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/logos/capybara_144.png">
+<link rel="shortcut icon" href="/logos/capybara_64.png">
+
+
+  
+
+
+  
+
+
+  
+<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+  
+
+</head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/capybara_64.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    Buteco Tecnológico</a>
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto"><li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/contribua-com-nosso-blog/">
+            <span class="mr-1"><i class="far fa-heart"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/contato/">
+            <span class="mr-1"><i class="fas fa-phone"></i></span>
+            Contato
+            
+          </a>
+        </li>
+        </ul>
+  </div>
+</nav>
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Tutorial de Docker</h1>
+    <h2 class="tagline text-muted mb-4">Conhecendo o Docker com exemplos práticos.</h2>
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <div class="d-inline-flex">
+    <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+           loading="lazy"
+           alt="Jonathan André Schweder"
+           title="Jonathan André Schweder">
+    </a>
+    </div>
+  </div><div class="d-inline-block authors">
+    <div><span>
+        <a href="https://butecotecnologico.com.br/autores/jaswdr/"
+           class="author">Jonathan André Schweder</a>
+      </span>
+    
+    <span class="text-muted">em</span>
+    
+    <span>
+        <a href="https://butecotecnologico.com.br/categorias/desenvolvimento/" class="text-decoration-none">Desenvolvimento</a>
+        </span>
+    </div>
+    <div class="text-muted"><time datetime="2020-10-01T08:00:00Z">01/10/2020</time>
+      &middot; 11 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="d-inline-flex share-buttons text-center">
+      <a class="share-button share-twitter"
+         href="#"
+         title="Share on Twitter"
+         data-url="https://butecotecnologico.com.br/tutorial-de-docker/"
+         data-text="Tutorial de Docker"><i class="fab fa-twitter"></i></a>
+
+      <a class="share-button share-linkedin"
+         href="#"
+         title="Share on LinkedIn"
+         data-url="https://butecotecnologico.com.br/tutorial-de-docker/"
+         data-text="Tutorial de Docker"><i class="fab fa-linkedin-in"></i></a>
+
+      <a class="share-button share-facebook"
+         href="#"
+         title="Share on Facebook"
+         data-url="https://butecotecnologico.com.br/tutorial-de-docker/"
+         data-text="Tutorial de Docker"><i class="fab fa-facebook"></i></a>
+
+      <a class="share-button share-pinterest"
+         href="#"
+         title="Share on Pinterest"
+         data-url="https://butecotecnologico.com.br/tutorial-de-docker/"
+         data-text="Tutorial de Docker"><i class="fab fa-pinterest"></i></a>
+    </div>
+  </div>
+</div>
+
+  </header>
+
+  <article class="mt-3 mb-4">
+  <figure>
+    <img src="/images/posts/docker-logo.png"
+         loading="lazy"
+         alt="Docker"/>
+</figure>
+
+<p>O Docker é um conjunto de ferrametas criada para facilitar o uso de contêineres, algo que não é tão novo no mundo Linux, uma vez que projetos como o LXC já existem a muitos anos, porém o seu uso é complexo e a curva de aprendizado é bastante grande. Foi para resolver este e outros problemas que o Docker nasceu. Inicialmente criado por uma empresa independente, teve tanto sucesso que a própria empresa mudou seu nome posteriormente para Docker Inc..</p>
+<p>Mas por que você deveria se importar com <a href="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
+   
+   target="_blank">contêineres</a>? Existe uma série de motivos que fazem os contêineres serem interessantes e uma melhor alternativa que as máquinas virtuais. O principal motivo é que contêineres usam bem menos recursos da maquina hospedeira, na prática, cada contêiner é apenas um processo isolado, diferente de toda a sobrecarga que existe quando se usa uma máquina virtual, onde se tem todo um sistema operacional convidado, que consome recursos, independente da sua aplicação e apenas para manter este sistema operacional funcionando. Isso permite que você execute muito mais aplicações e contêineres no mesmo equipamento físico.</p>
+<p>Outra questão importante que nem sempre é considerado quando se usa máquinas virtuais, é que contêineres são efêmeros, ou seja, um contêiner não deve armazenar dados importantes em seu <code>filesystem</code>,</p>
+<p>Aprenda neste tutorial como usar e aproveitar o máximo do Docker no seu dia a dia como desenvolvedor de software.</p>
+<h2 id="instalação">Instalação</h2>
+<p>A forma de instalação do docker depende do sistema operacional que você está usando. No caso do Linux os contêineres são nativos e devido a isso você pode instalar a última versão com o simples comando abaixo:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ curl -fsSL https://get.docker.io <span class="p">|</span> bash
+</code></pre></td></tr></table>
+</div>
+</div><p>O comando acima irá fazer o download de um script que fará a instalação do docker na maioria das distribuições Linux, e executa a instalação usando o <code>bash</code>.</p>
+<p>Para fazer a instalação em outros sistemas operacionais, clique no link abaixo para fazer a transferência do instalador:</p>
+<ul>
+<li><a href="https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe"
+   
+   target="_blank">Windows</a></li>
+<li><a href="https://download.docker.com/mac/stable/Docker.dmg"
+   
+   target="_blank">Mac</a></li>
+</ul>
+<p>A instalação no Windows e Mac são bem simples, basta seguir o passo a passo ao executador o instalador. Perceba que o Docker Desktop funciona de forma diferente, como o docker é nativo apenas de Linux e se você quiser rodar contêineres Linux em outro sistema operacional, o Docker Desktop irá criar uma máquina virtual para executar os contêineres. Sendo que no Windows é usado por padrão o HyperV e no Mac o VirtualBox.</p>
+<p>Algo importante de se notar é que existem contêineres nativos para Windows, porém saiba que imagens de contêineres Linux não são compatíveis com imagens de contêineres Windows, contudo usando contêineres Windows no sistema operacional Windows você terá a mesma experiência e desempenho semelhantes a contêineres Linux sendo executados em alguma distribuição.</p>
+<blockquote>
+<p>A partir daqui tudo que será mostrado estará sendo executado em ambiente Linux, mais especificamente usando uma máquina virtual com CentOS, mesmo assim os comandos irão funcionar em qualquer outro sistema operacional que use contêineres Linux.</p>
+</blockquote>
+<h2 id="começando">Começando</h2>
+<p>Uma vez instalado o docker você pode abrir o terminal e executar o comando <code>docker</code> que irá listar todas as opções disponíveis.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker
+Usage:	docker <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND
+
+A self-sufficient runtime <span class="k">for</span> containers
+
+Options:
+      --config string      Location of client config files <span class="o">(</span>default <span class="s2">&#34;/Users/schwede/.docker&#34;</span><span class="o">)</span>
+  -c, --context string     Name of the context to use to connect to the daemon <span class="o">(</span>overrides
+                           DOCKER_HOST env var and default context <span class="nb">set</span> with <span class="s2">&#34;docker context use&#34;</span><span class="o">)</span>
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket<span class="o">(</span>s<span class="o">)</span> to connect to
+  -l, --log-level string   Set the logging level <span class="o">(</span><span class="s2">&#34;debug&#34;</span><span class="p">|</span><span class="s2">&#34;info&#34;</span><span class="p">|</span><span class="s2">&#34;warn&#34;</span><span class="p">|</span><span class="s2">&#34;error&#34;</span><span class="p">|</span><span class="s2">&#34;fatal&#34;</span><span class="o">)</span>
+                           <span class="o">(</span>default <span class="s2">&#34;info&#34;</span><span class="o">)</span>
+      --tls                Use TLS<span class="p">;</span> implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA <span class="o">(</span>default
+                           <span class="s2">&#34;/Users/schwede/.docker/ca.pem&#34;</span><span class="o">)</span>
+      --tlscert string     Path to TLS certificate file <span class="o">(</span>default <span class="s2">&#34;/Users/schwede/.docker/cert.pem&#34;</span><span class="o">)</span>
+      --tlskey string      Path to TLS key file <span class="o">(</span>default <span class="s2">&#34;/Users/schwede/.docker/key.pem&#34;</span><span class="o">)</span>
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  builder     Manage builds
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach <span class="nb">local</span> standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container<span class="s1">&#39;s changes
+</span><span class="s1">  cp          Copy files/folders between a container and the local filesystem
+</span><span class="s1">  create      Create a new container
+</span><span class="s1">  diff        Inspect changes to files or directories on a container&#39;</span>s filesystem
+  events      Get real <span class="nb">time</span> events from the server
+  <span class="nb">exec</span>        Run a <span class="nb">command</span> in a running container
+  <span class="nb">export</span>      Export a container<span class="s1">&#39;s filesystem as a tar archive
+</span><span class="s1">  history     Show the history of an image
+</span><span class="s1">  images      List images
+</span><span class="s1">  import      Import the contents from a tarball to create a filesystem image
+</span><span class="s1">  info        Display system-wide information
+</span><span class="s1">  inspect     Return low-level information on Docker objects
+</span><span class="s1">  kill        Kill one or more running containers
+</span><span class="s1">  load        Load an image from a tar archive or STDIN
+</span><span class="s1">  login       Log in to a Docker registry
+</span><span class="s1">  logout      Log out from a Docker registry
+</span><span class="s1">  logs        Fetch the logs of a container
+</span><span class="s1">  pause       Pause all processes within one or more containers
+</span><span class="s1">  port        List port mappings or a specific mapping for the container
+</span><span class="s1">  ps          List containers
+</span><span class="s1">  pull        Pull an image or a repository from a registry
+</span><span class="s1">  push        Push an image or a repository to a registry
+</span><span class="s1">  rename      Rename a container
+</span><span class="s1">  restart     Restart one or more containers
+</span><span class="s1">  rm          Remove one or more containers
+</span><span class="s1">  rmi         Remove one or more images
+</span><span class="s1">  run         Run a command in a new container
+</span><span class="s1">  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+</span><span class="s1">  search      Search the Docker Hub for images
+</span><span class="s1">  start       Start one or more stopped containers
+</span><span class="s1">  stats       Display a live stream of container(s) resource usage statistics
+</span><span class="s1">  stop        Stop one or more running containers
+</span><span class="s1">  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+</span><span class="s1">  top         Display the running processes of a container
+</span><span class="s1">  unpause     Unpause all processes within one or more containers
+</span><span class="s1">  update      Update configuration of one or more containers
+</span><span class="s1">  version     Show the Docker version information
+</span><span class="s1">  wait        Block until one or more containers stop, then print their exit codes
+</span><span class="s1">
+</span><span class="s1">Run &#39;</span>docker COMMAND --help<span class="err">&#39;</span> <span class="k">for</span> more information on a command.
+</code></pre></td></tr></table>
+</div>
+</div><p>Primeiro de tudo, não se assuste com a quantidade de comandos disponíveis, muitos deles são específicos para realizar certas tarefas, porém vamos por partes. Vamos fazer o clássico <code>hello-world</code> que é feito em toda linguagem de programação, porém no docker.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run hello-world
+Unable to find image <span class="s1">&#39;hello-world:latest&#39;</span> locally
+latest: Pulling from library/hello-world
+0e03bdcc26d7: Pull <span class="nb">complete</span>
+Digest: sha256:4cf9c47f86df71d48364001ede3a4fcd85ae80ce02ebad74156906caff5378bc
+Status: Downloaded newer image <span class="k">for</span> hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the <span class="s2">&#34;hello-world&#34;</span> image from the Docker Hub.
+    <span class="o">(</span>amd64<span class="o">)</span>
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+</code></pre></td></tr></table>
+</div>
+</div><p>O comando acima executa o subcomando <code>run</code> que basicamente cria e executa um novo contêiner. O único parâmetro que realmente é obrigatório para executar um contêiner é o nome da imagem do contêiner. Uma imagem de contêiner é um pacote executável leve, standalone, que incluí tudo necessário para executar a aplicação, como código, runtime, ferramentas de runtime, bibliotecas e configurações.</p>
+<p>Na saída do programa podemos ver que o docker tentou buscar localmente a imagem <code>hello-world</code>, porém como nesse caso não existia ele buscou do repositório padrão, que é o <a href="https://hub.docker.com/"
+   
+   target="_blank">Docker Hub</a>. Logo após iniciou o download de cada camada da imagem, cada camada é uma mudança na imagem, como o <code>hello-world</code> é simples, possuí apenas uma única camada.</p>
+<p>Por fim, após o download do imagem é criado uma instância da imagem que é o contêinere em si, podendo ver então o texto do <code>Hello from Docker!</code></p>
+<h2 id="conceitos-importantes">Conceitos importantes</h2>
+<p>Além do que vimos acima, existem diversos outros conceitos importantes que você deve saber antes de começar a usar o docker, ou até mesmo para usar todo o potêncial do mesmo.</p>
+<h3 id="volumes">Volumes</h3>
+<p>O primeiro conceito importante é o de <em>volumes</em>. Volumes são usados para armazenar dados que não são efêmeros, isto é, dados que não são apagados quando o contêinere é excluído. Usando o cliente docker você faz o <em>bind</em> de volumes, diretórios ou arquivos locais da sua máquina para o contêiner, dessa forma qualquer alteração feita localmente é refletida dentro do contêiner e vice versa.</p>
+<p>Para entender melhor vamos a um exemplo prático, execute em qualquer diretório o comando abaixo para criar um arquivo.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ touch meuarquivo.txt
+</code></pre></td></tr></table>
+</div>
+</div><p>Agora execute o comando usando o docker abaixo para criar um contêiner do Ubuntu e fazer o bind do diretório atual para o diretório <code>/exemplo</code> dentro do contêiner.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run -it -v <span class="nv">$PWD</span>:/exemplo ubuntu
+</code></pre></td></tr></table>
+</div>
+</div><p>A princípio nada de mais parece ter mudado, mas vá para o diretório <code>/exemplo</code> usando o <code>cd</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> exemplo/
+$ ls
+meuarquivo.txt
+</code></pre></td></tr></table>
+</div>
+</div><p>Perceba que temos o nosso arquivo <code>meuarquivo.txt</code> listado, vamos escrever algo nele e sair do contêiner.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s1">&#39;hello volume!&#39;</span> &gt; meuarquivo.txt
+$ <span class="nb">exit</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Saindo do contêiner podemos ver que nosso arquivo continua existindo localmente e agora com o conteúdo que escrevemos nele.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ ls
+meuarquivo.txt
+$ cat meuarquivo.txt
+hello volume!
+</code></pre></td></tr></table>
+</div>
+</div><p>Pronto! agora se quisermos executar outro contêiner o arquivo continuará tendo o conteúdo que escrevemos.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run -it -v <span class="nv">$PWD</span>:/exemplo ubuntu
+root@484eea8e9505:/# cat /exemplo/meuarquivo.txt
+hello volume!
+</code></pre></td></tr></table>
+</div>
+</div><p>Usando volumes você pode por exemplo executar o seu código local em um contêiner da linguagem que você usa, enquanto edita no seu editor de texto ou IDE localmente, tudo de maneira fácil e prática.</p>
+<h3 id="vincular-portas">Vincular Portas</h3>
+<p>Outro conceito importante de entender é como o docker vincula portas locais com as portas do contêiner. Muitas vezes você executa algum serviço que executa numa porta, como servidores WEB ou até mesmo bancos de dados. Para ter acesso a esses serviços localmente você vincular as portas da sua máquina a portas do contêiner. Para entender melhor vamos novamente a um exemplo prático.</p>
+<p>Digamos que você queira rodar o servidor Nginx, para isso basta executar o comando abaixo:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run -d -p 8080:80 nginx
+</code></pre></td></tr></table>
+</div>
+</div><p>Perceba o uso da flag <code>-p</code> passando o valor <code>8080:80</code>, isso significa que está sendo feito um vinculo, ou <em>bind</em>, da porta 8080 local com a porta 80 do contêiner, fazendo com que requisições que sejam feitos a porta 8080 local sejam redirecionadas a porta 80 do contêiner, é importante ressaltar pode-se ter apenas um vínculo por porta, não sendo possível ter 2 ou mais contêineres vinculados a mesma porta. Experimente acessar o endereço http://localhost:8080/ no seu navegador para ver a página padrão do Nginx.</p>
+<h2 id="exemplos">Exemplos</h2>
+<p>Se você ainda não se convenceu do potêncial do docker, veja abaixo alguns exemplos mais comuns e veja por você mesmo a praticidade dessa ferramenta que revolucionou o mundo do DevOps.</p>
+<h2 id="banco-de-dados-postgresql">Banco de dados (PostgreSQL)</h2>
+<p>Execute uma nova instância do PostgreSQL localmente na porta 5432.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run -d -e <span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>secret -p 5432:5432 postgres
+</code></pre></td></tr></table>
+</div>
+</div><p>Execute o comando acima e tente conectar com algum cliente do PostgreSQL na porta 5432 da sua máquina com o usuário <code>postgres</code> e senha <code>secret</code>.</p>
+<h2 id="nginx">Nginx</h2>
+<p>Execute o servidor Nginx passando o diretório atual como <em>root</em>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run -d -v <span class="nv">$PWD</span>:/usr/share/nginx/html -p 8080:80 nginx
+</code></pre></td></tr></table>
+</div>
+</div><p>Execute o comando acime e tente acessar o endereço <code>http://localhost:8080</code> para ver suas páginas estáticas que você tem localmente na sua máquina.</p>
+<h3 id="redis">Redis</h3>
+<p>Execute um servidor do Redis localmente na sua máquina na porta 6379.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run -d -p 6379:6379 redis
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="python">Python</h3>
+<p>Teste seu código Python em diferentes versões de forma rápida e fácil.</p>
+<p>Arquivo <code>main.py</code> de teste.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">import sys
+print<span class="o">(</span><span class="s2">&#34;Python version&#34;</span><span class="o">)</span>
+print <span class="o">(</span>sys.version<span class="o">)</span>
+print<span class="o">(</span><span class="s2">&#34;Version info.&#34;</span><span class="o">)</span>
+print <span class="o">(</span>sys.version_info<span class="o">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Python 3.6</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run --rm -v <span class="nv">$PWD</span>/main.py:/main.py python:3.6 python /main.py
+Python version
+3.6.11 <span class="o">(</span>default, Jul <span class="m">22</span> 2020, 13:26:52<span class="o">)</span>
+<span class="o">[</span>GCC 8.3.0<span class="o">]</span>
+Version info.
+sys.version_info<span class="o">(</span><span class="nv">major</span><span class="o">=</span>3, <span class="nv">minor</span><span class="o">=</span>6, <span class="nv">micro</span><span class="o">=</span>11, <span class="nv">releaselevel</span><span class="o">=</span><span class="s1">&#39;final&#39;</span>, <span class="nv">serial</span><span class="o">=</span>0<span class="o">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Python 3.8</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run --rm -v <span class="nv">$PWD</span>/main.py:/main.py python:3.8 python /main.py
+Python version
+3.8.5 <span class="o">(</span>default, Sep <span class="m">10</span> 2020, 16:47:10<span class="o">)</span>
+<span class="o">[</span>GCC 8.3.0<span class="o">]</span>
+Version info.
+sys.version_info<span class="o">(</span><span class="nv">major</span><span class="o">=</span>3, <span class="nv">minor</span><span class="o">=</span>8, <span class="nv">micro</span><span class="o">=</span>5, <span class="nv">releaselevel</span><span class="o">=</span><span class="s1">&#39;final&#39;</span>, <span class="nv">serial</span><span class="o">=</span>0<span class="o">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="ubuntu">Ubuntu</h2>
+<p>Execute uma sessão interativa do Ubuntu localmente.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run -it ubuntu bash
+root@f948917eca40:/# apt-get update &gt; /dev/null
+root@f948917eca40:/# apt-get install -y curl &gt; /dev/null
+debconf: delaying package configuration, since apt-utils is not installed
+root@f948917eca40:/# curl https://example.org
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Example Domain&lt;/title&gt;
+...
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="conclusão">Conclusão</h1>
+<p>O docker é uma alternativa perfeita para ajudar no desenvolvimento de software, com ele você consegue rapidamente criar seu ambiente de desenvolvimento, testar seu código em diferentes versões, criar servidores de banco de dados, servidores WEB e muito mais, tudo de forma rápida, isolada e confiável.</p>
+<p>E ai gostou do docker? Quer ver mais conteúdo sobre, tem alguma sugestão? Comente abaixo e nos vemos na próxima.</p>
+
+  </article>
+
+  <footer class="mt-3 mb-4">
+    
+<div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/docker/" class="tag-link">docker</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/devops/" class="tag-link">devops</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/containers/" class="tag-link">containers</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="share-button share-twitter"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/tutorial-de-docker/"
+     data-text="Tutorial de Docker"><i class="fab fa-twitter"></i></a>
+
+  <a class="share-button share-linkedin"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/tutorial-de-docker/"
+     data-text="Tutorial de Docker"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="share-button share-facebook"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/tutorial-de-docker/"
+     data-text="Tutorial de Docker"><i class="fab fa-facebook"></i></a>
+
+  <a class="share-button share-pinterest"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/tutorial-de-docker/"
+     data-text="Tutorial de Docker"><i class="fab fa-pinterest"></i></a>
+</div>
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/jaswdr/">
+        <img class="author-img"
+             src="https://avatars1.githubusercontent.com/u/6409113?v=2&amp;s=200"
+             loading="lazy"
+             alt="Jonathan André Schweder">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/jaswdr/">Jonathan André Schweder</a>
+      </h2>
+      <span class="small text-muted">System Developer Engineer at Amazon Web Services</span>
+    </div>
+  </div>
+  
+</div>
+    <div class="border-top pt-4 pb-4">
+<h2 id="comments" class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecoopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main>
+
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        
+        <div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+<footer class="site-footer mt-auto pt-5 pb-3 px-4">
+  
+  <div class="clearfix text-center">
+    
+    <div class="social-icons d-xl-inline-block float-xl-left">
+      <ul class="list-unstyled">
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecotecnologico" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://discord.gg/eX2jAvw" title="Discord"><i class="fab fa-discord"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecotech" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecotecnologico" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/buteco.tech" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoTech" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+        <li class="list-inline-item social-icon my-2">
+          <a href="/feed-rss/" title="Feed RSS"><i class="fas fa-rss"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="footer-sections d-xl-inline-block float-xl-right">
+      
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/cloud-computing/">
+              <b>
+              Cloud Computing
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/kubernetes/">
+              
+              Kubernetes
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/docker/">
+              
+              Docker
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/virtualizacao/">
+              
+              Virtualização
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/aws/">
+              
+              AWS
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/embarcados/">
+              <b>
+              Embarcados
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/raspberry-pi/">
+              
+              Raspberry Pi
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/arm/">
+              
+              ARM
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/arduino/">
+              
+              Arduino
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/iot/">
+              
+              Internet das Coisas
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/diy/">
+              
+              DIY
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/desenvolvimento/">
+              <b>
+              Desenvolvimento
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/python/">
+              
+              Python
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/cpp/">
+              
+              C/C&#43;&#43;
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/php/">
+              
+              PHP
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/node-js/">
+              
+              Node.JS
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/lua/">
+              
+              Lua
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/distros/">
+              <b>
+              Distros
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/linux/">
+              
+              Linux
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/ubuntu/">
+              
+              Ubuntu
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/fedora/">
+              
+              Fedora
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/centos/">
+              
+              CentOS
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/opensuse/">
+              
+              openSUSE
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/bsd/">
+              
+              BSD
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/podcast/">
+              <b>
+              Podcast
+              </b><span class="badge badge-success">Novo</span>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/contribua-com-nosso-blog/">
+              
+              Contribua com o blog
+              <i class="far fa-heart text-danger"></i>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/">
+              
+              Anuncie conosco
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/categorias/">
+              
+              Categorias
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/autores/">
+              
+              Autores
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          
+          <li>
+            <a class="td-n td-h " href="/contato/">
+              <b>
+              Contato
+              </b>
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/sobre/">
+              
+              Sobre nós
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="">
+              
+              Equipe
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/equipe/">
+              
+              Feed RSS
+              
+            </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="https://estatisticas.buteco.me/">
+              
+              Estatísticas
+              
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+  <hr class="my-3">
+  
+
+  <div class="copyright clearfix text-center">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> 2020 Buteco Tecnológico
+      
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      
+    </div>
+    
+    <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
+        <ul class="list-unstyled m-0">
+          
+          <li class="list-inline-item">
+            <a href="/termos-de-uso/">
+              
+              Termos de Uso
+              
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="/politica-de-privacidade/">
+              
+              Privacidade
+              
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    
+    
+  </div>
+</footer>
+
+
+  
+
+  <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
+<script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
+  
+  <script type="text/javascript" src="/js/bootstrap.min.77dadbdc0876a7c923e10036e5e65e33f65c5de42e301821c6bbfd2f1b1cf967.js"></script>
+
+  
+  <script type="text/javascript" src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
+
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-55693832-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+<script type="text/javascript" defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
+
+
+</body>
+</html>

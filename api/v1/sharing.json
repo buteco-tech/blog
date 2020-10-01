@@ -1,6 +1,35 @@
 [
   
   {
+    "id": "https://butecotecnologico.com.br/tutorial-de-docker/",
+    "date_published": "2020-10-01T08:00:00Z",
+    "date_modified": "2020-10-01T08:00:00Z",
+    "title": "Tutorial de Docker",
+    "url": "https://butecotecnologico.com.br/tutorial-de-docker/",
+    "sharing": {
+      "twitter": {
+        "text": "Tutorial de Docker",
+        "image": "https://butecotecnologico.com.br/images/posts/docker-logo.png"
+      },
+      "facebook": {
+        "text": "Tutorial de Docker\n\nVocê sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos.",
+        "image": "https://butecotecnologico.com.br/images/posts/docker-logo.png"
+      },
+      "linkedin": {
+        "text": "Tutorial de Docker\n\nVocê sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos.",
+        "image": "https://butecotecnologico.com.br/images/posts/docker-logo.png"
+      },
+      "instagram": {
+        "text": "Tutorial de Docker\n\nVocê sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos.",
+        "image": "https://butecotecnologico.com.br/images/posts/docker-logo.png"
+      },
+      "pinterest": {
+        "text": "Tutorial de Docker\n\nVocê sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos.",
+        "image": "https://butecotecnologico.com.br/images/posts/docker-logo.png"
+      }
+    }
+  },
+  {
     "id": "https://butecotecnologico.com.br/podcast/microsservicos-monolitos-e-cloud/",
     "date_published": "2020-09-24T08:00:00Z",
     "date_modified": "2020-09-24T08:00:00Z",
@@ -1418,35 +1447,6 @@
       "pinterest": {
         "text": "POSIX Regular Expression em C\n\n<p>Expressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares <em>built-in</em>, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a <em>POSIX RegEx</em> na linguagem C na plataforma Linux.</p>",
         "image": "https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/images.jpg"
-      }
-    }
-  },
-  {
-    "id": "https://butecotecnologico.com.br/mqtt-parte-2-enviando-e-recebendo-mensagens/",
-    "date_published": "2016-03-10T23:43:51Z",
-    "date_modified": "2016-03-10T23:43:51Z",
-    "title": "MQTT Parte 2: Enviando e recebendo mensagens",
-    "url": "https://butecotecnologico.com.br/mqtt-parte-2-enviando-e-recebendo-mensagens/",
-    "sharing": {
-      "twitter": {
-        "text": "MQTT Parte 2: Enviando e recebendo mensagens",
-        "image": "https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/mqttorg-glow.png"
-      },
-      "facebook": {
-        "text": "MQTT Parte 2: Enviando e recebendo mensagens\n\n<p>Na <a href=\"/mqtt-parte-1-o-que-e-mqtt\">primeira parte</a> sobre o protocolo MQTT (<em>Message Queue Telemetry Transport</em>) demos uma breve introdução ao assunto, explicando o seu funcionamento, <em>brokers</em> e <em>clients</em>.</p>\n<p>Hoje o artigo é mais prático que teórico. Inicialmente vamos instalar/configurar o <em>broker</em> e após vamos criar em cliente MQTT que irá ser conectar ao <em>broker</em> para enviar ou receber mensagens.</p>",
-        "image": "https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/mqttorg-glow.png"
-      },
-      "linkedin": {
-        "text": "MQTT Parte 2: Enviando e recebendo mensagens\n\n<p>Na <a href=\"/mqtt-parte-1-o-que-e-mqtt\">primeira parte</a> sobre o protocolo MQTT (<em>Message Queue Telemetry Transport</em>) demos uma breve introdução ao assunto, explicando o seu funcionamento, <em>brokers</em> e <em>clients</em>.</p>\n<p>Hoje o artigo é mais prático que teórico. Inicialmente vamos instalar/configurar o <em>broker</em> e após vamos criar em cliente MQTT que irá ser conectar ao <em>broker</em> para enviar ou receber mensagens.</p>",
-        "image": "https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/mqttorg-glow.png"
-      },
-      "instagram": {
-        "text": "MQTT Parte 2: Enviando e recebendo mensagens\n\n<p>Na <a href=\"/mqtt-parte-1-o-que-e-mqtt\">primeira parte</a> sobre o protocolo MQTT (<em>Message Queue Telemetry Transport</em>) demos uma breve introdução ao assunto, explicando o seu funcionamento, <em>brokers</em> e <em>clients</em>.</p>\n<p>Hoje o artigo é mais prático que teórico. Inicialmente vamos instalar/configurar o <em>broker</em> e após vamos criar em cliente MQTT que irá ser conectar ao <em>broker</em> para enviar ou receber mensagens.</p>",
-        "image": "https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/mqttorg-glow.png"
-      },
-      "pinterest": {
-        "text": "MQTT Parte 2: Enviando e recebendo mensagens\n\n<p>Na <a href=\"/mqtt-parte-1-o-que-e-mqtt\">primeira parte</a> sobre o protocolo MQTT (<em>Message Queue Telemetry Transport</em>) demos uma breve introdução ao assunto, explicando o seu funcionamento, <em>brokers</em> e <em>clients</em>.</p>\n<p>Hoje o artigo é mais prático que teórico. Inicialmente vamos instalar/configurar o <em>broker</em> e após vamos criar em cliente MQTT que irá ser conectar ao <em>broker</em> para enviar ou receber mensagens.</p>",
-        "image": "https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/mqttorg-glow.png"
       }
     }
   }

@@ -11,9 +11,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 22 Sep 2020 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2020 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      
+      <title>Tutorial de Docker</title>
+      <link>https://butecotecnologico.com.br/tutorial-de-docker/</link>
+      <pubDate>Thu, 01 Oct 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tutorial-de-docker/</guid>
+      <description>Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos.</description>
+      
+      <image>
+        <url>https://butecotecnologico.com.br/images/posts/docker-logo.png</url>
+        <title>Tutorial de Docker</title>
+        <link>https://butecotecnologico.com.br/tutorial-de-docker/</link>
+      </image>
+      
+    </item>
     <item>
       
       <title>Livros gratuitos</title>
