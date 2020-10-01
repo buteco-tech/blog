@@ -2,7 +2,7 @@
 title: "Tutorial de Docker"
 summary: "Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos."
 tagline: "Conhecendo o Docker com exemplos práticos."
-date: 2020-10-02 08:00:00
+date: 2020-10-01 08:00:00
 categories:
   - Desenvolvimento
 tags:
