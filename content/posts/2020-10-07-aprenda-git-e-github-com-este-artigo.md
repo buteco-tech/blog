@@ -44,7 +44,11 @@ Existem muitas outras funcionalidades dele, como as **"Pull Requests"** por exem
 
 É necessário ter o Git instalado no seu computador e uma conta no GitHub criada.
 
-Ambos os passos são bem rápidos e você pode seguir esse tutorial aqui.
+Ambos os passos são bem rápidos.
+
+Você pode baixar o Git [aqui](https://git-scm.com/downloads), é só selecionar o seu sistema operacional e seguir o setup.
+
+E o GitHub você cria uma conta [aqui](https://github.com/).
 
 ## Como criar um repositório Git?
 
@@ -141,6 +145,20 @@ Agora, para não deixar batido, como que seria se você ou outra pessoa quisesse
 Simples, é só abrir o terminal do git em qualquer lugar do seu computador, e digitar **"git clone url-do-seu-repositorio".git**.
 
 Dali em diante você vai poder ir fazendo os seus **"git add"**, **"git commit"**, **"git push"** e muitos outros comandos.
+
+### "git pull"
+
+Existe ainda um comando muito importante, o **"git pull"**, ele busca as alterações do repositório remoto, neste caso, aquele que está no GitHub, para o seu repositório local.
+
+Dessa forma, quando alguma outra pessoa fizer alguma alteração no projeto e subir essa alteração ao GitHub, você terá que fazer um **"git pull"** para atualziar o seu repositório local.
+
+Experimente entrar no GitHub e alterar o seu arquivo pelo GitHub. É só clicar em cima do arquivo que você desja alterar e depois clicar no botão de edição.
+
+{{< figure src="/images/posts/git-pull.png" alt="git pull" >}}
+
+Depois de editar, no final da página têm o botão **"Commit changes"**.
+
+Agora digite **"git pull"** no seu terminal, você vai ver que a alteração que você no repositório do GitHub vai ser baixada.
 
 ---
 
