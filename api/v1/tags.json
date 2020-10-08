@@ -40,7 +40,7 @@
     "id": "anonimato",
     "title": "anonimato",
     "url": "https://butecotecnologico.com.br/tags/anonimato/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "apache",
@@ -547,6 +547,12 @@
     "article_count": "2"
   },
   {
+    "id": "dns",
+    "title": "dns",
+    "url": "https://butecotecnologico.com.br/tags/dns/",
+    "article_count": "1"
+  },
+  {
     "id": "docker",
     "title": "Docker",
     "url": "https://butecotecnologico.com.br/tags/docker/",
@@ -700,7 +706,7 @@
     "id": "facebook",
     "title": "facebook",
     "url": "https://butecotecnologico.com.br/tags/facebook/",
-    "article_count": "3"
+    "article_count": "4"
   },
   {
     "id": "fedora",
@@ -724,7 +730,7 @@
     "id": "firefox",
     "title": "firefox",
     "url": "https://butecotecnologico.com.br/tags/firefox/",
-    "article_count": "3"
+    "article_count": "4"
   },
   {
     "id": "fisl",
@@ -928,7 +934,7 @@
     "id": "google",
     "title": "google",
     "url": "https://butecotecnologico.com.br/tags/google/",
-    "article_count": "5"
+    "article_count": "6"
   },
   {
     "id": "google-analytics",
@@ -1126,7 +1132,7 @@
     "id": "internet",
     "title": "internet",
     "url": "https://butecotecnologico.com.br/tags/internet/",
-    "article_count": "2"
+    "article_count": "3"
   },
   {
     "id": "iot",
@@ -2326,7 +2332,7 @@
     "id": "tor",
     "title": "tor",
     "url": "https://butecotecnologico.com.br/tags/tor/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "torrent",
@@ -2476,7 +2482,7 @@
     "id": "vpn",
     "title": "vpn",
     "url": "https://butecotecnologico.com.br/tags/vpn/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "wayland",

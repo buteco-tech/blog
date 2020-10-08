@@ -3,23 +3,83 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://butecotecnologico.com.br/autores/alexandrevicenzi/</loc>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/anonimato/</loc>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://butecotecnologico.com.br/posts/</loc>
-    <lastmod>2020-10-01T08:00:00+00:00</lastmod>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://butecotecnologico.com.br/autores/</loc>
-    <lastmod>2020-10-01T08:00:00+00:00</lastmod>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://butecotecnologico.com.br/</loc>
-    <lastmod>2020-10-01T08:00:00+00:00</lastmod>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://butecotecnologico.com.br/categorias/</loc>
-    <lastmod>2020-10-01T08:00:00+00:00</lastmod>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/dns/</loc>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/facebook/</loc>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/firefox/</loc>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/google/</loc>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/internet/</loc>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/categorias/privacidade/</loc>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/</loc>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/tor/</loc>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/vpn/</loc>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/e-possivel-ter-privacidade-na-internet/</loc>
+    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -53,18 +113,8 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/</loc>
-    <lastmod>2020-10-01T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/tutorial-de-docker/</loc>
     <lastmod>2020-10-01T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/autores/alexandrevicenzi/</loc>
-    <lastmod>2020-09-24T08:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -398,22 +448,12 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/google/</loc>
-    <lastmod>2020-06-04T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/tags/nas/</loc>
     <lastmod>2020-06-04T08:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://butecotecnologico.com.br/tags/nuvem/</loc>
-    <lastmod>2020-06-04T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/categorias/privacidade/</loc>
     <lastmod>2020-06-04T08:00:00+00:00</lastmod>
   </url>
   
@@ -1224,11 +1264,6 @@
   
   <url>
     <loc>https://butecotecnologico.com.br/tags/openvpn/</loc>
-    <lastmod>2016-02-22T23:24:51+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/vpn/</loc>
     <lastmod>2016-02-22T23:24:51+00:00</lastmod>
   </url>
   
@@ -2178,11 +2213,6 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/internet/</loc>
-    <lastmod>2015-07-21T13:04:12+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/tags/nic/</loc>
     <lastmod>2015-07-21T13:04:12+00:00</lastmod>
   </url>
@@ -2268,18 +2298,8 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/firefox/</loc>
-    <lastmod>2015-07-03T12:40:21+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/firefox-39-traz-melhorias-de-seguranca/</loc>
     <lastmod>2015-07-03T12:40:21+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/facebook/</loc>
-    <lastmod>2015-07-02T21:25:59+00:00</lastmod>
   </url>
   
   <url>
@@ -2610,16 +2630,6 @@
   <url>
     <loc>https://butecotecnologico.com.br/firefox-38-adiciona-suporte-a-imagens-responsivas-e-ruby-annotations/</loc>
     <lastmod>2015-05-12T23:20:47+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/anonimato/</loc>
-    <lastmod>2015-05-11T23:05:53+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/tor/</loc>
-    <lastmod>2015-05-11T23:05:53+00:00</lastmod>
   </url>
   
   <url>
