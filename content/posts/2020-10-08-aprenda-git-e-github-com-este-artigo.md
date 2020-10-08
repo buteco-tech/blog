@@ -18,6 +18,7 @@ images:
   - /images/posts/git-init.png
   - /images/posts/git-status.png
   - /images/posts/git-commit.png
+  - /images/posts/git-pull.png
   - /images/posts/criando-repo-no-github.png
   - /images/posts/repositorio-github-criado.png
 ---
