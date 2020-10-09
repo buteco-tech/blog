@@ -350,10 +350,10 @@ menu:
       url: /sobre/
     - name: Equipe
       weight: 3
+      url: /equipe/
     - name: Feed RSS
       weight: 4
       url: /feed-rss/
-      url: /equipe/
     - name: Estatísticas
       weight: 5
       url: https://estatisticas.buteco.me/
