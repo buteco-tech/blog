@@ -1,9 +1,9 @@
 ---
-title: "Aprenda Git e GitHub com este artigo"
+title: "Tutorial de Git e GitHub"
 summary: "Se você é ou pretende se tornar um desenvolvedor, já deve ter ouvido falar do Git e GitHub, um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las."
 tagline: "Iniciando com Git e GitHub"
 date: 2020-10-07 08:00:00
-slug: aprenda-git-e-github-com-este-artigo
+slug: tutorial-git-e-github
 authors:
   - leonardodalcegio
 categories:
@@ -12,20 +12,13 @@ categories:
 tags:
   - git
   - github
-  - hacktoberfest
 images:
   - /images/posts/git-logo.png
-  - /images/posts/git-init.png
-  - /images/posts/git-status.png
-  - /images/posts/git-commit.png
-  - /images/posts/git-pull.png
-  - /images/posts/criando-repo-no-github.png
-  - /images/posts/repositorio-github-criado.png
 ---
 
 {{< figure src="/images/posts/git-logo.png" alt="git" >}}
 
-Se você é ou pretende se tornar um desenvolvedor, já deve ter ouvido falar do **Git** e **GitHub**, um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las.
+Se você é ou pretende se tornar um desenvolvedor, já deve ter ouvido falar do [Git](https://git-scm.com/) e [GitHub](https://github.com/), um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las.
 
 ## O que é Git?
 
@@ -35,140 +28,106 @@ Na maioria dos projetos, geralmente, acontece de termos muitos desenvolvedores t
 
 ## O que é GitHub?
 
-Se você vai utilizar Git, provavelmente vai querer armazenar o seu repositório em algum lugar, existem duas formas de se fazer isso, offline, no seu próprio computador, e online, em alguma plataforma como GitHub, BitBucket ou GitLab.
-
-E é exatamente para isso que o GitHub serve, para armazenar seu repositório nele, é o Google Drive dos códigos.
-
-Existem muitas outras funcionalidades dele, como as **"Pull Requests"** por exemplo, mas isso é um assunto para outro dia.
+Se você vai utilizar Git, provavelmente vai querer armazenar o seu repositório em algum lugar, existem duas formas de se fazer isso, offline, no seu próprio computador, e online, em alguma plataforma como [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/) ou [GitLab](https://gitlab.com/explore). É exatamente para isso que o GitHub serve, para armazenar seu repositório nele, é o Google Drive dos códigos.
 
 ## Configuração do ambiente
 
 É necessário ter o Git instalado no seu computador e uma conta no GitHub criada.
 
-Ambos os passos são bem rápidos.
+Ambos os passos são bem rápidos, você pode baixar o Git [aqui](https://git-scm.com/downloads), é só selecionar o seu sistema operacional e seguir o setup, no caso do Linux, costuma-se instalar o Git via um gerenciador de pacotes, nesse caso, é só você ir até [essa página](https://git-scm.com/download/linux), e executar no seu terminal o comando específico da sua distribuição. E o GitHub você cria uma conta [aqui](https://github.com/).
 
-Você pode baixar o Git [aqui](https://git-scm.com/downloads), é só selecionar o seu sistema operacional e seguir o setup.
-
-E o GitHub você cria uma conta [aqui](https://github.com/).
-
-## Como criar um repositório Git?
-
-Agora chegou a hora de criar o seu repositório Git localmente, para depois subir ele ao GitHub.
-
-Então, crie uma pasta em qualquer lugar do seu computador, que será o local do repositório, dentro dela ficará os arquivos que você quer versionar.
-
-Agora, navegue até ela com o seu terminal, ou clique com o botão direito sobre ela e selecione **"Git Bash Here"** (irá abrir o terminal do git dentro dela).
-
----
-
-## "git init"
-
-Digite o comando "git init" no terminal, ele irá inicializar o seu repositório e criar uma pasta chamada **".git"**, caso você não consiga ver essa pasta, é por que você não consegue ver arquivos ocultos, daí é só seguir [esse tutorial](https://support.microsoft.com/pt-br/help/14201/windows-show-hidden-files) que já vai ser possível visualizar.
-
-É dentro dessa pasta ".git" que ficarão os arquivos que [comitaremos](https://pt.wikipedia.org/wiki/Commit) no nosso repositório.
-
-{{< figure src="/images/posts/git-init.png" alt="git init" >}}
-
-### "git status" e "git add"
-
-Precisamos criar um novo arquivo para poder comitar ele, então, crie um arquivo de texto qualquer.
-
-Voltando pro terminal, digite **"git status"**. Você verá essa mensagem:
-
-{{< figure src="/images/posts/git-status.png" alt="git status" >}}
-
-Essas são as alterações pendentes, elas ainda não estão dentro da pasta **".git"**, para colocarmos elas lá, precisamos comitar as alterações, mas antes de comitar, precisamos definir o que é que queremos comitar, para isso existe o comando **"git add"**.
-
-Nesse caso, digite **"git add ."**, para comitar tudo, se você quisesse comitar apenas um arquivo, daí seria **"git add nome-do-arquivo"**
-
-Agora, ao digitar **"git commit"**, estaremos colocando as alterações para dentro da pasta **".git"**.
-
-Então vamos lá, **"git commit -m 'Primeiro commit'"**, o -m é para informar uma mensagem que será gravada junto ao comit.
-
-O seu terminal ficará parecido com o abaixo.
-
-{{< figure src="/images/posts/git-commit.png" alt="git commit" >}}
-
-Agora que você está com o seu repositório criado, é hora de subir ele ao GitHub.
-
----
-
-### Subindo um repositório no GitHub
-
-Se você entrar na página inicial do [GitHub](https://github.com/), vai ver no canto esquerdo da tela, um botão chamado **"new"**, clique nele, irá abrir [essa página](https://github.com/new).
-
-{{< figure src="/images/posts/criando-repo-no-github.png" alt="Criando um repositório no GitHub" >}}
-
-Digite o nome do seu repositório, uma descrição para ele e defina se outras pessoas vão poder visualizar ele, escolhendo se ele é público ou privado, as outras opções vamos ignorar por enquanto.
-
-Agora é só clicar em **"Create repository"**.
-
-Você verá essa página:
-
-{{< figure src="/images/posts/repositorio-github-criado.png" alt="Repositório no GitHub criado" >}}
-
-**E pronto!** O seu repositório no GitHUb já está criado, mas ainda é necessário subir para ele as alterações que foram feitas na sua máquina local.
-
----
-
-### Conectando repositório local com o remoto
-
-Vamos executar os comandos da seção **"…or push an existing repository from the command line"** no nosso terminal.
-
-Execute o primeiro comando:
-
-- **git remote add origin https://github.com/usuario-github/repositorio.git**
-
-Para "conectar" o seu repositório local, ao repositório do GitHub.
-
-Execute o segundo comando:
-
-- **git branch -M main**
-
-Para criar a sua primeira branch, "main" será o nome dela.
-
-Agora execute o terceiro comando:
-
-- **git push**
-
-Para enviar as informações commitadas no repositório local, ao repositório remoto.
-
-Caso você tenha acabado de instalar o Git no seu computador, talvez seja necessário configurar o seu email e nome, que será exibido em seus commits.
-
-Para isso é só digitar no terminal o seguinte.
+Depois de baixado o git, é necessário configurar o seu email e nome que será exibido em seus commits, para isso é só digitar no terminal o seguinte (caso você esteja no Windows, não esqueça de utilizar o **git bash**, ao invés do **cmd**, pois o **git bash** simula um ambiente Unix e fica melhor de trabalhar dessa forma):
 
 - **git config --global user.name "Seu nome que será exibido"**
 
 - **git config --global user.email "seu-email@email.com"**
 
-Agora, para não deixar batido, como que seria se você ou outra pessoa quisesse baixar esse repositório futuramente?
+Agora iremos criar uma chave de SSH para provar ao GitHub que nós somos os donos da nossa conta no GitHub, isso é feito por meio de uma chave SSH, digite então esse comando no seu terminal (o email que você inserir tem que ser o mesmo que você usa para logar na sua conta do GitHub):
 
-Simples, é só abrir o terminal do git em qualquer lugar do seu computador, e digitar **"git clone url-do-seu-repositorio".git**.
+- **ssh-keygen -t rsa -b 4096 -C "seuemailgithub@email.com"**
 
-Dali em diante você vai poder ir fazendo os seus **"git add"**, **"git commit"**, **"git push"** e muitos outros comandos.
+Irá pedir um nome do arquivo para salvar a chave, digite algo como "githubkey". Depois será pedido uma "passphrase", digite uma senha e confirme ela em seguida (lembre-se dela). Pronto, você gerou uma chave SSH. Se você navegar até o local onde a chave foi criada, que é o local onde você estava executando o terminal, você verá dois arquivos, "githubkey" e "githubkey.pub", este coma extensão "pub", que significa público, ou seja, chave pública. É essa chave que você vai informar ao **GitHub**. O arquivo sem o ".pub", é a sua chave privada, é o que você não irá informar aos outros e manter ele seguro.
 
-### "git pull"
+Você irá informar essa chave pública ao **GitHub**, e então todas as vezes que você quiser se conectar ao GitHub, ou subir o seu código ao **GitHub** por exemplo, você usará a sua chave private, para mostrar ao **GitHub** que foi você quem gerou essa chave pública. Agora o que você precisa fazer é abrir o arquivo da chave pública e copiar todo o conteúdo dele.
 
-Existe ainda um comando muito importante, o **"git pull"**, ele busca as alterações do repositório remoto, neste caso, aquele que está no GitHub, para o seu repositório local.
+Agora vá até [essa página](https://github.com/settings/keys), aqui você pode ver as chaves SSH associadas a sua conta. Clique então no botão **"New SSH Key"**. O título você pode escolher um nome, e em "key", você informará o conteúdo que você copiou anteriormente do seu arquivo da chave pública, cuide para que todo o arquivo seja copiado, desde "ssh-rsa..." até o seu email.
 
-Dessa forma, quando alguma outra pessoa fizer alguma alteração no projeto e subir essa alteração ao GitHub, você terá que fazer um **"git pull"** para atualziar o seu repositório local.
+<!-- Vamos agora criar um **agente SSH**, um programa que fará a autenticação da sua máquina local, com o servidor remoto, que nesse caso seria o **GitHu**, execute então o comando [ssh-agent](https://pt.wikipedia.org/wiki/Ssh-agent), você deverá receber um "Agent pid":
 
-Experimente entrar no GitHub e alterar o seu arquivo pelo GitHub. É só clicar em cima do arquivo que você desja alterar e depois clicar no botão de edição.
+- **eval \$(ssh-agent -s)**
 
-{{< figure src="/images/posts/git-pull.png" alt="git pull" >}}
+Caso você esteja em um Linux ou um Mac, esse comando fica um pouco diferente, precisamos adicionar as aspas, dessa forma aqui:
 
-Depois de editar, no final da página têm o botão **"Commit changes"**.
+- **eval "\$(ssh-agent -s)"**
 
-Agora digite **"git pull"** no seu terminal, você vai ver que a alteração que você no repositório do GitHub vai ser baixada.
+Agora iremos executar o comando ssh-add, onde o "githubkey" é o nome que demos para a nossa chave SSH anteriormente, depois de digitar o comando, será requisitado a sua "passphrase" que você informou quando criou a chave SSH (eu disse que era pra lembrar dela rsrs).
+
+- **ssh-add githubkey**
+
+Você deverá receber a mensagem **"Identity added: githubkey (githubkey)"** -->
+
+## Workflow
+
+Geralmente, o workflow de quando trabalhamos com **Git** e **GitHub**, é realizar um **fork** de um determinado repositório no **GitHub** de outra pessoa, dessa forma vamos estar com uma cópia desse reposítorio no nosso perfil, depois, fazer o **clone** do **fork** para a nossa máquina local, realizar as alterações, subir as alterações feitas localmente, ao seu repositório **fork** no **GitHub**, e realizar um **pull request** do seu repsitório para o repositório principal.
+
+Caso você nunca tenha viso algum desses nomes antes, não se assuste, pois vamos ver tudo isso neste artigo.
+
+---
+
+### "Fork"
+
+Vamos começar pegando um repositório base no **GitHub** e realizar o **fork** deste. Vá até [essa página](https://github.com/LeoDalcegio/aprenda-git-e-github) e clique no botão **Fork** no canto superior direito, isso fará uma cópia do repositório para o seu perfil no **GitHub**.
+
+Agora navegue até os repositórios do seu perfil, você verá que existe um ali chamado **"aprenda-git-e-github"**, clique nele. Agora você não está no repositório principal, você está no seu repositório próprio, as alterações feitas ali, não terão impacto no repositório principal, a menos que você faça um **Pull Request**, e é isso que vamos fazer daqui a pouco.
+
+### "git clone"
+
+Vamos agora clonar esse seu repositório para a sua máquina local. Na página do seu repositório no GitHub, existe um botão
+
+TERMINAR ISSO AQUI E USAR SSH FALAR DA PASTA .git DAÍ, NO WINDOWS TALVEZ n SEJA POSSIVEL VISUALIZAR ELA
+
+### "git status" e "git add"
+
+Vamos criar um novo arquivo para comitar ele depois, então, crie um arquivo de texto com o seu nome por exemplo.
+
+Voltando pro terminal, digite **"git status"**. Você verá essa mensagem:
+
+{{< figure src="/images/posts/git-status.png" alt="git status" >}}
+
+Essas são as alterações pendentes, nós precisamos adicionar elas à área de **"staging"**, as alterações que estão no **"staging"** são as que serão **"commitadas"** futuramente.
+
+Então, digite **"git add ."**, para adicionar tudo. Se você quisesse adicionar apenas um arquivo, daí seria **"git add nome-do-arquivo"**
+
+O **"git add"** não afeta diretamente o repositório, pois ele ainda não "salvou" as alterações, apenas às moveu para a área de **"staging"**, quando fazermos um **"git commit"** é que as alterações serão salvas.
+
+Agora sim, podemos commitar as alterações, então vamos lá, **"git commit -m 'Primeiro commit'"**, o -m é para informar uma mensagem que será gravada junto ao commit.
+
+O seu terminal ficará parecido com o abaixo.
+
+{{< figure src="/images/posts/git-commit.png" alt="git commit" >}}
+
+Agora é hora de subir as alterações feitas no seu repositório local, ao repositório remoto, nesse caso, o do GitHub.
+
+---
+
+### "git push"
+
+Quando estamos com alguma alteração commitada localmente e queremos subir elas para o repositório remoto, precisamos fazer um **"git push"**, então digite **"git push"** no seu terminal e recarregue a página do seu repositório no **"GitHub"**, você verá que as alterações feitas localmente, já estão lá.
+
+### Abrindo uma "Pull request"
+
+Se você for até o seu repositório agora, depois de ter feito um **push** nele, você vai ver um botão escrito **"Compare & pull request"**. Daí só clicar nele, irá abrir uma página mostrando os arquivos alterado em um botão **"Create pull request"**, clique nele, agora informe o título e um comentário para essa **pull request** e clique naquele mesmo botão **"Create pull request"**, e pronto, está criada. Se você for até a página das **pull requests** do repositório principal, a sua vai estar lá. Agora é só esperar ela ser aceita por algum mantedor.
+
+Desde o começo desse artigo, tudo girou em torno deste momento, em que você cria a sua **pull request**, mas afinal, o que é uma **pull request**?
+
+Para entendermos o que é uma **pull request** precisamos entender o que é um **pull**. Quando existe alguma alteração no repositório remoto, e você quer baixar essa alteração para o seu repositório local, ou seja, o seu repositório local está atrasado em relação ao repositório remoto, você digita **"git pull"** no terminal (olha só, mais um comando novo). Uma **pull request** é uma sugestão de uma alteração, ou seja, você está pedindo para que aquele repositório que você enviou a **pull request**, faça um **"pull"** com as suas alterações.
 
 ---
 
 ### O fim, se existe, está muito distante ainda
 
-Se você chegou até aqui, então aprendeu bastante coisa, viu sobre como criar um repositório git local com **git init**, adicionar as suas alterações a ele com **git add**, commitar elas com **git commit**, conectar o seu repositório local com o remoto com **git remote add**, subir as suas alterações com **git push**.
+Se você chegou até aqui, então aprendeu bastante coisa, viu sobre como fazer um **fork** de um repositório no **GitHub**, clonar ele para a sua máquina local com **git clone**, adicionar as suas alterações a ele com **git add**, commitar elas com **git commit**, subir as suas alterações ao repositório remoto com **git push**, abrir uma **pull request** com as alterações.
 
-Mas ainda não acabou por aí, o próximo passo, é você estudar sobre **fork**, **pull request** e como eles funcionam e são usados, para poder contribuir com outros repositórios e com o **Open Source**.
+Mas ainda não acabou por aí, o próximo passo, é você estudar sobre **branches** e como elas funcionam e são usadas.
 
 E ai, você já usava Git antes? O que achou? Deixe um comentário abaixo.
-
-No momento em que escrevo este artigo, está acontecendo a **Hacktoberfest** um evento muito massa da [Digital Ocean](https://www.digitalocean.com/), aqui vai um artigo do [Buteco Técnologico](http://localhost:3000/hacktoberfest-2020/) para você dar uma lida.
