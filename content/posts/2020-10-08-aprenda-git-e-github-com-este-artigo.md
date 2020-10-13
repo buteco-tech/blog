@@ -36,17 +36,27 @@ Se você vai utilizar Git, provavelmente vai querer armazenar o seu repositório
 
 Ambos os passos são bem rápidos, você pode baixar o Git [aqui](https://git-scm.com/downloads), é só selecionar o seu sistema operacional e seguir o setup, no caso do Linux, costuma-se instalar o Git via um gerenciador de pacotes, nesse caso, é só você ir até [essa página](https://git-scm.com/download/linux), e executar no seu terminal o comando específico da sua distribuição. E o GitHub você cria uma conta [aqui](https://github.com/).
 
-Depois de baixado o git, é necessário configurar o seu email e nome que será exibido em seus commits, para isso é só digitar no terminal o seguinte (caso você esteja no Windows, não esqueça de utilizar o **git bash**, ao invés do **cmd**, pois o **git bash** simula um ambiente Unix e fica melhor de trabalhar dessa forma):
+Depois de ter baixado o Git, é necessário configurar o seu email e nome que será exibido em seus commits, para isso é só digitar no terminal o seguinte (caso você esteja no Windows, não se esqueça de utilizar o **git bash**, ao invés do **cmd**, pois o **git bash** simula um ambiente **Unix** e fica melhor de trabalhar dessa forma):
 
 - **git config --global user.name "Seu nome que será exibido"**
 
 - **git config --global user.email "seu-email@email.com"**
 
-Agora iremos criar uma chave de SSH para provar ao GitHub que nós somos os donos da nossa conta no GitHub, isso é feito por meio de uma chave SSH, digite então esse comando no seu terminal (o email que você inserir tem que ser o mesmo que você usa para logar na sua conta do GitHub):
+Agora iremos criar uma chave de SSH, com ela conseguimos provar ao GitHub que nós somos os donos da nossa conta, você talvez até já tenha uma chave SSH no seu computador, podemos checar se já existe uma entrando no seu diretório **".ssh"** e listando o conteúdo:
+
+- **cd ~/.ssh**
+
+- **ls**
+
+  Caso esses dois comandos retornem algo, você não precisa executar o comando **"ssh-keygen"**. Caso contrário, digite esse comando no seu terminal, o email que você inserir tem que ser o mesmo que você usa para logar na sua conta do GitHub:
 
 - **ssh-keygen -t rsa -b 4096 -C "seuemailgithub@email.com"**
 
-Irá pedir um nome do arquivo para salvar a chave, digite algo como "githubkey". Depois será pedido uma "passphrase", digite uma senha e confirme ela em seguida (lembre-se dela). Pronto, você gerou uma chave SSH. Se você navegar até o local onde a chave foi criada, que é o local onde você estava executando o terminal, você verá dois arquivos, "githubkey" e "githubkey.pub", este coma extensão "pub", que significa público, ou seja, chave pública. É essa chave que você vai informar ao **GitHub**. O arquivo sem o ".pub", é a sua chave privada, é o que você não irá informar aos outros e manter ele seguro.
+Irá pedir um nome do arquivo para salvar a chave, não escreva nada e aperte **enter** apenas para continuar (será gerada uma com o nome "id_rsa"). Depois será pedido uma **"passphrase"**, digite uma senha e confirme ela. Pronto, você gerou uma chave SSH. Se você navegar até o local onde a chave foi criada, você verá dois arquivos, "id_rsa" e "id_rsa.pub", este coma extensão "pub", que significa público, ou seja, chave pública. É essa chave que você vai informar ao **GitHub**. O arquivo sem o ".pub", é a sua chave privada, é o que você não irá informar aos outros e manter ele seguro.
+
+- **cat ~/.ssh/id_rsa.pub**
+
+copiar isso
 
 Você irá informar essa chave pública ao **GitHub**, e então todas as vezes que você quiser se conectar ao GitHub, ou subir o seu código ao **GitHub** por exemplo, você usará a sua chave private, para mostrar ao **GitHub** que foi você quem gerou essa chave pública. Agora o que você precisa fazer é abrir o arquivo da chave pública e copiar todo o conteúdo dele.
 
