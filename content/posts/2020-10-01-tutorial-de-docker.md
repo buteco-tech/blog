@@ -19,11 +19,11 @@ images:
 
 {{< figure src="/images/posts/docker-logo.png" alt="Docker" >}}
 
-O Docker é um conjunto de ferrametas criada para facilitar o uso de contêineres, algo que não é tão novo no mundo Linux, uma vez que projetos como o LXC já existem a muitos anos, porém o seu uso é complexo e a curva de aprendizado é bastante grande. Foi para resolver este e outros problemas que o Docker nasceu. Inicialmente criado por uma empresa independente, teve tanto sucesso que a própria empresa mudou seu nome posteriormente para Docker Inc..
+O Docker é um conjunto de ferrametas criada para facilitar o uso de contêineres, algo que não é tão novo no mundo Linux uma vez que projetos como o LXC já existem a muitos anos, porém o seu uso é complexo e a curva de aprendizado é bastante grande. Foi para resolver este e outros problemas que o Docker nasceu. Inicialmente criado por uma empresa independente, teve tanto sucesso que a própria empresa mudou seu nome posteriormente para Docker Inc..
 
-Mas por que você deveria se importar com [contêineres](https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/)? Existe uma série de motivos que fazem os contêineres serem interessantes e uma melhor alternativa que as máquinas virtuais. O principal motivo é que contêineres usam bem menos recursos da maquina hospedeira, na prática, cada contêiner é apenas um processo isolado, diferente de toda a sobrecarga que existe quando se usa uma máquina virtual, onde se tem todo um sistema operacional convidado, que consome recursos, independente da sua aplicação e apenas para manter este sistema operacional funcionando. Isso permite que você execute muito mais aplicações e contêineres no mesmo equipamento físico.
+Mas por que você deveria se importar com [contêineres](https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/)? Existe uma série de motivos que fazem os contêineres serem interessantes e uma melhor alternativa que as máquinas virtuais. O principal deles é que contêineres usam bem menos recursos da maquina hospedeira, na prática cada contêiner é apenas um processo isolado, diferente de toda a sobrecarga que existe quando se usa uma máquina virtual, nesta onde se tem todo um sistema operacional convidado que consome recursos independente da sua aplicação, apenas para manter este sistema operacional funcionando. Isso permite que você execute muito mais aplicações e contêineres no mesmo equipamento físico.
 
-Outra questão importante que nem sempre é considerado quando se usa máquinas virtuais, é que contêineres são efêmeros, ou seja, um contêiner não deve armazenar dados importantes em seu `filesystem`,
+Outra questão importante que nem sempre é considerado quando se usa máquinas virtuais, é que contêineres são efêmeros, ou seja, um contêiner não deve armazenar dados importantes em seu `filesystem`.
 
 Aprenda neste tutorial como usar e aproveitar o máximo do Docker no seu dia a dia como desenvolvedor de software.
 
