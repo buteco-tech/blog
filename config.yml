@@ -41,43 +41,6 @@ outputs:
   term:
     - HTML
 
-outputFormats:
-  sharing-v1:
-    path: v1
-    baseName: sharing
-    isPlainText: true
-    mediaType: application/json
-    protocol: https://
-    notAlternative: true
-  posts-v1:
-    path: v1
-    baseName: posts
-    isPlainText: true
-    mediaType: application/json
-    protocol: https://
-    notAlternative: true
-  authors-v1:
-    path: v1
-    baseName: authors
-    isPlainText: true
-    mediaType: application/json
-    protocol: https://
-    notAlternative: true
-  tags-v1:
-    path: v1
-    baseName: tags
-    isPlainText: true
-    mediaType: application/json
-    protocol: https://
-    notAlternative: true
-  categories-v1:
-    path: v1
-    baseName: categories
-    isPlainText: true
-    mediaType: application/json
-    protocol: https://
-    notAlternative: true
-
 social:
   twitter: butecotech
 
