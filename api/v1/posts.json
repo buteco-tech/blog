@@ -1,6 +1,17 @@
 [
   
   {
+    "id": "bitcoin-e-criptomoedas",
+    "date_published": "2020-10-22T08:00:00Z",
+    "date_modified": "2020-10-22T08:00:00Z",
+    "title": "Bitcoin e criptomoedas",
+    "url": "https://butecotecnologico.com.br/podcast/bitcoin-e-criptomoedas/",
+    "images": ["https://butecotecnologico.com.br/images/podcast/bitcoin-e-criptomoedas.png"],
+    "tags": ["bitcoin","blockchain","criptomoedas"],
+    "categories": ["Podcast"],
+    "authors": ["alexandrevicenzi"]
+  },
+  {
     "id": "e-possivel-ter-privacidade-na-internet",
     "date_published": "2020-10-08T08:00:00Z",
     "date_modified": "2020-10-08T08:00:00Z",

@@ -190,7 +190,7 @@
     "id": "bitcoin",
     "title": "bitcoin",
     "url": "https://butecotecnologico.com.br/tags/bitcoin/",
-    "article_count": "1"
+    "article_count": "2"
   },
   {
     "id": "bitly",
@@ -202,6 +202,12 @@
     "id": "black-friday",
     "title": "black-friday",
     "url": "https://butecotecnologico.com.br/tags/black-friday/",
+    "article_count": "1"
+  },
+  {
+    "id": "blockchain",
+    "title": "blockchain",
+    "url": "https://butecotecnologico.com.br/tags/blockchain/",
     "article_count": "1"
   },
   {
@@ -407,6 +413,12 @@
     "title": "criptografia",
     "url": "https://butecotecnologico.com.br/tags/criptografia/",
     "article_count": "2"
+  },
+  {
+    "id": "criptomoedas",
+    "title": "criptomoedas",
+    "url": "https://butecotecnologico.com.br/tags/criptomoedas/",
+    "article_count": "1"
   },
   {
     "id": "criptoparty",

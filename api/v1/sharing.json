@@ -1,6 +1,35 @@
 [
   
   {
+    "id": "https://butecotecnologico.com.br/podcast/bitcoin-e-criptomoedas/",
+    "date_published": "2020-10-22T08:00:00Z",
+    "date_modified": "2020-10-22T08:00:00Z",
+    "title": "Bitcoin e criptomoedas",
+    "url": "https://butecotecnologico.com.br/podcast/bitcoin-e-criptomoedas/",
+    "sharing": {
+      "twitter": {
+        "text": "Bitcoin e criptomoedas",
+        "image": "https://butecotecnologico.com.br/images/podcast/bitcoin-e-criptomoedas.png"
+      },
+      "facebook": {
+        "text": "Bitcoin e criptomoedas\n\n<p>O quão seguro é Bitcoin? Como investir? Vale a pena minerar? Respondemos essas e outras perguntas.</p>\n<p>Neste episódio conversamos sobre Bitcoin, blockchain e criptomoedas, falando um pouco sobre o início do movimento, desafios técnicos, segurança, diferentes tipos de carteiras, lightning network, DeFi e mais.</p>",
+        "image": "https://butecotecnologico.com.br/images/podcast/bitcoin-e-criptomoedas.png"
+      },
+      "linkedin": {
+        "text": "Bitcoin e criptomoedas\n\n<p>O quão seguro é Bitcoin? Como investir? Vale a pena minerar? Respondemos essas e outras perguntas.</p>\n<p>Neste episódio conversamos sobre Bitcoin, blockchain e criptomoedas, falando um pouco sobre o início do movimento, desafios técnicos, segurança, diferentes tipos de carteiras, lightning network, DeFi e mais.</p>",
+        "image": "https://butecotecnologico.com.br/images/podcast/bitcoin-e-criptomoedas.png"
+      },
+      "instagram": {
+        "text": "Bitcoin e criptomoedas\n\n<p>O quão seguro é Bitcoin? Como investir? Vale a pena minerar? Respondemos essas e outras perguntas.</p>\n<p>Neste episódio conversamos sobre Bitcoin, blockchain e criptomoedas, falando um pouco sobre o início do movimento, desafios técnicos, segurança, diferentes tipos de carteiras, lightning network, DeFi e mais.</p>",
+        "image": "https://butecotecnologico.com.br/images/podcast/bitcoin-e-criptomoedas.png"
+      },
+      "pinterest": {
+        "text": "Bitcoin e criptomoedas\n\n<p>O quão seguro é Bitcoin? Como investir? Vale a pena minerar? Respondemos essas e outras perguntas.</p>\n<p>Neste episódio conversamos sobre Bitcoin, blockchain e criptomoedas, falando um pouco sobre o início do movimento, desafios técnicos, segurança, diferentes tipos de carteiras, lightning network, DeFi e mais.</p>",
+        "image": "https://butecotecnologico.com.br/images/podcast/bitcoin-e-criptomoedas.png"
+      }
+    }
+  },
+  {
     "id": "https://butecotecnologico.com.br/e-possivel-ter-privacidade-na-internet/",
     "date_published": "2020-10-08T08:00:00Z",
     "date_modified": "2020-10-08T08:00:00Z",
@@ -1418,35 +1447,6 @@
       "pinterest": {
         "text": "Apache Mesos\n\n<p>Nos últimos tempos vem se falando muito em computação na nuvem, computação distribuída, Linux containers, Big Data, etc. Junto com o crescimento dessas tecnologias também se observa o surgimento de inúmeras ferramentas para resolver os problemas encontrados nesta área da computação. Poderíamos citar várias, mas iremos falar brevemente sobre Apache Mesos. Não irei me aprofundar muito pois pretendo fazer mais artigos sobre o assunto detalhando mais em determinados tópicos.</p>\n<p>O Apache Mesos é considerado o <em>kernel</em> de sistemas distribuídos. Ele foi criado com os mesmos princípios do <em>kernel</em> Linux, só que em outro nível de abstração. O Mesos roda em todos os nós de <em>cluster</em> e prove a <em>frameworks</em> como Apache Spark, Hadoop, Cassandra, Kafka, Elastic Search e outros uma API para alocar recursos e rodarem suas <em>tasks</em> através de todo o <em>cluster</em> ou cloud. Em um Mesos <em>cluster</em>, CPU, memória, disco e outros recursos computacionais de todas as máquinas, virtuais ou físicas, são abstraídos em um único <em>pool</em> de recursos. Facilitando a criação e otimizando a utilização de sistemas distribuídos.</p>",
         "image": "https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/apache_mesos.png"
-      }
-    }
-  },
-  {
-    "id": "https://butecotecnologico.com.br/lancamentos-novatec-android-pentest-e-seguranca-web/",
-    "date_published": "2016-03-22T16:45:00Z",
-    "date_modified": "2016-03-22T16:45:00Z",
-    "title": "Lançamentos Novatec: Android, Pentest e Segurança Web",
-    "url": "https://butecotecnologico.com.br/lancamentos-novatec-android-pentest-e-seguranca-web/",
-    "sharing": {
-      "twitter": {
-        "text": "Lançamentos Novatec: Android, Pentest e Segurança Web",
-        "image": "https://butecotecnologico.com.br/"
-      },
-      "facebook": {
-        "text": "Lançamentos Novatec: Android, Pentest e Segurança Web\n\nAndroid Essencial\nTítulo é um resumo do conteúdo do best-seller Google Android",
-        "image": "https://butecotecnologico.com.br/"
-      },
-      "linkedin": {
-        "text": "Lançamentos Novatec: Android, Pentest e Segurança Web\n\nAndroid Essencial\nTítulo é um resumo do conteúdo do best-seller Google Android",
-        "image": "https://butecotecnologico.com.br/"
-      },
-      "instagram": {
-        "text": "Lançamentos Novatec: Android, Pentest e Segurança Web\n\nAndroid Essencial\nTítulo é um resumo do conteúdo do best-seller Google Android",
-        "image": "https://butecotecnologico.com.br/"
-      },
-      "pinterest": {
-        "text": "Lançamentos Novatec: Android, Pentest e Segurança Web\n\nAndroid Essencial\nTítulo é um resumo do conteúdo do best-seller Google Android",
-        "image": "https://butecotecnologico.com.br/"
       }
     }
   }
