@@ -48,33 +48,27 @@ Agora iremos criar uma chave de SSH, com ela conseguimos provar ao GitHub que n�
 
 - **ls**
 
-  Caso esses dois comandos retornem algo, você não precisa executar o comando **"ssh-keygen"**. Caso contrário, digite esse comando no seu terminal, o email que você inserir tem que ser o mesmo que você usa para logar na sua conta do GitHub:
+  Caso esses o comando **"ls"** retorne algo com a extensão ".pub", você não precisa executar o comando **"ssh-keygen"**. Caso contrário, digite esse comando no seu terminal, o email que você inserir tem que ser o mesmo que você usa para logar na sua conta do GitHub:
 
 - **ssh-keygen -t rsa -b 4096 -C "seuemailgithub@email.com"**
 
-Irá pedir um nome do arquivo para salvar a chave, não escreva nada e aperte **enter** apenas para continuar (será gerada uma com o nome "id_rsa"). Depois será pedido uma **"passphrase"**, digite uma senha e confirme ela. Pronto, você gerou uma chave SSH. Se você navegar até o local onde a chave foi criada, você verá dois arquivos, "id_rsa" e "id_rsa.pub", este coma extensão "pub", que significa público, ou seja, chave pública. É essa chave que você vai informar ao **GitHub**. O arquivo sem o ".pub", é a sua chave privada, é o que você não irá informar aos outros e manter ele seguro.
+Irá pedir um nome do arquivo para salvar a chave, não escreva nada e aperte **enter** (será gerada uma com o nome "id_rsa"). Depois, informe uma **"passphrase"**, digite uma senha e confirme ela. Pronto, você gerou uma chave SSH. Se você navegar até o local onde a chave foi criada, você verá dois arquivos, "id_rsa" e "id_rsa.pub", este coma extensão "pub", que significa público, ou seja, chave pública. É essa chave que você vai informar ao **GitHub**. O arquivo sem o ".pub", é a sua chave privada, é o que você não irá informar aos outros e manter ele seguro. Para copiar o conteúdo da chave gerada, digite o seguinte comando no terminal:
 
 - **cat ~/.ssh/id_rsa.pub**
 
-copiar isso
+Você irá informar essa chave pública ao **GitHub**, e então todas as vezes que você quiser subir o seu código ao **GitHub** por exemplo, você usará a sua chave privada, para mostrar ao **GitHub** que foi você quem gerou essa chave pública.
 
-Você irá informar essa chave pública ao **GitHub**, e então todas as vezes que você quiser se conectar ao GitHub, ou subir o seu código ao **GitHub** por exemplo, você usará a sua chave private, para mostrar ao **GitHub** que foi você quem gerou essa chave pública. Agora o que você precisa fazer é abrir o arquivo da chave pública e copiar todo o conteúdo dele.
+Agora vá até [essa página](https://github.com/settings/keys), aqui você pode ver as chaves SSH associadas a sua conta. Clique então no botão **"New SSH Key"**. O título você pode escolher um, e em "key", você informará o conteúdo que você copiou anteriormente do seu arquivo da chave pública.
 
-Agora vá até [essa página](https://github.com/settings/keys), aqui você pode ver as chaves SSH associadas a sua conta. Clique então no botão **"New SSH Key"**. O título você pode escolher um nome, e em "key", você informará o conteúdo que você copiou anteriormente do seu arquivo da chave pública, cuide para que todo o arquivo seja copiado, desde "ssh-rsa..." até o seu email.
-
-<!-- Vamos agora criar um **agente SSH**, um programa que fará a autenticação da sua máquina local, com o servidor remoto, que nesse caso seria o **GitHu**, execute então o comando [ssh-agent](https://pt.wikipedia.org/wiki/Ssh-agent), você deverá receber um "Agent pid":
-
-- **eval \$(ssh-agent -s)**
-
-Caso você esteja em um Linux ou um Mac, esse comando fica um pouco diferente, precisamos adicionar as aspas, dessa forma aqui:
+Depois de informado a sua chave **pública** ao **GitHub**, vamos agora adicionar a sua chave **privada** ao **ssh-agent**, um programa que fará a autenticação da sua máquina local, com o servidor remoto, que nesse caso seria o **GitHu**, execute então o comando [ssh-agent](https://pt.wikipedia.org/wiki/Ssh-agent), você deverá receber um "Agent pid":
 
 - **eval "\$(ssh-agent -s)"**
 
-Agora iremos executar o comando ssh-add, onde o "githubkey" é o nome que demos para a nossa chave SSH anteriormente, depois de digitar o comando, será requisitado a sua "passphrase" que você informou quando criou a chave SSH (eu disse que era pra lembrar dela rsrs).
+Agora iremos executar o comando ssh-add, onde o "id_rsa" é o nome que demos para a nossa chave SSH anteriormente, depois de digitar o comando, será requisitado a sua "passphrase" que você informou quando criou a chave SSH.
 
-- **ssh-add githubkey**
+- **ssh-add id_rsa**
 
-Você deverá receber a mensagem **"Identity added: githubkey (githubkey)"** -->
+Você deverá receber a mensagem **"Identity added: id_rsa (seuemailgithub@email.com)"**. Pronto, a sua configuração está feita.
 
 ## Workflow
 
@@ -86,13 +80,15 @@ Caso você nunca tenha viso algum desses nomes antes, não se assuste, pois vamo
 
 ### "Fork"
 
-Vamos começar pegando um repositório base no **GitHub** e realizar o **fork** deste. Vá até [essa página](https://github.com/LeoDalcegio/aprenda-git-e-github) e clique no botão **Fork** no canto superior direito, isso fará uma cópia do repositório para o seu perfil no **GitHub**.
+Vamos começar pegando um repositório base no **GitHub** e realizar o **fork** deste. Vá até [essa página](https://github.com/buteco-tech/artigo-tutorial-git) e clique no botão **Fork** no canto superior direito, isso fará uma cópia do repositório para o seu perfil no **GitHub**.
 
-Agora navegue até os repositórios do seu perfil, você verá que existe um ali chamado **"aprenda-git-e-github"**, clique nele. Agora você não está no repositório principal, você está no seu repositório próprio, as alterações feitas ali, não terão impacto no repositório principal, a menos que você faça um **Pull Request**, e é isso que vamos fazer daqui a pouco.
+Agora navegue até os repositórios do seu perfil, você verá que existe um ali chamado **"artigo-tutorial-git"**, clique nele. Agora você não está no repositório principal, você está no seu repositório próprio, as alterações feitas ali, não terão impacto no repositório principal, a menos que você faça um **Pull Request**, que é o que iremos fazer daqui a pouco.
 
 ### "git clone"
 
-Vamos agora clonar esse seu repositório para a sua máquina local. Na página do seu repositório no GitHub, existe um botão
+Vamos agora clonar esse seu repositório para a sua máquina local, para que você possa realizar alterações nele Na página do seu repositório no GitHub, existe um botão chamado **"Code"**, clique nele, selecione a opção **SSH**, e clique no botão de copiar.
+
+Agora abra o seu terminal no local que deseja copiar o repositório, e cole no terminal o comando que você copiou.
 
 TERMINAR ISSO AQUI E USAR SSH FALAR DA PASTA .git DAÍ, NO WINDOWS TALVEZ n SEJA POSSIVEL VISUALIZAR ELA
 
