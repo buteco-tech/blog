@@ -1,4 +1,18 @@
 <div class="mt-4">
+  <h3 class="pb-2 border-bottom">Publicidade</h3>
+
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-6625957038449899"
+       data-ad-slot="7193570524"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+<div class="mt-4">
   <h3 class="pb-2 border-bottom">Podcast</h3>
 
 <!--
@@ -13,7 +27,6 @@
           frameborder="0"
           width="100%"
           height="200"></iframe>
--->
 
   <iframe src="https://tunein.com/embed/player/p1357870/"
           class="mt-2"
@@ -21,6 +34,14 @@
           scrolling="no"
           frameborder="no"
           importance="low"></iframe>
+-->
 
-  <p class="small text-center"><a href="/podcast/" class="text-decoration-none">Confira mais episódios</a></p>
+  {{ $episodes := .Site.GetPage "podcast" }}
+  {{ range first 1 $episodes.Data.Pages }}
+    <a href="{{ .Permalink }}">
+      <img class="shadow rounded"src="{{ .Params.thumbnail.image }}" alt="{{ .Title }}" width="300">
+    </a>
+  {{ end }}
+
+  <p class="pt-2 small text-center"><a href="/podcast/" class="text-decoration-none">Confira mais episódios</a></p>
 </div>
