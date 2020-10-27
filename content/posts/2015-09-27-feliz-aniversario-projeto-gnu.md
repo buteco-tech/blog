@@ -22,4 +22,4 @@ Há 32 anos, em 27 de setembro de 1983, <a href="https://pt.wikipedia.org/wiki/R
 Este projeto merece respeito por nos prover diversas <a href="https://en.wikipedia.org/wiki/List_of_GNU_packages" target="_blank">ferramentas</a> <a href="http://www.gnu.org/philosophy/free-sw.pt-br.html" target="_blank">livremente</a>.
 
 Parabéns! Longa vida ao GNU!
-Estes são os votos da equipe do <a href="https://blog.butecopensource.org" target="_blank">Buteco Open Source</a>.
+Estes são os votos da equipe do Buteco Open Source.

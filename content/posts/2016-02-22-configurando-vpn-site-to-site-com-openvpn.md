@@ -59,8 +59,8 @@ export KEY_COUNTRY="BR"
 export KEY_PROVINCE="Espirito-Santo"
 export KEY_CITY="Vila-Velha"
 export KEY_ORG="Butecopensource"
-export KEY_EMAIL="daniel@butecopensource.org"
-export KEY_OU="butecopensource.org"
+export KEY_EMAIL="daniel@buteco.tech"
+export KEY_OU="buteco.tech"
 ```
 Após editar o arquivo use:
 
@@ -100,10 +100,10 @@ Country Name (2 letter code) [BR]:
 State or Province Name (full name) [Espirito-Santo]:
 Locality Name (eg, city) [Vila-Velha]:
 Organization Name (eg, company) [Butecopensource]:
-Organizational Unit Name (eg, section) [butecopensource.org]:
+Organizational Unit Name (eg, section) [buteco.tech]:
 Common Name (eg, your name or your server's hostname) [Butecopensource CA]:
 Name [EasyRSA]:
-Email Address [daniel@butecopensource.org]:
+Email Address [daniel@buteco.tech]:
 root@wolf:/etc/openvpn/easy-rsa#
 ```
 <strong>Gerando chave para o Servidor</strong>
@@ -130,10 +130,10 @@ Country Name (2 letter code) [BR]:
 State or Province Name (full name) [Espirito-Santo]:
 Locality Name (eg, city) [Vila-Velha]:
 Organization Name (eg, company) [Butecopensource]:
-Organizational Unit Name (eg, section) [butecopensource.org]:
+Organizational Unit Name (eg, section) [buteco.tech]:
 Common Name (eg, your name or your server's hostname) [server]:
 Name [EasyRSA]:
-Email Address [daniel@butecopensource.org]:
+Email Address [daniel@buteco.tech]:
 
 Please enter the following 'extra' attributes
 to be sent with your certificate request
@@ -147,10 +147,10 @@ countryName :PRINTABLE:'BR'
 stateOrProvinceName :PRINTABLE:'Espirito-Santo'
 localityName :PRINTABLE:'Vila-Velha'
 organizationName :PRINTABLE:'Butecopensource'
-organizationalUnitName:PRINTABLE:'butecopensource.org'
+organizationalUnitName:PRINTABLE:'buteco.tech'
 commonName :PRINTABLE:'server'
 name :PRINTABLE:'EasyRSA'
-emailAddress :IA5STRING:'daniel@butecopensource.org'
+emailAddress :IA5STRING:'daniel@buteco.tech'
 Certificate is to be certified until Jan 2 22:29:18 2026 GMT (3650 days)
 Sign the certificate? [y/n]:y
 1 out of 1 certificate requests certified, commit? [y/n]y
@@ -194,10 +194,10 @@ countryName :PRINTABLE:'BR'
 stateOrProvinceName :PRINTABLE:'Espirito-Santo'
 localityName :PRINTABLE:'Vila-Velha'
 organizationName :PRINTABLE:'Butecopensource'
-organizationalUnitName:PRINTABLE:'butecopensource.org'
+organizationalUnitName:PRINTABLE:'buteco.tech'
 commonName :PRINTABLE:'filial'
 name :PRINTABLE:'EasyRSA'
-emailAddress :IA5STRING:'daniel@butecopensource.org'
+emailAddress :IA5STRING:'daniel@buteco.tech'
 Certificate is to be certified until Jan 2 23:13:45 2026 GMT (3650 days)
 Sign the certificate? [y/n]:y
 1 out of 1 certificate requests certified, commit? [y/n]y
