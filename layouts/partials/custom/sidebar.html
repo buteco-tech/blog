@@ -39,7 +39,12 @@
   {{ $episodes := .Site.GetPage "podcast" }}
   {{ range first 1 $episodes.Data.Pages }}
     <a href="{{ .Permalink }}">
+      {{- with .Resources.GetMatch "{*thumbnail*,*cover*,*feature*,*header*}" -}}
+      {{ $image := .Fit "300x300 jpg q90 Lanczos" }}
+      <img class="shadow rounded"src="{{ $image.Permalink }}" alt="{{ .Title }}" width="300">
+      {{- else -}}
       <img class="shadow rounded"src="{{ .Params.thumbnail.image }}" alt="{{ .Title }}" width="300">
+      {{- end -}}
     </a>
   {{ end }}
 
