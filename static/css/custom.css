@@ -3,7 +3,8 @@
   display: none;
 }
 
-img.size-full, .article img {
+img.size-full,
+img.figure-img {
   max-width: 100%;
   width: auto;
   height: auto;
