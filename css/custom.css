@@ -1,0 +1,15 @@
+/* Begin HACK Wordpress */
+.card-body img {
+  display: none;
+}
+
+img.size-full, .article img {
+  max-width: 100%;
+}
+/* End HACK Wordpress */
+
+/*
+.adsbygoogle {
+  background-color: #ffdc0014;
+}
+*/
