@@ -14,15 +14,10 @@ tags:
   - kernel
   - ubuntu
   - fedora
-
-thumbnail:
-  image: /images/podcast/tux-bg-400.png
-  alt: Tux
-  caption: caption
-  class: mt-5
-
-images:
-  - /images/podcast/tux-bg-400.png
+resources:
+- name: thumbnail
+  src: thumbnail.png
+  title: Tux
 ---
 
 Você sabe o que é uma distribuição Linux? Neste episódio do nosso podcast discutimos sobre o assunto, abordando alguns dos principais projetos envolvidos, como tudo começou, o cenário atual e por fim falamos sobre a posição do Brasil nessa história.

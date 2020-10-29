@@ -12,15 +12,10 @@ tags:
   - gamedev
   - jogos
   - desenvolvimento
-
-thumbnail:
-  image: /images/podcast/gamedev.png
-  alt: Gamedev
-  caption: Gamedev
-  class: mt-5
-
-images:
-  - /images/podcast/gamedev.png
+resources:
+- name: thumbnail
+  src: thumbnail.png
+  title: Gamedev
 ---
 
 O desenvolvimento de jogos segue uma linha diferente do desenvolvimento de softwares comuns. Na criação de um jogo você precisa ter fortes conhecimentos de matemática, matrizes, plano cartesiano ou saber procurar na documentação e tutoriais no Youtube.

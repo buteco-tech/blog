@@ -9,18 +9,13 @@ aliases:
 categories:
   - Podcast
 tags:
-  - trabalho remoto
+  - trabalho-remoto
   - CLT
   - PJ
-
-thumbnail:
-  image: /images/podcast/trampo-remoto-capa.jpeg
-  alt: Trabalho Remoto
-  caption: caption
-  class: mt-5
-
-images:
-  - /images/podcast/trampo-remoto-capa.jpeg
+resources:
+- name: thumbnail
+  src: thumbnail.jpeg
+  title: Trabalhando Remoto
 ---
 
 Trabalho remoto virou um tema popular nos últimos meses devido à pandemia.

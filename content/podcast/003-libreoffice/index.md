@@ -13,15 +13,10 @@ tags:
   - office
   - planilha
   - editor de texto
-
-thumbnail:
-  image: /images/podcast/libreoffice-logo.png
-  alt: LibreOffice
-  caption: caption
-  class: mt-5
-
-images:
-  - /images/podcast/libreoffice-logo.png
+resources:
+- name: thumbnail
+  src: thumbnail.png
+  title: Logo LibreOffice
 ---
 
 O [LibreOffice][libreoffice] é uma poderosa suíte de produtividade de escritório com planilha, editor de texto, editor de apresentação e muito mais.

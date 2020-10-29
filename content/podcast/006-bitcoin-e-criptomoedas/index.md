@@ -11,14 +11,10 @@ tags:
   - bitcoin
   - blockchain
   - criptomoedas
-
-thumbnail:
-  image: /images/podcast/bitcoin-e-criptomoedas.png
-  alt: microsserviços
-  caption: microsserviços
-
-images:
-  - /images/podcast/bitcoin-e-criptomoedas.png
+resources:
+- name: thumbnail
+  src: thumbnail.png
+  title: Bitcoin
 ---
 
 O quão seguro é Bitcoin? Como investir? Vale a pena minerar? Respondemos essas e outras perguntas.

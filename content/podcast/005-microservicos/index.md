@@ -13,14 +13,10 @@ tags:
   - microsservicos
   - monolito
   - cloud
-
-thumbnail:
-  image: /images/podcast/microservices.png
-  alt: microsserviços
-  caption: microsserviços
-
-images:
-  - /images/podcast/microservices.png
+resources:
+- name: thumbnail
+  src: thumbnail.png
+  title: Microsserviços
 ---
 
 Seja refatorando um monolito, migrando para cloud, ou até mesmo se aventurando nesse mundo dos microsserviços com um projeto do zero, nós entendemos suas dores.
