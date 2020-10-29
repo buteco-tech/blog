@@ -5,6 +5,8 @@
 
 img.size-full, .article img {
   max-width: 100%;
+  width: auto;
+  height: auto;
 }
 /* End HACK Wordpress */
 
