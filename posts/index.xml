@@ -22,13 +22,11 @@
       
       <guid>https://butecotecnologico.com.br/e-possivel-ter-privacidade-na-internet/</guid>
       <description>Sim, é possível ter privacidade na internet, mas é um tanto quanto difícil de obter, depende muito do tipo de privacidade que você está buscando. Neste artigo vamos analisar alguns conceitos sobre privacidade e internet, além de explicar como você pode proteger sua privacidade ao navegar na internet e evitar a vigilância e rastreamento constante.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/privacidade-na-internet.jpg</url>
-        <title>É possível ter privacidade na internet?</title>
-        <link>https://butecotecnologico.com.br/e-possivel-ter-privacidade-na-internet/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -38,13 +36,11 @@
       
       <guid>https://butecotecnologico.com.br/tutorial-de-docker/</guid>
       <description>Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/docker-logo.png</url>
-        <title>Tutorial de Docker</title>
-        <link>https://butecotecnologico.com.br/tutorial-de-docker/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -54,13 +50,11 @@
       
       <guid>https://butecotecnologico.com.br/livros-gratuitos-data-science-setembro-2020/</guid>
       <description>Vários livros de Data Science, Inteligência Artificial, Machine Learning e Deep Learning que são disponibilizados gratuitamente por autores ou editoras.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/books-ai-ds.png</url>
-        <title>Livros gratuitos</title>
-        <link>https://butecotecnologico.com.br/livros-gratuitos-data-science-setembro-2020/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -70,18 +64,11 @@
       
       <guid>https://butecotecnologico.com.br/kubesail-cluster-kubernetes-gratuito/</guid>
       <description>KubeSail é uma plataforma que permite que você cria sua própria nuvem, contando com um plano de uso gratuito.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/kubesail-logo.png</url>
-        <title>Cluster de Kubernetes gratuito</title>
-        <link>https://butecotecnologico.com.br/kubesail-cluster-kubernetes-gratuito/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      <image>
-        <url>https://butecotecnologico.com.br/images/posts/kubesail-logo-wide.jpeg</url>
-        <title>Cluster de Kubernetes gratuito</title>
-        <link>https://butecotecnologico.com.br/kubesail-cluster-kubernetes-gratuito/</link>
-      </image>
-      
     </item>
     <item>
       
@@ -91,23 +78,11 @@
       
       <guid>https://butecotecnologico.com.br/hacktoberfest-2020/</guid>
       <description>Crie artigos para o nosso blog e ganhe uma camisa.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/hf-2020-400.png</url>
-        <title>Hacktoberfest 2020</title>
-        <link>https://butecotecnologico.com.br/hacktoberfest-2020/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      <image>
-        <url>https://butecotecnologico.com.br/images/posts/hf-2020-600.png</url>
-        <title>Hacktoberfest 2020</title>
-        <link>https://butecotecnologico.com.br/hacktoberfest-2020/</link>
-      </image>
-      <image>
-        <url>https://butecotecnologico.com.br/images/posts/hf-2020-1000.png</url>
-        <title>Hacktoberfest 2020</title>
-        <link>https://butecotecnologico.com.br/hacktoberfest-2020/</link>
-      </image>
-      
     </item>
     <item>
       
@@ -117,13 +92,11 @@
       
       <guid>https://butecotecnologico.com.br/criando-cluster-kubernetes/</guid>
       <description>Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/eksctl-gopher.png</url>
-        <title>Cluster Kubernetes com apenas um comando</title>
-        <link>https://butecotecnologico.com.br/criando-cluster-kubernetes/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -133,13 +106,11 @@
       
       <guid>https://butecotecnologico.com.br/nos-mudamos-para-buteco-tech/</guid>
       <description>Novidades para nossos leitores e ouvintes.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/buteco-logo-2020.png</url>
-        <title>Nós mudamos!</title>
-        <link>https://butecotecnologico.com.br/nos-mudamos-para-buteco-tech/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -149,13 +120,11 @@
       
       <guid>https://butecotecnologico.com.br/kubernetes-explicado/</guid>
       <description>O Kubernetes (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers e foi criado pelo Google.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/k8s-logo.png</url>
-        <title>Kubernetes explicado</title>
-        <link>https://butecotecnologico.com.br/kubernetes-explicado/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -165,13 +134,11 @@
       
       <guid>https://butecotecnologico.com.br/conhecendo-o-btrfs/</guid>
       <description>O sistema de arquivos Btrfs foi criando em 2007 e foi concebido com a ideia de ser um sistema de arquivos que possuísse funcionalidades semelhantes ao o que o ZFS oferecia no Solaris e variantes do BSD.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/btrfs-logo.png</url>
-        <title>Conhecendo o Btrfs</title>
-        <link>https://butecotecnologico.com.br/conhecendo-o-btrfs/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -181,13 +148,11 @@
       
       <guid>https://butecotecnologico.com.br/guia-completo-debug-python/</guid>
       <description>Existem diversas técnicas e ferramentas no mundo Python para ajudar na tarefa de debug, confira algumas delas para facilitar sua vida.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/python-logo.png</url>
-        <title>Guia completo de Debug em Python</title>
-        <link>https://butecotecnologico.com.br/guia-completo-debug-python/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -197,13 +162,11 @@
       
       <guid>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</guid>
       <description>Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/lxc-logo.png</url>
-        <title>De que são feitos containers Linux?</title>
-        <link>https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -213,13 +176,11 @@
       
       <guid>https://butecotecnologico.com.br/e-se-voce-perdesse-acesso-a-suas-contas/</guid>
       <description>O que você faria se perdesse acesso a sua conta de e-mail?</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/gmail-webapp.jpg</url>
-        <title>E se você perdesse acesso a suas contas?</title>
-        <link>https://butecotecnologico.com.br/e-se-voce-perdesse-acesso-a-suas-contas/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -229,13 +190,11 @@
       
       <guid>https://butecotecnologico.com.br/sorteio-novatec-python-levado-a-serio/</guid>
       <description>Aperfeiçoe suas habilidades com o livro Python Levado a Sério.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/capa-python-levado-a-serio.jpg</url>
-        <title>Sorteio Novatec - Python Levado a Sério</title>
-        <link>https://butecotecnologico.com.br/sorteio-novatec-python-levado-a-serio/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -245,13 +204,11 @@
       
       <guid>https://butecotecnologico.com.br/entendendo-carros-autonomos/</guid>
       <description>Carros autônomos estão cada vez mais presentes em nossas vidas, mas o que é um carro autônomo de fato?</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/tesla-autopilot.jpg</url>
-        <title>Entendendo carros autônomos</title>
-        <link>https://butecotecnologico.com.br/entendendo-carros-autonomos/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -261,13 +218,11 @@
       
       <guid>https://butecotecnologico.com.br/ubuntu-20-04-lts/</guid>
       <description>Confira as novidadades e impressões desta nova versão após algumas semanas de uso.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/ubuntu-focal-fossa.jpg</url>
-        <title>Ubuntu 20.04 LTS (Focal Fossa)</title>
-        <link>https://butecotecnologico.com.br/ubuntu-20-04-lts/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -277,13 +232,11 @@
       
       <guid>https://butecotecnologico.com.br/python-aws-s3/</guid>
       <description>Diversas aplicações precisam em algum momento armazenar arquivos, seja para backup, CDN ou outros. Um dos serviços mais utilizados para armazenamento de arquivos é o AWS S3. Veja neste artigo como usar o S3 em suas aplicações Python.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/aws-python-s3.png</url>
-        <title>AWS S3 em Python</title>
-        <link>https://butecotecnologico.com.br/python-aws-s3/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -307,13 +260,11 @@
       
       <guid>https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/</guid>
       <description>Uma placa de desenvolvimento focada em visão computacional e deep learning.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/jetson-nano-devkit.png</url>
-        <title>NVIDIA Jetson Nano Developer Kit</title>
-        <link>https://butecotecnologico.com.br/review-nvidia-jetson-nano-developer-kit/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -323,13 +274,11 @@
       
       <guid>https://butecotecnologico.com.br/livros-gratuitos-abril-2020/</guid>
       <description>Aproveite o tempo em casa para ler alguns livros que estão de graça.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/kafka-definitive-guide-cover.jpg</url>
-        <title>Livros gratuitos</title>
-        <link>https://butecotecnologico.com.br/livros-gratuitos-abril-2020/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -339,13 +288,11 @@
       
       <guid>https://butecotecnologico.com.br/comecando-com-sql-alchemy/</guid>
       <description>Acessando bancos relacionais e criando modelos ORM de forma fácil no Python com o SQL Alchemy.</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/sql-alchemy-logo.png</url>
-        <title>Começando com SQL Alchemy</title>
-        <link>https://butecotecnologico.com.br/comecando-com-sql-alchemy/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       
@@ -355,13 +302,11 @@
       
       <guid>https://butecotecnologico.com.br/we-are-back/</guid>
       <description>Buteco Open Source de volta a ativa!</description>
-      
       <image>
-        <url>https://butecotecnologico.com.br/images/posts/capa-we-are-back.jpg</url>
-        <title>Estamos de Volta</title>
-        <link>https://butecotecnologico.com.br/we-are-back/</link>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
       </image>
-      
     </item>
     <item>
       

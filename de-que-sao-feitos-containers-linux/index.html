@@ -15,7 +15,7 @@
 <meta itemprop="datePublished" content="2020-06-16T08:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-06-16T08:00:00+00:00" />
 <meta itemprop="wordCount" content="1201">
-<meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/lxc-logo.png">
+<meta itemprop="image" content="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/lxc-logo.png">
 
 
 
@@ -23,8 +23,7 @@
 
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://butecotecnologico.com.br/images/posts/lxc-logo.png"/>
-
+<meta name="twitter:image" content="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/lxc-logo.png"/>
 <meta name="twitter:title" content="De que são feitos containers Linux?"/>
 <meta name="twitter:description" content="Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema."/>
 <meta name="twitter:site" content="@butecotech"/>
@@ -34,7 +33,7 @@
 <meta property="og:description" content="Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/" />
-<meta property="og:image" content="https://butecotecnologico.com.br/images/posts/lxc-logo.png" />
+<meta property="og:image" content="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/lxc-logo.png"/>
 <meta property="article:published_time" content="2020-06-16T08:00:00+00:00" />
 <meta property="article:modified_time" content="2020-06-16T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
@@ -123,9 +122,6 @@
         "@id": "https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/#webpage"
       },
       "headline": "De que são feitos containers Linux?",
-      "image": [
-        "https://butecotecnologico.com.br/images/posts/lxc-logo.png"
-      ],
       "datePublished": "2020-06-16T08:00:00+00:00",
       "dateModified": "2020-06-16T08:00:00+00:00",
       "publisher": {
@@ -242,7 +238,7 @@
         </li>
         <li class="nav-item ">
           <a class="nav-link" href="/contribua-com-nosso-blog/">
-            <span class="mr-1"><i class="far fa-heart"></i></span>
+            <span class="mr-1"><i class="far fa-heart text-danger"></i></span>
             Colabore
             
           </a>
@@ -328,8 +324,8 @@
   <article class="mt-3 mb-4">
   <figure >
   <img loading="lazy"
-      src="/images/posts/lxc-logo.png"
-      alt="LXC"/>
+      src="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/lxc-logo.png"
+      alt="Logo LXC"/>
 </figure>
 
 <p>Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema.</p>
@@ -337,7 +333,12 @@
 <p>Em uma breve definição, um container é uma forma de isolar aplicações do sistema hospedeiro.</p>
 <p>Containers possuem todos os arquivos necessários para que aplicações possam ser executadas, aumentando a portabilidade e eficiência na hora de migrar do ambiente de desenvolvimento para testes e produção.</p>
 <h2 id="um-pouco-da-história">Um pouco da história</h2>
-<p><img src="/images/posts/container-timeline.png" alt="Timeline"></p>
+<figure >
+  <img loading="lazy"
+      src="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/container-timeline.png"
+      alt="Timeline Containers"/>
+</figure>
+
 <p>O que hoje é conhecido como containers Linux surgiu inicialmente no FreeBSD 4.x com o <a href="https://www.freebsd.org/doc/handbook/jails.html"
    
    target="_blank">Jails</a> no ano 2000. O Jails permite a criação de um ambiente seguro e isolado do resto do sistema assim como os containers Linux.</p>
@@ -353,7 +354,12 @@
 <p>Uma imagem (ou container image) é uma forma de encapsulamento (ou empacotamento) de sua aplicação, bem como todas as dependências para a sua execução. Como essas imagens são compiladas e publicadas em um registro de containers, toda pessoa que usar essa imagem receberá uma cópia idêntica da versão compilada.</p>
 <p>Como os containers são isolados um dos outros, evitamos que um afete o outro ou o sistema num todo. Isso é de extrema importância no quesito segurança. Imagine que uma biblioteca que você use possui uma grave falha de segurança, como a aplicação está isolada em um container essa falha possivelmente não irá afetar o sistema todo.</p>
 <h2 id="containers-vs-virtualização">Containers vs Virtualização</h2>
-<p><img src="/images/posts/containers-vs-virtualizacao.png" alt="Containers vs Virtualização"></p>
+<figure >
+  <img loading="lazy"
+      src="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/containers-vs-virtualizacao.png"
+      alt="Timeline Containers"/>
+</figure>
+
 <p>Um container não é uma máquina virtual, mas existem algumas semelhanças. Na virtualização você está rodando um sistema simultaneamente em um único hardware. O exemplo mais comum é rodar Windows dentro do Linux.</p>
 <p>Virtualização usa <a href="https://pt.wikipedia.org/wiki/Hipervisor"
    
