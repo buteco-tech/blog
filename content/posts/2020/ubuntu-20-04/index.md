@@ -1,0 +1,148 @@
+---
+title: "Ubuntu 20.04 LTS (Focal Fossa)"
+summary: "Confira as novidadades e impressões desta nova versão após algumas semanas de uso."
+tagline: "Confira as novidadades e impressões após algumas semanas de uso"
+date: 2020-05-20 08:00:00
+slug: ubuntu-20-04-lts
+authors:
+  - alexandrevicenzi
+categories:
+  - distros
+  - reviews
+tags:
+  - ubuntu
+  - linux
+  - gnome
+  - snap
+  - nvidia
+resources:
+- name: nvidia
+  src: ubuntu-20-nvidia.png
+- name: themes
+  src: ubuntu-20-themes.png
+- name: tweaks
+  src: ubuntu-20-tweaks.png
+- name: yaru-theme
+  src: ubuntu-20-yaru-theme.png
+- name: yaru-theme-dark
+  src: ubuntu-20-yaru-theme-dark.png
+- name: thumbnail
+  src: ubuntu-focal-fossa.jpg
+- name: thumbnail-png
+  src: ubuntu-focal-fossa.png
+---
+
+O Ubuntu 20.04 LTS (Focal Fossa) foi lançado no final de abril, e após algumas semanas de uso, posso dizer que é provavelmente a melhor versão do Ubuntu até hoje.
+
+{{<figure src="thumbnail" alt="Ubuntu">}}
+
+## Novidades
+
+O Ubuntu 20.04 vem com algumas novidades, sendo elas:
+
+* Atualizações no tema padrão [Yaru](https://github.com/ubuntu/yaru)
+* Gnome 3.36
+* Modo "Não Perturbe"
+* Kernel 5.4
+* Apenas Python 3
+* Snaps é prioridade
+* Redesign da tela de login e lock
+
+## Instalação
+
+Antes do 20.04 eu estava utilizando o 18.04, e resolvi fazer uma instalação do zero para não levar muito lixo de uma versão antiga. A instalação foi muito simples e rápida.
+
+Se você está no 18.04 ou no 19.10, você pode atualizar diretamente para o 20.04, se estiver no 19.04 você precisará primeiro atualizar para o 19.10.
+
+<p style="text-align: center;">
+<a style="background: #fa4400; color: #fff; border-radius: 3px; padding: 0.5rem 1rem; font-weight: 300; text-decoration: none;"
+   href="https://ubuntu.com/download/desktop/thank-you?version=20.04&amp;architecture=amd64"
+   target="_blank">Fazer download do Ubuntu 20.04</a>
+</p>
+
+## Primeiras impressões
+
+A primeira impressão que eu tive em comparação ao 18.04 é que o 20.04 estava mais leve, mais rápido, mas em comparação ao 19.10, que eu tenho em outro PC, a diferença não é tão perceptível.
+
+Outros detalhes que chamam a atenção é o novo visual, que para o meu gosto, algumas coisas ficaram bacanas e outras nem tanto. Certamente o novo visual deixa o Ubuntu com uma cara de atual.
+
+{{<figure src="yaru-theme" alt="Yaru Theme">}}
+
+Vale ressaltar que algumas das mudanças visuais vieram da nova versão do Gnome, porém o Ubuntu 20.04 vem com um tema customizando do Gnome, chamado [Yaru](https://github.com/ubuntu/yaru).
+
+O redesign da tela de login e lock é algo que não me agradou muito, as telas estão mais minimalistas, com menos informação.
+
+## Tweaks
+
+### Tema
+
+Para mim, Gnome tem que ser com tema escuro e para esses e mais alguns ajustes eu gosto de usar o Gnome Tweaks.
+
+Você pode instalar o Gnome Tweaks com o comando:
+
+```sh
+sudo apt install gnome-tweaks
+```
+
+Porém, é necessário instalar o gnome-shell-extensions para ter um tema 100% escuro, caso contrário alguns menus continuarão com o tema claro.
+
+Você pode instalar o Gnome Shell Extensions com o comando:
+
+```sh
+sudo apt install gnome-shell-extensions
+```
+
+E por fim, é necessário instalar a extenção [User Themes](https://extensions.gnome.org/extension/19/user-themes/).
+
+Após tudo instalado, podemos configurar o tema:
+
+{{<figure src="tweaks" alt="Tweaks">}}
+
+O resultado pode ser observado na tela abaixo.
+
+{{<figure src="yaru-theme-dark" alt="Yaru Theme Dark">}}
+
+Você também pode alterar o tema diretamente em aparências, como mostrado a seguir, porém como mencionado, sem o gnome-shell-extensions nem todos os menus receberão o tema escuro.
+
+{{<figure src="themes" alt="Appearence">}}
+
+### Relógios
+
+Outra funcionalidade muito útil é o Gnome Clocks, com ele é possível visualizar diferentes fusos, alarmes, entre outros.
+
+Você pode instalar o Gnome Clocks com o comando:
+
+```sh
+sudo apt gnome-clocks
+```
+
+### Activities
+
+Por fim, algo que está desabilitado mas que eu faço muito uso é o "Hot Corner", onde você leva o mouse até o canto superior e o Gnome abre a tela de "Activities".
+
+Para habilitar é simples, basta ir no Gnome Tweaks > Top Bar e habilitar "Hot Corner".
+
+## Gráficos Nvidia
+
+Outro item que tem melhorado a cada ano é a integração com placas de vídeo da Nvidia, em particular em notebooks, onde a GPU é usada on-demand.
+
+Anteriormente para usar GPU on-demand era necessário o [Bumblebee](https://bumblebee-project.org/), porém esse projeto não recebe mais atualizações.
+
+No Ubuntu 20.04, eu apenas precisei instalar os drivers da versão 440, selecionar a opção on-demand, e tudo funcionou perfeitamente.
+
+{{<figure src="nvidia" alt="Nvidia">}}
+
+## Snaps
+
+A versão 20.04 está focando mais em pacotes via Snap, alguns até sumiram do Apt, ou seja, só é possível instalar o pacote do Snap.
+
+Eu particularmente não gosto disso, eu prefiro ter a opção de escolha, ainda não vi uma mudança similar no Fedora com o Flatpak.
+
+## Conclusão
+
+Apesar de ter instalado o Ubuntu 20.04 logo após o lançamento, eu não notei instabilidades ou problemas graves, parece-me uma distro estável.
+
+Comparado ao 18.04, o 20.04 é uma atualização necessária, traz muitos benefícios, em particular, o menor consumo de recursos do sistema.
+Já em comparação ao 19.10, você notará mais diferenças no visual do que em desempenho.
+
+Está usando Ubuntu 20.04? Deixe um comentário contando sua experiência.
