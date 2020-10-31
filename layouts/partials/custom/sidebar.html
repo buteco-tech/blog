@@ -41,9 +41,9 @@
     <a href="{{ .Permalink }}">
       {{- with .Resources.GetMatch "{*thumbnail*,*cover*,*feature*,*header*}" -}}
       {{ $image := .Fit "300x300 jpg q90 Linear" }}
-      <img class="shadow rounded"src="{{ $image.Permalink }}" alt="{{ .Title }}" width="300">
+      <img class="shadow rounded" loading="lazy" src="{{ $image.Permalink }}" alt="{{ .Title }}" width="300">
       {{- else -}}
-      <img class="shadow rounded"src="{{ .Params.thumbnail.image }}" alt="{{ .Title }}" width="300">
+      <img class="shadow rounded" loading="lazy" src="{{ .Params.thumbnail.image }}" alt="{{ .Title }}" width="300">
       {{- end -}}
     </a>
   {{ end }}
