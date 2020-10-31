@@ -349,3 +349,14 @@ markup:
     noClasses: false
     style: github
     tabWidth: 4
+
+imaging:
+  resampleFilter: Linear
+  quality: 90
+  anchor: smart
+  bgColor: "#ffffff"
+  exif:
+    includeFields: ""
+    excludeFields: ""
+    disableDate: true
+    disableLatLong: true
