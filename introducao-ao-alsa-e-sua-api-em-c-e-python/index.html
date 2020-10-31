@@ -5,8 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="Hugo 0.76.5" />
 
+  
   <title>Introdução ao ALSA e sua API em C e Python &middot; Buteco Tecnológico</title>
-  <meta name="description" content="O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio." />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+
+
+<link rel="preconnect" href="https://s7.addthis.com" crossorigin>
+
+<link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      as="style">
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet">
+
+<style type="text/css">
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-display: swap;
+}
+</style>
+<link rel="stylesheet" href="/sass/iara.min.44fb6a49a72c0eef714f38a1b77c947e1b9ac09c720929e750e31513e19fee0a.css">
+
+<link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+<link rel="shortcut icon" href="/logos/capybara_64.png">
+
+<link rel="icon" href="/logos/capybara_32.png" sizes="32x32">
+<link rel="icon" href="/logos/capybara_64.png" sizes="64x64">
+<link rel="icon" href="/logos/capybara_144.png" sizes="144x144">
+<link rel="icon" href="/logos/capybara_192.png" sizes="192x192">
+
+
+
+
+<meta name="theme-color" content="#ffffff">
+
+<meta name="msapplication-navbutton-color" content="#ffffff">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<link type="text/css" rel="stylesheet" href="/css/custom.css">
+<meta name="description" content="O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio." />
 
 
 
@@ -14,21 +67,12 @@
 <meta itemprop="description" content="O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio.">
 <meta itemprop="datePublished" content="2014-09-24T23:48:00+00:00" />
 <meta itemprop="dateModified" content="2014-09-24T23:48:00+00:00" />
-<meta itemprop="wordCount" content="690">
+<meta itemprop="wordCount" content="695">
 <meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/alsa-mixer.png">
 
 
 
 <meta itemprop="keywords" content="alsa,c,cpp,python,linux," />
-
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://butecotecnologico.com.br/images/posts/alsa-mixer.png"/>
-
-<meta name="twitter:title" content="Introdução ao ALSA e sua API em C e Python"/>
-<meta name="twitter:description" content="O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio."/>
-<meta name="twitter:site" content="@butecotech"/>
-
 
 <meta property="og:title" content="Introdução ao ALSA e sua API em C e Python" />
 <meta property="og:description" content="O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio." />
@@ -38,6 +82,12 @@
 <meta property="article:published_time" content="2014-09-24T23:48:00+00:00" />
 <meta property="article:modified_time" content="2014-09-24T23:48:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/posts/alsa-mixer.png"/>
+
+<meta name="twitter:title" content="Introdução ao ALSA e sua API em C e Python"/>
+<meta name="twitter:description" content="O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio."/>
+<meta name="twitter:site" content="@butecotech"/>
 
 
 <script type="application/ld+json">
@@ -177,21 +227,8 @@
 </script>
 
 
-  
-  <link rel="stylesheet" href="/sass/iara.min.386233b14062c4a11a5eb0dfd0b480e3df2b9b878b9f589f0e1bb32016cedd62.css">
 
-
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/logos/capybara_144.png">
-<link rel="shortcut icon" href="/logos/capybara_64.png">
-<link type="text/css" rel="stylesheet" href="/css/custom.css">
-
-
-<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -349,17 +386,22 @@
   <article class="mt-3 mb-4">
   <p>O <a href="https://www.alsa-project.org/wiki/Main_Page"
    
-   target="_blank">ALSA</a> (Advanced Linux Sound Architeture) é um framework para <em>kernel space</em> e <em>user space</em> para manipular dispositivos de áudio.
+   target="_blank" rel="noopener">ALSA</a>
+ (Advanced Linux Sound Architeture) é um framework para <em>kernel space</em> e <em>user space</em> para manipular dispositivos de áudio.
 No <em>kernel space</em> o <a href="https://www.alsa-project.org/wiki/Main_Page"
    
-   target="_blank">ALSA</a> é a API padrão para a criação dos <em>devices drivers</em> de dispositivos de áudio, e no <em>user space</em> o <a href="https://www.alsa-project.org/wiki/Main_Page"
+   target="_blank" rel="noopener">ALSA</a>
+ é a API padrão para a criação dos <em>devices drivers</em> de dispositivos de áudio, e no <em>user space</em> o <a href="https://www.alsa-project.org/wiki/Main_Page"
    
-   target="_blank">ALSA</a> existe como uma API para permitir a configuração dos dispositivos de áudio que tenham seu <em>device driver</em> implementado com o framework <a href="https://www.alsa-project.org/wiki/Main_Page"
+   target="_blank" rel="noopener">ALSA</a>
+ existe como uma API para permitir a configuração dos dispositivos de áudio que tenham seu <em>device driver</em> implementado com o framework <a href="https://www.alsa-project.org/wiki/Main_Page"
    
-   target="_blank">ALSA</a>.
+   target="_blank" rel="noopener">ALSA</a>
+.
 Um exemplo de um programa que utilize a API <em>user space</em> do <a href="https://www.alsa-project.org/wiki/Main_Page"
    
-   target="_blank">ALSA</a> é o <em>alsamixer</em>.</p>
+   target="_blank" rel="noopener">ALSA</a>
+ é o <em>alsamixer</em>.</p>
 <p>Abaixo uma imagem do <code>alsamixer</code> executando em uma máquina desktop:</p>
 <figure >
   <img loading="lazy"
@@ -370,12 +412,15 @@ Um exemplo de um programa que utilize a API <em>user space</em> do <a href="http
 <p>Na imagem podemos ver algumas configurações da placa de áudio e podemos interagir com esta.</p>
 <p>Para os controles básicos de áudio, tal como nível de volume e configuração de microfone, é necessário utilizar a <a href="https://www.alsa-project.org/alsa-doc/alsa-lib/group___simple_mixer.html"
    
-   target="_blank">API mixer-controls</a>, a documentação completapode ser encontrada <a href="https://www.alsa-project.org/alsa-doc/alsa-lib/"
+   target="_blank" rel="noopener">API mixer-controls</a>
+, a documentação completapode ser encontrada <a href="https://www.alsa-project.org/alsa-doc/alsa-lib/"
    
-   target="_blank">aqui</a>.</p>
+   target="_blank" rel="noopener">aqui</a>
+.</p>
 <p>Para ilustrar o funcionamento básico do <a href="https://www.alsa-project.org/wiki/Main_Page"
    
-   target="_blank">ALSA</a> seguem dois exemplos de códigos que permitem alterar o volume de de áudio de uma máquina com Linux.
+   target="_blank" rel="noopener">ALSA</a>
+ seguem dois exemplos de códigos que permitem alterar o volume de de áudio de uma máquina com Linux.
 Um dos exemplos será na linguagem C e o outro será em Python.
 O primeiro exemplo é na linguagem C, que basicamente diz quais os valores limite do volume da placa de áudio e também permite ao usuário trocar o nível do volume.</p>
 <div class="highlight"><div class="chroma">
@@ -491,10 +536,12 @@ Volume atual: <span class="m">40000</span>
 </div>
 </div><p>Abaixo temos um exemplo da utilização do <a href="https://www.alsa-project.org/wiki/Main_Page"
    
-   target="_blank">ALSA</a> em Python.
+   target="_blank" rel="noopener">ALSA</a>
+ em Python.
 Será necessário instalar a biblioteca <a href="http://larsimmisch.github.io/pyalsaaudio/"
    
-   target="_blank">pyalsaaudio</a>.</p>
+   target="_blank" rel="noopener">pyalsaaudio</a>
+.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -597,7 +644,8 @@ Será necessário instalar a biblioteca <a href="http://larsimmisch.github.io/py
 </div>
 </div><p>No exemplo em Python, podemos observar alguns usos do framework <a href="https://www.alsa-project.org/wiki/Main_Page"
    
-   target="_blank">ALSA</a>, como por exemplo, pegar e setar configurações de placas e níveis de áudio.</p>
+   target="_blank" rel="noopener">ALSA</a>
+, como por exemplo, pegar e setar configurações de placas e níveis de áudio.</p>
 <p>Se você tiver algum problema na execução desses códigos, ou tem alguma dúvida, deixe um comentário.</p>
 
   </article>
@@ -912,15 +960,15 @@ Será necessário instalar a biblioteca <a href="http://larsimmisch.github.io/py
     
   </div>
 </footer>
-<script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
-  
-  <script type="text/javascript" src="/js/bootstrap.min.1c4d3007f0b1fe05e0e0ce4992c1c8cf9eff05f176be71745f010ed03f298853.js"></script>
 
   
-  <script type="text/javascript" src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.1c4d3007f0b1fe05e0e0ce4992c1c8cf9eff05f176be71745f010ed03f298853.js"></script>
 
+  
+  <script type="text/javascript" async src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
 
+<script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
 <script type="application/javascript">
@@ -936,8 +984,7 @@ if (!doNotTrack) {
 
 
 
-
-<script type="text/javascript" defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
+<script type="text/javascript" async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
 
 </body>
 </html>

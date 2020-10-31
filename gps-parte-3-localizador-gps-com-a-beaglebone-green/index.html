@@ -5,8 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="Hugo 0.76.5" />
 
+  
   <title>GPS Parte 3: Localizador GPS com a BeagleBone Green &middot; Buteco Tecnológico</title>
-  <meta name="description" content="Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona." />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+
+
+<link rel="preconnect" href="https://s7.addthis.com" crossorigin>
+
+<link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      as="style">
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet">
+
+<style type="text/css">
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-display: swap;
+}
+</style>
+<link rel="stylesheet" href="/sass/iara.min.44fb6a49a72c0eef714f38a1b77c947e1b9ac09c720929e750e31513e19fee0a.css">
+
+<link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+<link rel="shortcut icon" href="/logos/capybara_64.png">
+
+<link rel="icon" href="/logos/capybara_32.png" sizes="32x32">
+<link rel="icon" href="/logos/capybara_64.png" sizes="64x64">
+<link rel="icon" href="/logos/capybara_144.png" sizes="144x144">
+<link rel="icon" href="/logos/capybara_192.png" sizes="192x192">
+
+
+
+
+<meta name="theme-color" content="#ffffff">
+
+<meta name="msapplication-navbutton-color" content="#ffffff">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<link type="text/css" rel="stylesheet" href="/css/custom.css">
+<meta name="description" content="Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona." />
 
 
 
@@ -14,21 +67,12 @@
 <meta itemprop="description" content="Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona.">
 <meta itemprop="datePublished" content="2016-01-20T21:11:20+00:00" />
 <meta itemprop="dateModified" content="2016-01-20T21:11:20+00:00" />
-<meta itemprop="wordCount" content="861">
+<meta itemprop="wordCount" content="868">
 <meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png">
 
 
 
 <meta itemprop="keywords" content="beaglebone,beaglebone-green,raspberry-pi,bottle,flask,gps,nmea,python," />
-
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png"/>
-
-<meta name="twitter:title" content="GPS Parte 3: Localizador GPS com a BeagleBone Green"/>
-<meta name="twitter:description" content="Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona."/>
-<meta name="twitter:site" content="@butecotech"/>
-
 
 <meta property="og:title" content="GPS Parte 3: Localizador GPS com a BeagleBone Green" />
 <meta property="og:description" content="Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona." />
@@ -38,6 +82,12 @@
 <meta property="article:published_time" content="2016-01-20T21:11:20+00:00" />
 <meta property="article:modified_time" content="2016-01-20T21:11:20+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png"/>
+
+<meta name="twitter:title" content="GPS Parte 3: Localizador GPS com a BeagleBone Green"/>
+<meta name="twitter:description" content="Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona."/>
+<meta name="twitter:site" content="@butecotech"/>
 
 
 <script type="application/ld+json">
@@ -172,21 +222,8 @@
 </script>
 
 
-  
-  <link rel="stylesheet" href="/sass/iara.min.386233b14062c4a11a5eb0dfd0b480e3df2b9b878b9f589f0e1bb32016cedd62.css">
 
-
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/logos/capybara_144.png">
-<link rel="shortcut icon" href="/logos/capybara_64.png">
-<link type="text/css" rel="stylesheet" href="/css/custom.css">
-
-
-<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -342,25 +379,32 @@
 
 <p>Na <a href="/gps-parte-1-entendendo-o-seu-funcionamento"
    
-   >primeira parte</a> sobre GPS, vimos como este sistema de rastreamento por satélite funciona. Já na <a href="/gps-parte-2-decodificando-uma-sentenca-nmea"
+   >primeira parte</a>
+ sobre GPS, vimos como este sistema de rastreamento por satélite funciona. Já na <a href="/gps-parte-2-decodificando-uma-sentenca-nmea"
    
-   >segunda parte</a>, vimos uma sentença NMEA funciona e como fazemos para decodificá-la.</p>
+   >segunda parte</a>
+, vimos uma sentença NMEA funciona e como fazemos para decodificá-la.</p>
 <p>Neste artigo, iremos colocar tudo o que vimos em prática. Sendo assim, vamos a lista de material necessária:</p>
 <ul>
 <li>Uma <a href="https://www.filipeflop.com/produto/beaglebone-black/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"
    
-   target="_blank">BeagleBone Black</a>, <a href="https://www.filipeflop.com/produto/beaglebone-green/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"
+   target="_blank" rel="noopener">BeagleBone Black</a>
+, <a href="https://www.filipeflop.com/produto/beaglebone-green/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"
    
-   target="_blank">BeagleBone Green</a> ou <a href="https://www.filipeflop.com/produto/raspberry-pi-4-model-2gb-4gb/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"
+   target="_blank" rel="noopener">BeagleBone Green</a>
+ ou <a href="https://www.filipeflop.com/produto/raspberry-pi-4-model-2gb-4gb/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"
    
-   target="_blank">Raspberry Pi</a></li>
+   target="_blank" rel="noopener">Raspberry Pi</a>
+</li>
 <li>Um módulo GPS</li>
 </ul>
 <p>No meu caso, irei utilizar uma <a href="https://www.filipeflop.com/produto/beaglebone-green/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"
    
-   target="_blank">BeagleBone Green</a>, que foi fornecida pela <a href="https://www.filipeflop.com/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"
+   target="_blank" rel="noopener">BeagleBone Green</a>
+, que foi fornecida pela <a href="https://www.filipeflop.com/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"
    
-   target="_blank">FILIPEFLOP</a> e um modulo GPS ublox NEO-6m.</p>
+   target="_blank" rel="noopener">FILIPEFLOP</a>
+ e um modulo GPS ublox NEO-6m.</p>
 <p>Antes de mais nada, vou explicar o que vamos fazer. Basicamente, iremos utilizar a BBG para controlar o GPS e servir como servidor de página para exibir um mapa com a localização atual do GPS. Na imagem abaixo você pode observar o resultado.</p>
 <figure >
   <img loading="lazy"
@@ -370,12 +414,15 @@
 
 <p>Para criar a parte de templates e rotas foi utilizado o micro framework <a href="http://bottlepy.org/docs/dev/index.html"
    
-   target="_blank">Bottle</a>. O Bottle é um WSGI para Python, muito similar ao <a href="http://flask.pocoo.org/"
+   target="_blank" rel="noopener">Bottle</a>
+. O Bottle é um WSGI para Python, muito similar ao <a href="http://flask.pocoo.org/"
    
-   target="_blank">Flask</a>. Optei por ele pelo fato de ser distribuido em um único arquivo, facilitando a vida de quem usa sistemas embarcados.</p>
+   target="_blank" rel="noopener">Flask</a>
+. Optei por ele pelo fato de ser distribuido em um único arquivo, facilitando a vida de quem usa sistemas embarcados.</p>
 <p>Outra dependência é o <em>parserd</em> NMEA implementado na <a href="/gps-parte-2-decodificando-uma-sentenca-nmea"
    
-   >segunda parte deste tutorial (Decodificando uma sentença NMEA)</a>.</p>
+   >segunda parte deste tutorial (Decodificando uma sentença NMEA)</a>
+.</p>
 <p>No arquivo abaixo temos o template da página do mapa.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -469,7 +516,8 @@
 </div>
 </div><p>Como podemos observar o código é bem simples, e toda a parte de inicialização do mapa é feito nas linhas 20 a 38. O mapa faz parte da <a href="https://developers.google.com/maps/documentation/javascript/?hl=pt-br"
    
-   target="_blank">Google Maps Javascript API</a>, o que facilita muito o desenvolvimento.</p>
+   target="_blank" rel="noopener">Google Maps Javascript API</a>
+, o que facilita muito o desenvolvimento.</p>
 <p>No arquivo abaixo temos o módulo responsável por conversar com o GPS.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -634,12 +682,14 @@
 </div>
 </div><p>Esta parte não tem muitos mistérios, mas é necessário resaltar que na linha 13, é necessário colocar a sua <a href="https://console.developers.google.com/flows/enableapi?apiid=maps_backend&amp;keyType=CLIENT_SIDE&amp;reusekey=true&amp;hl=pt-br"
    
-   target="_blank">chave da Google Api</a> para que o mapa seja carregado no browser, isto porque o JavaScript do mapa faz acesso as APIs do Google. Não se preocupe, este serviço é gratuito. :)</p>
+   target="_blank" rel="noopener">chave da Google Api</a>
+ para que o mapa seja carregado no browser, isto porque o JavaScript do mapa faz acesso as APIs do Google. Não se preocupe, este serviço é gratuito. :)</p>
 <p>Na linha 19, podemos observar que é necessário iniciar a <code>Thread</code> do GPS, e na linha 20, o próprio WSGI.</p>
 <p>O projeto em si é relativamente simples, sendo a parte do GPS a com complexidade maior. O intuito desta série de artigos, era mostrar como é simples interpretar os dados recebidos do GPS. Apesar de presente em nosso dia a dia, muitos nem fazemos ideia de como esta tecnologia funciona.</p>
 <p>Você pode conferir o código fonte na íntegra no <a href="https://github.com/ButecoOpenSource/exemplos/tree/master/exemplos_python/gps_bbg"
    
-   target="_blank">repositório de exemplos</a> do Buteco.</p>
+   target="_blank" rel="noopener">repositório de exemplos</a>
+ do Buteco.</p>
 <p>Espero que você tenha gostado deste artigo. Até a próxima.</p>
 
   </article>
@@ -948,15 +998,15 @@
     
   </div>
 </footer>
-<script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
-  
-  <script type="text/javascript" src="/js/bootstrap.min.1c4d3007f0b1fe05e0e0ce4992c1c8cf9eff05f176be71745f010ed03f298853.js"></script>
 
   
-  <script type="text/javascript" src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.1c4d3007f0b1fe05e0e0ce4992c1c8cf9eff05f176be71745f010ed03f298853.js"></script>
 
+  
+  <script type="text/javascript" async src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
 
+<script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
 <script type="application/javascript">
@@ -972,8 +1022,7 @@ if (!doNotTrack) {
 
 
 
-
-<script type="text/javascript" defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
+<script type="text/javascript" async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
 
 </body>
 </html>

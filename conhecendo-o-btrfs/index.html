@@ -5,8 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="Hugo 0.76.5" />
 
+  
   <title>Conhecendo o Btrfs &middot; Buteco Tecnológico</title>
-  <meta name="description" content="O sistema de arquivos Btrfs foi criando em 2007 e foi concebido com a ideia de ser um sistema de arquivos que possuísse funcionalidades semelhantes ao o que o ZFS oferecia no Solaris e variantes do BSD." />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+
+
+<link rel="preconnect" href="https://s7.addthis.com" crossorigin>
+
+<link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      as="style">
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet">
+
+<style type="text/css">
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-display: swap;
+}
+</style>
+<link rel="stylesheet" href="/sass/iara.min.44fb6a49a72c0eef714f38a1b77c947e1b9ac09c720929e750e31513e19fee0a.css">
+
+<link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+<link rel="shortcut icon" href="/logos/capybara_64.png">
+
+<link rel="icon" href="/logos/capybara_32.png" sizes="32x32">
+<link rel="icon" href="/logos/capybara_64.png" sizes="64x64">
+<link rel="icon" href="/logos/capybara_144.png" sizes="144x144">
+<link rel="icon" href="/logos/capybara_192.png" sizes="192x192">
+
+
+
+
+<meta name="theme-color" content="#ffffff">
+
+<meta name="msapplication-navbutton-color" content="#ffffff">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<link type="text/css" rel="stylesheet" href="/css/custom.css">
+<meta name="description" content="O sistema de arquivos Btrfs foi criando em 2007 e foi concebido com a ideia de ser um sistema de arquivos que possuísse funcionalidades semelhantes ao o que o ZFS oferecia no Solaris e variantes do BSD." />
 
 
 
@@ -21,14 +74,6 @@
 
 <meta itemprop="keywords" content="sistema-de-arquivos,opensuse,fs,ext,xfs,btrfs,linux," />
 
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://butecotecnologico.com.br/conhecendo-o-btrfs/btrfs-logo.png"/>
-<meta name="twitter:title" content="Conhecendo o Btrfs"/>
-<meta name="twitter:description" content="O sistema de arquivos Btrfs foi criando em 2007 e foi concebido com a ideia de ser um sistema de arquivos que possuísse funcionalidades semelhantes ao o que o ZFS oferecia no Solaris e variantes do BSD."/>
-<meta name="twitter:site" content="@butecotech"/>
-
-
 <meta property="og:title" content="Conhecendo o Btrfs" />
 <meta property="og:description" content="O sistema de arquivos Btrfs foi criando em 2007 e foi concebido com a ideia de ser um sistema de arquivos que possuísse funcionalidades semelhantes ao o que o ZFS oferecia no Solaris e variantes do BSD." />
 <meta property="og:type" content="article" />
@@ -37,6 +82,11 @@
 <meta property="article:published_time" content="2020-07-31T08:00:00+00:00" />
 <meta property="article:modified_time" content="2020-07-31T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/conhecendo-o-btrfs/btrfs-logo.png"/>
+<meta name="twitter:title" content="Conhecendo o Btrfs"/>
+<meta name="twitter:description" content="O sistema de arquivos Btrfs foi criando em 2007 e foi concebido com a ideia de ser um sistema de arquivos que possuísse funcionalidades semelhantes ao o que o ZFS oferecia no Solaris e variantes do BSD."/>
+<meta name="twitter:site" content="@butecotech"/>
 
 
 <script type="application/ld+json">
@@ -166,21 +216,8 @@
 </script>
 
 
-  
-  <link rel="stylesheet" href="/sass/iara.min.386233b14062c4a11a5eb0dfd0b480e3df2b9b878b9f589f0e1bb32016cedd62.css">
 
-
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/logos/capybara_144.png">
-<link rel="shortcut icon" href="/logos/capybara_64.png">
-<link type="text/css" rel="stylesheet" href="/css/custom.css">
-
-
-<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -365,40 +402,51 @@
 <h2 id="converter-um-sistema-de-arquivos-para-btrfs">Converter um sistema de arquivos para Btrfs</h2>
 <p>É possível converter sistemas Ext2/Ext3/Ext4 e reiserfs para Btrfs utilizando a ferramenta Btrfs-convert. A ferramenta opera diretamente no disco, salvando o conteúdo original de um subvolume com o nome <code>&lt;sistema_de_arquivos&gt;_saved</code>. Para mais informações sobre este recurso acesse <a href="https://btrfs.wiki.kernel.org/index.php/Conversion_from_Ext3"
    
-   target="_blank">esta página</a> da wiki do Btrfs.</p>
+   target="_blank" rel="noopener">esta página</a>
+ da wiki do Btrfs.</p>
 <h2 id="conclusão">Conclusão</h2>
 <p>Como podemos ver, o Btrfs tem muitos recursos interessantes se o compararmos com outros sistemas de arquivo mais utilizados atualmente. Vale salientar ainda que existem muitos outros recursos que não foram mencionados neste artigo. Para os mais interessados, vale a pena dar uma olhada na <a href="https://btrfs.wiki.kernel.org/index.php/Main_Page"
    
-   target="_blank">wiki do Btrfs</a> e nas referências abaixo.</p>
+   target="_blank" rel="noopener">wiki do Btrfs</a>
+ e nas referências abaixo.</p>
 <h2 id="referencias">Referencias</h2>
 <ul>
 <li><a href="https://pt.wikipedia.org/wiki/C%C3%B3pia_em_grava%C3%A7%C3%A3o"
    
-   target="_blank">Copia em gravacao</a></li>
+   target="_blank" rel="noopener">Copia em gravacao</a>
+</li>
 <li><a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-subvolume"
    
-   target="_blank">Manual do comando para gerenciar subvolumes e snapshots</a></li>
+   target="_blank" rel="noopener">Manual do comando para gerenciar subvolumes e snapshots</a>
+</li>
 <li><a href="https://doc.opensuse.org/documentation/leap/archive/15.0/reference/html/book.opensuse.reference/cha.snapper.html"
    
-   target="_blank">Manual do openSUSE sobre gerenciamento de snapshots</a></li>
+   target="_blank" rel="noopener">Manual do openSUSE sobre gerenciamento de snapshots</a>
+</li>
 <li><a href="https://btrfs.wiki.kernel.org/index.php/Using_Btrfs_with_Multiple_Devices"
    
-   target="_blank">Manual do Btrfs sobre como criar um sistema de arquivos com multiplos discos</a></li>
+   target="_blank" rel="noopener">Manual do Btrfs sobre como criar um sistema de arquivos com multiplos discos</a>
+</li>
 <li><a href="https://mpdesouza.com/2020/05/14/btrfs-making-send-more-capable/"
    
-   target="_blank">Exemplo de uso de send/receive</a></li>
+   target="_blank" rel="noopener">Exemplo de uso de send/receive</a>
+</li>
 <li><a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-convert"
    
-   target="_blank">Manual da ferramenta Btrfs-convert</a></li>
+   target="_blank" rel="noopener">Manual da ferramenta Btrfs-convert</a>
+</li>
 <li><a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-convert"
    
-   target="_blank">Link descrevendo localização das cópias de superblock</a></li>
+   target="_blank" rel="noopener">Link descrevendo localização das cópias de superblock</a>
+</li>
 <li><a href="https://btrfs.wiki.kernel.org/index.php/Compression"
    
-   target="_blank">Página da wiki do Btrfs sobre compressão e suas configurações</a></li>
+   target="_blank" rel="noopener">Página da wiki do Btrfs sobre compressão e suas configurações</a>
+</li>
 <li><a href="https://pt.wikipedia.org/wiki/Soma_de_verifica%C3%A7%C3%A3o"
    
-   target="_blank">Checksum, ou soma de verificação</a></li>
+   target="_blank" rel="noopener">Checksum, ou soma de verificação</a>
+</li>
 </ul>
 
   </article>
@@ -703,15 +751,15 @@
     
   </div>
 </footer>
-<script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
-  
-  <script type="text/javascript" src="/js/bootstrap.min.1c4d3007f0b1fe05e0e0ce4992c1c8cf9eff05f176be71745f010ed03f298853.js"></script>
 
   
-  <script type="text/javascript" src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.1c4d3007f0b1fe05e0e0ce4992c1c8cf9eff05f176be71745f010ed03f298853.js"></script>
 
+  
+  <script type="text/javascript" async src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
 
+<script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
 <script type="application/javascript">
@@ -727,8 +775,7 @@ if (!doNotTrack) {
 
 
 
-
-<script type="text/javascript" defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
+<script type="text/javascript" async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
 
 </body>
 </html>

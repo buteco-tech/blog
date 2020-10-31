@@ -5,8 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="Hugo 0.76.5" />
 
+  
   <title>Primeiros passos com o ESP8266 &middot; Buteco Tecnológico</title>
-  <meta name="description" content="Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+
+
+<link rel="preconnect" href="https://s7.addthis.com" crossorigin>
+
+<link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      as="style">
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet">
+
+<style type="text/css">
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-display: swap;
+}
+</style>
+<link rel="stylesheet" href="/sass/iara.min.44fb6a49a72c0eef714f38a1b77c947e1b9ac09c720929e750e31513e19fee0a.css">
+
+<link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+<link rel="shortcut icon" href="/logos/capybara_64.png">
+
+<link rel="icon" href="/logos/capybara_32.png" sizes="32x32">
+<link rel="icon" href="/logos/capybara_64.png" sizes="64x64">
+<link rel="icon" href="/logos/capybara_144.png" sizes="144x144">
+<link rel="icon" href="/logos/capybara_192.png" sizes="192x192">
+
+
+
+
+<meta name="theme-color" content="#ffffff">
+
+<meta name="msapplication-navbutton-color" content="#ffffff">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<link type="text/css" rel="stylesheet" href="/css/custom.css">
+<meta name="description" content="Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.
 O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo." />
 
 
@@ -16,22 +69,12 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo.">
 <meta itemprop="datePublished" content="2015-04-30T08:53:10+00:00" />
 <meta itemprop="dateModified" content="2015-04-30T08:53:10+00:00" />
-<meta itemprop="wordCount" content="847">
+<meta itemprop="wordCount" content="851">
 <meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/esp8266.jpg">
 
 
 
 <meta itemprop="keywords" content="diy,arduino,esp-01,esp-12,esp8266,iot," />
-
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/esp8266.jpg"/>
-
-<meta name="twitter:title" content="Primeiros passos com o ESP8266"/>
-<meta name="twitter:description" content="Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.
-O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo."/>
-<meta name="twitter:site" content="@butecotech"/>
-
 
 <meta property="og:title" content="Primeiros passos com o ESP8266" />
 <meta property="og:description" content="Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.
@@ -42,6 +85,13 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 <meta property="article:published_time" content="2015-04-30T08:53:10+00:00" />
 <meta property="article:modified_time" content="2015-04-30T08:53:10+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/esp8266.jpg"/>
+
+<meta name="twitter:title" content="Primeiros passos com o ESP8266"/>
+<meta name="twitter:description" content="Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.
+O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo."/>
+<meta name="twitter:site" content="@butecotech"/>
 
 
 <script type="application/ld+json">
@@ -174,21 +224,8 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 </script>
 
 
-  
-  <link rel="stylesheet" href="/sass/iara.min.386233b14062c4a11a5eb0dfd0b480e3df2b9b878b9f589f0e1bb32016cedd62.css">
 
-
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/logos/capybara_144.png">
-<link rel="shortcut icon" href="/logos/capybara_64.png">
-<link type="text/css" rel="stylesheet" href="/css/custom.css">
-
-
-<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -344,7 +381,8 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 
 <p>Dando continuidade ao artigo <a href="/conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares"
    
-   >sobre o ESP8266</a>, hoje irei mostrar os primeiros passos com este módulo. O primeiro passo e o mais importante é colocar ele pra funcionar. :D</p>
+   >sobre o ESP8266</a>
+, hoje irei mostrar os primeiros passos com este módulo. O primeiro passo e o mais importante é colocar ele pra funcionar. :D</p>
 <h2 id="material-necessário">Material necessário</h2>
 <p>Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.</p>
 <h2 id="esp-01-e-esp-12">ESP-01 e ESP-12</h2>
@@ -375,14 +413,17 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 <h2 id="ide-arduino">IDE Arduino</h2>
 <p>Caso você ainda não possua um aplicativo para comunicar com o ESP, eu sugiro a IDE do Arduino, que pode ser encontrar <a href="https://www.arduino.cc/en/main/Software"
    
-   target="_blank">aqui</a>.</p>
+   target="_blank" rel="noopener">aqui</a>
+.</p>
 <h2 id="modos-de-operação">Modos de Operação</h2>
 <p>O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo.</p>
 <p>Por padrão, nem sempre ocorre, os módulos ESP saem de fabrica com o firmware <a href="https://www.electrodragon.com/w/Category:ESP8266"
    
-   target="_blank">AT</a>. Este firmware consiste em uma série de comandos básicos para o uso do módulo em si, mas não se compara ao <a href="https://www.nodemcu.com/index_en.html"
+   target="_blank" rel="noopener">AT</a>
+. Este firmware consiste em uma série de comandos básicos para o uso do módulo em si, mas não se compara ao <a href="https://www.nodemcu.com/index_en.html"
    
-   target="_blank">NodeMCU</a>, um firmware que permite que você programe o dispositivo em LUA, transformando ele em um mini Arduino com WiFi integrado. No caso do AT, é necessário o uso de um outro dispositivo para controlar o ESP, como é o caso dos shields Ethernet do Arduino. Mas com o NodeMCU, o ESP se torna auto gerenciável, bastando apenas fazer upload de um script LUA com o código a ser executado.</p>
+   target="_blank" rel="noopener">NodeMCU</a>
+, um firmware que permite que você programe o dispositivo em LUA, transformando ele em um mini Arduino com WiFi integrado. No caso do AT, é necessário o uso de um outro dispositivo para controlar o ESP, como é o caso dos shields Ethernet do Arduino. Mas com o NodeMCU, o ESP se torna auto gerenciável, bastando apenas fazer upload de um script LUA com o código a ser executado.</p>
 <p>Confira abaixo como conectar o módulo UART no ESP para usá-lo nos modos de programação a atualização de firmware.</p>
 <h2 id="conexão">Conexão</h2>
 <p>Lembre-se que estas conexões mudam de acordo com o ESP e o módulo UART escolhido, então não nos comprometemos com os passos a seguir, faça por sua conta e risco. Lembre-se também de usar a voltagem correta.</p>
@@ -855,15 +896,15 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
     
   </div>
 </footer>
-<script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
-  
-  <script type="text/javascript" src="/js/bootstrap.min.1c4d3007f0b1fe05e0e0ce4992c1c8cf9eff05f176be71745f010ed03f298853.js"></script>
 
   
-  <script type="text/javascript" src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.1c4d3007f0b1fe05e0e0ce4992c1c8cf9eff05f176be71745f010ed03f298853.js"></script>
 
+  
+  <script type="text/javascript" async src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
 
+<script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
 <script type="application/javascript">
@@ -879,8 +920,7 @@ if (!doNotTrack) {
 
 
 
-
-<script type="text/javascript" defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
+<script type="text/javascript" async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
 
 </body>
 </html>

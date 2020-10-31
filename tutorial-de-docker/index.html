@@ -5,8 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="Hugo 0.76.5" />
 
+  
   <title>Tutorial de Docker &middot; Buteco Tecnológico</title>
-  <meta name="description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos." />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+
+
+<link rel="preconnect" href="https://s7.addthis.com" crossorigin>
+
+<link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      as="style">
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet">
+
+<style type="text/css">
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-display: swap;
+}
+</style>
+<link rel="stylesheet" href="/sass/iara.min.44fb6a49a72c0eef714f38a1b77c947e1b9ac09c720929e750e31513e19fee0a.css">
+
+<link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+<link rel="shortcut icon" href="/logos/capybara_64.png">
+
+<link rel="icon" href="/logos/capybara_32.png" sizes="32x32">
+<link rel="icon" href="/logos/capybara_64.png" sizes="64x64">
+<link rel="icon" href="/logos/capybara_144.png" sizes="144x144">
+<link rel="icon" href="/logos/capybara_192.png" sizes="192x192">
+
+
+
+
+<meta name="theme-color" content="#ffffff">
+
+<meta name="msapplication-navbutton-color" content="#ffffff">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<link type="text/css" rel="stylesheet" href="/css/custom.css">
+<meta name="description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos." />
 
 
 
@@ -14,20 +67,12 @@
 <meta itemprop="description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos.">
 <meta itemprop="datePublished" content="2020-10-01T08:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-10-01T08:00:00+00:00" />
-<meta itemprop="wordCount" content="2299">
+<meta itemprop="wordCount" content="2301">
 <meta itemprop="image" content="https://butecotecnologico.com.br/tutorial-de-docker/docker-logo.png">
 
 
 
 <meta itemprop="keywords" content="docker,devops,containers,linux," />
-
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://butecotecnologico.com.br/tutorial-de-docker/docker-logo.png"/>
-<meta name="twitter:title" content="Tutorial de Docker"/>
-<meta name="twitter:description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos."/>
-<meta name="twitter:site" content="@butecotech"/>
-
 
 <meta property="og:title" content="Tutorial de Docker" />
 <meta property="og:description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos." />
@@ -37,6 +82,11 @@
 <meta property="article:published_time" content="2020-10-01T08:00:00+00:00" />
 <meta property="article:modified_time" content="2020-10-01T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/tutorial-de-docker/docker-logo.png"/>
+<meta name="twitter:title" content="Tutorial de Docker"/>
+<meta name="twitter:description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos."/>
+<meta name="twitter:site" content="@butecotech"/>
 
 
 <script type="application/ld+json">
@@ -163,21 +213,8 @@
 </script>
 
 
-  
-  <link rel="stylesheet" href="/sass/iara.min.386233b14062c4a11a5eb0dfd0b480e3df2b9b878b9f589f0e1bb32016cedd62.css">
 
-
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/logos/capybara_144.png">
-<link rel="shortcut icon" href="/logos/capybara_64.png">
-<link type="text/css" rel="stylesheet" href="/css/custom.css">
-
-
-<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -324,14 +361,15 @@
   <article class="mt-3 mb-4">
   <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/tutorial-de-docker/docker-logo.png"
+      src="https://butecotecnologico.com.br/tutorial-de-docker/docker-logo_hu672e770bbe701e3c268c298c24f5bf49_44308_600x535_resize_q90_bgffffff_linear_2.jpg"
       alt="Docker"/>
 </figure>
 
 <p>O Docker é um conjunto de ferrametas criada para facilitar o uso de contêineres, algo que não é tão novo no mundo Linux uma vez que projetos como o LXC já existem a muitos anos, porém o seu uso é complexo e a curva de aprendizado é bastante grande. Foi para resolver este e outros problemas que o Docker nasceu. Inicialmente criado por uma empresa independente, teve tanto sucesso que a própria empresa mudou seu nome posteriormente para Docker Inc..</p>
 <p>Mas por que você deveria se importar com <a href="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
    
-   target="_blank">contêineres</a>? Existe uma série de motivos que fazem os contêineres serem interessantes e uma melhor alternativa que as máquinas virtuais. O principal deles é que contêineres usam bem menos recursos da maquina hospedeira, na prática cada contêiner é apenas um processo isolado, diferente de toda a sobrecarga que existe quando se usa uma máquina virtual, nesta onde se tem todo um sistema operacional convidado que consome recursos independente da sua aplicação, apenas para manter este sistema operacional funcionando. Isso permite que você execute muito mais aplicações e contêineres no mesmo equipamento físico.</p>
+   target="_blank" rel="noopener">contêineres</a>
+? Existe uma série de motivos que fazem os contêineres serem interessantes e uma melhor alternativa que as máquinas virtuais. O principal deles é que contêineres usam bem menos recursos da maquina hospedeira, na prática cada contêiner é apenas um processo isolado, diferente de toda a sobrecarga que existe quando se usa uma máquina virtual, nesta onde se tem todo um sistema operacional convidado que consome recursos independente da sua aplicação, apenas para manter este sistema operacional funcionando. Isso permite que você execute muito mais aplicações e contêineres no mesmo equipamento físico.</p>
 <p>Outra questão importante que nem sempre é considerado quando se usa máquinas virtuais, é que contêineres são efêmeros, ou seja, um contêiner não deve armazenar dados importantes em seu <code>filesystem</code>.</p>
 <p>Aprenda neste tutorial como usar e aproveitar o máximo do Docker no seu dia a dia como desenvolvedor de software.</p>
 <h2 id="instalação">Instalação</h2>
@@ -349,10 +387,12 @@
 <ul>
 <li><a href="https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe"
    
-   target="_blank">Windows</a></li>
+   target="_blank" rel="noopener">Windows</a>
+</li>
 <li><a href="https://download.docker.com/mac/stable/Docker.dmg"
    
-   target="_blank">Mac</a></li>
+   target="_blank" rel="noopener">Mac</a>
+</li>
 </ul>
 <p>A instalação no Windows e Mac são bem simples, basta seguir o passo a passo ao executador o instalador. Perceba que o Docker Desktop funciona de forma diferente, como o docker é nativo apenas de Linux e se você quiser rodar contêineres Linux em outro sistema operacional, o Docker Desktop irá criar uma máquina virtual para executar os contêineres. Sendo que no Windows é usado por padrão o HyperV e no Mac o VirtualBox.</p>
 <p>Algo importante de se notar é que existem contêineres nativos para Windows, porém saiba que imagens de contêineres Linux não são compatíveis com imagens de contêineres Windows, contudo usando contêineres Windows no sistema operacional Windows você terá a mesma experiência e desempenho semelhantes a contêineres Linux sendo executados em alguma distribuição.</p>
@@ -593,7 +633,8 @@ For more examples and ideas, visit:
 </div><p>O comando acima executa o subcomando <code>run</code> que basicamente cria e executa um novo contêiner. O único parâmetro que realmente é obrigatório para executar um contêiner é o nome da imagem do contêiner. Uma imagem de contêiner é um pacote executável leve, standalone, que incluí tudo necessário para executar a aplicação, como código, runtime, ferramentas de runtime, bibliotecas e configurações.</p>
 <p>Na saída do programa podemos ver que o docker tentou buscar localmente a imagem <code>hello-world</code>, porém como nesse caso não existia ele buscou do repositório padrão, que é o <a href="https://hub.docker.com/"
    
-   target="_blank">Docker Hub</a>. Logo após iniciou o download de cada camada da imagem, cada camada é uma mudança na imagem, como o <code>hello-world</code> é simples, possuí apenas uma única camada.</p>
+   target="_blank" rel="noopener">Docker Hub</a>
+. Logo após iniciou o download de cada camada da imagem, cada camada é uma mudança na imagem, como o <code>hello-world</code> é simples, possuí apenas uma única camada.</p>
 <p>Por fim, após o download do imagem é criado uma instância da imagem que é o contêinere em si, podendo ver então o texto do <code>Hello from Docker!</code></p>
 <h2 id="conceitos-importantes">Conceitos importantes</h2>
 <p>Além do que vimos acima, existem diversos outros conceitos importantes que você deve saber antes de começar a usar o docker, ou até mesmo para usar todo o potêncial do mesmo.</p>
@@ -1095,15 +1136,15 @@ root@f948917eca40:/# curl https://example.org
     
   </div>
 </footer>
-<script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
-  
-  <script type="text/javascript" src="/js/bootstrap.min.1c4d3007f0b1fe05e0e0ce4992c1c8cf9eff05f176be71745f010ed03f298853.js"></script>
 
   
-  <script type="text/javascript" src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.1c4d3007f0b1fe05e0e0ce4992c1c8cf9eff05f176be71745f010ed03f298853.js"></script>
 
+  
+  <script type="text/javascript" async src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
 
+<script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
 <script type="application/javascript">
@@ -1119,8 +1160,7 @@ if (!doNotTrack) {
 
 
 
-
-<script type="text/javascript" defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
+<script type="text/javascript" async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
 
 </body>
 </html>

@@ -5,8 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="Hugo 0.76.5" />
 
+  
   <title>De que são feitos containers Linux? &middot; Buteco Tecnológico</title>
-  <meta name="description" content="Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema." />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+
+
+<link rel="preconnect" href="https://s7.addthis.com" crossorigin>
+
+<link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      as="style">
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet">
+
+<style type="text/css">
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-display: swap;
+}
+</style>
+<link rel="stylesheet" href="/sass/iara.min.44fb6a49a72c0eef714f38a1b77c947e1b9ac09c720929e750e31513e19fee0a.css">
+
+<link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+<link rel="shortcut icon" href="/logos/capybara_64.png">
+
+<link rel="icon" href="/logos/capybara_32.png" sizes="32x32">
+<link rel="icon" href="/logos/capybara_64.png" sizes="64x64">
+<link rel="icon" href="/logos/capybara_144.png" sizes="144x144">
+<link rel="icon" href="/logos/capybara_192.png" sizes="192x192">
+
+
+
+
+<meta name="theme-color" content="#ffffff">
+
+<meta name="msapplication-navbutton-color" content="#ffffff">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<link type="text/css" rel="stylesheet" href="/css/custom.css">
+<meta name="description" content="Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema." />
 
 
 
@@ -14,20 +67,12 @@
 <meta itemprop="description" content="Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema.">
 <meta itemprop="datePublished" content="2020-06-16T08:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-06-16T08:00:00+00:00" />
-<meta itemprop="wordCount" content="1201">
+<meta itemprop="wordCount" content="1204">
 <meta itemprop="image" content="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/lxc-logo.png">
 
 
 
 <meta itemprop="keywords" content="containers,docker,lxc,linux," />
-
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/lxc-logo.png"/>
-<meta name="twitter:title" content="De que são feitos containers Linux?"/>
-<meta name="twitter:description" content="Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema."/>
-<meta name="twitter:site" content="@butecotech"/>
-
 
 <meta property="og:title" content="De que são feitos containers Linux?" />
 <meta property="og:description" content="Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema." />
@@ -37,6 +82,11 @@
 <meta property="article:published_time" content="2020-06-16T08:00:00+00:00" />
 <meta property="article:modified_time" content="2020-06-16T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/lxc-logo.png"/>
+<meta name="twitter:title" content="De que são feitos containers Linux?"/>
+<meta name="twitter:description" content="Você já deve ter ouvido falar sobre Docker, talvez já tenha usado. Docker é uma parte do ecossistema de containers Linux, mas não é só isso, existe muito mais por trás e que compõe todo o ecossistema."/>
+<meta name="twitter:site" content="@butecotech"/>
 
 
 <script type="application/ld+json">
@@ -163,21 +213,8 @@
 </script>
 
 
-  
-  <link rel="stylesheet" href="/sass/iara.min.386233b14062c4a11a5eb0dfd0b480e3df2b9b878b9f589f0e1bb32016cedd62.css">
 
-
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/logos/capybara_144.png">
-<link rel="shortcut icon" href="/logos/capybara_64.png">
-<link type="text/css" rel="stylesheet" href="/css/custom.css">
-
-
-<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -324,7 +361,7 @@
   <article class="mt-3 mb-4">
   <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/lxc-logo.png"
+      src="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/lxc-logo_hu4a5f4a572ee902aaaad03618bf73a17d_5349_318x293_resize_q90_bgffffff_linear_2.jpg"
       alt="Logo LXC"/>
 </figure>
 
@@ -335,19 +372,22 @@
 <h2 id="um-pouco-da-história">Um pouco da história</h2>
 <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/container-timeline.png"
+      src="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/container-timeline_hu030086b8dc56bd866535f93fdc857afa_10847_621x81_resize_q90_bgffffff_linear_2.jpg"
       alt="Timeline Containers"/>
 </figure>
 
 <p>O que hoje é conhecido como containers Linux surgiu inicialmente no FreeBSD 4.x com o <a href="https://www.freebsd.org/doc/handbook/jails.html"
    
-   target="_blank">Jails</a> no ano 2000. O Jails permite a criação de um ambiente seguro e isolado do resto do sistema assim como os containers Linux.</p>
+   target="_blank" rel="noopener">Jails</a>
+ no ano 2000. O Jails permite a criação de um ambiente seguro e isolado do resto do sistema assim como os containers Linux.</p>
 <p>Logo após surgiu o <a href="https://man7.org/linux/man-pages/man7/cgroups.7.html"
    
-   target="_blank">control groups (cgroups)</a> no Kernel Linux 2.6, uma parte essencial do ecossistema. cgroups permite limitar e isolar recursos como CPU, memória, disco, redes, etc.</p>
+   target="_blank" rel="noopener">control groups (cgroups)</a>
+ no Kernel Linux 2.6, uma parte essencial do ecossistema. cgroups permite limitar e isolar recursos como CPU, memória, disco, redes, etc.</p>
 <p>Em 2008 surge o <a href="https://linuxcontainers.org/lxc/"
    
-   target="_blank">LXC</a>, trazendo vários conceitos e ferramentas para se trabalhar com containers.</p>
+   target="_blank" rel="noopener">LXC</a>
+, trazendo vários conceitos e ferramentas para se trabalhar com containers.</p>
 <h2 id="qual-a-finalidade">Qual a finalidade?</h2>
 <p>Containers reduzem a complexidade, aumentam a portabilidade e a segurança e padronizam ambientes. Era comum ouvirmos a expressão “Funciona na minha máquina”. Tem tempo que eu não ouço essa frase.</p>
 <p>Com containers você possui um ambiente controlado, não é afetado facilmente pelo o que acontece no resto do sistema e se usado corretamente, as imagens sempre serão idênticas, ou seja, se não funciona em um, não irá funcionar em outro, pois é a mesma imagem.</p>
@@ -356,21 +396,23 @@
 <h2 id="containers-vs-virtualização">Containers vs Virtualização</h2>
 <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/containers-vs-virtualizacao.png"
+      src="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/containers-vs-virtualizacao_hu541801ec051c02f365611a6317415c19_20176_403x391_resize_q90_bgffffff_linear_2.jpg"
       alt="Timeline Containers"/>
 </figure>
 
 <p>Um container não é uma máquina virtual, mas existem algumas semelhanças. Na virtualização você está rodando um sistema simultaneamente em um único hardware. O exemplo mais comum é rodar Windows dentro do Linux.</p>
 <p>Virtualização usa <a href="https://pt.wikipedia.org/wiki/Hipervisor"
    
-   target="_blank">Hypervisor</a> para emulação de hardware e isso consome mais recursos que containers. Na virtualização é possível executar um sistema operacional dentro de outro. Com containers você está compartilhando o mesmo Kernel Linux, ou seja, você apenas isola aplicações e bibliotecas do resto do sistema, não sendo possível executar um container Windows dentro do Linux, por exemplo.</p>
+   target="_blank" rel="noopener">Hypervisor</a>
+ para emulação de hardware e isso consome mais recursos que containers. Na virtualização é possível executar um sistema operacional dentro de outro. Com containers você está compartilhando o mesmo Kernel Linux, ou seja, você apenas isola aplicações e bibliotecas do resto do sistema, não sendo possível executar um container Windows dentro do Linux, por exemplo.</p>
 <p>Neste caso, se você está rodando Ubuntu 20 com Kernel 5.4 e iniciar um container e executar o comando <code>uname -r</code> você terá a mesma versão que o sistema hospedeiro. O Kernel é o mesmo, porém o ecossistema pode ser totalmente diferente. Você pode executar um container Fedora 32 dentro do Ubuntu, por exemplo.</p>
 <h2 id="containers-ao-nível-de-kernel">Containers ao nível de Kernel</h2>
 <p>Existem diversas funcionalidades ao nível de Kernel que permitem a implementação de containers. No Kernel em si não existem containers, mas as funcionalidades abaixo permitem a implementação de containers.</p>
 <h3 id="namespaces">Namespaces</h3>
 <p><a href="https://man7.org/linux/man-pages/man7/namespaces.7.html"
    
-   target="_blank">Namespaces</a> servem para isolar recursos do sistema.</p>
+   target="_blank" rel="noopener">Namespaces</a>
+ servem para isolar recursos do sistema.</p>
 <p>Existem os seguintes namespaces:</p>
 <ul>
 <li>Cgroup - Isola o diretório raiz do cgroup</li>
@@ -387,24 +429,30 @@
 <h3 id="control-groups">Control Groups</h3>
 <p><a href="https://man7.org/linux/man-pages/man7/cgroups.7.html"
    
-   target="_blank">cgroups</a> permite limitar e isolar recursos como CPU, memória, disco, redes, etc. Com essa funcionalidade é possível organizar processos em grupos hierárquicos de uso por vários tipos de recursos.</p>
+   target="_blank" rel="noopener">cgroups</a>
+ permite limitar e isolar recursos como CPU, memória, disco, redes, etc. Com essa funcionalidade é possível organizar processos em grupos hierárquicos de uso por vários tipos de recursos.</p>
 <p>cgroups ainda provê um pseudo sistema de arquivos chamado cgroupfs, que pode ser usado para obter informações do cgroups.</p>
 <h3 id="capabilities">Capabilities</h3>
 <p>Tradicionalmente UNIX distingue processos em duas categorias, <em>privileged</em> (privilegiado) e <em>unprivileged</em> (não privilegiado). Um processo root (com user ID 0) não tem checagens, porém um processo não root passa por todas as checagens de permissões.</p>
 <p><a href="https://man7.org/linux/man-pages/man7/capabilities.7.html"
    
-   target="_blank">capabilities</a> permite definir privilégios por processo, permitindo um controle maior sobre processos do que apenas usando as categorias root ou não root, além disso, é possível fracionar as capabilities de root, onde um processo pode ter permissões root para determinadas ações (capabilities), mas ele não possui acesso root em todo o sistema.</p>
+   target="_blank" rel="noopener">capabilities</a>
+ permite definir privilégios por processo, permitindo um controle maior sobre processos do que apenas usando as categorias root ou não root, além disso, é possível fracionar as capabilities de root, onde um processo pode ter permissões root para determinadas ações (capabilities), mas ele não possui acesso root em todo o sistema.</p>
 <p>A lista de capabilities é grande e não vou mencionar aqui, mas elas dão permissões a certos recursos do sistema, como a <code>CAP_NET_ADMIN</code> que permite alterar várias configurações relacionadas a redes.</p>
 <h3 id="segurança">Segurança</h3>
 <p>Linux Security Modules (LSM) é um framework que permite suporte ao nível de Kernel para diversos modelos de segurança. <a href="https://en.wikipedia.org/wiki/AppArmor"
    
-   target="_blank">AppArmor</a>, <a href="https://en.wikipedia.org/wiki/SELinux"
+   target="_blank" rel="noopener">AppArmor</a>
+, <a href="https://en.wikipedia.org/wiki/SELinux"
    
-   target="_blank">SELinux</a>, <a href="https://en.wikipedia.org/wiki/Smack_%28software%29"
+   target="_blank" rel="noopener">SELinux</a>
+, <a href="https://en.wikipedia.org/wiki/Smack_%28software%29"
    
-   target="_blank">Smack</a> e <a href="https://en.wikipedia.org/wiki/Tomoyo_Linux"
+   target="_blank" rel="noopener">Smack</a>
+ e <a href="https://en.wikipedia.org/wiki/Tomoyo_Linux"
    
-   target="_blank">TOMOYO Linux</a> fazem parte dos módulos oficiais.</p>
+   target="_blank" rel="noopener">TOMOYO Linux</a>
+ fazem parte dos módulos oficiais.</p>
 <p>Esses módulos são usados para assegurar a separação entre host e container e também entre containers individualmente. Essa separação é feita aplicando políticas de seguranças que restringem os processos rodando.</p>
 <p>Essa funcionalidade não é só usada para containers, mas também pode ser aplicada a processos rodando no sistema host.</p>
 <h2 id="container-runtime">Container runtime</h2>
@@ -413,16 +461,20 @@
 <ul>
 <li><a href="https://linuxcontainers.org/lxc/"
    
-   target="_blank">LXC</a></li>
+   target="_blank" rel="noopener">LXC</a>
+</li>
 <li><a href="https://github.com/opencontainers/runc"
    
-   target="_blank">runC</a></li>
+   target="_blank" rel="noopener">runC</a>
+</li>
 <li><a href="https://containerd.io/"
    
-   target="_blank">containerd</a></li>
+   target="_blank" rel="noopener">containerd</a>
+</li>
 <li><a href="https://cri-o.io/"
    
-   target="_blank">CRI-O</a></li>
+   target="_blank" rel="noopener">CRI-O</a>
+</li>
 </ul>
 <h2 id="container-engine">Container engine</h2>
 <p>Um container engine é uma aplicação que aceita requisições e se comunica com o container runtime, geralmente são disponibilizados em forma de aplicações de linha de comando.</p>
@@ -430,16 +482,20 @@
 <ul>
 <li><a href="https://docs.docker.com/engine/"
    
-   target="_blank">Docker</a></li>
+   target="_blank" rel="noopener">Docker</a>
+</li>
 <li><a href="https://podman.io/"
    
-   target="_blank">Podman</a></li>
+   target="_blank" rel="noopener">Podman</a>
+</li>
 <li><a href="https://coreos.com/rkt/"
    
-   target="_blank">RKT</a></li>
+   target="_blank" rel="noopener">RKT</a>
+</li>
 <li><a href="https://linuxcontainers.org/lxd/"
    
-   target="_blank">LXD</a></li>
+   target="_blank" rel="noopener">LXD</a>
+</li>
 </ul>
 <h2 id="outras-abordagens">Outras abordagens</h2>
 <p>Até agora mencionamos apenas sobre containers nativos (ao nível de Kernel), mas podemos citar ainda duas outras abordagens de implementação de containers.</p>
@@ -449,18 +505,22 @@
 <ul>
 <li><a href="https://github.com/kubernetes/frakti"
    
-   target="_blank">Frakti</a></li>
+   target="_blank" rel="noopener">Frakti</a>
+</li>
 <li><a href="https://katacontainers.io/"
    
-   target="_blank">Kata Containers</a></li>
+   target="_blank" rel="noopener">Kata Containers</a>
+</li>
 <li><a href="https://firecracker-microvm.github.io/"
    
-   target="_blank">Firecracker</a></li>
+   target="_blank" rel="noopener">Firecracker</a>
+</li>
 </ul>
 <h3 id="gvisor">gVisor</h3>
 <p>O <a href="https://gvisor.dev/"
    
-   target="_blank">gVisor</a> é um runtime que implementa o seu próprio Kernel para adicionar um nível extra de segurança, é como se o container executasse em uma camada sandbox, separada do Kernel Linux, mas ao mesmo tempo, sem ser uma máquina virtual.</p>
+   target="_blank" rel="noopener">gVisor</a>
+ é um runtime que implementa o seu próprio Kernel para adicionar um nível extra de segurança, é como se o container executasse em uma camada sandbox, separada do Kernel Linux, mas ao mesmo tempo, sem ser uma máquina virtual.</p>
 <h2 id="conclusão">Conclusão</h2>
 <p>Containers é um assunto abrangente, impossível de cobrir tudo em apenas um artigo e como podemos observar, existem múltiplas formas de se fazer a mesma coisa.</p>
 <p>Sabendo o básico do funcionamento e o quais camadas compõem, fica fácil dar continuidade nos estudos, mas traremos mais conteúdo no futuro para lhe ajudar a entender mais, não se preocupe.</p>
@@ -756,15 +816,15 @@
     
   </div>
 </footer>
-<script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
-  
-  <script type="text/javascript" src="/js/bootstrap.min.1c4d3007f0b1fe05e0e0ce4992c1c8cf9eff05f176be71745f010ed03f298853.js"></script>
 
   
-  <script type="text/javascript" src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.1c4d3007f0b1fe05e0e0ce4992c1c8cf9eff05f176be71745f010ed03f298853.js"></script>
 
+  
+  <script type="text/javascript" async src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
 
+<script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
 <script type="application/javascript">
@@ -780,8 +840,7 @@ if (!doNotTrack) {
 
 
 
-
-<script type="text/javascript" defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
+<script type="text/javascript" async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
 
 </body>
 </html>
