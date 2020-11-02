@@ -3,8 +3,12 @@
   display: none;
 }
 
-img.size-full,
-img.figure-img {
+.wordpress iframe {
+  max-width: 100%;
+}
+
+.wordpress img.size-full,
+.wordpress img.figure-img {
   max-width: 100%;
   width: auto;
   height: auto;
