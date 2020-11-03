@@ -2,7 +2,7 @@
 slug: leonardodalcegio
 title: Leonardo Luís Dalcegio
 bio: Desenvolvedor de Software
-avatar: https://avatars3.githubusercontent.com/u/48610849?s=460&u=b87b4da4bc8910952bc89fd151c6cbdbc6b724ed&v=4
+avatar: https://s.gravatar.com/avatar/d7ed5fc8ff1d8df7baad3d6eba123124?s=80
 email: leoodalcegio@hotmail.com
 www:
 github: LeoDalcegio

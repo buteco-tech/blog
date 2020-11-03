@@ -2,7 +2,7 @@
 title: "Tutorial de Git e GitHub"
 summary: "Se você é ou pretende se tornar um desenvolvedor, já deve ter ouvido falar do Git e GitHub, um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las."
 tagline: "Iniciando com Git e GitHub"
-date: 2020-10-28 08:00:00
+date: 2020-11-03 08:00:00
 slug: tutorial-git-e-github
 authors:
   - leonardodalcegio
@@ -12,11 +12,24 @@ categories:
 tags:
   - git
   - github
-images:
-  - /images/posts/git-logo.png
+resources:
+  - name: git-clone-btn
+    src: git-clone-btn.png
+  - name: git-clone
+    src: git-clone.png
+  - name: git-commit
+    src: git-commit.png
+  - name: git-logo
+    src: git-logo.png
+  - name: git-status
+    src: git-status.png
+  - name: pull-request-btn
+    src: pull-request-btn.png
+  - name: ssh-add
+    src: ssh-add.png
 ---
 
-{{< figure src="/images/posts/git-logo.png" alt="git" >}}
+{{< figure src="git-logo" alt="git" >}}
 
 Se você é ou pretende se tornar um desenvolvedor, já deve ter ouvido falar do [Git](https://git-scm.com/) e [GitHub](https://github.com/), um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las.
 
@@ -38,9 +51,9 @@ Ambos os passos são bem rápidos, você pode baixar o Git [aqui](https://git-sc
 
 Depois de ter baixado o Git, é necessário configurar o seu nome e email que serão exibidos em seus commits, para isso é só digitar no terminal o seguinte (caso você esteja no Windows, não se esqueça de utilizar o **git bash**, ao invés do **cmd**, pois o **git bash** simula um ambiente **Unix** e fica melhor de se trabalhar dessa forma):
 
-- **git config --global user.name "Seu nome que será exibido"**
+- **git config --global user.name "Buteco Tecnológico"**
 
-- **git config --global user.email "seu-email@email.com"**
+- **git config --global user.email "git@buteco.tech"**
 
 Agora iremos criar uma chave de SSH, com ela conseguimos provar ao GitHub que nós somos os donos da nossa conta, você talvez até já tenha uma chave SSH no seu computador, podemos checar se já existe uma entrando no seu diretório **".ssh"** e listando o conteúdo:
 
@@ -48,27 +61,21 @@ Agora iremos criar uma chave de SSH, com ela conseguimos provar ao GitHub que n�
 
 - **ls**
 
-  Caso esses o comando **"ls"** retorne algo com a extensão ".pub", você não precisa executar o comando **"ssh-keygen"**. Caso contrário, digite esse comando no seu terminal, o email que você inserir tem que ser o mesmo que você usa para logar na sua conta do GitHub:
+  Caso o comando **"ls"** retorne algo com a extensão ".pub", você não precisa executar o comando **"ssh-keygen"**. Caso contrário, digite esse comando no seu terminal:
 
-- **ssh-keygen -t rsa -b 4096 -C "seuemailgithub@email.com"**
+- **ssh-keygen -t rsa -b 4096 -C "git@buteco.tech"**
 
-Irá pedir um nome do arquivo para salvar a chave, não escreva nada e aperte **enter** (será gerada uma com o nome "id_rsa"). Depois, informe uma **"passphrase"**, digite uma senha e confirme ela. Pronto, você gerou uma chave SSH. Se você navegar até o local onde a chave foi criada, você verá dois arquivos, "id_rsa" e "id_rsa.pub", este com a extensão "pub", que significa público, ou seja, chave pública, é a chave que você irá informar ao **GitHub**. O arquivo sem o ".pub", é a sua chave privada, é o que você não irá informar aos outros e manter ele seguro. Digite o seguinte comando no terminal para exibir o conteúdo da chave gerada:
+O comando acima rrá pedir um nome do arquivo para salvar a chave, não escreva nada e aperte enter (será gerada uma com o nome "id_rsa"). Depois, informe uma senha (passphrase) e confirme ela. Pronto, você gerou uma chave SSH.
+
+Se você navegar até o local onde a chave foi criada, você verá dois arquivos, "id_rsa" e "id_rsa.pub". O com a extensão "pub" é a chave pública, ou seja, a chave que você irá informar ao **GitHub**. O arquivo sem o ".pub" é a sua chave privada, mantenha-a segura.
+
+Digite o seguinte comando no terminal para exibir o conteúdo da chave gerada:
 
 - **cat ~/.ssh/id_rsa.pub**
 
-Para copiar todo o conteúdo desta chave, no caso do Windows, você pode digitar o seguinte comando:
+A chave pública é a qual você deve cadastrar no **GitHub**, com ela não será possível usar o git via linha de comando sem a necessidade de senhas.
 
-- **clip < ~/.ssh/id_rsa.pub**
-
-E caso você esteja em um Linux, você pode baixar um programa de apenas 16kb chamado **"xclip"**
-
-- **sudo apt-get install xclip** (para baixar o xclip, caso você não tenha o apt-get, pode usar outro instalador para instalar o xclip)
-
-- **xclip -sel clip < ~/.ssh/id_rsa.pub** (para copiar todo o conteúdo)
-
-Você irá informar essa chave pública ao **GitHub**, e então todas as vezes que você quiser subir o seu código ao **GitHub** por exemplo, você usará a sua chave privada, para mostrar ao **GitHub** que foi você quem gerou essa chave pública.
-
-Agora vá até [essa página](https://github.com/settings/keys), aqui você pode ver as chaves SSH associadas a sua conta. Clique então no botão **"New SSH Key"**. O título você pode escolher um, e em "key", você informará o conteúdo que você copiou anteriormente do seu arquivo da chave pública.
+Acesse a página de [SSH and GPG keys no GitHub](https://github.com/settings/keys) para poder associar novas chaves SSH a sua conta. Clique então no botão **"New SSH Key"**. O título você pode escolher um, e em "key", você informará o conteúdo que você copiou anteriormente do seu arquivo da chave pública.
 
 Depois de informado a sua chave **pública** ao **GitHub**, vamos agora adicionar a sua chave **privada** ao **ssh-agent**, um programa que fará a autenticação da sua máquina local, com o servidor remoto, que nesse caso seria o **GitHub**, execute então o comando [ssh-agent](https://pt.wikipedia.org/wiki/Ssh-agent), você deverá receber um "Agent pid":
 
@@ -80,7 +87,7 @@ Agora iremos executar o comando ssh-add, onde o "id_rsa" é o nome da nossa chav
 
 Você deverá receber a mensagem **"Identity added: id_rsa (seuemailgithub@email.com)"**. Pronto, a sua configuração está feita.
 
-{{< figure src="/images/posts/ssh-add.png" alt="ssh add" >}}
+{{< figure src="ssh-add" alt="ssh add" >}}
 
 ## Workflow
 
@@ -100,11 +107,11 @@ Agora navegue até os repositórios do seu perfil, você verá que existe um ali
 
 Vamos agora clonar esse seu repositório para a sua máquina local, para que você possa realizar alterações nele Na página do seu repositório no GitHub, existe um botão chamado **"Code"**, clique nele, selecione a opção **SSH**, e clique no botão de copiar.
 
-{{< figure src="/images/posts/git-clone-btn.png" alt="ssh add" >}}
+{{< figure src="git-clone-btn" alt="ssh add" >}}
 
 Agora abra o seu terminal no local que deseja copiar o repositório, e digite no **"git clone"**, seguido do comando que você copiou. Será pedido para que você informe a sua "passphrase" de quando criou a sua chave SSH. Depois digite **"cd artigo-tutorial-git"**, para navegar com o seu terminal até a pasta do repositório clonado. Você ficará com o terminal assim:
 
-{{< figure src="/images/posts/git-clone.png" alt="git clone" >}}
+{{< figure src="git-clone" alt="git clone" >}}
 
 Perceba que existe ali, uma pasta chamada **".git"**, é nela que o git guarda todas as informações do seu repositório, todas as alterações, o endereço do repositório remoto, tudo o que é relacionado ao controle de versão do git é guardado dentro dela. No Windows talvez você não consiga visualizar esta pasta, pois ela é um arquivo oculto, então é só seguir [esse tutorial](https://support.microsoft.com/pt-br/help/14201/windows-show-hidden-files), que já vai ser possível visualizar ela.
 
@@ -114,7 +121,7 @@ Vamos criar um novo arquivo para que possamos comitar ele depois, então, crie u
 
 Voltando pro terminal , digite **"git status"**. Você verá essa mensagem:
 
-{{< figure src="/images/posts/git-status.png" alt="git status" >}}
+{{< figure src="git-status" alt="git status" >}}
 
 Essas "Untracked files" são as alterações pendentes, nós precisamos adicionar elas à área de **"staging"**, as alterações que estão no **"staging"** são as que serão **"commitadas"** futuramente.
 
@@ -126,7 +133,7 @@ Agora sim, podemos commitar as alterações, então vamos lá, **"git commit -m 
 
 Se você rodar um **"git status"**, o seu terminal deverá estar parecido com o abaixo.
 
-{{< figure src="/images/posts/git-commit.png" alt="git commit" >}}
+{{< figure src="git-commit" alt="git commit" >}}
 
 Agora é hora de subir as alterações feitas no seu repositório local, ao repositório remoto, nesse caso, o do GitHub.
 
@@ -140,7 +147,7 @@ Quando estamos com alguma alteração commitada localmente e queremos subir elas
 
 Se você for até o seu repositório agora, depois de ter feito um **push** nele, você vai ver um botão escrito **"Pull request"**. Daí só clicar nele.
 
-{{< figure src="/images/posts/pull-request-btn.png" alt="pull request" >}}
+{{< figure src="pull-request-btn" alt="pull request" >}}
 
 Irá abrir uma página mostrando os arquivos alterado em um botão **"Create pull request"**, clique nele, agora informe o título e um comentário para essa **pull request** e clique naquele mesmo botão **"Create pull request"**, e pronto, está criada. Se você for até a página das **pull requests** do repositório principal, a sua vai estar lá. Agora para a sua alteração entrar de fato no repositório principal, a sua **pull request** tem que ser aceita por algum mantedor do repositório.
 
