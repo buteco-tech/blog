@@ -8,8 +8,6 @@ outputs:
 - rss
 ---
 
-{{< figure src="/images/podcast/logo-400-bg.png" alt="Logo buteco.tech" class="text-center" height="200" width="200" >}}
-
 <p class="text-center">O seu podcast de tecnologia, linux e software livre.</p>
 
 <iframe src="https://open.spotify.com/embed-podcast/show/1oD8x4L9Tzu2hcPRUkfwhh"

@@ -1,0 +1,22 @@
+/* Begin HACK Wordpress */
+.card-body img {
+  display: none;
+}
+
+.wordpress iframe {
+  max-width: 100%;
+}
+
+.wordpress img.size-full,
+.wordpress img.figure-img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+/* End HACK Wordpress */
+
+/*
+.adsbygoogle {
+  background-color: #ffdc0014;
+}
+*/

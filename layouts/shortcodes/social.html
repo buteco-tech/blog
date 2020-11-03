@@ -23,8 +23,11 @@
   {{- with .Params.youtube_c }}
   <a href="https://www.youtube.com/c/{{ . }}" title="YouTUbe" target="_blank" class="mr-1"><i class="fab fa-youtube"></i></a>
   {{ end -}}
-  {{- with .Params.youtube_u }}
+  {{- with .Params.youtube_channel }}
   <a href="https://www.youtube.com/channel/{{ . }}" title="YouTUbe" target="_blank" class="mr-1"><i class="fab fa-youtube"></i></a>
+  {{ end -}}
+  {{- with .Params.youtube_user }}
+  <a href="https://www.youtube.com/user/{{ . }}" title="YouTUbe" target="_blank" class="mr-1"><i class="fab fa-youtube"></i></a>
   {{ end -}}
   {{- with .Params.github }}
   <a href="https://github.com/{{ . }}" title="GitHub" target="_blank" class="mr-1"><i class="fab fa-github"></i></a>

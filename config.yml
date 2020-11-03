@@ -41,43 +41,6 @@ outputs:
   term:
     - HTML
 
-outputFormats:
-  sharing-v1:
-    path: v1
-    baseName: sharing
-    isPlainText: true
-    mediaType: application/json
-    protocol: https://
-    notAlternative: true
-  posts-v1:
-    path: v1
-    baseName: posts
-    isPlainText: true
-    mediaType: application/json
-    protocol: https://
-    notAlternative: true
-  authors-v1:
-    path: v1
-    baseName: authors
-    isPlainText: true
-    mediaType: application/json
-    protocol: https://
-    notAlternative: true
-  tags-v1:
-    path: v1
-    baseName: tags
-    isPlainText: true
-    mediaType: application/json
-    protocol: https://
-    notAlternative: true
-  categories-v1:
-    path: v1
-    baseName: categories
-    isPlainText: true
-    mediaType: application/json
-    protocol: https://
-    notAlternative: true
-
 social:
   twitter: butecotech
 
@@ -128,11 +91,10 @@ params:
     featured:
       index: true  # Show index number
       item:
-        - path: posts/2020-06-16-de-que-sao-feitos-containers-linux.md
-        - path: posts/2020-08-13-kubernetes-explicado.md
-        - path: posts/2020-05-15-usando-aws-s3-em-python.md
-        - path: posts/2020-04-24-livros-gratuitos.md
-        - path: posts/2020-05-20-ubuntu-20-04.md
+        - path: posts/2020/livros-gratuitos-data-science/index.md
+        - path: posts/2020/de-que-sao-feitos-containers-linux/index.md
+        - path: posts/2020/kubernetes-explicado/index.md
+        - path: posts/2020/usando-aws-s3-em-python/index.md
 
   license:
     name: CC BY-SA 4.0
@@ -196,7 +158,7 @@ menu:
     - name: Colabore
       weight: 4
       url: /contribua-com-nosso-blog/
-      pre: <span class="mr-1"><i class="far fa-heart"></i></span>
+      pre: <span class="mr-1"><i class="far fa-heart text-danger"></i></span>
     - name: Contato
       weight: 5
       url: /contato/
@@ -350,10 +312,10 @@ menu:
       url: /sobre/
     - name: Equipe
       weight: 3
+      url: /equipe/
     - name: Feed RSS
       weight: 4
       url: /feed-rss/
-      url: /equipe/
     - name: Estatísticas
       weight: 5
       url: https://estatisticas.buteco.me/
@@ -387,3 +349,14 @@ markup:
     noClasses: false
     style: github
     tabWidth: 4
+
+imaging:
+  resampleFilter: Linear
+  quality: 90
+  anchor: smart
+  bgColor: "#ffffff"
+  exif:
+    includeFields: ""
+    excludeFields: ""
+    disableDate: true
+    disableLatLong: true
