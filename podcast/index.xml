@@ -11,9 +11,24 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 22 Oct 2020 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2020 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/podcast/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      
+      <title>Estudando no exterior</title>
+      <link>https://butecotecnologico.com.br/podcast/estudando-no-exterior/</link>
+      <pubDate>Thu, 05 Nov 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/podcast/estudando-no-exterior/</guid>
+      <description>&lt;p&gt;Pensando em ir estudar no exterior? Gradução, mestrado ou doutorado?&lt;/p&gt;
+&lt;p&gt;Neste episódio conversamos sobre como ir estudar fora do Brasil. Falamos sobre bolsas de estudos, modelo de ensino, diferenças em avaliações, dificuldades enfrentadas e várias dicas de como sobreviver e aproveitar ao máximo o tempo fora.&lt;/p&gt;</description>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/podcast/</link>
+      </image>
+    </item>
     <item>
       
       <title>Bitcoin e criptomoedas</title>
