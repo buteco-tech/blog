@@ -36,7 +36,7 @@ Engenheiro de Software e bacharel em Ciência da Computação. Contribui com sof
 
 #### Daniel Bristot de Oliveira
 
-Daniel atua como Principal Software Engineer na Red Hat, trabalando em pesquisa e desenvolvimento do kernel do Linux, principalmente nas características de tempo real. Ele é Mestre e Doutor em Engienharia de Automação e Sistemas pela UFSC e Doutor Sistemas Embarcados e de Tempo-Real pela Scuola Superiore Sant'Anna na Itália.
+Daniel atua como Principal Software Engineer na Red Hat, trabalhando em pesquisa e desenvolvimento do kernel do Linux, principalmente nas características de tempo real. Ele é Mestre e Doutor em Engenharia de Automação e Sistemas pela UFSC e Doutor em Sistemas Embarcados e de Tempo-Real pela Scuola Superiore Sant'Anna na Itália.
 
 {{< social twitter="bristot" linkedin="bristot" >}}
 
