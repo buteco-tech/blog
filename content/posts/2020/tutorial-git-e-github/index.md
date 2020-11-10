@@ -59,7 +59,7 @@ Depois de ter baixado o Git, é necessário configurar o seu nome e e-mail que s
 
 - `git config --global user.email "git@buteco.tech"`
 
-Agora iremos criar uma chave de SSH, com ela conseguimos provar ao GitHub que nós somos os donos da nossa conta. Você talvez até já tenha uma chave SSH no seu computador, podemos checar se já existe uma entrando no seu diretório `.ssh` e listando o conteúdo:
+Agora iremos criar uma chave de SSH, com ela conseguimos provar ao GitHub que nós somos os donos da nossa conta. Você talvez até já tenha uma chave SSH no seu computador, podemos checar se já existe uma entrando no seu diretório **.ssh** e listando o conteúdo:
 
 - `cd ~/.ssh`
 
@@ -83,7 +83,7 @@ Você deverá receber a mensagem _Identity added_ : id_rsa (git@buteco.tech).
 
 ## Adicionando a chave SSH à sua conta no GitHub
 
-Se você navegar até o local onde a chave foi criada (diretório do seu usuário, pasta ".ssh"), você verá dois arquivos, "id_rsa" e "id_rsa.pub". O com a extensão "pub" é a chave **pública**, ou seja, a chave que você irá informar ao GitHub. O arquivo sem o ".pub" é a sua chave **privada**.
+Se você navegar até o local onde a chave foi criada (diretório do seu usuário, pasta **.ssh**), você verá dois arquivos, **id_rsa** e **id_rsa.pub**. O com a extensão **.pub** é a chave **pública**, ou seja, a chave que você irá informar ao GitHub. O arquivo sem o **.pub** é a sua chave **privada**.
 
 Digite o seguinte comando no terminal para exibir o conteúdo da chave gerada, depois copie todo o conteúdo para a sua área de transferência (lembre-se de copiar desde "ssh-rsa" até o seu e-mail):
 
