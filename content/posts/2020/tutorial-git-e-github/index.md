@@ -2,7 +2,7 @@
 title: "Tutorial de Git e GitHub"
 summary: "Se você é ou pretende se tornar um desenvolvedor, já deve ter ouvido falar do Git e GitHub, um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las."
 tagline: "Iniciando com Git e GitHub"
-date: 2020-11-18 08:00:00
+date: 2020-09-18 08:00:00
 slug: tutorial-git-e-github
 authors:
   - leonardodalcegio
@@ -45,15 +45,17 @@ Na maioria dos projetos, geralmente, acontece de termos muitos desenvolvedores t
 
 ## O que é GitHub?
 
-Se você vai utilizar Git, provavelmente vai querer armazenar o seu repositório em algum lugar, existem duas formas de se fazer isso, offline, no seu próprio computador, ou online, em alguma plataforma como [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/) ou [GitLab](https://gitlab.com/explore). É exatamente para isso que o GitHub serve, para armazenar seu repositório nele, é o "Google Drive dos códigos".
+Se você vai utilizar Git, vai querer armazenar seu repositório em algum lugar, existem duas formas de se fazer isso, offline, no seu próprio computador, ou online, em alguma plataforma como [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/) ou [GitLab](https://gitlab.com/explore). É exatamente para isso que o GitHub serve, para armazenar seu repositório nele, é o "Google Drive dos códigos".
 
 ## Configuração do ambiente
 
 É necessário possuir o Git instalado no seu computador e uma conta no GitHub.
 
-Ambos os passos são bem rápidos, você pode baixar o Git [aqui](https://git-scm.com/downloads), é só selecionar o seu sistema operacional e seguir o guia de instalação, no caso do Linux, costuma-se instalar o Git via um gerenciador de pacotes, nesse caso, você pode ir até [essa página](https://git-scm.com/download/linux), e executar no seu terminal o comando específico da sua distribuição. Já para o GitHub, você deve cria uma conta [aqui](https://github.com/).
+Ambos os passos são bem rápidos, você pode baixar o Git [aqui](https://git-scm.com/downloads), é só selecionar o seu sistema operacional e seguir o guia de instalação, no caso do Linux, costuma-se instalar o Git via um gerenciador de pacotes, nesse caso, você pode ir até [essa página](https://git-scm.com/download/linux), e executar no seu terminal o comando específico da sua distribuição. Já para o GitHub, você deve criar uma conta [aqui](https://github.com/).
 
-Depois de ter baixado o Git, é necessário configurar o seu nome e e-mail que serão exibidos em seus _commits_, para isso é só digitar no terminal os comandos abaixo (caso você esteja no Windows, não se esqueça de utilizar o **git bash**, ao invés do **cmd**, pois o **git bash** simula um ambiente Unix e fica melhor de se trabalhar dessa forma):
+Depois de ter baixado o Git, é necessário configurar o seu nome e e-mail que serão exibidos em seus _commits_, para isso é só digitar no terminal os comandos abaixo
+
+> Observação: caso você esteja no Windows, não se esqueça de utilizar o **git bash**, ao invés do **cmd**, pois o **git bash** simula um ambiente Unix e fica melhor de se trabalhar dessa forma):
 
 - `git config --global user.name "Buteco Tecnológico"`
 
@@ -83,7 +85,7 @@ Você deverá receber a mensagem _Identity added_ : id_rsa (git@buteco.tech).
 
 ## Adicionando a chave SSH à sua conta no GitHub
 
-Se você navegar até o local onde a chave foi criada (diretório do seu usuário, pasta **.ssh**), você verá dois arquivos, **id_rsa** e **id_rsa.pub**. O com a extensão **.pub** é a chave **pública**, ou seja, a chave que você irá informar ao GitHub. O arquivo sem o **.pub** é a sua chave **privada**.
+Se você navegar até o local onde a chave foi criada (diretório do seu usuário, pasta **.ssh**), você verá dois arquivos, **id_rsa** e **id_rsa.pub**. O com a extensão **.pub** é a chave pública, ou seja, a chave que você irá informar ao GitHub. O arquivo sem o **.pub** é a sua chave privada.
 
 Digite o seguinte comando no terminal para exibir o conteúdo da chave gerada, depois copie todo o conteúdo para a sua área de transferência (lembre-se de copiar desde "ssh-rsa" até o seu e-mail):
 
@@ -91,7 +93,7 @@ Digite o seguinte comando no terminal para exibir o conteúdo da chave gerada, d
 
 Acesse a página de [SSH and GPG keys no GitHub](https://github.com/settings/keys) para poder associar novas chaves SSH a sua conta. Clique então no botão **_New SSH Key_**. O título você pode escolher um, e em _key_, você informará o conteúdo que copiou anteriormente do seu arquivo da chave pública.
 
-Depois de informado a sua chave **pública** ao GitHub, a sua configuração está feita.
+Depois de informado a sua chave pública ao GitHub, a sua configuração está feita.
 {{<figure src="ssh-add" alt="ssh add" >}}
 
 ---
@@ -152,11 +154,11 @@ Quando estamos com alguma alteração _commitada_ localmente e queremos subir el
 
 ### Abrindo uma _Pull request_
 
-Se você for até o seu repositório agora, depois de ter feito um _push_ nele, você verá um botão escrito **_Pull request_**. Daí é só clicar nele.
+Se você for até o seu repositório agora, depois de ter feito um _push_ nele, você verá um botão escrito **_Pull request_**. Clique nele.
 
 {{<figure src="pull-request-btn" alt="pull request" >}}
 
-Irá abrir uma página mostrando os arquivos alterado em um botão **_Create pull request_**, clique nele, agora informe o título e um comentário para essa _pull request_ e clique naquele mesmo botão **_Create pull request_**, pronto, está criada. Se você for até a [página](https://github.com/buteco-tech/artigo-tutorial-git/pulls) das _pull requests_ do repositório principal, a sua vai estar lá. Agora, para a sua alteração entrar de fato no repositório principal, a sua _pull request_ tem que ser aceita por algum mantedor do repositório e deve ser feito o _merge_ com as alterações.
+Irá abrir uma página mostrando os arquivos alterado e um botão **_Create pull request_**, clique nele, agora informe o título e um comentário para essa _pull request_ e clique naquele mesmo botão **_Create pull request_**, pronto, está criada. Se você for até a [página](https://github.com/buteco-tech/artigo-tutorial-git/pulls) das _pull requests_ do repositório principal, a sua vai estar lá. Agora, para a sua alteração entrar de fato no repositório principal, a sua _pull request_ tem que ser aceita por algum mantedor do repositório e deve ser feito o _merge_ com as alterações.
 
 ### O que é _pull request_?
 
@@ -172,7 +174,7 @@ Como já dito anteriormente, agora vamos ver uma outra maneira de se utilizar o 
 
 ### "git init"
 
-Crie uma pasta em qualquer lugar do seu computador e navegue até ela com o seu terminal, digite então dentro dela, o comando `git init`. Você verá que foi criado uma pasta **".git"**, que "trackeia" as alterações e commits do repositório.
+Crie uma pasta em qualquer lugar do seu computador e navegue até ela com o seu terminal, digite então dentro dela, o comando `git init`. Você verá que foi criado uma pasta **".git"**, que "trackeia" as alterações e _commits_ do repositório.
 
 Realize agora alguma alteração. Crie um arquivo de texto, por exemplo. Depois, execute o comando `git add` que foi falado anteriormente e `git commit -m`, agora você já está craque nisso. Lembre-se, é `git add nome_do_arquivo` (ou `git add .`), e `git commit -m 'mensagem do seu commit'`.
 
@@ -198,7 +200,7 @@ Nós já temos o nosso repositório git criado, queremos apenas subir ele ao Git
 
 Com o seu terminal aberto na pasta do seu repositório local, execute então os seguintes comandos:
 
-- `git remote add origin git@github.com:LeoDalcegio/git-init-exemplo.git`(altere o endereço para aquele que está aparecendo ali para você)
+- `git remote add origin git@github.com:LeoDalcegio/git-init-exemplo.git` (altere o endereço para aquele que está aparecendo ali para você)
 
 - `git branch -M main` (para criar a _branch_ de nome "main")
 
@@ -208,7 +210,7 @@ Pronto, se você for até a página do GitHub do seu repositório, as alteraçõ
 
 ### O fim, se existe, está muito distante ainda
 
-Se você chegou até aqui, então aprendeu bastante coisa, viu sobre como fazer um _fork_ de um repositório no GitHub, clonar ele para a sua máquina local com `git clone`, adicionar as suas alterações a ele com `git add`, _commitar_ elas com `git commit`, subir as suas alterações ao repositório remoto com `git push`, abrir uma `pull request` com as alterações.
+Se você chegou até aqui, então aprendeu bastante coisa, viu sobre como fazer um _fork_ de um repositório no GitHub, _clonar_ ele para a sua máquina local com `git clone`, adicionar as suas alterações a ele com `git add`, _commitar_ elas com `git commit`, subir as suas alterações ao repositório remoto com `git push`, abrir uma `pull request` com as alterações.
 
 Mas não acabou por aí, o próximo passo é estudar sobre _branches_, entendendo como elas funcionam e são usadas. E claro, contribuir com software livre.
 
