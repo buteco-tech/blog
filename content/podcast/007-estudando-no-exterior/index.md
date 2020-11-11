@@ -16,7 +16,7 @@ resources:
   title: Estudando no exterior
 ---
 
-Pensando em ir estudar no exterior? Gradução, mestrado ou doutorado?
+Pensando em ir estudar no exterior? Graduação, mestrado ou doutorado?
 
 Neste episódio conversamos sobre como ir estudar fora do Brasil. Falamos sobre bolsas de estudos, modelo de ensino, diferenças em avaliações, dificuldades enfrentadas e várias dicas de como sobreviver e aproveitar ao máximo o tempo fora.
 <!--more-->
