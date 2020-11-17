@@ -2,7 +2,7 @@
 title: "Tutorial de Git e GitHub"
 summary: "Se você é ou pretende se tornar um desenvolvedor, já deve ter ouvido falar do Git e GitHub, um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las."
 tagline: "Entenda mais sobre essas ferramentas"
-date: 2020-11-16 08:00:00
+date: 2020-11-18 08:00:00
 slug: tutorial-git-e-github
 authors:
   - leonardodalcegio
