@@ -67,7 +67,7 @@
 <meta itemprop="description" content="Se você é ou pretende se tornar um desenvolvedor, já deve ter ouvido falar do Git e GitHub, um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las.">
 <meta itemprop="datePublished" content="2020-11-18T08:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-11-18T08:00:00+00:00" />
-<meta itemprop="wordCount" content="1991">
+<meta itemprop="wordCount" content="1981">
 <meta itemprop="image" content="https://butecotecnologico.com.br/tutorial-git-e-github/git-logo.png">
 
 
@@ -512,7 +512,7 @@ ls
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git clone git@github.com:seu-usuario/artigo-tutorial-git.git
+<pre class="chroma"><code class="language-bash" data-lang="bash">git clone git@github.com:buteco-tech/artigo-tutorial-git.git
 </code></pre></td></tr></table>
 </div>
 </div><p>Será pedido para que você informe a sua <em>passphrase</em> de quando criou a sua chave SSH. Após, o clone do repositório você terá uma nova pasta chamada <code>artigo-tutorial-git</code>.</p>
@@ -552,7 +552,7 @@ ls
 </div><p>Voltando para o terminal, digite <code>git status</code>. Você verá essa mensagem:</p>
 <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/tutorial-git-e-github/git-status_hubf7467b3f851a32139b10c8c8819e1a9_22244_800x542_resize_q90_bgffffff_linear_2.jpg"
+      src="https://butecotecnologico.com.br/tutorial-git-e-github/git-status_hu0cfce78c2c095a78c1f30918841e794a_43388_857x518_resize_q90_bgffffff_linear_2.jpg"
       alt="git status"/>
 </figure>
 
@@ -668,7 +668,7 @@ ls
       alt="Repositório no GitHub"/>
 </figure>
 
-<p>A primeira opção, é para criar um repositório local, vincular ele ao GitHub, e fazer um <em>push</em> das alterações. A segunda é para apenas conectar um repositório local já existente, e fazer um <em>push</em> dele. E a terceira, é para caso algum repositório que esteja utilizando um sistema de versionamento de código diferente do git, aonde podemos importar o código dele ao GitHub e começar a utilizar o Git.</p>
+<p>A primeira opção, é para criar um repositório local, vincular ele ao GitHub, e fazer um <em>push</em> das alterações. A segunda é para apenas conectar um repositório local já existente, e fazer um <em>push</em> dele. E a terceira, é para importar o código de algum repositório que esteja utilizando um sistema de versionamento de código diferente do Git.</p>
 <p>Nós já temos o nosso repositório criado, queremos apenas subir ele ao GitHub, portanto, vamos realizar os passos da segunda opção.</p>
 <p>Com o seu terminal aberto na pasta do seu repositório local, execute então os seguintes comandos:</p>
 <div class="highlight"><div class="chroma">
@@ -688,9 +688,16 @@ ls
 <pre class="chroma"><code class="language-bash" data-lang="bash">git branch -M main
 </code></pre></td></tr></table>
 </div>
-</div><p>Esse comando criar um <em>branch</em> com o nome <code>main</code>, padrão do GitHub.</p>
-<pre><code>git push -u origin main
-</code></pre><p>Esse comando envia as alterações <em>commitadas</em> ao seu repositório remoto no GitHub.</p>
+</div><p>Esse comando cria uma <em>branch</em> com o nome <code>main</code>, padrão do GitHub.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git push -u origin main
+</code></pre></td></tr></table>
+</div>
+</div><p>Esse comando envia as alterações <em>commitadas</em> ao seu repositório remoto no GitHub.</p>
 <p>Pronto, se você for até a página do seu repositório no GitHub as alterações já estarão lá.</p>
 <h3 id="o-fim-se-existe-está-muito-distante-ainda">O fim, se existe, está muito distante ainda</h3>
 <p>Se você chegou até aqui, então aprendeu bastante coisa.</p>
