@@ -138,7 +138,7 @@ Vamos clonar o repositório para a sua máquina local para que você possa reali
 Agora abra o seu terminal no local que deseja baixar o repositório, e execute (use o endereço que você copiou):
 
 ```bash
-git clone git@github.com:seu-usuario/artigo-tutorial-git.git
+git clone git@github.com:buteco-tech/artigo-tutorial-git.git
 ```
 
 Será pedido para que você informe a sua _passphrase_ de quando criou a sua chave SSH. Após, o clone do repositório você terá uma nova pasta chamada `artigo-tutorial-git`.
