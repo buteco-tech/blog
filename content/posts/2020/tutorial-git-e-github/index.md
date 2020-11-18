@@ -138,7 +138,7 @@ Vamos clonar o repositório para a sua máquina local para que você possa reali
 Agora abra o seu terminal no local que deseja baixar o repositório, e execute (use o endereço que você copiou):
 
 ```bash
-git clone git@github.com:seu-usuario/artigo-tutorial-git.git
+git clone git@github.com:buteco-tech/artigo-tutorial-git.git
 ```
 
 Será pedido para que você informe a sua _passphrase_ de quando criou a sua chave SSH. Após, o clone do repositório você terá uma nova pasta chamada `artigo-tutorial-git`.
@@ -265,7 +265,7 @@ Veja que existem ali três opções:
 
 {{<figure src="repositorio-github-criado" alt="Repositório no GitHub">}}
 
-A primeira opção, é para criar um repositório local, vincular ele ao GitHub, e fazer um _push_ das alterações. A segunda é para apenas conectar um repositório local já existente, e fazer um _push_ dele. E a terceira, é para caso algum repositório que esteja utilizando um sistema de versionamento de código diferente do git, aonde podemos importar o código dele ao GitHub e começar a utilizar o Git.
+A primeira opção, é para criar um repositório local, vincular ele ao GitHub, e fazer um _push_ das alterações. A segunda é para apenas conectar um repositório local já existente, e fazer um _push_ dele. E a terceira, é para importar o código de algum repositório que esteja utilizando um sistema de versionamento de código diferente do Git.
 
 Nós já temos o nosso repositório criado, queremos apenas subir ele ao GitHub, portanto, vamos realizar os passos da segunda opção.
 
@@ -281,9 +281,9 @@ Esse comando define para onde enviaremos nossos _commits_, nesse caso o GitHub.
 git branch -M main
 ```
 
-Esse comando criar um _branch_ com o nome `main`, padrão do GitHub.
+Esse comando cria uma _branch_ com o nome `main`, padrão do GitHub.
 
-```
+```bash
 git push -u origin main
 ```
 
