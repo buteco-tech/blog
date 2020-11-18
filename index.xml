@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 05 Nov 2020 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2020 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      
+      <title>Tutorial de Git e GitHub</title>
+      <link>https://butecotecnologico.com.br/tutorial-git-e-github/</link>
+      <pubDate>Wed, 18 Nov 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/tutorial-git-e-github/</guid>
+      <description>Se você é ou pretende se tornar um desenvolvedor, já deve ter ouvido falar do Git e GitHub, um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las.</description>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/</link>
+      </image>
+    </item>
     <item>
       
       <title>Estudando no exterior</title>
