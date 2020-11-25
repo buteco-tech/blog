@@ -3,23 +3,68 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://butecotecnologico.com.br/autores/alexandrevicenzi/</loc>
+    <lastmod>2020-11-25T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/apache/</loc>
+    <lastmod>2020-11-25T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/apache-parquet-explicado/</loc>
+    <lastmod>2020-11-25T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://butecotecnologico.com.br/posts/</loc>
-    <lastmod>2020-11-18T08:00:00+00:00</lastmod>
+    <lastmod>2020-11-25T08:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://butecotecnologico.com.br/autores/</loc>
-    <lastmod>2020-11-18T08:00:00+00:00</lastmod>
+    <lastmod>2020-11-25T08:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://butecotecnologico.com.br/</loc>
-    <lastmod>2020-11-18T08:00:00+00:00</lastmod>
+    <lastmod>2020-11-25T08:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://butecotecnologico.com.br/categorias/</loc>
-    <lastmod>2020-11-18T08:00:00+00:00</lastmod>
+    <lastmod>2020-11-25T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/categorias/data-science/</loc>
+    <lastmod>2020-11-25T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/pandas/</loc>
+    <lastmod>2020-11-25T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/parquet/</loc>
+    <lastmod>2020-11-25T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/python/</loc>
+    <lastmod>2020-11-25T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/spark/</loc>
+    <lastmod>2020-11-25T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/</loc>
+    <lastmod>2020-11-25T08:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -43,11 +88,6 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/</loc>
-    <lastmod>2020-11-18T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/categorias/tutoriais/</loc>
     <lastmod>2020-11-18T08:00:00+00:00</lastmod>
   </url>
@@ -55,11 +95,6 @@
   <url>
     <loc>https://butecotecnologico.com.br/tutorial-git-e-github/</loc>
     <lastmod>2020-11-18T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/autores/alexandrevicenzi/</loc>
-    <lastmod>2020-11-05T08:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -213,11 +248,6 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/categorias/data-science/</loc>
-    <lastmod>2020-09-22T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/tags/deep-learning/</loc>
     <lastmod>2020-09-22T08:00:00+00:00</lastmod>
   </url>
@@ -249,11 +279,6 @@
   
   <url>
     <loc>https://butecotecnologico.com.br/categorias/noticias/</loc>
-    <lastmod>2020-09-22T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/python/</loc>
     <lastmod>2020-09-22T08:00:00+00:00</lastmod>
   </url>
   
@@ -1100,11 +1125,6 @@
   <url>
     <loc>https://butecotecnologico.com.br/tags/sass/</loc>
     <lastmod>2016-04-01T21:50:20+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/apache/</loc>
-    <lastmod>2016-03-31T23:40:20+00:00</lastmod>
   </url>
   
   <url>

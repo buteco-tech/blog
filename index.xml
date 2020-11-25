@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 18 Nov 2020 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2020 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      
+      <title>Apache Parquet explicado</title>
+      <link>https://butecotecnologico.com.br/apache-parquet-explicado/</link>
+      <pubDate>Wed, 25 Nov 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/apache-parquet-explicado/</guid>
+      <description>Apache Parquet é um formato de armazenamento colunar disponível em todos os projetos que pertencem ao ecossistema Hadoop, independente do modelo de processamento, framework ou linguagem usada.</description>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/</link>
+      </image>
+    </item>
     <item>
       
       <title>Tutorial de Git e GitHub</title>

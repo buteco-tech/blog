@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="h-100" xml:lang="pt-BR" lang="pt-BR">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+  
+  <title>Apache Parquet explicado &middot; Buteco Tecnológico</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+
+
+<link rel="preconnect" href="https://s7.addthis.com" crossorigin>
+
+<link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      as="style">
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet">
+
+<style type="text/css">
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-display: swap;
+}
+</style>
+<link rel="stylesheet" href="/sass/iara.min.44fb6a49a72c0eef714f38a1b77c947e1b9ac09c720929e750e31513e19fee0a.css">
+
+<link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/vendor/fontawesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"/>
+<link rel="shortcut icon" href="/logos/capybara_64.png">
+
+<link rel="icon" href="/logos/capybara_32.png" sizes="32x32">
+<link rel="icon" href="/logos/capybara_64.png" sizes="64x64">
+<link rel="icon" href="/logos/capybara_144.png" sizes="144x144">
+<link rel="icon" href="/logos/capybara_192.png" sizes="192x192">
+
+
+
+
+<meta name="theme-color" content="#ffffff">
+
+<meta name="msapplication-navbutton-color" content="#ffffff">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<link type="text/css" rel="stylesheet" href="/css/custom.css">
+<meta name="description" content="Apache Parquet é um formato de armazenamento colunar disponível em todos os projetos que pertencem ao ecossistema Hadoop, independente do modelo de processamento, framework ou linguagem usada." />
+
+
+
+<meta itemprop="name" content="Apache Parquet explicado">
+<meta itemprop="description" content="Apache Parquet é um formato de armazenamento colunar disponível em todos os projetos que pertencem ao ecossistema Hadoop, independente do modelo de processamento, framework ou linguagem usada.">
+<meta itemprop="datePublished" content="2020-11-25T08:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-11-25T08:00:00+00:00" />
+<meta itemprop="wordCount" content="1003">
+<meta itemprop="image" content="https://butecotecnologico.com.br/apache-parquet-explicado/apache-parquet.png">
+
+
+
+<meta itemprop="keywords" content="spark,apache,parquet,pandas,python," />
+
+<meta property="og:title" content="Apache Parquet explicado" />
+<meta property="og:description" content="Apache Parquet é um formato de armazenamento colunar disponível em todos os projetos que pertencem ao ecossistema Hadoop, independente do modelo de processamento, framework ou linguagem usada." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://butecotecnologico.com.br/apache-parquet-explicado/" />
+<meta property="og:image" content="https://butecotecnologico.com.br/apache-parquet-explicado/apache-parquet.png"/>
+<meta property="article:published_time" content="2020-11-25T08:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-25T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://butecotecnologico.com.br/apache-parquet-explicado/apache-parquet.png"/>
+<meta name="twitter:title" content="Apache Parquet explicado"/>
+<meta name="twitter:description" content="Apache Parquet é um formato de armazenamento colunar disponível em todos os projetos que pertencem ao ecossistema Hadoop, independente do modelo de processamento, framework ou linguagem usada."/>
+<meta name="twitter:site" content="@butecotech"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://butecotecnologico.com.br/#organization",
+      "name": "Buteco Tecnológico",
+      "url": "https://butecotecnologico.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://butecotecnologico.com.br/logos/capybara_400.png"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/butecotecnologico",
+        "https://twitter.com/butecotech",
+        "https://www.facebook.com/buteco.tech",
+        "https://www.youtube.com/c/ButecoTech",
+        "https://www.instagram.com/buteco.tech/"
+      ]
+    },{
+      "@type": "WebSite",
+      "@id": "https://butecotecnologico.com.br/#website",
+      "url": "https://butecotecnologico.com.br/",
+      "name": "Buteco Tecnológico",
+      "description": "Apache Parquet é um formato de armazenamento colunar disponível em todos os projetos que pertencem ao ecossistema Hadoop, independente do modelo de processamento, framework ou linguagem usada.",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://butecotecnologico.com.br/#primaryimage",
+      "url": "https://butecotecnologico.com.br/logos/capybara_64.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400_bg.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://butecotecnologico.com.br/logos/capybara_400.png",
+      "caption": "Buteco Tecnológico"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://butecotecnologico.com.br/apache-parquet-explicado/#webpage",
+      "url": "https://butecotecnologico.com.br/apache-parquet-explicado/",
+      "name": "Apache Parquet explicado",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/#website"
+      },
+      "about": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://butecotecnologico.com.br/#primaryimage"
+      },
+      "datePublished": "2020-11-25T08:00:00+00:00",
+      "dateModified": "2020-11-25T08:00:00+00:00",
+      "description": "Apache Parquet é um formato de armazenamento colunar disponível em todos os projetos que pertencem ao ecossistema Hadoop, independente do modelo de processamento, framework ou linguagem usada.",
+      "inLanguage": "pt-BR",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://butecotecnologico.com.br/apache-parquet-explicado/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://butecotecnologico.com.br/apache-parquet-explicado/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://butecotecnologico.com.br/apache-parquet-explicado/#webpage"
+      },
+      "headline": "Apache Parquet explicado",
+      "datePublished": "2020-11-25T08:00:00+00:00",
+      "dateModified": "2020-11-25T08:00:00+00:00",
+      "publisher": {
+         "@id": "https://butecotecnologico.com.br/#organization"
+      },
+      "keywords": [
+        "spark",
+        "apache",
+        "parquet",
+        "pandas",
+        "python"
+      ],
+      "articleSection": [
+        "Data Science"
+      ],
+      "inLanguage": "pt-BR",
+      "author": [
+        {
+          "@type":"Person",
+          "name": "Alexandre Vicenzi",
+          "image": {
+            "@type":"ImageObject",
+            "url": "https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&d=mp"
+          },
+          "description": "Engenheiro de Software"
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://butecotecnologico.com.br/apache-parquet-explicado/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+<script data-ad-client="ca-pub-6625957038449899" type="text/javascript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <a class="navbar-brand text-decoration-none" href="https://butecotecnologico.com.br/">
+    
+    <img src="https://butecotecnologico.com.br/logos/capybara_64.png"
+         width="32"
+         height="32"
+         alt="Logo"
+         class="d-inline-block align-top"
+         loading="lazy">
+    Buteco Tecnológico</a>
+  <div class="d-flex flex-row order-2 order-lg-3">
+    
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link mr-3 mt-2 mr-lg-0 mt-lg-0"
+           href="#search-modal"
+           data-toggle="modal"
+           data-target="#search-modal">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+    </ul>
+    
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse order-3 order-lg-2" id="navbar">
+    <ul class="navbar-nav ml-auto"><li class="nav-item ">
+          <a class="nav-link" href="/">
+            <span class="mr-1"><i class="fas fa-home"></i></span>
+            Início
+            
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/podcast/">
+            <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
+            Podcast
+            
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
+            
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/contribua-com-nosso-blog/">
+            <span class="mr-1"><i class="far fa-heart text-danger"></i></span>
+            Colabore
+            
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/contato/">
+            <span class="mr-1"><i class="fas fa-phone"></i></span>
+            Contato
+            
+          </a>
+        </li>
+        </ul>
+  </div>
+</nav>
+
+
+
+  <main>
+  
+
+
+<section class="container article">
+  <header class="mb-4">
+    <h1>Apache Parquet explicado</h1>
+    <h2 class="tagline text-muted mb-4">Com exemplos em Pandas e Spark</h2>
+    <div class="meta d-flex"><div class="d-inline-block mr-2">
+    <div class="d-inline-flex">
+    <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+       class="d-inline-block avatar mt-1 ml-0">
+      <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+           loading="lazy"
+           alt="Alexandre Vicenzi"
+           title="Alexandre Vicenzi">
+    </a>
+    </div>
+  </div><div class="d-inline-block authors">
+    <div><span>
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/"
+           class="author">Alexandre Vicenzi</a>
+      </span>
+    
+    <span class="text-muted">em</span>
+    
+    <span>
+        <a href="https://butecotecnologico.com.br/categorias/data-science/" class="text-decoration-none">Data Science</a>
+        </span>
+    </div>
+    <div class="text-muted"><time datetime="2020-11-25T08:00:00Z">25/11/2020</time>
+      &middot; 5 minutos de leitura
+    </div>
+  </div>
+  <div class="d-none d-md-inline-block ml-auto">
+    <div class="d-inline-flex share-buttons text-center">
+      <a class="share-button share-twitter"
+         href="#"
+         title="Share on Twitter"
+         data-url="https://butecotecnologico.com.br/apache-parquet-explicado/"
+         data-text="Apache Parquet explicado"><i class="fab fa-twitter"></i></a>
+
+      <a class="share-button share-linkedin"
+         href="#"
+         title="Share on LinkedIn"
+         data-url="https://butecotecnologico.com.br/apache-parquet-explicado/"
+         data-text="Apache Parquet explicado"><i class="fab fa-linkedin-in"></i></a>
+
+      <a class="share-button share-facebook"
+         href="#"
+         title="Share on Facebook"
+         data-url="https://butecotecnologico.com.br/apache-parquet-explicado/"
+         data-text="Apache Parquet explicado"><i class="fab fa-facebook"></i></a>
+
+      <a class="share-button share-pinterest"
+         href="#"
+         title="Share on Pinterest"
+         data-url="https://butecotecnologico.com.br/apache-parquet-explicado/"
+         data-text="Apache Parquet explicado"><i class="fab fa-pinterest"></i></a>
+    </div>
+  </div>
+</div>
+
+  </header>
+
+  <article class="mt-3 mb-4">
+  <figure >
+  <img loading="lazy"
+      src="https://butecotecnologico.com.br/apache-parquet-explicado/apache-parquet-wide_hu3ef6ca488fc0aa212541201f1f665c59_32898_940x235_resize_q100_bgffffff_box_2.jpg"
+      alt="Apache Parquet"/>
+</figure>
+
+<p><a href="https://parquet.apache.org/documentation/latest/"
+   
+   target="_blank" rel="noopener">Apache Parquet</a>
+ é um formato de armazenamento colunar disponível em todos os projetos que pertencem ao ecossistema Hadoop, independente do modelo de processamento, framework ou linguagem usada.</p>
+<p>O projeto iniciou em uma parceria entre o Twitter e a Cloudera, e a primeira versão foi liberada em 2013. Desde 2015 o projeto faz parte da Apache Software Foundation.</p>
+<p>Diferente dos modelos tradicionais de armazenamento que usam abordagem orientada a linhas, o Parquet armazena os dados de forma colunar plana, onde os valores das colunas são armazenadas de forma adjacente as outras, esse modelo possui alguns benefícios:</p>
+<ul>
+<li>Compressão por colunas é mais eficiente</li>
+<li>Algorítimo de compressão pode ser especificado por coluna</li>
+<li>Queries &ldquo;wide&rdquo; (que usam várias colunas) são mais eficientes</li>
+</ul>
+<p>Parquet foi criado para suportar compressão e codificação de forma eficiente, sendo possível especificar compressão por coluna, além de ser otimizado para trabalhar com estruturas de dados complexas em massa. Todos esses benefícios são em virtude do algorítimo <em>record shredding and assembly algorithm</em> descrito no <em><a href="https://research.google/pubs/pub36632/"
+   
+   target="_blank" rel="noopener">Dremel paper</a>
+</em> da Google e implementado como parte do <em>core</em> do Parquet.</p>
+<p>Podemos dividir um arquivo Parquet em duas partes basicamente:</p>
+<ul>
+<li>Dados</li>
+<li>Metadados</li>
+</ul>
+<p>Na parte de dados ainda podemos descrever os seguintes itens:</p>
+<ul>
+<li>Row group — Particionamento lógica dos dados em linhas</li>
+<li>Column chunk — Um <em>chunk</em> de dados em uma coluna em particular</li>
+<li>Page — Column chunk também são divididos em páginas</li>
+</ul>
+<p>Já na parte de metadados temos dados como versão, informações sobre as colunhs, entre outras informações que são utilizadas durante a leitura do arquivo.</p>
+<figure >
+  <img loading="lazy"
+      src="apache-parquet-structure.png"
+      alt="Estrutura de um arquivo Parquet"/><figcaption>
+    
+    <p>
+      Estrutura de um arquivo Parquet
+    </p>
+  </figcaption>
+</figure>
+
+<p>Em um <a href="https://databricks.com/glossary/what-is-parquet"
+   
+   target="_blank" rel="noopener">comparativo disponibilizado pela Databricks</a>
+ em relação ao uso de CSV ou Parquet podemos observar:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Formato</th>
+<th style="text-align:center">Espaço utilizado</th>
+<th style="text-align:center">Tempo de execução</th>
+<th style="text-align:center">Escaneado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">CSV</td>
+<td style="text-align:center">1 TB</td>
+<td style="text-align:center">236 seg</td>
+<td style="text-align:center">1.15 TB</td>
+</tr>
+<tr>
+<td style="text-align:center">Parquet</td>
+<td style="text-align:center">130 GB</td>
+<td style="text-align:center">6.78 seg</td>
+<td style="text-align:center">2.51 GB</td>
+</tr>
+</tbody>
+</table>
+<p>O uso de Parquet reduziu o espaço de armazenamento em 87%, escaneou 99% menos dados e executou 34x mais rápido em determinadas operações.</p>
+<p>É possível utilizar Parquet em diversas ferramentas do ecossistema Hadoop como, por exemplo:</p>
+<ul>
+<li><a href="https://spark.apache.org/"
+   
+   target="_blank" rel="noopener">Spark</a>
+</li>
+<li><a href="https://hive.apache.org/"
+   
+   target="_blank" rel="noopener">Hive</a>
+</li>
+<li><a href="https://impala.apache.org/"
+   
+   target="_blank" rel="noopener">Impala</a>
+</li>
+<li><a href="http://drill.apache.org/"
+   
+   target="_blank" rel="noopener">Drill</a>
+</li>
+<li><a href="https://pig.apache.org/"
+   
+   target="_blank" rel="noopener">Pig</a>
+</li>
+</ul>
+<p>Mas chega de teoria, vamos colocar a mão na massa.</p>
+<p>No exemplo de hoje vou explicar como utilizar Parquet com <a href="https://pandas.pydata.org/"
+   
+   target="_blank" rel="noopener">Pandas</a>
+ e <a href="https://spark.apache.org/"
+   
+   target="_blank" rel="noopener">Spark</a>
+.</p>
+<h2 id="pandas">Pandas</h2>
+<p>O <a href="https://pandas.pydata.org/"
+   
+   target="_blank" rel="noopener">Pandas</a>
+ é uma biblioteca para análise e manipulação de dados em Python.</p>
+<p>Neste exemplo vamos converter uma lista de dicionários, salvar no formato Parquet e após vamos carregar o arquivo gerado para conferência.</p>
+<div class="jp-notebook">
+  
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Importaremos o Pandas inicialmente.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[1]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span></code></pre></div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Criaremos um DataFrame com dados a serem salvos no Parquet.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[2]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pessoas_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span>
+    <span class="p">{</span><span class="s2">&#34;nome&#34;</span><span class="p">:</span><span class="s2">&#34;Pedro&#34;</span><span class="p">,</span> <span class="s2">&#34;idade&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&#34;nome&#34;</span><span class="p">:</span><span class="s2">&#34;João&#34;</span><span class="p">,</span> <span class="s2">&#34;idade&#34;</span><span class="p">:</span><span class="mi">30</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&#34;nome&#34;</span><span class="p">:</span><span class="s2">&#34;Maria&#34;</span><span class="p">,</span> <span class="s2">&#34;idade&#34;</span><span class="p">:</span><span class="mi">19</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&#34;nome&#34;</span><span class="p">:</span><span class="s2">&#34;Marcelo&#34;</span><span class="p">,</span> <span class="s2">&#34;idade&#34;</span><span class="p">:</span><span class="mi">18</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&#34;nome&#34;</span><span class="p">:</span><span class="s2">&#34;Alex&#34;</span><span class="p">,</span> <span class="s2">&#34;idade&#34;</span><span class="p">:</span><span class="mi">38</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&#34;nome&#34;</span><span class="p">:</span><span class="s2">&#34;Otavio&#34;</span><span class="p">,</span> <span class="s2">&#34;idade&#34;</span><span class="p">:</span><span class="mi">44</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&#34;nome&#34;</span><span class="p">:</span><span class="s2">&#34;Ricardo&#34;</span><span class="p">,</span> <span class="s2">&#34;idade&#34;</span><span class="p">:</span><span class="mi">23</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&#34;nome&#34;</span><span class="p">:</span><span class="s2">&#34;Camila&#34;</span><span class="p">,</span> <span class="s2">&#34;idade&#34;</span><span class="p">:</span><span class="mi">12</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&#34;nome&#34;</span><span class="p">:</span><span class="s2">&#34;Alice&#34;</span><span class="p">,</span> <span class="s2">&#34;idade&#34;</span><span class="p">:</span><span class="mi">24</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&#34;nome&#34;</span><span class="p">:</span><span class="s2">&#34;Marlei&#34;</span><span class="p">,</span> <span class="s2">&#34;idade&#34;</span><span class="p">:</span><span class="mi">32</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&#34;nome&#34;</span><span class="p">:</span><span class="s2">&#34;Marilene&#34;</span><span class="p">,</span> <span class="s2">&#34;idade&#34;</span><span class="p">:</span><span class="mi">56</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&#34;nome&#34;</span><span class="p">:</span><span class="s2">&#34;Judite&#34;</span><span class="p">,</span> <span class="s2">&#34;idade&#34;</span><span class="p">:</span><span class="mi">60</span><span class="p">},</span>
+<span class="p">])</span></code></pre></div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Exibiremos os dados do DataFrame para conferir após salvar.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[3]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="n">pessoas_df</span><span class="p">)</span></code></pre></div>
+      </div>
+    </div>
+    
+    <div class="jp-inner-cell jp-output-cell">
+      <div class="jp-prompt jp-outputprompt">
+        
+      </div>
+      <div class="jp-data jp-output-data">
+      
+        <div class="jp-output-stdout">
+          <div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">        nome  idade
+0      Pedro     15
+1       João     30
+2      Maria     19
+3    Marcelo     18
+4       Alex     38
+5     Otavio     44
+6    Ricardo     23
+7     Camila     12
+8      Alice     24
+9     Marlei     32
+10  Marilene     56
+11    Judite     60
+</code></pre></div>
+        </div>
+      
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Salvaremos o DataFrame como um arquivo Parquet, basta definir um nome para o arquivo, mas outros paramêtros estão disponíveis, como por exemplo compressão.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[4]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pessoas_df</span><span class="o">.</span><span class="n">to_parquet</span><span class="p">(</span><span class="s2">&#34;./pessoas.pq&#34;</span><span class="p">)</span></code></pre></div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Após salvo, vamos carregar o arquivo Parquet que acabamos de criar para conferência, todas as informações serão preservadas.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[5]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">parquet_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s2">&#34;./pessoas.pq&#34;</span><span class="p">)</span></code></pre></div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Por fim, vamos conferir os dados que acabamos de salvar. Como você pode observar, tudo é igual ao DataFrame anterior.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[6]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="n">parquet_df</span><span class="p">)</span></code></pre></div>
+      </div>
+    </div>
+    
+    <div class="jp-inner-cell jp-output-cell">
+      <div class="jp-prompt jp-outputprompt">
+        
+      </div>
+      <div class="jp-data jp-output-data">
+      
+        <div class="jp-output-stdout">
+          <div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">        nome  idade
+0      Pedro     15
+1       João     30
+2      Maria     19
+3    Marcelo     18
+4       Alex     38
+5     Otavio     44
+6    Ricardo     23
+7     Camila     12
+8      Alice     24
+9     Marlei     32
+10  Marilene     56
+11    Judite     60
+</code></pre></div>
+        </div>
+      
+      </div>
+    </div>
+    
+  
+  </div>
+
+</div>
+
+<h2 id="spark">Spark</h2>
+<p>O <a href="https://spark.apache.org/"
+   
+   target="_blank" rel="noopener">Spark</a>
+ é uma <em>engine</em> para processamento e análise de dados, e o exemplo é bem simples.</p>
+<p>Vamos usar o Spark para salvar um DataFrame no formato Parquet, após salvo vamos carregar o arquivo gerado e executar queries SQL em cima dos dados.</p>
+<div class="jp-notebook">
+  
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Iniciaremos importando alguns itens para conectar ao Spark.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[1]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span><span class="p">,</span> <span class="n">Row</span></code></pre></div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Criaremos uma sessão com o Spark.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[2]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">appName</span><span class="p">(</span><span class="s2">&#34;demo-app&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">getOrCreate</span><span class="p">()</span></code></pre></div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Criaremos um DataFrame com dados a serem salvos.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[3]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pessoas_df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">createDataFrame</span><span class="p">([</span>
+    <span class="n">Row</span><span class="p">(</span><span class="n">nome</span><span class="o">=</span><span class="s2">&#34;Pedro&#34;</span><span class="p">,</span> <span class="n">idade</span><span class="o">=</span><span class="mi">15</span><span class="p">),</span>
+    <span class="n">Row</span><span class="p">(</span><span class="n">nome</span><span class="o">=</span><span class="s2">&#34;João&#34;</span><span class="p">,</span> <span class="n">idade</span><span class="o">=</span><span class="mi">30</span><span class="p">),</span>
+    <span class="n">Row</span><span class="p">(</span><span class="n">nome</span><span class="o">=</span><span class="s2">&#34;Maria&#34;</span><span class="p">,</span> <span class="n">idade</span><span class="o">=</span><span class="mi">19</span><span class="p">),</span>
+    <span class="n">Row</span><span class="p">(</span><span class="n">nome</span><span class="o">=</span><span class="s2">&#34;Marcelo&#34;</span><span class="p">,</span> <span class="n">idade</span><span class="o">=</span><span class="mi">18</span><span class="p">),</span>
+    <span class="n">Row</span><span class="p">(</span><span class="n">nome</span><span class="o">=</span><span class="s2">&#34;Alex&#34;</span><span class="p">,</span> <span class="n">idade</span><span class="o">=</span><span class="mi">38</span><span class="p">),</span>
+    <span class="n">Row</span><span class="p">(</span><span class="n">nome</span><span class="o">=</span><span class="s2">&#34;Otavio&#34;</span><span class="p">,</span> <span class="n">idade</span><span class="o">=</span><span class="mi">44</span><span class="p">),</span>
+    <span class="n">Row</span><span class="p">(</span><span class="n">nome</span><span class="o">=</span><span class="s2">&#34;Ricardo&#34;</span><span class="p">,</span> <span class="n">idade</span><span class="o">=</span><span class="mi">23</span><span class="p">),</span>
+    <span class="n">Row</span><span class="p">(</span><span class="n">nome</span><span class="o">=</span><span class="s2">&#34;Camila&#34;</span><span class="p">,</span> <span class="n">idade</span><span class="o">=</span><span class="mi">12</span><span class="p">),</span>
+    <span class="n">Row</span><span class="p">(</span><span class="n">nome</span><span class="o">=</span><span class="s2">&#34;Alice&#34;</span><span class="p">,</span> <span class="n">idade</span><span class="o">=</span><span class="mi">24</span><span class="p">),</span>
+    <span class="n">Row</span><span class="p">(</span><span class="n">nome</span><span class="o">=</span><span class="s2">&#34;Marlei&#34;</span><span class="p">,</span> <span class="n">idade</span><span class="o">=</span><span class="mi">32</span><span class="p">),</span>
+    <span class="n">Row</span><span class="p">(</span><span class="n">nome</span><span class="o">=</span><span class="s2">&#34;Marilene&#34;</span><span class="p">,</span> <span class="n">idade</span><span class="o">=</span><span class="mi">56</span><span class="p">),</span>
+    <span class="n">Row</span><span class="p">(</span><span class="n">nome</span><span class="o">=</span><span class="s2">&#34;Judite&#34;</span><span class="p">,</span> <span class="n">idade</span><span class="o">=</span><span class="mi">60</span><span class="p">),</span>
+<span class="p">])</span></code></pre></div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Salvaremos o DataFrame como um arquivo Parquet.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[4]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pessoas_df</span><span class="o">.</span><span class="n">write</span><span class="o">.</span><span class="n">parquet</span><span class="p">(</span><span class="s2">&#34;pessoas.parquet&#34;</span><span class="p">)</span></code></pre></div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Carregaremos o arquivo Parquet que acabamos de criar para efetuar algumas consultas, todas informações são preservadas.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[5]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">parquet_df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">parquet</span><span class="p">(</span><span class="s2">&#34;pessoas.parquet&#34;</span><span class="p">)</span></code></pre></div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Criaremos uma View temporária para executar alguns comandos SQL.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[6]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">parquet_df</span><span class="o">.</span><span class="n">createOrReplaceTempView</span><span class="p">(</span><span class="s2">&#34;pessoasView&#34;</span><span class="p">)</span></code></pre></div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Listaremos todos os itens salvos no Parquet para conferir com o que criamos inicialmente.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[7]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">todas_pessoas</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&#34;SELECT nome, idade FROM pessoasView&#34;</span><span class="p">)</span>
+<span class="n">todas_pessoas</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></code></pre></div>
+      </div>
+    </div>
+    
+    <div class="jp-inner-cell jp-output-cell">
+      <div class="jp-prompt jp-outputprompt">
+        
+      </div>
+      <div class="jp-data jp-output-data">
+      
+        <div class="jp-output-stdout">
+          <div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">+--------+-----+
+|    nome|idade|
++--------+-----+
+| Ricardo|   23|
+| Marcelo|   18|
+|  Marlei|   32|
+|Marilene|   56|
+|  Judite|   60|
+|   Pedro|   15|
+|  Camila|   12|
+|   Alice|   24|
+|    Alex|   38|
+|  Otavio|   44|
+|    João|   30|
+|   Maria|   19|
++--------+-----+
+</code></pre></div>
+        </div>
+      
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Podemos efetuar outras pesquisas, como busca todas pessoas maiores de idade.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[8]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">maiores_de_idade</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&#34;SELECT nome, idade FROM pessoasView WHERE idade &gt;= 18&#34;</span><span class="p">)</span>
+<span class="n">maiores_de_idade</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></code></pre></div>
+      </div>
+    </div>
+    
+    <div class="jp-inner-cell jp-output-cell">
+      <div class="jp-prompt jp-outputprompt">
+        
+      </div>
+      <div class="jp-data jp-output-data">
+      
+        <div class="jp-output-stdout">
+          <div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">+--------+-----+
+|    nome|idade|
++--------+-----+
+| Ricardo|   23|
+| Marcelo|   18|
+|  Marlei|   32|
+|Marilene|   56|
+|  Judite|   60|
+|   Alice|   24|
+|    Alex|   38|
+|  Otavio|   44|
+|    João|   30|
+|   Maria|   19|
++--------+-----+
+</code></pre></div>
+        </div>
+      
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-md-cell">
+      <div class="jp-prompt"></div>
+      <div class="jp-data jp-md-data">
+        <div class="p">Por fim, encerramos a sessão com o Spark.</div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="jp-notebook-cell">
+    
+    <div class="jp-inner-cell jp-code-cell">
+      <div class="jp-prompt jp-inputprompt"><span>In&nbsp;[9]:</span>
+      </div>
+      <div class="jp-data jp-input-data">
+        <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">spark</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span></code></pre></div>
+      </div>
+    </div>
+    
+  
+  </div>
+
+</div>
+
+<h2 id="conclusão">Conclusão</h2>
+<p>O artigo de hoje foi mais para explicar o que é Parquet e porque ele pode ser uma melhor alternativa de armazenamento em comparação a CSV e JSON.</p>
+<p>Se você já faz uso de ferramentas como Spark ou outras da Apache, será inevitável uma migração no futuro para um ganho em desempenho.</p>
+<p>A única desvantagem que eu vejo em comparação a outros formatos é que Parquet é um formato binário, sendo assim, é necessária alguma ferramenta externa para visualizar os dados, no caso de CSV ou JSON basta abrir em algum editor de texto, ou planilha, mas tecnicamente isso irá funcionar apenas para arquivos pequenos.</p>
+<p>Dúvidas ou sugestões? Deixe um comentário.</p>
+<p><strong>Notebooks</strong></p>
+<ul>
+<li><a href="nb-pandas.ipynb" download>Exemplo com Pandas</a></li>
+<li><a href="nb-spark.ipynb" download>Exemplo com Spark</a></li>
+</ul>
+<p><strong>Referências</strong></p>
+<ul>
+<li><a href="https://parquet.apache.org/documentation/latest/"
+   
+   target="_blank" rel="noopener">Documentação do Apache Parquet</a>
+</li>
+<li><a href="https://spark.apache.org/docs/latest/sql-data-sources-parquet.html"
+   
+   target="_blank" rel="noopener">Documentação do Spark - Parquet Files</a>
+</li>
+</ul>
+
+  </article>
+
+  <footer class="mt-3 mb-4">
+    
+<div class="mb-4">
+  <ul class="list-unstyled tags">
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/spark/" class="tag-link">spark</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/apache/" class="tag-link">apache</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/parquet/" class="tag-link">parquet</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/pandas/" class="tag-link">pandas</a>
+  </li>
+  
+  <li class="d-inline-block mb-1 mr-1">
+     <a href="https://butecotecnologico.com.br/tags/python/" class="tag-link">python</a>
+  </li>
+  </ul>
+</div>
+
+
+    <div class="share-buttons text-center">
+  <a class="share-button share-twitter"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://butecotecnologico.com.br/apache-parquet-explicado/"
+     data-text="Apache Parquet explicado"><i class="fab fa-twitter"></i></a>
+
+  <a class="share-button share-linkedin"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://butecotecnologico.com.br/apache-parquet-explicado/"
+     data-text="Apache Parquet explicado"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="share-button share-facebook"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://butecotecnologico.com.br/apache-parquet-explicado/"
+     data-text="Apache Parquet explicado"><i class="fab fa-facebook"></i></a>
+
+  <a class="share-button share-pinterest"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://butecotecnologico.com.br/apache-parquet-explicado/"
+     data-text="Apache Parquet explicado"><i class="fab fa-pinterest"></i></a>
+</div>
+
+    
+<div class="border-top py-4">
+  <div class="author-info">
+    <div class="author-avatar d-inline-block position-absolute mt-2">
+      <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">
+        <img class="author-img"
+             src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&amp;d=mp"
+             loading="lazy"
+             alt="Alexandre Vicenzi">
+      </a>
+    </div>
+    <div class="author-meta d-inline-block align-top">
+      
+      <span class="small text-muted text-uppercase">Escrito por</span>
+      
+      <h2 class="m-0">
+        <a href="https://butecotecnologico.com.br/autores/alexandrevicenzi/">Alexandre Vicenzi</a>
+      </h2>
+      <span class="small text-muted">Engenheiro de Software</span>
+    </div>
+  </div>
+  
+</div>
+    <div class="border-top pt-4 pb-4">
+<h2 id="comments" class="mt-0">Comentários</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "butecoopensource" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </footer>
+</section>
+  </main><div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body"><div class="gcse-search"></div>
+        <script async src="https://cse.google.com/cse.js?cx=006529162228150198964%3aypsteas3iuv"></script></div>
+    </div>
+  </div>
+</div>
+<footer class="site-footer mt-auto pt-5 pb-3 px-4">
+  <div class="clearfix text-center">
+    <div class="social-icons d-xl-inline-block float-xl-left">
+      <ul class="list-unstyled">
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://t.me/butecotecnologico" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://discord.gg/eX2jAvw" title="Discord"><i class="fab fa-discord"></i></a>
+        </li>
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://twitter.com/butecotech" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.linkedin.com/company/butecotecnologico" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.facebook.com/buteco.tech" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.youtube.com/c/ButecoTech" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </li>
+        <li class="list-inline-item social-icon my-2">
+          <a href="https://www.instagram.com/buteco.tech/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="list-inline-item social-icon my-2">
+          <a href="/feed-rss/" title="Feed RSS"><i class="fas fa-rss"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-sections d-xl-inline-block float-xl-right">
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          <li>
+            <a class="td-n td-h " href="/categorias/cloud-computing/"><b> Cloud Computing </b></a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/kubernetes/"> Kubernetes </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/docker/"> Docker </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/virtualizacao/"> Virtualização </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/aws/"> AWS </a>
+          </li>
+        </ul>
+      </div>
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          <li>
+            <a class="td-n td-h " href="/categorias/embarcados/"><b> Embarcados </b></a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/raspberry-pi/"> Raspberry Pi </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/arm/"> ARM </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/arduino/"> Arduino </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/iot/"> Internet das Coisas </a>
+          </li>
+          
+          <li>
+            <a class="td-n td-h " href="/tags/diy/"> DIY </a>
+          </li>
+          </ul>
+      </div>
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          <li>
+            <a class="td-n td-h " href="/categorias/desenvolvimento/"><b> Desenvolvimento </b></a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/python/"> Python </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/cpp/"> C/C&#43;&#43; </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/php/"> PHP </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/node-js/"> Node.JS </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/lua/"> Lua </a>
+          </li>
+        </ul>
+      </div>
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          <li>
+            <a class="td-n td-h " href="/categorias/distros/"><b> Distros </b></a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/linux/"> Linux </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/ubuntu/"> Ubuntu </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/fedora/"> Fedora </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/centos/"> CentOS </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/opensuse/"> openSUSE </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/tags/bsd/"> BSD </a>
+          </li>
+        </ul>
+      </div>
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          <li>
+            <a class="td-n td-h " href="/podcast/"><b> Podcast </b><span class="badge badge-success">Novo</span></a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/contribua-com-nosso-blog/"> Contribua com o blog <i class="far fa-heart text-danger"></i></a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/anuncie-conosco/"> Anuncie conosco </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/categorias/"> Categorias </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/autores/"> Autores </a>
+          </li>
+        </ul>
+      </div>
+      <div class="my-3 my-md-0 mx-md-2 d-md-inline-block align-top">
+        <ul class="list-unstyled">
+          <li>
+            <a class="td-n td-h " href="/contato/"><b> Contato </b></a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/sobre/"> Sobre nós </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/equipe/"> Equipe </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="/feed-rss/"> Feed RSS </a>
+          </li>
+          <li>
+            <a class="td-n td-h " href="https://estatisticas.buteco.me/"> Estatísticas </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr class="my-3">
+  <div class="copyright clearfix text-center">
+    <div class="d-md-inline-block float-md-left">
+      <i class="far fa-copyright"></i> 2020 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+    </div>
+    <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
+      <ul class="list-unstyled m-0">
+        <li class="list-inline-item">
+          <a href="/termos-de-uso/"> Termos de Uso </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="/politica-de-privacidade/"> Privacidade </a>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+</footer>
+<script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" async src="/js/bootstrap.min.1c4d3007f0b1fe05e0e0ce4992c1c8cf9eff05f176be71745f010ed03f298853.js"></script>
+
+  
+  <script type="text/javascript" async src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
+
+<script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-55693832-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+<script type="text/javascript" async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56269d97a8b5a42b"></script>
+
+</body>
+</html>
