@@ -43,13 +43,13 @@ Engenheiro de Software na Amazon Web Services, Bacharel em Ciência da Computaç
 
 {{< social linkedin="jaswdr" twitter="jaswdr" >}}
 
-### Marcos Paulo de Souza
+#### Marcos Paulo de Souza
 
 Engenheiro de Software na SUSE. Bacharel em Ciência da Computação pela Fundação Universidade Regional de Blumenau e contribuidor de projetos livres e de código aberto. Trabalhando atualmente na SUSE como Enterprise Storage Developer.
 
 {{< social www="http://mpdesouza.com/" linkedin="marcospsouza" twitter="marcosps" >}}
 
-### Olivier Hallot
+#### Olivier Hallot
 
 Desde 2002 atua em consultoria no segmento de software de código aberto. Foi fundador a ONG BrOffice e atuou como Diretor Financeiro até 2011. Foi tradutor do LibreOffice de 2002 até 2005, retomando a missão de 2007 até hoje. É membro fundador da The Document Foundation (produtora do LibreOffice) e membro eleito de seu Conselho de Administração até 2014. Atuou como Consultor Sênior na implementação do LibreOffice em empresas como Petrobras, Petros, SERPROS, Piraquê, EMGEPRON, AGV Logística, agindo proativamente em diversas frentes de atividades técnicas: aconselhamento, montagem do projeto, treinamento, conversão de macros, montagem de extensões, programação de macros, elaboração de documentação técnica e um grande conhecimento dos problemas de gestão da mudança na migração para LibreOffice. Atua também na programação em C++ do LibreOffice. Ativo participante dos eventos de software livre. É engenheiro eletrônico graduado em 1982 na PUC-RJ, Mestre em engenharia de sistemas pela PUC-RJ e MBA em Oil&Gas na COPPE/UFRJ. Trabalhou 12 anos na IBM e 3 anos na Oracle.
 
