@@ -59,4 +59,4 @@ Engenheiro de software na SUSE trabalhando atualmente com Kubernetes e container
 
 Engenheiro de Software na SUSE. Bacharel em Ciência da Computação pela Fundação Universidade Regional de Blumenau e contribuidor de projetos livres e de código aberto. Trabalhando atualmente na SUSE como Enterprise Storage Developer.
 
-{{< social www="http://mpdesouza.com/" linkedin="omarcossouza" twitter="marcosps" >}}
+{{< social www="http://mpdesouza.com/" linkedin="marcospsouza" twitter="omarcossouza" >}}
