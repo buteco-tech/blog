@@ -1,17 +1,21 @@
 ---
-title: "Carreira no Software Livre"
-description: "Neste episódio contamos nossa história e carreira com software livre, contando experiências e dando dicas para quem quer seguir este caminho."
+title: "Carreira no Software de código aberto"
+description: "Neste episódio contamos nossa história e carreira com software de código aberto, contando experiências e dando dicas para quem quer seguir este caminho."
 date: 2020-12-02 08:00:00
 authors:
   - alexandrevicenzi
-slug: carreira-no-software-livre
+slug: carreira-no-software-de-codigo-aberto
 aliases:
+  - carreira-no-open-source
+  - carreira-no-software-livre
   - carreina-no-software-livre
 categories:
   - Podcast
 tags:
-  - software-livre
+  - software-de-codigo-aberto
   - open-source
+  - oss
+  - software-livre
   - carreira
 resources:
 - name: thumbnail
@@ -19,7 +23,7 @@ resources:
   title: Estudando no exterior
 ---
 
-Neste episódio contamos nossa história e carreira com software livre, trocando ideias sobre projetos que contribuímos, contando experiências e dando algumas dicas para quem quer seguir este caminho.
+Neste episódio contamos nossa história e carreira com software de código aberto (ou *open-source*), trocando ideias sobre projetos que contribuímos, contando experiências e dando algumas dicas para quem quer seguir este caminho.
 <!--more-->
 {{< podcast-episodio id="7rHNM63yHIIyA4zUZPPOOU" >}}
 
@@ -35,7 +39,7 @@ O bate-papo na íntegra está disponível no [nosso canal do YouTube](https://ww
 
 #### Alexandre Vicenzi
 
-Engenheiro de Software e bacharel em Ciência da Computação. Contribui com software livre à quase 10 anos, além de ser co-fundador do Buteco Tecnológico.
+Engenheiro de Software e bacharel em Ciência da Computação. Contribui com software de código aberto à quase 10 anos, além de ser co-fundador do Buteco Tecnológico.
 
 {{< social www="https://www.alexandrevicenzi.com/" linkedin="alexandrevicenzi" twitter="alxvicenzi" >}}
 
