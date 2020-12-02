@@ -4,7 +4,9 @@ description: "Neste episódio contamos nossa história e carreira com software l
 date: 2020-12-02 08:00:00
 authors:
   - alexandrevicenzi
-slug: carreina-no-software-livre
+slug: carreira-no-software-livre
+aliases:
+  - carreina-no-software-livre
 categories:
   - Podcast
 tags:
@@ -53,4 +55,4 @@ Engenheiro de software na SUSE trabalhando atualmente com Kubernetes e container
 
 Engenheiro de Software na SUSE. Bacharel em Ciência da Computação pela Fundação Universidade Regional de Blumenau e contribuidor de projetos livres e de código aberto. Trabalhando atualmente na SUSE como Enterprise Storage Developer.
 
-{{< social www="http://mpdesouza.com/" linkedin="marcospsouza" twitter="marcosps" >}}
+{{< social www="http://mpdesouza.com/" linkedin="omarcossouza" twitter="marcosps" >}}
