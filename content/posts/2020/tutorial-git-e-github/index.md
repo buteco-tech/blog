@@ -62,7 +62,7 @@ git config --global user.name "Seu Nome"
 git config --global user.email "seu-email@buteco.tech"
 ```
 
-> Observação: Caso você esteja no Windows, não se esqueça de utilizar o **git bash**, pois ele simula um ambiente Unix facilitando a forma de se trabalha com Git.
+> Observação: Caso você esteja no Windows, não se esqueça de utilizar o **git bash**, pois ele simula um ambiente Unix, facilitando a forma de se trabalhar com Git.
 
 Agora iremos criar uma chave de SSH, com ela provaremos ao GitHub que nós somos os donos da nossa conta. Caso já tenha uma chave SSH, podemos verificar seu diretório **.ssh** listando o conteúdo:
 
