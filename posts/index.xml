@@ -11,9 +11,23 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 25 Nov 2020 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Dec 2020 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      
+      <title>Street Fighter X Mega Man no Linux</title>
+      <link>https://butecotecnologico.com.br/street-fighter-x-mega-man-linux/</link>
+      <pubDate>Tue, 08 Dec 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/street-fighter-x-mega-man-linux/</guid>
+      <description>Jogo gratuito criado pela Capcom e Zong Hui em 2012 para comemorar os 25 anos da franquia, curta a nostalgia e relembre sua infância.</description>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
+      </image>
+    </item>
     <item>
       
       <title>Apache Parquet explicado</title>
