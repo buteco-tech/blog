@@ -4,8 +4,6 @@ date: 2016-01-20 21:11:20
 authors:
   - alexandrevicenzi
 slug: gps-parte-3-localizador-gps-com-a-beaglebone-green
-images:
-  - /images/wp-content/uploads/2015/12/map_pin.png
 categories:
   - desenvolvimento
   - tutoriais

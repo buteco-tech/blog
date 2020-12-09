@@ -1,7 +1,6 @@
 ---
 title: "Apache Parquet explicado"
-summary: "Apache Parquet é um formato de armazenamento colunar disponível em todos os projetos que pertencem ao ecossistema Hadoop, independente do modelo de processamento, framework ou linguagem usada.
-"
+summary: "Apache Parquet é um formato de armazenamento colunar disponível em todos os projetos que pertencem ao ecossistema Hadoop, independente do modelo de processamento, framework ou linguagem usada."
 tagline: "Com exemplos em Pandas e Spark"
 date: 2020-11-25 08:00:00
 slug: apache-parquet-explicado
@@ -16,21 +15,21 @@ tags:
   - pandas
   - python
 resources:
-- name: thumbnail
-  src: apache-parquet.png
-  title: Apache Parquet
-- name: thumbnail-wide
-  src: apache-parquet-wide.png
-  title: Apache Parquet
-- name: parquet-structure
-  src: apache-parquet-structure.png
-  title: Apache Parquet
-- name: nb-pandas
-  src: nb-pandas.ipynb
-  title: Notebook Pandas
-- name: nb-spark
-  src: nb-spark.ipynb
-  title: Notebook Spark
+  - name: thumbnail
+    src: apache-parquet.png
+    title: Apache Parquet
+  - name: thumbnail-wide
+    src: apache-parquet-wide.png
+    title: Apache Parquet
+  - name: parquet-structure
+    src: apache-parquet-structure.png
+    title: Apache Parquet
+  - name: nb-pandas
+    src: nb-pandas.ipynb
+    title: Notebook Pandas
+  - name: nb-spark
+    src: nb-spark.ipynb
+    title: Notebook Spark
 ---
 
 {{<figure-res name="thumbnail-wide" alt="Apache Parquet" quality="100" filter="box">}}
