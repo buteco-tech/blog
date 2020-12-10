@@ -1,5 +1,6 @@
 ---
 title: teste teste 123
+slug: bla-bla
 date: 2020-12-10T08:00
 authors:
   - alexandrevicenzi
