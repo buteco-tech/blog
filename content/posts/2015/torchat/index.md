@@ -6,7 +6,7 @@ summary: |
   TorChat é software livre licenciado sob os termos da GNU General Public License(GPL). A primeira versão pública do TorChat foi lançado em novembro de 2007 por Bernd Kreuß e desde então tem sido constantemente desenvolvido, disponível para Linux, Windows e atualmente em Mac.
 date: 2015-05-11 23:05:53
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: torchat
 categories:
   - seguranca

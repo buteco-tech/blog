@@ -5,7 +5,7 @@ summary: |
   CryptoParty  é um evento organizado de maneira voluntária por pesquisadores, tecnoativistas e organizações sociais que atuam em temas relacionados á promoção da liberdade de expressão e defesa da privacidade.
 date: 2015-06-16 23:29:13
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: criptoparty-2
 images:
   - /images/wp-content/uploads/2015/06/criptoparty-1.jpg

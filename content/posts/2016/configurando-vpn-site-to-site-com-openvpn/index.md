@@ -5,7 +5,7 @@ summary: |
   O OpenVPN é um software livre e open-source para criar redes privadas virtuais do tipo ponto-a-ponto ou server-to-multiclient através de túneis criptografados entre computadores. Ele é capaz de estabelecer conexões diretas entre computadores mesmo que estes estejam atrás de Nat Firewalls sem necessidade de reconfiguração da sua rede. Ele foi escrito por James Yonan e publicado sob licença GNU General Pulic Licence (GPL)
 date: 2016-02-22 23:24:51
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: configurando-vpn-site-to-site-com-openvpn
 images:
   - /images/wp-content/uploads/2016/01/openvpn-logo.png

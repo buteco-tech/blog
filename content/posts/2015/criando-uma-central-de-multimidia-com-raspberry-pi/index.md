@@ -5,7 +5,7 @@ summary: |
   OpenELEC é uma distribuição Linux criada em torno do programa XBMC – um famoso hub de entretenimento de código aberto – e focada na tarefa de transformar seu equipamento em uma central de mídia.
 date: 2015-08-20 22:28:06
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: criando-uma-central-de-multimidia-com-raspberry-pi
 images:
   - /images/wp-content/uploads/2015/07/openelec.jpg

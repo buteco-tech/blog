@@ -8,7 +8,7 @@ summary: |
   O Nessus é distribuído sob os termos da Licença Pública Geral GNU.
 date: 2015-04-13 22:41:54
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: tutorial-nessus-home-parte-1
 categories:
   - tutoriais

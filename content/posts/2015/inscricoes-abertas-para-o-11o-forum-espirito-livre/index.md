@@ -5,7 +5,7 @@ summary: |
   Já estão abertas as inscrições para o 11º Fórum Espírito Livre, que ocorrerá nos dias 24 e 25 de setembro de 2015, nas instalações do IFES Santa Teresa, em Santa Teresa/ES
 date: 2015-07-01 21:44:00
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: inscricoes-abertas-para-o-11o-forum-espirito-livre
 categories:
   - eventos

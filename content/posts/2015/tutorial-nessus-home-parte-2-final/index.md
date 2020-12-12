@@ -5,7 +5,7 @@ summary: |
   Nesse artigo irei dar continuação, agora abordando politicas, varreduras e analisa de vulnerabilidades
 date: 2015-05-06 22:59:54
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: tutorial-nessus-home-parte-2-final
 categories:
   - tutoriais

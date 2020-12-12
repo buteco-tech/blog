@@ -5,7 +5,7 @@ summary: |
   O FISL sempre conta com grandes personalidades nacionais e internacionais do Sofware Livre e está na sua 16º edição, o evento acontecerá na cidade de Porto Alegre no período 8 a 11 de Julho.
 date: 2015-05-18 22:53:48
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: fisl-16
 categories:
   - eventos

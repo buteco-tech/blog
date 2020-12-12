@@ -5,7 +5,7 @@ summary: |
   O arkOS é baseado no Arch Linux ARM, que funciona em dispositivos embarcados e servidores autônomos, é uma pilha de software completo para gerenciamento de sua experiência de auto-hospedagem de uma forma intuitiva e inteligente, Arkos permite executar sites, contas de e-mail, banco de dados e muito mais, a partir de sua interface gráfica de fácil uso.
 date: 2015-10-27 21:09:12
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: conheca-arkos-distro-para-hospedagem-particular
 images:
   - /images/wp-content/uploads/2015/09/logo-arkos1.png

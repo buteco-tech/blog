@@ -5,7 +5,7 @@ summary: |
   A Offensive Security, criadora e mantenedora do Kali Linux, divulgou um vídeo de pré-lançamento da nova versão do Kali Linux; com lançamento oficial previsto para 11 de agosto de 2015. A equipe, nos últimos meses, tem trabalhado ferozmente nessa próxima versão – que promete muita coisa nova. No vídeo divulgado, a empresa mostra toda a cronologia de desenvolvimento da ferramenta, desde da época do BackTrack; e por fim as novidades da nova versão.Confira:
 date: 2015-08-06 10:05:46
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: kali-linux-2-0-ja-tem-data-para-o-lancamento
 images:
   - /images/wp-content/uploads/2015/07/Kali-Linux2.0.jpg

@@ -6,7 +6,7 @@ summary: |
   Foi em 1991 que começou a discussão sobre a conexão de objetos, quando a conexão de TCP/IP e a Internet que conhecemos começou a se tonar acessível. Bill Joy, cofundador da Sun Microsystems, teve a ideia de conectar várias redes e dispositivos.E foi em 1999 que Kevin Ashton, do MIT, propôs o termo “Internet das Coisas” após dez anos de estudo e projetos, escreveu o artigo “A Coisa da Internet das Coisas” para o RFID Journal, e a partir dai o termo se popularizou.
 date: 2015-05-24 23:58:51
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: internet-das-coisas
 images:
   - /images/wp-content/uploads/2015/05/Imagen-iot.jpg

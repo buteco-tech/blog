@@ -6,7 +6,7 @@ summary: |
   Nesse artigo irei mostrar a instalação do Ubuntu MATE 15.04 no Raspberry PI 2.
 date: 2015-07-14 23:03:39
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: instalando-o-ubuntu-mate-15-04-no-raspberry-pi-2
 images:
   - /images/wp-content/uploads/2015/07/ubuntu-mate-logo.jpg

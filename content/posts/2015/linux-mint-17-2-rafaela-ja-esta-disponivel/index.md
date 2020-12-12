@@ -5,7 +5,7 @@ summary: |
   Essa semana foi lançado a nova versão do Linux Mint a 17.2, “Rafaela” para Cinnamon e Mate uma versão LTS (Long Term Support) com suporte até 2019. O Kernel padrão é 3.16, está usando a base de pacotes do Ubuntu 14.04, também vem com algumas novidades e traz novas funcionalidades para deixar sua área de trabalho mais confortável.
 date: 2015-06-24 12:57:00
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: linux-mint-17-2-rafaela-ja-esta-disponivel
 images:
   - /images/wp-content/uploads/2015/06/linux-mint.png

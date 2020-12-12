@@ -5,7 +5,7 @@ summary: |
   O GNU Privacy Guard (GnuPG or GPG) é uma alternativa GPL ao aplicativo PGP (Pretty Good Privacy) de criptografia criado pelo Philip Zimmermann. GnuPG é compatível com a RFC 4880, o padrão da IETF (Internet Engineering Task Force), o GnuPG é parte da Free Software Foundation e do projeto de software GNU.
 date: 2016-05-31 10:15:33
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: tutorial-gnupg
 images:
   - /images/wp-content/uploads/2015/02/GnuPG-Logo.png

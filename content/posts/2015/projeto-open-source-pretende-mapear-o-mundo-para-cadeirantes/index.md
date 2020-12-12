@@ -5,7 +5,7 @@ summary: |
   Encontrar estabelecimentos acessíveis por cadeiras de rodas pode ser trabalhoso, mas um projeto open source quer mudar ao menos um pouco essa história. Chamada de WheelMap, a iniciativa é bem isso: um mapa que indica locais que primam (ou não) pela acessibilidade.
 date: 2015-07-23 00:20:25
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: projeto-open-source-pretende-mapear-o-mundo-para-cadeirantes
 categories:
   - noticias

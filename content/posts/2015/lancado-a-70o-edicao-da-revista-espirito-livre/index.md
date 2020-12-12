@@ -5,7 +5,7 @@ summary: |
   Vitória recebeu a oitava edição do Fórum Espírito Livre, ocorrido de 12 a 15 de novembro durante a 11º Semana Nacional de Ciência e Tecnologia. O evento aconteceu nas instalações na Universidade Federal do Espírito Santo – UFES. Participaram do evento diversos palestrantes de São Paulo, Rio de Janeiro, Minas Gerais, além de vários parceiros e colaboradores locais, possibilitando uma excelente troca de experiências, em um cenário bastante propício para tais debates.
 date: 2015-06-04 23:03:35
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: lancado-a-70o-edicao-da-revista-espirito-livre
 images:
   - /images/wp-content/uploads/2015/06/revista-espiritolivre-e1433347337883.png

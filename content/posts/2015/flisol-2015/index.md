@@ -7,7 +7,7 @@ summary: |
   Seu principal objetivo é promover o uso de Software Livre, mostrando ao público em geral sua filosofia, abrangência, avanços e desenvolvimento.
 date: 2015-04-18 22:25:03
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: flisol-2015
 categories:
   - eventos

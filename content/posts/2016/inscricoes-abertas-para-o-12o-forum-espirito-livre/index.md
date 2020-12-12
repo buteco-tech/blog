@@ -6,7 +6,7 @@ summary: |
   O 12º Fórum Espírito Livre acontecerá entre os dias 4 a 6 de maio de 2016 no município de Vila Velha/ES. tem como objetivos reunir a comunidade estadual e nacional interessada em desenvolvimento e aplicação de software livre, dessa maneira, visa compartilhar experiências e conhecimento, de modo a estimular o uso crescente dos softwares livres, tecnologias e padrões abertos, o aprimoramento de tecnologias, a difusão da filosofia de compartilhamento e criação colaborativa e coletiva. Além disso espera-se estreitar a comunicação entre colaboradores e leitores da Revista Espírito Livre.
 date: 2016-04-04 22:49:49
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: inscricoes-abertas-para-o-12o-forum-espirito-livre
 images:
   - /images/wp-content/uploads/2016/04/Logo_12_Forum.jpg

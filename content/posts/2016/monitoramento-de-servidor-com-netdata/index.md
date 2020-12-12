@@ -5,7 +5,7 @@ summary: |
   O Netdada é um projeto criado para exibir o monitoramento em tempo real de servidor com uma variedade de informações.
 date: 2016-06-07 21:04:13
 authors:
-  - daniel_magevski
+  - daniel-magevski
 slug: monitoramento-de-servidor-com-netdata
 images:
   - /images/wp-content/uploads/2016/05/netdata-capa.png
