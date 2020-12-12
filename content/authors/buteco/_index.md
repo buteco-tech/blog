@@ -1,7 +1,7 @@
 ---
+title: Otto
 slug: buteco
-title: Equipe Buteco
-bio: Editores do Buteco Tecnológico
+bio: O mascote do Buteco Tecnológico
 avatar: /logos/capybara_400.png
 email: contato@buteco.tech
 www: https://buteco.tech

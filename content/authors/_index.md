@@ -1,7 +1,6 @@
 ---
-url: autores
 title: Autores
-kind: authors
+url: autores
 ---
 
 Confira quem contrui com artigos de qualidade para o Buteco Tecnológico.
