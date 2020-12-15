@@ -407,10 +407,7 @@
 <span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s2">&#34;sqlite:///file.db&#34;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>No exemplo acima, estamos criando uma instância de <code>Engine</code> com o <code>sqlite</code>, caso você queira conectar com outro banco, veja a <a href="https://docs.sqlalchemy.org/en/13/dialects/index.html"
-   
-   target="_blank" rel="noopener">documentação</a>
- (em inglês) para mais detalhes.</p>
+</div><p>No exemplo acima, estamos criando uma instância de <code>Engine</code> com o <code>sqlite</code>, caso você queira conectar com outro banco, veja a <a href="https://docs.sqlalchemy.org/en/13/dialects/index.html"  target="_blank" rel="noopener">documentação</a> (em inglês) para mais detalhes.</p>
 <p>Uma vez que temos nossa engine podemos começar a criar nossa sessão.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -604,10 +601,7 @@
 </div>
 </div><p>Para retornar apenas um registro podemos utilizar tanto o método <code>one()</code> quanto o método <code>one_or_none()</code>, a diferença entre os 2 métodos é que o primeiro irá disparar uma exceção caso nenhum registro for encontrado, enquanto o segundo retornará <code>None</code>.</p>
 <blockquote>
-<p>Para saber a lista completo de operadores veja a <a href="https://docs.sqlalchemy.org/en/13/orm/tutorial.html#common-filter-operators"
-   
-   target="_blank" rel="noopener">documentação</a>
- (em inglês)</p>
+<p>Para saber a lista completo de operadores veja a <a href="https://docs.sqlalchemy.org/en/13/orm/tutorial.html#common-filter-operators"  target="_blank" rel="noopener">documentação</a> (em inglês)</p>
 </blockquote>
 <p>Além de inserir e realizar buscas é possível fazer alterações facilmente, basta utilizar a referência ao objeto, alterar os atributos e adicionar a sessão, conforme o exemplo abaixo.</p>
 <div class="highlight"><div class="chroma">

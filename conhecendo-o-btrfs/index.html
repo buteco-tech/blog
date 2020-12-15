@@ -400,53 +400,20 @@
 <p>Todo sistema de arquivos contém um superblock. Este é responsável por guardar informações do sistema de arquivos como um todo, como espaço utilizado, tamanho do bloco de dados utilizado, e outras informações específicas para cada sistema de arquivos. Se por acaso o superblock for danificado ou corrompido, existe uma grande chance dos seus dados terem sido perdidos.</p>
 <p>A fim de evitar que isso aconteça, um sistema Btrfs guarda três cópias do superblock em locais diferentes do disco: 64k, 256Mb e 256Gb. Estes valores são relacionados a posição física do disco.</p>
 <h2 id="converter-um-sistema-de-arquivos-para-btrfs">Converter um sistema de arquivos para Btrfs</h2>
-<p>É possível converter sistemas Ext2/Ext3/Ext4 e reiserfs para Btrfs utilizando a ferramenta Btrfs-convert. A ferramenta opera diretamente no disco, salvando o conteúdo original de um subvolume com o nome <code>&lt;sistema_de_arquivos&gt;_saved</code>. Para mais informações sobre este recurso acesse <a href="https://btrfs.wiki.kernel.org/index.php/Conversion_from_Ext3"
-   
-   target="_blank" rel="noopener">esta página</a>
- da wiki do Btrfs.</p>
+<p>É possível converter sistemas Ext2/Ext3/Ext4 e reiserfs para Btrfs utilizando a ferramenta Btrfs-convert. A ferramenta opera diretamente no disco, salvando o conteúdo original de um subvolume com o nome <code>&lt;sistema_de_arquivos&gt;_saved</code>. Para mais informações sobre este recurso acesse <a href="https://btrfs.wiki.kernel.org/index.php/Conversion_from_Ext3"  target="_blank" rel="noopener">esta página</a> da wiki do Btrfs.</p>
 <h2 id="conclusão">Conclusão</h2>
-<p>Como podemos ver, o Btrfs tem muitos recursos interessantes se o compararmos com outros sistemas de arquivo mais utilizados atualmente. Vale salientar ainda que existem muitos outros recursos que não foram mencionados neste artigo. Para os mais interessados, vale a pena dar uma olhada na <a href="https://btrfs.wiki.kernel.org/index.php/Main_Page"
-   
-   target="_blank" rel="noopener">wiki do Btrfs</a>
- e nas referências abaixo.</p>
+<p>Como podemos ver, o Btrfs tem muitos recursos interessantes se o compararmos com outros sistemas de arquivo mais utilizados atualmente. Vale salientar ainda que existem muitos outros recursos que não foram mencionados neste artigo. Para os mais interessados, vale a pena dar uma olhada na <a href="https://btrfs.wiki.kernel.org/index.php/Main_Page"  target="_blank" rel="noopener">wiki do Btrfs</a> e nas referências abaixo.</p>
 <h2 id="referencias">Referencias</h2>
 <ul>
-<li><a href="https://pt.wikipedia.org/wiki/C%C3%B3pia_em_grava%C3%A7%C3%A3o"
-   
-   target="_blank" rel="noopener">Copia em gravacao</a>
-</li>
-<li><a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-subvolume"
-   
-   target="_blank" rel="noopener">Manual do comando para gerenciar subvolumes e snapshots</a>
-</li>
-<li><a href="https://doc.opensuse.org/documentation/leap/archive/15.0/reference/html/book.opensuse.reference/cha.snapper.html"
-   
-   target="_blank" rel="noopener">Manual do openSUSE sobre gerenciamento de snapshots</a>
-</li>
-<li><a href="https://btrfs.wiki.kernel.org/index.php/Using_Btrfs_with_Multiple_Devices"
-   
-   target="_blank" rel="noopener">Manual do Btrfs sobre como criar um sistema de arquivos com multiplos discos</a>
-</li>
-<li><a href="https://mpdesouza.com/2020/05/14/btrfs-making-send-more-capable/"
-   
-   target="_blank" rel="noopener">Exemplo de uso de send/receive</a>
-</li>
-<li><a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-convert"
-   
-   target="_blank" rel="noopener">Manual da ferramenta Btrfs-convert</a>
-</li>
-<li><a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-convert"
-   
-   target="_blank" rel="noopener">Link descrevendo localização das cópias de superblock</a>
-</li>
-<li><a href="https://btrfs.wiki.kernel.org/index.php/Compression"
-   
-   target="_blank" rel="noopener">Página da wiki do Btrfs sobre compressão e suas configurações</a>
-</li>
-<li><a href="https://pt.wikipedia.org/wiki/Soma_de_verifica%C3%A7%C3%A3o"
-   
-   target="_blank" rel="noopener">Checksum, ou soma de verificação</a>
-</li>
+<li><a href="https://pt.wikipedia.org/wiki/C%C3%B3pia_em_grava%C3%A7%C3%A3o"  target="_blank" rel="noopener">Copia em gravacao</a></li>
+<li><a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-subvolume"  target="_blank" rel="noopener">Manual do comando para gerenciar subvolumes e snapshots</a></li>
+<li><a href="https://doc.opensuse.org/documentation/leap/archive/15.0/reference/html/book.opensuse.reference/cha.snapper.html"  target="_blank" rel="noopener">Manual do openSUSE sobre gerenciamento de snapshots</a></li>
+<li><a href="https://btrfs.wiki.kernel.org/index.php/Using_Btrfs_with_Multiple_Devices"  target="_blank" rel="noopener">Manual do Btrfs sobre como criar um sistema de arquivos com multiplos discos</a></li>
+<li><a href="https://mpdesouza.com/2020/05/14/btrfs-making-send-more-capable/"  target="_blank" rel="noopener">Exemplo de uso de send/receive</a></li>
+<li><a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-convert"  target="_blank" rel="noopener">Manual da ferramenta Btrfs-convert</a></li>
+<li><a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-convert"  target="_blank" rel="noopener">Link descrevendo localização das cópias de superblock</a></li>
+<li><a href="https://btrfs.wiki.kernel.org/index.php/Compression"  target="_blank" rel="noopener">Página da wiki do Btrfs sobre compressão e suas configurações</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Soma_de_verifica%C3%A7%C3%A3o"  target="_blank" rel="noopener">Checksum, ou soma de verificação</a></li>
 </ul>
 
   </article>

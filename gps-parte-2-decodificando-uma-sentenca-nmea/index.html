@@ -67,7 +67,7 @@
 <meta itemprop="description" content="Na primeira parte sobre GPS (Entendendo o seu funcionamento) vimos como este sistema de rastreamento por satélite funciona.">
 <meta itemprop="datePublished" content="2016-01-11T21:38:15+00:00" />
 <meta itemprop="dateModified" content="2016-01-11T21:38:15+00:00" />
-<meta itemprop="wordCount" content="1263">
+<meta itemprop="wordCount" content="1260">
 <meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png">
 
 
@@ -373,17 +373,11 @@
       alt="Map"/>
 </figure>
 
-<p>Na <a href="/gps-parte-1-entendendo-o-seu-funcionamento"
-   
-   >primeira parte sobre GPS (Entendendo o seu funcionamento)</a>
- vimos como este sistema de rastreamento por satélite funciona. Também aproveitamos para explicar o que é o protocolo NMEA, utilizado pelos sistemas de navegação global.</p>
+<p>Na <a href="/gps-parte-1-entendendo-o-seu-funcionamento"  >primeira parte sobre GPS (Entendendo o seu funcionamento)</a> vimos como este sistema de rastreamento por satélite funciona. Também aproveitamos para explicar o que é o protocolo NMEA, utilizado pelos sistemas de navegação global.</p>
 <p>Uma sentença NMEA é formada por caracteres passíveis de impressão e <strong>CR</strong> (carriage return) e <strong>LF</strong> (line feed). Toda sentença inicia com <code>$</code> e termina com &lt;CR&gt; &lt;LF&gt;. Existem três tipos básicos de sentenças: <em>talker sentences</em>, <em>proprietary sentences</em> e <em>query sentences</em>.</p>
 <p>As <em>talker sentences</em> são as sentenças genéricas de comunicação do protocolo, já as <em>proprietary sentences</em> são sentenças proprietárias dos fabricantes e as <em>query sentences</em> são sentenças utilizadas para requisitar informações a partir de um receptor.</p>
 <p>Neste artigo iremos ver como implementar um decodificar de sentenças do protocolo NMEA 0183 versão 2.3.</p>
-<p>Para implementar o decodificador iremos utilizar Python sem nenhuma biblioteca adicional. O código desenvolvido é apenas para ilustrar como é feito este tipo de processo, se você procura algo para utilizar em seu sistema eu recomendo a biblioteca <a href="https://github.com/Knio/pynmea2"
-   
-   target="_blank" rel="noopener">pynmea2</a>
-.</p>
+<p>Para implementar o decodificador iremos utilizar Python sem nenhuma biblioteca adicional. O código desenvolvido é apenas para ilustrar como é feito este tipo de processo, se você procura algo para utilizar em seu sistema eu recomendo a biblioteca <a href="https://github.com/Knio/pynmea2"  target="_blank" rel="noopener">pynmea2</a>.</p>
 <h2 id="decodificando-uma-sentença-nmea">Decodificando uma sentença NMEA</h2>
 <p>Para decodificar uma sentença primeiro é necessário entender o seu funcionamento. No caso da sentença <strong>GGA</strong> (Global Positioning System Fix Data) podemos observar a descrição dos campos abaixo:</p>
 <p><code>$GPGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*47</code></p>
@@ -450,10 +444,7 @@
 </tr>
 </tbody>
 </table>
-<p>Se você deseja conhecer as demais sentenças e seus campos eu recomento ler a <a href="http://www.tronico.fi/OH6NT/docs/NMEA0183.pdf"
-   
-   target="_blank" rel="noopener">especificação do protocolo NMEA 0183</a>
- (em inglês).</p>
+<p>Se você deseja conhecer as demais sentenças e seus campos eu recomento ler a <a href="http://www.tronico.fi/OH6NT/docs/NMEA0183.pdf"  target="_blank" rel="noopener">especificação do protocolo NMEA 0183</a> (em inglês).</p>
 <p>Bem, para entender melhor, vamos primeiro ver as principais partes do código, no fim será exibido o código por completo com alguns exemplos de uso.</p>
 <h2 id="classe-sentence">Classe Sentence</h2>
 <p>A classe <code>Sentence</code> é a base de todas as sentenças NMEA. Toda sentença deve estender esta classe, como podemos observar na classe <code>GGLSentence</code>.</p>
@@ -735,16 +726,10 @@
         <span class="k">return</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">4</span><span class="p">:])</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Você pode conferir o código fonte completo <a href="https://github.com/ButecoOpenSource/exemplos/blob/master/nmea/nmea.py"
-   
-   target="_blank" rel="noopener">aqui</a>
-.</p>
+</div><p>Você pode conferir o código fonte completo <a href="https://github.com/ButecoOpenSource/exemplos/blob/master/nmea/nmea.py"  target="_blank" rel="noopener">aqui</a>.</p>
 <p>Espero que você tenha gostado deste artigo. Na parte final desta série de artigos, iremos implementar uma pequena aplicação que captura a posição do GPS e informa em uma página Web.</p>
 <p>Até a próxima.</p>
-<p><em>Este artigo é uma adaptação da monografia BUSTRACKER: Sistema de rastreamento para transporte coletivo de Alexandre Vicenzi e o texto na íntegra pode ser encontrado <a href="https://bu.furb.br/consulta/portalConsulta/recuperaMfnCompleto.php?menu=rapida&amp;CdMFN=363720"
-   
-   target="_blank" rel="noopener">aqui</a>
-.</em></p>
+<p><em>Este artigo é uma adaptação da monografia BUSTRACKER: Sistema de rastreamento para transporte coletivo de Alexandre Vicenzi e o texto na íntegra pode ser encontrado <a href="https://bu.furb.br/consulta/portalConsulta/recuperaMfnCompleto.php?menu=rapida&amp;CdMFN=363720"  target="_blank" rel="noopener">aqui</a>.</em></p>
 
   </article>
 

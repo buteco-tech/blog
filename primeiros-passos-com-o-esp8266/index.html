@@ -69,7 +69,7 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo.">
 <meta itemprop="datePublished" content="2015-04-30T08:53:10+00:00" />
 <meta itemprop="dateModified" content="2015-04-30T08:53:10+00:00" />
-<meta itemprop="wordCount" content="851">
+<meta itemprop="wordCount" content="847">
 <meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/03/esp8266.jpg">
 
 
@@ -379,10 +379,7 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
       alt="ESP8266"/>
 </figure>
 
-<p>Dando continuidade ao artigo <a href="/conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares"
-   
-   >sobre o ESP8266</a>
-, hoje irei mostrar os primeiros passos com este módulo. O primeiro passo e o mais importante é colocar ele pra funcionar. :D</p>
+<p>Dando continuidade ao artigo <a href="/conheca-o-esp8266-um-modulo-wifi-por-menos-de-5-dolares"  >sobre o ESP8266</a>, hoje irei mostrar os primeiros passos com este módulo. O primeiro passo e o mais importante é colocar ele pra funcionar. :D</p>
 <h2 id="material-necessário">Material necessário</h2>
 <p>Para a brincadeira de hoje, iremos necessitar de pelo menos um ESP8266, fique a vontade na escolha do seu módulo, eu irei utilizar o ESP-01 e o ESP-12. Além disso será necessário um módulo UART de 3.3v, um computador com uma porta USB disponível e algum programa para conversar serialmente, no meu caso irei utilizar a própria IDE do Arduino.</p>
 <h2 id="esp-01-e-esp-12">ESP-01 e ESP-12</h2>
@@ -411,19 +408,10 @@ O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o
 </figure>
 
 <h2 id="ide-arduino">IDE Arduino</h2>
-<p>Caso você ainda não possua um aplicativo para comunicar com o ESP, eu sugiro a IDE do Arduino, que pode ser encontrar <a href="https://www.arduino.cc/en/main/Software"
-   
-   target="_blank" rel="noopener">aqui</a>
-.</p>
+<p>Caso você ainda não possua um aplicativo para comunicar com o ESP, eu sugiro a IDE do Arduino, que pode ser encontrar <a href="https://www.arduino.cc/en/main/Software"  target="_blank" rel="noopener">aqui</a>.</p>
 <h2 id="modos-de-operação">Modos de Operação</h2>
 <p>O ESP permite que você conecte ele de duas formas, a primeira e mais comum é o modo de programação, onde é possível fazer upload de arquivos ou enviar comandos, tudo via serial. A outra forma é a de atualização de firmware (ou Flash). Esta por sua vez permite que você sobrescreva o firmware que vem no módulo. Dependendo o fabricante, as vezes nem é disponibilizado um firmware inicial, e você deve fazer o upload antes de iniciar o uso, mas isto é assunto para o próximo artigo.</p>
-<p>Por padrão, nem sempre ocorre, os módulos ESP saem de fabrica com o firmware <a href="https://www.electrodragon.com/w/Category:ESP8266"
-   
-   target="_blank" rel="noopener">AT</a>
-. Este firmware consiste em uma série de comandos básicos para o uso do módulo em si, mas não se compara ao <a href="https://www.nodemcu.com/index_en.html"
-   
-   target="_blank" rel="noopener">NodeMCU</a>
-, um firmware que permite que você programe o dispositivo em LUA, transformando ele em um mini Arduino com WiFi integrado. No caso do AT, é necessário o uso de um outro dispositivo para controlar o ESP, como é o caso dos shields Ethernet do Arduino. Mas com o NodeMCU, o ESP se torna auto gerenciável, bastando apenas fazer upload de um script LUA com o código a ser executado.</p>
+<p>Por padrão, nem sempre ocorre, os módulos ESP saem de fabrica com o firmware <a href="https://www.electrodragon.com/w/Category:ESP8266"  target="_blank" rel="noopener">AT</a>. Este firmware consiste em uma série de comandos básicos para o uso do módulo em si, mas não se compara ao <a href="https://www.nodemcu.com/index_en.html"  target="_blank" rel="noopener">NodeMCU</a>, um firmware que permite que você programe o dispositivo em LUA, transformando ele em um mini Arduino com WiFi integrado. No caso do AT, é necessário o uso de um outro dispositivo para controlar o ESP, como é o caso dos shields Ethernet do Arduino. Mas com o NodeMCU, o ESP se torna auto gerenciável, bastando apenas fazer upload de um script LUA com o código a ser executado.</p>
 <p>Confira abaixo como conectar o módulo UART no ESP para usá-lo nos modos de programação a atualização de firmware.</p>
 <h2 id="conexão">Conexão</h2>
 <p>Lembre-se que estas conexões mudam de acordo com o ESP e o módulo UART escolhido, então não nos comprometemos com os passos a seguir, faça por sua conta e risco. Lembre-se também de usar a voltagem correta.</p>

@@ -67,7 +67,7 @@
 <meta itemprop="description" content="Apache Parquet é um formato de armazenamento colunar disponível em todos os projetos que pertencem ao ecossistema Hadoop, independente do modelo de processamento, framework ou linguagem usada.">
 <meta itemprop="datePublished" content="2020-11-25T08:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-11-25T08:00:00+00:00" />
-<meta itemprop="wordCount" content="1003">
+<meta itemprop="wordCount" content="1002">
 <meta itemprop="image" content="https://butecotecnologico.com.br/apache-parquet-explicado/apache-parquet.png">
 
 
@@ -366,10 +366,7 @@
       alt="Apache Parquet"/>
 </figure>
 
-<p><a href="https://parquet.apache.org/documentation/latest/"
-   
-   target="_blank" rel="noopener">Apache Parquet</a>
- é um formato de armazenamento colunar disponível em todos os projetos que pertencem ao ecossistema Hadoop, independente do modelo de processamento, framework ou linguagem usada.</p>
+<p><a href="https://parquet.apache.org/documentation/latest/"  target="_blank" rel="noopener">Apache Parquet</a> é um formato de armazenamento colunar disponível em todos os projetos que pertencem ao ecossistema Hadoop, independente do modelo de processamento, framework ou linguagem usada.</p>
 <p>O projeto iniciou em uma parceria entre o Twitter e a Cloudera, e a primeira versão foi liberada em 2013. Desde 2015 o projeto faz parte da Apache Software Foundation.</p>
 <p>Diferente dos modelos tradicionais de armazenamento que usam abordagem orientada a linhas, o Parquet armazena os dados de forma colunar plana, onde os valores das colunas são armazenadas de forma adjacente as outras, esse modelo possui alguns benefícios:</p>
 <ul>
@@ -377,10 +374,7 @@
 <li>Algorítimo de compressão pode ser especificado por coluna</li>
 <li>Queries &ldquo;wide&rdquo; (que usam várias colunas) são mais eficientes</li>
 </ul>
-<p>Parquet foi criado para suportar compressão e codificação de forma eficiente, sendo possível especificar compressão por coluna, além de ser otimizado para trabalhar com estruturas de dados complexas em massa. Todos esses benefícios são em virtude do algorítimo <em>record shredding and assembly algorithm</em> descrito no <em><a href="https://research.google/pubs/pub36632/"
-   
-   target="_blank" rel="noopener">Dremel paper</a>
-</em> da Google e implementado como parte do <em>core</em> do Parquet.</p>
+<p>Parquet foi criado para suportar compressão e codificação de forma eficiente, sendo possível especificar compressão por coluna, além de ser otimizado para trabalhar com estruturas de dados complexas em massa. Todos esses benefícios são em virtude do algorítimo <em>record shredding and assembly algorithm</em> descrito no <em><a href="https://research.google/pubs/pub36632/"  target="_blank" rel="noopener">Dremel paper</a></em> da Google e implementado como parte do <em>core</em> do Parquet.</p>
 <p>Podemos dividir um arquivo Parquet em duas partes basicamente:</p>
 <ul>
 <li>Dados</li>
@@ -404,10 +398,7 @@
   </figcaption>
 </figure>
 
-<p>Em um <a href="https://databricks.com/glossary/what-is-parquet"
-   
-   target="_blank" rel="noopener">comparativo disponibilizado pela Databricks</a>
- em relação ao uso de CSV ou Parquet podemos observar:</p>
+<p>Em um <a href="https://databricks.com/glossary/what-is-parquet"  target="_blank" rel="noopener">comparativo disponibilizado pela Databricks</a> em relação ao uso de CSV ou Parquet podemos observar:</p>
 <table>
 <thead>
 <tr>
@@ -435,40 +426,16 @@
 <p>O uso de Parquet reduziu o espaço de armazenamento em 87%, escaneou 99% menos dados e executou 34x mais rápido em determinadas operações.</p>
 <p>É possível utilizar Parquet em diversas ferramentas do ecossistema Hadoop como, por exemplo:</p>
 <ul>
-<li><a href="https://spark.apache.org/"
-   
-   target="_blank" rel="noopener">Spark</a>
-</li>
-<li><a href="https://hive.apache.org/"
-   
-   target="_blank" rel="noopener">Hive</a>
-</li>
-<li><a href="https://impala.apache.org/"
-   
-   target="_blank" rel="noopener">Impala</a>
-</li>
-<li><a href="http://drill.apache.org/"
-   
-   target="_blank" rel="noopener">Drill</a>
-</li>
-<li><a href="https://pig.apache.org/"
-   
-   target="_blank" rel="noopener">Pig</a>
-</li>
+<li><a href="https://spark.apache.org/"  target="_blank" rel="noopener">Spark</a></li>
+<li><a href="https://hive.apache.org/"  target="_blank" rel="noopener">Hive</a></li>
+<li><a href="https://impala.apache.org/"  target="_blank" rel="noopener">Impala</a></li>
+<li><a href="http://drill.apache.org/"  target="_blank" rel="noopener">Drill</a></li>
+<li><a href="https://pig.apache.org/"  target="_blank" rel="noopener">Pig</a></li>
 </ul>
 <p>Mas chega de teoria, vamos colocar a mão na massa.</p>
-<p>No exemplo de hoje vou explicar como utilizar Parquet com <a href="https://pandas.pydata.org/"
-   
-   target="_blank" rel="noopener">Pandas</a>
- e <a href="https://spark.apache.org/"
-   
-   target="_blank" rel="noopener">Spark</a>
-.</p>
+<p>No exemplo de hoje vou explicar como utilizar Parquet com <a href="https://pandas.pydata.org/"  target="_blank" rel="noopener">Pandas</a> e <a href="https://spark.apache.org/"  target="_blank" rel="noopener">Spark</a>.</p>
 <h2 id="pandas">Pandas</h2>
-<p>O <a href="https://pandas.pydata.org/"
-   
-   target="_blank" rel="noopener">Pandas</a>
- é uma biblioteca para análise e manipulação de dados em Python.</p>
+<p>O <a href="https://pandas.pydata.org/"  target="_blank" rel="noopener">Pandas</a> é uma biblioteca para análise e manipulação de dados em Python.</p>
 <p>Neste exemplo vamos converter uma lista de dicionários, salvar no formato Parquet e após vamos carregar o arquivo gerado para conferência.</p>
 <div class="jp-notebook">
   
@@ -684,10 +651,7 @@
 </div>
 
 <h2 id="spark">Spark</h2>
-<p>O <a href="https://spark.apache.org/"
-   
-   target="_blank" rel="noopener">Spark</a>
- é uma <em>engine</em> para processamento e análise de dados, e o exemplo é bem simples.</p>
+<p>O <a href="https://spark.apache.org/"  target="_blank" rel="noopener">Spark</a> é uma <em>engine</em> para processamento e análise de dados, e o exemplo é bem simples.</p>
 <p>Vamos usar o Spark para salvar um DataFrame no formato Parquet, após salvo vamos carregar o arquivo gerado e executar queries SQL em cima dos dados.</p>
 <div class="jp-notebook">
   
@@ -992,14 +956,8 @@
 </ul>
 <p><strong>Referências</strong></p>
 <ul>
-<li><a href="https://parquet.apache.org/documentation/latest/"
-   
-   target="_blank" rel="noopener">Documentação do Apache Parquet</a>
-</li>
-<li><a href="https://spark.apache.org/docs/latest/sql-data-sources-parquet.html"
-   
-   target="_blank" rel="noopener">Documentação do Spark - Parquet Files</a>
-</li>
+<li><a href="https://parquet.apache.org/documentation/latest/"  target="_blank" rel="noopener">Documentação do Apache Parquet</a></li>
+<li><a href="https://spark.apache.org/docs/latest/sql-data-sources-parquet.html"  target="_blank" rel="noopener">Documentação do Spark - Parquet Files</a></li>
 </ul>
 
   </article>

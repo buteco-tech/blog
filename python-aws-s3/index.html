@@ -404,10 +404,7 @@
 <pre class="chroma"><code class="language-bash" data-lang="bash">pip3 install boto3
 </code></pre></td></tr></table>
 </div>
-</div><p>Observação: Se você nāo possuí o <code>pip3</code> instalado veja este <a href="https://helpdeskgeek.com/how-to/how-to-install-python-pip/"
-   
-   target="_blank" rel="noopener">tutorial</a>
- de como instalar.</p>
+</div><p>Observação: Se você nāo possuí o <code>pip3</code> instalado veja este <a href="https://helpdeskgeek.com/how-to/how-to-install-python-pip/"  target="_blank" rel="noopener">tutorial</a> de como instalar.</p>
 <p>Uma vez instalado, precisamos criar um cliente usando as credenciais do usuário que acabamos de criar.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -452,10 +449,7 @@
 <span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Usando a função <code>create_bucket</code> podemos criar um novo bucket. No exemplo acima estamos criando um bucket com acesso <code>private</code>, ou seja, apenas nosso usuário tera acesso ao bucket. Além disso, estamos dando um nome para o bucket, tenha em mente que este nome é compartilhado entre todos os usuários da região do seu bucket, por isso é necessário que o nome seja único, altere para o nome que quiser. Por fim precisamos definir a região aonde queremos que nosso bucket exista, no exemplo estamos colocando em <code>eu-west-1</code> que fica na Irlanda (mais especificamente em Dublin), você pode usar qualquer região aqui. Dependendo da natureza da sua aplicação pode ser que você queira uma menor latência, nesse caso, é importante manter em uma região próxima aos seus usuários. Caso você queira um custo reduzido você pode tentar regiões onde o custo por GB é menor. Veja a <a href="https://aws.amazon.com/s3/pricing/"
-   
-   target="_blank" rel="noopener">tabela</a>
- de custos do S3 para mais detalhes.</p>
+</div><p>Usando a função <code>create_bucket</code> podemos criar um novo bucket. No exemplo acima estamos criando um bucket com acesso <code>private</code>, ou seja, apenas nosso usuário tera acesso ao bucket. Além disso, estamos dando um nome para o bucket, tenha em mente que este nome é compartilhado entre todos os usuários da região do seu bucket, por isso é necessário que o nome seja único, altere para o nome que quiser. Por fim precisamos definir a região aonde queremos que nosso bucket exista, no exemplo estamos colocando em <code>eu-west-1</code> que fica na Irlanda (mais especificamente em Dublin), você pode usar qualquer região aqui. Dependendo da natureza da sua aplicação pode ser que você queira uma menor latência, nesse caso, é importante manter em uma região próxima aos seus usuários. Caso você queira um custo reduzido você pode tentar regiões onde o custo por GB é menor. Veja a <a href="https://aws.amazon.com/s3/pricing/"  target="_blank" rel="noopener">tabela</a> de custos do S3 para mais detalhes.</p>
 <p>Criado nosso bucket, podemos acessar o console da nossa conta na AWS e acessar a página do S3 na região que criamos o bucket, podemos ver que o bucket foi criado com sucesso.</p>
 <figure >
   <img loading="lazy"

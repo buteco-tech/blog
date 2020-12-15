@@ -67,7 +67,7 @@
 <meta itemprop="description" content="Se você é ou pretende se tornar um desenvolvedor, já deve ter ouvido falar do Git e GitHub, um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las.">
 <meta itemprop="datePublished" content="2020-11-18T08:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-11-18T08:00:00+00:00" />
-<meta itemprop="wordCount" content="1981">
+<meta itemprop="wordCount" content="1973">
 <meta itemprop="image" content="https://butecotecnologico.com.br/tutorial-git-e-github/git-logo.png">
 
 
@@ -366,43 +366,16 @@
       alt="git"/>
 </figure>
 
-<p>Você já deve ter ouvido falar do <a href="https://git-scm.com/"
-   
-   target="_blank" rel="noopener">Git</a>
- e <a href="https://github.com/"
-   
-   target="_blank" rel="noopener">GitHub</a>
-, um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las.</p>
+<p>Você já deve ter ouvido falar do <a href="https://git-scm.com/"  target="_blank" rel="noopener">Git</a> e <a href="https://github.com/"  target="_blank" rel="noopener">GitHub</a>, um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las.</p>
 <h2 id="o-que-é-git">O que é Git?</h2>
-<p>Git é um sistema de código aberto e gratuito para controle de versão, criado em 2005 por <a href="https://pt.wikipedia.org/wiki/Linus_Torvalds"
-   
-   target="_blank" rel="noopener">Linus Torvalds</a>
- enquanto desenvolvia o <a href="https://github.com/torvalds/linux"
-   
-   target="_blank" rel="noopener">Kernel do Linux</a>
-. <strong>Controle de versão</strong> é um sistema que permite gravar alterações em arquivos ao longo do tempo, portanto, podemos visualizar versões específicas desses arquivos posteriormente.</p>
+<p>Git é um sistema de código aberto e gratuito para controle de versão, criado em 2005 por <a href="https://pt.wikipedia.org/wiki/Linus_Torvalds"  target="_blank" rel="noopener">Linus Torvalds</a> enquanto desenvolvia o <a href="https://github.com/torvalds/linux"  target="_blank" rel="noopener">Kernel do Linux</a>. <strong>Controle de versão</strong> é um sistema que permite gravar alterações em arquivos ao longo do tempo, portanto, podemos visualizar versões específicas desses arquivos posteriormente.</p>
 <p>Geralmente, acontece de termos muitos desenvolvedores trabalhando numa mesma base de códigos, então um sistema de controle de versão como o Git é necessário para diminuir conflitos entre o código de cada desenvolvedor.</p>
 <h2 id="o-que-é-github">O que é GitHub?</h2>
-<p>Se você vai utilizar Git, é necessário armazenar seu repositório em algum lugar. Existem duas formas de se fazer isso, offline, no seu próprio computador, ou online, em alguma plataforma como <a href="https://github.com/"
-   
-   target="_blank" rel="noopener">GitHub</a>
-, <a href="https://bitbucket.org/"
-   
-   target="_blank" rel="noopener">BitBucket</a>
- ou <a href="https://gitlab.com/explore"
-   
-   target="_blank" rel="noopener">GitLab</a>
-.</p>
+<p>Se você vai utilizar Git, é necessário armazenar seu repositório em algum lugar. Existem duas formas de se fazer isso, offline, no seu próprio computador, ou online, em alguma plataforma como <a href="https://github.com/"  target="_blank" rel="noopener">GitHub</a>, <a href="https://bitbucket.org/"  target="_blank" rel="noopener">BitBucket</a> ou <a href="https://gitlab.com/explore"  target="_blank" rel="noopener">GitLab</a>.</p>
 <p>É exatamente para isso que o GitHub serve, para armazenar seus repositórios, ele é o &ldquo;Google Drive dos códigos&rdquo;.</p>
 <h2 id="configuração-do-ambiente">Configuração do ambiente</h2>
-<p>Primeiramente, é necessário possuir o Git instalado no seu computador e uma conta no GitHub. Você pode baixar o Git no <a href="https://git-scm.com/downloads"
-   
-   target="_blank" rel="noopener">site oficial</a>
-, basta selecionar o seu sistema operacional e seguir o guia de instalação.</p>
-<p>No Linux, recomenda-se instalar o Git via gerenciador de pacotes, nesse caso, você pode ir até <a href="https://git-scm.com/download/linux"
-   
-   target="_blank" rel="noopener">essa página</a>
- e executar no seu terminal o comando específico da sua distribuição.</p>
+<p>Primeiramente, é necessário possuir o Git instalado no seu computador e uma conta no GitHub. Você pode baixar o Git no <a href="https://git-scm.com/downloads"  target="_blank" rel="noopener">site oficial</a>, basta selecionar o seu sistema operacional e seguir o guia de instalação.</p>
+<p>No Linux, recomenda-se instalar o Git via gerenciador de pacotes, nesse caso, você pode ir até <a href="https://git-scm.com/download/linux"  target="_blank" rel="noopener">essa página</a> e executar no seu terminal o comando específico da sua distribuição.</p>
 <p>Depois de instalar o Git, é necessário configurar o seu nome e e-mail que serão exibidos em seus <em>commits</em>, para isso é só digitar no terminal os comandos abaixo:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -438,10 +411,7 @@ ls
 </code></pre></td></tr></table>
 </div>
 </div><p>O comando acima irá pedir um nome do arquivo para salvar a chave, não escreva nada e aperte enter (será gerada uma com o nome <strong>id_rsa</strong>). Depois, informe uma senha (<em>passphrase</em>) e confirme ela. Pronto, você gerou uma chave SSH.</p>
-<p>Vamos agora adicionar a chave ao <a href="https://pt.wikipedia.org/wiki/Ssh-agent"
-   
-   target="_blank" rel="noopener">ssh-agent</a>
-, um programa que fará a autenticação da sua máquina local, com o servidor remoto, que nesse caso seria o GitHub, execute então o comando <code>ssh-agent</code>:</p>
+<p>Vamos agora adicionar a chave ao <a href="https://pt.wikipedia.org/wiki/Ssh-agent"  target="_blank" rel="noopener">ssh-agent</a>, um programa que fará a autenticação da sua máquina local, com o servidor remoto, que nesse caso seria o GitHub, execute então o comando <code>ssh-agent</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -462,10 +432,7 @@ ls
 </div>
 </div><p>A mensagem <code>Identity added : id_rsa (seu-email@buteco.tech)</code> será exibida.</p>
 <h2 id="adicionando-a-chave-ssh-à-sua-conta-no-github">Adicionando a chave SSH à sua conta no GitHub</h2>
-<p>Primeiramente, você deve <a href="https://github.com/join"
-   
-   target="_blank" rel="noopener">criar uma conta</a>
- no GitHub.</p>
+<p>Primeiramente, você deve <a href="https://github.com/join"  target="_blank" rel="noopener">criar uma conta</a> no GitHub.</p>
 <p>No diretório <code>~/.ssh</code> existem dois arquivos, <strong>id_rsa</strong> e <strong>id_rsa.pub</strong>. O com a extensão <strong>.pub</strong> é a chave pública, ou seja, a chave que você irá informar ao GitHub. O arquivo sem o <strong>.pub</strong> é a sua chave privada.</p>
 <p>Digite o seguinte comando no terminal para exibir o conteúdo da chave gerada:</p>
 <div class="highlight"><div class="chroma">
@@ -477,10 +444,7 @@ ls
 </code></pre></td></tr></table>
 </div>
 </div><p>Copie todo o conteúdo para a sua área de transferência (lembre-se de copiar desde &ldquo;ssh-rsa&rdquo; até o seu e-mail).</p>
-<p>Acesse a página de <a href="https://github.com/settings/keys"
-   
-   target="_blank" rel="noopener">SSH and GPG keys no GitHub</a>
- para associar a nova chaves SSH a sua conta. Clique então no botão <strong><em>New SSH Key</em></strong>.</p>
+<p>Acesse a página de <a href="https://github.com/settings/keys"  target="_blank" rel="noopener">SSH and GPG keys no GitHub</a> para associar a nova chaves SSH a sua conta. Clique então no botão <strong><em>New SSH Key</em></strong>.</p>
 <p>O título você pode escolher um (ex: chave <a href="mailto:seu-email@buteco.tech">seu-email@buteco.tech</a>), e em <em>Key</em>, você informará o conteúdo que copiou anteriormente.</p>
 <p>Clique em <em>Add SSH Key</em> para salvar. Pronto, sua configuração está feita.</p>
 <figure >
@@ -492,10 +456,7 @@ ls
 <h2 id="fluxo-de-trabalho-1">Fluxo de trabalho 1</h2>
 <p>Geralmente, o fluxo de trabalho com Git e GitHub é realizando um <em>fork</em> de um determinado repositório de outra pessoa. Dessa forma, vamos criar uma cópia deste repositório no nosso perfil. Após fazer o <em>clone</em> do <em>fork</em> para a nossa máquina local, podemos realizar alterações, e publicar as alterações feitas em seu repositório <em>fork</em> no GitHub. Por fim, poremos criar um <em>pull request</em> do seu <em>fork</em> para o repositório principal (<em>upstream</em>).</p>
 <h3 id="fork">Fork</h3>
-<p>Vamos começar realizando o <em>fork</em> de um repositório base no GitHub. Veja nosso repositório <a href="https://github.com/buteco-tech/artigo-tutorial-git"
-   
-   target="_blank" rel="noopener">artigo-tutorial-git</a>
- e clique no botão <strong><em>Fork</em></strong> no canto superior direito. Ao clicar, será feita uma cópia do repositório do Buteco em seu perfil no GitHub.</p>
+<p>Vamos começar realizando o <em>fork</em> de um repositório base no GitHub. Veja nosso repositório <a href="https://github.com/buteco-tech/artigo-tutorial-git"  target="_blank" rel="noopener">artigo-tutorial-git</a> e clique no botão <strong><em>Fork</em></strong> no canto superior direito. Ao clicar, será feita uma cópia do repositório do Buteco em seu perfil no GitHub.</p>
 <p>Agora em seus repositórios você tera uma cópia de <strong>artigo-tutorial-git</strong>. Lembre-se, você não está no repositório principal, você está no seu, as alterações feitas ali, não terão impacto no principal.</p>
 <p>Você deve criar um <em>Pull Request</em> para enviar suas alterações, que é o que iremos ver daqui a pouco.</p>
 <h3 id="git-clone">Git Clone</h3>
@@ -534,10 +495,7 @@ ls
 
 <p>Perceba que existe ali, uma pasta chamada <strong>.git</strong>, é nela que o Git guarda todas as informações do seu repositório, todas as alterações, o endereço do repositório remoto e tudo o que é relacionado ao controle de versão.</p>
 <blockquote>
-<p>No Windows talvez você não consiga visualizar esta pasta pois ela é um arquivo oculto, então é só seguir <a href="https://support.microsoft.com/pt-br/help/14201/windows-show-hidden-files"
-   
-   target="_blank" rel="noopener">esse tutorial</a>
- para alterar as configurações.</p>
+<p>No Windows talvez você não consiga visualizar esta pasta pois ela é um arquivo oculto, então é só seguir <a href="https://support.microsoft.com/pt-br/help/14201/windows-show-hidden-files"  target="_blank" rel="noopener">esse tutorial</a> para alterar as configurações.</p>
 </blockquote>
 <h3 id="git-status-e-git-add">Git Status e Git Add</h3>
 <p>Vamos criar um novo arquivo para que possamos adicionar ele depois, então, crie um arquivo de texto qualquer dentro do diretório do repositório.</p>
@@ -615,10 +573,7 @@ ls
 
 <p>Isso irá abrir uma página mostrando os arquivos alterados e um botão <strong><em>Create pull request</em></strong>. Clique nele, informe o título e um comentário para esse <em>pull request</em> e clique no botão <strong><em>Create pull request</em></strong>.</p>
 <p>Pronto, seu PR foi criado com sucesso.</p>
-<p>Se você for até a página de <a href="https://github.com/buteco-tech/artigo-tutorial-git/pulls"
-   
-   target="_blank" rel="noopener">pull requests do repositório principal</a>
-, o seu PR estara lá. Agora, para a sua alteração entrar de fato no repositório principal, o se <em>pull request</em> deve ser aceito por algum mantedor do repositório. Esse processo de aceitar um <em>pull request</em> é chamado de <em>merge</em>.</p>
+<p>Se você for até a página de <a href="https://github.com/buteco-tech/artigo-tutorial-git/pulls"  target="_blank" rel="noopener">pull requests do repositório principal</a>, o seu PR estara lá. Agora, para a sua alteração entrar de fato no repositório principal, o se <em>pull request</em> deve ser aceito por algum mantedor do repositório. Esse processo de aceitar um <em>pull request</em> é chamado de <em>merge</em>.</p>
 <h3 id="o-que-é-pull-request">O que é Pull Request?</h3>
 <p>Desde o começo desse artigo, tudo girou em torno deste momento, em que você cria o seu <em>pull request</em>, mas afinal, o que é um <em>pull request</em>?</p>
 <p>Para entendermos o que é um <em>pull request</em> precisamos entender o que é um <em>pull</em>. Quando existe alguma alteração no repositório remoto, e você quer baixar essa alteração para o seu repositório local, ou seja, o seu repositório local está atrasado em relação ao remoto, você digita <code>git pull</code> no terminal (olha só, mais um comando novo). Um <em>pull request</em> é uma sugestão de uma alteração, ou seja, você está pedindo para que aquele repositório que você enviou o <em>pull request</em> faça um <em>pull</em> com as suas alterações.</p>
@@ -644,10 +599,7 @@ ls
 </figure>
 
 <p>Feito isso, é hora de subirmos essas alterações para o repositório remoto (que ainda não foi criado).</p>
-<p>Precisamos <a href="https://github.com/new"
-   
-   target="_blank" rel="noopener">criar um repositório no GitHub</a>
-. Nesta página informe algumas informações sobre o repositório, como o nome, descrição, e clique em <strong><em>Create repository</em></strong>.</p>
+<p>Precisamos <a href="https://github.com/new"  target="_blank" rel="noopener">criar um repositório no GitHub</a>. Nesta página informe algumas informações sobre o repositório, como o nome, descrição, e clique em <strong><em>Create repository</em></strong>.</p>
 <p>Pronto, um novo repositório foi criado.</p>
 <h3 id="vinculando-o-repositório-local-ao-remoto">Vinculando o repositório local, ao remoto</h3>
 <p>Veja que existem ali três opções:</p>

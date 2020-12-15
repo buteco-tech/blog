@@ -67,7 +67,7 @@
 <meta itemprop="description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos.">
 <meta itemprop="datePublished" content="2020-10-01T08:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-10-01T08:00:00+00:00" />
-<meta itemprop="wordCount" content="2301">
+<meta itemprop="wordCount" content="2299">
 <meta itemprop="image" content="https://butecotecnologico.com.br/tutorial-de-docker/docker-logo.png">
 
 
@@ -366,10 +366,7 @@
 </figure>
 
 <p>O Docker é um conjunto de ferrametas criada para facilitar o uso de contêineres, algo que não é tão novo no mundo Linux uma vez que projetos como o LXC já existem a muitos anos, porém o seu uso é complexo e a curva de aprendizado é bastante grande. Foi para resolver este e outros problemas que o Docker nasceu. Inicialmente criado por uma empresa independente, teve tanto sucesso que a própria empresa mudou seu nome posteriormente para Docker Inc..</p>
-<p>Mas por que você deveria se importar com <a href="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"
-   
-   target="_blank" rel="noopener">contêineres</a>
-? Existe uma série de motivos que fazem os contêineres serem interessantes e uma melhor alternativa que as máquinas virtuais. O principal deles é que contêineres usam bem menos recursos da maquina hospedeira, na prática cada contêiner é apenas um processo isolado, diferente de toda a sobrecarga que existe quando se usa uma máquina virtual, nesta onde se tem todo um sistema operacional convidado que consome recursos independente da sua aplicação, apenas para manter este sistema operacional funcionando. Isso permite que você execute muito mais aplicações e contêineres no mesmo equipamento físico.</p>
+<p>Mas por que você deveria se importar com <a href="https://butecotecnologico.com.br/de-que-sao-feitos-containers-linux/"  target="_blank" rel="noopener">contêineres</a>? Existe uma série de motivos que fazem os contêineres serem interessantes e uma melhor alternativa que as máquinas virtuais. O principal deles é que contêineres usam bem menos recursos da maquina hospedeira, na prática cada contêiner é apenas um processo isolado, diferente de toda a sobrecarga que existe quando se usa uma máquina virtual, nesta onde se tem todo um sistema operacional convidado que consome recursos independente da sua aplicação, apenas para manter este sistema operacional funcionando. Isso permite que você execute muito mais aplicações e contêineres no mesmo equipamento físico.</p>
 <p>Outra questão importante que nem sempre é considerado quando se usa máquinas virtuais, é que contêineres são efêmeros, ou seja, um contêiner não deve armazenar dados importantes em seu <code>filesystem</code>.</p>
 <p>Aprenda neste tutorial como usar e aproveitar o máximo do Docker no seu dia a dia como desenvolvedor de software.</p>
 <h2 id="instalação">Instalação</h2>
@@ -385,14 +382,8 @@
 </div><p>O comando acima irá fazer o download de um script que fará a instalação do docker na maioria das distribuições Linux, e executa a instalação usando o <code>bash</code>.</p>
 <p>Para fazer a instalação em outros sistemas operacionais, clique no link abaixo para fazer a transferência do instalador:</p>
 <ul>
-<li><a href="https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe"
-   
-   target="_blank" rel="noopener">Windows</a>
-</li>
-<li><a href="https://download.docker.com/mac/stable/Docker.dmg"
-   
-   target="_blank" rel="noopener">Mac</a>
-</li>
+<li><a href="https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe"  target="_blank" rel="noopener">Windows</a></li>
+<li><a href="https://download.docker.com/mac/stable/Docker.dmg"  target="_blank" rel="noopener">Mac</a></li>
 </ul>
 <p>A instalação no Windows e Mac são bem simples, basta seguir o passo a passo ao executador o instalador. Perceba que o Docker Desktop funciona de forma diferente, como o docker é nativo apenas de Linux e se você quiser rodar contêineres Linux em outro sistema operacional, o Docker Desktop irá criar uma máquina virtual para executar os contêineres. Sendo que no Windows é usado por padrão o HyperV e no Mac o VirtualBox.</p>
 <p>Algo importante de se notar é que existem contêineres nativos para Windows, porém saiba que imagens de contêineres Linux não são compatíveis com imagens de contêineres Windows, contudo usando contêineres Windows no sistema operacional Windows você terá a mesma experiência e desempenho semelhantes a contêineres Linux sendo executados em alguma distribuição.</p>
@@ -631,10 +622,7 @@ For more examples and ideas, visit:
 </code></pre></td></tr></table>
 </div>
 </div><p>O comando acima executa o subcomando <code>run</code> que basicamente cria e executa um novo contêiner. O único parâmetro que realmente é obrigatório para executar um contêiner é o nome da imagem do contêiner. Uma imagem de contêiner é um pacote executável leve, standalone, que incluí tudo necessário para executar a aplicação, como código, runtime, ferramentas de runtime, bibliotecas e configurações.</p>
-<p>Na saída do programa podemos ver que o docker tentou buscar localmente a imagem <code>hello-world</code>, porém como nesse caso não existia ele buscou do repositório padrão, que é o <a href="https://hub.docker.com/"
-   
-   target="_blank" rel="noopener">Docker Hub</a>
-. Logo após iniciou o download de cada camada da imagem, cada camada é uma mudança na imagem, como o <code>hello-world</code> é simples, possuí apenas uma única camada.</p>
+<p>Na saída do programa podemos ver que o docker tentou buscar localmente a imagem <code>hello-world</code>, porém como nesse caso não existia ele buscou do repositório padrão, que é o <a href="https://hub.docker.com/"  target="_blank" rel="noopener">Docker Hub</a>. Logo após iniciou o download de cada camada da imagem, cada camada é uma mudança na imagem, como o <code>hello-world</code> é simples, possuí apenas uma única camada.</p>
 <p>Por fim, após o download do imagem é criado uma instância da imagem que é o contêinere em si, podendo ver então o texto do <code>Hello from Docker!</code></p>
 <h2 id="conceitos-importantes">Conceitos importantes</h2>
 <p>Além do que vimos acima, existem diversos outros conceitos importantes que você deve saber antes de começar a usar o docker, ou até mesmo para usar todo o potêncial do mesmo.</p>

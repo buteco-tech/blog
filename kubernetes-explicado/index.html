@@ -67,7 +67,7 @@
 <meta itemprop="description" content="O Kubernetes (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers e foi criado pelo Google.">
 <meta itemprop="datePublished" content="2020-08-13T08:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-08-13T08:00:00+00:00" />
-<meta itemprop="wordCount" content="946">
+<meta itemprop="wordCount" content="940">
 <meta itemprop="image" content="https://butecotecnologico.com.br/kubernetes-explicado/k8s-logo.png">
 
 
@@ -366,10 +366,7 @@
       alt="K8s"/>
 </figure>
 
-<p>O <a href="https://kubernetes.io/"
-   
-   target="_blank" rel="noopener">Kubernetes</a>
- (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers. A Google criou o projeto inicialmente para uso interno, e tornou-o software livre em 2014.</p>
+<p>O <a href="https://kubernetes.io/"  target="_blank" rel="noopener">Kubernetes</a> (K8s) é uma plataforma para orquestrar, gerenciar e escalar containers. A Google criou o projeto inicialmente para uso interno, e tornou-o software livre em 2014.</p>
 <p>Com o Kubernetes é possível:</p>
 <ul>
 <li>Escalar aplicações horizontalmente e verticalmente</li>
@@ -398,14 +395,8 @@
 <p>Um cluster geralmente contém múltiplas máquinas. Para o Control Plane o ideal é alta disponibilidade, e para isso é necessário possuir pelo menos dois <em>master node</em>. Para a execução de suas aplicações, irá depender do tamanho do seu projeto, mas o ideal também é dois <em>worker node</em>, totalizando quatro máquinas.</p>
 <p>Em casos mais específicos é possível criar um cluster Kubernetes com apenas uma máquina, ou até mesmo utilizando um Raspberry Pi.</p>
 <h3 id="pod">Pod</h3>
-<p>Um <a href="https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/"
-   
-   target="_blank" rel="noopener">Pod</a>
-, em resumo, é uma instância da sua aplicação no cluster.</p>
-<p><a href="https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/"
-   
-   target="_blank" rel="noopener">Pod</a>
- é o menor objeto no modelo de objetos do Kubernetes. Ele encapsula um ou mais containers, armazenamento, redes e tudo o que for necessário para executar uma aplicação.</p>
+<p>Um <a href="https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/"  target="_blank" rel="noopener">Pod</a>, em resumo, é uma instância da sua aplicação no cluster.</p>
+<p><a href="https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/"  target="_blank" rel="noopener">Pod</a> é o menor objeto no modelo de objetos do Kubernetes. Ele encapsula um ou mais containers, armazenamento, redes e tudo o que for necessário para executar uma aplicação.</p>
 <h3 id="control-plane">Control Plane</h3>
 <p>Kubernetes Control Plane garante que o estado atual do cluster é o estado desejado e definido. Para tal, ele executa uma variedade de tarefas automaticamente, inspecionado o cluster e corrigindo qualquer não conformidade.</p>
 <p>O Control Plane consiste em um ou mais Kubernetes Master.</p>
@@ -413,74 +404,29 @@
 <p>Kubernetes Master, também referido como Master Node, é responsável por manter o cluster no estado desejado, garantindo que todas as aplicações tenham os recursos necessários para sua execução.</p>
 <p>No master temos os seguintes componentes:</p>
 <ul>
-<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/"
-   
-   target="_blank" rel="noopener">kube-scheduler</a>
- — Responsável por gerenciar os Pods</li>
-<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/"
-   
-   target="_blank" rel="noopener">kube-apiserver</a>
- — Responsável por expor a API do Kubernetes</li>
-<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/"
-   
-   target="_blank" rel="noopener">kube-controller-manager</a>
- — Responsáveis pelo controle de nodes, replicação, e outros itens</li>
-<li><a href="https://kubernetes.io/docs/concepts/architecture/cloud-controller/"
-   
-   target="_blank" rel="noopener">cloud-controller-manager</a>
- — Responsável por integrar com provedores cloud (AWS, GCP, Azure)</li>
-<li><a href="https://etcd.io/"
-   
-   target="_blank" rel="noopener">etcd</a>
- — Banco de dados <em>key value</em> que armazena todas as informações do cluster</li>
+<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/"  target="_blank" rel="noopener">kube-scheduler</a> — Responsável por gerenciar os Pods</li>
+<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/"  target="_blank" rel="noopener">kube-apiserver</a> — Responsável por expor a API do Kubernetes</li>
+<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/"  target="_blank" rel="noopener">kube-controller-manager</a> — Responsáveis pelo controle de nodes, replicação, e outros itens</li>
+<li><a href="https://kubernetes.io/docs/concepts/architecture/cloud-controller/"  target="_blank" rel="noopener">cloud-controller-manager</a> — Responsável por integrar com provedores cloud (AWS, GCP, Azure)</li>
+<li><a href="https://etcd.io/"  target="_blank" rel="noopener">etcd</a> — Banco de dados <em>key value</em> que armazena todas as informações do cluster</li>
 </ul>
 <h3 id="kubernetes-node">Kubernetes Node</h3>
 <p>Kubernetes Node, também referido como Worker Node e Compute Machine, é responsável por executar os Pods e prover todo o ambiente necessário para tal.</p>
 <p>No node temos os seguintes componentes:</p>
 <ul>
-<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/"
-   
-   target="_blank" rel="noopener">kubelet</a>
- — Agente que está presente em todo <em>worker node</em> e é responsável por gerenciar os Pods estão rodando, além de se comunicar com o <em>master node</em></li>
-<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/"
-   
-   target="_blank" rel="noopener">kube-proxy</a>
- — Proxy de rede que mantém regras e permite a comunicação com Pods dentro e fora da rede</li>
-<li>Container runtime — Software responsável por executar os containers, alguns suportados pelo Kubernetes são o <a href="https://docs.docker.com/engine/"
-   
-   target="_blank" rel="noopener">Docker</a>
-, <a href="https://containerd.io/docs/"
-   
-   target="_blank" rel="noopener">containerd</a>
- e o <a href="https://cri-o.io/#what-is-cri-o"
-   
-   target="_blank" rel="noopener">CRI-O</a>
-</li>
+<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/"  target="_blank" rel="noopener">kubelet</a> — Agente que está presente em todo <em>worker node</em> e é responsável por gerenciar os Pods estão rodando, além de se comunicar com o <em>master node</em></li>
+<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/"  target="_blank" rel="noopener">kube-proxy</a> — Proxy de rede que mantém regras e permite a comunicação com Pods dentro e fora da rede</li>
+<li>Container runtime — Software responsável por executar os containers, alguns suportados pelo Kubernetes são o <a href="https://docs.docker.com/engine/"  target="_blank" rel="noopener">Docker</a>, <a href="https://containerd.io/docs/"  target="_blank" rel="noopener">containerd</a> e o <a href="https://cri-o.io/#what-is-cri-o"  target="_blank" rel="noopener">CRI-O</a></li>
 </ul>
 <h3 id="objetos">Objetos</h3>
 <p>No Kubernetes existe uma série de abstrações que representam o estado de todo o sistema. Os objetos são responsáveis por especificar como as aplicações, serviços, volumes de armazenamento, redes, permissões e outros itens irão se comportar no seu cluster.</p>
 <p>Alguns exemplos de objetos comumente usados são:</p>
 <ul>
-<li><a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
-   
-   target="_blank" rel="noopener">Namespace</a>
- — Separação lógica de aplicações por ambientes</li>
-<li><a href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
-   
-   target="_blank" rel="noopener">Deployment</a>
- — Define o estado desejado de um Pod, quantidade de réplicas, e mais</li>
-<li><a href="https://kubernetes.io/docs/concepts/services-networking/service/"
-   
-   target="_blank" rel="noopener">Service</a>
- — Expõe sua aplicação como um serviço na rede</li>
-<li><a href="https://kubernetes.io/docs/concepts/services-networking/ingress/"
-   
-   target="_blank" rel="noopener">Ingress</a>
- — Expões sua aplicação para acesso externo, define rotas, balanceamento de carga e mais</li>
-<li><a href="https://kubernetes.io/docs/concepts/storage/volumes/"
-   
-   target="_blank" rel="noopener">Volumes</a>
- — Abstração do armazenamento de dados da sua aplicação</li>
+<li><a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"  target="_blank" rel="noopener">Namespace</a> — Separação lógica de aplicações por ambientes</li>
+<li><a href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"  target="_blank" rel="noopener">Deployment</a> — Define o estado desejado de um Pod, quantidade de réplicas, e mais</li>
+<li><a href="https://kubernetes.io/docs/concepts/services-networking/service/"  target="_blank" rel="noopener">Service</a> — Expõe sua aplicação como um serviço na rede</li>
+<li><a href="https://kubernetes.io/docs/concepts/services-networking/ingress/"  target="_blank" rel="noopener">Ingress</a> — Expões sua aplicação para acesso externo, define rotas, balanceamento de carga e mais</li>
+<li><a href="https://kubernetes.io/docs/concepts/storage/volumes/"  target="_blank" rel="noopener">Volumes</a> — Abstração do armazenamento de dados da sua aplicação</li>
 </ul>
 <p>Esses são só alguns dos objetos, existem vários outros, e alguns possuem várias classes, é impossível cobrir todos nesse artigo.</p>
 <h3 id="kubernetes-api">Kubernetes API</h3>
@@ -489,77 +435,35 @@
 <p>Ferramenta de linha de comando (CLI) que permite interagir com a API do Kubernetes. É possível usar o <em>kubectl</em> para criar, editar, inspecionar e deletar objetos.</p>
 <h2 id="distribuições">Distribuições</h2>
 <p>Existem várias distribuições do Kubernetes, cada uma possui algo em particular que talvez se adéque mais a determinados usos.</p>
-<p>Para ser considerada uma distribuição compatível com os padrões da <a href="https://www.cncf.io/"
-   
-   target="_blank" rel="noopener">CNCF</a>
- (Cloud Native Computing Foundation), as distribuições devem passar por uma série de critérios para se tornar uma versão certificada. É possível obter uma lista das distribuições certificadas <a href="https://landscape.cncf.io/category=certified-kubernetes-distribution,certified-kubernetes-hosted,certified-kubernetes-installer&amp;format=card-mode&amp;grouping=category"
-   
-   target="_blank" rel="noopener">aqui</a>
-.</p>
+<p>Para ser considerada uma distribuição compatível com os padrões da <a href="https://www.cncf.io/"  target="_blank" rel="noopener">CNCF</a> (Cloud Native Computing Foundation), as distribuições devem passar por uma série de critérios para se tornar uma versão certificada. É possível obter uma lista das distribuições certificadas <a href="https://landscape.cncf.io/category=certified-kubernetes-distribution,certified-kubernetes-hosted,certified-kubernetes-installer&amp;format=card-mode&amp;grouping=category"  target="_blank" rel="noopener">aqui</a>.</p>
 <p>Podemos classificar as distribuições em 4 classes para entender um pouco melhor os diferentes tipos de distribuições.</p>
 <h3 id="puras">Puras</h3>
 <p>São as distribuições que não modificam ou que deixam para o usuário a definição de vários aspectos da instalação e configuração.</p>
-<p>O <a href="https://kubernetes.io/"
-   
-   target="_blank" rel="noopener">Kubernetes da CNCF</a>
- é o oficial, mas a Canonical também gera suas próprias compilações sem modificações.</p>
+<p>O <a href="https://kubernetes.io/"  target="_blank" rel="noopener">Kubernetes da CNCF</a> é o oficial, mas a Canonical também gera suas próprias compilações sem modificações.</p>
 <h3 id="customizadas">Customizadas</h3>
 <p>São distribuições baseadas na oficial, geralmente entregando uma versão mais fácil de gerenciar ou com funcionalidade não disponível nas versões puras.</p>
-<p>A distribuição customizada mais popular é o <a href="https://www.okd.io/"
-   
-   target="_blank" rel="noopener">OpenShift / OKD</a>
-.</p>
+<p>A distribuição customizada mais popular é o <a href="https://www.okd.io/"  target="_blank" rel="noopener">OpenShift / OKD</a>.</p>
 <h3 id="limitadas">Limitadas</h3>
 <p>São as distribuições que possuem uso limitado e específico, geralmente são versões que removem algumas funcionalidades da versão oficial para permitir o uso em certos dispositivos, alguns exemplos são:</p>
 <ul>
-<li><a href="https://minikube.sigs.k8s.io/docs/"
-   
-   target="_blank" rel="noopener">minikube</a>
- — Kubernetes local</li>
-<li><a href="https://microk8s.io/"
-   
-   target="_blank" rel="noopener">MicroK8s</a>
- — Kubernetes mais leve e de fácil instalação</li>
-<li><a href="https://k3s.io/"
-   
-   target="_blank" rel="noopener">K3s</a>
- — Kubernetes para IoT e embarcados</li>
+<li><a href="https://minikube.sigs.k8s.io/docs/"  target="_blank" rel="noopener">minikube</a> — Kubernetes local</li>
+<li><a href="https://microk8s.io/"  target="_blank" rel="noopener">MicroK8s</a> — Kubernetes mais leve e de fácil instalação</li>
+<li><a href="https://k3s.io/"  target="_blank" rel="noopener">K3s</a> — Kubernetes para IoT e embarcados</li>
 </ul>
 <h3 id="kubernetes-as-a-service">Kubernetes as a Service</h3>
 <p>São as distribuições que são fornecidas por diferentes provedores, geralmente elas integram facilmente com outros produtos e serviços, alguns exemplos são:</p>
 <ul>
-<li><a href="https://azure.microsoft.com/en-us/services/kubernetes-service/"
-   
-   target="_blank" rel="noopener">Azure AKS</a>
-</li>
-<li><a href="https://aws.amazon.com/eks"
-   
-   target="_blank" rel="noopener">Amazon EKS</a>
-</li>
-<li><a href="https://cloud.google.com/kubernetes-engine/"
-   
-   target="_blank" rel="noopener">Google GKE</a>
-</li>
+<li><a href="https://azure.microsoft.com/en-us/services/kubernetes-service/"  target="_blank" rel="noopener">Azure AKS</a></li>
+<li><a href="https://aws.amazon.com/eks"  target="_blank" rel="noopener">Amazon EKS</a></li>
+<li><a href="https://cloud.google.com/kubernetes-engine/"  target="_blank" rel="noopener">Google GKE</a></li>
 </ul>
 <h2 id="conclusão">Conclusão</h2>
 <p>Kubernetes é um assunto extenso, porém é relativamente fácil entender o seu funcionamento. Eu diria que se você já é familiarizado com containers, Docker, Docker Swarm e afins, a curva de aprendizado é relativamente moderada.</p>
-<p>Minha recomendação de leitura são os livros <a href="http://shop.oreilly.com/product/0636920175131.do"
-   
-   target="_blank" rel="noopener">Cloud Native DevOps With Kubernetes</a>
- e <a href="http://shop.oreilly.com/product/0636920223788.do"
-   
-   target="_blank" rel="noopener">Kubernetes Up and Running</a>
-. Confira como conseguir esses livros gratuitamente <a href="https://www.butecopensource.com.br/livros-gratuitos-abril-2020"
-   
-   target="_blank" rel="noopener">aqui</a>
-.</p>
+<p>Minha recomendação de leitura são os livros <a href="http://shop.oreilly.com/product/0636920175131.do"  target="_blank" rel="noopener">Cloud Native DevOps With Kubernetes</a> e <a href="http://shop.oreilly.com/product/0636920223788.do"  target="_blank" rel="noopener">Kubernetes Up and Running</a>. Confira como conseguir esses livros gratuitamente <a href="https://www.butecopensource.com.br/livros-gratuitos-abril-2020"  target="_blank" rel="noopener">aqui</a>.</p>
 <p>Iremos trazer mais conteúdo relacionado a Kubernetes, então fique ligado em nosso blog.</p>
 <p>Gostou? Ficou alguma dúvida? Deixe um comentário.</p>
 <p><strong>Referências</strong></p>
-<p><a href="https://kubernetes.io/docs/home/"
-   
-   target="_blank" rel="noopener">Documentação do Kubernetes</a>
-</p>
+<p><a href="https://kubernetes.io/docs/home/"  target="_blank" rel="noopener">Documentação do Kubernetes</a></p>
 
   </article>
 

@@ -67,7 +67,7 @@
 <meta itemprop="description" content="Existem diversas técnicas e ferramentas no mundo Python para ajudar na tarefa de debug, confira algumas delas para facilitar sua vida.">
 <meta itemprop="datePublished" content="2020-07-08T08:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-07-08T08:00:00+00:00" />
-<meta itemprop="wordCount" content="2149">
+<meta itemprop="wordCount" content="2146">
 <meta itemprop="image" content="https://butecotecnologico.com.br/guia-completo-debug-python/python-logo.png">
 
 
@@ -606,10 +606,7 @@ The program finished and will be restarted
 </code></pre></td></tr></table>
 </div>
 </div><p>Nesse ponto você tem todos os comandos do PDB disponível para debugar o código. Se quiser sair você tambêm pode usar o comando <code>quit</code> ou sua abreviação <code>q</code>.</p>
-<p>Veja estes e outros comandos disponíveis no modulo PDB na <a href="https://docs.python.org/3/library/pdb.html"
-   
-   target="_blank" rel="noopener">documentação oficial</a>
-.</p>
+<p>Veja estes e outros comandos disponíveis no modulo PDB na <a href="https://docs.python.org/3/library/pdb.html"  target="_blank" rel="noopener">documentação oficial</a>.</p>
 <h3 id="trace">Trace</h3>
 <p>Outra biblioteca que pode te ajudar a entender o que está acontecendo em uma execução é o módulo <code>trace</code>. Este módulo permite que você rastreie chamadas de uma maneira mais simples, podendo verificar, por exemplo, qual ou quais arquivos e funções são chamados, a sequência em que essas funções são chamadas e outros detalhes.</p>
 <p>Para exemplificar vamos usar o seguinte código e salvar em um arquivo <code>script.py</code>.</p>
@@ -679,10 +676,7 @@ script.py(3):         return 1
     1: if __name__ == &quot;__main__&quot;:
     1:     print(factorial(5))
 </code></pre><p>O conteúdo do arquivo mostra algo parecido com o que vimos antes, porém de uma forma mais simplificada, mostrando quantidade de execuções que houveram linha a linha. Perceba por exemplo que a linha <code>if x &lt;= 1:</code> foi executada 5 vezes, a linha <code>return 1</code> foi executada somente uma, o que é esperado pois é o ponto de parada da função e por fim a linha <code>return x * factorial(x - 1)</code> foi executada 4 vezes.</p>
-<p>Veja mais detalhes sobre o módulo <code>trace</code> na <a href="https://docs.python.org/3/library/trace.html#command-line-usage"
-   
-   target="_blank" rel="noopener">documentação oficial</a>
-.</p>
+<p>Veja mais detalhes sobre o módulo <code>trace</code> na <a href="https://docs.python.org/3/library/trace.html#command-line-usage"  target="_blank" rel="noopener">documentação oficial</a>.</p>
 <h3 id="timeit">Timeit</h3>
 <p>Em alguns momentos pode ser que seja necessário verificar o tempo de execução de alguma função, para isso que a biblioteca <code>timeit</code> existe.</p>
 <p>O timeit permite você mensurar quanto tempo a execução de uma função demorou, para entender melhor vamos usar o seguinte código de exemplo:</p>
@@ -746,10 +740,7 @@ Time of func2: 3.008447170999716
 </code></pre></td></tr></table>
 </div>
 </div><p>A função <code>timeit</code> como podemos ver, está retornando o tempo em segundos, apesar de ser um exemplo bastante óbvio, no dia a dia esse tempo é imprevisível e muitas vezes é difícil identificar qual parte do projeto ou do código esta interferindo mais no desempenho. Com o <code>timeit</code> você pode analisar o tempo e realizar testes locais para verificar se sua alteração tem melhor ou pior desempenho em relação à versão anterior do código.</p>
-<p>Veja mais sobre o timeit na <a href="https://docs.python.org/3/library/timeit.html"
-   
-   target="_blank" rel="noopener">documentação oficial</a>
-.</p>
+<p>Veja mais sobre o timeit na <a href="https://docs.python.org/3/library/timeit.html"  target="_blank" rel="noopener">documentação oficial</a>.</p>
 <h3 id="tracemalloc">Tracemalloc</h3>
 <p>A último biblioteca que vamos aprender a usar é o <code>tracemalloc</code>, este módulo tem o objetivo de fazer o rastreio da alocação de mémoria, com ele você consegue saber quanto de memória o programa esta usando, e não só isso, saber quanto cada linha esta alocando.</p>
 <p>Como de costume vamos usar o seguinte código como base.</p>

@@ -2026,16 +2026,7 @@ Nas versões anteriores do Laravel, somente era possível ter um único model pa
       src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/logoMatPlotLib.png&#34;/&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Criado por &lt;a href=&#34;https://en.wikipedia.org/wiki/John_D._Hunter&#34;
-   
-   target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;John Hunter (1968-2012)&lt;/a&gt;
-, &lt;a href=&#34;https://matplotlib.org/&#34;
-   
-   target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;matplot&lt;/a&gt;
- é usada para criação de &lt;em&gt;plots&lt;/em&gt;, histogramas, espectrogramas, gráficos (&lt;em&gt;charts&lt;/em&gt;) simples e 3D e etc. Para ter uma ideia da diversidade dessa ferramenta, você pode visitar a &lt;a href=&#34;https://matplotlib.org/gallery/index.html&#34;
-   
-   target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;galeria de exemplos&lt;/a&gt;
-.&lt;/p&gt;
+&lt;p&gt;Criado por &lt;a href=&#34;https://en.wikipedia.org/wiki/John_D._Hunter&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;John Hunter (1968-2012)&lt;/a&gt;, &lt;a href=&#34;https://matplotlib.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;matplot&lt;/a&gt; é usada para criação de &lt;em&gt;plots&lt;/em&gt;, histogramas, espectrogramas, gráficos (&lt;em&gt;charts&lt;/em&gt;) simples e 3D e etc. Para ter uma ideia da diversidade dessa ferramenta, você pode visitar a &lt;a href=&#34;https://matplotlib.org/gallery/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;galeria de exemplos&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Neste artigo, vou fazer uma demonstração bem simples, onde apresentarei como criar um gráfico de barras (&lt;em&gt;barchart&lt;/em&gt;) em Python.&lt;/p&gt;</description>
       
       <image>
@@ -4521,7 +4512,7 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       <pubDate>Thu, 15 Jan 2015 06:00:19 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/formatando-e-adicionando-anexos-a-e-mails-no-python/</guid>
-      <description>Há algumas semanas, nós mostramos como enviar e-mail pelo Python usando o módulo smtplib .</description>
+      <description>Há algumas semanas, nós mostramos como enviar e-mail pelo Python usando o módulo smtplib.</description>
       
       <image>
         <url>https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png</url>
@@ -4673,7 +4664,7 @@ O Node.js v0.12.0 vem com a versão 3.28.73 do V8, que foi lançada em agosto de
       <pubDate>Sun, 28 Dec 2014 06:00:49 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/enviando-emails-com-o-python/</guid>
-      <description>Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo smtplib .</description>
+      <description>Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo smtplib.</description>
       
       <image>
         <url>https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png</url>
@@ -5231,7 +5222,7 @@ print_r($localizacao);
       <pubDate>Tue, 09 Sep 2014 00:27:57 +0000</pubDate>
       
       <guid>https://butecotecnologico.com.br/capturando-imagem-da-webcam-com-o-pygame/</guid>
-      <description>O PyGame é uma coleção de módulos Python para a criação de jogos baseados em SDL .</description>
+      <description>O PyGame é uma coleção de módulos Python para a criação de jogos baseados em SDL.</description>
       
       <image>
         <url>https://butecotecnologico.com.br/images/posts/pygame-logo.png</url>

@@ -67,7 +67,7 @@
 <meta itemprop="description" content="O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio.">
 <meta itemprop="datePublished" content="2014-09-24T23:48:00+00:00" />
 <meta itemprop="dateModified" content="2014-09-24T23:48:00+00:00" />
-<meta itemprop="wordCount" content="695">
+<meta itemprop="wordCount" content="690">
 <meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/alsa-mixer.png">
 
 
@@ -384,24 +384,9 @@
   </header>
 
   <article class="mt-3 mb-4">
-  <p>O <a href="https://www.alsa-project.org/wiki/Main_Page"
-   
-   target="_blank" rel="noopener">ALSA</a>
- (Advanced Linux Sound Architeture) é um framework para <em>kernel space</em> e <em>user space</em> para manipular dispositivos de áudio.
-No <em>kernel space</em> o <a href="https://www.alsa-project.org/wiki/Main_Page"
-   
-   target="_blank" rel="noopener">ALSA</a>
- é a API padrão para a criação dos <em>devices drivers</em> de dispositivos de áudio, e no <em>user space</em> o <a href="https://www.alsa-project.org/wiki/Main_Page"
-   
-   target="_blank" rel="noopener">ALSA</a>
- existe como uma API para permitir a configuração dos dispositivos de áudio que tenham seu <em>device driver</em> implementado com o framework <a href="https://www.alsa-project.org/wiki/Main_Page"
-   
-   target="_blank" rel="noopener">ALSA</a>
-.
-Um exemplo de um programa que utilize a API <em>user space</em> do <a href="https://www.alsa-project.org/wiki/Main_Page"
-   
-   target="_blank" rel="noopener">ALSA</a>
- é o <em>alsamixer</em>.</p>
+  <p>O <a href="https://www.alsa-project.org/wiki/Main_Page"  target="_blank" rel="noopener">ALSA</a> (Advanced Linux Sound Architeture) é um framework para <em>kernel space</em> e <em>user space</em> para manipular dispositivos de áudio.
+No <em>kernel space</em> o <a href="https://www.alsa-project.org/wiki/Main_Page"  target="_blank" rel="noopener">ALSA</a> é a API padrão para a criação dos <em>devices drivers</em> de dispositivos de áudio, e no <em>user space</em> o <a href="https://www.alsa-project.org/wiki/Main_Page"  target="_blank" rel="noopener">ALSA</a> existe como uma API para permitir a configuração dos dispositivos de áudio que tenham seu <em>device driver</em> implementado com o framework <a href="https://www.alsa-project.org/wiki/Main_Page"  target="_blank" rel="noopener">ALSA</a>.
+Um exemplo de um programa que utilize a API <em>user space</em> do <a href="https://www.alsa-project.org/wiki/Main_Page"  target="_blank" rel="noopener">ALSA</a> é o <em>alsamixer</em>.</p>
 <p>Abaixo uma imagem do <code>alsamixer</code> executando em uma máquina desktop:</p>
 <figure >
   <img loading="lazy"
@@ -410,17 +395,8 @@ Um exemplo de um programa que utilize a API <em>user space</em> do <a href="http
 </figure>
 
 <p>Na imagem podemos ver algumas configurações da placa de áudio e podemos interagir com esta.</p>
-<p>Para os controles básicos de áudio, tal como nível de volume e configuração de microfone, é necessário utilizar a <a href="https://www.alsa-project.org/alsa-doc/alsa-lib/group___simple_mixer.html"
-   
-   target="_blank" rel="noopener">API mixer-controls</a>
-, a documentação completapode ser encontrada <a href="https://www.alsa-project.org/alsa-doc/alsa-lib/"
-   
-   target="_blank" rel="noopener">aqui</a>
-.</p>
-<p>Para ilustrar o funcionamento básico do <a href="https://www.alsa-project.org/wiki/Main_Page"
-   
-   target="_blank" rel="noopener">ALSA</a>
- seguem dois exemplos de códigos que permitem alterar o volume de de áudio de uma máquina com Linux.
+<p>Para os controles básicos de áudio, tal como nível de volume e configuração de microfone, é necessário utilizar a <a href="https://www.alsa-project.org/alsa-doc/alsa-lib/group___simple_mixer.html"  target="_blank" rel="noopener">API mixer-controls</a>, a documentação completapode ser encontrada <a href="https://www.alsa-project.org/alsa-doc/alsa-lib/"  target="_blank" rel="noopener">aqui</a>.</p>
+<p>Para ilustrar o funcionamento básico do <a href="https://www.alsa-project.org/wiki/Main_Page"  target="_blank" rel="noopener">ALSA</a> seguem dois exemplos de códigos que permitem alterar o volume de de áudio de uma máquina com Linux.
 Um dos exemplos será na linguagem C e o outro será em Python.
 O primeiro exemplo é na linguagem C, que basicamente diz quais os valores limite do volume da placa de áudio e também permite ao usuário trocar o nível do volume.</p>
 <div class="highlight"><div class="chroma">
@@ -534,14 +510,8 @@ Volume mínimo: <span class="m">0</span> e máximo: <span class="m">65536</span>
 Volume atual: <span class="m">40000</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Abaixo temos um exemplo da utilização do <a href="https://www.alsa-project.org/wiki/Main_Page"
-   
-   target="_blank" rel="noopener">ALSA</a>
- em Python.
-Será necessário instalar a biblioteca <a href="http://larsimmisch.github.io/pyalsaaudio/"
-   
-   target="_blank" rel="noopener">pyalsaaudio</a>
-.</p>
+</div><p>Abaixo temos um exemplo da utilização do <a href="https://www.alsa-project.org/wiki/Main_Page"  target="_blank" rel="noopener">ALSA</a> em Python.
+Será necessário instalar a biblioteca <a href="http://larsimmisch.github.io/pyalsaaudio/"  target="_blank" rel="noopener">pyalsaaudio</a>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -642,10 +612,7 @@ Será necessário instalar a biblioteca <a href="http://larsimmisch.github.io/py
 <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Captura habilitada no controle Capture&#34;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>No exemplo em Python, podemos observar alguns usos do framework <a href="https://www.alsa-project.org/wiki/Main_Page"
-   
-   target="_blank" rel="noopener">ALSA</a>
-, como por exemplo, pegar e setar configurações de placas e níveis de áudio.</p>
+</div><p>No exemplo em Python, podemos observar alguns usos do framework <a href="https://www.alsa-project.org/wiki/Main_Page"  target="_blank" rel="noopener">ALSA</a>, como por exemplo, pegar e setar configurações de placas e níveis de áudio.</p>
 <p>Se você tiver algum problema na execução desses códigos, ou tem alguma dúvida, deixe um comentário.</p>
 
   </article>

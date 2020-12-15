@@ -67,7 +67,7 @@
 <meta itemprop="description" content="Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando.">
 <meta itemprop="datePublished" content="2020-08-27T08:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-08-27T08:00:00+00:00" />
-<meta itemprop="wordCount" content="1089">
+<meta itemprop="wordCount" content="1086">
 <meta itemprop="image" content="https://butecotecnologico.com.br/criando-cluster-kubernetes/eksctl-gopher.png">
 
 
@@ -437,18 +437,9 @@ brew install weaveworks/tap/eksctl
 <ul>
 <li><code>-n</code>: determina o &ldquo;nome&rdquo; do seu cluster, este nome é usado para referenciar o cluster em comandos futuros, como por exemplo quando você quiser aumentar a quantidade de hosts no seu cluster.</li>
 <li><code>-r</code>: se refere a região aonde seu cluster será criado, neste exemplo estou usando a região de Dublin ou <code>eu-west-1</code>, você pode usar qualquer outra região da AWS.</li>
-<li><code>-t</code>: determina o tipo de instância. O tipo irá determinar fatores como quantidade de CPU e memória, instâncias do tipo <code>t3.medium</code> como é o caso do exemplo possuem 2 vCPUs e 4Gb de memória ram, um pouco a mais do que o <a href="https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/"
-   
-   target="_blank" rel="noopener">mínimo recomendado</a>
-, veja outras opções de instâncias na <a href="https://aws.amazon.com/ec2/instance-types/"
-   
-   target="_blank" rel="noopener">documentação oficial</a>
-.</li>
+<li><code>-t</code>: determina o tipo de instância. O tipo irá determinar fatores como quantidade de CPU e memória, instâncias do tipo <code>t3.medium</code> como é o caso do exemplo possuem 2 vCPUs e 4Gb de memória ram, um pouco a mais do que o <a href="https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/"  target="_blank" rel="noopener">mínimo recomendado</a>, veja outras opções de instâncias na <a href="https://aws.amazon.com/ec2/instance-types/"  target="_blank" rel="noopener">documentação oficial</a>.</li>
 <li><code>-N</code>: quantidade de instâncias que serão criadas.</li>
-<li><code>--node-volume-size</code> e <code>--node-volume-type</code> informam o tamanho do volume de cada instância (volume do EBS) e o tipo, veja mais detalhes de vantagens e desvantagens de cada tipo de volume na <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html"
-   
-   target="_blank" rel="noopener">documentação oficial</a>
-.</li>
+<li><code>--node-volume-size</code> e <code>--node-volume-type</code> informam o tamanho do volume de cada instância (volume do EBS) e o tipo, veja mais detalhes de vantagens e desvantagens de cada tipo de volume na <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html"  target="_blank" rel="noopener">documentação oficial</a>.</li>
 <li><code>--ssh-access</code>: permite acesso via protocolo <code>ssh</code> a cada instância, isso pode ser util caso queira realizar algum debug, por padrão esse acesso é desativado.</li>
 <li><code>--external-dns-access</code>: exporta e libera o acesso externo a provedores de DNS, permitindo que suas instâncias recebam tráfego externo.</li>
 <li><code>--full-ecr-access</code>: habilita a integração com o serviço ECR da AWS, podendo por exemplo, usar repositórios privados de imagens de containers.</li>
@@ -566,10 +557,7 @@ ip-192-168-76-142.eu-west-1.compute.internal   Ready    &lt;none&gt;   15m   v1.
 <p>Importante: Para excluir o cluster que acabamos de criar e remover todos os recursos relacionado ao cluster basta executar o comando <code>eksctl delete cluster --name exemplo</code></p>
 </blockquote>
 <h2 id="conclusão">Conclusão</h2>
-<p>O <code>eksctl</code> possui várias outras opções, como escalar para aumentar ou diminuir a quantidade de hosts ou criar um auto-scale para que isso seja feito de forma automática, contudo isso é algo que você pode buscar na <a href="https://eksctl.io/"
-   
-   target="_blank" rel="noopener">documentação oficial</a>
- ou comentar abaixo se quiser mais artigos sobre o assunto, de qualquer forma espero que o conteúdo aqui tenha sido útil a você que quer começar a usar o Kubernetes em produção usando a nuvem da AWS. Até a próxima!</p>
+<p>O <code>eksctl</code> possui várias outras opções, como escalar para aumentar ou diminuir a quantidade de hosts ou criar um auto-scale para que isso seja feito de forma automática, contudo isso é algo que você pode buscar na <a href="https://eksctl.io/"  target="_blank" rel="noopener">documentação oficial</a> ou comentar abaixo se quiser mais artigos sobre o assunto, de qualquer forma espero que o conteúdo aqui tenha sido útil a você que quer começar a usar o Kubernetes em produção usando a nuvem da AWS. Até a próxima!</p>
 
   </article>
 

@@ -67,7 +67,7 @@
 <meta itemprop="description" content="Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona.">
 <meta itemprop="datePublished" content="2016-01-20T21:11:20+00:00" />
 <meta itemprop="dateModified" content="2016-01-20T21:11:20+00:00" />
-<meta itemprop="wordCount" content="868">
+<meta itemprop="wordCount" content="861">
 <meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png">
 
 
@@ -377,34 +377,13 @@
       alt="Map"/>
 </figure>
 
-<p>Na <a href="/gps-parte-1-entendendo-o-seu-funcionamento"
-   
-   >primeira parte</a>
- sobre GPS, vimos como este sistema de rastreamento por satélite funciona. Já na <a href="/gps-parte-2-decodificando-uma-sentenca-nmea"
-   
-   >segunda parte</a>
-, vimos uma sentença NMEA funciona e como fazemos para decodificá-la.</p>
+<p>Na <a href="/gps-parte-1-entendendo-o-seu-funcionamento"  >primeira parte</a> sobre GPS, vimos como este sistema de rastreamento por satélite funciona. Já na <a href="/gps-parte-2-decodificando-uma-sentenca-nmea"  >segunda parte</a>, vimos uma sentença NMEA funciona e como fazemos para decodificá-la.</p>
 <p>Neste artigo, iremos colocar tudo o que vimos em prática. Sendo assim, vamos a lista de material necessária:</p>
 <ul>
-<li>Uma <a href="https://www.filipeflop.com/produto/beaglebone-black/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"
-   
-   target="_blank" rel="noopener">BeagleBone Black</a>
-, <a href="https://www.filipeflop.com/produto/beaglebone-green/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"
-   
-   target="_blank" rel="noopener">BeagleBone Green</a>
- ou <a href="https://www.filipeflop.com/produto/raspberry-pi-4-model-2gb-4gb/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"
-   
-   target="_blank" rel="noopener">Raspberry Pi</a>
-</li>
+<li>Uma <a href="https://www.filipeflop.com/produto/beaglebone-black/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"  target="_blank" rel="noopener">BeagleBone Black</a>, <a href="https://www.filipeflop.com/produto/beaglebone-green/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"  target="_blank" rel="noopener">BeagleBone Green</a> ou <a href="https://www.filipeflop.com/produto/raspberry-pi-4-model-2gb-4gb/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"  target="_blank" rel="noopener">Raspberry Pi</a></li>
 <li>Um módulo GPS</li>
 </ul>
-<p>No meu caso, irei utilizar uma <a href="https://www.filipeflop.com/produto/beaglebone-green/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"
-   
-   target="_blank" rel="noopener">BeagleBone Green</a>
-, que foi fornecida pela <a href="https://www.filipeflop.com/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"
-   
-   target="_blank" rel="noopener">FILIPEFLOP</a>
- e um modulo GPS ublox NEO-6m.</p>
+<p>No meu caso, irei utilizar uma <a href="https://www.filipeflop.com/produto/beaglebone-green/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"  target="_blank" rel="noopener">BeagleBone Green</a>, que foi fornecida pela <a href="https://www.filipeflop.com/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoTecnologico"  target="_blank" rel="noopener">FILIPEFLOP</a> e um modulo GPS ublox NEO-6m.</p>
 <p>Antes de mais nada, vou explicar o que vamos fazer. Basicamente, iremos utilizar a BBG para controlar o GPS e servir como servidor de página para exibir um mapa com a localização atual do GPS. Na imagem abaixo você pode observar o resultado.</p>
 <figure >
   <img loading="lazy"
@@ -412,17 +391,8 @@
       alt="GPS BBG"/>
 </figure>
 
-<p>Para criar a parte de templates e rotas foi utilizado o micro framework <a href="http://bottlepy.org/docs/dev/index.html"
-   
-   target="_blank" rel="noopener">Bottle</a>
-. O Bottle é um WSGI para Python, muito similar ao <a href="http://flask.pocoo.org/"
-   
-   target="_blank" rel="noopener">Flask</a>
-. Optei por ele pelo fato de ser distribuido em um único arquivo, facilitando a vida de quem usa sistemas embarcados.</p>
-<p>Outra dependência é o <em>parserd</em> NMEA implementado na <a href="/gps-parte-2-decodificando-uma-sentenca-nmea"
-   
-   >segunda parte deste tutorial (Decodificando uma sentença NMEA)</a>
-.</p>
+<p>Para criar a parte de templates e rotas foi utilizado o micro framework <a href="http://bottlepy.org/docs/dev/index.html"  target="_blank" rel="noopener">Bottle</a>. O Bottle é um WSGI para Python, muito similar ao <a href="http://flask.pocoo.org/"  target="_blank" rel="noopener">Flask</a>. Optei por ele pelo fato de ser distribuido em um único arquivo, facilitando a vida de quem usa sistemas embarcados.</p>
+<p>Outra dependência é o <em>parserd</em> NMEA implementado na <a href="/gps-parte-2-decodificando-uma-sentenca-nmea"  >segunda parte deste tutorial (Decodificando uma sentença NMEA)</a>.</p>
 <p>No arquivo abaixo temos o template da página do mapa.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -514,10 +484,7 @@
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Como podemos observar o código é bem simples, e toda a parte de inicialização do mapa é feito nas linhas 20 a 38. O mapa faz parte da <a href="https://developers.google.com/maps/documentation/javascript/?hl=pt-br"
-   
-   target="_blank" rel="noopener">Google Maps Javascript API</a>
-, o que facilita muito o desenvolvimento.</p>
+</div><p>Como podemos observar o código é bem simples, e toda a parte de inicialização do mapa é feito nas linhas 20 a 38. O mapa faz parte da <a href="https://developers.google.com/maps/documentation/javascript/?hl=pt-br"  target="_blank" rel="noopener">Google Maps Javascript API</a>, o que facilita muito o desenvolvimento.</p>
 <p>No arquivo abaixo temos o módulo responsável por conversar com o GPS.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -680,16 +647,10 @@
     <span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8081</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Esta parte não tem muitos mistérios, mas é necessário resaltar que na linha 13, é necessário colocar a sua <a href="https://console.developers.google.com/flows/enableapi?apiid=maps_backend&amp;keyType=CLIENT_SIDE&amp;reusekey=true&amp;hl=pt-br"
-   
-   target="_blank" rel="noopener">chave da Google Api</a>
- para que o mapa seja carregado no browser, isto porque o JavaScript do mapa faz acesso as APIs do Google. Não se preocupe, este serviço é gratuito. :)</p>
+</div><p>Esta parte não tem muitos mistérios, mas é necessário resaltar que na linha 13, é necessário colocar a sua <a href="https://console.developers.google.com/flows/enableapi?apiid=maps_backend&amp;keyType=CLIENT_SIDE&amp;reusekey=true&amp;hl=pt-br"  target="_blank" rel="noopener">chave da Google Api</a> para que o mapa seja carregado no browser, isto porque o JavaScript do mapa faz acesso as APIs do Google. Não se preocupe, este serviço é gratuito. :)</p>
 <p>Na linha 19, podemos observar que é necessário iniciar a <code>Thread</code> do GPS, e na linha 20, o próprio WSGI.</p>
 <p>O projeto em si é relativamente simples, sendo a parte do GPS a com complexidade maior. O intuito desta série de artigos, era mostrar como é simples interpretar os dados recebidos do GPS. Apesar de presente em nosso dia a dia, muitos nem fazemos ideia de como esta tecnologia funciona.</p>
-<p>Você pode conferir o código fonte na íntegra no <a href="https://github.com/ButecoOpenSource/exemplos/tree/master/exemplos_python/gps_bbg"
-   
-   target="_blank" rel="noopener">repositório de exemplos</a>
- do Buteco.</p>
+<p>Você pode conferir o código fonte na íntegra no <a href="https://github.com/ButecoOpenSource/exemplos/tree/master/exemplos_python/gps_bbg"  target="_blank" rel="noopener">repositório de exemplos</a> do Buteco.</p>
 <p>Espero que você tenha gostado deste artigo. Até a próxima.</p>
 
   </article>
