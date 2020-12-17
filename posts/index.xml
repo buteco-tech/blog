@@ -11,9 +11,23 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 09 Dec 2020 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Dec 2020 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      
+      <title>Let&#39;s Encrypt usará novos certificados em 2021</title>
+      <link>https://butecotecnologico.com.br/alteracao-certificados-lets-encrypt/</link>
+      <pubDate>Thu, 17 Dec 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/alteracao-certificados-lets-encrypt/</guid>
+      <description>A partir de 1 de janeiro de 2021 o Let&amp;rsquo;s Encrypt usará novos certificados, entenda o que muda para você.</description>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/posts/</link>
+      </image>
+    </item>
     <item>
       
       <title>Tutanota é forçada a monitorar um usuário</title>
