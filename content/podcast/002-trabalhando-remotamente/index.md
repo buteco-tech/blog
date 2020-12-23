@@ -14,7 +14,7 @@ tags:
   - PJ
 resources:
 - name: thumbnail
-  src: thumbnail.jpeg
+  src: thumbnail.png
   title: Trabalhando Remoto
 ---
 
