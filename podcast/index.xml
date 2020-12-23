@@ -11,9 +11,23 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 02 Dec 2020 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Dec 2020 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/podcast/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      
+      <title>Retrospectiva 2020 e planos para 2021</title>
+      <link>https://butecotecnologico.com.br/podcast/retrospectiva-2020/</link>
+      <pubDate>Tue, 22 Dec 2020 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/podcast/retrospectiva-2020/</guid>
+      <description>&lt;p&gt;Que ano ein? 2020 foi um tanto quando louco, por isso neste episódio fizemos uma análise do ano, falamos da pandemia, contamos um pouco sobre as mudanças que tivemos no blog, o início do podcast, e claro os planos e tópicos para 2021.&lt;/p&gt;</description>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/podcast/</link>
+      </image>
+    </item>
     <item>
       
       <title>Carreira no Software de código aberto</title>
