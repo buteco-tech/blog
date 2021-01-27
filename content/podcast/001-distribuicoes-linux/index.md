@@ -32,7 +32,7 @@ Escute em uma variedade de locais, confira:
 
 #### Alexandre Vicenzi
 
-Engenheiro de Software e bacharel em Ciência da Computação. Contribui com software livre à quase 10 anos, além de ser co-fundador do Buteco Tecnológico.
+Engenheiro de Software e bacharel em Ciência da Computação. Contribui com software livre há quase 10 anos, além de ser co-fundador do Buteco Tecnológico.
 
 {{< social www="https://www.alexandrevicenzi.com/" linkedin="alexandrevicenzi" twitter="alxvicenzi" >}}
 

@@ -39,7 +39,7 @@ O bate-papo na íntegra está disponível no [nosso canal do YouTube](https://ww
 
 #### Alexandre Vicenzi
 
-Engenheiro de Software e bacharel em Ciência da Computação. Contribui com software de código aberto à quase 10 anos, além de ser co-fundador do Buteco Tecnológico.
+Engenheiro de Software e bacharel em Ciência da Computação. Contribui com software de código aberto há quase 10 anos, além de ser co-fundador do Buteco Tecnológico.
 
 {{< social www="https://www.alexandrevicenzi.com/" linkedin="alexandrevicenzi" twitter="alxvicenzi" >}}
 
