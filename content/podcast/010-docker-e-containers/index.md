@@ -19,7 +19,7 @@ resources:
   src: thumbnail.png
 ---
 
-Containers, uma tecnologia que veio para ficar e transformar o mundo de desevolvimento e operacional (DevOps). E pensar que tudo começou lá nos anos 2000 com o Jails, mas ganhou momento e adoção em massa com o Docker a partir de 2013.
+Containers, uma tecnologia que veio para ficar e transformar o mundo de desenvolvimento e operacional (DevOps). E pensar que tudo começou lá nos anos 2000 com o Jails, mas ganhou momento e adoção em massa com o Docker a partir de 2013.
 
 Neste episódio conversamos sobre containers, contando um pouco da história do Docker, problemas que ele resolve, quando faz sentido usar (ou não), diferenças em comparação com máquinas virtuais, containers no Windows, segurança de suas aplicações, banco de dados em containers entre outras dicas.
 
