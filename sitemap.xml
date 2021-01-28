@@ -4,22 +4,67 @@
   
   <url>
     <loc>https://butecotecnologico.com.br/autores/alexandrevicenzi/</loc>
-    <lastmod>2020-12-22T08:00:00+00:00</lastmod>
+    <lastmod>2021-01-28T08:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://butecotecnologico.com.br/autores/</loc>
-    <lastmod>2020-12-22T08:00:00+00:00</lastmod>
+    <lastmod>2021-01-28T08:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://butecotecnologico.com.br/</loc>
-    <lastmod>2020-12-22T08:00:00+00:00</lastmod>
+    <lastmod>2021-01-28T08:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://butecotecnologico.com.br/categorias/</loc>
-    <lastmod>2020-12-22T08:00:00+00:00</lastmod>
+    <lastmod>2021-01-28T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/containers/</loc>
+    <lastmod>2021-01-28T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/docker/</loc>
+    <lastmod>2021-01-28T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/podcast/docker-e-containers/</loc>
+    <lastmod>2021-01-28T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/maquinas-virtuais/</loc>
+    <lastmod>2021-01-28T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/categorias/podcast/</loc>
+    <lastmod>2021-01-28T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/podcast/</loc>
+    <lastmod>2021-01-28T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/podman/</loc>
+    <lastmod>2021-01-28T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/</loc>
+    <lastmod>2021-01-28T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://butecotecnologico.com.br/tags/windows/</loc>
+    <lastmod>2021-01-28T08:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -33,22 +78,7 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/categorias/podcast/</loc>
-    <lastmod>2020-12-22T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/podcast/</loc>
-    <lastmod>2020-12-22T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/podcast/retrospectiva-2020/</loc>
-    <lastmod>2020-12-22T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/</loc>
     <lastmod>2020-12-22T08:00:00+00:00</lastmod>
   </url>
   
@@ -328,17 +358,7 @@
   </url>
   
   <url>
-    <loc>https://butecotecnologico.com.br/tags/containers/</loc>
-    <lastmod>2020-10-01T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://butecotecnologico.com.br/tags/devops/</loc>
-    <lastmod>2020-10-01T08:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://butecotecnologico.com.br/tags/docker/</loc>
     <lastmod>2020-10-01T08:00:00+00:00</lastmod>
   </url>
   

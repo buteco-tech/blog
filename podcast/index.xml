@@ -11,9 +11,23 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 22 Dec 2020 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Jan 2021 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/podcast/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      
+      <title>Docker e containers</title>
+      <link>https://butecotecnologico.com.br/podcast/docker-e-containers/</link>
+      <pubDate>Thu, 28 Jan 2021 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/podcast/docker-e-containers/</guid>
+      <description>Neste episódio conversamos sobre containers, contando um pouco da história do Docker, problemas que ele resolve, quando faz sentido usar, diferenças em comparação com máquinas virtuais, segurança de suas aplicações entre outras dicas.</description>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/podcast/</link>
+      </image>
+    </item>
     <item>
       
       <title>Retrospectiva 2020 e planos para 2021</title>
