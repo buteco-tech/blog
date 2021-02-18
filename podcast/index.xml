@@ -11,9 +11,23 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 28 Jan 2021 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Feb 2021 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/podcast/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      
+      <title>Projeto Querido Diário</title>
+      <link>https://butecotecnologico.com.br/podcast/projeto-querido-diario/</link>
+      <pubDate>Thu, 18 Feb 2021 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/podcast/projeto-querido-diario/</guid>
+      <description>Neste episódio contamos como começou o projeto Querido Diário, qual sua relação com a Open Knowledge Brasil, porque ele é necessário e quais problemas ele resolve. Também abordamos quais as tecnologias usadas no desenvolvimento, quais problemas e dificuldades encontrados durante a coleta dos diários e claro, como contribuir com o projeto e os planos futuros.</description>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/podcast/</link>
+      </image>
+    </item>
     <item>
       
       <title>Docker e containers</title>
