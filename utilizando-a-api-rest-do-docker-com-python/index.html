@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.81.0" />
 
   
   <title>Utilizando a API REST do Docker com Python &middot; Buteco Tecnológico</title>
@@ -32,7 +32,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.44fb6a49a72c0eef714f38a1b77c947e1b9ac09c720929e750e31513e19fee0a.css">
+<link rel="stylesheet" href="/sass/iara.min.f2088b89b76495b7d147c9b349c09eb436d730dc539169b925f2babfe325ba59.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -68,25 +68,19 @@ Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifi
 <meta itemprop="name" content="Utilizando a API REST do Docker com Python">
 <meta itemprop="description" content="O Docker é uma plataforma para construir e executar aplicações distribuídas. Com ele é possível executar um bash em um ambiente Debian mesmo estando dentro um Fedora, por exemplo. Seu funcionamento se assemelha ao de uma máquina virtual, mas as aplicações executadas no Docker estão de fato sendo executados no sistema host, ou seja, não existe a camada de emulação.
 Isso se deve à utilização de templates de imagens do Debian (existem imagens de sistemas inteiros, como Debian, Ubuntu, e também de aplicações, como Apache, MySQL e etc). Para mais informações sobre o Docker, basta verificar a página do projeto.
-Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifique como instalá-lo em sua distribuição. Após instalado, você precisará iniciá-lo através do docker daemon para receber requisições HTTP, além das requisições por socket (este é utilizado pelo docker client). Antes de iniciá-lo com estas opções, você precisará ter certeza que o mesmo não esteja executando. Para tal, basta executar:">
-<meta itemprop="datePublished" content="2015-10-27T08:31:51+00:00" />
-<meta itemprop="dateModified" content="2015-10-27T08:31:51+00:00" />
-<meta itemprop="wordCount" content="527">
-<meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/docker-100275159-orig.jpg">
-
-
-
+Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifique como instalá-lo em sua distribuição. Após instalado, você precisará iniciá-lo através do docker daemon para receber requisições HTTP, além das requisições por socket (este é utilizado pelo docker client). Antes de iniciá-lo com estas opções, você precisará ter certeza que o mesmo não esteja executando. Para tal, basta executar:"><meta itemprop="datePublished" content="2015-10-27T08:31:51&#43;00:00" />
+<meta itemprop="dateModified" content="2015-10-27T08:31:51&#43;00:00" />
+<meta itemprop="wordCount" content="527"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/docker-100275159-orig.jpg">
 <meta itemprop="keywords" content="docker,linux,python,requests," />
-
 <meta property="og:title" content="Utilizando a API REST do Docker com Python" />
 <meta property="og:description" content="O Docker é uma plataforma para construir e executar aplicações distribuídas. Com ele é possível executar um bash em um ambiente Debian mesmo estando dentro um Fedora, por exemplo. Seu funcionamento se assemelha ao de uma máquina virtual, mas as aplicações executadas no Docker estão de fato sendo executados no sistema host, ou seja, não existe a camada de emulação.
 Isso se deve à utilização de templates de imagens do Debian (existem imagens de sistemas inteiros, como Debian, Ubuntu, e também de aplicações, como Apache, MySQL e etc). Para mais informações sobre o Docker, basta verificar a página do projeto.
 Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifique como instalá-lo em sua distribuição. Após instalado, você precisará iniciá-lo através do docker daemon para receber requisições HTTP, além das requisições por socket (este é utilizado pelo docker client). Antes de iniciá-lo com estas opções, você precisará ter certeza que o mesmo não esteja executando. Para tal, basta executar:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/" />
-<meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/docker-100275159-orig.jpg" />
-<meta property="article:published_time" content="2015-10-27T08:31:51+00:00" />
-<meta property="article:modified_time" content="2015-10-27T08:31:51+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="og:url" content="https://butecotecnologico.com.br/utilizando-a-api-rest-do-docker-com-python/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/docker-100275159-orig.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2015-10-27T08:31:51&#43;00:00" />
+<meta property="article:modified_time" content="2015-10-27T08:31:51&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/docker-100275159-orig.jpg"/>
@@ -280,16 +274,16 @@ Este tutorial não tem como foco instalar o Docker, então antes de tudo, verifi
           </a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="/anuncie-conosco/">
-            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
-            Anuncie
+          <a class="nav-link" href="/contribua-com-nosso-blog/">
+            <span class="mr-1"><i class="far fa-heart text-danger"></i></span>
+            Colabore
             
           </a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="/contribua-com-nosso-blog/">
-            <span class="mr-1"><i class="far fa-heart text-danger"></i></span>
-            Colabore
+          <a class="nav-link" href="/anuncie-conosco/">
+            <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
+            Anuncie
             
           </a>
         </li>
@@ -679,7 +673,7 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
             <a class="td-n td-h " href="/feed-rss/"> Feed RSS </a>
           </li>
           <li>
-            <a class="td-n td-h " href="https://estatisticas.buteco.me/"> Estatísticas </a>
+            <a class="td-n td-h " href="/estatisticas/"> Estatísticas </a>
           </li>
         </ul>
       </div>
@@ -706,10 +700,10 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.1c4d3007f0b1fe05e0e0ce4992c1c8cf9eff05f176be71745f010ed03f298853.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.464a2b75711d9f71a63eeeb772edf1206ca6aeeb188d17d74b22de6da842292e.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
