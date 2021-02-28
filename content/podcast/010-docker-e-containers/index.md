@@ -1,8 +1,9 @@
 ---
-title: "Docker e containers"
+title: "#010 - Docker e containers"
 description: "Neste episódio conversamos sobre containers, contando um pouco da história do Docker, problemas que ele resolve, quando faz sentido usar, diferenças em comparação com máquinas virtuais, segurança de suas aplicações entre outras dicas."
 summary: "Neste episódio conversamos sobre containers, contando um pouco da história do Docker, problemas que ele resolve, quando faz sentido usar, diferenças em comparação com máquinas virtuais, segurança de suas aplicações entre outras dicas."
 date: 2021-01-28 08:00:00
+episode: "010"
 authors:
   - alexandrevicenzi
 slug: docker-e-containers

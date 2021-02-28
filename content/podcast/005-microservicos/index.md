@@ -1,8 +1,9 @@
 ---
-title: "Microsserviços, Monolitos e Cloud"
+title: "#005 - Microsserviços, Monolitos e Cloud"
 description: "Refatorando um monolito, migrando para cloud, ou se aventurando com microsserviços em um projeto novo? Confira este podcast."
 summary: "Neste episódio abordamos os pontos positivos e negativos de monolitos e microsserviços, contamos nossa experiência migrando e mantendo ambas abordagens de desenvolvimento bem como sobreviver e criar algo escalável."
 date: 2020-09-24 08:00:00
+episode: "005"
 authors:
   - alexandrevicenzi
 slug: microsservicos-monolitos-e-cloud

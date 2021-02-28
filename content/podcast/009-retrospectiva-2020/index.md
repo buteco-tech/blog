@@ -1,7 +1,8 @@
 ---
-title: "Retrospectiva 2020 e planos para 2021"
+title: "#009 - Retrospectiva 2020 e planos para 2021"
 description: "Neste episódio fizemos uma análise do ano 2020, falamos da pandemia, contamos um pouco sobre as mudanças que tivemos no blog, o início do podcast, e os planos e tópicos para 2021."
 date: 2020-12-22 08:00:00
+episode: "009"
 authors:
   - alexandrevicenzi
 slug: retrospectiva-2020

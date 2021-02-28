@@ -1,8 +1,9 @@
 ---
-title: "Projeto Querido Diário"
+title: "#011 - Projeto Querido Diário"
 description: "Neste episódio contamos como começou o projeto Querido Diário, porque ele é necessário e quais problemas ele resolve. Também abordamos quais as tecnologias usadas no desenvolvimento, quais problemas encontrados durante a coleta dos diários, como contribuir com o projeto e os planos futuros."
 summary: "Neste episódio contamos como começou o projeto Querido Diário, qual sua relação com a Open Knowledge Brasil, porque ele é necessário e quais problemas ele resolve. Também abordamos quais as tecnologias usadas no desenvolvimento, quais problemas e dificuldades encontrados durante a coleta dos diários e claro, como contribuir com o projeto e os planos futuros."
 date: 2021-02-18 08:00:00
+episode: "011"
 authors:
   - alexandrevicenzi
 slug: projeto-querido-diario

@@ -1,6 +1,7 @@
 ---
-title: "LibreOffice: A suite office livre"
+title: "#003 - LibreOffice: A suite office livre"
 date: 2020-08-14 08:00:00
+episode: "003"
 authors:
   - alexandrevicenzi
 slug: libreoffice

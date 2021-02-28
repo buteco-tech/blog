@@ -1,6 +1,7 @@
 ---
-title: Trabalhando Remotamente
+title: "#002 - Trabalhando Remotamente"
 date: 2020-07-24 08:00:00
+episode: "002"
 authors:
   - alexandrevicenzi
 slug: trabalhando-remotamente

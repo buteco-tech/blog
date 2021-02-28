@@ -1,6 +1,7 @@
 ---
-title: Distribuições Linux
+title: "#001 - Distribuições Linux"
 date: 2020-06-19 08:00:00
+episode: "001"
 authors:
   - alexandrevicenzi
 slug: distribuicoes-linux

@@ -3,22 +3,18 @@ alias:
   - podcasts
 title: Podcast
 name: buteco.tech
+images:
+  - images/podcast/logo-400-bg.png
+  - images/podcast/logo-600-bg.png
+  - images/podcast/logo-1400-bg.png
+  - images/podcast/logo-400.png
 outputs:
 - html
 - rss
 ---
 
-<p class="text-center">O seu podcast de tecnologia, linux e software livre.</p>
+{{<figure src="/images/podcast/logo-150.png">}}
 
-<iframe src="https://open.spotify.com/embed-podcast/show/1oD8x4L9Tzu2hcPRUkfwhh"
-              width="100%"
-              height="232"
-              frameborder="0"
-              allowtransparency="true"
-              allow="encrypted-media"></iframe>
+De maneira descontraída, o buteco.tech, busca compartilhar experiências sobre tecnologia, programação, linux e software livre.
 
-## Distribuição
-
-Nosso podcast está disponível em uma variedade de locais, confira:
-
-{{< podcast-distribuicao download="" >}}
+Alexandre, junto com Marcos ou Jonathan, batem-papo e entrevistam diversos convidados da aréa de TI.

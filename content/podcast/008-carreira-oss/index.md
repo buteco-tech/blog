@@ -1,7 +1,8 @@
 ---
-title: "Carreira no Software de código aberto"
+title: "#008 - Carreira no Software de código aberto"
 description: "Neste episódio contamos nossa história e carreira com software de código aberto, contando experiências e dando dicas para quem quer seguir este caminho."
 date: 2020-12-02 08:00:00
+episode: "008"
 authors:
   - alexandrevicenzi
 slug: carreira-no-software-de-codigo-aberto

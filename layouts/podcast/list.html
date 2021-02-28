@@ -1,29 +1,65 @@
 {{ define "main" -}}
-<section class="container taxonomy">
+<section class="container taxonomy podcast-taxonomy">
   <div class="my-3">
     <div class="text-center">
       <h1>{{ .Params.name }}</h1>
     </div>
   </div>
 
-  <article>
+  <article class="text-center">
     {{ .Content }}
   </article>
 
-  <h2>Episódios</h2>
+  <h3>Distribuição</h3>
+  <p>Nosso podcast está disponível em uma variedade de locais, confira:</p>
 
+  {{ template "shortcodes/podcast-distribuicao.html" . }}
+
+  <p>Não esqueça de seguir o podcast na sua plataforma de escolha.</p>
+
+  <h3>Episódios</h3>
   <ul class="list-unstyled mt-3 mb-5">
-    {{ range .Data.Pages -}}
+    {{ range .Paginator.Pages -}}
     <li class="my-2">
-      <div class="d-flex justify-content-between">
-        <a href="{{ .Permalink }}" class="col-8 col-md-9 p-0 text-decoration-only-hover text-truncate">{{ .Title }}</a>
-        {{ if eq .Kind "page" }}
-        {{- $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" -}}
-        <time class="post-list" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format $dateFormat }}</time>
-        {{ end }}
+      <div class="card border-0 mt-4">
+        <div class="row no-gutters">
+          <div class="col-9">
+            <div class="card-body pl-0 py-0">
+              <h5 class="card-title">
+                <a href="{{ .Permalink }}" class="text-decoration-only-hover">{{ .Title }}</a>
+              </h5>
+              <div class="card-text mb-1">
+                <a href="{{ .Permalink }}" class="text-decoration-none">{{ .Summary }}</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 m-auto">
+            <a href="{{ .Permalink }}">
+              {{- $images := .Resources.ByType "image" -}}
+              {{- with $images.GetMatch "{*thumbnail*,*cover*,*feature*,*header*}" -}}
+              {{- $image := .Fit "120x120 jpg q90 Linear" -}}
+              <img style="max-width: 120px; max-height: 120px;" src="{{ $image.Permalink }}" loading="lazy" class="card-img" alt="{{ $image.Title }}">
+              {{- else -}}
+              {{- with .Params.thumbnail -}}
+              <img style="max-width: 120px; max-height: 120px;" src="{{ .image | absURL }}" loading="lazy" class="card-img" alt="{{ with .alt }}{{ . }}{{ else }}{{ $.Title }}{{ end }}">
+              {{- else -}}
+              {{- if isset .Params "images" -}}
+              {{- with $image := index .Params.images 0 -}}
+              <img style="max-width: 120px; max-height: 120px;" src="{{ $image | absURL }}" loading="lazy" class="card-img" alt="{{ $.Title }}">
+              {{- end -}}
+              {{- else -}}
+              <!-- no image -->
+              {{- end -}}
+              {{- end -}}
+              {{- end -}}
+            </a>
+          </div>
+        </div>
       </div>
     </li>
     {{- end }}
   </ul>
+
+  {{ template "_internal/pagination.html" . }}
 </section>
 {{- end }}

@@ -1,7 +1,8 @@
 ---
-title: "Bitcoin e criptomoedas"
+title: "#006 - Bitcoin e criptomoedas"
 description: "O quão seguro é Bitcoin? Como investir? Vale a pena minerar? Respondemos essas e outras perguntas neste novo episódio."
 date: 2020-10-22 08:00:00
+episode: "006"
 authors:
   - alexandrevicenzi
 slug: bitcoin-e-criptomoedas

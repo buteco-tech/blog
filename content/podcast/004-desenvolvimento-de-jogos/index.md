@@ -1,7 +1,8 @@
 ---
-title: "Desenvolvimento de Jogos"
+title: "#004 - Desenvolvimento de Jogos"
 summary: "Neste episódio conversamos sobre o dia a dia de um desenvolvedor de jogos, como começar nessa área, como obter ideias para jogos, quais ferramentas usar e mais."
 date: 2020-09-03 08:00:00
+episode: "004"
 authors:
   - alexandrevicenzi
 slug: desenvolvimento-de-jogos

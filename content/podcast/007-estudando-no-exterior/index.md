@@ -1,7 +1,8 @@
 ---
-title: "Estudando no exterior"
+title: "#007 - Estudando no exterior"
 description: "Pensando em ir estudar no exterior? Neste episódio conversamos sobre experiências e damos dicas para quem quer ir."
 date: 2020-11-05 08:00:00
+episode: "007"
 authors:
   - alexandrevicenzi
 slug: estudando-no-exterior
