@@ -1,6 +1,7 @@
 ---
 title: Estatísticas
 slug: estatisticas
+description: Estatísticas de acesso do Buteco Tecnológico
 toc: true
 disable_share: true
 disable_comments: true
