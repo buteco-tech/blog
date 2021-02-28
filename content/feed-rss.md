@@ -12,7 +12,7 @@ Feeds RSS são uma forma fácil de receber notificações e não perder nenhuma 
 
 ## Feed RSS de artigos
 
-Feed contendo todos os argigos do blog, você pode ler diretamente no seu leitor de RSS preferido.
+Feed contendo todos os artigos do blog, você pode ler diretamente no seu leitor de RSS preferido.
 
 <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fbutecotecnologico.com.br%2Findex.xml"
    target="blank">
