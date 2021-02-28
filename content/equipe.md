@@ -11,3 +11,5 @@ Confira quem são os responsáveis pelo gerenciamento do Buteco Tecnológico.
 {{< usuario id="alexandrevicenzi" >}}
 
 {{< usuario id="jaswdr" >}}
+
+{{< usuario id="marcossouza" >}}
