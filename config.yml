@@ -151,14 +151,14 @@ menu:
       weight: 2
       url: /podcast/
       pre: <span class="mr-1"><i class="fas fa-microphone-alt"></i></span>
-    - name: Anuncie
-      weight: 3
-      url: /anuncie-conosco/
-      pre: <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
     - name: Colabore
-      weight: 4
+      weight: 3
       url: /contribua-com-nosso-blog/
       pre: <span class="mr-1"><i class="far fa-heart text-danger"></i></span>
+    - name: Anuncie
+      weight: 4
+      url: /anuncie-conosco/
+      pre: <span class="mr-1"><i class="fas fa-bullhorn"></i></span>
     - name: Contato
       weight: 5
       url: /contato/
@@ -318,7 +318,7 @@ menu:
       url: /feed-rss/
     - name: Estatísticas
       weight: 5
-      url: https://estatisticas.buteco.me/
+      url: /estatisticas/
 
 markup:
   defaultMarkdownHandler: goldmark
