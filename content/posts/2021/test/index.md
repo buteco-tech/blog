@@ -1,6 +1,6 @@
 ---
 title: teste 12445543
-slug: test
+slug: test123
 date: 2021-03-02T08:00
 authors:
   - alexandrevicenzi
