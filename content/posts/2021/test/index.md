@@ -9,5 +9,8 @@ categories:
 tags:
   - ewerre
   - werwrw
+resources:
+  - src: 9963667389a3218249.png
+    name: duck
 ---
 {{< figure src="9963667389a3218249.png" alt="" caption="" width="" height="" >}}
