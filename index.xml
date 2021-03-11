@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 18 Feb 2021 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Mar 2021 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      
+      <title>#012 - Kubernetes e seus desafios</title>
+      <link>https://butecotecnologico.com.br/podcast/kubernetes-e-seus-desafios/</link>
+      <pubDate>Thu, 11 Mar 2021 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/podcast/kubernetes-e-seus-desafios/</guid>
+      <description>Conheça um pouco da história do Kubernetes, entenda quando faz sentido (ou não) usar e as principais vantagens e dificuldades encontradas durante o uso e implantação.</description>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/</link>
+      </image>
+    </item>
     <item>
       
       <title>#011 - Projeto Querido Diário</title>
