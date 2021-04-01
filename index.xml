@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 11 Mar 2021 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Apr 2021 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      
+      <title>#013 - Projeto de sistema embarcado com o Yocto</title>
+      <link>https://butecotecnologico.com.br/podcast/projeto-de-sistema-embarcado-com-o-yocto/</link>
+      <pubDate>Thu, 01 Apr 2021 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/podcast/projeto-de-sistema-embarcado-com-o-yocto/</guid>
+      <description>O que é o projeto Yocto e como é o desenvolvimento de uma distribuição Linux para sistemas embarcados? Otávio Salvador e Daiane Angolini, autores do livro Embedded Linux Development with Yocto Project, explicam isso e muito mais nesse episódio.</description>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/</link>
+      </image>
+    </item>
     <item>
       
       <title>#012 - Kubernetes e seus desafios</title>
