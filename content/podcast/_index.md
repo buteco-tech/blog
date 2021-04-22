@@ -17,4 +17,4 @@ outputs:
 
 De maneira descontraída, o buteco.tech, busca compartilhar experiências sobre tecnologia, programação, linux e software livre.
 
-Alexandre, junto com Marcos ou Jonathan, batem-papo e entrevistam diversos convidados da aréa de TI.
+Alexandre, junto com Marcos ou Jonathan, batem papo e entrevistam diversos convidados da área de TI.
