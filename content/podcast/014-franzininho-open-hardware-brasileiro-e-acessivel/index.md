@@ -25,7 +25,7 @@ Conheça a história e os bastidores do projeto neste novo episódio. Fábio e D
 
 {{< podcast-episodio id="2U4rRbVwq49Ja1Ld5VAtIf" >}}
 
-Faça parte comunidade, entre no [Discord do projeto Franzinho][discord].
+Faça parte comunidade, entre no [Discord do projeto Franzininho][discord].
 
 Escute em uma variedade de locais:
 
