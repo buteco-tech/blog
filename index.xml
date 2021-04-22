@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 01 Apr 2021 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Apr 2021 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      
+      <title>#014 - Franzininho - Open Hardware brasileiro e acessível</title>
+      <link>https://butecotecnologico.com.br/podcast/franzininho-open-hardware-brasileiro-e-acessivel/</link>
+      <pubDate>Thu, 22 Apr 2021 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/podcast/franzininho-open-hardware-brasileiro-e-acessivel/</guid>
+      <description>Conheça a história e os bastidores do projeto Franzininho, que busca fomentar a cultura maker no Brasil.</description>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/</link>
+      </image>
+    </item>
     <item>
       
       <title>#013 - Projeto de sistema embarcado com o Yocto</title>
