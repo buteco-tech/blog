@@ -11,9 +11,23 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 22 Apr 2021 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 May 2021 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/podcast/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      
+      <title>#015 - INPE, Amazonia 1 e a indústria espacial brasileira</title>
+      <link>https://butecotecnologico.com.br/podcast/inpe-amazonia-1-e-a-industria-espacial-brasileira/</link>
+      <pubDate>Thu, 13 May 2021 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/podcast/inpe-amazonia-1-e-a-industria-espacial-brasileira/</guid>
+      <description>Danilo e Fabrício contam os bastidores do projeto Amazonia 1, como ele foi projetado, como será operado, quais dados irá prover para a sociedade brasileira e diversos outros aspectos relacionados ao desenvolvimento de um satélite.</description>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/podcast/</link>
+      </image>
+    </item>
     <item>
       
       <title>#014 - Franzininho - Open Hardware brasileiro e acessível</title>

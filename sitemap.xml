@@ -2,40 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://butecotecnologico.com.br/podcast/inpe-amazonia-1-e-a-industria-espacial-brasileira/</loc>
+    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/autores/alexandrevicenzi/</loc>
+    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/tags/amazonia-1/</loc>
+    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/autores/</loc>
+    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/tags/brasil/</loc>
+    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/</loc>
+    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/categorias/</loc>
+    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/tags/pmm/</loc>
+    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/categorias/podcast/</loc>
+    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/podcast/</loc>
+    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/tags/satelite/</loc>
+    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/tags/sistema-embarcado/</loc>
+    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/tags/</loc>
+    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://butecotecnologico.com.br/podcast/franzininho-open-hardware-brasileiro-e-acessivel/</loc>
     <lastmod>2021-04-22T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://butecotecnologico.com.br/autores/alexandrevicenzi/</loc>
-    <lastmod>2021-04-22T08:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://butecotecnologico.com.br/tags/arduino/</loc>
-    <lastmod>2021-04-22T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://butecotecnologico.com.br/autores/</loc>
-    <lastmod>2021-04-22T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://butecotecnologico.com.br/</loc>
-    <lastmod>2021-04-22T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://butecotecnologico.com.br/categorias/</loc>
     <lastmod>2021-04-22T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://butecotecnologico.com.br/tags/franzininho/</loc>
     <lastmod>2021-04-22T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://butecotecnologico.com.br/tags/iot/</loc>
-    <lastmod>2021-04-22T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://butecotecnologico.com.br/categorias/podcast/</loc>
-    <lastmod>2021-04-22T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://butecotecnologico.com.br/podcast/</loc>
-    <lastmod>2021-04-22T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://butecotecnologico.com.br/tags/sistema-embarcado/</loc>
-    <lastmod>2021-04-22T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://butecotecnologico.com.br/tags/</loc>
     <lastmod>2021-04-22T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://butecotecnologico.com.br/podcast/projeto-de-sistema-embarcado-com-o-yocto/</loc>
@@ -66,9 +81,6 @@
     <lastmod>2021-03-11T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://butecotecnologico.com.br/podcast/projeto-querido-diario/</loc>
-    <lastmod>2021-02-18T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://butecotecnologico.com.br/tags/brasil/</loc>
     <lastmod>2021-02-18T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://butecotecnologico.com.br/tags/coleta-de-dados/</loc>
