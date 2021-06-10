@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 13 May 2021 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jun 2021 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://butecotecnologico.com.br/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      
+      <title>#016 - A vida de um SRE</title>
+      <link>https://butecotecnologico.com.br/podcast/a-vida-de-um-sre/</link>
+      <pubDate>Thu, 10 Jun 2021 08:00:00 +0000</pubDate>
+      
+      <guid>https://butecotecnologico.com.br/podcast/a-vida-de-um-sre/</guid>
+      <description>Amador Pahim, SRE na Red Hat, explica conceitos SRE, relação entre SRE, DevOps e SysAdmin, Service Level Objectives, Service Level Indicators, Service Level Agreement, boas práticas, resposta a incidentes, conhecimentos necessários para ser um bom profissional SRE e muito mais.</description>
+      <image>
+        <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
+        <title>Buteco Tecnológico</title>
+        <link>https://butecotecnologico.com.br/</link>
+      </image>
+    </item>
     <item>
       
       <title>#015 - INPE, Amazonia 1 e a indústria espacial brasileira</title>

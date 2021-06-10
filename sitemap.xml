@@ -2,43 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://butecotecnologico.com.br/podcast/inpe-amazonia-1-e-a-industria-espacial-brasileira/</loc>
-    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
+    <loc>https://butecotecnologico.com.br/podcast/a-vida-de-um-sre/</loc>
+    <lastmod>2021-06-10T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://butecotecnologico.com.br/autores/alexandrevicenzi/</loc>
+    <lastmod>2021-06-10T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/autores/</loc>
+    <lastmod>2021-06-10T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/</loc>
+    <lastmod>2021-06-10T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/categorias/</loc>
+    <lastmod>2021-06-10T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/tags/desenvolvimento/</loc>
+    <lastmod>2021-06-10T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/tags/devops/</loc>
+    <lastmod>2021-06-10T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/tags/google/</loc>
+    <lastmod>2021-06-10T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/categorias/podcast/</loc>
+    <lastmod>2021-06-10T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/podcast/</loc>
+    <lastmod>2021-06-10T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/tags/sre/</loc>
+    <lastmod>2021-06-10T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/tags/sysadmin/</loc>
+    <lastmod>2021-06-10T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/tags/</loc>
+    <lastmod>2021-06-10T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://butecotecnologico.com.br/podcast/inpe-amazonia-1-e-a-industria-espacial-brasileira/</loc>
     <lastmod>2021-05-13T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://butecotecnologico.com.br/tags/amazonia-1/</loc>
     <lastmod>2021-05-13T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://butecotecnologico.com.br/autores/</loc>
-    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://butecotecnologico.com.br/tags/brasil/</loc>
     <lastmod>2021-05-13T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://butecotecnologico.com.br/</loc>
-    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://butecotecnologico.com.br/categorias/</loc>
-    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://butecotecnologico.com.br/tags/pmm/</loc>
-    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://butecotecnologico.com.br/categorias/podcast/</loc>
-    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://butecotecnologico.com.br/podcast/</loc>
     <lastmod>2021-05-13T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://butecotecnologico.com.br/tags/satelite/</loc>
     <lastmod>2021-05-13T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://butecotecnologico.com.br/tags/sistema-embarcado/</loc>
-    <lastmod>2021-05-13T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://butecotecnologico.com.br/tags/</loc>
     <lastmod>2021-05-13T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://butecotecnologico.com.br/podcast/franzininho-open-hardware-brasileiro-e-acessivel/</loc>
@@ -263,9 +281,6 @@
     <loc>https://butecotecnologico.com.br/tags/firefox/</loc>
     <lastmod>2020-10-08T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://butecotecnologico.com.br/tags/google/</loc>
-    <lastmod>2020-10-08T08:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://butecotecnologico.com.br/tags/internet/</loc>
     <lastmod>2020-10-08T08:00:00+00:00</lastmod>
   </url><url>
@@ -281,9 +296,6 @@
     <loc>https://butecotecnologico.com.br/e-possivel-ter-privacidade-na-internet/</loc>
     <lastmod>2020-10-08T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://butecotecnologico.com.br/tags/devops/</loc>
-    <lastmod>2020-10-01T08:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://butecotecnologico.com.br/autores/jaswdr/</loc>
     <lastmod>2020-10-01T08:00:00+00:00</lastmod>
   </url><url>
@@ -291,9 +303,6 @@
     <lastmod>2020-10-01T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://butecotecnologico.com.br/podcast/microsservicos-monolitos-e-cloud/</loc>
-    <lastmod>2020-09-24T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://butecotecnologico.com.br/tags/desenvolvimento/</loc>
     <lastmod>2020-09-24T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://butecotecnologico.com.br/tags/microsservicos/</loc>
@@ -549,9 +558,6 @@
     <lastmod>2020-04-24T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://butecotecnologico.com.br/livros-gratuitos-abril-2020/</loc>
-    <lastmod>2020-04-24T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://butecotecnologico.com.br/tags/sre/</loc>
     <lastmod>2020-04-24T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://butecotecnologico.com.br/categorias/banco-de-dados/</loc>
