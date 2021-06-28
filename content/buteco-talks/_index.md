@@ -5,7 +5,7 @@ description: Junte-se a líderes do mercado para discutir tópicos quentes e apr
 summary: Junte-se a líderes do mercado para discutir tópicos quentes e aprender com quem faz acontecer.
 categories:
   - Eventos
-eventdate: 24 de Julho das 13:00 às 17:00
+eventdate: 24 de Julho das 13:00 às 17:30
 speakers:
   - name: Christian Reis
     company: Magazine Luiza
