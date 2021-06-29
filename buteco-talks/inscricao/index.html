@@ -135,11 +135,24 @@
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
   <style type="text/css">
-    p > a {
+    p a {
        
       color: rgba(79,70,229,1);
       font-weight: 500;
     }
+
+  .yt-container {
+    position: relative;
+    padding-bottom: 56.25%;  
+    height: 0;
+  }
+  .yt-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
   </style>
 </head>
 <body class="min-h-screen flex flex-col text-gray-700">
@@ -197,7 +210,7 @@
     </div>
   </nav>
 
-  <div class="flex-grow py-12 px-6 lg:max-w-6xl lg:m-auto">
+  <div class="flex-grow py-12 px-6 w-screen lg:max-w-6xl lg:m-auto">
     <div class="text-center">
       <p>O evento é online e gratuito, porém pedimos que se inscreva para facilitar a organização do evento.</p>
 <div id="sympla-widget-1253645" height="auto" class="m-auto py-4"></div>
@@ -208,11 +221,13 @@
 <br>
 <em>Caso o formulário de inscrição não carregue, <a href="https://www.sympla.com.br/buteco-talks__1253645"  target="_blank" rel="noopener">clique aqui</a>.</em></p>
 
+
+
     </div>
   </div>
 
   <footer class="flex-none border-t border-solid border-gray-300 py-4 mx-4">
-    <div class="mt-4 text-center text-xs text-gray-500">
+    <div class="text-center text-xs text-gray-500">
       <p>&copy; 2021 Buteco Tecnológico</p>
     </div>
   </footer>

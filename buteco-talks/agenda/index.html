@@ -135,11 +135,24 @@
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
   <style type="text/css">
-    p > a {
+    p a {
        
       color: rgba(79,70,229,1);
       font-weight: 500;
     }
+
+  .yt-container {
+    position: relative;
+    padding-bottom: 56.25%;  
+    height: 0;
+  }
+  .yt-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
   </style>
 </head>
 <body class="min-h-screen flex flex-col text-gray-700">
@@ -197,15 +210,193 @@
     </div>
   </nav>
 
-  <div class="flex-grow py-12 px-6 lg:max-w-6xl lg:m-auto">
+  <div class="flex-grow py-12 px-6 w-screen lg:max-w-6xl lg:m-auto">
     <div class="text-center">
       <p>Agenda completa em breve</p>
+
+
+
+<div class="flex flex-col mt-4">
+  <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+      <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+        <table class="min-w-full divide-y divide-gray-200">
+          <tbody class="bg-white divide-y divide-gray-200">
+            
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-indigo-100 text-indigo-800">
+                  13:05
+                </span>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-16 w-16">
+                    <img class="h-16 w-16 rounded-full" src="/buteco-talks/speakers/otavio-250.jpg" width="64" alt="Otavio Piske">
+                  </div>
+                  <div class="ml-8">
+                    <div class="text-sm font-medium text-gray-900">
+                      Otavio Piske
+                    </div>
+                    <div class="text-sm text-gray-500">
+                      Red Hat
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-gray-900">Camel K</div>
+                <div class="text-sm text-gray-500">Introdução à integração ágil na era da computação em nuvem</div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-indigo-100 text-indigo-800">
+                  13:50
+                </span>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-16 w-16">
+                    <img class="h-16 w-16 rounded-full" src="/buteco-talks/speakers/paulo-250.jpg" width="64" alt="Paulo Ricardo S. Machado">
+                  </div>
+                  <div class="ml-8">
+                    <div class="text-sm font-medium text-gray-900">
+                      Paulo Ricardo S. Machado
+                    </div>
+                    <div class="text-sm text-gray-500">
+                      Mercado Livre
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-gray-900">Sistema Legado</div>
+                <div class="text-sm text-gray-500">Chegou a hora de evoluir</div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-indigo-100 text-indigo-800">
+                  14:35
+                </span>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-16 w-16">
+                    <img class="h-16 w-16 rounded-full" src="/buteco-talks/speakers/giulio-250.jpg" width="64" alt="Giulio Carvalho">
+                  </div>
+                  <div class="ml-8">
+                    <div class="text-sm font-medium text-gray-900">
+                      Giulio Carvalho
+                    </div>
+                    <div class="text-sm text-gray-500">
+                      Open Knowledge Brasil
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-gray-900">TBD</div>
+                <div class="text-sm text-gray-500"></div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-indigo-100 text-indigo-800">
+                  15:20
+                </span>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-16 w-16">
+                    <img class="h-16 w-16 rounded-full" src="/buteco-talks/speakers/joao-250.jpg" width="64" alt="João Victor Soares">
+                  </div>
+                  <div class="ml-8">
+                    <div class="text-sm font-medium text-gray-900">
+                      João Victor Soares
+                    </div>
+                    <div class="text-sm text-gray-500">
+                      Binario Cloud
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-gray-900">Cloud Computing</div>
+                <div class="text-sm text-gray-500">Boas práticas e o que evitar</div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-indigo-100 text-indigo-800">
+                  16:05
+                </span>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-16 w-16">
+                    <img class="h-16 w-16 rounded-full" src="/buteco-talks/speakers/vinicius-250.jpg" width="64" alt="Vinicius Neuhauss">
+                  </div>
+                  <div class="ml-8">
+                    <div class="text-sm font-medium text-gray-900">
+                      Vinicius Neuhauss
+                    </div>
+                    <div class="text-sm text-gray-500">
+                      SUSE
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-gray-900">TBD</div>
+                <div class="text-sm text-gray-500"></div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-indigo-100 text-indigo-800">
+                  16:50
+                </span>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-16 w-16">
+                    <img class="h-16 w-16 rounded-full" src="/buteco-talks/speakers/kiko-250.jpg" width="64" alt="Christian Reis">
+                  </div>
+                  <div class="ml-8">
+                    <div class="text-sm font-medium text-gray-900">
+                      Christian Reis
+                    </div>
+                    <div class="text-sm text-gray-500">
+                      Magazine Luiza
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-gray-900">TBD</div>
+                <div class="text-sm text-gray-500"></div>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
 
     </div>
   </div>
 
   <footer class="flex-none border-t border-solid border-gray-300 py-4 mx-4">
-    <div class="mt-4 text-center text-xs text-gray-500">
+    <div class="text-center text-xs text-gray-500">
       <p>&copy; 2021 Buteco Tecnológico</p>
     </div>
   </footer>
