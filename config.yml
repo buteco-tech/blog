@@ -7,7 +7,7 @@ enableInlineShortcodes: true
 enableRobotsTXT: true
 summarylength: 10
 enableEmoji: true
-paginate: 25
+paginate: 20
 theme: iara
 disqusShortname: butecoopensource
 googleAnalytics: UA-55693832-1
@@ -106,8 +106,8 @@ params:
     google:
       id: 006529162228150198964:ypsteas3iuv
 
-  addthis:
-    pubid: ra-56269d97a8b5a42b
+  # addthis:
+  #   pubid: ra-56269d97a8b5a42b
 
   ads:
     google:
@@ -280,11 +280,15 @@ menu:
       weight: 7
       url: /tags/bsd/
   footer5:
+    - name: Buteco Talks
+      weight: 1
+      url: /buteco-talks/
+      pre: <b>
+      post: </b><span class="badge badge-danger">Online</span>
     - name: Podcast
       weight: 1
       url: /podcast/
-      pre: <b>
-      post: </b><span class="badge badge-success">Novo</span>
+      post: <i class="fas fa-microphone-alt"></i>
     - name: Contribua com o blog
       weight: 2
       url: /contribua-com-nosso-blog/
