@@ -9,25 +9,25 @@ eventdate: 24 de Julho das 13:00 às 17:30
 speakers:
   - name: Christian Reis
     company: Magazine Luiza
-    avatar: speakers/kiko-250.jpg
+    avatar: /buteco-talks/speakers/kiko-250.jpg
   - name: Giulio Carvalho
     company: Open Knowledge Brasil
-    avatar: speakers/giulio-250.jpg
+    avatar: /buteco-talks/speakers/giulio-250.jpg
   - name: João Victor Soares
     company: Binario Cloud
-    avatar: speakers/joao-250.jpg
+    avatar: /buteco-talks/speakers/joao-250.jpg
   - name: Otavio Piske
     company: Red Hat
-    avatar: speakers/otavio-250.jpg
+    avatar: /buteco-talks/speakers/otavio-250.jpg
   - name: Paulo R. S. Machado
     company: Mercado Livre
-    avatar: speakers/paulo-250.jpg
+    avatar: /buteco-talks/speakers/paulo-250.jpg
   - name: Vinicius Neuhauss
     company: SUSE
-    avatar: speakers/vinicius-250.jpg
+    avatar: /buteco-talks/speakers/vinicius-250.jpg
 partners:
   - name: Open Knowledge Brasil
-    logo: partners/okbr.png
+    logo: /buteco-talks/partners/okbr.png
     url: https://www.ok.org.br/
 ---
 
