@@ -29,6 +29,9 @@ partners:
   - name: Open Knowledge Brasil
     logo: /buteco-talks/partners/okbr.png
     url: https://www.ok.org.br/
+resources:
+  - name: thumbnail
+    src: banner.jpg
 ---
 
 O Buteco Talks é um evento virtual e gratuito focado em open source e destinado a desenvolvedores e entusiastas de tecnologia.
