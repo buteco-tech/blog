@@ -16,7 +16,8 @@ schedule:
     company: Mercado Livre
     avatar: /buteco-talks/speakers/paulo-250.jpg
   - time: "14:35"
-    title: TBD
+    title: Querido Diário
+    subtitle: Como contribuir com a libertação dos diários municipais
     speaker: Giulio Carvalho
     company: Open Knowledge Brasil
     avatar: /buteco-talks/speakers/giulio-250.jpg
@@ -27,7 +28,8 @@ schedule:
     company: Binario Cloud
     avatar: /buteco-talks/speakers/joao-250.jpg
   - time: "16:05"
-    title: TBD
+    title: Rancher
+    subtitle: Como gerenciamento em Kubernetes pode acelerar sua transformação para Edge
     speaker: Vinicius Neuhauss
     company: SUSE
     avatar: /buteco-talks/speakers/vinicius-250.jpg
