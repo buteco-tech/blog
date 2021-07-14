@@ -34,10 +34,9 @@ schedule:
     company: SUSE
     avatar: /buteco-talks/speakers/vinicius-250.jpg
   - time: "16:50"
-    title: TBD
+    title:  Carreira em software livre
+    subtitle: Acidentes e curiosidades na profissão de construtor de open source
     speaker: Christian Reis
     company: Magazine Luiza
     avatar: /buteco-talks/speakers/kiko-250.jpg
 ---
-
-Agenda completa em breve
