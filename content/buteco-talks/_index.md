@@ -25,10 +25,10 @@ speakers:
   - name: Vinicius Neuhauss
     company: SUSE
     avatar: /buteco-talks/speakers/vinicius-250.jpg
-partners:
-  - name: Open Knowledge Brasil
-    logo: /buteco-talks/partners/okbr.png
-    url: https://www.ok.org.br/
+# partners:
+#   - name: Empresa
+#     logo: /buteco-talks/partners/empresa.png
+#     url: https://www.empresa.com.br/
 resources:
   - name: thumbnail
     src: banner.jpg
