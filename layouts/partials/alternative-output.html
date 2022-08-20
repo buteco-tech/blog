@@ -2,6 +2,6 @@
   {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
 {{ end -}}
 
-{{ if (or .IsHome (eq .URL "/podcast/")) }}
+{{ if (or .IsHome (eq .RelPermalink "/podcast/")) }}
 <link type="application/rss+xml" rel="alternate" title="Podcast" href="https://buteco.tech/podcast-rss.xml"/>
 {{ end }}
