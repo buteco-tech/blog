@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>QEMU/KVM: Habilitar serial console no CentOS/RHEL para acessá-lo pelo virsh console &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Olá pessoal, a alguns dias atrás eu precisei fazer alguns testes usando o QEMU/KVM, e para isso foi necessário o acesso a uma máquina virtual com CentOS utilizando o virsh console." />
 
-
-
 <meta itemprop="name" content="QEMU/KVM: Habilitar serial console no CentOS/RHEL para acessá-lo pelo virsh console">
-<meta itemprop="description" content="Olá pessoal, a alguns dias atrás eu precisei fazer alguns testes usando o QEMU/KVM, e para isso foi necessário o acesso a uma máquina virtual com CentOS utilizando o virsh console."><meta itemprop="datePublished" content="2014-09-17T12:03:21&#43;00:00" />
-<meta itemprop="dateModified" content="2014-09-17T12:03:21&#43;00:00" />
+<meta itemprop="description" content="Olá pessoal, a alguns dias atrás eu precisei fazer alguns testes usando o QEMU/KVM, e para isso foi necessário o acesso a uma máquina virtual com CentOS utilizando o virsh console."><meta itemprop="datePublished" content="2014-09-17T12:03:21+00:00" />
+<meta itemprop="dateModified" content="2014-09-17T12:03:21+00:00" />
 <meta itemprop="wordCount" content="274"><meta itemprop="image" content="https://butecotecnologico.com.br/logos/capybara_400_bg.png"/>
 <meta itemprop="keywords" content="centos,kvm,qemu,virtualizacao,linux," />
 <meta property="og:title" content="QEMU/KVM: Habilitar serial console no CentOS/RHEL para acessá-lo pelo virsh console" />
 <meta property="og:description" content="Olá pessoal, a alguns dias atrás eu precisei fazer alguns testes usando o QEMU/KVM, e para isso foi necessário o acesso a uma máquina virtual com CentOS utilizando o virsh console." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/qemukvm-habilitar-serial-console-no-centosrhel-para-acessa-lo-pelo-virsh-console/" /><meta property="og:image" content="https://butecotecnologico.com.br/logos/capybara_400_bg.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2014-09-17T12:03:21&#43;00:00" />
-<meta property="article:modified_time" content="2014-09-17T12:03:21&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2014-09-17T12:03:21+00:00" />
+<meta property="article:modified_time" content="2014-09-17T12:03:21+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -383,7 +381,7 @@ virsh console nomevm
 <p>A mesma configuração vale também para o RHEL. Caso você tenha algum problema em fazer o serial console do CentOS funcionar com esta explicação, basta perguntar nos comentários do post que podemos verificar o que está acontecendo. Espero ter ajudado!</p>
 <p>Eu tentei habilitar a serial console no Fedora 20 utilizando o systemd, mas não obtive exito. Se alguém souber como fazer e quiser postar nos comentários, acho que iria ajudar muitas pessoas além de mim :)</p>
 <p>Até mais!</p>
-<p><em>Fonte: <a href="http://www.cyberciti.biz/faq/centos-rhel-6-install-serial-console/">http://www.cyberciti.biz/faq/centos-rhel-6-install-serial-console/</a></em></p>
+<p><em>Fonte: <a href="http://www.cyberciti.biz/faq/centos-rhel-6-install-serial-console/"  target="_blank" rel="noopener">http://www.cyberciti.biz/faq/centos-rhel-6-install-serial-console/</a></em></p>
 
   </article>
 
@@ -470,7 +468,7 @@ virsh console nomevm
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -670,7 +668,8 @@ virsh console nomevm
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -688,24 +687,24 @@ virsh console nomevm
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

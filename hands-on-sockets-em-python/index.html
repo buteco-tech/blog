@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Hands on: Sockets em Python &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Muitos são os usos dos sockets atualmente e vários exemplos existem através de toda a internet em várias linguagens de programação diferentes." />
 
-
-
 <meta itemprop="name" content="Hands on: Sockets em Python">
-<meta itemprop="description" content="Muitos são os usos dos sockets atualmente e vários exemplos existem através de toda a internet em várias linguagens de programação diferentes."><meta itemprop="datePublished" content="2015-01-14T00:05:04&#43;00:00" />
-<meta itemprop="dateModified" content="2015-01-14T00:05:04&#43;00:00" />
+<meta itemprop="description" content="Muitos são os usos dos sockets atualmente e vários exemplos existem através de toda a internet em várias linguagens de programação diferentes."><meta itemprop="datePublished" content="2015-01-14T00:05:04+00:00" />
+<meta itemprop="dateModified" content="2015-01-14T00:05:04+00:00" />
 <meta itemprop="wordCount" content="663"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png">
 <meta itemprop="keywords" content="linux,python,sockets," />
 <meta property="og:title" content="Hands on: Sockets em Python" />
 <meta property="og:description" content="Muitos são os usos dos sockets atualmente e vários exemplos existem através de toda a internet em várias linguagens de programação diferentes." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/hands-on-sockets-em-python/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2015-01-14T00:05:04&#43;00:00" />
-<meta property="article:modified_time" content="2015-01-14T00:05:04&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2015-01-14T00:05:04+00:00" />
+<meta property="article:modified_time" content="2015-01-14T00:05:04+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -381,7 +379,7 @@ Aqui estamos incluindo todas as definições e métodos relacionados a sockets p
  A primeira linha mostra a instanciação do novo objeto socket do python, utilizando IP como protocolo de comunicação e TCP como método de transmissão. Já a segunda linha atribui o endereço 0.0.0.0 ao socket, o que significa que o servidor poderá receber requisições de qualquer endereço IP e a porta em que o socket irá "escutar", que neste caso é 9999. Este mesmo número deverá ser utilizado no lado cliente para o correto recebimento da conexão no lado do servidor. E a terceira linha altera o estado do socket para que este comece a "escutar" novas conexões.
 <p><strong>(cli_socket, address) = server_sock.accept()</strong>
 Recebe uma nova conexão de clientes do servidor de horas. Esta chamada fica esperando novas conexões, fazendo com que o processo fique travado até a chegada de uma nova conexão.</p>
-<p><strong>if cli_socket.send(time.ctime(time.time()) + &lsquo;n&rsquo;) == 0:</strong>
+<p><strong>if cli_socket.send(time.ctime(time.time()) + &rsquo;n&rsquo;) == 0:</strong>
 Testa o envio de dado para o cliente conectado. O dado neste caso é o envio da hora corrente do sistema. Ao chegar neste ponto, temos a certeza de ter uma conexão estabelecida. O retorno da chamada <em>send</em> é o número de bytes que foram escritos no socket. Se o retorno da chamada for 0, isto significa que o cliente desconectou antes de receber os dados.</p>
 <p><strong>cli_socket.close()</strong>
 Fecha o socket aberto na chamada accept. Esta é uma boa prática pois a cada socket aberto ocupa um lugar na tabela de arquivos abertos no sistema, e este recurso tem um limite máximo. A fim de não consumir recursos do sistema, deve-se sempre fechar o socket quando este não for mais utilizado.</p>
@@ -474,7 +472,7 @@ Fechamos o socket, pelo motivo já informado no código do servidor.</p>
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -674,7 +672,8 @@ Fechamos o socket, pelo motivo já informado no código do servidor.</p>
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -692,24 +691,24 @@ Fechamos o socket, pelo motivo já informado no código do servidor.</p>
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

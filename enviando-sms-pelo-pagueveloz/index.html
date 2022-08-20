@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Enviando SMS pelo PagueVeloz &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="É muito comum ver nos sistemas que desenvolvemos envio de e-mail." />
 
-
-
 <meta itemprop="name" content="Enviando SMS pelo PagueVeloz">
-<meta itemprop="description" content="É muito comum ver nos sistemas que desenvolvemos envio de e-mail."><meta itemprop="datePublished" content="2014-12-19T01:04:48&#43;00:00" />
-<meta itemprop="dateModified" content="2014-12-19T01:04:48&#43;00:00" />
+<meta itemprop="description" content="É muito comum ver nos sistemas que desenvolvemos envio de e-mail."><meta itemprop="datePublished" content="2014-12-19T01:04:48+00:00" />
+<meta itemprop="dateModified" content="2014-12-19T01:04:48+00:00" />
 <meta itemprop="wordCount" content="562"><meta itemprop="image" content="https://butecotecnologico.com.br/logos/capybara_400_bg.png"/>
 <meta itemprop="keywords" content="sms,csharp,python,ruby,java,cpp,node-js,servicos," />
 <meta property="og:title" content="Enviando SMS pelo PagueVeloz" />
 <meta property="og:description" content="É muito comum ver nos sistemas que desenvolvemos envio de e-mail." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/enviando-sms-pelo-pagueveloz/" /><meta property="og:image" content="https://butecotecnologico.com.br/logos/capybara_400_bg.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2014-12-19T01:04:48&#43;00:00" />
-<meta property="article:modified_time" content="2014-12-19T01:04:48&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2014-12-19T01:04:48+00:00" />
+<meta property="article:modified_time" content="2014-12-19T01:04:48+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -363,7 +361,7 @@
   <p>É muito comum ver nos sistemas que desenvolvemos envio de e-mail. Mas em alguns setores o envio de SMS facilita muito mais que um e-mail.</p>
 <p>Você recebe um e-mail do seu dentista informando que você tem uma consulta na semana que vem? Creio que não. Na maioria desses sistemas é usado envio de SMS e não de e-mail. Enviar um lembrete de um compromisso via SMS é muito mais simples e prático do que um e-mail, afinal, todos estão com seus celulares sempre a mãos.</p>
 <p>Hoje vou mostrar como enviar SMS usando a API do <a href="https://www.pagueveloz.com.br/">PagueVeloz</a>, nosso parceiro.</p>
-<p><img class="aligncenter" src="/images/wp-content/uploads/2014/12/logo-pagueveloz-topo_03.png" alt="PagueVeloz" /></p>
+<img class="aligncenter" src="/images/wp-content/uploads/2014/12/logo-pagueveloz-topo_03.png" alt="PagueVeloz" />
 <p>Bem, se você já ouviu falar em serviço de envio de SMS, provavelmente a primeira opção que veio a sua cabeça foi o <a href="https://www.twilio.com/">Twilio</a>. O Twilio oferece outros serviços além do de envio de SMS.</p>
 <p>Fazendo uma comparação rápida do envio de SMS do PagueVeloz x Twilio:</p>
 <p><strong>Vantagens</strong></p>
@@ -384,7 +382,7 @@ Para usar os serviços você deve se cadastrar no PagueVeloz para receber o seu 
 <p><code>Authorization: Basic [CHAVE]</code></p>
 <p>[CHAVE] é o BASE64 do email:token do cliente.</p>
 <p>Exemplo de chave:</p>
-<p><code><a href="mailto:seuemail@seudominio.com.br">seuemail@seudominio.com.br</a>:e45c5687-b0ba-45d4-8337-0fdee61abe93</code></p>
+<p><code><a href="mailto:seuemail@seudominio.com.br"  >seuemail@seudominio.com.br</a>:e45c5687-b0ba-45d4-8337-0fdee61abe93</code></p>
 <p>Exemplo após conversão para BASE64:</p>
 <p><code>c2V1ZW1haWxAc2V1ZG9taW5pby5jb20uYnI6ZTQ1YzU2ODctYjBiYS00NWQ0LTgzMzctMGZkZWU2MWFiZTkz</code></p>
 <p>Além desse header o Content-Type é obrigatório para todos os serviços. Vale ressaltar que a API trabalha apenas com o formato JSON.</p>
@@ -532,7 +530,7 @@ Caso o retorno seja de erro, será retornada uma mensagem informando qual o erro
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -732,7 +730,8 @@ Caso o retorno seja de erro, será retornada uma mensagem informando qual o erro
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -750,24 +749,24 @@ Caso o retorno seja de erro, será retornada uma mensagem informando qual o erro
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Começando com SQL Alchemy &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Acessando bancos relacionais e criando modelos ORM de forma fácil no Python com o SQL Alchemy." />
 
-
-
 <meta itemprop="name" content="Começando com SQL Alchemy">
-<meta itemprop="description" content="Acessando bancos relacionais e criando modelos ORM de forma fácil no Python com o SQL Alchemy."><meta itemprop="datePublished" content="2020-04-21T12:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-04-21T12:00:00&#43;00:00" />
+<meta itemprop="description" content="Acessando bancos relacionais e criando modelos ORM de forma fácil no Python com o SQL Alchemy."><meta itemprop="datePublished" content="2020-04-21T12:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-04-21T12:00:00+00:00" />
 <meta itemprop="wordCount" content="935"><meta itemprop="image" content="https://butecotecnologico.com.br/comecando-com-sql-alchemy/sql-alchemy-logo.png">
 <meta itemprop="keywords" content="python,sql,orm," />
 <meta property="og:title" content="Começando com SQL Alchemy" />
 <meta property="og:description" content="Acessando bancos relacionais e criando modelos ORM de forma fácil no Python com o SQL Alchemy." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/comecando-com-sql-alchemy/" /><meta property="og:image" content="https://butecotecnologico.com.br/comecando-com-sql-alchemy/sql-alchemy-logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-04-21T12:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2020-04-21T12:00:00&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2020-04-21T12:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-21T12:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -355,7 +353,7 @@
   <article class="mt-3 mb-4">
   <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/comecando-com-sql-alchemy/sql-alchemy-logo_hu9aaae5cb0138810bd2a9b3020b120bcf_12170_200x200_resize_q90_bgffffff_linear_2.jpg"
+      src="https://butecotecnologico.com.br/comecando-com-sql-alchemy/sql-alchemy-logo_hu9aaae5cb0138810bd2a9b3020b120bcf_12170_200x200_resize_q90_bgffffff_linear_3.jpg"
       alt="sqlalchemy"/>
 </figure>
 
@@ -366,72 +364,72 @@
 <p>Para realizar a instalação do pacote basta executar:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="err">$</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">sqlalchemy</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="err">$</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">sqlalchemy</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Após finalizar o download e instalação você pode verificar a instalação pelo python, executando:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="err">$</span> <span class="n">python3</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">sqlalchemy</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">sqlalchemy</span><span class="o">.</span><span class="n">__version__</span>
-<span class="s1">&#39;1.3.13&#39;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="err">$</span> <span class="n">python3</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">sqlalchemy</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">sqlalchemy</span><span class="o">.</span><span class="n">__version__</span>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;1.3.13&#39;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="conectando-e-executando-queries">Conectando e executando queries</h2>
 <p>Para conectar a um banco de dados suportado pelo sqlalchemy (PostgreSQL, MySQL, SQLite, Oracle ou Microsoft SQL Server) precisamos criar uma instância de <code>Engine</code>, este objeto servirá para criarmos nossas sessões de conexão com o banco.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
-<span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s2">&#34;sqlite:///file.db&#34;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
+</span></span><span class="line"><span class="cl"><span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s2">&#34;sqlite:///file.db&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>No exemplo acima, estamos criando uma instância de <code>Engine</code> com o <code>sqlite</code>, caso você queira conectar com outro banco, veja a <a href="https://docs.sqlalchemy.org/en/13/dialects/index.html"  target="_blank" rel="noopener">documentação</a> (em inglês) para mais detalhes.</p>
 <p>Uma vez que temos nossa engine podemos começar a criar nossa sessão.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">sessionmaker</span>
-<span class="n">Session</span> <span class="o">=</span> <span class="n">sessionmaker</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
-<span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">sessionmaker</span>
+</span></span><span class="line"><span class="cl"><span class="n">Session</span> <span class="o">=</span> <span class="n">sessionmaker</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Finalmente com nossa sessão conseguimos executar comandos SQL, como por exemplo criar um tabela de usuários.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">session</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;CREATE TABLE users(&#39;</span>
-               	<span class="s1">&#39;id INT &#39;</span>
-               	<span class="s1">&#39;name VARCHAR &#39;</span>
-               	<span class="s1">&#39;email VARCHAR)&#39;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;CREATE TABLE users(&#39;</span>
+</span></span><span class="line"><span class="cl">               	<span class="s1">&#39;id INT &#39;</span>
+</span></span><span class="line"><span class="cl">               	<span class="s1">&#39;name VARCHAR &#39;</span>
+</span></span><span class="line"><span class="cl">               	<span class="s1">&#39;email VARCHAR)&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Inserir dados.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -439,18 +437,18 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">session</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&#34;INSERT INTO &#34;</span><span class="n">users</span><span class="s2">&#34; (id, name, email) VALUES &#34;</span>
-               <span class="s2">&#34;(1, &#39;admin&#39;, &#39;admin@example.com&#39;) &#34;</span><span class="p">)</span>
-<span class="n">session</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;INSERT INTO &#34;users&#34; (id, name, email) VALUES &#39;</span>
-               <span class="s2">&#34;(2, &#39;user&#39;, &#39;user@example.com&#39;) &#34;</span><span class="p">)</span>
-<span class="n">session</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;INSERT INTO &#34;users&#34; (id, name, email) VALUES &#39;</span>
-               <span class="s2">&#34;(3, &#39;client&#39;, &#39;client@sample.com&#39;) &#34;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&#34;INSERT INTO &#34;</span><span class="n">users</span><span class="s2">&#34; (id, name, email) VALUES &#34;</span>
+</span></span><span class="line"><span class="cl">               <span class="s2">&#34;(1, &#39;admin&#39;, &#39;admin@example.com&#39;) &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;INSERT INTO &#34;users&#34; (id, name, email) VALUES &#39;</span>
+</span></span><span class="line"><span class="cl">               <span class="s2">&#34;(2, &#39;user&#39;, &#39;user@example.com&#39;) &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;INSERT INTO &#34;users&#34; (id, name, email) VALUES &#39;</span>
+</span></span><span class="line"><span class="cl">               <span class="s2">&#34;(3, &#39;client&#39;, &#39;client@sample.com&#39;) &#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Por fim podemos buscar dados.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -458,39 +456,39 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">result</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT * FROM users&#39;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
-<span class="c1">#(1, &#39;admin&#39;, &#39;admin@example.com&#39;)</span>
-<span class="c1">#(2, &#39;user&#39;, &#39;user@example.com&#39;)</span>
-<span class="c1">#(3, &#39;client&#39;, &#39;client@sample.com&#39;)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT * FROM users&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#(1, &#39;admin&#39;, &#39;admin@example.com&#39;)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#(2, &#39;user&#39;, &#39;user@example.com&#39;)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#(3, &#39;client&#39;, &#39;client@sample.com&#39;)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="orm">ORM</h2>
 <p>Além de poder se executar comandos SQL o <code>sqlalchemy</code> também possuí um pacote de ORM (Object-relational mapping ) que basicamente permite mapear as tabelas do banco em classes e objetos de forma fácil e pratica. Para exemplificar vamos continuar a usar nosso exemplo anterior da tabela de usuários, primeiro vamos deletar a tabela.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">session</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;DROP TABLE users&#39;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;DROP TABLE users&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Agora vamos criar uma classe para representar nossos usuários, a documentação do <code>sqlalchemy</code> sugere criar uma classe base para todos os nossos &ldquo;modelos&rdquo; usando a função <code>declarative_base()</code> do pacote <code>sqlalchemy.ext</code> conforme o exemplo abaixo.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">sqlalchemy.ext.declarative</span> <span class="kn">import</span> <span class="n">declarative_base</span>
-<span class="n">Base</span> <span class="o">=</span> <span class="n">declarative_base</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sqlalchemy.ext.declarative</span> <span class="kn">import</span> <span class="n">declarative_base</span>
+</span></span><span class="line"><span class="cl"><span class="n">Base</span> <span class="o">=</span> <span class="n">declarative_base</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Com a classe <code>Base</code> conseguimos criar nossos modelos, ou classes que representarão nossas tabelas e dados, veja um exemplo de como criar um modelo.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -500,30 +498,30 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">Column</span><span class="p">,</span> <span class="n">Integer</span><span class="p">,</span> <span class="n">String</span>
-
-<span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
-    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">&#39;users&#39;</span>
-    
-    <span class="nb">id</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">nullable</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-    <span class="n">email</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">Column</span><span class="p">,</span> <span class="n">Integer</span><span class="p">,</span> <span class="n">String</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">&#39;users&#39;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nb">id</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">name</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">email</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Como pode-se ver no exemplo, quando se utiliza o ORM do sqlalchemy os atributos da classe são inicializados com instâncias de <code>sqlalchemy.Column</code>, no caso estamos criando colunas de &ldquo;id&rdquo;, &ldquo;name&rdquo; e &ldquo;email&rdquo;, cada um destes atributos será uma coluna na tabela gerada, com opções de <code>primary_key</code> para a chave primária da tabela e <code>nullable</code> para indicar que os valores são obrigatórios. Além disso o atributo <code>__tablename__</code> é obrigatório para indicar o nome da tabela.</p>
 <p>Uma vez montado nosso primeiro modelo de usuário, podemos agora gerar toda a estrutura do banco usando um método utilitário da classe <code>Base</code> que criamos.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Caso o comando acima seja executado com sucesso é esperado termos agora uma tabela <code>users</code> representado pela nossa classe, com isso podemos da mesma forma que anteriormente adicionar alguns usuários.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -534,21 +532,21 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">admin</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;admin&#39;</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="s1">&#39;admin@example.com&#39;</span><span class="p">)</span>
-<span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="s1">&#39;user@example.com&#39;</span><span class="p">)</span>
-<span class="n">client</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;client&#39;</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="s1">&#39;client@sample.com&#39;</span><span class="p">)</span>
-
-<span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">admin</span><span class="p">)</span>
-<span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
-<span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">client</span><span class="p">)</span>
-
-<span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">admin</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;admin&#39;</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="s1">&#39;admin@example.com&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="s1">&#39;user@example.com&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">client</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;client&#39;</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="s1">&#39;client@sample.com&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">admin</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">client</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Nesse exemplo estamos criando 3 usuários (admin, user e client) e adicionando eles a nossa sessão atual, dessa forma que rastreamos a criação de novos objetos e alterações feitas nestes objetos, após executar o código acima podemos realizar queries para buscar todos os usuários.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -556,40 +554,40 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">users</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">User</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-<span class="c1"># admin</span>
-<span class="c1"># user</span>
-<span class="c1"># client</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">users</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">User</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># admin</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># user</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># client</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Perceba a forma como buscamos os usuários com o método <code>query</code> passando como parâmetro a entidade que queremos, no caso <code>User</code>, a forma acima irá buscar todos os usuários sem filtro algum.</p>
 <p>Podemos filtrar a busca com o método <code>filter()</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">no_admin_users</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">User</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">User</span><span class="o">.</span><span class="n">name</span> <span class="o">!=</span> <span class="s1">&#39;admin&#39;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">no_admin_users</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-<span class="c1"># 2 user</span>
-<span class="c1"># 3 client</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">no_admin_users</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">User</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">User</span><span class="o">.</span><span class="n">name</span> <span class="o">!=</span> <span class="s1">&#39;admin&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">no_admin_users</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 2 user</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 3 client</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Podemos utilizar filtros da mesma forma que utilizamos em comandos <code>if</code>, <code>while</code> e outros, podendo retornar todos os resultados com a opção <code>all()</code> ou retornar apenas um registro.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">admin_user</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">User</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">User</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;admin&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">one</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">admin_user</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">User</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">User</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;admin&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">one</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Para retornar apenas um registro podemos utilizar tanto o método <code>one()</code> quanto o método <code>one_or_none()</code>, a diferença entre os 2 métodos é que o primeiro irá disparar uma exceção caso nenhum registro for encontrado, enquanto o segundo retornará <code>None</code>.</p>
 <blockquote>
@@ -598,27 +596,27 @@
 <p>Além de inserir e realizar buscas é possível fazer alterações facilmente, basta utilizar a referência ao objeto, alterar os atributos e adicionar a sessão, conforme o exemplo abaixo.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">admin_user</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s1">&#39;admin@new.com&#39;</span>
-<span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">admin_user</span><span class="p">)</span>
-<span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">admin_user</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s1">&#39;admin@new.com&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">admin_user</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Dessa forma conseguimos facilmente alterar nosso banco.</p>
 <p>Podemos também excluir os registros com o método <code>delete()</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">session</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">admin_user</span><span class="p">)</span>
-<span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">admin_user</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Seguindo o mesmo padrão, adicionando os objetos que queremos excluir a sessão e executando o <code>commit()</code> para enviar as alterações.</p>
 <h2 id="conclusão">Conclusão</h2>
@@ -643,6 +641,19 @@
      <a href="https://butecotecnologico.com.br/tags/orm/" class="tag-link">orm</a>
   </li>
   </ul>
+</div>
+
+
+    <div class="m-2">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-6625957038449899"
+       data-ad-slot="4012390257"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </div>
 
 
@@ -699,7 +710,7 @@
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -899,7 +910,8 @@
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -917,24 +929,24 @@
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

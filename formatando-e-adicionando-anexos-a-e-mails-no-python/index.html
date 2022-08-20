@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Formatando e adicionando anexos a e-mails no Python &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Há algumas semanas, nós mostramos como enviar e-mail pelo Python usando o módulo smtplib." />
 
-
-
 <meta itemprop="name" content="Formatando e adicionando anexos a e-mails no Python">
-<meta itemprop="description" content="Há algumas semanas, nós mostramos como enviar e-mail pelo Python usando o módulo smtplib."><meta itemprop="datePublished" content="2015-01-15T06:00:19&#43;00:00" />
-<meta itemprop="dateModified" content="2015-01-15T06:00:19&#43;00:00" />
+<meta itemprop="description" content="Há algumas semanas, nós mostramos como enviar e-mail pelo Python usando o módulo smtplib."><meta itemprop="datePublished" content="2015-01-15T06:00:19+00:00" />
+<meta itemprop="dateModified" content="2015-01-15T06:00:19+00:00" />
 <meta itemprop="wordCount" content="800"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png">
 <meta itemprop="keywords" content="email,python,smtplib,smtp,mime," />
 <meta property="og:title" content="Formatando e adicionando anexos a e-mails no Python" />
 <meta property="og:description" content="Há algumas semanas, nós mostramos como enviar e-mail pelo Python usando o módulo smtplib." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/formatando-e-adicionando-anexos-a-e-mails-no-python/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2015-01-15T06:00:19&#43;00:00" />
-<meta property="article:modified_time" content="2015-01-15T06:00:19&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2015-01-15T06:00:19+00:00" />
+<meta property="article:modified_time" content="2015-01-15T06:00:19+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -387,71 +385,71 @@
 <h3 id="mimebase">MIMEBase</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;arquivo.zip&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-  <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEBase</span><span class="p">(</span><span class="s1">&#39;application&#39;</span><span class="p">,</span> <span class="s1">&#39;zip&#39;</span><span class="p">)</span>
-  <span class="n">mime</span><span class="o">.</span><span class="n">set_payload</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
-
-<span class="n">encoders</span><span class="o">.</span><span class="n">encode_base64</span><span class="p">(</span><span class="n">mime</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;arquivo.zip&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEBase</span><span class="p">(</span><span class="s1">&#39;application&#39;</span><span class="p">,</span> <span class="s1">&#39;zip&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">mime</span><span class="o">.</span><span class="n">set_payload</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">encoders</span><span class="o">.</span><span class="n">encode_base64</span><span class="p">(</span><span class="n">mime</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="mimemultipart">MIMEMultipart</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">msg</span> <span class="o">=</span> <span class="n">MIMEMultipart</span><span class="p">()</span>
-<span class="n">msg</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">arquivo_mime_1</span><span class="p">)</span>
-<span class="n">msg</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">arquivo_mime_2</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">msg</span> <span class="o">=</span> <span class="n">MIMEMultipart</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">arquivo_mime_1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">arquivo_mime_2</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>arquivo_mime deve ser outro subtipo MIME, por exemplo MIMEAudio.</p>
 <h3 id="mimeaudio">MIMEAudio</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;audio.ogg&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-  <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEAudio</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">_subtype</span><span class="o">=</span><span class="s1">&#39;ogg&#39;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;audio.ogg&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEAudio</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">_subtype</span><span class="o">=</span><span class="s1">&#39;ogg&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="mimeimage">MIMEImage</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;imagem.png&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-  <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEImage</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">_subtype</span><span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;imagem.png&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEImage</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">_subtype</span><span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="mimetext">MIMEText</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;pagina.html&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-  <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEText</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">_subtype</span><span class="o">=</span><span class="s1">&#39;html&#39;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;pagina.html&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEText</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">_subtype</span><span class="o">=</span><span class="s1">&#39;html&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Adicionando os dados de envio e recebimento no cabeçalho da mensagem:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -460,14 +458,14 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">msg</span> <span class="o">=</span> <span class="n">MIMEText</span><span class="p">(</span><span class="s1">&#39;Exemplo.&#39;</span><span class="p">,</span> <span class="s1">&#39;plain&#39;</span><span class="p">)</span>
-<span class="n">msg</span><span class="p">[</span><span class="s1">&#39;From&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;seuemail@seudominio.com&#39;</span>
-<span class="n">msg</span><span class="p">[</span><span class="s1">&#39;To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;outroemail@seudominio.com&#39;</span><span class="p">])</span>
-<span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Cc&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;emailemcopia@seudominio.com&#39;</span><span class="p">])</span>
-<span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Bcc&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;emailocultol@seudominio.com&#39;</span><span class="p">])</span>
-<span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Reply-To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;seuemail@seudominio.com&#39;</span><span class="p">])</span>
-<span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Assunto&#39;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">msg</span> <span class="o">=</span> <span class="n">MIMEText</span><span class="p">(</span><span class="s1">&#39;Exemplo.&#39;</span><span class="p">,</span> <span class="s1">&#39;plain&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;From&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;seuemail@seudominio.com&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;outroemail@seudominio.com&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Cc&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;emailemcopia@seudominio.com&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Bcc&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;emailocultol@seudominio.com&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Reply-To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;seuemail@seudominio.com&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Assunto&#39;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>O <em>From</em> indica quem está enviando mensagem.</li>
@@ -483,7 +481,7 @@
 <p>O exemplo abaixo exemplifica o envio de um email HTML:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -502,29 +500,29 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">smtplib</span>
-<span class="kn">from</span> <span class="nn">email.mime.text</span> <span class="kn">import</span> <span class="n">MIMEText</span>
-
-<span class="n">de</span> <span class="o">=</span> <span class="s1">&#39;seumail@gmail.com&#39;</span>
-<span class="n">para</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;outroemail@gmail.com&#39;</span><span class="p">]</span>
-
-<span class="n">msg</span> <span class="o">=</span> <span class="n">MIMEText</span><span class="p">(</span><span class="s1">&#39;Exemplo de email HTML do &amp;lt;b&amp;gt;Buteco Open Source&amp;lt;b/&amp;gt;.&#39;</span><span class="p">,</span> <span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
-<span class="n">msg</span><span class="p">[</span><span class="s1">&#39;From&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">de</span>
-<span class="n">msg</span><span class="p">[</span><span class="s1">&#39;To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">para</span><span class="p">)</span>
-<span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Buteco Open Source&#39;</span>
-
-<span class="n">raw</span> <span class="o">=</span> <span class="n">msg</span><span class="o">.</span><span class="n">as_string</span><span class="p">()</span>
-
-<span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP_SSL</span><span class="p">(</span><span class="s1">&#39;smtp.gmail.com&#39;</span><span class="p">,</span> <span class="mi">465</span><span class="p">)</span>
-<span class="n">smtp</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;seumail@gmail.com&#39;</span><span class="p">,</span> <span class="s1">&#39;suasenha&#39;</span><span class="p">)</span>
-<span class="n">smtp</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="n">para</span><span class="p">,</span> <span class="n">raw</span><span class="p">)</span>
-<span class="n">smtp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">smtplib</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">email.mime.text</span> <span class="kn">import</span> <span class="n">MIMEText</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">de</span> <span class="o">=</span> <span class="s1">&#39;seumail@gmail.com&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">para</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;outroemail@gmail.com&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">msg</span> <span class="o">=</span> <span class="n">MIMEText</span><span class="p">(</span><span class="s1">&#39;Exemplo de email HTML do &amp;lt;b&amp;gt;Buteco Open Source&amp;lt;b/&amp;gt;.&#39;</span><span class="p">,</span> <span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;From&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">de</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">para</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Buteco Open Source&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">raw</span> <span class="o">=</span> <span class="n">msg</span><span class="o">.</span><span class="n">as_string</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP_SSL</span><span class="p">(</span><span class="s1">&#39;smtp.gmail.com&#39;</span><span class="p">,</span> <span class="mi">465</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;seumail@gmail.com&#39;</span><span class="p">,</span> <span class="s1">&#39;suasenha&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="n">para</span><span class="p">,</span> <span class="n">raw</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>O exemplo abaixo exemplifica o envio de um email HTML com anexo:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -588,69 +586,69 @@
 </span><span class="lnt">62
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">mimetypes</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">smtplib</span>
-
-<span class="kn">from</span> <span class="nn">email</span> <span class="kn">import</span> <span class="n">encoders</span>
-<span class="kn">from</span> <span class="nn">email.mime.audio</span> <span class="kn">import</span> <span class="n">MIMEAudio</span>
-<span class="kn">from</span> <span class="nn">email.mime.base</span> <span class="kn">import</span> <span class="n">MIMEBase</span>
-<span class="kn">from</span> <span class="nn">email.mime.image</span> <span class="kn">import</span> <span class="n">MIMEImage</span>
-<span class="kn">from</span> <span class="nn">email.mime.multipart</span> <span class="kn">import</span> <span class="n">MIMEMultipart</span>
-<span class="kn">from</span> <span class="nn">email.mime.text</span> <span class="kn">import</span> <span class="n">MIMEText</span>
-
-<span class="k">def</span> <span class="nf">adiciona_anexo</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
-        <span class="k">return</span>
-
-    <span class="n">ctype</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="n">mimetypes</span><span class="o">.</span><span class="n">guess_type</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
-
-    <span class="k">if</span> <span class="n">ctype</span> <span class="ow">is</span> <span class="bp">None</span> <span class="ow">or</span> <span class="n">encoding</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
-        <span class="n">ctype</span> <span class="o">=</span> <span class="s1">&#39;application/octet-stream&#39;</span>
-
-    <span class="n">maintype</span><span class="p">,</span> <span class="n">subtype</span> <span class="o">=</span> <span class="n">ctype</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-
-    <span class="k">if</span> <span class="n">maintype</span> <span class="o">==</span> <span class="s1">&#39;text&#39;</span><span class="p">:</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-            <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEText</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">_subtype</span><span class="o">=</span><span class="n">subtype</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">maintype</span> <span class="o">==</span> <span class="s1">&#39;image&#39;</span><span class="p">:</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-            <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEImage</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">_subtype</span><span class="o">=</span><span class="n">subtype</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">maintype</span> <span class="o">==</span> <span class="s1">&#39;audio&#39;</span><span class="p">:</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-            <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEAudio</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">_subtype</span><span class="o">=</span><span class="n">subtype</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-            <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEBase</span><span class="p">(</span><span class="n">maintype</span><span class="p">,</span> <span class="n">subtype</span><span class="p">)</span>
-            <span class="n">mime</span><span class="o">.</span><span class="n">set_payload</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
-
-        <span class="n">encoders</span><span class="o">.</span><span class="n">encode_base64</span><span class="p">(</span><span class="n">mime</span><span class="p">)</span>
-
-    <span class="n">mime</span><span class="o">.</span><span class="n">add_header</span><span class="p">(</span><span class="s1">&#39;Content-Disposition&#39;</span><span class="p">,</span> <span class="s1">&#39;attachment&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">)</span>
-    <span class="n">msg</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">mime</span><span class="p">)</span>
-
-<span class="n">de</span> <span class="o">=</span> <span class="s1">&#39;seumail@gmail.com&#39;</span>
-<span class="n">para</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;outroemail@gmail.com&#39;</span><span class="p">]</span>
-
-<span class="n">msg</span> <span class="o">=</span> <span class="n">MIMEMultipart</span><span class="p">()</span>
-<span class="n">msg</span><span class="p">[</span><span class="s1">&#39;From&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">de</span>
-<span class="n">msg</span><span class="p">[</span><span class="s1">&#39;To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">para</span><span class="p">)</span>
-<span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Buteco Open Source&#39;</span>
-
-<span class="c1"># Corpo da mensagem</span>
-<span class="n">msg</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">MIMEText</span><span class="p">(</span><span class="s1">&#39;Exemplo de email HTML com anexo do &lt;b&gt;Buteco&lt;/b&gt;.&#39;</span><span class="p">,</span> <span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
-
-<span class="c1"># Arquivos anexos.</span>
-<span class="n">adiciona_anexo</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="s1">&#39;texto.txt&#39;</span><span class="p">)</span>
-<span class="n">adiciona_anexo</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="s1">&#39;imagem.jpg&#39;</span><span class="p">)</span>
-
-<span class="n">raw</span> <span class="o">=</span> <span class="n">msg</span><span class="o">.</span><span class="n">as_string</span><span class="p">()</span>
-
-<span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP_SSL</span><span class="p">(</span><span class="s1">&#39;smtp.gmail.com&#39;</span><span class="p">,</span> <span class="mi">465</span><span class="p">)</span>
-<span class="n">smtp</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;seumail@gmail.com&#39;</span><span class="p">,</span> <span class="s1">&#39;suasenha&#39;</span><span class="p">)</span>
-<span class="n">smtp</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="n">para</span><span class="p">,</span> <span class="n">raw</span><span class="p">)</span>
-<span class="n">smtp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">mimetypes</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">smtplib</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">email</span> <span class="kn">import</span> <span class="n">encoders</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">email.mime.audio</span> <span class="kn">import</span> <span class="n">MIMEAudio</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">email.mime.base</span> <span class="kn">import</span> <span class="n">MIMEBase</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">email.mime.image</span> <span class="kn">import</span> <span class="n">MIMEImage</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">email.mime.multipart</span> <span class="kn">import</span> <span class="n">MIMEMultipart</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">email.mime.text</span> <span class="kn">import</span> <span class="n">MIMEText</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">adiciona_anexo</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ctype</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="n">mimetypes</span><span class="o">.</span><span class="n">guess_type</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">ctype</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">encoding</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ctype</span> <span class="o">=</span> <span class="s1">&#39;application/octet-stream&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">maintype</span><span class="p">,</span> <span class="n">subtype</span> <span class="o">=</span> <span class="n">ctype</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">maintype</span> <span class="o">==</span> <span class="s1">&#39;text&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEText</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">_subtype</span><span class="o">=</span><span class="n">subtype</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">maintype</span> <span class="o">==</span> <span class="s1">&#39;image&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEImage</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">_subtype</span><span class="o">=</span><span class="n">subtype</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">maintype</span> <span class="o">==</span> <span class="s1">&#39;audio&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEAudio</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">_subtype</span><span class="o">=</span><span class="n">subtype</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">mime</span> <span class="o">=</span> <span class="n">MIMEBase</span><span class="p">(</span><span class="n">maintype</span><span class="p">,</span> <span class="n">subtype</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">mime</span><span class="o">.</span><span class="n">set_payload</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">encoders</span><span class="o">.</span><span class="n">encode_base64</span><span class="p">(</span><span class="n">mime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">mime</span><span class="o">.</span><span class="n">add_header</span><span class="p">(</span><span class="s1">&#39;Content-Disposition&#39;</span><span class="p">,</span> <span class="s1">&#39;attachment&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msg</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">mime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">de</span> <span class="o">=</span> <span class="s1">&#39;seumail@gmail.com&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">para</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;outroemail@gmail.com&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">msg</span> <span class="o">=</span> <span class="n">MIMEMultipart</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;From&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">de</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">para</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Buteco Open Source&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Corpo da mensagem</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">MIMEText</span><span class="p">(</span><span class="s1">&#39;Exemplo de email HTML com anexo do &lt;b&gt;Buteco&lt;/b&gt;.&#39;</span><span class="p">,</span> <span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Arquivos anexos.</span>
+</span></span><span class="line"><span class="cl"><span class="n">adiciona_anexo</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="s1">&#39;texto.txt&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">adiciona_anexo</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="s1">&#39;imagem.jpg&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">raw</span> <span class="o">=</span> <span class="n">msg</span><span class="o">.</span><span class="n">as_string</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP_SSL</span><span class="p">(</span><span class="s1">&#39;smtp.gmail.com&#39;</span><span class="p">,</span> <span class="mi">465</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;seumail@gmail.com&#39;</span><span class="p">,</span> <span class="s1">&#39;suasenha&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="n">para</span><span class="p">,</span> <span class="n">raw</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Comparando este tutoria ao anterior, a montagem e o envio de um email ficam bem mais simplificados com esta biblioteca para manipulação de email, não é?</p>
 <p>Espero que você tenha gostado. Não esqueça de assinar nosso feed.</p>
@@ -682,6 +680,19 @@
      <a href="https://butecotecnologico.com.br/tags/mime/" class="tag-link">mime</a>
   </li>
   </ul>
+</div>
+
+
+    <div class="m-2">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-6625957038449899"
+       data-ad-slot="4012390257"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </div>
 
 
@@ -738,7 +749,7 @@
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -938,7 +949,8 @@
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -956,24 +968,24 @@
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

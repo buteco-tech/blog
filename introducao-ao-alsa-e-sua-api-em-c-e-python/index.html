@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Introdução ao ALSA e sua API em C e Python &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio." />
 
-
-
 <meta itemprop="name" content="Introdução ao ALSA e sua API em C e Python">
-<meta itemprop="description" content="O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio."><meta itemprop="datePublished" content="2014-09-24T23:48:00&#43;00:00" />
-<meta itemprop="dateModified" content="2014-09-24T23:48:00&#43;00:00" />
-<meta itemprop="wordCount" content="690"><meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/alsa-mixer.png">
+<meta itemprop="description" content="O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio."><meta itemprop="datePublished" content="2014-09-24T23:48:00+00:00" />
+<meta itemprop="dateModified" content="2014-09-24T23:48:00+00:00" />
+<meta itemprop="wordCount" content="691"><meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/alsa-mixer.png">
 <meta itemprop="keywords" content="alsa,c,cpp,python,linux," />
 <meta property="og:title" content="Introdução ao ALSA e sua API em C e Python" />
 <meta property="og:description" content="O ALSA (Advanced Linux Sound Architeture) é um framework para kernel space e user space para manipular dispositivos de áudio." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/introducao-ao-alsa-e-sua-api-em-c-e-python/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/posts/alsa-mixer.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2014-09-24T23:48:00&#43;00:00" />
-<meta property="article:modified_time" content="2014-09-24T23:48:00&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2014-09-24T23:48:00+00:00" />
+<meta property="article:modified_time" content="2014-09-24T23:48:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -393,7 +391,7 @@ Um dos exemplos será na linguagem C e o outro será em Python.
 O primeiro exemplo é na linguagem C, que basicamente diz quais os valores limite do volume da placa de áudio e também permite ao usuário trocar o nível do volume.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -436,77 +434,77 @@ O primeiro exemplo é na linguagem C, que basicamente diz quais os valores limit
 </span><span class="lnt">41
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
-</span><span class="cp">#include</span> <span class="cpf">&lt;alsa/asoundlib.h&gt;</span><span class="cp">
-</span><span class="cp"></span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
-<span class="p">{</span>
-    <span class="kt">long</span> <span class="n">vol_min</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">vol_max</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">vol</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="n">snd_mixer_t</span> <span class="o">*</span><span class="n">handle</span><span class="p">;</span>
-    <span class="n">snd_mixer_elem_t</span> <span class="o">*</span><span class="n">elem</span><span class="p">;</span>
-    <span class="n">snd_mixer_selem_id_t</span> <span class="o">*</span><span class="n">sid</span><span class="p">;</span>
-    <span class="n">snd_mixer_selem_channel_id_t</span> <span class="n">channel</span> <span class="o">=</span> <span class="n">SND_MIXER_SCHN_FRONT_LEFT</span><span class="p">;</span>
-
-    <span class="n">snd_mixer_open</span><span class="p">(</span><span class="o">&amp;</span><span class="n">handle</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-    <span class="n">snd_mixer_attach</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="s">&#34;default&#34;</span><span class="p">);</span>
-    <span class="n">snd_mixer_selem_register</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
-    <span class="n">snd_mixer_load</span><span class="p">(</span><span class="n">handle</span><span class="p">);</span>
-
-    <span class="n">snd_mixer_selem_id_alloca</span><span class="p">(</span><span class="o">&amp;</span><span class="n">sid</span><span class="p">);</span>
-    <span class="n">snd_mixer_selem_id_set_index</span><span class="p">(</span><span class="n">sid</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-
-    <span class="c1">// pegar volume minimo e máximo
-</span><span class="c1"></span>    <span class="c1">// Master aqui se refere ao volume de saida
-</span><span class="c1"></span>    <span class="c1">// geralmente esse é o nome da configuração de volume da máquina
-</span><span class="c1"></span>    <span class="n">snd_mixer_selem_id_set_name</span><span class="p">(</span><span class="n">sid</span><span class="p">,</span> <span class="s">&#34;Master&#34;</span><span class="p">);</span>
-    <span class="n">elem</span> <span class="o">=</span> <span class="n">snd_mixer_find_selem</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">sid</span><span class="p">);</span>
-
-    <span class="n">snd_mixer_selem_get_playback_volume_range</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vol_min</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vol_max</span><span class="p">);</span>
-
-    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Volume mínimo: %ld e máximo: %ld</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">vol_min</span><span class="p">,</span> <span class="n">vol_max</span><span class="p">);</span>
-
-    <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">&#34;Voce precisa passar um valor %ld e %ld como volume</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">vol_min</span><span class="p">,</span> <span class="n">vol_max</span><span class="p">);</span>
-        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="n">snd_mixer_selem_set_playback_volume_all</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="n">atol</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]));</span>
-
-    <span class="n">snd_mixer_selem_get_playback_volume</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="n">channel</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vol</span><span class="p">);</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Volume atual: %ld</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">vol</span><span class="p">);</span>
-
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;alsa/asoundlib.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">long</span> <span class="n">vol_min</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">vol_max</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">vol</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">snd_mixer_t</span> <span class="o">*</span><span class="n">handle</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">snd_mixer_elem_t</span> <span class="o">*</span><span class="n">elem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">snd_mixer_selem_id_t</span> <span class="o">*</span><span class="n">sid</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">snd_mixer_selem_channel_id_t</span> <span class="n">channel</span> <span class="o">=</span> <span class="n">SND_MIXER_SCHN_FRONT_LEFT</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">snd_mixer_open</span><span class="p">(</span><span class="o">&amp;</span><span class="n">handle</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">snd_mixer_attach</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="s">&#34;default&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">snd_mixer_selem_register</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">snd_mixer_load</span><span class="p">(</span><span class="n">handle</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">snd_mixer_selem_id_alloca</span><span class="p">(</span><span class="o">&amp;</span><span class="n">sid</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">snd_mixer_selem_id_set_index</span><span class="p">(</span><span class="n">sid</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// pegar volume minimo e máximo
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// Master aqui se refere ao volume de saida
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// geralmente esse é o nome da configuração de volume da máquina
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">snd_mixer_selem_id_set_name</span><span class="p">(</span><span class="n">sid</span><span class="p">,</span> <span class="s">&#34;Master&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">elem</span> <span class="o">=</span> <span class="n">snd_mixer_find_selem</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">sid</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">snd_mixer_selem_get_playback_volume_range</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vol_min</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vol_max</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Volume mínimo: %ld e máximo: %ld</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">vol_min</span><span class="p">,</span> <span class="n">vol_max</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">&#34;Voce precisa passar um valor %ld e %ld como volume</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">vol_min</span><span class="p">,</span> <span class="n">vol_max</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">snd_mixer_selem_set_playback_volume_all</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="n">atol</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">snd_mixer_selem_get_playback_volume</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="n">channel</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vol</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Volume atual: %ld</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">vol</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Para compilar este programar basta executar:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">g++ volume.c -o volume -lasound
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">g++ volume.c -o volume -lasound
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Onde o arquivo salvo tem o nome <code>volume.c</code>.</p>
 <p>Executando em minha máquina, tenho a seguinte saída:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>marcos@localhost ~<span class="o">]</span>$ ./volume <span class="m">40000</span>
-Volume mínimo: <span class="m">0</span> e máximo: <span class="m">65536</span>
-Volume atual: <span class="m">40000</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>marcos@localhost ~<span class="o">]</span>$ ./volume <span class="m">40000</span>
+</span></span><span class="line"><span class="cl">Volume mínimo: <span class="m">0</span> e máximo: <span class="m">65536</span>
+</span></span><span class="line"><span class="cl">Volume atual: <span class="m">40000</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Abaixo temos um exemplo da utilização do <a href="https://www.alsa-project.org/wiki/Main_Page"  target="_blank" rel="noopener">ALSA</a> em Python.
 Será necessário instalar a biblioteca <a href="http://larsimmisch.github.io/pyalsaaudio/"  target="_blank" rel="noopener">pyalsaaudio</a>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -555,54 +553,54 @@ Será necessário instalar a biblioteca <a href="http://larsimmisch.github.io/py
 </span><span class="lnt">47
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">alsaaudio</span>
-
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;ALSA Audio&#34;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;----------&#34;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Placas disponíveis:&#34;</span><span class="p">)</span>
-
-<span class="c1"># Lista as placas disponíveis</span>
-<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">cards</span><span class="p">():</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Controles disponíveis:&#34;</span><span class="p">)</span>
-
-<span class="c1"># Lista os controles disponíveis</span>
-<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">mixers</span><span class="p">():</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="c1"># Seleciona a placa de som com ID 0 - Master</span>
-<span class="n">mixer</span> <span class="o">=</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">Mixer</span><span class="p">(</span><span class="n">control</span><span class="o">=</span><span class="s2">&#34;Master&#34;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cardindex</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="c1"># Lista algumas informações do controle Master</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;O volume de playback do controle Master é: </span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getvolume</span><span class="p">(</span><span class="n">alsaaudio</span><span class="o">.</span><span class="n">PCM_PLAYBACK</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;O volume do captura controle Master é: </span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getvolume</span><span class="p">(</span><span class="n">alsaaudio</span><span class="o">.</span><span class="n">PCM_CAPTURE</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Controle Master está mudo.&#34;</span> <span class="k">if</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getmute</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="s2">&#34;Controle Master não está mudo.&#34;</span><span class="p">)</span>
-
-<span class="n">mixer</span><span class="o">.</span><span class="n">setvolume</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;O volumedo do controle Master foi alterado para 100.&#34;</span><span class="p">)</span>
-
-<span class="n">mixer</span> <span class="o">=</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">Mixer</span><span class="p">(</span><span class="n">control</span><span class="o">=</span><span class="s2">&#34;Mic&#34;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cardindex</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="c1"># Lista algumas informações do controle Mic</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;O volume de playback do controle Mic é: </span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getvolume</span><span class="p">(</span><span class="n">alsaaudio</span><span class="o">.</span><span class="n">PCM_PLAYBACK</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;O volume do captura controle Mic é: </span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getvolume</span><span class="p">(</span><span class="n">alsaaudio</span><span class="o">.</span><span class="n">PCM_CAPTURE</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Controle Mic está mudo.&#34;</span> <span class="k">if</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getmute</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="s2">&#34;Controle Mic não está mudo.&#34;</span><span class="p">)</span>
-
-<span class="n">mixer</span><span class="o">.</span><span class="n">setvolume</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;O volumedo do controle Mic foi alterado para 100.&#34;</span><span class="p">)</span>
-
-<span class="c1"># Seleciona a placa de som com ID 0 - Captura</span>
-<span class="n">mixer</span> <span class="o">=</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">Mixer</span><span class="p">(</span><span class="n">control</span><span class="o">=</span><span class="s2">&#34;Capture&#34;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cardindex</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="n">mixer</span><span class="o">.</span><span class="n">setrec</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Captura desabilitada no controle Capture&#34;</span><span class="p">)</span>
-
-<span class="n">mixer</span><span class="o">.</span><span class="n">setrec</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Captura habilitada no controle Capture&#34;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">alsaaudio</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;ALSA Audio&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;----------&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Placas disponíveis:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Lista as placas disponíveis</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">cards</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Controles disponíveis:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Lista os controles disponíveis</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">mixers</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Seleciona a placa de som com ID 0 - Master</span>
+</span></span><span class="line"><span class="cl"><span class="n">mixer</span> <span class="o">=</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">Mixer</span><span class="p">(</span><span class="n">control</span><span class="o">=</span><span class="s2">&#34;Master&#34;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cardindex</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Lista algumas informações do controle Master</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;O volume de playback do controle Master é: </span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getvolume</span><span class="p">(</span><span class="n">alsaaudio</span><span class="o">.</span><span class="n">PCM_PLAYBACK</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;O volume do captura controle Master é: </span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getvolume</span><span class="p">(</span><span class="n">alsaaudio</span><span class="o">.</span><span class="n">PCM_CAPTURE</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Controle Master está mudo.&#34;</span> <span class="k">if</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getmute</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="s2">&#34;Controle Master não está mudo.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">mixer</span><span class="o">.</span><span class="n">setvolume</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;O volumedo do controle Master foi alterado para 100.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">mixer</span> <span class="o">=</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">Mixer</span><span class="p">(</span><span class="n">control</span><span class="o">=</span><span class="s2">&#34;Mic&#34;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cardindex</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Lista algumas informações do controle Mic</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;O volume de playback do controle Mic é: </span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getvolume</span><span class="p">(</span><span class="n">alsaaudio</span><span class="o">.</span><span class="n">PCM_PLAYBACK</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;O volume do captura controle Mic é: </span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getvolume</span><span class="p">(</span><span class="n">alsaaudio</span><span class="o">.</span><span class="n">PCM_CAPTURE</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Controle Mic está mudo.&#34;</span> <span class="k">if</span> <span class="n">mixer</span><span class="o">.</span><span class="n">getmute</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="s2">&#34;Controle Mic não está mudo.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">mixer</span><span class="o">.</span><span class="n">setvolume</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;O volumedo do controle Mic foi alterado para 100.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Seleciona a placa de som com ID 0 - Captura</span>
+</span></span><span class="line"><span class="cl"><span class="n">mixer</span> <span class="o">=</span> <span class="n">alsaaudio</span><span class="o">.</span><span class="n">Mixer</span><span class="p">(</span><span class="n">control</span><span class="o">=</span><span class="s2">&#34;Capture&#34;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cardindex</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">mixer</span><span class="o">.</span><span class="n">setrec</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Captura desabilitada no controle Capture&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">mixer</span><span class="o">.</span><span class="n">setrec</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Captura habilitada no controle Capture&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>No exemplo em Python, podemos observar alguns usos do framework <a href="https://www.alsa-project.org/wiki/Main_Page"  target="_blank" rel="noopener">ALSA</a>, como por exemplo, pegar e setar configurações de placas e níveis de áudio.</p>
 <p>Se você tiver algum problema na execução desses códigos, ou tem alguma dúvida, deixe um comentário.</p>
@@ -633,6 +631,19 @@ Será necessário instalar a biblioteca <a href="http://larsimmisch.github.io/py
      <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
   </li>
   </ul>
+</div>
+
+
+    <div class="m-2">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-6625957038449899"
+       data-ad-slot="4012390257"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </div>
 
 
@@ -707,7 +718,7 @@ Será necessário instalar a biblioteca <a href="http://larsimmisch.github.io/py
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -907,7 +918,8 @@ Será necessário instalar a biblioteca <a href="http://larsimmisch.github.io/py
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -925,24 +937,24 @@ Será necessário instalar a biblioteca <a href="http://larsimmisch.github.io/py
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

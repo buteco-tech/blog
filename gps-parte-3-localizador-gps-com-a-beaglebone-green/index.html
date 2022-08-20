@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>GPS Parte 3: Localizador GPS com a BeagleBone Green &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona." />
 
-
-
 <meta itemprop="name" content="GPS Parte 3: Localizador GPS com a BeagleBone Green">
-<meta itemprop="description" content="Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona."><meta itemprop="datePublished" content="2016-01-20T21:11:20&#43;00:00" />
-<meta itemprop="dateModified" content="2016-01-20T21:11:20&#43;00:00" />
+<meta itemprop="description" content="Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona."><meta itemprop="datePublished" content="2016-01-20T21:11:20+00:00" />
+<meta itemprop="dateModified" content="2016-01-20T21:11:20+00:00" />
 <meta itemprop="wordCount" content="861"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png">
 <meta itemprop="keywords" content="beaglebone,beaglebone-green,raspberry-pi,bottle,flask,gps,nmea,python," />
 <meta property="og:title" content="GPS Parte 3: Localizador GPS com a BeagleBone Green" />
 <meta property="og:description" content="Na primeira parte sobre GPS, vimos como este sistema de rastreamento por satélite funciona." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/gps-parte-3-localizador-gps-com-a-beaglebone-green/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/12/map_pin.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2016-01-20T21:11:20&#43;00:00" />
-<meta property="article:modified_time" content="2016-01-20T21:11:20&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2016-01-20T21:11:20+00:00" />
+<meta property="article:modified_time" content="2016-01-20T21:11:20+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -388,7 +386,7 @@
 <p>No arquivo abaixo temos o template da página do mapa.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -432,55 +430,55 @@
 </span><span class="lnt">42
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>GPS Position<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;initial-scale=1.0&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-      <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span>
-        <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-        <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-      <span class="p">}</span>
-      <span class="p">#</span><span class="nn">map</span> <span class="p">{</span>
-        <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-      <span class="p">}</span>
-    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;map&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span><span class="p">&gt;</span>
-        <span class="kd">function</span> <span class="nx">initMap</span><span class="p">()</span> <span class="p">{</span>
-            <span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">Map</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;map&#39;</span><span class="p">),</span> <span class="p">{</span>
-                <span class="nx">zoom</span><span class="o">:</span> <span class="mi">15</span><span class="p">,</span>
-                <span class="nx">center</span><span class="o">:</span> <span class="p">{</span>
-                    <span class="nx">lat</span><span class="o">:</span> <span class="p">{{</span> <span class="nx">latitude</span> <span class="p">}},</span>
-                    <span class="nx">lng</span><span class="o">:</span> <span class="p">{{</span> <span class="nx">longitude</span> <span class="p">}}</span>
-                <span class="p">}</span>
-            <span class="p">});</span>
-
-            <span class="kd">var</span> <span class="nx">marker</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">Marker</span><span class="p">({</span>
-                <span class="nx">position</span><span class="o">:</span> <span class="p">{</span>
-                    <span class="nx">lat</span><span class="o">:</span> <span class="p">{{</span> <span class="nx">latitude</span> <span class="p">}},</span>
-                    <span class="nx">lng</span><span class="o">:</span> <span class="p">{{</span> <span class="nx">longitude</span> <span class="p">}}</span>
-                <span class="p">},</span>
-                <span class="nx">animation</span><span class="o">:</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">Animation</span><span class="p">.</span><span class="nx">DROP</span><span class="p">,</span>
-                <span class="nx">map</span><span class="o">:</span> <span class="nx">map</span><span class="p">,</span>
-                <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;Current Position&#39;</span>
-            <span class="p">});</span>
-        <span class="p">}</span>
-    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maps.googleapis.com/maps/api/js?key={{ api_key }}&amp;callback=initMap&#34;</span> <span class="na">async</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>GPS Position<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;initial-scale=1.0&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">#</span><span class="nn">map</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;map&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">function</span> <span class="nx">initMap</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">Map</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;map&#39;</span><span class="p">),</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">zoom</span><span class="o">:</span> <span class="mi">15</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">center</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">lat</span><span class="o">:</span> <span class="p">{{</span> <span class="nx">latitude</span> <span class="p">}},</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">lng</span><span class="o">:</span> <span class="p">{{</span> <span class="nx">longitude</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kd">var</span> <span class="nx">marker</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">Marker</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">position</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">lat</span><span class="o">:</span> <span class="p">{{</span> <span class="nx">latitude</span> <span class="p">}},</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">lng</span><span class="o">:</span> <span class="p">{{</span> <span class="nx">longitude</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">animation</span><span class="o">:</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">Animation</span><span class="p">.</span><span class="nx">DROP</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">map</span><span class="o">:</span> <span class="nx">map</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;Current Position&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">});</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maps.googleapis.com/maps/api/js?key={{ api_key }}&amp;callback=initMap&#34;</span> <span class="na">async</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Como podemos observar o código é bem simples, e toda a parte de inicialização do mapa é feito nas linhas 20 a 38. O mapa faz parte da <a href="https://developers.google.com/maps/documentation/javascript/?hl=pt-br"  target="_blank" rel="noopener">Google Maps Javascript API</a>, o que facilita muito o desenvolvimento.</p>
 <p>No arquivo abaixo temos o módulo responsável por conversar com o GPS.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -535,67 +533,67 @@
 </span><span class="lnt">53
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="c1"># -*- coding: utf-8 -*-</span>
-
-<span class="kn">import</span> <span class="nn">Adafruit_BBIO.UART</span> <span class="kn">as</span> <span class="nn">UART</span>
-<span class="kn">import</span> <span class="nn">serial</span>
-<span class="kn">import</span> <span class="nn">thread</span>
-<span class="kn">import</span> <span class="nn">Queue</span>
-<span class="kn">import</span> <span class="nn">nmea</span>
-
-<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">namedtuple</span>
-
-<span class="n">Pos</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;Pos&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">])</span>
-
-<span class="n">q</span> <span class="o">=</span> <span class="n">Queue</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
-<span class="n">parser</span> <span class="o">=</span> <span class="n">nmea</span><span class="o">.</span><span class="n">NMEAParser</span><span class="p">()</span>
-
-
-<span class="k">def</span> <span class="nf">listen</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
-    <span class="n">UART</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="s2">&#34;UART2&#34;</span><span class="p">)</span>
-
-    <span class="k">with</span> <span class="n">serial</span><span class="o">.</span><span class="n">Serial</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="s2">&#34;/dev/ttyO2&#34;</span><span class="p">,</span> <span class="n">baudrate</span><span class="o">=</span><span class="mi">9600</span><span class="p">)</span> <span class="k">as</span> <span class="n">ser</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Connected to GPS: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">ser</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-        <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-            <span class="n">sentence</span> <span class="o">=</span> <span class="n">ser</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-            <span class="c1"># remove \r\n</span>
-            <span class="n">sentence</span> <span class="o">=</span> <span class="n">sentence</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
-
-            <span class="k">if</span> <span class="n">sentence</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;$&#39;</span><span class="p">:</span>
-                <span class="k">try</span><span class="p">:</span>
-                    <span class="n">gps_data</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
-
-                    <span class="k">if</span> <span class="n">gps_data</span><span class="o">.</span><span class="n">is_valid</span> <span class="ow">and</span> <span class="n">gps_data</span><span class="o">.</span><span class="n">sentence_name</span> <span class="o">!=</span> <span class="s1">&#39;VTG&#39;</span><span class="p">:</span>
-                        <span class="n">q</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">gps_data</span><span class="p">)</span>
-                <span class="k">except</span><span class="p">:</span>
-                    <span class="k">pass</span>
-
-
-<span class="k">def</span> <span class="nf">start</span><span class="p">():</span>
-    <span class="n">thread</span><span class="o">.</span><span class="n">start_new_thread</span><span class="p">(</span><span class="n">listen</span><span class="p">,</span> <span class="p">(</span><span class="n">q</span><span class="p">,))</span>
-
-
-<span class="k">def</span> <span class="nf">get_current_position</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="n">gps_data</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">wait</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">Pos</span><span class="p">(</span><span class="n">latitude</span><span class="o">=</span><span class="n">gps_data</span><span class="o">.</span><span class="n">latitude_degree</span><span class="p">,</span> <span class="n">longitude</span><span class="o">=</span><span class="n">gps_data</span><span class="o">.</span><span class="n">longitude_degree</span><span class="p">)</span>
-    <span class="k">except</span><span class="p">:</span>
-        <span class="k">return</span> <span class="bp">None</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">start</span><span class="p">()</span>
-
-    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">get_current_position</span><span class="p">(</span><span class="bp">True</span><span class="p">))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># -*- coding: utf-8 -*-</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">Adafruit_BBIO.UART</span> <span class="k">as</span> <span class="nn">UART</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">serial</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">thread</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">Queue</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">nmea</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">namedtuple</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Pos</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;Pos&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">q</span> <span class="o">=</span> <span class="n">Queue</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">parser</span> <span class="o">=</span> <span class="n">nmea</span><span class="o">.</span><span class="n">NMEAParser</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">listen</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">UART</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="s2">&#34;UART2&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="n">serial</span><span class="o">.</span><span class="n">Serial</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="s2">&#34;/dev/ttyO2&#34;</span><span class="p">,</span> <span class="n">baudrate</span><span class="o">=</span><span class="mi">9600</span><span class="p">)</span> <span class="k">as</span> <span class="n">ser</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Connected to GPS: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">ser</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">sentence</span> <span class="o">=</span> <span class="n">ser</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># remove \r\n</span>
+</span></span><span class="line"><span class="cl">            <span class="n">sentence</span> <span class="o">=</span> <span class="n">sentence</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">sentence</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;$&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">gps_data</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="n">gps_data</span><span class="o">.</span><span class="n">is_valid</span> <span class="ow">and</span> <span class="n">gps_data</span><span class="o">.</span><span class="n">sentence_name</span> <span class="o">!=</span> <span class="s1">&#39;VTG&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">q</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">gps_data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">pass</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">start</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">thread</span><span class="o">.</span><span class="n">start_new_thread</span><span class="p">(</span><span class="n">listen</span><span class="p">,</span> <span class="p">(</span><span class="n">q</span><span class="p">,))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_current_position</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">gps_data</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">wait</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">Pos</span><span class="p">(</span><span class="n">latitude</span><span class="o">=</span><span class="n">gps_data</span><span class="o">.</span><span class="n">latitude_degree</span><span class="p">,</span> <span class="n">longitude</span><span class="o">=</span><span class="n">gps_data</span><span class="o">.</span><span class="n">longitude_degree</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">None</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">get_current_position</span><span class="p">(</span><span class="kc">True</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Na linha 3 é importado o módulo UART do Adafruit, se você estiver usando um Raspberry Pi lembre-se de alterar o import. O método <code>listen</code> é quem faz praticamente todo o trabalho. Ele configura o UART, e fica escutando o GPS na porta serial. Ao receber os dados do GPS, é feita a decodificação da sentença, e se for uma sentença válida adicionamos na fila. A sentença <code>VTG</code> é ignorada pois ela não possui latitude e longitude.</p>
 <p>O método <code>start</code> cria uma <code>Thread</code> para não dar <em>lockd</em> na aplicação inteira enquanto a porta serial estiver em uso. Isto é necessário para iniciar o servidor WSGI, pois ele é que fica em <em>lockd</em> na aplicação. Por fim, o método <code>get_current_position</code> retorna a posição atual do GPS se disponível.</p>
 <p>No arquivo abaixo temos o <em>setupd</em> do nosso WSGI.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -617,27 +615,27 @@
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="c1"># -*- coding: utf-8 -*-</span>
-
-<span class="kn">from</span> <span class="nn">bottle</span> <span class="kn">import</span> <span class="n">route</span><span class="p">,</span> <span class="n">run</span><span class="p">,</span> <span class="n">template</span>
-
-<span class="kn">import</span> <span class="nn">gps</span>
-
-
-<span class="nd">@route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
-    <span class="n">pos</span> <span class="o">=</span> <span class="n">gps</span><span class="o">.</span><span class="n">get_current_position</span><span class="p">()</span>
-
-    <span class="k">if</span> <span class="n">pos</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">template</span><span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="s1">&#39;&lt;GOOGLE MAPS KEY&gt;&#39;</span><span class="p">,</span> <span class="n">latitude</span><span class="o">=</span><span class="n">pos</span><span class="o">.</span><span class="n">latitude</span><span class="p">,</span> <span class="n">longitude</span><span class="o">=</span><span class="n">pos</span><span class="o">.</span><span class="n">longitude</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">template</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">)</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">gps</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
-    <span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8081</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># -*- coding: utf-8 -*-</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">bottle</span> <span class="kn">import</span> <span class="n">route</span><span class="p">,</span> <span class="n">run</span><span class="p">,</span> <span class="n">template</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">gps</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pos</span> <span class="o">=</span> <span class="n">gps</span><span class="o">.</span><span class="n">get_current_position</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">pos</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">template</span><span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="s1">&#39;&lt;GOOGLE MAPS KEY&gt;&#39;</span><span class="p">,</span> <span class="n">latitude</span><span class="o">=</span><span class="n">pos</span><span class="o">.</span><span class="n">latitude</span><span class="p">,</span> <span class="n">longitude</span><span class="o">=</span><span class="n">pos</span><span class="o">.</span><span class="n">longitude</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">template</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">gps</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8081</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Esta parte não tem muitos mistérios, mas é necessário resaltar que na linha 13, é necessário colocar a sua <a href="https://console.developers.google.com/flows/enableapi?apiid=maps_backend&amp;keyType=CLIENT_SIDE&amp;reusekey=true&amp;hl=pt-br"  target="_blank" rel="noopener">chave da Google Api</a> para que o mapa seja carregado no browser, isto porque o JavaScript do mapa faz acesso as APIs do Google. Não se preocupe, este serviço é gratuito. :)</p>
 <p>Na linha 19, podemos observar que é necessário iniciar a <code>Thread</code> do GPS, e na linha 20, o próprio WSGI.</p>
@@ -683,6 +681,19 @@
      <a href="https://butecotecnologico.com.br/tags/python/" class="tag-link">python</a>
   </li>
   </ul>
+</div>
+
+
+    <div class="m-2">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-6625957038449899"
+       data-ad-slot="4012390257"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </div>
 
 
@@ -739,7 +750,7 @@
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -939,7 +950,8 @@
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -957,24 +969,24 @@
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

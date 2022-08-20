@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Docker depois do hype, como começar a usá-lo hoje mesmo &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -63,16 +63,14 @@
 
 Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência ou evento da nossa área tem ou terá uma palestra sobre o assunto, é o que vende no momento. Vários cases sendo apresentados, toneladas de ferramentas de gerenciamento e orquestração de containers, fazem do Docker uma ferramenta muito poderosa e que cresce a cada dia. Porém com tanta informação e soluções distintas faz com que muitos de nós sintam-se desmotivados a entrar nesse mundo, achando que no fim das contas será um grande overkill para nossos projetos atuais&hellip;" />
 
-
-
 <meta itemprop="name" content="Docker depois do hype, como começar a usá-lo hoje mesmo">
 <meta itemprop="description" content="
   
 
 
-Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência ou evento da nossa área tem ou terá uma palestra sobre o assunto, é o que vende no momento. Vários cases sendo apresentados, toneladas de ferramentas de gerenciamento e orquestração de containers, fazem do Docker uma ferramenta muito poderosa e que cresce a cada dia. Porém com tanta informação e soluções distintas faz com que muitos de nós sintam-se desmotivados a entrar nesse mundo, achando que no fim das contas será um grande overkill para nossos projetos atuais&hellip;"><meta itemprop="datePublished" content="2015-10-18T19:53:49&#43;00:00" />
-<meta itemprop="dateModified" content="2015-10-18T19:53:49&#43;00:00" />
-<meta itemprop="wordCount" content="660"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/docker-small.png">
+Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência ou evento da nossa área tem ou terá uma palestra sobre o assunto, é o que vende no momento. Vários cases sendo apresentados, toneladas de ferramentas de gerenciamento e orquestração de containers, fazem do Docker uma ferramenta muito poderosa e que cresce a cada dia. Porém com tanta informação e soluções distintas faz com que muitos de nós sintam-se desmotivados a entrar nesse mundo, achando que no fim das contas será um grande overkill para nossos projetos atuais&hellip;"><meta itemprop="datePublished" content="2015-10-18T19:53:49+00:00" />
+<meta itemprop="dateModified" content="2015-10-18T19:53:49+00:00" />
+<meta itemprop="wordCount" content="681"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/docker-small.png">
 <meta itemprop="keywords" content="docker,docker-compose,python,vagrant," />
 <meta property="og:title" content="Docker depois do hype, como começar a usá-lo hoje mesmo" />
 <meta property="og:description" content="
@@ -82,8 +80,8 @@ Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência
 Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência ou evento da nossa área tem ou terá uma palestra sobre o assunto, é o que vende no momento. Vários cases sendo apresentados, toneladas de ferramentas de gerenciamento e orquestração de containers, fazem do Docker uma ferramenta muito poderosa e que cresce a cada dia. Porém com tanta informação e soluções distintas faz com que muitos de nós sintam-se desmotivados a entrar nesse mundo, achando que no fim das contas será um grande overkill para nossos projetos atuais&hellip;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/docker-depois-do-hype-como-comecar-a-usa-lo-hoje-mesmo/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/10/docker-small.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2015-10-18T19:53:49&#43;00:00" />
-<meta property="article:modified_time" content="2015-10-18T19:53:49&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2015-10-18T19:53:49+00:00" />
+<meta property="article:modified_time" content="2015-10-18T19:53:49+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -399,17 +397,17 @@ Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência
 <p>Os <em>containers</em> Docker são construídos a partir de imagens. As imagens por sua vez são construídas com as instruções contidas no arquivo Dockerfile, conforme o exemplo abaixo:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">FROM</span> <span class="n">python</span><span class="p">:</span><span class="mi">3</span>
-<span class="n">ADD</span> <span class="o">.</span> <span class="o">/</span><span class="n">code</span>
-<span class="n">WORKDIR</span> <span class="o">/</span><span class="n">code</span>
-<span class="n">RUN</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">FROM</span> <span class="n">python</span><span class="p">:</span><span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="n">ADD</span> <span class="o">.</span> <span class="o">/</span><span class="n">code</span>
+</span></span><span class="line"><span class="cl"><span class="n">WORKDIR</span> <span class="o">/</span><span class="n">code</span>
+</span></span><span class="line"><span class="cl"><span class="n">RUN</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>Linha 1) Indica que esta imagem irá herdar da imagem Python versão 3;</li>
@@ -421,7 +419,7 @@ Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência
 <p>Outro aplicativo que vem junto com o Docker é o docker-compose. É com ele que você define os serviços que compõem a sua aplicação, no estilo Heroku. Para usá-lo, você deve criar um arquivo chamado <code>docker-compose.yml</code>, conforme o exemplo abaixo:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -442,26 +440,26 @@ Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">web</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">build</span><span class="p">:</span><span class="w"> </span><span class="l">.</span><span class="w">
-</span><span class="w">  </span><span class="nt">working_dir</span><span class="p">:</span><span class="w"> </span><span class="l">/code</span><span class="w">
-</span><span class="w">  </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l">python app.py</span><span class="w">
-</span><span class="w">  </span><span class="nt">links</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="l">db</span><span class="w">
-</span><span class="w">    </span>- <span class="l">mongo</span><span class="w">
-</span><span class="w">    </span>- <span class="l">redis</span><span class="w">
-</span><span class="w">  </span><span class="nt">ports</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="s2">&#34;8000:8000&#34;</span><span class="w">
-</span><span class="w">  </span><span class="nt">db</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">images</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span>- <span class="l">postgres</span><span class="w">
-</span><span class="w">  </span><span class="nt">mongo</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">images</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span>- <span class="l">mongo:2.6</span><span class="w">
-</span><span class="w">  </span><span class="nt">redis</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">images</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span>- <span class="l">redis:latest</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">web</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">build</span><span class="p">:</span><span class="w"> </span><span class="l">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">working_dir</span><span class="p">:</span><span class="w"> </span><span class="l">/code</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l">python app.py</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">links</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">db</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">mongo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">redis</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;8000:8000&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">db</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">images</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">postgres</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">mongo</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">images</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">mongo:2.6</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">redis</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">images</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">redis:latest</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Essa aplicação python de exemplo é composta pelos serviços web, db, mongo e redis. No serviço web estamos &ldquo;linkando&rdquo; com os demais, assim o Docker cria entradas no <em>host</em> para cada IP de serviço. Para &ldquo;subir&rdquo; a sua aplicação e seus serviços execute docker-compose up.</p>
 <p>Acesse a <a href="https://docs.docker.com/"  target="_blank" rel="noopener">documentação do Docker</a> que cobre desde a instalação (Mac, Linux e Windows) até os casos de uso mais complexos. Como sempre é um bom ponto de partida.</p>
@@ -488,6 +486,19 @@ Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência
      <a href="https://butecotecnologico.com.br/tags/vagrant/" class="tag-link">vagrant</a>
   </li>
   </ul>
+</div>
+
+
+    <div class="m-2">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-6625957038449899"
+       data-ad-slot="4012390257"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </div>
 
 
@@ -544,7 +555,7 @@ Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -744,7 +755,8 @@ Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -762,24 +774,24 @@ Não é nenhuma novidade que Docker está na boca do povo. Qualquer conferência
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

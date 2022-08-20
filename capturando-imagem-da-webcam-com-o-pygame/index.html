@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Capturando imagem da webcam com o PyGame &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="O PyGame é uma coleção de módulos Python para a criação de jogos baseados em SDL." />
 
-
-
 <meta itemprop="name" content="Capturando imagem da webcam com o PyGame">
-<meta itemprop="description" content="O PyGame é uma coleção de módulos Python para a criação de jogos baseados em SDL."><meta itemprop="datePublished" content="2014-09-09T00:27:57&#43;00:00" />
-<meta itemprop="dateModified" content="2014-09-09T00:27:57&#43;00:00" />
+<meta itemprop="description" content="O PyGame é uma coleção de módulos Python para a criação de jogos baseados em SDL."><meta itemprop="datePublished" content="2014-09-09T00:27:57+00:00" />
+<meta itemprop="dateModified" content="2014-09-09T00:27:57+00:00" />
 <meta itemprop="wordCount" content="500"><meta itemprop="image" content="https://butecotecnologico.com.br/images/posts/pygame-logo.png">
 <meta itemprop="keywords" content="camera,pygame,python,webcam," />
 <meta property="og:title" content="Capturando imagem da webcam com o PyGame" />
 <meta property="og:description" content="O PyGame é uma coleção de módulos Python para a criação de jogos baseados em SDL." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/capturando-imagem-da-webcam-com-o-pygame/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/posts/pygame-logo.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2014-09-09T00:27:57&#43;00:00" />
-<meta property="article:modified_time" content="2014-09-09T00:27:57&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2014-09-09T00:27:57+00:00" />
+<meta property="article:modified_time" content="2014-09-09T00:27:57+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -369,18 +367,18 @@ Sendo em Python, ele é portável e funciona em praticamente qualquer plataforma
 <p>Para instalar o PyGame execute o comando:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">pip install pygame
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">pip install pygame
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Provavelmente será necessário instalar uma variedade de pacotes no seu sistema, confira a <a href="https://www.pygame.org/wiki/Compilation"  target="_blank" rel="noopener">documentação de compilação</a> para obter a lista completa, ou tente instalar o pacote <code>python3-pygame</code>, caso esteja disponível em sua distro, que ele virá com todas as dependências necessárias.</p>
 <p>No exemplo de hoje vou mostrar como utilizar o PyGame e uma webcam para capturar imagens em tempo real. O módulo de câmera é experimental e suporta apenas Linux e câmeras v4l2 no momento.</p>
 <p>Abaixo você pode verificar o código completo com alguns comentários:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -466,91 +464,91 @@ Sendo em Python, ele é portável e funciona em praticamente qualquer plataforma
 </span><span class="lnt">84
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">pygame</span>
-<span class="kn">import</span> <span class="nn">pygame.camera</span>
-
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-<span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="n">FPS</span> <span class="o">=</span> <span class="mi">30</span>
-
-<span class="k">class</span> <span class="nc">App</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
-        <span class="c1"># Iniciando o Pygame.</span>
-        <span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
-        <span class="c1"># Iniciando o módulo de som.</span>
-        <span class="n">pygame</span><span class="o">.</span><span class="n">mixer</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
-        <span class="c1"># Iniciando o módulo de câmera.</span>
-        <span class="n">pygame</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
-        <span class="c1"># Iniciando o módulo de fonte.</span>
-        <span class="n">pygame</span><span class="o">.</span><span class="n">font</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
-        <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&#34;PyCam&#34;</span><span class="p">)</span>
-
-        <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="n">size</span> <span class="ow">or</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">)</span>
-        <span class="c1"># Cria a tela principal.</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">display</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-        <span class="c1"># Relógio para controlar o FPS.</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">clock</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">Clock</span><span class="p">()</span>
-
-    <span class="k">def</span> <span class="fm">__del__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1"># Liberando os módulos.</span>
-        <span class="n">pygame</span><span class="o">.</span><span class="n">font</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
-        <span class="n">pygame</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
-        <span class="n">pygame</span><span class="o">.</span><span class="n">mixer</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
-        <span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
-
-    <span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">running</span> <span class="o">=</span> <span class="bp">True</span>
-
-        <span class="c1"># Recuperar a lista de câmeras disponíveis.</span>
-        <span class="n">clist</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">list_cameras</span><span class="p">()</span>
-
-        <span class="c1"># Lista vazia?</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">clist</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&#34;Nenhuma camera encontrada.&#34;</span><span class="p">)</span>
-
-        <span class="c1"># Define a câmera a ser usada e a resolução.</span>
-        <span class="n">cam</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">Camera</span><span class="p">(</span><span class="n">clist</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
-        <span class="c1"># Iniciando a Webcam.</span>
-        <span class="n">cam</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
-
-        <span class="c1"># Enquanto o usuário não fechar a tela ou apertar ESC,</span>
-        <span class="c1"># ficará exibindo imagens da câmera em tempo real.</span>
-        <span class="k">while</span> <span class="n">running</span><span class="p">:</span>
-            <span class="n">events</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-
-            <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">events</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">QUIT</span> <span class="ow">or</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">KEYDOWN</span> <span class="ow">and</span> <span class="n">e</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_ESCAPE</span><span class="p">):</span>
-                    <span class="n">running</span> <span class="o">=</span> <span class="bp">False</span>
-                <span class="k">if</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">KEYDOWN</span> <span class="ow">and</span> <span class="n">e</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_RETURN</span><span class="p">):</span>
-                    <span class="c1"># Salva a imagem em um arquivo em disco ao apertar a tecla ENTER.</span>
-                    <span class="n">img</span> <span class="o">=</span> <span class="n">cam</span><span class="o">.</span><span class="n">get_image</span><span class="p">()</span>
-                    <span class="n">filename</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(),</span> <span class="s2">&#34;capture_</span><span class="si">%d</span><span class="s2">_%m_%Y_%H_%m_%S.png&#34;</span><span class="p">)</span>
-                    <span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
-                    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&#34;Imagem salva em: {filename}&#34;</span><span class="p">)</span>
-                    <span class="k">try</span><span class="p">:</span>
-                        <span class="c1"># Toca um som de captura, simulando uma câmera.</span>
-                        <span class="n">pygame</span><span class="o">.</span><span class="n">mixer</span><span class="o">.</span><span class="n">Sound</span><span class="p">(</span><span class="s2">&#34;camera-shutter-click.ogg&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">play</span><span class="p">()</span>
-                    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-                        <span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
-
-            <span class="c1"># Verifica se a câmera está pronta para uso.</span>
-            <span class="k">if</span> <span class="n">cam</span><span class="o">.</span><span class="n">query_image</span><span class="p">():</span>
-                <span class="c1"># Captura uma imagem e joga na tela.</span>
-                <span class="n">snapshot</span> <span class="o">=</span> <span class="n">cam</span><span class="o">.</span><span class="n">get_image</span><span class="p">()</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">snapshot</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
-
-            <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">clock</span><span class="o">.</span><span class="n">tick</span><span class="p">(</span><span class="n">FPS</span><span class="p">)</span>
-
-        <span class="c1"># Liberando a Webcam.</span>
-        <span class="n">cam</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-    <span class="n">A</span> <span class="o">=</span> <span class="n">App</span><span class="p">()</span>
-    <span class="n">A</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pygame</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pygame.camera</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">FPS</span> <span class="o">=</span> <span class="mi">30</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">App</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Iniciando o Pygame.</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Iniciando o módulo de som.</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pygame</span><span class="o">.</span><span class="n">mixer</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Iniciando o módulo de câmera.</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pygame</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Iniciando o módulo de fonte.</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pygame</span><span class="o">.</span><span class="n">font</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&#34;PyCam&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="n">size</span> <span class="ow">or</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Cria a tela principal.</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">display</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Relógio para controlar o FPS.</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">clock</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">Clock</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__del__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Liberando os módulos.</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pygame</span><span class="o">.</span><span class="n">font</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pygame</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pygame</span><span class="o">.</span><span class="n">mixer</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">running</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Recuperar a lista de câmeras disponíveis.</span>
+</span></span><span class="line"><span class="cl">        <span class="n">clist</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">list_cameras</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Lista vazia?</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="ow">not</span> <span class="n">clist</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&#34;Nenhuma camera encontrada.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Define a câmera a ser usada e a resolução.</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cam</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">Camera</span><span class="p">(</span><span class="n">clist</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Iniciando a Webcam.</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cam</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Enquanto o usuário não fechar a tela ou apertar ESC,</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># ficará exibindo imagens da câmera em tempo real.</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">running</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">events</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">events</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">QUIT</span> <span class="ow">or</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">KEYDOWN</span> <span class="ow">and</span> <span class="n">e</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_ESCAPE</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">running</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">KEYDOWN</span> <span class="ow">and</span> <span class="n">e</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_RETURN</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1"># Salva a imagem em um arquivo em disco ao apertar a tecla ENTER.</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">img</span> <span class="o">=</span> <span class="n">cam</span><span class="o">.</span><span class="n">get_image</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">filename</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(),</span> <span class="s2">&#34;capture_</span><span class="si">%d</span><span class="s2">_%m_%Y_%H_%m_%S.png&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Imagem salva em: </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1"># Toca um som de captura, simulando uma câmera.</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">pygame</span><span class="o">.</span><span class="n">mixer</span><span class="o">.</span><span class="n">Sound</span><span class="p">(</span><span class="s2">&#34;camera-shutter-click.ogg&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">play</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                        <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1"># Verifica se a câmera está pronta para uso.</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">cam</span><span class="o">.</span><span class="n">query_image</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># Captura uma imagem e joga na tela.</span>
+</span></span><span class="line"><span class="cl">                <span class="n">snapshot</span> <span class="o">=</span> <span class="n">cam</span><span class="o">.</span><span class="n">get_image</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="bp">self</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">snapshot</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">clock</span><span class="o">.</span><span class="n">tick</span><span class="p">(</span><span class="n">FPS</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Liberando a Webcam.</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cam</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">A</span> <span class="o">=</span> <span class="n">App</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">A</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Atalhos disponíveis:</p>
 <p><kbd>Enter</kbd> — uma imagem será capturada e salva no local de execução do aplicativo
@@ -580,6 +578,19 @@ Sendo em Python, ele é portável e funciona em praticamente qualquer plataforma
      <a href="https://butecotecnologico.com.br/tags/webcam/" class="tag-link">webcam</a>
   </li>
   </ul>
+</div>
+
+
+    <div class="m-2">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-6625957038449899"
+       data-ad-slot="4012390257"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </div>
 
 
@@ -636,7 +647,7 @@ Sendo em Python, ele é portável e funciona em praticamente qualquer plataforma
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -836,7 +847,8 @@ Sendo em Python, ele é portável e funciona em praticamente qualquer plataforma
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -854,24 +866,24 @@ Sendo em Python, ele é portável e funciona em praticamente qualquer plataforma
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

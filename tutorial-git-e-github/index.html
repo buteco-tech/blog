@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Tutorial de Git e GitHub &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Se você é ou pretende se tornar um desenvolvedor, já deve ter ouvido falar do Git e GitHub, um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las." />
 
-
-
 <meta itemprop="name" content="Tutorial de Git e GitHub">
-<meta itemprop="description" content="Se você é ou pretende se tornar um desenvolvedor, já deve ter ouvido falar do Git e GitHub, um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las."><meta itemprop="datePublished" content="2020-11-18T08:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-11-18T08:00:00&#43;00:00" />
+<meta itemprop="description" content="Se você é ou pretende se tornar um desenvolvedor, já deve ter ouvido falar do Git e GitHub, um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las."><meta itemprop="datePublished" content="2020-11-18T08:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-11-18T08:00:00+00:00" />
 <meta itemprop="wordCount" content="1973"><meta itemprop="image" content="https://butecotecnologico.com.br/tutorial-git-e-github/git-logo.png">
 <meta itemprop="keywords" content="git,github," />
 <meta property="og:title" content="Tutorial de Git e GitHub" />
 <meta property="og:description" content="Se você é ou pretende se tornar um desenvolvedor, já deve ter ouvido falar do Git e GitHub, um sistema do controle de versão e um repositório online para os nossos projetos. Agora é a hora de conhecer mais sobre essas ferramentas e aprender a usá-las." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/tutorial-git-e-github/" /><meta property="og:image" content="https://butecotecnologico.com.br/tutorial-git-e-github/git-logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-11-18T08:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2020-11-18T08:00:00&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2020-11-18T08:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-18T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -354,7 +352,7 @@
   <article class="mt-3 mb-4">
   <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/tutorial-git-e-github/git-logo_huce9f73299663b512425c2d5ba6748ec8_3783_220x92_resize_q90_bgffffff_linear_2.jpg"
+      src="https://butecotecnologico.com.br/tutorial-git-e-github/git-logo_huce9f73299663b512425c2d5ba6748ec8_3783_220x92_resize_q90_bgffffff_linear_3.jpg"
       alt="git"/>
 </figure>
 
@@ -371,13 +369,13 @@
 <p>Depois de instalar o Git, é necessário configurar o seu nome e e-mail que serão exibidos em seus <em>commits</em>, para isso é só digitar no terminal os comandos abaixo:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git config --global user.name <span class="s2">&#34;Seu Nome&#34;</span>
-git config --global user.email <span class="s2">&#34;seu-email@buteco.tech&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global user.name <span class="s2">&#34;Seu Nome&#34;</span>
+</span></span><span class="line"><span class="cl">git config --global user.email <span class="s2">&#34;seu-email@buteco.tech&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>Observação: Caso você esteja no Windows, não se esqueça de utilizar o <strong>git bash</strong>, pois ele simula um ambiente Unix, facilitando a forma de se trabalhar com Git.</p>
@@ -385,42 +383,42 @@ git config --global user.email <span class="s2">&#34;seu-email@buteco.tech&#34;<
 <p>Agora iremos criar uma chave de SSH, com ela provaremos ao GitHub que nós somos os donos da nossa conta. Caso já tenha uma chave SSH, podemos verificar seu diretório <strong>.ssh</strong> listando o conteúdo:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~/.ssh
-ls
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~/.ssh
+</span></span><span class="line"><span class="cl">ls
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Caso o comando <code>ls</code> retorne algo com a extensão <strong>.pub</strong>, você não precisa executar o comando <code>ssh-keygen</code>. Caso contrário, digite esse comando no seu terminal:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;seu-email@buteco.tech&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;seu-email@buteco.tech&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>O comando acima irá pedir um nome do arquivo para salvar a chave, não escreva nada e aperte enter (será gerada uma com o nome <strong>id_rsa</strong>). Depois, informe uma senha (<em>passphrase</em>) e confirme ela. Pronto, você gerou uma chave SSH.</p>
 <p>Vamos agora adicionar a chave ao <a href="https://pt.wikipedia.org/wiki/Ssh-agent"  target="_blank" rel="noopener">ssh-agent</a>, um programa que fará a autenticação da sua máquina local, com o servidor remoto, que nesse caso seria o GitHub, execute então o comando <code>ssh-agent</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">eval</span> <span class="k">$(</span>ssh-agent -s<span class="k">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">eval</span> <span class="k">$(</span>ssh-agent -s<span class="k">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>A mensagem <code>Agent pid 1234</code> será exibida.</p>
 <p>Executar o comando <code>ssh-add</code>, onde o <strong>id_rsa</strong> é o nome da sua chave SSH, informe a <em>passphrase</em> utilizada no comando <code>ssh-keygen</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">ssh-add ~/.ssh/id_rsa
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-add ~/.ssh/id_rsa
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>A mensagem <code>Identity added : id_rsa (seu-email@buteco.tech)</code> será exibida.</p>
 <h2 id="adicionando-a-chave-ssh-à-sua-conta-no-github">Adicionando a chave SSH à sua conta no GitHub</h2>
@@ -429,19 +427,19 @@ ls
 <p>Digite o seguinte comando no terminal para exibir o conteúdo da chave gerada:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">cat ~/.ssh/id_rsa.pub
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat ~/.ssh/id_rsa.pub
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Copie todo o conteúdo para a sua área de transferência (lembre-se de copiar desde &ldquo;ssh-rsa&rdquo; até o seu e-mail).</p>
 <p>Acesse a página de <a href="https://github.com/settings/keys"  target="_blank" rel="noopener">SSH and GPG keys no GitHub</a> para associar a nova chaves SSH a sua conta. Clique então no botão <strong><em>New SSH Key</em></strong>.</p>
-<p>O título você pode escolher um (ex: chave <a href="mailto:seu-email@buteco.tech">seu-email@buteco.tech</a>), e em <em>Key</em>, você informará o conteúdo que copiou anteriormente.</p>
+<p>O título você pode escolher um (ex: chave <a href="mailto:seu-email@buteco.tech"  >seu-email@buteco.tech</a>), e em <em>Key</em>, você informará o conteúdo que copiou anteriormente.</p>
 <p>Clique em <em>Add SSH Key</em> para salvar. Pronto, sua configuração está feita.</p>
 <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/tutorial-git-e-github/ssh-add_hu402d27fe5e555840eaacf6e4f005671b_30544_582x514_resize_q90_bgffffff_linear_2.jpg"
+      src="https://butecotecnologico.com.br/tutorial-git-e-github/ssh-add_hu402d27fe5e555840eaacf6e4f005671b_30544_582x514_resize_q90_bgffffff_linear_3.jpg"
       alt="ssh add"/>
 </figure>
 
@@ -455,33 +453,33 @@ ls
 <p>Vamos clonar o repositório para a sua máquina local para que você possa realizar alterações. Na página do seu repositório no GitHub, existe um botão chamado <strong><em>Code</em></strong>, clique nele, selecione a opção <strong><em>SSH</em></strong>, e depois clique no botão de copiar.</p>
 <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/tutorial-git-e-github/git-clone-btn_huaf13d02f0fa07dc72e122b8016fd4106_21533_508x389_resize_q90_bgffffff_linear_2.jpg"
+      src="https://butecotecnologico.com.br/tutorial-git-e-github/git-clone-btn_huaf13d02f0fa07dc72e122b8016fd4106_21533_508x389_resize_q90_bgffffff_linear_3.jpg"
       alt="ssh add"/>
 </figure>
 
 <p>Agora abra o seu terminal no local que deseja baixar o repositório, e execute (use o endereço que você copiou):</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git clone git@github.com:buteco-tech/artigo-tutorial-git.git
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone git@github.com:buteco-tech/artigo-tutorial-git.git
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Será pedido para que você informe a sua <em>passphrase</em> de quando criou a sua chave SSH. Após, o clone do repositório você terá uma nova pasta chamada <code>artigo-tutorial-git</code>.</p>
 <p>Entre na nova pasta com o comando:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> artigo-tutorial-git
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> artigo-tutorial-git
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Você deverá ter algo similar a imagem abaixo:</p>
 <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/tutorial-git-e-github/git-clone_hucbe69348fc8342ded8ede1f442605b9b_22322_890x435_resize_q90_bgffffff_linear_2.jpg"
+      src="https://butecotecnologico.com.br/tutorial-git-e-github/git-clone_hucbe69348fc8342ded8ede1f442605b9b_22322_890x435_resize_q90_bgffffff_linear_3.jpg"
       alt="git clone"/>
 </figure>
 
@@ -493,16 +491,16 @@ ls
 <p>Vamos criar um novo arquivo para que possamos adicionar ele depois, então, crie um arquivo de texto qualquer dentro do diretório do repositório.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s2">&#34;Tutorial de Git e GitHub&#34;</span> &gt; arquivo.txt
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Tutorial de Git e GitHub&#34;</span> &gt; arquivo.txt
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Voltando para o terminal, digite <code>git status</code>. Você verá essa mensagem:</p>
 <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/tutorial-git-e-github/git-status_hu85165349e07a02a5d8c8edcf2f4e3d3a_29729_857x518_resize_q90_bgffffff_linear_2.jpg"
+      src="https://butecotecnologico.com.br/tutorial-git-e-github/git-status_hu85165349e07a02a5d8c8edcf2f4e3d3a_29729_857x518_resize_q90_bgffffff_linear_3.jpg"
       alt="git status"/>
 </figure>
 
@@ -510,36 +508,36 @@ ls
 <p>Para adicionar apenas um arquivo execute o comando:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git add nome-do-arquivo
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add nome-do-arquivo
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Ou para adicionar todos os arquivos execute o comando:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git add .
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add .
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>O <code>git add</code> não afeta diretamente o repositório, pois ele ainda não &ldquo;salvou&rdquo; as alterações, apenas às moveu para a área de <em>staging</em>, quando executamos <code>git commit</code> essas as alterações serão salvas.</p>
 <p>Agora sim, podemos confirmar as alterações, para isso execute o comando:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git commit -m <span class="s2">&#34;Meu primeiro commit&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git commit -m <span class="s2">&#34;Meu primeiro commit&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>O <code>-m</code> é para informar uma mensagem que será gravada junto ao <em>commit</em>.</p>
 <p>Se você executar o comando <code>git status</code> novamente, o seu terminal deverá estar parecido com o abaixo.</p>
 <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/tutorial-git-e-github/git-commit_hud75f582002dad73c49ece52a88e7ca2e_30658_846x539_resize_q90_bgffffff_linear_2.jpg"
+      src="https://butecotecnologico.com.br/tutorial-git-e-github/git-commit_hud75f582002dad73c49ece52a88e7ca2e_30658_846x539_resize_q90_bgffffff_linear_3.jpg"
       alt="git commit"/>
 </figure>
 
@@ -548,18 +546,18 @@ ls
 <p>Quando estamos com alguma alteração <em>commitada</em> localmente e queremos subir elas para o repositório remoto, precisamos publicá-las, para isso execute o comando:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git push
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git push
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Após, visite a página do seu repositório no GitHub. Você percebera que as alterações feitas localmente, já estão lá, mas atenção, quando você fez o <em>push</em>, as alterações foram para o seu <em>fork</em>, não para o repositório principal.</p>
 <h3 id="criando-um-pull-request">Criando um Pull request</h3>
 <p>No seu repositório, após feito um <em>push</em>, você verá um botão escrito <strong><em>Pull request</em></strong>. Clique nele.</p>
 <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/tutorial-git-e-github/pull-request-btn_hu40e14ef66307a9655132f77e18184866_56680_1887x775_resize_q90_bgffffff_linear_2.jpg"
+      src="https://butecotecnologico.com.br/tutorial-git-e-github/pull-request-btn_hu40e14ef66307a9655132f77e18184866_56680_1887x775_resize_q90_bgffffff_linear_3.jpg"
       alt="pull request"/>
 </figure>
 
@@ -576,17 +574,17 @@ ls
 <p>Crie uma pasta em qualquer lugar do seu computador e navegue até ela com o seu terminal. Digite então dentro dela, o comando:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git init
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git init
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Você perceberá que foi criado uma pasta <strong>.git</strong>, que mapeia as alterações e <em>commits</em> do repositório como mencionado anteriormente.</p>
 <p>Realize agora alguma alteração. Crie um arquivo de texto, por exemplo. Depois, execute o comando <code>git add</code> que foi falado anteriormente e <code>git commit -m</code>, agora você já está craque nisso.</p>
 <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/tutorial-git-e-github/git-init_hub89ed552460a947b504390a6aec9e88f_27081_875x456_resize_q90_bgffffff_linear_2.jpg"
+      src="https://butecotecnologico.com.br/tutorial-git-e-github/git-init_hub89ed552460a947b504390a6aec9e88f_27081_875x456_resize_q90_bgffffff_linear_3.jpg"
       alt="git init"/>
 </figure>
 
@@ -608,7 +606,7 @@ ls
 </ul>
 <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/tutorial-git-e-github/repositorio-github-criado_hu3ef0b2cacba4d3c2ef4dca8ccb9fb3da_49040_1429x826_resize_q90_bgffffff_linear_2.jpg"
+      src="https://butecotecnologico.com.br/tutorial-git-e-github/repositorio-github-criado_hu3ef0b2cacba4d3c2ef4dca8ccb9fb3da_49040_1429x826_resize_q90_bgffffff_linear_3.jpg"
       alt="Repositório no GitHub"/>
 </figure>
 
@@ -617,29 +615,29 @@ ls
 <p>Com o seu terminal aberto na pasta do seu repositório local, execute então os seguintes comandos:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git remote add origin git@github.com:seu-nome/git-init-exemplo.git
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git remote add origin git@github.com:seu-nome/git-init-exemplo.git
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Esse comando define para onde enviaremos nossos <em>commits</em>, nesse caso o GitHub.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git branch -M main
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git branch -M main
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Esse comando cria uma <em>branch</em> com o nome <code>main</code>, padrão do GitHub.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git push -u origin main
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git push -u origin main
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Esse comando envia as alterações <em>commitadas</em> ao seu repositório remoto no GitHub.</p>
 <p>Pronto, se você for até a página do seu repositório no GitHub as alterações já estarão lá.</p>
@@ -663,6 +661,19 @@ ls
      <a href="https://butecotecnologico.com.br/tags/github/" class="tag-link">github</a>
   </li>
   </ul>
+</div>
+
+
+    <div class="m-2">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-6625957038449899"
+       data-ad-slot="4012390257"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </div>
 
 
@@ -719,7 +730,7 @@ ls
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -919,7 +930,8 @@ ls
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -937,24 +949,24 @@ ls
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

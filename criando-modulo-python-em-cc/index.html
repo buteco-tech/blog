@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Criando módulo Python em C/C&#43;&#43; &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Primeiros passos na criação de um módulo C/C&#43;&#43; para ser utilizado dentro do Python" />
 
-
-
 <meta itemprop="name" content="Criando módulo Python em C/C&#43;&#43;">
-<meta itemprop="description" content="Primeiros passos na criação de um módulo C/C&#43;&#43; para ser utilizado dentro do Python"><meta itemprop="datePublished" content="2015-04-13T11:32:48&#43;00:00" />
-<meta itemprop="dateModified" content="2015-04-13T11:32:48&#43;00:00" />
+<meta itemprop="description" content="Primeiros passos na criação de um módulo C/C&#43;&#43; para ser utilizado dentro do Python"><meta itemprop="datePublished" content="2015-04-13T11:32:48+00:00" />
+<meta itemprop="dateModified" content="2015-04-13T11:32:48+00:00" />
 <meta itemprop="wordCount" content="730"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/c_python.png">
 <meta itemprop="keywords" content="c,cpp,linux,python," />
 <meta property="og:title" content="Criando módulo Python em C/C&#43;&#43;" />
 <meta property="og:description" content="Primeiros passos na criação de um módulo C/C&#43;&#43; para ser utilizado dentro do Python" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/criando-modulo-python-em-cc/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/c_python.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2015-04-13T11:32:48&#43;00:00" />
-<meta property="article:modified_time" content="2015-04-13T11:32:48&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2015-04-13T11:32:48+00:00" />
+<meta property="article:modified_time" content="2015-04-13T11:32:48+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -410,7 +408,7 @@ Para poder compilar o programa deste artigo é necessário ter os pacotes do g++
 A chamada dir mostra todos os comandos suportados pelo módulo. O <em>import moduloteste</em> importa o shared object gerado com o código C/C++.</p>
 <p>Segue a saída da execução do script:
 <strong>[marcos@xfiles python_c_integration]$ python testamodulo.py
-['<strong>doc</strong>', &lsquo;<strong>file</strong>&rsquo;, &lsquo;<strong>name</strong>&rsquo;, &lsquo;<strong>package</strong>&rsquo;, &lsquo;duplicastring&rsquo;, &lsquo;erro&rsquo;, &lsquo;soma&rsquo;]
+[&rsquo;<strong>doc</strong>&rsquo;, &lsquo;<strong>file</strong>&rsquo;, &lsquo;<strong>name</strong>&rsquo;, &lsquo;<strong>package</strong>&rsquo;, &lsquo;duplicastring&rsquo;, &rsquo;erro&rsquo;, &lsquo;soma&rsquo;]
 Valor de 1 + 3: 4
 String teste duplicada: testeteste</strong></p>
 <p>Este artigo de forma alguma espera ser um guia definitivo para a criação de extensões em C/C++ par Python, mas sim um ponto de início. Para mais informações sobre, veja os links de referência. Espero que tenham gostado! Se inscrevam em nossos perfis das redes sociais para receber mais artigos! Até mais!</p>
@@ -501,7 +499,7 @@ String teste duplicada: testeteste</strong></p>
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -701,7 +699,8 @@ String teste duplicada: testeteste</strong></p>
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -719,24 +718,24 @@ String teste duplicada: testeteste</strong></p>
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

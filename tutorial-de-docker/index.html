@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Tutorial de Docker &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos." />
 
-
-
 <meta itemprop="name" content="Tutorial de Docker">
-<meta itemprop="description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos."><meta itemprop="datePublished" content="2020-10-01T08:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-10-01T08:00:00&#43;00:00" />
+<meta itemprop="description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos."><meta itemprop="datePublished" content="2020-10-01T08:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-10-01T08:00:00+00:00" />
 <meta itemprop="wordCount" content="2299"><meta itemprop="image" content="https://butecotecnologico.com.br/tutorial-de-docker/docker-logo.png">
 <meta itemprop="keywords" content="docker,devops,containers,linux," />
 <meta property="og:title" content="Tutorial de Docker" />
 <meta property="og:description" content="Você sabe o que é Docker e como usá-lo? Neste tutorial explicamos um pouco sobre o Docker, como instalá-lo no Linux, Windows e Mac, além de exemplificar alguns comandos com exemplos práticos." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/tutorial-de-docker/" /><meta property="og:image" content="https://butecotecnologico.com.br/tutorial-de-docker/docker-logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-10-01T08:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2020-10-01T08:00:00&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2020-10-01T08:00:00+00:00" />
+<meta property="article:modified_time" content="2020-10-01T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -353,7 +351,7 @@
   <article class="mt-3 mb-4">
   <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/tutorial-de-docker/docker-logo_hu672e770bbe701e3c268c298c24f5bf49_44308_600x535_resize_q90_bgffffff_linear_2.jpg"
+      src="https://butecotecnologico.com.br/tutorial-de-docker/docker-logo_hu672e770bbe701e3c268c298c24f5bf49_44308_600x535_resize_q90_bgffffff_linear_3.jpg"
       alt="Docker"/>
 </figure>
 
@@ -365,11 +363,11 @@
 <p>A forma de instalação do docker depende do sistema operacional que você está usando. No caso do Linux os contêineres são nativos e devido a isso você pode instalar a última versão com o simples comando abaixo:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ curl -fsSL https://get.docker.io <span class="p">|</span> bash
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ curl -fsSL https://get.docker.io <span class="p">|</span> bash
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>O comando acima irá fazer o download de um script que fará a instalação do docker na maioria das distribuições Linux, e executa a instalação usando o <code>bash</code>.</p>
 <p>Para fazer a instalação em outros sistemas operacionais, clique no link abaixo para fazer a transferência do instalador:</p>
@@ -386,7 +384,7 @@
 <p>Uma vez instalado o docker você pode abrir o terminal e executar o comando <code>docker</code> que irá listar todas as opções disponíveis.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -469,93 +467,93 @@
 </span><span class="lnt">81
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker
-Usage:	docker <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND
-
-A self-sufficient runtime <span class="k">for</span> containers
-
-Options:
-      --config string      Location of client config files <span class="o">(</span>default <span class="s2">&#34;/Users/schwede/.docker&#34;</span><span class="o">)</span>
-  -c, --context string     Name of the context to use to connect to the daemon <span class="o">(</span>overrides
-                           DOCKER_HOST env var and default context <span class="nb">set</span> with <span class="s2">&#34;docker context use&#34;</span><span class="o">)</span>
-  -D, --debug              Enable debug mode
-  -H, --host list          Daemon socket<span class="o">(</span>s<span class="o">)</span> to connect to
-  -l, --log-level string   Set the logging level <span class="o">(</span><span class="s2">&#34;debug&#34;</span><span class="p">|</span><span class="s2">&#34;info&#34;</span><span class="p">|</span><span class="s2">&#34;warn&#34;</span><span class="p">|</span><span class="s2">&#34;error&#34;</span><span class="p">|</span><span class="s2">&#34;fatal&#34;</span><span class="o">)</span>
-                           <span class="o">(</span>default <span class="s2">&#34;info&#34;</span><span class="o">)</span>
-      --tls                Use TLS<span class="p">;</span> implied by --tlsverify
-      --tlscacert string   Trust certs signed only by this CA <span class="o">(</span>default
-                           <span class="s2">&#34;/Users/schwede/.docker/ca.pem&#34;</span><span class="o">)</span>
-      --tlscert string     Path to TLS certificate file <span class="o">(</span>default <span class="s2">&#34;/Users/schwede/.docker/cert.pem&#34;</span><span class="o">)</span>
-      --tlskey string      Path to TLS key file <span class="o">(</span>default <span class="s2">&#34;/Users/schwede/.docker/key.pem&#34;</span><span class="o">)</span>
-      --tlsverify          Use TLS and verify the remote
-  -v, --version            Print version information and quit
-
-Management Commands:
-  builder     Manage builds
-  config      Manage Docker configs
-  container   Manage containers
-  context     Manage contexts
-  image       Manage images
-  network     Manage networks
-  node        Manage Swarm nodes
-  plugin      Manage plugins
-  secret      Manage Docker secrets
-  service     Manage services
-  stack       Manage Docker stacks
-  swarm       Manage Swarm
-  system      Manage Docker
-  trust       Manage trust on Docker images
-  volume      Manage volumes
-
-Commands:
-  attach      Attach <span class="nb">local</span> standard input, output, and error streams to a running container
-  build       Build an image from a Dockerfile
-  commit      Create a new image from a container<span class="s1">&#39;s changes
-</span><span class="s1">  cp          Copy files/folders between a container and the local filesystem
-</span><span class="s1">  create      Create a new container
-</span><span class="s1">  diff        Inspect changes to files or directories on a container&#39;</span>s filesystem
-  events      Get real <span class="nb">time</span> events from the server
-  <span class="nb">exec</span>        Run a <span class="nb">command</span> in a running container
-  <span class="nb">export</span>      Export a container<span class="s1">&#39;s filesystem as a tar archive
-</span><span class="s1">  history     Show the history of an image
-</span><span class="s1">  images      List images
-</span><span class="s1">  import      Import the contents from a tarball to create a filesystem image
-</span><span class="s1">  info        Display system-wide information
-</span><span class="s1">  inspect     Return low-level information on Docker objects
-</span><span class="s1">  kill        Kill one or more running containers
-</span><span class="s1">  load        Load an image from a tar archive or STDIN
-</span><span class="s1">  login       Log in to a Docker registry
-</span><span class="s1">  logout      Log out from a Docker registry
-</span><span class="s1">  logs        Fetch the logs of a container
-</span><span class="s1">  pause       Pause all processes within one or more containers
-</span><span class="s1">  port        List port mappings or a specific mapping for the container
-</span><span class="s1">  ps          List containers
-</span><span class="s1">  pull        Pull an image or a repository from a registry
-</span><span class="s1">  push        Push an image or a repository to a registry
-</span><span class="s1">  rename      Rename a container
-</span><span class="s1">  restart     Restart one or more containers
-</span><span class="s1">  rm          Remove one or more containers
-</span><span class="s1">  rmi         Remove one or more images
-</span><span class="s1">  run         Run a command in a new container
-</span><span class="s1">  save        Save one or more images to a tar archive (streamed to STDOUT by default)
-</span><span class="s1">  search      Search the Docker Hub for images
-</span><span class="s1">  start       Start one or more stopped containers
-</span><span class="s1">  stats       Display a live stream of container(s) resource usage statistics
-</span><span class="s1">  stop        Stop one or more running containers
-</span><span class="s1">  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
-</span><span class="s1">  top         Display the running processes of a container
-</span><span class="s1">  unpause     Unpause all processes within one or more containers
-</span><span class="s1">  update      Update configuration of one or more containers
-</span><span class="s1">  version     Show the Docker version information
-</span><span class="s1">  wait        Block until one or more containers stop, then print their exit codes
-</span><span class="s1">
-</span><span class="s1">Run &#39;</span>docker COMMAND --help<span class="err">&#39;</span> <span class="k">for</span> more information on a command.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker
+</span></span><span class="line"><span class="cl">Usage:	docker <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">A self-sufficient runtime <span class="k">for</span> containers
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Options:
+</span></span><span class="line"><span class="cl">      --config string      Location of client config files <span class="o">(</span>default <span class="s2">&#34;/Users/schwede/.docker&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">  -c, --context string     Name of the context to use to connect to the daemon <span class="o">(</span>overrides
+</span></span><span class="line"><span class="cl">                           DOCKER_HOST env var and default context <span class="nb">set</span> with <span class="s2">&#34;docker context use&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">  -D, --debug              Enable debug mode
+</span></span><span class="line"><span class="cl">  -H, --host list          Daemon socket<span class="o">(</span>s<span class="o">)</span> to connect to
+</span></span><span class="line"><span class="cl">  -l, --log-level string   Set the logging level <span class="o">(</span><span class="s2">&#34;debug&#34;</span><span class="p">|</span><span class="s2">&#34;info&#34;</span><span class="p">|</span><span class="s2">&#34;warn&#34;</span><span class="p">|</span><span class="s2">&#34;error&#34;</span><span class="p">|</span><span class="s2">&#34;fatal&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">                           <span class="o">(</span>default <span class="s2">&#34;info&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">      --tls                Use TLS<span class="p">;</span> implied by --tlsverify
+</span></span><span class="line"><span class="cl">      --tlscacert string   Trust certs signed only by this CA <span class="o">(</span>default
+</span></span><span class="line"><span class="cl">                           <span class="s2">&#34;/Users/schwede/.docker/ca.pem&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">      --tlscert string     Path to TLS certificate file <span class="o">(</span>default <span class="s2">&#34;/Users/schwede/.docker/cert.pem&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">      --tlskey string      Path to TLS key file <span class="o">(</span>default <span class="s2">&#34;/Users/schwede/.docker/key.pem&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">      --tlsverify          Use TLS and verify the remote
+</span></span><span class="line"><span class="cl">  -v, --version            Print version information and quit
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Management Commands:
+</span></span><span class="line"><span class="cl">  builder     Manage builds
+</span></span><span class="line"><span class="cl">  config      Manage Docker configs
+</span></span><span class="line"><span class="cl">  container   Manage containers
+</span></span><span class="line"><span class="cl">  context     Manage contexts
+</span></span><span class="line"><span class="cl">  image       Manage images
+</span></span><span class="line"><span class="cl">  network     Manage networks
+</span></span><span class="line"><span class="cl">  node        Manage Swarm nodes
+</span></span><span class="line"><span class="cl">  plugin      Manage plugins
+</span></span><span class="line"><span class="cl">  secret      Manage Docker secrets
+</span></span><span class="line"><span class="cl">  service     Manage services
+</span></span><span class="line"><span class="cl">  stack       Manage Docker stacks
+</span></span><span class="line"><span class="cl">  swarm       Manage Swarm
+</span></span><span class="line"><span class="cl">  system      Manage Docker
+</span></span><span class="line"><span class="cl">  trust       Manage trust on Docker images
+</span></span><span class="line"><span class="cl">  volume      Manage volumes
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Commands:
+</span></span><span class="line"><span class="cl">  attach      Attach <span class="nb">local</span> standard input, output, and error streams to a running container
+</span></span><span class="line"><span class="cl">  build       Build an image from a Dockerfile
+</span></span><span class="line"><span class="cl">  commit      Create a new image from a container<span class="s1">&#39;s changes
+</span></span></span><span class="line"><span class="cl"><span class="s1">  cp          Copy files/folders between a container and the local filesystem
+</span></span></span><span class="line"><span class="cl"><span class="s1">  create      Create a new container
+</span></span></span><span class="line"><span class="cl"><span class="s1">  diff        Inspect changes to files or directories on a container&#39;</span>s filesystem
+</span></span><span class="line"><span class="cl">  events      Get real <span class="nb">time</span> events from the server
+</span></span><span class="line"><span class="cl">  <span class="nb">exec</span>        Run a <span class="nb">command</span> in a running container
+</span></span><span class="line"><span class="cl">  <span class="nb">export</span>      Export a container<span class="s1">&#39;s filesystem as a tar archive
+</span></span></span><span class="line"><span class="cl"><span class="s1">  history     Show the history of an image
+</span></span></span><span class="line"><span class="cl"><span class="s1">  images      List images
+</span></span></span><span class="line"><span class="cl"><span class="s1">  import      Import the contents from a tarball to create a filesystem image
+</span></span></span><span class="line"><span class="cl"><span class="s1">  info        Display system-wide information
+</span></span></span><span class="line"><span class="cl"><span class="s1">  inspect     Return low-level information on Docker objects
+</span></span></span><span class="line"><span class="cl"><span class="s1">  kill        Kill one or more running containers
+</span></span></span><span class="line"><span class="cl"><span class="s1">  load        Load an image from a tar archive or STDIN
+</span></span></span><span class="line"><span class="cl"><span class="s1">  login       Log in to a Docker registry
+</span></span></span><span class="line"><span class="cl"><span class="s1">  logout      Log out from a Docker registry
+</span></span></span><span class="line"><span class="cl"><span class="s1">  logs        Fetch the logs of a container
+</span></span></span><span class="line"><span class="cl"><span class="s1">  pause       Pause all processes within one or more containers
+</span></span></span><span class="line"><span class="cl"><span class="s1">  port        List port mappings or a specific mapping for the container
+</span></span></span><span class="line"><span class="cl"><span class="s1">  ps          List containers
+</span></span></span><span class="line"><span class="cl"><span class="s1">  pull        Pull an image or a repository from a registry
+</span></span></span><span class="line"><span class="cl"><span class="s1">  push        Push an image or a repository to a registry
+</span></span></span><span class="line"><span class="cl"><span class="s1">  rename      Rename a container
+</span></span></span><span class="line"><span class="cl"><span class="s1">  restart     Restart one or more containers
+</span></span></span><span class="line"><span class="cl"><span class="s1">  rm          Remove one or more containers
+</span></span></span><span class="line"><span class="cl"><span class="s1">  rmi         Remove one or more images
+</span></span></span><span class="line"><span class="cl"><span class="s1">  run         Run a command in a new container
+</span></span></span><span class="line"><span class="cl"><span class="s1">  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+</span></span></span><span class="line"><span class="cl"><span class="s1">  search      Search the Docker Hub for images
+</span></span></span><span class="line"><span class="cl"><span class="s1">  start       Start one or more stopped containers
+</span></span></span><span class="line"><span class="cl"><span class="s1">  stats       Display a live stream of container(s) resource usage statistics
+</span></span></span><span class="line"><span class="cl"><span class="s1">  stop        Stop one or more running containers
+</span></span></span><span class="line"><span class="cl"><span class="s1">  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+</span></span></span><span class="line"><span class="cl"><span class="s1">  top         Display the running processes of a container
+</span></span></span><span class="line"><span class="cl"><span class="s1">  unpause     Unpause all processes within one or more containers
+</span></span></span><span class="line"><span class="cl"><span class="s1">  update      Update configuration of one or more containers
+</span></span></span><span class="line"><span class="cl"><span class="s1">  version     Show the Docker version information
+</span></span></span><span class="line"><span class="cl"><span class="s1">  wait        Block until one or more containers stop, then print their exit codes
+</span></span></span><span class="line"><span class="cl"><span class="s1">
+</span></span></span><span class="line"><span class="cl"><span class="s1">Run &#39;</span>docker COMMAND --help<span class="err">&#39;</span> <span class="k">for</span> more information on a command.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Primeiro de tudo, não se assuste com a quantidade de comandos disponíveis, muitos deles são específicos para realizar certas tarefas, porém vamos por partes. Vamos fazer o clássico <code>hello-world</code> que é feito em toda linguagem de programação, porém no docker.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -584,34 +582,34 @@ Commands:
 </span><span class="lnt">27
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run hello-world
-Unable to find image <span class="s1">&#39;hello-world:latest&#39;</span> locally
-latest: Pulling from library/hello-world
-0e03bdcc26d7: Pull <span class="nb">complete</span>
-Digest: sha256:4cf9c47f86df71d48364001ede3a4fcd85ae80ce02ebad74156906caff5378bc
-Status: Downloaded newer image <span class="k">for</span> hello-world:latest
-
-Hello from Docker!
-This message shows that your installation appears to be working correctly.
-
-To generate this message, Docker took the following steps:
- 1. The Docker client contacted the Docker daemon.
- 2. The Docker daemon pulled the <span class="s2">&#34;hello-world&#34;</span> image from the Docker Hub.
-    <span class="o">(</span>amd64<span class="o">)</span>
- 3. The Docker daemon created a new container from that image which runs the
-    executable that produces the output you are currently reading.
- 4. The Docker daemon streamed that output to the Docker client, which sent it
-    to your terminal.
-
-To try something more ambitious, you can run an Ubuntu container with:
- $ docker run -it ubuntu bash
-
-Share images, automate workflows, and more with a free Docker ID:
- https://hub.docker.com/
-
-For more examples and ideas, visit:
- https://docs.docker.com/get-started/
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run hello-world
+</span></span><span class="line"><span class="cl">Unable to find image <span class="s1">&#39;hello-world:latest&#39;</span> locally
+</span></span><span class="line"><span class="cl">latest: Pulling from library/hello-world
+</span></span><span class="line"><span class="cl">0e03bdcc26d7: Pull <span class="nb">complete</span>
+</span></span><span class="line"><span class="cl">Digest: sha256:4cf9c47f86df71d48364001ede3a4fcd85ae80ce02ebad74156906caff5378bc
+</span></span><span class="line"><span class="cl">Status: Downloaded newer image <span class="k">for</span> hello-world:latest
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Hello from Docker!
+</span></span><span class="line"><span class="cl">This message shows that your installation appears to be working correctly.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">To generate this message, Docker took the following steps:
+</span></span><span class="line"><span class="cl"> 1. The Docker client contacted the Docker daemon.
+</span></span><span class="line"><span class="cl"> 2. The Docker daemon pulled the <span class="s2">&#34;hello-world&#34;</span> image from the Docker Hub.
+</span></span><span class="line"><span class="cl">    <span class="o">(</span>amd64<span class="o">)</span>
+</span></span><span class="line"><span class="cl"> 3. The Docker daemon created a new container from that image which runs the
+</span></span><span class="line"><span class="cl">    executable that produces the output you are currently reading.
+</span></span><span class="line"><span class="cl"> 4. The Docker daemon streamed that output to the Docker client, which sent it
+</span></span><span class="line"><span class="cl">    to your terminal.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">To try something more ambitious, you can run an Ubuntu container with:
+</span></span><span class="line"><span class="cl"> $ docker run -it ubuntu bash
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Share images, automate workflows, and more with a free Docker ID:
+</span></span><span class="line"><span class="cl"> https://hub.docker.com/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">For more examples and ideas, visit:
+</span></span><span class="line"><span class="cl"> https://docs.docker.com/get-started/
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>O comando acima executa o subcomando <code>run</code> que basicamente cria e executa um novo contêiner. O único parâmetro que realmente é obrigatório para executar um contêiner é o nome da imagem do contêiner. Uma imagem de contêiner é um pacote executável leve, standalone, que incluí tudo necessário para executar a aplicação, como código, runtime, ferramentas de runtime, bibliotecas e configurações.</p>
 <p>Na saída do programa podemos ver que o docker tentou buscar localmente a imagem <code>hello-world</code>, porém como nesse caso não existia ele buscou do repositório padrão, que é o <a href="https://hub.docker.com/"  target="_blank" rel="noopener">Docker Hub</a>. Logo após iniciou o download de cada camada da imagem, cada camada é uma mudança na imagem, como o <code>hello-world</code> é simples, possuí apenas uma única camada.</p>
@@ -623,72 +621,72 @@ For more examples and ideas, visit:
 <p>Para entender melhor vamos a um exemplo prático, execute em qualquer diretório o comando abaixo para criar um arquivo.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ touch meuarquivo.txt
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ touch meuarquivo.txt
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Agora execute o comando usando o docker abaixo para criar um contêiner do Ubuntu e fazer o bind do diretório atual para o diretório <code>/exemplo</code> dentro do contêiner.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run -it -v <span class="nv">$PWD</span>:/exemplo ubuntu
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run -it -v <span class="nv">$PWD</span>:/exemplo ubuntu
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>A princípio nada de mais parece ter mudado, mas vá para o diretório <code>/exemplo</code> usando o <code>cd</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> exemplo/
-$ ls
-meuarquivo.txt
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">cd</span> exemplo/
+</span></span><span class="line"><span class="cl">$ ls
+</span></span><span class="line"><span class="cl">meuarquivo.txt
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Perceba que temos o nosso arquivo <code>meuarquivo.txt</code> listado, vamos escrever algo nele e sair do contêiner.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s1">&#39;hello volume!&#39;</span> &gt; meuarquivo.txt
-$ <span class="nb">exit</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="s1">&#39;hello volume!&#39;</span> &gt; meuarquivo.txt
+</span></span><span class="line"><span class="cl">$ <span class="nb">exit</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Saindo do contêiner podemos ver que nosso arquivo continua existindo localmente e agora com o conteúdo que escrevemos nele.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ ls
-meuarquivo.txt
-$ cat meuarquivo.txt
-hello volume!
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ls
+</span></span><span class="line"><span class="cl">meuarquivo.txt
+</span></span><span class="line"><span class="cl">$ cat meuarquivo.txt
+</span></span><span class="line"><span class="cl">hello volume!
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Pronto! agora se quisermos executar outro contêiner o arquivo continuará tendo o conteúdo que escrevemos.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run -it -v <span class="nv">$PWD</span>:/exemplo ubuntu
-root@484eea8e9505:/# cat /exemplo/meuarquivo.txt
-hello volume!
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run -it -v <span class="nv">$PWD</span>:/exemplo ubuntu
+</span></span><span class="line"><span class="cl">root@484eea8e9505:/# cat /exemplo/meuarquivo.txt
+</span></span><span class="line"><span class="cl">hello volume!
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Usando volumes você pode por exemplo executar o seu código local em um contêiner da linguagem que você usa, enquanto edita no seu editor de texto ou IDE localmente, tudo de maneira fácil e prática.</p>
 <h3 id="vincular-portas">Vincular Portas</h3>
@@ -696,11 +694,11 @@ hello volume!
 <p>Digamos que você queira rodar o servidor Nginx, para isso basta executar o comando abaixo:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run -d -p 8080:80 nginx
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run -d -p 8080:80 nginx
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Perceba o uso da flag <code>-p</code> passando o valor <code>8080:80</code>, isso significa que está sendo feito um vinculo, ou <em>bind</em>, da porta 8080 local com a porta 80 do contêiner, fazendo com que requisições que sejam feitos a porta 8080 local sejam redirecionadas a porta 80 do contêiner, é importante ressaltar pode-se ter apenas um vínculo por porta, não sendo possível ter 2 ou mais contêineres vinculados a mesma porta. Experimente acessar o endereço http://localhost:8080/ no seu navegador para ver a página padrão do Nginx.</p>
 <h2 id="exemplos">Exemplos</h2>
@@ -709,57 +707,57 @@ hello volume!
 <p>Execute uma nova instância do PostgreSQL localmente na porta 5432.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run -d -e <span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>secret -p 5432:5432 postgres
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run -d -e <span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>secret -p 5432:5432 postgres
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Execute o comando acima e tente conectar com algum cliente do PostgreSQL na porta 5432 da sua máquina com o usuário <code>postgres</code> e senha <code>secret</code>.</p>
 <h2 id="nginx">Nginx</h2>
 <p>Execute o servidor Nginx passando o diretório atual como <em>root</em>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run -d -v <span class="nv">$PWD</span>:/usr/share/nginx/html -p 8080:80 nginx
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run -d -v <span class="nv">$PWD</span>:/usr/share/nginx/html -p 8080:80 nginx
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Execute o comando acime e tente acessar o endereço <code>http://localhost:8080</code> para ver suas páginas estáticas que você tem localmente na sua máquina.</p>
 <h3 id="redis">Redis</h3>
 <p>Execute um servidor do Redis localmente na sua máquina na porta 6379.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run -d -p 6379:6379 redis
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run -d -p 6379:6379 redis
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="python">Python</h3>
 <p>Teste seu código Python em diferentes versões de forma rápida e fácil.</p>
 <p>Arquivo <code>main.py</code> de teste.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">import sys
-print<span class="o">(</span><span class="s2">&#34;Python version&#34;</span><span class="o">)</span>
-print <span class="o">(</span>sys.version<span class="o">)</span>
-print<span class="o">(</span><span class="s2">&#34;Version info.&#34;</span><span class="o">)</span>
-print <span class="o">(</span>sys.version_info<span class="o">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">import sys
+</span></span><span class="line"><span class="cl">print<span class="o">(</span><span class="s2">&#34;Python version&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">print <span class="o">(</span>sys.version<span class="o">)</span>
+</span></span><span class="line"><span class="cl">print<span class="o">(</span><span class="s2">&#34;Version info.&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">print <span class="o">(</span>sys.version_info<span class="o">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Python 3.6</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -767,18 +765,18 @@ print <span class="o">(</span>sys.version_info<span class="o">)</span>
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run --rm -v <span class="nv">$PWD</span>/main.py:/main.py python:3.6 python /main.py
-Python version
-3.6.11 <span class="o">(</span>default, Jul <span class="m">22</span> 2020, 13:26:52<span class="o">)</span>
-<span class="o">[</span>GCC 8.3.0<span class="o">]</span>
-Version info.
-sys.version_info<span class="o">(</span><span class="nv">major</span><span class="o">=</span>3, <span class="nv">minor</span><span class="o">=</span>6, <span class="nv">micro</span><span class="o">=</span>11, <span class="nv">releaselevel</span><span class="o">=</span><span class="s1">&#39;final&#39;</span>, <span class="nv">serial</span><span class="o">=</span>0<span class="o">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run --rm -v <span class="nv">$PWD</span>/main.py:/main.py python:3.6 python /main.py
+</span></span><span class="line"><span class="cl">Python version
+</span></span><span class="line"><span class="cl">3.6.11 <span class="o">(</span>default, Jul <span class="m">22</span> 2020, 13:26:52<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>GCC 8.3.0<span class="o">]</span>
+</span></span><span class="line"><span class="cl">Version info.
+</span></span><span class="line"><span class="cl">sys.version_info<span class="o">(</span><span class="nv">major</span><span class="o">=</span>3, <span class="nv">minor</span><span class="o">=</span>6, <span class="nv">micro</span><span class="o">=</span>11, <span class="nv">releaselevel</span><span class="o">=</span><span class="s1">&#39;final&#39;</span>, <span class="nv">serial</span><span class="o">=</span>0<span class="o">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Python 3.8</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -786,19 +784,19 @@ sys.version_info<span class="o">(</span><span class="nv">major</span><span class
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run --rm -v <span class="nv">$PWD</span>/main.py:/main.py python:3.8 python /main.py
-Python version
-3.8.5 <span class="o">(</span>default, Sep <span class="m">10</span> 2020, 16:47:10<span class="o">)</span>
-<span class="o">[</span>GCC 8.3.0<span class="o">]</span>
-Version info.
-sys.version_info<span class="o">(</span><span class="nv">major</span><span class="o">=</span>3, <span class="nv">minor</span><span class="o">=</span>8, <span class="nv">micro</span><span class="o">=</span>5, <span class="nv">releaselevel</span><span class="o">=</span><span class="s1">&#39;final&#39;</span>, <span class="nv">serial</span><span class="o">=</span>0<span class="o">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run --rm -v <span class="nv">$PWD</span>/main.py:/main.py python:3.8 python /main.py
+</span></span><span class="line"><span class="cl">Python version
+</span></span><span class="line"><span class="cl">3.8.5 <span class="o">(</span>default, Sep <span class="m">10</span> 2020, 16:47:10<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>GCC 8.3.0<span class="o">]</span>
+</span></span><span class="line"><span class="cl">Version info.
+</span></span><span class="line"><span class="cl">sys.version_info<span class="o">(</span><span class="nv">major</span><span class="o">=</span>3, <span class="nv">minor</span><span class="o">=</span>8, <span class="nv">micro</span><span class="o">=</span>5, <span class="nv">releaselevel</span><span class="o">=</span><span class="s1">&#39;final&#39;</span>, <span class="nv">serial</span><span class="o">=</span>0<span class="o">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="ubuntu">Ubuntu</h2>
 <p>Execute uma sessão interativa do Ubuntu localmente.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -810,17 +808,17 @@ sys.version_info<span class="o">(</span><span class="nv">major</span><span class
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run -it ubuntu bash
-root@f948917eca40:/# apt-get update &gt; /dev/null
-root@f948917eca40:/# apt-get install -y curl &gt; /dev/null
-debconf: delaying package configuration, since apt-utils is not installed
-root@f948917eca40:/# curl https://example.org
-&lt;!doctype html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;Example Domain&lt;/title&gt;
-...
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run -it ubuntu bash
+</span></span><span class="line"><span class="cl">root@f948917eca40:/# apt-get update &gt; /dev/null
+</span></span><span class="line"><span class="cl">root@f948917eca40:/# apt-get install -y curl &gt; /dev/null
+</span></span><span class="line"><span class="cl">debconf: delaying package configuration, since apt-utils is not installed
+</span></span><span class="line"><span class="cl">root@f948917eca40:/# curl https://example.org
+</span></span><span class="line"><span class="cl">&lt;!doctype html&gt;
+</span></span><span class="line"><span class="cl">&lt;html&gt;
+</span></span><span class="line"><span class="cl">&lt;head&gt;
+</span></span><span class="line"><span class="cl">    &lt;title&gt;Example Domain&lt;/title&gt;
+</span></span><span class="line"><span class="cl">...
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="conclusão">Conclusão</h1>
 <p>O docker é uma alternativa perfeita para ajudar no desenvolvimento de software, com ele você consegue rapidamente criar seu ambiente de desenvolvimento, testar seu código em diferentes versões, criar servidores de banco de dados, servidores WEB e muito mais, tudo de forma rápida, isolada e confiável.</p>
@@ -848,6 +846,19 @@ root@f948917eca40:/# curl https://example.org
      <a href="https://butecotecnologico.com.br/tags/linux/" class="tag-link">linux</a>
   </li>
   </ul>
+</div>
+
+
+    <div class="m-2">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-6625957038449899"
+       data-ad-slot="4012390257"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </div>
 
 
@@ -904,7 +915,7 @@ root@f948917eca40:/# curl https://example.org
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -1104,7 +1115,8 @@ root@f948917eca40:/# curl https://example.org
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -1122,24 +1134,24 @@ root@f948917eca40:/# curl https://example.org
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

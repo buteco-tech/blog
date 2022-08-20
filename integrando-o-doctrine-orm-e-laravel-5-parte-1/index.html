@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Integrando o Doctrine ORM e Laravel 5 [parte-1] &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Veja este que é a primeira parte de um série sobre a integração do Doctrine ORM, uma biblioteca para se trabalhar com banco de dados e mapeamento, com o Laravel 5 o framework mais popular atualmente para PHP" />
 
-
-
 <meta itemprop="name" content="Integrando o Doctrine ORM e Laravel 5 [parte-1]">
-<meta itemprop="description" content="Veja este que é a primeira parte de um série sobre a integração do Doctrine ORM, uma biblioteca para se trabalhar com banco de dados e mapeamento, com o Laravel 5 o framework mais popular atualmente para PHP"><meta itemprop="datePublished" content="2015-05-28T14:53:31&#43;00:00" />
-<meta itemprop="dateModified" content="2015-05-28T14:53:31&#43;00:00" />
+<meta itemprop="description" content="Veja este que é a primeira parte de um série sobre a integração do Doctrine ORM, uma biblioteca para se trabalhar com banco de dados e mapeamento, com o Laravel 5 o framework mais popular atualmente para PHP"><meta itemprop="datePublished" content="2015-05-28T14:53:31+00:00" />
+<meta itemprop="dateModified" content="2015-05-28T14:53:31+00:00" />
 <meta itemprop="wordCount" content="917"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/doctrine-e1432605186500.jpg">
 <meta itemprop="keywords" content="doctrine,orm,framework,laravel,php," />
 <meta property="og:title" content="Integrando o Doctrine ORM e Laravel 5 [parte-1]" />
 <meta property="og:description" content="Veja este que é a primeira parte de um série sobre a integração do Doctrine ORM, uma biblioteca para se trabalhar com banco de dados e mapeamento, com o Laravel 5 o framework mais popular atualmente para PHP" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/integrando-o-doctrine-orm-e-laravel-5-parte-1/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/doctrine-e1432605186500.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2015-05-28T14:53:31&#43;00:00" />
-<meta property="article:modified_time" content="2015-05-28T14:53:31&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2015-05-28T14:53:31+00:00" />
+<meta property="article:modified_time" content="2015-05-28T14:53:31+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -393,7 +391,7 @@
 <p>Após o termino da instalação, crie um arquivo chamado &ldquo;cli-config.php&rdquo; na pasta raiz do projeto. Esse arquivo basicamente fará a configuração e possibilitará o acesso via console das funcionalidades do Doctrine. Depois disso copie o código abaixo para o arquivo:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -401,20 +399,20 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
-<span class="k">require</span> <span class="s1">&#39;vendor\autoload.php&#39;</span><span class="p">;</span>
-<span class="k">require</span> <span class="no">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/bootstrap/app.php&#39;</span><span class="p">;</span>
-<span class="nv">$provider</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">App\Providers\DoctrineServiceProvider</span><span class="p">(</span><span class="nv">$app</span><span class="p">);</span>
-<span class="nv">$entityManager</span> <span class="o">=</span> <span class="nv">$provider</span><span class="o">-&gt;</span><span class="na">getEntityManager</span><span class="p">();</span>
-<span class="k">return</span> <span class="nx">\Doctrine\ORM\Tools\Console\ConsoleRunner</span><span class="o">::</span><span class="na">createHelperSet</span><span class="p">(</span><span class="nv">$entityManager</span><span class="p">);</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl"><span class="k">require</span> <span class="s1">&#39;vendor\autoload.php&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">require</span> <span class="no">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/bootstrap/app.php&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$provider</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">App\Providers\DoctrineServiceProvider</span><span class="p">(</span><span class="nv">$app</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$entityManager</span> <span class="o">=</span> <span class="nv">$provider</span><span class="o">-&gt;</span><span class="na">getEntityManager</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="nx">\Doctrine\ORM\Tools\Console\ConsoleRunner</span><span class="o">::</span><span class="na">createHelperSet</span><span class="p">(</span><span class="nv">$entityManager</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Agora precisaremos criar um <strong>ServiceProvider</strong>, ou uma classe que dará acesso ao EntityManager do Doctrine, para isso execute o comando abaixo na raiz do projeto.</p>
 <p><code>php artisan make:provider DoctrineServiceProvider</code></p>
 <p>Isto criará um novo arquivo em &ldquo;app/Providers&rdquo;, agora copie o código abaixo para o arquivo.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -463,54 +461,54 @@
 </span><span class="lnt">47
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span> <span class="k">namespace</span> <span class="nx">App\Providers</span><span class="p">;</span>
-
-<span class="k">use</span> <span class="nx">Illuminate\Support\ServiceProvider</span><span class="p">;</span>
-<span class="k">use</span> <span class="nx">Doctrine\ORM\Tools\Setup</span><span class="p">;</span>
-<span class="k">use</span> <span class="nx">Doctrine\ORM\EntityManager</span><span class="p">;</span>
-
-<span class="k">class</span> <span class="nc">DoctrineServiceProvider</span> <span class="k">extends</span> <span class="nx">ServiceProvider</span> <span class="p">{</span>
-  <span class="k">private</span> <span class="nv">$entityManager</span><span class="p">;</span>
-
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">getEntityManager</span><span class="p">()</span>
-  <span class="p">{</span>
-                <span class="c1">//Caminho para a pasta de models/entities, está pasta não existe na instalação do Laravel e pode ser criada em &#34;app/Http/Models&#34;
-</span><span class="c1"></span>    <span class="nv">$path</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="no">__DIR__</span><span class="o">.</span><span class="s2">&#34;/../Models&#34;</span><span class="p">);</span>
-                <span class="c1">//Verifica se a aplicação está com d
-</span><span class="c1"></span>    <span class="nv">$debug</span> <span class="o">=</span> <span class="nx">isset</span><span class="p">(</span><span class="nv">$_ENV</span><span class="p">[</span><span class="s1">&#39;APP_DEBUG&#39;</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$_ENV</span><span class="p">[</span><span class="s1">&#39;APP_DEBUG&#39;</span><span class="p">]</span> <span class="o">:</span> <span class="k">true</span><span class="p">;</span>
-    <span class="c1">//Array com as configurações de banco de dados
-</span><span class="c1"></span>    <span class="nv">$database_array</span> <span class="o">=</span> <span class="k">require</span> <span class="no">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/../../config/database.php&#39;</span><span class="p">;</span>
-    <span class="c1">//Array com a configuração de conexão com o banco de dados
-</span><span class="c1"></span>    <span class="nv">$database_connection</span> <span class="o">=</span> <span class="nv">$database_array</span><span class="p">[</span><span class="s1">&#39;connections&#39;</span><span class="p">][</span><span class="nv">$database_array</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]];</span>
-    <span class="c1">//Método do Doctrine usado para configurar
-</span><span class="c1"></span>    <span class="nv">$config</span> <span class="o">=</span> <span class="nx">Setup</span><span class="o">::</span><span class="na">createAnnotationMetadataConfiguration</span><span class="p">(</span><span class="nv">$path</span><span class="p">,</span> <span class="nv">$debug</span><span class="p">);</span>
-    <span class="c1">//Retorna uma instância do EntityManager
-</span><span class="c1"></span>    <span class="k">return</span> <span class="nx">EntityManager</span><span class="o">::</span><span class="na">create</span><span class="p">(</span><span class="nv">$database_connection</span><span class="p">,</span> <span class="nv">$config</span><span class="p">);</span>
-  <span class="p">}</span>
-
-  <span class="sd">/**
-</span><span class="sd">   * Bootstrap the application services.
-</span><span class="sd">   *
-</span><span class="sd">   * @return void
-</span><span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">boot</span><span class="p">()</span>
-  <span class="p">{</span>
-    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">entityManager</span> <span class="o">=</span> <span class="nx">self</span><span class="o">::</span><span class="na">getEntityManager</span><span class="p">();</span>
-  <span class="p">}</span>
-
-  <span class="sd">/**
-</span><span class="sd">   * Register the application services.
-</span><span class="sd">   *
-</span><span class="sd">   * @return void
-</span><span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">register</span><span class="p">()</span>
-  <span class="p">{</span>
-    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">app</span><span class="o">-&gt;</span><span class="na">singleton</span><span class="p">(</span><span class="s1">&#39;Doctrine\ORM\EntityManagerInterface&#39;</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nv">$app</span><span class="p">){</span>
-      <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">entityManager</span><span class="p">;</span>
-    <span class="p">});</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span> <span class="k">namespace</span> <span class="nx">App\Providers</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">Illuminate\Support\ServiceProvider</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">Doctrine\ORM\Tools\Setup</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">Doctrine\ORM\EntityManager</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">DoctrineServiceProvider</span> <span class="k">extends</span> <span class="nx">ServiceProvider</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">private</span> <span class="nv">$entityManager</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">getEntityManager</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//Caminho para a pasta de models/entities, está pasta não existe na instalação do Laravel e pode ser criada em &#34;app/Http/Models&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$path</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="no">__DIR__</span><span class="o">.</span><span class="s2">&#34;/../Models&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//Verifica se a aplicação está com d
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$debug</span> <span class="o">=</span> <span class="nx">isset</span><span class="p">(</span><span class="nv">$_ENV</span><span class="p">[</span><span class="s1">&#39;APP_DEBUG&#39;</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$_ENV</span><span class="p">[</span><span class="s1">&#39;APP_DEBUG&#39;</span><span class="p">]</span> <span class="o">:</span> <span class="k">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//Array com as configurações de banco de dados
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$database_array</span> <span class="o">=</span> <span class="k">require</span> <span class="no">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/../../config/database.php&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//Array com a configuração de conexão com o banco de dados
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$database_connection</span> <span class="o">=</span> <span class="nv">$database_array</span><span class="p">[</span><span class="s1">&#39;connections&#39;</span><span class="p">][</span><span class="nv">$database_array</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]];</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//Método do Doctrine usado para configurar
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$config</span> <span class="o">=</span> <span class="nx">Setup</span><span class="o">::</span><span class="na">createAnnotationMetadataConfiguration</span><span class="p">(</span><span class="nv">$path</span><span class="p">,</span> <span class="nv">$debug</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//Retorna uma instância do EntityManager
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="nx">EntityManager</span><span class="o">::</span><span class="na">create</span><span class="p">(</span><span class="nv">$database_connection</span><span class="p">,</span> <span class="nv">$config</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * Bootstrap the application services.
+</span></span></span><span class="line"><span class="cl"><span class="sd">   *
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @return void
+</span></span></span><span class="line"><span class="cl"><span class="sd">   */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">boot</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">entityManager</span> <span class="o">=</span> <span class="nx">self</span><span class="o">::</span><span class="na">getEntityManager</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * Register the application services.
+</span></span></span><span class="line"><span class="cl"><span class="sd">   *
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @return void
+</span></span></span><span class="line"><span class="cl"><span class="sd">   */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">register</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">app</span><span class="o">-&gt;</span><span class="na">singleton</span><span class="p">(</span><span class="s1">&#39;Doctrine\ORM\EntityManagerInterface&#39;</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nv">$app</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">entityManager</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Obs.: O código está comentado e caso necessitem tirar alguma dúvida, por favor escrevam nos comentários estarei atendendo o quanto antes for possível.</p>
 <p>Agora para testarmos vamos alterar o arquivo de configuração de conexão com banco de dados do Laravel em &ldquo;configdatabase.php&rdquo;. Basicamente precisamos alterar duas coisas: mudar o valor da posição &ldquo;default&rdquo; para &ldquo;sqlite&rdquo; e alterar o driver da posição &ldquo;sqlite&rdquo; na lista de conexões de &ldquo;sqlite&rdquo; para utilizar o &ldquo;pdo_sqlite&rdquo;, que é o driver do Doctrine para se trabalhar com o SQLite.</p>
@@ -606,7 +604,7 @@
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -806,7 +804,8 @@
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -824,24 +823,24 @@
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

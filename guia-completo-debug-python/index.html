@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Guia completo de Debug em Python &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Existem diversas técnicas e ferramentas no mundo Python para ajudar na tarefa de debug, confira algumas delas para facilitar sua vida." />
 
-
-
 <meta itemprop="name" content="Guia completo de Debug em Python">
-<meta itemprop="description" content="Existem diversas técnicas e ferramentas no mundo Python para ajudar na tarefa de debug, confira algumas delas para facilitar sua vida."><meta itemprop="datePublished" content="2020-07-08T08:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-07-08T08:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="2146"><meta itemprop="image" content="https://butecotecnologico.com.br/guia-completo-debug-python/python-logo.png">
+<meta itemprop="description" content="Existem diversas técnicas e ferramentas no mundo Python para ajudar na tarefa de debug, confira algumas delas para facilitar sua vida."><meta itemprop="datePublished" content="2020-07-08T08:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-07-08T08:00:00+00:00" />
+<meta itemprop="wordCount" content="2144"><meta itemprop="image" content="https://butecotecnologico.com.br/guia-completo-debug-python/python-logo.png">
 <meta itemprop="keywords" content="python,debug,pdb," />
 <meta property="og:title" content="Guia completo de Debug em Python" />
 <meta property="og:description" content="Existem diversas técnicas e ferramentas no mundo Python para ajudar na tarefa de debug, confira algumas delas para facilitar sua vida." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/guia-completo-debug-python/" /><meta property="og:image" content="https://butecotecnologico.com.br/guia-completo-debug-python/python-logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-07-08T08:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2020-07-08T08:00:00&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2020-07-08T08:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-08T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -355,7 +353,7 @@
   <article class="mt-3 mb-4">
   <figure >
   <img loading="lazy"
-      src="https://butecotecnologico.com.br/guia-completo-debug-python/python-logo_hu52b0fdb23acc732d70edc16cf7777b41_162578_300x0_resize_q90_bgffffff_linear_2.jpg"
+      src="https://butecotecnologico.com.br/guia-completo-debug-python/python-logo_hu52b0fdb23acc732d70edc16cf7777b41_162578_300x0_resize_q90_bgffffff_linear_3.jpg"
       alt="Python"/>
 </figure>
 
@@ -365,25 +363,23 @@
 <p>Para usá-lo você pode executar o comando abaixo:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
-</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python -m pdb script.py </span>
-&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
--&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
-<span class="o">(</span>Pdb<span class="o">)</span> _
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># python -m pdb script.py </span>
+</span></span><span class="line"><span class="cl">&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
+</span></span><span class="line"><span class="cl">-&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
+</span></span><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> _
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Ao executar o comando acima em qualquer arquivo o pdb irá carregá-lo e pausar a execução na primeira linha, nesse exemplo o arquivo está no diretório <code>/app</code> e a primeira linha do arquivo, como podemos ver, tem a declaração de uma função de soma chamada <code>add(x,y)</code>.</p>
 <p>Perceba que também existe um prompt de comando na linha <code>(Pdb) _</code>, sendo <code>_</code> o local onde seu cursor está, o pdb permite o uso de diversos comandos, cada um com alguma funcionalidade que te ajuda na hora do debug, vamos listar todos os comandos disponíveis digitando o comando <code>help</code> e apertando a tecla <code>Enter</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -405,33 +401,33 @@
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python -m pdb script.py </span>
-&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
--&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
-<span class="o">(</span>Pdb<span class="o">)</span> <span class="nb">help</span>
-
-Documented commands <span class="o">(</span><span class="nb">type</span> <span class="nb">help</span> &lt;topic&gt;<span class="o">)</span>:
-<span class="o">========================================</span>
-EOF    c          d        h         list      q        rv       undisplay
-a      cl         debug    <span class="nb">help</span>      ll        quit     s        unt      
-<span class="nb">alias</span>  clear      disable  ignore    longlist  r        <span class="nb">source</span>   <span class="k">until</span>    
-args   commands   display  interact  n         restart  step     up       
-b      condition  down     j         next      <span class="k">return</span>   tbreak   w        
-<span class="nb">break</span>  cont       <span class="nb">enable</span>   jump      p         retval   u        whatis   
-bt     <span class="k">continue</span>   <span class="nb">exit</span>     l         pp        run      <span class="nb">unalias</span>  where    
-
-Miscellaneous <span class="nb">help</span> topics:
-<span class="o">==========================</span>
-<span class="nb">exec</span>  pdb
-
-<span class="o">(</span>Pdb<span class="o">)</span> _
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># python -m pdb script.py </span>
+</span></span><span class="line"><span class="cl">&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
+</span></span><span class="line"><span class="cl">-&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
+</span></span><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> <span class="nb">help</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Documented commands <span class="o">(</span><span class="nb">type</span> <span class="nb">help</span> &lt;topic&gt;<span class="o">)</span>:
+</span></span><span class="line"><span class="cl"><span class="o">========================================</span>
+</span></span><span class="line"><span class="cl">EOF    c          d        h         list      q        rv       undisplay
+</span></span><span class="line"><span class="cl">a      cl         debug    <span class="nb">help</span>      ll        quit     s        unt      
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span>  clear      disable  ignore    longlist  r        <span class="nb">source</span>   <span class="k">until</span>    
+</span></span><span class="line"><span class="cl">args   commands   display  interact  n         restart  step     up       
+</span></span><span class="line"><span class="cl">b      condition  down     j         next      <span class="k">return</span>   tbreak   w        
+</span></span><span class="line"><span class="cl"><span class="nb">break</span>  cont       <span class="nb">enable</span>   jump      p         retval   u        whatis   
+</span></span><span class="line"><span class="cl">bt     <span class="k">continue</span>   <span class="nb">exit</span>     l         pp        run      <span class="nb">unalias</span>  where    
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Miscellaneous <span class="nb">help</span> topics:
+</span></span><span class="line"><span class="cl"><span class="o">==========================</span>
+</span></span><span class="line"><span class="cl"><span class="nb">exec</span>  pdb
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> _
+</span></span></code></pre></td></tr></table>
 </div>
-</div><p>O pdb executa o comando e imediatamente retorna ao prompt para podermos executar novos comandos, além disso, o comando <code>help</code> imprimiu toda a lista de comandos disponíveis no pdb. Veremos alguns a seguir mas caso você queira saber mais, você pode acessar a página de documentação do pdb pelo link <a href="https://docs.python.org/3/library/pdb.html">https://docs.python.org/3/library/pdb.html</a>.</p>
+</div><p>O pdb executa o comando e imediatamente retorna ao prompt para podermos executar novos comandos, além disso, o comando <code>help</code> imprimiu toda a lista de comandos disponíveis no pdb. Veremos alguns a seguir mas caso você queira saber mais, você pode acessar a página de documentação do pdb pelo link <a href="https://docs.python.org/3/library/pdb.html"  target="_blank" rel="noopener">https://docs.python.org/3/library/pdb.html</a>.</p>
 <p>Continuando nosso exemplo, vamos imprimir a linha atual em que estamos, para isso use o comando <code>list</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -441,110 +437,110 @@ Miscellaneous <span class="nb">help</span> topics:
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> list
-  <span class="m">1</span>  -&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
-  <span class="m">2</span>         <span class="k">return</span> x + y
-  <span class="m">3</span>     
-  <span class="m">4</span>     
-  <span class="m">5</span>     <span class="k">if</span> <span class="nv">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span>:
-  <span class="m">6</span>         print<span class="o">(</span>add<span class="o">(</span>2, 3<span class="o">))</span>
-<span class="o">[</span>EOF<span class="o">]</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> list
+</span></span><span class="line"><span class="cl">  <span class="m">1</span>  -&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
+</span></span><span class="line"><span class="cl">  <span class="m">2</span>         <span class="k">return</span> x + y
+</span></span><span class="line"><span class="cl">  <span class="m">3</span>     
+</span></span><span class="line"><span class="cl">  <span class="m">4</span>     
+</span></span><span class="line"><span class="cl">  <span class="m">5</span>     <span class="k">if</span> <span class="nv">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span>:
+</span></span><span class="line"><span class="cl">  <span class="m">6</span>         print<span class="o">(</span>add<span class="o">(</span>2, 3<span class="o">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>EOF<span class="o">]</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Podemos ver em nosso exemplo que foi listado a função <code>add</code> que mencionei anteriormente, assim como o resto do arquivo. Agora que sabemos onde estamos, podemos realizar uma execução passo-a-passo, para isso utilize o comando <code>next</code> ou sua abreviação <code>n</code> e aperte <code>Enter</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> next
-&gt; /app/script.py<span class="o">(</span>5<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
--&gt; <span class="k">if</span> <span class="nv">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span>:
-<span class="o">(</span>Pdb<span class="o">)</span> _
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> next
+</span></span><span class="line"><span class="cl">&gt; /app/script.py<span class="o">(</span>5<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
+</span></span><span class="line"><span class="cl">-&gt; <span class="k">if</span> <span class="nv">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span>:
+</span></span><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> _
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Neste exemplo o PDB parou na próxima linha a ser executada, nesta linha temos um <code>if</code> verificando a variável <code>__name__</code>, vamos continuar a execução com o comando <code>next</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> next
-&gt; /app/script.py<span class="o">(</span>6<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
--&gt; print<span class="o">(</span>add<span class="o">(</span>2, 3<span class="o">))</span>
-<span class="o">(</span>Pdb<span class="o">)</span> _
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> next
+</span></span><span class="line"><span class="cl">&gt; /app/script.py<span class="o">(</span>6<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
+</span></span><span class="line"><span class="cl">-&gt; print<span class="o">(</span>add<span class="o">(</span>2, 3<span class="o">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> _
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Dessa vez o cursor parou na linha de chamada da função <code>add</code>, estando nessa linha podemos &ldquo;entrar&rdquo; na função usando o comando <code>step</code> ou sua abreviação <code>s</code>, este comando irá colocar o cursor na primeira linha da função <code>add</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> step
---Call--
-&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>add<span class="o">()</span>
--&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
-<span class="o">(</span>Pdb<span class="o">)</span> _ 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> step
+</span></span><span class="line"><span class="cl">--Call--
+</span></span><span class="line"><span class="cl">&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>add<span class="o">()</span>
+</span></span><span class="line"><span class="cl">-&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
+</span></span><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> _ 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Agora que estamos dentro da função <code>add</code>, podemos analisar quais foram os argumentos passados, para isso usamos o comando <code>args</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> args
-<span class="nv">x</span> <span class="o">=</span> <span class="m">2</span>
-<span class="nv">y</span> <span class="o">=</span> <span class="m">3</span>
-<span class="o">(</span>Pdb<span class="o">)</span> _
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> args
+</span></span><span class="line"><span class="cl"><span class="nv">x</span> <span class="o">=</span> <span class="m">2</span>
+</span></span><span class="line"><span class="cl"><span class="nv">y</span> <span class="o">=</span> <span class="m">3</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> _
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Como esperado, podemos ver que foram passado os valores que vimos anteriormente. Para saber o valor de uma variável podemos usar o comando <code>p</code> ou <code>pp</code> para imprimir o valor formatado.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> p x
-<span class="m">2</span>
-<span class="o">(</span>Pdb<span class="o">)</span> _
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> p x
+</span></span><span class="line"><span class="cl"><span class="m">2</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> _
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Enquanto estamos fazendo o debug, podemos alterar os valores das variáveis da mesma forma que escrevemos código Python.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> <span class="nv">x</span> <span class="o">=</span> <span class="m">5</span>
-<span class="o">(</span>Pdb<span class="o">)</span> p x
-<span class="m">5</span>
-<span class="o">(</span>Pdb<span class="o">)</span> _ 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> <span class="nv">x</span> <span class="o">=</span> <span class="m">5</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> p x
+</span></span><span class="line"><span class="cl"><span class="m">5</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> _ 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>É claro que qualquer alteração feita irá refletir na sessão atual, por fim continuaremos a execução até o término do programa com o comando <code>continue</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -552,19 +548,19 @@ Miscellaneous <span class="nb">help</span> topics:
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>Pdb<span class="o">)</span> <span class="k">continue</span>
-<span class="m">8</span>
-The program finished and will be restarted
-&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
--&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
-<span class="o">(</span>Pdb<span class="o">)</span> _
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> <span class="k">continue</span>
+</span></span><span class="line"><span class="cl"><span class="m">8</span>
+</span></span><span class="line"><span class="cl">The program finished and will be restarted
+</span></span><span class="line"><span class="cl">&gt; /app/script.py<span class="o">(</span>1<span class="o">)</span>&lt;module&gt;<span class="o">()</span>
+</span></span><span class="line"><span class="cl">-&gt; def add<span class="o">(</span>x, y<span class="o">)</span>:
+</span></span><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> _
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Por ter alterado o valor da variável <code>x</code> o código imprimiu o valor 8 ao em vez do valor esperado 5.</p>
 <p>Porém, vão existir momentos que você não sabe exatamente a ordem em que tudo irá executar, ou até mesmo essa ordem não importa e você quer ir direto para o ponto do código de interesse, nesses casos você pode importar o módulo do pdb e chamar a função <code>set_trace()</code> que irá parar a execução naquele ponto e disponibilizar o prompt do pdb para você, veja o exemplo.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -573,29 +569,29 @@ The program finished and will be restarted
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-    <span class="kn">import</span> <span class="nn">pdb</span><span class="p">;</span> <span class="n">pdb</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">import</span> <span class="nn">pdb</span><span class="p">;</span> <span class="n">pdb</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Executando o arquivo.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python script.py</span>
-&gt; /app/script.py<span class="o">(</span>3<span class="o">)</span>add<span class="o">()</span>
--&gt; <span class="k">return</span> x + y
-<span class="o">(</span>Pdb<span class="o">)</span> _
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># python script.py</span>
+</span></span><span class="line"><span class="cl">&gt; /app/script.py<span class="o">(</span>3<span class="o">)</span>add<span class="o">()</span>
+</span></span><span class="line"><span class="cl">-&gt; <span class="k">return</span> x + y
+</span></span><span class="line"><span class="cl"><span class="o">(</span>Pdb<span class="o">)</span> _
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Nesse ponto você tem todos os comandos do PDB disponível para debugar o código. Se quiser sair você tambêm pode usar o comando <code>quit</code> ou sua abreviação <code>q</code>.</p>
 <p>Veja estes e outros comandos disponíveis no modulo PDB na <a href="https://docs.python.org/3/library/pdb.html"  target="_blank" rel="noopener">documentação oficial</a>.</p>
@@ -604,7 +600,7 @@ The program finished and will be restarted
 <p>Para exemplificar vamos usar o seguinte código e salvar em um arquivo <code>script.py</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -614,21 +610,21 @@ The program finished and will be restarted
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">return</span> <span class="mi">1</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Agora vamos verificar a sequência de chamadas com o módulo trace e a opção <code>--trace</code>.</p>
-<pre><code># python -m trace --trace script.py 
+<pre tabindex="0"><code># python -m trace --trace script.py 
  --- modulename: script, funcname: &lt;module&gt;
 script.py(1): def factorial(x):
-script.py(7): if __name__ == &quot;__main__&quot;:
+script.py(7): if __name__ == &#34;__main__&#34;:
 script.py(8):     print(factorial(5))
  --- modulename: script, funcname: factorial
 script.py(2):     if x &lt;= 1:
@@ -650,22 +646,22 @@ script.py(3):         return 1
 <p>Outra forma de obter um resultado mais simplificado é usar a opção <code>--count</code>, vejamos o que acontece se executarmos em nosso script.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python -m trace --count script.py</span>
-<span class="m">120</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># python -m trace --count script.py</span>
+</span></span><span class="line"><span class="cl"><span class="m">120</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Aparentemente nada de mais, porém se olharmos no diretório podemos ver que foi criado um arquivo <code>script.cover</code>, este arquivo possuí (neste caso) o seguinte conteúdo.</p>
-<pre><code>    1: def factorial(x):
+<pre tabindex="0"><code>    1: def factorial(x):
     5:     if x &lt;= 1:
     1:         return 1
     4:     return x * factorial(x - 1)
        
        
-    1: if __name__ == &quot;__main__&quot;:
+    1: if __name__ == &#34;__main__&#34;:
     1:     print(factorial(5))
 </code></pre><p>O conteúdo do arquivo mostra algo parecido com o que vimos antes, porém de uma forma mais simplificada, mostrando quantidade de execuções que houveram linha a linha. Perceba por exemplo que a linha <code>if x &lt;= 1:</code> foi executada 5 vezes, a linha <code>return 1</code> foi executada somente uma, o que é esperado pois é o ponto de parada da função e por fim a linha <code>return x * factorial(x - 1)</code> foi executada 4 vezes.</p>
 <p>Veja mais detalhes sobre o módulo <code>trace</code> na <a href="https://docs.python.org/3/library/trace.html#command-line-usage"  target="_blank" rel="noopener">documentação oficial</a>.</p>
@@ -674,7 +670,7 @@ script.py(3):         return 1
 <p>O timeit permite você mensurar quanto tempo a execução de uma função demorou, para entender melhor vamos usar o seguinte código de exemplo:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -693,43 +689,43 @@ script.py(3):         return 1
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">timeit</span>
-<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
-
-
-<span class="k">def</span> <span class="nf">func1</span><span class="p">():</span>
-    <span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;func1 done&#34;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">func2</span><span class="p">():</span>
-    <span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;func2 done&#34;</span><span class="p">)</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Time of func1: {}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="n">func1</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="mi">1</span><span class="p">)))</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Time of func2: {}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="n">func2</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="mi">1</span><span class="p">)))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">timeit</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">func1</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;func1 done&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">func2</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;func2 done&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Time of func1: </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="n">func1</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="mi">1</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Time of func2: </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="n">func2</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="mi">1</span><span class="p">)))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Perceba que neste código existem 2 funções, <code>func1</code> e <code>func2</code>, apesar de serem apenas exemplos você pode considerar que essas funções representam qualquer função do seu código que realizam tarefas diferentes.</p>
 <p>Nas últimas 2 linhas estamos usando a função <code>timeit</code> da biblioteca <code>timeit</code>, essa função recebe como parâmetro a função a ser executada, e neste exemplo estamos declarando o número de vezes que a função será executada, nesse caso 1, para determinar o tempo médio de execução. É importante você ter em mente pois muitas vezes haverá situações em que o código executará de forma mais rápida ou lenta, isso acontece por uma série de fatores, alguns deles não temos total controle, como a forma como que o sistema operacional agenda os processos, entre outros detalhes. Também é importante considerar o tempo médio das execuções ou até mesmo uma porcentagem como 99% ou 95% para excluir as exceções que tiveram uma demora anormal em relação ao restante das execuções.</p>
 <p>Executando o código acima temos o seguinte resultado.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python script.py </span>
-func1 <span class="k">done</span>
-Time of func1: 5.008903064999686
-func2 <span class="k">done</span>
-Time of func2: 3.008447170999716
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># python script.py </span>
+</span></span><span class="line"><span class="cl">func1 <span class="k">done</span>
+</span></span><span class="line"><span class="cl">Time of func1: 5.008903064999686
+</span></span><span class="line"><span class="cl">func2 <span class="k">done</span>
+</span></span><span class="line"><span class="cl">Time of func2: 3.008447170999716
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>A função <code>timeit</code> como podemos ver, está retornando o tempo em segundos, apesar de ser um exemplo bastante óbvio, no dia a dia esse tempo é imprevisível e muitas vezes é difícil identificar qual parte do projeto ou do código esta interferindo mais no desempenho. Com o <code>timeit</code> você pode analisar o tempo e realizar testes locais para verificar se sua alteração tem melhor ou pior desempenho em relação à versão anterior do código.</p>
 <p>Veja mais sobre o timeit na <a href="https://docs.python.org/3/library/timeit.html"  target="_blank" rel="noopener">documentação oficial</a>.</p>
@@ -738,7 +734,7 @@ Time of func2: 3.008447170999716
 <p>Como de costume vamos usar o seguinte código como base.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -767,45 +763,43 @@ Time of func2: 3.008447170999716
 </span><span class="lnt">27
 </span><span class="lnt">28
 </span><span class="lnt">29
-</span><span class="lnt">30
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">tracemalloc</span>
-
-
-<span class="k">class</span> <span class="nc">Foo</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">foo</span> <span class="o">=</span> <span class="s2">&#34;foo&#34;</span>
-
-
-<span class="k">def</span> <span class="nf">func1</span><span class="p">():</span>
-    <span class="n">foo</span> <span class="o">=</span> <span class="n">Foo</span><span class="p">()</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;func1 done&#34;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">func2</span><span class="p">():</span>
-    <span class="n">foo</span> <span class="o">=</span> <span class="s2">&#34;foo&#34;</span>
-    <span class="n">bar</span> <span class="o">=</span> <span class="s2">&#34;bar&#34;</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;func2 done&#34;</span><span class="p">)</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-    <span class="n">tracemalloc</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
-    <span class="n">before</span> <span class="o">=</span> <span class="n">tracemalloc</span><span class="o">.</span><span class="n">take_snapshot</span><span class="p">()</span>
-    <span class="n">func1</span><span class="p">()</span>
-    <span class="n">func2</span><span class="p">()</span>
-    <span class="n">after</span> <span class="o">=</span> <span class="n">tracemalloc</span><span class="o">.</span><span class="n">take_snapshot</span><span class="p">()</span>
-    <span class="n">top_stats</span> <span class="o">=</span> <span class="n">after</span><span class="o">.</span><span class="n">compare_to</span><span class="p">(</span><span class="n">before</span><span class="p">,</span> <span class="s1">&#39;lineno&#39;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;(Malloc)&#34;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">stat</span> <span class="ow">in</span> <span class="n">top_stats</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">stat</span><span class="p">)</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tracemalloc</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Foo</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">foo</span> <span class="o">=</span> <span class="s2">&#34;foo&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">func1</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">foo</span> <span class="o">=</span> <span class="n">Foo</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;func1 done&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">func2</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">foo</span> <span class="o">=</span> <span class="s2">&#34;foo&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bar</span> <span class="o">=</span> <span class="s2">&#34;bar&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;func2 done&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tracemalloc</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">before</span> <span class="o">=</span> <span class="n">tracemalloc</span><span class="o">.</span><span class="n">take_snapshot</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">func1</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">func2</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">after</span> <span class="o">=</span> <span class="n">tracemalloc</span><span class="o">.</span><span class="n">take_snapshot</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">top_stats</span> <span class="o">=</span> <span class="n">after</span><span class="o">.</span><span class="n">compare_to</span><span class="p">(</span><span class="n">before</span><span class="p">,</span> <span class="s1">&#39;lineno&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;(Malloc)&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">stat</span> <span class="ow">in</span> <span class="n">top_stats</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">stat</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>O código acima declara duas funções, <code>func1</code> está declarando uma nova instância da classe <code>Foo</code>, enquanto <code>func2</code> esta declarando uma variável do tipo string <code>bar</code>. Nas últimas linhas estamos utilizando o módulo <code>tracemalloc</code> para rastrear justamente o quanto de memória cada função esta alocando, além de estarmos criando snapshots usando a função <code>take_snapshot</code>, essa função irá criar algo como uma &ldquo;fotografia&rdquo; da memória no momento que o método for chamado, nesse caso estamos criando um snapshot no início e no fim, se executarmos o código podemos ver o seguinte.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -816,16 +810,16 @@ Time of func2: 3.008447170999716
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># python script.py </span>
-func1 <span class="k">done</span>
-func2 <span class="k">done</span>
-<span class="o">(</span>Malloc<span class="o">)</span>
-script.py:24: <span class="nv">size</span><span class="o">=</span><span class="m">416</span> B <span class="o">(</span>+416 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">416</span> B
-script.py:10: <span class="nv">size</span><span class="o">=</span><span class="m">408</span> B <span class="o">(</span>+408 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">408</span> B
-/usr/local/lib/python3.8/tracemalloc.py:397: <span class="nv">size</span><span class="o">=</span><span class="m">88</span> B <span class="o">(</span>+88 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">2</span> <span class="o">(</span>+2<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">44</span> B
-/usr/local/lib/python3.8/tracemalloc.py:534: <span class="nv">size</span><span class="o">=</span><span class="m">48</span> B <span class="o">(</span>+48 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">48</span> B
-/usr/local/lib/python3.8/tracemalloc.py:291: <span class="nv">size</span><span class="o">=</span><span class="m">40</span> B <span class="o">(</span>+40 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">40</span> B
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># python script.py </span>
+</span></span><span class="line"><span class="cl">func1 <span class="k">done</span>
+</span></span><span class="line"><span class="cl">func2 <span class="k">done</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>Malloc<span class="o">)</span>
+</span></span><span class="line"><span class="cl">script.py:24: <span class="nv">size</span><span class="o">=</span><span class="m">416</span> B <span class="o">(</span>+416 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">416</span> B
+</span></span><span class="line"><span class="cl">script.py:10: <span class="nv">size</span><span class="o">=</span><span class="m">408</span> B <span class="o">(</span>+408 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">408</span> B
+</span></span><span class="line"><span class="cl">/usr/local/lib/python3.8/tracemalloc.py:397: <span class="nv">size</span><span class="o">=</span><span class="m">88</span> B <span class="o">(</span>+88 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">2</span> <span class="o">(</span>+2<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">44</span> B
+</span></span><span class="line"><span class="cl">/usr/local/lib/python3.8/tracemalloc.py:534: <span class="nv">size</span><span class="o">=</span><span class="m">48</span> B <span class="o">(</span>+48 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">48</span> B
+</span></span><span class="line"><span class="cl">/usr/local/lib/python3.8/tracemalloc.py:291: <span class="nv">size</span><span class="o">=</span><span class="m">40</span> B <span class="o">(</span>+40 B<span class="o">)</span>, <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="o">(</span>+1<span class="o">)</span>, <span class="nv">average</span><span class="o">=</span><span class="m">40</span> B
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>O resultado irá mostrar as linhas que mais alocaram memória, como este exemplo é simples, não irá ter muita alocação de memória, porém vale algumas observações. Primeiro as 3 últimas linhas são do proprio tracemalloc. Segundo podemos ver que as linhas 24 e 10 são as que alocaram mais memória, se olharmos o código da linha 24 é chamada a função <code>func2</code> que até aquele momento havia alocado 416 bytes, e a linha 10 é a linha onde estamos declarando nossa instância da classe <code>Foo</code> e até aquele momento foi alocado 408 bytes, é importante entender que a função <code>func2</code> não alocou os 416 bytes, pela <code>func2</code> ser chamada após a <code>func1</code> a quantidade de 408 bytes já havia sido alocado e a <code>func2</code> alocou apenas mais 8 bytes. Com isso conseguimos fazer o rastreio do uso de memória.</p>
 <h3 id="conclusão">Conclusão</h3>
@@ -850,6 +844,19 @@ script.py:10: <span class="nv">size</span><span class="o">=</span><span class="m
      <a href="https://butecotecnologico.com.br/tags/pdb/" class="tag-link">pdb</a>
   </li>
   </ul>
+</div>
+
+
+    <div class="m-2">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-6625957038449899"
+       data-ad-slot="4012390257"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </div>
 
 
@@ -906,7 +913,7 @@ script.py:10: <span class="nv">size</span><span class="o">=</span><span class="m
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -1106,7 +1113,8 @@ script.py:10: <span class="nv">size</span><span class="o">=</span><span class="m
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -1124,24 +1132,24 @@ script.py:10: <span class="nv">size</span><span class="o">=</span><span class="m
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

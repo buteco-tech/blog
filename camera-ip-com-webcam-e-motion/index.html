@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Câmera IP com Webcam e Motion &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -61,13 +61,11 @@
 Escrito em C e disponível para várias distribuições Linux, fazendo uso da interface video4linux, permite a captura de jpeg, ppm e mpeg com um baixo consumo de memória.
 As câmeras IPs ganharam grande destaque pela sua facilidade de uso, e preço relativamente acessível. Hoje é simples monitorar a sua casa e enviar imagens para o seu smartphone quando algum movimento for detectado." />
 
-
-
 <meta itemprop="name" content="Câmera IP com Webcam e Motion">
 <meta itemprop="description" content="O Motion é um programa que monitora o sinal de câmeras e permite fazer detecção de movimento. É uma ferramenta de grande utilidade para quem deseja fazer streamming de vídeo, mais precisamente criar uma câmera IP.
 Escrito em C e disponível para várias distribuições Linux, fazendo uso da interface video4linux, permite a captura de jpeg, ppm e mpeg com um baixo consumo de memória.
-As câmeras IPs ganharam grande destaque pela sua facilidade de uso, e preço relativamente acessível. Hoje é simples monitorar a sua casa e enviar imagens para o seu smartphone quando algum movimento for detectado."><meta itemprop="datePublished" content="2016-01-28T12:29:01&#43;00:00" />
-<meta itemprop="dateModified" content="2016-01-28T12:29:01&#43;00:00" />
+As câmeras IPs ganharam grande destaque pela sua facilidade de uso, e preço relativamente acessível. Hoje é simples monitorar a sua casa e enviar imagens para o seu smartphone quando algum movimento for detectado."><meta itemprop="datePublished" content="2016-01-28T12:29:01+00:00" />
+<meta itemprop="dateModified" content="2016-01-28T12:29:01+00:00" />
 <meta itemprop="wordCount" content="446"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/You-are-being-watched-620-by-338.jpg">
 <meta itemprop="keywords" content="diy,camera-ip,debian,linux,ipcam,raspberry-pi,beaglebone,web," />
 <meta property="og:title" content="Câmera IP com Webcam e Motion" />
@@ -76,8 +74,8 @@ Escrito em C e disponível para várias distribuições Linux, fazendo uso da in
 As câmeras IPs ganharam grande destaque pela sua facilidade de uso, e preço relativamente acessível. Hoje é simples monitorar a sua casa e enviar imagens para o seu smartphone quando algum movimento for detectado." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/camera-ip-com-webcam-e-motion/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/You-are-being-watched-620-by-338.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2016-01-28T12:29:01&#43;00:00" />
-<meta property="article:modified_time" content="2016-01-28T12:29:01&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2016-01-28T12:29:01+00:00" />
+<meta property="article:modified_time" content="2016-01-28T12:29:01+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -390,7 +388,7 @@ As câmeras IPs ganharam grande destaque pela sua facilidade de uso, e preço re
 No meu caso irei utilizar a <a href="http://www.filipeflop.com/pd-24c7f0-beaglebone-green.html?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoOpenSource" target="_blank">BeagleBone Green</a> que foi fornecida pela <a href="http://www.filipeflop.com/?utm_source=Blog&amp;utm_medium=Banner&amp;utm_campaign=ButecoOpenSource" target="_blank">FILIPEFLOP</a>. Porém este tutorial é válido para várias outras placas, e até PCs.
 <p>O primeiro passo é conectar a BBG a rede local e acessá-la via <em>ssh</em>. Por padrão, o usuário <em>ssh</em> é <em>debian</em> e a senha é <em>temppwd</em>. No meu caso a BBG ganhou o IP 192.168.25.6. Sendo assim irei utilizar esse IP ao longo do texto, mas lembre-se de alterar ao efetuar os testes.</p>
 <p><strong>Instalando o Motion</strong></p>
-<p>Após se conectar via <em>ssh</em> com o comando <code>ssh <a href="mailto:debian@192.168.25.6">debian@192.168.25.6</a></code>, vamos instalar as dependências necessárias:</p>
+<p>Após se conectar via <em>ssh</em> com o comando <code>ssh <a href="mailto:debian@192.168.25.6"  >debian@192.168.25.6</a></code>, vamos instalar as dependências necessárias:</p>
 <p><code>sudo apt-get update</code>
 <code>sudo apt-get install motion</code></p>
 <p><strong>Alterando as configurações padrão</strong></p>
@@ -409,7 +407,7 @@ control_localhost off
 <p><code>sudo motion</code></p>
 <p>Se tudo ocorrer certo, vários logs serão exibidos no console.</p>
 <p>Agora você pode ir no browser do seu computador e digitar a seguinte url: <a href="http://192.168.25.6:8088/">http://192.168.25.6:8088/</a>. O resultado será uma página com a imagem da webcam, como abaixo.</p>
-<p><img class="aligncenter" src="/images/wp-content/uploads/2016/01/ip-cam-motion.png" alt="Motion IP Cam" /></p>
+<img class="aligncenter" src="/images/wp-content/uploads/2016/01/ip-cam-motion.png" alt="Motion IP Cam" />
 <p>Se você deseja uma imagem maior, com uma taxa de atualização alta basta alterar as configurações no arquivo <code>motion.conf</code>.</p>
 <p>Espero que você tenha gostado. Até mais :)</p>
 <p><em>A imagem de capa faz referência a série <a href="http://www.imdb.com/title/tt1839578/" target="_blank">Person Of Interest</a>, no qual as pessoas são vigiadas 24h por dia pelo governo americano.</em></p>
@@ -510,7 +508,7 @@ control_localhost off
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -710,7 +708,8 @@ control_localhost off
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -728,24 +727,24 @@ control_localhost off
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

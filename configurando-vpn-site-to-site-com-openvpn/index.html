@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Configurando VPN site-to-site com OpenVPN &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -60,21 +60,19 @@
 <meta name="description" content="Resumo
 O OpenVPN é um software livre e open-source para criar redes privadas virtuais do tipo ponto-a-ponto ou server-to-multiclient através de túneis criptografados entre computadores. Ele é capaz de estabelecer conexões diretas entre computadores mesmo que estes estejam atrás de Nat Firewalls sem necessidade de reconfiguração da sua rede. Ele foi escrito por James Yonan e publicado sob licença GNU General Pulic Licence (GPL)" />
 
-
-
 <meta itemprop="name" content="Configurando VPN site-to-site com OpenVPN">
 <meta itemprop="description" content="Resumo
-O OpenVPN é um software livre e open-source para criar redes privadas virtuais do tipo ponto-a-ponto ou server-to-multiclient através de túneis criptografados entre computadores. Ele é capaz de estabelecer conexões diretas entre computadores mesmo que estes estejam atrás de Nat Firewalls sem necessidade de reconfiguração da sua rede. Ele foi escrito por James Yonan e publicado sob licença GNU General Pulic Licence (GPL)"><meta itemprop="datePublished" content="2016-02-22T23:24:51&#43;00:00" />
-<meta itemprop="dateModified" content="2016-02-22T23:24:51&#43;00:00" />
-<meta itemprop="wordCount" content="2180"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/openvpn-logo.png">
+O OpenVPN é um software livre e open-source para criar redes privadas virtuais do tipo ponto-a-ponto ou server-to-multiclient através de túneis criptografados entre computadores. Ele é capaz de estabelecer conexões diretas entre computadores mesmo que estes estejam atrás de Nat Firewalls sem necessidade de reconfiguração da sua rede. Ele foi escrito por James Yonan e publicado sob licença GNU General Pulic Licence (GPL)"><meta itemprop="datePublished" content="2016-02-22T23:24:51+00:00" />
+<meta itemprop="dateModified" content="2016-02-22T23:24:51+00:00" />
+<meta itemprop="wordCount" content="2181"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/openvpn-logo.png">
 <meta itemprop="keywords" content="openvpn,redes,vpn," />
 <meta property="og:title" content="Configurando VPN site-to-site com OpenVPN" />
 <meta property="og:description" content="Resumo
 O OpenVPN é um software livre e open-source para criar redes privadas virtuais do tipo ponto-a-ponto ou server-to-multiclient através de túneis criptografados entre computadores. Ele é capaz de estabelecer conexões diretas entre computadores mesmo que estes estejam atrás de Nat Firewalls sem necessidade de reconfiguração da sua rede. Ele foi escrito por James Yonan e publicado sob licença GNU General Pulic Licence (GPL)" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/configurando-vpn-site-to-site-com-openvpn/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/openvpn-logo.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2016-02-22T23:24:51&#43;00:00" />
-<meta property="article:modified_time" content="2016-02-22T23:24:51&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2016-02-22T23:24:51+00:00" />
+<meta property="article:modified_time" content="2016-02-22T23:24:51+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -374,31 +372,31 @@ O OpenVPN é um software livre e open-source para criar redes privadas virtuais 
 <p><strong>Instale o OpenVPN e também o easy-rsa</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">apt-get install openvpn easy-rsa
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt-get install openvpn easy-rsa
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Agora entramos no diretório do OpenVPN, utilizamos o comando make-cadir (disponibilizado pelo pacote easy-rsa) para criar um diretório chamado <code>easy-rsa</code> que conterá vários <em>scripts</em> úteis. Entramos no diretório <code>easy-rsa</code> e editamos o arquivos chamado vars.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">root@wolf:~# <span class="nb">cd</span> /etc/openvpn/
-root@wolf:/etc/openvpn# make-cadir easy-rsa
-root@wolf:/etc/openvpn# <span class="nb">cd</span> easy-rsa/
-root@wolf:/etc/openvpn/easy-rsa# nano vars
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@wolf:~# <span class="nb">cd</span> /etc/openvpn/
+</span></span><span class="line"><span class="cl">root@wolf:/etc/openvpn# make-cadir easy-rsa
+</span></span><span class="line"><span class="cl">root@wolf:/etc/openvpn# <span class="nb">cd</span> easy-rsa/
+</span></span><span class="line"><span class="cl">root@wolf:/etc/openvpn/easy-rsa# nano vars
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Agora vá ate o final e edite os seguintes valores</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -409,49 +407,49 @@ root@wolf:/etc/openvpn/easy-rsa# nano vars
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># These are the default values for fields</span>
-<span class="c1"># which will be placed in the certificate.</span>
-<span class="c1"># Don&#39;t leave any of these fields blank.</span>
-<span class="nb">export</span> <span class="nv">KEY_COUNTRY</span><span class="o">=</span><span class="s2">&#34;BR&#34;</span>
-<span class="nb">export</span> <span class="nv">KEY_PROVINCE</span><span class="o">=</span><span class="s2">&#34;Espirito-Santo&#34;</span>
-<span class="nb">export</span> <span class="nv">KEY_CITY</span><span class="o">=</span><span class="s2">&#34;Vila-Velha&#34;</span>
-<span class="nb">export</span> <span class="nv">KEY_ORG</span><span class="o">=</span><span class="s2">&#34;Butecopensource&#34;</span>
-<span class="nb">export</span> <span class="nv">KEY_EMAIL</span><span class="o">=</span><span class="s2">&#34;daniel@buteco.tech&#34;</span>
-<span class="nb">export</span> <span class="nv">KEY_OU</span><span class="o">=</span><span class="s2">&#34;buteco.tech&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># These are the default values for fields</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># which will be placed in the certificate.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Don&#39;t leave any of these fields blank.</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">KEY_COUNTRY</span><span class="o">=</span><span class="s2">&#34;BR&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">KEY_PROVINCE</span><span class="o">=</span><span class="s2">&#34;Espirito-Santo&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">KEY_CITY</span><span class="o">=</span><span class="s2">&#34;Vila-Velha&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">KEY_ORG</span><span class="o">=</span><span class="s2">&#34;Butecopensource&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">KEY_EMAIL</span><span class="o">=</span><span class="s2">&#34;daniel@buteco.tech&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">KEY_OU</span><span class="o">=</span><span class="s2">&#34;buteco.tech&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Após editar o arquivo use:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">source</span> vars
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">source</span> vars
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>e depois</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">./clean-all
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./clean-all
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Criando os certificados</strong></p>
 <p>Durante esse processo você será perguntado dos valores para alguns campos, os quais definimos no arquivo <code>vars</code> que ficarao entre colchetes, quando for o Common Name utilize o nome da máquina.</p>
 <p><strong>Gerando o certificado da sua unidade certificadora</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">root@wolf:/etc/openvpn/easy-rsa# ./build-ca
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@wolf:/etc/openvpn/easy-rsa# ./build-ca
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -474,42 +472,42 @@ root@wolf:/etc/openvpn/easy-rsa# nano vars
 </span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">Generating a <span class="m">2048</span> bit RSA private key
-.+++
-...+++
-writing new private key to <span class="s1">&#39;ca.key&#39;</span>
------
-You are about to be asked to enter information that will be incorporated
-into your certificate request.
-What you are about to enter is what is called a Distinguished Name or a DN.
-There are quite a few fields but you can leave some blank
-For some fields there will be a default value,
-If you enter <span class="s1">&#39;.&#39;</span>, the field will be left blank.
------
-Country Name <span class="o">(</span><span class="m">2</span> letter code<span class="o">)</span> <span class="o">[</span>BR<span class="o">]</span>:
-State or Province Name <span class="o">(</span>full name<span class="o">)</span> <span class="o">[</span>Espirito-Santo<span class="o">]</span>:
-Locality Name <span class="o">(</span>eg, city<span class="o">)</span> <span class="o">[</span>Vila-Velha<span class="o">]</span>:
-Organization Name <span class="o">(</span>eg, company<span class="o">)</span> <span class="o">[</span>Butecopensource<span class="o">]</span>:
-Organizational Unit Name <span class="o">(</span>eg, section<span class="o">)</span> <span class="o">[</span>buteco.tech<span class="o">]</span>:
-Common Name <span class="o">(</span>eg, your name or your server<span class="err">&#39;</span>s hostname<span class="o">)</span> <span class="o">[</span>Butecopensource CA<span class="o">]</span>:
-Name <span class="o">[</span>EasyRSA<span class="o">]</span>:
-Email Address <span class="o">[</span>daniel@buteco.tech<span class="o">]</span>:
-root@wolf:/etc/openvpn/easy-rsa#
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Generating a <span class="m">2048</span> bit RSA private key
+</span></span><span class="line"><span class="cl">.+++
+</span></span><span class="line"><span class="cl">...+++
+</span></span><span class="line"><span class="cl">writing new private key to <span class="s1">&#39;ca.key&#39;</span>
+</span></span><span class="line"><span class="cl">-----
+</span></span><span class="line"><span class="cl">You are about to be asked to enter information that will be incorporated
+</span></span><span class="line"><span class="cl">into your certificate request.
+</span></span><span class="line"><span class="cl">What you are about to enter is what is called a Distinguished Name or a DN.
+</span></span><span class="line"><span class="cl">There are quite a few fields but you can leave some blank
+</span></span><span class="line"><span class="cl">For some fields there will be a default value,
+</span></span><span class="line"><span class="cl">If you enter <span class="s1">&#39;.&#39;</span>, the field will be left blank.
+</span></span><span class="line"><span class="cl">-----
+</span></span><span class="line"><span class="cl">Country Name <span class="o">(</span><span class="m">2</span> letter code<span class="o">)</span> <span class="o">[</span>BR<span class="o">]</span>:
+</span></span><span class="line"><span class="cl">State or Province Name <span class="o">(</span>full name<span class="o">)</span> <span class="o">[</span>Espirito-Santo<span class="o">]</span>:
+</span></span><span class="line"><span class="cl">Locality Name <span class="o">(</span>eg, city<span class="o">)</span> <span class="o">[</span>Vila-Velha<span class="o">]</span>:
+</span></span><span class="line"><span class="cl">Organization Name <span class="o">(</span>eg, company<span class="o">)</span> <span class="o">[</span>Butecopensource<span class="o">]</span>:
+</span></span><span class="line"><span class="cl">Organizational Unit Name <span class="o">(</span>eg, section<span class="o">)</span> <span class="o">[</span>buteco.tech<span class="o">]</span>:
+</span></span><span class="line"><span class="cl">Common Name <span class="o">(</span>eg, your name or your server<span class="err">&#39;</span>s hostname<span class="o">)</span> <span class="o">[</span>Butecopensource CA<span class="o">]</span>:
+</span></span><span class="line"><span class="cl">Name <span class="o">[</span>EasyRSA<span class="o">]</span>:
+</span></span><span class="line"><span class="cl">Email Address <span class="o">[</span>daniel@buteco.tech<span class="o">]</span>:
+</span></span><span class="line"><span class="cl">root@wolf:/etc/openvpn/easy-rsa#
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Gerando chave para o Servidor</strong></p>
 <p>Gerando a chave para o servidor. Utilize o comando <code>build-key-server</code> seguido do nome do servidor (<em>hostname</em>).</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">root@wolf:/etc/openvpn/easy-rsa# ./build-key-server server
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@wolf:/etc/openvpn/easy-rsa# ./build-key-server server
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -554,86 +552,86 @@ root@wolf:/etc/openvpn/easy-rsa#
 </span><span class="lnt">43
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">Generating a <span class="m">2048</span> bit RSA private key
-..................................+++
-................................................................+++
-writing new private key to <span class="s1">&#39;server.key&#39;</span>
------
-You are about to be asked to enter information that will be incorporated
-into your certificate request.
-What you are about to enter is what is called a Distinguished Name or a DN.
-There are quite a few fields but you can leave some blank
-For some fields there will be a default value,
-If you enter <span class="s1">&#39;.&#39;</span>, the field will be left blank.
------
-Country Name <span class="o">(</span><span class="m">2</span> letter code<span class="o">)</span> <span class="o">[</span>BR<span class="o">]</span>:
-State or Province Name <span class="o">(</span>full name<span class="o">)</span> <span class="o">[</span>Espirito-Santo<span class="o">]</span>:
-Locality Name <span class="o">(</span>eg, city<span class="o">)</span> <span class="o">[</span>Vila-Velha<span class="o">]</span>:
-Organization Name <span class="o">(</span>eg, company<span class="o">)</span> <span class="o">[</span>Butecopensource<span class="o">]</span>:
-Organizational Unit Name <span class="o">(</span>eg, section<span class="o">)</span> <span class="o">[</span>buteco.tech<span class="o">]</span>:
-Common Name <span class="o">(</span>eg, your name or your server<span class="s1">&#39;s hostname) [server]:
-</span><span class="s1">Name [EasyRSA]:
-</span><span class="s1">Email Address [daniel@buteco.tech]:
-</span><span class="s1">
-</span><span class="s1">Please enter the following &#39;</span>extra<span class="s1">&#39; attributes
-</span><span class="s1">to be sent with your certificate request
-</span><span class="s1">A challenge password []:
-</span><span class="s1">An optional company name []:
-</span><span class="s1">Using configuration from /etc/openvpn/easy-rsa/openssl-1.0.0.cnf
-</span><span class="s1">Check that the request matches the signature
-</span><span class="s1">Signature ok
-</span><span class="s1">The Subject&#39;</span>s Distinguished Name is as follows
-countryName :PRINTABLE:<span class="s1">&#39;BR&#39;</span>
-stateOrProvinceName :PRINTABLE:<span class="s1">&#39;Espirito-Santo&#39;</span>
-localityName :PRINTABLE:<span class="s1">&#39;Vila-Velha&#39;</span>
-organizationName :PRINTABLE:<span class="s1">&#39;Butecopensource&#39;</span>
-organizationalUnitName:PRINTABLE:<span class="s1">&#39;buteco.tech&#39;</span>
-commonName :PRINTABLE:<span class="s1">&#39;server&#39;</span>
-name :PRINTABLE:<span class="s1">&#39;EasyRSA&#39;</span>
-emailAddress :IA5STRING:<span class="s1">&#39;daniel@buteco.tech&#39;</span>
-Certificate is to be certified <span class="k">until</span> Jan <span class="m">2</span> 22:29:18 <span class="m">2026</span> GMT <span class="o">(</span><span class="m">3650</span> days<span class="o">)</span>
-Sign the certificate? <span class="o">[</span>y/n<span class="o">]</span>:y
-<span class="m">1</span> out of <span class="m">1</span> certificate requests certified, commit? <span class="o">[</span>y/n<span class="o">]</span>y
-Write out database with <span class="m">1</span> new entries
-Data Base Updated
-root@wolf:/etc/openvpn/easy-rsa#
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Generating a <span class="m">2048</span> bit RSA private key
+</span></span><span class="line"><span class="cl">..................................+++
+</span></span><span class="line"><span class="cl">................................................................+++
+</span></span><span class="line"><span class="cl">writing new private key to <span class="s1">&#39;server.key&#39;</span>
+</span></span><span class="line"><span class="cl">-----
+</span></span><span class="line"><span class="cl">You are about to be asked to enter information that will be incorporated
+</span></span><span class="line"><span class="cl">into your certificate request.
+</span></span><span class="line"><span class="cl">What you are about to enter is what is called a Distinguished Name or a DN.
+</span></span><span class="line"><span class="cl">There are quite a few fields but you can leave some blank
+</span></span><span class="line"><span class="cl">For some fields there will be a default value,
+</span></span><span class="line"><span class="cl">If you enter <span class="s1">&#39;.&#39;</span>, the field will be left blank.
+</span></span><span class="line"><span class="cl">-----
+</span></span><span class="line"><span class="cl">Country Name <span class="o">(</span><span class="m">2</span> letter code<span class="o">)</span> <span class="o">[</span>BR<span class="o">]</span>:
+</span></span><span class="line"><span class="cl">State or Province Name <span class="o">(</span>full name<span class="o">)</span> <span class="o">[</span>Espirito-Santo<span class="o">]</span>:
+</span></span><span class="line"><span class="cl">Locality Name <span class="o">(</span>eg, city<span class="o">)</span> <span class="o">[</span>Vila-Velha<span class="o">]</span>:
+</span></span><span class="line"><span class="cl">Organization Name <span class="o">(</span>eg, company<span class="o">)</span> <span class="o">[</span>Butecopensource<span class="o">]</span>:
+</span></span><span class="line"><span class="cl">Organizational Unit Name <span class="o">(</span>eg, section<span class="o">)</span> <span class="o">[</span>buteco.tech<span class="o">]</span>:
+</span></span><span class="line"><span class="cl">Common Name <span class="o">(</span>eg, your name or your server<span class="s1">&#39;s hostname) [server]:
+</span></span></span><span class="line"><span class="cl"><span class="s1">Name [EasyRSA]:
+</span></span></span><span class="line"><span class="cl"><span class="s1">Email Address [daniel@buteco.tech]:
+</span></span></span><span class="line"><span class="cl"><span class="s1">
+</span></span></span><span class="line"><span class="cl"><span class="s1">Please enter the following &#39;</span>extra<span class="s1">&#39; attributes
+</span></span></span><span class="line"><span class="cl"><span class="s1">to be sent with your certificate request
+</span></span></span><span class="line"><span class="cl"><span class="s1">A challenge password []:
+</span></span></span><span class="line"><span class="cl"><span class="s1">An optional company name []:
+</span></span></span><span class="line"><span class="cl"><span class="s1">Using configuration from /etc/openvpn/easy-rsa/openssl-1.0.0.cnf
+</span></span></span><span class="line"><span class="cl"><span class="s1">Check that the request matches the signature
+</span></span></span><span class="line"><span class="cl"><span class="s1">Signature ok
+</span></span></span><span class="line"><span class="cl"><span class="s1">The Subject&#39;</span>s Distinguished Name is as follows
+</span></span><span class="line"><span class="cl">countryName :PRINTABLE:<span class="s1">&#39;BR&#39;</span>
+</span></span><span class="line"><span class="cl">stateOrProvinceName :PRINTABLE:<span class="s1">&#39;Espirito-Santo&#39;</span>
+</span></span><span class="line"><span class="cl">localityName :PRINTABLE:<span class="s1">&#39;Vila-Velha&#39;</span>
+</span></span><span class="line"><span class="cl">organizationName :PRINTABLE:<span class="s1">&#39;Butecopensource&#39;</span>
+</span></span><span class="line"><span class="cl">organizationalUnitName:PRINTABLE:<span class="s1">&#39;buteco.tech&#39;</span>
+</span></span><span class="line"><span class="cl">commonName :PRINTABLE:<span class="s1">&#39;server&#39;</span>
+</span></span><span class="line"><span class="cl">name :PRINTABLE:<span class="s1">&#39;EasyRSA&#39;</span>
+</span></span><span class="line"><span class="cl">emailAddress :IA5STRING:<span class="s1">&#39;daniel@buteco.tech&#39;</span>
+</span></span><span class="line"><span class="cl">Certificate is to be certified <span class="k">until</span> Jan <span class="m">2</span> 22:29:18 <span class="m">2026</span> GMT <span class="o">(</span><span class="m">3650</span> days<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Sign the certificate? <span class="o">[</span>y/n<span class="o">]</span>:y
+</span></span><span class="line"><span class="cl"><span class="m">1</span> out of <span class="m">1</span> certificate requests certified, commit? <span class="o">[</span>y/n<span class="o">]</span>y
+</span></span><span class="line"><span class="cl">Write out database with <span class="m">1</span> new entries
+</span></span><span class="line"><span class="cl">Data Base Updated
+</span></span><span class="line"><span class="cl">root@wolf:/etc/openvpn/easy-rsa#
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Agora vamos gerar uma chave <a href="https://pt.wikipedia.org/wiki/Diffie-Hellman" target="_blank">Diffie-Hellman</a> e que será utilizada pelo cliente e servidor durante a troca de chave, pode demorar um certo tempo.
 Obs: Não gere chave com valor igual o menor que 1024 bits, por padrão esse <em>script</em> gera em 2048 bits</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">root@wolf:/etc/openvpn/easy-rsa# ./build-dh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@wolf:/etc/openvpn/easy-rsa# ./build-dh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">Generating DH parameters, <span class="m">2048</span> bit long safe prime, generator <span class="m">2</span>
-This is going to take a long <span class="nb">time</span>
-............................+++
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Generating DH parameters, <span class="m">2048</span> bit long safe prime, generator <span class="m">2</span>
+</span></span><span class="line"><span class="cl">This is going to take a long <span class="nb">time</span>
+</span></span><span class="line"><span class="cl">............................+++
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Gerando chave para o cliente</strong></p>
 <p>Nesse tutorial iremos gerar somente uma chave, para a filial, porém dependendo de como você irá implementar sua VPN você pode criar mais.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">root@wolf:/etc/openvpn/easy-rsa# ./build-key filial
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@wolf:/etc/openvpn/easy-rsa# ./build-key filial
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -662,60 +660,60 @@ This is going to take a long <span class="nb">time</span>
 </span><span class="lnt">27
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">Generating a <span class="m">2048</span> bit RSA private key
-..............................................................................................................+++
-......................+++
-writing new private key to <span class="s1">&#39;filial.key&#39;</span>
------
-Please enter the following <span class="s1">&#39;extra&#39;</span> attributes
-to be sent with your certificate request
-A challenge password <span class="o">[]</span>:
-An optional company name <span class="o">[]</span>:
-Using configuration from /etc/openvpn/easy-rsa/openssl-1.0.0.cnf
-Check that the request matches the signature
-Signature ok
-The Subject<span class="s1">&#39;s Distinguished Name is as follows/code&amp;gt;
-</span><span class="s1">countryName :PRINTABLE:&#39;</span>BR<span class="s1">&#39;
-</span><span class="s1">stateOrProvinceName :PRINTABLE:&#39;</span>Espirito-Santo<span class="s1">&#39;
-</span><span class="s1">localityName :PRINTABLE:&#39;</span>Vila-Velha<span class="s1">&#39;
-</span><span class="s1">organizationName :PRINTABLE:&#39;</span>Butecopensource<span class="s1">&#39;
-</span><span class="s1">organizationalUnitName:PRINTABLE:&#39;</span>buteco.tech<span class="s1">&#39;
-</span><span class="s1">commonName :PRINTABLE:&#39;</span>filial<span class="s1">&#39;
-</span><span class="s1">name :PRINTABLE:&#39;</span>EasyRSA<span class="s1">&#39;
-</span><span class="s1">emailAddress :IA5STRING:&#39;</span>daniel@buteco.tech<span class="err">&#39;</span>
-Certificate is to be certified <span class="k">until</span> Jan <span class="m">2</span> 23:13:45 <span class="m">2026</span> GMT <span class="o">(</span><span class="m">3650</span> days<span class="o">)</span>
-Sign the certificate? <span class="o">[</span>y/n<span class="o">]</span>:y
-<span class="m">1</span> out of <span class="m">1</span> certificate requests certified, commit? <span class="o">[</span>y/n<span class="o">]</span>y
-Write out database with <span class="m">1</span> new entries
-Data Base Updated
-root@wolf:/etc/openvpn/easy-rsa#
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Generating a <span class="m">2048</span> bit RSA private key
+</span></span><span class="line"><span class="cl">..............................................................................................................+++
+</span></span><span class="line"><span class="cl">......................+++
+</span></span><span class="line"><span class="cl">writing new private key to <span class="s1">&#39;filial.key&#39;</span>
+</span></span><span class="line"><span class="cl">-----
+</span></span><span class="line"><span class="cl">Please enter the following <span class="s1">&#39;extra&#39;</span> attributes
+</span></span><span class="line"><span class="cl">to be sent with your certificate request
+</span></span><span class="line"><span class="cl">A challenge password <span class="o">[]</span>:
+</span></span><span class="line"><span class="cl">An optional company name <span class="o">[]</span>:
+</span></span><span class="line"><span class="cl">Using configuration from /etc/openvpn/easy-rsa/openssl-1.0.0.cnf
+</span></span><span class="line"><span class="cl">Check that the request matches the signature
+</span></span><span class="line"><span class="cl">Signature ok
+</span></span><span class="line"><span class="cl">The Subject<span class="s1">&#39;s Distinguished Name is as follows/code&amp;gt;
+</span></span></span><span class="line"><span class="cl"><span class="s1">countryName :PRINTABLE:&#39;</span>BR<span class="s1">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">stateOrProvinceName :PRINTABLE:&#39;</span>Espirito-Santo<span class="s1">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">localityName :PRINTABLE:&#39;</span>Vila-Velha<span class="s1">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">organizationName :PRINTABLE:&#39;</span>Butecopensource<span class="s1">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">organizationalUnitName:PRINTABLE:&#39;</span>buteco.tech<span class="s1">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">commonName :PRINTABLE:&#39;</span>filial<span class="s1">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">name :PRINTABLE:&#39;</span>EasyRSA<span class="s1">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">emailAddress :IA5STRING:&#39;</span>daniel@buteco.tech<span class="err">&#39;</span>
+</span></span><span class="line"><span class="cl">Certificate is to be certified <span class="k">until</span> Jan <span class="m">2</span> 23:13:45 <span class="m">2026</span> GMT <span class="o">(</span><span class="m">3650</span> days<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Sign the certificate? <span class="o">[</span>y/n<span class="o">]</span>:y
+</span></span><span class="line"><span class="cl"><span class="m">1</span> out of <span class="m">1</span> certificate requests certified, commit? <span class="o">[</span>y/n<span class="o">]</span>y
+</span></span><span class="line"><span class="cl">Write out database with <span class="m">1</span> new entries
+</span></span><span class="line"><span class="cl">Data Base Updated
+</span></span><span class="line"><span class="cl">root@wolf:/etc/openvpn/easy-rsa#
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Excluar os arquivos desnecessários</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">rm keys/*.csr
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rm keys/*.csr
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Pronto, agora precisamos pegar os arquivos no servidor e passar cliente,</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">root@wolf:/etc/openvpn/easy-rsa# <span class="nb">cd</span> keys
-root@wolf:/etc/openvpn/easy-rsa/keys# ls
-01.pem ca.key filial.key index.txt.attr.old serial.old
-02.pem dh2048.pem index.txt index.txt.old server.crt
-ca.crt filial.crt index.txt.attr serial server.key
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@wolf:/etc/openvpn/easy-rsa# <span class="nb">cd</span> keys
+</span></span><span class="line"><span class="cl">root@wolf:/etc/openvpn/easy-rsa/keys# ls
+</span></span><span class="line"><span class="cl">01.pem ca.key filial.key index.txt.attr.old serial.old
+</span></span><span class="line"><span class="cl">02.pem dh2048.pem index.txt index.txt.old server.crt
+</span></span><span class="line"><span class="cl">ca.crt filial.crt index.txt.attr serial server.key
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Iremos precisar dos arquivos, <strong>filial.crt,  filial.key, dh2048.pem</strong></p>
 <p>Você pode copiar esses arquivos com softwares como <a href="https://filezilla-project.org/" target="_blank">FileZilla</a> (Linux e Windows) ou <a href="https://winscp.net/eng/download.php" target="_blank">WinSCP</a> (Windows).</p>
@@ -725,7 +723,7 @@ ca.crt filial.crt index.txt.attr serial server.key
 <p>Veja o arquivo de configuração.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">  1
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
 </span><span class="lnt">  2
 </span><span class="lnt">  3
 </span><span class="lnt">  4
@@ -827,142 +825,142 @@ ca.crt filial.crt index.txt.attr serial server.key
 </span><span class="lnt">100
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">##############################</span>
-<span class="c1">####### OpenVPN Server #######</span>
-<span class="c1">####### Site-to-Site##########</span>
-<span class="c1">##############################</span>
-<span class="c1">####### DANIEL MAGEVSKI ######</span>
-<span class="c1">##############################</span>
-
-
-<span class="c1"># Para testar os arquivos de configuracao:</span>
-<span class="c1"># openvpn --config /etc/openvpn/arquivo.conf</span>
-
-<span class="c1"># Para fazer NAT, execute:</span>
-<span class="c1"># sysctl -w net.ipv4.ip_forward=1</span>
-<span class="c1"># iptables -t nat -s $IP_REDE/$MASCARA_REDE -A POSTROUTING -o $PORTA_INTERNET -j MASQUERADE</span>
-
-
-<span class="c1">##############################</span>
-<span class="c1">#     Dados da conexão</span>
-<span class="c1">##############################</span>
-
-
-<span class="c1"># Interface da VPN</span>
-dev tun0
-<span class="c1"># Endereço IP servidor/filial</span>
-ifconfig  <span class="nv">$Ip</span>-Servidor <span class="nv">$IpFilial</span>
-
-<span class="c1"># Protocolo</span>
-proto udp
-
-<span class="c1"># Porta VPN</span>
-port <span class="m">1194</span>
-
-<span class="c1"># Parametro necessario para utilizar conexão com certificados X509</span>
-tls-server
-
-<span class="c1"># Caminho para o arquivo contendo parametros Diffie Hellman</span>
-dh /etc/openvpn/easy-rsa/keys/dh2048.pem
-
-<span class="c1"># Local do arquivo de certificado (.crt) da unidade certificadora</span>
-ca /etc/openvpn/easy-rsa/keys/ca.crt
-
-<span class="c1"># Local do arquivo de certificado (.crt) do servidor</span>
-cert /etc/openvpn/easy-rsa/keys/<span class="nv">$server</span>.crt
-
-<span class="c1"># Local da chave (.key) do servidor. Este arquivo deve ser mantido secreto</span>
-key /etc/openvpn/easy-rsa/keys/<span class="nv">$server</span>.key
-
-<span class="c1">##############################</span>
-<span class="c1">#   Qualidade da conexão</span>
-<span class="c1">##############################</span>
-
-
-<span class="c1"># Pinga o host remoto a cada $x segundos sem atividade na rede, se ele</span>
-<span class="c1"># nao responder por $z segundos a conexão é reiniciada.</span>
-<span class="c1"># Quando a conexão é interrompida o cliente tenta restabelece-la  periodicamente</span>
-<span class="c1"># Uso: keepalive $x $z</span>
-keepalive <span class="m">10</span> <span class="m">120</span>
-
-<span class="c1"># Compacta os dados da conexão utilizando o pacote lzo (deve estar</span>
-<span class="c1"># instalado no host)</span>
-<span class="c1"># Se estiver habilitado no servidor, o cliente também deve habilitar</span>
-comp-lzo
-
-<span class="c1"># mantem as chaves carregadas mesmo durante o reinicio do serviço.</span>
-persist-key
-
-<span class="c1"># mantem o tunel aberto mesmo durante o reinicio do serviço.</span>
-persist-tun
-
-<span class="c1"># Fica tentando, indefinidamente, resolver o nome do host do servidor. Útil</span>
-<span class="c1"># em hosts que não estão permanentemente conectados à internet.</span>
-resolv-retry infinite
-
-<span class="c1"># Mantem o tunel aberto mesmo se o ip do outro host mudar</span>
-float
-
-<span class="c1"># É uma boa prática diminuir os privilégios do OpenVPN após a inicialização.</span>
-user nobody 
-group nogroup
-
-<span class="c1"># Define o quão verboso será o log.</span>
-<span class="c1"># 0 é silencioso, exceto por erros fatais</span>
-<span class="c1"># 4 é rasoável para o uso geral</span>
-<span class="c1"># 5 e 6 podem ajudá-lo a debugar problemas de conexão</span>
-<span class="c1"># 9 é extremamente verboso</span>
-verb <span class="m">3</span>
-
-
-<span class="c1"># Informações de status da conexão</span>
-status /var/log/openvpn/matriz-staus.log
-<span class="c1"># Arquivo de log</span>
-log-append /var/log/openvpn/matriz.log
-
-<span class="c1">##############################</span>
-<span class="c1">####    Referências   ########</span>
-<span class="c1">##############################</span>
-
-<span class="c1"># http://tobias.ws/blog/acesso-seguro-a-internet-atraves-do-openvpn/</span>
-<span class="c1"># http://openvpn.net/howto.html#mitm</span>
-<span class="c1"># http://www.hardware.com.br/tutoriais/openvpn_2/</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">####### OpenVPN Server #######</span>
+</span></span><span class="line"><span class="cl"><span class="c1">####### Site-to-Site##########</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">####### DANIEL MAGEVSKI ######</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Para testar os arquivos de configuracao:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># openvpn --config /etc/openvpn/arquivo.conf</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Para fazer NAT, execute:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># sysctl -w net.ipv4.ip_forward=1</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># iptables -t nat -s $IP_REDE/$MASCARA_REDE -A POSTROUTING -o $PORTA_INTERNET -j MASQUERADE</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#     Dados da conexão</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Interface da VPN</span>
+</span></span><span class="line"><span class="cl">dev tun0
+</span></span><span class="line"><span class="cl"><span class="c1"># Endereço IP servidor/filial</span>
+</span></span><span class="line"><span class="cl">ifconfig  <span class="nv">$Ip</span>-Servidor <span class="nv">$IpFilial</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Protocolo</span>
+</span></span><span class="line"><span class="cl">proto udp
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Porta VPN</span>
+</span></span><span class="line"><span class="cl">port <span class="m">1194</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Parametro necessario para utilizar conexão com certificados X509</span>
+</span></span><span class="line"><span class="cl">tls-server
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Caminho para o arquivo contendo parametros Diffie Hellman</span>
+</span></span><span class="line"><span class="cl">dh /etc/openvpn/easy-rsa/keys/dh2048.pem
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Local do arquivo de certificado (.crt) da unidade certificadora</span>
+</span></span><span class="line"><span class="cl">ca /etc/openvpn/easy-rsa/keys/ca.crt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Local do arquivo de certificado (.crt) do servidor</span>
+</span></span><span class="line"><span class="cl">cert /etc/openvpn/easy-rsa/keys/<span class="nv">$server</span>.crt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Local da chave (.key) do servidor. Este arquivo deve ser mantido secreto</span>
+</span></span><span class="line"><span class="cl">key /etc/openvpn/easy-rsa/keys/<span class="nv">$server</span>.key
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#   Qualidade da conexão</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Pinga o host remoto a cada $x segundos sem atividade na rede, se ele</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># nao responder por $z segundos a conexão é reiniciada.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Quando a conexão é interrompida o cliente tenta restabelece-la  periodicamente</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Uso: keepalive $x $z</span>
+</span></span><span class="line"><span class="cl">keepalive <span class="m">10</span> <span class="m">120</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Compacta os dados da conexão utilizando o pacote lzo (deve estar</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># instalado no host)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Se estiver habilitado no servidor, o cliente também deve habilitar</span>
+</span></span><span class="line"><span class="cl">comp-lzo
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># mantem as chaves carregadas mesmo durante o reinicio do serviço.</span>
+</span></span><span class="line"><span class="cl">persist-key
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># mantem o tunel aberto mesmo durante o reinicio do serviço.</span>
+</span></span><span class="line"><span class="cl">persist-tun
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Fica tentando, indefinidamente, resolver o nome do host do servidor. Útil</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># em hosts que não estão permanentemente conectados à internet.</span>
+</span></span><span class="line"><span class="cl">resolv-retry infinite
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Mantem o tunel aberto mesmo se o ip do outro host mudar</span>
+</span></span><span class="line"><span class="cl">float
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># É uma boa prática diminuir os privilégios do OpenVPN após a inicialização.</span>
+</span></span><span class="line"><span class="cl">user nobody 
+</span></span><span class="line"><span class="cl">group nogroup
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Define o quão verboso será o log.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 0 é silencioso, exceto por erros fatais</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 4 é rasoável para o uso geral</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 5 e 6 podem ajudá-lo a debugar problemas de conexão</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 9 é extremamente verboso</span>
+</span></span><span class="line"><span class="cl">verb <span class="m">3</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Informações de status da conexão</span>
+</span></span><span class="line"><span class="cl">status /var/log/openvpn/matriz-staus.log
+</span></span><span class="line"><span class="cl"><span class="c1"># Arquivo de log</span>
+</span></span><span class="line"><span class="cl">log-append /var/log/openvpn/matriz.log
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">####    Referências   ########</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># http://tobias.ws/blog/acesso-seguro-a-internet-atraves-do-openvpn/</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># http://openvpn.net/howto.html#mitm</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># http://www.hardware.com.br/tutoriais/openvpn_2/</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Agora vamos adicionar a rota, criando um arquivo dentro do diretório /etc/init.d:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s2">&#34;route add -net 192.168.1.0 netmask 255.255.255.0 gw 10.8.0.1 dev tun0&#34;</span> <span class="p">&amp;</span>gt<span class="p">;</span> /etc/init.d/rota <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> chmod +x rota <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> update-rc.d rota defaults
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;route add -net 192.168.1.0 netmask 255.255.255.0 gw 10.8.0.1 dev tun0&#34;</span> <span class="p">&amp;</span>gt<span class="p">;</span> /etc/init.d/rota <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> chmod +x rota <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> update-rc.d rota defaults
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Após criada a rota, será iniciado o serviço:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">service openvpn start
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">service openvpn start
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Precisamos compartilhar a internet do servidor, execute:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">sysctl -w net.ipv4.ip_forward<span class="o">=</span><span class="m">1</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sysctl -w net.ipv4.ip_forward<span class="o">=</span><span class="m">1</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">iptables -t nat -s 10.8.0.0/24 -A POSTROUTING -o eth0 -j MASQUERADE
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">iptables -t nat -s 10.8.0.0/24 -A POSTROUTING -o eth0 -j MASQUERADE
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>10.8.0.0/24 é a rede da VPN e eth0 é a interface do servidor que está conectada com a internet.</p>
 <p><strong>Configuração no cliente</strong></p>
@@ -970,7 +968,7 @@ log-append /var/log/openvpn/matriz.log
 <p>Veja o arquivo de configuração.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">  1
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
 </span><span class="lnt">  2
 </span><span class="lnt">  3
 </span><span class="lnt">  4
@@ -1080,133 +1078,133 @@ log-append /var/log/openvpn/matriz.log
 </span><span class="lnt">108
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1">##############################</span>
-<span class="c1">####### OpenVPN Server #######</span>
-<span class="c1">####### Site-to-Site##########</span>
-<span class="c1">##############################</span>
-<span class="c1">####### DANIEL MAGEVSKI ######</span>
-<span class="c1">##############################</span>
-
-<span class="c1">##############################</span>
-<span class="c1">##### Dados da conexão  ######</span>
-<span class="c1">##############################</span>
-
-
-<span class="c1"># Define que esta máquina é um cliente</span>
-client
-
-<span class="c1"># Endereço do servidor</span>
-remote  <span class="nv">$Servidor</span> <span class="m">1194</span> <span class="c1">#Por padrão a porta é 1194</span>
-
-<span class="c1"># Interface da VPN</span>
-dev tun0
-
-<span class="c1"># Endereço IP filial/servidor</span>
-ifconfig <span class="nv">$IpFilial</span> <span class="nv">$Ip</span>-Servidor 
-
-<span class="c1"># Protocolo</span>
-proto udp
-
-nobind
-
-<span class="c1"># Se você está conetando à internet através de um proxy HTTP, defina o parâmetro</span>
-<span class="c1"># http-proxy.</span>
-<span class="c1"># http-proxy-retry faz com que uma nova tentativa seja feita em casa de falha</span>
-<span class="c1"># de conexão</span>
-<span class="p">;</span>http-proxy-retry
-<span class="p">;</span>http-proxy <span class="nv">$ip</span> <span class="nv">$porta</span>
-
-
-<span class="c1">##############################</span>
-<span class="c1">#      Certificados X509</span>
-<span class="c1">##############################</span>
-
-<span class="c1"># Local do arquivo dh.pem</span>
-dh dh2048.pem
-
-<span class="c1"># Local do arquivo de certificado (.crt) da unidade certificadora</span>
-ca ca.crt
-
-<span class="c1"># Local do arquivo de certificado (.crt) do cliente</span>
-cert filial.crt
-
-<span class="c1"># Local da chave (.key) do cliente. Este arquivo deve ser mantido secreto</span>
-key filial.key
-
-
-<span class="c1">##############################</span>
-<span class="c1">#   Qualidade da conexão</span>
-<span class="c1">##############################</span>
-
-<span class="c1"># Pinga o host remoto a cada $x segundos sem atividade na rede, se ele</span>
-<span class="c1"># nao responder por $z segundos a conexão é reiniciada.</span>
-<span class="c1"># Quando a conexão é interrompida o cliente tenta restabelece-la  periodicamente</span>
-<span class="c1"># Uso: keepalive $x $z</span>
-keepalive <span class="m">10</span> <span class="m">120</span>
-
-<span class="c1"># Compacta os dados da conexão utilizando o pacote lzo (deve estar</span>
-<span class="c1"># instalado no host)</span>
-<span class="c1"># Se estiver habilitado no servidor, o cliente também deve habilitar</span>
-comp-lzo
-
-<span class="c1"># mantem as chaves carregadas mesmo durante o reinicio do serviço.</span>
-persist-key
-
-<span class="c1"># mantem o tunel aberto mesmo durante o reinicio do serviço.</span>
-persist-tun
-
-<span class="c1"># Fica tentando, indefinidamente, resolver o nome do host do servidor. Útil</span>
-<span class="c1"># em hosts que não estão permanentemente conectados à internet.</span>
-resolv-retry infinite
-
-<span class="c1"># mantem o tunel aberto mesmo se o ip do outro host mudar</span>
-float
-
-<span class="c1">##############################</span>
-<span class="c1">#           Outros</span>
-<span class="c1">##############################</span>
-
-<span class="c1"># Define o quão verboso será o log.</span>
-<span class="c1"># 0 é silencioso, exceto por erros fatais</span>
-<span class="c1"># 4 é rasoável para o uso geral</span>
-<span class="c1"># 5 e 6 podem ajudá-lo a debugar problemas de conexão</span>
-<span class="c1"># 9 é extremamente verboso</span>
-verb <span class="m">3</span>
-
-<span class="c1"># Informações de status da conexão</span>
-status openvpn-status.log
-<span class="c1">#status /var/log/openvpn/matriz-staus.log</span>
-<span class="c1"># Arquivo de log</span>
-<span class="p">;</span>log         openvpn.log
-<span class="p">;</span>log-append  openvpn.log
-
-
-<span class="c1">##############################</span>
-<span class="c1">####    Referências   ########</span>
-<span class="c1">##############################</span>
-
-<span class="c1"># http://tobias.ws/blog/acesso-seguro-a-internet-atraves-do-openvpn/</span>
-<span class="c1"># http://openvpn.net/howto.html#mitm</span>
-<span class="c1"># http://www.hardware.com.br/tutoriais/openvpn_2/</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">####### OpenVPN Server #######</span>
+</span></span><span class="line"><span class="cl"><span class="c1">####### Site-to-Site##########</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">####### DANIEL MAGEVSKI ######</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### Dados da conexão  ######</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Define que esta máquina é um cliente</span>
+</span></span><span class="line"><span class="cl">client
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Endereço do servidor</span>
+</span></span><span class="line"><span class="cl">remote  <span class="nv">$Servidor</span> <span class="m">1194</span> <span class="c1">#Por padrão a porta é 1194</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Interface da VPN</span>
+</span></span><span class="line"><span class="cl">dev tun0
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Endereço IP filial/servidor</span>
+</span></span><span class="line"><span class="cl">ifconfig <span class="nv">$IpFilial</span> <span class="nv">$Ip</span>-Servidor 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Protocolo</span>
+</span></span><span class="line"><span class="cl">proto udp
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">nobind
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Se você está conetando à internet através de um proxy HTTP, defina o parâmetro</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># http-proxy.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># http-proxy-retry faz com que uma nova tentativa seja feita em casa de falha</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># de conexão</span>
+</span></span><span class="line"><span class="cl"><span class="p">;</span>http-proxy-retry
+</span></span><span class="line"><span class="cl"><span class="p">;</span>http-proxy <span class="nv">$ip</span> <span class="nv">$porta</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#      Certificados X509</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Local do arquivo dh.pem</span>
+</span></span><span class="line"><span class="cl">dh dh2048.pem
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Local do arquivo de certificado (.crt) da unidade certificadora</span>
+</span></span><span class="line"><span class="cl">ca ca.crt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Local do arquivo de certificado (.crt) do cliente</span>
+</span></span><span class="line"><span class="cl">cert filial.crt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Local da chave (.key) do cliente. Este arquivo deve ser mantido secreto</span>
+</span></span><span class="line"><span class="cl">key filial.key
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#   Qualidade da conexão</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Pinga o host remoto a cada $x segundos sem atividade na rede, se ele</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># nao responder por $z segundos a conexão é reiniciada.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Quando a conexão é interrompida o cliente tenta restabelece-la  periodicamente</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Uso: keepalive $x $z</span>
+</span></span><span class="line"><span class="cl">keepalive <span class="m">10</span> <span class="m">120</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Compacta os dados da conexão utilizando o pacote lzo (deve estar</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># instalado no host)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Se estiver habilitado no servidor, o cliente também deve habilitar</span>
+</span></span><span class="line"><span class="cl">comp-lzo
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># mantem as chaves carregadas mesmo durante o reinicio do serviço.</span>
+</span></span><span class="line"><span class="cl">persist-key
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># mantem o tunel aberto mesmo durante o reinicio do serviço.</span>
+</span></span><span class="line"><span class="cl">persist-tun
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Fica tentando, indefinidamente, resolver o nome do host do servidor. Útil</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># em hosts que não estão permanentemente conectados à internet.</span>
+</span></span><span class="line"><span class="cl">resolv-retry infinite
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># mantem o tunel aberto mesmo se o ip do outro host mudar</span>
+</span></span><span class="line"><span class="cl">float
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#           Outros</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Define o quão verboso será o log.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 0 é silencioso, exceto por erros fatais</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 4 é rasoável para o uso geral</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 5 e 6 podem ajudá-lo a debugar problemas de conexão</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 9 é extremamente verboso</span>
+</span></span><span class="line"><span class="cl">verb <span class="m">3</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Informações de status da conexão</span>
+</span></span><span class="line"><span class="cl">status openvpn-status.log
+</span></span><span class="line"><span class="cl"><span class="c1">#status /var/log/openvpn/matriz-staus.log</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Arquivo de log</span>
+</span></span><span class="line"><span class="cl"><span class="p">;</span>log         openvpn.log
+</span></span><span class="line"><span class="cl"><span class="p">;</span>log-append  openvpn.log
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">####    Referências   ########</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##############################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># http://tobias.ws/blog/acesso-seguro-a-internet-atraves-do-openvpn/</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># http://openvpn.net/howto.html#mitm</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># http://www.hardware.com.br/tutoriais/openvpn_2/</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Agora vamos adicionar a rota crie um arquivo rota</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s2">&#34;route add -net 192.168.0.0 netmask 255.255.255.0 gw 10.8.0.2 dev tun0&#34;</span> <span class="p">&amp;</span>gt<span class="p">;</span> /etc/init.d/rota <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> chmod +x rota <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> update-rc.d rota defaults
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;route add -net 192.168.0.0 netmask 255.255.255.0 gw 10.8.0.2 dev tun0&#34;</span> <span class="p">&amp;</span>gt<span class="p">;</span> /etc/init.d/rota <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> chmod +x rota <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> update-rc.d rota defaults
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Agora vamos acessa-la, entra dentro do diretório onde está as chaves e digite,</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">openvpn client.ovpn
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openvpn client.ovpn
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Ele irá imprimir na tela os dados na conexão, se tudo ocorreu bem aparecerá, <strong>Initialization Sequence Completed</strong></p>
 <p>Qualquer dúvida escreva nos comentários.</p>
@@ -1229,6 +1227,19 @@ status openvpn-status.log
      <a href="https://butecotecnologico.com.br/tags/vpn/" class="tag-link">vpn</a>
   </li>
   </ul>
+</div>
+
+
+    <div class="m-2">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-6625957038449899"
+       data-ad-slot="4012390257"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </div>
 
 
@@ -1285,7 +1296,7 @@ status openvpn-status.log
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -1485,7 +1496,8 @@ status openvpn-status.log
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -1503,24 +1515,24 @@ status openvpn-status.log
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

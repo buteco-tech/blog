@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Laravel 5 do começo ao fim [parte 3] &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Este artigo apresenta a terceira parte de um tutorial sobre o framework PHP Laravel 5, apresentando como usar a parte de criação de model e view do framework" />
 
-
-
 <meta itemprop="name" content="Laravel 5 do começo ao fim [parte 3]">
-<meta itemprop="description" content="Este artigo apresenta a terceira parte de um tutorial sobre o framework PHP Laravel 5, apresentando como usar a parte de criação de model e view do framework"><meta itemprop="datePublished" content="2015-03-24T20:43:06&#43;00:00" />
-<meta itemprop="dateModified" content="2015-03-24T20:43:06&#43;00:00" />
+<meta itemprop="description" content="Este artigo apresenta a terceira parte de um tutorial sobre o framework PHP Laravel 5, apresentando como usar a parte de criação de model e view do framework"><meta itemprop="datePublished" content="2015-03-24T20:43:06+00:00" />
+<meta itemprop="dateModified" content="2015-03-24T20:43:06+00:00" />
 <meta itemprop="wordCount" content="1321"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Laravel-5.png">
 <meta itemprop="keywords" content="framework,laravel,mvc,php,web," />
 <meta property="og:title" content="Laravel 5 do começo ao fim [parte 3]" />
 <meta property="og:description" content="Este artigo apresenta a terceira parte de um tutorial sobre o framework PHP Laravel 5, apresentando como usar a parte de criação de model e view do framework" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/laravel-5-do-comeco-ao-fim-parte-3/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/02/Laravel-5.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2015-03-24T20:43:06&#43;00:00" />
-<meta property="article:modified_time" content="2015-03-24T20:43:06&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2015-03-24T20:43:06+00:00" />
+<meta property="article:modified_time" content="2015-03-24T20:43:06+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -382,7 +380,7 @@
 <p>Abrindo o arquivo de migration criado (algo como create_table_tarefa) você verá basicamente uma classe que estende de outra classe chamada <i>Migration</i>, e dois métodos <i>up</i> e <i>down</i> como já explicado anteriormente, edite esse arquivo para ficar como abaixo:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -416,52 +414,52 @@
 </span><span class="lnt">32
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
-<span class="k">use</span> <span class="nx">Illuminate\Database\Schema\Blueprint</span><span class="p">;</span>
-<span class="k">use</span> <span class="nx">Illuminate\Database\Migrations\Migration</span><span class="p">;</span>
-
-<span class="k">class</span> <span class="nc">CreateTableTarefa</span> <span class="k">extends</span> <span class="nx">Migration</span> <span class="p">{</span>
-
-  <span class="sd">/**
-</span><span class="sd">   * Run the migrations.
-</span><span class="sd">   *
-</span><span class="sd">   * @return void
-</span><span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">up</span><span class="p">()</span>
-  <span class="p">{</span>
-    <span class="nx">Schema</span><span class="o">::</span><span class="na">create</span><span class="p">(</span><span class="s1">&#39;Tarefa&#39;</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nx">Blueprint</span> <span class="nv">$table</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="nv">$table</span><span class="o">-&gt;</span><span class="na">increments</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">);</span>
-      <span class="nv">$table</span><span class="o">-&gt;</span><span class="na">string</span><span class="p">(</span><span class="s1">&#39;titulo&#39;</span><span class="p">);</span>
-      <span class="nv">$table</span><span class="o">-&gt;</span><span class="na">string</span><span class="p">(</span><span class="s1">&#39;corpo&#39;</span><span class="p">);</span>
-      <span class="nv">$table</span><span class="o">-&gt;</span><span class="na">timestamps</span><span class="p">();</span>
-    <span class="p">});</span>
-  <span class="p">}</span>
-
-  <span class="sd">/**
-</span><span class="sd">   * Reverse the migrations.
-</span><span class="sd">   *
-</span><span class="sd">   * @return void
-</span><span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">down</span><span class="p">()</span>
-  <span class="p">{</span>
-    <span class="nx">Schema</span><span class="o">::</span><span class="na">drop</span><span class="p">(</span><span class="s1">&#39;Tarefa&#39;</span><span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">Illuminate\Database\Schema\Blueprint</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">Illuminate\Database\Migrations\Migration</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">CreateTableTarefa</span> <span class="k">extends</span> <span class="nx">Migration</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * Run the migrations.
+</span></span></span><span class="line"><span class="cl"><span class="sd">   *
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @return void
+</span></span></span><span class="line"><span class="cl"><span class="sd">   */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">up</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Schema</span><span class="o">::</span><span class="na">create</span><span class="p">(</span><span class="s1">&#39;Tarefa&#39;</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nx">Blueprint</span> <span class="nv">$table</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nv">$table</span><span class="o">-&gt;</span><span class="na">increments</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nv">$table</span><span class="o">-&gt;</span><span class="na">string</span><span class="p">(</span><span class="s1">&#39;titulo&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nv">$table</span><span class="o">-&gt;</span><span class="na">string</span><span class="p">(</span><span class="s1">&#39;corpo&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nv">$table</span><span class="o">-&gt;</span><span class="na">timestamps</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * Reverse the migrations.
+</span></span></span><span class="line"><span class="cl"><span class="sd">   *
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @return void
+</span></span></span><span class="line"><span class="cl"><span class="sd">   */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">down</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Schema</span><span class="o">::</span><span class="na">drop</span><span class="p">(</span><span class="s1">&#39;Tarefa&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Basicamente adicionamos dois novos campos a migration, <i>titulo</i> e <i>corpo</i> das nossas tarefas, além disso o comando make já nos adiciona um campo chamado <i>id</i> do tipo inteiro para ser nossa chave primária com auto incremento, ou seja, sempre que for adicionado um novo registro não é preciso setar o campo id, pois esse é gerado pelo banco. E no final são adicionados os campos <i>created_at</i> e <i>updated_at</i> que como você provavelmente deve suspeitar um é a data e hora de criação e o outro da última atualização respectivamente, sendo o tipo normalmente timestamp para esses dois campos. Feito a adição dos campos vamos migrar nosso banco para que ele crie a tabela com o comando abaixo:</p>
 <p><code>php artisan migrate</code></p>
 <p>Obs.: Estou considerando que você viu as outras partes dessa série, porém caso ocorra algum erro normalmente podem ser duas coisas, configuração incorreta do arquivo <i>.env</i> na raiz do projeto ou provavelmente você não executou o comando</p>
 <p><code>php artisan migrate:install</code></p>
 <p>para criar a tabela de migrations no banco. Com o comando executado com sucesso temos certeza que a tabela foi criada com os devidos campos, com isso podemos partir para o Model propriamente. Abra o arquivo chamado <i>Tarefa.php</i> no diretório <i>app/</i>, nesse arquivo está presente uma classe chamada <i>Tarefa</i> que estende da classe <i>Model</i>, a classe base do Eloquent para criar models. Nesse ponto apenas para facilitar adicionaremos os campos de nossa tabela numa variável da classe chamada <i>$fillable</i> como mostrado abaixo:</p>
-<p><code>protected $fillable = array(&lsquo;titulo&rsquo;, &lsquo;corpo&rsquo;);</code></p>
+<p><code>protected $fillable = array(&rsquo;titulo&rsquo;, &lsquo;corpo&rsquo;);</code></p>
 <p>Na documentação do laravel disponível <a href="http://laravel.com/docs/4.2/eloquent#mass-assignment">aqui</a> isso disponibilizará essas colunas como <i>Mass Assignment</i> que possibilitará criar novos registros simplesmente usando o método <i>create</i> e outros da classe Model passando um array associativo as colunas da classe, como no exemplo abaixo:</p>
-<p><code>$tarefa = Tarefa::create([&lsquo;titulo&rsquo;=&gt;&lsquo;Título da tarefa&rsquo;,&lsquo;corpo&rsquo;=&gt;&lsquo;Corpo da tarefa&hellip;']);</code></p>
+<p><code>$tarefa = Tarefa::create([&rsquo;titulo&rsquo;=&gt;&lsquo;Título da tarefa&rsquo;,&lsquo;corpo&rsquo;=&gt;&lsquo;Corpo da tarefa&hellip;&rsquo;]);</code></p>
 <p>Pois bem, uma vez adicionado as colunas a essa variável podemos partir para o controller e também criar nossas <i>Views</i>. Vamos então criar um novo arquivo chamado <i>index.blade.php</i> no diretório <i>resources/views/tarefa</i>, que fará a listagem das nossas tarefas, como mostrado abaixo:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -484,40 +482,40 @@
 </span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;pt-br&#34;</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Lista de Tarefas<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-  <span class="cp">&lt;?php foreach ($tarefas as $tarefa): ?&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
-        Id: <span class="cp">&lt;?php echo $tarefa-&gt;id ?&gt;</span>
-        <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
-        Título: <span class="cp">&lt;?php echo $tarefa-&gt;titulo ?&gt;</span>
-        <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
-        Corpo: <span class="cp">&lt;?php echo $tarefa-&gt;corpo ?&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-  <span class="cp">&lt;?php endforeach ?&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{!!URL::route(&#39;tarefa.create&#39;)!!}&#34;</span><span class="p">&gt;</span>Cadastro<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;pt-br&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Lista de Tarefas<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="cp">&lt;?php foreach ($tarefas as $tarefa): ?&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        Id: <span class="cp">&lt;?php echo $tarefa-&gt;id ?&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        Título: <span class="cp">&lt;?php echo $tarefa-&gt;titulo ?&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        Corpo: <span class="cp">&lt;?php echo $tarefa-&gt;corpo ?&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="cp">&lt;?php endforeach ?&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{!!URL::route(&#39;tarefa.create&#39;)!!}&#34;</span><span class="p">&gt;</span>Cadastro<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Observem que não estou entrando em grandes detalhes, pois a própria documentação do laravel é suficiente para estudos mais profundos.</p>
 <p>Agora que temos nossa view de listagem precisamos enviar os dados para ela, lembre-se no MVC a View tem a única responsabilidade de mostrar dados passados pelo controller, portanto no nosso <i>TarefaController</i> na função <i>index</i> vamos adicionar o seguinte código:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-php" data-lang="php"><span class="nv">$tarefas</span> <span class="o">=</span> <span class="nx">Tarefa</span><span class="o">::</span><span class="na">orderBy</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">get</span><span class="p">();</span>
-<span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;tarefa.index&#39;</span><span class="p">,</span><span class="nx">compact</span><span class="p">(</span><span class="s1">&#39;tarefas&#39;</span><span class="p">));</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$tarefas</span> <span class="o">=</span> <span class="nx">Tarefa</span><span class="o">::</span><span class="na">orderBy</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">get</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;tarefa.index&#39;</span><span class="p">,</span><span class="nx">compact</span><span class="p">(</span><span class="s1">&#39;tarefas&#39;</span><span class="p">));</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Isso passará um objeto chamado <i>Collection</i> padrão do laravel para representar uma coleção, essa Collection possui diversas funções interessantes que você pode verificar na documentação ou na API do laravel no site.</p>
 <p>Para ter certeza que nenhum erro está ocorrendo, execute o comando <i>php artisan serve</i> e acesse o endereço <a href="http://localhost:8000/tarefa">http://localhost:8000/tarefa</a>.</p>
@@ -525,7 +523,7 @@
 <p>Primeiramente crie um novo arquivo chamado <i>create.blade.php</i> na mesma pasta <i>tarefa</i> onde está localizado o arquivo index, dentro desse arquivo virá nosso formulário com os campos para cadastro.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -544,29 +542,29 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;pt-br&#34;</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Cadastro de Tarefa<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#34;{!!URL::route(&#39;tarefa.store&#39;)!!}&#34;</span> <span class="na">method</span><span class="o">=</span><span class="s">&#34;post&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;titulo&#34;</span><span class="p">&gt;</span>Título:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;titulo&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;corpo&#34;</span><span class="p">&gt;</span>Corpo:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;corpo&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;hidden&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;_token&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;csrf-token&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;{ Session::token() }&#34;</span> <span class="p">/&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;pt-br&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Cadastro de Tarefa<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#34;{!!URL::route(&#39;tarefa.store&#39;)!!}&#34;</span> <span class="na">method</span><span class="o">=</span><span class="s">&#34;post&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;titulo&#34;</span><span class="p">&gt;</span>Título:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;titulo&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;corpo&#34;</span><span class="p">&gt;</span>Corpo:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;corpo&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;hidden&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;_token&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;csrf-token&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;{ Session::token() }&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Apenas algumas considerações, para criarmos formulários no laravel poderíamos utilizar a classe utilitária <i>Form</i> que no laravel 5 não vem por padrão, porém optei por usar dessa forma por simplicidade no entendimento. O campo <i>_token</i> precisa ser coloca pois o laravel possui um tratamento de ataque de CSRF, que basicamente é evitar que alguém mal intencionado consiga realizar requisições POST,PUT e DELETE de fora do site. Por fim estou usando a classe helper URL para me retornar a URL completa para o método store do controller TarefaController. O método <i>store</i> do controller fará o cadastro efetivamente, ficando da seguinte forma:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -654,93 +652,93 @@
 </span><span class="lnt">86
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span> <span class="k">namespace</span> <span class="nx">App\Http\Controllers</span><span class="p">;</span>
-
-<span class="k">use</span> <span class="nx">App\Http\Requests</span><span class="p">;</span>
-<span class="k">use</span> <span class="nx">App\Http\Controllers\Controller</span><span class="p">;</span>
-<span class="k">use</span> <span class="nx">Illuminate\Http\Request</span><span class="p">;</span>
-<span class="k">use</span> <span class="nx">App\Tarefa</span><span class="p">;</span>
-<span class="k">use</span> <span class="nx">Input</span><span class="p">,</span> <span class="nx">Redirect</span><span class="p">;</span>
-
-<span class="k">class</span> <span class="nc">TarefaController</span> <span class="k">extends</span> <span class="nx">Controller</span> <span class="p">{</span>
-
-  <span class="sd">/**
-</span><span class="sd">   * Display a listing of the resource.
-</span><span class="sd">   *
-</span><span class="sd">   * @return Response
-</span><span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">()</span>
-  <span class="p">{</span>
-    <span class="nv">$tarefas</span> <span class="o">=</span> <span class="nx">Tarefa</span><span class="o">::</span><span class="na">orderBy</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">();</span>
-    <span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;tarefa.index&#39;</span><span class="p">,</span><span class="nx">compact</span><span class="p">(</span><span class="s1">&#39;tarefas&#39;</span><span class="p">));</span>
-  <span class="p">}</span>
-
-  <span class="sd">/**
-</span><span class="sd">   * Show the form for creating a new resource.
-</span><span class="sd">   *
-</span><span class="sd">   * @return Response
-</span><span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">create</span><span class="p">()</span>
-  <span class="p">{</span>
-    <span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;tarefa.create&#39;</span><span class="p">);</span>
-  <span class="p">}</span>
-
-  <span class="sd">/**
-</span><span class="sd">   * Store a newly created resource in storage.
-</span><span class="sd">   *
-</span><span class="sd">   * @return Response
-</span><span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">store</span><span class="p">()</span>
-  <span class="p">{</span>
-    <span class="nv">$tarefa</span> <span class="o">=</span> <span class="nx">Tarefa</span><span class="o">::</span><span class="na">create</span><span class="p">(</span><span class="nx">Input</span><span class="o">::</span><span class="na">all</span><span class="p">());</span>
-    <span class="k">return</span> <span class="nx">Redirect</span><span class="o">::</span><span class="na">route</span><span class="p">(</span><span class="s1">&#39;tarefa.index&#39;</span><span class="p">);</span>
-  <span class="p">}</span>
-
-  <span class="sd">/**
-</span><span class="sd">   * Display the specified resource.
-</span><span class="sd">   *
-</span><span class="sd">   * @param  int  $id
-</span><span class="sd">   * @return Response
-</span><span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">show</span><span class="p">(</span><span class="nv">$id</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="c1">//
-</span><span class="c1"></span>  <span class="p">}</span>
-
-  <span class="sd">/**
-</span><span class="sd">   * Show the form for editing the specified resource.
-</span><span class="sd">   *
-</span><span class="sd">   * @param  int  $id
-</span><span class="sd">   * @return Response
-</span><span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">edit</span><span class="p">(</span><span class="nv">$id</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="c1">//
-</span><span class="c1"></span>  <span class="p">}</span>
-
-  <span class="sd">/**
-</span><span class="sd">   * Update the specified resource in storage.
-</span><span class="sd">   *
-</span><span class="sd">   * @param  int  $id
-</span><span class="sd">   * @return Response
-</span><span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">update</span><span class="p">(</span><span class="nv">$id</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="c1">//
-</span><span class="c1"></span>  <span class="p">}</span>
-
-  <span class="sd">/**
-</span><span class="sd">   * Remove the specified resource from storage.
-</span><span class="sd">   *
-</span><span class="sd">   * @param  int  $id
-</span><span class="sd">   * @return Response
-</span><span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">destroy</span><span class="p">(</span><span class="nv">$id</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="c1">//
-</span><span class="c1"></span>  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span> <span class="k">namespace</span> <span class="nx">App\Http\Controllers</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">App\Http\Requests</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">App\Http\Controllers\Controller</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">Illuminate\Http\Request</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">App\Tarefa</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">Input</span><span class="p">,</span> <span class="nx">Redirect</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">TarefaController</span> <span class="k">extends</span> <span class="nx">Controller</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * Display a listing of the resource.
+</span></span></span><span class="line"><span class="cl"><span class="sd">   *
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @return Response
+</span></span></span><span class="line"><span class="cl"><span class="sd">   */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$tarefas</span> <span class="o">=</span> <span class="nx">Tarefa</span><span class="o">::</span><span class="na">orderBy</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;tarefa.index&#39;</span><span class="p">,</span><span class="nx">compact</span><span class="p">(</span><span class="s1">&#39;tarefas&#39;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * Show the form for creating a new resource.
+</span></span></span><span class="line"><span class="cl"><span class="sd">   *
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @return Response
+</span></span></span><span class="line"><span class="cl"><span class="sd">   */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">create</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;tarefa.create&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * Store a newly created resource in storage.
+</span></span></span><span class="line"><span class="cl"><span class="sd">   *
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @return Response
+</span></span></span><span class="line"><span class="cl"><span class="sd">   */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">store</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$tarefa</span> <span class="o">=</span> <span class="nx">Tarefa</span><span class="o">::</span><span class="na">create</span><span class="p">(</span><span class="nx">Input</span><span class="o">::</span><span class="na">all</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">Redirect</span><span class="o">::</span><span class="na">route</span><span class="p">(</span><span class="s1">&#39;tarefa.index&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * Display the specified resource.
+</span></span></span><span class="line"><span class="cl"><span class="sd">   *
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @param  int  $id
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @return Response
+</span></span></span><span class="line"><span class="cl"><span class="sd">   */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">show</span><span class="p">(</span><span class="nv">$id</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * Show the form for editing the specified resource.
+</span></span></span><span class="line"><span class="cl"><span class="sd">   *
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @param  int  $id
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @return Response
+</span></span></span><span class="line"><span class="cl"><span class="sd">   */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">edit</span><span class="p">(</span><span class="nv">$id</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * Update the specified resource in storage.
+</span></span></span><span class="line"><span class="cl"><span class="sd">   *
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @param  int  $id
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @return Response
+</span></span></span><span class="line"><span class="cl"><span class="sd">   */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">update</span><span class="p">(</span><span class="nv">$id</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * Remove the specified resource from storage.
+</span></span></span><span class="line"><span class="cl"><span class="sd">   *
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @param  int  $id
+</span></span></span><span class="line"><span class="cl"><span class="sd">   * @return Response
+</span></span></span><span class="line"><span class="cl"><span class="sd">   */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">destroy</span><span class="p">(</span><span class="nv">$id</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Isso criará uma nova tarefa e redirecionará para a página de index do controller.</p>
 <p>Bem pessoal esse foi um exemplo usando Model, View e Controller, claro que é um exemplo apenas ilustrativo, faltaria outras funcionalidades, porém peço que para informações mais profundas sempre tenham em mãos a documentação do laravel, lembre-se que ela é sua bíblia, estarei na próxima parte mostrando um pouco sobre a parte de testes do laravel e um exemplo de workflow muito utilizado atualmente que é o <i>TDD</i> ou <i>Desenvolvimento Dirigido por Testes</i> em tradução livre, escrevam nos comentários o que acharam e até a próxima pessoal.</p>
@@ -830,7 +828,7 @@
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -1030,7 +1028,8 @@
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -1048,24 +1047,24 @@
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

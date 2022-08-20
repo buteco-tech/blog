@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Fazendo backup para o Amazon S3 com Python &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="O Amazon Simple Storage Service (Amazon S3) oferece aos desenvolvedores e equipes de TI armazenamento de objetos seguro, durável e altamente escalonável. O Amazon S3 é fácil de usar, com uma interface de serviços da web simples para armazenar e recuperar qualquer quantidade de dados de qualquer parte da web. Com o Amazon S3, você paga apenas pelo armazenamento realmente utilizado. Não há taxa mínima nem custo de configuração." />
 
-
-
 <meta itemprop="name" content="Fazendo backup para o Amazon S3 com Python">
-<meta itemprop="description" content="O Amazon Simple Storage Service (Amazon S3) oferece aos desenvolvedores e equipes de TI armazenamento de objetos seguro, durável e altamente escalonável. O Amazon S3 é fácil de usar, com uma interface de serviços da web simples para armazenar e recuperar qualquer quantidade de dados de qualquer parte da web. Com o Amazon S3, você paga apenas pelo armazenamento realmente utilizado. Não há taxa mínima nem custo de configuração."><meta itemprop="datePublished" content="2015-04-23T07:46:32&#43;00:00" />
-<meta itemprop="dateModified" content="2015-04-23T07:46:32&#43;00:00" />
+<meta itemprop="description" content="O Amazon Simple Storage Service (Amazon S3) oferece aos desenvolvedores e equipes de TI armazenamento de objetos seguro, durável e altamente escalonável. O Amazon S3 é fácil de usar, com uma interface de serviços da web simples para armazenar e recuperar qualquer quantidade de dados de qualquer parte da web. Com o Amazon S3, você paga apenas pelo armazenamento realmente utilizado. Não há taxa mínima nem custo de configuração."><meta itemprop="datePublished" content="2015-04-23T07:46:32+00:00" />
+<meta itemprop="dateModified" content="2015-04-23T07:46:32+00:00" />
 <meta itemprop="wordCount" content="688"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/amazon_aws-s3.png">
 <meta itemprop="keywords" content="aws,amazon-s3,boto,python,backup," />
 <meta property="og:title" content="Fazendo backup para o Amazon S3 com Python" />
 <meta property="og:description" content="O Amazon Simple Storage Service (Amazon S3) oferece aos desenvolvedores e equipes de TI armazenamento de objetos seguro, durável e altamente escalonável. O Amazon S3 é fácil de usar, com uma interface de serviços da web simples para armazenar e recuperar qualquer quantidade de dados de qualquer parte da web. Com o Amazon S3, você paga apenas pelo armazenamento realmente utilizado. Não há taxa mínima nem custo de configuração." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/fazendo-backup-para-o-amazon-s3-com-python/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2015/04/amazon_aws-s3.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2015-04-23T07:46:32&#43;00:00" />
-<meta property="article:modified_time" content="2015-04-23T07:46:32&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2015-04-23T07:46:32+00:00" />
+<meta property="article:modified_time" content="2015-04-23T07:46:32+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -398,16 +396,16 @@
 <p><code>boto.connect_s3()</code></p>
 <p>A primeira e a terceira esperam que as variáveis de ambiente AWS_ACCESS_KEY_ID e AWS_SECRET_ACCESS_KEY possuam a chave e o segredo para acesso. Já a segunda você passa manualmente <em>hard-code</em>. Para obter uma chave de acesso visite <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html" target="_blank">este link</a>.</p>
 <p>Após conectado, devemos escolher um Bucket para fazer o upload. A escolha pode ser de duas formas:</p>
-<p><code>bucket = conn.get_bucket(&lsquo;nome_bucket&rsquo;)</code></p>
+<p><code>bucket = conn.get_bucket(&rsquo;nome_bucket&rsquo;)</code></p>
 <p>Ou:</p>
-<p><code>bucket = conn.create_bucket(&lsquo;nome_bucket&rsquo;)</code></p>
+<p><code>bucket = conn.create_bucket(&rsquo;nome_bucket&rsquo;)</code></p>
 <p>A primeira espera que o Bucket já esteja criado. Já a segunda cria um Bucket. A segunda opção lançará uma exceção caso o nome do Bucket já exista.</p>
 <p>Após escolher um Bucket vamos fazer o upload do arquivo. Para isto precisamos criar uma <em>Key</em>, conforme abaixo:</p>
 <p><code>k = Key(bucket)</code></p>
 <p>Toda <em>Key</em> é chave/valor. Ou seja, nome_arquivo/arquivo. Não necessariamente apenas um arquivo, você pode armazenar qualquer coisa que desejar.</p>
 <p>A atribuição de chave/valor funciona da seguinte forma:</p>
-<p><code>k.key = &lsquo;nome_arquivo.txt&rsquo;
-k.set_contents_from_filename(&lsquo;nome_arquivo.txt&rsquo;)</code></p>
+<p><code>k.key = &rsquo;nome_arquivo.txt&rsquo;
+k.set_contents_from_filename(&rsquo;nome_arquivo.txt&rsquo;)</code></p>
 <p>key é a chave única que deve ser atribuída para fazer o upload. set_contents_from_filename faz o trabalho duro do upload. Este método não é recomendado para arquivos muito grandes. Para isto devemos fazer o upload em diversas partes. Conforme abaixo:</p>
 <script src="//gistfy-app.herokuapp.com/github/ButecoOpenSource/boto-s3/s3_large_upload.py" type="text/javascript"></script>
 <p>Esta parte do código dispensa comentários adicionais, como você pode observar os comentários estão no fonte acima.</p>
@@ -500,7 +498,7 @@ k.set_contents_from_filename(&lsquo;nome_arquivo.txt&rsquo;)</code></p>
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -700,7 +698,8 @@ k.set_contents_from_filename(&lsquo;nome_arquivo.txt&rsquo;)</code></p>
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -718,24 +717,24 @@ k.set_contents_from_filename(&lsquo;nome_arquivo.txt&rsquo;)</code></p>
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

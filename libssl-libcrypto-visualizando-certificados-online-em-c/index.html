@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>libssl e libcrypto: Visualizando certificados online em C &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Muito se fala do OpenSSL para geração e manutenção de certificados digitais, além disso, o OpenSSL pode criptografar arquivos, gerar números randômicos, e etc. Este artigo vem mostrar como utilizar a libssl para visualizar certificado utilizando a linguagem C." />
 
-
-
 <meta itemprop="name" content="libssl e libcrypto: Visualizando certificados online em C">
-<meta itemprop="description" content="Muito se fala do OpenSSL para geração e manutenção de certificados digitais, além disso, o OpenSSL pode criptografar arquivos, gerar números randômicos, e etc. Este artigo vem mostrar como utilizar a libssl para visualizar certificado utilizando a linguagem C."><meta itemprop="datePublished" content="2016-05-23T23:34:46&#43;00:00" />
-<meta itemprop="dateModified" content="2016-05-23T23:34:46&#43;00:00" />
+<meta itemprop="description" content="Muito se fala do OpenSSL para geração e manutenção de certificados digitais, além disso, o OpenSSL pode criptografar arquivos, gerar números randômicos, e etc. Este artigo vem mostrar como utilizar a libssl para visualizar certificado utilizando a linguagem C."><meta itemprop="datePublished" content="2016-05-23T23:34:46+00:00" />
+<meta itemprop="dateModified" content="2016-05-23T23:34:46+00:00" />
 <meta itemprop="wordCount" content="648"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/05/openssl-3.png">
 <meta itemprop="keywords" content="c,cpp,libcrypto,libssl,openssl,linux," />
 <meta property="og:title" content="libssl e libcrypto: Visualizando certificados online em C" />
 <meta property="og:description" content="Muito se fala do OpenSSL para geração e manutenção de certificados digitais, além disso, o OpenSSL pode criptografar arquivos, gerar números randômicos, e etc. Este artigo vem mostrar como utilizar a libssl para visualizar certificado utilizando a linguagem C." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/libssl-libcrypto-visualizando-certificados-online-em-c/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/05/openssl-3.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2016-05-23T23:34:46&#43;00:00" />
-<meta property="article:modified_time" content="2016-05-23T23:34:46&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2016-05-23T23:34:46+00:00" />
+<meta property="article:modified_time" content="2016-05-23T23:34:46+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -387,13 +385,13 @@ Esta struct contém os dados da conexão em si. Na criação, ela herda todas as
 <h3>Fluxo do código</h3>
 Basicamente o programa começa esperando como parâmetro uma URL de um servidor que aceita HTTPS. Após este, utilizamos a chamada <em>SSL_load_error_strings</em> para carregar as strings de erro de SSL, para mostrarmos quando algum erro acontecer.
 <p>Utilizamos a chamada BIO_new_fp, apontando para <em>stderr</em>, para imprimir errors na saída de erros do C, e SSL_library_init para carregar as funções e protocolos do SSL.</p>
-<p>Criamos uma estrutura BIO que servirá como um client socket, setando hostname e porta, sendo que esta ultima aceita protocolos como HTTP e HTTPS ao invés da porta. Após o connect to BIO, a struct SSL_CTX é criada com suporte a SSLv2 e SSLv3, e desabilitamos a versão 2 por suas vulnerabilidades (<a href="https://drownattack.com/)">https://drownattack.com/)</a>.</p>
+<p>Criamos uma estrutura BIO que servirá como um client socket, setando hostname e porta, sendo que esta ultima aceita protocolos como HTTP e HTTPS ao invés da porta. Após o connect to BIO, a struct SSL_CTX é criada com suporte a SSLv2 e SSLv3, e desabilitamos a versão 2 por suas vulnerabilidades (<a href="https://drownattack.com/%29"  target="_blank" rel="noopener">https://drownattack.com/)</a>.</p>
 <p>A struct SSL_CTX é utilizada para criar a SSL. Esta nova struct SSL é então atrelada ao BIO de conexão criado anteriormente, e assim executando um SSL_connect. Esta chamada inicia o <em>handshake</em>, ou o &ldquo;aperto de mão&rdquo;, entre o cliente e servidor, configurando a conexão segura. Se o retorno desta chamada for diferente de -1, então estamos em uma conexão segura com o servidor.</p>
 <p>Com a estrutura SSL já configurada e pareada com o servidor, conseguimos imprimir quais os tipos de encriptação que são suportados pelo servidor e solicitamos que o servidor envie seu certificado com a chamada <em>SSL_get_peer_certificate</em>, populando o ponteiro para a struct X509. Com o certificado do servidor em mãos, podemos extrair algumas informações dele, e até mesmo quem foi a Autoridade Certificado (CA) que assinou este certificado.</p>
 <p>Para compilar o código, execute:
 <code>gcc extract_server_info.c -o extract_server_info -lssl -lcrypto</code></p>
 <p>Ao executar o programa exemplo com o site da HP, obtemos a seguinte saída:
-<samp>[marcos@xfiles ssl_socket]$ ./bin/extract_server_info <a href="http://www.hp.com">www.hp.com</a>
+<samp>[marcos@xfiles ssl_socket]$ ./bin/extract_server_info <a href="https://www.hp.com"  target="_blank" rel="noopener">www.hp.com</a>
 Connected with DHE-RSA-AES256-SHA encryption
 Cipher version: TLSv1/SSLv3
 Remote certificate info
@@ -497,7 +495,7 @@ Issuer: C=US, O=Symantec Corporation, OU=Symantec Trust Network, CN=Symantec Cla
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -697,7 +695,8 @@ Issuer: C=US, O=Symantec Corporation, OU=Symantec Trust Network, CN=Symantec Cla
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -715,24 +714,24 @@ Issuer: C=US, O=Symantec Corporation, OU=Symantec Trust Network, CN=Symantec Cla
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

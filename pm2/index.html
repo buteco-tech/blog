@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>PM2 - Gerenciador de aplicações Node.js em ambientes de produção &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -60,12 +60,10 @@
 <meta name="description" content="O Node.js, famoso interpretador javascript do lado servidor, trouxe uma nova gama de possibilidades para a linguagem javascript. Entre suas maiores vantagens posso citar o uso da mesma linguagem de programação no lado cliente e servidor e usar programação assíncrona por padrão. Contudo em algum momento da vida de seu projeto ou da sua aplicação, este deve ser publicado, e é neste ponto que o PM2 aparece.
 O PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cluster para alta disponibilidade com balanceamento de carga, logs, recarregar a aplicação automaticamente quando há alterações nos arquivos ou reinicio do servidor, entre diversas outras atividades que a principio podem parecer simples, porém tenha em mente que o PM2 foi projetado para gerenciar diversas aplicações rodando de uma só vez, em um único console." />
 
-
-
 <meta itemprop="name" content="PM2 - Gerenciador de aplicações Node.js em ambientes de produção">
 <meta itemprop="description" content="O Node.js, famoso interpretador javascript do lado servidor, trouxe uma nova gama de possibilidades para a linguagem javascript. Entre suas maiores vantagens posso citar o uso da mesma linguagem de programação no lado cliente e servidor e usar programação assíncrona por padrão. Contudo em algum momento da vida de seu projeto ou da sua aplicação, este deve ser publicado, e é neste ponto que o PM2 aparece.
-O PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cluster para alta disponibilidade com balanceamento de carga, logs, recarregar a aplicação automaticamente quando há alterações nos arquivos ou reinicio do servidor, entre diversas outras atividades que a principio podem parecer simples, porém tenha em mente que o PM2 foi projetado para gerenciar diversas aplicações rodando de uma só vez, em um único console."><meta itemprop="datePublished" content="2016-01-27T12:12:29&#43;00:00" />
-<meta itemprop="dateModified" content="2016-01-27T12:12:29&#43;00:00" />
+O PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cluster para alta disponibilidade com balanceamento de carga, logs, recarregar a aplicação automaticamente quando há alterações nos arquivos ou reinicio do servidor, entre diversas outras atividades que a principio podem parecer simples, porém tenha em mente que o PM2 foi projetado para gerenciar diversas aplicações rodando de uma só vez, em um único console."><meta itemprop="datePublished" content="2016-01-27T12:12:29+00:00" />
+<meta itemprop="dateModified" content="2016-01-27T12:12:29+00:00" />
 <meta itemprop="wordCount" content="877"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/logo_pm2.png">
 <meta itemprop="keywords" content="javascript,node-js,pm2," />
 <meta property="og:title" content="PM2 - Gerenciador de aplicações Node.js em ambientes de produção" />
@@ -73,8 +71,8 @@ O PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cl
 O PM2 basicamente serve para manter e monitorar sua aplicação rodando, usar cluster para alta disponibilidade com balanceamento de carga, logs, recarregar a aplicação automaticamente quando há alterações nos arquivos ou reinicio do servidor, entre diversas outras atividades que a principio podem parecer simples, porém tenha em mente que o PM2 foi projetado para gerenciar diversas aplicações rodando de uma só vez, em um único console." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/pm2/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/01/logo_pm2.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2016-01-27T12:12:29&#43;00:00" />
-<meta property="article:modified_time" content="2016-01-27T12:12:29&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2016-01-27T12:12:29+00:00" />
+<meta property="article:modified_time" content="2016-01-27T12:12:29+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -383,7 +381,7 @@ Isto fará a instalação global do PM2, vou pressupor que você já possuí o i
 Logo em seguida podemos verificar se a aplicação está rodando corretamente com o seguinte comando:
 <p style="text-align: center;"><strong>pm2 list</strong></p>
 Algo como a imagem abaixo deve ser exibido.
-<p><img class="aligncenter size-full wp-image-4629" src="/images/wp-content/uploads/2016/01/Captura-de-tela-de-2016-01-25-202321.png" alt="pm2 list" width="770" height="113" /></p>
+<img class="aligncenter size-full wp-image-4629" src="/images/wp-content/uploads/2016/01/Captura-de-tela-de-2016-01-25-202321.png" alt="pm2 list" width="770" height="113" />
 <p>Agora conforme está colocado no arquivo <strong><em>ping.js</em></strong>, se acessarmos no navegador o endereço <strong>&ldquo;http://localhost:3000&rdquo;</strong> será retornado um objeto JSON com as informações que comentei anteriormente.</p>
 <p>Contudo, até aqui, o pm2 não se diferencia  dos outros gerenciadores ou até mesmo de executar apenas o próprio node com o comando <strong>&ldquo;node ping.js&rdquo;</strong>, o resultado é o mesmo e veremos agora alguns diferenciais dele. O primeiro é a possibilidade criar um cluster. O conceito básico de um cluster é criar varias instâncias da aplicação e fazer o balanceamento da requisições do cliente entre elas, otimizando o uso de recursos. Para criarmos um cluster no PM2 inicialmente precisamos remover a aplicação que adicionamos anteriormente executando o comando abaixo para remover :</p>
 <p style="text-align: center;"><strong>pm2 delete 0</strong></p>
@@ -392,7 +390,7 @@ Agora se rodarmos <strong>"pm2 list"</strong> novamente não será mais exibido 
 <p class="editor editor-colors" style="text-align: center;"><strong><span class="text">pm2 start index.js -i 4
 </span></strong></p>
 <code class="highlight bash"></code>Este comando escala a aplicação para 4 instâncias, para visualizar estas instâncias use o comando <strong>"pm2 list"</strong> e você verá uma saída parecida com a imagem abaixo:
-<p><img class="aligncenter wp-image-4630" src="/images/wp-content/uploads/2016/01/Captura-de-tela-de-2016-01-25-210344.png" alt="pm2 + 4 instâncias" width="620" height="172" /></p>
+<img class="aligncenter wp-image-4630" src="/images/wp-content/uploads/2016/01/Captura-de-tela-de-2016-01-25-210344.png" alt="pm2 + 4 instâncias" width="620" height="172" />
 <p>Talvez você se pergunte porque fazer isso se o Node.js é <strong>event-driven</strong>,  ou seja, trabalha com I/O de forma assíncrona. Para entender isso você precisa entender a forma como Node.js trabalha, que faz basicamente a otimização do uso de I/O, não aguardando que uma leitura ou escrita acabe e fazendo o uso de callbacks. Resumidamente quando o Node.js precisa fazer algum I/O, como chamada a um banco de dados, API ou escrita e leitura de arquivo em disco, você sempre irá informar uma função de callback, dizendo ao Node.js que quando acabar de fazer a ação ele precisa executar a função designada. Isso otimiza a questão de leitura e escrita mas não o de CPU, que continua sendo usado sincronicamente. Por essa razão o próprio site oficial está bem claro quais tipos de aplicações que o Node.js é eficiente, que são as chamadas &ldquo;Data Drive Applications&rdquo;, ou aplicações que utilizam na maioria ou principalmente funções de leitura e escrita do tipo que citei anteriormente.</p>
 <p>Segue alguns outros comandos úteis do PM2 que você pode se interessar eu listo abaixo:</p>
 <table>
@@ -503,7 +501,7 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -703,7 +701,8 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -721,24 +720,24 @@ Mais informações sobre o PM2 você pode encontrar neste <a href="https://www.n
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

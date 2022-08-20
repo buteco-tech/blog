@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Tcl/Expect: Automatização de comandos interativos no Linux &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Neste artigo iremos abordar a automatização de comandos com o Tcl/expect." />
 
-
-
 <meta itemprop="name" content="Tcl/Expect: Automatização de comandos interativos no Linux">
-<meta itemprop="description" content="Neste artigo iremos abordar a automatização de comandos com o Tcl/expect."><meta itemprop="datePublished" content="2014-10-07T00:23:49&#43;00:00" />
-<meta itemprop="dateModified" content="2014-10-07T00:23:49&#43;00:00" />
+<meta itemprop="description" content="Neste artigo iremos abordar a automatização de comandos com o Tcl/expect."><meta itemprop="datePublished" content="2014-10-07T00:23:49+00:00" />
+<meta itemprop="dateModified" content="2014-10-07T00:23:49+00:00" />
 <meta itemprop="wordCount" content="699"><meta itemprop="image" content="https://butecotecnologico.com.br/logos/capybara_400_bg.png"/>
 <meta itemprop="keywords" content="linux,tcl,tcl-expect,ruby,automacao," />
 <meta property="og:title" content="Tcl/Expect: Automatização de comandos interativos no Linux" />
 <meta property="og:description" content="Neste artigo iremos abordar a automatização de comandos com o Tcl/expect." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/tclexpect-automatizacao-de-comandos-interativos-no-linux/" /><meta property="og:image" content="https://butecotecnologico.com.br/logos/capybara_400_bg.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2014-10-07T00:23:49&#43;00:00" />
-<meta property="article:modified_time" content="2014-10-07T00:23:49&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2014-10-07T00:23:49+00:00" />
+<meta property="article:modified_time" content="2014-10-07T00:23:49+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -364,11 +362,11 @@ Para mais informações sobre Tcl, sua origem ou outros dados, você pode verifi
 Uma exemplo de Hello World com ela pode ser feito com:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="nb">puts</span> <span class="s2">&#34;Hello World!&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="line"><span class="cl"><span class="nb">puts</span> <span class="s2">&#34;Hello World!&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Para executar comandos Tcl, será necessário instalar o interpretador Tcl.
 Atualmente todas as maiores distribuições Linux contém o Tcl em seus repositórios.
@@ -382,7 +380,7 @@ Este handler se chama <code>spawn_id</code>. Com este <code>spawn_id</code> o pr
 Como primeiro exemplo será mostrado um telnet, onde interativamente precisamos informar usuário e senha, e neste caso será automatizado pelo Expect:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -403,26 +401,26 @@ Como primeiro exemplo será mostrado um telnet, onde interativamente precisamos 
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-tcl" data-lang="tcl"><span class="c"># Assume $remote_server, $my_user_id, $my_password, and $my_command were read in earlier
-</span><span class="c"># in the script.
-</span><span class="c"># Open a telnet session to a remote server, and wait for a username prompt.
-</span><span class="c"></span><span class="nv">spawn</span> telnet <span class="nv">$remote_server</span>
-<span class="nv">expect</span> <span class="s2">&#34;username:&#34;</span>
-<span class="c"># Send the username, and then wait for a password prompt.
-</span><span class="c"></span><span class="nv">send</span> <span class="s2">&#34;$my_user_id\r&#34;</span>
-<span class="nv">expect</span> <span class="s2">&#34;password:&#34;</span>
-<span class="c"># Send the password, and then wait for a shell prompt.
-</span><span class="c"></span><span class="nv">send</span> <span class="s2">&#34;$my_password\r&#34;</span>
-<span class="nv">expect</span> <span class="s2">&#34;%&#34;</span>
-<span class="c"># Send the prebuilt command, and then wait for another shell prompt.
-</span><span class="c"></span><span class="nv">send</span> <span class="s2">&#34;$my_command\r&#34;</span>
-<span class="nv">expect</span> <span class="s2">&#34;%&#34;</span>
-<span class="c"># Capture the results of the command into a variable. This can be displayed, or written to disk.
-</span><span class="c"></span><span class="k">set</span> results <span class="nv">$expect_out</span><span class="k">(</span><span class="nv">buffer</span><span class="k">)</span>
-<span class="c"># Exit the telnet session, and wait for a special end-of-file character.
-</span><span class="c"></span><span class="nv">send</span> <span class="s2">&#34;exit\r&#34;</span>
-<span class="nv">expect</span> eof
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-tcl" data-lang="tcl"><span class="line"><span class="cl"><span class="c"># Assume $remote_server, $my_user_id, $my_password, and $my_command were read in earlier
+</span></span></span><span class="line"><span class="cl"><span class="c"># in the script.
+</span></span></span><span class="line"><span class="cl"><span class="c"># Open a telnet session to a remote server, and wait for a username prompt.
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nv">spawn</span> telnet <span class="nv">$remote_server</span>
+</span></span><span class="line"><span class="cl"><span class="nv">expect</span> <span class="s2">&#34;username:&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># Send the username, and then wait for a password prompt.
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nv">send</span> <span class="s2">&#34;$my_user_id\r&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">expect</span> <span class="s2">&#34;password:&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># Send the password, and then wait for a shell prompt.
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nv">send</span> <span class="s2">&#34;$my_password\r&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">expect</span> <span class="s2">&#34;%&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># Send the prebuilt command, and then wait for another shell prompt.
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nv">send</span> <span class="s2">&#34;$my_command\r&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">expect</span> <span class="s2">&#34;%&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># Capture the results of the command into a variable. This can be displayed, or written to disk.
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">set</span> results <span class="nv">$expect_out</span><span class="k">(</span><span class="nv">buffer</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="c"># Exit the telnet session, and wait for a special end-of-file character.
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nv">send</span> <span class="s2">&#34;exit\r&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">expect</span> eof
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>A variável global <code>timeout</code> diz respeito a quanto tempo cada chamada do comando Expect vai esperar pelo retorno especificado.
 Colocando este como <code>-1</code> remove a restrição de tempo do comando <code>expect</code>.
@@ -434,7 +432,7 @@ Este comando basicamente entrega ao usuário o programa executado pelo expect.
 Um exemplo deste pode ser mostrado com uma conexão SSH, onde temos um usuário pré-configurado e ao fazer o login o prompt do SSH é mostrado ao usuário para que este possa executar comando no host remoto.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -451,22 +449,22 @@ Um exemplo deste pode ser mostrado com uma conexão SSH, onde temos um usuário 
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-tcl" data-lang="tcl"><span class="k">proc</span> Login <span class="k">{</span><span class="nv">username</span> server password<span class="k">}</span> <span class="k">{</span>
-    <span class="nv">spawn</span> <span class="o">/</span>usr<span class="o">/</span>bin<span class="o">/</span>ssh <span class="nv">$username</span><span class="err">@</span><span class="nv">$server</span>
-    <span class="nv">expect</span> <span class="k">{</span>
-        <span class="nv">-re</span> <span class="s2">&#34;Are you sure you want to continue connecting (yes/no)?&#34;</span> <span class="k">{</span>
-            <span class="nv">exp_send</span> <span class="s2">&#34;yes\r&#34;</span>
-            <span class="nv">exp_continue</span>
-            <span class="c">#continue to match statements within this expect {}
-</span><span class="c"></span>        <span class="k">}</span>
-
-        <span class="nv">-nocase</span> <span class="s2">&#34;password: &#34;</span> <span class="k">{</span>
-            <span class="nv">exp_send</span> <span class="s2">&#34;$password\r&#34;</span>
-            <span class="nv">interact</span>
-        <span class="k">}</span>
-    <span class="k">}</span>
-<span class="k">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-tcl" data-lang="tcl"><span class="line"><span class="cl"><span class="k">proc</span> Login <span class="k">{</span><span class="nv">username</span> server password<span class="k">}</span> <span class="k">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">spawn</span> <span class="o">/</span>usr<span class="o">/</span>bin<span class="o">/</span>ssh <span class="nv">$username</span><span class="err">@</span><span class="nv">$server</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">expect</span> <span class="k">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">-re</span> <span class="s2">&#34;Are you sure you want to continue connecting (yes/no)?&#34;</span> <span class="k">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">exp_send</span> <span class="s2">&#34;yes\r&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">exp_continue</span>
+</span></span><span class="line"><span class="cl">            <span class="c">#continue to match statements within this expect {}
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="k">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nv">-nocase</span> <span class="s2">&#34;password: &#34;</span> <span class="k">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">exp_send</span> <span class="s2">&#34;$password\r&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">interact</span>
+</span></span><span class="line"><span class="cl">        <span class="k">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Nó código acima podemos ver uma função de Tcl/Expect para criar uma conexão SSH.
 No Tcl os parâmetros não tem tipos, são tratados como strings.
@@ -502,6 +500,19 @@ Após este comando, o usuário pode digitar normalmente no terminal dentro da se
      <a href="https://butecotecnologico.com.br/tags/automacao/" class="tag-link">automacao</a>
   </li>
   </ul>
+</div>
+
+
+    <div class="m-2">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-6625957038449899"
+       data-ad-slot="4012390257"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </div>
 
 
@@ -558,7 +569,7 @@ Após este comando, o usuário pode digitar normalmente no terminal dentro da se
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -758,7 +769,8 @@ Após este comando, o usuário pode digitar normalmente no terminal dentro da se
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -776,24 +788,24 @@ Após este comando, o usuário pode digitar normalmente no terminal dentro da se
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

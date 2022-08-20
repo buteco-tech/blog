@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>A – ZFS Parte 1 &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -63,15 +63,13 @@ Por que não começar com a introdução da Wikipedia sobre ele
 ANTES: VOU REPETIR E DESTACAR, E SALIENTAR 2001 é o ano de origem do ZFS, das ideias e planejamentos qualquer outra coisa que venha depois é mera cópia como produtos chineses !! Ele foi anunciado oficialmente em setembro de 2004, e lançado em novembro de 2005.
 ZFS é uma combinação de sistema de arquivos e volume de manipulação lógica desenhado pela Sun Microsystems. As propriedades do ZFS incluem proteção contra corrupção de dados, suporte para altas capacidades de armazenamento, eficiente compressão de dados, integração de conceitos de sistemas de arquivos e volumes lógicos, suporte a snapshots e clones com cópia quando escreve, continua checagem de integração e automática recuperação, RAID-Z e nativo suporte a ACLs em NFSv4." />
 
-
-
 <meta itemprop="name" content="A – ZFS Parte 1">
 <meta itemprop="description" content="
 Imagem retirado de Tweakers
 Por que não começar com a introdução da Wikipedia sobre ele
 ANTES: VOU REPETIR E DESTACAR, E SALIENTAR 2001 é o ano de origem do ZFS, das ideias e planejamentos qualquer outra coisa que venha depois é mera cópia como produtos chineses !! Ele foi anunciado oficialmente em setembro de 2004, e lançado em novembro de 2005.
-ZFS é uma combinação de sistema de arquivos e volume de manipulação lógica desenhado pela Sun Microsystems. As propriedades do ZFS incluem proteção contra corrupção de dados, suporte para altas capacidades de armazenamento, eficiente compressão de dados, integração de conceitos de sistemas de arquivos e volumes lógicos, suporte a snapshots e clones com cópia quando escreve, continua checagem de integração e automática recuperação, RAID-Z e nativo suporte a ACLs em NFSv4."><meta itemprop="datePublished" content="2015-07-01T23:01:34&#43;00:00" />
-<meta itemprop="dateModified" content="2015-07-01T23:01:34&#43;00:00" />
+ZFS é uma combinação de sistema de arquivos e volume de manipulação lógica desenhado pela Sun Microsystems. As propriedades do ZFS incluem proteção contra corrupção de dados, suporte para altas capacidades de armazenamento, eficiente compressão de dados, integração de conceitos de sistemas de arquivos e volumes lógicos, suporte a snapshots e clones com cópia quando escreve, continua checagem de integração e automática recuperação, RAID-Z e nativo suporte a ACLs em NFSv4."><meta itemprop="datePublished" content="2015-07-01T23:01:34+00:00" />
+<meta itemprop="dateModified" content="2015-07-01T23:01:34+00:00" />
 <meta itemprop="wordCount" content="2312"><meta itemprop="image" content="https://butecotecnologico.com.br/logos/capybara_400_bg.png"/>
 <meta itemprop="keywords" content="freebsd,bsd,zfs,sistema-de-arquivos," />
 <meta property="og:title" content="A – ZFS Parte 1" />
@@ -82,8 +80,8 @@ ANTES: VOU REPETIR E DESTACAR, E SALIENTAR 2001 é o ano de origem do ZFS, das i
 ZFS é uma combinação de sistema de arquivos e volume de manipulação lógica desenhado pela Sun Microsystems. As propriedades do ZFS incluem proteção contra corrupção de dados, suporte para altas capacidades de armazenamento, eficiente compressão de dados, integração de conceitos de sistemas de arquivos e volumes lógicos, suporte a snapshots e clones com cópia quando escreve, continua checagem de integração e automática recuperação, RAID-Z e nativo suporte a ACLs em NFSv4." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/a-zfs-parte-1/" /><meta property="og:image" content="https://butecotecnologico.com.br/logos/capybara_400_bg.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2015-07-01T23:01:34&#43;00:00" />
-<meta property="article:modified_time" content="2015-07-01T23:01:34&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2015-07-01T23:01:34+00:00" />
+<meta property="article:modified_time" content="2015-07-01T23:01:34+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -388,10 +386,10 @@ Imagem retirado de <a href="http://tweakers.net" target="_blank">Tweakers</a></p
 <p>SIM!!!!!!!!!!!!!!!!!!!!!! isto mesmo .. algo que outros sistemas de arquivos demoraram tanto para fazer .. é uma forma prática de copiar todos os dados de um disco, e se necessário reutilizar ou fazer um <em>rollback </em>de todo o disco panap punm :P em segundos tá feito :)</p>
 <p>Em palavras práticas, temos um backup completo com estado do disco, mais ou menos como snapshots de um ambiente virtualizado como <strong>Vmware/XEN/Virtualbox</strong> &hellip; e podemos transporta este disco para onde acharmos melhor.</p>
 <p>Brincado com mitos O_O .. <strong>ZFS</strong> é um monstro comedor de RAM como o nosso querido café <strong>JAVA</strong>. <strong>FreeNAS </strong>mito :P, não .. gostaria que fosse assim, mas certas funcionalidades do ZFS como o copy-write fazem uso de alto consumo de <strong>RAM</strong>, não temos como evitar isto pois deixamos os dados e informações em RAM e acabamos passando gradativamente para o lento disco. Quanto de RAM preciso .. o_O 4GB é muito mais do que suficiente, e conhecendo os parâmetros conseguimos tirar os melhores benefícios deste filesystem. Lembrando que estamos falando de um <strong>filesystem </strong>parrudo para storages e NAS, não :P é brincadeira de criança, estamos falando de tecnologias de adulto, daqueles caras que gostam de tunar o carro para pegar 1km/hora a mais, e colocar aqueles xeons no seu SO. Se você não uma pessoa deste tipo :P volte para o seu windows ou para &hellip;&hellip; :).</p>
-<p>Certo, pessoas como eu, quase humanos normais, seja a classe personagem programador, administrador de rede, usuário avançado, nerd, <em>geek</em>, conseguiria tirar melhor proveito disto ou sentiria a diferença no desktop? O_O vou ser prático em desempenho não.. não vamos mentir, qualquer sistema decente rodando programas decentes, acaba utilizando a <strong>RAM </strong>para tudo, e apenas quando necessário faz acesso ao <em>filesystem</em>. E nossa a <strong>RAM </strong>é vezes mais rápida mãos ou olhos conseguiriam acompanhar, logo não você não sentira tanta diferença. É sempre bom também explicar, de nada adianta você criar várias formas de tunning e melhora de desempenho no seu <strong>SO</strong>, se o programa que você roda é tosco e usa muito do disco, toda hora fazendo chamadas de escrita em disco, isto é burrice, isto me lembra o Caetano Veloso falando sobre o sue programa tosco ( <a title="https://www.youtube.com/watch?v=rzgQZYO9Lko" href="https://www.youtube.com/watch?v=rzgQZYO9Lko" target="_blank"><a href="https://www.youtube.com/watch?v=rzgQZYO9Lko">https://www.youtube.com/watch?v=rzgQZYO9Lko</a></a> ), ou se aplicação depender toda hora de rede e de muitos dados da rede e você tem um <strong>3G </strong>ou uma ADSL lenta da OI.</p>
+<p>Certo, pessoas como eu, quase humanos normais, seja a classe personagem programador, administrador de rede, usuário avançado, nerd, <em>geek</em>, conseguiria tirar melhor proveito disto ou sentiria a diferença no desktop? O_O vou ser prático em desempenho não.. não vamos mentir, qualquer sistema decente rodando programas decentes, acaba utilizando a <strong>RAM </strong>para tudo, e apenas quando necessário faz acesso ao <em>filesystem</em>. E nossa a <strong>RAM </strong>é vezes mais rápida mãos ou olhos conseguiriam acompanhar, logo não você não sentira tanta diferença. É sempre bom também explicar, de nada adianta você criar várias formas de tunning e melhora de desempenho no seu <strong>SO</strong>, se o programa que você roda é tosco e usa muito do disco, toda hora fazendo chamadas de escrita em disco, isto é burrice, isto me lembra o Caetano Veloso falando sobre o sue programa tosco ( <a title="https://www.youtube.com/watch?v=rzgQZYO9Lko" href="https://www.youtube.com/watch?v=rzgQZYO9Lko" target="_blank"><a href="https://www.youtube.com/watch?v=rzgQZYO9Lko"  target="_blank" rel="noopener">https://www.youtube.com/watch?v=rzgQZYO9Lko</a></a> ), ou se aplicação depender toda hora de rede e de muitos dados da rede e você tem um <strong>3G </strong>ou uma ADSL lenta da OI.</p>
 <p>Comentário random .. ohhh mas o <em>systemd </em>agora liga 10 segundos mais rápido o meu computador!!! sou foda, :P .. foda é não precisar desligar o computador Xp toda hora para sentir este grande ganho de desempenho <code>hauhuahuahuahuuh &mdash; echo &ldquo;flamewars&rdquo; &gt;&gt; /dev/null</code></p>
 <p>Voltando ao foco <strong>ZFS</strong>, vamos brincar um pouco com ele.</p>
-<p>A ideia neste texto é utilizar o <strong>Virtualbox </strong>para virtualizar(Ohhhh!!! jurava que era para desenhar huahua ) e efetuar os testes, logo não vamos sentir os ganhos de desempenho pois estamos trabalhando com as abstrações de virtualização, logo estamos apenas tomando como referência para o aprendizado, então caros leitores isto não refleti a realidade, e tudo que você ler aqui não poderá ser utilizado em tribunais de discussões de <em>flamewars</em>. Nosso ambiente de teste será utilizado o <strong>FreeBSD 10.1 </strong>.. a pq não usa o <em>upstream </em>com o 11, o_o como diria o policia militar Bruno &ldquo;Por que eu quis!!&rdquo; ( <a title="https://www.youtube.com/watch?v=maplYUD9vUc" href="https://www.youtube.com/watch?v=maplYUD9vUc" target="_blank"><a href="https://www.youtube.com/watch?v=maplYUD9vUc">https://www.youtube.com/watch?v=maplYUD9vUc</a></a> )</p>
+<p>A ideia neste texto é utilizar o <strong>Virtualbox </strong>para virtualizar(Ohhhh!!! jurava que era para desenhar huahua ) e efetuar os testes, logo não vamos sentir os ganhos de desempenho pois estamos trabalhando com as abstrações de virtualização, logo estamos apenas tomando como referência para o aprendizado, então caros leitores isto não refleti a realidade, e tudo que você ler aqui não poderá ser utilizado em tribunais de discussões de <em>flamewars</em>. Nosso ambiente de teste será utilizado o <strong>FreeBSD 10.1 </strong>.. a pq não usa o <em>upstream </em>com o 11, o_o como diria o policia militar Bruno &ldquo;Por que eu quis!!&rdquo; ( <a title="https://www.youtube.com/watch?v=maplYUD9vUc" href="https://www.youtube.com/watch?v=maplYUD9vUc" target="_blank"><a href="https://www.youtube.com/watch?v=maplYUD9vUc"  target="_blank" rel="noopener">https://www.youtube.com/watch?v=maplYUD9vUc</a></a> )</p>
 <p>Informação interessante a partir do FreeBSD 10 já vem com a opção de utilizar o <strong>ZFS </strong>como <em>filesystem </em>padrão do seu SO ;) , mas não vamos usar XP para este laboratório, logo tenha uma instalação com UFS ou <strong>ZFS</strong>, e vamos adicionar novos discos virtuais. Marco, marco, como faço para criar um disco virtual e adicionar no <strong>Virtualbox </strong>.. simples :) procura no google se ele não souber te responder contrata alguém, menos eu .. XP existem coisas que as pessoas negam a se fazer esta é uma que me nego, já basta as coisas que rotineiramente tenho que fazer no meu trabalho para alguns usuários, é diferente pois recebo para isto. Aqui escrevo para descontrair :), e ajudo as pessoas com software livre pq é divertido :).</p>
 <p>Crie uma instalação do <strong>FreeBSD 10</strong>:
 Adicione 4 discos virtuais com 2GB de espaço</p>
@@ -529,13 +527,13 @@ ada4 ONLINE 0 0 0</p>
 <p>Pronto agora temos um espelho do espelho, criando um ambiente de alta disponibilidade nos discos que ganhamos no natal.</p>
 <p>Agora e as grandes e inovadores funcionalidades do <strong>ZFS</strong>, bom :) vou deixar para uma segunda parte pois este texto já ficou muito grande.</p>
 <p>Referências:
-[1] <a title="https://2007.asiabsdcon.org/papers/P16-slides.pdf" href="https://2007.asiabsdcon.org/papers/P16-slides.pdf" target="_blank"><a href="https://2007.asiabsdcon.org/papers/P16-slides.pdf">https://2007.asiabsdcon.org/papers/P16-slides.pdf</a></a> - Porting ZFS filesystem to Freebsd
-[2] <a title="https://wiki.freebsd.org/ZFSQuickStartGuide" href="https://wiki.freebsd.org/ZFSQuickStartGuide" target="_blank"><a href="https://wiki.freebsd.org/ZFSQuickStartGuide">https://wiki.freebsd.org/ZFSQuickStartGuide</a></a> ZFSQuickGuide
-[3] <a title="https://www.freebsd.org/doc/handbook/zfs.html" href="https://www.freebsd.org/doc/handbook/zfs.html" target="_blank"><a href="https://www.freebsd.org/doc/handbook/zfs.html">https://www.freebsd.org/doc/handbook/zfs.html</a></a> - Chapter 20. The Z File System (ZFS) - FreeBSD Handbook :P
-[4] <a title="http://docs.oracle.com/cd/E26505_01/html/E37384/index.html" href="http://docs.oracle.com/cd/E26505_01/html/E37384/index.html" target="_blank"><a href="http://docs.oracle.com/cd/E26505_01/html/E37384/index.html">http://docs.oracle.com/cd/E26505_01/html/E37384/index.html</a></a> - Oracle Solaris ZFS Administration Guide
-[5] <a title="http://pt.slideshare.net/tchelinux/zfs-4496934" href="http://pt.slideshare.net/tchelinux/zfs-4496934" target="_blank"><a href="http://pt.slideshare.net/tchelinux/zfs-4496934">http://pt.slideshare.net/tchelinux/zfs-4496934</a></a> - case bem interessante de um usuário de vários filesystem falando sobre todos e o motivo da adoção do ZFS por ele com o Opensolaris.
-[6] <a title="http://pt.slideshare.net/mewandalmeida/zfs" href="http://pt.slideshare.net/mewandalmeida/zfs" target="_blank"><a href="http://pt.slideshare.net/mewandalmeida/zfs">http://pt.slideshare.net/mewandalmeida/zfs</a></a> - Ótimo texto da SUN sobre ZFS
-[7] <a title="http://pt.slideshare.net/billhathaway/zfs-in-30-minutes?next_slideshow=3" href="http://pt.slideshare.net/billhathaway/zfs-in-30-minutes?next_slideshow=3" target="_blank"><a href="http://pt.slideshare.net/billhathaway/zfs-in-30-minutes?next_slideshow=3">http://pt.slideshare.net/billhathaway/zfs-in-30-minutes?next_slideshow=3</a></a> - ZFS in 30 minutes .. não preciso falar mais nada ;D</p>
+[1] <a title="https://2007.asiabsdcon.org/papers/P16-slides.pdf" href="https://2007.asiabsdcon.org/papers/P16-slides.pdf" target="_blank"><a href="https://2007.asiabsdcon.org/papers/P16-slides.pdf"  target="_blank" rel="noopener">https://2007.asiabsdcon.org/papers/P16-slides.pdf</a></a> - Porting ZFS filesystem to Freebsd
+[2] <a title="https://wiki.freebsd.org/ZFSQuickStartGuide" href="https://wiki.freebsd.org/ZFSQuickStartGuide" target="_blank"><a href="https://wiki.freebsd.org/ZFSQuickStartGuide"  target="_blank" rel="noopener">https://wiki.freebsd.org/ZFSQuickStartGuide</a></a> ZFSQuickGuide
+[3] <a title="https://www.freebsd.org/doc/handbook/zfs.html" href="https://www.freebsd.org/doc/handbook/zfs.html" target="_blank"><a href="https://www.freebsd.org/doc/handbook/zfs.html"  target="_blank" rel="noopener">https://www.freebsd.org/doc/handbook/zfs.html</a></a> - Chapter 20. The Z File System (ZFS) - FreeBSD Handbook :P
+[4] <a title="http://docs.oracle.com/cd/E26505_01/html/E37384/index.html" href="http://docs.oracle.com/cd/E26505_01/html/E37384/index.html" target="_blank"><a href="http://docs.oracle.com/cd/E26505_01/html/E37384/index.html"  target="_blank" rel="noopener">http://docs.oracle.com/cd/E26505_01/html/E37384/index.html</a></a> - Oracle Solaris ZFS Administration Guide
+[5] <a title="http://pt.slideshare.net/tchelinux/zfs-4496934" href="http://pt.slideshare.net/tchelinux/zfs-4496934" target="_blank"><a href="http://pt.slideshare.net/tchelinux/zfs-4496934"  target="_blank" rel="noopener">http://pt.slideshare.net/tchelinux/zfs-4496934</a></a> - case bem interessante de um usuário de vários filesystem falando sobre todos e o motivo da adoção do ZFS por ele com o Opensolaris.
+[6] <a title="http://pt.slideshare.net/mewandalmeida/zfs" href="http://pt.slideshare.net/mewandalmeida/zfs" target="_blank"><a href="http://pt.slideshare.net/mewandalmeida/zfs"  target="_blank" rel="noopener">http://pt.slideshare.net/mewandalmeida/zfs</a></a> - Ótimo texto da SUN sobre ZFS
+[7] <a title="http://pt.slideshare.net/billhathaway/zfs-in-30-minutes?next_slideshow=3" href="http://pt.slideshare.net/billhathaway/zfs-in-30-minutes?next_slideshow=3" target="_blank"><a href="http://pt.slideshare.net/billhathaway/zfs-in-30-minutes?next_slideshow=3"  target="_blank" rel="noopener">http://pt.slideshare.net/billhathaway/zfs-in-30-minutes?next_slideshow=3</a></a> - ZFS in 30 minutes .. não preciso falar mais nada ;D</p>
   </article>
 
   <footer>
@@ -617,7 +615,7 @@ ada4 ONLINE 0 0 0</p>
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -817,7 +815,8 @@ ada4 ONLINE 0 0 0</p>
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -835,24 +834,24 @@ ada4 ONLINE 0 0 0</p>
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

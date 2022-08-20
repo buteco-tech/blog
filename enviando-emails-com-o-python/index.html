@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Enviando emails com o Python &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo smtplib." />
 
-
-
 <meta itemprop="name" content="Enviando emails com o Python">
-<meta itemprop="description" content="Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo smtplib."><meta itemprop="datePublished" content="2014-12-28T06:00:49&#43;00:00" />
-<meta itemprop="dateModified" content="2014-12-28T06:00:49&#43;00:00" />
-<meta itemprop="wordCount" content="521"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png">
+<meta itemprop="description" content="Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo smtplib."><meta itemprop="datePublished" content="2014-12-28T06:00:49+00:00" />
+<meta itemprop="dateModified" content="2014-12-28T06:00:49+00:00" />
+<meta itemprop="wordCount" content="525"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png">
 <meta itemprop="keywords" content="email,python,smtplib,smtp,gmail," />
 <meta property="og:title" content="Enviando emails com o Python" />
 <meta property="og:description" content="Hoje iremos enviar emails com Python. O exemplo mostrado usará o módulo smtplib." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/enviando-emails-com-o-python/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2014/12/python-logo.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2014-12-28T06:00:49&#43;00:00" />
-<meta property="article:modified_time" content="2014-12-28T06:00:49&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2014-12-28T06:00:49+00:00" />
+<meta property="article:modified_time" content="2014-12-28T06:00:49+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -374,55 +372,55 @@
 <p>Inicialmente vamos importar o módulo:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">smtplib</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">smtplib</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Vamos criar a instância do SMTP de acordo com a forma de autenticação:</p>
 <p><strong>TLS</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="mi">587</span><span class="p">)</span>
-<span class="n">smtp</span><span class="o">.</span><span class="n">starttls</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="mi">587</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">starttls</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>SSL</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP_SSL</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="mi">465</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP_SSL</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="mi">465</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Sem autenticação</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Se escolhemos TLS ou SSL devemos fazer a autenticação:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">smtp</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;usuário&#39;</span><span class="p">,</span> <span class="s1">&#39;senha&#39;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;usuário&#39;</span><span class="p">,</span> <span class="s1">&#39;senha&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Caso seja sem autenticação devemos nos identificar enviando o comando EHLO ou HELO:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -432,21 +430,21 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="c1"># EHLO</span>
-<span class="n">smtp</span><span class="o">.</span><span class="n">ehlo</span><span class="p">()</span>
-
-<span class="c1"># HELO</span>
-<span class="n">smtp</span><span class="o">.</span><span class="n">helo</span><span class="p">()</span>
-
-<span class="c1"># De forma genérica. Tenta EHLO primeiro.</span>
-<span class="n">smtp</span><span class="o">.</span><span class="n">ehlo_or_helo_if_needed</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># EHLO</span>
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">ehlo</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># HELO</span>
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">helo</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># De forma genérica. Tenta EHLO primeiro.</span>
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">ehlo_or_helo_if_needed</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Não há necessidade de chamar os métodos <code>ehlo</code> ou <code>helo</code> quando se utiliza SSL ou TLS, pois o método login faz a chamada desses métodos caso seja necessário.</p>
 <p>Enviando um email:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -455,30 +453,30 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;From: Seu Nome &lt;seuemail@seudominio.com.br&gt;
-</span><span class="s1">To: outroemail@seudominio.com.br
-</span><span class="s1">Subject: Mensagem do Buteco
-</span><span class="s1">
-</span><span class="s1">Email de teste do Buteco&#39;&#39;&#39;</span>
-
-<span class="n">smtp</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="s1">&#39;seuemail@seudominio.com.br&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;outroemail@seudominio.com.br&#39;</span><span class="p">],</span> <span class="n">msg</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;From: Seu Nome &lt;seuemail@seudominio.com.br&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s1">To: outroemail@seudominio.com.br
+</span></span></span><span class="line"><span class="cl"><span class="s1">Subject: Mensagem do Buteco
+</span></span></span><span class="line"><span class="cl"><span class="s1">
+</span></span></span><span class="line"><span class="cl"><span class="s1">Email de teste do Buteco&#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="s1">&#39;seuemail@seudominio.com.br&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;outroemail@seudominio.com.br&#39;</span><span class="p">],</span> <span class="n">msg</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Note que o segundo parâmetro do método <code>sendmail</code> deve ser uma lista. Mesmo que o destinatário seja apenas um.</p>
 <p>Finalizando a sessão SMTP:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">smtp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Agora que já sabemos quais partes usar, vamos colocar tudo em prática em um exemplo. No exemplo vou utilizar o Gmail como servidor SMTP, mas você pode utilizar outro de sua preferência.</p>
 <p>Abaixo você pode verificar como enviar usando TLS:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -498,30 +496,30 @@
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">smtplib</span>
-
-<span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s1">&#39;smtp.gmail.com&#39;</span><span class="p">,</span> <span class="mi">587</span><span class="p">)</span>
-<span class="n">smtp</span><span class="o">.</span><span class="n">starttls</span><span class="p">()</span>
-
-<span class="n">smtp</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;seuemail@gmail.com&#39;</span><span class="p">,</span> <span class="s1">&#39;suasenha&#39;</span><span class="p">)</span>
-
-<span class="n">de</span> <span class="o">=</span> <span class="s1">&#39;seuemail@gmail.com&#39;</span>
-<span class="n">para</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;seuemail@gmail.com&#39;</span><span class="p">]</span>
-<span class="n">msg</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;From: </span><span class="si">%s</span><span class="s2">
-</span><span class="s2">To: </span><span class="si">%s</span><span class="s2">
-</span><span class="s2">Subject: Mensagem do Buteco
-</span><span class="s2">
-</span><span class="s2">Email de teste do Buteco.&#34;&#34;&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">para</span><span class="p">))</span>
-
-<span class="n">smtp</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="n">para</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
-
-<span class="n">smtp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">smtplib</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s1">&#39;smtp.gmail.com&#39;</span><span class="p">,</span> <span class="mi">587</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">starttls</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;seuemail@gmail.com&#39;</span><span class="p">,</span> <span class="s1">&#39;suasenha&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">de</span> <span class="o">=</span> <span class="s1">&#39;seuemail@gmail.com&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">para</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;seuemail@gmail.com&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;From: </span><span class="si">%s</span><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">To: </span><span class="si">%s</span><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">Subject: Mensagem do Buteco
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">Email de teste do Buteco.&#34;&#34;&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">para</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="n">para</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Já neste outro exemplo você pode verificar como enviar via SSL:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -540,24 +538,24 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">smtplib</span>
-
-<span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP_SSL</span><span class="p">(</span><span class="s1">&#39;smtp.gmail.com&#39;</span><span class="p">,</span> <span class="mi">465</span><span class="p">)</span>
-
-<span class="n">smtp</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;seuemail@gmail.com&#39;</span><span class="p">,</span> <span class="s1">&#39;suasenha&#39;</span><span class="p">)</span>
-
-<span class="n">de</span> <span class="o">=</span> <span class="s1">&#39;seuemail@gmail.com&#39;</span>
-<span class="n">para</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;seuemail@gmail.com&#39;</span><span class="p">]</span>
-<span class="n">msg</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;From: </span><span class="si">%s</span><span class="s2">
-</span><span class="s2">To: </span><span class="si">%s</span><span class="s2">
-</span><span class="s2">Subject: Mensagem do Buteco
-</span><span class="s2">
-</span><span class="s2">Email de teste do Buteco.&#34;&#34;&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">para</span><span class="p">))</span>
-
-<span class="n">smtp</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="n">para</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
-
-<span class="n">smtp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">smtplib</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP_SSL</span><span class="p">(</span><span class="s1">&#39;smtp.gmail.com&#39;</span><span class="p">,</span> <span class="mi">465</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;seuemail@gmail.com&#39;</span><span class="p">,</span> <span class="s1">&#39;suasenha&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">de</span> <span class="o">=</span> <span class="s1">&#39;seuemail@gmail.com&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">para</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;seuemail@gmail.com&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;From: </span><span class="si">%s</span><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">To: </span><span class="si">%s</span><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">Subject: Mensagem do Buteco
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">Email de teste do Buteco.&#34;&#34;&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">para</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">de</span><span class="p">,</span> <span class="n">para</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">smtp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Confira abaixo uma lista dos servidores de email mais comuns e suas configurações.</p>
 <table>
@@ -646,6 +644,19 @@
 </div>
 
 
+    <div class="m-2">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-6625957038449899"
+       data-ad-slot="4012390257"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+
     <div class="share-buttons text-center">
   <a class="share-button share-twitter"
      href="#"
@@ -699,7 +710,7 @@
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -899,7 +910,8 @@
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -917,24 +929,24 @@
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>Cluster Kubernetes com apenas um comando &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando." />
 
-
-
 <meta itemprop="name" content="Cluster Kubernetes com apenas um comando">
-<meta itemprop="description" content="Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando."><meta itemprop="datePublished" content="2020-08-27T08:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-08-27T08:00:00&#43;00:00" />
+<meta itemprop="description" content="Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando."><meta itemprop="datePublished" content="2020-08-27T08:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-08-27T08:00:00+00:00" />
 <meta itemprop="wordCount" content="1086"><meta itemprop="image" content="https://butecotecnologico.com.br/criando-cluster-kubernetes/eksctl-gopher.png">
 <meta itemprop="keywords" content="kubernetes,aws,eksctl," />
 <meta property="og:title" content="Cluster Kubernetes com apenas um comando" />
 <meta property="og:description" content="Criar um cluster Kubernetes pronto para uso em produção não costuma ser simples, veja como criar um cluster usando apenas um único comando." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/criando-cluster-kubernetes/" /><meta property="og:image" content="https://butecotecnologico.com.br/criando-cluster-kubernetes/eksctl-gopher.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-08-27T08:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2020-08-27T08:00:00&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2020-08-27T08:00:00+00:00" />
+<meta property="article:modified_time" content="2020-08-27T08:00:00+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -368,32 +366,32 @@
 <h3 id="bash">Bash</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">curl --silent --location <span class="s2">&#34;https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_</span><span class="k">$(</span>uname -s<span class="k">)</span><span class="s2">_amd64.tar.gz&#34;</span> <span class="p">|</span> tar xz -C /tmp
-sudo mv /tmp/eksctl /usr/local/bin
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl --silent --location <span class="s2">&#34;https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_</span><span class="k">$(</span>uname -s<span class="k">)</span><span class="s2">_amd64.tar.gz&#34;</span> <span class="p">|</span> tar xz -C /tmp
+</span></span><span class="line"><span class="cl">sudo mv /tmp/eksctl /usr/local/bin
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="homebrew">Homebrew</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">brew tap weaveworks/tap
-brew install weaveworks/tap/eksctl
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">brew tap weaveworks/tap
+</span></span><span class="line"><span class="cl">brew install weaveworks/tap/eksctl
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="windows">Windows</h3>
-<pre><code>chocolatey install eksctl
+<pre tabindex="0"><code>chocolatey install eksctl
 </code></pre><h2 id="criando-seu-cluster">Criando seu cluster</h2>
 <p>Depois de instalado, podemos criar nosso cluster usando o comando <code>eksctl create cluster</code>, porém esse comando irá usar uma série de parametros padrões que possivelmente não atenderão a sua necessidade. Vamos então utilizar um exemplo para entender melhor algumas das opções disponíveis, veja a seguir:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -409,21 +407,21 @@ brew install weaveworks/tap/eksctl
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">eksctl create cluster <span class="se">\
-</span><span class="se"></span>    -n exemplo <span class="se">\
-</span><span class="se"></span>    -r eu-west-1 <span class="se">\
-</span><span class="se"></span>    -t <span class="s2">&#34;t3.medium&#34;</span> <span class="se">\
-</span><span class="se"></span>    -N <span class="m">3</span> <span class="se">\
-</span><span class="se"></span>    --node-volume-size <span class="m">80</span> <span class="se">\
-</span><span class="se"></span>    --node-volume-type gp2 <span class="se">\
-</span><span class="se"></span>    --max-pods-per-node <span class="m">10</span> <span class="se">\
-</span><span class="se"></span>    --ssh-access <span class="se">\
-</span><span class="se"></span>    --external-dns-access <span class="se">\
-</span><span class="se"></span>    --full-ecr-access <span class="se">\
-</span><span class="se"></span>    --set-kubeconfig-context <span class="se">\
-</span><span class="se"></span>    --auto-kubeconfig <span class="se">\
-</span><span class="se"></span>    --write-kubeconfig
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">eksctl create cluster <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -n exemplo <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -r eu-west-1 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -t <span class="s2">&#34;t3.medium&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -N <span class="m">3</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --node-volume-size <span class="m">80</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --node-volume-type gp2 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --max-pods-per-node <span class="m">10</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --ssh-access <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --external-dns-access <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --full-ecr-access <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --set-kubeconfig-context <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --auto-kubeconfig <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --write-kubeconfig
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Alguns parâmetros podem já ser auto-explicativos mas vamos entender cada um.</p>
 <ul>
@@ -440,7 +438,7 @@ brew install weaveworks/tap/eksctl
 <p>Executando o comando acima teremos algumas informações no terminal.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -460,30 +458,30 @@ brew install weaveworks/tap/eksctl
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>ℹ<span class="o">]</span>  eksctl version 0.25.0
-<span class="o">[</span>ℹ<span class="o">]</span>  using region eu-west-1
-<span class="o">[</span>ℹ<span class="o">]</span>  setting availability zones to <span class="o">[</span>eu-west-1c eu-west-1a eu-west-1b<span class="o">]</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  subnets <span class="k">for</span> eu-west-1c - public:192.168.0.0/19 private:192.168.96.0/19
-<span class="o">[</span>ℹ<span class="o">]</span>  subnets <span class="k">for</span> eu-west-1a - public:192.168.32.0/19 private:192.168.128.0/19
-<span class="o">[</span>ℹ<span class="o">]</span>  subnets <span class="k">for</span> eu-west-1b - public:192.168.64.0/19 private:192.168.160.0/19
-<span class="o">[</span>ℹ<span class="o">]</span>  nodegroup <span class="s2">&#34;ng-f33cf19e&#34;</span> will use <span class="s2">&#34;ami-0531361dba695e426&#34;</span> <span class="o">[</span>AmazonLinux2/1.17<span class="o">]</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  using SSH public key <span class="s2">&#34;/home/jaswdr/.ssh/id_rsa.pub&#34;</span> as <span class="s2">&#34;eksctl-exemplo-nodegroup-ng-f33cf19e-ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff&#34;</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  using Kubernetes version 1.17
-<span class="o">[</span>ℹ<span class="o">]</span>  creating EKS cluster <span class="s2">&#34;exemplo&#34;</span> in <span class="s2">&#34;eu-west-1&#34;</span> region with un-managed nodes
-<span class="o">[</span>ℹ<span class="o">]</span>  will create <span class="m">2</span> separate CloudFormation stacks <span class="k">for</span> cluster itself and the initial nodegroup
-<span class="o">[</span>ℹ<span class="o">]</span>  <span class="k">if</span> you encounter any issues, check CloudFormation console or try <span class="s1">&#39;eksctl utils describe-stacks --region=eu-west-1 --cluster=exemplo&#39;</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  CloudWatch logging will not be enabled <span class="k">for</span> cluster <span class="s2">&#34;exemplo&#34;</span> in <span class="s2">&#34;eu-west-1&#34;</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  you can <span class="nb">enable</span> it with <span class="s1">&#39;eksctl utils update-cluster-logging --region=eu-west-1 --cluster=exemplo&#39;</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  Kubernetes API endpoint access will use default of <span class="o">{</span><span class="nv">publicAccess</span><span class="o">=</span>true, <span class="nv">privateAccess</span><span class="o">=</span>false<span class="o">}</span> <span class="k">for</span> cluster <span class="s2">&#34;exemplo&#34;</span> in <span class="s2">&#34;eu-west-1&#34;</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  <span class="m">2</span> sequential tasks: <span class="o">{</span> create cluster control plane <span class="s2">&#34;exemplo&#34;</span>, <span class="m">2</span> sequential sub-tasks: <span class="o">{</span> no tasks, create nodegroup <span class="s2">&#34;ng-f33cf19e&#34;</span> <span class="o">}</span> <span class="o">}</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  building cluster stack <span class="s2">&#34;eksctl-exemplo-cluster&#34;</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  deploying stack <span class="s2">&#34;eksctl-exemplo-cluster&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  eksctl version 0.25.0
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  using region eu-west-1
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  setting availability zones to <span class="o">[</span>eu-west-1c eu-west-1a eu-west-1b<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  subnets <span class="k">for</span> eu-west-1c - public:192.168.0.0/19 private:192.168.96.0/19
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  subnets <span class="k">for</span> eu-west-1a - public:192.168.32.0/19 private:192.168.128.0/19
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  subnets <span class="k">for</span> eu-west-1b - public:192.168.64.0/19 private:192.168.160.0/19
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  nodegroup <span class="s2">&#34;ng-f33cf19e&#34;</span> will use <span class="s2">&#34;ami-0531361dba695e426&#34;</span> <span class="o">[</span>AmazonLinux2/1.17<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  using SSH public key <span class="s2">&#34;/home/jaswdr/.ssh/id_rsa.pub&#34;</span> as <span class="s2">&#34;eksctl-exemplo-nodegroup-ng-f33cf19e-ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  using Kubernetes version 1.17
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  creating EKS cluster <span class="s2">&#34;exemplo&#34;</span> in <span class="s2">&#34;eu-west-1&#34;</span> region with un-managed nodes
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  will create <span class="m">2</span> separate CloudFormation stacks <span class="k">for</span> cluster itself and the initial nodegroup
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  <span class="k">if</span> you encounter any issues, check CloudFormation console or try <span class="s1">&#39;eksctl utils describe-stacks --region=eu-west-1 --cluster=exemplo&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  CloudWatch logging will not be enabled <span class="k">for</span> cluster <span class="s2">&#34;exemplo&#34;</span> in <span class="s2">&#34;eu-west-1&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  you can <span class="nb">enable</span> it with <span class="s1">&#39;eksctl utils update-cluster-logging --region=eu-west-1 --cluster=exemplo&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  Kubernetes API endpoint access will use default of <span class="o">{</span><span class="nv">publicAccess</span><span class="o">=</span>true, <span class="nv">privateAccess</span><span class="o">=</span>false<span class="o">}</span> <span class="k">for</span> cluster <span class="s2">&#34;exemplo&#34;</span> in <span class="s2">&#34;eu-west-1&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  <span class="m">2</span> sequential tasks: <span class="o">{</span> create cluster control plane <span class="s2">&#34;exemplo&#34;</span>, <span class="m">2</span> sequential sub-tasks: <span class="o">{</span> no tasks, create nodegroup <span class="s2">&#34;ng-f33cf19e&#34;</span> <span class="o">}</span> <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  building cluster stack <span class="s2">&#34;eksctl-exemplo-cluster&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  deploying stack <span class="s2">&#34;eksctl-exemplo-cluster&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Em resumo o que o comando acima está fazendo é uma nova stack no CloudFormation para criar todos os recursos necessários para que seu cluster funcione, criando itens como subnets, nodegroup, cluster EKS e outros. O comando pode demorar alguns minutos por que é esperado uma resposta da stack criada no CloudFormation, após finalizar a execução algo parecido como o seguinte texto é impresso.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -504,31 +502,31 @@ brew install weaveworks/tap/eksctl
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">...
-<span class="o">[</span>ℹ<span class="o">]</span>  deploying stack <span class="s2">&#34;eksctl-exemplo-cluster&#34;</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  building nodegroup stack <span class="s2">&#34;eksctl-exemplo-nodegroup-ng-f33cf19e&#34;</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  --nodes-min<span class="o">=</span><span class="m">3</span> was <span class="nb">set</span> automatically <span class="k">for</span> nodegroup ng-f33cf19e
-<span class="o">[</span>ℹ<span class="o">]</span>  --nodes-max<span class="o">=</span><span class="m">3</span> was <span class="nb">set</span> automatically <span class="k">for</span> nodegroup ng-f33cf19e
-<span class="o">[</span>ℹ<span class="o">]</span>  deploying stack <span class="s2">&#34;eksctl-exemplo-nodegroup-ng-f33cf19e&#34;</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  waiting <span class="k">for</span> the control plane availability...
-<span class="o">[</span>✔<span class="o">]</span>  saved kubeconfig as <span class="s2">&#34;/home/jaswdr/.kube/eksctl/clusters/exemplo&#34;</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  no tasks
-<span class="o">[</span>✔<span class="o">]</span>  all EKS cluster resources <span class="k">for</span> <span class="s2">&#34;exemplo&#34;</span> have been created
-<span class="o">[</span>ℹ<span class="o">]</span>  adding identity <span class="s2">&#34;arn:aws:iam::049366202265:role/eksctl-exemplo-nodegroup-ng-f33cf-NodeInstanceRole-1A3862T8QOQW5&#34;</span> to auth ConfigMap
-<span class="o">[</span>ℹ<span class="o">]</span>  nodegroup <span class="s2">&#34;ng-f33cf19e&#34;</span> has <span class="m">0</span> node<span class="o">(</span>s<span class="o">)</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  waiting <span class="k">for</span> at least <span class="m">3</span> node<span class="o">(</span>s<span class="o">)</span> to become ready in <span class="s2">&#34;ng-f33cf19e&#34;</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  nodegroup <span class="s2">&#34;ng-f33cf19e&#34;</span> has <span class="m">3</span> node<span class="o">(</span>s<span class="o">)</span>
-<span class="o">[</span>ℹ<span class="o">]</span>  node <span class="s2">&#34;ip-192-168-14-130.eu-west-1.compute.internal&#34;</span> is ready
-<span class="o">[</span>ℹ<span class="o">]</span>  node <span class="s2">&#34;ip-192-168-36-217.eu-west-1.compute.internal&#34;</span> is ready
-<span class="o">[</span>ℹ<span class="o">]</span>  node <span class="s2">&#34;ip-192-168-76-142.eu-west-1.compute.internal&#34;</span> is ready
-<span class="o">[</span>ℹ<span class="o">]</span>  kubectl <span class="nb">command</span> should work with <span class="s2">&#34;/home/jaswdr/.kube/eksctl/clusters/exemplo&#34;</span>, try <span class="s1">&#39;kubectl --kubeconfig=/home/jaswdr/.kube/eksctl/clusters/exemplo get nodes&#39;</span>
-<span class="o">[</span>✔<span class="o">]</span>  EKS cluster <span class="s2">&#34;exemplo&#34;</span> in <span class="s2">&#34;eu-west-1&#34;</span> region is ready
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  deploying stack <span class="s2">&#34;eksctl-exemplo-cluster&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  building nodegroup stack <span class="s2">&#34;eksctl-exemplo-nodegroup-ng-f33cf19e&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  --nodes-min<span class="o">=</span><span class="m">3</span> was <span class="nb">set</span> automatically <span class="k">for</span> nodegroup ng-f33cf19e
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  --nodes-max<span class="o">=</span><span class="m">3</span> was <span class="nb">set</span> automatically <span class="k">for</span> nodegroup ng-f33cf19e
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  deploying stack <span class="s2">&#34;eksctl-exemplo-nodegroup-ng-f33cf19e&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  waiting <span class="k">for</span> the control plane availability...
+</span></span><span class="line"><span class="cl"><span class="o">[</span>✔<span class="o">]</span>  saved kubeconfig as <span class="s2">&#34;/home/jaswdr/.kube/eksctl/clusters/exemplo&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  no tasks
+</span></span><span class="line"><span class="cl"><span class="o">[</span>✔<span class="o">]</span>  all EKS cluster resources <span class="k">for</span> <span class="s2">&#34;exemplo&#34;</span> have been created
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  adding identity <span class="s2">&#34;arn:aws:iam::049366202265:role/eksctl-exemplo-nodegroup-ng-f33cf-NodeInstanceRole-1A3862T8QOQW5&#34;</span> to auth ConfigMap
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  nodegroup <span class="s2">&#34;ng-f33cf19e&#34;</span> has <span class="m">0</span> node<span class="o">(</span>s<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  waiting <span class="k">for</span> at least <span class="m">3</span> node<span class="o">(</span>s<span class="o">)</span> to become ready in <span class="s2">&#34;ng-f33cf19e&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  nodegroup <span class="s2">&#34;ng-f33cf19e&#34;</span> has <span class="m">3</span> node<span class="o">(</span>s<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  node <span class="s2">&#34;ip-192-168-14-130.eu-west-1.compute.internal&#34;</span> is ready
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  node <span class="s2">&#34;ip-192-168-36-217.eu-west-1.compute.internal&#34;</span> is ready
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  node <span class="s2">&#34;ip-192-168-76-142.eu-west-1.compute.internal&#34;</span> is ready
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ℹ<span class="o">]</span>  kubectl <span class="nb">command</span> should work with <span class="s2">&#34;/home/jaswdr/.kube/eksctl/clusters/exemplo&#34;</span>, try <span class="s1">&#39;kubectl --kubeconfig=/home/jaswdr/.kube/eksctl/clusters/exemplo get nodes&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>✔<span class="o">]</span>  EKS cluster <span class="s2">&#34;exemplo&#34;</span> in <span class="s2">&#34;eu-west-1&#34;</span> region is ready
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Dentre diversas informações, podemos ver que a última mensagem indica que o cluster <code>exemplo</code> na região <code>eu-west-1</code> está pronto, para provar isso podemos testar alguns comandos, perceba que foi gerado um arquivo de configuração, o caminho para o arquivo pode ser visto na penúltima linha, no meu caso <code>/home/jaswdr/.kube/eksctl/clusters/exemplo</code>, podemos usar tanto o comando que foi gerado usando a opção <code>--kubeconfig</code> ou usar a variável de ambiente <code>KUBECONFIG</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -536,13 +534,13 @@ brew install weaveworks/tap/eksctl
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">export</span> <span class="nv">KUBECONFIG</span><span class="o">=</span><span class="nv">$HOME</span>/.kube/eksctl/clusters/exemplo
-$ kubectl get nodes
-NAME                                           STATUS   ROLES    AGE   VERSION
-ip-192-168-14-130.eu-west-1.compute.internal   Ready    &lt;none&gt;   15m   v1.17.9-eks-4c6976
-ip-192-168-36-217.eu-west-1.compute.internal   Ready    &lt;none&gt;   15m   v1.17.9-eks-4c6976
-ip-192-168-76-142.eu-west-1.compute.internal   Ready    &lt;none&gt;   15m   v1.17.9-eks-4c6976s
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">export</span> <span class="nv">KUBECONFIG</span><span class="o">=</span><span class="nv">$HOME</span>/.kube/eksctl/clusters/exemplo
+</span></span><span class="line"><span class="cl">$ kubectl get nodes
+</span></span><span class="line"><span class="cl">NAME                                           STATUS   ROLES    AGE   VERSION
+</span></span><span class="line"><span class="cl">ip-192-168-14-130.eu-west-1.compute.internal   Ready    &lt;none&gt;   15m   v1.17.9-eks-4c6976
+</span></span><span class="line"><span class="cl">ip-192-168-36-217.eu-west-1.compute.internal   Ready    &lt;none&gt;   15m   v1.17.9-eks-4c6976
+</span></span><span class="line"><span class="cl">ip-192-168-76-142.eu-west-1.compute.internal   Ready    &lt;none&gt;   15m   v1.17.9-eks-4c6976s
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Por fim temos nosso cluster pronto para uso em produção, e disponível para usar com todos os comandos do <code>kubectl</code>.</p>
 <blockquote>
@@ -569,6 +567,19 @@ ip-192-168-76-142.eu-west-1.compute.internal   Ready    &lt;none&gt;   15m   v1.
      <a href="https://butecotecnologico.com.br/tags/eksctl/" class="tag-link">eksctl</a>
   </li>
   </ul>
+</div>
+
+
+    <div class="m-2">
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-6625957038449899"
+       data-ad-slot="4012390257"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </div>
 
 
@@ -625,7 +636,7 @@ ip-192-168-76-142.eu-west-1.compute.internal   Ready    &lt;none&gt;   15m   v1.
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -825,7 +836,8 @@ ip-192-168-76-142.eu-west-1.compute.internal   Ready    &lt;none&gt;   15m   v1.
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -843,24 +855,24 @@ ip-192-168-76-142.eu-west-1.compute.internal   Ready    &lt;none&gt;   15m   v1.
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

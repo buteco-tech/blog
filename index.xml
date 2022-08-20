@@ -1070,7 +1070,7 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       
       <guid>https://butecotecnologico.com.br/50-de-desconto-em-livros-da-novatec/</guid>
       <description>&lt;p&gt;A Novatec está com uma promoção de 50% em alguns títulos da O&amp;rsquo;Reilly para compras efetuadas no site da Novatec. Confira abaixo alguns dos livros da promoção.&lt;/p&gt;
-&lt;p&gt;&lt;img class=&#34;aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/livros-promocao-novatec.png&#34; alt=&#34;Livros Promoção Novatec&#34; /&gt;&lt;/p&gt;</description>
+&lt;img class=&#34;aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/livros-promocao-novatec.png&#34; alt=&#34;Livros Promoção Novatec&#34; /&gt;</description>
       <image>
         <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
         <title>Buteco Tecnológico</title>
@@ -1119,7 +1119,7 @@ Título é um resumo do conteúdo do best-seller Google Android</description>
       
       <guid>https://butecotecnologico.com.br/lancado-raspberry-pi-3-modelo-b/</guid>
       <description>&lt;p&gt;Em celebração ao quarto ano da The Raspberry PI Foundation, foi anunciado hoje no blog &lt;a href=&#34;http://rasbperry.org&#34; target=&#34;_blank&#34;&gt;rasbperry.org&lt;/a&gt; o novo Raspberry PI 3 Modelo B.&lt;/p&gt;
-&lt;p&gt;&lt;img class=&#34;aligncenter size-full wp-image-4905&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/RPI05B3.jpg&#34; alt=&#34;RPI05B3&#34; width=&#34;938&#34; height=&#34;525&#34; /&gt;&lt;/p&gt;</description>
+&lt;img class=&#34;aligncenter size-full wp-image-4905&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2016/02/RPI05B3.jpg&#34; alt=&#34;RPI05B3&#34; width=&#34;938&#34; height=&#34;525&#34; /&gt;</description>
       
       <image>
         <url>https://butecotecnologico.com.br/images/wp-content/uploads/2015/05/index.png</url>
@@ -2748,7 +2748,7 @@ Renomear arquivos e atualizar planilhas são algumas tarefas maçantes que gasta
       
       <guid>https://butecotecnologico.com.br/instalando-o-supervisor-um-sistema-de-controle-de-processos/</guid>
       <description>&lt;p&gt;O &lt;a href=&#34;http://supervisord.org/&#34;&gt;Supervisor&lt;/a&gt; é um sistema cliente/servidor que permite que os usuários monitorem e controlem inúmeros processos em sistema operacionais UNIX-like.&lt;/p&gt;
-&lt;p&gt;&lt;img class=&#34; aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/logo_supervisord.gif&#34; alt=&#34;Supervisord&#34; /&gt;&lt;/p&gt;
+&lt;img class=&#34; aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/07/logo_supervisord.gif&#34; alt=&#34;Supervisord&#34; /&gt;
 &lt;p&gt;Ele possui alguns objetivos de programas similares, como o launchd, daemontools e runit. Mas diferente destes, ele não pretende ser um substituto ao &lt;em&gt;init&lt;/em&gt;, pelo contrário, ele inicia na inicialização do sistema como qualquer outro aplicativo.&lt;/p&gt;</description>
       <image>
         <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>
@@ -2979,7 +2979,7 @@ quilt new alteracao1.patch
       
       <guid>https://butecotecnologico.com.br/fazendo-squash-de-commits-com-git-rebase/</guid>
       <description>&lt;p&gt;Eventualmente trabalhamos em algo grande, e acabamos por fazer vários micro commits. Se você gostaria de juntar esses micro commits em um único no fim da implementação e não sabe como, eis a solução. O squash irá unir vários micro commits em um único commit. Sendo assim, se pode juntar uma alteração que tem 10 commits em apenas um único commit.&lt;/p&gt;
-&lt;p&gt;&lt;img class=&#34; aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/git-squash-rebase.png&#34; alt=&#34;Git Squash Rebase&#34; /&gt;&lt;/p&gt;
+&lt;img class=&#34; aligncenter&#34; src=&#34;https://butecotecnologico.com.br/images/wp-content/uploads/2015/06/git-squash-rebase.png&#34; alt=&#34;Git Squash Rebase&#34; /&gt;
 &lt;p&gt;Na imagem acima é possível observar que os commits antigos geram um novo commit unindo todas as alterações.&lt;/p&gt;</description>
       <image>
         <url>https://butecotecnologico.com.br/logos/capybara_400_bg.png</url>

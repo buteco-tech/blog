@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   
   <title>POSIX Regular Expression em C &middot; Buteco Tecnológico</title>
@@ -30,7 +30,7 @@
   font-display: swap;
 }
 </style>
-<link rel="stylesheet" href="/sass/iara.min.8e899aeec4869ef92a07140f15fb35e8ce50365bece4457100a623b4599b6fa7.css">
+<link rel="stylesheet" href="/sass/iara.min.2bf4c8372d3ae6f853b9bbbab9c49446eea553b93fc9ffef0607ffaae5309d4c.css">
 
 <link rel="preload" href="/vendor/fontawesome/css/all.min.css" as="style">
 <link rel="preload" href="/vendor/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,19 +59,17 @@
 <link type="text/css" rel="stylesheet" href="/css/custom.css">
 <meta name="description" content="Expressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares built-in, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a POSIX RegEx na linguagem C na plataforma Linux." />
 
-
-
 <meta itemprop="name" content="POSIX Regular Expression em C">
-<meta itemprop="description" content="Expressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares built-in, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a POSIX RegEx na linguagem C na plataforma Linux."><meta itemprop="datePublished" content="2016-03-17T09:35:57&#43;00:00" />
-<meta itemprop="dateModified" content="2016-03-17T09:35:57&#43;00:00" />
+<meta itemprop="description" content="Expressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares built-in, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a POSIX RegEx na linguagem C na plataforma Linux."><meta itemprop="datePublished" content="2016-03-17T09:35:57+00:00" />
+<meta itemprop="dateModified" content="2016-03-17T09:35:57+00:00" />
 <meta itemprop="wordCount" content="763"><meta itemprop="image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/images.jpg">
 <meta itemprop="keywords" content="c,cpp,linux,posix,regex," />
 <meta property="og:title" content="POSIX Regular Expression em C" />
 <meta property="og:description" content="Expressões Regulares são úteis para diversos fins, desde validações de números como CPF e CEP, até em validações de entradas de campos e checagem de strings. Linguagens como Python, Javascript, PHP e outras já possuem expressões regulares built-in, prontas para serem utilizadas pelos programadores. Nesta postagem mostraremos como construir expressões regulares com a POSIX RegEx na linguagem C na plataforma Linux." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://butecotecnologico.com.br/posix-regular-expression-em-c/" /><meta property="og:image" content="https://butecotecnologico.com.br/images/wp-content/uploads/2016/03/images.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2016-03-17T09:35:57&#43;00:00" />
-<meta property="article:modified_time" content="2016-03-17T09:35:57&#43;00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
+<meta property="article:published_time" content="2016-03-17T09:35:57+00:00" />
+<meta property="article:modified_time" content="2016-03-17T09:35:57+00:00" /><meta property="og:site_name" content="Buteco Tecnológico" />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
@@ -392,7 +390,7 @@ Group 2: [6-9]: 123
 <p>Chegamos na função <code>regexec</code>, que recebe um <code>regex_t</code>, a string a ser analisada, o número de matches, uma variável <code>regmatch_t</code> e <em>flags</em>. Um exemplo de flag é <code>REG_ICASE</code>, onde a execução da regex não diferencia maiúsculas/minísculas. Neste exemplo não utilizamos nehum flag. Para saber sobre of flags disponíveis veja nas referências.</p>
 <p>Se <code>regexec</code> executar com sucesso, iteramos sobre os <code>nsub</code> encontrados. Vamos nos aprofundar na struct <code>regmatch_t</code>. Essa struct contém dois membros: <code>rm_so</code> (regmatch start offset) e <code>rm_eo</code> (regmatch end offset). Esses offsets são usados para encontrar o match dentro da string, contendo os índices de início e fim da <em>substring</em> detectada pela regex.</p>
 <p>Simplificando, offsets são as posições de início e fim de cada match dentro da string original.</p>
-<p>Pelo nosso último exemplo de código, podemos ver no Group 1, que o primeiro match começa na posição 0 da string <em>buteco123xxxxx</em>, e finaliza na posição 6 (a posição 6 é o fim da string, logo atribuímos <code>''</code>). Da mesma forma, o segundo match começa na posição 6 e termina na 9.</p>
+<p>Pelo nosso último exemplo de código, podemos ver no Group 1, que o primeiro match começa na posição 0 da string <em>buteco123xxxxx</em>, e finaliza na posição 6 (a posição 6 é o fim da string, logo atribuímos <code>&rsquo;&rsquo;</code>). Da mesma forma, o segundo match começa na posição 6 e termina na 9.</p>
 <p>Utilizando esses <em>offsets</em>, fazemos uma cópia da <em>substring</em> para uma nova string.</p>
 <p>Quando o start offset é igual a <code>-1</code>, isso mostra que não existem mais matches para serem computados. Segue abaixo a execução do código fonte mostrado no início da postagem:</p>
 <p><samp>[marcos@localhost posix_regex]$ ./regex
@@ -519,7 +517,7 @@ Group 0: [0-1]: b
 <h2 id="comments" class="mt-0">Comentários</h2>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -719,7 +717,8 @@ Group 0: [0-1]: b
   <hr class="my-3">
   <div class="copyright clearfix text-center">
     <div class="d-md-inline-block float-md-left">
-      <i class="far fa-copyright"></i> 2021 Buteco Tecnológico&middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+      <i class="far fa-copyright"></i> 2022 Buteco Tecnológico
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
     </div>
     <div class="pt-2 pt-md-0 d-md-inline-block float-md-right">
       <ul class="list-unstyled m-0">
@@ -737,24 +736,24 @@ Group 0: [0-1]: b
 <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 
   
-  <script type="text/javascript" async src="/js/bootstrap.min.7ec712c00fe9d6f9b77af0586a8f44ad73c8dcb01cc55f122ac0f396e7df9e2d.js"></script>
+  <script type="text/javascript" async src="/js/bootstrap.min.da936251939d679daf0e1d0ae2ddf844491b891602236a8e9a50d81570d3377e.js"></script>
 
   
-  <script type="text/javascript" async src="/js/iara.min.0e39031488d97677f47d5125d01e57807f16fa361be08dfc53b2ce332e969d87.js"></script>
+  <script type="text/javascript" async src="/js/iara.min.f5c1091a7a5ff8ff650284822be32ea6260d26a3d389b5c388ff7a657c2e8e76.js"></script>
 
 <script type="text/javascript" async src="/vendor/fontawesome/js/all.min.js"></script>
 
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV3KZZD4F9"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-55693832-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YV3KZZD4F9', { 'anonymize_ip': false });
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 
