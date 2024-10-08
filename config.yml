@@ -117,9 +117,9 @@ params:
     - icon: fab fa-telegram-plane
       title: Telegram
       url: https://t.me/butecotecnologico
-    - icon: fab fa-discord
-      title: Discord
-      url: https://discord.gg/eX2jAvw
+    # - icon: fab fa-discord
+    #   title: Discord
+    #   url: https://discord.gg/eX2jAvw
     - icon: fab fa-twitter
       title: Twitter
       url: https://twitter.com/butecotech
@@ -132,9 +132,9 @@ params:
     - icon: fab fa-youtube
       title: YouTube
       url: https://www.youtube.com/c/ButecoTech
-    - icon: fab fa-instagram
-      title: Instagram
-      url: https://www.instagram.com/buteco.tech/
+    # - icon: fab fa-instagram
+    #   title: Instagram
+    #   url: https://www.instagram.com/buteco.tech/
     # - icon: fab fa-github-alt
     #   title: GitHub
     #   url: https://github.com/ButecoOpenSource
@@ -280,11 +280,11 @@ menu:
       weight: 7
       url: /tags/bsd/
   footer5:
-    - name: Buteco Talks
-      weight: 1
-      url: /buteco-talks/
-      pre: <b>
-      post: </b><span class="badge badge-danger">Online</span>
+    # - name: Buteco Talks
+    #   weight: 1
+    #   url: /buteco-talks/
+    #   pre: <b>
+    #   post: </b><span class="badge badge-danger">Online</span>
     - name: Podcast
       weight: 1
       url: /podcast/
@@ -320,9 +320,9 @@ menu:
     - name: Feed RSS
       weight: 4
       url: /feed-rss/
-    - name: Estatísticas
-      weight: 5
-      url: /estatisticas/
+    # - name: Estatísticas
+    #   weight: 5
+    #   url: /estatisticas/
 
 markup:
   defaultMarkdownHandler: goldmark
