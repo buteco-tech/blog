@@ -1,33 +1,54 @@
-name: Hugo Publish
+name: Deploy Hugo site to Pages
 on:
   push:
-    branches: [ master ]
+    branches: ["master"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+defaults:
+  run:
+    shell: bash
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.128.2
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        submodules: true
-    - name: Publish
-      uses: chabad360/hugo-gh-pages@master
-      with:
-        # Remember to set this as a secret (i.e. secrets.HUGO_GH_TOKEN).
-        # Don't forget to set the secret value in the project settings.
-        githubToken: ${{ secrets.HUGO_GH_TOKEN }}
-        # Use if you have a custom domain for your site.
-        cname: butecotecnologico.com.br
-        # Use if your site is not hosted on the gh-pages branch.
-        branch: gh-pages
-        # Use if your pushing to a different repo.
-        # Dont add ".git" to the end of the URL (youl'll get 404s).
-        # repo: you/you.github.io
-        # Use if your site requires a specific version of Hugo.
-        # Append "extended_" to the begining to use Hugo Extended.
-        # hugoVersion: extended_0.58.3
-        # Use if you want to pass some custom arguments to Hugo.
-        args: --gc --cleanDestinationDir
-        # Use this if your site isn't in the root of your repo.
-        # The root of your repo can be found at /github/workspace
-        # siteDir: /github/workspace/site
+      - name: Install Hugo
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build with Hugo
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: production
+        run: |
+          hugo \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
