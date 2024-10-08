@@ -88,7 +88,7 @@ O [Pandas][pandas] é uma biblioteca para análise e manipulação de dados em P
 
 Neste exemplo vamos converter uma lista de dicionários, salvar no formato Parquet e após vamos carregar o arquivo gerado para conferência.
 
-{{<jupyter src="content/posts/2020/apache-parquet-explicado/nb-pandas.ipynb" >}}
+{{<jupyter src="nb-pandas.ipynb" >}}
 
 ## Spark
 
@@ -96,7 +96,7 @@ O [Spark][spark] é uma *engine* para processamento e análise de dados, e o exe
 
 Vamos usar o Spark para salvar um DataFrame no formato Parquet, após salvo vamos carregar o arquivo gerado e executar queries SQL em cima dos dados.
 
-{{<jupyter src="content/posts/2020/apache-parquet-explicado/nb-spark.ipynb" >}}
+{{<jupyter src="nb-spark.ipynb" >}}
 
 ## Conclusão
 
