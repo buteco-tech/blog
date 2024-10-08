@@ -16,4 +16,4 @@ Para que um artigo seja produzido é necessário estar de acordo como os temas q
 - Serviços (APIs, plataformas e afins)
 - Livros, cursos ou treinamentos (na aréa de TI)
 
-Para mais detalhes sobre parcerias entre em contato pelo e-mail [contato@buteco.tech](mailto:contato@buteco.tech) com o assunto **Proposta de Parceira**.
+Para mais detalhes sobre parcerias entre em [contato](/contato) conosco.

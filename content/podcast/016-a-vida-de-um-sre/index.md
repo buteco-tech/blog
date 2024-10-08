@@ -52,7 +52,7 @@ Engenheiro de Software e bacharel em Ciência da Computação. Contribui com sof
 
 Principal SRE na Red Hat Ireland, Tech Lead do time de SREs para Managed Services do OpenShift. Background como Administrador de Sistemas e também como Engenheiro de Software, membro ativo em comunidades de Software Livre e palestrante frequente em eventos de TI. Deixou para trás a atividade de professor no Brasil para se aventurar pela Europa, passando pela República Tcheca e pela Alemanha antes de se estabelecer na Irlanda. Roda Fedora tanto no computador pessoal quanto no computador da empresa.
 
-{{< social email="amador@pahim.org" linkedin="amadorpahim" twitter="amadorpahim" >}}
+{{< social linkedin="amadorpahim" twitter="amadorpahim" >}}
 
 #### Marcos Paulo de Souza
 

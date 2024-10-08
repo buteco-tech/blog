@@ -59,7 +59,7 @@ Em especial, o Buteco Tecnológico não classifica nem analisa o conteúdo que s
 
 ## Denúncias de Abuso
 
-Para todo e qualquer tipo de denúncia, seja por reivindicação de uso indevido de marcas registradas ou direitos autorais, ou ainda denúncias de todo e qualquer tipo de abuso, violência, preconceito ou discriminação entre em contato pelo e-mail [abuso@buteco.tech](mailto:abuso@buteco.tech).
+Para todo e qualquer tipo de denúncia, seja por reivindicação de uso indevido de marcas registradas ou direitos autorais, ou ainda denúncias de todo e qualquer tipo de abuso, violência, preconceito ou discriminação entre em [contato](/contato) conosco.
 
 ## Vigência; Recisão
 

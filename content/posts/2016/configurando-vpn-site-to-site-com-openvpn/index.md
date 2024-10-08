@@ -59,7 +59,7 @@ export KEY_COUNTRY="BR"
 export KEY_PROVINCE="Espirito-Santo"
 export KEY_CITY="Vila-Velha"
 export KEY_ORG="Butecopensource"
-export KEY_EMAIL="daniel@buteco.tech"
+export KEY_EMAIL="daniel@empresa.com.br"
 export KEY_OU="buteco.tech"
 ```
 Após editar o arquivo use:
@@ -103,7 +103,7 @@ Organization Name (eg, company) [Butecopensource]:
 Organizational Unit Name (eg, section) [buteco.tech]:
 Common Name (eg, your name or your server's hostname) [Butecopensource CA]:
 Name [EasyRSA]:
-Email Address [daniel@buteco.tech]:
+Email Address [daniel@empresa.com.br]:
 root@wolf:/etc/openvpn/easy-rsa#
 ```
 <strong>Gerando chave para o Servidor</strong>
@@ -133,7 +133,7 @@ Organization Name (eg, company) [Butecopensource]:
 Organizational Unit Name (eg, section) [buteco.tech]:
 Common Name (eg, your name or your server's hostname) [server]:
 Name [EasyRSA]:
-Email Address [daniel@buteco.tech]:
+Email Address [daniel@empresa.com.br]:
 
 Please enter the following 'extra' attributes
 to be sent with your certificate request
@@ -150,7 +150,7 @@ organizationName :PRINTABLE:'Butecopensource'
 organizationalUnitName:PRINTABLE:'buteco.tech'
 commonName :PRINTABLE:'server'
 name :PRINTABLE:'EasyRSA'
-emailAddress :IA5STRING:'daniel@buteco.tech'
+emailAddress :IA5STRING:'daniel@empresa.com.br'
 Certificate is to be certified until Jan 2 22:29:18 2026 GMT (3650 days)
 Sign the certificate? [y/n]:y
 1 out of 1 certificate requests certified, commit? [y/n]y
@@ -197,7 +197,7 @@ organizationName :PRINTABLE:'Butecopensource'
 organizationalUnitName:PRINTABLE:'buteco.tech'
 commonName :PRINTABLE:'filial'
 name :PRINTABLE:'EasyRSA'
-emailAddress :IA5STRING:'daniel@buteco.tech'
+emailAddress :IA5STRING:'daniel@empresa.com.br'
 Certificate is to be certified until Jan 2 23:13:45 2026 GMT (3650 days)
 Sign the certificate? [y/n]:y
 1 out of 1 certificate requests certified, commit? [y/n]y

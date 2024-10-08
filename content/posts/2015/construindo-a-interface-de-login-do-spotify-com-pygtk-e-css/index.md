@@ -101,4 +101,3 @@ Alguns elementos não puderam ser 100% representados como na interface original,
 
 A aplicação completa está no github e pode ser acessada <a href="https://github.com/1pedro/spotify_app">aqui</a>. A quem quiser contribuir pode ficar à vontade.
 
-Se quiser entrar em contato pode comentar esse post, me enviar um <a href="mailto:p.dupond@example.com"> Email </a> ou me chamar no <a href="https://twitter.com/_pedrojefferson">Twitter</a>.

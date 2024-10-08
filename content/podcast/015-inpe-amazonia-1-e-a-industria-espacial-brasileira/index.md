@@ -65,7 +65,7 @@ Participou de processos de absorção de tecnologia para satélites geoestacion�
 
 Atualmente, é gerente de projeto do microssatélite de sensoriamento remoto e internet das coisas (IoT) VCUB-1, primeiro satélite feito pela iniciativa privada brasileira, com previsão de lançamento para o final de 2021.
 
-{{< social linkedin="danilo-miranda-51137951" email="danilo.miranda@visionaespacial.com.br" >}}
+{{< social linkedin="danilo-miranda-51137951" >}}
 
 #### Fabrício Kucinskis
 
@@ -74,8 +74,6 @@ Fabrício Kucinskis é Engenheiro de Computação, mestre em Computação Aplica
 Participou de processos de transferência de tecnologia em controle de atitude e órbita na empresa argentina INVAP SE e em plataformas para satélites geoestacionários de telecomunicações na ítalo-francesa Thales Alenia Space. É o responsável técnico pelo software aplicativo de supervisão de bordo do satélite Amazonia-1.
 
 Atualmente é Tecnologista Sênior do INPE e chefe da Divisão de Eletrônica Espacial e Computação, da Coordenação-Geral de Engenharia, Tecnologia e Ciência Espaciais.
-
-{{< social email="fabricio.kucinskis@inpe.br" >}}
 
 [inpe]: http://inpe.br/
 [visiona]: https://www.visionaespacial.com.br/

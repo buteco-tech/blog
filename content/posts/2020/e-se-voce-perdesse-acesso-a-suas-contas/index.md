@@ -48,7 +48,7 @@ Porém, você ainda pode correr riscos caso o serviço deixe de existir, afinal,
 
 Nesse caso, quando você paga por um serviço, você possui um contrato, existe um termo de garantia e tudo mais, a empresa irá oferecer o serviço a você até o fim do contrato ou terá algumas regras de cancelamento que te darão segurança.
 
-A primeira dica é, compre um domínio, use esse domínio como seu e-mail principal para tudo o que for importante. Por exemplo, nós do Buteco, temos o e-mail contato@butecopensource.com.br. Esse é nosso e-mail principal, nós que decidimos onde hospedar esse e-mail, pode ser no Gmail, pode ser no Outlook Mail ou em qualquer outra plataforma.
+A primeira dica é, compre um domínio, use esse domínio como seu e-mail principal para tudo o que for importante. Por exemplo, nós do Buteco, temos o e-mail `contato [arroba] butecotecnologico [ponto] com [ponto] br`. Esse é nosso e-mail principal, nós que decidimos onde hospedar esse e-mail, pode ser no Gmail, pode ser no Outlook Mail ou em qualquer outra plataforma.
 
 Você não precisa pagar horrores para ter um domínio, é possível ter [domínios com.br](https://registro.br/) por R$ 40 por ano. Eu penso que sua privacidade e segurança vale duas caixinhas de cerveja por ano.
 

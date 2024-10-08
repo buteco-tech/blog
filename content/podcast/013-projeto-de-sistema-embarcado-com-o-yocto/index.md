@@ -75,7 +75,7 @@ Otávio Salvador é empresário, escritor, fundador e CTO na O.S. Systems Develo
 
 Hoje, integrante do Conselho Consultivo do Yocto Project, Otávio também contribui e participa ativamente de diversos projetos como U-Boot, Linux Kernel, OpenEmbedded e Rust, além de acompanhar de perto todos os projetos da O.S. Systems, em especial os dois grandes lançamentos da empresa, o ShellHub e o UpdateHub.
 
-{{< social www="https://www.ossystems.com.br/" email="contato@ossystems.com.br" linkedin="otavio" twitter="otaviosalvador" >}}
+{{< social www="https://www.ossystems.com.br/" linkedin="otavio" twitter="otaviosalvador" >}}
 
 [livro-otavio-daiane]: https://www.amazon.com.br/gp/product/B00LO2GFM0/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0
 [heading-for-the-yocto-project]: https://github.com/CollaborativeWritersHub/heading-for-the-yocto-project

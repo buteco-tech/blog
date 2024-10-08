@@ -47,7 +47,7 @@ Engenheiro de Software e bacharel em Ciência da Computação. Contribui com sof
 
 Técnica em informática, estudante de pedagogia, professora de informática, instrutora de cursos online, educadora/representante do Projeto Franzininho e entusiasta em software como Inkscape e Gimp.
 
-{{< social www="https://about.me/dianasantos.ip" linkedin="dianaipsantos" email="dianaipsantos91@gmail.com" >}}
+{{< social www="https://about.me/dianasantos.ip" linkedin="dianaipsantos" >}}
 
 #### Fábio Souza
 
@@ -55,7 +55,7 @@ Engenheiro com experiência no desenvolvimento de projetos eletrônicos embarcad
 
 É entusiastas do movimento maker, da cultura DIY e do compartilhamento de conhecimento, publica diversos artigos sobre eletrônica e projetos open hardware. Com iniciativas como o projeto Franzininho e projetos na área de educação, leva a cultura maker para o Brasil capacitando e incentivando professores e alunos a usarem tecnologia em suas vidas.
 
-{{< social www="https://www.fabiosouza.org" linkedin="engfabiosouza" twitter="FabioSouza_io" email="fs.embarcados@gmail.com" >}}
+{{< social www="https://www.fabiosouza.org" linkedin="engfabiosouza" twitter="FabioSouza_io" >}}
 
 [franzininho]: https://franzininho.com.br/
 [discord]: https://discord.gg/XZzpAM9Qc5

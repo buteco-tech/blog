@@ -59,7 +59,7 @@ Depois de instalar o Git, é necessário configurar o seu nome e e-mail que ser�
 
 ```bash
 git config --global user.name "Seu Nome"
-git config --global user.email "seu-email@buteco.tech"
+git config --global user.email "seu-email@gmail.com"
 ```
 
 > Observação: Caso você esteja no Windows, não se esqueça de utilizar o **git bash**, pois ele simula um ambiente Unix, facilitando a forma de se trabalhar com Git.
@@ -74,7 +74,7 @@ ls
 Caso o comando `ls` retorne algo com a extensão **.pub**, você não precisa executar o comando `ssh-keygen`. Caso contrário, digite esse comando no seu terminal:
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "seu-email@buteco.tech"
+ssh-keygen -t rsa -b 4096 -C "seu-email@gmail.com"
 ```
 
 O comando acima irá pedir um nome do arquivo para salvar a chave, não escreva nada e aperte enter (será gerada uma com o nome **id_rsa**). Depois, informe uma senha (_passphrase_) e confirme ela. Pronto, você gerou uma chave SSH.
@@ -93,7 +93,7 @@ Executar o comando `ssh-add`, onde o **id_rsa** é o nome da sua chave SSH, info
 ssh-add ~/.ssh/id_rsa
 ```
 
-A mensagem `Identity added : id_rsa (seu-email@buteco.tech)` será exibida.
+A mensagem `Identity added : id_rsa (seu-email@gmail.com)` será exibida.
 
 ## Adicionando a chave SSH à sua conta no GitHub
 
@@ -111,7 +111,7 @@ Copie todo o conteúdo para a sua área de transferência (lembre-se de copiar d
 
 Acesse a página de [SSH and GPG keys no GitHub](https://github.com/settings/keys) para associar a nova chaves SSH a sua conta. Clique então no botão **_New SSH Key_**.
 
-O título você pode escolher um (ex: chave seu-email@buteco.tech), e em _Key_, você informará o conteúdo que copiou anteriormente.
+O título você pode escolher um (ex: chave seu-email@gmail.com), e em _Key_, você informará o conteúdo que copiou anteriormente.
 
 Clique em _Add SSH Key_ para salvar. Pronto, sua configuração está feita.
 

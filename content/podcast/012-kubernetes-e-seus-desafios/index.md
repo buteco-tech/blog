@@ -55,7 +55,7 @@ Engenheiro de Software e bacharel em Ciência da Computação. Contribui com sof
 
 Engenheiro de Soluções de Cloud na [O3S][o3s], focado em soluções e arquiteturas multicloud usando Rancher, Morpheus, Zadara e Hashicorp. Atua junto com a Rancher em empresas de todos os setores no Brasil e América Latina.
 
-{{< social email="everton.andrade@o3s.com.br" linkedin="evertonandrade" >}}
+{{< social linkedin="evertonandrade" >}}
 
 #### Jonathan André Schweder
 

@@ -69,4 +69,4 @@ Nós usamos algumas tecnologias para coletar e armazenar informações quando um
 
 ## Contato
 
-Em caso de dúvidas entre em contato pelo e-mail [privacidade@buteco.tech](mailto:privacidade@buteco.tech).
+Em caso de dúvidas entre em [contato](/contato) conosco.

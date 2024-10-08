@@ -97,6 +97,6 @@ Veja uma breve demonstração do glade.
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=naKmmG5V0_A" frameborder="0" allowfullscreen></iframe>
 
 Espero que esse artigo ajude a aumentar a sua produtividade e valorizar o seu tempo.
-Dúvidas? Comente, me envie um <a href="mailto:pedrojefferson.developer@gmail.com">Email</a> ou entre em contato pelo <a href="https://twitter.com/_pedrojefferson">twitter</a>.
+Em caso de dúvidas deixe um comentário.
 
 Obrigado, e até mais!

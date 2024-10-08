@@ -52,4 +52,4 @@ Músico, programador, engenheiro eletricista, trabalha com desenvolvimento de eq
 
 Fundador e diretor de tecnologia da [Walltime](https://walltime.info). Formado em Ciência da Computação e trabalha na área de desenvolvimento de software desde o ano 2000. Meados de 2012 quando conheci o Bitcoin vi que era algo realmente disruptivo e decidi que iria trabalhar com isso. Desde então eu me tornei um Bitcoin Maximalista. Quando eu li o paper eu pensei "Por que não fui eu que inventei isso?". Comecei a conversar com um amigo sobre a ideia de fazer uma exchange. Em 2013 começamos a trabalhar no projeto. Em 2016 finalmente lançamos a plataforma, fizemos 4 anos recentemente. Hoje somos referência em qualidade de segurança e atendimento.
 
-{{< social www="https://yeppudaproductions.wordpress.com/" email="micaroni@walltime.info" >}}
+{{< social www="https://yeppudaproductions.wordpress.com/" >}}

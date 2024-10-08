@@ -183,6 +183,6 @@ Se você seguiu passo a passo a criação da aplicação essa deve ser a aparên
 
 Espero que você tenha gostado do mini-tutorial, e principalmente tenha aprendido algo, pois a intenção é justamente passar o conhecimento para frente! O código completo da aplicação você pode acessar <a href="https://github.com/ButecoOpenSource/exemplos/blob/master/exemplos_python/pygtk/pygtk-form.py" target="_blank">clicando aqui</a>.
 
-No caso de dúvidas atendo pelos comentários desse post, pelo <a href="mailto:pedrojefferson.developer@gmail.com">e-mail</a> ou pelo <a href="https://twitter.com/_pedrojefferson" target="_blank">Twitter</a>.
+Em caso de dúvidas deixe um comentário.
 
 Obrigado, e até mais!

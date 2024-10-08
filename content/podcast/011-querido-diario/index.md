@@ -55,7 +55,7 @@ Engenheiro de software na SUSE trabalhando atualmente com Kubernetes e container
 
 Gerente do Programa de Inovação Cívica da Open Knowledge Brasil. É o atual líder técnico da Operação Serenata de Amor. Ex-presidente da Associação Python Brasil. Em 2016 foi o responsável pela organização da Conferência Python Brasil[12], sediada em Florianópolis-SC. Em 2017 foi nomeado fellow member da Python Software Foundation nos Estados Unidos.
 
-{{< social email="mario@ok.org.br" twitter="sergiomarioq" linkedin="sergiomarioq" >}}
+{{< social twitter="sergiomarioq" linkedin="sergiomarioq" >}}
 
 #### Renne Rocha
 
