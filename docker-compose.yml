@@ -3,10 +3,10 @@ services:
   app:
     build: .
     working_dir: /blog
-    command: hugo server -v --bind "0.0.0.0" --port 3000 --watch --debug
+    command: hugo server --logLevel info --bind "0.0.0.0" --port 3000 --watch
     user: "1000:1000"
     ports:
       - "3000:3000"
     volumes:
       - .:/blog
-      # - /home/alexandre/workspace/alexandrevicenzi/iara:/blog/themes/iara
+      # - /home/alexandre/workspace/iara:/blog/themes/iara
